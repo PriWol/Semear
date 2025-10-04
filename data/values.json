@@ -1,0 +1,66 @@
+[
+  {
+    "id": "respeito",
+    "name": "Respeito",
+    "description": "Praticar escuta, cuidado e consideração nas relações com pessoas, natureza e espaços.",
+    "tags": ["convivência", "virtudes", "cidadania"],
+    "examplesBR": ["Roda de conversa", "Cuidar do espaço comum", "Ouvir histórias dos mais velhos"],
+    "globalReferences": ["Montessori: autonomia e responsabilidade", "Waldorf: ritmo e respeito ao tempo da criança"]
+  },
+  {
+    "id": "paciencia",
+    "name": "Paciência",
+    "description": "Cultivar a espera, observar processos e confiar no tempo das coisas.",
+    "tags": ["virtudes", "natureza", "autoconhecimento"],
+    "examplesBR": ["Observar plantio crescer", "Fazer pão caseiro", "Esperar a chuva passar"],
+    "globalReferences": ["Montessori: concentração e ciclos naturais", "Waldorf: ritmos da natureza"]
+  },
+  {
+    "id": "coragem",
+    "name": "Coragem",
+    "description": "Enfrentar desafios, experimentar o novo e expressar-se com autenticidade.",
+    "tags": ["virtudes", "autoconhecimento", "criatividade"],
+    "examplesBR": ["Contar uma história para a família", "Experimentar comida nova", "Brincar com desconhecidos"],
+    "globalReferences": ["Clássico: virtudes cardeais", "Waldorf: força de vontade"]
+  },
+  {
+    "id": "gratidao",
+    "name": "Gratidão",
+    "description": "Reconhecer e celebrar as bênçãos, pessoas e momentos da vida.",
+    "tags": ["virtudes", "espiritualidade", "família"],
+    "examplesBR": ["Roda de agradecimento", "Carta para alguém especial", "Celebrar colheita"],
+    "globalReferences": ["Religioso: ação de graças", "Montessori: consciência do ambiente"]
+  },
+  {
+    "id": "criatividade",
+    "name": "Criatividade",
+    "description": "Explorar, inventar e expressar ideias de formas únicas e pessoais.",
+    "tags": ["arte", "brincadeira", "autoconhecimento"],
+    "examplesBR": ["Criar brinquedo com sucata", "Inventar música", "Teatro de sombras"],
+    "globalReferences": ["Waldorf: arte como caminho", "Montessori: liberdade criativa"]
+  },
+  {
+    "id": "solidariedade",
+    "name": "Solidariedade",
+    "description": "Cuidar do outro, compartilhar e construir juntos.",
+    "tags": ["convivência", "cidadania", "família"],
+    "examplesBR": ["Mutirão de limpeza", "Dividir lanche", "Ajudar vizinho"],
+    "globalReferences": ["Religioso: amor ao próximo", "Clássico: bem comum"]
+  },
+  {
+    "id": "conexao-natureza",
+    "name": "Conexão com a Natureza",
+    "description": "Observar, respeitar e celebrar os ciclos e elementos naturais.",
+    "tags": ["natureza", "espiritualidade", "ciência"],
+    "examplesBR": ["Banho de chuva", "Observar lua", "Coletar sementes"],
+    "globalReferences": ["Waldorf: festivais sazonais", "Montessori: educação cósmica"]
+  },
+  {
+    "id": "identidade-cultural",
+    "name": "Identidade Cultural",
+    "description": "Conhecer e valorizar raízes, histórias e tradições brasileiras.",
+    "tags": ["cultura", "história", "família"],
+    "examplesBR": ["Cantigas de roda", "Histórias indígenas", "Festas juninas"],
+    "globalReferences": ["Waldorf: cultura local", "Clássico: tradição e memória"]
+  }
+]

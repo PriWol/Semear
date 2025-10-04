@@ -1,0 +1,18 @@
+{
+  "id": "diario-2025w40-ana",
+  "weekStartISO": "2025-09-29",
+  "childId": "crianca-ana",
+  "moments": [
+    {
+      "id": "mom-1",
+      "text": "Ana observou o feijão brotando e ficou encantada com as raízes.",
+      "rating": 5,
+      "tags": ["natureza", "paciência"],
+      "photoRef": "",
+      "createdAt": "2025-10-02T18:30:00.000Z"
+    }
+  ],
+  "reflection": "Semana tranquila, Ana adorou a história do Saci.",
+  "nextWeekFocus": "Explorar mais cantigas de roda e brincadeiras ao ar livre.",
+  "createdAt": "2025-10-04T19:00:00.000Z"
+}

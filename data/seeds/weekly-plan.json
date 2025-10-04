@@ -1,0 +1,21 @@
+{
+  "id": "plano-2025w40-ana",
+  "weekStartISO": "2025-09-29",
+  "childId": "crianca-ana",
+  "selections": {
+    "activityId": "atividade-plantio-feijao",
+    "storyId": "historia-saci-perere",
+    "ritualId": "ritual-roda-gratidao",
+    "songId": "musica-ciranda-cirandinha",
+    "bookId": "livro-menina-bonita-laco-fita"
+  },
+  "checklist": [
+    {"id": "chk-atividade", "label": "Realizou a atividade", "done": false},
+    {"id": "chk-historia", "label": "Leu/contou a história", "done": false},
+    {"id": "chk-ritual", "label": "Fez o ritual", "done": false},
+    {"id": "chk-musica", "label": "Ouviu a música", "done": false},
+    {"id": "chk-livro", "label": "Leu o livro", "done": false}
+  ],
+  "notes": "",
+  "createdAt": "2025-09-29T10:00:00.000Z"
+}

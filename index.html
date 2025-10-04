@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Semear - Programa educacional para famílias brasileiras protagonistas na formação de seus filhos">
+  <meta name="theme-color" content="#2d5016">
+  
+  <title>Semear - Educação com Valores e Cultura Brasileira</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+</head>
+<body>
+  <!-- Navegação -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-brand" data-link>
+        <span>🌱</span>
+        <span>Semear</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="/" data-link>Início</a></li>
+        <li><a href="/weekly-plan" data-link>Plano</a></li>
+        <li><a href="/explorer" data-link>Explorar</a></li>
+        <li><a href="/diary" data-link>Diário</a></li>
+        <li><a href="/guide" data-link>Guia</a></li>
+        <li><a href="/community" data-link>Comunidade</a></li>
+        <li><a href="/settings" data-link>⚙️</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <div id="app">
+    <div class="container">
+      <div style="text-align: center; padding: 4rem 1rem;">
+        <h1 style="font-size: 3rem; color: #2d5016;">🌱</h1>
+        <p style="color: #666;">Carregando...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="/assets/js/app.js"></script>
+  
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registrado:', registration);
+          })
+          .catch(error => {
+            console.log('Erro ao registrar Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>

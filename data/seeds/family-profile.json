@@ -1,0 +1,25 @@
+{
+  "id": "familia-exemplo",
+  "parents": ["Maria", "João"],
+  "children": [
+    {
+      "id": "crianca-ana",
+      "name": "Ana",
+      "birthdate": "2020-03-15",
+      "ageYears": 5
+    }
+  ],
+  "stylePreferences": ["Montessori", "Waldorf"],
+  "valuesPriority": ["respeito", "criatividade", "conexao-natureza"],
+  "timePerWeekMin": 90,
+  "communityLinks": {
+    "whatsapp": "",
+    "telegram": "",
+    "meetMonthly": ""
+  },
+  "consents": {
+    "localStorage": true,
+    "metricsLocal": true
+  },
+  "createdAt": "2025-10-04T19:00:00.000Z"
+}

@@ -1,0 +1,22 @@
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporários
+*.tmp
+.cache/
+
+# Backups
+*.bak
+backup/
