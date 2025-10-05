@@ -8,6 +8,7 @@ import Guide from './components/guide.js';
 import Community from './components/community.js';
 import Diary from './components/diary.js';
 import Settings from './components/settings.js';
+import About from './components/about.js';
 
 class App {
   constructor() {
@@ -61,6 +62,12 @@ class App {
       const settings = new Settings(this.router);
       settings.render();
     });
+
+    // Sobre
+    this.router.register('/about', () => {
+      const about = new About(this.router);
+      about.render();
+    });
   }
 
   checkFirstAccess() {
@@ -91,6 +98,12 @@ class App {
     app.innerHTML = `
       <div class="home-container">
         <div class="hero-section">
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&h=600&fit=crop" 
+                 alt="Mãe e criança aprendendo juntos" 
+                 onerror="this.style.display='none'">
+          </div>
+          <div class="hero-overlay"></div>
           <div class="hero-content">
             <h1 class="hero-title">Momentos de Qualidade que Formam Valores</h1>
             <p class="hero-subtitle">Atividades intencionais formadoras de valores que estejam alinhados aos da sua família, com identidade brasileira e pedagogia de qualidade.</p>

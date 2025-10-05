@@ -29,7 +29,14 @@ class Router {
   }
 
   handleRoute() {
-    const path = window.location.pathname;
+    let path = window.location.pathname;
+    
+    // Remover /Semear/ do path se existir (GitHub Pages)
+    const basePath = '/Semear';
+    if (path.startsWith(basePath)) {
+      path = path.substring(basePath.length) || '/';
+    }
+    
     this.currentRoute = path;
 
     // Encontrar rota correspondente

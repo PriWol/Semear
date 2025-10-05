@@ -174,40 +174,50 @@ class Onboarding {
           <button class="btn btn-secondary" id="backBtn">Voltar</button>
           <button class="btn btn-primary" id="finishBtn">Começar!</button>
         </div>
-      </div>
     `;
   }
 
   attachEventListeners() {
+    // Next button
     const nextBtn = document.getElementById('nextBtn');
-    const backBtn = document.getElementById('backBtn');
-    const finishBtn = document.getElementById('finishBtn');
-
     if (nextBtn) {
-      nextBtn.addEventListener('click', () => this.handleNext());
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.handleNext();
+      });
     }
 
+    // Back button
+    const backBtn = document.getElementById('backBtn');
     if (backBtn) {
-      backBtn.addEventListener('click', () => this.handleBack());
+      backBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.handleBack();
+      });
     }
 
+    // Finish button
+    const finishBtn = document.getElementById('finishBtn');
     if (finishBtn) {
-      finishBtn.addEventListener('click', () => this.handleFinish());
+      finishBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.handleFinish();
+      });
     }
 
-    // Step 1 listeners
+    // Step 1 listeners (family info)
     const parentsInput = document.getElementById('parents');
     const childNameInput = document.getElementById('childName');
     const childBirthdateInput = document.getElementById('childBirthdate');
 
     if (parentsInput) {
-      parentsInput.addEventListener('change', (e) => {
+      parentsInput.addEventListener('input', (e) => {
         this.formData.parents = e.target.value.split(',').map(p => p.trim()).filter(p => p);
       });
     }
 
     if (childNameInput) {
-      childNameInput.addEventListener('change', (e) => {
+      childNameInput.addEventListener('input', (e) => {
         if (!this.formData.children[0]) {
           this.formData.children[0] = {};
         }
@@ -216,7 +226,7 @@ class Onboarding {
     }
 
     if (childBirthdateInput) {
-      childBirthdateInput.addEventListener('change', (e) => {
+      childBirthdateInput.addEventListener('input', (e) => {
         if (!this.formData.children[0]) {
           this.formData.children[0] = {};
         }

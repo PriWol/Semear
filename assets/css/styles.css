@@ -1071,7 +1071,6 @@ nav {
 
 /* Hero Section - Inspirado na fauna brasileira */
 .hero-section {
-  background: linear-gradient(135deg, rgba(244, 164, 96, 0.9) 0%, rgba(232, 149, 99, 0.9) 50%, rgba(122, 155, 77, 0.9) 100%);
   padding: 4rem 2rem;
   text-align: center;
   border-radius: 0 0 30px 30px;
@@ -1079,6 +1078,36 @@ nav {
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(244, 164, 96, 0.85) 0%, rgba(232, 149, 99, 0.85) 50%, rgba(122, 155, 77, 0.85) 100%);
+  z-index: 1;
 }
 
 .hero-section::before {
@@ -1095,7 +1124,7 @@ nav {
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -1228,6 +1257,212 @@ nav {
   }
 }
 
+/* Página Sobre */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, rgba(244, 164, 96, 0.1), rgba(122, 155, 77, 0.1));
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.about-tagline {
+  font-size: 1.5rem;
+  color: var(--text);
+  font-style: italic;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-section {
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.about-section.highlight {
+  background: linear-gradient(135deg, rgba(244, 164, 96, 0.05), rgba(122, 155, 77, 0.05));
+  border-left: 4px solid var(--primary);
+}
+
+.about-section h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.about-section ul {
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.about-section li {
+  margin: 0.75rem 0;
+  font-size: 1.05rem;
+}
+
+.founder-card {
+  background: linear-gradient(135deg, rgba(244, 164, 96, 0.08), rgba(122, 155, 77, 0.08));
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.founder-content h3 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.founder-title {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.founder-content blockquote {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary);
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.culture-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.culture-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.culture-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.culture-item h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.principles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.principle-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+}
+
+.principle-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.principle-item h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  position: relative;
+}
+
+.step-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.step-card h4 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.cta-section {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(244, 164, 96, 0.15), rgba(122, 155, 77, 0.15)) !important;
+  padding: 3rem 2rem !important;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
 /* Responsividade Hero */
 @media (max-width: 768px) {
   .hero-title {
@@ -1246,5 +1481,22 @@ nav {
   .badge {
     width: 100%;
     max-width: 300px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .culture-grid,
+  .how-it-works {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
   }
 }
