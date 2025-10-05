@@ -24,7 +24,10 @@ class Router {
   }
 
   navigate(path) {
-    window.history.pushState({}, '', path);
+    // Adicionar base path se necessário para GitHub Pages
+    const basePath = window.location.pathname.includes('/Semear/') ? '/Semear' : '';
+    const fullPath = basePath + path;
+    window.history.pushState({}, '', fullPath);
     this.handleRoute();
   }
 

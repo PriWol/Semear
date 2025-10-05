@@ -181,18 +181,18 @@ class Onboarding {
     // Next button
     const nextBtn = document.getElementById('nextBtn');
     if (nextBtn) {
-      nextBtn.addEventListener('click', (e) => {
+      nextBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        this.handleNext();
+        await this.handleNext();
       });
     }
 
     // Back button
     const backBtn = document.getElementById('backBtn');
     if (backBtn) {
-      backBtn.addEventListener('click', (e) => {
+      backBtn.addEventListener('click', async (e) => {
         e.preventDefault();
-        this.handleBack();
+        await this.handleBack();
       });
     }
 
