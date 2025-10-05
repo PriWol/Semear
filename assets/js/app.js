@@ -90,9 +90,20 @@ class App {
 
     app.innerHTML = `
       <div class="home-container">
-        <div class="home-header">
-          <h1>🌱 Bem-vindo ao Semear</h1>
-          <p class="home-greeting">Olá, ${profile.parents[0]}! Vamos cultivar momentos especiais com ${child.name}?</p>
+        <div class="hero-section">
+          <div class="hero-content">
+            <h1 class="hero-title">Momentos de Qualidade que Formam Valores</h1>
+            <p class="hero-subtitle">Atividades intencionais formadoras de valores que estejam alinhados aos da sua família, com identidade brasileira e pedagogia de qualidade.</p>
+            <div class="hero-badges">
+              <span class="badge">❤️ Baseado em Valores</span>
+              <span class="badge">📖 Cultura Brasileira</span>
+              <span class="badge">⏱️ 10-30 min/dia</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="home-welcome">
+          <p class="home-greeting">Olá, ${profile.parents[0]}! Vamos cultivar momentos especiais com ${child.name}? 🌱</p>
         </div>
 
         <div class="home-cards">
