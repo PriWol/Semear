@@ -1,4 +1,6 @@
-# 🚀 COMECE AQUI - Semear MVP
+# 🚀 COMECE AQUI - Semear
+
+**Guia rápido para começar a usar o Semear**
 
 **Seu MVP está pronto! Siga estes passos para colocá-lo no ar.**
 

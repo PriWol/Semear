@@ -1,17 +1,17 @@
 // service-worker.js - Service Worker para PWA
-const CACHE_NAME = 'semear-v1.0.0';
+const CACHE_NAME = 'semear-v1.0.1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/assets/css/styles.css',
-  '/assets/js/app.js',
-  '/assets/js/router.js',
-  '/assets/js/storage.js',
-  '/assets/js/data-loader.js',
-  '/assets/js/export.js',
-  '/data/values.json',
-  '/data/resources.json'
+  './',
+  './index.html',
+  './manifest.json',
+  './assets/css/styles.css',
+  './assets/js/app.js',
+  './assets/js/router.js',
+  './assets/js/storage.js',
+  './assets/js/data-loader.js',
+  './assets/js/export.js',
+  './data/values.json',
+  './data/resources.json'
 ];
 
 // Instalação - cachear recursos
@@ -70,7 +70,7 @@ self.addEventListener('fetch', event => {
             }
             // Se não estiver no cache, retornar página offline
             if (event.request.mode === 'navigate') {
-              return caches.match('/index.html');
+              return caches.match('./index.html');
             }
           });
       })

@@ -24,11 +24,11 @@ class DataLoader {
   }
 
   async getValues() {
-    return await this.load('/data/values.json');
+    return await this.load('./data/values.json');
   }
 
   async getResources() {
-    return await this.load('/data/resources.json');
+    return await this.load('./data/resources.json');
   }
 
   getValueById(values, id) {

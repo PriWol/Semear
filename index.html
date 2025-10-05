@@ -12,10 +12,10 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
   
   <!-- Manifest PWA -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   
   <!-- Apple Touch Icon -->
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
@@ -24,19 +24,19 @@
   <!-- Navegação -->
   <nav>
     <div class="nav-container">
-      <a href="/" class="nav-brand" data-link>
+      <a href="./" class="nav-brand" data-link>
         <span>🌱</span>
         <span>Semear</span>
       </a>
       
       <ul class="nav-links">
-        <li><a href="/" data-link>Início</a></li>
-        <li><a href="/weekly-plan" data-link>Plano</a></li>
-        <li><a href="/explorer" data-link>Explorar</a></li>
-        <li><a href="/diary" data-link>Diário</a></li>
-        <li><a href="/guide" data-link>Guia</a></li>
-        <li><a href="/community" data-link>Comunidade</a></li>
-        <li><a href="/settings" data-link>⚙️</a></li>
+        <li><a href="./" data-link>Início</a></li>
+        <li><a href="./weekly-plan" data-link>Plano</a></li>
+        <li><a href="./explorer" data-link>Explorar</a></li>
+        <li><a href="./diary" data-link>Diário</a></li>
+        <li><a href="./guide" data-link>Guia</a></li>
+        <li><a href="./community" data-link>Comunidade</a></li>
+        <li><a href="./settings" data-link>⚙️</a></li>
       </ul>
     </div>
   </nav>
@@ -52,13 +52,13 @@
   </div>
 
   <!-- Scripts -->
-  <script type="module" src="/assets/js/app.js"></script>
+  <script type="module" src="./assets/js/app.js"></script>
   
   <!-- Service Worker Registration -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('./service-worker.js')
           .then(registration => {
             console.log('Service Worker registrado:', registration);
           })
