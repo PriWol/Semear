@@ -27,13 +27,13 @@ Sistema visual e técnico aplicado a todas as páginas da coleção. Implementa�
 ## Tipografia (fontes livres, licença OFL, embutidas em `editorial/fonts`)
 | Uso | Fonte | Corpo |
 |---|---|---|
-| Títulos | Cormorant Garamond 600 | 26–34 pt |
-| Subtítulos | Cormorant Garamond itálico | 14 pt |
+| Títulos | EB Garamond 500–600 | 26–34 pt |
+| Subtítulos | EB Garamond itálico | 14 pt |
 | Texto de história (lido em voz alta, a criança acompanha as imagens) | EB Garamond | 17,5 pt, entrelinha 1,45 |
 | Palavra do cartão | EB Garamond 500 | 21 pt, minúsculas (como ela vai encontrar nos livros) |
 | Guia do adulto | EB Garamond | 9,6 pt |
 
-Algarismos de estilo antigo; latim com mácrons (ā, ū) para indicar as vogais longas.
+Uma só família tipográfica (EB Garamond). A Cormorant Garamond foi testada e descartada: o acento circunflexo dela (â, ê, ô) tem um desenho pontiagudo que parece defeito de impressão em português. Algarismos de estilo antigo; latim com mácrons (ā, ū) para indicar as vogais longas.
 
 ## Paleta
 | Papel | Tinta | Sépia | Musgo | Oliva | Rosa antigo | Azul-acinzentado | Ocre |

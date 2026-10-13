@@ -40,6 +40,16 @@ Você salva cada arquivo em `ilustracoes/` com o nome indicado. O montador encai
 ### Rota C — Ilustrador(a) humano(a)
 É a melhor consistência artística possível, com custo e prazo maiores. As mesmas fichas da Rota B servem como encomenda.
 
+## Situação atual (atualizado)
+- **Rede liberada** para `archive.org`, `*.us.archive.org`, `www.gutenberg.org` e Wikimedia. A Wikimedia ainda recusa a maioria das consultas por excesso de pedidos (limite do lado dela).
+- **Fontes confirmadas no Internet Archive**, com digitalização nítida:
+  - L. Leslie Brooke, *The Golden Goose Book* (Warne, 1905): pranchas coloridas de *Cachinhos Dourados e os três ursos* e de *Os Três Porquinhos*, com cerca de 2000 × 2550 px (até ~17 cm de largura a 300 dpi).
+  - Beatrix Potter, *Histoire de Pierre Lapin* (Warne, 1921): aquarelas originais de *O Coelho Pedro*, com 1150 a 1600 px de largura (de 10 a 14 cm, o tamanho original das pranchas).
+  - Arthur Rackham, *The Fairy Tales of the Brothers Grimm* (Doubleday, 1916): localizado, ainda não inspecionado.
+- **Descartadas:** uma edição americana de 1917 de *Peter Rabbit* (não tem as aquarelas de Potter) e as "Gunston Classics" (procedência das imagens incerta).
+- Já em uso na amostra: ver `editorial/dominio_publico/CREDITOS.md`.
+- A família aprovou usar a versão tradicional com os **três ursos**; a versão com o Lobo segue como variação oral ("Criar").
+
 ## Recomendação
 - **Rota A** para obras de arte, botânica, retratos de compositores e contos clássicos (Potter, Brooke, Rackham).
 - **Rota B** para as cenas próprias da coleção (a Marina, o ratinho, *A cesta do pomar*, *Cachinhos Dourados e o Lobo*).

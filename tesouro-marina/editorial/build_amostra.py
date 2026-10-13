@@ -69,13 +69,13 @@ def capa():
                     f'left:{x - w / 2:.1f}mm;top:{y - w / 2:.1f}mm;transform:rotate({rot:.0f}deg)">')
     texto = f"""
     <div style="position:absolute;top:24mm;left:0;right:0;text-align:center">
-      <div style="font-family:'Cormorant Garamond';font-size:20pt;font-style:italic;color:var(--sepia)">O Grande Tesouro de</div>
-      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:64pt;line-height:.95;color:var(--tinta);letter-spacing:.02em">Marina</div>
+      <div style="font-family:'EB Garamond';font-size:20pt;font-style:italic;color:var(--sepia)">O Grande Tesouro de</div>
+      <div style="font-family:'EB Garamond';font-weight:600;font-size:64pt;line-height:.95;color:var(--tinta);letter-spacing:.02em">Marina</div>
       <div style="font-size:11.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--sepia);margin-top:2mm">Currículo clássico para a infância</div>
     </div>
     <div style="position:absolute;top:{cy - 30}mm;left:{cx - 42}mm;width:84mm;text-align:center">
       <div style="font-size:10pt;letter-spacing:.3em;text-transform:uppercase;color:var(--rosa)">Volume 1</div>
-      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:27pt;line-height:1.05;margin:2mm 0">O mundo<br>ao meu redor</div>
+      <div style="font-family:'EB Garamond';font-weight:600;font-size:27pt;line-height:1.05;margin:2mm 0">O mundo<br>ao meu redor</div>
       <div class="vinheta-sep">❦</div>
       <div style="font-size:10.5pt;font-style:italic;color:var(--sepia);line-height:1.4">sentidos · casa · jardim e pomar<br>animais · céu · água · estações</div>
     </div>
@@ -281,7 +281,7 @@ def flash_frente():
                       f'<div class="palavra">{pt}</div></div>')
     c = f"""
     <div style="position:absolute;top:13mm;left:0;right:0;text-align:center">
-      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:19pt">Cartões · Frutas do pomar</div>
+      <div style="font-family:'EB Garamond';font-weight:600;font-size:19pt">Cartões · Frutas do pomar</div>
       <div class="peq">frente · imprimir frente e verso (virar pela borda longa) em papel de 180 g ou mais · cortar nas linhas tracejadas</div></div>
     <div class="grade" style="left:{GX}mm;top:{GY}mm;grid-template-columns:repeat(3,{CW}mm);grid-template-rows:repeat(3,{CH}mm)">
       {''.join(cartas)}</div>
@@ -307,7 +307,7 @@ def flash_verso():
           <div class="dica">{dica}</div></div>""")
     c = f"""
     <div style="position:absolute;top:13mm;left:0;right:0;text-align:center">
-      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:19pt">Cartões · Frutas do pomar</div>
+      <div style="font-family:'EB Garamond';font-weight:600;font-size:19pt">Cartões · Frutas do pomar</div>
       <div class="peq">verso · para o adulto · colunas espelhadas para coincidir com a frente</div></div>
     <div class="grade" style="left:{GX}mm;top:{GY}mm;grid-template-columns:repeat(3,{CW}mm);grid-template-rows:repeat(3,{CH}mm)">
       {''.join(cartas)}</div>
@@ -329,7 +329,7 @@ def memoria():
                      f'<div class="peq" style="margin-top:.5mm">{MEMO[i][0]}</div></div>' for i in ordem)
     c = f"""
     <div style="position:absolute;top:11mm;left:0;right:0;text-align:center">
-      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:19pt">Jogo da memória · Achados do jardim</div>
+      <div style="font-family:'EB Garamond';font-weight:600;font-size:19pt">Jogo da memória · Achados do jardim</div>
       <div class="peq">6 pares · imprimir em papel de 180 g ou colar sobre papelão · o verso está na página seguinte</div></div>
     <div class="grade" style="left:{MX}mm;top:{MY}mm;grid-template-columns:repeat(3,{MW}mm);grid-template-rows:repeat(4,{MH}mm)">
       {cartas}</div>
@@ -349,7 +349,7 @@ def memoria_verso():
                      f'{img("raminho", "41mm", "transform:rotate(-20deg)")}</div>' for _ in range(12))
     c = f"""
     <div style="position:absolute;top:11mm;left:0;right:0;text-align:center">
-      <div style="font-family:'Cormorant Garamond';font-weight:600;font-size:19pt">Jogo da memória · verso</div>
+      <div style="font-family:'EB Garamond';font-weight:600;font-size:19pt">Jogo da memória · verso</div>
       <div class="peq">imprimir no verso da página 37 (virar pela borda longa) · desenho simétrico: não precisa espelhar</div></div>
     <div class="grade" style="left:{MX}mm;top:{MY}mm;grid-template-columns:repeat(3,{MW}mm);grid-template-rows:repeat(4,{MH}mm)">
       {cartas}</div>
@@ -377,7 +377,7 @@ def musica():
         x, y = 22 + col * 58, 78 + r * 50
         cel.append(f'<div style="position:absolute;left:{x}mm;top:{y}mm;width:50mm;text-align:center">'
                    f'{img(m, "40mm", "margin:0 auto")}'
-                   f'<div style="font-family:Cormorant Garamond;font-weight:700;font-size:12.5pt;margin-top:-1mm">'
+                   f'<div style="font-family:EB Garamond;font-weight:600;font-size:12.5pt;margin-top:-1mm">'
                    f'<span style="color:var(--rosa)">{i + 1}</span> · {nome}</div>'
                    f'<div class="peq it" style="font-size:8.6pt;color:var(--sepia)">{mov}</div></div>')
     # trilha tracejada ligando as estações
@@ -407,34 +407,57 @@ def musica():
 
 # ------------------------------------------------------------------ página-modelo de cena
 
-def modelo_cena():
+CAB2 = "Volume 2 · Histórias, memória e imaginação"
+
+
+def credito(txt):
+    return f'<div class="credito">{txt}</div>'
+
+
+def cachinhos():
     c = f"""
-    <div style="position:absolute;left:18mm;right:18mm;top:20mm;height:150mm;border:0.8pt dashed var(--sepia-claro);
-                display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10mm;text-align:center;background:repeating-linear-gradient(135deg,transparent 0 6mm,rgba(191,174,143,.12) 6mm 12mm)" data-check>
-      <div style="font-size:9pt;letter-spacing:.2em;text-transform:uppercase;color:var(--rosa)">Ilustração pendente · área 174 × 150 mm · 2055 × 1772 px a 300 dpi</div>
-      <div style="font-family:'Cormorant Garamond';font-size:17pt;font-weight:600;margin:3mm 0">Cena: a casinha do Lobo no bosque</div>
-      <p style="font-size:10pt;max-width:130mm;color:var(--sepia)">Aquarela tradicional, luz de fim de tarde. Interior de uma casinha de madeira entre faias; porta entreaberta.
-      Uma menina de cachos dourados (5–6 anos, vestido azul-claro, avental creme) espia da porta. Mesa rústica com três tigelas de tamanhos
-      claramente diferentes (grande, média, pequena), três cadeiras e, ao fundo, três camas. Nenhum lobo em cena. Espaço calmo no terço superior
-      esquerdo. Paleta da coleção: verdes-musgo, ocres, azul-acinzentado, creme. Sem texto na imagem.</p>
-      <p class="peq" style="margin-top:3mm">Esta página demonstra a diagramação de uma narrativa com cena pintada.
-      A cena não pode ser pintada com qualidade neste ambiente — ver docs/03-ilustracao.md.</p>
+    <div class="miolo historia">
+      <h1 class="titulo" style="font-size:28pt">Cachinhos Dourados e os Três Ursos</h1>
+      <div class="subtitulo">grande, médio e pequenino</div>
+      <img src="dominio_publico/brooke_cachinhos_tigelas.png" style="display:block;width:112mm;margin:4mm auto 3mm" alt="">
+      <p style="font-size:15pt;margin-bottom:2mm">Em cima da mesa havia três tigelas de mingau: uma tigela grande, do Papai Urso;
+      uma tigela média, da Mamãe Ursa; e uma tigela pequenina, do Ursinho.</p>
+      <p style="font-size:15pt;margin-bottom:0">Cachinhos Dourados provou a grande: <i>— Quente demais!</i> Provou a média: <i>— Fria demais!</i>
+      Provou a pequenina: <i>— Ah… esta está boa!</i> E comeu tudinho.</p>
     </div>
-    <div class="historia" style="position:absolute;left:18mm;right:18mm;top:176mm">
-      <h2 style="font-family:'Cormorant Garamond';font-weight:600;font-size:20pt;margin-bottom:2mm">Cachinhos Dourados e o Lobo</h2>
-      <p class="capitular" style="font-size:15pt">No meio do bosque havia uma casinha. Ali morava um lobo — não o lobo das outras histórias,
-      mas um lobo grande, um lobo médio e um lobo pequenino, que gostavam muito de mingau.</p>
-      <p style="font-size:15pt">Numa manhã, o mingau estava quente demais, e os três foram passear enquanto ele esfriava…</p>
+    <div class="adulto"><span class="rotulo">Para o adulto · olhar a imagem</span><br>
+      <b>Descobrir:</b> “Quantas tigelas você vê? Qual é a maior?” — aponte cada uma. Procure as flores, o relógio, o fogo.
+      <b>Relacionar:</b> traga três tigelas de casa e peça que ela as ponha em ordem, da maior para a pequenina.
+      <b>Criar:</b> “O chapéu caído no chão é de quem?” · “Na nossa história, quem mora nesta casa é o Lobo. O que mudaria aqui?”
+      {credito("Ilustração: L. Leslie Brooke, <i>The Golden Goose Book</i> (Londres: Frederick Warne, 1905). Domínio público. Digitalização: Internet Archive.")}
+    </div>"""
+    return pagina(c, num="(Vol. 2 · Unidade 2)", cab=CAB2 + " &nbsp;—&nbsp; Unidade 2", aba="--d-historias")
+
+
+def coelho_pedro():
+    c = f"""
+    <div class="miolo historia">
+      <h1 class="titulo" style="font-size:30pt">O Coelho Pedro</h1>
+      <div class="subtitulo">de Beatrix Potter · tradução e adaptação da coleção</div>
+      <p style="margin-top:7mm">— Podem ir para o campo ou pela trilha, disse a Mamãe Coelha, mas não entrem na horta do Sr. McGregor.</p>
+      <p>Flopsy, Mopsy e Rabinho-de-Algodão, que eram coelhinhas bem-comportadas, foram colher amoras.</p>
+      <img src="dominio_publico/potter_pedro_porteira.png" style="display:block;width:104mm;margin:2mm auto 4mm" alt="">
+      <p>Mas Pedro, que era muito travesso, correu direto para a horta do Sr. McGregor… e se espremeu por baixo da porteira!</p>
     </div>
-    """
-    return pagina(c, num="(modelo)", cab="Volume 2 · Histórias, memória e imaginação — página-modelo de narrativa", aba="--d-historias")
+    <div class="adulto"><span class="rotulo">Para o adulto · narrar e observar</span><br>
+      <b>Narrar:</b> “Aonde a mamãe disse para <i>não</i> ir? E aonde o Pedro foi?” — deixe que ela conte com as palavras dela.
+      <b>Observar:</b> “O que o Pedro está vestindo? Coelhos de verdade usam casaco?” (o que é de verdade e o que é de história).
+      Mostre as folhas secas no chão e a madeira da porteira: Beatrix Potter pintava a partir de coelhos, jardins e plantas que via de verdade.
+      {credito("Ilustração: Beatrix Potter, <i>Histoire de Pierre Lapin</i> (Londres e Nova York: Frederick Warne, 1921), edição francesa de <i>The Tale of Peter Rabbit</i> (1902). Domínio público. Digitalização: Internet Archive.")}
+    </div>"""
+    return pagina(c, num="(Vol. 2 · Unidade 5)", cab=CAB2 + " &nbsp;—&nbsp; Unidade 5", aba="--d-historias")
 
 
 # ------------------------------------------------------------------ montagem
 
 def montar(tela=False):
     paginas = [capa(), guia(), historia1(), historia2(), tracado(), flash_frente(), flash_verso(),
-               memoria(), memoria_verso(), musica(), modelo_cena()]
+               memoria(), memoria_verso(), musica(), cachinhos(), coelho_pedro()]
     html = f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
     <title>O Grande Tesouro de Marina — Amostra editorial</title>
     <link rel="stylesheet" href="estilo.css"></head>
