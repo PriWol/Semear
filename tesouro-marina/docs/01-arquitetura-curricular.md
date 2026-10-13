@@ -72,7 +72,7 @@ Os volumes 4 a 8 têm unidades marcadas por nível, para que partes deles sejam 
 
 | Vol. | Título | Págs. | Unidades | Eixo literário | Fio interdisciplinar |
 |---|---|---|---|---|---|
-| 1 | O mundo ao meu redor | 72 | 7 + abertura e encerramento | História original *A cesta do pomar*; Stevenson, *A Child's Garden of Verses* (trad. da coleção); cantigas tradicionais | sentidos, casa, jardim, animais, céu, água, estações |
+| 1 | O mundo ao meu redor | 73 (produzido) | 7 + abertura e encerramento | História original *A cesta do pomar*; Stevenson, *A Child's Garden of Verses* (trad. da coleção); cantigas tradicionais | sentidos, casa, jardim, animais, céu, água, estações |
 | 2 | Histórias, memória e imaginação | 72 | 8 | Contos clássicos e fábulas (ver §6) | sequência, personagem, cenário, memória, reconto |
 | 3 | Números, formas e raciocínio | 64 | 8 | *Cachinhos Dourados* (pequeno/médio/grande), *Os Três Porquinhos* (3 e materiais), contos numéricos | quantidade até 10, formas, padrões, medidas informais, espaço |
 | 4 | O mundo da música | 60 | 8 | *Os Músicos de Bremen*; *Pedro e o Lobo* (Prokofiev, 1936) | pulso, ritmo, timbre, contraste, compositores |
@@ -93,7 +93,7 @@ Os volumes 4 a 8 têm unidades marcadas por nível, para que partes deles sejam 
 
 ---
 
-## 5. Volume 1 — O mundo ao meu redor (72 páginas)
+## 5. Volume 1 — O mundo ao meu redor (73 páginas — produzido, ver `volume1/`)
 
 **Ideia central:** o mundo é cheio de coisas que têm nome, cheiro, cor, som e lugar, e é bom olhar para elas com atenção.
 **Domínios em destaque:** linguagem oral, sentidos e observação, natureza, primeiras quantidades (1, 2, 3), vida prática.
@@ -106,16 +106,18 @@ Os volumes 4 a 8 têm unidades marcadas por nível, para que partes deles sejam 
 
 | # | Unidade | Págs. | Literatura e oralidade | Música e arte | Matemática e raciocínio | Línguas (≤ 3 palavras/semana) | Vida prática |
 |---|---|---|---|---|---|---|---|
-| — | **Abertura**: capa, folha de rosto, carta à família, como usar, sumário, "este livro é da Marina" | 6 | — | — | — | — | cuidar do livro |
+| — | **Abertura**: capa, folha de rosto ("este livro é da Marina"), carta à família, como usar, sumário | 5 | — | — | — | — | cuidar do livro |
 | 1 | **Eu e meus sentidos** | 8 | Stevenson, "Bed in Summer" e "Rain" (trad. da coleção); parlenda "Cadê o toucinho que estava aqui?" | Saint-Saëns, *Aquário* (escuta calma); retratos de crianças de Mary Cassatt | "Qual faz barulho?": pares de sons; quente/frio | *eyes, nose* · *les yeux, le nez* | lavar as mãos com sequência ilustrada |
 | 2 | **Minha casa e meus objetos** | 8 | História original *Cada coisa no seu lugar*; cantiga "Pirulito que bate bate" | Vermeer, *A leiteira* (observar luz e objetos) | parear objetos e lugares; um para cada (pratos e colheres) | *cup, spoon* · *la tasse, la cuillère* | pôr a mesa; guardar brinquedos em cestos |
-| 3 | **O jardim e o pomar** (amostra) | 10 | *A cesta do pomar* (original); cantiga "Alecrim dourado" | Vivaldi, *A Primavera* (1º mov.); Dürer, *O grande tufo de relva* | quantidades até 3; separar por cor; ordenar como na história | *apple · la pomme · mālum* | lavar e descascar fruta; levar a cesta |
-| 4 | **Os animais da fazenda e do bosque** | 10 | Esopo, *O Leão e o Rato* (adaptação da coleção); cantiga "O sapo não lava o pé"; sons dos animais | Saint-Saëns, *Galinhas e galos*; Dürer, *A lebre jovem* | mãe e filhote (parear); grande e pequeno | *cat, dog* · *le chat, le chien* | dar água a um animal / ao jardim |
+| 3 | **O jardim e o pomar** | 11 | *A cesta do pomar* (original); cantiga "Alecrim dourado" | Vivaldi, *A Primavera* (1º mov.); Greenaway, girassóis | quantidades até 3; separar por cor; ordenar como na história | *apple · la pomme · mālum* | lavar e descascar fruta; levar a cesta |
+| 4 | **Os animais da fazenda e do bosque** | 10 | *Quem acordou primeiro?* (original, cumulativa, com sons); cantiga "O sapo não lava o pé" | Saint-Saëns, *Galinhas e galos*; Caldecott e Potter | grande e pequeno; encontrar e contar | *cat, dog* · *le chat, le chien* | dar água a um animal / ao jardim |
 | 5 | **O céu: sol, lua, nuvens e chuva** | 8 | Stevenson, "The Moon" (trad.); parlenda "Sol e chuva, casamento de viúva" | Debussy, *Clair de lune*; Monet, *Impressão, nascer do sol* | dia e noite (sequência); muitos e poucos (gotas) | *sun, moon* · *le soleil, la lune* | rotina da noite com cartões |
 | 6 | **Água, lago e patos** (prepara *O Patinho Feio* do Vol. 2) | 8 | Andersen, *O Patinho Feio*, só o início, em versão curta; cantiga "A canoa virou" | Tchaikovsky, *O Lago dos Cisnes* (tema, 1ª escuta); Monet, *Nenúfares* | flutua ou afunda (experiência na bacia); cheio e vazio | *duck, water* · *le canard, l'eau* | encher e esvaziar jarras (transferência) |
 | 7 | **As estações** | 8 | Mito grego adaptado, *Perséfone e as estações* (versão muito curta); poema da coleção | Vivaldi, *O Inverno* (Largo); Van Gogh, *Amendoeira em flor* | ordenar 4 cartões de estação; o que usamos em cada uma | *spring, winter* · *le printemps, l'hiver* | escolher roupa para o tempo |
 | — | **Encerramento**: "Meu livro do mundo" (álbum para colar fotos e desenhos), diário de observação do volume, convite para o Volume 2 | 6 | — | — | — | — | — |
-| | **Total** | **72** | | | | | |
+| | **Total** | **73** | | | | | |
+
+**Ajustes feitos na produção:** a Unidade 1 ganhou a *caixa de sons* (9 págs.); a Unidade 3 tem 11 págs.; *O Leão e o Rato* passou para o Volume 2 (Unidade 6), porque não há ilustração antiga adequada para a idade (a prancha de Crane encontrada mostra outra fábula); as obras de Dürer, Vermeer, Monet e Van Gogh aguardam acesso à Wikimedia e foram substituídas, neste volume, por ilustradores em domínio público (Greenaway, Caldecott, Potter), que também são arte a ser apreciada.
 
 ### Unidade 3 em detalhe (a mesma estrutura vale para todas)
 

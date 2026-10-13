@@ -13,9 +13,19 @@ Currículo clássico ilustrado para a infância: 8 volumes, 544 páginas planeja
 | `editorial/dominio_publico/` | ilustrações de domínio público usadas e seus créditos |
 | `amostra/inspecao/` | cada página renderizada a partir do PDF, usada na inspeção visual |
 
+## Volume 1 — O mundo ao meu redor (73 páginas)
+| Arquivo | O que é |
+|---|---|
+| `volume1/volume1-impressao.pdf` | fundo branco, para imprimir em papel creme ou marfim |
+| `volume1/volume1-tela.pdf` | fundo creme, para ver na tela |
+| `volume1/inspecao/` | as 73 páginas renderizadas a partir do PDF, usadas na revisão visual |
+| `editorial/volume1.py` | todo o conteúdo do volume (textos, guias, atividades) |
+| `editorial/fontes_v1.py` | ilustrações de domínio público: origem, recorte e crédito |
+
 ## Gerar de novo
 ```
 pip install numpy scipy pillow matplotlib
-cd editorial && python3 build_amostra.py
+cd editorial && python3 build_amostra.py   # amostra
+cd editorial && python3 volume1.py         # Volume 1 (baixa do Internet Archive as páginas que faltarem)
 ```
 Requer Node com Playwright (Chromium) e `pdftoppm` (poppler).
