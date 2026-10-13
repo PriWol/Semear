@@ -1,3 +1,4 @@
+import { dataBR } from '../domain/datas';
 import type { EstadoMarco } from '../domain/tipos';
 
 export const NOME_ESTADO: Record<EstadoMarco, string> = {
@@ -12,10 +13,8 @@ export const ICONE_ESTADO: Record<EstadoMarco, string> = {
   consolidado: '✅',
 };
 
-export function dataCurta(iso: string): string {
-  const [a, m, d] = iso.slice(0, 10).split('-');
-  return `${d}/${m}/${a}`;
-}
+/** DD/MM/AAAA no fuso do aparelho. */
+export const dataCurta = dataBR;
 
 export function anos(idade: number): string {
   const n = Math.floor(idade);

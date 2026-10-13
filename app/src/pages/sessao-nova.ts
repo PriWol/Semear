@@ -5,10 +5,12 @@ import { idadeEmAnos } from '../domain/datas';
 import { IDIOMAS, type Sessao } from '../domain/tipos';
 import { idPista, pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import {
+  atividadesRecentes,
   candidatas,
   DURACOES,
   gerarCodigoSessao,
   proporSessao,
+  proximaAlternativa,
   sugerirLivro,
   type Escolha,
   type PropostaSessao,
@@ -39,7 +41,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
   let foco: string[] | 'equilibrado' = 'equilibrado';
   let proposta: PropostaSessao | null = null;
 
-  const recentes = new Set(historico.flatMap((s) => s.atividadeIds));
+  const recentes = atividadesRecentes(historico, crianca.id, agora);
   const alternativas = (e: Escolha): Escolha[] => {
     const pista = pistasComAtivos.find((x) => idPista(x.p) === e.pista);
     if (!pista) return [];
@@ -199,6 +201,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
       <div id="area-proposta"></div>`,
     montar(raiz) {
       const areaProposta = raiz.querySelector<HTMLElement>('#area-proposta')!;
+      let gerando = false;
       const mostrarProposta = () => {
         areaProposta.innerHTML = proposta ? vistaProposta(proposta).valor : '';
       };
@@ -208,6 +211,14 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
         ?.addEventListener('change', (ev) => {
           ctx.ir(`/sessao/nova?crianca=${(ev.target as HTMLSelectElement).value}`);
         });
+
+      // Marcar uma linha já escolhe o modo "Escolher linhas" (senão a escolha seria ignorada).
+      raiz.querySelectorAll<HTMLInputElement>('input[name=foco]').forEach((caixa) =>
+        caixa.addEventListener('change', () => {
+          const escolher = raiz.querySelector<HTMLInputElement>('input[name=modo][value=escolher]');
+          if (caixa.checked && escolher) escolher.checked = true;
+        }),
+      );
 
       raiz.querySelector<HTMLFormElement>('#form-sessao')?.addEventListener('submit', (ev) => {
         ev.preventDefault();
@@ -238,18 +249,22 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
         } else if (alvo.dataset.acao === 'trocar') {
           const atual = escolhas[i];
           if (!atual) return;
-          const livres = alternativas(atual).filter(
-            (a) => !escolhas.some((x) => x.atividade.id === a.atividade.id),
-          );
-          if (livres[0]) escolhas[i] = livres[0];
+          const ocupadas = new Set(escolhas.map((x) => x.atividade.id));
+          const proxima = proximaAlternativa(alternativas(atual), atual.atividade.id, ocupadas);
+          if (proxima) escolhas[i] = proxima;
         } else if (alvo.dataset.acao === 'gerar') {
+          // Evita duas sessões com o mesmo código num clique duplo.
+          if (gerando) return;
+          gerando = true;
+          (alvo as HTMLButtonElement).disabled = true;
+          const criadaEm = ctx.agora(); // a hora do clique, não a de quando a tela abriu
           const existentes = (await ctx.repo.sessoes()).map((s) => s.codigo);
           const sessao: Sessao = {
             id: novoId(),
-            codigo: gerarCodigoSessao(crianca.nome, new Date(agora), existentes),
+            codigo: gerarCodigoSessao(crianca.nome, new Date(criadaEm), existentes),
             criancaId: crianca.id,
-            criadaEm: agora,
-            duracaoMin: duracao,
+            criadaEm,
+            duracaoMin: proposta.minutos, // a duração real das atividades escolhidas
             foco,
             atividadeIds: proposta.escolhas.map((e) => e.atividade.id),
             livroId: proposta.livro?.id ?? null,

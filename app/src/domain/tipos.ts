@@ -1,4 +1,4 @@
-// Tipos do domínio do Semear. Ver docs/GLOSSARIO.md para o significado de cada termo.
+// Tipos do domínio do Semear. O glossário (docs/GUIA_APRENDIZADO.md, §6) explica cada termo.
 
 export const VERTENTES = [
   'Montessori',

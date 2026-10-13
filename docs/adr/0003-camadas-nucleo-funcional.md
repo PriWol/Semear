@@ -12,7 +12,9 @@ Padrão "núcleo funcional, casca imperativa":
 - `src/domain/`: funções **puras** (mesma entrada → mesma saída, sem efeitos colaterais).
   Recebem a data atual e os dados por parâmetro.
 - Casca: `src/dados/` (banco), `src/pacote/` (gera HTML), `src/pages/` e `src/ui/` (telas) chamam o domínio.
-- O ESLint impede o domínio de importar a casca ou usar `window`/`document`/`indexedDB`.
+  O `src/pacote/` também usa o helper de escape `src/ui/html.ts`, para que todo HTML gerado passe pela mesma proteção.
+- O ESLint impede o domínio de importar a casca ou usar APIs do navegador (`window`, `document`,
+  `location`, `navigator`, `fetch`, `indexedDB`…).
 
 ## Consequências
 - A maior parte dos testes é unitária e roda em milissegundos.

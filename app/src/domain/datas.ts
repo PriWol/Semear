@@ -24,3 +24,16 @@ export function idadeInteira(nascimento: string, hoje: Date): number {
 export function diasEntre(isoA: string, isoB: string): number {
   return Math.abs(new Date(isoB).getTime() - new Date(isoA).getTime()) / 86_400_000;
 }
+
+/** Data local do aparelho em AAAA-MM-DD (ex.: para o campo de data e o "hoje"). */
+export function dataLocalISO(data: Date): string {
+  const mm = String(data.getMonth() + 1).padStart(2, '0');
+  const dd = String(data.getDate()).padStart(2, '0');
+  return `${data.getFullYear()}-${mm}-${dd}`;
+}
+
+/** DD/MM/AAAA no fuso do aparelho. Uma sessão criada às 22h é do dia local, não do dia em UTC. */
+export function dataBR(iso: string): string {
+  const [a, m, d] = dataLocalISO(new Date(iso)).split('-');
+  return `${d}/${m}/${a}`;
+}

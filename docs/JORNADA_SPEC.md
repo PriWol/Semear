@@ -70,6 +70,11 @@
 | 48 | Irmãos na v1 | **Vários perfis**, sessões individuais. Sessão conjunta numa versão seguinte. |
 | 49 | Backup | **Exportar/importar arquivo + lembrete após 30 dias** sem backup + pedido de armazenamento persistente. |
 
+> **O que a v1 do app ainda não implementa** (fica para versões seguintes; registrado após a revisão do PR #1):
+> selo "🌱 parece pronto" (§5.2); sondagem impressa e ressondagem (§5.4–5.5); no gerador de sessão (§5.6),
+> o ponto de "materiais disponíveis", a alternância sentada/movimento e a sessão conjunta de irmãos;
+> e o lançamento da ficha de registro no app (§5.7). O avanço continua manual, marco a marco, na tela da jornada.
+
 ---
 
 ## 3. O mapa: domínios e linhas
@@ -270,12 +275,13 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 ### 5.1 Posição numa linha
 - **Fronteira** = o primeiro marco da linha (na ordem) que **não** está *Consolidado*.
 - **Marcos ativos** = a fronteira, mais o marco seguinte **se** a fronteira já estiver *Em desenvolvimento* (no máximo 2 por linha).
-- Marcos com pré-requisito de outra linha ainda não consolidado aparecem como **"aguardando"** e não são sugeridos, mas o pai pode forçá-los.
+- Marcos com pré-requisito de outra linha ainda não consolidado aparecem como **"aguardando"** e não são sugeridos, mas o pai pode forçá-los marcando-os como *Em desenvolvimento*. Pré-requisitos da mesma linha não geram "aguardando": a ordem da linha já garante a sequência. Em Línguas, o pré-requisito é lido no mesmo idioma.
 
 ### 5.2 Avanço (manual)
 - Só o pai muda um marco para *Consolidado*, seja na ficha de registro ou no mapa.
 - O app mostra um selo **"🌱 parece pronto"** quando o marco teve *Consolidado* registrado em 2 sessões diferentes. É só uma dica.
 - O pai também pode marcar um marco como *Consolidado* direto no mapa, por exemplo algo que a criança aprendeu sozinha.
+- **"Está aqui"** (posicionamento rápido): os marcos anteriores viram *Consolidado*, o escolhido fica *Em desenvolvimento* e os posteriores que tinham registro voltam a *Não observado*.
 
 ### 5.3 Ritmo da vertente
 - Se `idadeIntroducao[vertentePrincipal]` for maior que a idade da criança, o marco aparece com um aviso: *"Na pedagogia Waldorf, este marco costuma ser introduzido por volta dos 7 anos."* O app não bloqueia nada.

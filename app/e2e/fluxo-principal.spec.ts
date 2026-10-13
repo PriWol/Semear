@@ -54,6 +54,8 @@ test('primeiro acesso até baixar o pacote da sessão', async ({ page }) => {
 
   // Página da sessão: prévia e download
   await expect(page.getByRole('heading', { name: /Sessão S-/ })).toBeVisible();
+  // A prévia é isolada: roda com scripts, mas sem a origem do app (não acessa os dados da família)
+  await expect(page.locator('#previa')).toHaveAttribute('sandbox', 'allow-scripts allow-modals');
   const previa = page.frameLocator('#previa');
   await expect(previa.getByText('Ligue as figuras que começam igual')).toBeVisible();
   await expect(previa.locator('body')).toHaveClass(/letra-cursiva/); // Montessori começa na cursiva

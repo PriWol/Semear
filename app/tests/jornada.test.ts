@@ -93,6 +93,29 @@ describe('posição na linha (§5.1)', () => {
     expect(liberado.ativos).toEqual(['LG.FON.03']);
   });
 
+  it('pré-requisito na mesma linha não bloqueia o segundo ativo (a ordem já garante a sequência)', () => {
+    const e = estados({
+      'LG.FON.01': 'consolidado',
+      'LG.FON.02': 'consolidado',
+      'LG.FON.03': 'em-desenvolvimento',
+      'MA.SEN.01': 'consolidado',
+    });
+    const pos = posicaoDaLinha(idx, fon, e, 5, 'Montessori');
+    expect(pos.ativos).toEqual(['LG.FON.03', 'LG.FON.04']);
+    expect(pos.marcos[3]!.aguardando).toEqual([]);
+  });
+
+  it('o pai pode forçar um marco aguardando marcando-o em desenvolvimento (§5.1)', () => {
+    const e = estados({
+      'LG.FON.01': 'consolidado',
+      'LG.FON.02': 'consolidado',
+      'LG.FON.03': 'em-desenvolvimento',
+    });
+    const pos = posicaoDaLinha(idx, fon, e, 5, 'Montessori');
+    expect(pos.marcos[2]!.aguardando).toEqual(['MA.SEN.01']);
+    expect(pos.ativos[0]).toBe('LG.FON.03');
+  });
+
   it('o marco seguinte com pré-requisito pendente não entra como segundo ativo', () => {
     const e = estados({ 'LG.FON.01': 'consolidado', 'LG.FON.02': 'em-desenvolvimento' });
     expect(posicaoDaLinha(idx, fon, e, 5, 'Montessori').ativos).toEqual(['LG.FON.02']);
@@ -117,6 +140,13 @@ describe('posição na linha (§5.1)', () => {
     expect(posicaoDaLinha(idx, fon, {}, 5, 'Montessori').marcos[2]!.avisoRitmo).toBeNull();
   });
 
+  it('em Línguas, o pré-requisito é lido no mesmo idioma', () => {
+    const voc = idx.linha('LI.VOC')!;
+    const e = estados({ [chaveMarco('LI.VOC.01', 'en')]: 'em-desenvolvimento' });
+    const pos = posicaoDaLinha(idx, { linha: voc, idioma: 'en' }, e, 5, 'Montessori');
+    expect(pos.ativos).toEqual(['LI.VOC.01', 'LI.VOC.02']);
+  });
+
   it('no domínio de Línguas o estado é separado por idioma', () => {
     const voc = idx.linha('LI.VOC')!;
     const e = estados({ [chaveMarco('LI.VOC.01', 'en')]: 'consolidado' });
@@ -131,7 +161,7 @@ describe('posição na linha (§5.1)', () => {
 
 describe('posicionar aqui', () => {
   it('consolida os anteriores e deixa o escolhido em desenvolvimento', () => {
-    const mudancas = posicionarAqui(idx, fon, 'LG.FON.03', AGORA);
+    const mudancas = posicionarAqui(idx, fon, 'LG.FON.03', {}, AGORA);
     expect(Object.fromEntries(Object.entries(mudancas).map(([k, v]) => [k, v.estado]))).toEqual({
       'LG.FON.01': 'consolidado',
       'LG.FON.02': 'consolidado',
@@ -144,12 +174,27 @@ describe('posicionar aqui', () => {
       idx,
       { linha: idx.linha('LI.VOC')!, idioma: 'en' },
       'LI.VOC.02',
+      {},
       AGORA,
     );
     expect(Object.keys(mudancas)).toEqual(['LI.VOC.01@en', 'LI.VOC.02@en']);
   });
   it('recusa marco de outra linha', () => {
-    expect(() => posicionarAqui(idx, fon, 'MA.SEN.01', AGORA)).toThrow(/não pertence/);
+    expect(() => posicionarAqui(idx, fon, 'MA.SEN.01', {}, AGORA)).toThrow(/não pertence/);
+  });
+  it('voltar para um marco anterior limpa os posteriores que tinham registro', () => {
+    const antes = estados({
+      'LG.FON.01': 'consolidado',
+      'LG.FON.02': 'consolidado',
+      'LG.FON.03': 'consolidado',
+      'LG.FON.04': 'em-desenvolvimento',
+    });
+    const mudancas = posicionarAqui(idx, fon, 'LG.FON.02', antes, AGORA);
+    expect(mudancas['LG.FON.02']!.estado).toBe('em-desenvolvimento');
+    expect(mudancas['LG.FON.03']!.estado).toBe('nao-observado');
+    expect(mudancas['LG.FON.04']!.estado).toBe('nao-observado');
+    const pos = posicaoDaLinha(idx, fon, { ...antes, ...mudancas }, 5, 'Montessori');
+    expect(pos.fronteira).toBe('LG.FON.02');
   });
 });
 

@@ -157,7 +157,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
           if (!pista || !marcoId) return;
           await ctx.repo.atualizarEstados(
             crianca.id,
-            posicionarAqui(ctx.idx, pista, marcoId, agora),
+            posicionarAqui(ctx.idx, pista, marcoId, estados, agora),
           );
           ctx.avisar('Posição atualizada.');
         }

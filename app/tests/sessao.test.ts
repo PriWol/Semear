@@ -1,9 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import {
+  atividadesRecentes,
   gerarCodigoSessao,
   pontuar,
   proporSessao,
+  proximaAlternativa,
   sugerirLivro,
+  type Escolha,
   type PedidoSessao,
 } from '../src/domain/sessao';
 import type { EstadosCrianca, Sessao } from '../src/domain/tipos';
@@ -133,5 +136,38 @@ describe('código da sessão', () => {
   });
   it('não quebra com nome sem letras', () => {
     expect(gerarCodigoSessao('123', data, [])).toBe('S-1014-X1');
+  });
+});
+
+describe('proximaAlternativa (botão Trocar)', () => {
+  const e = (id: string) =>
+    ({
+      atividade: atividade(id, ['LG.FON.01']),
+      pista: 'LG.FON',
+      pontos: 0,
+      motivos: [],
+    }) as Escolha;
+  const candidatas = [e('a'), e('b'), e('c')];
+  it('percorre todas as candidatas em ciclo', () => {
+    expect(proximaAlternativa(candidatas, 'a', new Set())?.atividade.id).toBe('b');
+    expect(proximaAlternativa(candidatas, 'b', new Set())?.atividade.id).toBe('c');
+    expect(proximaAlternativa(candidatas, 'c', new Set())?.atividade.id).toBe('a');
+  });
+  it('pula atividades já escolhidas em outra posição da sessão', () => {
+    expect(proximaAlternativa(candidatas, 'a', new Set(['b']))?.atividade.id).toBe('c');
+  });
+  it('sem outra opção, devolve null', () => {
+    expect(proximaAlternativa([e('a')], 'a', new Set())).toBeNull();
+  });
+});
+
+describe('atividadesRecentes', () => {
+  it('considera só as sessões da criança nas últimas 2 semanas', () => {
+    const historico = [
+      sessao(['nova'], '2026-10-10T10:00:00.000Z'),
+      sessao(['velha'], '2026-09-01T10:00:00.000Z'),
+      { ...sessao(['outra-crianca'], AGORA), criancaId: 'c2' },
+    ];
+    expect([...atividadesRecentes(historico, 'c1', AGORA)]).toEqual(['nova']);
   });
 });

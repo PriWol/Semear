@@ -44,7 +44,12 @@ export interface PropostaSessao {
   avisos: string[];
 }
 
-function usadasRecentemente(historico: Sessao[], criancaId: string, agora: string): Set<string> {
+/** Atividades feitas pela criança nas últimas 2 semanas (usadas na pontuação "novidade"). */
+export function atividadesRecentes(
+  historico: Sessao[],
+  criancaId: string,
+  agora: string,
+): Set<string> {
   return new Set(
     historico
       .filter((s) => s.criancaId === criancaId && diasEntre(s.criadaEm, agora) <= JANELA_DIAS)
@@ -125,7 +130,7 @@ export function candidatas(
 
 export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): PropostaSessao {
   const { familia, crianca, idade, estados, historico, duracaoMin, foco, agora } = pedido;
-  const recentes = usadasRecentemente(historico, crianca.id, agora);
+  const recentes = atividadesRecentes(historico, crianca.id, agora);
   const todas = pistasDaCrianca(idx, familia, crianca);
 
   // 1. Pistas candidatas: o foco do pai, ou as menos trabalhadas nas últimas 2 semanas.
@@ -190,6 +195,26 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
     avisos.push('Escolha pelo menos uma linha de foco.');
 
   return { escolhas, lacunas, livro: sugerirLivro(idx, escolhas, familia, idade), minutos, avisos };
+}
+
+/**
+ * Próxima atividade para o botão "Trocar": percorre as candidatas da pista em ciclo, a partir da atual,
+ * pulando as que já estão em outra posição da sessão. Devolve null se não houver outra opção.
+ */
+export function proximaAlternativa(
+  candidatasDaPista: Escolha[],
+  atualId: string,
+  ocupadas: Set<string>,
+): Escolha | null {
+  const lista = candidatasDaPista.filter(
+    (c) => c.atividade.id === atualId || !ocupadas.has(c.atividade.id),
+  );
+  const i = lista.findIndex((c) => c.atividade.id === atualId);
+  for (let passo = 1; passo < lista.length; passo++) {
+    const c = lista[(i + passo) % lista.length];
+    if (c && c.atividade.id !== atualId) return c;
+  }
+  return null;
 }
 
 /** Livro da curadoria ligado aos marcos da sessão (§5.6, passo 6). */

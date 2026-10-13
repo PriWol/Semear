@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { diasEntre, idadeEmAnos, idadeInteira } from '../src/domain/datas';
-import { letraDaCrianca, letraPadrao } from '../src/domain/letra';
+import { dataBR, dataLocalISO, diasEntre, idadeEmAnos, idadeInteira } from '../src/domain/datas';
+import { ehLetra, letraDaCrianca, letraPadrao } from '../src/domain/letra';
 
 describe('idadeEmAnos', () => {
   const hoje = new Date(2026, 9, 14);
@@ -15,6 +15,17 @@ describe('idadeEmAnos', () => {
   });
   it('rejeita data inválida', () => {
     expect(() => idadeEmAnos('15/03/2021', hoje)).toThrow(/inválida/);
+  });
+});
+
+describe('datas no fuso do aparelho', () => {
+  // Uma sessão criada às 22h do dia 13 (horário local) é do dia 13, mesmo que em UTC já seja dia 14.
+  const noiteDo13 = new Date(2026, 9, 13, 22, 30);
+  it('dataBR formata no dia local', () => {
+    expect(dataBR(noiteDo13.toISOString())).toBe('13/10/2026');
+  });
+  it('dataLocalISO devolve AAAA-MM-DD local', () => {
+    expect(dataLocalISO(noiteDo13)).toBe('2026-10-13');
   });
 });
 
@@ -35,6 +46,13 @@ describe('letra padrão (§5.8)', () => {
   it('Montessori e Waldorf começam na cursiva', () => {
     expect(letraPadrao(3, { vertentePrincipal: 'Montessori' })).toBe('cursiva');
     expect(letraPadrao(3, { vertentePrincipal: 'Waldorf' })).toBe('cursiva');
+  });
+  it('valor desconhecido (ex.: backup adulterado) cai no padrão', () => {
+    expect(ehLetra('cursiva')).toBe(true);
+    expect(ehLetra('"><img>')).toBe(false);
+    expect(
+      letraDaCrianca({ letra: '"><img>' as never }, 7, { vertentePrincipal: 'Clássico' }),
+    ).toBe('cursiva');
   });
   it('a escolha do pai prevalece sobre o padrão', () => {
     expect(letraDaCrianca({ letra: 'bastao' }, 7, { vertentePrincipal: 'Waldorf' })).toBe('bastao');

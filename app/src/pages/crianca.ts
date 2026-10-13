@@ -1,8 +1,9 @@
 import type { FabricaPagina } from '../ui/app';
 import { lerFormulario, lista, novoId } from '../ui/app';
 import { html } from '../ui/html';
-import { IDIOMAS, LETRAS, type Crianca, type Idioma, type Letra } from '../domain/tipos';
-import { idadeEmAnos } from '../domain/datas';
+import { IDIOMAS, LETRAS, type Crianca, type Idioma } from '../domain/tipos';
+import { dataLocalISO, idadeEmAnos } from '../domain/datas';
+import { ehLetra } from '../domain/letra';
 import { letraPadrao, NOME_LETRA } from '../domain/letra';
 
 export const paginaCrianca: FabricaPagina = async (ctx, params) => {
@@ -22,16 +23,24 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
     letra: null,
     trilhas: [],
   };
-  const hoje = ctx.agora().slice(0, 10);
+  const agora = new Date(ctx.agora());
+  const hoje = dataLocalISO(agora); // dia do aparelho, não o de UTC
   const letraAuto = c.nascimento
-    ? NOME_LETRA[letraPadrao(idadeEmAnos(c.nascimento, new Date(hoje)), familia)]
+    ? NOME_LETRA[letraPadrao(idadeEmAnos(c.nascimento, agora), familia)]
     : null;
+  // Línguas que a criança já tem, mesmo que a família tenha desmarcado depois: não somem sem aviso.
+  const idiomasOferecidos = [
+    ...familia.idiomasEducador,
+    ...c.trilhas.filter((i) => !familia.idiomasEducador.includes(i)),
+  ];
 
   return {
     titulo: existente ? c.nome : 'Nova criança',
     conteudo: html` <h1>${existente ? `Editar ${c.nome}` : 'Adicionar criança'}</h1>
       <form class="cartao formulario" id="form-crianca">
-        <label>Nome <input name="nome" required maxlength="40" value="${c.nome}" /></label>
+        <label
+          >Nome <input name="nome" required maxlength="40" pattern=".*\\S.*" value="${c.nome}"
+        /></label>
         <label>
           Data de nascimento
           <input name="nascimento" type="date" required max="${hoje}" value="${c.nascimento}" />
@@ -50,11 +59,11 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
         <fieldset>
           <legend>Línguas estrangeiras</legend>
           ${
-            familia.idiomasEducador.length
+            idiomasOferecidos.length
               ? html`<p class="nota">
                     Recomendamos no máximo 2 ao mesmo tempo. Latim a partir dos 6 anos.
                   </p>
-                  ${familia.idiomasEducador.map(
+                  ${idiomasOferecidos.map(
                     (i) =>
                       html`<label class="opcao">
                         <input
@@ -63,7 +72,13 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
                           value="${i}"
                           ${c.trilhas.includes(i) ? 'checked' : ''}
                         />
-                        <span>${IDIOMAS[i]}</span>
+                        <span
+                          >${IDIOMAS[i]}${
+                            familia.idiomasEducador.includes(i)
+                              ? ''
+                              : html` <span class="nota">(não está mais marcada na família)</span>`
+                          }</span
+                        >
                       </label>`,
                   )}`
               : html`<p class="nota">Nenhuma língua marcada na <a href="#/familia">família</a>.</p>`
@@ -80,11 +95,13 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
         ?.addEventListener('submit', async (ev) => {
           ev.preventDefault();
           const d = lerFormulario(ev.currentTarget as HTMLFormElement);
+          const nome = String(d.nome ?? '').trim();
+          if (!nome) return;
           const nova: Crianca = {
             ...c,
-            nome: String(d.nome ?? '').trim(),
+            nome,
             nascimento: String(d.nascimento ?? ''),
-            letra: d.letra ? (d.letra as Letra) : null,
+            letra: ehLetra(d.letra) ? d.letra : null,
             trilhas: lista(d.trilhas) as Idioma[],
           };
           await ctx.repo.salvarCrianca(nova);

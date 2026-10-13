@@ -78,12 +78,12 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
       marco('LG.FON.01', 1),
       marco('LG.FON.02', 2),
       marco('LG.FON.03', 3, { preRequisitos: ['MA.SEN.01'], idadeIntroducao: { Waldorf: 7 } }),
-      marco('LG.FON.04', 4),
+      marco('LG.FON.04', 4, { preRequisitos: ['LG.FON.03'] }), // pré-requisito na mesma linha
       marco('LG.MEM.01', 1),
       marco('MA.SEN.01', 1),
       marco('MA.SEN.02', 2),
       marco('LI.VOC.01', 1),
-      marco('LI.VOC.02', 2),
+      marco('LI.VOC.02', 2, { preRequisitos: ['LI.VOC.01'] }),
     ],
     atividades: [
       atividade('atv-fon-1', ['LG.FON.01']),

@@ -9,20 +9,34 @@ export default tseslint.config(
   {
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
     rules: {
-      // A camada de domínio não pode depender da interface nem do armazenamento (ver docs/ARQUITETURA.md).
-      'no-restricted-imports': 'off',
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       eqeqeq: ['error', 'always'],
     },
   },
   {
+    // A camada de domínio é pura: não depende da interface, do armazenamento nem do navegador (ADR 0003).
     files: ['src/domain/**/*.ts'],
     rules: {
       'no-restricted-imports': [
         'error',
         { patterns: ['../ui/*', '../pages/*', '../dados/*', '../pacote/*'] },
       ],
-      'no-restricted-globals': ['error', 'window', 'document', 'localStorage', 'indexedDB'],
+      'no-restricted-globals': [
+        'error',
+        ...[
+          'window',
+          'document',
+          'localStorage',
+          'sessionStorage',
+          'indexedDB',
+          'location',
+          'navigator',
+          'fetch',
+          'XMLHttpRequest',
+          'self',
+          'globalThis',
+        ],
+      ],
     },
   },
 );

@@ -10,7 +10,7 @@ import type {
   Marco,
   RegistroMarco,
 } from './tipos';
-import type { IndiceConteudo } from './conteudo';
+import { linhaDoMarco, type IndiceConteudo } from './conteudo';
 
 /** Chave do estado de um marco: no domínio de Línguas, o mesmo marco existe por idioma. */
 export function chaveMarco(marcoId: string, idioma?: Idioma): string {
@@ -112,9 +112,13 @@ export function posicaoDaLinha(
   const marcos = marcosDaPista(idx, pista);
   const situacoes: SituacaoMarco[] = marcos.map((marco) => {
     const chave = chaveMarco(marco.id, pista.idioma);
-    const aguardando = marco.preRequisitos.filter(
-      (p) => idx.marco(p) && estadoDe(estados, p) !== 'consolidado',
-    );
+    // Pré-requisitos da mesma linha não contam: a ordem da linha já garante a sequência.
+    // Em Línguas, o pré-requisito de outra linha de Línguas é lido no mesmo idioma.
+    const aguardando = marco.preRequisitos.filter((p) => {
+      if (!idx.marco(p) || linhaDoMarco(p) === pista.linha.id) return false;
+      const mesmoIdioma = pista.idioma && idx.dominioDaLinha(linhaDoMarco(p))?.trilhas;
+      return estadoDe(estados, mesmoIdioma ? chaveMarco(p, pista.idioma) : p) !== 'consolidado';
+    });
     const intro = marco.idadeIntroducao[vertentePrincipal];
     return {
       marco,
@@ -127,17 +131,21 @@ export function posicaoDaLinha(
     };
   });
 
+  // O pai pode "forçar" um marco aguardando: marcá-lo em desenvolvimento o torna ativo (§5.1).
+  const podeSerAtivo = (s: SituacaoMarco) =>
+    s.aguardando.length === 0 || s.estado === 'em-desenvolvimento';
+
   const iFronteira = situacoes.findIndex((s) => s.estado !== 'consolidado');
   const ativos: string[] = [];
   if (iFronteira >= 0) {
     const f = situacoes[iFronteira]!;
     f.fronteira = true;
-    if (f.aguardando.length === 0) {
+    if (podeSerAtivo(f)) {
       f.ativo = true;
       ativos.push(f.marco.id);
       if (f.estado === 'em-desenvolvimento') {
         const prox = situacoes.slice(iFronteira + 1).find((s) => s.estado !== 'consolidado');
-        if (prox && prox.aguardando.length === 0) {
+        if (prox && podeSerAtivo(prox)) {
           prox.ativo = true;
           ativos.push(prox.marco.id);
         }
@@ -156,13 +164,15 @@ export function posicaoDaLinha(
 
 /**
  * "Posicionar aqui": o pai indica onde a criança está numa linha.
- * Todos os marcos anteriores viram consolidados e o escolhido fica em desenvolvimento.
+ * Os anteriores viram consolidados, o escolhido fica em desenvolvimento e os posteriores que tinham
+ * registro voltam a "não observado" (senão a tela e a sugestão de sessão discordariam).
  * Devolve só as mudanças, para o armazenamento gravar.
  */
 export function posicionarAqui(
   idx: IndiceConteudo,
   pista: Pick<Pista, 'linha' | 'idioma'>,
   marcoId: string,
+  estados: EstadosCrianca,
   agora: string,
 ): Record<string, RegistroMarco> {
   const marcos = marcosDaPista(idx, pista);
@@ -170,12 +180,13 @@ export function posicionarAqui(
   if (alvo < 0) throw new Error(`Marco ${marcoId} não pertence à linha ${pista.linha.id}`);
   const mudancas: Record<string, RegistroMarco> = {};
   marcos.forEach((m, i) => {
-    if (i > alvo) return;
-    mudancas[chaveMarco(m.id, pista.idioma)] = {
-      estado: i < alvo ? 'consolidado' : 'em-desenvolvimento',
-      atualizadoEm: agora,
-      origem: 'posicionamento',
-    };
+    const chave = chaveMarco(m.id, pista.idioma);
+    let estado: EstadoMarco;
+    if (i < alvo) estado = 'consolidado';
+    else if (i === alvo) estado = 'em-desenvolvimento';
+    else if (estadoDe(estados, chave) !== 'nao-observado') estado = 'nao-observado';
+    else return;
+    mudancas[chave] = { estado, atualizadoEm: agora, origem: 'posicionamento' };
   });
   return mudancas;
 }
