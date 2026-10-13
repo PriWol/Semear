@@ -1,0 +1,57 @@
+name: Revisão por agentes
+
+# Dois agentes revisam cada PR (ADR 0007). Requer o segredo CLAUDE_CODE_OAUTH_TOKEN
+# (gerado com `claude setup-token` ou pelo comando /install-github-app do Claude Code)
+# ou ANTHROPIC_API_KEY nas configurações do repositório.
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  id-token: write
+
+jobs:
+  revisor:
+    if: github.event.pull_request.draft == false
+    name: Revisor (${{ matrix.foco }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - foco: correcao
+            instrucoes: >-
+              Você é o revisor de CORREÇÃO. Procure bugs, divergências com docs/JORNADA_SPEC.md,
+              violações do CLAUDE.md (camadas, convenções, definição de pronto) e regras de negócio sem teste.
+              Para cada problema, aponte arquivo e linha, o cenário concreto que falha e a correção sugerida.
+          - foco: seguranca-privacidade
+            instrucoes: >-
+              Você é o revisor de SEGURANÇA E PRIVACIDADE. O app lida com dados de crianças, que devem
+              ficar no aparelho (CLAUDE.md, seção Privacidade). Procure: injeção de HTML/XSS (texto do
+              usuário ou do conteúdo sem escapar), dados enviados para fora do aparelho, dependências
+              novas suspeitas, segredos no código, permissões excessivas em workflows.
+              Para cada problema, aponte arquivo e linha, o risco concreto e a correção sugerida.
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            REPO: ${{ github.repository }}
+            PR: ${{ github.event.pull_request.number }}
+
+            ${{ matrix.instrucoes }}
+
+            Leia o CLAUDE.md antes de revisar. Revise apenas as mudanças deste PR.
+            Escreva em português. Publique os achados como comentários inline no PR e termine com
+            um comentário-resumo listando os achados por gravidade (bloqueante / importante / sugestão).
+            Se não houver problemas, diga isso em uma linha.
+          claude_args: >-
+            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Read,Grep,Glob"
