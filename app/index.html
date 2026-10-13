@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Semear: jornada de aprendizado e materiais para imprimir, para famílias educadoras."
+    />
+    <meta name="theme-color" content="#2d5016" />
+    <title>Semear</title>
+    <link rel="icon" href="./icone.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="#/">🌱 Semear</a>
+      <nav aria-label="Principal">
+        <a href="#/" data-rota="/">Início</a>
+        <a href="#/sessao/nova" data-rota="/sessao">Sessão</a>
+        <a href="#/config" data-rota="/config">Config.</a>
+      </nav>
+    </header>
+    <main id="app" class="conteudo-app"><p class="nota">Carregando…</p></main>
+    <div id="aviso" class="aviso-flutuante" role="status" aria-live="polite" hidden></div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
