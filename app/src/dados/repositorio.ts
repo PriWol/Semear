@@ -42,6 +42,10 @@ export interface Repositorio {
   salvarSessao(sessao: Sessao): Promise<void>;
   removerSessao(id: string): Promise<void>;
 
+  /** data do último backup exportado (para o lembrete mensal) */
+  ultimoBackup(): Promise<string | null>;
+  marcarBackup(agora: string): Promise<void>;
+
   exportar(agora: string): Promise<Backup>;
   /** substitui todos os dados pelos do backup */
   importar(backup: Backup): Promise<void>;
@@ -49,7 +53,7 @@ export interface Repositorio {
 }
 
 interface Esquema extends DBSchema {
-  config: { key: string; value: Familia };
+  config: { key: string; value: Familia | { em: string } };
   criancas: { key: string; value: Crianca };
   estados: { key: string; value: { criancaId: string; estados: EstadosCrianca } };
   historico: {
@@ -62,6 +66,10 @@ interface Esquema extends DBSchema {
 
 const LOJAS = ['config', 'criancas', 'estados', 'historico', 'sessoes'] as const;
 const CHAVE_FAMILIA = 'familia';
+const CHAVE_BACKUP = 'ultimoBackup';
+
+const lerFamilia = (v: Familia | { em: string } | undefined): Familia | null =>
+  v && 'educador' in v ? v : null;
 
 export async function abrirRepositorio(nomeBanco = 'semear'): Promise<Repositorio> {
   const db = await openDB<Esquema>(nomeBanco, 1, {
@@ -74,7 +82,9 @@ export async function abrirRepositorio(nomeBanco = 'semear'): Promise<Repositori
         banco
           .createObjectStore('historico', { autoIncrement: true })
           .createIndex('porCrianca', 'criancaId');
-        banco.createObjectStore('sessoes', { keyPath: 'id' }).createIndex('porCrianca', 'criancaId');
+        banco
+          .createObjectStore('sessoes', { keyPath: 'id' })
+          .createIndex('porCrianca', 'criancaId');
       }
     },
   });
@@ -87,7 +97,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
 
   return {
     async familia() {
-      return (await db.get('config', CHAVE_FAMILIA)) ?? null;
+      return lerFamilia(await db.get('config', CHAVE_FAMILIA));
     },
     async salvarFamilia(familia) {
       await db.put('config', familia, CHAVE_FAMILIA);
@@ -149,12 +159,20 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       await db.delete('sessoes', id);
     },
 
+    async ultimoBackup() {
+      const v = await db.get('config', CHAVE_BACKUP);
+      return v && 'em' in v ? v.em : null;
+    },
+    async marcarBackup(agora) {
+      await db.put('config', { em: agora }, CHAVE_BACKUP);
+    },
+
     async exportar(agora) {
       return {
         app: 'semear',
         versao: VERSAO_BACKUP,
         exportadoEm: agora,
-        familia: (await db.get('config', CHAVE_FAMILIA)) ?? null,
+        familia: lerFamilia(await db.get('config', CHAVE_FAMILIA)),
         criancas: await db.getAll('criancas'),
         estados: await db.getAll('estados'),
         historico: await db.getAll('historico'),
