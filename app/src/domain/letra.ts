@@ -1,4 +1,9 @@
-import type { Crianca, Familia, Letra } from './tipos';
+import { LETRAS, type Crianca, type Familia, type Letra } from './tipos';
+
+/** Confere se um valor (ex.: vindo de backup) é uma letra conhecida. */
+export function ehLetra(valor: unknown): valor is Letra {
+  return typeof valor === 'string' && (LETRAS as readonly string[]).includes(valor);
+}
 
 /**
  * Letra padrão da criança (decisão 37 / §5.8 da especificação):
@@ -18,7 +23,7 @@ export function letraDaCrianca(
   idade: number,
   familia: Pick<Familia, 'vertentePrincipal'>,
 ): Letra {
-  return crianca.letra ?? letraPadrao(idade, familia);
+  return ehLetra(crianca.letra) ? crianca.letra : letraPadrao(idade, familia);
 }
 
 export const NOME_LETRA: Record<Letra, string> = {

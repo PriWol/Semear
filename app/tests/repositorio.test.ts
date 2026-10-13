@@ -110,6 +110,20 @@ describe('repositório (IndexedDB)', () => {
   });
 });
 
+describe('importar com falha (revisão de segurança, achado 2)', () => {
+  it('um item inválido no meio do backup não apaga os dados atuais', async () => {
+    await repo.salvarFamilia(familia());
+    await repo.salvarCrianca(crianca());
+    const backup = await repo.exportar(AGORA);
+    // O IndexedDB recusa a gravação no meio da transação (chave ausente), depois de já ter limpado as lojas.
+    // Simula um arquivo que passou por uma validação incompleta.
+    const ruim = { ...backup, estados: [{ estados: {} }] };
+    await expect(repo.importar(ruim as never)).rejects.toThrow();
+    expect(await repo.familia()).toEqual(familia());
+    expect((await repo.criancas()).map((c) => c.id)).toEqual(['c1']);
+  });
+});
+
 describe('validarBackup', () => {
   const valido = {
     app: 'semear',
@@ -124,12 +138,55 @@ describe('validarBackup', () => {
   it('aceita um backup válido', () => {
     expect(() => validarBackup(valido)).not.toThrow();
   });
+  it('aceita um backup completo exportado pelo próprio app', async () => {
+    await repo.salvarFamilia(familia({ inspiracoes: ['Waldorf'], idiomasEducador: ['en', 'fr'] }));
+    await repo.salvarCrianca(crianca({ letra: 'cursiva', trilhas: ['en'] }));
+    await repo.atualizarEstados('c1', {
+      'LI.VOC.01@en': { estado: 'consolidado', atualizadoEm: AGORA, origem: 'posicionamento' },
+    });
+    await repo.salvarSessao({
+      ...sessao('s1', 'c1', AGORA),
+      foco: ['LG.FON'],
+      atividadeIds: ['a'],
+      livroId: 'l',
+    });
+    const exportado: unknown = JSON.parse(JSON.stringify(await repo.exportar(AGORA)));
+    expect(() => validarBackup(exportado)).not.toThrow();
+  });
   it.each([
     ['nulo', null],
     ['de outro app', { ...valido, app: 'outro' }],
     ['de versão futura', { ...valido, versao: 99 }],
     ['sem crianças', { ...valido, criancas: undefined }],
     ['com criança sem nome', { ...valido, criancas: [{ id: 'x' }] }],
+    [
+      'com letra adulterada',
+      {
+        ...valido,
+        criancas: [{ id: 'x', nome: 'A', nascimento: '2021-01-01', letra: '"><img>', trilhas: [] }],
+      },
+    ],
+    [
+      'com nascimento inválido',
+      { ...valido, criancas: [{ id: 'x', nome: 'A', nascimento: 5, letra: null, trilhas: [] }] },
+    ],
+    [
+      'com vertente desconhecida',
+      { ...valido, familia: { ...familia(), vertentePrincipal: 'constructor' } },
+    ],
+    ['com sessão sem id', { ...valido, sessoes: [{ ...sessao('s', 'c', AGORA), id: 1 }] }],
+    [
+      'com estado desconhecido',
+      {
+        ...valido,
+        estados: [
+          {
+            criancaId: 'c',
+            estados: { m: { estado: 'hackeado', atualizadoEm: AGORA, origem: 'manual' } },
+          },
+        ],
+      },
+    ],
   ])('recusa backup %s', (_, dado) => {
     expect(() => validarBackup(dado)).toThrow(/backup inválido/);
   });

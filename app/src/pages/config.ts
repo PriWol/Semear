@@ -16,7 +16,8 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         <h2>💾 Backup</h2>
         <p>
           Seus dados ficam <b>só neste aparelho</b>. Faça backup com frequência e guarde o arquivo
-          num lugar seguro (e-mail, nuvem, pendrive).
+          num lugar seguro (e-mail, nuvem, pendrive). O arquivo não é criptografado: ele contém os nomes,
+          as datas de nascimento e a jornada das crianças, então não compartilhe com outras pessoas.
         </p>
         <p class="nota">
           Último backup: ${ultimo ? dataCurta(ultimo) : 'nunca'}.
@@ -57,7 +58,9 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         ctx.avisar('Backup baixado.');
       });
       raiz.querySelector<HTMLInputElement>('#importar')?.addEventListener('change', async (ev) => {
-        const arquivo = (ev.target as HTMLInputElement).files?.[0];
+        const campo = ev.target as HTMLInputElement;
+        const arquivo = campo.files?.[0];
+        campo.value = ''; // permite escolher o mesmo arquivo de novo se esta tentativa falhar
         if (!arquivo) return;
         try {
           const dados: unknown = JSON.parse(await arquivo.text());

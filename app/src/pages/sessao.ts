@@ -66,18 +66,21 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
         O arquivo baixado abre em qualquer navegador, inclusive no tablet sem internet, e tem o
         botão “Modo tablet”, que mostra só as folhas da criança.
       </p>
-      <iframe class="previa" id="previa" title="Pré-visualização do pacote"></iframe>
+      <iframe
+        class="previa"
+        id="previa"
+        title="Pré-visualização do pacote"
+        sandbox="allow-scripts allow-modals"
+      ></iframe>
     `,
     montar(raiz) {
       const iframe = raiz.querySelector<HTMLIFrameElement>('#previa');
       if (iframe) iframe.srcdoc = documento;
 
+      // A prévia é isolada (sandbox, sem a origem do app): o app não chama print() diretamente,
+      // pede por mensagem e o próprio pacote imprime.
       raiz.querySelector('#imprimir')?.addEventListener('click', () => {
-        const janela = iframe?.contentWindow;
-        if (janela) {
-          janela.focus();
-          janela.print();
-        }
+        iframe?.contentWindow?.postMessage('semear:imprimir', '*');
       });
       raiz.querySelector('#baixar')?.addEventListener('click', () => {
         baixarArquivo(nomeArquivo, documento, 'text/html;charset=utf-8');

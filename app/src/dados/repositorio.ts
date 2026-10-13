@@ -1,6 +1,16 @@
 // Repositório: único ponto de acesso aos dados guardados no aparelho (ADR 0002).
 import { openDB, type DBSchema, type IDBPDatabase } from 'idb';
-import type { Crianca, EstadosCrianca, Familia, RegistroMarco, Sessao } from '../domain/tipos';
+import {
+  ESTADOS,
+  IDIOMAS,
+  VERTENTES,
+  type Crianca,
+  type EstadosCrianca,
+  type Familia,
+  type RegistroMarco,
+  type Sessao,
+} from '../domain/tipos';
+import { ehLetra } from '../domain/letra';
 
 export const VERSAO_BACKUP = 1;
 
@@ -182,13 +192,28 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
     async importar(backup) {
       validarBackup(backup);
       const tx = db.transaction(LOJAS, 'readwrite');
-      await Promise.all(LOJAS.map((l) => tx.objectStore(l).clear()));
-      if (backup.familia) await tx.objectStore('config').put(backup.familia, CHAVE_FAMILIA);
-      for (const c of backup.criancas) await tx.objectStore('criancas').put(c);
-      for (const e of backup.estados) await tx.objectStore('estados').put(e);
-      for (const h of backup.historico) await tx.objectStore('historico').add(h);
-      for (const s of backup.sessoes) await tx.objectStore('sessoes').put(s);
-      await tx.done;
+      try {
+        // Mantém a data do último backup (está em config): só a família é substituída.
+        await tx.objectStore('config').delete(CHAVE_FAMILIA);
+        await Promise.all(
+          LOJAS.filter((l) => l !== 'config').map((l) => tx.objectStore(l).clear()),
+        );
+        if (backup.familia) await tx.objectStore('config').put(backup.familia, CHAVE_FAMILIA);
+        for (const c of backup.criancas) await tx.objectStore('criancas').put(c);
+        for (const e of backup.estados) await tx.objectStore('estados').put(e);
+        for (const h of backup.historico) await tx.objectStore('historico').add(h);
+        for (const s of backup.sessoes) await tx.objectStore('sessoes').put(s);
+        await tx.done;
+      } catch (erro) {
+        // Um erro de gravação não desfaz a transação sozinho: sem isto, as lojas já limpas seriam gravadas
+        // e a família perderia tudo.
+        try {
+          tx.abort();
+        } catch {
+          // a transação já terminou (abortada pelo próprio navegador)
+        }
+        throw erro;
+      }
     },
     async apagarTudo() {
       const tx = db.transaction(LOJAS, 'readwrite');
@@ -198,21 +223,81 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
   };
 }
 
-/** Confere a forma do backup antes de apagar qualquer dado (um arquivo errado não pode zerar o app). */
+/**
+ * Confere a forma completa do backup ANTES de apagar qualquer dado: um arquivo errado (ou adulterado)
+ * não pode zerar o app nem levar valores inesperados para as telas e o pacote.
+ */
 export function validarBackup(dado: unknown): asserts dado is Backup {
-  const b = dado as Partial<Backup> | null;
   const falha = (motivo: string): never => {
     throw new Error(`Arquivo de backup inválido: ${motivo}`);
   };
-  if (!b || typeof b !== 'object') falha('não é um objeto');
-  if (b!.app !== 'semear') falha('não é um backup do Semear');
-  if (typeof b!.versao !== 'number' || b!.versao > VERSAO_BACKUP) {
+  const ehObjeto = (v: unknown): v is Record<string, unknown> =>
+    typeof v === 'object' && v !== null && !Array.isArray(v);
+  const ehTexto = (v: unknown): v is string => typeof v === 'string';
+  const listaDe = (v: unknown, valido: (x: unknown) => boolean) =>
+    Array.isArray(v) && v.every(valido);
+  const ehVertente = (v: unknown) => (VERTENTES as readonly unknown[]).includes(v);
+  const ehIdioma = (v: unknown) => ehTexto(v) && Object.hasOwn(IDIOMAS, v);
+  const ehData = (v: unknown) => ehTexto(v) && /^\d{4}-\d{2}-\d{2}$/.test(v);
+  const ehRegistro = (v: unknown) =>
+    ehObjeto(v) &&
+    (ESTADOS as readonly unknown[]).includes(v.estado) &&
+    ehTexto(v.atualizadoEm) &&
+    ['manual', 'posicionamento', 'sessao', 'sondagem'].includes(v.origem as string);
+
+  if (!ehObjeto(dado)) return falha('não é um objeto');
+  const b = dado;
+  if (b.app !== 'semear') falha('não é um backup do Semear');
+  if (typeof b.versao !== 'number' || b.versao > VERSAO_BACKUP)
     falha('versão desconhecida (atualize o app)');
+  for (const campo of ['criancas', 'estados', 'historico', 'sessoes']) {
+    if (!Array.isArray(b[campo])) falha(`campo "${campo}" ausente`);
   }
-  for (const campo of ['criancas', 'estados', 'historico', 'sessoes'] as const) {
-    if (!Array.isArray(b![campo])) falha(`campo "${campo}" ausente`);
+
+  const f = b.familia;
+  if (f !== null && f !== undefined) {
+    if (
+      !ehObjeto(f) ||
+      !ehTexto(f.educador) ||
+      !ehVertente(f.vertentePrincipal) ||
+      !listaDe(f.inspiracoes, ehVertente) ||
+      !listaDe(f.idiomasEducador, ehIdioma) ||
+      !ehTexto(f.criadaEm)
+    ) {
+      falha('dados da família incompletos ou desconhecidos');
+    }
   }
-  for (const c of b!.criancas!) {
-    if (typeof c?.id !== 'string' || typeof c?.nome !== 'string') falha('criança sem id ou nome');
+  for (const c of b.criancas as unknown[]) {
+    if (!ehObjeto(c) || !ehTexto(c.id) || !ehTexto(c.nome)) falha('criança sem id ou nome');
+    const cr = c as Record<string, unknown>;
+    if (!ehData(cr.nascimento)) falha(`data de nascimento inválida (${String(cr.nome)})`);
+    if (cr.letra !== null && !ehLetra(cr.letra)) falha(`letra desconhecida (${String(cr.nome)})`);
+    if (!listaDe(cr.trilhas, ehIdioma)) falha(`línguas desconhecidas (${String(cr.nome)})`);
+  }
+  for (const e of b.estados as unknown[]) {
+    if (!ehObjeto(e) || !ehTexto(e.criancaId) || !ehObjeto(e.estados)) falha('estado sem criança');
+    if (!Object.values((e as { estados: object }).estados).every(ehRegistro)) {
+      falha('estado de marco desconhecido');
+    }
+  }
+  for (const h of b.historico as unknown[]) {
+    if (!ehObjeto(h) || !ehTexto(h.criancaId) || !ehTexto(h.chave) || !ehRegistro(h.registro)) {
+      falha('histórico inválido');
+    }
+  }
+  for (const s of b.sessoes as unknown[]) {
+    if (
+      !ehObjeto(s) ||
+      !ehTexto(s.id) ||
+      !ehTexto(s.codigo) ||
+      !ehTexto(s.criancaId) ||
+      !ehTexto(s.criadaEm) ||
+      typeof s.duracaoMin !== 'number' ||
+      !(s.foco === 'equilibrado' || listaDe(s.foco, ehTexto)) ||
+      !listaDe(s.atividadeIds, ehTexto) ||
+      !(s.livroId === null || ehTexto(s.livroId))
+    ) {
+      falha('sessão inválida');
+    }
   }
 }

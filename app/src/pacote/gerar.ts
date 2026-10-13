@@ -9,7 +9,8 @@ import type {
   Sessao,
   Vertente,
 } from '../domain/tipos';
-import { NOME_LETRA } from '../domain/letra';
+import { ehLetra, NOME_LETRA } from '../domain/letra';
+import { dataBR } from '../domain/datas';
 import { escapar, html, textoRico, type HtmlSeguro } from '../ui/html';
 import { paginaDaFolha } from './folhas';
 import estilos from './pacote.css?raw';
@@ -31,11 +32,6 @@ const USO_LIVRO: Record<Livro['uso'], string> = {
   'leitura-pela-crianca': 'leitura pela criança',
   'apoio-ao-educador': 'apoio ao educador',
 };
-
-function dataBR(iso: string): string {
-  const [a, m, d] = iso.slice(0, 10).split('-');
-  return `${d}/${m}/${a}`;
-}
 
 function rodapeEducador(texto: string, pagina: string): HtmlSeguro {
   return html`<div class="rodape"><span>${texto}</span><span>${pagina}</span></div>`;
@@ -245,13 +241,32 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
   </section>`;
 }
 
+// O app pede a impressão por mensagem: a prévia roda num iframe isolado (sandbox), sem acesso ao app.
 const SCRIPT = `
+window.addEventListener('message',function(e){if(e.source===window.parent&&e.data==='semear:imprimir'){window.print();}});
 function alternarTablet(){var on=document.body.classList.toggle('tablet');document.getElementById('btnTablet').setAttribute('aria-pressed',String(on));}
 function trocarLetra(v){document.body.classList.remove('letra-bastao','letra-script','letra-cursiva');document.body.classList.add('letra-'+v);}
 `;
 
 /** Documento HTML completo e autossuficiente (CSS e script embutidos): pode ser baixado e aberto offline. */
+/**
+ * Política de segurança do documento: sem conexões, imagens ou formulários externos. Mesmo que algum
+ * texto escape da proteção, ele não consegue enviar os dados da família para fora.
+ */
+const CSP = [
+  "default-src 'none'",
+  "style-src 'unsafe-inline' https://fonts.googleapis.com",
+  'font-src https://fonts.gstatic.com',
+  "script-src 'unsafe-inline'",
+  "connect-src 'none'",
+  "img-src 'none'",
+  "form-action 'none'",
+  "base-uri 'none'",
+].join('; ');
+
 export function gerarPacote(e: EntradaPacote): string {
+  // A letra vem dos dados da criança (que podem vir de um backup): só valores conhecidos entram no HTML.
+  const letra = ehLetra(e.letra) ? e.letra : 'bastao';
   const titulo = `Semear · ${e.sessao.codigo} · ${e.crianca.nome}`;
   const roteiro = html`<section class="pagina educador">
     <span class="etiqueta">Roteiro do educador · leia antes da sessão</span>
@@ -266,7 +281,7 @@ export function gerarPacote(e: EntradaPacote): string {
   const opcoesLetra = (Object.keys(NOME_LETRA) as Letra[])
     .map(
       (l) =>
-        `<option value="${l}"${l === e.letra ? ' selected' : ''}>${escapar(NOME_LETRA[l])}</option>`,
+        `<option value="${l}"${l === letra ? ' selected' : ''}>${escapar(NOME_LETRA[l])}</option>`,
     )
     .join('');
 
@@ -277,6 +292,7 @@ export function gerarPacote(e: EntradaPacote): string {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="${CSP}">
 <title>${escapar(titulo)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -285,7 +301,7 @@ export function gerarPacote(e: EntradaPacote): string {
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+BR:wght@400&display=swap" rel="stylesheet">
 <style>${estilos}</style>
 </head>
-<body class="letra-${e.letra}">
+<body class="letra-${letra}">
 <div class="barra" role="toolbar" aria-label="Controles do pacote">
   <strong>🌱 Semear</strong>
   <button class="primario" onclick="window.print()">🖨️ Imprimir / salvar PDF</button>

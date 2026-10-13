@@ -37,7 +37,8 @@ pages/ (telas) ──► domain/ (regras puras)
 - `src/domain/`: **regras de negócio puras**. Sem acesso a `window`, `document`, banco ou rede.
   Recebem tudo por parâmetro (inclusive a data de "agora"). O ESLint bloqueia imports proibidos.
 - `src/dados/`: único lugar que fala com o IndexedDB, por meio de um **repositório** (ADR 0002).
-- `src/pacote/`: transforma uma sessão em um documento HTML imprimível (ADR 0004).
+- `src/pacote/`: transforma uma sessão em um documento HTML imprimível (ADR 0004). Usa o helper de
+  escape `src/ui/html.ts` (o único import de `ui/` permitido fora das telas).
 - `src/pages/` e `src/ui/`: telas. Toda interpolação de texto em HTML passa pelo `html```
   de `src/ui/html.ts`, que escapa o conteúdo (proteção contra injeção de HTML).
 
@@ -53,6 +54,9 @@ pages/ (telas) ──► domain/ (regras puras)
 - Dados da criança (nome, nascimento, marcos, sessões) **ficam no aparelho**. Nenhum envio para servidor,
   analytics ou serviço externo sem um ADR aprovado.
 - Fontes do Google são a única chamada externa permitida hoje (não enviam dados da família).
+- Todo dado vindo de fora (backup importado, conteúdo) é **validado antes de usar**: valores fora dos
+  conjuntos conhecidos (vertentes, letras, estados) são recusados ou trocados pelo padrão.
+- O pacote gerado tem CSP própria e a prévia roda num iframe `sandbox` sem a origem do app.
 
 ## Fluxo de trabalho com IA (ADR 0006 e 0007)
 1. **Spec**: descreva a funcionalidade (o quê e por quê) ou aponte a seção da especificação.

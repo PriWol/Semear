@@ -85,3 +85,23 @@ describe('nome do arquivo', () => {
     );
   });
 });
+
+describe('segurança do pacote (revisão de segurança, achados 1 e 3)', () => {
+  it('uma letra adulterada (ex.: vinda de backup) não injeta HTML e cai no padrão', () => {
+    const doc = gerarPacote(entrada({ letra: 'x"><img src=x onerror=alert(1)>' as never }));
+    expect(doc).not.toContain('onerror=alert(1)>');
+    expect(doc).toContain('<body class="letra-bastao">');
+  });
+
+  it('tem política de segurança (CSP) que corta conexões e imagens externas', () => {
+    const doc = gerarPacote(entrada());
+    expect(doc).toMatch(
+      /<meta http-equiv="Content-Security-Policy" content="[^"]*default-src 'none'/,
+    );
+    expect(doc).toContain("connect-src 'none'");
+  });
+
+  it('imprime quando o app pede por mensagem (prévia isolada em sandbox)', () => {
+    expect(gerarPacote(entrada())).toContain("e.data==='semear:imprimir'");
+  });
+});

@@ -19,6 +19,12 @@ Opção 1. `src/pacote/` gera um **documento HTML completo e autossuficiente** (
 botões de imprimir, modo tablet e troca de letra). O app oferece: pré-visualizar, imprimir/salvar PDF
 e **baixar o arquivo HTML** para abrir offline no tablet.
 
+## Segurança (após a revisão do PR #1)
+- O documento traz uma **CSP** própria (`default-src 'none'`, sem conexões nem imagens externas):
+  mesmo que algum texto escape da proteção, não consegue enviar dados para fora.
+- A prévia no app roda num iframe **`sandbox`** sem a origem do app, então o pacote não acessa o
+  IndexedDB. Por isso o botão "Imprimir" do app pede a impressão por mensagem (`postMessage`).
+
 ## Consequências
 - O "Salvar como PDF" depende do diálogo de impressão do navegador (um passo a mais para o pai).
 - Fontes vêm do Google Fonts; sem internet, o arquivo baixado usa fontes do sistema.
