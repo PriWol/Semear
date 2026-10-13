@@ -1,6 +1,12 @@
 // Tipos do domínio do Semear. Ver docs/GLOSSARIO.md para o significado de cada termo.
 
-export const VERTENTES = ['Montessori', 'Waldorf', 'Clássico', 'Religioso', 'Charlotte Mason'] as const;
+export const VERTENTES = [
+  'Montessori',
+  'Waldorf',
+  'Clássico',
+  'Religioso',
+  'Charlotte Mason',
+] as const;
 export type Vertente = (typeof VERTENTES)[number];
 
 export const IDIOMAS = { en: 'Inglês', fr: 'Francês', la: 'Latim' } as const;
@@ -122,7 +128,11 @@ export interface Atividade {
   /** só no domínio de Línguas: idioma da atividade */
   idioma?: Idioma;
   folhas: Folha[];
-  autoria: { origem: 'ia' | 'humano'; status: 'rascunho' | 'revisado' | 'publicado'; revisadoEm?: string };
+  autoria: {
+    origem: 'ia' | 'humano';
+    status: 'rascunho' | 'revisado' | 'publicado';
+    revisadoEm?: string;
+  };
 }
 
 export interface Livro {

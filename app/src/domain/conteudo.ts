@@ -93,7 +93,8 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     unico(d.id, 'Domínio');
     for (const l of d.linhas ?? []) {
       unico(l.id, 'Linha');
-      if (!l.id.startsWith(`${d.id}.`)) erros.push(`Linha ${l.id} não começa com o domínio ${d.id}`);
+      if (!l.id.startsWith(`${d.id}.`))
+        erros.push(`Linha ${l.id} não começa com o domínio ${d.id}`);
     }
     for (const t of d.trilhas ?? []) {
       for (const p of t.preRequisitos ?? []) {
@@ -110,7 +111,8 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
       erros.push(`Marco ${m.id}: linha ${m.linha} não existe`);
       continue;
     }
-    if (!m.id.startsWith(`${m.linha}.`)) erros.push(`Marco ${m.id} não começa com a linha ${m.linha}`);
+    if (!m.id.startsWith(`${m.linha}.`))
+      erros.push(`Marco ${m.id} não começa com a linha ${m.linha}`);
     if (!idx.dominioDaLinha(m.linha)?.comJornada) {
       avisos.push(`Marco ${m.id}: o domínio da linha ${m.linha} ainda não tem jornada`);
     }
@@ -142,7 +144,9 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
       if (f.tipo === 'contar') {
         for (const item of f.itens) {
           if (!item.opcoes.includes(item.quantidade)) {
-            erros.push(`${onde}: as opções de ${item.emoji} não incluem a resposta ${item.quantidade}`);
+            erros.push(
+              `${onde}: as opções de ${item.emoji} não incluem a resposta ${item.quantidade}`,
+            );
           }
         }
       }
@@ -152,7 +156,8 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
             ? f.numeros
             : f.cartas.flatMap((c) => ('quadroDez' in c ? [c.quadroDez] : []));
         for (const n of numeros) {
-          if (n < 0 || n > 20) erros.push(`${onde}: quadro de dez só representa de 0 a 20 (recebeu ${n})`);
+          if (n < 0 || n > 20)
+            erros.push(`${onde}: quadro de dez só representa de 0 a 20 (recebeu ${n})`);
         }
       }
       if (f.tipo === 'cartas' && f.cartas.length > 12) {

@@ -1,13 +1,20 @@
 // Funções de data puras: recebem "hoje" como parâmetro para serem testáveis.
 
-/** Idade em anos com uma casa decimal (ex.: 5.5), calculada a partir de AAAA-MM-DD. */
+/**
+ * Idade em anos com uma casa decimal (ex.: 5.5), pelo calendário: anos completos (o aniversário
+ * conta no próprio dia) mais a fração do ano desde o último aniversário, arredondada para baixo.
+ */
 export function idadeEmAnos(nascimento: string, hoje: Date): number {
   const [a, m, d] = nascimento.split('-').map(Number);
   if (!a || !m || !d) throw new Error(`Data de nascimento inválida: ${nascimento}`);
-  const nasc = new Date(Date.UTC(a, m - 1, d));
-  const hojeUtc = Date.UTC(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
-  const dias = (hojeUtc - nasc.getTime()) / 86_400_000;
-  return Math.floor((dias / 365.25) * 10) / 10;
+  const dia = (ano: number, mes: number, diaMes: number) => Date.UTC(ano, mes - 1, diaMes);
+  const hojeUtc = dia(hoje.getFullYear(), hoje.getMonth() + 1, hoje.getDate());
+  let anos = hoje.getFullYear() - a;
+  if (hojeUtc < dia(hoje.getFullYear(), m, d)) anos--;
+  const ultimo = dia(a + anos, m, d);
+  const proximo = dia(a + anos + 1, m, d);
+  const fracao = (hojeUtc - ultimo) / (proximo - ultimo);
+  return Math.floor((anos + fracao) * 10 + 1e-9) / 10;
 }
 
 export function idadeInteira(nascimento: string, hoje: Date): number {

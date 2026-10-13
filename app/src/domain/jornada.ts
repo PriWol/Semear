@@ -55,7 +55,8 @@ export function pistasDaCrianca(
     for (const linha of linhasVisiveis(dominio, familia)) {
       if (dominio.trilhas) {
         for (const idioma of crianca.trilhas) {
-          if (!linha.idiomas || linha.idiomas.includes(idioma)) pistas.push({ linha, dominio, idioma });
+          if (!linha.idiomas || linha.idiomas.includes(idioma))
+            pistas.push({ linha, dominio, idioma });
         }
       } else {
         pistas.push({ linha, dominio });
@@ -198,7 +199,8 @@ export function avisosTrilhas(
   for (const id of crianca.trilhas) {
     const t = li.trilhas.find((x) => x.id === id);
     if (!t) continue;
-    if (idade < t.idadeInicio) avisos.push(`${t.nome} costuma começar por volta dos ${t.idadeInicio} anos.`);
+    if (idade < t.idadeInicio)
+      avisos.push(`${t.nome} costuma começar por volta dos ${t.idadeInicio} anos.`);
     const pendentes = (t.preRequisitos ?? []).filter(
       (p) => idx.marco(p) && estadoDe(estados, p) === 'nao-observado',
     );

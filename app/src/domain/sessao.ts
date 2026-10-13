@@ -186,7 +186,8 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
       `A atividade sugerida tem ${minutos} min, mais do que os ${duracaoMin} min escolhidos. Você pode fazê-la em duas partes.`,
     );
   }
-  if (pistas.length === 0 && foco !== 'equilibrado') avisos.push('Escolha pelo menos uma linha de foco.');
+  if (pistas.length === 0 && foco !== 'equilibrado')
+    avisos.push('Escolha pelo menos uma linha de foco.');
 
   return { escolhas, lacunas, livro: sugerirLivro(idx, escolhas, familia, idade), minutos, avisos };
 }
@@ -198,7 +199,9 @@ export function sugerirLivro(
   familia: Familia,
   idade: number,
 ): Livro | null {
-  const marcos = new Set(escolhas.flatMap((e) => [...e.atividade.marcos, ...(e.atividade.revisa ?? [])]));
+  const marcos = new Set(
+    escolhas.flatMap((e) => [...e.atividade.marcos, ...(e.atividade.revisa ?? [])]),
+  );
   const candidatos = idx.conteudo.livros
     .filter((l) => l.marcos.some((m) => marcos.has(m)))
     .map((l) => ({
@@ -221,6 +224,7 @@ export function gerarCodigoSessao(nomeCrianca: string, agora: Date, existentes: 
   const inicial =
     nomeCrianca
       .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '') // remove acentos antes de limpar o resto
       .replace(/[^A-Za-z]/g, '')
       .charAt(0)
       .toUpperCase() || 'X';
