@@ -1,5 +1,5 @@
 {
-  "versao": "0.2",
+  "versao": "0.3",
   "faixaEtaria": [
     3,
     8
@@ -13,7 +13,8 @@
     "Montessori",
     "Waldorf",
     "Clássico",
-    "Religioso"
+    "Religioso",
+    "Charlotte Mason"
   ],
   "dominios": [
     {
@@ -60,6 +61,14 @@
           "id": "LG.MEM",
           "nome": "Memorização e recitação",
           "vertentes": [
+            "Clássico"
+          ]
+        },
+        {
+          "id": "LG.NAR",
+          "nome": "Narração (oral → escrita)",
+          "vertentes": [
+            "Charlotte Mason",
             "Clássico"
           ]
         }
@@ -128,7 +137,10 @@
         {
           "id": "la",
           "nome": "Latim",
-          "idadeInicio": 6
+          "idadeInicio": 6,
+          "preRequisitos": [
+            "LG.LEI.01"
+          ]
         }
       ],
       "linhas": [
@@ -180,7 +192,8 @@
             "fr",
             "la"
           ],
-          "vertentes": null
+          "vertentes": null,
+          "idadeInicio": 6
         },
         {
           "id": "LI.ESR",
@@ -190,7 +203,8 @@
             "fr",
             "la"
           ],
-          "vertentes": null
+          "vertentes": null,
+          "idadeInicio": 6
         },
         {
           "id": "LI.RAI",
@@ -208,7 +222,8 @@
           ],
           "vertentes": null
         }
-      ]
+      ],
+      "maxTrilhasAtivas": 2
     },
     {
       "id": "AR",
@@ -222,7 +237,10 @@
         "Ritmo e pulso",
         "Canto",
         "Escuta musical",
-        "Apreciação de artistas"
+        "Apreciação de artistas",
+        "Estudo de pintores",
+        "Estudo de compositores",
+        "Caderno da natureza"
       ]
     },
     {

@@ -1,7 +1,7 @@
 # 🧭 Jornada de Aprendizado: Especificação
 
 > Documento resultante do *grilling* de outubro/2026. Ele define **como o Semear posiciona cada criança numa jornada por domínios** e como isso alimenta a geração de materiais para imprimir.
-> Status: **rascunho v0.2** (2 rodadas de grilling), a ser validado com as famílias piloto.
+> Status: **rascunho v0.3** (3 rodadas de grilling), a ser validado com as famílias piloto.
 
 ---
 
@@ -11,7 +11,7 @@
 2. **Papel primeiro.** Tudo o que a criança vê sai num PDF: A4 para imprimir, ou um "modo tablet" com uma página por tela, sem links e sem interação.
 3. **O pai decide.** O app sugere, avisa e organiza, mas avançar na jornada é sempre uma decisão do educador.
 4. **Sem nota, sem comparação.** A escala é qualitativa e não existe ranking entre crianças.
-5. **Local e privado por padrão.** Funciona sem conta, com os dados no dispositivo. A conta é opcional e serve só para sincronizar.
+5. **Dados da criança ficam no aparelho.** Observações, marcos e fotos ficam guardados localmente. A conta (obrigatória, ver §9) guarda só os dados do responsável e da assinatura, além do *sync* opcional.
 6. **Conteúdo sempre revisado por um humano.** A IA ajuda a produzir, mas nada chega às famílias sem revisão.
 
 ---
@@ -42,10 +42,18 @@
 | 20 | Artes e música | **Só atividades**, sem marcos nem posicionamento. |
 | 21 | Uso de IA | **Só na produção do conteúdo.** As famílias recebem conteúdo estático e revisado. |
 | 22 | PDF | **Gerado no dispositivo** a partir de templates HTML/SVG com CSS de impressão (A4 e modo tablet). |
-| 23 | Sincronização | **Conta opcional** com sync (celular ↔ computador ↔ outro responsável). Sem conta = 100% local. |
-| 24 | Modelo de negócio | **Freemium.** Ver §9. |
+| 23 | Sincronização | ~~Conta opcional~~ → a conta passou a ser obrigatória (decisão 30). O *sync* entre aparelhos e responsáveis é opcional e criptografado. |
+| 24 | Modelo de negócio | ~~Freemium~~ → **teste de 30 dias e depois pago** (decisão 29). Ver §9. |
 | 25 | Portfólio | **Portfólio de evidências trimestral**, com anexo BNCC, pensado para proteger a família. Ver §8. |
 | 26 | Necessidades específicas | **Fica para depois** do lançamento. |
+| 27 | Idade das línguas | **Escalonar:** inglês e francês orais a partir dos 3 anos. Latim a partir dos 6, com pré-requisito de leitura em português (LG.LEI). **No máximo 2 trilhas de língua ativas** por criança (o app avisa e o pai pode forçar). |
+| 28 | Novas vertentes | **Charlotte Mason entra** como 5ª vertente. **Unschooling não entra**, porque rejeita sequência e sondagem, que são o núcleo do produto. |
+| 29 | Monetização | **Teste grátis de 30 dias e depois assinatura.** Sem plano gratuito permanente. |
+| 30 | Cadastro | **Conta + cartão no início do teste.** |
+| 31 | Fim do teste sem assinatura | **Bloqueio total, só exportação** dos dados. |
+| 32 | Distribuição | **PWA** (celular + computador) com **pagamento na web** (Pix e cartão). Lojas de apps ficam para depois. |
+| 33 | Preço | **Por criança.** |
+| 34 | Fotos do portfólio | **Só no aparelho**, sem nuvem. |
 
 ---
 
@@ -106,7 +114,11 @@ Cada marco de Línguas vale para uma ou mais trilhas (`idiomas: ["en","fr","la"]
 | LI.RAI Raízes latinas no português | *aqua* → aquário, aquático… | la |
 | LI.GRA Gramática inicial (7–8) | Gênero, primeiras declinações e conjugações (latim clássico) | la |
 
-Idades típicas de início: inglês e francês a partir dos 3 anos (oral), latim a partir dos 6 (marco extra muito usado na vertente Clássica, mas disponível para todas).
+**Regras das trilhas:**
+- **Inglês e francês:** a partir dos 3 anos, começando pela parte oral (escuta, fala, canções). Leitura e escrita a partir dos 6, depois que a criança estiver lendo em português.
+- **Latim:** a partir dos 6 anos. A trilha só é sugerida quando a criança tem marcos iniciais de **LG.LEI** em andamento, para não competir com a alfabetização em português. É muito usado nas vertentes Clássica e Charlotte Mason, mas fica disponível para todas.
+- **No máximo 2 trilhas ativas** por criança. Ao ativar a 3ª, o app avisa ("aprender muitas línguas ao mesmo tempo costuma diluir o progresso") e o pai pode confirmar mesmo assim.
+- O onboarding pergunta **quais línguas o educador domina** e só oferece essas.
 
 ### 🎨 AR: Artes e Música (só atividades)
 Desenho · Pintura · Modelagem · Ritmo e pulso · Canto · Escuta musical · Apreciação de artistas. Essas categorias servem para **filtrar e equilibrar** as atividades nas sessões, não para posicionar a criança.
@@ -135,6 +147,9 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 - **Waldorf:** DI.RIT *Ritmo e festivais* (rotina, festas sazonais). Marcos de *desenho de formas* em LG.GRA e de *aquarela úmida* em DI.ART.
 - **Clássico:** LG.MEM *Memorização e recitação* (poemas, cronologias, listas). Marcos de *narração* em LG.ORA.
 - **Religioso:** DI.ESP *Vida espiritual* (oração, histórias sagradas, virtudes), configurável pela tradição da família.
+- **Charlotte Mason** *(nova)*: LG.NAR *Narração oral → escrita* (compartilhada com a Clássica), marcos de *copywork* em LG.GRA e de *ditado preparado* em LG.ESC. Nas atividades: *caderno da natureza*, *estudo de pintores* e *estudo de compositores* (categorias de AR). No ritmo: **lições curtas** (o gerador de sessão limita atividades a 10–20 minutos) e **livros vivos** (a curadoria marca livros como "vivos" segundo os critérios de CM).
+
+> **Por que o Unschooling ficou de fora:** ele não usa sequência, sondagem nem sessões planejadas, que são justamente o que o Semear faz. Famílias *unschoolers* ainda podem usar o app como registro (marcar marcos observados), mas não vamos desenhar o produto para elas.
 
 > Os marcos extras usam o mesmo formato dos marcos comuns. A única diferença é o campo `vertentes`, que indica em quais vertentes eles aparecem.
 
@@ -346,27 +361,39 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 4. **Foto da folha** direto da ficha de registro: o pai fotografa a folha preenchida e ela fica ligada à sessão e aos marcos. É o único momento em que o app usa câmera, e quem tira a foto é sempre o pai.
 5. **Registro de frequência automático:** toda sessão registrada conta como dia letivo, com duração.
 6. **Exportação em PDF** pronta para imprimir e arquivar, mais o JSON de backup. Tudo gerado no dispositivo.
-7. **Funciona no plano gratuito** (pelo menos o relatório anual), porque proteger a família não deve depender de assinatura. Ver §9.
+7. **Fotos só no aparelho** (decisão 34), comprimidas, e o app orienta a fotografar **o trabalho, não o rosto da criança**.
+8. **Risco de perda:** como não há nuvem, se o aparelho for perdido as evidências vão junto. Para reduzir esse risco:
+   - **Lembrete de fechamento trimestral:** gerar o PDF do portfólio (com as fotos embutidas) e salvá-lo fora do app (e-mail, Drive, pendrive).
+   - **Backup completo** (JSON + fotos num arquivo .zip) a qualquer momento, com lembrete mensal.
+   - Aviso claro no onboarding: *"Seus dados e fotos ficam só neste aparelho."*
+9. **Fim do teste ou cancelamento** (decisão 31): mesmo com o app bloqueado, a família consegue **exportar os dados e os PDFs de portfólio já gerados**. Ver o risco em §9.
 
 **Antes de lançar:** validar o modelo de relatório com um advogado da área e com associações de famílias educadoras (ex.: ANED). O app **não oferece aconselhamento jurídico** e precisa dizer isso no próprio relatório.
 
 ---
 
-## 9. Modelo de negócio: freemium
+## 9. Modelo de negócio: teste de 30 dias + assinatura por criança
 
-| Grátis | Assinatura (sugestão: R$ 19 a 29/mês ou anual com desconto) |
-|---|---|
-| 1 criança | Várias crianças + sessões conjuntas |
-| Sondagem + mapa da jornada (LG, MA) | Trilhas de Línguas (inglês, francês, latim) |
-| Algumas sessões por mês (ex.: 8) | Sessões ilimitadas |
-| Atividades complementares básicas | Acervo completo de atividades e curadoria de livros |
-| Portfólio **anual** | Portfólio **trimestral** com evidências e fotos |
-| 100% local | Conta com sincronização entre dispositivos e responsáveis |
+### 9.1 Como funciona
+1. **Cadastro:** e-mail + cartão (ou Pix Automático, se o gateway oferecer) → **30 dias grátis com tudo liberado**.
+2. **Dia 31:** a cobrança começa automaticamente. O app avisa nos dias 23 e 28 do teste.
+3. **Preço por criança** (valores a testar no piloto). Sugestão: **R$ 24,90 por mês para a 1ª criança e R$ 14,90 para cada criança adicional**, com plano anual ~20% mais barato. O desconto no adicional reduz o peso para famílias grandes, comuns no homeschool, e mantém a sessão conjunta de irmãos atraente.
+4. **Sem assinatura (teste vencido ou cancelado):** o app fica **bloqueado** e só permite **exportar** os dados (JSON + fotos .zip) e os PDFs de portfólio já gerados.
+5. **Distribuição:** PWA instalável. A cobrança é feita na web, por um gateway brasileiro com Pix e cartão (Asaas, Mercado Pago, Pagar.me ou Stripe BR), sem a taxa de 15–30% das lojas.
 
-- A **conta opcional** é o ponto de cobrança. Precisa de backend simples (ex.: Supabase) e de adequação à **LGPD** para dados de crianças: consentimento do responsável, mínimo de dados, exclusão fácil e criptografia em trânsito e em repouso.
-- **Afiliados** de livros (links das obras da curadoria) como receita complementar, sempre identificados como tal.
+### 9.2 Arquitetura que isso exige
+- **Backend mínimo:** autenticação, status da assinatura e webhooks do gateway (ex.: Supabase + função serverless).
+- **Dados da criança continuam locais.** O servidor só sabe *quantas* crianças estão cadastradas (para cobrar), não quem são nem o que aprenderam. Isso simplifica muito a LGPD.
+- **Verificação offline:** o app guarda um "comprovante" de assinatura válido por ~7 dias, então funciona offline e só bloqueia se ficar mais de 7 dias sem conseguir checar.
+- **Sync opcional** entre aparelhos e responsáveis: criptografado de ponta a ponta, para o servidor não conseguir ler os dados da criança. As fotos não sincronizam (decisão 34).
 
----
+### 9.3 ⚠️ Riscos registrados (decididos conscientemente, revisar no piloto)
+| Risco | Por que importa | Mitigação proposta |
+|---|---|---|
+| **Cartão no cadastro** | Muitas famílias desistem antes de experimentar. Parte do público prefere Pix ou não tem cartão de crédito. | Aceitar **Pix Automático** como alternativa ao cartão. Medir a desistência no cadastro durante o piloto. |
+| **Bloqueio total pós-teste** | A família perde acesso ao **histórico** que a protege juridicamente (§8) justamente quando pode precisar dele. Também pode gerar reclamações e má fama na comunidade. | Exportação sempre liberada, incluindo **gerar o portfólio dos períodos já registrados**, mesmo bloqueado. *Recomendo reconsiderar isso:* o histórico é da família. |
+| **Preço por criança** | Pesa para famílias grandes, que são justamente as mais engajadas no homeschool. | Desconto progressivo por criança adicional, ou um teto (ex.: a partir da 3ª criança, grátis). |
+| **Sem plano gratuito** | Menos alcance boca a boca do que o Semear tinha (era 100% gratuito). | Conteúdo gratuito fora do app (amostras de folhas, blog, comunidade) como porta de entrada. |
 
 ## 10. Benchmark: o que existe lá fora e onde o Semear se diferencia
 
@@ -391,12 +418,13 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 
 ## 11. Questões em aberto (próximas rodadas)
 
-- [ ] **Faixa do latim e do francês:** introduzir ambos aos 3 anos ou escalonar? E as famílias que querem as duas línguas ao mesmo tempo?
-- [ ] **Charlotte Mason e Unschooling** como vertentes?
-- [ ] **Necessidades específicas** (TEA, TDAH, dislexia): adiado. Revisitar após o piloto.
-- [ ] **Quantas sessões gratuitas** por mês? (teste A/B no piloto)
-- [ ] **Backend da conta**: Supabase × Firebase × outro, e onde ficam as fotos do portfólio (só local × nuvem).
+- [ ] **Reconsiderar o bloqueio total:** permitir pelo menos gerar o portfólio dos períodos já registrados? (ver §9.3)
+- [ ] **Preço exato** e desconto para crianças adicionais. Testar 2 ou 3 faixas no piloto.
+- [ ] **Gateway de pagamento:** Asaas × Mercado Pago × Pagar.me × Stripe BR (Pix Automático, taxas, assinatura recorrente).
+- [ ] **Necessidades específicas** (TEA, TDAH, dislexia): adiado. Revisitar depois do piloto.
 - [ ] **Validação jurídica** do modelo de portfólio (advogado + associação de famílias).
+- [ ] **Termos de uso e política de privacidade** (LGPD, dados de crianças, cobrança recorrente).
+- [ ] **Identidade visual das folhas impressas:** tom "Mata Atlântica" do app atual ou algo mais neutro?
 
 ---
 
