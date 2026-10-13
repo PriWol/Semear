@@ -1,7 +1,7 @@
 # 🧭 Jornada de Aprendizado: Especificação
 
 > Documento resultante do *grilling* de outubro/2026. Ele define **como o Semear posiciona cada criança numa jornada por domínios** e como isso alimenta a geração de materiais para imprimir.
-> Status: **rascunho v0.3** (3 rodadas de grilling), a ser validado com as famílias piloto.
+> Status: **rascunho v0.4** (4 rodadas de grilling + protótipo do pacote), a ser validado com as famílias piloto.
 
 ---
 
@@ -54,6 +54,10 @@
 | 32 | Distribuição | **PWA** (celular + computador) com **pagamento na web** (Pix e cartão). Lojas de apps ficam para depois. |
 | 33 | Preço | **Por criança.** |
 | 34 | Fotos do portfólio | **Só no aparelho**, sem nuvem. |
+| 35 | Visual das folhas | **Colorido suave** (fundos pastel, traço escuro). Ver §5.8. |
+| 36 | Vertente × aparência | A identidade visual é a mesma para todas. A vertente muda **só a tipografia e o tipo de atividade**. |
+| 37 | Letra da criança | **Configurável por criança:** bastão (caixa alta) → script minúsculo → cursiva. O padrão depende da idade e da vertente. |
+| 38 | Primeiro passo | **Protótipo do pacote impresso** testado com famílias antes de construir o app. Ver §12. |
 
 ---
 
@@ -294,6 +298,34 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 3. **Ficha de registro rápido**: uma linha por marco trabalhado, com ☐ Não observado ☐ Em desenvolvimento ☐ Consolidado e espaço para nota. O pai lança no app em cerca de 2 minutos, e cada linha tem um código curto que facilita achar o marco.
 4. **Materiais + livro**: checklist do que separar, com itens de casa destacados.
 
+### 5.8 Diretrizes visuais das folhas
+- **Colorido suave:** fundos pastel (azul, pêssego, amarelo, verde, lilás) atrás das figuras, com texto e contornos escuros. As cores servem de apoio, nunca de informação: a atividade precisa funcionar impressa em preto e branco (ex.: nunca "pinte o que está no quadro azul").
+- **Economia de tinta:** a cor fica só nos cartões e figuras. O fundo da página e as áreas de escrita são brancos.
+- **O verde Semear** aparece só nas páginas do educador (roteiro, materiais, ficha). As folhas da criança levam apenas um 🌱 discreto.
+- **Tipografia da criança:**
+  - *Bastão* = Andika em caixa alta (fonte feita para alfabetização).
+  - *Script* = Andika minúscula.
+  - *Cursiva* = Playwrite BR (modelo de letra cursiva escolar brasileira).
+  - O padrão por idade e vertente:
+
+    | | 3–5 anos | 5–6 anos | 6+ anos |
+    |---|---|---|---|
+    | **Padrão** | bastão | script | cursiva |
+    | **Montessori / Waldorf** | cursiva desde o início | cursiva | cursiva |
+
+- **Tipo de atividade por vertente** (mesma identidade visual):
+
+  | Vertente | Mais | Menos |
+  |---|---|---|
+  | Montessori | recortar, parear, manipular (cartas, bandeja com objetos reais) | exercícios repetitivos |
+  | Waldorf | desenho livre, espaço em branco, versos e movimento | figuras prontas, letras isoladas cedo |
+  | Charlotte Mason | narração, cópia, caderno da natureza, lições curtas | fichas de completar |
+  | Clássico | recitação, cópia, listas para memorizar | |
+  | Religioso | segue a base comum, mais atividades de DI.ESP | |
+
+- **Modo tablet:** só as folhas da criança, uma por tela. As páginas do educador ficam de fora.
+- **Ilustrações:** o protótipo usa emojis. A versão final precisa de **um banco próprio de ilustrações** (licenciadas ou encomendadas), com traço consistente e que funcione em preto e branco.
+
 ---
 
 ## 6. Como isso se encaixa no Semear atual
@@ -424,14 +456,54 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 - [ ] **Necessidades específicas** (TEA, TDAH, dislexia): adiado. Revisitar depois do piloto.
 - [ ] **Validação jurídica** do modelo de portfólio (advogado + associação de famílias).
 - [ ] **Termos de uso e política de privacidade** (LGPD, dados de crianças, cobrança recorrente).
-- [ ] **Identidade visual das folhas impressas:** tom "Mata Atlântica" do app atual ou algo mais neutro?
+- [ ] **Banco de ilustrações** próprio (encomendar × licenciar) para substituir os emojis do protótipo.
 
 ---
 
-## 12. Próximos passos sugeridos
+## 12. Próximos passos: protótipo do pacote primeiro
 
-1. **Conteúdo:** escrever os *briefings* e prompts da pipeline (§7) e gerar um primeiro lote de **LG.FON, LG.ESC, MA.SEN e MA.OPE**, com revisão e códigos BNCC.
-2. **Templates:** desenhar 3 folhas + roteiro + ficha de registro em HTML/CSS de impressão e testar em A4 real e no tablet.
-3. **App (local):** modelo de dados → mapa visual da jornada → sondagem → gerador de sessão → PDF → portfólio.
-4. **Piloto:** 3 a 5 famílias (diferentes vertentes, incluindo afterschooling), por 8 semanas (um ciclo completo de ressondagem).
-5. **Conta + assinatura:** só depois do piloto validar o núcleo.
+### 12.1 Protótipo pronto
+[`prototipos/sessao-lg-fon-04.html`](../prototipos/sessao-lg-fon-04.html) é uma sessão completa de **LG.FON.04 (sílaba inicial)** para uma criança de 5 anos (Montessori + Waldorf). Também há uma versão em PDF pronta para imprimir: [`sessao-lg-fon-04.pdf`](../prototipos/sessao-lg-fon-04.pdf).
+
+| Pág. | Para quem | Conteúdo |
+|---|---|---|
+| 1 | Educador | Roteiro: objetivo, passo a passo com falas sugeridas, o que observar, ajustes na hora |
+| 2 | Educador | Materiais (destaca o que já existe em casa), livro sugerido e toque da vertente |
+| 3 | Criança | Folha 1: ligue as figuras que começam igual |
+| 4 | Criança | Folha 2: pinte o quadradinho (SA·PO, BA·NA·NA) |
+| 5 | Criança | Folha 3: jogo da memória para recortar (o par começa igual) |
+| 6 | Criança | Folha 4: desenho livre |
+| 7 | Educador | Ficha de registro rápido (marcos × 3 estados, evidências, engajamento) |
+
+Para usar, abra no navegador e use a barra no topo:
+- **Imprimir / salvar PDF:** gera o pacote em A4.
+- **Modo tablet:** mostra só as folhas da criança.
+- **Letra da criança:** troca entre bastão, script e cursiva.
+
+### 12.2 Teste com famílias (2 a 3 semanas)
+**Quem:** 3 a 5 famílias com crianças de 4 a 6 anos. Pelo menos uma de afterschooling, uma Montessori ou Waldorf e uma que use tablet.
+
+**Como:**
+1. Enviar o PDF (ou o HTML) **sem explicar nada** além de "prepare e aplique esta sessão".
+2. A família aplica a sessão e preenche a ficha.
+3. Fazer uma conversa de 20 minutos depois, com as perguntas abaixo.
+
+**Perguntas:**
+- Quanto tempo levou para **preparar**? E a sessão em si?
+- O roteiro deixou claro **o que fazer e o que falar**? O que ficou confuso?
+- A criança entendeu as folhas **sem ajuda** para entender o enunciado?
+- A ficha de registro foi fácil? Você saberia decidir entre "em desenvolvimento" e "consolidado"?
+- Imprimiu em cores ou em P&B? Ficou bom? Usou o tablet?
+- **Você pagaria por um app que gerasse isso toda semana, ajustado ao seu filho?** Quanto?
+
+**Sinais de sucesso:**
+- Preparação em ≤ 10 minutos.
+- A criança se engaja (😄 ou 🤩 na ficha) em pelo menos 3 de 5 famílias.
+- Os pais conseguem classificar o marco sem nos perguntar.
+- Pelo menos 2 famílias dizem que pagariam.
+
+### 12.3 Depois do teste
+1. Ajustar o template do pacote com base no que as famílias disseram.
+2. Pipeline de conteúdo (§7): primeiro lote de LG.FON, LG.ESC, MA.SEN e MA.OPE.
+3. App: modelo de dados → mapa da jornada → sondagem → gerador de sessão (reaproveitando este HTML como template) → portfólio.
+4. Conta + assinatura por último, quando o núcleo estiver validado.
