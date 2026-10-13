@@ -1,0 +1,141 @@
+{
+  "id": "atv-caca-silabas",
+  "titulo": "Caça às sílabas: começa igual!",
+  "marcos": ["LG.FON.04"],
+  "revisa": ["LG.FON.03"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 35,
+  "objetivo": "A criança percebe que palavras diferentes podem **começar com o mesmo pedaço** (BO-la, BO-ta). É a ponte entre brincar com sons e entender que a escrita representa a fala.",
+  "passos": [
+    {
+      "titulo": "Aquecimento com palmas",
+      "minutos": 5,
+      "texto": "Falem juntos o nome de 4 objetos da casa batendo uma palma por pedaço.",
+      "fala": "Vamos ver quantos pedacinhos tem CA-DEI-RA? Três palmas!"
+    },
+    {
+      "titulo": "Descoberta com objetos reais",
+      "minutos": 8,
+      "texto": "Coloque na mesa uma bola, uma bota (ou sapato), um bolo/biscoito e uma colher. Diga o nome de cada um bem devagar. Deixe a criança separar os que “começam igual”. Não corrija na hora: pergunte *“Como você descobriu?”*",
+      "fala": "Escuta: BOOO-la… BOOO-ta… Elas começam igual? E a colher?"
+    },
+    {
+      "titulo": "Folha: ligue os que começam igual",
+      "minutos": 7,
+      "texto": "Leia em voz alta o nome de cada figura antes de ela ligar."
+    },
+    {
+      "titulo": "Folha: pinte o quadradinho",
+      "minutos": 7,
+      "texto": "Leia a palavra-modelo marcando as sílabas com palmas."
+    },
+    {
+      "titulo": "Jogo da memória (opcional)",
+      "minutos": 8,
+      "texto": "Recorte as cartas antes da sessão. O par é formado por figuras que **começam igual**, não por figuras iguais."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "acerta 4 ou 5 ligações **sem ajuda**",
+      "diz uma palavra nova que começa igual (“BO… BOneca!”)"
+    ],
+    "emDesenvolvimento": [
+      "acerta com você repetindo as sílabas devagar",
+      "confunde rima com início (BOLA ↔ COLA)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Volte só para as palmas (LG.FON.03) e use apenas 2 pares bem diferentes (BO × CA).",
+    "facil": "Peça que ela invente uma frase “maluca” em que tudo começa igual: *“PAto PAssa PAnela PAra o PAi.”*"
+  },
+  "materiais": [
+    { "item": "Uma bola", "deCasa": true },
+    { "item": "Uma bota ou sapato", "deCasa": true },
+    { "item": "Um bolo, biscoito ou bolacha", "deCasa": true },
+    { "item": "Uma colher (o “intruso”)", "deCasa": true },
+    { "item": "Lápis de cor ou giz de cera", "deCasa": false },
+    { "item": "Tesoura sem ponta (para recortar a memória antes)", "deCasa": false }
+  ],
+  "toqueVertente": {
+    "Montessori": "Comece pelos **objetos reais** antes das figuras. Use uma bandeja e deixe a criança manusear e separar.",
+    "Waldorf": "Abra a sessão com um verso ritmado e termine com a folha de desenho livre, sem cobrar escrita.",
+    "Charlotte Mason": "Mantenha cada bloco curto e peça, no fim, que a criança **narre** como descobriu os pares.",
+    "Clássico": "Recitem juntos uma parlenda conhecida, marcando as sílabas com palmas."
+  },
+  "evidencias": [
+    { "texto": "Folha “ligue”: ligações certas", "resposta": "_____ de 5   ☐ sem ajuda   ☐ com ajuda" },
+    { "texto": "Folha “pinte”: acertos", "resposta": "_____ de 9   ☐ sem ajuda   ☐ com ajuda" },
+    { "texto": "Disse uma palavra nova que começa igual?", "resposta": "☐ sim: ________________   ☐ não" }
+  ],
+  "folhas": [
+    {
+      "tipo": "ligar",
+      "titulo": "Ligue as figuras que começam igual",
+      "esquerda": [
+        { "emoji": "⚽", "texto": "Bola" },
+        { "emoji": "🏠", "texto": "Casa" },
+        { "emoji": "🦆", "texto": "Pato" },
+        { "emoji": "🐒", "texto": "Macaco" },
+        { "emoji": "🍌", "texto": "Banana" }
+      ],
+      "direita": [
+        { "emoji": "🐴", "texto": "Cavalo" },
+        { "emoji": "🐋", "texto": "Baleia" },
+        { "emoji": "🧳", "texto": "Mala" },
+        { "emoji": "👢", "texto": "Bota" },
+        { "emoji": "🦜", "texto": "Papagaio" }
+      ]
+    },
+    {
+      "tipo": "marcar",
+      "titulo": "Pinte o quadradinho das figuras que começam como…",
+      "grupos": [
+        {
+          "modelo": { "emoji": "🐸", "texto": "sa · po" },
+          "itens": [
+            { "emoji": "👞", "texto": "Sapato" },
+            { "emoji": "🚗", "texto": "Carro" },
+            { "emoji": "🧼", "texto": "Sabonete" }
+          ]
+        },
+        {
+          "modelo": { "emoji": "🍌", "texto": "ba · na · na" },
+          "itens": [
+            { "emoji": "⛵", "texto": "Barco" },
+            { "emoji": "🎂", "texto": "Bolo" },
+            { "emoji": "🎈", "texto": "Balão" },
+            { "emoji": "🦆", "texto": "Pato" },
+            { "emoji": "🥔", "texto": "Batata" },
+            { "emoji": "🍎", "texto": "Maçã" }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "cartas",
+      "titulo": "Jogo da memória: o par começa igual!",
+      "cartas": [
+        { "emoji": "⚽", "texto": "Bola" },
+        { "emoji": "🏠", "texto": "Casa" },
+        { "emoji": "🦆", "texto": "Pato" },
+        { "emoji": "🐸", "texto": "Sapo" },
+        { "emoji": "🐒", "texto": "Macaco" },
+        { "emoji": "🍌", "texto": "Banana" },
+        { "emoji": "👞", "texto": "Sapato" },
+        { "emoji": "👢", "texto": "Bota" },
+        { "emoji": "🧳", "texto": "Mala" },
+        { "emoji": "🛏️", "texto": "Cama" },
+        { "emoji": "🐋", "texto": "Baleia" },
+        { "emoji": "🤡", "texto": "Palhaço" }
+      ]
+    },
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe uma coisa que começa igual a MA · CA · CO 🐒",
+      "legenda": "O adulto pode escrever embaixo o nome que a criança disser."
+    }
+  ],
+  "autoria": { "origem": "humano", "status": "publicado", "revisadoEm": "2026-10-13" }
+}

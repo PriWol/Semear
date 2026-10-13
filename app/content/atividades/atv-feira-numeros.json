@@ -1,0 +1,126 @@
+{
+  "id": "atv-feira-numeros",
+  "titulo": "Feira dos números: contando até 20",
+  "marcos": ["MA.SEN.06"],
+  "revisa": ["MA.SEN.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 7],
+  "duracaoMin": 35,
+  "objetivo": "A criança conta coleções de 11 a 20 objetos **sem se perder**, usando uma estratégia (organizar em fileiras, separar o que já contou, agrupar de 10 em 10).",
+  "passos": [
+    {
+      "titulo": "Aquecimento ritmado",
+      "minutos": 3,
+      "texto": "Contem juntos de 1 a 20 pulando ou batendo palmas. Depois: *“eu falo 13 e você continua…”*"
+    },
+    {
+      "titulo": "Feira de verdade",
+      "minutos": 10,
+      "texto": "Espalhe na mesa **17 feijões** (ou tampinhas, botões) e peça para a criança contar. Observe sem interromper: ela aponta? Arrasta? Se perde? Se ela se perder, mostre a estratégia: **uma fileira de 10** e outra com o resto. *“Dez… e mais sete. Dezessete!”*",
+      "fala": "Como você pode ter certeza de que não contou nenhum duas vezes?"
+    },
+    {
+      "titulo": "Folha: conte e circule",
+      "minutos": 7,
+      "texto": "Os itens já estão em fileiras de 10. Incentive que ela marque cada um com um pontinho enquanto conta."
+    },
+    {
+      "titulo": "Folha: quadros de dez",
+      "minutos": 7,
+      "texto": "Ela desenha bolinhas para mostrar o número. Primeiro enche um quadro inteiro, depois continua no segundo."
+    },
+    {
+      "titulo": "Folha: onde tem mais? (revisão)",
+      "minutos": 5,
+      "texto": "Ela circula o cesto com mais, ou marca “iguais”."
+    },
+    {
+      "titulo": "Jogo da barraca (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Cartas de número × cartas de quadro de dez, para jogar memória ou “mercadinho”."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "conta os 17 feijões certinho, **organizando sozinha**",
+      "acerta 3 ou 4 cestos da folha “conte e circule” sem ajuda",
+      "diz o total sem recontar"
+    ],
+    "emDesenvolvimento": [
+      "pula ou repete objetos, mas acerta com a fileira",
+      "trava na passagem do 19 para o 20, ou confunde 12 e 20"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Volte para até 10 com objetos (MA.SEN.02 e .03) e use só o primeiro quadro de dez.",
+    "facil": "Pergunte *“quantos faltam para 20?”* e conte de 2 em 2 (prepara o MA.SEN.07)."
+  },
+  "materiais": [
+    { "item": "17 feijões grandes, tampinhas ou botões", "deCasa": true },
+    { "item": "Um pratinho ou pote para os “já contados”", "deCasa": true },
+    { "item": "Lápis de cor ou giz de cera", "deCasa": false },
+    { "item": "Tesoura sem ponta (para recortar as cartas, opcional)", "deCasa": false }
+  ],
+  "toqueVertente": {
+    "Charlotte Mason": "**Lições curtas**: no máximo 10 minutos por bloco, e você para enquanto a atenção ainda está boa. No final, peça que a criança **narre**: “me conta como você fez para não se perder”.",
+    "Clássico": "No aquecimento, **recitem** a sequência de 10 em 10 (10, 20, 30… até 100) como uma cantilena.",
+    "Montessori": "Use contas ou o material dourado no lugar dos feijões, numa bandeja.",
+    "Waldorf": "Conte com elementos da natureza (pedrinhas, castanhas) e um verso ritmado."
+  },
+  "evidencias": [
+    { "texto": "Contou os 17 feijões", "resposta": "☐ certo   ☐ errou por 1 ou 2   ☐ se perdeu" },
+    { "texto": "Estratégia usada", "resposta": "☐ apontou   ☐ arrastou   ☐ fez fileiras   ☐ agrupou de 10" },
+    { "texto": "Folha “conte e circule”: certos", "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda" },
+    { "texto": "Folha “quadros de dez”: certos", "resposta": "_____ de 3   ☐ encheu o 1º quadro antes" },
+    { "texto": "Folha “onde tem mais”: certos", "resposta": "_____ de 4" }
+  ],
+  "perguntaFicha": "Narração da criança: “como você fez para não se perder?”",
+  "folhas": [
+    {
+      "tipo": "contar",
+      "titulo": "Conte o que tem na barraca e circule o número",
+      "itens": [
+        { "emoji": "🍊", "quantidade": 12, "opcoes": [11, 12, 14] },
+        { "emoji": "🍓", "quantidade": 15, "opcoes": [13, 15, 16] },
+        { "emoji": "🥚", "quantidade": 17, "opcoes": [17, 18, 19] },
+        { "emoji": "🌽", "quantidade": 20, "opcoes": [18, 19, 20] }
+      ]
+    },
+    {
+      "tipo": "quadro-dez",
+      "titulo": "Desenhe bolinhas para mostrar o número",
+      "dica": "Encha o primeiro quadro, depois continue no segundo.",
+      "numeros": [13, 16, 19]
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Circule o cesto que tem mais",
+      "dica": "Se tiverem a mesma quantidade, pinte o quadradinho “iguais”.",
+      "pares": [
+        { "a": { "emoji": "🥕", "quantidade": 8 }, "b": { "emoji": "🍅", "quantidade": 11 } },
+        { "a": { "emoji": "🍇", "quantidade": 14 }, "b": { "emoji": "🍋", "quantidade": 12 } },
+        { "a": { "emoji": "🥥", "quantidade": 9 }, "b": { "emoji": "🍍", "quantidade": 9 } },
+        { "a": { "emoji": "🍐", "quantidade": 18 }, "b": { "emoji": "🍑", "quantidade": 16 } }
+      ]
+    },
+    {
+      "tipo": "cartas",
+      "titulo": "Jogo da barraca: ache o par do número",
+      "cartas": [
+        { "numero": 11 },
+        { "numero": 13 },
+        { "numero": 15 },
+        { "numero": 17 },
+        { "numero": 19 },
+        { "numero": 20 },
+        { "quadroDez": 17 },
+        { "quadroDez": 11 },
+        { "quadroDez": 20 },
+        { "quadroDez": 15 },
+        { "quadroDez": 19 },
+        { "quadroDez": 13 }
+      ]
+    }
+  ],
+  "autoria": { "origem": "humano", "status": "publicado", "revisadoEm": "2026-10-13" }
+}

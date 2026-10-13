@@ -1,14 +1,5 @@
 {
   "versao": "0.3",
-  "faixaEtaria": [
-    3,
-    8
-  ],
-  "escala": [
-    "nao-observado",
-    "em-desenvolvimento",
-    "consolidado"
-  ],
   "vertentes": [
     "Montessori",
     "Waldorf",
@@ -325,6 +316,5 @@
       ],
       "comJornada": false
     }
-  ],
-  "nota": "comJornada=false: domínio só com atividades no lançamento (sem marcos nem posicionamento)."
+  ]
 }

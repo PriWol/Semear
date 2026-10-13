@@ -1,0 +1,120 @@
+{
+  "marcos": [
+    {
+      "id": "MA.SEN.01",
+      "linha": "MA.SEN",
+      "ordem": 1,
+      "titulo": "Recita a sequência numérica até 10",
+      "descricaoPais": "Fala os números em ordem, mesmo sem contar objetos ainda.",
+      "evidencias": [
+        "Recita 1 a 10 sem pular"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "MA.SEN.02",
+      "linha": "MA.SEN",
+      "ordem": 2,
+      "titulo": "Correspondência termo a termo",
+      "descricaoPais": "Aponta um objeto para cada número falado.",
+      "evidencias": [
+        "Conta 5 objetos tocando um de cada vez"
+      ],
+      "idadeTipica": 3.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "MA.SEN.03",
+      "linha": "MA.SEN",
+      "ordem": 3,
+      "titulo": "Cardinalidade",
+      "descricaoPais": "Sabe que o último número dito é a quantidade total.",
+      "evidencias": [
+        "Responde 'quantos?' sem recontar"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "MA.SEN.04",
+      "linha": "MA.SEN",
+      "ordem": 4,
+      "titulo": "Subitiza até 4",
+      "descricaoPais": "Reconhece pequenas quantidades sem contar, como nos pontos do dado.",
+      "evidencias": [
+        "Diz quantidades de 1 a 4 mostradas rapidamente"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "MA.SEN.05",
+      "linha": "MA.SEN",
+      "ordem": 5,
+      "titulo": "Compara quantidades",
+      "descricaoPais": "Diz onde tem mais, menos ou igual.",
+      "evidencias": [
+        "Compara coleções de até 10"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "MA.SEN.06",
+      "linha": "MA.SEN",
+      "ordem": 6,
+      "titulo": "Conta até 20 com objetos",
+      "descricaoPais": "Conta coleções maiores com organização.",
+      "evidencias": [
+        "Conta 15 a 20 objetos com correção"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "MA.SEN.07",
+      "linha": "MA.SEN",
+      "ordem": 7,
+      "titulo": "Conta a partir de um número",
+      "descricaoPais": "Continua a contagem a partir do 6 sem voltar ao 1.",
+      "evidencias": [
+        "'Começa no 6 e conta mais 3'"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": [
+        "MA.SEN.06"
+      ],
+      "bncc": []
+    },
+    {
+      "id": "MA.SEN.08",
+      "linha": "MA.SEN",
+      "ordem": 8,
+      "titulo": "Decompõe números até 10",
+      "descricaoPais": "Sabe que 7 pode ser 5 e 2, ou 4 e 3.",
+      "evidencias": [
+        "Encontra 3 decomposições do 7"
+      ],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [
+        "MA.SEN.07"
+      ],
+      "bncc": []
+    }
+  ]
+}
