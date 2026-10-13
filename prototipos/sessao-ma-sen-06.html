@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semear · Sessão: feira dos números</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BR:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pacote.css">
+<style>
+  /* ---------- Específico de Matemática ---------- */
+  .fila { display: flex; gap: 1.2mm; }
+  .fila span { font-size: 17pt; line-height: 1.15; }
+  .fila + .fila { margin-top: 1.5mm; }
+
+  /* Folha 1: conte e circule */
+  .lista-conta { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 4mm; }
+  .conta { display: grid; grid-template-columns: 1fr 52mm; align-items: center; gap: 6mm;
+           background: var(--cor); border-radius: 5mm; padding: 4mm 5mm; }
+  .cesto { background: #fff; border-radius: 3mm; padding: 3mm 4mm; }
+  .opcoes { display: flex; justify-content: space-between; }
+  .num { font-size: 20pt; font-weight: 700; width: 14mm; height: 14mm; display: grid; place-items: center;
+         background: #fff; border-radius: 50%; }
+
+  /* Quadro de dez */
+  .dez { display: grid; grid-template-columns: repeat(5, 1fr); border: 2.5px solid var(--tinta); border-radius: 1.5mm; overflow: hidden; }
+  .dez i { aspect-ratio: 1; border: 1px solid var(--tinta); background: #fff; position: relative; }
+  .dez i.on::after { content: ""; position: absolute; inset: 18%; border-radius: 50%; background: var(--tinta); }
+  .dois-dez { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+
+  /* Folha 2: represente */
+  .lista-repr { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; }
+  .representa { display: grid; grid-template-columns: 34mm 1fr; align-items: center; gap: 6mm;
+                background: var(--verde-claro); border-radius: 5mm; padding: 5mm; }
+  .numero-grande { font-size: 46pt; font-weight: 700; text-align: center; background: #fff; border-radius: 4mm; padding: 2mm 0; }
+
+  /* Folha 3: onde tem mais */
+  .lista-pares { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; }
+  .par { display: grid; grid-template-columns: 1fr 10mm 1fr 22mm; align-items: center; gap: 3mm; }
+  .minicesto { background: var(--cor); border-radius: 5mm; padding: 4mm; min-height: 40mm;
+               display: flex; flex-direction: column; justify-content: center; align-items: center; }
+  .ou { text-align: center; font-size: 13pt; color: var(--suave); }
+  .iguais { display: flex; flex-direction: column; align-items: center; gap: 2mm; font-size: 12pt; }
+  .quadrado { width: 9mm; height: 9mm; border: 2.5px solid var(--tinta); border-radius: 2mm; background: #fff; display: inline-block; }
+
+  /* Folha 4: cartas */
+  .num-carta { font-size: 54pt; font-weight: 700; }
+  .dois-dez.mini { width: 72%; grid-template-columns: 1fr; gap: 3mm; }
+  .dica { text-align: center; font-size: 11pt; color: var(--suave); margin: 0 0 3mm; }
+</style>
+</head>
+<body class="letra-script">
+
+<div class="barra" role="toolbar" aria-label="Controles do pacote">
+  <strong>🌱 Semear · protótipo</strong>
+  <button class="primario" onclick="window.print()">🖨️ Imprimir / salvar PDF</button>
+  <button id="btnTablet" aria-pressed="false" onclick="alternarTablet()">📱 Modo tablet (só folhas da criança)</button>
+  <label>Letra da criança:
+    <select id="letra" onchange="trocarLetra(this.value)">
+      <option value="bastao">BASTÃO (caixa alta)</option>
+      <option value="script" selected>script minúsculo</option>
+      <option value="cursiva">cursiva</option>
+    </select>
+  </label>
+</div>
+
+<main class="paginas">
+
+<!-- ===================== 1. ROTEIRO DO EDUCADOR ===================== -->
+<section class="pagina educador">
+  <span class="etiqueta">Roteiro do educador · leia antes da sessão</span>
+  <h1>Feira dos números: contando até 20</h1>
+  <p><b>Marco principal:</b> MA.SEN.06 · Conta até 20 com objetos &nbsp;·&nbsp; <b>Revisão:</b> MA.SEN.05 · Compara quantidades</p>
+
+  <div class="meta">
+    <div><b>Criança</b>Pedro, 6 anos</div>
+    <div><b>Duração</b>~35 min (3 blocos curtos)</div>
+    <div><b>Vertente</b>Charlotte Mason + Clássico</div>
+    <div><b>Data</b>___/___/______</div>
+  </div>
+
+  <h2>🎯 Objetivo</h2>
+  <p>A criança conta coleções de 11 a 20 objetos <b>sem se perder</b>, usando uma estratégia (organizar em fileiras, separar o que já contou, agrupar de 10 em 10).</p>
+
+  <h2>🧭 Passo a passo</h2>
+  <ol>
+    <li><b>Aquecimento ritmado (3 min).</b> Contem juntos de 1 a 20 pulando ou batendo palmas. Depois: <i>“eu falo 13 e você continua…”</i></li>
+    <li><b>Feira de verdade (10 min).</b> Espalhe na mesa <b>17 feijões</b> (ou tampinhas, botões). Peça para a criança contar. Observe sem interromper: ela aponta? Arrasta? Se perde?
+      <p class="fala">“Como você pode ter certeza de que não contou nenhum duas vezes?”</p>
+      Se ela se perder, mostre a estratégia: fazer <b>uma fileira de 10</b> e outra com o resto. <i>“Dez… e mais sete. Dezessete!”</i></li>
+    <li><b>Folha 1: Conte e circule (7 min).</b> Os itens já estão em fileiras de 10. Incentive que ela marque cada um com um pontinho enquanto conta.</li>
+    <li><b>Folha 2: Quadros de dez (7 min).</b> Ela desenha bolinhas para mostrar o número. Primeiro enche um quadro inteiro, depois continua no segundo.</li>
+    <li><b>Folha 3: Onde tem mais? (5 min, revisão).</b> Ela circula o cesto com mais, ou marca “iguais”.</li>
+    <li><b>Jogo da barraca (opcional, outro dia).</b> Folha 4: cartas de número × cartas de quadro de dez, para jogar memória ou “mercadinho”.</li>
+  </ol>
+
+  <h2>👀 O que observar (para a ficha de registro)</h2>
+  <div class="duas-col">
+    <div class="caixa">
+      <p><b>✅ Consolidado</b> se ela…</p>
+      <ul>
+        <li>conta os 17 feijões certinho, <b>organizando sozinha</b>;</li>
+        <li>acerta 3 ou 4 cestos da Folha 1 sem ajuda;</li>
+        <li>diz o total sem recontar.</li>
+      </ul>
+    </div>
+    <div class="caixa">
+      <p><b>🌱 Em desenvolvimento</b> se ela…</p>
+      <ul>
+        <li>pula ou repete objetos, mas acerta com a fileira;</li>
+        <li>trava na passagem do 19 para o 20, ou confunde 12 e 20.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>🔁 Ajustes na hora</h2>
+  <p><b>Está difícil?</b> Volte para até 10 com objetos (MA.SEN.02 e .03) e use só o primeiro quadro de dez. <b>Está fácil?</b> Pergunte <i>“quantos faltam para 20?”</i> e conte de 2 em 2 (prepara o MA.SEN.07).</p>
+
+  <div class="rodape"><span>Semear · Pacote de sessão · Roteiro</span><span>Educador · pág. 1</span></div>
+</section>
+
+<!-- ===================== 2. MATERIAIS + LIVRO ===================== -->
+<section class="pagina educador">
+  <span class="etiqueta">Prepare antes · 5 min</span>
+  <h1>Materiais e livro</h1>
+
+  <div class="duas-col">
+    <div>
+      <h2>🧺 Separe</h2>
+      <ul class="check">
+        <li><b>17 feijões</b> grandes, tampinhas ou botões (de casa)</li>
+        <li>Um pratinho ou pote para os “já contados” (de casa)</li>
+        <li>Lápis de cor ou giz de cera</li>
+        <li>Tesoura sem ponta (para recortar as cartas, opcional)</li>
+        <li>Folhas 1 a 4 impressas, ou o tablet no modo tablet</li>
+        <li>Ficha de registro e uma caneta</li>
+      </ul>
+    </div>
+    <div>
+      <h2>📚 Livro sugerido</h2>
+      <div class="livro">
+        <div class="capa">Dez<br>Sacizinhos</div>
+        <div>
+          <p><b>Dez Sacizinhos</b><br>Tatiana Belinky</p>
+          <p><b>Uso:</b> leitura em voz alta.</p>
+          <p><b>Por quê:</b> versos rimados que contam de 10 até 1 com os sacis do nosso folclore. Ajuda a ouvir a sequência numérica e prepara a contagem regressiva. Depois da leitura, peça para a criança <b>narrar</b> a história com os próprios feijões.</p>
+          <p style="color:var(--suave);font-size:9pt">Marcos: MA.SEN.01 · MA.SEN.03 · LG.LIT · NM.CUL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>🌿 Toque da vertente</h2>
+  <div class="duas-col">
+    <div class="caixa"><p><b>Charlotte Mason:</b> <b>lições curtas</b>. Cada bloco tem no máximo 10 minutos, e você para enquanto a atenção ainda está boa. Comece pelos <b>objetos reais</b> e, no final, peça que a criança <b>narre</b>: “me conta como você fez para não se perder”.</p></div>
+    <div class="caixa"><p><b>Clássico (inspiração):</b> no aquecimento, <b>recitem</b> a sequência de 10 em 10 (10, 20, 30… até 100) como uma cantilena. A memorização vem antes da compreensão, e as duas se encontram depois.</p></div>
+  </div>
+
+  <h2>📸 Depois da sessão</h2>
+  <p>Preencha a ficha de registro (2 min) e lance no app. Para o portfólio, fotografe <b>a Folha 2 preenchida</b>: ela mostra bem a estratégia da criança.</p>
+
+  <div class="rodape"><span>Semear · Pacote de sessão · Materiais</span><span>Educador · pág. 2</span></div>
+</section>
+
+<!-- ===================== 3. FOLHA 1: CONTE E CIRCULE ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>Nome: <span class="campo"></span></span><span>🌱</span></div>
+  <h2 class="titulo-crianca">Conte o que tem na barraca<br>e circule o número</h2>
+  <div class="lista-conta">
+    <div class="conta" style="--cor:var(--pessego)">
+      <div class="cesto"><div class="fila"><span>🍊</span><span>🍊</span><span>🍊</span><span>🍊</span><span>🍊</span><span>🍊</span><span>🍊</span><span>🍊</span><span>🍊</span><span>🍊</span></div><div class="fila"><span>🍊</span><span>🍊</span></div></div>
+      <div class="opcoes"><span class="num">11</span><span class="num">12</span><span class="num">14</span></div>
+    </div>
+    <div class="conta" style="--cor:var(--lilas)">
+      <div class="cesto"><div class="fila"><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span></div><div class="fila"><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span></div></div>
+      <div class="opcoes"><span class="num">13</span><span class="num">15</span><span class="num">16</span></div>
+    </div>
+    <div class="conta" style="--cor:var(--amarelo)">
+      <div class="cesto"><div class="fila"><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span></div><div class="fila"><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span><span>🥚</span></div></div>
+      <div class="opcoes"><span class="num">17</span><span class="num">18</span><span class="num">19</span></div>
+    </div>
+    <div class="conta" style="--cor:var(--verde-claro)">
+      <div class="cesto"><div class="fila"><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span></div><div class="fila"><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span><span>🌽</span></div></div>
+      <div class="opcoes"><span class="num">18</span><span class="num">19</span><span class="num">20</span></div>
+    </div>
+  </div>
+  <div class="rodape"><span>MA.SEN.06 · Folha 1</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 4. FOLHA 2: QUADROS DE DEZ ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>Nome: <span class="campo"></span></span><span>🌱</span></div>
+  <h2 class="titulo-crianca">Desenhe bolinhas para mostrar o número</h2>
+  <p class="dica">Encha o primeiro quadro, depois continue no segundo.</p>
+  <div class="lista-repr">
+    <div class="representa">
+      <div class="numero-grande">13</div>
+      <div class="dois-dez"><div class="dez "><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div><div class="dez "><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div>
+    </div>
+    <div class="representa">
+      <div class="numero-grande">16</div>
+      <div class="dois-dez"><div class="dez "><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div><div class="dez "><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div>
+    </div>
+    <div class="representa">
+      <div class="numero-grande">19</div>
+      <div class="dois-dez"><div class="dez "><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div><div class="dez "><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div>
+    </div>
+  </div>
+  <div class="rodape"><span>MA.SEN.06 · Folha 2</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 5. FOLHA 3: ONDE TEM MAIS ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>Nome: <span class="campo"></span></span><span>🌱</span></div>
+  <h2 class="titulo-crianca">Circule o cesto que tem mais</h2>
+  <p class="dica">Se tiverem a mesma quantidade, pinte o quadradinho “iguais”.</p>
+  <div class="lista-pares">
+    <div class="par">
+      <div class="minicesto" style="--cor:var(--pessego)"><div class="fila"><span>🥕</span><span>🥕</span><span>🥕</span><span>🥕</span><span>🥕</span></div><div class="fila"><span>🥕</span><span>🥕</span><span>🥕</span></div></div>
+      <span class="ou">ou</span>
+      <div class="minicesto" style="--cor:var(--azul)"><div class="fila"><span>🍅</span><span>🍅</span><span>🍅</span><span>🍅</span><span>🍅</span></div><div class="fila"><span>🍅</span><span>🍅</span><span>🍅</span><span>🍅</span><span>🍅</span></div><div class="fila"><span>🍅</span></div></div>
+      <span class="iguais"><span class="quadrado"></span> iguais</span>
+    </div>
+    <div class="par">
+      <div class="minicesto" style="--cor:var(--pessego)"><div class="fila"><span>🍇</span><span>🍇</span><span>🍇</span><span>🍇</span><span>🍇</span></div><div class="fila"><span>🍇</span><span>🍇</span><span>🍇</span><span>🍇</span><span>🍇</span></div><div class="fila"><span>🍇</span><span>🍇</span><span>🍇</span><span>🍇</span></div></div>
+      <span class="ou">ou</span>
+      <div class="minicesto" style="--cor:var(--azul)"><div class="fila"><span>🍋</span><span>🍋</span><span>🍋</span><span>🍋</span><span>🍋</span></div><div class="fila"><span>🍋</span><span>🍋</span><span>🍋</span><span>🍋</span><span>🍋</span></div><div class="fila"><span>🍋</span><span>🍋</span></div></div>
+      <span class="iguais"><span class="quadrado"></span> iguais</span>
+    </div>
+    <div class="par">
+      <div class="minicesto" style="--cor:var(--pessego)"><div class="fila"><span>🥥</span><span>🥥</span><span>🥥</span><span>🥥</span><span>🥥</span></div><div class="fila"><span>🥥</span><span>🥥</span><span>🥥</span><span>🥥</span></div></div>
+      <span class="ou">ou</span>
+      <div class="minicesto" style="--cor:var(--azul)"><div class="fila"><span>🍍</span><span>🍍</span><span>🍍</span><span>🍍</span><span>🍍</span></div><div class="fila"><span>🍍</span><span>🍍</span><span>🍍</span><span>🍍</span></div></div>
+      <span class="iguais"><span class="quadrado"></span> iguais</span>
+    </div>
+    <div class="par">
+      <div class="minicesto" style="--cor:var(--pessego)"><div class="fila"><span>🍐</span><span>🍐</span><span>🍐</span><span>🍐</span><span>🍐</span></div><div class="fila"><span>🍐</span><span>🍐</span><span>🍐</span><span>🍐</span><span>🍐</span></div><div class="fila"><span>🍐</span><span>🍐</span><span>🍐</span><span>🍐</span><span>🍐</span></div><div class="fila"><span>🍐</span><span>🍐</span><span>🍐</span></div></div>
+      <span class="ou">ou</span>
+      <div class="minicesto" style="--cor:var(--azul)"><div class="fila"><span>🍑</span><span>🍑</span><span>🍑</span><span>🍑</span><span>🍑</span></div><div class="fila"><span>🍑</span><span>🍑</span><span>🍑</span><span>🍑</span><span>🍑</span></div><div class="fila"><span>🍑</span><span>🍑</span><span>🍑</span><span>🍑</span><span>🍑</span></div><div class="fila"><span>🍑</span></div></div>
+      <span class="iguais"><span class="quadrado"></span> iguais</span>
+    </div>
+  </div>
+  <div class="rodape"><span>MA.SEN.05 · Folha 3 · revisão</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 6. FOLHA 4: CARTAS ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>✂️ Jogo da barraca: ache o par do número</span><span>🌱</span></div>
+  <div class="cartas"><div class="carta" style="--cor:var(--amarelo)"><span class="num-carta">11</span></div><div class="carta" style="--cor:var(--amarelo)"><span class="num-carta">13</span></div><div class="carta" style="--cor:var(--amarelo)"><span class="num-carta">15</span></div><div class="carta" style="--cor:var(--amarelo)"><span class="num-carta">17</span></div><div class="carta" style="--cor:var(--amarelo)"><span class="num-carta">19</span></div><div class="carta" style="--cor:var(--amarelo)"><span class="num-carta">20</span></div><div class="carta" style="--cor:var(--azul)"><div class="dois-dez mini"><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div></div></div><div class="carta" style="--cor:var(--azul)"><div class="dois-dez mini"><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="dez "><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></div><div class="carta" style="--cor:var(--azul)"><div class="dois-dez mini"><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div></div><div class="carta" style="--cor:var(--azul)"><div class="dois-dez mini"><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></div><div class="carta" style="--cor:var(--azul)"><div class="dois-dez mini"><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></div><div class="carta" style="--cor:var(--azul)"><div class="dois-dez mini"><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="dez "><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></div>
+  </div>
+  <div class="rodape"><span>MA.SEN.06 · Folha 4 · recortar nas linhas tracejadas</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 7. FICHA DE REGISTRO ===================== -->
+<section class="pagina educador">
+  <span class="etiqueta">Ficha de registro rápido · 2 min</span>
+  <h1>Como foi a sessão?</h1>
+  <div class="meta">
+    <div><b>Criança</b>Pedro</div>
+    <div><b>Data</b>___/___/______</div>
+    <div><b>Duração real</b>_____ min</div>
+    <div><b>Código</b>S-2610-P1</div>
+  </div>
+
+  <h2>Marcos trabalhados</h2>
+  <table class="registro">
+    <tr><th>Marco</th><th>Não observado</th><th>Em desenvolvimento</th><th>Consolidado</th></tr>
+    <tr><td><b>MA.SEN.06</b><br>Conta até 20 com objetos</td><td class="c">☐</td><td class="c">☐</td><td class="c">☐</td></tr>
+    <tr><td><b>MA.SEN.05</b> (revisão)<br>Compara quantidades</td><td class="c">☐</td><td class="c">☐</td><td class="c">☐</td></tr>
+  </table>
+
+  <h2>Evidências</h2>
+  <table class="registro">
+    <tr><td>Contou os 17 feijões</td><td>☐ certo &nbsp; ☐ errou por 1 ou 2 &nbsp; ☐ se perdeu</td></tr>
+    <tr><td>Estratégia usada</td><td>☐ apontou &nbsp; ☐ arrastou &nbsp; ☐ fez fileiras &nbsp; ☐ agrupou de 10</td></tr>
+    <tr><td>Folha 1: cestos certos</td><td>_____ de 4 &nbsp; ☐ sem ajuda &nbsp; ☐ com ajuda</td></tr>
+    <tr><td>Folha 2: números certos</td><td>_____ de 3 &nbsp; ☐ encheu o 1º quadro antes</td></tr>
+    <tr><td>Folha 3: comparações certas</td><td>_____ de 4</td></tr>
+    <tr><td>Foto da folha para o portfólio</td><td>☐ tirei &nbsp; ☐ não precisa</td></tr>
+  </table>
+
+  <h2>Engajamento</h2>
+  <p style="font-size:16pt">😴 &nbsp; 🙂 &nbsp; 😄 &nbsp; 🤩 &nbsp;&nbsp;<span style="font-size:10pt">(circule)</span></p>
+
+  <h2>Narração da criança: “como você fez para não se perder?”</h2>
+  <div class="linhas-nota"><div></div><div></div><div></div><div></div></div>
+
+  <div class="rodape"><span>Lance no app: Registrar sessão → código S-2610-P1</span><span>Educador · ficha</span></div>
+</section>
+
+</main>
+
+<script>
+  function alternarTablet() {
+    const on = document.body.classList.toggle('tablet');
+    document.getElementById('btnTablet').setAttribute('aria-pressed', String(on));
+  }
+  function trocarLetra(v) {
+    document.body.classList.remove('letra-bastao', 'letra-script', 'letra-cursiva');
+    document.body.classList.add('letra-' + v);
+  }
+</script>
+</body>
+</html>

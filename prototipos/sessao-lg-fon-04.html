@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semear · Sessão: sílaba inicial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fontes em links separados: se uma falhar, as outras continuam carregando -->
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BR:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pacote.css">
+</head>
+<body class="letra-bastao">
+
+<div class="barra" role="toolbar" aria-label="Controles do pacote">
+  <strong>🌱 Semear · protótipo</strong>
+  <button class="primario" onclick="window.print()">🖨️ Imprimir / salvar PDF</button>
+  <button id="btnTablet" aria-pressed="false" onclick="alternarTablet()">📱 Modo tablet (só folhas da criança)</button>
+  <label>Letra da criança:
+    <select id="letra" onchange="trocarLetra(this.value)">
+      <option value="bastao">BASTÃO (caixa alta)</option>
+      <option value="script">script minúsculo</option>
+      <option value="cursiva">cursiva</option>
+    </select>
+  </label>
+</div>
+
+<main class="paginas">
+
+<!-- ===================== 1. ROTEIRO DO EDUCADOR ===================== -->
+<section class="pagina educador">
+  <span class="etiqueta">Roteiro do educador · leia antes da sessão</span>
+  <h1>Caça às sílabas: começa igual!</h1>
+  <p><b>Marco principal:</b> LG.FON.04 · Identifica a sílaba inicial das palavras &nbsp;·&nbsp; <b>Revisão:</b> LG.FON.03 · Segmenta palavras em sílabas</p>
+
+  <div class="meta">
+    <div><b>Criança</b>Ana, 5 anos</div>
+    <div><b>Duração</b>~35 min</div>
+    <div><b>Vertente</b>Montessori + Waldorf</div>
+    <div><b>Data</b>___/___/______</div>
+  </div>
+
+  <h2>🎯 Objetivo</h2>
+  <p>A criança percebe que palavras diferentes podem <b>começar com o mesmo pedaço</b> (BO-la, BO-ta). É a ponte entre brincar com sons e entender que a escrita representa a fala.</p>
+
+  <h2>🧭 Passo a passo</h2>
+  <ol>
+    <li><b>Aquecimento com palmas (5 min).</b> Falem juntos o nome de 4 objetos da casa batendo uma palma por pedaço.
+      <p class="fala">“Vamos ver quantos pedacinhos tem CA-DEI-RA? Três palmas!”</p></li>
+    <li><b>Descoberta com objetos reais (8 min).</b> Coloque na mesa: uma bola, uma bota (ou sapato), um bolo/biscoito e uma colher. Diga o nome de cada um bem devagar.
+      <p class="fala">“Escuta: BOOO-la… BOOO-ta… Elas começam igual? E a colher?”</p>
+      Deixe a criança separar os que “começam igual”. Não corrija na hora. Pergunte: <i>“Como você descobriu?”</i></li>
+    <li><b>Folha 1: Ligue os que começam igual (7 min).</b> Leia em voz alta o nome de cada figura antes de ela ligar.</li>
+    <li><b>Folha 2: Pinte o quadradinho (7 min).</b> Leia a palavra-modelo marcando as sílabas com palmas.</li>
+    <li><b>Jogo da memória (8 min, opcional).</b> Recorte as cartas antes da sessão. O par é formado por figuras que <b>começam igual</b>, não por figuras iguais.</li>
+    <li><b>Fechamento.</b> A folha de desenho fica para depois da sessão ou para o dia seguinte, sem pressa.</li>
+  </ol>
+
+  <h2>👀 O que observar (para a ficha de registro)</h2>
+  <div class="duas-col">
+    <div class="caixa">
+      <p><b>✅ Consolidado</b> se ela…</p>
+      <ul>
+        <li>acerta 4 ou 5 ligações na Folha 1 <b>sem ajuda</b>;</li>
+        <li>diz uma palavra nova que começa igual (“BO… BOneca!”).</li>
+      </ul>
+    </div>
+    <div class="caixa">
+      <p><b>🌱 Em desenvolvimento</b> se ela…</p>
+      <ul>
+        <li>acerta com você repetindo as sílabas devagar;</li>
+        <li>confunde rima com início (BOLA ↔ COLA).</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>🔁 Ajustes na hora</h2>
+  <p><b>Está difícil?</b> Volte só para as palmas (LG.FON.03) e use apenas 2 pares bem diferentes (BO × CA). <b>Está fácil?</b> Peça que ela invente uma frase “maluca” em que tudo começa igual: <i>“PAto PAssa PAnela PAra o PAi.”</i></p>
+
+  <div class="rodape"><span>Semear · Pacote de sessão · Roteiro</span><span>Educador · pág. 1</span></div>
+</section>
+
+<!-- ===================== 2. MATERIAIS + LIVRO ===================== -->
+<section class="pagina educador">
+  <span class="etiqueta">Prepare antes · 5 min</span>
+  <h1>Materiais e livro</h1>
+
+  <div class="duas-col">
+    <div>
+      <h2>🧺 Separe</h2>
+      <ul class="check">
+        <li>Uma <b>bola</b> (de casa)</li>
+        <li>Uma <b>bota</b> ou sapato (de casa)</li>
+        <li>Um <b>bolo</b>, biscoito ou bolacha (de casa)</li>
+        <li>Uma <b>colher</b> (de casa: o “intruso”)</li>
+        <li>Lápis de cor ou giz de cera</li>
+        <li>Tesoura sem ponta (para recortar a memória <b>antes</b>)</li>
+        <li>Folhas 1 a 4 impressas, ou o tablet no modo tablet</li>
+        <li>Ficha de registro e uma caneta</li>
+      </ul>
+    </div>
+    <div>
+      <h2>📚 Livro sugerido</h2>
+      <div class="livro">
+        <div class="capa">Ou Isto<br>ou Aquilo</div>
+        <div>
+          <p><b>Ou Isto ou Aquilo</b><br>Cecília Meireles</p>
+          <p><b>Uso:</b> leitura em voz alta.</p>
+          <p><b>Por quê:</b> poemas curtos que brincam com os sons das palavras. Leia um por dia e pergunte: “Ouviu alguma palavra que começa igual a outra?”</p>
+          <p style="color:var(--suave);font-size:9pt">Marcos: LG.FON.02 · LG.FON.04 · LG.LIT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>🌿 Toque da vertente</h2>
+  <div class="duas-col">
+    <div class="caixa"><p><b>Montessori:</b> comece pelos <b>objetos reais</b> (passo 2) antes das figuras. Use uma bandeja e deixe a criança manusear e separar.</p></div>
+    <div class="caixa"><p><b>Waldorf (inspiração):</b> abra a sessão com um verso ritmado e termine com a folha de desenho livre, sem cobrar escrita.</p></div>
+  </div>
+
+  <h2>📸 Depois da sessão</h2>
+  <p>Preencha a ficha de registro (2 min) e lance no app. Se quiser guardar evidência para o portfólio, fotografe <b>a folha preenchida</b>, não o rosto da criança.</p>
+
+  <div class="rodape"><span>Semear · Pacote de sessão · Materiais</span><span>Educador · pág. 2</span></div>
+</section>
+
+<!-- ===================== 3. FOLHA 1: LIGAR ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>Nome: <span class="campo"></span></span><span>🌱</span></div>
+  <h2 class="titulo-crianca">Ligue as figuras que começam igual</h2>
+  <div class="ligar">
+    <div class="col esq">
+      <div class="item" style="--cor:var(--azul)"><span class="emoji">⚽</span><span class="palavra">Bola</span></div>
+      <div class="item" style="--cor:var(--pessego)"><span class="emoji">🏠</span><span class="palavra">Casa</span></div>
+      <div class="item" style="--cor:var(--amarelo)"><span class="emoji">🦆</span><span class="palavra">Pato</span></div>
+      <div class="item" style="--cor:var(--verde-claro)"><span class="emoji">🐒</span><span class="palavra">Macaco</span></div>
+      <div class="item" style="--cor:var(--lilas)"><span class="emoji">🍌</span><span class="palavra">Banana</span></div>
+    </div>
+    <div class="col dir">
+      <div class="item" style="--cor:var(--pessego)"><span class="emoji">🐴</span><span class="palavra">Cavalo</span></div>
+      <div class="item" style="--cor:var(--lilas)"><span class="emoji">🐋</span><span class="palavra">Baleia</span></div>
+      <div class="item" style="--cor:var(--verde-claro)"><span class="emoji">🧳</span><span class="palavra">Mala</span></div>
+      <div class="item" style="--cor:var(--azul)"><span class="emoji">👢</span><span class="palavra">Bota</span></div>
+      <div class="item" style="--cor:var(--amarelo)"><span class="emoji">🦜</span><span class="palavra">Papagaio</span></div>
+    </div>
+  </div>
+  <div class="rodape"><span>LG.FON.04 · Folha 1</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 4. FOLHA 2: PINTAR ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>Nome: <span class="campo"></span></span><span>🌱</span></div>
+  <h2 class="titulo-crianca">Pinte o quadradinho das figuras<br>que começam como…</h2>
+
+  <div class="modelo"><span class="emoji">🐸</span><span class="silabas">sa · po</span></div>
+  <div class="grade">
+    <div class="item" style="--cor:var(--verde-claro)"><span class="emoji">👞</span><span class="palavra">Sapato</span><span class="quadrado"></span></div>
+    <div class="item" style="--cor:var(--verde-claro)"><span class="emoji">🚗</span><span class="palavra">Carro</span><span class="quadrado"></span></div>
+    <div class="item" style="--cor:var(--verde-claro)"><span class="emoji">🧼</span><span class="palavra">Sabonete</span><span class="quadrado"></span></div>
+  </div>
+
+  <div class="modelo"><span class="emoji">🍌</span><span class="silabas">ba · na · na</span></div>
+  <div class="grade">
+    <div class="item" style="--cor:var(--amarelo)"><span class="emoji">⛵</span><span class="palavra">Barco</span><span class="quadrado"></span></div>
+    <div class="item" style="--cor:var(--amarelo)"><span class="emoji">🎂</span><span class="palavra">Bolo</span><span class="quadrado"></span></div>
+    <div class="item" style="--cor:var(--amarelo)"><span class="emoji">🎈</span><span class="palavra">Balão</span><span class="quadrado"></span></div>
+    <div class="item" style="--cor:var(--amarelo)"><span class="emoji">🦆</span><span class="palavra">Pato</span><span class="quadrado"></span></div>
+    <div class="item" style="--cor:var(--amarelo)"><span class="emoji">🥔</span><span class="palavra">Batata</span><span class="quadrado"></span></div>
+    <div class="item" style="--cor:var(--amarelo)"><span class="emoji">🍎</span><span class="palavra">Maçã</span><span class="quadrado"></span></div>
+  </div>
+  <div class="rodape"><span>LG.FON.04 · Folha 2</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 5. FOLHA 3: MEMÓRIA ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>✂️ Jogo da memória: o par começa igual!</span><span>🌱</span></div>
+  <div class="cartas">
+    <div class="carta" style="--cor:var(--azul)"><span class="emoji">⚽</span><span class="palavra">Bola</span></div>
+    <div class="carta" style="--cor:var(--pessego)"><span class="emoji">🏠</span><span class="palavra">Casa</span></div>
+    <div class="carta" style="--cor:var(--amarelo)"><span class="emoji">🦆</span><span class="palavra">Pato</span></div>
+    <div class="carta" style="--cor:var(--verde-claro)"><span class="emoji">🐸</span><span class="palavra">Sapo</span></div>
+    <div class="carta" style="--cor:var(--lilas)"><span class="emoji">🐒</span><span class="palavra">Macaco</span></div>
+    <div class="carta" style="--cor:var(--azul)"><span class="emoji">🍌</span><span class="palavra">Banana</span></div>
+    <div class="carta" style="--cor:var(--verde-claro)"><span class="emoji">👞</span><span class="palavra">Sapato</span></div>
+    <div class="carta" style="--cor:var(--azul)"><span class="emoji">👢</span><span class="palavra">Bota</span></div>
+    <div class="carta" style="--cor:var(--lilas)"><span class="emoji">🧳</span><span class="palavra">Mala</span></div>
+    <div class="carta" style="--cor:var(--pessego)"><span class="emoji">🛏️</span><span class="palavra">Cama</span></div>
+    <div class="carta" style="--cor:var(--azul)"><span class="emoji">🐋</span><span class="palavra">Baleia</span></div>
+    <div class="carta" style="--cor:var(--amarelo)"><span class="emoji">🤡</span><span class="palavra">Palhaço</span></div>
+  </div>
+  <div class="rodape"><span>LG.FON.04 · Folha 3 · recortar nas linhas tracejadas</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 6. FOLHA 4: DESENHO ===================== -->
+<section class="pagina crianca">
+  <div class="cabecalho-crianca"><span>Nome: <span class="campo"></span></span><span>🌱</span></div>
+  <h2 class="titulo-crianca">Desenhe uma coisa que começa<br>igual a MA · CA · CO 🐒</h2>
+  <div class="moldura" style="--cor:#b9d7c1">
+    <div class="pauta"><div></div></div>
+  </div>
+  <p style="text-align:center;font-size:11pt;color:var(--suave);margin:3mm 0 0">O adulto pode escrever embaixo o nome que a criança disser.</p>
+  <div class="rodape"><span>LG.FON.04 · Folha 4</span><span>Semear</span></div>
+</section>
+
+<!-- ===================== 7. FICHA DE REGISTRO ===================== -->
+<section class="pagina educador">
+  <span class="etiqueta">Ficha de registro rápido · 2 min</span>
+  <h1>Como foi a sessão?</h1>
+  <div class="meta">
+    <div><b>Criança</b>Ana</div>
+    <div><b>Data</b>___/___/______</div>
+    <div><b>Duração real</b>_____ min</div>
+    <div><b>Código</b>S-2610-A1</div>
+  </div>
+
+  <h2>Marcos trabalhados</h2>
+  <table class="registro">
+    <tr><th>Marco</th><th>Não observado</th><th>Em desenvolvimento</th><th>Consolidado</th></tr>
+    <tr><td><b>LG.FON.04</b><br>Identifica a sílaba inicial</td><td class="c">☐</td><td class="c">☐</td><td class="c">☐</td></tr>
+    <tr><td><b>LG.FON.03</b> (revisão)<br>Segmenta palavras em sílabas</td><td class="c">☐</td><td class="c">☐</td><td class="c">☐</td></tr>
+  </table>
+
+  <h2>Evidências</h2>
+  <table class="registro">
+    <tr><td>Folha 1: ligações certas</td><td>_____ de 5 &nbsp; ☐ sem ajuda &nbsp; ☐ com ajuda</td></tr>
+    <tr><td>Folha 2: acertos (pintou o certo ou deixou em branco o certo)</td><td>_____ de 9 &nbsp; ☐ sem ajuda &nbsp; ☐ com ajuda</td></tr>
+    <tr><td>Disse uma palavra nova que começa igual?</td><td>☐ sim: ____________________ &nbsp; ☐ não</td></tr>
+    <tr><td>Foto da folha para o portfólio</td><td>☐ tirei &nbsp; ☐ não precisa</td></tr>
+  </table>
+
+  <h2>Engajamento</h2>
+  <p style="font-size:16pt">😴 &nbsp; 🙂 &nbsp; 😄 &nbsp; 🤩 &nbsp;&nbsp;<span style="font-size:10pt">(circule)</span></p>
+
+  <h2>Anotações: o que ela disse, o que surpreendeu, o que repetir</h2>
+  <div class="linhas-nota"><div></div><div></div><div></div><div></div><div></div></div>
+
+  <div class="rodape"><span>Lance no app: Registrar sessão → código S-2610-A1</span><span>Educador · ficha</span></div>
+</section>
+
+</main>
+
+<script>
+  function alternarTablet() {
+    const on = document.body.classList.toggle('tablet');
+    document.getElementById('btnTablet').setAttribute('aria-pressed', String(on));
+  }
+  function trocarLetra(v) {
+    document.body.classList.remove('letra-bastao', 'letra-script', 'letra-cursiva');
+    document.body.classList.add('letra-' + v);
+  }
+</script>
+</body>
+</html>

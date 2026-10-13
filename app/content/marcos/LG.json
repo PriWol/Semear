@@ -1,0 +1,96 @@
+{
+  "marcos": [
+    {
+      "id": "LG.FON.01",
+      "linha": "LG.FON",
+      "ordem": 1,
+      "titulo": "Percebe e brinca com rimas",
+      "descricaoPais": "Gosta de rimas e completa versos conhecidos.",
+      "evidencias": ["Completa 'Batatinha quando nasce...'", "Ri ou reage a uma rima trocada"],
+      "idadeTipica": 3.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "LG.FON.02",
+      "linha": "LG.FON",
+      "ordem": 2,
+      "titulo": "Identifica se duas palavras rimam",
+      "descricaoPais": "Diz se PÃO e MÃO terminam igual.",
+      "evidencias": ["Acerta 4 de 5 pares rima/não rima"],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "LG.FON.03",
+      "linha": "LG.FON",
+      "ordem": 3,
+      "titulo": "Segmenta palavras em sílabas",
+      "descricaoPais": "Bate palmas para cada pedaço da palavra.",
+      "evidencias": ["Bate as sílabas de palavras de 2 a 4 sílabas"],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": []
+    },
+    {
+      "id": "LG.FON.04",
+      "linha": "LG.FON",
+      "ordem": 4,
+      "titulo": "Identifica a sílaba inicial",
+      "descricaoPais": "Percebe que BOLA e BOTA começam com o mesmo pedaço.",
+      "evidencias": ["Separa figuras pela sílaba inicial", "Diz outra palavra que começa igual"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {
+        "Waldorf": 6.5
+      },
+      "preRequisitos": ["LG.FON.03"],
+      "bncc": []
+    },
+    {
+      "id": "LG.FON.05",
+      "linha": "LG.FON",
+      "ordem": 5,
+      "titulo": "Manipula sílabas",
+      "descricaoPais": "Tira ou troca sílabas: SAPATO sem SA → PATO.",
+      "evidencias": ["Acerta 3 de 4 desafios orais"],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["LG.FON.04"],
+      "bncc": []
+    },
+    {
+      "id": "LG.FON.06",
+      "linha": "LG.FON",
+      "ordem": 6,
+      "titulo": "Identifica o som inicial (fonema)",
+      "descricaoPais": "Sabe que FACA começa com /f/.",
+      "evidencias": ["Separa figuras pelo som inicial"],
+      "idadeTipica": 6,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["LG.FON.04", "LG.LET.03"],
+      "bncc": []
+    },
+    {
+      "id": "LG.FON.07",
+      "linha": "LG.FON",
+      "ordem": 7,
+      "titulo": "Segmenta palavras em fonemas",
+      "descricaoPais": "Fala os sons separados: /g/ /a/ /t/ /o/.",
+      "evidencias": ["Segmenta palavras simples de 4 a 5 sons"],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {
+        "Waldorf": 7.5
+      },
+      "preRequisitos": ["LG.FON.06"],
+      "bncc": []
+    }
+  ]
+}
