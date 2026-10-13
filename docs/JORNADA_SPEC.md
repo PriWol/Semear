@@ -462,8 +462,15 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 
 ## 12. Próximos passos: protótipo do pacote primeiro
 
-### 12.1 Protótipo pronto
-[`prototipos/sessao-lg-fon-04.html`](../prototipos/sessao-lg-fon-04.html) é uma sessão completa de **LG.FON.04 (sílaba inicial)** para uma criança de 5 anos (Montessori + Waldorf). Também há uma versão em PDF pronta para imprimir: [`sessao-lg-fon-04.pdf`](../prototipos/sessao-lg-fon-04.pdf).
+### 12.1 Protótipos prontos
+Dois pacotes completos, de domínios e vertentes diferentes, para testar com as famílias:
+
+| Pacote | Marco | Criança de exemplo | Vertente | Letra | Arquivos |
+|---|---|---|---|---|---|
+| Caça às sílabas | **LG.FON.04** sílaba inicial (+ revisão LG.FON.03) | 5 anos | Montessori + Waldorf | bastão | [HTML](../prototipos/sessao-lg-fon-04.html) · [PDF](../prototipos/sessao-lg-fon-04.pdf) |
+| Feira dos números | **MA.SEN.06** contar até 20 com objetos (+ revisão MA.SEN.05) | 6 anos | Charlotte Mason + Clássico | script | [HTML](../prototipos/sessao-ma-sen-06.html) · [PDF](../prototipos/sessao-ma-sen-06.pdf) |
+
+Os dois usam o mesmo estilo compartilhado ([`pacote.css`](../prototipos/pacote.css)), que vira a base dos templates do gerador de sessões. A estrutura do pacote de Linguagem está abaixo; o de Matemática segue a mesma ordem (conte e circule, quadros de dez, onde tem mais, cartas para recortar).
 
 | Pág. | Para quem | Conteúdo |
 |---|---|---|
