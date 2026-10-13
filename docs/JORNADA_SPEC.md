@@ -1,7 +1,7 @@
 # 🧭 Jornada de Aprendizado: Especificação
 
 > Documento resultante do *grilling* de outubro/2026. Ele define **como o Semear posiciona cada criança numa jornada por domínios** e como isso alimenta a geração de materiais para imprimir.
-> Status: **rascunho v0.1**, a ser validado com as famílias piloto.
+> Status: **rascunho v0.2** (2 rodadas de grilling), a ser validado com as famílias piloto.
 
 ---
 
@@ -11,7 +11,8 @@
 2. **Papel primeiro.** Tudo o que a criança vê sai num PDF: A4 para imprimir, ou um "modo tablet" com uma página por tela, sem links e sem interação.
 3. **O pai decide.** O app sugere, avisa e organiza, mas avançar na jornada é sempre uma decisão do educador.
 4. **Sem nota, sem comparação.** A escala é qualitativa e não existe ranking entre crianças.
-5. **Local e privado.** Segue a arquitetura atual do Semear: dados no dispositivo, exportáveis.
+5. **Local e privado por padrão.** Funciona sem conta, com os dados no dispositivo. A conta é opcional e serve só para sincronizar.
+6. **Conteúdo sempre revisado por um humano.** A IA ajuda a produzir, mas nada chega às famílias sem revisão.
 
 ---
 
@@ -24,7 +25,7 @@
 | 3 | Vertentes × jornada | **Mapa único** para todas as vertentes, com **marcos extras** por vertente. |
 | 4 | Posicionamento | **Independente por linha**: a criança tem uma posição em cada linha de cada domínio. |
 | 5 | Hierarquia | **Domínio → Linha → Marco**, com marcos ordenados dentro da linha e pré-requisitos opcionais entre linhas. |
-| 6 | Domínios no lançamento | Linguagem e Alfabetização · Matemática · Natureza, Mundo e Sociedade · Desenvolvimento Integral. |
+| 6 | Domínios no lançamento | **Com jornada:** Linguagem e Alfabetização · Matemática · Línguas (inglês, francês, latim). **Só atividades:** Artes e Música · Natureza, Mundo e Sociedade · Desenvolvimento Integral. Ver §3.0. |
 | 7 | Avaliação | **Sondagem formal impressa**, com lançamento no app, **mais o registro contínuo** a cada sessão. |
 | 8 | Escala | **3 estados**: Não observado · Em desenvolvimento · Consolidado. |
 | 9 | Avanço | **Manual, pelo pai.** O app só indica "parece pronto". |
@@ -35,12 +36,39 @@
 | 14 | Mistura de vertentes | **Uma principal + inspirações.** |
 | 15 | Ritmo da vertente | **Idade de introdução por vertente, só como aviso** (sem bloquear). |
 | 16 | Pacote da sessão | Roteiro do educador · Folhas da criança · Ficha de registro · Materiais + livro. |
+| 17 | Produção de conteúdo | **IA rascunha e humano revisa** (o time fundador também escreve). Uma equipe pequena entra quando escalar. Ver §7. |
+| 18 | Línguas estrangeiras | **Domínio único "Línguas"** com as mesmas linhas, e cada idioma é uma *trilha* (inglês, francês, latim). O latim tem marcos próprios. |
+| 19 | Pronúncia | **Partimos do princípio de que o educador fala a língua.** O onboarding pergunta quais línguas ele domina e só oferece essas trilhas. |
+| 20 | Artes e música | **Só atividades**, sem marcos nem posicionamento. |
+| 21 | Uso de IA | **Só na produção do conteúdo.** As famílias recebem conteúdo estático e revisado. |
+| 22 | PDF | **Gerado no dispositivo** a partir de templates HTML/SVG com CSS de impressão (A4 e modo tablet). |
+| 23 | Sincronização | **Conta opcional** com sync (celular ↔ computador ↔ outro responsável). Sem conta = 100% local. |
+| 24 | Modelo de negócio | **Freemium.** Ver §9. |
+| 25 | Portfólio | **Portfólio de evidências trimestral**, com anexo BNCC, pensado para proteger a família. Ver §8. |
+| 26 | Necessidades específicas | **Fica para depois** do lançamento. |
 
 ---
 
 ## 3. O mapa: domínios e linhas
 
-O mapa completo, com códigos e idades, está em [`data/journey/dominios.json`](../data/journey/dominios.json). Resumo:
+O mapa completo, com códigos e idades, está em [`data/journey/dominios.json`](../data/journey/dominios.json).
+
+### 3.0 Escopo do lançamento
+
+| Domínio | No lançamento | Observação |
+|---|---|---|
+| 🗣️ LG Linguagem e Alfabetização | **Jornada completa** | Prioridade nº 1 |
+| 🔢 MA Matemática | **Jornada completa** | |
+| 🌍 LI Línguas (inglês, francês, latim) | **Jornada completa**, por trilha | Só as trilhas que o educador domina |
+| 🎨 AR Artes e Música | **Só atividades** | Inclui artistas e música brasileira (Tarsila, Portinari, Villa-Lobos, cantigas) |
+| 🌎 NM Natureza, Mundo e Sociedade | **Só atividades** | Reaproveita os recursos atuais (folclore, plantio…). Jornada na v2. |
+| 🌱 DI Desenvolvimento Integral | **Só atividades** | Valores e rituais atuais do Semear. Jornada na v2. |
+
+As atividades de domínios sem jornada entram nas sessões como **"complementares"**, escolhidas por idade, vertente e tema. Elas aparecem no portfólio como horas e evidências, mas sem marcos.
+
+> ⚠️ **Alerta de escopo:** são 3 domínios com jornada, sendo que Línguas tem 3 trilhas, mais 3 domínios só com atividades. Mesmo com a IA rascunhando, **a revisão humana é o gargalo**. Sugestão de ordem de publicação: LG e MA primeiro, depois Inglês, depois Francês e Latim. Dá para lançar com LG e MA completos e as trilhas de língua marcadas como "em breve".
+
+Resumo das linhas:
 
 ### 🗣️ LG: Linguagem e Alfabetização
 | Linha | O que acompanha |
@@ -64,7 +92,26 @@ O mapa completo, com códigos e idades, está em [`data/journey/dominios.json`](
 | MA.PAD Padrões e classificação | Sequências, seriação, classificação (pré-álgebra) |
 | MA.DAD Dados | Contar e registrar em tabelas e gráficos simples (6+) |
 
-### 🌎 NM: Natureza, Mundo e Sociedade
+### 🌍 LI: Línguas (trilhas: inglês · francês · latim)
+Cada marco de Línguas vale para uma ou mais trilhas (`idiomas: ["en","fr","la"]`). A posição da criança é guardada **por trilha**: ela pode estar no marco 5 de inglês e no marco 1 de francês.
+
+| Linha | O que acompanha | Trilhas |
+|-------|-----------------|---------|
+| LI.ESC Escuta e compreensão | Entende comandos, histórias curtas, perguntas | en, fr, la |
+| LI.FAL Fala | Repete, responde, conversa com frases simples | en, fr, la |
+| LI.VOC Vocabulário por temas | Cores, números, corpo, família, casa, animais, comida… | en, fr, la |
+| LI.CAN Canções, rimas e recitação | Cantigas, *nursery rhymes*, *comptines*, orações e poemas em latim | en, fr, la |
+| LI.LEI Leitura (6+) | Palavras visuais → frases → livrinhos | en, fr, la |
+| LI.ESR Escrita (6+) | Copiar → escrever palavras → frases | en, fr, la |
+| LI.RAI Raízes latinas no português | *aqua* → aquário, aquático… | la |
+| LI.GRA Gramática inicial (7–8) | Gênero, primeiras declinações e conjugações (latim clássico) | la |
+
+Idades típicas de início: inglês e francês a partir dos 3 anos (oral), latim a partir dos 6 (marco extra muito usado na vertente Clássica, mas disponível para todas).
+
+### 🎨 AR: Artes e Música (só atividades)
+Desenho · Pintura · Modelagem · Ritmo e pulso · Canto · Escuta musical · Apreciação de artistas. Essas categorias servem para **filtrar e equilibrar** as atividades nas sessões, não para posicionar a criança.
+
+### 🌎 NM: Natureza, Mundo e Sociedade *(só atividades no lançamento)*
 | Linha | O que acompanha |
 |-------|-----------------|
 | NM.VIV Seres vivos e corpo | Plantas, animais, corpo humano, cuidados |
@@ -73,15 +120,13 @@ O mapa completo, com códigos e idades, está em [`data/journey/dominios.json`](
 | NM.ESP Espaço e lugares | Casa, bairro, cidade, mapas, Brasil |
 | NM.CUL Cultura e diversidade | Folclore, festas, povos e regiões brasileiras |
 
-### 🌱 DI: Desenvolvimento Integral
+### 🌱 DI: Desenvolvimento Integral *(só atividades no lançamento)*
 | Linha | O que acompanha |
 |-------|-----------------|
 | DI.SOC Socioemocional e valores | Nomear emoções, autorregulação, convivência. Liga-se aos 8 valores do Semear. |
 | DI.VPR Vida prática e autonomia | Cuidado de si, da casa e do outro |
 | DI.MAM Motor amplo | Equilíbrio, coordenação, ritmo corporal |
 | DI.MFI Motor fino | Pinça, recorte, encaixe, costura |
-| DI.ART Artes visuais | Desenho, pintura, modelagem |
-| DI.MUS Música e ritmo | Cantigas, pulso, escuta, instrumentos simples |
 
 ### ✨ Marcos extras por vertente
 São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a principal da família (ou entra como inspiração, se o pai quiser):
@@ -112,7 +157,9 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
   "idadeIntroducao": { "Waldorf": 7 },    // só gera aviso, nunca bloqueia
   "preRequisitos": ["LG.ORA.02"],         // opcional, entre linhas
   "vertentes": null,                      // null = comum a todas; ["Montessori"] = marco extra
-  "bncc": []                              // códigos da BNCC, preenchidos na curadoria
+  "idiomas": null,                        // só no domínio LI: ["en","fr","la"]
+  "bncc": [],                             // códigos da BNCC: OBRIGATÓRIO em LG e MA (portfólio, §8)
+  "autoria": { "origem": "ia" | "humano", "revisadoPor": "...", "revisadoEm": "2026-10-20", "status": "rascunho" | "revisado" | "publicado" }
 }
 ```
 
@@ -176,6 +223,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 {
   "childId": "crianca-ana",
   "marco": "LG.FON.03",
+  "idioma": null,                         // "en" | "fr" | "la" quando o marco é do domínio LI
   "estado": "nao-observado" | "em-desenvolvimento" | "consolidado",
   "atualizadoEm": "2026-10-13",
   "origem": "sondagem" | "sessao" | "manual"
@@ -246,7 +294,81 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 ---
 
-## 7. Benchmark: o que existe lá fora e onde o Semear se diferencia
+## 7. Pipeline de conteúdo com IA
+
+A IA é usada **só pela equipe**, na produção. As famílias recebem arquivos JSON estáticos e revisados, então o app continua offline e sem custo de IA por uso.
+
+```
+ 1. Briefing       →  2. Rascunho IA       →  3. Validação automática  →  4. Revisão humana  →  5. Publicação
+ (linha, idade,       (marcos, sondagens,     (schema JSON, campos        (checklist abaixo,    (status
+  vertente, BNCC)      atividades, folhas)     obrigatórios, BNCC          edição livre)         "publicado",
+                                               existe, idade coerente)                          entra no app)
+```
+
+**Checklist de revisão (por marco ou atividade):**
+- [ ] O marco é **observável** (dá para o pai ver acontecer)?
+- [ ] A ordem dentro da linha faz sentido pedagogicamente?
+- [ ] O código BNCC está correto (conferido na base oficial, sem confiar na IA)?
+- [ ] O critério da sondagem é claro para um pai leigo?
+- [ ] A atividade é viável em casa, com materiais comuns?
+- [ ] Para línguas: a grafia, os acentos e a pronúncia de referência estão corretos?
+- [ ] O tom é brasileiro e natural, sem cara de tradução?
+
+**Regras:**
+- Todo item tem `autoria` (ver §4.1). Só itens com status `publicado` aparecem no app.
+- Prompts e briefings ficam versionados no repositório (`content/prompts/`), para gerar lotes consistentes.
+- Os rascunhos ficam separados do conteúdo publicado (`content/rascunhos/` → `data/journey/`).
+
+---
+
+## 8. Portfólio: proteção das famílias
+
+### 9.1 Contexto (out/2026)
+- Em 2018 o STF decidiu que a educação domiciliar **não é inconstitucional, mas depende de lei federal** que a regulamente. Até hoje essa lei não existe.
+- O **PL 1338/2022** foi aprovado na Câmara em maio/2022 e **segue no Senado**. Em 2026 houve audiência pública (junho) e um pedido de urgência (julho), mas ainda sem votação.
+- Na prática, a família corre o risco de ser questionada pelo **Conselho Tutelar** ou pelo **Ministério Público** (alegação de abandono intelectual). A melhor defesa conhecida é **demonstrar, com evidências organizadas e datadas, que a criança está sendo educada e está aprendendo**.
+- Pelo que lembramos do texto aprovado pela Câmara (**precisa ser conferido** e pode mudar no Senado), ele prevê **matrícula em instituição credenciada**, **relatórios periódicos (trimestrais)** das atividades e **avaliações anuais** com base na **BNCC**. Nada disso está confirmado nas fontes que consultamos.
+
+### 9.2 Recomendação: portfólio de evidências trimestral com anexo BNCC
+Recomendo **combinar as duas opções** do grilling, porque cada uma protege de um jeito:
+
+| Parte | O que contém | Por que protege |
+|---|---|---|
+| **1. Relatório narrativo do trimestre** | Período, carga horária por domínio, frequência (dias de sessão), vertente, resumo do educador | Mostra **regularidade**, o principal argumento contra o "abandono" |
+| **2. Progresso na jornada** | Marcos consolidados no período por domínio e linha, com data e origem (sondagem ou sessão) | Mostra **aprendizagem**, não só atividade |
+| **3. Evidências** | Amostras dos trabalhos (fotos das folhas preenchidas, desenhos, gravação de leitura), sondagens datadas, livros lidos | É **prova material**, difícil de contestar |
+| **4. Anexo BNCC** | Tabela marco → código BNCC → data em que foi consolidado | Mostra **equivalência com a escola** e já se adianta ao provável critério legal |
+
+**Decisões de produto que isso implica:**
+1. **O código BNCC é obrigatório** em todo marco de LG e MA. Línguas e artes não têm equivalente direto na BNCC antes do 6º ano: aparecem como "enriquecimento curricular".
+2. **Período trimestral** (jan–mar, abr–jun…), alinhado ao que o PL prevê, com a opção de gerar um relatório anual consolidado.
+3. **Integridade:** ao "fechar o trimestre", o relatório é gerado com data e um resumo verificável (*hash*) e os registros daquele período ficam bloqueados para edição, só aceitando adendos datados. Isso dá credibilidade ao documento.
+4. **Foto da folha** direto da ficha de registro: o pai fotografa a folha preenchida e ela fica ligada à sessão e aos marcos. É o único momento em que o app usa câmera, e quem tira a foto é sempre o pai.
+5. **Registro de frequência automático:** toda sessão registrada conta como dia letivo, com duração.
+6. **Exportação em PDF** pronta para imprimir e arquivar, mais o JSON de backup. Tudo gerado no dispositivo.
+7. **Funciona no plano gratuito** (pelo menos o relatório anual), porque proteger a família não deve depender de assinatura. Ver §9.
+
+**Antes de lançar:** validar o modelo de relatório com um advogado da área e com associações de famílias educadoras (ex.: ANED). O app **não oferece aconselhamento jurídico** e precisa dizer isso no próprio relatório.
+
+---
+
+## 9. Modelo de negócio: freemium
+
+| Grátis | Assinatura (sugestão: R$ 19 a 29/mês ou anual com desconto) |
+|---|---|
+| 1 criança | Várias crianças + sessões conjuntas |
+| Sondagem + mapa da jornada (LG, MA) | Trilhas de Línguas (inglês, francês, latim) |
+| Algumas sessões por mês (ex.: 8) | Sessões ilimitadas |
+| Atividades complementares básicas | Acervo completo de atividades e curadoria de livros |
+| Portfólio **anual** | Portfólio **trimestral** com evidências e fotos |
+| 100% local | Conta com sincronização entre dispositivos e responsáveis |
+
+- A **conta opcional** é o ponto de cobrança. Precisa de backend simples (ex.: Supabase) e de adequação à **LGPD** para dados de crianças: consentimento do responsável, mínimo de dados, exclusão fácil e criptografia em trânsito e em repouso.
+- **Afiliados** de livros (links das obras da curadoria) como receita complementar, sempre identificados como tal.
+
+---
+
+## 10. Benchmark: o que existe lá fora e onde o Semear se diferencia
 
 | Referência | O que faz bem | Limitação | O que copiar / melhorar |
 |---|---|---|---|
@@ -267,22 +389,21 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 ---
 
-## 8. Questões em aberto (próximas rodadas de grilling)
+## 11. Questões em aberto (próximas rodadas)
 
-- [ ] **Quem produz o conteúdo?** Equipe pedagógica própria, parceiras educadoras, comunidade? Quantos marcos e atividades por linha para lançar? (sugestão: começar só com **LG e MA**, com cerca de 8 a 12 marcos por linha)
-- [ ] **Geração de PDF:** no próprio navegador (CSS de impressão e/ou jsPDF) ou num serviço? O app hoje é 100% local.
-- [ ] **Sincronização** entre celular e computador sem servidor (arquivo exportado? conta opcional?).
-- [ ] **Uso de IA** para criar variações de folhas (ex.: trocar o tema "feira" por "dinossauros"), com revisão humana?
+- [ ] **Faixa do latim e do francês:** introduzir ambos aos 3 anos ou escalonar? E as famílias que querem as duas línguas ao mesmo tempo?
 - [ ] **Charlotte Mason e Unschooling** como vertentes?
-- [ ] **Necessidades específicas** (TEA, TDAH, dislexia, altas habilidades): adaptações de folhas e de ritmo.
-- [ ] **Relatório/portfólio**: formato e periodicidade.
-- [ ] **Modelo de negócio** (o app hoje é gratuito): pacotes de conteúdo pagos? Assinatura? Livros com link de afiliado?
+- [ ] **Necessidades específicas** (TEA, TDAH, dislexia): adiado. Revisitar após o piloto.
+- [ ] **Quantas sessões gratuitas** por mês? (teste A/B no piloto)
+- [ ] **Backend da conta**: Supabase × Firebase × outro, e onde ficam as fotos do portfólio (só local × nuvem).
+- [ ] **Validação jurídica** do modelo de portfólio (advogado + associação de famílias).
 
 ---
 
-## 9. Próximos passos sugeridos
+## 12. Próximos passos sugeridos
 
-1. Validar este documento com 3 a 5 famílias piloto (uma de cada vertente, incluindo afterschooling).
-2. Curar os marcos de **LG.FON, LG.ESC, MA.SEN e MA.OPE** primeiro (são o coração dos 4 a 7 anos).
-3. Desenhar 3 templates de folha + o roteiro + a ficha, e testar a impressão real em A4 e no tablet.
-4. Implementar: modelo de dados → mapa visual da jornada → sondagem → gerador de sessão → PDF.
+1. **Conteúdo:** escrever os *briefings* e prompts da pipeline (§7) e gerar um primeiro lote de **LG.FON, LG.ESC, MA.SEN e MA.OPE**, com revisão e códigos BNCC.
+2. **Templates:** desenhar 3 folhas + roteiro + ficha de registro em HTML/CSS de impressão e testar em A4 real e no tablet.
+3. **App (local):** modelo de dados → mapa visual da jornada → sondagem → gerador de sessão → PDF → portfólio.
+4. **Piloto:** 3 a 5 famílias (diferentes vertentes, incluindo afterschooling), por 8 semanas (um ciclo completo de ressondagem).
+5. **Conta + assinatura:** só depois do piloto validar o núcleo.

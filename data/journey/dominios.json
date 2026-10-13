@@ -1,5 +1,5 @@
 {
-  "versao": "0.1",
+  "versao": "0.2",
   "faixaEtaria": [
     3,
     8
@@ -63,7 +63,8 @@
             "Clássico"
           ]
         }
-      ]
+      ],
+      "comJornada": true
     },
     {
       "id": "MA",
@@ -105,6 +106,123 @@
           "nome": "Dados",
           "vertentes": null
         }
+      ],
+      "comJornada": true
+    },
+    {
+      "id": "LI",
+      "nome": "Línguas",
+      "icone": "🌍",
+      "comJornada": true,
+      "trilhas": [
+        {
+          "id": "en",
+          "nome": "Inglês",
+          "idadeInicio": 3
+        },
+        {
+          "id": "fr",
+          "nome": "Francês",
+          "idadeInicio": 3
+        },
+        {
+          "id": "la",
+          "nome": "Latim",
+          "idadeInicio": 6
+        }
+      ],
+      "linhas": [
+        {
+          "id": "LI.ESC",
+          "nome": "Escuta e compreensão",
+          "idiomas": [
+            "en",
+            "fr",
+            "la"
+          ],
+          "vertentes": null
+        },
+        {
+          "id": "LI.FAL",
+          "nome": "Fala",
+          "idiomas": [
+            "en",
+            "fr",
+            "la"
+          ],
+          "vertentes": null
+        },
+        {
+          "id": "LI.VOC",
+          "nome": "Vocabulário por temas",
+          "idiomas": [
+            "en",
+            "fr",
+            "la"
+          ],
+          "vertentes": null
+        },
+        {
+          "id": "LI.CAN",
+          "nome": "Canções, rimas e recitação",
+          "idiomas": [
+            "en",
+            "fr",
+            "la"
+          ],
+          "vertentes": null
+        },
+        {
+          "id": "LI.LEI",
+          "nome": "Leitura (6+)",
+          "idiomas": [
+            "en",
+            "fr",
+            "la"
+          ],
+          "vertentes": null
+        },
+        {
+          "id": "LI.ESR",
+          "nome": "Escrita (6+)",
+          "idiomas": [
+            "en",
+            "fr",
+            "la"
+          ],
+          "vertentes": null
+        },
+        {
+          "id": "LI.RAI",
+          "nome": "Raízes latinas no português",
+          "idiomas": [
+            "la"
+          ],
+          "vertentes": null
+        },
+        {
+          "id": "LI.GRA",
+          "nome": "Gramática inicial (7–8)",
+          "idiomas": [
+            "la"
+          ],
+          "vertentes": null
+        }
+      ]
+    },
+    {
+      "id": "AR",
+      "nome": "Artes e Música",
+      "icone": "🎨",
+      "comJornada": false,
+      "categorias": [
+        "Desenho",
+        "Pintura",
+        "Modelagem",
+        "Ritmo e pulso",
+        "Canto",
+        "Escuta musical",
+        "Apreciação de artistas"
       ]
     },
     {
@@ -137,7 +255,8 @@
           "nome": "Cultura e diversidade",
           "vertentes": null
         }
-      ]
+      ],
+      "comJornada": false
     },
     {
       "id": "DI",
@@ -165,16 +284,6 @@
           "vertentes": null
         },
         {
-          "id": "DI.ART",
-          "nome": "Artes visuais",
-          "vertentes": null
-        },
-        {
-          "id": "DI.MUS",
-          "nome": "Música e ritmo",
-          "vertentes": null
-        },
-        {
           "id": "DI.SEN",
           "nome": "Educação dos sentidos",
           "vertentes": [
@@ -195,7 +304,9 @@
             "Religioso"
           ]
         }
-      ]
+      ],
+      "comJornada": false
     }
-  ]
+  ],
+  "nota": "comJornada=false: domínio só com atividades no lançamento (sem marcos nem posicionamento)."
 }
