@@ -69,9 +69,18 @@
   },
   "evidencias": [
     { "texto": "Contou os 17 feijões", "resposta": "☐ certo   ☐ errou por 1 ou 2   ☐ se perdeu" },
-    { "texto": "Estratégia usada", "resposta": "☐ apontou   ☐ arrastou   ☐ fez fileiras   ☐ agrupou de 10" },
-    { "texto": "Folha “conte e circule”: certos", "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda" },
-    { "texto": "Folha “quadros de dez”: certos", "resposta": "_____ de 3   ☐ encheu o 1º quadro antes" },
+    {
+      "texto": "Estratégia usada",
+      "resposta": "☐ apontou   ☐ arrastou   ☐ fez fileiras   ☐ agrupou de 10"
+    },
+    {
+      "texto": "Folha “conte e circule”: certos",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Folha “quadros de dez”: certos",
+      "resposta": "_____ de 3   ☐ encheu o 1º quadro antes"
+    },
     { "texto": "Folha “onde tem mais”: certos", "resposta": "_____ de 4" }
   ],
   "perguntaFicha": "Narração da criança: “como você fez para não se perder?”",

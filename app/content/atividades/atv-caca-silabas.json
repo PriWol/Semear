@@ -65,9 +65,15 @@
     "Clássico": "Recitem juntos uma parlenda conhecida, marcando as sílabas com palmas."
   },
   "evidencias": [
-    { "texto": "Folha “ligue”: ligações certas", "resposta": "_____ de 5   ☐ sem ajuda   ☐ com ajuda" },
+    {
+      "texto": "Folha “ligue”: ligações certas",
+      "resposta": "_____ de 5   ☐ sem ajuda   ☐ com ajuda"
+    },
     { "texto": "Folha “pinte”: acertos", "resposta": "_____ de 9   ☐ sem ajuda   ☐ com ajuda" },
-    { "texto": "Disse uma palavra nova que começa igual?", "resposta": "☐ sim: ________________   ☐ não" }
+    {
+      "texto": "Disse uma palavra nova que começa igual?",
+      "resposta": "☐ sim: ________________   ☐ não"
+    }
   ],
   "folhas": [
     {

@@ -1,7 +1,7 @@
 # 🧭 Jornada de Aprendizado: Especificação
 
 > Documento resultante do *grilling* de outubro/2026. Ele define **como o Semear posiciona cada criança numa jornada por domínios** e como isso alimenta a geração de materiais para imprimir.
-> Status: **rascunho v0.4** (4 rodadas de grilling + protótipo do pacote), a ser validado com as famílias piloto.
+> Status: **rascunho v0.5** (7 rodadas de grilling + protótipos + app v1 em construção), a ser validado com as famílias piloto.
 
 ---
 
@@ -58,6 +58,17 @@
 | 36 | Vertente × aparência | A identidade visual é a mesma para todas. A vertente muda **só a tipografia e o tipo de atividade**. |
 | 37 | Letra da criança | **Configurável por criança:** bastão (caixa alta) → script minúsculo → cursiva. O padrão depende da idade e da vertente. |
 | 38 | Primeiro passo | **Protótipo do pacote impresso** testado com famílias antes de construir o app. Ver §12. |
+| 39 | Tecnologia | **Reconstruir com Vite + TypeScript**, mantendo PWA, na pasta `app/` (ADR 0001). |
+| 40 | Escopo da v1 | **Família, crianças e mapa da jornada + gerar e baixar o pacote.** Registro da ficha e sondagem impressa ficam para depois. |
+| 41 | Banco de dados | **IndexedDB com `idb`**, atrás de um repositório (ADR 0002). Servidor (Supabase) só quando houver contas. |
+| 42 | Qualidade | **Pirâmide de testes + CI obrigatória** (ADR 0006). |
+| 43 | Fluxo com IA | **Spec → plano → testes → código → revisão**, documentado no `CLAUDE.md`. |
+| 44 | Revisão | **Dois agentes revisores** (correção; segurança e privacidade) **+ aprovação da dona do produto**. A v1 vai num PR único (ADR 0007). |
+| 45 | Publicação | O app novo **substitui o site atual só quando a v1 estiver completa**. |
+| 46 | Posicionamento inicial (v1) | **"Está aqui" em cada linha**: os anteriores viram consolidados; depois, ajuste marco a marco. |
+| 47 | Tela inicial | **Painel por criança** com progresso, "Preparar sessão" em destaque e as últimas sessões. |
+| 48 | Irmãos na v1 | **Vários perfis**, sessões individuais. Sessão conjunta numa versão seguinte. |
+| 49 | Backup | **Exportar/importar arquivo + lembrete após 30 dias** sem backup + pedido de armazenamento persistente. |
 
 ---
 
@@ -457,6 +468,14 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 - [ ] **Validação jurídica** do modelo de portfólio (advogado + associação de famílias).
 - [ ] **Termos de uso e política de privacidade** (LGPD, dados de crianças, cobrança recorrente).
 - [ ] **Banco de ilustrações** próprio (encomendar × licenciar) para substituir os emojis do protótipo.
+
+---
+
+### 11.1 Ideias guardadas para a curadoria de livros (usar quando montarmos a curadoria)
+- **Preferência da fundadora:** literatura **mais clássica, com ilustrações belas**.
+- **Fonte sugerida por ela:** [Free Kids Books](https://freekidsbooks.org/toddler/) (livros infantis gratuitos em inglês, para leitura online). Útil para a trilha de inglês.
+- **Outras fontes a pesquisar (sem verificar ainda):** Project Gutenberg e Internet Archive (clássicos ilustrados em domínio público, ex.: Beatrix Potter, Randolph Caldecott), StoryWeaver (livros com licença aberta em vários idiomas, inclusive francês e português), International Children's Digital Library, e o portal Domínio Público do governo brasileiro.
+- **Cuidado:** conferir a **licença** de cada livro antes de linkar ou reproduzir ilustrações em folhas (domínio público ≠ licença Creative Commons ≠ só leitura online).
 
 ---
 
