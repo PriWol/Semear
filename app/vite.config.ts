@@ -37,5 +37,7 @@ export default defineConfig({
     environment: 'node',
     include: ['tests/**/*.test.ts'],
     setupFiles: ['tests/setup.ts'],
+    // O pacote embute o próprio CSS (?raw). Sem isto, o Vitest troca CSS por texto vazio.
+    css: { include: [/pacote\.css/] },
   },
 });
