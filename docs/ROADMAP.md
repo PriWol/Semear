@@ -40,7 +40,7 @@ flowchart LR
 | 3 · Rotina da semana | v0.5 | Planejar a semana (ex.: seg/qua/sex), imprimir tudo num arquivo só e acompanhar os dias feitos | #8 #9 #2 (parte 2) |
 | 4 · Pronto para o piloto | v0.6 | Endereço próprio, sondagem impressa para posicionar, guia das vertentes e estante de livros; 3 a 5 famílias usando | #34 #32 #17 #30 #12 → #28 |
 | 5 · Evidências e portfólio | v0.7 | Fotos dos trabalhos, ressondagem, sessão de irmãos e o **portfólio trimestral em PDF** | #10 #18 #19 #29 #20 |
-| 6 · Abrir ao público | v1.0 | Landing page, conta, teste de 30 dias, pagamento por criança e sincronização | #25 #26 #3 #6 #5 #4 #27 |
+| 6 · Abrir ao público | v1.0 | Landing page, conta, teste de 30 dias, pagamento por família e sincronização | #25 #26 #3 #6 #5 #4 #27 |
 | Trilha de conteúdo | contínua | Mais marcos, atividades, livros e ilustrações a cada lote | #21 #22 #23 #24 |
 
 **Por que esta ordem:**
@@ -81,12 +81,12 @@ integração de carregar/apagar o exemplo; e2e boas-vindas → exemplo → sess�
 ## Fase 1 · Visual novo, moderno e clássico (v0.3)
 
 **Objetivo:** trocar a identidade visual do app e das folhas, sem mudar os fluxos.
-**Direção escolhida (14/10): A · Caderno de botânica** (marfim, verde-musgo e ocre; Fraunces + Inter).
+**Direção a escolher na #14**, entre as duas candidatas do protótipo: **A · Caderno de botânica** (marfim, verde-musgo e ocre; Fraunces + Inter) e **B · Biblioteca clássica** (creme, azul-tinta e dourado; Libre Caslon + Source Sans). A escolha vira um ADR.
 Protótipo: `prototipos/design/direcoes-visuais.html`.
 
 | Estória | O que entrega |
 |---|---|
-| #14 Look and feel | Escolha da direção, `docs/DESIGN.md` com as regras e os tokens (cores, fontes, espaços) |
+| #14 Look and feel | Escolha da direção (registrada em ADR), `docs/DESIGN.md` com as regras e os tokens (cores, fontes, espaços) |
 | #41 Aplicar o visual ao app | Todas as telas no estilo novo; navegação inferior no celular; ícones de linha no lugar dos emojis da interface |
 | #42 Aplicar o visual às folhas | Roteiro, folhas e ficha no estilo novo, em preto e branco, economizando tinta |
 | #2 Página principal (parte 1) | Cartão da criança com a próxima sessão sugerida e o progresso por domínio |
@@ -96,7 +96,7 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 1. Com a família de exemplo, passe por todas as telas no celular: início, jornada, preparar sessão, sessão, família e configurações.
 2. A navegação inferior leva às seções principais com um toque; nada fica cortado nem precisa de rolagem para o lado.
 3. Imprima uma sessão em preto e branco: títulos legíveis, ilustrações em traço e nenhum fundo colorido grande.
-4. Compare com o protótipo aprovado.
+4. Compare com o protótipo da direção escolhida.
 
 **Testes automáticos:** os e2e existentes continuam verdes (os fluxos não mudam) e uma verificação de contraste (AA) roda nas telas principais.
 
@@ -172,12 +172,12 @@ relatório precisa conter. As fotos (#10) ficam só no aparelho e entram no back
 
 ## Fase 6 · Abrir ao público (v1.0)
 
-#25 termos e LGPD (bloqueia o resto) · #26 backend de contas · #3 login · #6 logout · #5 pagamento por criança ·
+#25 termos e LGPD (bloqueia o resto) · #26 backend de contas · #3 login · #6 logout · #5 pagamento por família ·
 #4 landing page · #27 sincronização entre aparelhos.
 
 **Antes de começar (privacidade é inegociável, `CLAUDE.md`):** hoje nenhum dado sai do aparelho. Esta fase cria o primeiro
-servidor, então nada de #26, #3 ou #27 começa sem um **ADR aprovado** que diga o que vai para o servidor (só conta,
-assinatura e a *quantidade* de crianças, §9.2 "Arquitetura que isso exige"), como os dados da sincronização são criptografados de ponta a ponta, por
+servidor, então nada de #26, #3 ou #27 começa sem um **ADR aprovado** que diga o que vai para o servidor (só conta
+e assinatura; o servidor não sabe quantas crianças existem, §9.4 "Arquitetura que isso exige"), como os dados da sincronização são criptografados de ponta a ponta, por
 quanto tempo ficam guardados e onde. O `CLAUDE.md` (seção Privacidade) e o ADR 0002 são atualizados no mesmo PR.
 
 **Roteiro de teste:** do anúncio à assinatura: landing → cadastro → teste de 30 dias → uso → pagamento em ambiente de teste do gateway → cancelamento → exportação dos dados.
