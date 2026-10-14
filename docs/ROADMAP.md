@@ -26,6 +26,8 @@ flowchart LR
   ponta a ponta (e2e) simulando o uso no computador e no celular.
 - **Seus testes** (manuais, no site publicado): cada fase tem um roteiro curto, abaixo. A **família de
   exemplo** (Fase 0) deixa você testar tudo em 1 minuto, sem digitar dados.
+- As fases 0 a 3 listam os testes automáticos novos que entram com elas. Nas fases 4 a 6, eles estão nos critérios de
+  aceite de cada estória e serão detalhados quando a fase chegar.
 
 ## Visão geral
 
@@ -46,7 +48,8 @@ flowchart LR
 - O ciclo da sessão (Fase 2) fecha o "loop" do produto: sem registrar o progresso, a jornada não anda sozinha.
 - O **domínio próprio vem antes do piloto** (Fase 4): os dados ficam presos ao endereço onde foram criados.
   Se as famílias do piloto começarem em `priwol.github.io` e depois mudarmos, elas teriam que exportar e importar.
-- Conta e pagamento (Fase 6) só depois do piloto confirmar que o núcleo do produto funciona (§12.2).
+- Conta e pagamento (Fase 6) só depois do piloto de 8 semanas (#28) confirmar que o núcleo do produto funciona.
+  (O teste rápido com o PDF do protótipo, §12.2 da especificação, pode acontecer antes, a qualquer momento.)
 
 ---
 
@@ -71,6 +74,9 @@ flowchart LR
 4. Abra "Novidades" e confira o que mudou na v0.2.
 5. Em Configurações, toque em "Apagar exemplo": o app volta para a tela de boas-vindas.
 
+**Testes automáticos novos:** unitário da família de exemplo (idades a partir de hoje, posições válidas) e da versão;
+integração de carregar/apagar o exemplo; e2e boas-vindas → exemplo → sessão → apagar; e2e que conta as páginas da ficha no PDF.
+
 ---
 
 ## Fase 1 · Visual novo, moderno e clássico (v0.3)
@@ -81,7 +87,7 @@ Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais
 | Estória | O que entrega |
 |---|---|
 | #14 Look and feel | Escolha da direção, `docs/DESIGN.md` com as regras e os tokens (cores, fontes, espaços) |
-| #41 Aplicar o visual ao app | Todas as telas no estilo novo; navegação inferior no celular; sem emojis na interface |
+| #41 Aplicar o visual ao app | Todas as telas no estilo novo; navegação inferior no celular; ícones de linha no lugar dos emojis da interface |
 | #42 Aplicar o visual às folhas | Roteiro, folhas e ficha no estilo novo, em preto e branco, economizando tinta |
 | #2 Página principal (parte 1) | Cartão da criança com a próxima sessão sugerida e o progresso por domínio |
 | #15 Jornada do usuário | Documento do caminho do educador; vira o roteiro dos testes e2e |
@@ -102,7 +108,7 @@ Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais
 
 | Estória | O que entrega |
 |---|---|
-| #11 Informar progresso | "Registrar sessão" pelo código impresso, em cerca de 2 minutos no celular; selo "🌱 parece pronto" |
+| #11 Informar progresso | "Registrar sessão" pelo código impresso, em cerca de 2 minutos no celular; selo "parece pronto" (ícone de broto + texto, conforme o `DESIGN.md`) |
 | #13 Atividades avulsas | Buscar ("rimas", "contar") e imprimir uma atividade só |
 | #21 + #22 (conteúdo) | Pipeline de conteúdo e as linhas LG.FON e MA.SEN completas, com BNCC |
 
@@ -111,6 +117,9 @@ Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais
 2. Em "Registrar sessão", digite o código impresso (ex.: `S-1014-A1`) e marque os marcos. A jornada da Ana muda.
 3. Registre o mesmo marco como consolidado numa segunda sessão: aparece o selo "parece pronto".
 4. Busque "sílaba" (sem acento) e imprima a atividade encontrada.
+
+**Testes automáticos novos:** unitário do registro e do selo "parece pronto" e da busca sem acento; integração do
+registro (com migração do banco e backup); e2e "gerar → registrar" e "buscar → imprimir".
 
 ---
 
@@ -124,6 +133,9 @@ Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais
 
 **Roteiro de teste:** planeje seg/qua/sex de 40 min para a Ana, imprima a semana (um PDF só, com a lista de materiais no começo), registre a sessão de segunda e veja o dia marcado como feito no início.
 
+**Testes automáticos novos:** unitário do distribuidor semanal e da lista de materiais consolidada; integração do
+plano no banco e no backup; e2e "planejar → imprimir a semana".
+
 ---
 
 ## Fase 4 · Pronto para o piloto (v0.6)
@@ -136,6 +148,8 @@ Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais
 | #30 Guia das vertentes | Página que explica as 5 vertentes, com link no cadastro |
 | #12 Estante de livros | Livros digitais gratuitos, clássicos e com belas ilustrações, filtráveis |
 | #28 Piloto | 3 a 5 famílias por 8 semanas; o relatório define a Fase 5 |
+
+**Antes de começar:** o domínio próprio (#34) é uma decisão estrutural (muda a origem onde os dados ficam) e precisa de ADR aprovado.
 
 **Roteiro de teste:** crie uma família nova no endereço próprio, aplique a sondagem impressa, lance os resultados e confira a posição; abra o guia pelo cadastro e um livro da estante.
 
@@ -154,6 +168,11 @@ Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais
 
 #25 termos e LGPD (bloqueia o resto) · #26 backend de contas · #3 login · #6 logout · #5 pagamento por criança ·
 #4 landing page · #27 sincronização entre aparelhos.
+
+**Antes de começar (privacidade é inegociável, `CLAUDE.md`):** hoje nenhum dado sai do aparelho. Esta fase cria o primeiro
+servidor, então nada de #26, #3 ou #27 começa sem um **ADR aprovado** que diga o que vai para o servidor (só conta,
+assinatura e a *quantidade* de crianças, §9.2), como os dados da sincronização são criptografados de ponta a ponta, por
+quanto tempo ficam guardados e onde. O `CLAUDE.md` (seção Privacidade) e o ADR 0002 são atualizados no mesmo PR.
 
 **Roteiro de teste:** do anúncio à assinatura: landing → cadastro → teste de 30 dias → uso → pagamento em ambiente de teste do gateway → cancelamento → exportação dos dados.
 
