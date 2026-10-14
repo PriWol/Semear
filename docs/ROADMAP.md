@@ -160,6 +160,11 @@ plano no banco e no backup; e2e "planejar → imprimir a semana".
 #10 fotos dos trabalhos (só no aparelho, no backup) · #18 ressondagem a cada 8 semanas · #19 sessão de irmãos ·
 #29 validação jurídica → #20 portfólio trimestral em PDF com anexo BNCC.
 
+**Antes de começar:** a validação jurídica (#29) vem **antes** do código do portfólio (#20), porque pode mudar o que o
+relatório precisa conter. As fotos (#10) ficam só no aparelho e entram no backup: a importação valida cada arquivo
+(tipo, tamanho e vínculo com sessões existentes), como manda o `CLAUDE.md` para todo dado vindo de fora, e o ADR 0002
+é atualizado.
+
 **Roteiro de teste:** fotografe 2 trabalhos, gere o portfólio do trimestre, confira frequência, marcos, fotos e o anexo BNCC no PDF; exporte e importe o backup com as fotos.
 
 ---

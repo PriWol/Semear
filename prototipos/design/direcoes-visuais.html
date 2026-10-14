@@ -13,6 +13,8 @@
   :root, [data-direcao="a"] {
     --fundo: #f8f5ee; --papel: #fffdf8; --tinta: #1e2b23; --suave: #5d6a61; --linha: #e4ddcd;
     --principal: #355e45; --principal-claro: #e3ece3; --destaque: #b8862f; --destaque-claro: #f6ecd8;
+    /* Ocre escuro para TEXTO (contraste AA ≥ 4,5:1); --destaque fica só para detalhes decorativos. */
+    --destaque-texto: #7a5a1e;
     --alerta: #b0573e; --alerta-claro: #f7e4dc;
     --titulo: 'Fraunces', Georgia, serif; --texto: 'Inter', system-ui, sans-serif;
     --raio: 14px; --raio-p: 10px;
@@ -20,6 +22,7 @@
   [data-direcao="b"] {
     --fundo: #f6f3ec; --papel: #fffefb; --tinta: #1c2433; --suave: #5a6272; --linha: #e2ddd2;
     --principal: #23395b; --principal-claro: #e4e9f1; --destaque: #a88435; --destaque-claro: #f4ecd9;
+    --destaque-texto: #7a5f24;
     --alerta: #7a2e3a; --alerta-claro: #f3e2e4;
     --titulo: 'Libre Caslon Text', Georgia, serif; --texto: 'Source Sans 3', system-ui, sans-serif;
     --raio: 6px; --raio-p: 4px;
@@ -59,7 +62,7 @@
   .conteudo { padding: 20px 18px 24px; }
   .saudacao { font-family: var(--titulo); font-weight: 400; font-size: 1.65rem; line-height: 1.2; margin: 0 0 2px; }
   .data { color: var(--suave); font-size: 14px; margin: 0 0 18px; }
-  .sobretitulo { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--destaque); font-weight: 600; margin: 0 0 6px; }
+  .sobretitulo { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--destaque-texto); font-weight: 600; margin: 0 0 6px; }
   .cartao { background: var(--papel); border: 1px solid var(--linha); border-radius: var(--raio); padding: 18px; margin-bottom: 14px; }
   .crianca { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
   .avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-family: var(--titulo); font-size: 1.2rem; color: var(--principal); background: var(--principal-claro); }
@@ -84,7 +87,7 @@
   .lista li:first-child { border-top: 0; }
   .codigo { font-variant-numeric: tabular-nums; color: var(--suave); }
   .selo { font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--principal-claro); color: var(--principal); white-space: nowrap; }
-  .selo.pendente { background: var(--destaque-claro); color: #7a5a1e; }
+  .selo.pendente { background: var(--destaque-claro); color: var(--destaque-texto); }
   .navegacao-inferior { display: flex; justify-content: space-around; background: var(--papel); border-top: 1px solid var(--linha); padding: 8px 0 12px; }
   .navegacao-inferior a { display: grid; justify-items: center; gap: 2px; font-size: 11px; color: var(--suave); text-decoration: none; }
   .navegacao-inferior a.ativo { color: var(--principal); font-weight: 600; }
@@ -122,7 +125,7 @@
   .figura { border: 1.5px solid #333; border-radius: 12px; display: grid; place-items: center; padding: 10px; }
   .figura svg { width: 70%; max-width: 110px; height: auto; }
   .figura small { font-family: 'Andika', sans-serif; font-size: 1rem; margin-top: 6px; letter-spacing: .15em; }
-  .folha footer { font-size: 11px; color: #777; display: flex; justify-content: space-between; margin-top: 14px; border-top: 1px solid #ccc; padding-top: 6px; }
+  .folha footer { font-size: 11px; color: #666; display: flex; justify-content: space-between; margin-top: 14px; border-top: 1px solid #ccc; padding-top: 6px; }
 
   .notas { margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
   .notas .cartao h3 { font-family: var(--titulo); font-weight: 600; margin: 0 0 6px; font-size: 1.05rem; color: var(--principal); }
