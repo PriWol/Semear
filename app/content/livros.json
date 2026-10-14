@@ -1,0 +1,24 @@
+{
+  "livros": [
+    {
+      "id": "livro-ou-isto-ou-aquilo",
+      "titulo": "Ou Isto ou Aquilo",
+      "autor": "Cecília Meireles",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason", "Religioso"],
+      "marcos": ["LG.FON.02", "LG.FON.04"],
+      "idade": [4, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Poemas curtos que brincam com os sons das palavras. Leia um por dia e pergunte: “Ouviu alguma palavra que começa igual a outra?”"
+    },
+    {
+      "id": "livro-dez-sacizinhos",
+      "titulo": "Dez Sacizinhos",
+      "autor": "Tatiana Belinky",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Montessori", "Religioso"],
+      "marcos": ["MA.SEN.01", "MA.SEN.03", "MA.SEN.06"],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Versos rimados que contam de 10 até 1 com os sacis do nosso folclore. Depois da leitura, peça para a criança narrar a história com os próprios feijões."
+    }
+  ]
+}

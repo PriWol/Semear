@@ -1,0 +1,273 @@
+{
+  "versao": "0.3",
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "dominios": [
+    {
+      "id": "LG",
+      "nome": "Linguagem e Alfabetização",
+      "icone": "🗣️",
+      "linhas": [
+        {
+          "id": "LG.ORA",
+          "nome": "Oralidade e vocabulário",
+          "vertentes": null
+        },
+        {
+          "id": "LG.FON",
+          "nome": "Consciência fonológica",
+          "vertentes": null
+        },
+        {
+          "id": "LG.LET",
+          "nome": "Conhecimento das letras",
+          "vertentes": null
+        },
+        {
+          "id": "LG.ESC",
+          "nome": "Escrita",
+          "vertentes": null
+        },
+        {
+          "id": "LG.LEI",
+          "nome": "Leitura",
+          "vertentes": null
+        },
+        {
+          "id": "LG.GRA",
+          "nome": "Grafomotricidade",
+          "vertentes": null
+        },
+        {
+          "id": "LG.LIT",
+          "nome": "Apreciação literária",
+          "vertentes": null
+        },
+        {
+          "id": "LG.MEM",
+          "nome": "Memorização e recitação",
+          "vertentes": ["Clássico"]
+        },
+        {
+          "id": "LG.NAR",
+          "nome": "Narração (oral → escrita)",
+          "vertentes": ["Charlotte Mason", "Clássico"]
+        }
+      ],
+      "comJornada": true
+    },
+    {
+      "id": "MA",
+      "nome": "Matemática",
+      "icone": "🔢",
+      "linhas": [
+        {
+          "id": "MA.SEN",
+          "nome": "Senso numérico e contagem",
+          "vertentes": null
+        },
+        {
+          "id": "MA.SND",
+          "nome": "Sistema de numeração",
+          "vertentes": null
+        },
+        {
+          "id": "MA.OPE",
+          "nome": "Operações",
+          "vertentes": null
+        },
+        {
+          "id": "MA.GEO",
+          "nome": "Geometria e espaço",
+          "vertentes": null
+        },
+        {
+          "id": "MA.MED",
+          "nome": "Grandezas e medidas",
+          "vertentes": null
+        },
+        {
+          "id": "MA.PAD",
+          "nome": "Padrões e classificação",
+          "vertentes": null
+        },
+        {
+          "id": "MA.DAD",
+          "nome": "Dados",
+          "vertentes": null
+        }
+      ],
+      "comJornada": true
+    },
+    {
+      "id": "LI",
+      "nome": "Línguas",
+      "icone": "🌍",
+      "comJornada": true,
+      "trilhas": [
+        {
+          "id": "en",
+          "nome": "Inglês",
+          "idadeInicio": 3
+        },
+        {
+          "id": "fr",
+          "nome": "Francês",
+          "idadeInicio": 3
+        },
+        {
+          "id": "la",
+          "nome": "Latim",
+          "idadeInicio": 6,
+          "preRequisitos": ["LG.LEI.01"]
+        }
+      ],
+      "linhas": [
+        {
+          "id": "LI.ESC",
+          "nome": "Escuta e compreensão",
+          "idiomas": ["en", "fr", "la"],
+          "vertentes": null
+        },
+        {
+          "id": "LI.FAL",
+          "nome": "Fala",
+          "idiomas": ["en", "fr", "la"],
+          "vertentes": null
+        },
+        {
+          "id": "LI.VOC",
+          "nome": "Vocabulário por temas",
+          "idiomas": ["en", "fr", "la"],
+          "vertentes": null
+        },
+        {
+          "id": "LI.CAN",
+          "nome": "Canções, rimas e recitação",
+          "idiomas": ["en", "fr", "la"],
+          "vertentes": null
+        },
+        {
+          "id": "LI.LEI",
+          "nome": "Leitura (6+)",
+          "idiomas": ["en", "fr", "la"],
+          "vertentes": null,
+          "idadeInicio": 6
+        },
+        {
+          "id": "LI.ESR",
+          "nome": "Escrita (6+)",
+          "idiomas": ["en", "fr", "la"],
+          "vertentes": null,
+          "idadeInicio": 6
+        },
+        {
+          "id": "LI.RAI",
+          "nome": "Raízes latinas no português",
+          "idiomas": ["la"],
+          "vertentes": null
+        },
+        {
+          "id": "LI.GRA",
+          "nome": "Gramática inicial (7–8)",
+          "idiomas": ["la"],
+          "vertentes": null
+        }
+      ],
+      "maxTrilhasAtivas": 2
+    },
+    {
+      "id": "AR",
+      "nome": "Artes e Música",
+      "icone": "🎨",
+      "comJornada": false,
+      "categorias": [
+        "Desenho",
+        "Pintura",
+        "Modelagem",
+        "Ritmo e pulso",
+        "Canto",
+        "Escuta musical",
+        "Apreciação de artistas",
+        "Estudo de pintores",
+        "Estudo de compositores",
+        "Caderno da natureza"
+      ]
+    },
+    {
+      "id": "NM",
+      "nome": "Natureza, Mundo e Sociedade",
+      "icone": "🌎",
+      "linhas": [
+        {
+          "id": "NM.VIV",
+          "nome": "Seres vivos e corpo",
+          "vertentes": null
+        },
+        {
+          "id": "NM.TER",
+          "nome": "Terra e céu",
+          "vertentes": null
+        },
+        {
+          "id": "NM.TEM",
+          "nome": "Tempo e história",
+          "vertentes": null
+        },
+        {
+          "id": "NM.ESP",
+          "nome": "Espaço e lugares",
+          "vertentes": null
+        },
+        {
+          "id": "NM.CUL",
+          "nome": "Cultura e diversidade",
+          "vertentes": null
+        }
+      ],
+      "comJornada": false
+    },
+    {
+      "id": "DI",
+      "nome": "Desenvolvimento Integral",
+      "icone": "🌱",
+      "linhas": [
+        {
+          "id": "DI.SOC",
+          "nome": "Socioemocional e valores",
+          "vertentes": null
+        },
+        {
+          "id": "DI.VPR",
+          "nome": "Vida prática e autonomia",
+          "vertentes": null
+        },
+        {
+          "id": "DI.MAM",
+          "nome": "Motor amplo",
+          "vertentes": null
+        },
+        {
+          "id": "DI.MFI",
+          "nome": "Motor fino",
+          "vertentes": null
+        },
+        {
+          "id": "DI.SEN",
+          "nome": "Educação dos sentidos",
+          "vertentes": ["Montessori"]
+        },
+        {
+          "id": "DI.RIT",
+          "nome": "Ritmo e festivais",
+          "vertentes": ["Waldorf"]
+        },
+        {
+          "id": "DI.ESP",
+          "nome": "Vida espiritual",
+          "vertentes": ["Religioso"]
+        }
+      ],
+      "comJornada": false
+    }
+  ]
+}
