@@ -266,6 +266,15 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 // Observação (histórico: nada é apagado, o estado atual é o mais recente)
 { "childId": "...", "marco": "...", "estado": "...", "data": "...", "sessaoId": "...", "nota": "texto livre" }
+
+// Comprovante de licença (§9.4): emitido e assinado pelo servidor; o app nunca cria nem edita
+{
+  "plano": "familia" | "teste",
+  "inicio": "2026-11-01",
+  "fim": "2027-11-01",
+  "emitidoEm": "2026-11-01T10:00:00Z",
+  "assinatura": "..."                     // conferida com a chave pública embutida no app
+}
 ```
 
 ---
@@ -387,13 +396,13 @@ A IA é usada **só pela equipe**, na produção. As famílias recebem arquivos 
 
 ## 8. Portfólio: proteção das famílias
 
-### 9.1 Contexto (out/2026)
+### 8.1 Contexto (out/2026)
 - Em 2018 o STF decidiu que a educação domiciliar **não é inconstitucional, mas depende de lei federal** que a regulamente. Até hoje essa lei não existe.
 - O **PL 1338/2022** foi aprovado na Câmara em maio/2022 e **segue no Senado**. Em 2026 houve audiência pública (junho) e um pedido de urgência (julho), mas ainda sem votação.
 - Na prática, a família corre o risco de ser questionada pelo **Conselho Tutelar** ou pelo **Ministério Público** (alegação de abandono intelectual). A melhor defesa conhecida é **demonstrar, com evidências organizadas e datadas, que a criança está sendo educada e está aprendendo**.
 - Pelo que lembramos do texto aprovado pela Câmara (**precisa ser conferido** e pode mudar no Senado), ele prevê **matrícula em instituição credenciada**, **relatórios periódicos (trimestrais)** das atividades e **avaliações anuais** com base na **BNCC**. Nada disso está confirmado nas fontes que consultamos.
 
-### 9.2 Recomendação: portfólio de evidências trimestral com anexo BNCC
+### 8.2 Recomendação: portfólio de evidências trimestral com anexo BNCC
 Recomendo **combinar as duas opções** do grilling, porque cada uma protege de um jeito:
 
 | Parte | O que contém | Por que protege |
@@ -462,11 +471,18 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 - **O plano Livre funciona sem conta e sem servidor**, como a v1 de hoje.
 - **Backend mínimo**, só para quem testa ou assina: autenticação, status da assinatura e webhooks do gateway (ex.: Supabase + função serverless).
 - **O servidor não sabe quantas crianças existem**, nem quem são, nem o que aprenderam. Ele só sabe que aquela conta tem uma licença válida até uma data.
-- **Licença como "data de validade":** o app guarda um comprovante assinado com a data de fim da assinatura e funciona offline. Ele só pede uma nova checagem perto do vencimento, ou depois de ~7 dias sem conexão no plano mensal.
+- **Licença como "data de validade":** o app guarda um comprovante assinado (§4.2) com o início e o fim do período e funciona offline. Só a **chave pública** fica no app; a privada fica só no servidor.
+- **Regra pura no domínio:** `planoEfetivo(comprovantes, agora)` decide o plano, recebendo a data de "agora" por parâmetro (ADR 0003), com teste unitário para o vencimento e para o limite do Livre.
+- **Checagem e tolerância:** no plano mensal, o app tenta renovar o comprovante a cada ~7 dias; no anual, a partir de 7 dias antes do fim. Os dois têm **7 dias de tolerância** depois do fim antes de voltar ao Livre.
+- **Relógio do aparelho:** o app guarda a data mais recente que já viu (incluindo o `emitidoEm` do último comprovante) e usa a maior entre ela e o relógio. Voltar a data do aparelho não estende a licença.
+- **Regra do histórico:** o portfólio completo de um período só é liberado se houver um comprovante **com assinatura válida** que cubra aquele período. Os comprovantes vão no backup, e a importação **revalida a assinatura**: comprovante inválido ou alterado é ignorado (o dado continua importado, só sem liberar o portfólio completo).
 - **Fim da licença:** o app volta para os limites do Livre. Nenhum dado é apagado ou escondido.
-- **Sync opcional** entre aparelhos e responsáveis: criptografado de ponta a ponta, para o servidor não conseguir ler os dados da criança. As fotos não sincronizam (decisão 34).
+- **Antes de qualquer código de conta ou assinatura:** um **ADR próprio de backend e privacidade** define que dados o gateway e o Supabase recebem (só e-mail e dados de cobrança do responsável), retenção, base legal na LGPD, consentimento e o ajuste da CSP (`connect-src`). Nada da criança vai junto.
+- **Sync opcional** entre aparelhos e responsáveis: criptografado de ponta a ponta, para o servidor não conseguir ler os dados da criança. As fotos não sincronizam (decisão 34). **Fica fora da primeira fase** de conta e assinatura e terá ADR próprio.
 
 ### 9.5 Riscos e o que medir no piloto
+> **Como medir sem telemetria:** o app não envia dados de uso (CLAUDE.md, Privacidade). No piloto, os números vêm de **entrevistas e de um questionário voluntário**, em que a família informa quantos pacotes gerou (o app pode mostrar essa contagem na tela, sem enviá-la), e da conversão registrada pelo gateway de pagamento. Qualquer telemetria futura exige um ADR próprio.
+
 | Risco | Por que importa | Como acompanhar |
 |---|---|---|
 | **Livre generoso demais** | Pouca gente assina. | Medir a conversão do Livre e do teste para o pago. Ajustar o limite de pacotes, nunca o acesso ao histórico. |
@@ -507,6 +523,8 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 
 - [x] ~~**Reconsiderar o bloqueio total**~~: resolvido. O fim do teste volta para o plano Livre (decisão 31, ADR 0010).
 - [ ] **Preço exato** do plano Família (por família, ver §9.3). Testar 2 faixas no piloto.
+- [ ] **Duração do teste:** 14 ou 30 dias? Para o piloto, usar **30 dias** e comparar com 14 na primeira turma de lançamento.
+- [ ] **ADR de backend e privacidade** (conta, comprovante de licença, gateway, CSP), antes de qualquer código de assinatura (§9.4).
 - [ ] **Limite do plano Livre:** 1 pacote por semana ou uma amostra por domínio? Decidir com os dados do piloto (§9.5).
 - [ ] **Gateway de pagamento:** Asaas × Mercado Pago × Pagar.me × Stripe BR (Pix à vista, parcelamento no cartão; Pix Automático exige CNPJ com mais de 6 meses).
 - [ ] **Necessidades específicas** (TEA, TDAH, dislexia): adiado. Revisitar depois do piloto.

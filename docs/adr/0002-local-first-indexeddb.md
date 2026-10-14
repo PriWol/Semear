@@ -4,7 +4,7 @@
 - **Data:** 2026-10-14
 
 ## Contexto
-Princípio do produto: dados da criança ficam no aparelho (especificação §1 e §9.2). O app precisa
+Princípio do produto: dados da criança ficam no aparelho (especificação §1 e §9.4). O app precisa
 funcionar offline, guardar histórico e, no futuro, fotos do portfólio. O app antigo usava `localStorage`.
 
 ## Opções consideradas

@@ -2,6 +2,7 @@
 
 - **Status:** Aceito
 - **Data:** 2026-10-14
+- **Relacionado:** 0002 (dados no aparelho), 0003 (domínio puro)
 
 ## Contexto
 A especificação (§9, decisões 29 a 33) previa teste de 30 dias com cartão no cadastro, assinatura
@@ -39,7 +40,16 @@ Opção 3, detalhada na especificação §9:
 - O plano Livre é a v1 de hoje: nada muda no código até entrarem conta e assinatura (§12.3).
 - O backend fica menor: o servidor guarda só a conta e a data de validade da licença, nunca dados ou
   contagem de crianças (§9.4). O app confere offline um comprovante assinado.
-- O **limite do Livre** vira uma regra de domínio (pura e testada) que depende do plano e da data.
+- O **limite do Livre** e o plano efetivo viram regras de domínio puras e testadas:
+  `planoEfetivo(comprovantes, agora)`, com a data de "agora" por parâmetro (ADR 0003). O app usa a
+  maior data já vista para que voltar o relógio não estenda a licença, e há 7 dias de tolerância
+  depois do fim (§9.4).
+- O portfólio completo de um período só é liberado por um comprovante com assinatura válida. A
+  importação de backup revalida a assinatura, então um comprovante forjado não libera nada.
+- **Antes de qualquer código de conta ou assinatura**, um ADR próprio de backend e privacidade
+  (dados enviados ao gateway e ao Supabase, retenção, base legal, CSP). O sync fica fora dessa fase.
+- **Sem telemetria:** as métricas do piloto vêm de entrevistas, de questionário voluntário e do
+  gateway de pagamento. Telemetria exige ADR próprio.
 - Licença anual primeiro: a cobrança recorrente mensal pode esperar o CNPJ cumprir o prazo do Pix Automático.
 - A receita por família é menor no curto prazo. O piloto precisa medir a conversão e o uso para
   calibrar o limite do Livre e o preço (§9.5).
