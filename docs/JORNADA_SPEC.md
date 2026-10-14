@@ -279,7 +279,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 ### 5.2 Avanço (manual)
 - Só o pai muda um marco para *Consolidado*, seja na ficha de registro ou no mapa.
-- O app mostra um selo **"🌱 parece pronto"** quando o marco teve *Consolidado* registrado em 2 sessões diferentes. É só uma dica. **Planejado (Fase 1, #14 e #41):** na interface, o selo passará a usar um ícone de broto em linha + o texto "parece pronto", sem emoji, seguindo o guia visual que a #14 vai criar.
+- O app mostra um selo **"🌱 parece pronto"** quando o marco teve *Consolidado* registrado em 2 sessões diferentes. É só uma dica. **Planejado:** o selo nasce na Fase 2 (#11) já com um ícone de broto em linha + o texto "parece pronto", sem emoji, seguindo o guia visual que a #14 vai criar.
 - O pai também pode marcar um marco como *Consolidado* direto no mapa, por exemplo algo que a criança aprendeu sozinha.
 - **"Está aqui"** (posicionamento rápido): os marcos anteriores viram *Consolidado*, o escolhido fica *Em desenvolvimento* e os posteriores que tinham registro voltam a *Não observado*.
 
