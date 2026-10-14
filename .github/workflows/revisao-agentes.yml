@@ -37,7 +37,7 @@ jobs:
               novas suspeitas, segredos no código, permissões excessivas em workflows.
               Para cada problema, aponte arquivo e linha, o risco concreto e a correção sugerida.
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
       # fixada por SHA (v1) porque recebe segredos; atualizar conscientemente
