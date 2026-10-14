@@ -1,7 +1,7 @@
 # 🧭 Jornada de Aprendizado: Especificação
 
 > Documento resultante do *grilling* de outubro/2026. Ele define **como o Semear posiciona cada criança numa jornada por domínios** e como isso alimenta a geração de materiais para imprimir.
-> Status: **rascunho v0.5** (7 rodadas de grilling + protótipos + app v1 em construção), a ser validado com as famílias piloto.
+> Status: **rascunho v0.6** (7 rodadas de grilling + protótipos + app v1 em construção + revisão do modelo de negócio, ADR 0009), a ser validado com as famílias piloto.
 
 ---
 
@@ -11,7 +11,7 @@
 2. **Papel primeiro.** Tudo o que a criança vê sai num PDF: A4 para imprimir, ou um "modo tablet" com uma página por tela, sem links e sem interação.
 3. **O pai decide.** O app sugere, avisa e organiza, mas avançar na jornada é sempre uma decisão do educador.
 4. **Sem nota, sem comparação.** A escala é qualitativa e não existe ranking entre crianças.
-5. **Dados da criança ficam no aparelho.** Observações, marcos e fotos ficam guardados localmente. A conta (obrigatória, ver §9) guarda só os dados do responsável e da assinatura, além do *sync* opcional.
+5. **Dados da criança ficam no aparelho.** Observações, marcos e fotos ficam guardados localmente. A conta (só para quem testa ou assina, ver §9) guarda só os dados do responsável e da assinatura, além do *sync* opcional.
 6. **Conteúdo sempre revisado por um humano.** A IA ajuda a produzir, mas nada chega às famílias sem revisão.
 
 ---
@@ -42,17 +42,17 @@
 | 20 | Artes e música | **Só atividades**, sem marcos nem posicionamento. |
 | 21 | Uso de IA | **Só na produção do conteúdo.** As famílias recebem conteúdo estático e revisado. |
 | 22 | PDF | **Gerado no dispositivo** a partir de templates HTML/SVG com CSS de impressão (A4 e modo tablet). |
-| 23 | Sincronização | ~~Conta opcional~~ → a conta passou a ser obrigatória (decisão 30). O *sync* entre aparelhos e responsáveis é opcional e criptografado. |
-| 24 | Modelo de negócio | ~~Freemium~~ → **teste de 30 dias e depois pago** (decisão 29). Ver §9. |
+| 23 | Sincronização | ~~Conta opcional~~ → ~~conta obrigatória~~ → **conta só para teste e assinatura** (decisão 30, ADR 0009). O *sync* entre aparelhos e responsáveis é opcional e criptografado. |
+| 24 | Modelo de negócio | ~~Freemium~~ → ~~teste de 30 dias e depois pago~~ → **plano Livre permanente + plano Família pago** (decisão 29, ADR 0009). Ver §9. |
 | 25 | Portfólio | **Portfólio de evidências trimestral**, com anexo BNCC, pensado para proteger a família. Ver §8. |
 | 26 | Necessidades específicas | **Fica para depois** do lançamento. |
 | 27 | Idade das línguas | **Escalonar:** inglês e francês orais a partir dos 3 anos. Latim a partir dos 6, com pré-requisito de leitura em português (LG.LEI). **No máximo 2 trilhas de língua ativas** por criança (o app avisa e o pai pode forçar). |
 | 28 | Novas vertentes | **Charlotte Mason entra** como 5ª vertente. **Unschooling não entra**, porque rejeita sequência e sondagem, que são o núcleo do produto. |
-| 29 | Monetização | **Teste grátis de 30 dias e depois assinatura.** Sem plano gratuito permanente. |
-| 30 | Cadastro | **Conta + cartão no início do teste.** |
-| 31 | Fim do teste sem assinatura | **Bloqueio total, só exportação** dos dados. |
+| 29 | Monetização | ~~Teste de 30 dias e depois assinatura, sem plano gratuito~~ → **Semear Livre (grátis para sempre) + Semear Família (assinatura)**. A família paga pelo conteúdo novo toda semana, não pelo acesso ao histórico (ADR 0009). |
+| 30 | Cadastro | ~~Conta + cartão no início do teste~~ → **Livre sem conta. Teste de 14 a 30 dias com e-mail, sem cartão** (ADR 0009). |
+| 31 | Fim do teste sem assinatura | ~~Bloqueio total, só exportação~~ → **volta para o Livre**. Histórico, backup e portfólio dos períodos já registrados continuam acessíveis (ADR 0009). |
 | 32 | Distribuição | **PWA** (celular + computador) com **pagamento na web** (Pix e cartão). Lojas de apps ficam para depois. |
-| 33 | Preço | **Por criança.** |
+| 33 | Preço | ~~Por criança~~ → **por família, com crianças ilimitadas e plano anual como padrão** (ADR 0009). |
 | 34 | Fotos do portfólio | **Só no aparelho**, sem nuvem. |
 | 35 | Visual das folhas | **Colorido suave** (fundos pastel, traço escuro). Ver §5.8. |
 | 36 | Vertente × aparência | A identidade visual é a mesma para todas. A vertente muda **só a tipografia e o tipo de atividade**. |
@@ -415,34 +415,72 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
    - **Lembrete de fechamento trimestral:** gerar o PDF do portfólio (com as fotos embutidas) e salvá-lo fora do app (e-mail, Drive, pendrive).
    - **Backup completo** (JSON + fotos num arquivo .zip) a qualquer momento, com lembrete mensal.
    - Aviso claro no onboarding: *"Seus dados e fotos ficam só neste aparelho."*
-9. **Fim do teste ou cancelamento** (decisão 31): mesmo com o app bloqueado, a família consegue **exportar os dados e os PDFs de portfólio já gerados**. Ver o risco em §9.
+9. **Fim do teste ou cancelamento** (decisão 31): a família volta para o plano Livre e **nunca perde o histórico**. O portfólio completo dos períodos em que ela assinou (ou testou) continua podendo ser gerado para sempre. Ver §9.
 
 **Antes de lançar:** validar o modelo de relatório com um advogado da área e com associações de famílias educadoras (ex.: ANED). O app **não oferece aconselhamento jurídico** e precisa dizer isso no próprio relatório.
 
 ---
 
-## 9. Modelo de negócio: teste de 30 dias + assinatura por criança
+## 9. Modelo de negócio: plano Livre + assinatura por família
 
-### 9.1 Como funciona
-1. **Cadastro:** e-mail + cartão (ou Pix Automático, se o gateway oferecer) → **30 dias grátis com tudo liberado**.
-2. **Dia 31:** a cobrança começa automaticamente. O app avisa nos dias 23 e 28 do teste.
-3. **Preço por criança** (valores a testar no piloto). Sugestão: **R$ 24,90 por mês para a 1ª criança e R$ 14,90 para cada criança adicional**, com plano anual ~20% mais barato. O desconto no adicional reduz o peso para famílias grandes, comuns no homeschool, e mantém a sessão conjunta de irmãos atraente.
-4. **Sem assinatura (teste vencido ou cancelado):** o app fica **bloqueado** e só permite **exportar** os dados (JSON + fotos .zip) e os PDFs de portfólio já gerados.
-5. **Distribuição:** PWA instalável. A cobrança é feita na web, por um gateway brasileiro com Pix e cartão (Asaas, Mercado Pago, Pagar.me ou Stripe BR), sem a taxa de 15–30% das lojas.
+> Revisado em out/2026 (ADR 0009). Substitui o modelo anterior: teste de 30 dias com cartão, assinatura por criança e bloqueio total depois do teste.
 
-### 9.2 Arquitetura que isso exige
-- **Backend mínimo:** autenticação, status da assinatura e webhooks do gateway (ex.: Supabase + função serverless).
-- **Dados da criança continuam locais.** O servidor só sabe *quantas* crianças estão cadastradas (para cobrar), não quem são nem o que aprenderam. Isso simplifica muito a LGPD.
-- **Verificação offline:** o app guarda um "comprovante" de assinatura válido por ~7 dias, então funciona offline e só bloqueia se ficar mais de 7 dias sem conseguir checar.
+### 9.1 Por que este modelo
+- **O mercado de homeschooling é pequeno e cresce rápido.** A ANED estima cerca de 75 mil famílias e 150 mil estudantes em 2026; em 2022 eram cerca de 35 mil famílias. São estimativas da associação, não há dado oficial. A **escala está no afterschooling**, e o homeschooling é a comunidade de entrada.
+- **A regulação está parada.** O PL 1338/2022 aguarda a Comissão de Educação do Senado e deve andar só a partir de 2027. Enquanto isso, o histórico e o portfólio (§8) são o que protege a família, então **não podem ficar reféns de pagamento**.
+- **O custo por usuário é quase zero** (local-first, ADR 0002). O custo real é produzir conteúdo, e **é isso que a família paga**: pacotes novos toda semana.
+- **Cobrar por criança não se sustenta.** O número de crianças só existe no aparelho; conferir isso no servidor iria contra o princípio de privacidade (§1.5).
+- **O Semear antigo era 100% gratuito** e as comunidades de famílias educadoras divulgam boca a boca. Um plano gratuito permanente preserva esse alcance.
+- **ECA Digital (Lei 15.211, em vigor desde 17/03/2026):** mesmo com a criança fora do app, o modelo é pago pela família, **sem anúncios e sem perfilamento**.
+
+### 9.2 Planos
+| | **Semear Livre** (grátis para sempre) | **Semear Família** (assinatura) |
+|---|---|---|
+| Conta | Não precisa | E-mail (só dados do responsável e da assinatura) |
+| Crianças | Ilimitadas | Ilimitadas |
+| Mapa da jornada e posicionamento | ✅ | ✅ |
+| Sondagem impressa | ✅ | ✅ |
+| Histórico, backup e exportação | ✅ sempre | ✅ |
+| Pacotes de sessão gerados | **Limitado** (1 por semana ou uma amostra por domínio, a decidir no piloto) | **Ilimitados** + sessão conjunta de irmãos |
+| Livros, vertentes e trilhas de línguas | Básico | Completo |
+| Portfólio trimestral | Relatório simples (frequência e marcos) | **Completo** (evidências + anexo BNCC, §8) |
+
+**Regra do histórico:** o portfólio completo de qualquer período em que a família assinou (ou estava no teste) **pode ser gerado para sempre**, mesmo depois de voltar ao Livre. O app nunca bloqueia o acesso aos dados da família.
+
+**Por que esse recorte:** a sondagem grátis é o gancho de aquisição, principalmente no afterschooling ("descubra em 15 minutos onde seu filho está na alfabetização"). A família assina quando quer o conteúdo novo toda semana.
+
+### 9.3 Teste e preço
+1. **Teste de 14 a 30 dias com tudo liberado, só com e-mail, sem cartão.** No fim, a família volta para o Livre ("reverse trial"). O app avisa alguns dias antes.
+2. **Preço por família**, com crianças ilimitadas (valores a testar no piloto):
+   - **Mensal:** R$ 29,90.
+   - **Anual (padrão):** R$ 239 (cerca de R$ 20 por mês), em até 12x no cartão ou **Pix à vista**.
+3. **Família fundadora:** quem entra no piloto paga R$ 149 por ano, com o preço garantido enquanto continuar assinando. Isso financia o primeiro lote de conteúdo (§12.3).
+4. **Por que o anual como padrão:** combina com o ano letivo das famílias, reduz cancelamentos e dispensa cobrança recorrente no lançamento. O **Pix Automático exige CNPJ ativo há mais de 6 meses**, então a recorrência mensal pode entrar depois.
+5. **Distribuição:** PWA instalável, com cobrança na web por um gateway brasileiro com Pix e cartão (Asaas, Mercado Pago, Pagar.me ou Stripe BR), sem a taxa de 15–30% das lojas.
+
+### 9.4 Arquitetura que isso exige
+- **O plano Livre funciona sem conta e sem servidor**, como a v1 de hoje.
+- **Backend mínimo**, só para quem testa ou assina: autenticação, status da assinatura e webhooks do gateway (ex.: Supabase + função serverless).
+- **O servidor não sabe quantas crianças existem**, nem quem são, nem o que aprenderam. Ele só sabe que aquela conta tem uma licença válida até uma data.
+- **Licença como "data de validade":** o app guarda um comprovante assinado com a data de fim da assinatura e funciona offline. Ele só pede uma nova checagem perto do vencimento, ou depois de ~7 dias sem conexão no plano mensal.
+- **Fim da licença:** o app volta para os limites do Livre. Nenhum dado é apagado ou escondido.
 - **Sync opcional** entre aparelhos e responsáveis: criptografado de ponta a ponta, para o servidor não conseguir ler os dados da criança. As fotos não sincronizam (decisão 34).
 
-### 9.3 ⚠️ Riscos registrados (decididos conscientemente, revisar no piloto)
-| Risco | Por que importa | Mitigação proposta |
+### 9.5 Riscos e o que medir no piloto
+| Risco | Por que importa | Como acompanhar |
 |---|---|---|
-| **Cartão no cadastro** | Muitas famílias desistem antes de experimentar. Parte do público prefere Pix ou não tem cartão de crédito. | Aceitar **Pix Automático** como alternativa ao cartão. Medir a desistência no cadastro durante o piloto. |
-| **Bloqueio total pós-teste** | A família perde acesso ao **histórico** que a protege juridicamente (§8) justamente quando pode precisar dele. Também pode gerar reclamações e má fama na comunidade. | Exportação sempre liberada, incluindo **gerar o portfólio dos períodos já registrados**, mesmo bloqueado. *Recomendo reconsiderar isso:* o histórico é da família. |
-| **Preço por criança** | Pesa para famílias grandes, que são justamente as mais engajadas no homeschool. | Desconto progressivo por criança adicional, ou um teto (ex.: a partir da 3ª criança, grátis). |
-| **Sem plano gratuito** | Menos alcance boca a boca do que o Semear tinha (era 100% gratuito). | Conteúdo gratuito fora do app (amostras de folhas, blog, comunidade) como porta de entrada. |
+| **Livre generoso demais** | Pouca gente assina. | Medir a conversão do Livre e do teste para o pago. Ajustar o limite de pacotes, nunca o acesso ao histórico. |
+| **Livre restrito demais** | A família não percebe valor e abandona antes de assinar. | Medir quantos pacotes por semana as famílias geram e em que ponto param. |
+| **Preço** | Errar para cima trava a conversão; para baixo, não paga o conteúdo. | Testar duas faixas (ex.: R$ 19,90 × R$ 29,90 por mês) e perguntar o preço "caro demais" e "barato demais para confiar" (§12.2). |
+| **Afterschooling não chega** | A escala depende dele. | Medir quantas famílias de afterschooling chegam pela sondagem grátis. |
+
+### 9.6 Receitas futuras (nesta ordem)
+1. **Plano Educador** (faixa de R$ 49 a 79 por mês): tutoras de alfabetização, psicopedagogas e microescolas que acompanham muitas crianças. Os dados continuam no aparelho dela.
+2. **Parcerias com associações** (ANED, cooperativas, grupos regionais): cupom para associados.
+3. **Kits físicos ou gráfica sob demanda:** só depois de validar a retenção.
+4. **Nunca:** anúncios, venda de dados ou qualquer receita que dependa de enviar dados da criança para fora do aparelho.
+
+---
 
 ## 10. Benchmark: o que existe lá fora e onde o Semear se diferencia
 
@@ -467,9 +505,10 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 
 ## 11. Questões em aberto (próximas rodadas)
 
-- [ ] **Reconsiderar o bloqueio total:** permitir pelo menos gerar o portfólio dos períodos já registrados? (ver §9.3)
-- [ ] **Preço exato** e desconto para crianças adicionais. Testar 2 ou 3 faixas no piloto.
-- [ ] **Gateway de pagamento:** Asaas × Mercado Pago × Pagar.me × Stripe BR (Pix Automático, taxas, assinatura recorrente).
+- [x] ~~**Reconsiderar o bloqueio total**~~: resolvido. O fim do teste volta para o plano Livre (decisão 31, ADR 0009).
+- [ ] **Preço exato** do plano Família (por família, ver §9.3). Testar 2 faixas no piloto.
+- [ ] **Limite do plano Livre:** 1 pacote por semana ou uma amostra por domínio? Decidir com os dados do piloto (§9.5).
+- [ ] **Gateway de pagamento:** Asaas × Mercado Pago × Pagar.me × Stripe BR (Pix à vista, parcelamento no cartão; Pix Automático exige CNPJ com mais de 6 meses).
 - [ ] **Necessidades específicas** (TEA, TDAH, dislexia): adiado. Revisitar depois do piloto.
 - [ ] **Validação jurídica** do modelo de portfólio (advogado + associação de famílias).
 - [ ] **Termos de uso e política de privacidade** (LGPD, dados de crianças, cobrança recorrente).
@@ -527,6 +566,7 @@ Para usar, abra no navegador e use a barra no topo:
 - A ficha de registro foi fácil? Você saberia decidir entre "em desenvolvimento" e "consolidado"?
 - Imprimiu em cores ou em P&B? Ficou bom? Usou o tablet?
 - **Você pagaria por um app que gerasse isso toda semana, ajustado ao seu filho?** Quanto?
+- A partir de que preço por mês, para a família toda, isso seria **caro demais**? E abaixo de que preço você **desconfiaria** da qualidade?
 
 **Sinais de sucesso:**
 - Preparação em ≤ 10 minutos.
