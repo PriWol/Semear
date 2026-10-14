@@ -30,6 +30,9 @@ Currículo clássico ilustrado para a infância: 8 volumes, 544 páginas planeja
 | `volume2/inspecao/` | as 71 páginas renderizadas, usadas na revisão visual |
 | `editorial/volume2.py` | todo o conteúdo do volume |
 
+## Volume 3 — Números, formas e raciocínio (68 páginas)
+`volume3/volume3-impressao.pdf`, `volume3/volume3-tela.pdf`, `volume3/volume3-tela-leve.pdf` (150 dpi), `volume3/inspecao/`, conteúdo em `editorial/volume3.py`.
+
 ## Gerar de novo
 ```
 pip install numpy scipy pillow matplotlib

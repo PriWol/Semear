@@ -23,6 +23,7 @@ LIVROS = {
     "LittleRedRiding00Cran": "Walter Crane, <i>Little Red Riding Hood</i> (Londres: Routledge, c. 1875)",
     "histoiredepierre00pott": "Beatrix Potter, <i>Histoire de Pierre Lapin</i> (Londres: F. Warne, 1921)",
     "aesopfables00aesoiala": "Arthur Rackham (1867–1939), <i>Æsop's Fables</i> (Londres: Heinemann, 1912)",
+    "Thislittlepigwe00Cran": "Walter Crane, <i>This Little Pig Went to Market</i> (Londres: Routledge, c. 1870)",
     "fairytalesofbrot00grim": "Arthur Rackham, <i>The Fairy Tales of the Brothers Grimm</i> (Nova York: Doubleday, 1916)",
 }
 
@@ -76,8 +77,8 @@ ITENS.update({
     "brooke_porco_casa":    ("goldengoosebookb00broo", 68, None, 1600),
     "brooke_barril":        ("goldengoosebookb00broo", 74, None, 1600),
     "crane_mae":            ("LittleRedRiding00Cran", 1, None, 1700, (0, 0.17, 1, 1)),
-    "crane_lobo_bosque":    ("LittleRedRiding00Cran", 2, None, 1700, (0, 0.20, 1, 1)),
-    "crane_flores":         ("LittleRedRiding00Cran", 5, None, 1700, (0, 0.20, 1, 1)),
+    "crane_lobo_bosque":    ("LittleRedRiding00Cran", 2, None, 1700, (0, 0.27, 1, 1)),
+    "crane_flores":         ("LittleRedRiding00Cran", 5, None, 1700, (0, 0.27, 1, 1)),
     "crane_vovo_janela":    ("LittleRedRiding00Cran", 7, None, 1700, (0, 0, 1, 0.60)),
     "crane_lobo_porta":     ("LittleRedRiding00Cran", 8, None, 1700),
     "crane_chapeu_porta":   ("LittleRedRiding00Cran", 10, None, 1700, (0, 0.17, 1, 1)),
@@ -109,6 +110,15 @@ ITENS.update({
     "rackham_bremen":       ("fairytalesofbrot00grim", 45, (0.04, 0.20, 0.48, 0.72), 1400),
 })
 
+# ---- Volume 3
+ITENS.update({
+    "crane_porco_mae":     ("Thislittlepigwe00Cran", 1, None, 1500, (0, 0.27, 1, 1)),
+    "crane_porco_mercado": ("Thislittlepigwe00Cran", 2, None, 1500, (0, 0.235, 1, 1)),
+    "crane_porco_casa":    ("Thislittlepigwe00Cran", 5, None, 1500, (0, 0.27, 1, 1)),
+    "crane_porco_nada":    ("Thislittlepigwe00Cran", 8, None, 1500, (0, 0.27, 1, 1)),
+    "crane_porco_chora":   ("Thislittlepigwe00Cran", 10, None, 1500, (0, 0.235, 1, 1)),
+    "crane_porcos_mesa":   ("Thislittlepigwe00Cran", 14, None, 1500, (0, 0, 1, 0.88)),
+})
 FONTE = os.path.join(AQUI, "build", "paginas")   # páginas originais baixadas (não versionadas)
 
 

@@ -16,9 +16,10 @@ from motivos import SUBJECTS  # noqa: E402
 from motivos2 import MOTIVOS2, contorno  # noqa: E402
 from arte_extra import ARTE_EXTRA  # noqa: E402
 from motivos3 import MOTIVOS3  # noqa: E402
+from motivos4 import MOTIVOS4  # noqa: E402
 import fontes_v1  # noqa: E402
 
-TODOS = {**SUBJECTS, **MOTIVOS2, **ARTE_EXTRA, **MOTIVOS3}
+TODOS = {**SUBJECTS, **MOTIVOS2, **ARTE_EXTRA, **MOTIVOS3, **MOTIVOS4}
 VERSAO = {"atual": "impressao"}   # "impressao" (papel branco) ou "tela" (papel creme)
 
 
@@ -201,6 +202,8 @@ CW, CH, GX, GY = 60, 78, 15, 34
 def cartoes(L, t, itens, rodape, sub_frente=None):
     """Folha de 9 cartões (frente) e verso espelhado. itens: dicts pt, mot|pd, en, fr, la, sci, dica."""
     def img_de(it):
+        if it.get("html"):
+            return it["html"]
         return pd(it["pd"], "50mm", "max-height:52mm;object-fit:contain") if it.get("pd") else img(it["mot"], "44mm")
     frente = "".join(f'<div class="carta"><div class="borda"></div>{img_de(it)}<div class="palavra">{it["pt"]}</div></div>'
                      for it in itens)
