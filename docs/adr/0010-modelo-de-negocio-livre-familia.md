@@ -51,7 +51,8 @@ Opção 3, detalhada na especificação §9:
   dias de tolerância depois do fim; o teste não tem (§9.4).
 - O portfólio não depende de comprovante de licença. Isso dispensa regras de cobertura de período,
   tira os comprovantes do backup e elimina o incentivo a repetir o teste para gerar portfólio.
-- O limite do Livre entra no domínio como parâmetro injetado, sem valor fixo, até o piloto decidir.
+- O limite do Livre entra no domínio como parâmetro injetado de `podeGerarPacote(plano, limiteLivre,
+  pacotesNaSemana)`, sem valor fixo, até o piloto decidir.
 - **Privacidade:** os comprovantes levam o `contaId`, então ficam só no store de licença e nunca vão
   no backup; ao entrar na conta, o app baixa os comprovantes de novo.
 - **Antes de qualquer código de conta ou assinatura**, um ADR próprio de backend e privacidade
