@@ -46,13 +46,20 @@ Opção 3, detalhada na especificação §9:
   assinatura (WebCrypto) fica em `dados/`. O app usa a
   maior data já vista para que voltar o relógio não estenda a licença, e os planos pagos têm 7
   dias de tolerância depois do fim; o teste não tem (§9.4).
-- O portfólio completo de um período só é liberado por um comprovante com assinatura válida. A
+- O portfólio completo de um trimestre é liberado quando comprovantes com assinatura válida cobrem
+  pelo menos um dia dele. Escolhemos "pelo menos um dia" porque o portfólio protege a família, e na
+  dúvida a regra deve favorecê-la. A
   importação de backup revalida a assinatura, então um comprovante forjado não libera nada.
 - O limite do Livre entra no domínio como parâmetro injetado, sem valor fixo, até o piloto decidir.
 - **Privacidade:** o backup passa a levar o `contaId` dos comprovantes, o que liga o arquivo à conta
   do responsável. A exportação avisa disso e já vem com "exportar sem comprovantes" selecionado.
 - **Antes de qualquer código de conta ou assinatura**, um ADR próprio de backend e privacidade
   (dados enviados ao gateway e ao Supabase, retenção, base legal, CSP). O sync fica fora dessa fase.
+  Até lá, continua valendo a regra do `CLAUDE.md` de que as Fontes do Google são a única chamada
+  externa do app.
+- **Pré-venda da família fundadora:** só abre depois das travas do §9.3 (gateway com contrato de
+  operador, termos e política de privacidade publicados, página sem dados da criança, link nunca
+  embutido no app). O `inicio` do comprovante é a data de ativação, não a do pagamento.
 - **Sem telemetria:** as métricas do piloto vêm de entrevistas, de questionário voluntário e do
   gateway de pagamento. Telemetria exige ADR próprio.
 - Licença anual primeiro: a cobrança recorrente mensal pode esperar o CNPJ cumprir o prazo do Pix Automático.
