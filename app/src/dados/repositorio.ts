@@ -63,7 +63,7 @@ export interface Repositorio {
   apagarTudo(): Promise<void>;
 
   /** grava a família de exemplo (#39); recusa se já existe uma família no aparelho */
-  carregarExemplo(dados: DadosExemplo, agora: string): Promise<void>;
+  carregarExemplo(dados: DadosExemplo): Promise<void>;
   /**
    * remove SÓ os registros marcados como exemplo: o que a pessoa cadastrou continua no aparelho.
    * Se ela cadastrou crianças, a família é mantida (sem o marcador) para elas não ficarem órfãs.
@@ -230,7 +230,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       await tx.done;
     },
 
-    async carregarExemplo(dados, agora) {
+    async carregarExemplo(dados) {
       const tx = db.transaction(LOJAS, 'readwrite');
       // A checagem fica dentro da transação: dois toques seguidos não gravam o exemplo duas vezes.
       if (lerFamilia(await tx.objectStore('config').get(CHAVE_FAMILIA))) {
@@ -247,8 +247,6 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
         }
       }
       for (const s of dados.sessoes) await tx.objectStore('sessoes').put(s);
-      // O exemplo não é dado da família: não deve disparar o lembrete de backup.
-      await tx.objectStore('config').put({ em: agora }, CHAVE_BACKUP);
       await tx.done;
     },
 
@@ -286,8 +284,6 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
         } else {
           await tx.objectStore('config').delete(CHAVE_FAMILIA);
         }
-        // O backup "de mentira" do exemplo sai nos dois casos: o lembrete de backup volta a valer.
-        await tx.objectStore('config').delete(CHAVE_BACKUP);
       }
       await tx.done;
       return { familiaMantida };

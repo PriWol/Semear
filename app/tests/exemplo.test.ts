@@ -96,19 +96,19 @@ describe('repositório: carregar e apagar o exemplo', () => {
   });
 
   it('carrega família, crianças, jornada (com histórico) e sessões', async () => {
-    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
     expect((await repo.familia())?.exemplo).toBe(true);
     expect((await repo.criancas()).map((c) => c.nome)).toEqual(['Theo', 'Ana']);
     expect((await repo.estados('exemplo-ana'))['LG.FON.04']?.estado).toBe('em-desenvolvimento');
     expect((await repo.historico('exemplo-ana')).length).toBeGreaterThan(0);
     expect(await repo.sessoes()).toHaveLength(3);
-    // O exemplo não dispara o lembrete de backup.
-    expect(await repo.ultimoBackup()).toBe(AGORA);
+    // O exemplo não grava data de backup: o lembrete é decidido pelas crianças de verdade (domain/backup).
+    expect(await repo.ultimoBackup()).toBeNull();
   });
 
   it('recusa carregar o exemplo quando já existe uma família', async () => {
     await repo.salvarFamilia(familia());
-    await expect(repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA)).rejects.toThrow(
+    await expect(repo.carregarExemplo(criarExemplo(idx, HOJE))).rejects.toThrow(
       /Já existe uma família/,
     );
     expect(await repo.familia()).toEqual(familia());
@@ -116,7 +116,7 @@ describe('repositório: carregar e apagar o exemplo', () => {
   });
 
   it('apagar o exemplo não deixa resto', async () => {
-    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
     await repo.apagarExemplo();
     const backup = await repo.exportar(AGORA);
     expect(backup.familia).toBeNull();
@@ -124,11 +124,10 @@ describe('repositório: carregar e apagar o exemplo', () => {
     expect(backup.estados).toEqual([]);
     expect(backup.historico).toEqual([]);
     expect(backup.sessoes).toEqual([]);
-    expect(await repo.ultimoBackup()).toBeNull();
   });
 
   it('uma criança real cadastrada durante o exemplo sobrevive ao "Apagar exemplo"', async () => {
-    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
     const real = crianca({ id: 'real', nome: 'Lia' });
     await repo.salvarCrianca(real);
     await repo.atualizarEstados('real', {
@@ -156,7 +155,7 @@ describe('repositório: carregar e apagar o exemplo', () => {
   });
 
   it('se a pessoa editou a família de exemplo e cadastrou a criança dela, a família fica', async () => {
-    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
     // Como faz a tela da família: salva por cima, mantendo o marcador de exemplo.
     await repo.salvarFamilia({ ...familia(), exemplo: true, educador: 'Priscila' });
     await repo.salvarCrianca(crianca({ id: 'real', nome: 'Lia' }));
@@ -169,11 +168,10 @@ describe('repositório: carregar e apagar o exemplo', () => {
     expect(depois?.exemplo).toBeUndefined(); // agora é uma família de verdade
     expect((await repo.criancas()).map((c) => c.nome)).toEqual(['Lia']);
     expect(await repo.sessoes()).toEqual([]);
-    expect(await repo.ultimoBackup()).toBeNull(); // o lembrete de backup volta a valer
   });
 
   it('se editou a família de exemplo mas não cadastrou ninguém, o exemplo inteiro sai', async () => {
-    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
     await repo.salvarFamilia({ ...familia(), exemplo: true, educador: 'Priscila' });
     const resultado = await repo.apagarExemplo();
     expect(resultado.familiaMantida).toBe(false);
@@ -188,7 +186,7 @@ describe('repositório: carregar e apagar o exemplo', () => {
   });
 
   it('o backup de um exemplo continua válido e marcado como exemplo', async () => {
-    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
     const backup = JSON.parse(JSON.stringify(await repo.exportar(AGORA))) as unknown;
     expect(() => validarBackup(backup)).not.toThrow();
     expect((backup as { familia: { exemplo?: boolean } }).familia.exemplo).toBe(true);

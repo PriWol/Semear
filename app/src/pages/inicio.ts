@@ -1,11 +1,10 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
-import { idadeEmAnos, diasEntre } from '../domain/datas';
+import { idadeEmAnos } from '../domain/datas';
+import { precisaLembreteBackup } from '../domain/backup';
 import { pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import { anos, dataCurta } from '../ui/rotulos';
 import { criarExemplo } from '../domain/exemplo';
-
-const DIAS_LEMBRETE_BACKUP = 30;
 
 export const paginaInicio: FabricaPagina = async (ctx) => {
   const familia = await ctx.repo.familia();
@@ -40,7 +39,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
             botao.disabled = true; // evita carregar duas vezes num toque duplo
             try {
               const agora = ctx.agora();
-              await ctx.repo.carregarExemplo(criarExemplo(ctx.idx, new Date(agora)), agora);
+              await ctx.repo.carregarExemplo(criarExemplo(ctx.idx, new Date(agora)));
               ctx.avisar('Família de exemplo carregada.');
               ctx.ir('/');
             } catch (erro) {
@@ -57,8 +56,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
   const criancas = await ctx.repo.criancas();
   const sessoes = (await ctx.repo.sessoes()).slice(0, 6);
   const ultimoBackup = await ctx.repo.ultimoBackup();
-  const precisaBackup =
-    criancas.length > 0 && (!ultimoBackup || diasEntre(ultimoBackup, agora) > DIAS_LEMBRETE_BACKUP);
+  const precisaBackup = precisaLembreteBackup(criancas, ultimoBackup, agora);
 
   const cartoes = await Promise.all(
     criancas.map(async (c) => {
