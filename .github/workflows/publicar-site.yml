@@ -35,8 +35,9 @@ jobs:
       - run: npm ci
       # Nunca publica algo que não passa nas verificações (os e2e rodam no PR, exigidos pela proteção do main).
       - run: npm run check
+      # Sem configure-pages: o app usa caminhos relativos (base './'), e a etapa exigiria a
+      # permissão pages no job que roda código de terceiros (npm ci).
       - run: npm run build
-      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: app/dist

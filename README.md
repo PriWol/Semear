@@ -1,125 +1,48 @@
-# 🌱 Semear - Educação com Valores e Cultura Brasileira
+# 🌱 Semear
 
-Programa educacional para famílias brasileiras que querem ser protagonistas na formação de seus filhos.
+App para famílias que educam os filhos em casa (homeschooling e afterschooling), de 3 a 8 anos.
+O educador posiciona cada criança numa **jornada por domínios** (domínio → linha → marco) e, antes de
+cada sessão, gera um **pacote para imprimir ou abrir no tablet**: roteiro, materiais, folhas da criança
+e ficha de registro. **A criança nunca usa o app.**
 
----
+**🌐 Acesse:** https://priwol.github.io/Semear/
 
-## 🎯 Acesse o App
+## ✨ O que dá para fazer
 
-**🌐 Site Online:** https://priwol.github.io/Semear/ (app novo, pasta `app/`, publicado automaticamente; veja `CLAUDE.md`)
-
----
-
-## ✨ O Que é o Semear?
-
-App 100% **gratuito** que ajuda famílias a:
-
-- 📅 Criar **planos semanais personalizados** de atividades educacionais
-- 🇧🇷 Explorar **recursos brasileiros** (histórias, músicas, rituais, atividades)
-- 📚 Integrar **4 estilos pedagógicos** (Montessori, Waldorf, Clássico, Religioso)
-- 📔 Registrar **momentos especiais** e acompanhar progresso
-- 🤝 Conectar-se com **outras famílias**
-
----
-
-## 🚀 Funcionalidades
-
-- ✅ **Onboarding** - Configure perfil da família em 4 etapas
-- ✅ **Plano Semanal** - Sugestões automáticas personalizadas
-- ✅ **Explorador** - 24+ recursos brasileiros com filtros
-- ✅ **Guia Pedagógico** - Entenda cada estilo + versão brasileira
-- ✅ **Comunidade** - Links para grupos e encontros mensais
-- ✅ **Diário** - Registre momentos e progresso
-- ✅ **Export/Import** - Backup em JSON e métricas em CSV
-- ✅ **PWA** - Instalável e funciona offline
-
----
-
-## 🎨 Recursos Brasileiros
-
-### Histórias do Folclore
-- Saci-Pererê, Iara, Curupira, Bumba Meu Boi
-
-### Cantigas Tradicionais
-- Ciranda Cirandinha, Peixe Vivo, Borboletinha
-
-### Livros Clássicos
-- Menina Bonita do Laço de Fita, Flicts, Chapeuzinho Amarelo, O Menino Maluquinho
-
-### Atividades Práticas
-- Plantio de feijão, massinha caseira, brinquedo de sucata, tintas naturais
-
-### Rituais Familiares
-- Roda de gratidão, banho de ervas, ritual da mesa
-
----
-
-## 💻 Rodar Localmente
-
-### Opção 1: VS Code + Live Server (Recomendado)
-1. Baixe [VS Code](https://code.visualstudio.com/)
-2. Abra a pasta do projeto
-3. Instale extensão "Live Server"
-4. Clique direito em `index.html` → "Open with Live Server"
-
-### Opção 2: Python
-```bash
-python3 -m http.server 8000
-# Acesse http://localhost:8000
-```
-
-### Opção 3: Node.js
-```bash
-npx serve
-# Acesse http://localhost:3000
-```
-
----
-
-## 🛠️ Tecnologias
-
-- **Frontend**: HTML5, CSS3, JavaScript Vanilla (ES6)
-- **Armazenamento**: localStorage (100% local)
-- **PWA**: Service Worker + Manifest
-- **Deploy**: GitHub Pages (gratuito)
-- **Zero dependências** - Funciona offline!
-
----
-
-## 📊 Privacidade
-
-- ✅ **100% local** - Dados ficam no seu navegador
-- ✅ **Sem servidor** - Nada é enviado para fora
-- ✅ **Exportável** - Faça backup quando quiser
-- ✅ **Sem rastreamento** - Privacidade total
-
----
+- Cadastrar a família (vertente principal e inspirações: Montessori, Waldorf, Clássico, Religioso, Charlotte Mason) e as crianças.
+- Posicionar cada criança na jornada de Linguagem, Matemática e Línguas, marco a marco.
+- Preparar uma sessão: o app sugere atividades para os marcos que a criança está trabalhando.
+- Imprimir, salvar em PDF ou baixar o pacote (funciona offline no tablet).
+- Backup e restauração dos dados, que ficam **só no aparelho**.
 
 ## 📚 Documentação
 
-- 📖 **START_HERE.md** - Primeiros passos
-- 🚀 **DEPLOY.md** - Como publicar
-- 🗺️ **ROADMAP.md** - Plano de 6 meses
-- 📈 **GROWTH_STRATEGY.md** - Estratégia de crescimento
-- 📋 **EXECUTIVE_SUMMARY.md** - Resumo executivo completo
+| Documento | Para quê |
+|---|---|
+| [`docs/JORNADA_SPEC.md`](docs/JORNADA_SPEC.md) | Especificação do produto e decisões |
+| [`CLAUDE.md`](CLAUDE.md) | Regras do projeto (para pessoas e para a IA) |
+| [`docs/adr/`](docs/adr/) | Decisões técnicas e seus porquês |
+| [`docs/GUIA_APRENDIZADO.md`](docs/GUIA_APRENDIZADO.md) | Conceitos técnicos explicados para gestão |
+| [`app/content/README.md`](app/content/README.md) | Como escrever conteúdo (marcos, atividades, livros) |
 
----
+## 💻 Rodar localmente
 
-## 🤝 Contribua
+```bash
+cd app
+npm ci
+npm run dev        # http://localhost:5173
+npm run check      # tipos, lint, formatação e testes
+npm run test:e2e   # testes ponta a ponta (desktop e celular)
+```
 
-1. Compartilhe recursos brasileiros
-2. Reporte bugs (Issues)
-3. Divulgue para outras famílias
-4. Dê feedback!
+## 🛠️ Tecnologias
 
----
+Vite + TypeScript (PWA), IndexedDB (`idb`) para os dados locais, Vitest e Playwright para testes,
+GitHub Actions para CI, revisão por agentes e publicação no GitHub Pages.
+
+> Os arquivos na raiz (`index.html`, `assets/`, `data/` e os `.md` antigos) são do **site antigo**,
+> que não é mais publicado. O arquivamento está na issue #32.
 
 ## 📝 Licença
 
-MIT License - Use livremente!
-
----
-
-**🌱 Semear - Cultivando valores, colhendo memórias**
-
-*Feito com 💚 para famílias brasileiras*
+MIT

@@ -9,7 +9,8 @@
       // O app vive em /Semear/ (GitHub Pages de projeto). O hash é mantido (ex.: #/familia).
       (function () {
         var base = location.pathname.indexOf('/Semear/') === 0 ? '/Semear/' : '/';
-        location.replace(base + location.hash);
+        // Se a própria base deu 404 (ex.: publicação quebrada), não redireciona: evita um loop.
+        if (location.pathname !== base) location.replace(base + location.hash);
       })();
     </script>
   </head>

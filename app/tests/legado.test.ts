@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { ehCacheDoSiteAntigo, limparCachesAntigos } from '../src/legado';
+import { readFileSync } from 'node:fs';
+import { ehCacheDoSiteAntigo, limparCachesAntigos, PREFIXO_CACHE_SITE_ANTIGO } from '../src/legado';
 
 /** Cache Storage falso, só com o que a limpeza usa. */
 function cachesFalsos(nomes: string[]) {
@@ -41,5 +42,13 @@ describe('limpeza dos caches do site antigo (ADR 0009)', () => {
       delete: async () => false,
     };
     await expect(limparCachesAntigos(recusa)).resolves.toBe(0);
+  });
+});
+
+describe('faxina do service worker antigo (public/service-worker.js)', () => {
+  // O arquivo não pode importar módulos: este teste impede que o prefixo divirja de legado.ts.
+  it('usa o mesmo prefixo de cache que o app', () => {
+    const sw = readFileSync(new URL('../public/service-worker.js', import.meta.url), 'utf-8');
+    expect(sw).toContain(`startsWith('${PREFIXO_CACHE_SITE_ANTIGO}')`);
   });
 });
