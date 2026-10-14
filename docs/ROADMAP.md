@@ -36,7 +36,7 @@ flowchart LR
 |---|---|---|---|
 | 0 · Base para testar | v0.2 | Abrir o site, ver a versão, carregar uma família de exemplo e imprimir uma sessão numa folha só | #38 #39 #33 #36 #31 |
 | 1 · Visual novo | v0.3 | Todas as telas e as folhas no visual "moderno e clássico", com navegação de app no celular | #14 #41 #42 #2 (parte 1) #15 |
-| 2 · Ciclo da sessão | v0.4 | Preparar → imprimir → aplicar → **registrar no celular** → jornada atualiza sozinha; buscar e imprimir uma atividade avulsa | #11 #13 · conteúdo: #21 #22 |
+| 2 · Ciclo da sessão | v0.4 | Preparar → imprimir → aplicar → **registrar no celular** → jornada sugere ("parece pronto") e o pai confirma no mapa; buscar e imprimir uma atividade avulsa | #11 #13 · conteúdo: #21 #22 |
 | 3 · Rotina da semana | v0.5 | Planejar a semana (ex.: seg/qua/sex), imprimir tudo num arquivo só e acompanhar os dias feitos | #8 #9 #2 (parte 2) |
 | 4 · Pronto para o piloto | v0.6 | Endereço próprio, sondagem impressa para posicionar, guia das vertentes e estante de livros; 3 a 5 famílias usando | #34 #32 #17 #30 #12 → #28 |
 | 5 · Evidências e portfólio | v0.7 | Fotos dos trabalhos, ressondagem, sessão de irmãos e o **portfólio trimestral em PDF** | #10 #18 #19 #29 #20 |
@@ -104,7 +104,7 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 
 ## Fase 2 · Ciclo completo da sessão (v0.4)
 
-**Objetivo:** depois de aplicar a sessão, o educador registra o que observou, e a jornada se atualiza sozinha.
+**Objetivo:** depois de aplicar a sessão, o educador registra o que observou; a jornada só sugere ("parece pronto") e o pai confirma no mapa, porque o avanço é manual (decisão 9).
 
 | Estória | O que entrega |
 |---|---|
@@ -114,7 +114,7 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 
 **Roteiro de teste:**
 1. Família de exemplo → prepare e imprima uma sessão para a Ana.
-2. Em "Registrar sessão", digite o código impresso (ex.: `S-1014-A1`) e marque os marcos. A jornada da Ana muda.
+2. Em "Registrar sessão", digite o código impresso (ex.: `S-1014-A1`) e marque os marcos. As observações ficam no histórico da Ana; a jornada ainda não muda.
 3. Na ficha da primeira sessão, marque um marco como *Consolidado* (o marco continua *Em desenvolvimento* no mapa). Prepare e registre uma
    segunda sessão com esse mesmo marco, também como *Consolidado*: aparece o selo "parece pronto". Confirme o marco no mapa: o selo some.
 4. Busque "sílaba" (sem acento) e imprima a atividade encontrada.
