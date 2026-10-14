@@ -124,11 +124,32 @@ FONTE = os.path.join(AQUI, "build", "paginas")   # páginas originais baixadas (
 
 MANIFESTO = os.path.join(AQUI, "dominio_publico", "paginas.sha256.json")
 LIMITE_BYTES = 30_000_000   # uma página digitalizada tem 1 a 4 MB; acima disso a resposta não é uma página
+REGISTRAR = False           # só o comando "registrar" liga: aceita páginas novas e grava o SHA-256 delas
 
 
 def _sha256(dados):
     import hashlib
     return hashlib.sha256(dados).hexdigest()
+
+
+def _registrar(chave, sha):
+    import json
+    man = json.load(open(MANIFESTO)) if os.path.exists(MANIFESTO) else {}
+    man[chave] = sha
+    json.dump(man, open(MANIFESTO, "w"), indent=1, sort_keys=True)
+    print(f"registrado: {chave}")
+
+
+def verificar():
+    """Toda página usada em ITENS precisa estar no manifesto (roda no CI, antes de gerar os PDFs)."""
+    import json
+    man = json.load(open(MANIFESTO)) if os.path.exists(MANIFESTO) else {}
+    faltam = sorted({f"{it[0]}_n{it[1]}" for it in ITENS.values()} - set(man))
+    if faltam:
+        print("páginas sem SHA-256 no manifesto:\n  " + "\n  ".join(faltam))
+        return 1
+    print(f"ok: {len(man)} páginas no manifesto cobrem todos os itens")
+    return 0
 
 
 def baixar(item, n):
@@ -137,6 +158,8 @@ def baixar(item, n):
     É a única chamada de rede do pipeline editorial; roda só no build dos PDFs, fora do app, e não
     envia dado nenhum. Cada página é conferida pelo SHA-256 registrado em paginas.sha256.json, para que
     uma página trocada, corrompida ou renumerada no acervo nunca entre num volume sem aviso.
+    Falha fechada: página sem SHA-256 registrado é recusada, salvo no comando "registrar" (após conferir a
+    imagem a olho), que grava o hash novo no manifesto.
     """
     import io
     import json
@@ -158,7 +181,10 @@ def baixar(item, n):
     if esperado and _sha256(dados) != esperado:
         raise ValueError(f"{chave}: SHA-256 diferente do registrado em {os.path.basename(MANIFESTO)}")
     if not esperado:
-        print(f"aviso: {chave} sem SHA-256 registrado; acrescente-o ao manifesto depois de conferir a imagem")
+        if not REGISTRAR:
+            raise ValueError(f"{chave}: sem SHA-256 em {os.path.basename(MANIFESTO)}; confira a imagem e "
+                             f"rode: python3 fontes_v1.py registrar")
+        _registrar(chave, _sha256(dados))
     if not os.path.exists(p):
         open(p, "wb").write(dados)
     return p
@@ -213,11 +239,24 @@ def credito(nome):
 
 
 if __name__ == "__main__":
+    comando = sys.argv[1] if len(sys.argv) > 1 else ""
     nomes = sys.argv[2:] or list(ITENS)
-    if sys.argv[1] == "previa":
-        ims = [processar(n, previa=True) for n in nomes]
-        for n, im in zip(nomes, ims):
-            im.thumbnail((360, 360)); im.save(f"/tmp/claude-0/-home-user-Semear/fa0e4220-4fa6-5daf-9d76-d3166136e335/scratchpad/pd/pv_{n}.jpg")
-    else:
+    if comando == "verificar":
+        sys.exit(verificar())
+    elif comando == "registrar":
+        REGISTRAR = True
         for n in nomes:
-            im = processar(n); print(n, im.size)
+            baixar(*ITENS[n][:2])
+    elif comando == "previa":
+        destino = os.path.join(AQUI, "build", "previas")
+        os.makedirs(destino, exist_ok=True)
+        for n in nomes:
+            im = processar(n, previa=True)
+            im.thumbnail((360, 360))
+            im.save(os.path.join(destino, f"pv_{n}.jpg"))
+    elif comando == "gerar":
+        for n in nomes:
+            im = processar(n)
+            print(n, im.size)
+    else:
+        sys.exit("uso: python3 fontes_v1.py verificar | registrar [nomes] | previa [nomes] | gerar [nomes]")

@@ -17,9 +17,11 @@ on:
 permissions:
   contents: read
 
+# Cancela só execuções de PR: num merge no main, o segundo não pode interromper a publicação do primeiro
+# (a Release ficaria com PDFs novos e antigos misturados).
 concurrency:
   group: tesouro-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   gerar:
@@ -45,6 +47,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+      # Toda página de domínio público usada precisa ter SHA-256 registrado (falha fechada).
+      - run: python3 fontes_v1.py verificar
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
@@ -84,3 +88,7 @@ jobs:
               --notes "PDFs A4 da coleção O Grande Tesouro de Marina, gerados a partir de tesouro-marina/editorial. Arquivos *-impressao: fundo branco, para imprimir em papel creme. Arquivos *-tela: fundo creme, para ver na tela. Atualizada automaticamente a cada merge que altere tesouro-marina/."
           fi
           gh release upload tesouro-marina pdfs/*.pdf --clobber
+          # Remove anexos antigos que não existem mais (PDF renomeado ou apagado).
+          for nome in $(gh release view tesouro-marina --json assets -q '.assets[].name'); do
+            [ -f "pdfs/$nome" ] || gh release delete-asset tesouro-marina "$nome" --yes
+          done

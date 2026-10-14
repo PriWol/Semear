@@ -93,8 +93,7 @@ class Livro:
 
 
 def gerar_pdf(html_path, pdf_path):
-    env = dict(os.environ, NODE_PATH="/opt/node-tools/node_modules")
-    r = subprocess.run(["node", os.path.join(AQUI, "pdf.js"), html_path, pdf_path], env=env,
+    r = subprocess.run(["node", os.path.join(AQUI, "pdf.js"), html_path, pdf_path],
                        capture_output=True, text=True)
     print(r.stdout.strip(), r.stderr.strip()[-2000:])
     return r.returncode == 0

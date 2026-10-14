@@ -471,11 +471,10 @@ def montar(tela=False):
 
 def main():
     os.makedirs(SAIDA, exist_ok=True)
-    env = dict(os.environ, NODE_PATH="/opt/node-tools/node_modules")
     falhou = False
     for tela, pdf in ((False, "amostra-v1-impressao.pdf"), (True, "amostra-v1-tela.pdf")):
         h = montar(tela)
-        r = subprocess.run(["node", os.path.join(AQUI, "pdf.js"), h, os.path.join(SAIDA, pdf)], env=env,
+        r = subprocess.run(["node", os.path.join(AQUI, "pdf.js"), h, os.path.join(SAIDA, pdf)],
                            capture_output=True, text=True)
         print(r.stdout.strip(), r.stderr.strip())
         falhou |= r.returncode != 0

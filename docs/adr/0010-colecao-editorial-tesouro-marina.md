@@ -34,6 +34,15 @@ altere `tesouro-marina/` e atualiza os anexos da Release `tesouro-marina`. Em PR
 (artefato do workflow, para conferência), sem publicar. O Git guarda apenas as fontes: `editorial/`, `docs/` e as
 ilustrações de domínio público já recortadas (`editorial/dominio_publico/`).
 
+### Conteúdo confiável
+O pipeline editorial só aceita conteúdo confiável, escrito no repositório (`editorial/volumeN.py`). Os textos são
+interpolados em HTML sem escape, ao contrário do app (CLAUDE.md), e o Chromium abre o HTML por `file://`. Isso é
+seguro enquanto nenhum dado externo (por exemplo, o nome de uma criança numa dedicatória personalizada) entrar
+no pipeline. Se isso for acontecer, o texto livre passará por `html.escape()` e este ADR será revisto.
+O build é offline: `pdf.js` aborta qualquer pedido que não seja `file:` ou `data:`.
+Os downloads de páginas seguem a regra de falha fechada: página sem SHA-256 no manifesto é recusada, e o CI
+roda `fontes_v1.py verificar` antes de gerar os PDFs.
+
 ## Consequências
 - O app continua sem dependências novas; quem trabalha só no `app/` não precisa de Python.
 - Os PDFs precisam ser regenerados (`python3 volumeN.py`) quando o texto ou o estilo mudar.
