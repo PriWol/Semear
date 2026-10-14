@@ -71,7 +71,7 @@
 | 49 | Backup | **Exportar/importar arquivo + lembrete após 30 dias** sem backup + pedido de armazenamento persistente. |
 
 > **O que a v1 do app ainda não implementa** (fica para versões seguintes; registrado após a revisão do PR #1):
-> selo "🌱 parece pronto" (§5.2); sondagem impressa e ressondagem (§5.4–5.5); no gerador de sessão (§5.6),
+> selo "parece pronto" (§5.2); sondagem impressa e ressondagem (§5.4–5.5); no gerador de sessão (§5.6),
 > o ponto de "materiais disponíveis", a alternância sentada/movimento e a sessão conjunta de irmãos;
 > e o lançamento da ficha de registro no app (§5.7). O avanço continua manual, marco a marco, na tela da jornada.
 
@@ -298,8 +298,8 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 - Marcos com pré-requisito de outra linha ainda não consolidado aparecem como **"aguardando"** e não são sugeridos, mas o pai pode forçá-los marcando-os como *Em desenvolvimento*. Pré-requisitos da mesma linha não geram "aguardando": a ordem da linha já garante a sequência. Em Línguas, o pré-requisito é lido no mesmo idioma.
 
 ### 5.2 Avanço (manual)
-- Só o pai muda um marco para *Consolidado*, seja na ficha de registro ou no mapa.
-- O app mostra um selo **"🌱 parece pronto"** quando o marco teve *Consolidado* registrado em 2 sessões diferentes. É só uma dica.
+- Só o pai muda o estado de um marco, e só no **mapa**. A ficha de registro grava a **observação da sessão** (*Não observado*, *Em desenvolvimento* ou *Consolidado*) e não muda o estado do marco sozinha.
+- O app mostra um selo **"parece pronto"** (ícone de broto em linha + texto, sem emoji) no marco que **ainda não está *Consolidado*** e teve a observação *Consolidado* em **2 sessões diferentes**. É só uma dica: o pai confirma no mapa. Deve ser uma regra pura em `domain/`, com teste unitário. De cada sessão vale só o **último** registro do marco, e registros anteriores a um "Está aqui" não contam. Casos exigidos: a mesma sessão duas vezes conta uma só; duas sessões diferentes mostram o selo; marco *Em desenvolvimento* com 2 sessões *Consolidado* mostra o selo; marco já *Consolidado* não mostra; duas sessões *Consolidado* e depois uma terceira *Em desenvolvimento* ainda mostram (o selo conta sessões com *Consolidado*, não só a mais recente); sessões anteriores a um "Está aqui" não contam.
 - O pai também pode marcar um marco como *Consolidado* direto no mapa, por exemplo algo que a criança aprendeu sozinha.
 - **"Está aqui"** (posicionamento rápido): os marcos anteriores viram *Consolidado*, o escolhido fica *Em desenvolvimento* e os posteriores que tinham registro voltam a *Não observado*.
 
