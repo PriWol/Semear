@@ -1,4 +1,4 @@
-"""Testa a checagem de área segura do pdf.js (ADR 0010). Rodar: python3 -m unittest test_pdf
+"""Testa a checagem de área segura do pdf.js (ADR 0011). Rodar: python3 -m unittest test_pdf
 
 Pula se o node ou o playwright não estiverem instalados.
 """
