@@ -1,7 +1,7 @@
 # 🧭 Jornada de Aprendizado: Especificação
 
 > Documento resultante do *grilling* de outubro/2026. Ele define **como o Semear posiciona cada criança numa jornada por domínios** e como isso alimenta a geração de materiais para imprimir.
-> Status: **rascunho v0.6** (7 rodadas de grilling + protótipos + app v1 em construção + revisão do modelo de negócio, ADR 0009), a ser validado com as famílias piloto.
+> Status: **rascunho v0.6** (7 rodadas de grilling + protótipos + app v1 em construção + revisão do modelo de negócio, ADR 0010), a ser validado com as famílias piloto.
 
 ---
 
@@ -42,17 +42,17 @@
 | 20 | Artes e música | **Só atividades**, sem marcos nem posicionamento. |
 | 21 | Uso de IA | **Só na produção do conteúdo.** As famílias recebem conteúdo estático e revisado. |
 | 22 | PDF | **Gerado no dispositivo** a partir de templates HTML/SVG com CSS de impressão (A4 e modo tablet). |
-| 23 | Sincronização | ~~Conta opcional~~ → ~~conta obrigatória~~ → **conta só para teste e assinatura** (decisão 30, ADR 0009). O *sync* entre aparelhos e responsáveis é opcional e criptografado. |
-| 24 | Modelo de negócio | ~~Freemium~~ → ~~teste de 30 dias e depois pago~~ → **plano Livre permanente + plano Família pago** (decisão 29, ADR 0009). Ver §9. |
+| 23 | Sincronização | ~~Conta opcional~~ → ~~conta obrigatória~~ → **conta só para teste e assinatura** (decisão 30, ADR 0010). O *sync* entre aparelhos e responsáveis é opcional e criptografado. |
+| 24 | Modelo de negócio | ~~Freemium~~ → ~~teste de 30 dias e depois pago~~ → **plano Livre permanente + plano Família pago** (decisão 29, ADR 0010). Ver §9. |
 | 25 | Portfólio | **Portfólio de evidências trimestral**, com anexo BNCC, pensado para proteger a família. Ver §8. |
 | 26 | Necessidades específicas | **Fica para depois** do lançamento. |
 | 27 | Idade das línguas | **Escalonar:** inglês e francês orais a partir dos 3 anos. Latim a partir dos 6, com pré-requisito de leitura em português (LG.LEI). **No máximo 2 trilhas de língua ativas** por criança (o app avisa e o pai pode forçar). |
 | 28 | Novas vertentes | **Charlotte Mason entra** como 5ª vertente. **Unschooling não entra**, porque rejeita sequência e sondagem, que são o núcleo do produto. |
-| 29 | Monetização | ~~Teste de 30 dias e depois assinatura, sem plano gratuito~~ → **Semear Livre (grátis para sempre) + Semear Família (assinatura)**. A família paga pelo conteúdo novo toda semana, não pelo acesso ao histórico (ADR 0009). |
-| 30 | Cadastro | ~~Conta + cartão no início do teste~~ → **Livre sem conta. Teste de 14 a 30 dias com e-mail, sem cartão** (ADR 0009). |
-| 31 | Fim do teste sem assinatura | ~~Bloqueio total, só exportação~~ → **volta para o Livre**. Histórico, backup e portfólio dos períodos já registrados continuam acessíveis (ADR 0009). |
+| 29 | Monetização | ~~Teste de 30 dias e depois assinatura, sem plano gratuito~~ → **Semear Livre (grátis para sempre) + Semear Família (assinatura)**. A família paga pelo conteúdo novo toda semana, não pelo acesso ao histórico (ADR 0010). |
+| 30 | Cadastro | ~~Conta + cartão no início do teste~~ → **Livre sem conta. Teste de 14 a 30 dias com e-mail, sem cartão** (ADR 0010). |
+| 31 | Fim do teste sem assinatura | ~~Bloqueio total, só exportação~~ → **volta para o Livre**. Histórico, backup e portfólio dos períodos já registrados continuam acessíveis (ADR 0010). |
 | 32 | Distribuição | **PWA** (celular + computador) com **pagamento na web** (Pix e cartão). Lojas de apps ficam para depois. |
-| 33 | Preço | ~~Por criança~~ → **por família, com crianças ilimitadas e plano anual como padrão** (ADR 0009). |
+| 33 | Preço | ~~Por criança~~ → **por família, com crianças ilimitadas e plano anual como padrão** (ADR 0010). |
 | 34 | Fotos do portfólio | **Só no aparelho**, sem nuvem. |
 | 35 | Visual das folhas | **Colorido suave** (fundos pastel, traço escuro). Ver §5.8. |
 | 36 | Vertente × aparência | A identidade visual é a mesma para todas. A vertente muda **só a tipografia e o tipo de atividade**. |
@@ -423,7 +423,7 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 
 ## 9. Modelo de negócio: plano Livre + assinatura por família
 
-> Revisado em out/2026 (ADR 0009). Substitui o modelo anterior: teste de 30 dias com cartão, assinatura por criança e bloqueio total depois do teste.
+> Revisado em out/2026 (ADR 0010). Substitui o modelo anterior: teste de 30 dias com cartão, assinatura por criança e bloqueio total depois do teste.
 
 ### 9.1 Por que este modelo
 - **O mercado de homeschooling é pequeno e cresce rápido.** A ANED estima cerca de 75 mil famílias e 150 mil estudantes em 2026; em 2022 eram cerca de 35 mil famílias. São estimativas da associação, não há dado oficial. A **escala está no afterschooling**, e o homeschooling é a comunidade de entrada.
@@ -505,7 +505,7 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 
 ## 11. Questões em aberto (próximas rodadas)
 
-- [x] ~~**Reconsiderar o bloqueio total**~~: resolvido. O fim do teste volta para o plano Livre (decisão 31, ADR 0009).
+- [x] ~~**Reconsiderar o bloqueio total**~~: resolvido. O fim do teste volta para o plano Livre (decisão 31, ADR 0010).
 - [ ] **Preço exato** do plano Família (por família, ver §9.3). Testar 2 faixas no piloto.
 - [ ] **Limite do plano Livre:** 1 pacote por semana ou uma amostra por domínio? Decidir com os dados do piloto (§9.5).
 - [ ] **Gateway de pagamento:** Asaas × Mercado Pago × Pagar.me × Stripe BR (Pix à vista, parcelamento no cartão; Pix Automático exige CNPJ com mais de 6 meses).

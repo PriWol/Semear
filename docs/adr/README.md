@@ -14,6 +14,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0006](0006-piramide-de-testes-e-ci.md) | Pirâmide de testes e CI obrigatória | Aceito |
 | [0007](0007-revisao-por-agentes.md) | Revisão por dois agentes + aprovação humana; PR único da v1 | Aceito |
 | [0008](0008-roteamento-por-hash.md) | Roteamento por hash (`#/`) | Aceito |
-| [0009](0009-modelo-de-negocio-livre-familia.md) | Modelo de negócio: plano Livre + assinatura por família | Aceito |
+| [0010](0010-modelo-de-negocio-livre-familia.md) | Modelo de negócio: plano Livre + assinatura por família | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

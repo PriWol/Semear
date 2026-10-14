@@ -1,4 +1,4 @@
-# 0009. Modelo de negócio: plano Livre + assinatura por família
+# 0010. Modelo de negócio: plano Livre + assinatura por família
 
 - **Status:** Aceito
 - **Data:** 2026-10-14

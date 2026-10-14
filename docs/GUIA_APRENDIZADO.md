@@ -44,7 +44,7 @@ Por isso existe o **backup** (exportar/importar arquivo).
 
 **Futuro:** quando houver contas e assinatura, entra um banco **no servidor** (planejado: Supabase,
 que usa PostgreSQL) só para conta e assinatura. O plano Livre continua sem conta e sem servidor.
-A sincronização dos dados da criança, se houver, será criptografada. (ADR 0002 e 0009, especificação §9.4)
+A sincronização dos dados da criança, se houver, será criptografada. (ADR 0002 e 0010, especificação §9.4)
 
 ### Licença offline ("data de validade")
 **O que é:** quando a família assina, o servidor entrega ao app um **comprovante assinado
@@ -53,7 +53,7 @@ confere a assinatura digital sem precisar de internet.
 
 **Por que usamos:** o app funciona offline e o servidor nunca precisa saber quantas crianças existem nem
 o que elas aprenderam: só que a licença vale até uma data. Quando ela vence, o app volta aos limites do
-plano Livre, sem apagar nem esconder nenhum dado. (ADR 0009)
+plano Livre, sem apagar nem esconder nenhum dado. (ADR 0010)
 
 ### Migração de dados
 **O que é:** quando mudamos o formato dos dados guardados, escrevemos um passo que converte os dados
