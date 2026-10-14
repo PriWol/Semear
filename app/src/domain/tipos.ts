@@ -161,6 +161,8 @@ export interface Familia {
   inspiracoes: Vertente[];
   idiomasEducador: Idioma[];
   criadaEm: string;
+  /** família de exemplo (#39): apagada junto com o exemplo */
+  exemplo?: true;
 }
 
 export interface Crianca {
@@ -171,6 +173,8 @@ export interface Crianca {
   /** null = automático (por idade e vertente) */
   letra: Letra | null;
   trilhas: Idioma[];
+  /** criança do exemplo (#39): só registros marcados são apagados com o exemplo */
+  exemplo?: true;
 }
 
 export interface RegistroMarco {
@@ -191,4 +195,5 @@ export interface Sessao {
   foco: string[] | 'equilibrado';
   atividadeIds: string[];
   livroId: string | null;
+  exemplo?: true;
 }

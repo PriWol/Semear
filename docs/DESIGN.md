@@ -1,7 +1,7 @@
 # DESIGN: identidade visual do Semear
 
 Referência **obrigatória** para telas do app e folhas impressas. Direção escolhida pela dona do produto:
-**A · Caderno de botânica** (estória #14; decisão no [ADR 0013](adr/0013-direcao-visual-caderno-de-botanica.md)).
+**A · Caderno de botânica** (estória #14; decisão no [ADR 0014](adr/0014-direcao-visual-caderno-de-botanica.md)).
 Protótipo de referência: `prototipos/design/direcoes-visuais.html`. Aplicação nas telas: #41. Nas folhas: #42.
 Ilustrações: #24.
 

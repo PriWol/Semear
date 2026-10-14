@@ -1,7 +1,7 @@
 {
   "name": "semear-app",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Semear: jornada de aprendizado e pacotes de sessão para imprimir",
   "type": "module",
   "scripts": {

@@ -152,6 +152,15 @@ dela com a que foi registrada quando a imagem foi conferida a olho. **Falha fech
 **Paralelo de gestão:** é o recebimento de mercadoria com nota fiscal: o que chega sem nota ou com nota que não
 bate não entra no estoque.
 
+### Versionamento (números de versão)
+**O que é:** cada publicação tem um número, como `0.2.0`. O primeiro número muda nas grandes viradas
+(o `1.0` será a abertura ao público), o do meio a cada fase do roteiro, e o último em correções
+pequenas. O app mostra a versão no topo e conta o que mudou em "Novidades". Quando sai uma versão
+nova, aparece "Nova versão disponível · Atualizar". (ADR 0012)
+
+**Paralelo de gestão:** é o número da revisão de um documento ("v3 do contrato"). Quando alguém
+relata um problema, a primeira pergunta é "em qual versão?".
+
 ### Roteamento por hash
 Os endereços das telas ficam como `…/#/jornada/ana`. Isso permite publicar o app em qualquer
 hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)

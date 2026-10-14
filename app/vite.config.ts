@@ -1,13 +1,28 @@
 /// <reference types="vitest/config" />
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
+
+// Versão visível no app (#38): o número vem do package.json; a data e o commit, do build.
+// No CI, o GitHub informa o commit em GITHUB_SHA; localmente aparece "local".
+const pacote = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf-8')) as {
+  version: string;
+};
 
 // base relativa: o mesmo build funciona em qualquer subcaminho (ex.: GitHub Pages /Semear/)
 export default defineConfig({
   base: './',
+  define: {
+    __VERSAO__: JSON.stringify(pacote.version),
+    __DATA_BUILD__: JSON.stringify(new Date().toISOString()),
+    __COMMIT__: JSON.stringify((process.env.GITHUB_SHA ?? 'local').slice(0, 7)),
+  },
   plugins: [
     VitePWA({
-      registerType: 'autoUpdate',
+      // "prompt": a versão nova espera o educador tocar em "Atualizar" (#38), em vez de trocar a tela
+      // no meio do uso. O registro é feito em src/main.ts (virtual:pwa-register).
+      registerType: 'prompt',
+      injectRegister: false,
       includeAssets: ['icone.svg'],
       manifest: {
         name: 'Semear',

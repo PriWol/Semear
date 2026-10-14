@@ -5,6 +5,7 @@ import { IDIOMAS, LETRAS, type Crianca, type Idioma } from '../domain/tipos';
 import { dataLocalISO, idadeEmAnos } from '../domain/datas';
 import { ehLetra } from '../domain/letra';
 import { letraPadrao, NOME_LETRA } from '../domain/letra';
+import { avisoExemplo, ligarAvisoExemplo } from '../ui/exemplo';
 
 export const paginaCrianca: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
@@ -37,6 +38,7 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
   return {
     titulo: existente ? c.nome : 'Nova criança',
     conteudo: html` <h1>${existente ? `Editar ${c.nome}` : 'Adicionar criança'}</h1>
+      ${familia.exemplo ? avisoExemplo() : ''}
       <form class="cartao formulario" id="form-crianca">
         <label
           >Nome <input name="nome" required maxlength="40" pattern=".*\\S.*" value="${c.nome}"
@@ -90,6 +92,7 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
         </div>
       </form>`,
     montar(raiz) {
+      ligarAvisoExemplo(raiz, ctx);
       raiz
         .querySelector<HTMLFormElement>('#form-crianca')
         ?.addEventListener('submit', async (ev) => {

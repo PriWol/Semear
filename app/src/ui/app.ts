@@ -56,9 +56,14 @@ export function iniciarApp(
   base: Omit<Contexto, 'ir' | 'atualizar' | 'avisar'>,
   rotas: Rota[],
   naoEncontrada: FabricaPagina,
+  /** roda depois de cada página (ex.: atualizar a faixa do exemplo, #39) */
+  depoisDeRenderizar?: (ctx: Contexto) => Promise<void>,
 ): Contexto {
   const aviso = document.getElementById('aviso');
   let timer: number | undefined;
+  // Cada renderização tem um número: se a pessoa muda de tela enquanto a anterior ainda carrega os dados,
+  // a antiga não pode terminar por último e sobrescrever a nova.
+  let ultima = 0;
 
   const ctx: Contexto = {
     ...base,
@@ -77,6 +82,7 @@ export function iniciarApp(
   };
 
   async function renderizar() {
+    const minha = ++ultima;
     const { caminho, query } = lerHash(location.hash);
     let fabrica = naoEncontrada;
     const params: Record<string, string> = { ...query };
@@ -90,6 +96,7 @@ export function iniciarApp(
     }
     try {
       const pagina = await fabrica(ctx, params);
+      if (minha !== ultima) return; // ficou velha: outra tela já foi pedida
       document.title = `${pagina.titulo} · Semear`;
       const el = document.createElement('div');
       el.className = 'pagina-app';
@@ -99,11 +106,19 @@ export function iniciarApp(
       marcarNavegacao(caminho);
     } catch (erro) {
       console.error(erro);
+      if (minha !== ultima) return;
       raiz.innerHTML = html`<div class="cartao erro">
         <h1>Algo deu errado</h1>
         <p>${erro instanceof Error ? erro.message : String(erro)}</p>
         <p><a href="#/">Voltar ao início</a></p>
       </div>`.valor;
+    }
+    // Fora do try: um erro só na faixa do exemplo não pode trocar uma página já montada pela tela de erro,
+    // e a faixa também vale quando a página dá erro ou redireciona.
+    try {
+      await depoisDeRenderizar?.(ctx);
+    } catch (erro) {
+      console.error(erro);
     }
   }
 

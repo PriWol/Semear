@@ -52,7 +52,7 @@ pages/ (telas) ──► domain/ (regras puras)
 - Nada de dependências novas sem justificar no PR (e num ADR, se for estrutural).
 
 ## Visual (obrigatório para telas e folhas)
-Siga `docs/DESIGN.md` (direção A, "Caderno de botânica"; ADR 0013). Cores, fontes e medidas vêm dos tokens
+Siga `docs/DESIGN.md` (direção A, "Caderno de botânica"; ADR 0014). Cores, fontes e medidas vêm dos tokens
 `--s-*` de `app/src/tokens.css`; não escreva valores soltos. Ilustrações só de domínio público, com fonte registrada.
 
 ## Privacidade (inegociável)
