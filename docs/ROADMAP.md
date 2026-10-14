@@ -94,7 +94,7 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 
 **Roteiro de teste:**
 1. Com a família de exemplo, passe por todas as telas no celular: início, jornada, preparar sessão, sessão, família e configurações.
-2. A navegação inferior leva às seções principais com um toque; nada fica cortado nem precisa de rolagem para o lado.
+2. A navegação inferior (Início, Jornada, Sessões, Família; Configurações fica dentro de Família, e a Estante entra só na Fase 4) leva às seções principais com um toque; nada fica cortado nem precisa de rolagem para o lado.
 3. Imprima uma sessão em preto e branco: títulos legíveis, ilustrações em traço e nenhum fundo colorido grande.
 4. Compare com o protótipo da direção escolhida.
 
