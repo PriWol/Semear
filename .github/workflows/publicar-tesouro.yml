@@ -49,7 +49,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       # Toda página de domínio público usada precisa ter SHA-256 registrado (falha fechada).
       - run: python3 fontes_v1.py verificar
-      - run: python3 -m unittest -v test_fontes_v1
+      - run: python3 -m unittest -v test_fontes_v1 test_pdf
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
@@ -84,6 +84,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
+          set -euo pipefail
           if ! gh release view tesouro-marina >/dev/null 2>&1; then
             gh release create tesouro-marina --target "${{ github.sha }}" \
               --title "O Grande Tesouro de Marina — PDFs" \
@@ -91,6 +92,8 @@ jobs:
           fi
           gh release upload tesouro-marina pdfs/*.pdf --clobber
           # Remove anexos antigos que não existem mais (PDF renomeado ou apagado).
-          for nome in $(gh release view tesouro-marina --json assets -q '.assets[].name'); do
-            [ -f "pdfs/$nome" ] || gh release delete-asset tesouro-marina "$nome" --yes
-          done
+          # (o envio acima não é atômico: um erro no meio deixa a Release parcial até o próximo merge)
+          anexos=$(gh release view tesouro-marina --json assets -q '.assets[].name')
+          while IFS= read -r nome; do
+            [ -z "$nome" ] || [ -f "pdfs/$nome" ] || gh release delete-asset tesouro-marina "$nome" --yes
+          done <<< "$anexos"

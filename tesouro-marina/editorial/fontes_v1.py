@@ -3,7 +3,9 @@ Ilustrações de domínio público do Volume 1: página de origem, recorte e cr�
 As páginas vêm do Internet Archive (https://archive.org/download/<item>/page/n<N>.jpg).
 caixa = (x0, y0, x1, y1) em frações da página; None = recorte automático pelo papel.
 """
-import os, sys
+import io
+import os
+import sys
 import numpy as np
 from PIL import Image
 
@@ -169,35 +171,49 @@ def baixar(item, n):
     Falha fechada: página sem SHA-256 registrado é recusada, salvo no comando "registrar" (após conferir a
     imagem a olho), que grava o hash novo no manifesto.
     """
-    import io
-    import json
-    import urllib.request
     os.makedirs(FONTE, exist_ok=True)
     chave = f"{item}_n{n}"
     p = os.path.join(FONTE, chave + ".jpg")
     esperado = _ler_manifesto().get(chave)
-    if os.path.exists(p):
+    dados = None
+    # no "registrar" o cache não vale: o hash novo tem de vir de um download fresco
+    if os.path.exists(p) and not REGISTRAR:
         with open(p, "rb") as f:
             dados = f.read()
-    else:
-        req = urllib.request.Request(f"https://archive.org/download/{item}/page/n{n}.jpg",
-                                     headers={"User-Agent": "TesouroMarina/0.1 (educational, non-commercial)"})
-        with urllib.request.urlopen(req, timeout=120) as r:
-            dados = r.read(LIMITE_BYTES + 1)
-        if len(dados) > LIMITE_BYTES:
-            raise ValueError(f"{chave}: resposta maior que {LIMITE_BYTES} bytes")
-        Image.open(io.BytesIO(dados)).verify()   # recusa o que não for uma imagem válida
+        if esperado and _sha256(dados) != esperado:
+            os.remove(p)   # cache corrompido ou antigo: baixa de novo uma vez
+            dados = None
+    if dados is None:
+        dados = _da_rede(item, n)
     if esperado and _sha256(dados) != esperado:
         raise ValueError(f"{chave}: SHA-256 diferente do registrado em {os.path.basename(MANIFESTO)}")
     if not esperado:
         if not REGISTRAR:
             raise ValueError(f"{chave}: sem SHA-256 em {os.path.basename(MANIFESTO)}; confira a imagem e "
                              f"rode: python3 fontes_v1.py registrar")
+    # só depois do hash: decodifica para recusar o que não for uma imagem válida
+    try:
+        Image.open(io.BytesIO(dados)).verify()
+    except Exception as e:
+        raise ValueError(f"{chave}: não é uma imagem válida ({e})") from e
+    if not esperado:
         _registrar(chave, _sha256(dados))
-    if not os.path.exists(p):
-        with open(p, "wb") as f:
-            f.write(dados)
+    tmp = p + ".tmp"
+    with open(tmp, "wb") as f:   # escrita atômica: nunca fica um JPEG pela metade no cache
+        f.write(dados)
+    os.replace(tmp, p)
     return p
+
+
+def _da_rede(item, n):
+    import urllib.request
+    req = urllib.request.Request(f"https://archive.org/download/{item}/page/n{n}.jpg",
+                                 headers={"User-Agent": "TesouroMarina/0.1 (educational, non-commercial)"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        dados = r.read(LIMITE_BYTES + 1)
+    if len(dados) > LIMITE_BYTES:
+        raise ValueError(f"{item}_n{n}: resposta maior que {LIMITE_BYTES} bytes")
+    return dados
 
 
 def papel_para_alfa(im, papel):
@@ -221,6 +237,8 @@ def processar(nome, previa=False):
         dif = np.abs(a - papel).sum(axis=2) > 40
         lin = np.where(dif.sum(axis=1) > w * 0.05)[0]
         col = np.where(dif.sum(axis=0) > h * 0.05)[0]
+        if not len(lin) or not len(col):
+            raise ValueError(f"{nome}: nenhuma ilustração detectada na página; informe a caixa de recorte")
         m = int(max(h, w) * 0.01)
         box = (max(0, col[0] - m), max(0, lin[0] - m), min(w, col[-1] + m), min(h, lin[-1] + m))
     else:
