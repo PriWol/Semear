@@ -269,11 +269,13 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 // Comprovante de licença (§9.4): emitido e assinado pelo servidor; o app nunca cria nem edita
 {
+  "contaId": "c_8f3a...",                 // identificador opaco da conta (nunca o e-mail)
   "plano": "familia" | "teste",
   "inicio": "2026-11-01",
   "fim": "2027-11-01",
   "emitidoEm": "2026-11-01T10:00:00Z",
-  "assinatura": "..."                     // conferida com a chave pública embutida no app
+  "kid": "2026-1",                        // qual chave pública confere a assinatura (permite trocar a chave)
+  "assinatura": "..."                     // cobre TODOS os campos acima, numa serialização canônica
 }
 ```
 
@@ -474,10 +476,11 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 - **Licença como "data de validade":** o app guarda um comprovante assinado (§4.2) com o início e o fim do período e funciona offline. Só a **chave pública** fica no app; a privada fica só no servidor.
 - **Regra pura no domínio:** `planoEfetivo(comprovantes, agora)` decide o plano, recebendo a data de "agora" por parâmetro (ADR 0003), com teste unitário para o vencimento e para o limite do Livre.
 - **Checagem e tolerância:** no plano mensal, o app tenta renovar o comprovante a cada ~7 dias; no anual, a partir de 7 dias antes do fim. Os dois têm **7 dias de tolerância** depois do fim antes de voltar ao Livre.
-- **Relógio do aparelho:** o app guarda a data mais recente que já viu (incluindo o `emitidoEm` do último comprovante) e usa a maior entre ela e o relógio. Voltar a data do aparelho não estende a licença.
+- **Assinatura do comprovante:** cobre todos os campos (§4.2), inclusive `plano` e `contaId`. O algoritmo (ex.: Ed25519 via WebCrypto), a serialização canônica e a troca de chaves (`kid`) ficam no ADR de backend. Na leitura e na importação, comprovante com `plano` fora de `familia`/`teste`, datas inválidas ou `fim` antes de `inicio` é recusado.
+- **Relógio do aparelho:** o app guarda a data mais recente que já viu (incluindo o `emitidoEm` do último comprovante) e usa a maior entre ela e o relógio. Voltar a data do aparelho não estende a licença. Esse valor é validado ao ser lido (data ISO válida e não muito no futuro); um valor inválido é descartado para não bloquear o plano. **Risco aceito:** a proteção vale só no mesmo aparelho e se perde ao restaurar o backup em outro ou limpar o navegador. Fraude de licença não ameaça a privacidade da criança.
 - **Regra do histórico:** o portfólio completo de um período só é liberado se houver um comprovante **com assinatura válida** que cubra aquele período. Os comprovantes vão no backup, e a importação **revalida a assinatura**: comprovante inválido ou alterado é ignorado (o dado continua importado, só sem liberar o portfólio completo).
 - **Fim da licença:** o app volta para os limites do Livre. Nenhum dado é apagado ou escondido.
-- **Antes de qualquer código de conta ou assinatura:** um **ADR próprio de backend e privacidade** define que dados o gateway e o Supabase recebem (só e-mail e dados de cobrança do responsável), retenção, base legal na LGPD, consentimento e o ajuste da CSP (`connect-src`). Nada da criança vai junto.
+- **Antes de qualquer código de conta ou assinatura:** um **ADR próprio de backend e privacidade** define que dados o gateway e o Supabase recebem (só e-mail e dados de cobrança do responsável), retenção, base legal na LGPD, consentimento e o ajuste da CSP (`connect-src`). Nada da criança vai junto: a renovação do comprovante envia **só** o token da conta, e um teste falha se o corpo da requisição tiver qualquer outro campo.
 - **Sync opcional** entre aparelhos e responsáveis: criptografado de ponta a ponta, para o servidor não conseguir ler os dados da criança. As fotos não sincronizam (decisão 34). **Fica fora da primeira fase** de conta e assinatura e terá ADR próprio.
 
 ### 9.5 Riscos e o que medir no piloto
