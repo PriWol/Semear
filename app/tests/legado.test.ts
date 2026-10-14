@@ -30,6 +30,19 @@ describe('limpeza dos caches do site antigo (ADR 0009)', () => {
     expect([...caches.restantes]).toEqual(['fontes', 'workbox-precache-v2-x']);
   });
 
+  it('se apagar um cache falhar, apaga os outros e conta só os apagados', async () => {
+    const caches = cachesFalsos(['semear-v1', 'semear-v2', 'fontes']);
+    const comFalha = {
+      keys: caches.keys,
+      delete: async (nome: string) => {
+        if (nome === 'semear-v1') throw new Error('falhou');
+        return caches.delete(nome);
+      },
+    };
+    expect(await limparCachesAntigos(comFalha)).toBe(1);
+    expect([...caches.restantes]).toEqual(['semear-v1', 'fontes']);
+  });
+
   it('não faz nada quando o navegador não tem Cache Storage', async () => {
     expect(await limparCachesAntigos(undefined)).toBe(0);
   });

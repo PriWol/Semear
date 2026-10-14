@@ -23,8 +23,9 @@ export async function limparCachesAntigos(
   if (!armazenamento) return 0;
   try {
     const antigos = (await armazenamento.keys()).filter(ehCacheDoSiteAntigo);
-    await Promise.all(antigos.map((nome) => armazenamento.delete(nome)));
-    return antigos.length;
+    // allSettled: se um cache falhar, os outros continuam sendo apagados (o que falhou fica para a próxima vez).
+    const resultados = await Promise.allSettled(antigos.map((nome) => armazenamento.delete(nome)));
+    return resultados.filter((r) => r.status === 'fulfilled' && r.value).length;
   } catch {
     return 0;
   }
