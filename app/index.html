@@ -20,6 +20,7 @@
   <body>
     <header class="topo">
       <a class="marca" href="#/">🌱 Semear</a>
+      <a class="versao" id="versao" href="#/novidades" title="Versão publicada · ver novidades"></a>
       <nav aria-label="Principal">
         <a href="#/" data-rota="/">Início</a>
         <a href="#/sessao/nova" data-rota="/sessao">Sessão</a>
@@ -29,6 +30,10 @@
     <div id="faixa-exemplo" class="faixa-exemplo" role="note" hidden>
       Você está vendo um exemplo.
       <button type="button" id="apagar-exemplo" class="link-botao">Apagar exemplo</button>
+    </div>
+    <div id="faixa-atualizar" class="faixa-atualizar" role="status" hidden>
+      Nova versão disponível.
+      <button type="button" id="atualizar-app" class="link-botao">Atualizar</button>
     </div>
     <main id="app" class="conteudo-app"><p class="nota">Carregando…</p></main>
     <div id="aviso" class="aviso-flutuante" role="status" aria-live="polite" hidden></div>

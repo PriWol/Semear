@@ -17,5 +17,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0009](0009-publicacao-github-pages.md) | Publicação do app no GitHub Pages via GitHub Actions | Aceito |
 | [0010](0010-modelo-de-negocio-livre-familia.md) | Modelo de negócio: plano Livre + assinatura por família | Aceito |
 | [0011](0011-colecao-editorial-tesouro-marina.md) | Coleção editorial impressa em `tesouro-marina/`, fora do app | Aceito |
+| [0012](0012-versao-visivel-e-atualizacao-com-aviso.md) | Versão visível no app e atualização com aviso | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
