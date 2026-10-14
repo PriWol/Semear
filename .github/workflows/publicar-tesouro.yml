@@ -1,7 +1,7 @@
 name: Publicar Tesouro de Marina
 
 # Gera os PDFs da coleção O Grande Tesouro de Marina a partir de tesouro-marina/editorial e os publica
-# como anexos da Release "tesouro-marina" (ADR 0010). Os PDFs não ficam no Git.
+# como anexos da Release "tesouro-marina" (ADR 0011). Os PDFs não ficam no Git.
 # - Em PR que altere tesouro-marina/: só gera e guarda os PDFs como artefato do workflow (para conferir).
 # - Em merge no main que altere tesouro-marina/ (ou manualmente): gera e atualiza a Release.
 

@@ -1,4 +1,4 @@
-# 0010. Coleção editorial impressa em `tesouro-marina/`, fora do app
+# 0011. Coleção editorial impressa em `tesouro-marina/`, fora do app
 
 - **Status:** Aceito
 - **Data:** 2026-10-14
