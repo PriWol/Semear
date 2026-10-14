@@ -24,7 +24,7 @@ flowchart LR
 
 - **Testes automáticos** (rodam em todo PR): unitários nas regras, integração no banco do aparelho e
   ponta a ponta (e2e) simulando o uso no computador e no celular.
-- **Sem prévia por PR** (decisão de 14/10, #40): cada mudança é testada no site publicado, logo depois do merge.
+- **Sem prévia por PR** (decisão de 14/10, #40): cada mudança é testada no site publicado, logo depois do merge. Se algo errado chegar ao site, o rollback é reverter o merge no `main`. Esta decisão ainda precisa de um ADR.
 - **Seus testes** (manuais, no site publicado): cada fase tem um roteiro curto, abaixo. A **família de
   exemplo** (Fase 0) deixa você testar tudo em 1 minuto, sem digitar dados.
 - As fases 0 a 3 listam os testes automáticos novos que entram com elas. Nas fases 4 a 6, eles estão nos critérios de
