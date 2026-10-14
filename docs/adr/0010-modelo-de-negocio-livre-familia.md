@@ -3,6 +3,7 @@
 - **Status:** Aceito
 - **Data:** 2026-10-14
 - **Relacionado:** 0002 (dados no aparelho), 0003 (domínio puro)
+- **Numeração:** o número 0009 é o ADR de publicação no GitHub Pages (PR #16), escrito em paralelo.
 
 ## Contexto
 A especificação (§9, decisões 29 a 33) previa teste de 30 dias com cartão no cadastro, assinatura
@@ -43,8 +44,8 @@ Opção 3, detalhada na especificação §9:
 - O **limite do Livre** e o plano efetivo viram regras de domínio puras e testadas:
   `planoEfetivo(comprovantesVerificados, agora, maiorDataVista)` (ADR 0003); a conferência da
   assinatura (WebCrypto) fica em `dados/`. O app usa a
-  maior data já vista para que voltar o relógio não estenda a licença, e há 7 dias de tolerância
-  depois do fim (§9.4).
+  maior data já vista para que voltar o relógio não estenda a licença, e os planos pagos têm 7
+  dias de tolerância depois do fim; o teste não tem (§9.4).
 - O portfólio completo de um período só é liberado por um comprovante com assinatura válida. A
   importação de backup revalida a assinatura, então um comprovante forjado não libera nada.
 - **Antes de qualquer código de conta ou assinatura**, um ADR próprio de backend e privacidade
