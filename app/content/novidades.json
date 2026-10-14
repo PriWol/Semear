@@ -1,0 +1,25 @@
+{
+  "versoes": [
+    {
+      "versao": "0.2.0",
+      "data": "2026-10-14",
+      "titulo": "Base para testar",
+      "itens": [
+        "Família de exemplo: explore o app com a Ana e o Theo, sem cadastrar nada, e apague com um toque.",
+        "A versão publicada aparece no topo e em Configurações, e esta página conta o que mudou.",
+        "Quando sai uma versão nova, o app avisa e você atualiza quando quiser."
+      ]
+    },
+    {
+      "versao": "0.1.0",
+      "data": "2026-10-14",
+      "titulo": "Primeira versão",
+      "itens": [
+        "Cadastro da família e das crianças.",
+        "Jornada por domínios, com o botão \"Está aqui\" para posicionar cada criança.",
+        "Preparar sessão: o app sugere atividades e gera o pacote para imprimir ou abrir no tablet.",
+        "Backup e restauração dos dados, que ficam só neste aparelho."
+      ]
+    }
+  ]
+}

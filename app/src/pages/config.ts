@@ -3,6 +3,8 @@ import { html } from '../ui/html';
 import { validarBackup } from '../dados/repositorio';
 import { dataCurta } from '../ui/rotulos';
 import { baixarArquivo } from './sessao';
+import { VERSAO } from '../versao';
+import { numeroCurto } from '../ui/versao';
 
 export const paginaConfig: FabricaPagina = async (ctx) => {
   const ultimo = await ctx.repo.ultimoBackup();
@@ -37,6 +39,14 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
           <a class="botao" href="#/familia">Editar família</a>
           <a class="botao" href="#/conteudo">Ver cobertura do conteúdo</a>
         </div>
+      </section>
+      <section class="cartao" id="sobre">
+        <h2>Sobre o app</h2>
+        <p>
+          Versão <b>${numeroCurto(VERSAO.numero)}</b> (${VERSAO.numero}), publicada em
+          ${dataCurta(VERSAO.data)} · código <code>${VERSAO.commit}</code>
+        </p>
+        <a class="botao" href="#/novidades">Ver novidades</a>
       </section>
       <section class="cartao">
         <h2>Apagar dados</h2>
