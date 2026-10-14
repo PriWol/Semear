@@ -22,10 +22,19 @@ Currículo clássico ilustrado para a infância: 8 volumes, 544 páginas planeja
 | `editorial/volume1.py` | todo o conteúdo do volume (textos, guias, atividades) |
 | `editorial/fontes_v1.py` | ilustrações de domínio público: origem, recorte e crédito |
 
+## Volume 2 — Histórias, memória e imaginação (71 páginas)
+| Arquivo | O que é |
+|---|---|
+| `volume2/volume2-impressao.pdf` | fundo branco, para imprimir em papel creme ou marfim |
+| `volume2/volume2-tela.pdf` | fundo creme, para ver na tela |
+| `volume2/inspecao/` | as 71 páginas renderizadas, usadas na revisão visual |
+| `editorial/volume2.py` | todo o conteúdo do volume |
+
 ## Gerar de novo
 ```
 pip install numpy scipy pillow matplotlib
 cd editorial && python3 build_amostra.py   # amostra
+cd editorial && python3 volume2.py         # Volume 2
 cd editorial && python3 volume1.py         # Volume 1 (baixa do Internet Archive as páginas que faltarem)
 ```
 Requer Node com Playwright (Chromium) e `pdftoppm` (poppler).

@@ -1,2 +1,3 @@
 editorial/build/
 editorial/*.html
+__pycache__/

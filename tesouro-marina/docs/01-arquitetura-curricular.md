@@ -73,7 +73,7 @@ Os volumes 4 a 8 têm unidades marcadas por nível, para que partes deles sejam 
 | Vol. | Título | Págs. | Unidades | Eixo literário | Fio interdisciplinar |
 |---|---|---|---|---|---|
 | 1 | O mundo ao meu redor | 73 (produzido) | 7 + abertura e encerramento | História original *A cesta do pomar*; Stevenson, *A Child's Garden of Verses* (trad. da coleção); cantigas tradicionais | sentidos, casa, jardim, animais, céu, água, estações |
-| 2 | Histórias, memória e imaginação | 72 | 8 | Contos clássicos e fábulas (ver §6) | sequência, personagem, cenário, memória, reconto |
+| 2 | Histórias, memória e imaginação | 71 (produzido) | 8 | Contos clássicos e fábulas (ver §6) | sequência, personagem, cenário, memória, reconto |
 | 3 | Números, formas e raciocínio | 64 | 8 | *Cachinhos Dourados* (pequeno/médio/grande), *Os Três Porquinhos* (3 e materiais), contos numéricos | quantidade até 10, formas, padrões, medidas informais, espaço |
 | 4 | O mundo da música | 60 | 8 | *Os Músicos de Bremen*; *Pedro e o Lobo* (Prokofiev, 1936) | pulso, ritmo, timbre, contraste, compositores |
 | 5 | O mundo das artes | 60 | 8 | O Coelho Pedro (Potter) como porta para a aquarela | cor, linha, forma, textura, obras e artistas |
@@ -135,7 +135,7 @@ Os volumes 4 a 8 têm unidades marcadas por nível, para que partes deles sejam 
 
 ---
 
-## 6. Volume 2 — Histórias, memória e imaginação (72 páginas)
+## 6. Volume 2 — Histórias, memória e imaginação (71 páginas — produzido, ver `volume2/`)
 
 **Ideia central:** histórias têm personagens, lugares e uma ordem; a gente pode lembrar, comparar e contar de novo, e até mudar o final.
 **Avanço em relação ao Vol. 1:** de *ouvir e nomear* para *sequenciar, comparar personagens, recontar com apoio e inventar variações*. Sequências passam de 3 para 4 a 6 cartões; jogos de memória, de 6 para até 10 pares; surgem **bonecos de vara** e **cenários dobráveis** para reconto.
@@ -153,6 +153,8 @@ Os volumes 4 a 8 têm unidades marcadas por nível, para que partes deles sejam 
 | 7 | **Os Músicos de Bremen** | 9 | Grimm (1819) | domínio público; adaptação da coleção | ordem dos animais na torre (do maior para o menor); vozes dos animais | timbres: qual animal é qual instrumento? | orquestra de casa com quatro "vozes" |
 | 8 | **A Princesa e a Ervilha** e **folclore brasileiro** (Curupira, Saci, Iara, versões para pequenos) | 8 | Andersen (1835); tradição oral brasileira | domínio público; adaptações da coleção | "o que está escondido?" (sentir pelo tato); pés virados do Curupira (para frente e para trás) | cantiga "Peixe vivo"; cores da mata | contar uma lenda com o ratinho como ouvinte |
 | | **Total** | **72** | | | | | |
+
+**Ajustes feitos na produção:** cada unidade ficou com 8 páginas (a de Os Três Porquinhos com 9). Imagens: John R. Neill (*O Patinho Feio*), L. Leslie Brooke (*Cachinhos* e *Porquinhos*), Walter Crane (*Chapeuzinho*), Beatrix Potter (*O Coelho Pedro*), Arthur Rackham (*A Lebre e a Tartaruga* e *Os Músicos de Bremen*). *O Leão e o Rato*, *A Princesa e a Ervilha* e as lendas brasileiras usam motivos da coleção, porque não havia prancha antiga adequada. Os bonecos de vara e cenários dobráveis ficaram para o Volume 8, que reúne os manipuláveis.
 
 Cada unidade do Vol. 2 tem: guia do adulto (1), história ilustrada (2 ou 3), cartões de sequência recortáveis (1 a 2, com verso), atividade de memória ou de raciocínio (1 ou 2), página de música ou arte (1) e bonecos de vara ou cenário (1 ou 2, nas unidades 2, 3, 4 e 7).
 
