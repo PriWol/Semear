@@ -4,8 +4,9 @@ on:
   push:
     branches: [main]
     paths: ['app/**', '.github/workflows/app-ci.yml']
+  # Sem filtro de caminhos nos PRs: o ruleset "Proteger main" exige estas duas verificações
+  # (ADR 0006), e um PR só de docs/ ficaria esperando por elas para sempre.
   pull_request:
-    paths: ['app/**', '.github/workflows/app-ci.yml']
 
 permissions:
   contents: read
