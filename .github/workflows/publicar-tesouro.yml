@@ -49,6 +49,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       # Toda página de domínio público usada precisa ter SHA-256 registrado (falha fechada).
       - run: python3 fontes_v1.py verificar
+      - run: python3 -m unittest -v test_fontes_v1
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
@@ -68,7 +69,8 @@ jobs:
   publicar:
     name: Atualizar a Release
     needs: gerar
-    if: github.event_name != 'pull_request'
+    # Só publica a partir do main: um workflow_dispatch em branch de feature não pode sobrescrever a Release.
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       contents: write

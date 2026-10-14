@@ -33,7 +33,7 @@ Currículo clássico ilustrado para a infância: 8 volumes, 544 páginas planeja
 | `editorial/volume2.py` | todo o conteúdo do volume |
 
 ## Volume 3 — Números, formas e raciocínio (68 páginas)
-`volume3/volume3-impressao.pdf`, `volume3/volume3-tela.pdf`, `volume3/volume3-tela-leve.pdf` (150 dpi), `volume3/inspecao/`, conteúdo em `editorial/volume3.py`.
+`volume3/volume3-impressao.pdf`, `volume3/volume3-tela.pdf`, `volume3/inspecao/`, conteúdo em `editorial/volume3.py`.
 
 ## Rede e privacidade
 O único acesso externo do pipeline é o download de páginas digitalizadas do Internet Archive (`editorial/fontes_v1.py`), feito só no build dos PDFs, fora do app. Nenhum dado de família é enviado. Cada página baixada é conferida pelo SHA-256 registrado em `editorial/dominio_publico/paginas.sha256.json`; página sem hash é recusada (para catalogar uma nova, confira a imagem e rode `python3 fontes_v1.py registrar`). Decisão registrada no ADR 0010.

@@ -132,18 +132,26 @@ def _sha256(dados):
     return hashlib.sha256(dados).hexdigest()
 
 
+def _ler_manifesto():
+    import json
+    if not os.path.exists(MANIFESTO):
+        return {}
+    with open(MANIFESTO, encoding="utf-8") as f:
+        return json.load(f)
+
+
 def _registrar(chave, sha):
     import json
-    man = json.load(open(MANIFESTO)) if os.path.exists(MANIFESTO) else {}
+    man = _ler_manifesto()
     man[chave] = sha
-    json.dump(man, open(MANIFESTO, "w"), indent=1, sort_keys=True)
+    with open(MANIFESTO, "w", encoding="utf-8") as f:
+        json.dump(man, f, indent=1, sort_keys=True)
     print(f"registrado: {chave}")
 
 
 def verificar():
     """Toda página usada em ITENS precisa estar no manifesto (roda no CI, antes de gerar os PDFs)."""
-    import json
-    man = json.load(open(MANIFESTO)) if os.path.exists(MANIFESTO) else {}
+    man = _ler_manifesto()
     faltam = sorted({f"{it[0]}_n{it[1]}" for it in ITENS.values()} - set(man))
     if faltam:
         print("páginas sem SHA-256 no manifesto:\n  " + "\n  ".join(faltam))
@@ -167,9 +175,10 @@ def baixar(item, n):
     os.makedirs(FONTE, exist_ok=True)
     chave = f"{item}_n{n}"
     p = os.path.join(FONTE, chave + ".jpg")
-    esperado = json.load(open(MANIFESTO)).get(chave) if os.path.exists(MANIFESTO) else None
+    esperado = _ler_manifesto().get(chave)
     if os.path.exists(p):
-        dados = open(p, "rb").read()
+        with open(p, "rb") as f:
+            dados = f.read()
     else:
         req = urllib.request.Request(f"https://archive.org/download/{item}/page/n{n}.jpg",
                                      headers={"User-Agent": "TesouroMarina/0.1 (educational, non-commercial)"})
@@ -186,7 +195,8 @@ def baixar(item, n):
                              f"rode: python3 fontes_v1.py registrar")
         _registrar(chave, _sha256(dados))
     if not os.path.exists(p):
-        open(p, "wb").write(dados)
+        with open(p, "wb") as f:
+            f.write(dados)
     return p
 
 

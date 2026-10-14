@@ -478,6 +478,8 @@ def main():
                            capture_output=True, text=True)
         print(r.stdout.strip(), r.stderr.strip())
         falhou |= r.returncode != 0
+    if falhou:   # geração falhou: não renderizar páginas de inspeção a partir de um PDF antigo
+        sys.exit(1)
     insp = os.path.join(SAIDA, "inspecao")
     os.makedirs(insp, exist_ok=True)
     subprocess.run(["pdftoppm", "-r", "110", "-png", os.path.join(SAIDA, "amostra-v1-tela.pdf"),

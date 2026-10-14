@@ -994,6 +994,8 @@ def main():
         open(h, "w", encoding="utf-8").write(L.html())
         ok &= gerar_pdf(h, os.path.join(SAIDA, f"{nome}.pdf"))
         print(versao, len(L.paginas), "páginas")
+    if not ok:   # geração falhou: não renderizar páginas de inspeção a partir de um PDF antigo
+        sys.exit(1)
     insp = os.path.join(SAIDA, "inspecao")
     os.makedirs(insp, exist_ok=True)
     for f in os.listdir(insp):
