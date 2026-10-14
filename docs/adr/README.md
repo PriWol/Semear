@@ -14,5 +14,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0006](0006-piramide-de-testes-e-ci.md) | Pirâmide de testes e CI obrigatória | Aceito |
 | [0007](0007-revisao-por-agentes.md) | Revisão por dois agentes + aprovação humana; PR único da v1 | Aceito |
 | [0008](0008-roteamento-por-hash.md) | Roteamento por hash (`#/`) | Aceito |
+| [0009](0009-publicacao-github-pages.md) | Publicação do app no GitHub Pages via GitHub Actions | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
