@@ -133,9 +133,35 @@ describe('repositório: carregar e apagar o exemplo', () => {
     await repo.apagarExemplo();
 
     expect(await repo.criancas()).toEqual([real]);
+    expect(await repo.familia()).not.toBeNull(); // a família fica para a Lia não ficar órfã
+    expect((await repo.familia())?.exemplo).toBeUndefined();
     expect(Object.keys(await repo.estados('real'))).toEqual(['LG.FON.01']);
     expect((await repo.sessoes()).map((s) => s.id)).toEqual(['s-real']);
     expect(await repo.sessoes('exemplo-ana')).toEqual([]);
+  });
+
+  it('se a pessoa editou a família de exemplo e cadastrou a criança dela, a família fica', async () => {
+    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    // Como faz a tela da família: salva por cima, mantendo o marcador de exemplo.
+    await repo.salvarFamilia({ ...familia(), exemplo: true, educador: 'Priscila' });
+    await repo.salvarCrianca(crianca({ id: 'real', nome: 'Lia' }));
+
+    await repo.apagarExemplo();
+
+    const depois = await repo.familia();
+    expect(depois?.educador).toBe('Priscila');
+    expect(depois?.exemplo).toBeUndefined(); // agora é uma família de verdade
+    expect((await repo.criancas()).map((c) => c.nome)).toEqual(['Lia']);
+    expect(await repo.sessoes()).toEqual([]);
+    expect(await repo.ultimoBackup()).toBeNull(); // o lembrete de backup volta a valer
+  });
+
+  it('se editou a família de exemplo mas não cadastrou ninguém, o exemplo inteiro sai', async () => {
+    await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
+    await repo.salvarFamilia({ ...familia(), exemplo: true, educador: 'Priscila' });
+    await repo.apagarExemplo();
+    expect(await repo.familia()).toBeNull();
+    expect(await repo.criancas()).toEqual([]);
   });
 
   it('não apaga uma família real', async () => {

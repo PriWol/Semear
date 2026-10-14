@@ -51,3 +51,29 @@ test('"Começar com a minha família" apaga o exemplo e abre o cadastro', async 
   await expect(page.locator('#faixa-exemplo')).toBeHidden();
   await expect(page.getByLabel('Seu nome (educador)')).toHaveValue('');
 });
+
+test('editar a família de exemplo e cadastrar uma criança: apagar o exemplo não perde a criança', async ({
+  page,
+}) => {
+  await page.goto('./');
+  await page.getByRole('button', { name: 'Explorar com uma família de exemplo' }).click();
+  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+
+  // A pessoa ignora o aviso: troca o nome da família e cadastra a própria criança.
+  await page.goto('./#/familia');
+  await page.getByLabel('Seu nome (educador)').fill('Priscila');
+  await page.getByRole('button', { name: 'Salvar' }).click();
+  await page.goto('./#/crianca/nova');
+  await page.getByLabel('Nome').fill('Lia');
+  await page.getByLabel('Data de nascimento').fill('2021-03-15');
+  await page.getByRole('button', { name: 'Salvar' }).click();
+
+  await page.locator('#faixa-exemplo').getByRole('button', { name: 'Apagar exemplo' }).click();
+
+  // Ana e Theo saem; a família e a Lia ficam, e a faixa some.
+  await page.goto('./#/');
+  await expect(page.getByRole('heading', { name: 'Olá, Priscila!' })).toBeVisible();
+  await expect(page.locator('.crianca-cartao')).toHaveCount(1);
+  await expect(page.locator('.crianca-cartao')).toContainText('Lia');
+  await expect(page.locator('#faixa-exemplo')).toBeHidden();
+});
