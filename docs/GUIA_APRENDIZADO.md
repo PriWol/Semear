@@ -52,8 +52,8 @@ digitalmente** dizendo "esta conta tem o plano Família até tal data". O app gu
 confere a assinatura digital sem precisar de internet.
 
 **Por que usamos:** o app funciona offline e o servidor nunca precisa saber quantas crianças existem nem
-o que elas aprenderam: só que a licença vale até uma data. Quando ela vence, o app volta aos limites do
-plano Livre, sem apagar nem esconder nenhum dado. (ADR 0010)
+o que elas aprenderam: só que a licença vale até uma data. Quando ela vence (para quem assina, depois de 7 dias de
+tolerância), o app volta aos limites do plano Livre, sem apagar nem esconder nenhum dado. (ADR 0010)
 
 ### Migração de dados
 **O que é:** quando mudamos o formato dos dados guardados, escrevemos um passo que converte os dados
