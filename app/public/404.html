@@ -10,9 +10,10 @@
       // (?…) é descartada de propósito, porque o app só usa rotas por hash (ADR 0008).
       // Coberto por tests/pagina-404.test.ts, que executa este script com endereços simulados.
       (function () {
-        var base = location.pathname.indexOf('/Semear/') === 0 ? '/Semear/' : '/';
+        var p = location.pathname;
+        var base = p === '/Semear' || p.indexOf('/Semear/') === 0 ? '/Semear/' : '/';
         // Se a própria base deu 404 (ex.: publicação quebrada), não redireciona: evita um loop.
-        if (location.pathname !== base) location.replace(base + location.hash);
+        if (p !== base) location.replace(base + location.hash);
       })();
     </script>
   </head>

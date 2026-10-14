@@ -28,8 +28,13 @@ describe('página 404 (endereços antigos e inexistentes)', () => {
     expect(redirecionamento('/Semear/x', '#/familia')).toBe('/Semear/#/familia');
   });
 
+  it('/Semear sem a barra final também vai para o app', () => {
+    expect(redirecionamento('/Semear', '#/familia')).toBe('/Semear/#/familia');
+  });
+
   it('fora de /Semear/ vai para a raiz', () => {
     expect(redirecionamento('/outra-coisa')).toBe('/');
+    expect(redirecionamento('/Semeadura/x')).toBe('/');
   });
 
   it('não entra em loop quando a própria base deu 404 (ex.: publicação quebrada)', () => {

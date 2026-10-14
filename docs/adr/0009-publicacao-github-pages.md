@@ -33,8 +33,9 @@ rotas por hash funcionam em `/Semear/`).
      faxina nunca é baixada. Quem apaga os caches é o próprio app.
 - A faxina **não** chama `unregister()`: no caminho 1, se o `sw.js` já tiver assumido o registro,
   o `unregister()` desfaria o registro do app novo e o modo offline só voltaria na visita seguinte.
-- A faxina pode ser removida quando não houver mais visitantes do site antigo (ex.: 6 meses depois). Os dados que famílias tenham salvo no site antigo (localStorage) não
-são migrados: o modelo de dados é outro e o site antigo estava em fase de MVP.
+- A faxina pode ser removida quando não houver mais visitantes do site antigo (ex.: 6 meses depois).
+- Os dados que famílias tenham salvo no site antigo (`localStorage`) não são migrados: o modelo de
+  dados é outro e o site antigo estava em fase de MVP (ver "Riscos de privacidade" abaixo).
 
 ## Riscos de privacidade registrados (revisão do PR #16)
 - **Origem compartilhada:** no GitHub Pages, todos os sites de projeto da conta ficam na mesma origem

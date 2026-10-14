@@ -64,4 +64,35 @@ describe('faxina do service worker antigo (public/service-worker.js)', () => {
     const sw = readFileSync(new URL('../public/service-worker.js', import.meta.url), 'utf-8');
     expect(sw).toContain(`startsWith('${PREFIXO_CACHE_SITE_ANTIGO}')`);
   });
+
+  // Executa o script real com um "self" simulado e dispara install e activate, como o navegador.
+  it('ao ativar, apaga só os caches antigos e assume as páginas abertas', async () => {
+    const sw = readFileSync(new URL('../public/service-worker.js', import.meta.url), 'utf-8');
+    const ouvintes: Record<string, (ev: { waitUntil: (p: Promise<unknown>) => void }) => void> = {};
+    const nomes = ['semear-v1.0.1', 'semear-v2', 'fontes', 'workbox-precache-v2-x'];
+    const apagados: string[] = [];
+    let esperas: Promise<unknown>[] = [];
+    const chamadas = { skipWaiting: 0, claim: 0 };
+    const self = {
+      addEventListener: (tipo: string, f: (typeof ouvintes)[string]) => (ouvintes[tipo] = f),
+      skipWaiting: () => chamadas.skipWaiting++,
+      clients: { claim: async () => chamadas.claim++ },
+    };
+    const caches = {
+      keys: async () => nomes,
+      delete: async (n: string) => (apagados.push(n), true),
+    };
+    new Function('self', 'caches', sw)(self, caches);
+    const evento = { waitUntil: (p: Promise<unknown>) => esperas.push(p) };
+
+    ouvintes.install?.(evento);
+    expect(chamadas.skipWaiting).toBe(1);
+
+    esperas = [];
+    ouvintes.activate?.(evento);
+    await Promise.all(esperas);
+    expect(esperas).toHaveLength(1);
+    expect(apagados).toEqual(['semear-v1.0.1', 'semear-v2']);
+    expect(chamadas.claim).toBe(1);
+  });
 });
