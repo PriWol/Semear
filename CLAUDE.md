@@ -67,6 +67,14 @@ pages/ (telas) ──► domain/ (regras puras)
 5. **Revisão**: `npm run check` e `npm run test:e2e` verdes; PR revisado por dois agentes
    (correção e segurança/privacidade) e aprovado pela dona do produto.
 
+## Estórias (issues) e pull requests
+- Todo PR que **entrega** uma estória traz, no corpo, uma linha `Closes #N` por estória (também vale
+  `Fixes`/`Resolves`). Palavras como "Fecha" ou "Entrega" **não** fecham a estória no GitHub.
+- PR que só **avança** uma estória usa `Refs #N` e não a fecha.
+- Estória com critério de aceite que depende de decisão da dona do produto (rótulo `decisao`) só fecha
+  depois que a decisão é registrada na própria estória.
+- Ao abrir o PR, confira se a estória aparece como ligada; ao mergear, a estória fecha sozinha.
+
 ## Definição de pronto
 - [ ] Testes cobrindo as regras novas (unitários no domínio; integração no `dados/`; e2e se mudou um fluxo de tela).
 - [ ] `npm run check` e `npm run test:e2e` passando.
