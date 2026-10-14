@@ -1,4 +1,5 @@
 import './estilos.css';
+import './tokens.css';
 import { abrirRepositorio } from './dados/repositorio';
 import { conteudo } from './conteudo';
 import { limparCachesAntigos } from './legado';

@@ -1,0 +1,37 @@
+/*
+ * Semear · tokens visuais da direção A, "Caderno de botânica" (docs/DESIGN.md, estória #14).
+ * Fonte única das cores, fontes e medidas: o app (main.ts) e o pacote impresso (pacote/gerar.ts)
+ * carregam este mesmo arquivo. Prefixo --s- para não colidir com as variáveis atuais, que saem
+ * do app na estória #41 e do pacote na #42. O contraste é conferido em tests/tokens.test.ts.
+ */
+:root {
+  /* Superfícies e texto */
+  --s-fundo: #f8f5ee;
+  --s-papel: #fffdf8;
+  --s-tinta: #1e2b23;
+  --s-suave: #5d6a61;
+  --s-linha: #e4ddcd;
+  /* Verde-musgo: ação principal e títulos */
+  --s-principal: #355e45;
+  --s-principal-claro: #e3ece3;
+  /* Ocre: detalhes decorativos (--s-destaque) e texto sobre fundo claro (--s-destaque-texto) */
+  --s-destaque: #b8862f;
+  --s-destaque-claro: #f6ecd8;
+  --s-destaque-texto: #7a5a1e;
+  /* Terracota: alertas e avisos */
+  --s-alerta: #9c4a33;
+  --s-alerta-claro: #f7e4dc;
+  /* Tipografia (a letra da criança nas folhas não muda: Andika e Playwrite BR, §5.8) */
+  --s-fonte-titulo: 'Fraunces', Georgia, serif;
+  --s-fonte-texto: 'Inter', system-ui, sans-serif;
+  /* Medidas */
+  --s-raio: 14px;
+  --s-raio-p: 10px;
+  --s-espaco-1: 0.25rem;
+  --s-espaco-2: 0.5rem;
+  --s-espaco-3: 0.75rem;
+  --s-espaco-4: 1rem;
+  --s-espaco-5: 1.5rem;
+  --s-espaco-6: 2rem;
+  --s-sombra: 0 1px 2px rgba(30, 43, 35, 0.06), 0 4px 12px rgba(30, 43, 35, 0.05);
+}

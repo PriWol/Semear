@@ -14,7 +14,7 @@ O educador cadastra a família e as crianças, posiciona cada criança numa **jo
 |---|---|
 | `app/` | **App novo** (Vite + TypeScript + PWA), publicado no GitHub Pages a cada merge no `main` que altere `app/` (ADR 0009). |
 | `app/content/` | Conteúdo curado (marcos, atividades, livros) em JSON. Ver `app/content/README.md`. |
-| `docs/` | Especificação, roteiro por fases (`ROADMAP.md`), ADRs e guia de aprendizado. |
+| `docs/` | Especificação, identidade visual (`DESIGN.md`), roteiro por fases (`ROADMAP.md`), ADRs e guia de aprendizado. |
 | `tesouro-marina/` | Coleção editorial impressa *O Grande Tesouro de Marina* (PDFs A4 gerados em Python + Playwright). Fora do `app/` e sem dados de família (ADR 0011). |
 | `prototipos/` | Mocks dos pacotes de sessão e das direções visuais (`design/`); referência visual, não é código do app. |
 | raiz (`index.html`, `assets/`, `data/`) | **Site antigo**, não é mais publicado (ADR 0009). Será arquivado; não alterar sem pedido explícito. |
@@ -50,6 +50,10 @@ pages/ (telas) ──► domain/ (regras puras)
 - Funções pequenas, com um propósito. Prefira dados imutáveis e funções puras.
 - Comentários explicam **por quê**, não o quê. Referencie a seção da especificação quando aplicável (ex.: `§5.6`).
 - Nada de dependências novas sem justificar no PR (e num ADR, se for estrutural).
+
+## Visual (obrigatório para telas e folhas)
+Siga `docs/DESIGN.md` (direção A, "Caderno de botânica"; ADR 0013). Cores, fontes e medidas vêm dos tokens
+`--s-*` de `app/src/tokens.css`; não escreva valores soltos. Ilustrações só de domínio público, com fonte registrada.
 
 ## Privacidade (inegociável)
 - Dados da criança (nome, nascimento, marcos, sessões) **ficam no aparelho**. Nenhum envio para servidor,
