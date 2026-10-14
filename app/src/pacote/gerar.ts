@@ -13,6 +13,7 @@ import { ehLetra, NOME_LETRA } from '../domain/letra';
 import { dataBR } from '../domain/datas';
 import { escapar, html, textoRico, type HtmlSeguro } from '../ui/html';
 import { paginaDaFolha } from './folhas';
+import tokens from '../tokens.css?raw';
 import estilos from './pacote.css?raw';
 
 export interface EntradaPacote {
@@ -299,7 +300,8 @@ export function gerarPacote(e: EntradaPacote): string {
 <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+BR:wght@400&display=swap" rel="stylesheet">
-<style>${estilos}</style>
+<style>${tokens}
+${estilos}</style>
 </head>
 <body class="letra-${letra}">
 <div class="barra" role="toolbar" aria-label="Controles do pacote">

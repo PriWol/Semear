@@ -109,6 +109,12 @@ Arquivo na raiz que a IA lê no começo de toda sessão: comandos, arquitetura, 
 **definição de pronto**. É o "manual de onboarding" da IA. Quanto melhor ele estiver, mais coerente
 é o trabalho entre sessões diferentes.
 
+### Tokens de design
+Cores, fontes e medidas guardadas como variáveis CSS (`--s-tinta`, `--s-principal`…) num arquivo só,
+`app/src/tokens.css`. Em vez de escrever `#355e45` em cem lugares, escreve-se `var(--s-principal)`. Trocar a
+identidade visual vira editar um arquivo, e app e folhas impressas nunca divergem. Um teste confere o contraste
+das cores (acessibilidade AA).
+
 ### ADR (registro de decisão)
 Uma página por decisão técnica importante: contexto, opções, escolha, consequências.
 **Paralelo:** a ata de decisão de um comitê. Responde, meses depois, "por que fizemos assim?".

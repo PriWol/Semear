@@ -19,5 +19,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0011](0011-colecao-editorial-tesouro-marina.md) | Coleção editorial impressa em `tesouro-marina/`, fora do app | Aceito |
 | [0012](0012-versao-visivel-e-atualizacao-com-aviso.md) | Versão visível no app e atualização com aviso | Aceito |
 | [0013](0013-familia-de-exemplo-com-marcador-por-registro.md) | Família de exemplo com marcador por registro | Aceito |
+| [0014](0014-direcao-visual-caderno-de-botanica.md) | Direção visual "Caderno de botânica" e tokens compartilhados | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

@@ -3,6 +3,7 @@ import { registerSW } from 'virtual:pwa-register';
 import { VERSAO } from './versao';
 import { rotuloVersao } from './ui/versao';
 import { paginaNovidades } from './pages/novidades';
+import './tokens.css';
 import { abrirRepositorio } from './dados/repositorio';
 import { conteudo } from './conteudo';
 import { limparCachesAntigos } from './legado';
