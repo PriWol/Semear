@@ -48,6 +48,9 @@ Opção 3, detalhada na especificação §9:
   dias de tolerância depois do fim; o teste não tem (§9.4).
 - O portfólio completo de um período só é liberado por um comprovante com assinatura válida. A
   importação de backup revalida a assinatura, então um comprovante forjado não libera nada.
+- O limite do Livre entra no domínio como parâmetro injetado, sem valor fixo, até o piloto decidir.
+- **Privacidade:** o backup passa a levar o `contaId` dos comprovantes, o que liga o arquivo à conta
+  do responsável. A exportação avisa disso e permite exportar sem comprovantes.
 - **Antes de qualquer código de conta ou assinatura**, um ADR próprio de backend e privacidade
   (dados enviados ao gateway e ao Supabase, retenção, base legal, CSP). O sync fica fora dessa fase.
 - **Sem telemetria:** as métricas do piloto vêm de entrevistas, de questionário voluntário e do
