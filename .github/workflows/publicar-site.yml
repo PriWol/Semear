@@ -9,10 +9,9 @@ on:
     paths: ['app/**', '.github/workflows/publicar-site.yml']
   workflow_dispatch:
 
+# Só leitura por padrão: o job que roda npm ci (código de terceiros) não recebe permissão de publicar.
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -33,7 +32,7 @@ jobs:
           cache: npm
           cache-dependency-path: app/package-lock.json
       - run: npm ci
-      # Nunca publica algo que não passa nas verificações (os e2e já rodaram no PR).
+      # Nunca publica algo que não passa nas verificações (os e2e rodam no PR, exigidos pela proteção do main).
       - run: npm run check
       - run: npm run build
       - uses: actions/configure-pages@v5
@@ -45,6 +44,9 @@ jobs:
     name: Publicar no GitHub Pages
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.publicacao.outputs.page_url }}

@@ -6,15 +6,14 @@
     <meta name="robots" content="noindex" />
     <script>
       // Endereços antigos (ex.: /Semear/weekly-plan) ou inexistentes voltam para o início do app.
-      // No GitHub Pages de projeto, o app vive em /<repositório>/; em domínio próprio, na raiz.
+      // O app vive em /Semear/ (GitHub Pages de projeto). O hash é mantido (ex.: #/familia).
       (function () {
-        var partes = location.pathname.split('/');
-        var base = location.hostname.endsWith('github.io') && partes[1] ? '/' + partes[1] + '/' : '/';
-        location.replace(base);
+        var base = location.pathname.indexOf('/Semear/') === 0 ? '/Semear/' : '/';
+        location.replace(base + location.hash);
       })();
     </script>
   </head>
   <body>
-    <p>Redirecionando para o <a href="/">Semear</a>…</p>
+    <p>Redirecionando para o <a href="/Semear/">Semear</a>…</p>
   </body>
 </html>

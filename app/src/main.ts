@@ -49,4 +49,5 @@ async function limparCachesAntigos() {
 }
 
 void iniciar();
-void limparCachesAntigos();
+// Falha aqui não pode afetar o app (ex.: navegação privada pode recusar acesso ao Cache Storage).
+limparCachesAntigos().catch(() => {});

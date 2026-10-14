@@ -28,6 +28,15 @@ rotas por hash funcionam em `/Semear/`).
   `service-worker.js` de "faxina" faz o mesmo para quem ainda carregar a página antiga. Os dados que famílias tenham salvo no site antigo (localStorage) não
 são migrados: o modelo de dados é outro e o site antigo estava em fase de MVP.
 
+## Riscos de privacidade registrados (revisão do PR #16)
+- **Origem compartilhada:** no GitHub Pages, todos os sites de projeto da conta ficam na mesma origem
+  (`priwol.github.io`). Um script de outro projeto publicado nessa conta conseguiria ler o IndexedDB do
+  Semear (os dados das crianças). Regra até resolver: **não publicar outros projetos em `priwol.github.io`**.
+  Solução definitiva: domínio próprio (ex.: `app.semear.com.br`), que isola a origem. Está no backlog.
+- **Dados do site antigo:** o site antigo gravava no `localStorage` (prefixo `semear_`). Eles **não são
+  apagados** automaticamente: são dados que alguma família pode querer, e o app novo não os lê. O
+  arquivamento do site antigo (issue #32) decide se oferecemos exportar e depois apagar.
+
 ## Consequências
 - Todo merge que toca `app/` publica automaticamente em ~2 minutos.
 - O site antigo (raiz do repositório) deixa de ser publicado. Os arquivos ficam até serem arquivados.
