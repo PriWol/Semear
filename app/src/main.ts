@@ -64,6 +64,19 @@ function mostrarVersao() {
     onNeedRefresh() {
       if (faixa) faixa.hidden = false;
     },
+    // Um app aberto por dias só procuraria versão nova quando o navegador quisesse: conferimos de hora em hora.
+    onRegisteredSW(_url, registro) {
+      if (!registro) return;
+      setInterval(
+        () => {
+          if (navigator.onLine) void registro.update().catch(() => undefined);
+        },
+        60 * 60 * 1000,
+      );
+    },
+    onRegisterError(erro) {
+      console.error('Não foi possível registrar o service worker.', erro);
+    },
   });
   document.getElementById('atualizar-app')?.addEventListener('click', () => void atualizar(true));
 }

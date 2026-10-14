@@ -63,10 +63,14 @@ test('editar a família de exemplo e cadastrar uma criança: apagar o exemplo n�
   await page.goto('./#/familia');
   await page.getByLabel('Seu nome (educador)').fill('Priscila');
   await page.getByRole('button', { name: 'Salvar' }).click();
+  // Espera a gravação terminar (o app volta ao início) antes de seguir: senão o próprio app,
+  // ao terminar de salvar, leva a pessoa de volta ao início por cima da tela seguinte.
+  await expect(page.getByRole('heading', { name: 'Olá, Priscila!' })).toBeVisible();
   await page.goto('./#/crianca/nova');
   await page.getByLabel('Nome').fill('Lia');
   await page.getByLabel('Data de nascimento').fill('2021-03-15');
   await page.getByRole('button', { name: 'Salvar' }).click();
+  await expect(page.getByRole('heading', { name: /Jornada de Lia/ })).toBeVisible();
 
   await page.locator('#faixa-exemplo').getByRole('button', { name: 'Apagar exemplo' }).click();
 
