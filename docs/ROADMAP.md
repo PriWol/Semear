@@ -24,6 +24,7 @@ flowchart LR
 
 - **Testes automáticos** (rodam em todo PR): unitários nas regras, integração no banco do aparelho e
   ponta a ponta (e2e) simulando o uso no computador e no celular.
+- **Sem prévia por PR** (decisão de 14/10, #40): cada mudança é testada no site publicado, logo depois do merge.
 - **Seus testes** (manuais, no site publicado): cada fase tem um roteiro curto, abaixo. A **família de
   exemplo** (Fase 0) deixa você testar tudo em 1 minuto, sem digitar dados.
 - As fases 0 a 3 listam os testes automáticos novos que entram com elas. Nas fases 4 a 6, eles estão nos critérios de
@@ -33,7 +34,7 @@ flowchart LR
 
 | Fase | Versão | O que você consegue demonstrar no fim | Estórias |
 |---|---|---|---|
-| 0 · Base para testar | v0.2 | Abrir o site, ver a versão, carregar uma família de exemplo e imprimir uma sessão numa folha só | #38 #39 #40 #33 #36 #31 (#7 fecha) |
+| 0 · Base para testar | v0.2 | Abrir o site, ver a versão, carregar uma família de exemplo e imprimir uma sessão numa folha só | #38 #39 #33 #36 #31 |
 | 1 · Visual novo | v0.3 | Todas as telas e as folhas no visual "moderno e clássico", com navegação de app no celular | #14 #41 #42 #2 (parte 1) #15 |
 | 2 · Ciclo da sessão | v0.4 | Preparar → imprimir → aplicar → **registrar no celular** → jornada atualiza sozinha; buscar e imprimir uma atividade avulsa | #11 #13 · conteúdo: #21 #22 |
 | 3 · Rotina da semana | v0.5 | Planejar a semana (ex.: seg/qua/sex), imprimir tudo num arquivo só e acompanhar os dias feitos | #8 #9 #2 (parte 2) |
@@ -60,12 +61,10 @@ flowchart LR
 | Estória | O que entrega |
 |---|---|
 | #38 Versão publicada e novidades | Versão + data no topo e em Configurações; página "Novidades" com o que mudou em cada versão |
-| #39 Família de exemplo | Botão "Explorar com uma família de exemplo": cria 2 crianças posicionadas e sessões no histórico; "Apagar exemplo" remove tudo |
-| #40 Prévia de cada PR (decisão) | Ver a versão de um PR antes do merge, num endereço separado |
+| #39 Família de exemplo | Botão "Explorar com uma família de exemplo": cria 2 crianças posicionadas e sessões no histórico; "Apagar exemplo" remove só o que é do exemplo |
 | #33 Ficha em 1 página | A ficha de registro cabe numa folha A4 com até 2 atividades |
 | #36 Actions por SHA | Segurança da publicação (sem efeito visível) |
 | #31 Arquivar site antigo | Repositório limpo (sem efeito visível) |
-| #7 | Já entregue na v1: fechar |
 
 **Roteiro de teste (celular e computador):**
 1. Abra o site numa janela anônima. A versão `v0.2` aparece no topo.
@@ -82,7 +81,8 @@ integração de carregar/apagar o exemplo; e2e boas-vindas → exemplo → sess�
 ## Fase 1 · Visual novo, moderno e clássico (v0.3)
 
 **Objetivo:** trocar a identidade visual do app e das folhas, sem mudar os fluxos.
-Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais.html`.
+**Direção escolhida (14/10): A · Caderno de botânica** (marfim, verde-musgo e ocre; Fraunces + Inter).
+Protótipo: `prototipos/design/direcoes-visuais.html`.
 
 | Estória | O que entrega |
 |---|---|
@@ -115,7 +115,8 @@ Protótipo com as duas direções propostas: `prototipos/design/direcoes-visuais
 **Roteiro de teste:**
 1. Família de exemplo → prepare e imprima uma sessão para a Ana.
 2. Em "Registrar sessão", digite o código impresso (ex.: `S-1014-A1`) e marque os marcos. A jornada da Ana muda.
-3. Registre o mesmo marco como consolidado numa segunda sessão: aparece o selo "parece pronto".
+3. Na primeira sessão, marque um marco como *Consolidado*. Prepare e registre uma segunda sessão com esse mesmo marco,
+   também como *Consolidado*: aparece o selo "parece pronto".
 4. Busque "sílaba" (sem acento) e imprima a atividade encontrada.
 
 **Testes automáticos novos:** unitário do registro e do selo "parece pronto" e da busca sem acento; integração do
