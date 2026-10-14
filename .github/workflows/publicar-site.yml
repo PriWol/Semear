@@ -1,6 +1,7 @@
 name: Publicar site
 
-# Publica o app (app/) no GitHub Pages a cada mudança no main (ADR 0009).
+# Publica o app no GitHub Pages quando um merge no main altera app/ (ADR 0009).
+# Mudanças só em docs/ não publicam, porque docs/ não faz parte do site.
 # Requer, uma única vez: Settings → Pages → Build and deployment → Source: "GitHub Actions".
 
 on:

@@ -1,6 +1,7 @@
 import './estilos.css';
 import { abrirRepositorio } from './dados/repositorio';
 import { conteudo } from './conteudo';
+import { limparCachesAntigos } from './legado';
 import { criarRotas, iniciarApp, type FabricaPagina } from './ui/app';
 import { html } from './ui/html';
 import { paginaInicio } from './pages/inicio';
@@ -41,13 +42,5 @@ async function iniciar() {
   );
 }
 
-/** Apaga os caches do site antigo (ADR 0009); o app novo usa só os caches do próprio service worker. */
-async function limparCachesAntigos() {
-  if (!('caches' in window)) return;
-  const nomes = await caches.keys();
-  await Promise.all(nomes.filter((n) => n.startsWith('semear-v')).map((n) => caches.delete(n)));
-}
-
 void iniciar();
-// Falha aqui não pode afetar o app (ex.: navegação privada pode recusar acesso ao Cache Storage).
-limparCachesAntigos().catch(() => {});
+void limparCachesAntigos('caches' in window ? caches : undefined);

@@ -24,8 +24,16 @@ rotas por hash funcionam em `/Semear/`).
 - O site antigo usava endereços como `/Semear/onboarding`, que dariam 404. O app publica um `404.html`
   que redireciona qualquer endereço desconhecido para o início do app.
 - O antigo registrava `service-worker.js` e guardava páginas em cache. O service worker do app novo
-  (`sw.js`) assume o mesmo escopo; o app apaga os caches antigos (`semear-v*`) ao abrir, e um
-  `service-worker.js` de "faxina" faz o mesmo para quem ainda carregar a página antiga. Os dados que famílias tenham salvo no site antigo (localStorage) não
+  (`sw.js`) assume o mesmo escopo, e o app apaga os caches antigos (`semear-v*`) ao abrir
+  (`src/legado.ts`, com testes).
+- A simulação mostrou dois caminhos possíveis, e os dois terminam no app novo sem cache antigo:
+  1. O navegador confere a atualização do registro antigo antes de a página nova carregar: baixa o
+     `service-worker.js` de "faxina", que apaga os caches; depois a página nova registra o `sw.js`.
+  2. A página nova carrega primeiro (o SW antigo era network-first): o `sw.js` assume o registro, e a
+     faxina nunca é baixada. Quem apaga os caches é o próprio app.
+- A faxina **não** chama `unregister()`: no caminho 1, se o `sw.js` já tiver assumido o registro,
+  o `unregister()` desfaria o registro do app novo e o modo offline só voltaria na visita seguinte.
+- A faxina pode ser removida quando não houver mais visitantes do site antigo (ex.: 6 meses depois). Os dados que famílias tenham salvo no site antigo (localStorage) não
 são migrados: o modelo de dados é outro e o site antigo estava em fase de MVP.
 
 ## Riscos de privacidade registrados (revisão do PR #16)

@@ -12,7 +12,7 @@ O educador cadastra a família e as crianças, posiciona cada criança numa **jo
 ## Mapa do repositório
 | Caminho | O que é |
 |---|---|
-| `app/` | **App novo** (Vite + TypeScript + PWA), publicado no GitHub Pages a cada merge no `main` (ADR 0009). |
+| `app/` | **App novo** (Vite + TypeScript + PWA), publicado no GitHub Pages a cada merge no `main` que altere `app/` (ADR 0009). |
 | `app/content/` | Conteúdo curado (marcos, atividades, livros) em JSON. Ver `app/content/README.md`. |
 | `docs/` | Especificação, ADRs e guia de aprendizado. |
 | `prototipos/` | Mocks dos pacotes de sessão (referência visual, não é código do app). |
