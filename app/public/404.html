@@ -6,7 +6,9 @@
     <meta name="robots" content="noindex" />
     <script>
       // Endereços antigos (ex.: /Semear/weekly-plan) ou inexistentes voltam para o início do app.
-      // O app vive em /Semear/ (GitHub Pages de projeto). O hash é mantido (ex.: #/familia).
+      // O app vive em /Semear/ (GitHub Pages de projeto). O hash é mantido (ex.: #/familia); a query
+      // (?…) é descartada de propósito, porque o app só usa rotas por hash (ADR 0008).
+      // Coberto por tests/pagina-404.test.ts, que executa este script com endereços simulados.
       (function () {
         var base = location.pathname.indexOf('/Semear/') === 0 ? '/Semear/' : '/';
         // Se a própria base deu 404 (ex.: publicação quebrada), não redireciona: evita um loop.
