@@ -1,6 +1,6 @@
 # 0010. Coleção editorial impressa em `tesouro-marina/`, fora do app
 
-- **Status:** Proposto
+- **Status:** Aceito
 - **Data:** 2026-10-14
 
 ## Contexto
@@ -26,12 +26,16 @@ Opção 1. A coleção fica em `tesouro-marina/` e não é importada pelo app ne
   línguas, vida prática) podem mais tarde alimentar marcos e atividades em `app/content/`. Quando isso acontecer,
   a especificação (`docs/JORNADA_SPEC.md`) será atualizada e o conteúdo passará pela validação do ADR 0005.
 
-### Em aberto: arquivos gerados no Git
-Os PDFs finais e as páginas de inspeção (`*/inspecao/`) são reproduzíveis a partir de `editorial/`, mas somam
-centenas de MB. Opções: (a) manter no Git (simples para a família baixar; histórico pesado); (b) ignorar
-`*/inspecao/` e publicar os PDFs como anexos de uma Release do GitHub; (c) Git LFS. A decisão cabe à dona do produto.
+### Arquivos gerados fora do Git
+Os PDFs finais e as páginas de inspeção (`*/inspecao/`) são reproduzíveis a partir de `editorial/` e somariam
+centenas de MB no histórico. Opções consideradas: manter no Git, Git LFS ou Release do GitHub. A dona do produto
+escolheu a **Release**: o workflow `.github/workflows/publicar-tesouro.yml` gera os PDFs a cada merge no `main` que
+altere `tesouro-marina/` e atualiza os anexos da Release `tesouro-marina`. Em PRs, o mesmo workflow só gera os PDFs
+(artefato do workflow, para conferência), sem publicar. O Git guarda apenas as fontes: `editorial/`, `docs/` e as
+ilustrações de domínio público já recortadas (`editorial/dominio_publico/`).
 
 ## Consequências
 - O app continua sem dependências novas; quem trabalha só no `app/` não precisa de Python.
 - Os PDFs precisam ser regenerados (`python3 volumeN.py`) quando o texto ou o estilo mudar.
-- Clonar o repositório fica mais pesado enquanto os PDFs estiverem versionados.
+- Para baixar os PDFs: página de Releases do repositório, Release `tesouro-marina`.
+- O workflow precisa de Python, Node (Playwright/Chromium) e poppler no runner; leva alguns minutos.

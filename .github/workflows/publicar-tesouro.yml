@@ -1,0 +1,86 @@
+name: Publicar Tesouro de Marina
+
+# Gera os PDFs da coleção O Grande Tesouro de Marina a partir de tesouro-marina/editorial e os publica
+# como anexos da Release "tesouro-marina" (ADR 0010). Os PDFs não ficam no Git.
+# - Em PR que altere tesouro-marina/: só gera e guarda os PDFs como artefato do workflow (para conferir).
+# - Em merge no main que altere tesouro-marina/ (ou manualmente): gera e atualiza a Release.
+
+on:
+  pull_request:
+    paths: ['tesouro-marina/**', '.github/workflows/publicar-tesouro.yml']
+  push:
+    branches: [main]
+    paths: ['tesouro-marina/**', '.github/workflows/publicar-tesouro.yml']
+  workflow_dispatch:
+
+# Só leitura por padrão: o job que instala dependências não recebe permissão de publicar.
+permissions:
+  contents: read
+
+concurrency:
+  group: tesouro-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gerar:
+    name: Gerar os PDFs
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: tesouro-marina/editorial
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: tesouro-marina/editorial/requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tesouro-marina/editorial/package-lock.json
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: pip install -r requirements.txt
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      # Cada script falha se algum bloco sair da área segura da página (pdf.js).
+      - run: python3 build_amostra.py
+      - run: python3 volume1.py
+      - run: python3 volume2.py
+      - run: python3 volume3.py
+      - name: Juntar os PDFs
+        run: |
+          mkdir -p ../pdfs
+          cp ../amostra/*.pdf ../volume*/*.pdf ../pdfs/
+          ls -la ../pdfs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tesouro-marina-pdfs
+          path: tesouro-marina/pdfs/
+          retention-days: 14
+
+  publicar:
+    name: Atualizar a Release
+    needs: gerar
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: tesouro-marina-pdfs
+          path: pdfs
+      - name: Criar ou atualizar a Release "tesouro-marina"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if ! gh release view tesouro-marina >/dev/null 2>&1; then
+            gh release create tesouro-marina --target "${{ github.sha }}" \
+              --title "O Grande Tesouro de Marina — PDFs" \
+              --notes "PDFs A4 da coleção O Grande Tesouro de Marina, gerados a partir de tesouro-marina/editorial. Arquivos *-impressao: fundo branco, para imprimir em papel creme. Arquivos *-tela: fundo creme, para ver na tela. Atualizada automaticamente a cada merge que altere tesouro-marina/."
+          fi
+          gh release upload tesouro-marina pdfs/*.pdf --clobber

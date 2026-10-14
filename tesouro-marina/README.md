@@ -1,5 +1,7 @@
 # O Grande Tesouro de Marina
 
+> **Onde estão os PDFs:** na Release [`tesouro-marina`](https://github.com/PriWol/Semear/releases/tag/tesouro-marina), atualizada automaticamente a cada merge no `main` que altere esta pasta (workflow `publicar-tesouro.yml`, ADR 0010). Os PDFs e as páginas de inspeção não ficam no Git; as tabelas abaixo citam os nomes dos arquivos.
+
 Currículo clássico ilustrado para a infância: 8 volumes, 544 páginas planejadas, em A4 imprimível.
 
 ## Primeira entrega (para aprovação)
@@ -38,9 +40,12 @@ O único acesso externo do pipeline é o download de páginas digitalizadas do I
 
 ## Gerar de novo
 ```
-pip install numpy scipy pillow matplotlib
-cd editorial && python3 build_amostra.py   # amostra
-cd editorial && python3 volume2.py         # Volume 2
-cd editorial && python3 volume1.py         # Volume 1 (baixa do Internet Archive as páginas que faltarem)
+cd tesouro-marina/editorial
+pip install -r requirements.txt
+npm ci && npx playwright install chromium
+python3 build_amostra.py   # amostra
+python3 volume1.py         # Volume 1
+python3 volume2.py         # Volume 2
+python3 volume3.py         # Volume 3
 ```
-Requer Node com Playwright (Chromium) e `pdftoppm` (poppler).
+Requer também `pdftoppm` (poppler) para as páginas de inspeção. As ilustrações de domínio público já recortadas estão em `editorial/dominio_publico/`; só é preciso baixar páginas do Internet Archive para refazer recortes (`fontes_v1.py`).
