@@ -3,6 +3,7 @@ import { html } from '../ui/html';
 import { idadeEmAnos, diasEntre } from '../domain/datas';
 import { pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import { anos, dataCurta } from '../ui/rotulos';
+import { criarExemplo } from '../domain/exemplo';
 
 const DIAS_LEMBRETE_BACKUP = 30;
 
@@ -20,8 +21,34 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
           só você.
         </p>
         <p class="nota">Seus dados ficam guardados só neste aparelho.</p>
-        <a class="botao primario grande" href="#/familia">Começar</a>
+        <div class="acoes">
+          <a class="botao primario grande" href="#/familia">Começar</a>
+          <button class="botao grande" type="button" id="explorar-exemplo">
+            Explorar com uma família de exemplo
+          </button>
+        </div>
+        <p class="nota">
+          O exemplo traz duas crianças fictícias já posicionadas, para você ver tudo funcionando.
+          Dá para apagar depois com um toque.
+        </p>
       </section>`,
+      montar(raiz) {
+        raiz
+          .querySelector<HTMLButtonElement>('#explorar-exemplo')
+          ?.addEventListener('click', async (ev) => {
+            const botao = ev.currentTarget as HTMLButtonElement;
+            botao.disabled = true; // evita carregar duas vezes num toque duplo
+            try {
+              const agora = ctx.agora();
+              await ctx.repo.carregarExemplo(criarExemplo(ctx.idx, new Date(agora)), agora);
+              ctx.avisar('Família de exemplo carregada.');
+              ctx.ir('/');
+            } catch (erro) {
+              botao.disabled = false;
+              alert(erro instanceof Error ? erro.message : 'Não foi possível carregar o exemplo.');
+            }
+          });
+      },
     };
   }
 

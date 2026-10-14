@@ -2,6 +2,7 @@ import type { FabricaPagina } from '../ui/app';
 import { lerFormulario, lista } from '../ui/app';
 import { html } from '../ui/html';
 import { IDIOMAS, VERTENTES, type Familia, type Idioma, type Vertente } from '../domain/tipos';
+import { avisoExemplo, ligarAvisoExemplo } from '../ui/exemplo';
 
 export const DESCRICAO_VERTENTE: Record<Vertente, string> = {
   Montessori: 'autonomia, materiais concretos, vida prática',
@@ -25,6 +26,7 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
   return {
     titulo: 'Família',
     conteudo: html` <h1>${primeiraVez ? 'Vamos conhecer sua família' : 'Família'}</h1>
+      ${atual?.exemplo ? avisoExemplo() : ''}
       <form class="cartao formulario" id="form-familia">
         <label>
           Seu nome (educador)
@@ -93,6 +95,7 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
         </button>
       </form>`,
     montar(raiz) {
+      ligarAvisoExemplo(raiz, ctx);
       raiz
         .querySelector<HTMLFormElement>('#form-familia')
         ?.addEventListener('submit', async (ev) => {

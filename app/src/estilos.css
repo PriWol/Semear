@@ -439,3 +439,30 @@ progress {
     padding: 6px 8px;
   }
 }
+
+/* ---------- Família de exemplo (#39) ---------- */
+.faixa-exemplo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 10px;
+  padding: 6px 16px;
+  background: var(--terra-clara);
+  color: var(--texto);
+  font-size: 0.9rem;
+  text-align: center;
+}
+.faixa-exemplo[hidden] {
+  display: none;
+}
+.link-botao {
+  background: none;
+  border: none;
+  padding: 6px 4px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--terra);
+  text-decoration: underline;
+  cursor: pointer;
+}

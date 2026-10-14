@@ -11,6 +11,7 @@ import {
   type Sessao,
 } from '../domain/tipos';
 import { ehLetra } from '../domain/letra';
+import type { DadosExemplo } from '../domain/exemplo';
 
 export const VERSAO_BACKUP = 1;
 
@@ -60,6 +61,11 @@ export interface Repositorio {
   /** substitui todos os dados pelos do backup */
   importar(backup: Backup): Promise<void>;
   apagarTudo(): Promise<void>;
+
+  /** grava a família de exemplo (#39); recusa se já existe uma família no aparelho */
+  carregarExemplo(dados: DadosExemplo, agora: string): Promise<void>;
+  /** remove SÓ os registros marcados como exemplo: o que a pessoa cadastrou continua no aparelho */
+  apagarExemplo(): Promise<void>;
 }
 
 interface Esquema extends DBSchema {
@@ -220,6 +226,55 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       await Promise.all(LOJAS.map((l) => tx.objectStore(l).clear()));
       await tx.done;
     },
+
+    async carregarExemplo(dados, agora) {
+      const tx = db.transaction(LOJAS, 'readwrite');
+      // A checagem fica dentro da transação: dois toques seguidos não gravam o exemplo duas vezes.
+      if (lerFamilia(await tx.objectStore('config').get(CHAVE_FAMILIA))) {
+        tx.done.catch(() => undefined); // o abort abaixo rejeita tx.done de propósito
+        tx.abort();
+        throw new Error('Já existe uma família neste aparelho: o exemplo não foi carregado.');
+      }
+      await tx.objectStore('config').put(dados.familia, CHAVE_FAMILIA);
+      for (const c of dados.criancas) await tx.objectStore('criancas').put(c);
+      for (const e of dados.estados) {
+        await tx.objectStore('estados').put(e);
+        for (const [chave, registro] of Object.entries(e.estados)) {
+          await tx.objectStore('historico').add({ criancaId: e.criancaId, chave, registro });
+        }
+      }
+      for (const s of dados.sessoes) await tx.objectStore('sessoes').put(s);
+      // O exemplo não é dado da família: não deve disparar o lembrete de backup.
+      await tx.objectStore('config').put({ em: agora }, CHAVE_BACKUP);
+      await tx.done;
+    },
+
+    async apagarExemplo() {
+      const tx = db.transaction(LOJAS, 'readwrite');
+      // Nunca clear(): uma criança real cadastrada durante o exemplo não tem o marcador e fica.
+      const doExemplo = (await tx.objectStore('criancas').getAll()).filter((c) => c.exemplo);
+      for (const c of doExemplo) {
+        await tx.objectStore('criancas').delete(c.id);
+        await tx.objectStore('estados').delete(c.id);
+        for (const loja of ['historico', 'sessoes'] as const) {
+          let cursor = await tx.objectStore(loja).index('porCrianca').openCursor(c.id);
+          while (cursor) {
+            await cursor.delete();
+            cursor = await cursor.continue();
+          }
+        }
+      }
+      let cursor = await tx.objectStore('sessoes').openCursor();
+      while (cursor) {
+        if (cursor.value.exemplo) await cursor.delete();
+        cursor = await cursor.continue();
+      }
+      if (lerFamilia(await tx.objectStore('config').get(CHAVE_FAMILIA))?.exemplo) {
+        await tx.objectStore('config').delete(CHAVE_FAMILIA);
+        await tx.objectStore('config').delete(CHAVE_BACKUP);
+      }
+      await tx.done;
+    },
   };
 }
 
@@ -239,6 +294,8 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
   const ehVertente = (v: unknown) => (VERTENTES as readonly unknown[]).includes(v);
   const ehIdioma = (v: unknown) => ehTexto(v) && Object.hasOwn(IDIOMAS, v);
   const ehData = (v: unknown) => ehTexto(v) && /^\d{4}-\d{2}-\d{2}$/.test(v);
+  // O marcador do exemplo só pode faltar ou ser true (#39).
+  const marcadorOk = (v: Record<string, unknown>) => v.exemplo === undefined || v.exemplo === true;
   const ehRegistro = (v: unknown) =>
     ehObjeto(v) &&
     (ESTADOS as readonly unknown[]).includes(v.estado) &&
@@ -262,7 +319,8 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
       !ehVertente(f.vertentePrincipal) ||
       !listaDe(f.inspiracoes, ehVertente) ||
       !listaDe(f.idiomasEducador, ehIdioma) ||
-      !ehTexto(f.criadaEm)
+      !ehTexto(f.criadaEm) ||
+      !marcadorOk(f)
     ) {
       falha('dados da família incompletos ou desconhecidos');
     }
@@ -273,6 +331,7 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     if (!ehData(cr.nascimento)) falha(`data de nascimento inválida (${String(cr.nome)})`);
     if (cr.letra !== null && !ehLetra(cr.letra)) falha(`letra desconhecida (${String(cr.nome)})`);
     if (!listaDe(cr.trilhas, ehIdioma)) falha(`línguas desconhecidas (${String(cr.nome)})`);
+    if (!marcadorOk(cr)) falha(`marcador de exemplo inválido (${String(cr.nome)})`);
   }
   for (const e of b.estados as unknown[]) {
     if (!ehObjeto(e) || !ehTexto(e.criancaId) || !ehObjeto(e.estados)) falha('estado sem criança');
@@ -295,7 +354,8 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
       typeof s.duracaoMin !== 'number' ||
       !(s.foco === 'equilibrado' || listaDe(s.foco, ehTexto)) ||
       !listaDe(s.atividadeIds, ehTexto) ||
-      !(s.livroId === null || ehTexto(s.livroId))
+      !(s.livroId === null || ehTexto(s.livroId)) ||
+      !marcadorOk(s)
     ) {
       falha('sessão inválida');
     }

@@ -56,6 +56,8 @@ export function iniciarApp(
   base: Omit<Contexto, 'ir' | 'atualizar' | 'avisar'>,
   rotas: Rota[],
   naoEncontrada: FabricaPagina,
+  /** roda depois de cada página (ex.: atualizar a faixa do exemplo, #39) */
+  depoisDeRenderizar?: (ctx: Contexto) => Promise<void>,
 ): Contexto {
   const aviso = document.getElementById('aviso');
   let timer: number | undefined;
@@ -97,6 +99,7 @@ export function iniciarApp(
       raiz.replaceChildren(el);
       pagina.montar?.(el);
       marcarNavegacao(caminho);
+      await depoisDeRenderizar?.(ctx);
     } catch (erro) {
       console.error(erro);
       raiz.innerHTML = html`<div class="cartao erro">

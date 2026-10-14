@@ -2,6 +2,7 @@ import './estilos.css';
 import { abrirRepositorio } from './dados/repositorio';
 import { conteudo } from './conteudo';
 import { limparCachesAntigos } from './legado';
+import { atualizarFaixaExemplo, ligarFaixaExemplo } from './ui/exemplo';
 import { criarRotas, iniciarApp, type FabricaPagina } from './ui/app';
 import { html } from './ui/html';
 import { paginaInicio } from './pages/inicio';
@@ -25,7 +26,7 @@ async function iniciar() {
   const raiz = document.getElementById('app');
   if (!raiz) return;
   const repo = await abrirRepositorio();
-  iniciarApp(
+  const ctx = iniciarApp(
     raiz,
     { repo, idx: conteudo(), agora: () => new Date().toISOString() },
     criarRotas({
@@ -39,7 +40,9 @@ async function iniciar() {
       '/conteudo': paginaConteudo,
     }),
     naoEncontrada,
+    atualizarFaixaExemplo,
   );
+  ligarFaixaExemplo(ctx);
   // Depois da primeira renderização, para não disputar a abertura do app (ADR 0009).
   void limparCachesAntigos('caches' in window ? caches : undefined);
 }
