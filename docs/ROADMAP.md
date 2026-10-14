@@ -24,7 +24,7 @@ flowchart LR
 
 - **Testes automáticos** (rodam em todo PR): unitários nas regras, integração no banco do aparelho e
   ponta a ponta (e2e) simulando o uso no computador e no celular.
-- **Sem prévia por PR** (decisão de 14/10, #40): cada mudança é testada no site publicado, logo depois do merge. Se algo errado chegar ao site, o rollback é reverter o merge no `main`. Esta decisão ainda precisa de um ADR.
+- **Sem prévia por PR, por enquanto** (proposta de 14/10/2026, a ser decidida na #40 e registrada em ADR): cada mudança é testada no site publicado, logo depois do merge, então um bug chega ao site antes do teste manual. O rollback é reverter o merge no `main`, mas **dados já gravados no IndexedDB por uma versão ruim não voltam com o revert**; por isso toda mudança de formato de dados precisa de migração testada.
 - **Seus testes** (manuais, no site publicado): cada fase tem um roteiro curto, abaixo. A **família de
   exemplo** (Fase 0) deixa você testar tudo em 1 minuto, sem digitar dados.
 - As fases 0 a 3 listam os testes automáticos novos que entram com elas. Nas fases 4 a 6, eles estão nos critérios de
@@ -40,7 +40,7 @@ flowchart LR
 | 3 · Rotina da semana | v0.5 | Planejar a semana (ex.: seg/qua/sex), imprimir tudo num arquivo só e acompanhar os dias feitos | #8 #9 #2 (parte 2) |
 | 4 · Pronto para o piloto | v0.6 | Endereço próprio, sondagem impressa para posicionar, guia das vertentes e estante de livros; 3 a 5 famílias usando | #34 #32 #17 #30 #12 → #28 |
 | 5 · Evidências e portfólio | v0.7 | Fotos dos trabalhos, ressondagem, sessão de irmãos e o **portfólio trimestral em PDF** | #10 #18 #19 #29 #20 |
-| 6 · Abrir ao público | v1.0 | Landing page, conta, teste de 30 dias, pagamento por família e sincronização | #25 #26 #3 #6 #5 #4 #27 |
+| 6 · Abrir ao público | v1.0 | Landing page, conta, teste gratuito (14 ou 30 dias, §9.3), pagamento por família e sincronização | #25 #26 #3 #6 #5 #4 #27 |
 | Trilha de conteúdo | contínua | Mais marcos, atividades, livros e ilustrações a cada lote | #21 #22 #23 #24 |
 
 **Por que esta ordem:**
@@ -120,7 +120,7 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 4. Busque "sílaba" (sem acento) e imprima a atividade encontrada.
 
 **Testes automáticos novos:** unitário do registro e do selo "parece pronto" e da busca sem acento; integração do
-registro (com migração do banco e backup); e2e "gerar → registrar" e "buscar → imprimir".
+registro (com migração do banco e backup); importação de backup recusando estados fora de *Não observado / Em desenvolvimento / Consolidado* e contando uma só vez a mesma sessão duplicada; e2e "gerar → registrar" e "buscar → imprimir".
 
 ---
 
@@ -180,7 +180,7 @@ servidor, então nada de #26, #3 ou #27 começa sem um **ADR aprovado** que diga
 e assinatura; o servidor não sabe quantas crianças existem, §9.4 "Arquitetura que isso exige"), como os dados da sincronização são criptografados de ponta a ponta, por
 quanto tempo ficam guardados e onde. O `CLAUDE.md` (seção Privacidade) e o ADR 0002 são atualizados no mesmo PR.
 
-**Roteiro de teste:** do anúncio à assinatura: landing → cadastro → teste de 30 dias → uso → pagamento em ambiente de teste do gateway → cancelamento → exportação dos dados.
+**Roteiro de teste:** do anúncio à assinatura: landing → uso no plano Livre, sem conta → cadastro por e-mail → teste gratuito → fim do teste volta ao Livre → assinatura em ambiente de teste do gateway → cancelamento → exportação dos dados.
 
 ---
 
