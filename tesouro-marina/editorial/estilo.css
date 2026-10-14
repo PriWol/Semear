@@ -1,0 +1,143 @@
+/* O Grande Tesouro de Marina — sistema editorial (A4) */
+@font-face { font-family: "EB Garamond"; font-weight: 400; font-style: normal; src: url(fonts/eb-garamond-latin-400-normal.woff2); }
+@font-face { font-family: "EB Garamond"; font-weight: 400; font-style: normal; src: url(fonts/eb-garamond-latin-ext-400-normal.woff2); unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: "EB Garamond"; font-weight: 400; font-style: italic; src: url(fonts/eb-garamond-latin-400-italic.woff2); }
+@font-face { font-family: "EB Garamond"; font-weight: 400; font-style: italic; src: url(fonts/eb-garamond-latin-ext-400-italic.woff2); unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: "EB Garamond"; font-weight: 500; font-style: normal; src: url(fonts/eb-garamond-latin-500-normal.woff2); }
+@font-face { font-family: "EB Garamond"; font-weight: 600; font-style: normal; src: url(fonts/eb-garamond-latin-600-normal.woff2); }
+@font-face { font-family: "EB Garamond"; font-weight: 600; font-style: normal; src: url(fonts/eb-garamond-latin-ext-600-normal.woff2); unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: "EB Garamond"; font-weight: 600; font-style: italic; src: url(fonts/eb-garamond-latin-600-italic.woff2); }
+
+:root {
+  --papel: #ffffff;          /* impressão: o creme vem do papel (pólen/marfim) */
+  --tinta: #3d3127;          /* texto principal, sépia-escuro */
+  --sepia: #6b5440;
+  --sepia-claro: #9c8468;
+  --linha: #bfae8f;
+  --musgo: #4f6b3a;
+  --oliva: #7f9a52;
+  --rosa: #c0716b;
+  --azul: #5f7f9c;
+  --ocre: #b8863a;
+  --tracejado: #8fa3b5;
+  /* cor de cada domínio (aba lateral e sumário) */
+  --d-historias: #c0716b; --d-memoria: #7f9a52; --d-matematica: #5f8f8a;
+  --d-musica: #8a6f9e; --d-artes: #c9963f; --d-natureza: #4f6b3a;
+  --d-ingles: #5f7f9c; --d-frances: #7a86b8; --d-latim: #a0805a;
+  --d-vida: #b07a5a; --d-jogos: #9a6a7a;
+}
+.tela { --papel: #fbf6ea; }
+
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #e9e4da; }
+body { font-family: "EB Garamond", Georgia, serif; color: var(--tinta); font-size: 11pt; line-height: 1.38;
+       -webkit-print-color-adjust: exact; print-color-adjust: exact; font-variant-numeric: oldstyle-nums; }
+img.aq { display: block; }
+
+.pagina { width: 210mm; height: 297mm; position: relative; overflow: hidden; background: var(--papel);
+          page-break-after: always; break-after: page; }
+@media screen { .pagina { margin: 8mm auto; box-shadow: 0 2px 10px rgba(0,0,0,.15); } }
+
+/* moldura dupla, sempre dentro da área segura de impressoras domésticas (≥ 5 mm) */
+.moldura { position: absolute; inset: 9mm; border: 0.6pt solid var(--linha); pointer-events: none; }
+.moldura::after { content: ""; position: absolute; inset: 1.4mm; border: 0.3pt solid var(--linha); }
+
+.cabecalho { position: absolute; top: 13.5mm; left: 0; right: 0; text-align: center; font-size: 7.6pt;
+             letter-spacing: .14em; text-transform: uppercase; color: var(--sepia-claro); }
+.rodape { position: absolute; bottom: 12.5mm; left: 0; right: 0; text-align: center; font-size: 9pt; color: var(--sepia); }
+.rodape .num::before, .rodape .num::after { content: "❧"; font-size: 8pt; color: var(--linha); margin: 0 2.5mm; }
+.rodape .num::before { display: inline-block; transform: scaleX(-1); }
+.aba { position: absolute; right: 9mm; top: 40mm; width: 3.2mm; height: 26mm; background: var(--aba, var(--d-natureza)); opacity: .8; }
+
+.miolo { position: absolute; top: 20mm; left: 18mm; right: 18mm; bottom: 20mm; }
+
+h1.titulo { font-family: "EB Garamond", serif; font-weight: 600; font-size: 30pt; line-height: 1.05;
+            text-align: center; color: var(--tinta); letter-spacing: .01em; }
+.subtitulo { font-family: "EB Garamond", serif; font-style: italic; font-size: 14pt; text-align: center; color: var(--sepia); margin-top: 1.5mm; }
+.vinheta-sep { text-align: center; color: var(--linha); font-size: 11pt; margin: 2mm 0; letter-spacing: .6em; }
+
+/* faixa do adulto: separada visualmente da área da criança */
+.adulto { position: absolute; left: 18mm; right: 18mm; bottom: 20mm; border-top: 0.6pt solid var(--linha);
+          padding-top: 2.6mm; font-size: 9.2pt; line-height: 1.34; color: var(--sepia); }
+.adulto .rotulo { font-family: "EB Garamond", serif; font-style: italic; font-weight: 600; font-size: 11pt; color: var(--musgo); }
+.adulto b { color: var(--tinta); font-weight: 600; }
+
+/* ---------- guia do adulto ---------- */
+.guia h1.titulo { font-size: 26pt; }
+.guia .ficha { display: grid; grid-template-columns: 1fr 1fr; column-gap: 7mm; margin-top: 4mm; }
+.guia h3 { font-family: "EB Garamond", serif; font-weight: 600; font-size: 12.5pt; color: var(--musgo);
+           border-bottom: 0.4pt solid var(--linha); margin: 3.2mm 0 1.2mm; padding-bottom: .4mm; letter-spacing: .02em; }
+.guia p, .guia li { font-size: 9.6pt; line-height: 1.34; }
+.guia ul { padding-left: 4mm; }
+.guia li { margin-bottom: .6mm; }
+.guia .etapas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin-top: 3mm; }
+.guia .etapa { border: 0.5pt solid var(--linha); padding: 2.4mm 2.8mm; border-radius: 1.5mm; }
+.guia .etapa h4 { font-family: "EB Garamond", serif; font-size: 13pt; font-weight: 600; text-align: center; }
+.guia .etapa .verbo { text-align: center; font-style: italic; font-size: 8.6pt; color: var(--sepia-claro); margin-bottom: 1.2mm; }
+.guia .etapa li { font-size: 9pt; }
+.guia .alerta { margin-top: 3mm; border-left: 2.2pt solid var(--rosa); padding: 1.2mm 0 1.2mm 3mm; font-size: 9.2pt; }
+
+/* ---------- história ---------- */
+.historia p { font-size: 17.5pt; line-height: 1.45; margin-bottom: 4mm; text-align: left; hyphens: none; }
+.historia p.fala { padding-left: 7mm; font-style: italic; color: var(--sepia); }
+.historia .capitular::first-letter { font-family: "EB Garamond", serif; font-weight: 600; float: left;
+           font-size: 50pt; line-height: .82; padding: 1.2mm 2mm 0 0; color: var(--rosa); }
+
+/* ---------- cartas (flashcards, memória) ---------- */
+.grade { position: absolute; display: grid; }
+.carta { position: relative; border: 0.4pt dashed #a9a39a; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.carta .borda { position: absolute; inset: 2.6mm; border: 0.6pt solid var(--linha); border-radius: 2mm; }
+.carta .palavra { font-size: 21pt; font-weight: 500; letter-spacing: .02em; margin-top: 1mm; }
+.marca-corte { position: absolute; width: 5mm; height: 5mm; border-color: #777; border-style: solid; border-width: 0; }
+.tesoura { position: absolute; font-size: 10pt; color: #8a847a; }
+.verso .linha-idioma { display: grid; grid-template-columns: 15mm 1fr; font-size: 10.4pt; line-height: 1.25; width: 100%; padding: 0 6mm; }
+.verso .linha-idioma > span:first-child { font-size: 7.6pt; text-transform: uppercase; letter-spacing: .1em; color: var(--sepia-claro); padding-top: .9mm; }
+.verso .dica { font-size: 8.8pt; font-style: italic; color: var(--sepia); padding: 0 6.5mm; margin-top: 2mm; text-align: center; line-height: 1.28; }
+.verso .pt { font-size: 18pt; font-weight: 500; margin-bottom: 2mm; }
+
+/* ---------- utilidades ---------- */
+.centro { text-align: center; }
+.peq { font-size: 8.4pt; color: var(--sepia-claro); }
+.versal { font-variant: small-caps; letter-spacing: .05em; }
+.it { font-style: italic; }
+
+.credito { font-size: 7.4pt; color: var(--sepia-claro); margin-top: 1.6mm; font-style: normal; }
+
+/* ---------- componentes dos volumes ---------- */
+img.pd { display: block; margin: 0 auto; }
+.aba.esq { right: auto; left: 9mm; }
+.svgpag { position: absolute; left: 0; top: 0; width: 210mm; height: 297mm; pointer-events: none; }
+.tit-folha { font-family: "EB Garamond", serif; font-weight: 600; font-size: 19pt; }
+.rodape-folha { position: absolute; bottom: 12mm; left: 0; right: 0; text-align: center; }
+.guia ul.duas, ul.duas { columns: 2; column-gap: 7mm; }
+.poema .estrofe { font-size: 17pt; line-height: 1.45; text-align: center; margin-bottom: 3.5mm; font-style: italic; }
+.poema .original { font-size: 8.6pt; color: var(--sepia-claro); text-align: center; margin-top: 2mm; line-height: 1.35; }
+ol.perguntas { padding-left: 7mm; font-size: 13pt; line-height: 1.4; }
+ol.perguntas li { margin-bottom: 1.6mm; }
+.legenda-q { font-size: 11pt; font-style: italic; color: var(--sepia); margin-top: 1mm; }
+.passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm 6mm; margin-top: 6mm; }
+.passo { position: relative; border: 0.5pt solid var(--linha); border-radius: 2mm; padding: 3mm; text-align: center; }
+.passo .n { position: absolute; top: 1.5mm; left: 2.5mm; font-size: 15pt; font-weight: 600; color: var(--rosa); }
+.passo img { margin: 1mm auto; }
+.passo .txt { font-size: 12pt; line-height: 1.3; }
+.texto p { font-size: 11.5pt; line-height: 1.5; margin-bottom: 3mm; text-align: justify; hyphens: auto; }
+.texto h2 { font-weight: 600; font-size: 15pt; color: var(--musgo); margin: 4mm 0 2mm; }
+.texto ul { padding-left: 6mm; font-size: 11pt; line-height: 1.45; }
+.texto li { margin-bottom: 1mm; }
+table.tab { width: 100%; border-collapse: collapse; font-size: 9.6pt; }
+table.tab td, table.tab th { border-bottom: 0.4pt solid var(--linha); padding: 1.2mm 1.5mm; vertical-align: top; text-align: left; }
+table.tab th { font-weight: 600; color: var(--musgo); }
+.caixa { border: 0.5pt solid var(--linha); border-radius: 2mm; padding: 3mm; }
+.linhas-escrita { background: repeating-linear-gradient(transparent 0 8.4mm, var(--linha) 8.4mm 8.6mm); }
+.pares { margin-top: 6mm; }
+.par { display: grid; grid-template-columns: 1fr 20mm 1fr; align-items: center; text-align: center; border-bottom: 0.4pt solid var(--linha); padding: 3mm 0; }
+.par .ou { font-style: italic; color: var(--sepia-claro); font-size: 13pt; }
+.grade4 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm 6mm; margin-top: 5mm; }
+.estacao { text-align: center; }
+.quadro-album { margin-top: 5mm; }
+table.sumario { width: 100%; border-collapse: collapse; margin-top: 8mm; }
+table.sumario td { padding: 3mm 1mm; border-bottom: 0.4pt dotted var(--linha); font-size: 11pt; vertical-align: middle; }
+table.sumario td.pg { text-align: right; font-size: 13pt; width: 14mm; }
+.bolinha { display: inline-block; width: 4mm; height: 4mm; border-radius: 50%; margin-right: 2.5mm; vertical-align: -0.5mm; }
+table.diario td { vertical-align: top; }

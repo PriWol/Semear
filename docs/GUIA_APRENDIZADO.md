@@ -137,6 +137,15 @@ do app (o *build*) e publica no GitHub Pages. Ninguém precisa "subir arquivos" 
 **Paralelo de gestão:** é uma linha de produção com controle de qualidade embutido: se a inspeção
 (`npm run check`) reprovar, o produto não sai da fábrica.
 
+### Conferir o que se baixa (SHA-256 e "falha fechada")
+**O que é:** o SHA-256 é uma "impressão digital" de um arquivo: qualquer mudança, mesmo de um pixel, gera outra
+impressão. Antes de usar uma imagem baixada, o pipeline da coleção impressa (`tesouro-marina/`) compara a impressão
+dela com a que foi registrada quando a imagem foi conferida a olho. **Falha fechada** significa que, na dúvida
+(hash diferente ou ausente), o processo para em vez de seguir adiante. (ADR 0011)
+
+**Paralelo de gestão:** é o recebimento de mercadoria com nota fiscal: o que chega sem nota ou com nota que não
+bate não entra no estoque.
+
 ### Roteamento por hash
 Os endereços das telas ficam como `…/#/jornada/ana`. Isso permite publicar o app em qualquer
 hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
@@ -157,6 +166,7 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Pacote** | Os arquivos da sessão: roteiro, materiais, folhas da criança e ficha de registro. |
 | **Plano Livre / Família** | Plano gratuito permanente e plano pago por família (especificação §9). |
 | **Lacuna** | Linha com marco ativo mas sem atividade publicada: sinal para a curadoria. |
+| **SHA-256** | Impressão digital de um arquivo, usada para ter certeza de que ele não mudou. |
 | **Domínio** (código) | A camada do código com as regras de negócio (`src/domain/`). |
 | **Função pura** | Função sem efeitos colaterais: mesma entrada, mesma saída. |
 | **Repositório** | Ponto único de acesso aos dados guardados. |

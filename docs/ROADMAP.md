@@ -24,7 +24,7 @@ flowchart LR
 
 - **Testes automáticos** (rodam em todo PR): unitários nas regras, integração no banco do aparelho e
   ponta a ponta (e2e) simulando o uso no computador e no celular.
-- **Sem prévia por PR, por enquanto** (proposta de 14/10/2026, a ser decidida na #40 e registrada em ADR): cada mudança é testada no site publicado, logo depois do merge, então um bug chega ao site antes do teste manual. O rollback é reverter o merge no `main`, mas **dados já gravados no IndexedDB por uma versão ruim não voltam com o revert**; por isso toda mudança de formato de dados precisa de migração testada.
+- **Sem prévia por PR, por enquanto** (proposta de 14/10/2026, a ser decidida na #40 e registrada em ADR): cada mudança é testada no site publicado, logo depois do merge, então um bug chega ao site antes do teste manual. O rollback é reverter o merge no `main`, mas **dados já gravados no IndexedDB por uma versão ruim não voltam com o revert**; por isso toda mudança de formato de dados precisa de migração testada. Além disso, o IndexedDB recusa abrir um banco de versão mais nova com o app antigo (`VersionError`), então, antes de testar uma fase com migração, faça o **backup** pela tela do app, e o ADR da #40 deve exigir migrações que o app anterior consiga ler e descrever como o service worker do PWA é atualizado depois de um revert.
 - **Seus testes** (manuais, no site publicado): cada fase tem um roteiro curto, abaixo. A **família de
   exemplo** (Fase 0) deixa você testar tudo em 1 minuto, sem digitar dados.
 - As fases 0 a 3 listam os testes automáticos novos que entram com elas. Nas fases 4 a 6, eles estão nos critérios de
@@ -61,7 +61,7 @@ flowchart LR
 | Estória | O que entrega |
 |---|---|
 | #38 Versão publicada e novidades | Versão + data no topo e em Configurações; página "Novidades" com o que mudou em cada versão |
-| #39 Família de exemplo | Botão "Explorar com uma família de exemplo": cria 2 crianças posicionadas e sessões no histórico; "Apagar exemplo" remove só o que é do exemplo |
+| #39 Família de exemplo | Botão "Explorar com uma família de exemplo": cria 2 crianças posicionadas e sessões no histórico; "Apagar exemplo" remove só o que é do exemplo (famílias reais ficam intactas) |
 | #33 Ficha em 1 página | A ficha de registro cabe numa folha A4 com até 2 atividades |
 | #36 Actions por SHA | Segurança da publicação (sem efeito visível) |
 | #31 Arquivar site antigo | Repositório limpo (sem efeito visível) |
@@ -71,9 +71,9 @@ flowchart LR
 2. Toque em "Explorar com uma família de exemplo". Em segundos, aparecem Ana (5 anos) e Theo (7 anos), já posicionados.
 3. Prepare uma sessão de 40 min para a Ana com 2 atividades, imprima e salve em PDF: a ficha ocupa **uma** página.
 4. Abra "Novidades" e confira o que mudou na v0.2.
-5. Em Configurações, toque em "Apagar exemplo": o app volta para a tela de boas-vindas.
+5. Em Configurações, toque em "Apagar exemplo": o exemplo some e o app volta ao estado anterior; num navegador sem outros dados, mostra a tela de boas-vindas.
 
-**Testes automáticos novos:** unitário da família de exemplo (idades a partir de hoje, posições válidas) e da versão;
+**Testes automáticos novos:** unitário da família de exemplo (idades a partir de hoje, posições válidas) e da versão; integração "exemplo + família real: só o exemplo some";
 integração de carregar/apagar o exemplo; e2e boas-vindas → exemplo → sessão → apagar; e2e que conta as páginas da ficha no PDF.
 
 ---
