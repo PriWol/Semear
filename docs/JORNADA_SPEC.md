@@ -50,7 +50,7 @@
 | 28 | Novas vertentes | **Charlotte Mason entra** como 5ª vertente. **Unschooling não entra**, porque rejeita sequência e sondagem, que são o núcleo do produto. |
 | 29 | Monetização | ~~Teste de 30 dias e depois assinatura, sem plano gratuito~~ → **Semear Livre (grátis para sempre) + Semear Família (assinatura)**. A família paga pelo conteúdo novo toda semana, não pelo acesso ao histórico (ADR 0010). |
 | 30 | Cadastro | ~~Conta + cartão no início do teste~~ → **Livre sem conta. Teste de 14 a 30 dias com e-mail, sem cartão** (ADR 0010). |
-| 31 | Fim do teste sem assinatura | ~~Bloqueio total, só exportação~~ → **volta para o Livre**. Histórico, backup e portfólio dos períodos já registrados continuam acessíveis (ADR 0010). |
+| 31 | Fim do teste sem assinatura | ~~Bloqueio total, só exportação~~ → **volta para o Livre**. Histórico e backup continuam acessíveis; o portfólio completo continua liberado para os períodos assinados ou de teste, e os períodos no Livre geram o relatório simples (§9.2, ADR 0010). |
 | 32 | Distribuição | **PWA** (celular + computador) com **pagamento na web** (Pix e cartão). Lojas de apps ficam para depois. |
 | 33 | Preço | ~~Por criança~~ → **por família, com crianças ilimitadas e plano anual como padrão** (ADR 0010). |
 | 34 | Fotos do portfólio | **Só no aparelho**, sem nuvem. |
@@ -271,6 +271,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 {
   "contaId": "c_8f3a...",                 // identificador opaco da conta (nunca o e-mail)
   "plano": "familia" | "teste",
+  "periodicidade": "mensal" | "anual" | null,   // null no teste
   "inicio": "2026-11-01",
   "fim": "2027-11-01",
   "emitidoEm": "2026-11-01T10:00:00Z",
@@ -426,7 +427,7 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
    - **Lembrete de fechamento trimestral:** gerar o PDF do portfólio (com as fotos embutidas) e salvá-lo fora do app (e-mail, Drive, pendrive).
    - **Backup completo** (JSON + fotos num arquivo .zip) a qualquer momento, com lembrete mensal.
    - Aviso claro no onboarding: *"Seus dados e fotos ficam só neste aparelho."*
-9. **Fim do teste ou cancelamento** (decisão 31): a família volta para o plano Livre e **nunca perde o histórico**. O portfólio completo dos períodos em que ela assinou (ou testou) continua podendo ser gerado para sempre. Ver §9.
+9. **Fim do teste ou cancelamento** (decisão 31): a família volta para o plano Livre e **nunca perde o histórico**. O portfólio completo dos períodos em que ela assinou (ou testou) continua podendo ser gerado para sempre; os períodos só no Livre geram o relatório simples (frequência e marcos). Ver §9.
 
 **Antes de lançar:** validar o modelo de relatório com um advogado da área e com associações de famílias educadoras (ex.: ANED). O app **não oferece aconselhamento jurídico** e precisa dizer isso no próprio relatório.
 
@@ -465,7 +466,7 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 2. **Preço por família**, com crianças ilimitadas (valores a testar no piloto):
    - **Mensal:** R$ 29,90.
    - **Anual (padrão):** R$ 239 (cerca de R$ 20 por mês), em até 12x no cartão ou **Pix à vista**.
-3. **Família fundadora:** quem entra no piloto paga R$ 149 por ano, com o preço garantido enquanto continuar assinando. Isso financia o primeiro lote de conteúdo (§12.3).
+3. **Família fundadora:** quem entra no piloto paga R$ 149 por ano, com o preço garantido enquanto continuar assinando. É uma **pré-venda fora do app** (link de pagamento do gateway, que recebe só nome, e-mail e dados de cobrança do responsável), e a licença é ativada quando a conta existir (§12.3). Isso ajuda a financiar o primeiro lote de conteúdo.
 4. **Por que o anual como padrão:** combina com o ano letivo das famílias, reduz cancelamentos e dispensa cobrança recorrente no lançamento. O **Pix Automático exige CNPJ ativo há mais de 6 meses**, então a recorrência mensal pode entrar depois.
 5. **Distribuição:** PWA instalável, com cobrança na web por um gateway brasileiro com Pix e cartão (Asaas, Mercado Pago, Pagar.me ou Stripe BR), sem a taxa de 15–30% das lojas.
 
@@ -474,7 +475,8 @@ Recomendo **combinar as duas opções** do grilling, porque cada uma protege de 
 - **Backend mínimo**, só para quem testa ou assina: autenticação, status da assinatura e webhooks do gateway (ex.: Supabase + função serverless).
 - **O servidor não sabe quantas crianças existem**, nem quem são, nem o que aprenderam. Ele só sabe que aquela conta tem uma licença válida até uma data.
 - **Licença como "data de validade":** o app guarda um comprovante assinado (§4.2) com o início e o fim do período e funciona offline. Só a **chave pública** fica no app; a privada fica só no servidor.
-- **Regra pura no domínio:** `planoEfetivo(comprovantes, agora)` decide o plano, recebendo a data de "agora" por parâmetro (ADR 0003), com teste unitário para o vencimento e para o limite do Livre.
+- **Regra pura no domínio:** `planoEfetivo(comprovantesVerificados, agora, maiorDataVista)` decide o plano (ADR 0003). A conferência da assinatura usa WebCrypto (assíncrona) e fica em `dados/`; o domínio só recebe comprovantes **já verificados**. Testes unitários: vencimento exato, dia 7 e dia 8 da tolerância, relógio voltado, comprovante inválido descartado antes do domínio e períodos sobrepostos ou com intervalos (família que assina, cancela e volta).
+- **Vínculo com a conta:** o plano Família só vale quando o `contaId` do comprovante é o da conta conectada no aparelho. Para a regra do histórico, o app aceita comprovantes válidos de qualquer conta. **Risco aceito:** repassar um comprovante só libera o formato completo do portfólio de períodos passados, nunca conteúdo novo.
 - **Checagem e tolerância:** no plano mensal, o app tenta renovar o comprovante a cada ~7 dias; no anual, a partir de 7 dias antes do fim. Os dois têm **7 dias de tolerância** depois do fim antes de voltar ao Livre.
 - **Assinatura do comprovante:** cobre todos os campos (§4.2), inclusive `plano` e `contaId`. O algoritmo (ex.: Ed25519 via WebCrypto), a serialização canônica e a troca de chaves (`kid`) ficam no ADR de backend. Na leitura e na importação, comprovante com `plano` fora de `familia`/`teste`, datas inválidas ou `fim` antes de `inicio` é recusado.
 - **Relógio do aparelho:** o app guarda a data mais recente que já viu (incluindo o `emitidoEm` do último comprovante) e usa a maior entre ela e o relógio. Voltar a data do aparelho não estende a licença. Esse valor é validado ao ser lido (data ISO válida e não muito no futuro); um valor inválido é descartado para não bloquear o plano. **Risco aceito:** a proteção vale só no mesmo aparelho e se perde ao restaurar o backup em outro ou limpar o navegador. Fraude de licença não ameaça a privacidade da criança.
@@ -599,4 +601,4 @@ Para usar, abra no navegador e use a barra no topo:
 1. Ajustar o template do pacote com base no que as famílias disseram.
 2. Pipeline de conteúdo (§7): primeiro lote de LG.FON, LG.ESC, MA.SEN e MA.OPE.
 3. App: modelo de dados → mapa da jornada → sondagem → gerador de sessão (reaproveitando este HTML como template) → portfólio.
-4. Conta + assinatura por último, quando o núcleo estiver validado.
+4. Conta + assinatura por último, quando o núcleo estiver validado. Antes disso, a pré-venda da família fundadora (§9.3) usa só um link de pagamento do gateway, fora do app.
