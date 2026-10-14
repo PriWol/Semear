@@ -115,8 +115,8 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 **Roteiro de teste:**
 1. Família de exemplo → prepare e imprima uma sessão para a Ana.
 2. Em "Registrar sessão", digite o código impresso (ex.: `S-1014-A1`) e marque os marcos. A jornada da Ana muda.
-3. Na primeira sessão, marque um marco como *Consolidado*. Prepare e registre uma segunda sessão com esse mesmo marco,
-   também como *Consolidado*: aparece o selo "parece pronto".
+3. Na ficha da primeira sessão, marque um marco como *Consolidado* (o marco continua *Em desenvolvimento* no mapa). Prepare e registre uma
+   segunda sessão com esse mesmo marco, também como *Consolidado*: aparece o selo "parece pronto". Confirme o marco no mapa: o selo some.
 4. Busque "sílaba" (sem acento) e imprima a atividade encontrada.
 
 **Testes automáticos novos:** unitário do registro e do selo "parece pronto" e da busca sem acento; integração do
