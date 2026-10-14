@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Semear · Direções visuais</title>
+<!-- Protótipo de design (estória #14). Não é código do app: serve para escolher a direção visual. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&family=Andika&display=swap" rel="stylesheet" />
+<style>
+  /* ---------- Tokens das duas direções ---------- */
+  :root, [data-direcao="a"] {
+    --fundo: #f8f5ee; --papel: #fffdf8; --tinta: #1e2b23; --suave: #5d6a61; --linha: #e4ddcd;
+    --principal: #355e45; --principal-claro: #e3ece3; --destaque: #b8862f; --destaque-claro: #f6ecd8;
+    --alerta: #b0573e; --alerta-claro: #f7e4dc;
+    --titulo: 'Fraunces', Georgia, serif; --texto: 'Inter', system-ui, sans-serif;
+    --raio: 14px; --raio-p: 10px;
+  }
+  [data-direcao="b"] {
+    --fundo: #f6f3ec; --papel: #fffefb; --tinta: #1c2433; --suave: #5a6272; --linha: #e2ddd2;
+    --principal: #23395b; --principal-claro: #e4e9f1; --destaque: #a88435; --destaque-claro: #f4ecd9;
+    --alerta: #7a2e3a; --alerta-claro: #f3e2e4;
+    --titulo: 'Libre Caslon Text', Georgia, serif; --texto: 'Source Sans 3', system-ui, sans-serif;
+    --raio: 6px; --raio-p: 4px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #ebe7de; color: var(--tinta); font-family: var(--texto); line-height: 1.5; }
+
+  /* ---------- Barra de escolha (fora do design) ---------- */
+  .escolha { position: sticky; top: 0; z-index: 10; background: #24221f; color: #f3efe6; padding: 12px 16px;
+    display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: center; font: 500 14px/1.3 system-ui, sans-serif; }
+  .escolha button { font: inherit; border: 1px solid #6b665d; background: transparent; color: inherit; padding: 8px 14px; border-radius: 99px; cursor: pointer; }
+  .escolha button[aria-pressed="true"] { background: #f3efe6; color: #24221f; border-color: #f3efe6; }
+  .escolha .dica { opacity: .75; }
+
+  .palco { max-width: 1180px; margin: 0 auto; padding: 24px 16px 64px; }
+  .direcao-info { background: var(--papel); border: 1px solid var(--linha); border-radius: var(--raio); padding: 20px 22px; margin-bottom: 24px; }
+  .direcao-info h1 { font-family: var(--titulo); font-weight: 600; font-size: 1.7rem; margin: 0 0 4px; color: var(--principal); }
+  .direcao-info p { margin: 4px 0; color: var(--suave); max-width: 70ch; }
+  .amostras { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .amostra { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--suave); }
+  .amostra i { width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(0,0,0,.08); display: inline-block; }
+
+  .telas { display: grid; grid-template-columns: 390px 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 960px) { .telas { grid-template-columns: minmax(0, 1fr); } }
+  .rotulo-tela { font: 600 12px/1 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #6f695f; margin: 0 0 8px; }
+
+  /* ---------- App (comum às duas direções) ---------- */
+  .app { background: var(--fundo); border-radius: 22px; overflow: hidden; box-shadow: 0 10px 30px rgba(30, 30, 20, .12); border: 1px solid rgba(0,0,0,.06); }
+  .app.celular { max-width: 390px; }
+  .topo { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: var(--papel); border-bottom: 1px solid var(--linha); }
+  .marca { font-family: var(--titulo); font-weight: 600; font-size: 1.3rem; color: var(--principal); display: flex; align-items: center; gap: 8px; text-decoration: none; }
+  .marca svg { width: 22px; height: 22px; }
+  .versao { font-size: 11px; color: var(--suave); border: 1px solid var(--linha); padding: 2px 8px; border-radius: 99px; }
+  .menu { display: flex; gap: 2px; }
+  .menu a { color: var(--suave); text-decoration: none; padding: 6px 12px; border-radius: 99px; font-weight: 500; font-size: 14px; }
+  .menu a.ativo { color: var(--principal); background: var(--principal-claro); }
+  .conteudo { padding: 20px 18px 24px; }
+  .saudacao { font-family: var(--titulo); font-weight: 400; font-size: 1.65rem; line-height: 1.2; margin: 0 0 2px; }
+  .data { color: var(--suave); font-size: 14px; margin: 0 0 18px; }
+  .sobretitulo { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--destaque); font-weight: 600; margin: 0 0 6px; }
+  .cartao { background: var(--papel); border: 1px solid var(--linha); border-radius: var(--raio); padding: 18px; margin-bottom: 14px; }
+  .crianca { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-family: var(--titulo); font-size: 1.2rem; color: var(--principal); background: var(--principal-claro); }
+  .crianca h2 { font-family: var(--titulo); font-weight: 600; font-size: 1.25rem; margin: 0; }
+  .crianca span { color: var(--suave); font-size: 13px; }
+  .proxima { background: var(--destaque-claro); border-radius: var(--raio-p); padding: 12px 14px; margin-bottom: 14px; font-size: 14px; }
+  .proxima b { display: block; margin-bottom: 2px; }
+  .dominios { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 10px; }
+  .dominios li { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font-size: 14px; }
+  .barra { grid-column: 1 / -1; height: 6px; background: var(--principal-claro); border-radius: 99px; overflow: hidden; }
+  .barra i { display: block; height: 100%; background: var(--principal); border-radius: 99px; }
+  .num { color: var(--suave); font-variant-numeric: tabular-nums; }
+  .semana { display: flex; gap: 6px; margin: 0 0 14px; }
+  .dia { flex: 1; text-align: center; font-size: 12px; color: var(--suave); padding: 6px 0; border-radius: var(--raio-p); border: 1px solid var(--linha); }
+  .dia.feito { background: var(--principal); color: #fff; border-color: var(--principal); }
+  .dia.hoje { border-color: var(--destaque); color: var(--tinta); font-weight: 600; }
+  .acoes { display: flex; gap: 8px; flex-wrap: wrap; }
+  .botao { font: 600 14px/1 var(--texto); padding: 12px 16px; border-radius: var(--raio-p); border: 1px solid var(--linha); background: var(--papel); color: var(--tinta); text-decoration: none; cursor: pointer; }
+  .botao.primario { background: var(--principal); color: #fff; border-color: var(--principal); flex: 1; text-align: center; }
+  .lista { list-style: none; padding: 0; margin: 0; }
+  .lista li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--linha); font-size: 14px; }
+  .lista li:first-child { border-top: 0; }
+  .codigo { font-variant-numeric: tabular-nums; color: var(--suave); }
+  .selo { font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--principal-claro); color: var(--principal); white-space: nowrap; }
+  .selo.pendente { background: var(--destaque-claro); color: #7a5a1e; }
+  .navegacao-inferior { display: flex; justify-content: space-around; background: var(--papel); border-top: 1px solid var(--linha); padding: 8px 0 12px; }
+  .navegacao-inferior a { display: grid; justify-items: center; gap: 2px; font-size: 11px; color: var(--suave); text-decoration: none; }
+  .navegacao-inferior a.ativo { color: var(--principal); font-weight: 600; }
+  .navegacao-inferior svg { width: 22px; height: 22px; }
+
+  /* Jornada (computador) */
+  .jornada { display: grid; grid-template-columns: 220px 1fr; min-height: 520px; }
+  @media (max-width: 700px) { .jornada { grid-template-columns: 1fr; } .lateral, .menu { display: none; } }
+  .lateral { background: var(--papel); border-right: 1px solid var(--linha); padding: 18px 12px; }
+  .lateral p { margin: 0 8px 8px; }
+  .lateral a { display: flex; justify-content: space-between; padding: 8px 10px; border-radius: var(--raio-p); color: var(--tinta); text-decoration: none; font-size: 14px; }
+  .lateral a.ativo { background: var(--principal-claro); color: var(--principal); font-weight: 600; }
+  .titulo-pagina { font-family: var(--titulo); font-weight: 400; font-size: 1.8rem; margin: 0 0 4px; }
+  .linha-jornada { margin: 18px 0 0; }
+  .linha-jornada h3 { font-family: var(--titulo); font-weight: 600; font-size: 1.1rem; margin: 0 0 10px; display: flex; justify-content: space-between; align-items: baseline; }
+  .linha-jornada h3 span { font-family: var(--texto); font-weight: 400; font-size: 13px; color: var(--suave); }
+  .marcos { list-style: none; padding: 0; margin: 0; position: relative; }
+  .marcos::before { content: ""; position: absolute; left: 11px; top: 12px; bottom: 12px; width: 2px; background: var(--linha); }
+  .marcos li { position: relative; display: grid; grid-template-columns: 24px 1fr auto; gap: 12px; align-items: center; padding: 8px 0; font-size: 14px; }
+  .ponto { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--linha); background: var(--papel); position: relative; z-index: 1; }
+  .consolidado .ponto { background: var(--principal); border-color: var(--principal); }
+  .ativo-m .ponto { border-color: var(--destaque); background: var(--destaque-claro); box-shadow: 0 0 0 4px var(--destaque-claro); }
+  .ativo-m { font-weight: 600; }
+  .consolidado { color: var(--suave); }
+  .ritmo { font-size: 13px; color: var(--suave); border-left: 3px solid var(--destaque); padding: 4px 0 4px 12px; margin: 16px 0 0; }
+
+  /* Folha impressa */
+  .folha { background: #fff; max-width: 560px; aspect-ratio: 210 / 297; margin: 0 auto; padding: 36px 40px; box-shadow: 0 10px 30px rgba(30,30,20,.12); color: #222; display: flex; flex-direction: column; }
+  .folha header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1.5px solid #222; padding-bottom: 8px; }
+  .folha .titulo-folha { font-family: var(--titulo); font-size: 1.5rem; margin: 0; font-weight: 600; }
+  .folha .meta { font-size: 12px; color: #555; text-align: right; }
+  .folha .ornamento { text-align: center; color: #999; margin: 10px 0 6px; letter-spacing: .4em; }
+  .folha .instrucao { font-family: 'Andika', var(--texto); font-size: 1.15rem; margin: 6px 0 18px; text-align: center; }
+  .figuras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; flex: 1; }
+  .figura { border: 1.5px solid #333; border-radius: 12px; display: grid; place-items: center; padding: 10px; }
+  .figura svg { width: 70%; max-width: 110px; height: auto; }
+  .figura small { font-family: 'Andika', sans-serif; font-size: 1rem; margin-top: 6px; letter-spacing: .15em; }
+  .folha footer { font-size: 11px; color: #777; display: flex; justify-content: space-between; margin-top: 14px; border-top: 1px solid #ccc; padding-top: 6px; }
+
+  .notas { margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .notas .cartao h3 { font-family: var(--titulo); font-weight: 600; margin: 0 0 6px; font-size: 1.05rem; color: var(--principal); }
+  .notas .cartao p, .notas .cartao li { font-size: 14px; color: var(--suave); }
+  .notas ul { padding-left: 18px; margin: 0; }
+</style>
+</head>
+<body data-direcao="a">
+  <div class="escolha" role="group" aria-label="Escolher direção visual">
+    <span class="dica">Direção visual:</span>
+    <button type="button" data-escolher="a" aria-pressed="true">A · Caderno de botânica</button>
+    <button type="button" data-escolher="b" aria-pressed="false">B · Biblioteca clássica</button>
+  </div>
+
+  <main class="palco">
+    <section class="direcao-info">
+      <h1 data-texto-a="A · Caderno de botânica" data-texto-b="B · Biblioteca clássica">A · Caderno de botânica</h1>
+      <p data-texto-a="Papel marfim, verde-musgo e ocre, como um caderno de naturalista. Títulos numa serifada moderna (Fraunces) e texto limpo (Inter). Cantos suaves e muito respiro: acolhedor e calmo, combina com Montessori, Waldorf e Charlotte Mason."
+         data-texto-b="Papel creme, azul-tinta e dourado, como a página de rosto de um livro antigo. Títulos numa serifada de livro (Libre Caslon) e texto limpo (Source Sans). Cantos retos e filetes finos: sóbrio e elegante, combina com o Clássico e o Religioso.">Papel marfim, verde-musgo e ocre, como um caderno de naturalista. Títulos numa serifada moderna (Fraunces) e texto limpo (Inter). Cantos suaves e muito respiro: acolhedor e calmo, combina com Montessori, Waldorf e Charlotte Mason.</p>
+      <p>Nas duas: menos emojis na interface, ícones de linha finos, contraste acessível (AA) e folhas que funcionam em preto e branco.</p>
+      <div class="amostras" aria-label="Paleta">
+        <span class="amostra"><i style="background:var(--fundo)"></i>Fundo</span>
+        <span class="amostra"><i style="background:var(--principal)"></i>Principal</span>
+        <span class="amostra"><i style="background:var(--destaque)"></i>Destaque</span>
+        <span class="amostra"><i style="background:var(--alerta)"></i>Alerta</span>
+        <span class="amostra"><i style="background:var(--tinta)"></i>Texto</span>
+      </div>
+    </section>
+
+    <div class="telas">
+      <!-- ===== Início no celular ===== -->
+      <div>
+        <p class="rotulo-tela">Início · celular</p>
+        <div class="app celular">
+          <div class="topo">
+            <a class="marca" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 21V11"/><path d="M12 13c0-4 3-7 7-7 0 4-3 7-7 7Z"/><path d="M12 15c0-3.3-2.7-6-6-6 0 3.3 2.7 6 6 6Z"/></svg>Semear</a>
+            <span class="versao" title="Versão publicada">v0.3 · 14 out</span>
+          </div>
+          <div class="conteudo">
+            <p class="saudacao">Bom dia, Priscila</p>
+            <p class="data">Terça-feira, 14 de outubro</p>
+
+            <article class="cartao">
+              <div class="crianca">
+                <span class="avatar">A</span>
+                <div><h2>Ana</h2><span>5 anos · Montessori</span></div>
+              </div>
+              <div class="proxima"><b>Próxima sessão sugerida</b>Sílabas iniciais + contagem até 20 · 40 min</div>
+              <p class="sobretitulo">Esta semana</p>
+              <div class="semana" aria-label="Sessões da semana">
+                <span class="dia feito">S</span><span class="dia hoje">T</span><span class="dia">Q</span><span class="dia feito">Q</span><span class="dia">S</span>
+              </div>
+              <ul class="dominios">
+                <li>Linguagem <span class="num">6/15</span><span class="barra"><i style="width:40%"></i></span></li>
+                <li>Matemática <span class="num">8/14</span><span class="barra"><i style="width:57%"></i></span></li>
+              </ul>
+              <div class="acoes">
+                <a class="botao primario" href="#">Preparar sessão</a>
+                <a class="botao" href="#">Jornada</a>
+              </div>
+            </article>
+
+            <article class="cartao">
+              <p class="sobretitulo">Últimas sessões</p>
+              <ul class="lista">
+                <li><span>Caça às sílabas <span class="codigo">· S-1013-A1</span></span><span class="selo">registrada</span></li>
+                <li><span>Feira dos números <span class="codigo">· S-1010-A1</span></span><span class="selo pendente">registrar</span></li>
+              </ul>
+            </article>
+          </div>
+          <nav class="navegacao-inferior" aria-label="Navegação">
+            <a class="ativo" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11 12 4l8 7v9H4z"/></svg>Início</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 19c3-1 4-4 7-7s5-5 7-7"/><circle cx="5" cy="19" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="5" r="1.5"/></svg>Jornada</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>Sessões</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4v16H5zM10 4h4v16h-4zM15 5l4 1-3 14-4-1z"/></svg>Estante</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- ===== Jornada no computador ===== -->
+      <div>
+        <p class="rotulo-tela">Jornada · computador</p>
+        <div class="app">
+          <div class="topo">
+            <a class="marca" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 21V11"/><path d="M12 13c0-4 3-7 7-7 0 4-3 7-7 7Z"/><path d="M12 15c0-3.3-2.7-6-6-6 0 3.3 2.7 6 6 6Z"/></svg>Semear</a>
+            <nav class="menu"><a href="#">Início</a><a class="ativo" href="#">Jornada</a><a href="#">Sessões</a><a href="#">Estante</a><a href="#">Família</a></nav>
+          </div>
+          <div class="jornada">
+            <aside class="lateral">
+              <p class="sobretitulo">Domínios · Ana</p>
+              <a class="ativo" href="#">Linguagem <span>6/15</span></a>
+              <a href="#">Matemática <span>8/14</span></a>
+              <a href="#">Artes <span>—</span></a>
+              <a href="#">Natureza <span>—</span></a>
+              <a href="#">Línguas <span>—</span></a>
+            </aside>
+            <div class="conteudo">
+              <p class="sobretitulo">Linguagem e alfabetização</p>
+              <h2 class="titulo-pagina">Onde a Ana está</h2>
+              <p class="data">Os marcos em destaque são os que vão para as próximas sessões.</p>
+
+              <section class="linha-jornada">
+                <h3>Consciência fonológica <span>3 de 8 consolidados</span></h3>
+                <ol class="marcos">
+                  <li class="consolidado"><span class="ponto"></span>Percebe rimas em canções<span class="selo">consolidado</span></li>
+                  <li class="consolidado"><span class="ponto"></span>Bate as sílabas de palavras<span class="selo">consolidado</span></li>
+                  <li class="consolidado"><span class="ponto"></span>Conta sílabas de palavras curtas<span class="selo">consolidado</span></li>
+                  <li class="ativo-m"><span class="ponto"></span>Identifica a sílaba inicial<span class="selo pendente">em desenvolvimento</span></li>
+                  <li><span class="ponto"></span>Encontra palavras com a mesma sílaba inicial<span></span></li>
+                </ol>
+              </section>
+              <p class="ritmo">No Montessori, a escrita com o alfabeto móvel costuma vir antes da leitura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Folha impressa ===== -->
+    <div style="margin-top:32px">
+      <p class="rotulo-tela">Folha da criança · impressa em A4 (preto e branco)</p>
+      <article class="folha">
+        <header>
+          <h3 class="titulo-folha">Caça às sílabas</h3>
+          <div class="meta">Ana · 14/10<br />S-1014-A1</div>
+        </header>
+        <p class="ornamento">❦</p>
+        <p class="instrucao">Pinte as figuras que começam com <b>BO</b>.</p>
+        <div class="figuras">
+          <div class="figura"><svg viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="2"><circle cx="32" cy="32" r="20"/><path d="M14 26c10 4 26 4 36 0M14 38c10-4 26-4 36 0M32 12v40"/></svg><small>BOLA</small></div>
+          <div class="figura"><svg viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="2"><path d="M18 52V28l14-12 14 12v24z"/><path d="M28 52V40h8v12"/></svg><small>CASA</small></div>
+          <div class="figura"><svg viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="2"><path d="M16 38c0-8 7-14 16-14s16 6 16 14v4H16z"/><path d="M12 42h40"/><circle cx="32" cy="20" r="3"/></svg><small>BOLO</small></div>
+          <div class="figura"><svg viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="2"><path d="M20 44c-4-10 2-24 12-24s16 14 12 24z"/><path d="M26 30h0M38 30h0" stroke-linecap="round" stroke-width="4"/><path d="M28 38c2 2 6 2 8 0"/></svg><small>SAPO</small></div>
+          <div class="figura"><svg viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="2"><path d="M12 40h40l-6 10H18z"/><path d="M32 40V12l14 20H32"/></svg><small>BOTE</small></div>
+          <div class="figura"><svg viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="2"><circle cx="32" cy="30" r="12"/><path d="M32 42v12M24 54h16"/></svg><small>MAÇÃ</small></div>
+        </div>
+        <footer><span>Semear · Linguagem · Consciência fonológica</span><span>LG.FON.04</span></footer>
+      </article>
+      <p class="data" style="text-align:center;margin-top:10px">As ilustrações aqui são provisórias; o banco definitivo é a estória #24.</p>
+    </div>
+
+    <div class="notas">
+      <div class="cartao"><h3>O que muda no app</h3><ul><li>Navegação inferior no celular.</li><li>Cartão da criança com "próxima sessão" e a semana.</li><li>Jornada como linha do tempo.</li><li>Versão publicada visível no topo.</li></ul></div>
+      <div class="cartao"><h3>O que muda nas folhas</h3><ul><li>Título serifado e filete fino.</li><li>Ilustrações de traço, sem cor de fundo.</li><li>Código da sessão sempre no canto.</li></ul></div>
+      <div class="cartao"><h3>O que fica igual</h3><ul><li>Letras das folhas da criança (Andika e Playwrite BR, §5.8).</li><li>Fluxos e telas atuais.</li><li>Tudo funciona sem internet depois de aberto.</li></ul></div>
+    </div>
+  </main>
+
+<script>
+  const textos = document.querySelectorAll('[data-texto-a]');
+  document.querySelectorAll('[data-escolher]').forEach((b) =>
+    b.addEventListener('click', () => {
+      const d = b.dataset.escolher;
+      document.body.dataset.direcao = d;
+      document.querySelectorAll('[data-escolher]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      textos.forEach((t) => (t.textContent = t.getAttribute('data-texto-' + d)));
+    }),
+  );
+</script>
+</body>
+</html>

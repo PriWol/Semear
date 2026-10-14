@@ -20,6 +20,7 @@ e ficha de registro. **A criança nunca usa o app.**
 | Documento | Para quê |
 |---|---|
 | [`docs/JORNADA_SPEC.md`](docs/JORNADA_SPEC.md) | Especificação do produto e decisões |
+| [`docs/ROADMAP.md`](docs/ROADMAP.md) | Roteiro por fases, com o que testar no fim de cada uma |
 | [`CLAUDE.md`](CLAUDE.md) | Regras do projeto (para pessoas e para a IA) |
 | [`docs/adr/`](docs/adr/) | Decisões técnicas e seus porquês |
 | [`docs/GUIA_APRENDIZADO.md`](docs/GUIA_APRENDIZADO.md) | Conceitos técnicos explicados para gestão |
