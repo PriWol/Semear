@@ -22,9 +22,11 @@ catch {
     const out = [];
     document.querySelectorAll('.pagina').forEach((pg, i) => {
       const r = pg.getBoundingClientRect();
-      pg.querySelectorAll('[data-check], p, h1, h2, h3, li, td, .carta, .bloco').forEach(el => {
+      pg.querySelectorAll('[data-check], img, svg, p, h1, h2, h3, li, td, .carta, .bloco').forEach(el => {
         const e = el.getBoundingClientRect();
         if (e.width === 0) return;
+        // camada decorativa que cobre a página inteira (fundo/moldura) sangra de propósito
+        if (el.tagName.toLowerCase() === 'svg' && e.width >= r.width * 0.95 && e.height >= r.height * 0.95) return;
         const mm = 96 / 25.4, m = 8 * mm; // nada a menos de 8 mm da borda
         if (e.left < r.left + m - 0.5 || e.right > r.right - m + 0.5 ||
             e.top < r.top + m - 0.5 || e.bottom > r.bottom - m + 0.5)
