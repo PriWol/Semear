@@ -192,6 +192,14 @@ describe('repositório: carregar e apagar o exemplo', () => {
     expect((backup as { familia: { exemplo?: boolean } }).familia.exemplo).toBe(true);
   });
 
+  it('importar um backup real depois de carregar o exemplo não deixa data de backup falsa', async () => {
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
+    const real = { ...(await repo.exportar(AGORA)), familia: familia(), criancas: [crianca()] };
+    await repo.importar({ ...real, estados: [], historico: [], sessoes: [] });
+    expect(await repo.ultimoBackup()).toBeNull(); // o lembrete de backup decide pelas crianças reais
+    expect((await repo.criancas()).map((c) => c.nome)).toEqual(['Ana']);
+  });
+
   it('recusa um backup com crianças de exemplo numa família sem o marcador', async () => {
     const dados = criarExemplo(idx, HOJE);
     const base = await repo.exportar(AGORA);

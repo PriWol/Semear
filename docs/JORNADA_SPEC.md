@@ -79,7 +79,7 @@
 > posicionados) deixa explorar o app sem cadastrar nada. Todo registro do exemplo leva um marcador, e "Apagar exemplo"
 > remove só eles: o que a pessoa cadastrar durante o exemplo é mantido, e a família fica para as crianças reais não
 > ficarem órfãs. A **versão publicada** aparece no topo e em Configurações, com a página "Novidades" e o aviso
-> "Nova versão disponível". Detalhes: estórias #38 e #39 e ADR 0012.
+> "Nova versão disponível". Detalhes: estórias #38 e #39 e ADRs 0012 e 0013.
 
 ---
 

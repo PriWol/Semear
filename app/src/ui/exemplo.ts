@@ -1,4 +1,4 @@
-// Família de exemplo (#39): a faixa que aparece em todas as telas e a saída segura do exemplo.
+// Família de exemplo (#39, ADR 0013): a faixa que aparece em todas as telas e a saída segura do exemplo.
 import type { Contexto } from './app';
 import { html, type HtmlSeguro } from './html';
 
