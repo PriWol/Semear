@@ -41,4 +41,12 @@ async function iniciar() {
   );
 }
 
+/** Apaga os caches do site antigo (ADR 0009); o app novo usa só os caches do próprio service worker. */
+async function limparCachesAntigos() {
+  if (!('caches' in window)) return;
+  const nomes = await caches.keys();
+  await Promise.all(nomes.filter((n) => n.startsWith('semear-v')).map((n) => caches.delete(n)));
+}
+
 void iniciar();
+void limparCachesAntigos();

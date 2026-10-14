@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Semear</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // Endereços antigos (ex.: /Semear/weekly-plan) ou inexistentes voltam para o início do app.
+      // No GitHub Pages de projeto, o app vive em /<repositório>/; em domínio próprio, na raiz.
+      (function () {
+        var partes = location.pathname.split('/');
+        var base = location.hostname.endsWith('github.io') && partes[1] ? '/' + partes[1] + '/' : '/';
+        location.replace(base);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando para o <a href="/">Semear</a>…</p>
+  </body>
+</html>

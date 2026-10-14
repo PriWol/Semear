@@ -6,7 +6,7 @@ Programa educacional para famílias brasileiras que querem ser protagonistas na 
 
 ## 🎯 Acesse o App
 
-**🌐 Site Online:** https://priwol.github.io/Semear/
+**🌐 Site Online:** https://priwol.github.io/Semear/ (app novo, pasta `app/`, publicado automaticamente; veja `CLAUDE.md`)
 
 ---
 
