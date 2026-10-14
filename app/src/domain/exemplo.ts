@@ -82,13 +82,18 @@ export function criarExemplo(idx: IndiceConteudo, hoje: Date): DadosExemplo {
     return { criancaId: m.id, estados: atual };
   });
 
-  const publicadas = idx.conteudo.atividades.filter((a) => a.autoria.status === 'publicado');
-  const daCrianca = (m: Modelo): Atividade[] =>
-    Object.values(m.posicoes).flatMap((marcoId) => idx.atividadesDoMarco(marcoId));
+  // Primeiro as atividades dos marcos em que a criança está; depois as das mesmas linhas (revisão).
+  // Nunca uma atividade de outra trilha: quem usa o exemplo para entender o app veria uma incoerência.
+  const daCrianca = (m: Modelo): Atividade[] => {
+    const dosMarcos = Object.values(m.posicoes).flatMap((marcoId) =>
+      idx.atividadesDoMarco(marcoId),
+    );
+    const dasLinhas = Object.keys(m.posicoes).flatMap((linhaId) => idx.atividadesDaLinha(linhaId));
+    return [...new Set([...dosMarcos, ...dasLinhas])];
+  };
   const planos: { modelo: Modelo; atividade: Atividade | undefined; diasAtras: number }[] = [
     { modelo: ANA, atividade: daCrianca(ANA)[0], diasAtras: 10 },
-    // O Theo ainda não tem atividade publicada nos marcos dele: usa qualquer uma, só para o histórico.
-    { modelo: THEO, atividade: daCrianca(THEO)[0] ?? publicadas[0], diasAtras: 6 },
+    { modelo: THEO, atividade: daCrianca(THEO)[0], diasAtras: 6 },
     { modelo: ANA, atividade: daCrianca(ANA)[1], diasAtras: 3 },
   ];
 

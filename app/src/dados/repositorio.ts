@@ -68,7 +68,7 @@ export interface Repositorio {
    * remove SÓ os registros marcados como exemplo: o que a pessoa cadastrou continua no aparelho.
    * Se ela cadastrou crianças, a família é mantida (sem o marcador) para elas não ficarem órfãs.
    */
-  apagarExemplo(): Promise<void>;
+  apagarExemplo(): Promise<{ familiaMantida: boolean }>;
 }
 
 interface Esquema extends DBSchema {
@@ -253,6 +253,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
     },
 
     async apagarExemplo() {
+      let familiaMantida = false;
       const tx = db.transaction(LOJAS, 'readwrite');
       // Nunca clear(): uma criança real cadastrada durante o exemplo não tem o marcador e fica.
       const doExemplo = (await tx.objectStore('criancas').getAll()).filter((c) => c.exemplo);
@@ -281,6 +282,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
           const real: Familia = { ...familia };
           delete real.exemplo;
           await tx.objectStore('config').put(real, CHAVE_FAMILIA);
+          familiaMantida = true;
         } else {
           await tx.objectStore('config').delete(CHAVE_FAMILIA);
         }
@@ -288,6 +290,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
         await tx.objectStore('config').delete(CHAVE_BACKUP);
       }
       await tx.done;
+      return { familiaMantida };
     },
   };
 }
@@ -339,6 +342,13 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
       falha('dados da família incompletos ou desconhecidos');
     }
   }
+  // Registros de exemplo só fazem sentido junto da família de exemplo: sem ela, a faixa "Apagar exemplo"
+  // não aparece e Ana e Theo ficariam misturados aos dados reais, sem como apagá-los em bloco.
+  const familiaDeExemplo = ehObjeto(f) && f.exemplo === true;
+  const temExemplo = [...(b.criancas as unknown[]), ...(b.sessoes as unknown[])].some(
+    (r) => ehObjeto(r) && r.exemplo === true,
+  );
+  if (temExemplo && !familiaDeExemplo) falha('registros de exemplo sem a família de exemplo');
   for (const c of b.criancas as unknown[]) {
     if (!ehObjeto(c) || !ehTexto(c.id) || !ehTexto(c.nome)) falha('criança sem id ou nome');
     const cr = c as Record<string, unknown>;

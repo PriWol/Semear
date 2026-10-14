@@ -43,6 +43,21 @@ describe('família de exemplo (#39)', () => {
     }
   });
 
+  it('toda sessão usa uma atividade da trilha da própria criança', () => {
+    const { sessoes } = criarExemplo(idx, HOJE);
+    const linhasDe = { 'exemplo-ana': ['LG.FON', 'MA.SEN'], 'exemplo-theo': ['LG.FON', 'MA.SEN'] };
+    for (const s of sessoes) {
+      for (const id of s.atividadeIds) {
+        const linhas = (idx.atividade(id)?.marcos ?? []).map((m) =>
+          m.split('.').slice(0, 2).join('.'),
+        );
+        expect(linhas.some((l) => linhasDe[s.criancaId as keyof typeof linhasDe].includes(l))).toBe(
+          true,
+        );
+      }
+    }
+  });
+
   it('cria 3 sessões no passado, com atividades publicadas e códigos únicos', () => {
     const { sessoes } = criarExemplo(idx, HOJE);
     expect(sessoes).toHaveLength(3);
@@ -146,8 +161,9 @@ describe('repositório: carregar e apagar o exemplo', () => {
     await repo.salvarFamilia({ ...familia(), exemplo: true, educador: 'Priscila' });
     await repo.salvarCrianca(crianca({ id: 'real', nome: 'Lia' }));
 
-    await repo.apagarExemplo();
+    const resultado = await repo.apagarExemplo();
 
+    expect(resultado.familiaMantida).toBe(true); // a tela leva a pessoa a conferir os dados da família
     const depois = await repo.familia();
     expect(depois?.educador).toBe('Priscila');
     expect(depois?.exemplo).toBeUndefined(); // agora é uma família de verdade
@@ -159,7 +175,8 @@ describe('repositório: carregar e apagar o exemplo', () => {
   it('se editou a família de exemplo mas não cadastrou ninguém, o exemplo inteiro sai', async () => {
     await repo.carregarExemplo(criarExemplo(idx, HOJE), AGORA);
     await repo.salvarFamilia({ ...familia(), exemplo: true, educador: 'Priscila' });
-    await repo.apagarExemplo();
+    const resultado = await repo.apagarExemplo();
+    expect(resultado.familiaMantida).toBe(false);
     expect(await repo.familia()).toBeNull();
     expect(await repo.criancas()).toEqual([]);
   });
@@ -175,6 +192,16 @@ describe('repositório: carregar e apagar o exemplo', () => {
     const backup = JSON.parse(JSON.stringify(await repo.exportar(AGORA))) as unknown;
     expect(() => validarBackup(backup)).not.toThrow();
     expect((backup as { familia: { exemplo?: boolean } }).familia.exemplo).toBe(true);
+  });
+
+  it('recusa um backup com crianças de exemplo numa família sem o marcador', async () => {
+    const dados = criarExemplo(idx, HOJE);
+    const base = await repo.exportar(AGORA);
+    const incoerente = { ...base, familia: familia(), criancas: dados.criancas }; // Ana e Theo, família real
+    expect(() => validarBackup(incoerente)).toThrow(/sem a família de exemplo/);
+    // O inverso é aceito: família de exemplo com crianças reais (a pessoa cadastrou durante o exemplo).
+    const coerente = { ...base, familia: dados.familia, criancas: [crianca()] };
+    expect(() => validarBackup(coerente)).not.toThrow();
   });
 
   it('recusa um backup com o marcador de exemplo adulterado', async () => {

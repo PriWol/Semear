@@ -74,7 +74,9 @@ test('editar a família de exemplo e cadastrar uma criança: apagar o exemplo n�
 
   await page.locator('#faixa-exemplo').getByRole('button', { name: 'Apagar exemplo' }).click();
 
-  // Ana e Theo saem; a família e a Lia ficam, e a faixa some.
+  // Ana e Theo saem; a família fica (a Lia precisa dela) e a pessoa é levada a conferir os dados dela.
+  await expect(page.getByRole('heading', { name: 'Família' })).toBeVisible();
+  await expect(page.getByLabel('Seu nome (educador)')).toHaveValue('Priscila');
   await page.goto('./#/');
   await expect(page.getByRole('heading', { name: 'Olá, Priscila!' })).toBeVisible();
   await expect(page.locator('.crianca-cartao')).toHaveCount(1);

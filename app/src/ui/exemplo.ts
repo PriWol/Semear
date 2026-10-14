@@ -25,7 +25,14 @@ export async function sairDoExemplo(ctx: Contexto, destino: string): Promise<voi
       'O que você cadastrou continua neste aparelho.',
   );
   if (!ok) return;
-  await ctx.repo.apagarExemplo();
+  const { familiaMantida } = await ctx.repo.apagarExemplo();
+  if (familiaMantida) {
+    // A família do exemplo ("Marina", Montessori…) ficou porque há crianças reais: sem conferir, os dados
+    // fictícios iriam para o cabeçalho dos pacotes impressos.
+    ctx.avisar('Exemplo apagado. Confira os dados da sua família.');
+    ctx.ir('/familia');
+    return;
+  }
   ctx.avisar('Exemplo apagado.');
   ctx.ir(destino);
 }
