@@ -1,6 +1,6 @@
 # O Grande Tesouro de Marina
 
-> **Onde estão os PDFs:** na Release [`tesouro-marina`](https://github.com/PriWol/Semear/releases/tag/tesouro-marina), atualizada automaticamente a cada merge no `main` que altere esta pasta (workflow `publicar-tesouro.yml`, ADR 0010). Os PDFs e as páginas de inspeção não ficam no Git; as tabelas abaixo citam os nomes dos arquivos.
+> **Onde estão os PDFs:** na Release [`tesouro-marina`](https://github.com/PriWol/Semear/releases/tag/tesouro-marina), atualizada automaticamente a cada merge no `main` que altere esta pasta (workflow `publicar-tesouro.yml`, ADR 0011). Os PDFs e as páginas de inspeção não ficam no Git; as tabelas abaixo citam os nomes dos arquivos.
 
 Currículo clássico ilustrado para a infância: 8 volumes, 544 páginas planejadas, em A4 imprimível.
 
@@ -36,7 +36,7 @@ Currículo clássico ilustrado para a infância: 8 volumes, 544 páginas planeja
 `volume3/volume3-impressao.pdf`, `volume3/volume3-tela.pdf`, `volume3/inspecao/`, conteúdo em `editorial/volume3.py`.
 
 ## Rede e privacidade
-O único acesso externo do pipeline é o download de páginas digitalizadas do Internet Archive (`editorial/fontes_v1.py`), feito só no build dos PDFs, fora do app. Nenhum dado de família é enviado. Cada página baixada é conferida pelo SHA-256 registrado em `editorial/dominio_publico/paginas.sha256.json`; página sem hash é recusada (para catalogar uma nova, confira a imagem e rode `python3 fontes_v1.py registrar`). Decisão registrada no ADR 0010.
+O único acesso externo do pipeline é o download de páginas digitalizadas do Internet Archive (`editorial/fontes_v1.py`), feito só no build dos PDFs, fora do app. Nenhum dado de família é enviado. Cada página baixada é conferida pelo SHA-256 registrado em `editorial/dominio_publico/paginas.sha256.json`; página sem hash é recusada (para catalogar uma nova, confira a imagem e rode `python3 fontes_v1.py registrar`). Decisão registrada no ADR 0011.
 
 ## Gerar de novo
 ```

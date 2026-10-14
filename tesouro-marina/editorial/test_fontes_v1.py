@@ -1,4 +1,4 @@
-"""Testes da regra "falha fechada" do download de páginas (ADR 0010). Rodar: python3 -m unittest test_fontes_v1
+"""Testes da regra "falha fechada" do download de páginas (ADR 0011). Rodar: python3 -m unittest test_fontes_v1
 
 Nenhum teste usa a rede: as páginas já estão em cache numa pasta temporária.
 """
