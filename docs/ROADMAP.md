@@ -171,7 +171,7 @@ plano no banco e no backup; e2e "planejar → imprimir a semana".
 
 **Antes de começar (privacidade é inegociável, `CLAUDE.md`):** hoje nenhum dado sai do aparelho. Esta fase cria o primeiro
 servidor, então nada de #26, #3 ou #27 começa sem um **ADR aprovado** que diga o que vai para o servidor (só conta,
-assinatura e a *quantidade* de crianças, §9.2), como os dados da sincronização são criptografados de ponta a ponta, por
+assinatura e a *quantidade* de crianças, §9.2 "Arquitetura que isso exige"), como os dados da sincronização são criptografados de ponta a ponta, por
 quanto tempo ficam guardados e onde. O `CLAUDE.md` (seção Privacidade) e o ADR 0002 são atualizados no mesmo PR.
 
 **Roteiro de teste:** do anúncio à assinatura: landing → cadastro → teste de 30 dias → uso → pagamento em ambiente de teste do gateway → cancelamento → exportação dos dados.

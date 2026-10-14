@@ -279,7 +279,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 ### 5.2 Avanço (manual)
 - Só o pai muda um marco para *Consolidado*, seja na ficha de registro ou no mapa.
-- O app mostra um selo **"🌱 parece pronto"** quando o marco teve *Consolidado* registrado em 2 sessões diferentes. É só uma dica. Na interface, o selo usa um ícone de broto em linha + o texto "parece pronto" (sem emoji, seguindo o `docs/DESIGN.md`, #14).
+- O app mostra um selo **"🌱 parece pronto"** quando o marco teve *Consolidado* registrado em 2 sessões diferentes. É só uma dica. **Planejado (Fase 1, #14 e #41):** na interface, o selo passará a usar um ícone de broto em linha + o texto "parece pronto", sem emoji, seguindo o guia visual que a #14 vai criar.
 - O pai também pode marcar um marco como *Consolidado* direto no mapa, por exemplo algo que a criança aprendeu sozinha.
 - **"Está aqui"** (posicionamento rápido): os marcos anteriores viram *Consolidado*, o escolhido fica *Em desenvolvimento* e os posteriores que tinham registro voltam a *Não observado*.
 
@@ -387,13 +387,13 @@ A IA é usada **só pela equipe**, na produção. As famílias recebem arquivos 
 
 ## 8. Portfólio: proteção das famílias
 
-### 9.1 Contexto (out/2026)
+### 8.1 Contexto (out/2026)
 - Em 2018 o STF decidiu que a educação domiciliar **não é inconstitucional, mas depende de lei federal** que a regulamente. Até hoje essa lei não existe.
 - O **PL 1338/2022** foi aprovado na Câmara em maio/2022 e **segue no Senado**. Em 2026 houve audiência pública (junho) e um pedido de urgência (julho), mas ainda sem votação.
 - Na prática, a família corre o risco de ser questionada pelo **Conselho Tutelar** ou pelo **Ministério Público** (alegação de abandono intelectual). A melhor defesa conhecida é **demonstrar, com evidências organizadas e datadas, que a criança está sendo educada e está aprendendo**.
 - Pelo que lembramos do texto aprovado pela Câmara (**precisa ser conferido** e pode mudar no Senado), ele prevê **matrícula em instituição credenciada**, **relatórios periódicos (trimestrais)** das atividades e **avaliações anuais** com base na **BNCC**. Nada disso está confirmado nas fontes que consultamos.
 
-### 9.2 Recomendação: portfólio de evidências trimestral com anexo BNCC
+### 8.2 Recomendação: portfólio de evidências trimestral com anexo BNCC
 Recomendo **combinar as duas opções** do grilling, porque cada uma protege de um jeito:
 
 | Parte | O que contém | Por que protege |
