@@ -21,7 +21,9 @@ A especificação (§9, decisões 29 a 33) previa teste de 30 dias com cartão n
 
 ## Opções consideradas
 1. **Manter o modelo anterior** (teste com cartão, por criança, bloqueio total): receita mais rápida por
-   usuário, mas com cadastro difícil, risco de má fama e uma cobrança que não pode ser verificada.
+   usuário, mas com cadastro difícil, risco de má fama e uma cobrança que não pode ser verificada. A variante "cobrar por criança contando
+   só no aparelho" também foi descartada: o número fica fácil de burlar e conferi-lo no servidor
+   violaria a privacidade.
 2. **Gratuito com anúncios ou patrocínio:** fere a privacidade e o ECA Digital. Descartada.
 3. **Plano Livre permanente + assinatura por família** (anual como padrão): a família paga pelo
    conteúdo novo toda semana, e o histórico nunca fica refém.
@@ -33,12 +35,14 @@ Opção 3, detalhada na especificação §9:
 - **Semear Família**, por família e com crianças ilimitadas: pacotes ilimitados, conteúdo completo e
   portfólio completo. Preço inicial a testar: R$ 29,90 por mês ou R$ 239 por ano (Pix à vista ou
   cartão em até 12x), com o preço de "família fundadora" para o piloto.
-- **Teste sem cartão**, que volta para o Livre ao terminar.
-- **Nunca** bloquear o acesso aos dados da família. O portfólio completo dos períodos assinados pode
-  ser gerado para sempre.
+- **Teste sem cartão**, um por e-mail verificado, de 14 a 30 dias (30 no piloto; a duração final é
+  questão aberta no §11), que volta para o Livre ao terminar.
+- **Nunca** bloquear o acesso aos dados da família. O portfólio completo dos períodos assinados ou de
+  teste pode ser gerado para sempre.
 
 ## Consequências
-- O plano Livre é a v1 de hoje: nada muda no código até entrarem conta e assinatura (§12.3).
+- Nada muda no app de hoje: o limite do Livre e o plano Família só entram com o código de conta e
+  assinatura (§12.3).
 - O backend fica menor: o servidor guarda só a conta e a data de validade da licença, nunca dados ou
   contagem de crianças (§9.4). O app confere offline um comprovante assinado.
 - O **limite do Livre** e o plano efetivo viram regras de domínio puras e testadas:
@@ -51,8 +55,8 @@ Opção 3, detalhada na especificação §9:
   dúvida a regra deve favorecê-la. A
   importação de backup revalida a assinatura, então um comprovante forjado não libera nada.
 - O limite do Livre entra no domínio como parâmetro injetado, sem valor fixo, até o piloto decidir.
-- **Privacidade:** o backup passa a levar o `contaId` dos comprovantes, o que liga o arquivo à conta
-  do responsável. A exportação avisa disso e já vem com "exportar sem comprovantes" selecionado.
+- **Privacidade:** os comprovantes levam o `contaId`, então o backup sai sem eles por padrão; ao
+  entrar na conta, o app baixa os comprovantes de novo, e o histórico não se perde.
 - **Antes de qualquer código de conta ou assinatura**, um ADR próprio de backend e privacidade
   (dados enviados ao gateway e ao Supabase, retenção, base legal, CSP). O sync fica fora dessa fase.
   Até lá, continua valendo a regra do `CLAUDE.md` de que as Fontes do Google são a única chamada
