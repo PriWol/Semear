@@ -15,6 +15,7 @@ O educador cadastra a família e as crianças, posiciona cada criança numa **jo
 | `app/` | **App novo** (Vite + TypeScript + PWA), publicado no GitHub Pages a cada merge no `main` que altere `app/` (ADR 0009). |
 | `app/content/` | Conteúdo curado (marcos, atividades, livros) em JSON. Ver `app/content/README.md`. |
 | `docs/` | Especificação, ADRs e guia de aprendizado. |
+| `tesouro-marina/` | Coleção editorial impressa *O Grande Tesouro de Marina* (PDFs A4 gerados em Python + Playwright). Fora do `app/` e sem dados de família (ADR 0010). |
 | `prototipos/` | Mocks dos pacotes de sessão (referência visual, não é código do app). |
 | raiz (`index.html`, `assets/`, `data/`) | **Site antigo**, não é mais publicado (ADR 0009). Será arquivado; não alterar sem pedido explícito. |
 

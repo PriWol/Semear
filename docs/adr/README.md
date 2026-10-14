@@ -15,5 +15,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0007](0007-revisao-por-agentes.md) | Revisão por dois agentes + aprovação humana; PR único da v1 | Aceito |
 | [0008](0008-roteamento-por-hash.md) | Roteamento por hash (`#/`) | Aceito |
 | [0009](0009-publicacao-github-pages.md) | Publicação do app no GitHub Pages via GitHub Actions | Aceito |
+| [0010](0010-colecao-editorial-tesouro-marina.md) | Coleção editorial impressa em `tesouro-marina/`, fora do app | Proposto |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

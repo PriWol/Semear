@@ -122,16 +122,45 @@ ITENS.update({
 FONTE = os.path.join(AQUI, "build", "paginas")   # páginas originais baixadas (não versionadas)
 
 
+MANIFESTO = os.path.join(AQUI, "dominio_publico", "paginas.sha256.json")
+LIMITE_BYTES = 30_000_000   # uma página digitalizada tem 1 a 4 MB; acima disso a resposta não é uma página
+
+
+def _sha256(dados):
+    import hashlib
+    return hashlib.sha256(dados).hexdigest()
+
+
 def baixar(item, n):
-    """Baixa a página digitalizada do Internet Archive, se ainda não estiver em build/paginas."""
+    """Baixa a página digitalizada do Internet Archive para build/paginas, se ainda não estiver lá.
+
+    É a única chamada de rede do pipeline editorial; roda só no build dos PDFs, fora do app, e não
+    envia dado nenhum. Cada página é conferida pelo SHA-256 registrado em paginas.sha256.json, para que
+    uma página trocada, corrompida ou renumerada no acervo nunca entre num volume sem aviso.
+    """
+    import io
+    import json
     import urllib.request
     os.makedirs(FONTE, exist_ok=True)
-    p = os.path.join(FONTE, f"{item}_n{n}.jpg")
-    if not os.path.exists(p):
+    chave = f"{item}_n{n}"
+    p = os.path.join(FONTE, chave + ".jpg")
+    esperado = json.load(open(MANIFESTO)).get(chave) if os.path.exists(MANIFESTO) else None
+    if os.path.exists(p):
+        dados = open(p, "rb").read()
+    else:
         req = urllib.request.Request(f"https://archive.org/download/{item}/page/n{n}.jpg",
                                      headers={"User-Agent": "TesouroMarina/0.1 (educational, non-commercial)"})
         with urllib.request.urlopen(req, timeout=120) as r:
-            open(p, "wb").write(r.read())
+            dados = r.read(LIMITE_BYTES + 1)
+        if len(dados) > LIMITE_BYTES:
+            raise ValueError(f"{chave}: resposta maior que {LIMITE_BYTES} bytes")
+        Image.open(io.BytesIO(dados)).verify()   # recusa o que não for uma imagem válida
+    if esperado and _sha256(dados) != esperado:
+        raise ValueError(f"{chave}: SHA-256 diferente do registrado em {os.path.basename(MANIFESTO)}")
+    if not esperado:
+        print(f"aviso: {chave} sem SHA-256 registrado; acrescente-o ao manifesto depois de conferir a imagem")
+    if not os.path.exists(p):
+        open(p, "wb").write(dados)
     return p
 
 
