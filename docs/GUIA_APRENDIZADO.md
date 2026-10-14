@@ -130,6 +130,13 @@ Um site que se comporta como aplicativo: **instala** no celular e no computador,
 Um "assistente" que o navegador roda por trás do app, guardando os arquivos em cache para funcionar
 sem internet e atualizando-os quando sai uma versão nova.
 
+### Publicação contínua (deploy automático)
+**O que é:** a cada merge no `main`, um robô (GitHub Actions) verifica o código, gera a versão final
+do app (o *build*) e publica no GitHub Pages. Ninguém precisa "subir arquivos" à mão. (ADR 0009)
+
+**Paralelo de gestão:** é uma linha de produção com controle de qualidade embutido: se a inspeção
+(`npm run check`) reprovar, o produto não sai da fábrica.
+
 ### Roteamento por hash
 Os endereços das telas ficam como `…/#/jornada/ana`. Isso permite publicar o app em qualquer
 hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)

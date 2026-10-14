@@ -1,6 +1,7 @@
 import './estilos.css';
 import { abrirRepositorio } from './dados/repositorio';
 import { conteudo } from './conteudo';
+import { limparCachesAntigos } from './legado';
 import { criarRotas, iniciarApp, type FabricaPagina } from './ui/app';
 import { html } from './ui/html';
 import { paginaInicio } from './pages/inicio';
@@ -39,6 +40,8 @@ async function iniciar() {
     }),
     naoEncontrada,
   );
+  // Depois da primeira renderização, para não disputar a abertura do app (ADR 0009).
+  void limparCachesAntigos('caches' in window ? caches : undefined);
 }
 
 void iniciar();

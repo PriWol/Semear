@@ -3,7 +3,6 @@
 - **Status:** Aceito
 - **Data:** 2026-10-14
 - **Relacionado:** 0002 (dados no aparelho), 0003 (domínio puro)
-- **Numeração:** o número 0009 é o ADR de publicação no GitHub Pages (PR #16), escrito em paralelo.
 
 ## Contexto
 A especificação (§9, decisões 29 a 33) previa teste de 30 dias com cartão no cadastro, assinatura
