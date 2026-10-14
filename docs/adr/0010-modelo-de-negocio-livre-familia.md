@@ -42,7 +42,7 @@ Opção 3, detalhada na especificação §9:
 - O backend fica menor: o servidor guarda só a conta e a data de validade da licença, nunca dados ou
   contagem de crianças (§9.4). O app confere offline um comprovante assinado.
 - O **limite do Livre** e o plano efetivo viram regras de domínio puras e testadas:
-  `planoEfetivo(comprovantesVerificados, agora, maiorDataVista)` (ADR 0003); a conferência da
+  `planoEfetivo(comprovantesVerificados, agora, maiorDataVista, contaIdAtual)` (ADR 0003); a conferência da
   assinatura (WebCrypto) fica em `dados/`. O app usa a
   maior data já vista para que voltar o relógio não estenda a licença, e os planos pagos têm 7
   dias de tolerância depois do fim; o teste não tem (§9.4).
