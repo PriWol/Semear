@@ -1,0 +1,8 @@
+editorial/build/
+editorial/*.html
+__pycache__/
+editorial/node_modules/
+# PDFs e páginas de inspeção são gerados por editorial/*.py e publicados na Release
+# "tesouro-marina" pelo workflow publicar-tesouro.yml (ADR 0011).
+*.pdf
+*/inspecao/
