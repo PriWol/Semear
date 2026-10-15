@@ -26,6 +26,7 @@ LIVROS = {
     "histoiredepierre00pott": "Beatrix Potter, <i>Histoire de Pierre Lapin</i> (Londres: F. Warne, 1921)",
     "aesopfables00aesoiala": "Arthur Rackham (1867–1939), <i>Æsop's Fables</i> (Londres: Heinemann, 1912)",
     "Thislittlepigwe00Cran": "Walter Crane, <i>This Little Pig Went to Market</i> (Londres: Routledge, c. 1870)",
+    "babysoperabookof00cran": "Walter Crane, <i>The Baby's Opera: a book of old rhymes, with new dresses</i> (Londres: Routledge, 1900; 1.ª ed. 1877)",
     "fairytalesofbrot00grim": "Arthur Rackham, <i>The Fairy Tales of the Brothers Grimm</i> (Nova York: Doubleday, 1916)",
 }
 
@@ -114,6 +115,17 @@ ITENS.update({
 
 # ---- Volume 3
 ITENS.update({
+    "opera_rei_cole":      ("babysoperabookof00cran", 7, None, 1700),
+    "opera_rei_cole_pauta": ("babysoperabookof00cran", 59, None, 1700),
+    "opera_navios":        ("babysoperabookof00cran", 22, None, 1700),
+    "opera_pastor":        ("babysoperabookof00cran", 45, None, 1700),
+    "opera_ding_dong":     ("babysoperabookof00cran", 23, None, 1700),
+    "opera_sinos":         ("babysoperabookof00cran", 15, None, 1700),
+    "opera_amoreira":      ("babysoperabookof00cran", 13, None, 1700),
+    "opera_amoreira_roda": ("babysoperabookof00cran", 14, None, 1700),
+    "opera_ninar":         ("babysoperabookof00cran", 58, None, 1700),
+    "opera_embalar":       ("babysoperabookof00cran", 57, None, 1700),
+    "opera_sixpence":      ("babysoperabookof00cran", 38, None, 1700),
     "crane_porco_mae":     ("Thislittlepigwe00Cran", 1, None, 1500, (0, 0.27, 1, 1)),
     "crane_porco_mercado": ("Thislittlepigwe00Cran", 2, None, 1500, (0, 0.235, 1, 1)),
     "crane_porco_casa":    ("Thislittlepigwe00Cran", 5, None, 1500, (0, 0.27, 1, 1)),
