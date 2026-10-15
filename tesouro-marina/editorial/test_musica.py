@@ -81,6 +81,7 @@ class Ritmo(unittest.TestCase):
     def test_linha_do_tempo_respeita_o_ano_inicial(self):
         svg = musica.linha_do_tempo([("X", 1800, 1850, "#111111")], ano0=1800, ano1=1900)
         self.assertNotIn(">1700<", svg)
+        self.assertIn(">1800<", svg)   # a borda inicial, quando é múltiplo de 50, também é marcada
         self.assertIn(">1850<", svg)
 
     def test_musicograma_e_cores_respeitam_a_ordem(self):

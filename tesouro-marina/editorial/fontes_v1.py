@@ -115,7 +115,16 @@ ITENS.update({
 
 # ---- Volume 3
 ITENS.update({
-    # ---- Volume 4
+    "crane_porco_mae":     ("Thislittlepigwe00Cran", 1, None, 1500, (0, 0.27, 1, 1)),
+    "crane_porco_mercado": ("Thislittlepigwe00Cran", 2, None, 1500, (0, 0.235, 1, 1)),
+    "crane_porco_casa":    ("Thislittlepigwe00Cran", 5, None, 1500, (0, 0.27, 1, 1)),
+    "crane_porco_nada":    ("Thislittlepigwe00Cran", 8, None, 1500, (0, 0.27, 1, 1)),
+    "crane_porco_chora":   ("Thislittlepigwe00Cran", 10, None, 1500, (0, 0.235, 1, 1)),
+    "crane_porcos_mesa":   ("Thislittlepigwe00Cran", 14, None, 1500, (0, 0, 1, 0.88)),
+})
+
+# ---- Volume 4 (Baby's Opera, Walter Crane)
+ITENS.update({
     "opera_rei_cole":      ("babysoperabookof00cran", 7, None, 1700),
     "opera_rei_cole_pauta": ("babysoperabookof00cran", 59, None, 1700),
     "opera_navios":        ("babysoperabookof00cran", 22, None, 1700),
@@ -126,13 +135,7 @@ ITENS.update({
     "opera_amoreira_roda": ("babysoperabookof00cran", 14, None, 1700),
     "opera_ninar":         ("babysoperabookof00cran", 58, None, 1700),
     "opera_embalar":       ("babysoperabookof00cran", 57, None, 1700),
-    "opera_sixpence":      ("babysoperabookof00cran", 38, None, 1700),
-    "crane_porco_mae":     ("Thislittlepigwe00Cran", 1, None, 1500, (0, 0.27, 1, 1)),
-    "crane_porco_mercado": ("Thislittlepigwe00Cran", 2, None, 1500, (0, 0.235, 1, 1)),
-    "crane_porco_casa":    ("Thislittlepigwe00Cran", 5, None, 1500, (0, 0.27, 1, 1)),
-    "crane_porco_nada":    ("Thislittlepigwe00Cran", 8, None, 1500, (0, 0.27, 1, 1)),
-    "crane_porco_chora":   ("Thislittlepigwe00Cran", 10, None, 1500, (0, 0.235, 1, 1)),
-    "crane_porcos_mesa":   ("Thislittlepigwe00Cran", 14, None, 1500, (0, 0, 1, 0.88)),
+    "opera_sixpence":      ("babysoperabookof00cran", 38, None, 1700)
 })
 FONTE = os.path.join(AQUI, "build", "paginas")   # páginas originais baixadas (não versionadas)
 
