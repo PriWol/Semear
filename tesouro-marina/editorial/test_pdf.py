@@ -1,6 +1,7 @@
 """Testa a checagem de área segura do pdf.js (ADR 0011). Rodar: python3 -m unittest test_pdf
 
-Pula se o node ou o playwright não estiverem instalados.
+Pula se o node ou o playwright não estiverem instalados, exceto no CI (variável CI definida), onde a
+ausência seria uma falha de instalação e não pode passar em silêncio.
 """
 import os
 import shutil
@@ -20,7 +21,7 @@ def _node_com_playwright():
     return r.returncode == 0
 
 
-@unittest.skipUnless(_node_com_playwright(), "node/playwright indisponíveis")
+@unittest.skipUnless(os.environ.get("CI") or _node_com_playwright(), "node/playwright indisponíveis")
 class AreaSegura(unittest.TestCase):
     def _rodar(self, corpo):
         with tempfile.TemporaryDirectory() as tmp:
