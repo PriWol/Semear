@@ -74,6 +74,13 @@ class FalhaFechada(unittest.TestCase):
         with open(fontes_v1.MANIFESTO) as f:
             self.assertEqual(json.load(f), {CHAVE: SHA})
 
+    def test_registrar_nao_rebaixa_pagina_ja_registrada(self):
+        self._manifesto({CHAVE: SHA})
+        fontes_v1.REGISTRAR = True
+        with mock.patch.object(fontes_v1, "_da_rede") as rede:
+            fontes_v1.baixar("livro", 7)
+        rede.assert_not_called()
+
     def test_cache_corrompido_baixa_de_novo(self):
         self._manifesto({CHAVE: SHA})
         with open(self.cache, "wb") as f:

@@ -179,8 +179,9 @@ def baixar(item, n):
     p = os.path.join(FONTE, chave + ".jpg")
     esperado = _ler_manifesto().get(chave)
     dados = None
-    # no "registrar" o cache não vale: o hash novo tem de vir de um download fresco
-    if os.path.exists(p) and not REGISTRAR:
+    # no "registrar" o cache não vale só para a página nova: o hash novo tem de vir de um download fresco;
+    # as já registradas seguem usando o cache, que é conferido pelo hash abaixo
+    if os.path.exists(p) and not (REGISTRAR and not esperado):
         with open(p, "rb") as f:
             dados = f.read()
         if esperado and _sha256(dados) != esperado:
