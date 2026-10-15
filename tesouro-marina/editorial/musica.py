@@ -242,7 +242,7 @@ def linha_do_tempo(itens, ano0=1670, ano1=1960, larg=174):
     esc = (larg - 8) / (ano1 - ano0)
     p = []
     alt = 12 + len(itens) * 13
-    for ano in range((ano0 // 50 + 1) * 50, ano1, 50):
+    for ano in range(-(-ano0 // 50) * 50, ano1, 50):   # primeiro múltiplo de 50 a partir de ano0 (inclusive)
         x = 4 + (ano - ano0) * esc
         p.append(f'<line x1="{x:.1f}" y1="4" x2="{x:.1f}" y2="{alt - 4}" stroke="#bfae8f" stroke-width="0.25" stroke-dasharray="1 1.2"/>')
         p.append(f'<text x="{x:.1f}" y="{alt - 0.5}" text-anchor="middle" class="svg-rotulo">{ano}</text>')
