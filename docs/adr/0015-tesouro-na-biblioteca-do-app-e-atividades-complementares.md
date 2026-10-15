@@ -49,4 +49,5 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - Privacidade inalterada: nenhum dado da família sai do aparelho, e o PDF vem do mesmo domínio do app.
 - O site só republica quando `app/` muda: se um PDF mudar na Release (paginação, conteúdo), rode o workflow "Publicar site" à mão (`workflow_dispatch`) e atualize o catálogo.
 - O catálogo é mantido à mão neste piloto; se os volumes mudarem de paginação, atualize o catálogo e rode `npm run check`.
+- Se a criança não tem atividade da jornada disponível, a sessão pode ser só a complementar (a educadora continua podendo trocar ou remover). Atividade com `idioma` nunca é complementar.
 - Atividades complementares ainda não têm "tema"; a escolha usa idade, vertente e novidade.
