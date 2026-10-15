@@ -72,7 +72,13 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
           { id: 'LI.VOC', nome: 'Vocabulário', vertentes: null, idiomas: ['en', 'fr', 'la'] },
         ],
       },
-      { id: 'AR', nome: 'Artes', icone: '🎨', comJornada: false },
+      {
+        id: 'AR',
+        nome: 'Artes',
+        icone: '🎨',
+        comJornada: false,
+        categorias: ['Escuta musical', 'Canto'],
+      },
     ],
     marcos: [
       marco('LG.FON.01', 1),

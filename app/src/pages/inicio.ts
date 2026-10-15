@@ -140,7 +140,10 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
           : ''
       }
       <div class="grade-cartoes">${cartoes}</div>
-      <p><a class="botao" href="#/crianca/nova">+ Adicionar criança</a></p>
+      <p>
+        <a class="botao" href="#/crianca/nova">+ Adicionar criança</a>
+        <a class="botao" href="#/biblioteca">📚 Biblioteca</a>
+      </p>
 
       <h2>Últimas sessões</h2>
       ${

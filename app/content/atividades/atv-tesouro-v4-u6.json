@@ -1,0 +1,54 @@
+{
+  "id": "atv-tesouro-v4-u6",
+  "titulo": "Bach: a onda de notas",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Estudo de compositores",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 6,
+    "paginas": [48, 53]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason"],
+  "idade": [4, 8],
+  "duracaoMin": 20,
+  "objetivo": "A criança **escuta o Prelúdio em Dó maior** (BWV 846), de Bach, e reconhece o padrão de ondas que sobe e desce.",
+  "passos": [
+    {
+      "titulo": "Quem é Bach",
+      "minutos": 4,
+      "texto": "Apresente Johann Sebastian Bach (1685–1750) e conte que quase toda a peça é um acorde desmanchado, nota por nota, no mesmo desenho."
+    },
+    {
+      "titulo": "A onda no ar",
+      "minutos": 8,
+      "texto": "Sem explicar, desenhe uma onda no ar com a mão (sobe, sobe, desce, desce) enquanto a música toca."
+    },
+    {
+      "titulo": "Cinco dedos no teclado (opcional)",
+      "minutos": 8,
+      "texto": "Se houver teclado, cada dedo numa tecla branca seguinte, a partir do dó central, como mostra o livro."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Acompanha a onda com o gesto"],
+    "emDesenvolvimento": ["Perde o padrão no meio"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    },
+    {
+      "item": "Gravação do Prelúdio em Dó maior (BWV 846), de Bach",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  }
+}

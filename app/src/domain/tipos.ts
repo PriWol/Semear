@@ -107,11 +107,26 @@ export interface Passo {
   fala?: string;
 }
 
+/** Trecho de um volume d'O Grande Tesouro de Marina (ADR 0015) que acompanha a atividade. */
+export interface MaterialImpresso {
+  volume: number;
+  unidade: number;
+  /** primeira e última página do trecho no PDF do volume */
+  paginas: [number, number];
+}
+
 export interface Atividade {
   id: string;
   titulo: string;
-  /** marcos que a atividade trabalha (os "principais") */
+  /**
+   * Marcos que a atividade trabalha (os "principais"). Vazio = atividade complementar (§3.0):
+   * precisa de `dominio` e `categoria`, e não entra no posicionamento da criança.
+   */
   marcos: string[];
+  /** só nas complementares: domínio sem jornada (ex.: "AR") e categoria dele (ex.: "Escuta musical") */
+  dominio?: string;
+  categoria?: string;
+  materialImpresso?: MaterialImpresso;
   /** marcos revisados (aparecem na ficha como "revisão") */
   revisa?: string[];
   vertentes: Vertente[];

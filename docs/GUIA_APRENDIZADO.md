@@ -197,3 +197,6 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **PWA** | Site instalável que funciona offline. |
 | **Build** | O processo que transforma o código em arquivos prontos para publicar. |
 | **Dependência** | Biblioteca de terceiros usada pelo projeto (ex.: `idb`). |
+| **Atividade complementar** | Atividade de um domínio sem jornada (música, artes…): não tem marcos e entra em no máximo uma por sessão (ADR 0015). |
+| **Material impresso** | Trecho de um volume d'O Grande Tesouro de Marina ligado a uma atividade; a Biblioteca abre o PDF na página certa. |
+| **Service worker** | Programa do navegador que guarda arquivos do app para uso offline; precisa ser instruído a não interceptar os PDFs. |

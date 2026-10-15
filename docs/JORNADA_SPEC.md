@@ -98,7 +98,9 @@ O mapa completo, com códigos e idades, está em [`data/journey/dominios.json`](
 | 🌎 NM Natureza, Mundo e Sociedade | **Só atividades** | Reaproveita os recursos atuais (folclore, plantio…). Jornada na v2. |
 | 🌱 DI Desenvolvimento Integral | **Só atividades** | Valores e rituais atuais do Semear. Jornada na v2. |
 
-As atividades de domínios sem jornada entram nas sessões como **"complementares"**, escolhidas por idade, vertente e tema. Elas aparecem no portfólio como horas e evidências, mas sem marcos.
+As atividades de domínios sem jornada entram nas sessões como **"complementares"**, escolhidas por idade, vertente e novidade (o tema ainda não é usado). Elas aparecem no portfólio como horas e evidências, mas sem marcos.
+
+**Como o app trata (ADR 0015):** a atividade complementar tem `marcos: []`, `dominio` e `categoria`; entra no máximo uma por sessão, depois das atividades da jornada, se couber na duração. Pode trazer `materialImpresso` (volume, unidade e páginas d'O Grande Tesouro de Marina), aberto pela Biblioteca no próprio site.
 
 > ⚠️ **Alerta de escopo:** são 3 domínios com jornada, sendo que Línguas tem 3 trilhas, mais 3 domínios só com atividades. Mesmo com a IA rascunhando, **a revisão humana é o gargalo**. Sugestão de ordem de publicação: LG e MA primeiro, depois Inglês, depois Francês e Latim. Dá para lançar com LG e MA completos e as trilhas de língua marcadas como "em breve".
 

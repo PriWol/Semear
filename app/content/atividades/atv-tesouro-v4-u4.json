@@ -1,0 +1,60 @@
+{
+  "id": "atv-tesouro-v4-u4",
+  "titulo": "Os instrumentos e seus personagens",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 4,
+    "paginas": [31, 41]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 7],
+  "duracaoMin": 25,
+  "objetivo": "A criança **reconhece famílias de instrumentos** (cordas, madeiras, metais, percussão) e liga cada personagem de *Pedro e o Lobo* ao seu instrumento.",
+  "passos": [
+    {
+      "titulo": "Os músicos de Bremen",
+      "minutos": 6,
+      "texto": "Leia ou conte a história dos músicos de Bremen e peça para a criança imitar o som de cada animal."
+    },
+    {
+      "titulo": "Pedro e o Lobo",
+      "minutos": 10,
+      "texto": "Ponha a gravação e use o jogo da memória do livro: cada personagem é um instrumento com a sua melodia.",
+      "fala": "Quem está tocando agora?"
+    },
+    {
+      "titulo": "Escada dos sons",
+      "minutos": 5,
+      "texto": "Ordene os sons de baixo para cima na escada do livro."
+    },
+    {
+      "titulo": "Orquestra da casa (opcional)",
+      "minutos": 4,
+      "texto": "Monte uma orquestra com o que há em casa, por famílias de instrumentos."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Liga ao menos três personagens ao instrumento"],
+    "emDesenvolvimento": ["Ainda mistura os instrumentos"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    },
+    {
+      "item": "Gravação de Pedro e o Lobo (Prokofiev)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  }
+}

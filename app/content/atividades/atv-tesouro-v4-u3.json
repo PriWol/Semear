@@ -1,0 +1,54 @@
+{
+  "id": "atv-tesouro-v4-u3",
+  "titulo": "Forte e fraco, rápido e lento, grave e agudo",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 3,
+    "paginas": [23, 30]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 20,
+  "objetivo": "A criança **percebe contrastes** do som (forte/fraco, rápido/lento, grave/agudo) e os mostra com a voz e com o corpo.",
+  "passos": [
+    {
+      "titulo": "Fábula com o tambor",
+      "minutos": 6,
+      "texto": "Conte a fábula da tartaruga com o tambor: batidas bem espaçadas para o devagar, juntinhas para o depressa."
+    },
+    {
+      "titulo": "Os três ursos",
+      "minutos": 7,
+      "texto": "Papai Urso fala grave, Mamãe Ursa no meio, Bebê Urso agudo. Combine antes: forte é com tambor e palmas; a voz fica sempre confortável."
+    },
+    {
+      "titulo": "Folhas da unidade 3",
+      "minutos": 7,
+      "texto": "Abra o Tesouro nas páginas indicadas e deixe a criança mostrar cada contraste."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Muda a velocidade do tambor de propósito"],
+    "emDesenvolvimento": ["Confunde grave e agudo"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    },
+    {
+      "item": "Tambor ou panela com colher de pau",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  }
+}

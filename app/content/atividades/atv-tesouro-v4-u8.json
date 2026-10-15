@@ -1,0 +1,59 @@
+{
+  "id": "atv-tesouro-v4-u8",
+  "titulo": "Saint-Saëns e Debussy: bichos e luar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Estudo de compositores",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 8,
+    "paginas": [60, 68]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "objetivo": "A criança **escuta dois pedaços de obras diferentes** (O Carnaval dos Animais, de Saint-Saëns, e Clair de lune, de Debussy) e fala sobre o que imagina.",
+  "passos": [
+    {
+      "titulo": "Um bicho por vez",
+      "minutos": 10,
+      "texto": "Escolha um bicho do Carnaval dos Animais (comece pelo Leão e pelo Cisne), ponha só aquele pedaço e deixe a criança dizer quem é antes de você contar.",
+      "fala": "Quem você acha que é?"
+    },
+    {
+      "titulo": "Luar no escuro",
+      "minutos": 10,
+      "texto": "Apague a luz, acenda uma vela com cuidado (ou use uma luz fraca) e ouçam Clair de lune, de Debussy (1862–1918), deitados, sem falar."
+    },
+    {
+      "titulo": "Conversa",
+      "minutos": 5,
+      "texto": "Peça que ela conte o que viu na cabeça durante a música."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Descreve o que imaginou"],
+    "emDesenvolvimento": ["Perde a atenção antes do fim"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    },
+    {
+      "item": "Gravações do Carnaval dos Animais e de Clair de lune",
+      "deCasa": true
+    },
+    {
+      "item": "Uma vela ou luz fraca (adulto cuida da chama)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  }
+}

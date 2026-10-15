@@ -1,0 +1,60 @@
+{
+  "id": "atv-tesouro-v4-u1",
+  "titulo": "Som e silêncio: escutar a casa",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 1,
+    "paginas": [6, 14]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 20,
+  "objetivo": "A criança **escuta com atenção** os sons da casa, percebe que o silêncio nunca é vazio e começa a parar e recomeçar junto com a música.",
+  "passos": [
+    {
+      "titulo": "Silêncio para escutar",
+      "minutos": 4,
+      "texto": "Sentem-se quietos por um minuto e mostrem com a mão onde está cada som (a geladeira, um pássaro, um carro).",
+      "fala": "Que som você escuta mais longe? E mais perto?"
+    },
+    {
+      "titulo": "Parar com a música",
+      "minutos": 6,
+      "texto": "Cantem ou toquem uma cantiga e parem juntos. No começo avise antes de parar; depois, deixe que ela escute para parar sozinha."
+    },
+    {
+      "titulo": "Folhas da unidade 1",
+      "minutos": 6,
+      "texto": "Abra o Tesouro nas páginas da unidade: a criança segue o desenho do som com o dedo, fazendo “uuuu”, e o silêncio é a linha reta."
+    },
+    {
+      "titulo": "Chocalho (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Siga o passo a passo do livro. Segurança: a tampa fica colada e fechada com fita; grãos soltos são risco de engasgo."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Para quando a música para", "Aponta onde está um som"],
+    "emDesenvolvimento": ["Ainda precisa do aviso antes de parar"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    },
+    {
+      "item": "Uma cantiga conhecida ou um tambor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  }
+}

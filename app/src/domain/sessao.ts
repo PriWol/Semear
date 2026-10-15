@@ -128,6 +128,27 @@ export function candidatas(
   return lista.sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id));
 }
 
+/** Id de "pista" das complementares: elas não pertencem a nenhuma linha da jornada. */
+export const PISTA_COMPLEMENTAR = 'complementar';
+
+/** Complementares adequadas à idade (§3.0), melhor pontuadas primeiro. Rascunhos nunca chegam aqui. */
+export function complementares(
+  idx: IndiceConteudo,
+  familia: Familia,
+  idade: number,
+  recentes: Set<string>,
+): Escolha[] {
+  return idx
+    .complementares()
+    .filter((a) => idade >= a.idade[0] && idade <= a.idade[1])
+    .map((atividade) => ({
+      atividade,
+      pista: PISTA_COMPLEMENTAR,
+      ...pontuar(atividade, familia, idade, recentes),
+    }))
+    .sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id));
+}
+
 export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): PropostaSessao {
   const { familia, crianca, idade, estados, historico, duracaoMin, foco, agora } = pedido;
   const recentes = atividadesRecentes(historico, crianca.id, agora);
@@ -183,6 +204,15 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
         adicionou = true;
       }
     }
+  }
+
+  // 5. No máximo uma complementar, só se couber na duração escolhida.
+  const comp = complementares(idx, familia, idade, recentes).find(
+    (e) => !usadas.has(e.atividade.id) && minutos + e.atividade.duracaoMin <= limite,
+  );
+  if (comp) {
+    escolhas.push(comp);
+    minutos += comp.atividade.duracaoMin;
   }
 
   const avisos: string[] = [];

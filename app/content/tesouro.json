@@ -1,0 +1,52 @@
+{
+  "volumes": [
+    {
+      "numero": 4,
+      "titulo": "O mundo da música",
+      "arquivo": "tesouro/volume4-tela.pdf",
+      "paginas": 75,
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Som e silêncio",
+          "paginas": [6, 14]
+        },
+        {
+          "numero": 2,
+          "titulo": "Pulso",
+          "paginas": [15, 22]
+        },
+        {
+          "numero": 3,
+          "titulo": "Forte e fraco, rápido e lento",
+          "paginas": [23, 30]
+        },
+        {
+          "numero": 4,
+          "titulo": "Os instrumentos",
+          "paginas": [31, 41]
+        },
+        {
+          "numero": 5,
+          "titulo": "Vivaldi",
+          "paginas": [42, 47]
+        },
+        {
+          "numero": 6,
+          "titulo": "Bach",
+          "paginas": [48, 53]
+        },
+        {
+          "numero": 7,
+          "titulo": "Mozart",
+          "paginas": [54, 59]
+        },
+        {
+          "numero": 8,
+          "titulo": "Saint-Saëns e Debussy",
+          "paginas": [60, 68]
+        }
+      ]
+    }
+  ]
+}

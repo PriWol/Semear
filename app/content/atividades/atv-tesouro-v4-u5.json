@@ -1,0 +1,55 @@
+{
+  "id": "atv-tesouro-v4-u5",
+  "titulo": "Vivaldi: a Primavera",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Estudo de compositores",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 5,
+    "paginas": [42, 47]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason"],
+  "idade": [4, 8],
+  "duracaoMin": 20,
+  "objetivo": "A criança **escuta uma obra inteira** (a Primavera, de Vivaldi) acompanhando o musicograma: o tema, os pássaros, o riacho e o trovão.",
+  "passos": [
+    {
+      "titulo": "Quem é Vivaldi",
+      "minutos": 4,
+      "texto": "Apresente Antonio Vivaldi (1678–1741) e mostre a obra no livro: um violino que “conversa” com uma orquestra de cordas."
+    },
+    {
+      "titulo": "Escuta com o musicograma",
+      "minutos": 10,
+      "texto": "Ponha a gravação e vá com o dedo da esquerda para a direita, parando em cada parte.",
+      "fala": "O que esta parte lembra: pássaros, riacho ou trovão?"
+    },
+    {
+      "titulo": "Gestos",
+      "minutos": 6,
+      "texto": "Ela inventa um gesto para cada parte e você toca o tambor. Repita a obra em outra semana, é assim que ela se torna conhecida."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Segue o musicograma sem se perder"],
+    "emDesenvolvimento": ["Precisa que o adulto aponte cada parte"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    },
+    {
+      "item": "Gravação de A Primavera (As Quatro Estações), de Vivaldi",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  }
+}

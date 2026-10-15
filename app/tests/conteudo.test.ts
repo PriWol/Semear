@@ -87,4 +87,30 @@ describe('validarConteudo', () => {
     expect(r.erros).toEqual([]);
     expect(r.avisos.some((a) => a.includes('atv-r'))).toBe(true);
   });
+
+  it('atividade sem marco só vale como complementar de domínio sem jornada, com categoria válida', () => {
+    const ok = atividade('c-ok', [], { dominio: 'AR', categoria: 'Canto' });
+    expect(validarConteudo(conteudoBase({ atividades: [ok] })).erros).toEqual([]);
+    const casos = [
+      atividade('c1', []),
+      atividade('c2', [], { dominio: 'XX', categoria: 'Canto' }),
+      atividade('c3', [], { dominio: 'LG', categoria: 'Canto' }),
+      atividade('c4', [], { dominio: 'AR', categoria: 'Inexistente' }),
+    ];
+    for (const a of casos) {
+      expect(validarConteudo(conteudoBase({ atividades: [a] })).erros, a.id).toHaveLength(1);
+    }
+  });
+
+  it('acusa material impresso com páginas invertidas ou volume inválido', () => {
+    const base = { dominio: 'AR', categoria: 'Canto' };
+    const ruim = [
+      { volume: 4, unidade: 1, paginas: [9, 6] as [number, number] },
+      { volume: 0, unidade: 1, paginas: [1, 2] as [number, number] },
+    ];
+    for (const m of ruim) {
+      const a = atividade('m', [], { ...base, materialImpresso: m });
+      expect(validarConteudo(conteudoBase({ atividades: [a] })).erros).toHaveLength(1);
+    }
+  });
 });
