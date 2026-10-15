@@ -199,6 +199,18 @@ describe('atividades complementares (§3.0)', () => {
     expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1']);
   });
 
+  it('atividade de idioma não vira complementar', () => {
+    const i = indiceBase({ atividades: [comp('en', { idioma: 'en' }), comp('pt')] });
+    const alts = complementares(i, familia(), 5, new Set());
+    expect(alts.map((e) => e.atividade.id)).toEqual(['pt']);
+  });
+
+  it('sem atividades da jornada, a sessão pode ser só a complementar (educadora no controle)', () => {
+    const i = indiceBase({ atividades: [comp('so')] });
+    const p = proporSessao(i, pedido({ duracaoMin: 20 }));
+    expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['so']);
+  });
+
   it('prefere a que não foi feita nas últimas 2 semanas', () => {
     const i = indiceBase({ atividades: [comp('a'), comp('b')] });
     const p = proporSessao(i, pedido({ historico: [sessao(['a'])], duracaoMin: 20 }));
