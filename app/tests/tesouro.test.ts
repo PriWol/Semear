@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { carregarConteudo } from '../src/conteudo';
-import { enderecoDoPdf, VOLUMES } from '../src/tesouro';
+import { enderecoDoMaterial, enderecoDoPdf, VOLUMES } from '../src/tesouro';
 import { rotuloDoMaterial } from '../src/domain/material';
 import { gerarPacote } from '../src/pacote/gerar';
 import { atividade, crianca, familia } from './fabricas';
@@ -21,6 +21,13 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
   it('o arquivo é caminho relativo ao app (nada de endereço externo)', () => {
     for (const v of VOLUMES) expect(v.arquivo).toMatch(/^tesouro\/[\w-]+\.pdf$/);
     expect(enderecoDoPdf(VOLUMES[0]!, 42)).toBe('tesouro/volume4-tela.pdf#page=42');
+  });
+
+  it('o endereço do material abre na primeira página do trecho', () => {
+    expect(enderecoDoMaterial({ volume: 4, unidade: 5, paginas: [42, 47] })).toBe(
+      'tesouro/volume4-tela.pdf#page=42',
+    );
+    expect(enderecoDoMaterial({ volume: 9, unidade: 1, paginas: [1, 2] })).toBeNull();
   });
 
   it('todo material impresso do conteúdo aponta para uma unidade do catálogo', () => {

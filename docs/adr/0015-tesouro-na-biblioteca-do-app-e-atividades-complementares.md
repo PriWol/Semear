@@ -36,6 +36,13 @@ Opção 3, mais as mudanças de modelo abaixo.
 - **Rascunho:** as 8 atividades do Volume 4 entram como `rascunho` (origem `ia`). Só aparecem para as famílias
   quando a dona do produto revisar e publicar.
 
+## Direção futura: jornada livre
+
+A dona do produto quer, mais adiante, dar à educadora autonomia para montar a jornada sem que o app decida.
+A Biblioteca e as atividades complementares são o primeiro passo: acervo navegável e atividades que não
+dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por domínio e categoria,
+"adicionar à sessão" à mão e jornadas com marcos e ordem definidos pela educadora (hoje vêm do conteúdo curado).
+
 ## Consequências
 
 - O site depende da Release existir no momento do deploy; sem ela o deploy falha (melhor que publicar link quebrado).

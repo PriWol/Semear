@@ -2,6 +2,8 @@
 // os baixa da Release e os coloca em ./tesouro/, na mesma origem do app.
 import catalogoJson from '../content/tesouro.json';
 
+import type { MaterialImpresso } from './domain/tipos';
+
 export interface UnidadeTesouro {
   numero: number;
   titulo: string;
@@ -18,6 +20,12 @@ export interface VolumeTesouro {
 }
 
 export const VOLUMES: VolumeTesouro[] = (catalogoJson as { volumes: VolumeTesouro[] }).volumes;
+
+/** Endereço do trecho de uma atividade (primeira página da unidade), ou null se o volume não está no catálogo. */
+export function enderecoDoMaterial(m: MaterialImpresso): string | null {
+  const v = VOLUMES.find((x) => x.numero === m.volume);
+  return v ? enderecoDoPdf(v, m.paginas[0]) : null;
+}
 
 /** Endereço do PDF, abrindo na página pedida. Só caminho relativo: nenhuma chamada externa. */
 export function enderecoDoPdf(volume: VolumeTesouro, pagina = 1): string {
