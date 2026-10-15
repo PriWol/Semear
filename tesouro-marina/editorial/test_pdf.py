@@ -41,6 +41,19 @@ class AreaSegura(unittest.TestCase):
         self.assertEqual(self._rodar('<svg style="position:absolute;left:2mm;top:50mm" width="40" height="40"></svg>'),
                          (2, False))
 
+    def test_camada_de_pagina_inteira_passa(self):
+        for tag in ("svg", "img"):
+            corpo = f'<{tag} style="position:absolute;left:0;top:0;width:210mm;height:297mm"></{tag}>'
+            self.assertEqual(self._rodar(corpo), (0, True), tag)
+
+    def test_camada_deslocada_nao_e_isenta(self):
+        corpo = '<svg style="position:absolute;left:3mm;top:3mm;width:201mm;height:285mm"></svg>'
+        self.assertEqual(self._rodar(corpo), (2, False))
+
+    def test_img_perto_da_borda_recusa(self):
+        corpo = '<img style="position:absolute;left:2mm;top:50mm;width:40px;height:40px">'
+        self.assertEqual(self._rodar(corpo), (2, False))
+
 
 if __name__ == "__main__":
     unittest.main()

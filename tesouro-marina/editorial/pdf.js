@@ -25,9 +25,12 @@ catch {
       pg.querySelectorAll('[data-check], img, svg, p, h1, h2, h3, li, td, .carta, .bloco').forEach(el => {
         const e = el.getBoundingClientRect();
         if (e.width === 0) return;
-        // camada decorativa que cobre a página inteira (fundo/moldura) sangra de propósito
-        if (el.tagName.toLowerCase() === 'svg' && e.width >= r.width * 0.95 && e.height >= r.height * 0.95) return;
         const mm = 96 / 25.4, m = 8 * mm; // nada a menos de 8 mm da borda
+        // camada decorativa (img ou svg) que realmente cobre a página inteira sangra de propósito;
+        // a folga de 2 mm absorve o arredondamento de 209x296 mm das molduras existentes
+        const t = 2 * mm;
+        if ((el.tagName === 'IMG' || el.tagName.toLowerCase() === 'svg') &&
+            e.left <= r.left + t && e.right >= r.right - t && e.top <= r.top + t && e.bottom >= r.bottom - t) return;
         if (e.left < r.left + m - 0.5 || e.right > r.right - m + 0.5 ||
             e.top < r.top + m - 0.5 || e.bottom > r.bottom - m + 0.5)
           out.push(`p${i + 1}: <${el.tagName.toLowerCase()} class="${el.className}"> fora da área segura`);
