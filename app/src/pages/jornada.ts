@@ -46,7 +46,13 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                   >
                     <div class="marco-texto">
                       <b>${s.marco.titulo}</b>
-                      ${s.ativo ? html`<span class="selo-ativo">trabalhando agora</span>` : ''}
+                      ${
+                        s.ativo
+                          ? s.estado === 'em-desenvolvimento'
+                            ? html`<span class="selo-ativo">trabalhando agora</span>`
+                            : html`<span class="selo-ativo proximo">próximo</span>`
+                          : ''
+                      }
                       <p class="nota">${s.marco.descricaoPais}</p>
                       ${
                         s.aguardando.length

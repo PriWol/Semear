@@ -390,14 +390,13 @@ body.tablet .paginas {
   overflow-y: auto;
   scroll-snap-type: y mandatory;
 }
+/* A folha mantém o tamanho A4 (o conteúdo é em mm) e é escalada para caber na tela; o script define
+   --zoom-tablet. Dimensionar a folha em vw/vh cortava o conteúdo em telas menores que 210mm. */
 body.tablet .pagina {
   scroll-snap-align: start;
   box-shadow: none;
   margin: 0 auto;
-  width: min(100vw, calc((100vh - 54px) * 210 / 297));
-  height: calc(min(100vw, calc((100vh - 54px) * 210 / 297)) * 297 / 210);
-  min-height: 0;
-  zoom: 1;
+  zoom: var(--zoom-tablet, 1);
 }
 body.tablet .rodape {
   display: none;
