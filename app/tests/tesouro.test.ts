@@ -18,9 +18,18 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
     }
   });
 
+  it('os volumes 1 a 4 estão no catálogo, em ordem', () => {
+    expect(VOLUMES.map((v) => v.numero)).toEqual([1, 2, 3, 4]);
+  });
+
   it('o arquivo é caminho relativo ao app (nada de endereço externo)', () => {
     for (const v of VOLUMES) expect(v.arquivo).toMatch(/^tesouro\/[\w-]+\.pdf$/);
-    expect(enderecoDoPdf(VOLUMES[0]!, 42)).toBe('tesouro/volume4-tela.pdf#page=42');
+    expect(
+      enderecoDoPdf(
+        VOLUMES.find((v) => v.numero === 4)!,
+        42,
+      ),
+    ).toBe('tesouro/volume4-tela.pdf#page=42');
   });
 
   it('o endereço do material abre na primeira página do trecho', () => {

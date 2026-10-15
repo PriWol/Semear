@@ -30,6 +30,7 @@ Opção 3, mais as mudanças de modelo abaixo.
   Só no modo "equilibrado": com linhas de foco escolhidas à mão, nada é acrescentado. O "Trocar" percorre as outras complementares.
 - **Catálogo** `app/content/tesouro.json`: volumes, arquivo e unidades com páginas. Um teste confere que cada
   `materialImpresso` aponta para uma unidade do catálogo.
+- **Biblioteca com os volumes 1 a 4:** todos aparecem na Biblioteca e são baixados no deploy (cerca de 110 MB de PDFs `*-tela`). Só o Volume 4 tem atividades ligadas (piloto); os demais ficam disponíveis para consulta.
 - **Site:** o workflow `publicar-site.yml` baixa, para `dist/tesouro/`, os PDFs `*-tela` listados no catálogo,
   a partir da Release pública `tesouro-marina`, e confere o cabeçalho `%PDF-`. O service worker não os guarda
   no cache offline nem responde por eles (`navigateFallbackDenylist`). É preciso estar online ou ter baixado o arquivo.
