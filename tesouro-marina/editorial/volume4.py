@@ -749,7 +749,7 @@ def unidade6(L):
         interesse="ouvir uma das <i>Suítes para violoncelo solo</i> de Bach: um único instrumento, uma voz só.",
         dificil="só ouvir o <i>Prelúdio</i>, com o dedo seguindo a onda no ar."))
 
-    c = f"""<div class="miolo">{titulo("Bach e a casa cheia de música", "Eisenach, 1685 · um músico entre vinte filhos", 25)}
+    c = f"""<div class="miolo">{titulo("Bach e a casa cheia de música", "Eisenach, 1685 · uma casa cheia de filhos e de música", 25)}
       <div class="centro" style="margin:3mm 0">{pd("opera_pastor", "78mm", "margin:0 auto")}</div>
       <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Johann Sebastian Bach nasceu numa família de músicos. Quando criança, aprendeu violino e canto e, mais tarde, tornou-se um dos maiores organistas da sua época.
       Casou-se duas vezes e teve vinte filhos; vários viraram músicos. Escreveu muita música para a igreja e também para a casa: um caderno de pequenas peças para a segunda mulher, Anna Magdalena,
