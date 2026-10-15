@@ -141,3 +141,7 @@ table.sumario td { padding: 3mm 1mm; border-bottom: 0.4pt dotted var(--linha); f
 table.sumario td.pg { text-align: right; font-size: 13pt; width: 14mm; }
 .bolinha { display: inline-block; width: 4mm; height: 4mm; border-radius: 50%; margin-right: 2.5mm; vertical-align: -0.5mm; }
 table.diario td { vertical-align: top; }
+
+/* ---- Volume 4: música ---- */
+.svg-letra { font-size: 3.2px; font-family: "EB Garamond", serif; fill: #3d3127; }
+.svg-rotulo { font-size: 3.2px; font-family: "EB Garamond", serif; font-style: italic; fill: #6b5440; }

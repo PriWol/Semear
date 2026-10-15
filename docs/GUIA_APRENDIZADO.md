@@ -182,6 +182,9 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Plano Livre / Família** | Plano gratuito permanente e plano pago por família (especificação §9). |
 | **Lacuna** | Linha com marco ativo mas sem atividade publicada: sinal para a curadoria. |
 | **SHA-256** | Impressão digital de um arquivo, usada para ter certeza de que ele não mudou. |
+| **Pulso** (música) | A batida regular que não muda, como os passos de quem caminha; o ritmo é o desenho das batidas sobre o pulso. |
+| **Musicograma** | A música desenhada como formas e cores, para acompanhar com o dedo enquanto se escuta. |
+| **SVG** | Desenho feito de linhas e formas descritas em texto; a pauta e as notas do Volume 4 são geradas assim, em `musica.py`. |
 | **Domínio** (código) | A camada do código com as regras de negócio (`src/domain/`). |
 | **Função pura** | Função sem efeitos colaterais: mesma entrada, mesma saída. |
 | **Repositório** | Ponto único de acesso aos dados guardados. |

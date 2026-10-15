@@ -49,12 +49,13 @@ jobs:
       - run: npx playwright install --with-deps chromium
       # Toda página de domínio público usada precisa ter SHA-256 registrado (falha fechada).
       - run: python3 fontes_v1.py verificar
-      - run: python3 -m unittest -v test_fontes_v1 test_pdf
+      - run: python3 -m unittest -v test_fontes_v1 test_pdf test_musica
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
       - run: python3 volume2.py
       - run: python3 volume3.py
+      - run: python3 volume4.py
       - name: Juntar os PDFs
         run: |
           mkdir -p ../pdfs
