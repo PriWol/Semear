@@ -140,6 +140,11 @@ code {
   padding: 1px 8px;
   border-radius: 99px;
 }
+.selo-ativo.proximo {
+  color: var(--mata);
+  background: var(--mata-clara);
+  border: 1px solid var(--mata-media);
+}
 
 .botao {
   display: inline-flex;

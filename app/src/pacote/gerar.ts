@@ -245,7 +245,9 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
 // O app pede a impressão por mensagem: a prévia roda num iframe isolado (sandbox), sem acesso ao app.
 const SCRIPT = `
 window.addEventListener('message',function(e){if(e.source===window.parent&&e.data==='semear:imprimir'){window.print();}});
-function alternarTablet(){var on=document.body.classList.toggle('tablet');document.getElementById('btnTablet').setAttribute('aria-pressed',String(on));}
+function ajustarTablet(){var b=document.body;if(!b.classList.contains('tablet')){b.style.removeProperty('--zoom-tablet');return;}var h=window.innerHeight-54;b.style.setProperty('--zoom-tablet',String(Math.min(window.innerWidth/793.7,h/1122.5)));}
+window.addEventListener('resize',ajustarTablet);
+function alternarTablet(){var on=document.body.classList.toggle('tablet');document.getElementById('btnTablet').setAttribute('aria-pressed',String(on));ajustarTablet();}
 function trocarLetra(v){document.body.classList.remove('letra-bastao','letra-script','letra-cursiva');document.body.classList.add('letra-'+v);}
 `;
 
