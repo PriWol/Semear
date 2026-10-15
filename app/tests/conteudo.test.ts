@@ -108,7 +108,11 @@ describe('validarConteudo', () => {
       { volume: 4, unidade: 1, paginas: [9, 6] as [number, number] },
       { volume: 0, unidade: 1, paginas: [1, 2] as [number, number] },
     ];
-    for (const m of ruim) {
+    const malformados = [
+      { volume: 4, unidade: 1 },
+      { volume: 4, unidade: 1, paginas: [1.5, 3] },
+    ];
+    for (const m of [...ruim, ...(malformados as unknown as (typeof ruim)[number][])]) {
       const a = atividade('m', [], { ...base, materialImpresso: m });
       expect(validarConteudo(conteudoBase({ atividades: [a] })).erros).toHaveLength(1);
     }

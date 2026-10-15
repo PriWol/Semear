@@ -195,8 +195,10 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
       <div><b>Duração real</b>_____ min</div>
       <div><b>Código</b>${e.sessao.codigo}</div>
     </div>
-    ${unicos.length === 0 ? html`<p>Atividade complementar: não há marcos para registrar. Anote abaixo o que a criança fez.</p>` : ''}
-    <h2>Marcos trabalhados</h2>
+    ${
+      unicos.length === 0
+        ? html`<p>Atividade complementar: não há marcos para registrar. Anote abaixo o que a criança fez.</p>`
+        : html`    <h2>Marcos trabalhados</h2>
     <table class="registro">
       <tr>
         <th>Marco</th>
@@ -215,7 +217,8 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
             <td class="c">☐</td>
           </tr>`,
       )}
-    </table>
+    </table>`
+    }
     ${
       evidencias.length
         ? html`<h2>Evidências</h2>

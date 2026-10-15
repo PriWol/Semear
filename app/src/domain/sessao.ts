@@ -206,10 +206,14 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
     }
   }
 
-  // 5. No máximo uma complementar, só se couber na duração escolhida.
-  const comp = complementares(idx, familia, idade, recentes).find(
-    (e) => !usadas.has(e.atividade.id) && minutos + e.atividade.duracaoMin <= limite,
-  );
+  // 5. No máximo uma complementar, só se couber na duração escolhida. Com linhas de foco
+  // escolhidas à mão, a educadora pediu essas linhas: não acrescenta nada por conta própria.
+  const comp =
+    foco === 'equilibrado'
+      ? complementares(idx, familia, idade, recentes).find(
+          (e) => !usadas.has(e.atividade.id) && minutos + e.atividade.duracaoMin <= limite,
+        )
+      : undefined;
   if (comp) {
     escolhas.push(comp);
     minutos += comp.atividade.duracaoMin;

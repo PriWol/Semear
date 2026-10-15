@@ -145,12 +145,19 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     unico(a.id, 'Atividade');
     if (a.marcos.length === 0) validarComplementar(a, idx, erros);
     if (a.materialImpresso) {
-      const [de, ate] = a.materialImpresso.paginas;
-      const { volume, unidade } = a.materialImpresso;
-      if (!Number.isInteger(volume) || volume < 1 || !Number.isInteger(unidade) || unidade < 1)
+      // Dado de fora: confere o formato antes de usar (nunca lança, sempre reporta).
+      const { volume, unidade, paginas } = a.materialImpresso;
+      const inteiro = (n: unknown): n is number => Number.isInteger(n) && (n as number) >= 1;
+      if (!inteiro(volume) || !inteiro(unidade))
         erros.push(`Atividade ${a.id}: material impresso com volume ou unidade inválidos`);
-      else if (!(de >= 1 && ate >= de))
-        erros.push(`Atividade ${a.id}: material impresso com páginas inválidas (${de}–${ate})`);
+      else if (
+        !Array.isArray(paginas) ||
+        paginas.length !== 2 ||
+        !inteiro(paginas[0]) ||
+        !inteiro(paginas[1]) ||
+        paginas[1] < paginas[0]
+      )
+        erros.push(`Atividade ${a.id}: material impresso com páginas inválidas`);
     }
     for (const m of [...a.marcos, ...(a.revisa ?? [])]) {
       if (!idx.marco(m)) erros.push(`Atividade ${a.id}: marco ${m} não existe`);

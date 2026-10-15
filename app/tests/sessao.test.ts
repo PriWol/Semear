@@ -181,7 +181,7 @@ describe('atividades complementares (§3.0)', () => {
     const i = indiceBase({
       atividades: [atividade('atv-fon-1', ['LG.FON.01']), comp('c1'), comp('c2')],
     });
-    const p = proporSessao(i, pedido({ foco: ['LG.FON'] }));
+    const p = proporSessao(i, pedido());
     expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1', 'c1']);
     expect(p.escolhas[1]?.pista).toBe('complementar');
   });
@@ -195,7 +195,7 @@ describe('atividades complementares (§3.0)', () => {
         comp('velha', { idade: [7, 8] }),
       ],
     });
-    const p = proporSessao(i, pedido({ foco: ['LG.FON'], duracaoMin: 20 }));
+    const p = proporSessao(i, pedido({ duracaoMin: 20 }));
     expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1']);
   });
 
@@ -210,5 +210,18 @@ describe('atividades complementares (§3.0)', () => {
     const alts = complementares(i, familia(), 5, new Set());
     expect(alts.map((e) => e.atividade.id).sort()).toEqual(['a', 'b']);
     expect(alts.every((e) => e.pista === 'complementar')).toBe(true);
+  });
+});
+
+describe('complementar e foco escolhido', () => {
+  it('com linhas de foco escolhidas à mão, não acrescenta complementar', () => {
+    const i = indiceBase({
+      atividades: [
+        atividade('atv-fon-1', ['LG.FON.01']),
+        atividade('c1', [], { dominio: 'AR', categoria: 'Canto', duracaoMin: 10 }),
+      ],
+    });
+    const p = proporSessao(i, pedido({ foco: ['LG.FON'] }));
+    expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1']);
   });
 });

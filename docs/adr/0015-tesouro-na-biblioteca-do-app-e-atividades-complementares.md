@@ -27,7 +27,7 @@ Opção 3, mais as mudanças de modelo abaixo.
   roteiro mostram o trecho; a Biblioteca abre o PDF direto na unidade.
 - **Gerador de sessão:** depois de preencher a duração com a jornada, entra **no máximo uma** complementar,
   só se couber na duração, adequada à idade, publicada e pontuada como as demais (vertente, inspiração, novidade).
-  O "Trocar" percorre as outras complementares.
+  Só no modo "equilibrado": com linhas de foco escolhidas à mão, nada é acrescentado. O "Trocar" percorre as outras complementares.
 - **Catálogo** `app/content/tesouro.json`: volumes, arquivo e unidades com páginas. Um teste confere que cada
   `materialImpresso` aponta para uma unidade do catálogo.
 - **Site:** o workflow `publicar-site.yml` baixa, para `dist/tesouro/`, os PDFs `*-tela` listados no catálogo,
@@ -47,5 +47,6 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 
 - O site depende da Release existir no momento do deploy; sem ela o deploy falha (melhor que publicar link quebrado).
 - Privacidade inalterada: nenhum dado da família sai do aparelho, e o PDF vem do mesmo domínio do app.
+- O site só republica quando `app/` muda: se um PDF mudar na Release (paginação, conteúdo), rode o workflow "Publicar site" à mão (`workflow_dispatch`) e atualize o catálogo.
 - O catálogo é mantido à mão neste piloto; se os volumes mudarem de paginação, atualize o catálogo e rode `npm run check`.
 - Atividades complementares ainda não têm "tema"; a escolha usa idade, vertente e novidade.
