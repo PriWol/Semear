@@ -24,6 +24,13 @@ def pauta(compasso, larg=170, esp=2.3, letra=None, clave=True, cor_nota=TINTA, r
     letra: sílabas (uma por nota, pausas não levam sílaba). rotulos: texto sob cada nota (ex.: dó, ré...).
     Devolve o HTML de um <svg> com largura larg (mm).
     """
+    notas = [i for i in compasso if i != "|" and i[0] != "R"]
+    for nome_lista, lista in (("letra", letra), ("rotulos", rotulos)):
+        if lista is not None and len(lista) != len(notas):   # sílaba sob a nota errada ensina a cantar errado
+            raise ValueError(f"{nome_lista} tem {len(lista)} itens, mas a pauta tem {len(notas)} notas")
+    for it in compasso:
+        if it != "|" and it[0] == "R" and it[1] not in ("q", "h"):
+            raise ValueError(f"pausa de duração {it[1]!r} não suportada (só 'q' e 'h')")
     ini = 12.5 if clave else 4
     topo = 6 * esp                       # espaço acima da pauta (para notas agudas e hastes)
     base = topo + 4 * esp                # linha de baixo
@@ -124,6 +131,8 @@ def tira_ritmo(padrao, larg=150, cor="#8a6f9e", rotulos=True, k=1.0):
     Ritmo em hastes (como se faz com crianças): 'ta' = uma haste; 'ti-ti' = duas hastes ligadas; 'sh' = silêncio (pausa).
     padrao: lista com 'ta', 'ti', 'sh'.
     """
+    if not padrao:
+        raise ValueError("tira_ritmo precisa de ao menos uma figura")
     n = len(padrao)
     cel = larg / n
     altura = 22 if rotulos else 16
@@ -173,6 +182,8 @@ def musicograma(secoes, larg=174, alt=46):
     'onda' (legato, contínua), 'pontos' (staccato), 'zigue' (agitada), 'bloco' (forte e cheia), 'calma' (linha quase reta).
     Cada seção ocupa largura proporcional ao peso. Sem escala de tempo: o adulto acompanha com o dedo enquanto escutam.
     """
+    if not secoes:
+        raise ValueError("musicograma precisa de ao menos uma seção")
     total = sum(s[3] for s in secoes)
     x = 2
     util = larg - 4
@@ -231,7 +242,7 @@ def linha_do_tempo(itens, ano0=1670, ano1=1960, larg=174):
     esc = (larg - 8) / (ano1 - ano0)
     p = []
     alt = 12 + len(itens) * 13
-    for ano in range(1700, ano1, 50):
+    for ano in range((ano0 // 50 + 1) * 50, ano1, 50):
         x = 4 + (ano - ano0) * esc
         p.append(f'<line x1="{x:.1f}" y1="4" x2="{x:.1f}" y2="{alt - 4}" stroke="#bfae8f" stroke-width="0.25" stroke-dasharray="1 1.2"/>')
         p.append(f'<text x="{x:.1f}" y="{alt - 0.5}" text-anchor="middle" class="svg-rotulo">{ano}</text>')

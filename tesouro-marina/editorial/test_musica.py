@@ -47,6 +47,20 @@ class Pauta(unittest.TestCase):
     def test_pauta_vazia_nao_quebra(self):
         self.assertIn("<svg", musica.pauta([]))
 
+    def test_letra_ou_rotulos_de_tamanho_errado_sao_recusados(self):
+        notas = [("C4", "q"), ("R", "q"), ("D4", "q")]
+        musica.pauta(notas, letra=["a", "b"])             # pausa não leva sílaba: 2 notas, 2 sílabas
+        with self.assertRaises(ValueError):
+            musica.pauta(notas, letra=["a"])
+        with self.assertRaises(ValueError):
+            musica.pauta(notas, rotulos=["dó", "ré", "mi"])
+
+    def test_pausa_so_aceita_duracoes_desenhadas(self):
+        musica.pauta([("R", "q"), ("R", "h")])
+        for dur in ("e", "w"):
+            with self.assertRaises(ValueError):
+                musica.pauta([("R", dur)])
+
     def test_letra_e_rotulos_aparecem_sob_as_notas(self):
         svg = musica.pauta([("C4", "q"), ("D4", "q")], letra=["bri", "lha"], rotulos=["dó", "ré"])
         for t in ("bri", "lha", "dó", "ré"):
@@ -57,6 +71,17 @@ class Ritmo(unittest.TestCase):
     def test_tira_de_ritmo_tem_um_grupo_por_figura(self):
         svg = musica.tira_ritmo(["ta", "ti", "sh"])
         self.assertEqual(svg.count("<g transform"), 3)
+
+    def test_entradas_vazias_dao_erro_claro(self):
+        with self.assertRaises(ValueError):
+            musica.tira_ritmo([])
+        with self.assertRaises(ValueError):
+            musica.musicograma([])
+
+    def test_linha_do_tempo_respeita_o_ano_inicial(self):
+        svg = musica.linha_do_tempo([("X", 1800, 1850, "#111111")], ano0=1800, ano1=1900)
+        self.assertNotIn(">1700<", svg)
+        self.assertIn(">1850<", svg)
 
     def test_musicograma_e_cores_respeitam_a_ordem(self):
         mg = musica.musicograma([("a", "#111111", "onda", 1), ("b", "#222222", "bloco", 1)])
