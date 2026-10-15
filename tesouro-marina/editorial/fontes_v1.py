@@ -170,6 +170,9 @@ def baixar(item, n):
     uma página trocada, corrompida ou renumerada no acervo nunca entre num volume sem aviso.
     Falha fechada: página sem SHA-256 registrado é recusada, salvo no comando "registrar" (após conferir a
     imagem a olho), que grava o hash novo no manifesto.
+    O "registrar" só inclui páginas novas: se uma página já registrada mudou no acervo, o download novo é
+    recusado por SHA diferente. Trocar um hash é decisão editorial, feita à mão no manifesto depois de
+    conferir a imagem.
     """
     os.makedirs(FONTE, exist_ok=True)
     chave = f"{item}_n{n}"
