@@ -1,8 +1,13 @@
 # Mantém as GitHub Actions fixadas por SHA atualizadas (o SHA é imutável; a tag móvel não é).
+# Um único PR por mês, com todas as actions juntas, para não encher a fila de revisão.
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-    open-pull-requests-limit: 5
+      interval: monthly
+    open-pull-requests-limit: 1
+    groups:
+      actions:
+        patterns:
+          - "*"
