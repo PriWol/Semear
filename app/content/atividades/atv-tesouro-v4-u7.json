@@ -1,0 +1,55 @@
+{
+  "id": "atv-tesouro-v4-u7",
+  "titulo": "Mozart: variações de uma melodia",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Estudo de compositores",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 7,
+    "paginas": [54, 59]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason"],
+  "idade": [4, 8],
+  "duracaoMin": 20,
+  "objetivo": "A criança **reconhece a mesma melodia vestida de outro jeito**: variações de Mozart sobre “Ah! vous dirai-je, Maman”.",
+  "passos": [
+    {
+      "titulo": "Quem é Mozart",
+      "minutos": 4,
+      "texto": "Apresente Wolfgang Amadeus Mozart (1756–1791) e cantem juntos a melodia da cantiga."
+    },
+    {
+      "titulo": "Escuta das variações",
+      "minutos": 10,
+      "texto": "Ponha a gravação. Pergunte, a cada variação: é a mesma melodia? O que mudou?",
+      "fala": "O que mudou: ficou mais rápida, mais fraca, mais enfeitada?"
+    },
+    {
+      "titulo": "Cores e variações",
+      "minutos": 6,
+      "texto": "Com as cores do livro, ela escolhe a ordem e você canta o que ela tocou."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Reconhece a melodia dentro da variação"],
+    "emDesenvolvimento": ["Só percebe a melodia original"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    },
+    {
+      "item": "Gravação das variações de Mozart sobre Ah! vous dirai-je, Maman",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  }
+}

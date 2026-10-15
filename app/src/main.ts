@@ -17,6 +17,7 @@ import { paginaJornada } from './pages/jornada';
 import { paginaSessaoNova } from './pages/sessao-nova';
 import { paginaSessao } from './pages/sessao';
 import { paginaConfig } from './pages/config';
+import { paginaBiblioteca } from './pages/biblioteca';
 import { paginaConteudo } from './pages/conteudo';
 
 const naoEncontrada: FabricaPagina = async () => ({
@@ -42,6 +43,7 @@ async function iniciar() {
       '/sessao/nova': paginaSessaoNova,
       '/sessao/:id': paginaSessao,
       '/config': paginaConfig,
+      '/biblioteca': paginaBiblioteca,
       '/conteudo': paginaConteudo,
       '/novidades': paginaNovidades,
     }),

@@ -11,6 +11,7 @@ import type {
 } from '../domain/tipos';
 import { ehLetra, NOME_LETRA } from '../domain/letra';
 import { dataBR } from '../domain/datas';
+import { rotuloDoMaterial } from '../domain/material';
 import { escapar, html, textoRico, type HtmlSeguro } from '../ui/html';
 import { paginaDaFolha } from './folhas';
 import tokens from '../tokens.css?raw';
@@ -54,9 +55,14 @@ function roteiroDaAtividade(a: Atividade, e: EntradaPacote, primeira: boolean): 
   return html`<div class="${primeira ? '' : 'atividade-sep'}">
     <h1>${a.titulo}</h1>
     <p>
-      <b>Marco principal:</b> ${a.marcos.map(nomeMarco).join(' · ')}
+      ${
+        a.marcos.length
+          ? html`<b>Marco principal:</b> ${a.marcos.map(nomeMarco).join(' · ')}`
+          : html`<b>Atividade complementar:</b> ${a.categoria ?? ''}`
+      }
       ${a.revisa?.length ? html` &nbsp;·&nbsp; <b>Revisão:</b> ${a.revisa.map(nomeMarco).join(' · ')}` : ''}
     </p>
+    ${a.materialImpresso ? html`<p>📖 <b>Material impresso:</b> ${rotuloDoMaterial(a.materialImpresso)}</p>` : ''}
     ${primeira ? cabecalhoMeta(e) : ''}
     <h2>🎯 Objetivo</h2>
     <p>${textoRico(a.objetivo)}</p>
@@ -189,7 +195,10 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
       <div><b>Duração real</b>_____ min</div>
       <div><b>Código</b>${e.sessao.codigo}</div>
     </div>
-    <h2>Marcos trabalhados</h2>
+    ${
+      unicos.length === 0
+        ? html`<p>Atividade complementar: não há marcos para registrar. Anote abaixo o que a criança fez.</p>`
+        : html`    <h2>Marcos trabalhados</h2>
     <table class="registro">
       <tr>
         <th>Marco</th>
@@ -208,7 +217,8 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
             <td class="c">☐</td>
           </tr>`,
       )}
-    </table>
+    </table>`
+    }
     ${
       evidencias.length
         ? html`<h2>Evidências</h2>
@@ -278,7 +288,9 @@ export function gerarPacote(e: EntradaPacote): string {
   </section>`;
 
   const folhas = e.atividades.flatMap((a) =>
-    a.folhas.map((f, i) => paginaDaFolha(f, `${a.marcos.join(' · ')} · Folha ${i + 1}`)),
+    a.folhas.map((f, i) =>
+      paginaDaFolha(f, `${a.marcos.join(' · ') || a.categoria || ''} · Folha ${i + 1}`),
+    ),
   );
 
   const opcoesLetra = (Object.keys(NOME_LETRA) as Letra[])

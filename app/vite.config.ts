@@ -40,6 +40,9 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,svg,json}'],
         // A faxina do site antigo e o 404 não precisam ficar no cache offline do app.
         globIgnores: ['service-worker.js', '404.html'],
+        // Os PDFs do Tesouro (./tesouro/) são abertos pelo navegador, não pelo app: sem isto o
+        // service worker responderia com o index.html no lugar do PDF (ADR 0015).
+        navigateFallbackDenylist: [/\.pdf$/],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\/.*/,

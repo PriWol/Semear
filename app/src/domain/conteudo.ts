@@ -12,6 +12,8 @@ export interface IndiceConteudo {
   atividade(id: string): Atividade | undefined;
   /** atividades publicadas que trabalham o marco (como principal) */
   atividadesDoMarco(marcoId: string): Atividade[];
+  /** atividades complementares publicadas (sem marcos; §3.0) */
+  complementares(): Atividade[];
   /** atividades publicadas cujos marcos principais estão na linha */
   atividadesDaLinha(linhaId: string): Atividade[];
   livro(id: string): Livro | undefined;
@@ -53,6 +55,7 @@ export function criarIndice(conteudo: Conteudo): IndiceConteudo {
     marcosDaLinha: (id) => marcosPorLinha.get(id) ?? [],
     atividade: (id) => atividades.get(id),
     atividadesDoMarco: (marcoId) => publicadas.filter((a) => a.marcos.includes(marcoId)),
+    complementares: () => publicadas.filter((a) => a.marcos.length === 0),
     atividadesDaLinha: (linhaId) =>
       publicadas.filter((a) => a.marcos.some((m) => linhaDoMarco(m) === linhaId)),
     livro: (id) => livros.get(id),
@@ -77,6 +80,18 @@ const TIPOS_FOLHA: Folha['tipo'][] = [
   'quadro-dez',
   'comparar',
 ];
+
+/** Atividade sem marcos só vale como complementar: domínio sem jornada e categoria conhecida. */
+function validarComplementar(a: Atividade, idx: IndiceConteudo, erros: string[]): void {
+  const dominio = a.dominio ? idx.dominio(a.dominio) : undefined;
+  if (!dominio || dominio.comJornada) {
+    erros.push(
+      `Atividade ${a.id}: sem marco, precisa de "dominio" de um domínio sem jornada (complementar)`,
+    );
+  } else if (!a.categoria || !dominio.categorias?.includes(a.categoria)) {
+    erros.push(`Atividade ${a.id}: categoria "${a.categoria ?? ''}" não existe em ${dominio.id}`);
+  }
+}
 
 export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
   const erros: string[] = [];
@@ -128,7 +143,22 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
 
   for (const a of conteudo.atividades) {
     unico(a.id, 'Atividade');
-    if (a.marcos.length === 0) erros.push(`Atividade ${a.id}: precisa de pelo menos um marco`);
+    if (a.marcos.length === 0) validarComplementar(a, idx, erros);
+    if (a.materialImpresso) {
+      // Dado de fora: confere o formato antes de usar (nunca lança, sempre reporta).
+      const { volume, unidade, paginas } = a.materialImpresso;
+      const inteiro = (n: unknown): n is number => Number.isInteger(n) && (n as number) >= 1;
+      if (!inteiro(volume) || !inteiro(unidade))
+        erros.push(`Atividade ${a.id}: material impresso com volume ou unidade inválidos`);
+      else if (
+        !Array.isArray(paginas) ||
+        paginas.length !== 2 ||
+        !inteiro(paginas[0]) ||
+        !inteiro(paginas[1]) ||
+        paginas[1] < paginas[0]
+      )
+        erros.push(`Atividade ${a.id}: material impresso com páginas inválidas`);
+    }
     for (const m of [...a.marcos, ...(a.revisa ?? [])]) {
       if (!idx.marco(m)) erros.push(`Atividade ${a.id}: marco ${m} não existe`);
     }

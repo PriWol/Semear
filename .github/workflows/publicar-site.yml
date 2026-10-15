@@ -38,6 +38,18 @@ jobs:
       # Sem configure-pages: o app usa caminhos relativos (base './'), e a etapa exigiria a
       # permissão pages no job que roda código de terceiros (npm ci).
       - run: npm run build
+      # Biblioteca (ADR 0015): os PDFs do Tesouro não ficam no Git; vêm da Release e são servidos
+      # pelo próprio site (mesma origem, abrem na página certa). Release pública: sem token.
+      # A lista sai do catálogo app/content/tesouro.json, para site e catálogo não divergirem.
+      - name: Baixar os PDFs do Tesouro
+        run: |
+          mkdir -p dist/tesouro
+          for arquivo in $(node -e "for (const v of require('./content/tesouro.json').volumes) console.log(v.arquivo.replace('tesouro/', ''))"); do
+            curl --fail --silent --show-error --location --retry 3 \
+              --output "dist/tesouro/$arquivo" \
+              "https://github.com/${{ github.repository }}/releases/download/tesouro-marina/$arquivo"
+            head -c 5 "dist/tesouro/$arquivo" | grep -q '^%PDF-'
+          done
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: app/dist

@@ -1,0 +1,55 @@
+{
+  "id": "atv-tesouro-v4-u2",
+  "titulo": "Pulso: a batida que anda",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "volume": 4,
+    "unidade": 2,
+    "paginas": [15, 22]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 20,
+  "objetivo": "A criança **acompanha o pulso** (a batida regular) com o corpo e começa a reconhecer batidas longas (ta), duas rápidas (ti-ti) e o silêncio (sh).",
+  "passos": [
+    {
+      "titulo": "Andar no pulso",
+      "minutos": 5,
+      "texto": "Caminhem em fila ao som de uma cantiga, com a criança puxando e você seguindo o passo dela."
+    },
+    {
+      "titulo": "Ta, ti-ti e sh",
+      "minutos": 8,
+      "texto": "Bata palmas dizendo “ta” (um passo), “ti-ti” (dois rápidos, como um ratinho) e “sh” (a mão para no ar, mas ainda conta)."
+    },
+    {
+      "titulo": "Folhas da unidade 2",
+      "minutos": 7,
+      "texto": "Abra o Tesouro nas páginas indicadas: bata e diga, e descubra quem anda assim.",
+      "fala": "Quem anda assim: devagar ou depressa?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Mantém o pulso por uma cantiga inteira"],
+    "emDesenvolvimento": ["Acelera ou perde o pulso"]
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "ajustes": {
+    "facil": "Antes dos 4 anos é comum não acompanhar o pulso: continue com o movimento, sem corrigir.",
+    "dificil": "Peça que ela invente uma sequência de ta, ti-ti e sh para você bater."
+  }
+}

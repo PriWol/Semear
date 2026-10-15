@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   atividadesRecentes,
+  complementares,
   gerarCodigoSessao,
   pontuar,
   proporSessao,
@@ -169,5 +170,58 @@ describe('atividadesRecentes', () => {
       { ...sessao(['outra-crianca'], AGORA), criancaId: 'c2' },
     ];
     expect([...atividadesRecentes(historico, 'c1', AGORA)]).toEqual(['nova']);
+  });
+});
+
+describe('atividades complementares (§3.0)', () => {
+  const comp = (id: string, extra = {}) =>
+    atividade(id, [], { dominio: 'AR', categoria: 'Escuta musical', duracaoMin: 10, ...extra });
+
+  it('entra no máximo uma complementar, depois das atividades da jornada', () => {
+    const i = indiceBase({
+      atividades: [atividade('atv-fon-1', ['LG.FON.01']), comp('c1'), comp('c2')],
+    });
+    const p = proporSessao(i, pedido());
+    expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1', 'c1']);
+    expect(p.escolhas[1]?.pista).toBe('complementar');
+  });
+
+  it('não entra se estoura a duração, e ignora rascunho e idade fora da faixa', () => {
+    const i = indiceBase({
+      atividades: [
+        atividade('atv-fon-1', ['LG.FON.01'], { duracaoMin: 20 }),
+        comp('grande', { duracaoMin: 30 }),
+        comp('rascunho', { autoria: { origem: 'ia', status: 'rascunho' } }),
+        comp('velha', { idade: [7, 8] }),
+      ],
+    });
+    const p = proporSessao(i, pedido({ duracaoMin: 20 }));
+    expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1']);
+  });
+
+  it('prefere a que não foi feita nas últimas 2 semanas', () => {
+    const i = indiceBase({ atividades: [comp('a'), comp('b')] });
+    const p = proporSessao(i, pedido({ historico: [sessao(['a'])], duracaoMin: 20 }));
+    expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['b']);
+  });
+
+  it('o Trocar percorre as outras complementares', () => {
+    const i = indiceBase({ atividades: [comp('a'), comp('b')] });
+    const alts = complementares(i, familia(), 5, new Set());
+    expect(alts.map((e) => e.atividade.id).sort()).toEqual(['a', 'b']);
+    expect(alts.every((e) => e.pista === 'complementar')).toBe(true);
+  });
+});
+
+describe('complementar e foco escolhido', () => {
+  it('com linhas de foco escolhidas à mão, não acrescenta complementar', () => {
+    const i = indiceBase({
+      atividades: [
+        atividade('atv-fon-1', ['LG.FON.01']),
+        atividade('c1', [], { dominio: 'AR', categoria: 'Canto', duracaoMin: 10 }),
+      ],
+    });
+    const p = proporSessao(i, pedido({ foco: ['LG.FON'] }));
+    expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1']);
   });
 });

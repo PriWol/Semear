@@ -4,6 +4,8 @@ import { idadeEmAnos } from '../domain/datas';
 import { letraDaCrianca } from '../domain/letra';
 import type { Atividade } from '../domain/tipos';
 import { gerarPacote, nomeArquivoPacote } from '../pacote/gerar';
+import { rotuloDoMaterial } from '../domain/material';
+import { enderecoDoMaterial } from '../tesouro';
 import { dataCurta } from '../ui/rotulos';
 
 export function baixarArquivo(nome: string, conteudo: string, tipo: string) {
@@ -56,6 +58,16 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
             </p>`
           : ''
       }
+      ${atividades.flatMap((a) => {
+        const m = a.materialImpresso;
+        const endereco = m ? enderecoDoMaterial(m) : null;
+        if (!m || !endereco) return [];
+        return html`<p>
+          📖
+          <a href="${endereco}" target="_blank" rel="noopener">Abrir no livro</a>
+          <span class="nota">${a.titulo} · ${rotuloDoMaterial(m)}</span>
+        </p>`;
+      })}
       <div class="acoes barra-pacote">
         <button class="botao primario" type="button" id="imprimir">🖨️ Imprimir / salvar PDF</button>
         <button class="botao" type="button" id="baixar">⬇️ Baixar arquivo</button>

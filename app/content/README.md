@@ -6,12 +6,13 @@ dentro de `app/` e abra um PR.
 
 ## Arquivos
 
-| Arquivo                 | O que contém                                                       |
-| ----------------------- | ------------------------------------------------------------------ |
-| `dominios.json`         | Domínios, linhas, trilhas de língua e vertentes. Muda pouco.       |
-| `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                     |
-| `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança. |
-| `livros.json`           | Curadoria de livros.                                               |
+| Arquivo                 | O que contém                                                          |
+| ----------------------- | --------------------------------------------------------------------- |
+| `dominios.json`         | Domínios, linhas, trilhas de língua e vertentes. Muda pouco.          |
+| `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                        |
+| `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança.    |
+| `livros.json`           | Curadoria de livros.                                                  |
+| `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015). |
 
 ## Marco
 
@@ -35,7 +36,7 @@ dentro de `app/` e abra um PR.
 Veja `atividades/atv-caca-silabas.json` (Linguagem) e `atividades/atv-feira-numeros.json` (Matemática)
 como modelos completos. Campos principais:
 
-- `marcos` (trabalhados) e `revisa` (aparecem como revisão na ficha);
+- `marcos` (trabalhados; vazio = atividade **complementar**, que exige `dominio` sem jornada, ex.: `AR`, e `categoria`; pode trazer `materialImpresso` com `volume`, `unidade` e `paginas`, conferido contra `tesouro.json`) e `revisa` (aparecem como revisão na ficha);
 - `vertentes`, `idade` `[mín, máx]` e `duracaoMin`: usados pelo gerador de sessão para pontuar;
 - `objetivo`, `passos`, `observar`, `ajustes`, `materiais`, `toqueVertente`: viram o roteiro do educador;
 - `evidencias` e `perguntaFicha`: viram a ficha de registro;

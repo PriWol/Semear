@@ -7,6 +7,8 @@ import { idPista, pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import {
   atividadesRecentes,
   candidatas,
+  complementares,
+  PISTA_COMPLEMENTAR,
   DURACOES,
   gerarCodigoSessao,
   proporSessao,
@@ -43,6 +45,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
 
   const recentes = atividadesRecentes(historico, crianca.id, agora);
   const alternativas = (e: Escolha): Escolha[] => {
+    if (e.pista === PISTA_COMPLEMENTAR) return complementares(ctx.idx, familia, idade, recentes);
     const pista = pistasComAtivos.find((x) => idPista(x.p) === e.pista);
     if (!pista) return [];
     return candidatas(ctx.idx, pista.p, pista.pos.ativos, familia, idade, recentes).map((c) => ({
@@ -68,8 +71,12 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
                     <b>${e.atividade.titulo}</b>
                     <span class="nota">${e.atividade.duracaoMin} min</span>
                     <p class="nota">
-                      ${e.atividade.marcos.map((m) => ctx.idx.marco(m)?.titulo ?? m).join(' · ')} —
-                      ${e.motivos.join(', ')}
+                      ${
+                        e.atividade.marcos.length
+                          ? e.atividade.marcos.map((m) => ctx.idx.marco(m)?.titulo ?? m).join(' · ')
+                          : `Complementar · ${e.atividade.categoria ?? ''}`
+                      }
+                      — ${e.motivos.join(', ')}
                     </p>
                   </div>
                   <div class="acoes">
