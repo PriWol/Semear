@@ -2,14 +2,24 @@
 
 Nenhum teste usa a rede: as páginas já estão em cache numa pasta temporária.
 """
+import io
 import json
 import os
 import tempfile
 import unittest
+from unittest import mock
+
+from PIL import Image
 
 import fontes_v1
 
-PAGINA = b"conteudo-de-uma-pagina"
+def _jpeg():
+    buf = io.BytesIO()
+    Image.new("RGB", (8, 8), (200, 180, 150)).save(buf, "JPEG")
+    return buf.getvalue()
+
+
+PAGINA = _jpeg()
 SHA = fontes_v1._sha256(PAGINA)
 CHAVE = "livro_n7"
 
@@ -23,7 +33,9 @@ class FalhaFechada(unittest.TestCase):
         fontes_v1.FONTE = os.path.join(self.tmp.name, "paginas")
         fontes_v1.REGISTRAR = False
         os.makedirs(fontes_v1.FONTE)
-        open(os.path.join(fontes_v1.FONTE, CHAVE + ".jpg"), "wb").write(PAGINA)
+        self.cache = os.path.join(fontes_v1.FONTE, CHAVE + ".jpg")
+        with open(self.cache, "wb") as f:
+            f.write(PAGINA)
         self.addCleanup(self._restaurar)
 
     def _restaurar(self):
@@ -32,7 +44,8 @@ class FalhaFechada(unittest.TestCase):
         fontes_v1.ITENS.update(self.antes[3])
 
     def _manifesto(self, dados):
-        json.dump(dados, open(fontes_v1.MANIFESTO, "w"))
+        with open(fontes_v1.MANIFESTO, "w") as f:
+            json.dump(dados, f)
 
     def test_pagina_com_hash_certo_passa(self):
         self._manifesto({CHAVE: SHA})
@@ -40,7 +53,7 @@ class FalhaFechada(unittest.TestCase):
 
     def test_hash_diferente_e_recusado(self):
         self._manifesto({CHAVE: "0" * 64})
-        with self.assertRaises(ValueError):
+        with mock.patch.object(fontes_v1, "_da_rede", return_value=PAGINA), self.assertRaises(ValueError):
             fontes_v1.baixar("livro", 7)
 
     def test_pagina_sem_hash_e_recusada(self):
@@ -55,8 +68,41 @@ class FalhaFechada(unittest.TestCase):
     def test_registrar_grava_o_hash_novo(self):
         self._manifesto({})
         fontes_v1.REGISTRAR = True
-        fontes_v1.baixar("livro", 7)
-        self.assertEqual(json.load(open(fontes_v1.MANIFESTO)), {CHAVE: SHA})
+        with mock.patch.object(fontes_v1, "_da_rede", return_value=PAGINA) as rede:
+            fontes_v1.baixar("livro", 7)
+        rede.assert_called_once()   # registrar ignora o cache
+        with open(fontes_v1.MANIFESTO) as f:
+            self.assertEqual(json.load(f), {CHAVE: SHA})
+
+    def test_registrar_nao_rebaixa_pagina_ja_registrada(self):
+        self._manifesto({CHAVE: SHA})
+        fontes_v1.REGISTRAR = True
+        with mock.patch.object(fontes_v1, "_da_rede") as rede:
+            fontes_v1.baixar("livro", 7)
+        rede.assert_not_called()
+
+    def test_cache_corrompido_baixa_de_novo(self):
+        self._manifesto({CHAVE: SHA})
+        with open(self.cache, "wb") as f:
+            f.write(b"lixo")
+        with mock.patch.object(fontes_v1, "_da_rede", return_value=PAGINA) as rede:
+            fontes_v1.baixar("livro", 7)
+        rede.assert_called_once()
+        with open(self.cache, "rb") as f:
+            self.assertEqual(f.read(), PAGINA)
+
+    def test_hash_e_conferido_antes_de_decodificar(self):
+        self._manifesto({CHAVE: "0" * 64})
+        with mock.patch.object(fontes_v1, "_da_rede", return_value=PAGINA), \
+                mock.patch.object(fontes_v1.Image, "open") as abrir, self.assertRaises(ValueError):
+            fontes_v1.baixar("livro", 7)
+        abrir.assert_not_called()
+
+    def test_resposta_maior_que_o_limite_e_recusada(self):
+        resposta = mock.MagicMock()
+        resposta.__enter__.return_value.read.return_value = b"x" * (fontes_v1.LIMITE_BYTES + 1)
+        with mock.patch("urllib.request.urlopen", return_value=resposta), self.assertRaises(ValueError):
+            fontes_v1._da_rede("livro", 7)
 
     def test_verificar_aponta_item_sem_hash(self):
         fontes_v1.ITENS.clear()
