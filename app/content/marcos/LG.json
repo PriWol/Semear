@@ -264,7 +264,31 @@
       "idadeTipica": 4,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": ["EI03EF01", "EI03EF03"]
+      "bncc": ["EI03EF01", "EI03EF03"],
+      "orientacaoPais": {
+        "porQueImporta": "Ouvir histórias lidas em voz alta é onde a criança aprende vocabulário, o jeito das narrativas e o gosto por livros, **antes de ler sozinha**. Responder a perguntas simples (quem, onde, o quê) mostra que ela acompanhou o fio da história.",
+        "comoParticipar": "Leia em voz alta todos os dias, mesmo que por 10 minutos, com ela por perto. Mostre a capa e pergunte “do que será?”; depois, converse com perguntas simples (“quem apareceu?”, “onde foi?”, “o que aconteceu?”). Releia as favoritas: a repetição ajuda.",
+        "sinaisDeAtencao": "Aos 4 anos é comum se distrair em histórias longas; prefira as curtas. Se aos 5 ou 6 anos ela não acompanha nem histórias curtas com figuras, ou não responde a perguntas simples sobre elas, vale conversar com a escola e checar audição e linguagem. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nelp-alfabetizacao-inicial", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Deixe livros bem ilustrados ao alcance e a criança escolher, folhear e “ler” sozinha as figuras. Na primeira infância, a tradição Montessori costuma preferir histórias realistas às de fantasia.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Conte histórias de memória, sem o livro, e repita a mesma narrativa por vários dias; contos de fadas e tradicionais têm lugar central. A criança escuta com o corpo todo.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Contos tradicionais, fábulas e mitos lidos em voz alta fazem parte da tradição clássica desde cedo, bem antes de a criança ler sozinha.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Escolha livros bem escritos (os “livros vivos” de Mason) em vez de versões resumidas, e leia em trechos curtos.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LIT.02",
@@ -276,7 +300,27 @@
       "idadeTipica": 5,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LIT.01"],
-      "bncc": ["EI03EF04", "EF15LP19"]
+      "bncc": ["EI03EF04", "EF15LP19"],
+      "orientacaoPais": {
+        "porQueImporta": "Recontar é transformar o que ouviu em fala própria: a criança precisa **lembrar, ordenar e escolher palavras**. É o treino de começo, meio e fim que depois vira texto escrito e compreensão de leitura.",
+        "comoParticipar": "Depois de ler, peça: “me conta como foi essa história?”. Aceite o jeito dela e ajude só com perguntas (“e depois?”). Use as figuras do livro, bonecos ou um desenho em três quadros (começo, meio e fim). Corrija só a ordem, se for preciso, e não as palavras.",
+        "sinaisDeAtencao": "Aos 5 anos é comum trocar a ordem ou esquecer partes. Se aos 6 anos ela não consegue recontar nem uma história curta com a ajuda das figuras, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "A criança revive a história na brincadeira livre e no teatro de bonecos; recontar vem naturalmente depois de ouvir muitas vezes a mesma narrativa.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "O reconto também pode ser em poucas frases, primeiro oral e depois escrito, como na narração que a tradição clássica adota.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "A narração é o coração do método Mason: a criança conta com as próprias palavras o que ouviu, depois de uma única leitura. Comece com trechos curtos e acolha o jeito dela.",
+            "referencias": ["mason-home-education-4ed"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LIT.03",
@@ -291,7 +335,27 @@
       "idadeTipica": 6,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LIT.02"],
-      "bncc": ["EI03EF01", "EF15LP02"]
+      "bncc": ["EI03EF01", "EF15LP02"],
+      "orientacaoPais": {
+        "porQueImporta": "Ir além de “o que aconteceu” e perguntar **por quê** é o começo do pensamento sobre histórias: a criança liga as ações às intenções dos personagens, forma opinião e aprende a justificá-la.",
+        "comoParticipar": "Faça perguntas sem uma única resposta: “por que será que ele fez isso?”, “o que você teria feito?”, “você mudaria alguma coisa?”. Peça sempre o “por quê?” e ouça com interesse, sem dizer o que é certo ou errado. Compare com outras histórias e com a vida da família.",
+        "sinaisDeAtencao": "Aos 6 anos muitas crianças dão razões curtas ou repetem a história. Se aos 7 ela só responde sobre fatos, nunca sobre motivos, mesmo com conversa frequente, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "No começo, deixe a história “trabalhar” sem muita análise; a conversa sobre motivos vem mais tarde. Se a criança comentar por conta própria, acolha.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Fábulas e mitos são ponto de partida para conversar sobre as escolhas dos personagens e o que elas ensinam.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Faça poucas perguntas, e abertas, e deixe a criança tirar as próprias conclusões de um bom livro.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.01",
@@ -305,7 +369,35 @@
         "Waldorf": 7
       },
       "preRequisitos": ["LG.FON.04", "LG.LET.03"],
-      "bncc": ["EF01LP05", "EF12LP01"]
+      "bncc": ["EF01LP05", "EF12LP01"],
+      "orientacaoPais": {
+        "porQueImporta": "Ler BOLA ou GATO é juntar sílabas que a criança já sabe separar e reconhecer: é o primeiro uso real do **código alfabético**. Depende de conhecer os sons das letras e de separar sílabas. Em português, as sílabas simples (consoante + vogal) são as mais regulares e o melhor lugar para começar.",
+        "comoParticipar": "Comece com sílabas simples: junte a consoante e a vogal em voz alta (B + A = BA) e depois forme palavras (BA-TA, BO-LA), com letras móveis ou cartões. Leiam juntos, devagar, apontando; depois deixe ela ler sozinha. Poucos minutos por dia, todos os dias, valem mais que sessões longas. Continue lendo histórias em voz alta.",
+        "sinaisDeAtencao": "Cada criança tem seu ritmo. Se, depois de um ano de ensino sistemático, ela ainda não lê palavras simples, ou troca letras e esquece sons com frequência, vale conversar com a escola e com um fonoaudiólogo. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "soares-alfabetizacao-metodos",
+          "morais-sistema-escrita-alfabetica",
+          "nelp-alfabetizacao-inicial"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O alfabeto móvel permite escrever antes de ler: a criança forma BOLA com as letras e depois a lê, apoiada nas letras de lixa que já conhece.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, a leitura costuma vir depois da escrita, por volta dos 7 anos, como o aviso acima indica: a criança primeiro escreve o que já conhece de memória e das histórias.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "O ensino fônico sistemático, em ordem e com revisão diária, em lições curtas, é a marca da tradição clássica.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Faça lições curtas, com palavras que a criança já conhece, e continue com a leitura em voz alta de bons livros.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.02",
@@ -319,7 +411,27 @@
         "Waldorf": 7
       },
       "preRequisitos": ["LG.LEI.01"],
-      "bncc": ["EF12LP01", "EF15LP18"]
+      "bncc": ["EF12LP01", "EF15LP18"],
+      "orientacaoPais": {
+        "porQueImporta": "Ler uma frase é mais que somar palavras: a criança precisa guardar o que leu para entender o todo. É aqui que a leitura passa a **ter sentido** (“O gato bebe leite” e a figura combina).",
+        "comoParticipar": "Escreva frases curtas sobre o dia a dia da criança (“O Davi pula”, “A mamãe fez bolo”) e peça que leia e mostre a figura ou faça o que a frase diz. Faça livrinhos com uma frase por página. Alterne: ela lê uma página e você lê a outra.",
+        "sinaisDeAtencao": "Ler frases ainda cansa no começo. Se aos 7 anos ela lê as palavras mas não entende o que leu, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["soares-alfabetizacao-metodos", "morais-sistema-escrita-alfabetica"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Cartões com frases de ação (“pule duas vezes”) tornam a leitura um fazer: a criança lê e executa.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Como o aviso acima indica, esta etapa costuma vir por volta dos 7 anos. Antes, ela pode reconhecer palavras familiares, mas a leitura de frases fica para o 1º ano.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Prefira frases e textos com sentido a listas de palavras soltas, e leia devagar o que a criança consegue entender.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.03",
@@ -333,7 +445,27 @@
         "Waldorf": 7.5
       },
       "preRequisitos": ["LG.LEI.01"],
-      "bncc": ["EF01LP08", "EF12LP01"]
+      "bncc": ["EF01LP08", "EF12LP01"],
+      "orientacaoPais": {
+        "porQueImporta": "O português tem sons que se escrevem com duas letras (CH, NH, LH, RR) e sílabas com mais de uma consoante (PLANTA, BRAVO). Essas combinações não seguem o “uma letra, um som” e **precisam ser ensinadas e treinadas** uma a uma.",
+        "comoParticipar": "Ensine um grupo por vez: CH (chave, chuva, chinelo), depois NH, LH e RR. Faça listas e jogos de memória com figuras e palavras, e leiam juntos textos que usam o grupo. Use uma cor diferente para o dígrafo (as duas letras juntas valem um som). Quando um grupo estiver firme, passe ao seguinte.",
+        "sinaisDeAtencao": "Dígrafos e encontros consonantais costumam demorar mais para ficar firmes. Se aos 8 anos ela ainda se perde na maioria deles, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["morais-sistema-escrita-alfabetica", "soares-alfabetizacao-metodos"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Letras de lixa para os dígrafos, em outra cor, e o alfabeto móvel ajudam a perceber que duas letras formam um só som.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Como o aviso acima indica, esta etapa vem por volta de 7,5 anos, depois de a criança ler textos que ela mesma escreveu e conhece.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "É o lugar do ensino fônico sistemático: um grupo por vez, em ordem, com revisão diária.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.04",
@@ -347,7 +479,23 @@
         "Waldorf": 8
       },
       "preRequisitos": ["LG.LEI.02", "LG.LEI.03"],
-      "bncc": ["EF12LP01", "EF15LP16"]
+      "bncc": ["EF12LP01", "EF15LP16"],
+      "orientacaoPais": {
+        "porQueImporta": "Fluência é ler **com ritmo e sem soletrar**: quando decodificar fica automático, a atenção sobra para entender. Por isso reler os mesmos textos ajuda tanto.",
+        "comoParticipar": "Releiam o mesmo texto curto de 3 a 4 vezes, a criança lendo e você acompanhando. Leiam em dupla, um parágrafo cada. Poemas e cantigas são ótimos para treinar. Grave a leitura para ela se ouvir. Elogie o progresso, não a velocidade.",
+        "sinaisDeAtencao": "Parar bastante é normal no começo. Se aos 8 ou 9 anos ela ainda soletra quase todas as palavras, apesar de leitura diária, vale conversar com a escola e avaliar a leitura. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["rasinski-fluent-reader", "soares-alfabetizacao-metodos", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Como o aviso acima indica, a leitura fluente costuma se firmar por volta dos 8 anos, depois de muita prática com textos conhecidos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Reler em voz alta poemas e textos curtos bem escolhidos, em lições breves, forma o ouvido e a fluência.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.05",
@@ -362,7 +510,23 @@
       "idadeTipica": 7.5,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.04"],
-      "bncc": ["EF15LP16", "EF15LP04"]
+      "bncc": ["EF15LP16", "EF15LP04"],
+      "orientacaoPais": {
+        "porQueImporta": "A pontuação é a **música do texto**: a voz desce no ponto, sobe na pergunta e pausa na vírgula. Ler assim mostra que a criança entende a frase, e não só decodifica.",
+        "comoParticipar": "Leia um trecho com e sem entonação e pergunte qual soa melhor. Façam teatrinhos: cada personagem lê uma fala respeitando a pontuação. Marque os sinais com cores (ponto, vírgula, interrogação) e deixe a criança ler as perguntas e exclamações com a voz certa.",
+        "sinaisDeAtencao": "Ler sem entonação é comum até a leitura ficar automática. Se aos 9 anos ela ainda lê tudo no mesmo tom, sem parar nos pontos, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["rasinski-fluent-reader", "bncc"],
+        "porVertente": {
+          "Clássico": {
+            "comoParticipar": "Poesia lida em voz alta, com a pontuação como guia, é prática antiga para aprender a voz do texto.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Recite poemas de cor e depois leia os mesmos em voz alta, cuidando de cada pausa.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.06",
@@ -374,7 +538,27 @@
       "idadeTipica": 8,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.05"],
-      "bncc": ["EF02LP26", "EF15LP16"]
+      "bncc": ["EF02LP26", "EF15LP16"],
+      "orientacaoPais": {
+        "porQueImporta": "Ler um livro inteiro sozinho é a conquista do **leitor independente**: a criança junta fluência, compreensão e persistência. Escolher o livro e dizer do que gostou faz da leitura um prazer, e não só um dever.",
+        "comoParticipar": "Deixe-a escolher livros ilustrados de que gosta, com 200 a 500 palavras e vocabulário que conheça (o acervo gratuito do app pode ajudar). Reserve um horário tranquilo e um cantinho de leitura, e continue lendo em voz alta livros mais difíceis. Pergunte “do que você gostou?”, sem prova.",
+        "sinaisDeAtencao": "Algumas crianças gostam mais de livros do que outras, e isso não é problema. Se aos 9 anos ela evita qualquer leitura e lê com muito esforço, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "soares-alfabetizacao-metodos"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Deixe a criança escolher o livro e o momento: a leitura por escolha é valorizada na tradição Montessori.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Clássico": {
+            "comoParticipar": "Livros bons e belos, com a leitura em voz alta continuando em livros mais difíceis, são a base da formação do leitor.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Mason pede “livros vivos”, bem escritos, em vez de livros-lição: escolha poucos e bons.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.07",
@@ -391,7 +575,23 @@
         "Waldorf": 7.5
       },
       "preRequisitos": ["LG.LEI.02", "LG.LIT.01"],
-      "bncc": ["EF15LP03"]
+      "bncc": ["EF15LP03"],
+      "orientacaoPais": {
+        "porQueImporta": "Encontrar no texto **quem, onde, quando e o quê** é a primeira forma de compreensão de leitura: a resposta está escrita e a criança precisa localizá-la. Isso separa ler as palavras de entender o que elas dizem.",
+        "comoParticipar": "Depois de ler um texto curto, pergunte e peça que aponte a frase com a resposta. Releiam juntos, se preciso. Troquem os papéis: a criança faz as perguntas e você responde, às vezes errando de propósito.",
+        "sinaisDeAtencao": "Responder do que lembra, e não do que está escrito, é comum. Se aos 8 anos ela lê bem, mas erra a maioria das perguntas literais, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "soares-alfabetizacao-metodos"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Como o aviso acima indica, perguntas sobre o texto lido costumam vir mais tarde, por volta de 7,5 anos. Até lá, as histórias contadas e ouvidas fazem esse trabalho.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Pergunte e peça que ela mostre a frase no livro: confirmar no texto é hábito de leitor atento.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.08",
@@ -405,7 +605,27 @@
         "Waldorf": 8
       },
       "preRequisitos": ["LG.LEI.07", "LG.LIT.02"],
-      "bncc": ["EF15LP19", "EI03EF05"]
+      "bncc": ["EF15LP19", "EI03EF05"],
+      "orientacaoPais": {
+        "porQueImporta": "Recontar o que leu mostra que a criança guardou a ordem e as ideias, e é a ponte para escrever resumos. Escolher o que contar já é **compreender**.",
+        "comoParticipar": "Depois de ler, peça que conte com as próprias palavras, com começo, meio e fim, ajudando só com perguntas curtas (“quem?”, “onde?”, “e depois?”). Alterne: oral numa semana, desenho com uma frase na outra. Mantenha curto.",
+        "sinaisDeAtencao": "Recontar por escrito exige mais da mão e da escrita. Se aos 8 ou 9 anos ela não consegue recontar oralmente um texto curto que leu, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Como o aviso acima indica, o reconto de textos lidos costuma vir por volta de 8 anos. Antes disso, a criança já conta de ouvido as histórias que escutou.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Um resumo de uma ou duas frases, primeiro oral e depois escrito, é a prática da narração na tradição clássica.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Narrar depois de ler é o método Mason: a criança conta o que leu com as próprias palavras, sem se prender às palavras do livro.",
+            "referencias": ["mason-home-education-4ed"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.09",
@@ -422,7 +642,23 @@
         "Waldorf": 8
       },
       "preRequisitos": ["LG.LEI.07", "LG.LIT.03"],
-      "bncc": ["EF15LP02", "EF15LP03"]
+      "bncc": ["EF15LP02", "EF15LP03"],
+      "orientacaoPais": {
+        "porQueImporta": "Inferir é descobrir o que o texto **não diz** a partir das pistas: como alguém se sente, o que vai acontecer. É um dos pilares da compreensão: o leitor constrói sentido além das palavras.",
+        "comoParticipar": "Pergunte “como será que ele está se sentindo?” e depois “como você sabe?”, pedindo que aponte a pista no texto ou na ilustração. Pare a leitura antes do final e peça uma previsão (“o que acontece agora?”); depois confiram juntos.",
+        "sinaisDeAtencao": "Inferir costuma vir depois de ler com fluência. Se aos 8 ou 9 anos ela responde bem sobre o que está escrito, mas nunca vai além, mesmo com pistas, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Como o aviso acima indica, esse tipo de análise costuma vir por volta de 8 anos. Antes disso, as histórias já trabalham a imaginação e a compreensão na escuta.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Fábulas e histórias com moral são ótimas para inferir intenções e consequências.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.10",
@@ -437,7 +673,19 @@
       "idadeTipica": 7.5,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.09"],
-      "bncc": ["EF15LP18", "EF15LP15"]
+      "bncc": ["EF15LP18", "EF15LP15"],
+      "orientacaoPais": {
+        "porQueImporta": "Ligar o que lê ao que viveu e a outros livros dá **sentido pessoal** à leitura. Aprender a ler as ilustrações, que muitas vezes dizem mais que o texto, também faz parte de ler bem.",
+        "comoParticipar": "Pergunte “isso já aconteceu com você?” e “lembra outra história parecida?”. Olhem a ilustração antes de ler o texto e depois pergunte “o que a imagem mostra que o texto não conta?”. Conversem sem pressa.",
+        "sinaisDeAtencao": "Cada criança relaciona de um jeito. Se aos 9 anos ela nunca conecta o que lê à própria vida nem às imagens, mesmo com conversa, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Deixe a criança conversar sobre o que leu e viu, sem questionário: Mason valoriza a relação pessoal com o livro e com o assunto.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.11",
@@ -449,7 +697,23 @@
       "idadeTipica": 8,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.08", "LG.LEI.10"],
-      "bncc": ["EF15LP02", "EF12LP18"]
+      "bncc": ["EF15LP02", "EF12LP18"],
+      "orientacaoPais": {
+        "porQueImporta": "Saber do que o texto trata e que tipo de texto é (conto, poema, receita, notícia) ajuda a ler com o objetivo certo e a resumir. Cada gênero tem seu jeito de ser lido.",
+        "comoParticipar": "Reúna textos variados (um conto, um poema, uma receita, um bilhete, uma notícia) e converse: “para que serve?”, “como a gente reconhece?”. Peça um resumo em uma frase. Leiam rótulos, receitas e cartas reais em casa.",
+        "sinaisDeAtencao": "Resumir em uma frase costuma vir bem depois de recontar. Se aos 9 ou 10 anos ela não distingue os gêneros mais comuns, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"],
+        "porVertente": {
+          "Clássico": {
+            "comoParticipar": "Dar nome ao gênero (fábula, poema, narrativa) e resumir o assunto faz parte de aprender a analisar um texto.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "A narração, e não o resumo mecânico, é a base: o assunto do texto aparece quando a criança o conta com as próprias palavras.",
+            "referencias": ["mason-home-education-4ed"]
+          }
+        }
+      }
     },
     {
       "id": "LG.LEI.12",
@@ -461,7 +725,19 @@
       "idadeTipica": 8,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.11"],
-      "bncc": ["EF15LP15", "EF02LP26"]
+      "bncc": ["EF15LP15", "EF02LP26"],
+      "orientacaoPais": {
+        "porQueImporta": "Dizer o que pensa e **provar com o texto** (“acho que o lobo era mau porque…”) é a base do argumento: a criança aprende que opinião se sustenta com razões e evidências.",
+        "comoParticipar": "Pergunte “você gostou? por quê?” e peça que mostre o trecho. Aceite opiniões diferentes, desde que justificadas, e converse sobre as razões, e não sobre o certo e o errado. Peça também que ela ouça a opinião de outra pessoa.",
+        "sinaisDeAtencao": "Argumentar leva tempo. Se aos 9 ou 10 anos ela só diz “gostei” ou “não gostei”, sem razão, mesmo com perguntas, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"],
+        "porVertente": {
+          "Clássico": {
+            "comoParticipar": "Dialogar sobre o que o texto sustenta e o que não sustenta é exercício que a tradição clássica treina ao longo dos anos.",
+            "referencias": ["sayers-lost-tools"]
+          }
+        }
+      }
     }
   ]
 }
