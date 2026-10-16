@@ -5,7 +5,6 @@
 - **Relacionado:** 0002 (dados no aparelho), 0003 (domínio puro)
 
 ## Contexto
-
 A especificação (§9, decisões 29 a 33) previa teste de 30 dias com cartão no cadastro, assinatura
 **por criança** e **bloqueio total** depois do teste. A revisão de out/2026 encontrou problemas:
 
@@ -20,7 +19,6 @@ A especificação (§9, decisões 29 a 33) previa teste de 30 dias com cartão n
 - **Pagamento:** o Pix Automático exige CNPJ ativo há mais de 6 meses.
 
 ## Opções consideradas
-
 1. **Manter o modelo anterior** (teste com cartão, por criança, bloqueio total): receita mais rápida por
    usuário, mas com cadastro difícil, risco de má fama e uma cobrança que não pode ser verificada. A variante "cobrar por criança contando
    só no aparelho" também foi descartada: o número fica fácil de burlar e conferi-lo no servidor
@@ -30,9 +28,7 @@ A especificação (§9, decisões 29 a 33) previa teste de 30 dias com cartão n
    conteúdo novo toda semana, e o histórico nunca fica refém.
 
 ## Decisão
-
 Opção 3, detalhada na especificação §9:
-
 - **Semear Livre**, grátis para sempre e sem conta: jornada, sondagem, histórico, backup, **portfólio
   completo** e um número limitado de pacotes.
 - **Semear Família**, por família e com crianças ilimitadas: pacotes ilimitados e conteúdo
@@ -44,7 +40,6 @@ Opção 3, detalhada na especificação §9:
   em qualquer plano e para qualquer período: ele protege a família e não pode depender de pagamento.
 
 ## Consequências
-
 - Nada muda no app de hoje: o limite do Livre e o plano Família só entram com o código de conta e
   assinatura (§12.3).
 - O backend fica menor: o servidor guarda só a conta e a data de validade da licença, nunca dados ou
@@ -57,7 +52,7 @@ Opção 3, detalhada na especificação §9:
 - O portfólio não depende de comprovante de licença. Isso dispensa regras de cobertura de período,
   tira os comprovantes do backup e elimina o incentivo a repetir o teste para gerar portfólio.
 - O limite do Livre entra no domínio como parâmetro injetado de `podeGerarPacote(plano, limiteLivre,
-pacotesNaSemana)`, sem valor fixo, até o piloto decidir.
+  pacotesNaSemana)`, sem valor fixo, até o piloto decidir.
 - **Privacidade:** os comprovantes levam o `contaId`, então ficam só no store de licença e nunca vão
   no backup; ao entrar na conta, o app baixa os comprovantes de novo.
 - **Antes de qualquer código de conta ou assinatura**, um ADR próprio de backend e privacidade

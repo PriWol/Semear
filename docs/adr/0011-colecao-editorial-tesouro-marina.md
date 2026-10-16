@@ -4,13 +4,11 @@
 - **Data:** 2026-10-14
 
 ## Contexto
-
-A dona do produto pediu uma coleção de livros de atividades impressos (_O Grande Tesouro de Marina_, 8 volumes,
+A dona do produto pediu uma coleção de livros de atividades impressos (*O Grande Tesouro de Marina*, 8 volumes,
 mais de 500 páginas A4) com currículo clássico para 2 a 6 anos. É um produto editorial: textos, ilustrações de
 domínio público, cartões e jogos recortáveis em PDF. Não é uma funcionalidade do app e não usa dados de família.
 
 ## Opções consideradas
-
 1. **Diretório próprio na raiz (`tesouro-marina/`), com pipeline Python + Playwright:** isolado do `app/`,
    sem dependência nova no app, reproduzível a partir de `editorial/`. Exige Python (numpy, scipy, pillow) e o
    Chromium do Playwright para gerar os PDFs.
@@ -19,7 +17,6 @@ domínio público, cartões e jogos recortáveis em PDF. Não é uma funcionalid
 3. **Repositório separado:** isolamento total, mas perde a relação com a jornada por domínios.
 
 ## Decisão
-
 Opção 1. A coleção fica em `tesouro-marina/` e não é importada pelo app nem publicada no Pages.
 
 - **Rede:** o único acesso externo é o download, no build editorial, de páginas digitalizadas do Internet Archive
@@ -30,7 +27,6 @@ Opção 1. A coleção fica em `tesouro-marina/` e não é importada pelo app ne
   a especificação (`docs/JORNADA_SPEC.md`) será atualizada e o conteúdo passará pela validação do ADR 0005.
 
 ### Arquivos gerados fora do Git
-
 Os PDFs finais e as páginas de inspeção (`*/inspecao/`) são reproduzíveis a partir de `editorial/` e somariam
 centenas de MB no histórico. Opções consideradas: manter no Git, Git LFS ou Release do GitHub. A dona do produto
 escolheu a **Release**: o workflow `.github/workflows/publicar-tesouro.yml` gera os PDFs a cada merge no `main` que
@@ -39,7 +35,6 @@ altere `tesouro-marina/` e atualiza os anexos da Release `tesouro-marina`. Em PR
 ilustrações de domínio público já recortadas (`editorial/dominio_publico/`).
 
 ### Conteúdo confiável
-
 O pipeline editorial só aceita conteúdo confiável, escrito no repositório (`editorial/volumeN.py`). Os textos são
 interpolados em HTML sem escape, ao contrário do app (CLAUDE.md), e o Chromium abre o HTML por `file://`. Isso é
 seguro enquanto nenhum dado externo (por exemplo, o nome de uma criança numa dedicatória personalizada) entrar
@@ -49,7 +44,6 @@ Os downloads de páginas seguem a regra de falha fechada: página sem SHA-256 no
 roda `fontes_v1.py verificar` antes de gerar os PDFs.
 
 ## Consequências
-
 - O app continua sem dependências novas; quem trabalha só no `app/` não precisa de Python.
 - Os PDFs precisam ser regenerados (`python3 volumeN.py`) quando o texto ou o estilo mudar.
 - Para baixar os PDFs: página de Releases do repositório, Release `tesouro-marina`.
