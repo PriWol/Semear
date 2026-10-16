@@ -351,7 +351,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, as operações costumam ser formalizadas por volta dos 7 anos, como o aviso acima indica, em histórias e com movimento. Até lá, a criança já soma vivendo: contando passos e itens da mesa.",
+            "comoParticipar": "Na pedagogia Waldorf, as operações costumam ser formalizadas por volta dos {idade} anos, em histórias e com movimento. Até lá, a criança já soma vivendo: contando passos e itens da mesa.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Charlotte Mason": {
@@ -416,7 +416,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, esse trabalho costuma ficar para por volta dos 7 anos. A soma parte do todo: “de que é feito o 7?”. Em casa, o ritmo (palmas e passos) ajuda a memória.",
+            "comoParticipar": "Esse trabalho costuma ficar para a idade escolar, por volta dos {idade} anos. A soma parte do todo: “de que é feito o 7?”. Em casa, o ritmo (palmas e passos) ajuda a memória.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -454,7 +454,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Contar em saltos com palmas e passos (de 2 em 2, de 5 em 5) é uma prática comum: o ritmo dá forma à multiplicação. Como o aviso acima indica, as operações costumam ser formalizadas por volta dos 7 anos.",
+            "comoParticipar": "Contar em saltos com palmas e passos (de 2 em 2, de 5 em 5) é uma prática comum: o ritmo dá forma à multiplicação. As operações costumam ser formalizadas por volta dos {idade} anos.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -491,7 +491,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Parta do todo: o 7 e as partes que o formam. Como o aviso acima indica, as operações costumam ser apresentadas juntas, em histórias, por volta dos 7 anos.",
+            "comoParticipar": "Parta do todo: o 7 e as partes que o formam. As operações costumam ser apresentadas juntas, em histórias, por volta dos {idade} anos.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Charlotte Mason": {
