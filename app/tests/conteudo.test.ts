@@ -10,10 +10,13 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
-  it('a linha de Consciência fonológica tem orientação para os pais em todos os marcos', () => {
-    const marcos = carregarConteudo().marcos.filter((m) => m.linha === 'LG.FON');
-    expect(marcos.length).toBeGreaterThan(0);
-    for (const m of marcos) expect(m.orientacaoPais, m.id).toBeDefined();
+  it('as linhas com marcos escritos têm orientação para os pais em todos os marcos', () => {
+    // LG.FON e MA.SEN estão completas; as demais linhas ainda não têm marcos.
+    for (const linha of ['LG.FON', 'MA.SEN']) {
+      const marcos = carregarConteudo().marcos.filter((m) => m.linha === linha);
+      expect(marcos.length, linha).toBeGreaterThan(0);
+      for (const m of marcos) expect(m.orientacaoPais, m.id).toBeDefined();
+    }
   });
   it('tem as atividades de exemplo publicadas', () => {
     const ids = carregarConteudo().atividades.map((a) => a.id);

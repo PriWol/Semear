@@ -68,10 +68,13 @@ test('abrir o texto não muda o estado do marco, e marcar o estado não fecha o 
   await expect(m.getByText('Por que importa')).toBeVisible();
 });
 
-test('marco sem texto para os pais não mostra o botão', async ({ page }) => {
+test('Matemática também traz o texto para os pais', async ({ page }) => {
   await cadastrarFamiliaECrianca(page);
   await page.getByRole('link', { name: /Matemática/ }).click();
-  // A orientação da linha MA.SEN virá em outra entrega: nada de bloco vazio na tela.
-  await expect(page.locator('li.marco').first()).toBeVisible();
-  await expect(page.locator('details.para-os-pais')).toHaveCount(0);
+  const bloco = marco(page, 'MA.SEN.03').locator('details.para-os-pais');
+
+  await expect(bloco.getByText('Por que importa')).toBeHidden();
+  await bloco.getByText('Para os pais').click();
+  await expect(bloco.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(bloco.locator('.referencias')).toContainText('KAMII, Constance');
 });

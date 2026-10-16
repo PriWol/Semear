@@ -10,7 +10,27 @@
       "idadeTipica": 3,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Recitar “um, dois, três…” é o primeiro passo da contagem: a criança aprende a **lista dos números, sempre na mesma ordem**. Ainda não é saber quantidade; é como aprender a letra de uma música, que depois ganha sentido ao ser usada para contar coisas.",
+        "comoParticipar": "Cantem e recitem juntos, no dia a dia: parlendas (“Um, dois, feijão com arroz”), degraus da escada, passos até a porta, dedos das mãos. Faça com alegria e sem exigir que conte objetos ainda. Se ela pular um número, apenas recite de novo com ela.",
+        "sinaisDeAtencao": "Aos 3 anos é comum pular ou trocar números. Se por volta dos 5 anos ela ainda não recita de 1 a 10 sem se perder, mesmo com bastante prática em casa, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Ofereça a sequência também pela mão, com materiais como as barras numéricas (do 1 ao 10, em ordem de tamanho), ainda sem cobrar a quantidade. A criança vê e toca a ordem dos números.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Conte com o corpo e o ritmo: batendo palmas, pulando, andando, com cantigas de roda e jogos de corda. A sequência se aprende no movimento, antes de virar exercício.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Memorizar a sequência é como decorar um poema: cantem e recitem todos os dias, por poucos minutos.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     },
     {
       "id": "MA.SEN.02",
@@ -22,7 +42,27 @@
       "idadeTipica": 3.5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Contar de verdade é dizer **um número para cada objeto, tocando um de cada vez**. Muitas crianças recitam a lista certinha, mas apontam mais rápido ou mais devagar que a fala: aqui elas aprendem a combinar a voz e a mão.",
+        "comoParticipar": "Contem coisas reais e pequenas: talheres na mesa, botões, castanhas. Ensine a **mover cada objeto** para o outro lado depois de contar, assim fica claro o que já foi contado. Brinquem de “um para cada”: um copo para cada boneco, uma colher para cada prato.",
+        "sinaisDeAtencao": "Aos 4 anos é comum pular um objeto ou contar o mesmo duas vezes. Se aos 5 anos ela ainda não consegue contar 3 a 5 objetos tocando um de cada vez, mesmo movendo cada objeto depois de contar, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "kamii-crianca-numero"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Use uma bandeja com poucos objetos e uma tigela: a criança move cada objeto para a tigela enquanto diz o número. A mão faz a contagem, e o espaço de trabalho fica ordenado.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Contem coisas da natureza (castanhas, sementes, pedrinhas), passando uma a uma para uma cesta, no ritmo de uma cantiga ou verso de contagem.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Contem objetos reais do dia a dia, em lições curtas, poucos objetos por vez. A atenção plena vale mais que a repetição longa.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "MA.SEN.03",
@@ -34,7 +74,27 @@
       "idadeTipica": 4,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Saber que o **último número dito diz quantos são** (cardinalidade) transforma a contagem em quantidade. Para Kamii, a criança constrói esse sentido de número relacionando coisas na vida e na brincadeira; ele não vem da repetição mecânica.",
+        "comoParticipar": "Depois de contar, pergunte “quantos são?” e deixe ela responder sem recontar. Mude a situação (“e se eu tirar um?”) e deixe que ela confira contando. Use perguntas reais: “quantos pãezinhos precisamos para a família?”.",
+        "sinaisDeAtencao": "Aos 4 anos muitas crianças ainda recontam tudo ao ouvir “quantos?”. Se aos 5 ou 6 anos ela não consegue dizer o total depois de contar poucos objetos, mesmo com situações do dia a dia, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["kamii-crianca-numero", "nunes-bryant-children-doing-mathematics"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Materiais como a caixa de fusos, em que a criança coloca a quantidade certa de fusos em cada compartimento numerado, ligam o número à quantidade total.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Deixe a criança viver a coleção como um todo: juntar as castanhas numa cesta, contar e dizer “são cinco”. O número se firma pelo vivido, e não por exercício.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Faça lições curtas, com poucos objetos: a criança conta, diz o total e você varia o que está sobre a mesa.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "MA.SEN.04",
@@ -46,7 +106,19 @@
       "idadeTipica": 4.5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Reconhecer 1, 2, 3 ou 4 de relance, como nos pontos do dado, é diferente de contar: a criança **vê a quantidade de uma vez** (subitizar). Isso ajuda a perceber quantidades sem contar de um em um e prepara a soma.",
+        "comoParticipar": "Joguem com dados e dominós: mostre uma carta com pontos por um ou dois segundos e pergunte “quantos?”. Mostrem quantidades nos dedos. Se ela precisar contar, tudo bem: deixe contar e depois tente de novo mais devagar.",
+        "sinaisDeAtencao": "Isso melhora com a prática e varia muito de criança para criança. Se por volta dos 6 anos ela ainda precisa contar até 1, 2 ou 3 objetos todas as vezes, vale mencionar à escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Materiais como a escada de contas coloridas apresentam cada quantidade como um grupo reconhecível, que a criança passa a identificar de relance.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
     },
     {
       "id": "MA.SEN.05",
@@ -58,7 +130,19 @@
       "idadeTipica": 5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Dizer onde tem **mais, menos ou igual** é pensar nas quantidades uma em relação à outra. Muitas crianças se enganam pela aparência: uma fila mais espalhada “parece” ter mais. Descobrir, contando ou pareando, que não é assim faz parte de entender número.",
+        "comoParticipar": "Crie situações reais de comparar: “quem tem mais bolachas?”. Peça que ela confira de dois jeitos: contando e **emparelhando** (um objeto de cada lado, em fileiras). Depois mude a disposição e pergunte de novo. Deixe-a descobrir, sem dar a resposta pronta.",
+        "sinaisDeAtencao": "Trocar “mais” e “maior” é comum. Se aos 6 anos ela ainda não consegue dizer onde tem mais em coleções pequenas, mesmo contando e emparelhando, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "kamii-crianca-numero", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Histórias e brincadeiras de repartir (castanhas entre bonecos, pães entre amigos) levam a criança a sentir o “justo” e o “igual” antes de nomear.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
     },
     {
       "id": "MA.SEN.06",
@@ -70,7 +154,27 @@
       "idadeTipica": 5.5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Contar 15 ou 20 objetos exige **organização**: perder a conta é comum quando os objetos ficam espalhados. Em português, os números de 11 a 15 (onze, doze, treze, catorze, quinze) têm nomes irregulares, o que dá trabalho a mais. Organizar em grupos de dez prepara o sistema decimal.",
+        "comoParticipar": "Contem coleções de verdade (botões, sementes, degraus) e ensine a organizá-las: em fileiras de 5 ou de 10, movendo o que já foi contado. Dê uma coleção embaralhada e pergunte “como ter certeza de que contei todos?”. O quadro de dez, usado nas folhas do Semear, ajuda a ver o dez.",
+        "sinaisDeAtencao": "Errar entre o 11 e o 20 é frequente. Se aos 6 ou 7 anos ela se perde a cada contagem, mesmo organizando em fileiras, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "nunes-bryant-children-doing-mathematics"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A contagem acima de 10 pode ser vista nas contas douradas: o dez é uma barra, e isso prepara o sistema decimal.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Conte em saltos de 5 ou de 10 batendo palmas, andando ou pulando. O ritmo ajuda a manter a conta e a perceber os grupos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Conte coisas reais, como degraus, sementes e castanhas, poucas por vez e em lições curtas.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "MA.SEN.07",
@@ -82,7 +186,23 @@
       "idadeTipica": 6,
       "idadeIntroducao": {},
       "preRequisitos": ["MA.SEN.06"],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Continuar a contagem **a partir de um número**, sem voltar ao 1, é um salto: a criança já trata o 6 como “seis que já estão aí”. É a base para somar (6 + 3: sete, oito, nove).",
+        "comoParticipar": "Esconda 6 fichas sob um pano ou na mão e diga “aqui tem 6; coloco mais 3, contem a partir do 6”. Em jogos de tabuleiro, avance contando a partir da casa em que está, e não do início. Comece com somas pequenas e deixe ela conferir contando tudo.",
+        "sinaisDeAtencao": "Ainda é comum recontar tudo desde o 1 por um tempo, e isso não é erro. Se por volta dos 7 anos ela sempre recontar do início mesmo com somas bem pequenas, depois de semanas de jogos, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com as barras numéricas, junte a barra do 6 e a do 3 e conte a partir do 6: a criança vê o que acontece com a quantidade.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Conte em movimento e continue o ritmo de onde parou: andar contando até 6 e seguir de 7 em diante, sem voltar ao início.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
     },
     {
       "id": "MA.SEN.08",
@@ -94,7 +214,27 @@
       "idadeTipica": 6.5,
       "idadeIntroducao": {},
       "preRequisitos": ["MA.SEN.07"],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Ver o 7 como 5 e 2, ou 4 e 3, é perceber que um número é **feito de partes**. É a base de somar, subtrair e calcular de cabeça, e é um dos focos da matemática dos primeiros anos do ensino fundamental.",
+        "comoParticipar": "Pegue 7 grãos e dois potes e pergunte “de quantos jeitos podemos repartir?”. Deixe a criança achar vários e registrar com desenhos e depois com números (7 = 5 + 2). Os dedos também servem: 5 numa mão e 2 na outra.",
+        "sinaisDeAtencao": "Achar todas as decomposições leva tempo. Se por volta dos 7 ou 8 anos ela não vê o 7 como duas partes, mesmo com objetos na mão, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "kamii-crianca-numero"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com as barras numéricas e as contas coloridas, a criança compõe o 10 de vários jeitos (6 e 4, 7 e 3) e vê as partes lado a lado.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "A matemática Waldorf costuma ir do todo às partes: parta do 7 como um todo e pergunte de que partes ele é feito, em vez de montá-lo de um em um.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Deixe a criança descobrir e conferir as combinações com objetos antes de decorar as contas. Só depois de provar, as combinações viram fatos de memória.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     }
   ]
 }
