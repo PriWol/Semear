@@ -354,6 +354,48 @@ progress {
   border-color: var(--mata-media);
   border-width: 2px;
 }
+.para-os-pais {
+  margin-top: var(--s-espaco-2);
+  font-size: 0.92rem;
+}
+.para-os-pais summary {
+  display: inline-block;
+  padding: var(--s-espaco-1) var(--s-espaco-2);
+  border-radius: var(--s-raio-p);
+  color: var(--s-principal);
+  font-weight: 700;
+  cursor: pointer;
+}
+.para-os-pais[open] summary {
+  background: var(--s-principal-claro);
+}
+.para-os-pais-texto {
+  margin-top: var(--s-espaco-2);
+  padding: var(--s-espaco-3) var(--s-espaco-4);
+  border-left: 3px solid var(--s-principal);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+}
+.para-os-pais-texto h3 {
+  margin: var(--s-espaco-3) 0 var(--s-espaco-1);
+  font-family: var(--s-fonte-titulo);
+  font-size: 0.95rem;
+  color: var(--s-principal);
+}
+.para-os-pais-texto h3:first-child {
+  margin-top: 0;
+}
+.para-os-pais-texto p {
+  margin: 0;
+}
+.para-os-pais-texto .referencias {
+  margin: 0;
+  padding-left: var(--s-espaco-4);
+  color: var(--s-suave);
+  font-size: 0.85rem;
+  display: grid;
+  gap: var(--s-espaco-1);
+}
 .aviso-marco {
   font-size: 0.85rem;
   color: var(--terra);

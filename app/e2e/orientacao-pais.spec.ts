@@ -1,0 +1,82 @@
+import { expect, test, type Page } from '@playwright/test';
+
+// "Para os pais": texto pedagógico de cada marco, recolhido por padrão e adaptado à vertente da família.
+
+async function cadastrarFamiliaECrianca(page: Page) {
+  await page.goto('./');
+  await page.getByRole('link', { name: 'Começar' }).click();
+  await page.getByLabel('Seu nome (educador)').fill('Maria');
+  await page.getByRole('radio', { name: /Montessori/ }).check();
+  await page.locator('input[name=inspiracoes][value=Waldorf]').check();
+  await page.getByRole('button', { name: 'Continuar' }).click();
+  // Espera a tela renderizar: preencher antes disso perde o texto (como no helper de fluxo-principal).
+  await expect(page.getByRole('heading', { name: 'Adicionar criança' })).toBeVisible();
+  await page.getByLabel('Nome').fill('Ana');
+  await page.getByLabel('Data de nascimento').fill('2021-03-15');
+  await page.getByRole('button', { name: 'Salvar' }).click();
+  await expect(page.getByRole('heading', { name: /Jornada de Ana/ })).toBeVisible();
+}
+
+function marco(page: Page, id: string) {
+  return page.locator(`li.marco[data-marco="${id}"]`);
+}
+
+test('o texto para os pais fica recolhido e abre sob demanda', async ({ page }) => {
+  await cadastrarFamiliaECrianca(page);
+  const bloco = marco(page, 'LG.FON.04').locator('details.para-os-pais');
+
+  await expect(bloco).not.toHaveAttribute('open', '');
+  await expect(bloco.getByText('Por que importa')).toBeHidden();
+
+  await bloco.getByText('Para os pais').click();
+  await expect(bloco.getByText('Por que importa')).toBeVisible();
+  await expect(bloco.getByText('Sinais de atenção')).toBeVisible();
+});
+
+test('mostra a vertente principal, as inspirações e as referências da família', async ({
+  page,
+}) => {
+  await cadastrarFamiliaECrianca(page);
+  const bloco = marco(page, 'LG.FON.04').locator('details.para-os-pais');
+  await bloco.getByText('Para os pais').click();
+
+  await expect(bloco.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(bloco.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
+  // A idade vem do marco ({idade}), mesmo sem o aviso de ritmo (que só existe para a vertente principal).
+  await expect(bloco.locator('.para-os-pais-texto')).toContainText('por volta dos 6,5 anos');
+  await expect(bloco.locator('.para-os-pais-texto')).not.toContainText('aviso acima');
+  // vertentes que a família não escolheu não aparecem
+  await expect(bloco.getByRole('heading', { name: /Clássico/ })).toHaveCount(0);
+
+  await expect(bloco.getByRole('heading', { name: 'Para saber mais' })).toBeVisible();
+  await expect(bloco.locator('.referencias')).toContainText('MORAIS, Artur Gomes de');
+  await expect(bloco.locator('.referencias')).toContainText('MONTESSORI, Maria');
+  await expect(bloco.locator('.referencias')).not.toContainText('MASON');
+});
+
+test('abrir o texto não muda o estado do marco, e marcar o estado não fecha o texto', async ({
+  page,
+}) => {
+  await cadastrarFamiliaECrianca(page);
+  const m = marco(page, 'LG.FON.04');
+  const naoObservado = m.getByRole('button', { name: /Não observado/ });
+  await expect(naoObservado).toHaveAttribute('aria-pressed', 'true');
+
+  await m.getByText('Para os pais').click();
+  await expect(naoObservado).toHaveAttribute('aria-pressed', 'true');
+
+  await m.getByRole('button', { name: /Em desenvolvimento/ }).click();
+  await expect(m.getByRole('button', { name: /Em desenvolvimento/ })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  );
+  await expect(m.getByText('Por que importa')).toBeVisible();
+});
+
+test('marco sem texto para os pais não mostra o botão', async ({ page }) => {
+  await cadastrarFamiliaECrianca(page);
+  await page.getByRole('link', { name: /Matemática/ }).click();
+  // A orientação da linha MA.SEN virá em outra entrega: nada de bloco vazio na tela.
+  await expect(page.locator('li.marco').first()).toBeVisible();
+  await expect(page.locator('details.para-os-pais')).toHaveCount(0);
+});
