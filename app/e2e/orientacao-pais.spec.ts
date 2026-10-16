@@ -42,6 +42,9 @@ test('mostra a vertente principal, as inspirações e as referências da famíli
 
   await expect(bloco.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
   await expect(bloco.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
+  // A idade vem do marco ({idade}), mesmo sem o aviso de ritmo (que só existe para a vertente principal).
+  await expect(bloco.locator('.para-os-pais-texto')).toContainText('por volta dos 6,5 anos');
+  await expect(bloco.locator('.para-os-pais-texto')).not.toContainText('aviso acima');
   // vertentes que a família não escolheu não aparecem
   await expect(bloco.getByRole('heading', { name: /Clássico/ })).toHaveCount(0);
 

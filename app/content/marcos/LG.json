@@ -132,7 +132,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos 6,5 anos, como o aviso acima indica. Até lá, a criança vive os sons pelos versos, pelo canto e pelo movimento; se estiver curiosa, brinque, sem tratar como tarefa.",
+            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos {idade} anos. Até lá, a criança vive os sons pelos versos, pelo canto e pelo movimento; se estiver curiosa, brinque, sem tratar como tarefa.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -166,7 +166,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Esse tipo de manipulação é trabalho de idade escolar, por volta dos 7 anos, como o aviso acima indica. Antes disso, versos com palavras inventadas e jogos de troca de sons, na roda, já preparam o ouvido.",
+            "comoParticipar": "Esse tipo de manipulação é trabalho de idade escolar, por volta dos {idade} anos. Antes disso, versos com palavras inventadas e jogos de troca de sons, na roda, já preparam o ouvido.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -204,7 +204,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, as letras costumam nascer de imagens e histórias, e a atenção aos sons vem junto. Como o aviso acima indica, isso é pensado para por volta dos 7 anos.",
+            "comoParticipar": "Na pedagogia Waldorf, as letras costumam nascer de imagens e histórias, e a atenção aos sons vem junto. Isso é pensado para por volta dos {idade} anos.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -242,7 +242,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, a análise de sons em palavras costuma vir por volta de 7,5 anos, como o aviso acima indica, depois que as letras já foram vividas por imagens e histórias.",
+            "comoParticipar": "Na pedagogia Waldorf, a análise de sons em palavras costuma vir por volta de {idade} anos, depois que as letras já foram vividas por imagens e histórias.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -385,7 +385,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, a leitura costuma vir depois da escrita, por volta dos 7 anos, como o aviso acima indica: a criança primeiro escreve o que já conhece de memória e das histórias.",
+            "comoParticipar": "Na pedagogia Waldorf, a leitura costuma vir depois da escrita, por volta dos {idade} anos: a criança primeiro escreve o que já conhece de memória e das histórias.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -423,7 +423,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, esta etapa costuma vir por volta dos 7 anos. Antes, ela pode reconhecer palavras familiares, mas a leitura de frases fica para o 1º ano.",
+            "comoParticipar": "Esta etapa costuma vir por volta dos {idade} anos. Antes, ela pode reconhecer palavras familiares, mas a leitura de frases fica para o 1º ano.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Charlotte Mason": {
@@ -457,7 +457,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, esta etapa vem por volta de 7,5 anos, depois de a criança ler textos que ela mesma escreveu e conhece.",
+            "comoParticipar": "Esta etapa vem por volta de {idade} anos, depois de a criança ler textos que ela mesma escreveu e conhece.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -487,7 +487,7 @@
         "referencias": ["rasinski-fluent-reader", "soares-alfabetizacao-metodos", "bncc"],
         "porVertente": {
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, a leitura fluente costuma se firmar por volta dos 8 anos, depois de muita prática com textos conhecidos.",
+            "comoParticipar": "A leitura fluente costuma se firmar por volta dos {idade} anos, depois de muita prática com textos conhecidos.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -583,7 +583,7 @@
         "referencias": ["bncc", "soares-alfabetizacao-metodos"],
         "porVertente": {
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, perguntas sobre o texto lido costumam vir mais tarde, por volta de 7,5 anos. Até lá, as histórias contadas e ouvidas fazem esse trabalho.",
+            "comoParticipar": "Perguntas sobre o texto lido costumam vir mais tarde, por volta de {idade} anos. Até lá, as histórias contadas e ouvidas fazem esse trabalho.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -613,7 +613,7 @@
         "referencias": ["bncc"],
         "porVertente": {
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, o reconto de textos lidos costuma vir por volta de 8 anos. Antes disso, a criança já conta de ouvido as histórias que escutou.",
+            "comoParticipar": "O reconto de textos lidos costuma vir por volta de {idade} anos. Antes disso, a criança já conta de ouvido as histórias que escutou.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -650,7 +650,7 @@
         "referencias": ["bncc"],
         "porVertente": {
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, esse tipo de análise costuma vir por volta de 8 anos. Antes disso, as histórias já trabalham a imaginação e a compreensão na escuta.",
+            "comoParticipar": "Esse tipo de análise costuma vir por volta de {idade} anos. Antes disso, as histórias já trabalham a imaginação e a compreensão na escuta.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {

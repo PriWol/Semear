@@ -10,6 +10,14 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
+  it('nenhum texto aponta para o "aviso acima" (ele só aparece em certas condições)', () => {
+    // O aviso de ritmo só aparece para a vertente principal e antes da idade de introdução.
+    // O texto deve trazer a idade por {idade}, e não depender do aviso estar na tela.
+    for (const m of carregarConteudo().marcos) {
+      const textos = Object.values(m.orientacaoPais.porVertente ?? {}).map((t) => t.comoParticipar);
+      for (const t of textos) expect(t, m.id).not.toMatch(/aviso acima/i);
+    }
+  });
   it('tem as atividades de exemplo publicadas', () => {
     const ids = carregarConteudo().atividades.map((a) => a.id);
     expect(ids).toEqual(expect.arrayContaining(['atv-caca-silabas', 'atv-feira-numeros']));
@@ -214,6 +222,21 @@ describe('validarConteudo: orientação para os pais e referências', () => {
     expect(validarConteudo(comOrientacao(orientacao(), [r])).erros).toContain(
       'Referência r1: autores, título e veículo não podem conter "*"',
     );
+  });
+
+  it('acusa {idade} num texto cuja vertente não tem idade de introdução no marco', () => {
+    const c = comOrientacao(
+      orientacao({
+        porVertente: {
+          Waldorf: { comoParticipar: 'Por volta dos {idade} anos.', referencias: [] },
+        },
+      }),
+    );
+    expect(validarConteudo(c).erros).toContain(
+      'Marco LG.FON.01: texto da vertente Waldorf usa {idade}, mas o marco não tem idadeIntroducao dessa vertente',
+    );
+    c.marcos[0]!.idadeIntroducao = { Waldorf: 7 };
+    expect(validarConteudo(c).erros).toEqual([]);
   });
 
   it('acusa id de referência repetido', () => {
