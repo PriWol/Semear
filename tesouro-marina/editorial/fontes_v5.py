@@ -16,7 +16,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from PIL import Image
+from PIL import Image, ImageCms
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SAIDA = os.path.join(AQUI, "dominio_publico", "v5")
@@ -239,10 +239,23 @@ def baixar(nome, registrar=False):
     return p
 
 
+def _para_srgb(im):
+    """RGB em sRGB: se a origem traz um perfil que não é sRGB (Adobe RGB, Display P3...), converte as cores em vez de só descartar o perfil."""
+    perfil = im.info.get("icc_profile")
+    if perfil:
+        origem = ImageCms.ImageCmsProfile(io.BytesIO(perfil))
+        if "srgb" not in ImageCms.getProfileDescription(origem).lower():
+            try:
+                return ImageCms.profileToProfile(im, origem, ImageCms.createProfile("sRGB"), outputMode="RGB")
+            except ImageCms.PyCMSError:
+                pass   # perfil ilegível: segue como sRGB, que é o que a maioria dos visualizadores supõe
+    return im.convert("RGB")
+
+
 def processar(nome):
-    """Reduz ao tamanho de impressão e grava o JPEG tratado (cores intactas, sem retoque)."""
+    """Reduz ao tamanho de impressão e grava o JPEG tratado (cores fiéis à origem, em sRGB; sem retoque)."""
     Image.MAX_IMAGE_PIXELS = 400_000_000
-    im = Image.open(baixar(nome)).convert("RGB")
+    im = _para_srgb(Image.open(baixar(nome)))
     if max(im.size) > LADO_MAX:
         k = LADO_MAX / max(im.size)
         im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)

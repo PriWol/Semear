@@ -157,6 +157,33 @@ class Utilitarios(unittest.TestCase):
                 fontes_v5.SAIDA, fontes_v5.MANIFESTO = antes
 
 
+class PerfilDeCor(unittest.TestCase):
+    """_para_srgb: perfil sRGB passa sem mexer nos pixels; outro perfil é convertido, não descartado."""
+
+    @staticmethod
+    def _imagem_com_perfil():
+        from PIL import ImageCms
+        im = Image.new("RGB", (4, 4), (200, 40, 40))
+        im.info["icc_profile"] = ImageCms.ImageCmsProfile(ImageCms.createProfile("sRGB")).tobytes()
+        return im
+
+    def test_srgb_nao_muda_os_pixels(self):
+        im = self._imagem_com_perfil()
+        self.assertEqual(fontes_v5._para_srgb(im).getpixel((0, 0)), (200, 40, 40))
+
+    def test_outro_perfil_e_convertido(self):
+        from PIL import ImageCms
+        im = self._imagem_com_perfil()
+        with mock.patch("fontes_v5.ImageCms.getProfileDescription", return_value="Adobe RGB (1998)"), \
+                mock.patch("fontes_v5.ImageCms.profileToProfile", wraps=ImageCms.profileToProfile) as converte:
+            saida = fontes_v5._para_srgb(im)
+        converte.assert_called_once()
+        self.assertEqual(saida.mode, "RGB")
+
+    def test_sem_perfil_so_converte_o_modo(self):
+        self.assertEqual(fontes_v5._para_srgb(Image.new("L", (2, 2), 128)).mode, "RGB")
+
+
 class PedirComLimite(unittest.TestCase):
     """_pedir: espera o Retry-After em 429, repete falhas de rede e 5xx poucas vezes, teto de tentativas e limite de tamanho (sem rede)."""
 
