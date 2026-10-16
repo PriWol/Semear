@@ -568,10 +568,10 @@ def unidade6(L):
 
     apreciar(L, "cassatt_poltrona", "Menina na poltrona azul", "Cassatt, 1878 · uma tarde de descanso",
              ["O que a menina está fazendo? Como ela está sentada? Onde está a mão dela?", "Quantas poltronas você vê? De que cor são?", "Procure o cachorrinho. Onde ele está? O que faz?", "Que desenhos tem o tecido das poltronas?",
-              "Para onde a menina olha? Como ela está sentada na poltrona?", "Onde você gosta de se sentar para descansar?"],
+              "Para onde a menina olha?", "Onde você gosta de se sentar para descansar?"],
              "Esta obra mostra uma menina de vestido branco e faixa xadrez, quase deitada na poltrona azul, com a mão atrás da cabeça, como as crianças se sentam quando estão cansadas. Peça que ela imite a postura, rindo. "
              "Depois procure junto os detalhes: as outras poltronas, o cachorrinho dormindo numa delas, as flores do tecido e a janela clara ao fundo.",
-             "olhar e imaginar", "--d-historias", w=170, h=105)
+             "olhar e conversar", "--d-historias", w=170, h=105)
 
     apreciar(L, "cassatt_praia", "Crianças brincando na praia", "Cassatt, 1884 · duas crianças, uma pá e um balde",
              ["Quantas crianças você vê? O que cada uma está fazendo?", "O que a criança da frente segura nas mãos?", "Como é o chapéu da outra criança? De que cor é a fita?", "O que aparece lá no alto, no mar? Que cor têm as velas?",

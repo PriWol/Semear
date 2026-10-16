@@ -1,4 +1,4 @@
-"""Testes das reproduções de obras do Volume 5 (ADR 0011). Rodar: python3 -m unittest test_fontes_v5
+"""Testes das reproduções de obras do Volume 5 (ADR 0011 e 0017). Rodar: python3 -m unittest test_fontes_v5
 
 Nenhum teste usa a rede: o arquivo de origem já está em cache numa pasta temporária.
 """
