@@ -109,6 +109,56 @@
       "idade": [6, 8],
       "uso": "leitura-em-voz-alta",
       "porQue": "Livro vivo para ler em voz alta, um capítulo por vez. Pare no fim do capítulo e peça que a criança conte o que aconteceu antes de seguir. Tem temas de coragem, perdão e sacrifício, com leitura cristã possível para quem quiser."
+    },
+    {
+      "id": "livro-esquilo-nutkin",
+      "titulo": "O Conto do Esquilo Nutkin (The Tale of Squirrel Nutkin)",
+      "autor": "Beatrix Potter",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": ["LG.FON.01", "LG.FON.02"],
+      "idade": [4, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Esquilos, uma ilha e as adivinhas rimadas que Nutkin canta para a coruja. Aproveite os versinhos para brincar de achar rimas e peça que a criança reconte a aventura na ordem em que aconteceu."
+    },
+    {
+      "id": "livro-ursinho-pooh",
+      "titulo": "O Ursinho Pooh (Winnie-the-Pooh)",
+      "autor": "A. A. Milne",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": ["LG.FON.01"],
+      "idade": [4, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Capítulos curtos, humor gentil e canções do Pooh cheias de rimas. Um capítulo por sessão, com pausa para a criança contar o que mais gostou. Bom também para ouvir o inglês original."
+    },
+    {
+      "id": "livro-vento-nos-salgueiros",
+      "titulo": "O Vento nos Salgueiros",
+      "autor": "Kenneth Grahame",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Livro vivo sobre amizade, o rio e as estações, com linguagem rica. Leia aos poucos, pare para descrever o que a criança imaginou e peça que ela conte o capítulo do dia."
+    },
+    {
+      "id": "livro-fabulas-de-esopo",
+      "titulo": "Fábulas de Esopo",
+      "autor": "Esopo",
+      "vertentes": ["Clássico", "Charlotte Mason", "Religioso"],
+      "marcos": [],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Histórias curtas com bichos e uma lição no final, ótimas para a narração: leia uma, peça que a criança conte de volta e converse sobre o que a fábula ensina. Escolha uma edição ilustrada e de boa tradução."
+    },
+    {
+      "id": "livro-pequeno-principe",
+      "titulo": "O Pequeno Príncipe",
+      "autor": "Antoine de Saint-Exupéry",
+      "vertentes": ["Clássico", "Waldorf", "Charlotte Mason"],
+      "marcos": [],
+      "idade": [7, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Conto poético sobre amizade e o que é essencial. Leia em voz alta, devagar, um capítulo por vez, e deixe a criança comentar as imagens e as perguntas do Príncipe."
     }
   ]
 }
