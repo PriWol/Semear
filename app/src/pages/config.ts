@@ -38,6 +38,7 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         <div class="acoes">
           <a class="botao" href="#/familia">Editar família</a>
           <a class="botao" href="#/biblioteca">Biblioteca</a>
+          <a class="botao" href="#/acervo">Acervo gratuito</a>
           <a class="botao" href="#/conteudo">Ver cobertura do conteúdo</a>
         </div>
       </section>
