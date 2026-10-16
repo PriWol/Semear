@@ -23,17 +23,12 @@ describe('conteúdo real (app/content)', () => {
       });
     }
   });
-  it('texto que remete ao aviso de ritmo da vertente tem a idade de introdução correspondente', () => {
-    // O aviso "Na pedagogia X, este marco costuma vir por volta de N anos" só existe com idadeIntroducao.
+  it('nenhum texto aponta para o "aviso acima" (ele só aparece em certas condições)', () => {
+    // O aviso de ritmo só aparece para a vertente principal e antes da idade de introdução.
+    // O texto deve trazer a idade por {idade}, e não depender do aviso estar na tela.
     for (const m of carregarConteudo().marcos) {
-      for (const [vertente, texto] of Object.entries(m.orientacaoPais.porVertente ?? {})) {
-        if (!texto.comoParticipar.includes('o aviso acima')) continue;
-        const idade = m.idadeIntroducao[vertente as keyof typeof m.idadeIntroducao];
-        expect(
-          idade,
-          `${m.id} (${vertente}) cita o aviso, mas não tem idadeIntroducao`,
-        ).toBeDefined();
-      }
+      const textos = Object.values(m.orientacaoPais.porVertente ?? {}).map((t) => t.comoParticipar);
+      for (const t of textos) expect(t, m.id).not.toMatch(/aviso acima/i);
     }
   });
   it('tem as atividades de exemplo publicadas', () => {
@@ -240,6 +235,21 @@ describe('validarConteudo: orientação para os pais e referências', () => {
     expect(validarConteudo(comOrientacao(orientacao(), [r])).erros).toContain(
       'Referência r1: autores, título e veículo não podem conter "*"',
     );
+  });
+
+  it('acusa {idade} num texto cuja vertente não tem idade de introdução no marco', () => {
+    const c = comOrientacao(
+      orientacao({
+        porVertente: {
+          Waldorf: { comoParticipar: 'Por volta dos {idade} anos.', referencias: [] },
+        },
+      }),
+    );
+    expect(validarConteudo(c).erros).toContain(
+      'Marco LG.FON.01: texto da vertente Waldorf usa {idade}, mas o marco não tem idadeIntroducao dessa vertente',
+    );
+    c.marcos[0]!.idadeIntroducao = { Waldorf: 7 };
+    expect(validarConteudo(c).erros).toEqual([]);
   });
 
   it('acusa id de referência repetido', () => {

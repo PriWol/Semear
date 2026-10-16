@@ -42,6 +42,9 @@ test('mostra a vertente principal, as inspirações e as referências da famíli
 
   await expect(bloco.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
   await expect(bloco.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
+  // A idade vem do marco ({idade}), mesmo sem o aviso de ritmo (que só existe para a vertente principal).
+  await expect(bloco.locator('.para-os-pais-texto')).toContainText('por volta dos 6,5 anos');
+  await expect(bloco.locator('.para-os-pais-texto')).not.toContainText('aviso acima');
   // vertentes que a família não escolheu não aparecem
   await expect(bloco.getByRole('heading', { name: /Clássico/ })).toHaveCount(0);
 
@@ -96,7 +99,7 @@ test('a linha Operações aparece com texto para os pais e pré-requisito de out
   await expect(m.locator('.referencias')).toContainText('NUNES, Terezinha; BRYANT, Peter');
 });
 
-test('a linha Sistema de numeração mostra o texto e o aviso de ritmo da pedagogia Waldorf', async ({
+test('a linha Sistema de numeração mostra o texto e a idade de introdução da pedagogia Waldorf', async ({
   page,
 }) => {
   await cadastrarFamiliaECrianca(page);
@@ -107,6 +110,7 @@ test('a linha Sistema de numeração mostra o texto e o aviso de ritmo da pedago
   await m.getByText('Para os pais').click();
   await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
   await expect(m.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
-  // O texto Waldorf remete ao aviso de ritmo, que só aparece porque o marco tem idade de introdução.
-  await expect(m.locator('.para-os-pais-texto')).toContainText('o aviso acima');
+  // A idade vem do marco ({idade}), mesmo sem o aviso de ritmo (Waldorf aqui é só inspiração).
+  await expect(m.locator('.para-os-pais-texto')).toContainText('por volta dos 7 anos');
+  await expect(m.locator('.para-os-pais-texto')).not.toContainText('aviso acima');
 });

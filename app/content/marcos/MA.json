@@ -260,7 +260,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, os algarismos escritos costumam ficar para o 1º ano, por volta dos 7 anos. Até lá, os números vivem na fala, no ritmo e na contagem de coisas.",
+            "comoParticipar": "Os algarismos escritos costumam ficar para o 1º ano, por volta dos {idade} anos. Até lá, os números vivem na fala, no ritmo e na contagem de coisas.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Charlotte Mason": {
@@ -322,7 +322,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, a escrita dos algarismos costuma começar no 1º ano, por volta dos 7 anos, depois de muito desenho de formas e movimento (no ar, na areia).",
+            "comoParticipar": "A escrita dos algarismos costuma começar no 1º ano, por volta dos {idade} anos, depois de muito desenho de formas e movimento (no ar, na areia).",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -360,7 +360,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, esse trabalho costuma ficar para o 1º ano. A criança que já conta bem pode seguir contando e vivendo os números em casa, nos jogos e no ritmo.",
+            "comoParticipar": "Esse trabalho costuma ficar para o 1º ano (por volta dos {idade} anos). A criança que já conta bem pode seguir contando e vivendo os números em casa, nos jogos e no ritmo.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -455,7 +455,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, os números até 100 costumam ser trabalhados no 1º ano, em contagem rítmica e saltos de 10: a criança sente o padrão antes de escrevê-lo.",
+            "comoParticipar": "Os números até 100 costumam ser trabalhados no 1º ano, em contagem rítmica e saltos de 10: a criança sente o padrão antes de escrevê-lo (por volta dos {idade} anos).",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -492,7 +492,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, esse trabalho costuma ficar para o 1º ano em diante. Antes, a criança vive as dezenas pela contagem rítmica e por coleções reais.",
+            "comoParticipar": "Esse trabalho costuma ficar para o 1º ano em diante (por volta dos {idade} anos). Antes, a criança vive as dezenas pela contagem rítmica e por coleções reais.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -617,7 +617,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, as operações costumam ser formalizadas por volta dos 7 anos, como o aviso acima indica, em histórias e com movimento. Até lá, a criança já soma vivendo: contando passos e itens da mesa.",
+            "comoParticipar": "Na pedagogia Waldorf, as operações costumam ser formalizadas por volta dos {idade} anos, em histórias e com movimento. Até lá, a criança já soma vivendo: contando passos e itens da mesa.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Charlotte Mason": {
@@ -682,7 +682,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Como o aviso acima indica, esse trabalho costuma ficar para por volta dos 7 anos. A soma parte do todo: “de que é feito o 7?”. Em casa, o ritmo (palmas e passos) ajuda a memória.",
+            "comoParticipar": "Esse trabalho costuma ficar para a idade escolar, por volta dos {idade} anos. A soma parte do todo: “de que é feito o 7?”. Em casa, o ritmo (palmas e passos) ajuda a memória.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -720,7 +720,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Contar em saltos com palmas e passos (de 2 em 2, de 5 em 5) é uma prática comum: o ritmo dá forma à multiplicação. Como o aviso acima indica, as operações costumam ser formalizadas por volta dos 7 anos.",
+            "comoParticipar": "Contar em saltos com palmas e passos (de 2 em 2, de 5 em 5) é uma prática comum: o ritmo dá forma à multiplicação. As operações costumam ser formalizadas por volta dos {idade} anos.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -757,7 +757,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Parta do todo: o 7 e as partes que o formam. Como o aviso acima indica, as operações costumam ser apresentadas juntas, em histórias, por volta dos 7 anos.",
+            "comoParticipar": "Parta do todo: o 7 e as partes que o formam. As operações costumam ser apresentadas juntas, em histórias, por volta dos {idade} anos.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Charlotte Mason": {
