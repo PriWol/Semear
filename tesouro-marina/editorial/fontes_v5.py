@@ -34,10 +34,10 @@ OBRAS = {
     "durer_primulas": ("nga:21113c79-7136-4bce-9e8d-65b9254628bd",
                        "Albrecht Dürer (1471–1528)", "<i>Tufo de prímulas</i> (Tuft of Cowslips)", "1526",
                        "National Gallery of Art, Washington", "CC0 (acesso aberto do acervo)"),
-    "kandinsky_quadrados": ("envio:kandinsky_quadrados",
+    "kandinsky_quadrados": ("Vassily Kandinsky, 1913 - Color Study, Squares with Concentric Circles.jpg",
                             "Wassily Kandinsky (1866–1944)", "<i>Estudo de cores: quadrados com círculos concêntricos</i>", "1913",
                             "Städtische Galerie im Lenbachhaus, Munique", "domínio público"),
-    "kandinsky_circulos": ("envio:kandinsky_circulos",
+    "kandinsky_circulos": ("Vassily Kandinsky, 1926 - Several Circles, Gugg 0910 25.jpg",
                            "Wassily Kandinsky (1866–1944)", "<i>Vários círculos</i> (Several Circles)", "1926",
                            "Museu Solomon R. Guggenheim, Nova York", "domínio público"),
     "monet_medas": ("aic:a38e2828-ec6f-ece1-a30f-70243449197b",
@@ -66,14 +66,6 @@ REFERENCIAS = {
     "durer_primulas": ("inv. 1991.217.1", "https://www.nga.gov/artworks/74162"),
     "monet_medas": ("inv. 1985.1103", "https://www.artic.edu/artworks/64818"),
     "cassatt_praia": ("inv. 1970.17.19", "https://www.nga.gov/artworks/52163"),
-}
-
-
-# Arquivos entregues à mão que têm um arquivo equivalente no Commons (mesmas dimensões), onde a licença está registrada.
-# Serve só de referência: o hash registrado é o do arquivo recebido, não o do Commons.
-EQUIVALENTE_NO_COMMONS = {
-    "kandinsky_quadrados": "Vassily Kandinsky, 1913 - Color Study, Squares with Concentric Circles.jpg",
-    "kandinsky_circulos": "Vassily Kandinsky, 1926 - Several Circles, Gugg 0910 25.jpg",
 }
 
 
@@ -248,9 +240,7 @@ def linhas_creditos():
             inv, url = REFERENCIAS[nome]
             fonte = f"{acervo}, {inv}, {url}"
         elif arq.startswith("envio:"):
-            eq = EQUIVALENTE_NO_COMMONS.get(nome)
-            fonte = ("arquivo fornecido pela editora (dimensões idênticas ao `File:" + eq + "` do Commons, que registra a licença)"
-                     if eq else "arquivo fornecido pela editora (acervo e endereço de origem a confirmar)")
+            fonte = "arquivo fornecido pela editora (acervo e endereço de origem a confirmar)"
         else:
             fonte = f"Wikimedia Commons, `File:{arq}`"
         linhas.append(f"| `v5/{nome}.jpg` | {limpo}, {autor}, {ano} | {acervo or 'a confirmar'} | {fonte} | {lic} |")

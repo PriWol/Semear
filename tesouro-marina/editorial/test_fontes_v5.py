@@ -7,6 +7,8 @@ import json
 import os
 import tempfile
 import unittest
+import urllib.error
+from unittest import mock
 
 from PIL import Image
 
@@ -108,6 +110,55 @@ class Utilitarios(unittest.TestCase):
                 self.assertEqual(fontes_v5.verificar(), 1)
             finally:
                 fontes_v5.SAIDA, fontes_v5.MANIFESTO = antes
+
+
+class PedirComLimite(unittest.TestCase):
+    """_pedir: nova tentativa só em 429, espera o Retry-After, teto de tentativas e limite de tamanho (sem rede)."""
+
+    @staticmethod
+    def _erro(codigo, retry_after=None):
+        import email.message
+        h = email.message.Message()
+        if retry_after is not None:
+            h["Retry-After"] = str(retry_after)
+        return urllib.error.HTTPError("https://exemplo/x", codigo, "erro", h, None)
+
+    @staticmethod
+    def _resposta(dados):
+        class R(io.BytesIO):
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+        return R(dados)
+
+    def test_429_dorme_retry_after_mais_15_e_tenta_de_novo(self):
+        with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=[self._erro(429, 120), self._resposta(b"ok")]), \
+                mock.patch("fontes_v5.time.sleep") as dorme:
+            self.assertEqual(fontes_v5._pedir("https://exemplo/x", {}), b"ok")
+        dorme.assert_called_once_with(135)
+
+    def test_erro_que_nao_e_429_nao_tenta_de_novo(self):
+        with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=self._erro(404)) as abre, \
+                mock.patch("fontes_v5.time.sleep") as dorme:
+            with self.assertRaises(urllib.error.HTTPError):
+                fontes_v5._pedir("https://exemplo/x", {})
+        self.assertEqual(abre.call_count, 1)
+        dorme.assert_not_called()
+
+    def test_doze_429_seguidos_levam_a_runtime_error(self):
+        with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=lambda *a, **k: (_ for _ in ()).throw(self._erro(429, 1))) as abre, \
+                mock.patch("fontes_v5.time.sleep"):
+            with self.assertRaises(RuntimeError):
+                fontes_v5._pedir("https://exemplo/x", {})
+        self.assertEqual(abre.call_count, 12)
+
+    def test_resposta_maior_que_o_limite_e_recusada(self):
+        grande = b"x" * (fontes_v5.LIMITE_BYTES + 1)
+        with mock.patch("fontes_v5.urllib.request.urlopen", return_value=self._resposta(grande)):
+            with self.assertRaisesRegex(ValueError, "maior que"):
+                fontes_v5._pedir("https://exemplo/x", {})
 
 
 class JpegTratado(unittest.TestCase):

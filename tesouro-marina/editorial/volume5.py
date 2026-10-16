@@ -273,7 +273,7 @@ def unidade2(L):
              ["Quantos quadrados você vê? E quantos círculos em cada um?", "Que cores tem o círculo do meio de cada quadrado?", "Qual quadrado você escolheria para você? Por quê?", "Os círculos de dentro e de fora se parecem? O que muda?"],
              "É uma aquarela feita para estudar como as cores se comportam umas ao lado das outras: doze quadrados, cada um com anéis de cores diferentes, um dentro do outro. Pode ser comparada ao jogo dos círculos concêntricos desta unidade. "
              "A imagem disponível tem pouca resolução e perde nitidez no tamanho impresso; ela não substitui a visita a um museu.",
-             "olhar e comparar", "--d-musica", w=150, h=110)
+             "olhar e comparar", "--d-musica", w=110, h=90)
 
     import math
     espiral = " ".join(f"L{70 + (2 + 20 * t / 90) * math.cos(t * 6 * math.pi / 90):.1f} {204 + (2 + 20 * t / 90) * math.sin(t * 6 * math.pi / 90):.1f}" for t in range(1, 91))
@@ -571,10 +571,10 @@ def unidade6(L):
              "olhar e imaginar", "--d-historias", w=170, h=105)
 
     apreciar(L, "cassatt_praia", "Crianças brincando na praia", "Cassatt, 1884 · duas crianças, uma pá e um balde",
-             ["Quantas crianças você vê? O que cada uma está fazendo?", "O que a criança da frente segura nas mãos?", "Como é o chapéu da outra criança? De que cor é a fita?", "O que aparece lá no alto, ao fundo? Quantos barquinhos?",
+             ["Quantas crianças você vê? O que cada uma está fazendo?", "O que a criança da frente segura nas mãos?", "Como é o chapéu da outra criança? De que cor é a fita?", "O que aparece lá no alto, no mar? Que cor têm as velas?",
               "Compare com o quadro do banho: o que é igual e o que é diferente?"],
-             "É uma boa obra para comparar com <i>O banho da criança</i>: lá a criança é cuidada, aqui ela brinca sozinha, mas as duas cenas mostram um momento tranquilo do dia. "
-             "Na praia, uma criança senta na areia com um balde e uma pá, e a outra, de chapéu de palha com fita vermelha, está logo atrás. Ao fundo há o mar e dois barquinhos de vela. A assinatura fica no canto inferior direito.",
+             "É uma boa obra para comparar com <i>O banho da criança</i>: lá a criança é cuidada por alguém; aqui as duas brincam juntas. As duas cenas mostram um momento tranquilo do dia. "
+             "Na praia, uma criança senta na areia com um balde e uma pá, e a outra, de chapéu de palha com fita vermelha, está logo atrás. Ao fundo há o mar, com um barco de velas brancas e, mais à esquerda, um barquinho com gente; deixe que ela conte do jeito dela, sem exigir um número. A assinatura fica no canto inferior direito.",
              "olhar e comparar", "--d-historias", w=100, h=145)
 
     quadros = [("encher a bacia", img("tigela", "46mm", "margin:0 auto")), ("ensaboar", img("sabonete", "46mm", "margin:0 auto")),
@@ -761,7 +761,7 @@ def encerramento(L):
     obras = "".join(f"<li>{fontes_v5.credito(n)}</li>" for n in fontes_v5.OBRAS)
     c = f"""<div class="miolo texto">{titulo("Obras e créditos", "Volume 5", 26)}
       <h2>Reproduções de obras de arte</h2>
-      <p style="font-size:9.2pt">Todas as obras são de artistas mortos há mais de 70 anos e estão em domínio público (ou CC0), segundo a fonte indicada em cada crédito: Wikimedia Commons ou acervo do museu. Os dois quadros de Kandinsky e os <i>Girassóis</i> foram fornecidos pela editora. As imagens foram reduzidas ao tamanho de impressão, sem retoque de cor. Uma fotografia nunca reproduz fielmente as cores de um original.</p>
+      <p style="font-size:9.2pt">Todas as obras são de artistas mortos há mais de 70 anos e estão em domínio público (ou CC0), segundo a fonte indicada em cada crédito: Wikimedia Commons ou acervo do museu. Os <i>Girassóis</i> foram fornecidos pela editora. As imagens foram reduzidas ao tamanho de impressão, sem retoque de cor. Uma fotografia nunca reproduz fielmente as cores de um original.</p>
       <ul style="font-size:8.4pt;line-height:1.3">{obras}</ul>
       <h2>Fundamentos</h2><p style="font-size:9.4pt">Apreciação de arte por narração e por observação, com poucas obras e muita atenção (Charlotte Mason, <i>estudo de pintores</i>); processo antes do produto; cores primárias e misturas, modelagem e colagem como atividades de ateliê infantil. Nenhum material reproduz métodos ou produtos comerciais.</p>
       <h2>Ilustrações da coleção</h2><p style="font-size:9.4pt">Potes, pincéis, argilas, papéis, ninfeia, lebre, tufo, círculos e demais desenhos: aquarela digital procedural da coleção. Cartões de cores: textos da coleção. Tipografia: EB Garamond (licença OFL).</p>
