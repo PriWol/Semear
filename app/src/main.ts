@@ -19,6 +19,7 @@ import { paginaSessao } from './pages/sessao';
 import { paginaConfig } from './pages/config';
 import { paginaBiblioteca } from './pages/biblioteca';
 import { paginaConteudo } from './pages/conteudo';
+import { paginaAcervo } from './pages/acervo';
 
 const naoEncontrada: FabricaPagina = async () => ({
   titulo: 'Não encontrada',
@@ -44,6 +45,7 @@ async function iniciar() {
       '/sessao/:id': paginaSessao,
       '/config': paginaConfig,
       '/biblioteca': paginaBiblioteca,
+      '/acervo': paginaAcervo,
       '/conteudo': paginaConteudo,
       '/novidades': paginaNovidades,
     }),

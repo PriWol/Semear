@@ -49,7 +49,8 @@ test('primeiro acesso até baixar o pacote da sessão', async ({ page }) => {
   await page.getByRole('checkbox', { name: /Consciência fonológica/ }).check();
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
   await expect(page.locator('#proposta')).toContainText('Caça às sílabas');
-  await expect(page.locator('#proposta')).toContainText('Ou Isto ou Aquilo');
+  // Vários livros da curadoria servem a este marco; o teste só confere que algum é sugerido.
+  await expect(page.locator('#proposta')).toContainText('Livro:');
   await page.getByRole('button', { name: 'Gerar pacote' }).click();
 
   // Página da sessão: prévia e download

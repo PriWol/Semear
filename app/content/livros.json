@@ -92,13 +92,15 @@
     },
     {
       "id": "livro-pedro-coelho",
-      "titulo": "O Conto do Pedro Coelho (The Tale of Peter Rabbit)",
+      "titulo": "A História de Pedro Coelho (The Tale of Peter Rabbit)",
       "autor": "Beatrix Potter",
       "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Montessori"],
       "marcos": [],
       "idade": [3, 7],
       "uso": "leitura-em-voz-alta",
-      "porQue": "Clássico curto, de frases simples e ilustrações de aquarela feitas a partir da observação da natureza. Leia devagar, mostre os desenhos e peça à criança que reconte a história com as próprias palavras (narração). Domínio público: também existe em inglês, para o ouvido se acostumar."
+      "porQue": "Clássico curto, de frases simples e ilustrações de aquarela feitas a partir da observação da natureza. Leia devagar, mostre os desenhos e peça à criança que reconte a história com as próprias palavras (narração). Domínio público: também existe em inglês, para o ouvido se acostumar.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://clube.joaoemariaeditora.com.br/beatrix-potter/"
     },
     {
       "id": "livro-narnia-leao-feiticeira",
@@ -159,6 +161,468 @@
       "idade": [7, 8],
       "uso": "leitura-em-voz-alta",
       "porQue": "Conto poético sobre amizade e o que é essencial. Leia em voz alta, devagar, um capítulo por vez, e deixe a criança comentar as imagens e as perguntas do Príncipe."
+    },
+    {
+      "id": "livro-criancas-da-floresta",
+      "titulo": "Crianças da Floresta",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma família de seres da floresta vive numa casinha sob um velho pinheiro, e cada estação traz uma nova aventura. Combina com o caderno da natureza: depois da leitura, procurem na rua o que apareceu no livro.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow/"
+    },
+    {
+      "id": "livro-pinho-avela-e-botaozinho",
+      "titulo": "Pinho, Avelã e Botãozinho",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Dois irmãos da família Bolota são levados pelo vento numa folha seca, e a amiga Avelã sai para encontrá-los. Boa para conversar sobre amizade e para a criança recontar o caminho da aventura.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow/"
+    },
+    {
+      "id": "livro-o-ovo-do-sol",
+      "titulo": "O Ovo do Sol",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Elsa Beskow (Suécia, 1874–1953) ilustra a natureza e as estações com delicadeza. Leia devagar, deixe a criança olhar as ilustrações e peça que reconte a história com as próprias palavras.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow/"
+    },
+    {
+      "id": "livro-o-natal-de-pedro-e-laura",
+      "titulo": "O Natal de Pedro e Laura",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Elsa Beskow (Suécia, 1874–1953) ilustra a natureza e as estações com delicadeza. Leia devagar, deixe a criança olhar as ilustrações e peça que reconte a história com as próprias palavras.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow/"
+    },
+    {
+      "id": "livro-aninha-e-margarida",
+      "titulo": "Aninha e Margarida",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Elsa Beskow (Suécia, 1874–1953) ilustra a natureza e as estações com delicadeza. Leia devagar, deixe a criança olhar as ilustrações e peça que reconte a história com as próprias palavras.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow/"
+    },
+    {
+      "id": "livro-rosalinda-e-a-pequena-corca",
+      "titulo": "Rosalinda e a Pequena Corça",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Elsa Beskow (Suécia, 1874–1953) ilustra a natureza e as estações com delicadeza. Leia devagar, deixe a criança olhar as ilustrações e peça que reconte a história com as próprias palavras.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow/"
+    },
+    {
+      "id": "livro-o-aniversario-da-tia-marrom",
+      "titulo": "O Aniversário da Tia Marrom",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Elsa Beskow (Suécia, 1874–1953) ilustra a natureza e as estações com delicadeza. Leia devagar, deixe a criança olhar as ilustrações e peça que reconte a história com as próprias palavras.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow/"
+    },
+    {
+      "id": "livro-a-casa-velha-de-pedro",
+      "titulo": "A Casa Velha de Pedro",
+      "autor": "Elsa Beskow",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Elsa Beskow (Suécia, 1874–1953) ilustra a natureza e as estações com delicadeza. Leia devagar, deixe a criança olhar as ilustrações e peça que reconte a história com as próprias palavras.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/colecao-elsa-beskow-box-2/"
+    },
+    {
+      "id": "livro-a-historia-dos-coelhinhos-pompom-the-tale-of-the-flopsy-bunnies",
+      "titulo": "A História dos Coelhinhos Pompom (The Tale of the Flopsy Bunnies)",
+      "autor": "Beatrix Potter",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Montessori"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Mais um clássico de Beatrix Potter, com texto curto e aquarelas feitas a partir da observação da natureza. Peça à criança que reconte a história na ordem.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://clube.joaoemariaeditora.com.br/beatrix-potter/"
+    },
+    {
+      "id": "livro-a-historia-de-dona-rita-engomadeira-the-tale-of-mrs-tiggy-winkle",
+      "titulo": "A História de Dona Rita Engomadeira (The Tale of Mrs. Tiggy-Winkle)",
+      "autor": "Beatrix Potter",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Montessori"],
+      "marcos": [],
+      "idade": [4, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma menina encontra uma ouriça lavadeira que cuida das roupas dos bichos. Ótima para falar de ofícios e de cuidado, e para a criança narrar em voz alta.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://clube.joaoemariaeditora.com.br/beatrix-potter/"
+    },
+    {
+      "id": "livro-joao-e-maria",
+      "titulo": "João e Maria",
+      "autor": "Lorena Miranda Cutlak (ilustrações de Walter Lara)",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": [],
+      "idade": [4, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Edição ilustrada do conto clássico, lançada pela editora em 2023. Leia em voz alta e converse sobre coragem e esperteza; depois peça que a criança conte o final do jeito dela.",
+      "editora": "Editora João e Maria",
+      "linkCompra": "https://www.joaoemariaeditora.com.br/joao-e-maria/"
+    },
+    {
+      "id": "livro-flicts",
+      "titulo": "Flicts",
+      "autor": "Ziraldo",
+      "vertentes": ["Montessori", "Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [4, 8],
+      "uso": "leitura-pela-crianca",
+      "porQue": "A história de uma cor que não encontra lugar e vai descobrir onde pertence. Boa para conversar sobre ser diferente e sobre as cores."
+    },
+    {
+      "id": "livro-menina-bonita-do-laco-de-fita",
+      "titulo": "Menina Bonita do Laço de Fita",
+      "autor": "Ana Maria Machado",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": [],
+      "idade": [4, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Um coelho quer saber o segredo da cor da menina bonita. Texto simples, repetitivo e bonito de ouvir; peça que a criança complete as repetições."
+    },
+    {
+      "id": "livro-chapeuzinho-amarelo",
+      "titulo": "Chapeuzinho Amarelo",
+      "autor": "Chico Buarque",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": ["LG.FON.02"],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Chapeuzinho tem medo de tudo e aprende a enfrentar o lobo, com rimas e jogo de palavras. Pare nas rimas e pergunte: “Que palavra combina com essa?”"
+    },
+    {
+      "id": "livro-o-reizinho-mandao",
+      "titulo": "O Reizinho Mandão",
+      "autor": "Ruth Rocha",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": [],
+      "idade": [5, 8],
+      "uso": "leitura-pela-crianca",
+      "porQue": "Um rei que manda em tudo ganha uma lição. Bom para conversar sobre regras e vontades, e para a criança narrar."
+    },
+    {
+      "id": "livro-o-menino-maluquinho",
+      "titulo": "O Menino Maluquinho",
+      "autor": "Ziraldo",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": [],
+      "idade": [5, 8],
+      "uso": "leitura-pela-crianca",
+      "porQue": "Um menino cheio de ideias vive aventuras. Texto leve para a leitura compartilhada."
+    },
+    {
+      "id": "livro-reinacoes-de-narizinho",
+      "titulo": "Reinações de Narizinho",
+      "autor": "Monteiro Lobato",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "A porta de entrada do Sítio do Picapau Amarelo. Leia um capítulo por vez e peça que a criança conte o que aconteceu. Em domínio público (também disponível no Acervo gratuito)."
+    },
+    {
+      "id": "livro-uma-ideia-toda-azul",
+      "titulo": "Uma Ideia Toda Azul",
+      "autor": "Marina Colasanti",
+      "vertentes": ["Waldorf", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Contos de fadas originais, com reis, unicórnios e fadas, escritos sem lição de moral pronta. Leia um conto e converse sobre o que a criança imaginou."
+    },
+    {
+      "id": "livro-felpo-filva",
+      "titulo": "Felpo Filva",
+      "autor": "Eva Furnari",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-pela-crianca",
+      "porQue": "Um coelho poeta e solitário que escreve poemas, cartas e receitas. Bom para mostrar que a escrita tem muitas formas."
+    },
+    {
+      "id": "livro-a-bolsa-amarela",
+      "titulo": "A Bolsa Amarela",
+      "autor": "Lygia Bojunga",
+      "vertentes": ["Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [7, 8],
+      "uso": "leitura-pela-crianca",
+      "porQue": "Uma menina guarda desejos e segredos numa bolsa amarela. Leitura para quem já lê com fluência, ou em voz alta, aos poucos."
+    },
+    {
+      "id": "livro-os-colegas",
+      "titulo": "Os Colegas",
+      "autor": "Lygia Bojunga",
+      "vertentes": ["Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "A estreia de Lygia Bojunga: bichos que se juntam numa história sobre amizade. Leia um trecho por sessão e converse."
+    },
+    {
+      "id": "livro-contos-de-grimm",
+      "titulo": "Contos de Grimm",
+      "autor": "Irmãos Grimm",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Religioso"],
+      "marcos": [],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Os contos de fadas tradicionais, ideais para ouvir e recontar. Escolha uma edição adequada para a idade e leia com calma."
+    },
+    {
+      "id": "livro-contos-de-andersen",
+      "titulo": "Contos de Andersen",
+      "autor": "Hans Christian Andersen",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Religioso"],
+      "marcos": [],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Histórias de coragem e ternura. Um conto por sessão e uma conversa depois."
+    },
+    {
+      "id": "livro-contos-de-perrault",
+      "titulo": "Contos de Perrault",
+      "autor": "Charles Perrault",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": [],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Chapeuzinho Vermelho, Cinderela, Gato de Botas: a origem de muitos contos. Bom para comparar versões."
+    },
+    {
+      "id": "livro-fabulas-de-la-fontaine",
+      "titulo": "Fábulas de La Fontaine",
+      "autor": "Jean de La Fontaine",
+      "vertentes": ["Clássico", "Charlotte Mason", "Religioso"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Fábulas em verso, com bichos e lições. Há edições em francês, para o ouvido, no Acervo gratuito."
+    },
+    {
+      "id": "livro-as-aventuras-de-pinoquio",
+      "titulo": "As Aventuras de Pinóquio",
+      "autor": "Carlo Collodi",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "O boneco de madeira que quer ser menino. Livro vivo para um capítulo por vez."
+    },
+    {
+      "id": "livro-pippi-meialonga",
+      "titulo": "Pippi Meialonga",
+      "autor": "Astrid Lindgren",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma menina forte, livre e inventiva. É mais travessa que os outros clássicos desta lista: leia a partir dos 6 e converse sobre limites."
+    },
+    {
+      "id": "livro-alice-no-pais-das-maravilhas",
+      "titulo": "Alice no País das Maravilhas",
+      "autor": "Lewis Carroll",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": [],
+      "idade": [7, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Fantasia cheia de jogos de palavras. Leia em voz alta, um capítulo por vez."
+    },
+    {
+      "id": "livro-peter-pan",
+      "titulo": "Peter Pan",
+      "autor": "J. M. Barrie",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": [],
+      "idade": [7, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "A ilha onde ninguém cresce. Leia em voz alta, um capítulo por vez."
+    },
+    {
+      "id": "livro-o-magico-de-oz",
+      "titulo": "O Mágico de Oz",
+      "autor": "L. Frank Baum",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": [],
+      "idade": [7, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "A viagem de Dorothy por um país mágico. Capítulos curtos e bons para narração."
+    },
+    {
+      "id": "livro-heidi",
+      "titulo": "Heidi",
+      "autor": "Johanna Spyri",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Religioso"],
+      "marcos": [],
+      "idade": [7, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma menina nos Alpes suíços, com natureza e família. Livro vivo para ler aos poucos."
+    },
+    {
+      "id": "livro-the-tale-of-jemima-puddle-duck",
+      "titulo": "The Tale of Jemima Puddle-Duck",
+      "autor": "Beatrix Potter",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Montessori"],
+      "marcos": [],
+      "idade": [4, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma pata que quer chocar os próprios ovos e encontra uma raposa. Em inglês, para o ouvido (domínio público, no Acervo gratuito)."
+    },
+    {
+      "id": "livro-brown-bear-brown-bear-what-do-you-see",
+      "titulo": "Brown Bear, Brown Bear, What Do You See?",
+      "autor": "Bill Martin Jr.",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["LG.FON.01", "MA.SEN.01"],
+      "idade": [3, 5],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Texto repetitivo e rítmico, com cores e bichos. Em inglês: bom para o ouvido e para a criança completar o verso."
+    },
+    {
+      "id": "livro-the-cat-in-the-hat",
+      "titulo": "The Cat in the Hat",
+      "autor": "Dr. Seuss",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": ["LG.FON.02", "LG.FON.05"],
+      "idade": [5, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Rimas e palavras curtas: ótimo para brincar com o som das palavras e com as sílabas, em inglês."
+    },
+    {
+      "id": "livro-goodnight-moon",
+      "titulo": "Goodnight Moon",
+      "autor": "Margaret Wise Brown",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["LG.FON.01"],
+      "idade": [2, 4],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma despedida rimada do dia, para antes de dormir. Ritmo calmo e repetido; em inglês."
+    },
+    {
+      "id": "livro-where-the-wild-things-are",
+      "titulo": "Where the Wild Things Are",
+      "autor": "Maurice Sendak",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": [],
+      "idade": [3, 6],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Max vira rei dos monstros e volta para casa. Poucas palavras e ilustrações para olhar com calma; em inglês."
+    },
+    {
+      "id": "livro-make-way-for-ducklings",
+      "titulo": "Make Way for Ducklings",
+      "autor": "Robert McCloskey",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": ["MA.SEN.01"],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma família de patos atravessa a cidade de Boston. Dá para contar os patinhos juntos; em inglês."
+    },
+    {
+      "id": "livro-madeline",
+      "titulo": "Madeline",
+      "autor": "Ludwig Bemelmans",
+      "vertentes": ["Charlotte Mason", "Clássico", "Montessori"],
+      "marcos": ["LG.FON.02"],
+      "idade": [4, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma menina corajosa num internato em Paris, escrita em versos rimados. Em inglês, bom para ouvir a rima."
+    },
+    {
+      "id": "livro-mother-goose-cantigas-de-ninar-em-ingles",
+      "titulo": "Mother Goose (cantigas de ninar em inglês)",
+      "autor": "Tradição popular",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+      "marcos": ["LG.FON.01", "LG.FON.02"],
+      "idade": [2, 6],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Rimas e cantigas tradicionais em inglês, boas para cantar, bater palmas e brincar de achar rimas."
+    },
+    {
+      "id": "livro-elmer",
+      "titulo": "Elmer",
+      "autor": "David McKee",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": [],
+      "idade": [3, 5],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Um elefante de retalhos coloridos, diferente de todos os outros. Dá para falar de cores e de ser diferente; em inglês."
+    },
+    {
+      "id": "livro-ten-black-dots",
+      "titulo": "Ten Black Dots",
+      "autor": "Donald Crews",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["MA.SEN.01", "MA.SEN.03"],
+      "idade": [3, 5],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "De 1 a 10 pontos pretos que viram outras coisas. Conte junto, com o dedo em cada ponto; em inglês."
+    },
+    {
+      "id": "livro-anno-s-counting-book",
+      "titulo": "Anno's Counting Book",
+      "autor": "Mitsumasa Anno",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["MA.SEN.03", "MA.SEN.06"],
+      "idade": [4, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma paisagem que muda mês a mês enquanto os números crescem de 0 a 12. Conte e procure o que mudou; em inglês, quase sem texto."
+    },
+    {
+      "id": "livro-mouse-count",
+      "titulo": "Mouse Count",
+      "autor": "Ellen Stoll Walsh",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["MA.SEN.01", "MA.SEN.03"],
+      "idade": [3, 5],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Dez ratinhos são apanhados, um a um, por uma cobra. Conte junto e depois ao contrário; em inglês."
+    },
+    {
+      "id": "livro-os-tres-porquinhos-livro-ilustrado",
+      "titulo": "Os Três Porquinhos (livro ilustrado)",
+      "autor": "Tradição popular",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["MA.SEN.01"],
+      "idade": [3, 5],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Conto de repetição com três irmãos e três casas. Dá para contar até 3 e recontar com bonecos."
     }
   ]
 }
