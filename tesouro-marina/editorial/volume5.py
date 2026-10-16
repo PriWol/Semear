@@ -2,7 +2,9 @@
 VOLUME 5 — O MUNDO DAS ARTES
 uso: python3 volume5.py
 """
+import html
 import os
+import re
 import subprocess
 import sys
 
@@ -44,8 +46,9 @@ def obra(nome, w_max, h_max, estilo=""):
     with Image.open(os.path.join(fontes_v5.SAIDA, f"{nome}.jpg")) as im:
         k = min(w_max / im.width, h_max / im.height)
         w, h = im.width * k, im.height * k
+    legenda = html.escape(re.sub(r"<[^>]+>", "", f"{fontes_v5.OBRAS[nome][2]}, {fontes_v5.OBRAS[nome][1]}"), quote=True)
     return (f'<img class="obra" src="dominio_publico/v5/{nome}.jpg" '
-            f'style="width:{w:.1f}mm;height:{h:.1f}mm;display:block;margin:0 auto;{estilo}" alt="">')
+            f'style="width:{w:.1f}mm;height:{h:.1f}mm;display:block;margin:0 auto;{estilo}" alt="{legenda}">')
 
 
 def credito_obra(*nomes):
@@ -264,7 +267,7 @@ def unidade2(L):
 
     apreciar(L, "kandinsky_circulos", "Vários círculos", "Kandinsky, 1926 · olhar por um minuto, em silêncio",
              ["Quais cores você vê? Quantas?", "Qual é o círculo maior? De que cor ele é? E o menor?", "Há círculos dentro de outros círculos? Onde?", "Alguns círculos passam por cima de outros. O que acontece com as cores onde eles se cruzam?",
-              "De que cor é o fundo? Algum círculo parece estar longe, e outro perto?", "Se esse quadro fizesse música, seria forte ou fraca? Rápida ou lenta?"],
+              "De que cor é o fundo? Algum círculo parece estar longe, e outro perto?", "Esse quadro parece calmo ou agitado? Por quê?"],
              "Deixe a obra aberta por um minuto, em silêncio, antes de qualquer pergunta. Faça uma pergunta de cada vez e aceite qualquer resposta. Depois feche o livro e peça: <i>conte o que você lembra</i>. "
              "O maior círculo é preto, dentro de um anel azul com uma borda clara; em volta flutuam círculos de todos os tamanhos e cores, alguns transparentes, como se fossem de vidro colorido. Muitas crianças falam em bolhas, planetas ou balões; todas as respostas valem.",
              "olhar e conversar", "--d-musica", w=140, h=122)
@@ -414,7 +417,7 @@ def unidade4(L):
              "olhar e conversar", "--d-matematica", w=170, h=100)
 
     apreciar(L, "monet_ninfeias", "Ninfeias", "Monet, 1906 · um lago visto de cima",
-             ["Onde estão as flores? De que cor são? Quantas você acha?", "O que você acha que são as manchas verdes?", "A água parece ter nuvens? Que cores ela tem?", "Procure o nome do pintor e o ano, no canto de baixo.",
+             ["Onde estão as flores? De que cor são? Quantas você acha?", "Que formas e cores têm as manchas verdes?", "A água parece ter nuvens? Que cores ela tem?", "Procure o nome do pintor e o ano, no canto de baixo.",
               "É de manhã, de tarde ou de noite? Como você sabe?"],
              "Esta é uma das muitas pinturas do lago de ninfeias do jardim de Monet. Quase não há margem nem céu: o quadro é a água, com folhas verdes boiando, poucas flores cor-de-rosa e o reflexo azulado das nuvens. "
              "A assinatura e o ano (1906) estão no canto inferior direito. Não é preciso decifrar nada: basta olhar e dizer o que se vê.",
@@ -558,14 +561,14 @@ def unidade6(L):
 
     apreciar(L, "cassatt_banho", "O banho da criança", "Cassatt, 1893 · um colo, uma bacia e um pé",
              ["Quantas pessoas você vê? O que cada uma está fazendo?", "Onde está a mão da pessoa grande? E o outro braço dela?", "Para onde cada uma olha?", "Onde estão as listras? De que cores elas são?",
-              "Procure a jarra de água. Que desenho ela tem?", "Quem dá banho em você? Como é?"],
+              "Procure a jarra de água. Que desenho ela tem?", "Em que a criança está com os pés? Como a mulher a segura?"],
              "O quadro mostra a cena vista um pouco de cima. A pessoa grande segura o pé da criança dentro da bacia, e as duas olham para a água. A criança está sentada no colo, com um pano branco, "
              "e ao fundo há um papel de parede com flores. Peça que ela mostre, com o próprio corpo, o gesto que vê (segurar, lavar). Depois feche o livro e peça que conte três coisas.",
              "olhar e conversar", "--d-historias", w=95, h=145)
 
     apreciar(L, "cassatt_poltrona", "Menina na poltrona azul", "Cassatt, 1878 · uma tarde de descanso",
              ["O que a menina está fazendo? Como ela está sentada? Onde está a mão dela?", "Quantas poltronas você vê? De que cor são?", "Procure o cachorrinho. Onde ele está? O que faz?", "Que desenhos tem o tecido das poltronas?",
-              "Para onde a menina olha? O que você acha que ela está pensando?", "Onde você gosta de se sentar para descansar?"],
+              "Para onde a menina olha? Como ela está sentada na poltrona?", "Onde você gosta de se sentar para descansar?"],
              "Esta obra mostra uma menina de vestido branco e faixa xadrez, quase deitada na poltrona azul, com a mão atrás da cabeça, como as crianças se sentam quando estão cansadas. Peça que ela imite a postura, rindo. "
              "Depois procure junto os detalhes: as outras poltronas, o cachorrinho dormindo numa delas, as flores do tecido e a janela clara ao fundo.",
              "olhar e imaginar", "--d-historias", w=170, h=105)

@@ -76,7 +76,7 @@ Os volumes 4 a 8 têm unidades marcadas por nível, para que partes deles sejam 
 | 2 | Histórias, memória e imaginação | 71 (produzido) | 8 | Contos clássicos e fábulas (ver §6) | sequência, personagem, cenário, memória, reconto |
 | 3 | Números, formas e raciocínio | 68 (produzido) | 8 | *Cachinhos Dourados* (pequeno/médio/grande), *Os Três Porquinhos* (3 e materiais), contos numéricos | quantidade até 10, formas, padrões, medidas informais, espaço |
 | 4 | O mundo da música | 75 (produzido) | 8 + encerramento | *Os Músicos de Bremen*; *Pedro e o Lobo* (Prokofiev, 1936) | pulso, ritmo, timbre, contraste, compositores |
-| 5 | O mundo das artes | 67 (produzido) | 8 + encerramento | O Coelho Pedro (Potter) como porta para a aquarela | cor, linha, forma, textura, obras e artistas |
+| 5 | O mundo das artes | 67 (produzido) | 8 + encerramento | história própria dos três potes de tinta como porta para a aquarela | cor, linha, forma, textura, obras e artistas |
 | 6 | O livro da natureza | 68 | 9 | Fábulas de animais; mitos gregos de estações (Deméter e Perséfone, adaptado) | animais, botânica, estações, água, céu, corpo |
 | 7 | Primeiras línguas | 64 | 8 | Cantigas e rimas tradicionais inglesas e francesas; latim de lemas e nomes | vocabulário em contexto, canções, cultura |
 | 8 | Jogos e descobertas | 84 | 6 blocos | todo o repertório anterior | cartões, jogos, manipuláveis, projetos, diário de observação |
