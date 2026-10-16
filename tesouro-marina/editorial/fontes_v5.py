@@ -24,6 +24,7 @@ FONTE = os.path.join(AQUI, "build", "obras")
 MANIFESTO = os.path.join(AQUI, "dominio_publico", "obras.sha256.json")
 LIMITE_BYTES = 60_000_000
 ESPERA_MAX = 3600      # nunca espera mais de 1 h por pedido, mesmo que a fonte peça mais
+ESPERA_TOTAL = 7200    # e desiste depois de 2 h de espera acumulada num mesmo pedido
 LADO_MAX = 2000        # px do maior lado (≈ 170 mm a 300 dpi)
 UA = "TesouroMarina/0.1 (educational, non-commercial; https://github.com/PriWol/Semear)"
 
@@ -122,9 +123,13 @@ def verificar():
     faltam = sorted(o[0] for o in OBRAS.values() if o[0] not in man)
     sem_img = sorted(n for n in OBRAS if not os.path.exists(os.path.join(SAIDA, f"{n}.jpg")))
     trocadas = sorted(n for n in OBRAS if n not in sem_img and man.get(_chave_jpeg(n)) != _sha_jpeg(n))
+    # CLAUDE.md: "só domínio público, com fonte registrada". Arquivo entregue à mão só vale com acervo e endereço de origem.
+    sem_fonte = sorted(n for n, o in OBRAS.items() if o[0].startswith("envio:") and (not o[4] or n not in REFERENCIAS))
+    if sem_fonte:
+        print("obra enviada à mão sem acervo e endereço de origem registrados:\n  " + "\n  ".join(sem_fonte))
     if trocadas:
         print("JPEG tratado diferente do registrado (ou sem registro) no manifesto:\n  " + "\n  ".join(trocadas))
-    if faltam or sem_img or trocadas:
+    if faltam or sem_img or trocadas or sem_fonte:
         if faltam:
             print("obras sem SHA-256 no manifesto:\n  " + "\n  ".join(faltam))
         if sem_img:
@@ -151,6 +156,7 @@ def _espera(retry_after):
 
 
 def _pedir(url, cabecalhos):
+    esperado = 0
     for _ in range(12):   # a fonte pode limitar o ritmo de pedidos (429): espera o tempo que ela pede e tenta de novo
         try:
             req = urllib.request.Request(url, headers=cabecalhos)
@@ -164,6 +170,9 @@ def _pedir(url, cabecalhos):
                 raise
             # a fonte diz quanto esperar (Retry-After, em segundos); pedir antes disso só renova a espera
             espera = _espera(e.headers.get("Retry-After")) + 15
+            if esperado + espera > ESPERA_TOTAL:
+                raise RuntimeError(f"{url}: passaria de {ESPERA_TOTAL} s de espera acumulada (429 persistente)")
+            esperado += espera
             print(f"{url}: 429, esperando {espera} s antes de tentar de novo", file=sys.stderr, flush=True)
             time.sleep(espera)
     raise RuntimeError(f"{url}: muitos pedidos recusados (429)")

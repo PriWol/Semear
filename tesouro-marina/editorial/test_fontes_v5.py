@@ -102,6 +102,29 @@ class Utilitarios(unittest.TestCase):
         self.assertNotIn("..", c)
         self.assertNotIn("  ", c)
 
+    def test_verificar_acusa_obra_enviada_a_mao_sem_fonte(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            antes = (fontes_v5.SAIDA, fontes_v5.MANIFESTO, dict(fontes_v5.OBRAS), dict(fontes_v5.REFERENCIAS))
+            try:
+                fontes_v5.SAIDA = os.path.join(tmp, "v5")
+                fontes_v5.MANIFESTO = os.path.join(tmp, "m.json")
+                os.makedirs(fontes_v5.SAIDA)
+                fontes_v5.OBRAS.clear()
+                fontes_v5.OBRAS["x"] = ("envio:x", "Autor (1800–1850)", "<i>X</i>", "1840", "", "domínio público")
+                with open(os.path.join(fontes_v5.SAIDA, "x.jpg"), "wb") as f:
+                    f.write(IMAGEM)
+                with open(fontes_v5.MANIFESTO, "w") as f:
+                    json.dump({"envio:x": "0" * 64}, f)
+                fontes_v5.registrar_jpegs(["x"])
+                self.assertEqual(fontes_v5.verificar(), 1)          # sem acervo nem endereço
+                fontes_v5.OBRAS["x"] = ("envio:x", "Autor (1800–1850)", "<i>X</i>", "1840", "Museu Y", "domínio público")
+                fontes_v5.REFERENCIAS["x"] = ("inv. 1", "https://museu.example/1")
+                self.assertEqual(fontes_v5.verificar(), 0)          # com acervo e endereço passa
+            finally:
+                fontes_v5.SAIDA, fontes_v5.MANIFESTO = antes[:2]
+                fontes_v5.OBRAS.clear(); fontes_v5.OBRAS.update(antes[2])
+                fontes_v5.REFERENCIAS.clear(); fontes_v5.REFERENCIAS.update(antes[3])
+
     def test_verificar_acusa_imagem_tratada_que_falta(self):
         with tempfile.TemporaryDirectory() as tmp:
             antes = (fontes_v5.SAIDA, fontes_v5.MANIFESTO)
@@ -153,6 +176,14 @@ class PedirComLimite(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 fontes_v5._pedir("https://exemplo/x", {})
         self.assertEqual(abre.call_count, 12)
+
+    def test_espera_acumulada_tem_orcamento(self):
+        # cada espera vale ESPERA_MAX + 15; três seguidas passam de ESPERA_TOTAL (2 h) e o pedido desiste antes da 3.ª
+        with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=lambda *a, **k: (_ for _ in ()).throw(self._erro(429, 99999))) as abre, \
+                mock.patch("fontes_v5.time.sleep") as dorme:
+            with self.assertRaisesRegex(RuntimeError, "espera acumulada"):
+                fontes_v5._pedir("https://exemplo/x", {})
+        self.assertEqual(dorme.call_count, 1)
 
     def test_resposta_maior_que_o_limite_e_recusada(self):
         grande = b"x" * (fontes_v5.LIMITE_BYTES + 1)
