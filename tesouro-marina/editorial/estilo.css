@@ -145,3 +145,6 @@ table.diario td { vertical-align: top; }
 /* ---- Volume 4: música ---- */
 .svg-letra { font-size: 3.2px; font-family: "EB Garamond", serif; fill: #3d3127; }
 .svg-rotulo { font-size: 3.2px; font-family: "EB Garamond", serif; font-style: italic; fill: #6b5440; }
+
+/* reprodução de obra de arte (Volume 5): moldura fina, sem sombra, cores intactas */
+img.obra { border: 0.5pt solid var(--linha); }
