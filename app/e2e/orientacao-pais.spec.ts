@@ -9,6 +9,8 @@ async function cadastrarFamiliaECrianca(page: Page) {
   await page.getByRole('radio', { name: /Montessori/ }).check();
   await page.locator('input[name=inspiracoes][value=Waldorf]').check();
   await page.getByRole('button', { name: 'Continuar' }).click();
+  // Espera a tela renderizar: preencher antes disso perde o texto (como no helper de fluxo-principal).
+  await expect(page.getByRole('heading', { name: 'Adicionar criança' })).toBeVisible();
   await page.getByLabel('Nome').fill('Ana');
   await page.getByLabel('Data de nascimento').fill('2021-03-15');
   await page.getByRole('button', { name: 'Salvar' }).click();
