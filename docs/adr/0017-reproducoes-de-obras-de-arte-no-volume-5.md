@@ -18,7 +18,7 @@ Opção 2, com duas ressalvas: o Instituto de Arte de Chicago e a National Galle
 
 - **Quais obras:** só autores mortos há mais de 70 anos (teste automático em `test_fontes_v5.py`) e imagens que o Commons marca como domínio público ou CC0. Obra ainda sob direitos autorais (por exemplo, as colagens de Matisse) é citada no texto, nunca reproduzida.
 - **Rede:** o download acontece só ao catalogar uma obra (`python3 fontes_v5.py registrar`), fora do app e fora do build dos PDFs. O build usa o JPEG já tratado, versionado em `dominio_publico/v5/`. Nada da família é enviado.
-- **Integridade:** o SHA-256 do arquivo de origem fica em `dominio_publico/obras.sha256.json`; arquivo sem hash ou com hash diferente é recusado (falha fechada), como no ADR 0011. O CI roda `python3 fontes_v5.py verificar`.
+- **Integridade:** o SHA-256 do arquivo de origem e o do JPEG tratado (o que entra no PDF, em `v5/`) ficam em `dominio_publico/obras.sha256.json`; uma troca de JPEG aparece como linha alterada no manifesto e `verificar` a acusa; arquivo sem hash ou com hash diferente é recusado (falha fechada), como no ADR 0011. O CI roda `python3 fontes_v5.py verificar`.
 - **Crédito:** cada obra tem legenda com autor, título, ano, acervo, licença e a origem (arquivo no Commons, número de inventário e página no acervo do museu, ou "arquivo fornecido pela editora"), e o volume avisa que a cor de uma reprodução nunca é a do original.
 - **Direitos da fotografia:** o Commons pode marcar a fotografia de uma obra com regra própria; só entram arquivos marcados como domínio público ou CC0.
 

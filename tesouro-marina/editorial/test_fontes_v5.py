@@ -110,6 +110,42 @@ class Utilitarios(unittest.TestCase):
                 fontes_v5.SAIDA, fontes_v5.MANIFESTO = antes
 
 
+class JpegTratado(unittest.TestCase):
+    """O JPEG tratado é o que entra no PDF: uma troca silenciosa precisa ser acusada."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.antes = (fontes_v5.MANIFESTO, fontes_v5.SAIDA, dict(fontes_v5.OBRAS))
+        fontes_v5.MANIFESTO = os.path.join(self.tmp.name, "manifesto.json")
+        fontes_v5.SAIDA = os.path.join(self.tmp.name, "v5")
+        os.makedirs(fontes_v5.SAIDA)
+        nome = "durer_lebre"
+        fontes_v5.OBRAS.clear()
+        fontes_v5.OBRAS[nome] = self.antes[2][nome]
+        with open(fontes_v5.MANIFESTO, "w") as f:
+            json.dump({fontes_v5.OBRAS[nome][0]: "0" * 64}, f)
+        with open(os.path.join(fontes_v5.SAIDA, nome + ".jpg"), "wb") as f:
+            f.write(IMAGEM)
+        self.nome = nome
+        self.addCleanup(self._restaurar)
+
+    def _restaurar(self):
+        fontes_v5.MANIFESTO, fontes_v5.SAIDA = self.antes[:2]
+        fontes_v5.OBRAS.clear()
+        fontes_v5.OBRAS.update(self.antes[2])
+
+    def test_sem_hash_do_jpeg_e_acusado(self):
+        self.assertEqual(fontes_v5.verificar(), 1)
+
+    def test_com_hash_certo_passa_e_jpeg_trocado_e_acusado(self):
+        fontes_v5.registrar_jpegs()
+        self.assertEqual(fontes_v5.verificar(), 0)
+        with open(os.path.join(fontes_v5.SAIDA, self.nome + ".jpg"), "wb") as f:
+            f.write(IMAGEM + b"\x00")
+        self.assertEqual(fontes_v5.verificar(), 1)
+
+
 class CatalogoReal(unittest.TestCase):
     """O catálogo versionado (não a pasta temporária): todo item está completo e registrado."""
 

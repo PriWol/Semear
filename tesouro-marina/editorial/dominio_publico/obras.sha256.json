@@ -8,5 +8,15 @@
  "envio:vangogh_girassois": "02640702435980ced5a0c11079fa51720209deff79082a4ea6aab13174f03bc1",
  "nga:20818b10-1f66-4186-ac55-af70e3586084": "3b202d0def6cb1f56d40fa2329635a554e9d610fc471fd1e038fee23ca43d2b7",
  "nga:21113c79-7136-4bce-9e8d-65b9254628bd": "c404651acf1244d04af119d7aa561c45ff76f3d0bf19587eaa86fcb98b0d1ba5",
- "nga:6dc9ca49-ea8c-4314-985a-ba2cfc3965cd": "a824f3db849395663cac2cfebafa2fc96693e31337599ab9af30d9fb32cfe739"
+ "nga:6dc9ca49-ea8c-4314-985a-ba2cfc3965cd": "a824f3db849395663cac2cfebafa2fc96693e31337599ab9af30d9fb32cfe739",
+ "v5/cassatt_banho.jpg": "c7a686730fa3f8d5aa4900b3387c0e399e545666f6a603df21438b4813eca73c",
+ "v5/cassatt_poltrona.jpg": "0c798916db8f5b974197a6d3b92cd2451a0ebf86cadcfe3c11dabe2447cf2eae",
+ "v5/cassatt_praia.jpg": "38fb7ee6350aef0c736c06ff1637b14479efaaa771077199a8fe93030ee9cf50",
+ "v5/durer_lebre.jpg": "083abccec6c4a8dc284f7f10578c46584df75615b58589d6fda76f0496eaf6f3",
+ "v5/durer_primulas.jpg": "30fb4ad033dd043d97e4e33b6fe896b45bf9cd4de5fbcd00418b7846695c2223",
+ "v5/kandinsky_circulos.jpg": "184f35a3efcfd73e78d67b6a3f01b6be1a26cdec7332b0159297c40212a0c64b",
+ "v5/kandinsky_quadrados.jpg": "50d622123d88c795a77863eb4741e08105d10d6f1f4805bd53993619705f88cb",
+ "v5/monet_medas.jpg": "2e42f7b317f7530fe34abe1f3dbb609aafd1f051952bda74343d2faa67b66781",
+ "v5/monet_ninfeias.jpg": "2eb5bb0d279a6ae57a656278d22d12e73c34c21fc67babc9d04ba8f5e7c8a0f1",
+ "v5/vangogh_girassois.jpg": "62a242bb399af69600438e695d361e92acabc1d75bd96620cae6214d4b9bc93b"
 }

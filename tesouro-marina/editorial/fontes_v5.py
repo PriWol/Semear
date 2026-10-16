@@ -4,7 +4,7 @@ As imagens vêm do Wikimedia Commons (https://commons.wikimedia.org) ou de acerv
 de Arte de Chicago e National Gallery of Art). Só entram obras cujo autor morreu há mais de 70 anos e que a fonte marca como
 domínio público (ou CC0). O arquivo de origem de cada obra é conferido por SHA-256 (dominio_publico/obras.sha256.json);
 as versões tratadas (JPEG) ficam em dominio_publico/v5 e é com elas que os PDFs são gerados, então o build dos PDFs não usa a rede.
-Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | creditos
+Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | jpegs [nomes] | creditos
 """
 import hashlib
 import io
@@ -109,12 +109,30 @@ def _registrar(chave, sha):
     print(f"registrado: {chave}")
 
 
+def _chave_jpeg(nome):
+    return f"v5/{nome}.jpg"
+
+
+def _sha_jpeg(nome):
+    with open(os.path.join(SAIDA, f"{nome}.jpg"), "rb") as f:
+        return _sha256(f.read())
+
+
+def registrar_jpegs(nomes=None):
+    """Grava no manifesto o SHA-256 de cada JPEG tratado (o que de fato entra no PDF), para uma troca ficar visível no diff."""
+    for n in nomes or OBRAS:
+        _registrar(_chave_jpeg(n), _sha_jpeg(n))
+
+
 def verificar():
-    """Toda obra de OBRAS precisa ter o SHA-256 do arquivo de origem no manifesto e a imagem tratada em v5/."""
+    """Toda obra de OBRAS precisa ter o SHA-256 da origem e o do JPEG tratado no manifesto, e o JPEG tratado em v5/ tem de bater com ele."""
     man = _manifesto()
     faltam = sorted(o[0] for o in OBRAS.values() if o[0] not in man)
     sem_img = sorted(n for n in OBRAS if not os.path.exists(os.path.join(SAIDA, f"{n}.jpg")))
-    if faltam or sem_img:
+    trocadas = sorted(n for n in OBRAS if n not in sem_img and man.get(_chave_jpeg(n)) != _sha_jpeg(n))
+    if trocadas:
+        print("JPEG tratado diferente do registrado (ou sem registro) no manifesto:\n  " + "\n  ".join(trocadas))
+    if faltam or sem_img or trocadas:
         if faltam:
             print("obras sem SHA-256 no manifesto:\n  " + "\n  ".join(faltam))
         if sem_img:
@@ -216,6 +234,7 @@ def processar(nome):
         im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
     os.makedirs(SAIDA, exist_ok=True)
     im.save(os.path.join(SAIDA, f"{nome}.jpg"), quality=90, dpi=(300, 300), optimize=True)
+    registrar_jpegs([nome])
     return im.size
 
 
@@ -246,10 +265,12 @@ if __name__ == "__main__":
     elif comando in ("baixar", "registrar"):
         for n in nomes:
             baixar(n, registrar=(comando == "registrar"))
+    elif comando == "jpegs":
+        registrar_jpegs(nomes if sys.argv[2:] else None)
     elif comando == "creditos":
         print(linhas_creditos())
     elif comando == "gerar":
         for n in nomes:
             print(n, processar(n))
     else:
-        sys.exit("uso: python3 fontes_v5.py verificar | baixar | registrar [nomes] | gerar [nomes] | creditos")
+        sys.exit("uso: python3 fontes_v5.py verificar | baixar | registrar [nomes] | gerar [nomes] | jpegs [nomes] | creditos")
