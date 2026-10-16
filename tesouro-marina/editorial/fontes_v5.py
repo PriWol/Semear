@@ -25,6 +25,8 @@ MANIFESTO = os.path.join(AQUI, "dominio_publico", "obras.sha256.json")
 LIMITE_BYTES = 60_000_000
 ESPERA_MAX = 3600      # nunca espera mais de 1 h por pedido, mesmo que a fonte peça mais
 ESPERA_TOTAL = 7200    # e desiste depois de 2 h de espera acumulada num mesmo pedido
+TENTATIVAS_TRANSITORIAS = 3   # queda de rede, timeout ou 5xx: três novas tentativas
+ESPERA_TRANSITORIA = 30
 LADO_MAX = 2000        # px do maior lado (≈ 170 mm a 300 dpi)
 UA = "TesouroMarina/0.1 (educational, non-commercial; https://github.com/PriWol/Semear)"
 
@@ -158,6 +160,7 @@ def _espera(retry_after):
 
 def _pedir(url, cabecalhos):
     esperado = 0
+    transitorias = 0   # queda de rede, timeout ou 5xx: poucas tentativas, espera curta
     for _ in range(12):   # a fonte pode limitar o ritmo de pedidos (429): espera o tempo que ela pede e tenta de novo
         try:
             req = urllib.request.Request(url, headers=cabecalhos)
@@ -166,9 +169,18 @@ def _pedir(url, cabecalhos):
             if len(dados) > LIMITE_BYTES:
                 raise ValueError(f"{url}: resposta maior que {LIMITE_BYTES} bytes")
             return dados
-        except urllib.error.HTTPError as e:
-            if e.code != 429:
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+            if isinstance(e, urllib.error.HTTPError) and e.code == 429:
+                pass
+            elif isinstance(e, urllib.error.HTTPError) and e.code < 500:
                 raise
+            else:
+                transitorias += 1
+                if transitorias > TENTATIVAS_TRANSITORIAS:
+                    raise
+                print(f"{url}: {e!r}, tentando de novo em {ESPERA_TRANSITORIA} s", file=sys.stderr, flush=True)
+                time.sleep(ESPERA_TRANSITORIA)
+                continue
             # a fonte diz quanto esperar (Retry-After, em segundos); pedir antes disso só renova a espera
             espera = _espera(e.headers.get("Retry-After")) + 15
             if esperado + espera > ESPERA_TOTAL:

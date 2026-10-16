@@ -158,7 +158,7 @@ class Utilitarios(unittest.TestCase):
 
 
 class PedirComLimite(unittest.TestCase):
-    """_pedir: nova tentativa só em 429, espera o Retry-After, teto de tentativas e limite de tamanho (sem rede)."""
+    """_pedir: espera o Retry-After em 429, repete falhas de rede e 5xx poucas vezes, teto de tentativas e limite de tamanho (sem rede)."""
 
     @staticmethod
     def _erro(codigo, retry_after=None):
@@ -191,6 +191,20 @@ class PedirComLimite(unittest.TestCase):
                 fontes_v5._pedir("https://exemplo/x", {})
         self.assertEqual(abre.call_count, 1)
         dorme.assert_not_called()
+
+    def test_queda_de_rede_e_5xx_tentam_de_novo_depois_de_espera_curta(self):
+        falhas = [urllib.error.URLError("sem rede"), TimeoutError(), self._erro(503), self._resposta(b"ok")]
+        with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=falhas), \
+                mock.patch("fontes_v5.time.sleep") as dorme:
+            self.assertEqual(fontes_v5._pedir("https://exemplo/x", {}), b"ok")
+        self.assertEqual(dorme.call_count, 3)
+
+    def test_falha_de_rede_persistente_desiste_depois_das_tentativas(self):
+        with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=urllib.error.URLError("sem rede")) as abre, \
+                mock.patch("fontes_v5.time.sleep"):
+            with self.assertRaises(urllib.error.URLError):
+                fontes_v5._pedir("https://exemplo/x", {})
+        self.assertEqual(abre.call_count, fontes_v5.TENTATIVAS_TRANSITORIAS + 1)
 
     def test_doze_429_seguidos_levam_a_runtime_error(self):
         with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=lambda *a, **k: (_ for _ in ()).throw(self._erro(429, 1))) as abre, \
