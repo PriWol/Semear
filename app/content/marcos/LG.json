@@ -91,6 +91,217 @@
       },
       "preRequisitos": ["LG.FON.06"],
       "bncc": []
+    },
+    {
+      "id": "LG.LIT.01",
+      "linha": "LG.LIT",
+      "ordem": 1,
+      "titulo": "Escuta uma história e responde perguntas literais",
+      "descricaoPais": "Depois de ouvir, diz quem apareceu, onde e o que aconteceu.",
+      "evidencias": [
+        "Responde 3 de 4 perguntas (quem, onde, o quê) sobre uma história lida em voz alta"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": ["EI03EF01", "EI03EF03"]
+    },
+    {
+      "id": "LG.LIT.02",
+      "linha": "LG.LIT",
+      "ordem": 2,
+      "titulo": "Reconta uma história ouvida em sequência",
+      "descricaoPais": "Conta com as próprias palavras: começo, meio e fim.",
+      "evidencias": ["Reconta uma história curta na ordem certa, com ou sem as figuras do livro"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LIT.01"],
+      "bncc": ["EI03EF04", "EF15LP19"]
+    },
+    {
+      "id": "LG.LIT.03",
+      "linha": "LG.LIT",
+      "ordem": 3,
+      "titulo": "Interpreta e opina sobre uma história ouvida",
+      "descricaoPais": "Explica por que o personagem agiu assim e diz se gostou, e por quê.",
+      "evidencias": [
+        "Responde a 'por que será que...?' com uma razão ligada à história",
+        "Diz o que mudaria na história e justifica"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LIT.02"],
+      "bncc": ["EI03EF01", "EF15LP02"]
+    },
+    {
+      "id": "LG.LEI.01",
+      "linha": "LG.LEI",
+      "ordem": 1,
+      "titulo": "Lê palavras de sílabas simples",
+      "descricaoPais": "Lê palavras como BOLA, GATO e SAPATO, juntando as sílabas.",
+      "evidencias": ["Lê 8 de 10 palavras de sílabas simples (consoante + vogal)"],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["LG.FON.04", "LG.LET.03"],
+      "bncc": ["EF01LP05", "EF12LP01"]
+    },
+    {
+      "id": "LG.LEI.02",
+      "linha": "LG.LEI",
+      "ordem": 2,
+      "titulo": "Lê frases curtas",
+      "descricaoPais": "Lê frases como 'O gato bebe leite' e entende o que diz.",
+      "evidencias": ["Lê 3 frases curtas e mostra a figura que combina com cada uma"],
+      "idadeTipica": 6,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["LG.LEI.01"],
+      "bncc": ["EF12LP01", "EF15LP18"]
+    },
+    {
+      "id": "LG.LEI.03",
+      "linha": "LG.LEI",
+      "ordem": 3,
+      "titulo": "Lê palavras com dígrafos e sílabas complexas",
+      "descricaoPais": "Lê palavras como CHAVE, NINHO, CARRO e PLANTA.",
+      "evidencias": ["Lê 8 de 10 palavras com CH, NH, LH, RR ou encontros consonantais"],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {
+        "Waldorf": 7.5
+      },
+      "preRequisitos": ["LG.LEI.01"],
+      "bncc": ["EF01LP08", "EF12LP01"]
+    },
+    {
+      "id": "LG.LEI.04",
+      "linha": "LG.LEI",
+      "ordem": 4,
+      "titulo": "Lê um texto curto com fluência",
+      "descricaoPais": "Lê um parágrafo curto sem soletrar, com poucas paradas.",
+      "evidencias": ["Lê um texto de 3 a 5 frases em ritmo contínuo, com no máximo 2 tropeços"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 8
+      },
+      "preRequisitos": ["LG.LEI.02", "LG.LEI.03"],
+      "bncc": ["EF12LP01", "EF15LP16"]
+    },
+    {
+      "id": "LG.LEI.05",
+      "linha": "LG.LEI",
+      "ordem": 5,
+      "titulo": "Lê em voz alta respeitando a pontuação",
+      "descricaoPais": "A voz muda no ponto, na vírgula, na pergunta e na exclamação.",
+      "evidencias": [
+        "Faz pausa no ponto e na vírgula",
+        "Muda a entonação em perguntas e exclamações"
+      ],
+      "idadeTipica": 7.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LEI.04"],
+      "bncc": ["EF15LP16", "EF15LP04"]
+    },
+    {
+      "id": "LG.LEI.06",
+      "linha": "LG.LEI",
+      "ordem": 6,
+      "titulo": "Lê um livrinho inteiro com autonomia",
+      "descricaoPais": "Escolhe um livro para a idade e lê do começo ao fim, sozinha.",
+      "evidencias": ["Lê um livro ilustrado de 200 a 500 palavras sem ajuda", "Diz do que gostou"],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LEI.05"],
+      "bncc": ["EF02LP26", "EF15LP16"]
+    },
+    {
+      "id": "LG.LEI.07",
+      "linha": "LG.LEI",
+      "ordem": 7,
+      "titulo": "Responde a perguntas literais sobre o que leu",
+      "descricaoPais": "Encontra no texto a resposta para quem, onde, quando e o quê.",
+      "evidencias": [
+        "Aponta no texto a frase que responde a uma pergunta literal",
+        "Acerta 3 de 4 perguntas"
+      ],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {
+        "Waldorf": 7.5
+      },
+      "preRequisitos": ["LG.LEI.02", "LG.LIT.01"],
+      "bncc": ["EF15LP03"]
+    },
+    {
+      "id": "LG.LEI.08",
+      "linha": "LG.LEI",
+      "ordem": 8,
+      "titulo": "Reconta por escrito ou oralmente o que leu",
+      "descricaoPais": "Conta o texto lido com começo, meio e fim.",
+      "evidencias": ["Reconta um texto lido na ordem certa, citando personagens e lugar"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 8
+      },
+      "preRequisitos": ["LG.LEI.07", "LG.LIT.02"],
+      "bncc": ["EF15LP19", "EI03EF05"]
+    },
+    {
+      "id": "LG.LEI.09",
+      "linha": "LG.LEI",
+      "ordem": 9,
+      "titulo": "Infere o que o texto não diz",
+      "descricaoPais": "Descobre pelas pistas como o personagem se sente ou o que vai acontecer.",
+      "evidencias": [
+        "Responde 'como você sabe?' apontando uma pista do texto",
+        "Prevê o que acontece depois e justifica"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 8
+      },
+      "preRequisitos": ["LG.LEI.07", "LG.LIT.03"],
+      "bncc": ["EF15LP02", "EF15LP03"]
+    },
+    {
+      "id": "LG.LEI.10",
+      "linha": "LG.LEI",
+      "ordem": 10,
+      "titulo": "Relaciona o texto com a própria experiência e com as ilustrações",
+      "descricaoPais": "Liga o que leu a algo que viveu ou a outro livro, e vê o que a imagem acrescenta.",
+      "evidencias": [
+        "Conta uma experiência parecida com a do texto",
+        "Diz o que a ilustração mostra que o texto não diz"
+      ],
+      "idadeTipica": 7.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LEI.09"],
+      "bncc": ["EF15LP18", "EF15LP15"]
+    },
+    {
+      "id": "LG.LEI.11",
+      "linha": "LG.LEI",
+      "ordem": 11,
+      "titulo": "Identifica a ideia principal e o tipo de texto",
+      "descricaoPais": "Diz o assunto do texto e se é conto, poema, receita ou notícia.",
+      "evidencias": ["Resume o texto em uma frase", "Classifica 4 de 5 textos curtos por gênero"],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LEI.08", "LG.LEI.10"],
+      "bncc": ["EF15LP02", "EF12LP18"]
+    },
+    {
+      "id": "LG.LEI.12",
+      "linha": "LG.LEI",
+      "ordem": 12,
+      "titulo": "Opina sobre o texto e justifica com trechos",
+      "descricaoPais": "Diz se concorda ou gostou e sustenta a resposta com o que está escrito.",
+      "evidencias": ["Dá uma opinião e cita um trecho que a apoia"],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LEI.11"],
+      "bncc": ["EF15LP15", "EF02LP26"]
     }
   ]
 }

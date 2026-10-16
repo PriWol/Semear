@@ -497,3 +497,21 @@ progress {
 .faixa-atualizar[hidden] {
   display: none;
 }
+
+.lista-acervo {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--s-espaco-3);
+}
+.item-acervo h3 {
+  margin: 0 0 var(--s-espaco-1);
+}
+#filtros {
+  display: grid;
+  gap: var(--s-espaco-3);
+}
+#filtros label {
+  display: grid;
+  gap: var(--s-espaco-1);
+}
