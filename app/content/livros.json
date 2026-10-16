@@ -19,6 +19,76 @@
       "idade": [3, 7],
       "uso": "leitura-em-voz-alta",
       "porQue": "Versos rimados que contam de 10 até 1 com os sacis do nosso folclore. Depois da leitura, peça para a criança narrar a história com os próprios feijões."
+    },
+    {
+      "id": "livro-lagarta-comilona",
+      "titulo": "A Lagarta Muito Comilona",
+      "autor": "Eric Carle",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["MA.SEN.01", "MA.SEN.03"],
+      "idade": [3, 6],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Uma lagarta come mais e mais a cada dia, de 1 a 5 frutas. Conte junto, com o dedo em cada fruta, e depois peça para a criança contar de novo sozinha."
+    },
+    {
+      "id": "livro-bruxa-bruxa",
+      "titulo": "Bruxa, Bruxa, Venha à Minha Festa",
+      "autor": "Arden Druce",
+      "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+      "marcos": ["LG.FON.01", "LG.FON.02", "MA.SEN.01"],
+      "idade": [3, 6],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Rimas e convidados que chegam em ordem. Pare antes da última palavra do verso e deixe a criança completar com a rima."
+    },
+    {
+      "id": "livro-arca-de-noe",
+      "titulo": "A Arca de Noé",
+      "autor": "Vinicius de Moraes",
+      "vertentes": ["Religioso", "Waldorf", "Clássico"],
+      "marcos": ["LG.FON.01", "LG.FON.02", "MA.SEN.02"],
+      "idade": [4, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Poemas sobre os bichos que entram na arca, dois a dois. Bom para ouvir a rima e para a correspondência termo a termo (um bicho para cada par)."
+    },
+    {
+      "id": "livro-poemas-para-brincar",
+      "titulo": "Poemas para Brincar",
+      "autor": "José Paulo Paes",
+      "vertentes": ["Waldorf", "Clássico", "Charlotte Mason", "Montessori"],
+      "marcos": ["LG.FON.01", "LG.FON.02", "LG.FON.04"],
+      "idade": [4, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Versos curtos e bem-humorados que jogam com sons e sílabas. Escolha um poema e pergunte: “Quais palavras terminam com o mesmo som?”"
+    },
+    {
+      "id": "livro-marcelo-marmelo-martelo",
+      "titulo": "Marcelo, Marmelo, Martelo",
+      "autor": "Ruth Rocha",
+      "vertentes": ["Clássico", "Charlotte Mason", "Montessori"],
+      "marcos": ["LG.FON.03", "LG.FON.04", "LG.FON.06"],
+      "idade": [5, 8],
+      "uso": "leitura-pela-crianca",
+      "porQue": "Um menino que questiona o nome das coisas. Ótimo para conversar sobre como as palavras começam e terminam, e sobre o som inicial."
+    },
+    {
+      "id": "livro-alfabeto-escalafobetico",
+      "titulo": "Alfabeto Escalafobético",
+      "autor": "Ruth Rocha",
+      "vertentes": ["Clássico", "Charlotte Mason", "Montessori"],
+      "marcos": ["LG.FON.06", "LG.FON.07"],
+      "idade": [5, 8],
+      "uso": "leitura-pela-crianca",
+      "porQue": "Cada letra do alfabeto vira uma brincadeira com palavras. Use para caçar palavras que começam com o mesmo som da letra do dia."
+    },
+    {
+      "id": "livro-lenga-la-lenga",
+      "titulo": "Lenga la Lenga",
+      "autor": "Bráulio Tavares",
+      "vertentes": ["Clássico", "Waldorf", "Charlotte Mason"],
+      "marcos": ["LG.FON.05", "LG.FON.06"],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Trava-línguas e brincadeiras sonoras. Repitam devagar, depois mais rápido, e troquem uma sílaba para criar palavras novas."
     }
   ]
 }
