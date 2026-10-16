@@ -29,16 +29,18 @@ UA = "TesouroMarina/0.1 (educational, non-commercial; https://github.com/PriWol/
 OBRAS = {
     "durer_lebre": ("Albrecht Dürer - Hare, 1502 - Google Art Project.jpg",
                     "Albrecht Dürer (1471–1528)", "<i>A lebre jovem</i> (Feldhase)", "1502", "Albertina, Viena", "domínio público"),
-    "durer_tufo": ("Albrecht Dürer - The Large Piece of Turf, 1503 - Google Art Project.jpg",
-                   "Albrecht Dürer (1471–1528)", "<i>O grande tufo de relva</i> (Das große Rasenstück)", "1503", "Albertina, Viena", "domínio público"),
+    "durer_primulas": ("nga:21113c79-7136-4bce-9e8d-65b9254628bd",
+                       "Albrecht Dürer (1471–1528)", "<i>Tufo de prímulas</i> (Tuft of Cowslips)", "1526",
+                       "National Gallery of Art, Washington", "CC0 (acesso aberto do acervo)"),
     "kandinsky_quadrados": ("Vassily Kandinsky, 1913 - Color Study, Squares with Concentric Circles.jpg",
                             "Wassily Kandinsky (1866–1944)", "<i>Estudo de cores: quadrados com círculos concêntricos</i>", "1913",
                             "Städtische Galerie im Lenbachhaus, Munique", "domínio público"),
     "kandinsky_circulos": ("Vassily Kandinsky, 1926 - Several Circles, Gugg 0910 25.jpg",
                            "Wassily Kandinsky (1866–1944)", "<i>Vários círculos</i> (Several Circles)", "1926",
                            "Museu Solomon R. Guggenheim, Nova York", "domínio público"),
-    "monet_papoulas": ("Claude Monet - Poppy Field - Google Art Project.jpg",
-                       "Claude Monet (1840–1926)", "<i>Os coquelicots</i> (Les Coquelicots)", "1873", "Musée d'Orsay, Paris", "domínio público"),
+    "monet_medas": ("aic:a38e2828-ec6f-ece1-a30f-70243449197b",
+                    "Claude Monet (1840–1926)", "<i>Medas de trigo (fim do verão)</i> (Stacks of Wheat, End of Summer)", "1890–91",
+                    "Instituto de Arte de Chicago", "domínio público (acesso aberto do acervo)"),
     "monet_ninfeias": ("aic:3c27b499-af56-f0d5-93b5-a7f2f1ad5813",
                        "Claude Monet (1840–1926)", "<i>Ninfeias</i> (Water Lilies)", "1906", "Instituto de Arte de Chicago", "domínio público (acesso aberto do acervo)"),
     "vangogh_girassois": ("Vincent Willem van Gogh, Dutch - Sunflowers - Google Art Project.jpg",
@@ -48,9 +50,9 @@ OBRAS = {
     "cassatt_poltrona": ("nga:6dc9ca49-ea8c-4314-985a-ba2cfc3965cd",
                          "Mary Cassatt (1844–1926)", "<i>Menina na poltrona azul</i> (Little Girl in a Blue Armchair)", "1878",
                          "National Gallery of Art, Washington", "CC0 (acesso aberto do acervo)"),
-    "cassatt_mae": ("Mary Cassatt - Mother About to Wash Her Sleepy Child - Google Art Project.jpg",
-                    "Mary Cassatt (1844–1926)", "<i>Mãe prestes a lavar a filha sonolenta</i> (Mother About to Wash Her Sleepy Child)", "1880",
-                    "Museu de Arte do Condado de Los Angeles (LACMA)", "domínio público"),
+    "cassatt_praia": ("nga:20818b10-1f66-4186-ac55-af70e3586084",
+                      "Mary Cassatt (1844–1926)", "<i>Crianças brincando na praia</i> (Children Playing on the Beach)", "1884",
+                      "National Gallery of Art, Washington", "CC0 (acesso aberto do acervo)"),
 }
 
 
@@ -59,6 +61,9 @@ REFERENCIAS = {
     "monet_ninfeias": ("inv. 1933.1157", "https://www.artic.edu/artworks/16568"),
     "cassatt_banho": ("inv. 1910.2", "https://www.artic.edu/artworks/111442"),
     "cassatt_poltrona": ("inv. 1983.1.18", "https://www.nga.gov/artworks/61368"),
+    "durer_primulas": ("inv. 1991.217.1", "https://www.nga.gov/artworks/74162"),
+    "monet_medas": ("inv. 1985.1103", "https://www.artic.edu/artworks/64818"),
+    "cassatt_praia": ("inv. 1970.17.19", "https://www.nga.gov/artworks/52163"),
 }
 
 

@@ -117,7 +117,7 @@ def carta(L):
         <li><b>O processo vale mais que o resultado</b>. Misturar cores, apertar a argila e rasgar o papel são o aprendizado. O que fica pronto é só um resto bonito.</li>
       </ul>
       <h2>O que este volume traz</h2>
-      <p>Oito unidades: <i>três cores, todas as cores</i> (guache), <i>linhas e círculos</i> (Kandinsky), <i>Dürer</i> (uma lebre e um tufo de relva, para olhar de perto),
+      <p>Oito unidades: <i>três cores, todas as cores</i> (guache), <i>linhas e círculos</i> (Kandinsky), <i>Dürer</i> (uma lebre e uma planta, para olhar de perto),
       <i>Monet</i> (o jardim e a luz), <i>Van Gogh</i> (os girassóis), <i>Mary Cassatt</i> (mães e crianças), <i>modelar</i> (argila) e <i>colar</i> (papel pintado por ela).</p>
       <h2>Sobre as reproduções</h2>
       <p>As obras vêm de acervos abertos e são de artistas mortos há mais de 70 anos. <b>Uma fotografia nunca tem exatamente a cor do original</b>; quando puder,
@@ -308,14 +308,14 @@ def unidade3(L):
         titulo="Unidade 3 · Dürer, olhar de perto", aba="--d-natureza",
         pergunta="Quanta coisa dá para ver num animal, ou num tufo de grama, se a gente olhar de pertinho?",
         duracao="Dois fins de semana · dois encontros · 20 a 30 minutos. Olhar demora; fazer é rápido.",
-        objetivos=["Olhar com calma <i>A lebre jovem</i> e <i>O grande tufo de relva</i>, de Dürer.", "Apontar e nomear detalhes: orelhas, bigodes, olho, pelo, patas; folhas, raízes, flores.",
+        objetivos=["Olhar com calma <i>A lebre jovem</i> e <i>Tufo de prímulas</i>, de Dürer.", "Apontar e nomear detalhes: orelhas, bigodes, olho, pelo, patas; folhas, raízes, flores.",
                    "Contar quantas coisas diferentes vê numa obra.", "Procurar no quintal ou na praça plantas e bichos de verdade e olhar de perto, com lupa.", "Desenhar um tufo de plantas observando de verdade."],
-        repertorio="<b>Obras:</b> Albrecht Dürer (1471–1528), <i>A lebre jovem</i> (1502) e <i>O grande tufo de relva</i> (1503), aquarelas conservadas na Albertina, em Viena. "
-                   "<b>Palavras:</b> pelo, bigode, orelha, folha, raiz, talo, detalhe. <b>Línguas:</b> <i>hare · le lièvre · lepus</i>; <i>grass · l'herbe · herba</i>.",
+        repertorio="<b>Obras:</b> Albrecht Dürer (1471–1528), <i>A lebre jovem</i> (1502, aquarela da Albertina, em Viena) e <i>Tufo de prímulas</i> (1526, National Gallery of Art, em Washington). "
+                   "<b>Palavras:</b> pelo, bigode, orelha, folha, raiz, talo, detalhe. <b>Línguas:</b> <i>hare · le lièvre · lepus</i>; <i>primrose · la primevère · primula</i>; <i>root · la racine · radix</i>.",
         materiais="Uma lupa (se tiver), papel e lápis, lápis de cor, uma prancheta ou livro grosso para apoiar; as reproduções deste livro.",
         vida="Passear olhando o chão; levar uma lupa no bolso; separar três coisas pequenas encontradas no caminho.",
         etapas=[["Olhar a lebre em silêncio, de perto.", "Contar bigodes, orelhas, patas.", "Procurar o ano e a assinatura do artista."],
-                ["Olhar o tufo de relva: quantas plantas diferentes?", "Procurar um tufo no quintal e olhar de perto, com lupa.", "Jogar o jogo da memória da lebre e das plantas."],
+                ["Olhar o tufo de prímulas: quantas flores? quantas folhas?", "Procurar um tufo no quintal e olhar de perto, com lupa.", "Jogar o jogo da memória da lebre e das plantas."],
                 ["Desenhar um tufo observando de verdade.", "Escolher o detalhe de que mais gostou e contar por quê.", "Mostrar o desenho para alguém."]],
         indicadores=["Aponta pelo menos cinco detalhes da lebre.", "Diz que há plantas diferentes no tufo.", "Usa a lupa para olhar de perto uma folha ou um inseto.",
                      "Desenha com atenção, sem pressa.", "Lembra de um detalhe com o livro fechado.", "Acha pares iguais no jogo da memória."],
@@ -326,11 +326,11 @@ def unidade3(L):
     c = f"""<div class="miolo">{titulo("Dürer, que olhava de pertinho", "Nuremberg, 1471 · um artista que desenhava bichos e plantas", 23)}
       <div class="centro" style="margin:3mm 0">{tira(["lebre", "tufo", "lupa"], "36mm", "4mm")}</div>
       <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Albrecht Dürer nasceu na cidade de Nuremberg, na Alemanha, há mais de 500 anos. O pai era ourives, e o filho aprendeu a desenhar com muito cuidado.
-      Dürer fazia gravuras, que eram impressas e vendidas em muitas cidades, e pintava quadros. Mas também fazia pequenos estudos de bichos e plantas, para olhar e aprender: uma lebre, um tufo de grama, um pedaço de terra com flores.</p>
+      Dürer fazia gravuras, que eram impressas e vendidas em muitas cidades, e pintava quadros. Mas também fazia estudos de bichos e plantas, para olhar e aprender: uma lebre, uma planta com raízes e flores.</p>
       <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Na época, poucos pintores olhavam tão de perto um animal ou um punhado de mato. Dürer olhou, e desenhou cada pelo e cada folha. Mais de 500 anos depois, quem olha esses desenhos ainda sente que o bicho vai se mexer
-      e que a grama balança.</p></div>
+      e que a planta vai balançar.</p></div>
       {adulto("olhar com vagar",
-              "As duas obras desta unidade são <b>estudos</b>: Dürer não os fez para vender, mas para observar. Esse é o espírito da unidade: olhar muito e com calma, uma coisa só. "
+              "As duas obras desta unidade são <b>estudos</b>: bichos e plantas desenhados de perto, para observar. Esse é o espírito da unidade: olhar muito e com calma, uma coisa só. "
               "Mostre na página a assinatura dele, um <b>A</b> com um <b>D</b> dentro, que ele punha em suas obras.")}"""
     L.add(c, aba="--d-natureza")
 
@@ -341,12 +341,12 @@ def unidade3(L):
              "Peça que ela conte com os dedos os bigodes; depois, que feche o livro e diga <b>três coisas</b> da lebre. Perto da base ficam o ano (1502) e a assinatura de Dürer.",
              "olhar de perto", "--d-natureza", w=120, h=130)
 
-    apreciar(L, "durer_tufo", "O grande tufo de relva", "Dürer, 1503 · um pedacinho de chão, visto de perto",
-             ["Quantas plantas diferentes você consegue ver?", "Quais têm folhas largas? Quais têm folhas finas, como fios?", "Onde estão as raízes?", "Alguma planta tem flor? De que cor?",
-              "Você já viu um tufo assim no quintal ou na praça? Onde?"],
-             "Esta aquarela mostra um pedaço de terra com plantas comuns, tiradas do chão com as raízes, como se fosse um retrato de um canto de campo. "
-             "É uma ótima porta de entrada para o passeio com a lupa: ela procura um tufo parecido no quintal, olha de perto e conta quantas plantas diferentes encontra.",
-             "olhar e comparar", "--d-natureza", w=110, h=140)
+    apreciar(L, "durer_primulas", "Tufo de prímulas", "Dürer, 1526 · uma planta inteira, com raízes",
+             ["Quantas flores você consegue contar? De que cor são?", "Como são as folhas? Todas têm o mesmo tamanho?", "Onde estão as raízes? E a terra?", "Os talos das flores são altos ou baixos? Para onde apontam?",
+              "Procure, embaixo, o ano e a assinatura do artista. Você acha?"],
+             "Esta obra mostra uma planta inteira, com flores, folhas, raízes e um pouco de terra, como se tivesse sido tirada do chão para ser olhada. As flores amarelas ficam em cima de talos finos e altos, e as folhas largas e enrugadas ficam embaixo. "
+             "No canto inferior direito estão o ano (1526) e a assinatura de Dürer, um A com um D. É uma boa porta para o passeio com a lupa: ela procura uma planta no quintal, olha folha por folha e conta o que vê.",
+             "olhar e comparar", "--d-natureza", w=125, h=140)
 
     itens = [(img("lupa", "22mm"), "Pegar a lupa e sair com um adulto"),
              (img("tufo", "22mm"), "Achar um tufo de plantas no chão"),
@@ -380,16 +380,16 @@ def unidade4(L):
         titulo="Unidade 4 · Monet e o jardim", aba="--d-matematica",
         pergunta="Dá para pintar a luz do dia só com manchas de cor?",
         duracao="Dois fins de semana · dois encontros · 20 a 30 minutos. Olhar uma obra, pintar manchas.",
-        objetivos=["Olhar com calma <i>Os coquelicots</i> e <i>Ninfeias</i>, de Monet.", "Perceber que a cor muda ao longo do dia (manhã, meio-dia, tarde, noite).",
+        objetivos=["Olhar com calma <i>Medas de trigo</i> e <i>Ninfeias</i>, de Monet.", "Perceber que a cor muda ao longo do dia (manhã, meio-dia, tarde, noite).",
                    "Pintar com manchas largas, sem contorno.", "Ordenar quatro momentos do dia.", "Contar o que lembra de uma obra com o livro fechado."],
-        repertorio="<b>Obras:</b> Claude Monet (1840–1926), <i>Os coquelicots</i> (1873, Musée d'Orsay) e <i>Ninfeias</i> (1906, Instituto de Arte de Chicago). "
+        repertorio="<b>Obras:</b> Claude Monet (1840–1926), <i>Medas de trigo (fim do verão)</i> (1890–91) e <i>Ninfeias</i> (1906), as duas no Instituto de Arte de Chicago. "
                    "<b>Palavras:</b> mancha, luz, reflexo, jardim, lago, manhã, tarde. <b>Línguas:</b> <i>flower · la fleur · flos</i>; <i>garden · le jardin · hortus</i>.",
         materiais="Guache ou aquarela, pincel largo, papel grosso, água e pano; um jardim, uma praça ou até uma planta de vaso para olhar.",
         vida="Observar a luz na janela em horas diferentes; regar uma planta ou o jardim.",
-        etapas=[["Olhar <i>Os coquelicots</i>: onde estão as manchas vermelhas?", "Dizer o que vê: céu, campo, pessoas.", "Pintar uma folha só com manchas de vermelho, verde e azul."],
+        etapas=[["Olhar as <i>Medas de trigo</i>: de que cores são as medas?", "Dizer o que vê: céu, campo, medas, casas ao longe.", "Pintar uma folha só com manchas de rosa, lilás e amarelo."],
                 ["Olhar <i>Ninfeias</i>: onde estão as flores e as folhas?", "Ordenar os quatro momentos do dia.", "Olhar a luz da janela em duas horas diferentes."],
                 ["Pintar uma paisagem com manchas, sem contorno.", "Dar nome à paisagem e dizer a hora do dia.", "Escolher a obra de Monet preferida."]],
-        indicadores=["Pinta com manchas largas, sem contornar tudo.", "Aponta o vermelho dos coquelicots e o verde do campo.", "Diz como a luz muda de manhã para a noite.",
+        indicadores=["Pinta com manchas largas, sem contornar tudo.", "Aponta as cores das medas e do campo (rosa, lilás, amarelo).", "Diz como a luz muda de manhã para a noite.",
                      "Ordena os quatro momentos do dia.", "Lembra de um detalhe da obra com o livro fechado.", "Dá nome à sua paisagem."],
         interesse="olhar a mesma árvore ou janela em três horas diferentes do dia e desenhar cada vez só as cores que viu.",
         dificil="olhar uma obra e dizer qual cor ela mais vê, sem pintar nada.",
@@ -397,20 +397,20 @@ def unidade4(L):
 
     c = f"""<div class="miolo">{titulo("Monet e o jardim", "Paris, 1840 · Giverny · um pintor que pintava a luz", 24)}
       <div class="centro" style="margin:3mm 0">{tira(["ninfeia", "florzinha_rosa", "dia_meiodia"], "34mm", "4mm")}</div>
-      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Claude Monet era francês e adorava pintar ao ar livre: campos, rios, jardins. Ele reparou que a cor das coisas muda ao longo do dia, conforme a luz do sol: de manhã é de um jeito, ao meio-dia de outro, à tarde de outro.
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Claude Monet era francês e adorava pintar ao ar livre: campos, rios, jardins. Pintou muitas vezes as mesmas medas de trigo, em estações e horas diferentes, só para mostrar como a luz muda. Ele reparou que a cor das coisas muda ao longo do dia, conforme a luz do sol: de manhã é de um jeito, ao meio-dia de outro, à tarde de outro.
       Então pintava depressa, com <b>manchas de cor</b>, para pegar a luz antes que ela mudasse.</p>
       <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Mais tarde, Monet plantou um jardim em Giverny, na França, com um lago cheio de ninfeias, e pintou esse lago muitas e muitas vezes. Os pintores como ele ficaram conhecidos como impressionistas.
       Quando a gente olha de perto, só vê manchas; quando se afasta, as manchas viram flores, água e céu.</p></div>
       {adulto("olhar de perto e de longe",
               "Uma boa brincadeira com Monet é <b>chegar perto e afastar-se</b> do livro: de perto são só manchas, de longe viram um jardim. A criança vai gostar de fazer isso com o corpo. "
-              "O Musée d'Orsay (Paris) guarda <i>Os coquelicots</i> e o Instituto de Arte de Chicago, a <i>Ninfeias</i> desta unidade.")}"""
+              "As duas obras desta unidade estão no Instituto de Arte de Chicago. A <i>Medas de trigo</i> faz parte de uma série de mais de vinte quadros das mesmas medas, o que combina com a sequência da luz do dia.")}"""
     L.add(c, aba="--d-matematica")
 
-    apreciar(L, "monet_papoulas", "Os coquelicots", "Monet, 1873 · um campo de papoulas",
-             ["Onde estão as manchas vermelhas? Quantas você consegue achar?", "Que outras cores você vê no campo?", "Há pessoas no quadro? Onde? O que estão fazendo?", "O céu está limpo ou tem nuvens?",
-              "Se você entrasse neste campo, o que sentiria no rosto?"],
-             "Monet pintou este campo com pinceladas curtas, deixando as formas pouco definidas. Peça que ela se afaste e se aproxime, e fale do que muda. "
-             "Os <i>coquelicots</i> são papoulas silvestres. Depois de olhar, feche o livro e peça que ela conte três coisas que viu.",
+    apreciar(L, "monet_medas", "Medas de trigo", "Monet, 1890–91 · fim do verão, luz de fim de tarde",
+             ["Quantas medas de trigo você vê? Qual é a maior?", "De que cores são as medas? E o campo na frente delas?", "O que aparece ao longe, atrás das medas?", "De que cor é o céu? Parece de manhã, de tarde ou de noite?",
+              "Procure o nome do pintor e o ano, no canto de baixo."],
+             "Monet pintou estas medas (montes de trigo colhido, empilhados no campo) muitas vezes, em horas e estações diferentes. Aqui o sol está baixo: as medas ficam cor-de-rosa e alaranjadas, e as sombras no chão são lilases e azuis. "
+             "Peça que ela se afaste e se aproxime: de perto são só manchas, de longe são medas e campo. A assinatura e o ano (91) ficam no canto inferior esquerdo.",
              "olhar e conversar", "--d-matematica", w=170, h=100)
 
     apreciar(L, "monet_ninfeias", "Ninfeias", "Monet, 1906 · um lago visto de cima",
@@ -532,8 +532,8 @@ def unidade6(L):
         duracao="Dois fins de semana · dois encontros · 20 a 30 minutos. Três obras para olhar, uma sequência para ordenar, um retrato para fazer.",
         objetivos=["Olhar com calma três obras de Mary Cassatt e dizer o que vê (pessoas, gestos, cores, objetos).", "Perceber o que as pessoas fazem uma com a outra: segurar, lavar, descansar.",
                    "Ordenar quatro momentos do cuidado (encher a bacia, lavar, secar, dormir).", "Fazer o retrato de alguém que cuida dela.", "Falar do que lembra com o livro fechado."],
-        repertorio="<b>Obras:</b> Mary Cassatt (1844–1926), <i>O banho da criança</i> (1893), <i>Menina na poltrona azul</i> (1878) e <i>Mãe prestes a lavar a filha sonolenta</i> (1880). "
-                   "<b>Palavras:</b> colo, banho, abraço, cuidar, descansar, poltrona. <b>Línguas:</b> <i>mother · la mère · māter</i>; <i>child · l'enfant</i>.",
+        repertorio="<b>Obras:</b> Mary Cassatt (1844–1926), <i>O banho da criança</i> (1893), <i>Menina na poltrona azul</i> (1878) e <i>Crianças brincando na praia</i> (1884). "
+                   "<b>Palavras:</b> colo, banho, brincar, cuidar, descansar, poltrona, praia. <b>Línguas:</b> <i>mother · la mère · māter</i>; <i>child · l'enfant</i>.",
         materiais="Papel grosso, lápis de cor ou giz de cera, guache; uma bacia, uma toalha e um sabonete (para a sequência); um espelho ou uma foto da família.",
         vida="Participar do banho e da hora de dormir; dizer “obrigada” a quem cuida; ajudar a cuidar de uma boneca ou de uma planta.",
         etapas=[["Olhar <i>O banho da criança</i> em silêncio, por um minuto.", "Dizer o que cada pessoa está fazendo.", "Procurar as cores que se repetem."],
@@ -570,11 +570,11 @@ def unidade6(L):
              "Depois procure junto os detalhes: as outras poltronas, o cachorrinho dormindo numa delas, as flores do tecido e a janela clara ao fundo.",
              "olhar e imaginar", "--d-historias", w=170, h=105)
 
-    apreciar(L, "cassatt_mae", "Mãe prestes a lavar a filha sonolenta", "Cassatt, 1880 · o colo antes do banho",
-             ["Quantas pessoas você vê? Como estão uma em relação à outra?", "A criança está acordada ou com sono? Como você sabe?", "O que a pessoa grande está segurando?", "Que cores têm as roupas?",
+    apreciar(L, "cassatt_praia", "Crianças brincando na praia", "Cassatt, 1884 · duas crianças, uma pá e um balde",
+             ["Quantas crianças você vê? O que cada uma está fazendo?", "O que a criança da frente segura nas mãos?", "Como é o chapéu da outra criança? De que cor é a fita?", "O que aparece lá no alto, ao fundo? Quantos barquinhos?",
               "Compare com o quadro do banho: o que é igual e o que é diferente?"],
-             "É uma boa obra para comparar com <i>O banho da criança</i>: as duas mostram o cuidado em torno do banho, mas de formas diferentes. Deixe que ela descubra o que se repete (o colo, a bacia) e o que muda (a luz, as cores, a postura). "
-             "O título original usa a palavra “sonolenta”; peça que ela mostre como alguém fica quando está com sono.",
+             "É uma boa obra para comparar com <i>O banho da criança</i>: lá a criança é cuidada, aqui ela brinca sozinha, mas as duas cenas mostram um momento tranquilo do dia. "
+             "Na praia, uma criança senta na areia com um balde e uma pá, e a outra, de chapéu de palha com fita vermelha, está logo atrás. Ao fundo há o mar e dois barquinhos de vela. A assinatura fica no canto inferior direito.",
              "olhar e comparar", "--d-historias", w=100, h=145)
 
     quadros = [("encher a bacia", img("tigela", "46mm", "margin:0 auto")), ("ensaboar", img("sabonete", "46mm", "margin:0 auto")),
@@ -738,13 +738,13 @@ def encerramento(L):
     c = f"""<div class="miolo">{titulo("Os artistas desta coleção", "quando viveram", 28)}
       <div style="margin-top:8mm">{linha_do_tempo(itens, 1450, 1960)}</div>
       <table class="tab" style="margin-top:8mm;font-size:11pt">
-        <tr><td style="width:32mm"><b>Dürer</b></td><td><i>A lebre jovem</i> e <i>O grande tufo de relva</i> · olhar de perto, pelo, folha por folha</td></tr>
-        <tr><td><b>Monet</b></td><td><i>Os coquelicots</i> e <i>Ninfeias</i> · manchas de cor e a luz do dia</td></tr>
-        <tr><td><b>Cassatt</b></td><td><i>O banho da criança</i> e <i>Menina na poltrona azul</i> · crianças e quem cuida delas</td></tr>
+        <tr><td style="width:32mm"><b>Dürer</b></td><td><i>A lebre jovem</i> e <i>Tufo de prímulas</i> · olhar de perto, pelo, folha por folha</td></tr>
+        <tr><td><b>Monet</b></td><td><i>Medas de trigo</i> e <i>Ninfeias</i> · manchas de cor e a luz do dia</td></tr>
+        <tr><td><b>Cassatt</b></td><td><i>O banho da criança</i>, <i>Menina na poltrona azul</i> e <i>Crianças brincando na praia</i> · crianças e quem cuida delas</td></tr>
         <tr><td><b>Van Gogh</b></td><td><i>Girassóis</i> · amarelo sobre amarelo</td></tr>
         <tr><td><b>Kandinsky</b></td><td><i>Vários círculos</i> · círculos, cores e música</td></tr></table></div>
       {adulto("o tempo na arte",
-              "Mostre as barras como ruas compridas de tempo: Dürer viveu há quase 500 anos; os outros quatro, há mais de 100. Mesmo assim, a lebre de Dürer, o jardim de Monet e a poltrona de Cassatt "
+              "Mostre as barras como ruas compridas de tempo: Dürer viveu há quase 500 anos; os outros quatro, há mais de 100. Mesmo assim, a lebre de Dürer, o lago de Monet e a poltrona de Cassatt "
               "vivem juntos na mesma parede da sua casa. Pergunte qual ela gostaria de visitar e por quê.")}"""
     L.add(c, aba="--d-artes")
 
