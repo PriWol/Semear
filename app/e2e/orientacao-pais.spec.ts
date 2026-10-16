@@ -114,3 +114,15 @@ test('a linha Sistema de numeração mostra o texto e a idade de introdução da
   await expect(m.locator('.para-os-pais-texto')).toContainText('por volta dos 7 anos');
   await expect(m.locator('.para-os-pais-texto')).not.toContainText('aviso acima');
 });
+
+test('a linha Geometria e espaço mostra o texto e as referências de espaço', async ({ page }) => {
+  await cadastrarFamiliaECrianca(page);
+  await page.getByRole('link', { name: /Matemática/ }).click();
+  await expect(page.getByRole('heading', { name: /Geometria e espaço/ })).toBeVisible();
+
+  const m = marco(page, 'MA.GEO.07');
+  await m.getByText('Para os pais').click();
+  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(m.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
+  await expect(m.locator('.referencias')).toContainText('PIAGET, Jean; INHELDER, Bärbel');
+});
