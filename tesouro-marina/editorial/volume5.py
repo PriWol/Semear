@@ -744,7 +744,7 @@ def encerramento(L):
         <tr><td><b>Van Gogh</b></td><td><i>Girassóis</i> · amarelo sobre amarelo</td></tr>
         <tr><td><b>Kandinsky</b></td><td><i>Vários círculos</i> · círculos, cores e música</td></tr></table></div>
       {adulto("o tempo na arte",
-              "Mostre as barras como ruas compridas de tempo: Dürer viveu há quase 500 anos; os outros quatro viveram entre os anos 1800 e meados dos anos 1900. Mesmo assim, a lebre de Dürer, o lago de Monet e a poltrona de Cassatt "
+              "Mostre as barras como ruas compridas de tempo: Dürer nasceu há mais de 500 anos; os outros quatro viveram entre os anos 1800 e meados dos anos 1900. Mesmo assim, a lebre de Dürer, o lago de Monet e a poltrona de Cassatt "
               "vivem juntos na mesma parede da sua casa. Pergunte qual ela gostaria de visitar e por quê.")}"""
     L.add(c, aba="--d-artes")
 
@@ -800,7 +800,8 @@ def main():
         VERSAO["atual"] = versao
         L = montar()
         h = os.path.join(AQUI, f"{nome}.html")
-        open(h, "w", encoding="utf-8").write(L.html())
+        with open(h, "w", encoding="utf-8") as f:
+            f.write(L.html())
         ok &= gerar_pdf(h, os.path.join(SAIDA, f"{nome}.pdf"))
         print(versao, len(L.paginas), "páginas")
     if not ok:   # geração falhou: não renderizar páginas de inspeção a partir de um PDF antigo
