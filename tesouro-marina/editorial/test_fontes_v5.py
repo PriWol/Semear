@@ -180,6 +180,14 @@ class PerfilDeCor(unittest.TestCase):
         converte.assert_called_once()
         self.assertEqual(saida.mode, "RGB")
 
+    def test_perfil_corrompido_nao_aborta(self):
+        im = Image.new("RGB", (2, 2), (10, 20, 30))
+        im.info["icc_profile"] = b"lixo"
+        with mock.patch("sys.stderr", new=io.StringIO()) as erro:
+            saida = fontes_v5._para_srgb(im)
+        self.assertEqual(saida.getpixel((0, 0)), (10, 20, 30))
+        self.assertIn("aviso", erro.getvalue())
+
     def test_sem_perfil_so_converte_o_modo(self):
         self.assertEqual(fontes_v5._para_srgb(Image.new("L", (2, 2), 128)).mode, "RGB")
 

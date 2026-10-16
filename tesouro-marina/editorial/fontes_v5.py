@@ -243,12 +243,13 @@ def _para_srgb(im):
     """RGB em sRGB: se a origem traz um perfil que não é sRGB (Adobe RGB, Display P3...), converte as cores em vez de só descartar o perfil."""
     perfil = im.info.get("icc_profile")
     if perfil:
-        origem = ImageCms.ImageCmsProfile(io.BytesIO(perfil))
-        if "srgb" not in ImageCms.getProfileDescription(origem).lower():
-            try:
+        try:
+            origem = ImageCms.ImageCmsProfile(io.BytesIO(perfil))
+            if "srgb" not in ImageCms.getProfileDescription(origem).lower():
                 return ImageCms.profileToProfile(im, origem, ImageCms.createProfile("sRGB"), outputMode="RGB")
-            except ImageCms.PyCMSError:
-                pass   # perfil ilegível: segue como sRGB, que é o que a maioria dos visualizadores supõe
+        except (ImageCms.PyCMSError, OSError):
+            # perfil ilegível: segue como sRGB, que é o que a maioria dos visualizadores supõe
+            print("aviso: perfil ICC ilegível ou não convertido; a imagem segue como sRGB", file=sys.stderr)
     return im.convert("RGB")
 
 
