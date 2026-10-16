@@ -2,6 +2,7 @@
 
 Nenhum teste usa a rede: o arquivo de origem já está em cache numa pasta temporária.
 """
+import http.client
 import io
 import json
 import os
@@ -228,7 +229,7 @@ class PedirComLimite(unittest.TestCase):
         dorme.assert_not_called()
 
     def test_queda_de_rede_e_5xx_tentam_de_novo_depois_de_espera_curta(self):
-        falhas = [urllib.error.URLError("sem rede"), TimeoutError(), self._erro(503), self._resposta(b"ok")]
+        falhas = [urllib.error.URLError("sem rede"), http.client.IncompleteRead(b"x"), self._erro(503), self._resposta(b"ok")]
         with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=falhas), \
                 mock.patch("fontes_v5.time.sleep") as dorme:
             self.assertEqual(fontes_v5._pedir("https://exemplo/x", {}), b"ok")

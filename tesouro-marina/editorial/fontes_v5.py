@@ -7,6 +7,7 @@ as versões tratadas (JPEG) ficam em dominio_publico/v5 e é com elas que os PDF
 Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | jpegs [nomes] | creditos
 """
 import hashlib
+import http.client
 import io
 import json
 import os
@@ -169,7 +170,7 @@ def _pedir(url, cabecalhos):
             if len(dados) > LIMITE_BYTES:
                 raise ValueError(f"{url}: resposta maior que {LIMITE_BYTES} bytes")
             return dados
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException) as e:
             if isinstance(e, urllib.error.HTTPError) and e.code == 429:
                 pass
             elif isinstance(e, urllib.error.HTTPError) and e.code < 500:
