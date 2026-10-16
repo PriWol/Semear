@@ -97,7 +97,7 @@ def verificar():
 
 def _da_rede(arquivo):
     url = "https://upload.wikimedia.org/wikipedia/commons/" + _caminho_commons(arquivo)
-    for i in range(30):   # o Commons limita o ritmo de pedidos (429): espera e tenta de novo
+    for _ in range(12):   # o Commons limita o ritmo de pedidos (429): espera o tempo que ele pede e tenta de novo
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=180) as r:
@@ -108,7 +108,8 @@ def _da_rede(arquivo):
         except urllib.error.HTTPError as e:
             if e.code != 429:
                 raise
-            time.sleep(20 + 5 * i)
+            # o Commons diz quanto esperar (Retry-After, em segundos); pedir antes disso só renova a espera
+            time.sleep(int(e.headers.get("Retry-After") or 600) + 15)
     raise RuntimeError(f"{arquivo}: muitos pedidos recusados (429)")
 
 
