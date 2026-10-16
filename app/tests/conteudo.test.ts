@@ -9,6 +9,22 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
+  // O motor de jornada segue só a `ordem` dentro da linha (domain/jornada.ts), então uma ordem
+  // que contradiz a idade típica trava a sugestão de sessões da criança em marcos mais difíceis.
+  it('mantém a idade típica sem diminuir ao longo da ordem de cada linha', () => {
+    const porLinha = new Map<string, { id: string; ordem: number; idadeTipica: number }[]>();
+    for (const m of carregarConteudo().marcos) {
+      porLinha.set(m.linha, [...(porLinha.get(m.linha) ?? []), m]);
+    }
+    const fora: string[] = [];
+    for (const marcos of porLinha.values()) {
+      const ordenados = [...marcos].sort((a, b) => a.ordem - b.ordem);
+      ordenados.slice(1).forEach((m, i) => {
+        if (m.idadeTipica < (ordenados[i]?.idadeTipica ?? 0)) fora.push(m.id);
+      });
+    }
+    expect(fora).toEqual([]);
+  });
   it('tem as atividades de exemplo publicadas', () => {
     const ids = carregarConteudo().atividades.map((a) => a.id);
     expect(ids).toEqual(expect.arrayContaining(['atv-caca-silabas', 'atv-feira-numeros']));
