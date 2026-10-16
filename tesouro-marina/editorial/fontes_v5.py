@@ -7,6 +7,7 @@ as versões tratadas (JPEG) ficam em dominio_publico/v5 e é com elas que os PDF
 Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | jpegs [nomes] | creditos
 """
 import hashlib
+import html
 import http.client
 import io
 import json
@@ -17,7 +18,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from PIL import Image, ImageCms
+from PIL import Image, ImageCms, ImageOps
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SAIDA = os.path.join(AQUI, "dominio_publico", "v5")
@@ -29,6 +30,7 @@ ESPERA_TOTAL = 7200    # e desiste depois de 2 h de espera acumulada num mesmo p
 TENTATIVAS_TRANSITORIAS = 3   # queda de rede, timeout ou 5xx: três novas tentativas
 ESPERA_TRANSITORIA = 30
 LADO_MAX = 2000        # px do maior lado (≈ 170 mm a 300 dpi)
+Image.MAX_IMAGE_PIXELS = 400_000_000   # originais grandes do Commons passam do limite padrão do Pillow; vale para baixar, registrar e gerar
 UA = "TesouroMarina/0.1 (educational, non-commercial; https://github.com/PriWol/Semear)"
 
 # nome: (arquivo no Commons, autor, obra, ano, acervo, licença conferida no Commons)
@@ -83,7 +85,7 @@ def credito(nome):
                 f"As cores variam de uma reprodução para outra.")
     if arq.startswith("envio:"):   # arquivo entregue pela dona do produto, sem endereço de origem registrado
         return f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}, arquivo fornecido pela editora. As cores variam de uma reprodução para outra."
-    return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: Wikimedia Commons, <i>File:{arq}</i>. "
+    return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: Wikimedia Commons, <i>File:{html.escape(arq)}</i>. "
             f"As cores variam de uma reprodução para outra.")
 
 
@@ -225,11 +227,13 @@ def baixar(nome, registrar=False):
     else:
         dados = _da_rede(arquivo)
     if esperado and _sha256(dados) != esperado:
-        raise ValueError(f"{arquivo}: SHA-256 diferente do registrado em {os.path.basename(MANIFESTO)}")
+        raise ValueError(f"{arquivo}: SHA-256 diferente do registrado em {os.path.basename(MANIFESTO)} (se o arquivo em build/obras/{nome}.orig for de uma tentativa antiga, apague-o e tente de novo)")
     if not esperado and not registrar:
         raise ValueError(f"{arquivo}: sem SHA-256 no manifesto; confira a imagem e rode: python3 fontes_v5.py registrar")
     try:
         Image.open(io.BytesIO(dados)).verify()
+    except Image.DecompressionBombError as e:
+        raise ValueError(f"{arquivo}: imagem grande demais ({e}); ajuste Image.MAX_IMAGE_PIXELS se a origem for confiável") from e
     except Exception as e:
         raise ValueError(f"{arquivo}: não é uma imagem válida ({e})") from e
     if not esperado:
@@ -242,6 +246,7 @@ def baixar(nome, registrar=False):
 
 def _para_srgb(im):
     """RGB em sRGB: se a origem traz um perfil que não é sRGB (Adobe RGB, Display P3...), converte as cores em vez de só descartar o perfil."""
+    im = ImageOps.exif_transpose(im)   # obra enviada à mão pode vir girada pela câmera
     perfil = im.info.get("icc_profile")
     if perfil:
         try:
@@ -256,7 +261,6 @@ def _para_srgb(im):
 
 def processar(nome):
     """Reduz ao tamanho de impressão e grava o JPEG tratado (cores fiéis à origem, em sRGB; sem retoque)."""
-    Image.MAX_IMAGE_PIXELS = 400_000_000
     im = _para_srgb(Image.open(baixar(nome)))
     if max(im.size) > LADO_MAX:
         k = LADO_MAX / max(im.size)

@@ -158,6 +158,18 @@ class Utilitarios(unittest.TestCase):
                 fontes_v5.SAIDA, fontes_v5.MANIFESTO = antes
 
 
+class CreditoEscapado(unittest.TestCase):
+    def test_nome_de_arquivo_com_e_comercial_e_escapado(self):
+        antes = dict(fontes_v5.OBRAS)
+        try:
+            fontes_v5.OBRAS["x"] = ("Dürer & Cia <1>.jpg", "Autor (1800–1850)", "<i>X</i>", "1840", "Museu", "domínio público")
+            c = fontes_v5.credito("x")
+        finally:
+            fontes_v5.OBRAS.clear(); fontes_v5.OBRAS.update(antes)
+        self.assertIn("Dürer &amp; Cia &lt;1&gt;.jpg", c)
+        self.assertIn("<i>X</i>", c)
+
+
 class PerfilDeCor(unittest.TestCase):
     """_para_srgb: perfil sRGB passa sem mexer nos pixels; outro perfil é convertido, não descartado."""
 
