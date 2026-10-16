@@ -479,7 +479,7 @@
       "idadeIntroducao": {
         "Waldorf": 7
       },
-      "preRequisitos": ["MA.SND.05", "MA.SND.07"],
+      "preRequisitos": ["MA.SND.07"],
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "O **valor posicional** é a ideia de que o mesmo algarismo vale coisas diferentes conforme a posição: no 35, o 3 vale 30. É a base de somar e subtrair números maiores. Muitas crianças leem o 35 como “três” e “cinco” separados e precisam de muita experiência concreta para ver as dezenas por trás.",
@@ -488,7 +488,7 @@
         "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "As contas douradas com cartões de unidade, dezena e centena (cartões sobrepostos) mostram o valor posicional de modo concreto: o 3 do 35 é uma dezena inteira de barras.",
+            "comoParticipar": "As contas douradas com cartões de unidade e dezena (cartões sobrepostos) mostram o valor posicional de modo concreto: o 3 do 35 é uma dezena inteira de barras.",
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
