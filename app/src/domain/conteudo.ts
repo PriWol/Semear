@@ -9,6 +9,7 @@ import {
   type Livro,
   type Marco,
   type OrientacaoPais,
+  type OrientacaoVertente,
   type Referencia,
 } from './tipos';
 
@@ -120,26 +121,44 @@ function validarOrientacao(
     if (typeof o[campo] !== 'string' || o[campo].trim() === '')
       erros.push(`Marco ${m.id}: orientação para os pais com "${campo}" vazio`);
   }
-  const citadas = [...(o.referencias ?? [])];
+  // Dado de fora: sem a lista, a tela da jornada quebraria ao montar as referências.
+  if (!Array.isArray(o.referencias))
+    erros.push(`Marco ${m.id}: orientação para os pais com "referencias" que não é uma lista`);
+  const citadas = Array.isArray(o.referencias) ? [...o.referencias] : [];
   for (const [vertente, texto] of Object.entries(o.porVertente ?? {})) {
     if (!(VERTENTES as readonly string[]).includes(vertente)) {
       erros.push(`Marco ${m.id}: vertente "${vertente}" desconhecida na orientação para os pais`);
       continue;
     }
-    if (!texto.comoParticipar?.trim())
+    const t = texto as OrientacaoVertente | null;
+    if (typeof t !== 'object' || t === null) {
+      erros.push(`Marco ${m.id}: texto da vertente ${vertente} inválido`);
+      continue;
+    }
+    if (typeof t.comoParticipar !== 'string' || t.comoParticipar.trim() === '')
       erros.push(`Marco ${m.id}: texto da vertente ${vertente} com "comoParticipar" vazio`);
-    citadas.push(...(texto.referencias ?? []));
+    if (Array.isArray(t.referencias)) citadas.push(...t.referencias);
+    else
+      erros.push(
+        `Marco ${m.id}: texto da vertente ${vertente} com "referencias" que não é uma lista`,
+      );
   }
   for (const id of new Set(citadas)) {
     if (!idx.referencia(id)) erros.push(`Marco ${m.id}: referência "${id}" não existe no catálogo`);
   }
 }
 
-/** Dado de fora: confere o formato antes de usar. O link vira `href`, então só aceita https. */
+/**
+ * Dado de fora: confere o formato antes de usar. O link hoje aparece só como texto na tela, mas aceitamos
+ * apenas https para que possa virar `href` sem risco (`javascript:` e similares ficam de fora).
+ */
 function validarReferencia(r: Referencia, erros: string[]): void {
   const vazio = (t: unknown) => typeof t !== 'string' || t.trim() === '';
   if (vazio(r.autores) || vazio(r.titulo) || vazio(r.veiculo))
     erros.push(`Referência ${r.id}: autores, título e veículo são obrigatórios`);
+  // `*` vira itálico em textoRico e deformaria o ABNT (o título já entra entre asteriscos).
+  else if (/\*/.test(`${r.autores}${r.titulo}${r.veiculo}`))
+    erros.push(`Referência ${r.id}: autores, título e veículo não podem conter "*"`);
   else if (!Number.isInteger(r.ano) || r.ano < 1000 || r.ano > 2100)
     erros.push(`Referência ${r.id}: ano inválido`);
   else if (r.link !== undefined && !/^https:\/\/\S+$/.test(r.link))
