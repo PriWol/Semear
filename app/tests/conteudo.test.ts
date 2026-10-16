@@ -189,6 +189,33 @@ describe('validarConteudo: orientação para os pais e referências', () => {
     );
   });
 
+  it('acusa orientação sem a lista de referências (a tela quebraria)', () => {
+    const o = orientacao();
+    delete (o as Partial<OrientacaoPais>).referencias;
+    expect(validarConteudo(comOrientacao(o)).erros).toContain(
+      'Marco LG.FON.01: orientação para os pais com "referencias" que não é uma lista',
+    );
+  });
+
+  it('não lança com vertente nula ou malformada: reporta erro', () => {
+    const ruins = [
+      { Waldorf: null },
+      { Waldorf: { comoParticipar: 'x' } }, // sem a lista de referências
+    ] as unknown as OrientacaoPais['porVertente'][];
+    for (const porVertente of ruins) {
+      const c = comOrientacao(orientacao({ porVertente }));
+      expect(() => validarConteudo(c)).not.toThrow();
+      expect(validarConteudo(c).erros, JSON.stringify(porVertente)).toHaveLength(1);
+    }
+  });
+
+  it('recusa asterisco nos campos da referência (deformaria o itálico do ABNT)', () => {
+    const r = referencia('r1', { titulo: 'Obra *especial*' });
+    expect(validarConteudo(comOrientacao(orientacao(), [r])).erros).toContain(
+      'Referência r1: autores, título e veículo não podem conter "*"',
+    );
+  });
+
   it('acusa id de referência repetido', () => {
     const c = comOrientacao(orientacao(), [referencia('r1'), referencia('r1')]);
     expect(validarConteudo(c).erros).toContain('Referência com id repetido: r1');
