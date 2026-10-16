@@ -12,6 +12,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -114,6 +115,22 @@ def verificar():
     return 0
 
 
+def _espera(retry_after):
+    """Segundos a esperar segundo o cabeçalho Retry-After (número de segundos ou data HTTP); 600 se vier ausente ou ilegível."""
+    if not retry_after:
+        return 600
+    try:
+        return max(0, int(retry_after))
+    except ValueError:
+        pass
+    try:
+        from email.utils import parsedate_to_datetime
+        from datetime import datetime, timezone
+        return max(0, int((parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds()))
+    except (TypeError, ValueError):
+        return 600
+
+
 def _pedir(url, cabecalhos):
     for _ in range(12):   # a fonte pode limitar o ritmo de pedidos (429): espera o tempo que ela pede e tenta de novo
         try:
@@ -127,7 +144,7 @@ def _pedir(url, cabecalhos):
             if e.code != 429:
                 raise
             # a fonte diz quanto esperar (Retry-After, em segundos); pedir antes disso só renova a espera
-            time.sleep(int(e.headers.get("Retry-After") or 600) + 15)
+            time.sleep(_espera(e.headers.get("Retry-After")) + 15)
     raise RuntimeError(f"{url}: muitos pedidos recusados (429)")
 
 
@@ -159,7 +176,8 @@ def baixar(nome, registrar=False):
     p = os.path.join(FONTE, nome + ".orig")
     esperado = _manifesto().get(arquivo)
     if os.path.exists(p):
-        dados = open(p, "rb").read()
+        with open(p, "rb") as f:
+            dados = f.read()
     else:
         dados = _da_rede(arquivo)
     if esperado and _sha256(dados) != esperado:

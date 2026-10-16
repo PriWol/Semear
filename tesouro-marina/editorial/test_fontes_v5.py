@@ -82,6 +82,33 @@ class FalhaFechada(unittest.TestCase):
         self.assertEqual(fontes_v5.verificar(), 1)
 
 
+class Utilitarios(unittest.TestCase):
+    def test_retry_after_em_segundos_data_http_ou_ilegivel(self):
+        self.assertEqual(fontes_v5._espera("120"), 120)
+        self.assertEqual(fontes_v5._espera(None), 600)
+        self.assertEqual(fontes_v5._espera("amanhã, talvez"), 600)
+        self.assertEqual(fontes_v5._espera("Wed, 21 Oct 2015 07:28:00 GMT"), 0)   # data no passado: não espera
+
+    def test_envio_sem_arquivo_falha_com_mensagem_clara(self):
+        with self.assertRaisesRegex(FileNotFoundError, "build/obras"):
+            fontes_v5._da_rede("envio:qualquer")
+
+    def test_credito_de_obra_sem_acervo_nao_deixa_buraco(self):
+        c = fontes_v5.credito("vangogh_girassois")
+        self.assertNotIn("None", c)
+        self.assertNotIn("..", c)
+        self.assertNotIn("  ", c)
+
+    def test_verificar_acusa_imagem_tratada_que_falta(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            antes = (fontes_v5.SAIDA, fontes_v5.MANIFESTO)
+            try:
+                fontes_v5.SAIDA = os.path.join(tmp, "v5")   # pasta sem nenhum JPEG tratado
+                self.assertEqual(fontes_v5.verificar(), 1)
+            finally:
+                fontes_v5.SAIDA, fontes_v5.MANIFESTO = antes
+
+
 class CatalogoReal(unittest.TestCase):
     """O catálogo versionado (não a pasta temporária): todo item está completo e registrado."""
 
@@ -101,6 +128,13 @@ class CatalogoReal(unittest.TestCase):
         for nome, o in fontes_v5.OBRAS.items():
             morte = int(re.search(r"–(\d{4})\)", o[1]).group(1))
             self.assertLess(morte, 2026 - 70, nome)
+
+    def test_creditos_md_bate_com_o_catalogo(self):
+        caminho = os.path.join(os.path.dirname(fontes_v5.MANIFESTO), "CREDITOS.md")
+        with open(caminho, encoding="utf-8") as f:
+            creditos = f.read()
+        for linha in fontes_v5.linhas_creditos().splitlines():
+            self.assertIn(linha, creditos)
 
     def test_caminho_no_commons_vem_do_md5_do_nome(self):
         # caminho confirmado pela API do Commons para este arquivo

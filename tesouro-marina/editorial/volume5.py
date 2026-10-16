@@ -761,7 +761,7 @@ def encerramento(L):
     obras = "".join(f"<li>{fontes_v5.credito(n)}</li>" for n in fontes_v5.OBRAS)
     c = f"""<div class="miolo texto">{titulo("Obras e créditos", "Volume 5", 26)}
       <h2>Reproduções de obras de arte</h2>
-      <p style="font-size:9.2pt">Todas as obras são de artistas mortos há mais de 70 anos e estão em domínio público, segundo o Wikimedia Commons, salvo indicação diferente na lista. As imagens foram reduzidas ao tamanho de impressão, sem retoque de cor. Uma fotografia nunca reproduz fielmente as cores de um original.</p>
+      <p style="font-size:9.2pt">Todas as obras são de artistas mortos há mais de 70 anos e estão em domínio público (ou CC0), segundo a fonte indicada em cada crédito: Wikimedia Commons ou acervo do museu. Os dois quadros de Kandinsky e os <i>Girassóis</i> foram fornecidos pela editora. As imagens foram reduzidas ao tamanho de impressão, sem retoque de cor. Uma fotografia nunca reproduz fielmente as cores de um original.</p>
       <ul style="font-size:8.4pt;line-height:1.3">{obras}</ul>
       <h2>Fundamentos</h2><p style="font-size:9.4pt">Apreciação de arte por narração e por observação, com poucas obras e muita atenção (Charlotte Mason, <i>estudo de pintores</i>); processo antes do produto; cores primárias e misturas, modelagem e colagem como atividades de ateliê infantil. Nenhum material reproduz métodos ou produtos comerciais.</p>
       <h2>Ilustrações da coleção</h2><p style="font-size:9.4pt">Potes, pincéis, argilas, papéis, ninfeia, lebre, tufo, círculos e demais desenhos: aquarela digital procedural da coleção. Cartões de cores: textos da coleção. Tipografia: EB Garamond (licença OFL).</p>
