@@ -93,6 +93,47 @@
       "bncc": []
     },
     {
+      "id": "LG.LIT.01",
+      "linha": "LG.LIT",
+      "ordem": 1,
+      "titulo": "Escuta uma história e responde perguntas literais",
+      "descricaoPais": "Depois de ouvir, diz quem apareceu, onde e o que aconteceu.",
+      "evidencias": [
+        "Responde 3 de 4 perguntas (quem, onde, o quê) sobre uma história lida em voz alta"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": ["EI03EF01", "EI03EF03"]
+    },
+    {
+      "id": "LG.LIT.02",
+      "linha": "LG.LIT",
+      "ordem": 2,
+      "titulo": "Reconta uma história ouvida em sequência",
+      "descricaoPais": "Conta com as próprias palavras: começo, meio e fim.",
+      "evidencias": ["Reconta uma história curta na ordem certa, com ou sem as figuras do livro"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LIT.01"],
+      "bncc": ["EI03EF04", "EF15LP19"]
+    },
+    {
+      "id": "LG.LIT.03",
+      "linha": "LG.LIT",
+      "ordem": 3,
+      "titulo": "Interpreta e opina sobre uma história ouvida",
+      "descricaoPais": "Explica por que o personagem agiu assim e diz se gostou, e por quê.",
+      "evidencias": [
+        "Responde a 'por que será que...?' com uma razão ligada à história",
+        "Diz o que mudaria na história e justifica"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LIT.02"],
+      "bncc": ["EI03EF01", "EF15LP02"]
+    },
+    {
       "id": "LG.LEI.01",
       "linha": "LG.LEI",
       "ordem": 1,
@@ -135,7 +176,7 @@
       "bncc": ["EF01LP08", "EF12LP01"]
     },
     {
-      "id": "LG.LEI.04",
+      "id": "LG.LEI.07",
       "linha": "LG.LEI",
       "ordem": 4,
       "titulo": "Responde a perguntas literais sobre o que leu",
@@ -152,7 +193,7 @@
       "bncc": ["EF15LP03"]
     },
     {
-      "id": "LG.LEI.05",
+      "id": "LG.LEI.04",
       "linha": "LG.LEI",
       "ordem": 5,
       "titulo": "Lê um texto curto com fluência",
@@ -166,7 +207,7 @@
       "bncc": ["EF12LP01", "EF15LP16"]
     },
     {
-      "id": "LG.LEI.06",
+      "id": "LG.LEI.08",
       "linha": "LG.LEI",
       "ordem": 6,
       "titulo": "Reconta por escrito ou oralmente o que leu",
@@ -176,11 +217,11 @@
       "idadeIntroducao": {
         "Waldorf": 8
       },
-      "preRequisitos": ["LG.LEI.04", "LG.LIT.02"],
+      "preRequisitos": ["LG.LEI.07", "LG.LIT.02"],
       "bncc": ["EF15LP19", "EI03EF05"]
     },
     {
-      "id": "LG.LEI.07",
+      "id": "LG.LEI.09",
       "linha": "LG.LEI",
       "ordem": 7,
       "titulo": "Infere o que o texto não diz",
@@ -193,11 +234,11 @@
       "idadeIntroducao": {
         "Waldorf": 8
       },
-      "preRequisitos": ["LG.LEI.04", "LG.LIT.03"],
+      "preRequisitos": ["LG.LEI.07", "LG.LIT.03"],
       "bncc": ["EF15LP02", "EF15LP03"]
     },
     {
-      "id": "LG.LEI.08",
+      "id": "LG.LEI.05",
       "linha": "LG.LEI",
       "ordem": 8,
       "titulo": "Lê em voz alta respeitando a pontuação",
@@ -208,11 +249,11 @@
       ],
       "idadeTipica": 7.5,
       "idadeIntroducao": {},
-      "preRequisitos": ["LG.LEI.05"],
+      "preRequisitos": ["LG.LEI.04"],
       "bncc": ["EF15LP16", "EF15LP04"]
     },
     {
-      "id": "LG.LEI.09",
+      "id": "LG.LEI.10",
       "linha": "LG.LEI",
       "ordem": 9,
       "titulo": "Relaciona o texto com a própria experiência e com as ilustrações",
@@ -223,11 +264,11 @@
       ],
       "idadeTipica": 7.5,
       "idadeIntroducao": {},
-      "preRequisitos": ["LG.LEI.07"],
+      "preRequisitos": ["LG.LEI.09"],
       "bncc": ["EF15LP18", "EF15LP15"]
     },
     {
-      "id": "LG.LEI.10",
+      "id": "LG.LEI.06",
       "linha": "LG.LEI",
       "ordem": 10,
       "titulo": "Lê um livrinho inteiro com autonomia",
@@ -235,7 +276,7 @@
       "evidencias": ["Lê um livro ilustrado de 200 a 500 palavras sem ajuda", "Diz do que gostou"],
       "idadeTipica": 8,
       "idadeIntroducao": {},
-      "preRequisitos": ["LG.LEI.08"],
+      "preRequisitos": ["LG.LEI.05"],
       "bncc": ["EF02LP26", "EF15LP16"]
     },
     {
@@ -247,7 +288,7 @@
       "evidencias": ["Resume o texto em uma frase", "Classifica 4 de 5 textos curtos por gênero"],
       "idadeTipica": 8,
       "idadeIntroducao": {},
-      "preRequisitos": ["LG.LEI.06", "LG.LEI.09"],
+      "preRequisitos": ["LG.LEI.08", "LG.LEI.10"],
       "bncc": ["EF15LP01", "EF15LP02"]
     },
     {
@@ -261,47 +302,6 @@
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.11"],
       "bncc": ["EF15LP15", "EF02LP26"]
-    },
-    {
-      "id": "LG.LIT.01",
-      "linha": "LG.LIT",
-      "ordem": 1,
-      "titulo": "Escuta uma história e responde perguntas literais",
-      "descricaoPais": "Depois de ouvir, diz quem apareceu, onde e o que aconteceu.",
-      "evidencias": [
-        "Responde 3 de 4 perguntas (quem, onde, o quê) sobre uma história lida em voz alta"
-      ],
-      "idadeTipica": 4,
-      "idadeIntroducao": {},
-      "preRequisitos": [],
-      "bncc": ["EI03EF01", "EI03EF03"]
-    },
-    {
-      "id": "LG.LIT.02",
-      "linha": "LG.LIT",
-      "ordem": 2,
-      "titulo": "Reconta uma história ouvida em sequência",
-      "descricaoPais": "Conta com as próprias palavras: começo, meio e fim.",
-      "evidencias": ["Reconta uma história curta na ordem certa, com ou sem as figuras do livro"],
-      "idadeTipica": 5,
-      "idadeIntroducao": {},
-      "preRequisitos": ["LG.LIT.01"],
-      "bncc": ["EI03EF04", "EF15LP19"]
-    },
-    {
-      "id": "LG.LIT.03",
-      "linha": "LG.LIT",
-      "ordem": 3,
-      "titulo": "Interpreta e opina sobre uma história ouvida",
-      "descricaoPais": "Explica por que o personagem agiu assim e diz se gostou, e por quê.",
-      "evidencias": [
-        "Responde a 'por que será que...?' com uma razão ligada à história",
-        "Diz o que mudaria na história e justifica"
-      ],
-      "idadeTipica": 6,
-      "idadeIntroducao": {},
-      "preRequisitos": ["LG.LIT.02"],
-      "bncc": ["EI03EF01", "EF15LP02"]
     }
   ]
 }

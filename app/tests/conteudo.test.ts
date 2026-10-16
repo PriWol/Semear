@@ -1,7 +1,17 @@
 import { describe, expect, it } from 'vitest';
 import { validarConteudo } from '../src/domain/conteudo';
+import type { Marco } from '../src/domain/tipos';
 import { carregarConteudo } from '../src/conteudo';
 import { atividade, conteudoBase, marco } from './fabricas';
+
+function marcosPorLinha() {
+  const porLinha = new Map<string, Marco[]>();
+  for (const m of carregarConteudo().marcos) {
+    porLinha.set(m.linha, [...(porLinha.get(m.linha) ?? []), m]);
+  }
+  for (const marcos of porLinha.values()) marcos.sort((x, y) => x.ordem - y.ordem);
+  return porLinha;
+}
 
 describe('conteúdo real (app/content)', () => {
   // Este teste é a "porta de qualidade" do conteúdo (ADR 0005): erros quebram o CI.
@@ -10,18 +20,28 @@ describe('conteúdo real (app/content)', () => {
     expect(erros).toEqual([]);
   });
   // O motor de jornada segue só a `ordem` dentro da linha (domain/jornada.ts), então uma ordem
-  // que contradiz a idade típica trava a sugestão de sessões da criança em marcos mais difíceis.
+  // que contradiz a idade típica ou os pré-requisitos trava a sugestão de sessões da criança.
   it('mantém a idade típica sem diminuir ao longo da ordem de cada linha', () => {
-    const porLinha = new Map<string, { id: string; ordem: number; idadeTipica: number }[]>();
-    for (const m of carregarConteudo().marcos) {
-      porLinha.set(m.linha, [...(porLinha.get(m.linha) ?? []), m]);
-    }
     const fora: string[] = [];
-    for (const marcos of porLinha.values()) {
-      const ordenados = [...marcos].sort((a, b) => a.ordem - b.ordem);
-      ordenados.slice(1).forEach((m, i) => {
-        if (m.idadeTipica < (ordenados[i]?.idadeTipica ?? 0)) fora.push(m.id);
-      });
+    for (const marcos of marcosPorLinha().values()) {
+      let anterior = 0;
+      for (const m of marcos) {
+        if (m.idadeTipica < anterior) fora.push(m.id);
+        anterior = m.idadeTipica;
+      }
+    }
+    expect(fora).toEqual([]);
+  });
+  it('põe todo pré-requisito da mesma linha antes do marco na ordem', () => {
+    const fora: string[] = [];
+    for (const marcos of marcosPorLinha().values()) {
+      const ordemDe = new Map(marcos.map((m) => [m.id, m.ordem]));
+      for (const m of marcos) {
+        for (const pre of m.preRequisitos) {
+          const ordemPre = ordemDe.get(pre);
+          if (ordemPre !== undefined && ordemPre >= m.ordem) fora.push(`${m.id} <- ${pre}`);
+        }
+      }
     }
     expect(fora).toEqual([]);
   });
