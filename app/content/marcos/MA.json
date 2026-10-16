@@ -237,6 +237,272 @@
       }
     },
     {
+      "id": "MA.SND.01",
+      "linha": "MA.SND",
+      "ordem": 1,
+      "titulo": "Reconhece os algarismos de 0 a 9",
+      "descricaoPais": "Aponta e nomeia os algarismos que vê no dia a dia.",
+      "evidencias": ["Nomeia 8 de 10 algarismos mostrados fora de ordem"],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.SEN.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Os algarismos são **símbolos combinados**: o 3 não tem nada de “três” na forma. A criança aprende que eles são nomes escritos de quantidades. Reconhecê-los é como reconhecer letras: ela precisa vê-los muitas vezes, em situações que fazem sentido.",
+        "comoParticipar": "Procurem algarismos na vida real: botão do elevador, número da casa, relógio, calendário, preços. Brinque de “detetive de números”. Mostre e nomeie sem testar; depois pergunte “qual é este?”. Cartões com um algarismo por vez, de 0 a 9, e em ordem misturada, também ajudam.",
+        "sinaisDeAtencao": "Trocar o 6 com o 9, ou o 2 com o 5, é comum nessa idade. Se aos 6 anos ela ainda não reconhece a maioria dos algarismos de 0 a 9, apesar de conviver com eles, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "nunes-bryant-children-doing-mathematics"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Os algarismos de lixa (lixa colada em cartões) ligam o nome ao tato do traçado: a criança passa o dedo e diz o nome.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Os algarismos escritos costumam ficar para o 1º ano, por volta dos {idade} anos. Até lá, os números vivem na fala, no ritmo e na contagem de coisas.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Mostre poucos algarismos por vez, bem feitos, em lições curtas, e repita ao longo da semana.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.SND.02",
+      "linha": "MA.SND",
+      "ordem": 2,
+      "titulo": "Associa algarismo e quantidade",
+      "descricaoPais": "Liga o algarismo 4 a quatro objetos.",
+      "evidencias": ["Coloca a quantidade certa de objetos ao lado de cada algarismo de 0 a 9"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.SND.01", "MA.SEN.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Aqui o símbolo ganha sentido: o **4** é um jeito de escrever “quatro coisas”. O **zero** (nenhuma coisa) faz parte do desafio: muita criança estranha que “nada” tenha um algarismo.",
+        "comoParticipar": "Façam jogos de correspondência: cartões de algarismos e potes com a quantidade certa de botões; “põe 3 colheres no prato 3”. Inclua o 0 (“prato vazio”). Deixe a criança conferir contando.",
+        "sinaisDeAtencao": "Pode levar um tempo para ligar o símbolo à quantidade. Se aos 6 anos ela sabe contar e conhece os algarismos, mas não liga um ao outro, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["kamii-crianca-numero", "nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A caixa de fusos e os cartões com fichas (algarismos e contadores) fazem essa ligação: a criança coloca a quantidade certa em cada compartimento ou ao lado de cada cartão.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Use objetos da casa e do passeio: a criança monta a quantidade e depois mostra o algarismo, poucos por vez.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.SND.03",
+      "linha": "MA.SND",
+      "ordem": 3,
+      "titulo": "Escreve os algarismos de 0 a 9",
+      "descricaoPais": "Escreve os algarismos de forma legível, sem espelhar.",
+      "evidencias": ["Escreve 8 de 10 algarismos ditos em voz alta, de forma legível"],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.SND.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Escrever números é um gesto novo, que pede o mesmo controle fino da mão que escrever letras. É comum, até os 6 ou 7 anos, escrever algarismos espelhados ou começar pelo lado errado: faz parte do aprendizado.",
+        "comoParticipar": "Antes do lápis, desenhem o algarismo no ar, na areia, na farinha ou com o dedo nas costas. Mostre **por onde começar e para onde ir**, e diga o caminho em voz alta. Faça poucos algarismos por vez, bem formados, em vez de uma página cheia. Elogie o esforço, não só o acerto.",
+        "sinaisDeAtencao": "Espelhar algarismos é comum até os 7 anos. Se aos 7 ou 8 anos ela ainda espelha muitos e tem dificuldade de formar os outros, mesmo com apoio, vale conversar com a escola ou com um terapeuta ocupacional (que avalia a coordenação da mão). Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "nunes-bryant-children-doing-mathematics"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Depois de tocar os algarismos de lixa, a criança escreve na bandeja de areia ou de sêmola e só depois no papel.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "A escrita dos algarismos costuma começar no 1º ano, por volta dos {idade} anos, depois de muito desenho de formas e movimento (no ar, na areia).",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "A cópia cuidadosa de um bom modelo é prática antiga da tradição clássica: mostre o modelo e peça poucas cópias, bem feitas.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Poucos algarismos, bem formados, em lições curtas: a atenção plena e a boa execução valem mais que a repetição longa.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.SND.04",
+      "linha": "MA.SND",
+      "ordem": 4,
+      "titulo": "Lê e escreve números até 20",
+      "descricaoPais": "Lê e escreve 14 ou 19 sem se perder nos números de 11 a 19.",
+      "evidencias": ["Lê e escreve 8 de 10 números entre 10 e 20"],
+      "idadeTipica": 6,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.SND.02", "MA.SND.03", "MA.SEN.06"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "De 11 a 19, os nomes em português **não mostram a dezena** (onze, doze, treze, catorze, quinze, dezesseis…), e a escrita junta dois algarismos. A criança precisa aprender que o 1 de 14 não é “um”, e sim uma dezena. Isso explica erros comuns, como escrever 41 para 14.",
+        "comoParticipar": "Use o quadro de dez: monte o 14 com 10 fichas e mais 4 e mostre o número escrito ao lado. Escreva os números de 10 a 20 em ordem, peça que ela leia e depois faça ditados curtos. Aproveite o calendário, os degraus e as páginas de um livro.",
+        "sinaisDeAtencao": "Inverter, como 41 por 14, é comum. Se aos 7 anos ela ainda erra a maioria dos números de 11 a 19, mesmo com o quadro de dez e prática, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As tábuas de Séguin (as de 11 a 19) apresentam cada número como 10 e mais alguns: a criança vê o 1 como dezena e monta o número com os algarismos.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Esse trabalho costuma ficar para o 1º ano (por volta dos {idade} anos). A criança que já conta bem pode seguir contando e vivendo os números em casa, nos jogos e no ritmo.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Recitar a sequência até 20 e escrevê-la em ordem, em lições curtas, firma os nomes irregulares.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.SND.05",
+      "linha": "MA.SND",
+      "ordem": 5,
+      "titulo": "Agrupa em dezenas e unidades",
+      "descricaoPais": "Agrupa 14 palitos em 1 dezena e 4 unidades.",
+      "evidencias": [
+        "Forma grupos de dez e conta o que sobra, em coleções até 30",
+        "Diz que 23 é 2 dezenas e 3 unidades"
+      ],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.SND.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Agrupar de dez em dez é o **segredo do nosso sistema de numeração**: com poucos algarismos escrevemos qualquer número, porque cada posição conta grupos. A criança entende primeiro com coisas nas mãos (dez palitos amarrados) e só depois com os algarismos.",
+        "comoParticipar": "Contem coleções maiores (30 palitos, botões, tampinhas), agrupando de dez em dez com elástico ou saquinhos, e perguntem “quantos grupos de dez? quantos soltos?”. Dê nome: dezena e unidade. Deixe a criança trocar dez soltos por uma dezena e vice-versa.",
+        "sinaisDeAtencao": "Agrupar leva tempo. Se aos 7 ou 8 anos ela ainda precisa contar de um em um, mesmo depois de agrupar, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As contas douradas (unidade solta, barra de dez) são o material clássico para isso: a criança troca dez unidades por uma barra e vê a dezena.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Use coisas reais, como feijões em saquinhos de dez, em lições curtas.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.SND.06",
+      "linha": "MA.SND",
+      "ordem": 6,
+      "titulo": "Ordena e compara números até 20",
+      "descricaoPais": "Diz qual é maior, 13 ou 17, e põe números em ordem.",
+      "evidencias": [
+        "Ordena 5 números até 20, do menor para o maior",
+        "Diz qual de dois números é maior, sem contar objetos"
+      ],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.SND.04", "MA.SEN.05"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Comparar números escritos é diferente de comparar coleções: a criança usa a **posição na sequência** (17 vem depois de 13, então é maior) e, mais adiante, a dezena. É um passo para ler a reta numérica e para calcular.",
+        "comoParticipar": "Faça uma fita de 0 a 20 (ou use o calendário e a régua) e pergunte: “quem vem depois?”, “qual é maior, 13 ou 17?”. Em jogos de cartas com números de 0 a 20, vence quem tiver o maior. Peça que confira com objetos quando duvidar.",
+        "sinaisDeAtencao": "Trocar maior e menor é comum. Se aos 7 anos ela ainda não diz qual de dois números até 20 é maior, mesmo com a fita numerada, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc", "kamii-crianca-numero"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A tábua dos cem e as barras numéricas mostram a ordem dos números: cada um tem seu lugar e seu tamanho.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.SND.07",
+      "linha": "MA.SND",
+      "ordem": 7,
+      "titulo": "Lê, escreve e conta até 100",
+      "descricaoPais": "Lê e escreve números até 100 e conta de 10 em 10.",
+      "evidencias": [
+        "Conta de 10 em 10 até 100",
+        "Lê e escreve 8 de 10 números de dois algarismos até 99"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.SND.05", "MA.SND.06"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Quando a criança vê o **padrão** da sequência (depois do 19 vem o 20, depois do 29, o 30), descobre que o sistema se repete a cada dezena. Isso ajuda a ler e escrever qualquer número de dois algarismos e a contar de 10 em 10.",
+        "comoParticipar": "Use a tabela de 1 a 100: pinte os números de 10 em 10 e mostre os padrões (a coluna do 5, a linha dos 20). Contem de 10 em 10 e de 5 em 5. Faça ditados de números de dois algarismos, devagar, e jogos de “qual número falta?”.",
+        "sinaisDeAtencao": "Os nomes de 21 a 99 são mais regulares que os de 11 a 19, mas ainda confundem. Se aos 8 anos ela não consegue ler e escrever os números até 99 com apoio da tabela, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A tábua dos cem e as tábuas de Séguin das dezenas (10, 20, 30…) mostram os padrões: a criança monta a sequência até 100 com cartões.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Os números até 100 costumam ser trabalhados no 1º ano, em contagem rítmica e saltos de 10: a criança sente o padrão antes de escrevê-lo (por volta dos {idade} anos).",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Recitar de 10 em 10 e escrever a tabela em lições curtas ajudam a fixar o padrão.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.SND.08",
+      "linha": "MA.SND",
+      "ordem": 8,
+      "titulo": "Entende o valor posicional",
+      "descricaoPais": "Sabe que no 35 o 3 vale 30 e o 5 vale 5.",
+      "evidencias": [
+        "Diz o valor de cada algarismo em números de dois algarismos",
+        "Decompõe 47 em 40 e 7"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.SND.07"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O **valor posicional** é a ideia de que o mesmo algarismo vale coisas diferentes conforme a posição: no 35, o 3 vale 30. É a base de somar e subtrair números maiores. Muitas crianças leem o 35 como “três” e “cinco” separados e precisam de muita experiência concreta para ver as dezenas por trás.",
+        "comoParticipar": "Monte números com material: 3 barras de dez e 5 soltas, e só depois escreva 35. Troque as barras e veja o número mudar (4 barras e 5 soltas = 45). Brinque de “quanto vale este algarismo?” e decomponha: 47 = 40 + 7. Dinheiro de brinquedo (notas de 10 e moedas de 1) ajuda.",
+        "sinaisDeAtencao": "É um dos conceitos mais difíceis dos primeiros anos. Se aos 8 ou 9 anos ela ainda trata os algarismos de um número como valores separados, mesmo com material, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As contas douradas com cartões de unidade e dezena (cartões sobrepostos) mostram o valor posicional de modo concreto: o 3 do 35 é uma dezena inteira de barras.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Esse trabalho costuma ficar para o 1º ano em diante (por volta dos {idade} anos). Antes, a criança vive as dezenas pela contagem rítmica e por coleções reais.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Depois de entender com material, a tradição clássica pede prática diária curta, até a leitura de dezenas e unidades ficar automática.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
+    },
+    {
       "id": "MA.OPE.01",
       "linha": "MA.OPE",
       "ordem": 1,

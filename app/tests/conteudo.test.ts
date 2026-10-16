@@ -10,16 +10,23 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
-  it('MA.OPE tem marcos, com pré-requisitos que existem e ordem que acompanha a idade', () => {
+  it('linhas de Matemática novas têm marcos, pré-requisitos que existem e ordem que acompanha a idade', () => {
     const { marcos } = carregarConteudo();
     const ids = new Set(marcos.map((m) => m.id));
-    const linha = marcos.filter((m) => m.linha === 'MA.OPE').sort((a, b) => a.ordem - b.ordem);
-    expect(linha.length).toBeGreaterThanOrEqual(8);
-    linha.forEach((m, i) => {
-      for (const p of m.preRequisitos) expect(ids.has(p), `${m.id} → ${p}`).toBe(true);
-      const anterior = linha[i - 1];
-      if (anterior) expect(m.idadeTipica, m.id).toBeGreaterThanOrEqual(anterior.idadeTipica);
-    });
+    for (const id of ['MA.OPE', 'MA.SND']) {
+      const linha = marcos.filter((m) => m.linha === id).sort((a, b) => a.ordem - b.ordem);
+      expect(linha.length, id).toBeGreaterThanOrEqual(8);
+      // a ordem vai de 1 a N, sem buracos (a validação só acusa repetição)
+      expect(
+        linha.map((m) => m.ordem),
+        id,
+      ).toEqual(linha.map((_, i) => i + 1));
+      linha.forEach((m, i) => {
+        for (const p of m.preRequisitos) expect(ids.has(p), `${m.id} → ${p}`).toBe(true);
+        const anterior = linha[i - 1];
+        if (anterior) expect(m.idadeTipica, m.id).toBeGreaterThanOrEqual(anterior.idadeTipica);
+      });
+    }
   });
   it('nenhum texto aponta para o "aviso acima" (ele só aparece em certas condições)', () => {
     // O aviso de ritmo só aparece para a vertente principal e antes da idade de introdução.
