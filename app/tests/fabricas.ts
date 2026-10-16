@@ -110,6 +110,7 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
         porQue: 'Porque sim',
       },
     ],
+    acervo: [],
     ...extra,
   };
 }
