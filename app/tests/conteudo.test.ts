@@ -16,6 +16,11 @@ describe('conteúdo real (app/content)', () => {
     for (const id of ['MA.OPE', 'MA.SND']) {
       const linha = marcos.filter((m) => m.linha === id).sort((a, b) => a.ordem - b.ordem);
       expect(linha.length, id).toBeGreaterThanOrEqual(8);
+      // a ordem vai de 1 a N, sem buracos (a validação só acusa repetição)
+      expect(
+        linha.map((m) => m.ordem),
+        id,
+      ).toEqual(linha.map((_, i) => i + 1));
       linha.forEach((m, i) => {
         for (const p of m.preRequisitos) expect(ids.has(p), `${m.id} → ${p}`).toBe(true);
         const anterior = linha[i - 1];
