@@ -10,6 +10,30 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
+  it('MA.OPE tem marcos, com pré-requisitos que existem e ordem que acompanha a idade', () => {
+    const { marcos } = carregarConteudo();
+    const ids = new Set(marcos.map((m) => m.id));
+    const linha = marcos.filter((m) => m.linha === 'MA.OPE').sort((a, b) => a.ordem - b.ordem);
+    expect(linha.length).toBeGreaterThanOrEqual(8);
+    linha.forEach((m, i) => {
+      for (const p of m.preRequisitos) expect(ids.has(p), `${m.id} → ${p}`).toBe(true);
+      const anterior = linha[i - 1];
+      if (anterior) expect(m.idadeTipica, m.id).toBeGreaterThanOrEqual(anterior.idadeTipica);
+    });
+  });
+  it('texto que remete ao aviso de ritmo da vertente tem a idade de introdução correspondente', () => {
+    // O aviso "Na pedagogia X, este marco costuma vir por volta de N anos" só existe com idadeIntroducao.
+    for (const m of carregarConteudo().marcos) {
+      for (const [vertente, texto] of Object.entries(m.orientacaoPais.porVertente ?? {})) {
+        if (!texto.comoParticipar.includes('o aviso acima')) continue;
+        const idade = m.idadeIntroducao[vertente as keyof typeof m.idadeIntroducao];
+        expect(
+          idade,
+          `${m.id} (${vertente}) cita o aviso, mas não tem idadeIntroducao`,
+        ).toBeDefined();
+      }
+    }
+  });
   it('tem as atividades de exemplo publicadas', () => {
     const ids = carregarConteudo().atividades.map((a) => a.id);
     expect(ids).toEqual(expect.arrayContaining(['atv-caca-silabas', 'atv-feira-numeros']));

@@ -235,6 +235,271 @@
           }
         }
       }
+    },
+    {
+      "id": "MA.OPE.01",
+      "linha": "MA.OPE",
+      "ordem": 1,
+      "titulo": "Junta e tira pequenas quantidades",
+      "descricaoPais": "Com objetos, vê que juntar aumenta e tirar diminui: 2 e mais 1 ficam 3.",
+      "evidencias": [
+        "Responde “e se eu juntar mais um?” com objetos até 5",
+        "Mostra com objetos o que acontece quando tira um"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.SEN.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Antes de qualquer conta, a criança precisa viver que **juntar aumenta e tirar diminui**. É essa experiência, com coisas na mão, que dá sentido ao + e ao − mais tarde. Kamii defende que a criança constrói a aritmética pensando em quantidades em situações reais, e não decorando contas.",
+        "comoParticipar": "Brinque com poucas coisas (até 5): “tem 2 bolachas; ganhou mais 1: quantas agora?”, “comeu uma: quantas sobraram?”. Deixe contar e conferir. Aproveite o dia a dia: pôr e tirar talheres, guardar brinquedos. Use palavras (“mais”, “sobrou”) e deixe os símbolos para depois.",
+        "sinaisDeAtencao": "Aos 4 anos é comum precisar contar tudo de novo. Se aos 5 ou 6 anos ela ainda não percebe que juntar aumenta e tirar diminui, mesmo com objetos na mão, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["kamii-crianca-numero", "nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Organize poucos objetos numa bandeja e deixe a criança fazer: juntar duas pilhas num prato, tirar uma. Só depois, apresentam-se os símbolos (+ e −).",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Viva a ação na rotina: partilhar o pão, pôr a mesa, juntar a lenha, colher e repartir frutos. As palavras “mais” e “menos” nascem da ação, antes dos símbolos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Conte histórias curtas com coisas reais (“duas castanhas e mais uma”), em lições de poucos minutos.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.OPE.02",
+      "linha": "MA.OPE",
+      "ordem": 2,
+      "titulo": "Resolve problemas de juntar com objetos",
+      "descricaoPais": "Resolve “tinha 4, ganhou 3” com objetos, até 10.",
+      "evidencias": ["Resolve 3 de 4 historinhas de juntar com objetos, até 10"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.OPE.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "A criança passa de ver a ação a **resolver uma pergunta**: “tinha 4, ganhou 3, quantos tem?”. Ela usa os próprios métodos (contar tudo, usar os dedos), e vale deixar que apareçam antes de ensinar uma regra. Alguns tipos de historinha são mais difíceis que outros, mesmo com a mesma conta.",
+        "comoParticipar": "Invente historinhas curtas com coisas da vida (“tinha 4 morangos e ganhou 3”) e deixe-a usar objetos ou os dedos. Peça que conte como fez e aceite jeitos diferentes. Sem pressa de escrever contas.",
+        "sinaisDeAtencao": "Aos 5 anos é comum contar tudo e errar na contagem. Se aos 6 ou 7 anos ela não consegue resolver historinhas pequenas de juntar, nem com objetos, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "kamii-crianca-numero", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Peças e contas permitem montar a situação e ver o resultado antes de qualquer conta no papel, como na tábua de adição. Deixe a criança escolher o material.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Use problemas curtos tirados da vida (da horta, da cozinha, do passeio), resolvidos de cabeça e com objetos, em poucos minutos.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.OPE.03",
+      "linha": "MA.OPE",
+      "ordem": 3,
+      "titulo": "Resolve problemas de tirar com objetos",
+      "descricaoPais": "Resolve “tinha 8, deu 3” e diz quantos sobraram.",
+      "evidencias": ["Resolve 3 de 4 historinhas de tirar com objetos, até 10"],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.OPE.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Tirar é a outra metade: a criança descobre que **o que sai diminui o todo** e conta o que sobrou. Perguntas como “quantos faltam?” (de 5 para 8) costumam ser mais difíceis que “quantos sobraram?”, então vá por etapas.",
+        "comoParticipar": "Conte histórias de tirar (“tinha 8 uvas, comeu 3”): ela separa as que saíram e conta as que ficaram. Depois varie: “quantas faltam para 6?”. Brinque de esconder objetos sob um pano, para que ela pense antes de contar.",
+        "sinaisDeAtencao": "Subtrair costuma ser mais difícil que juntar. Se aos 6 ou 7 anos ela não resolve historinhas de tirar com objetos, mesmo com ajuda, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com barras e contas, a criança vê o que sobra ao retirar peças. A tábua de subtração vem depois, quando ela já domina a ideia de tirar.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Conte histórias com personagens que dão e levam (“o esquilo levou 3 das 8 nozes”) e deixe a criança acompanhar o que sobra com objetos da natureza.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.OPE.04",
+      "linha": "MA.OPE",
+      "ordem": 4,
+      "titulo": "Soma contando a partir de um número",
+      "descricaoPais": "Para 6 + 3, diz 7, 8, 9 sem recontar o 6.",
+      "evidencias": ["Resolve somas até 10 contando a partir do maior número"],
+      "idadeTipica": 6,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.SEN.07", "MA.OPE.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Aqui a criança **abandona o contar tudo**: em vez de recontar o 6 e depois o 3, parte do 6 e conta mais três. É o primeiro passo para o cálculo de cabeça e aproveita o que ela já sabe sobre contar a partir de um número.",
+        "comoParticipar": "Cubra 6 fichas com a mão e diga “aqui tem 6; vêm mais 3”. Ela fala “sete, oito, nove”, e pode marcar nos dedos os passos. Depois faça sem esconder, só falando. Jogos de tabuleiro (avançar casas) são ótimos. Deixe-a conferir contando tudo, até confiar.",
+        "sinaisDeAtencao": "Voltar a contar tudo ainda é comum aos 6 anos. Se aos 7 ela segue contando desde o 1 em somas pequenas, depois de semanas de prática, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O jogo da serpente da adição (uma serpente de contas coloridas) e a tábua de adição permitem somar com peças e ir passando ao cálculo de cabeça.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, as operações costumam ser formalizadas por volta dos 7 anos, como o aviso acima indica, em histórias e com movimento. Até lá, a criança já soma vivendo: contando passos e itens da mesa.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Faça em lições curtas e faladas, com coisas reais; o cálculo de cabeça nasce do que a criança já provou com objetos.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.OPE.05",
+      "linha": "MA.OPE",
+      "ordem": 5,
+      "titulo": "Reparte em partes iguais",
+      "descricaoPais": "Distribui 12 fichas entre 3 pratos, uma de cada vez, até acabar.",
+      "evidencias": [
+        "Reparte uma coleção entre 2 a 4 pratos, em partes iguais",
+        "Diz se a partilha ficou justa"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.SEN.06"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Repartir de modo justo é a **primeira ideia de divisão**, e aparece cedo na vida: dividir o lanche. Pela partilha, a criança descobre que dá para repartir de forma igual e que às vezes sobra. Muitas crianças resolvem problemas de repartir antes de aprender qualquer conta de dividir.",
+        "comoParticipar": "Repartam de verdade: biscoitos entre bonecos, cartas entre jogadores. Ensine a dar **um a cada**, em rodadas, até acabar. Depois pergunte “ficou igual para todos?” e “sobrou?”. Varie o número de pratos e de fichas, e conte o que cada um recebeu.",
+        "sinaisDeAtencao": "No começo é comum distribuir sem cuidado. Se aos 7 anos ela ainda não consegue repartir uma coleção em partes iguais com objetos, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com contas ou pinos, a criança distribui uma peça por vez em cada prato e vê o resto. Os materiais de divisão vêm depois, quando a ideia de partilha já está firme.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Partilhar faz parte da vida da casa e da roda: o pão repartido, a refeição dividida. Histórias com personagens que dividem a colheita dão forma à divisão antes de se falar em conta.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.OPE.06",
+      "linha": "MA.OPE",
+      "ordem": 6,
+      "titulo": "Calcula de cabeça somas até 10",
+      "descricaoPais": "Sabe de cabeça que 4 + 3 = 7, usando as partes do número.",
+      "evidencias": ["Responde de cabeça 8 de 10 somas até 10"],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.SEN.08", "MA.OPE.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Quando a criança **decompõe** os números (7 = 5 + 2), ela pode calcular de cabeça: 4 + 3 é “quatro e três, sete”. Com a prática, algumas somas viram fatos que ela simplesmente sabe. Construir os fatos básicos da adição é uma expectativa da matemática nos primeiros anos do ensino fundamental.",
+        "comoParticipar": "Façam jogos rápidos e curtos: dados (jogue dois e some), dominó, pares que fazem 10 (6 e 4, 7 e 3). Peça que explique como pensou (“sei que 4 e 4 são 8, então 4 e 5…”). Repita as somas que ela já entendeu, até virarem conhecidas.",
+        "sinaisDeAtencao": "Calcular de cabeça exige prática. Se aos 7 ou 8 anos ela ainda precisa contar nos dedos todas as somas pequenas, apesar de jogos e prática, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "nunes-bryant-children-doing-mathematics"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com as barras e as contas coloridas, a criança confere as somas e forma os pares do 10, antes de passar ao cálculo de cabeça.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Como o aviso acima indica, esse trabalho costuma ficar para por volta dos 7 anos. A soma parte do todo: “de que é feito o 7?”. Em casa, o ritmo (palmas e passos) ajuda a memória.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Depois de entender, a tradição clássica pede que os fatos de soma sejam memorizados com prática diária curta, até ficarem automáticos.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Primeiro prove com objetos, depois decore: a criança confere cada combinação com coisas reais e só então a repete de cabeça.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.OPE.07",
+      "linha": "MA.OPE",
+      "ordem": 7,
+      "titulo": "Junta grupos iguais",
+      "descricaoPais": "Resolve “três carrinhos com 4 rodas cada” contando grupo a grupo.",
+      "evidencias": ["Resolve 3 de 4 problemas de grupos iguais com objetos ou desenhos"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.OPE.05", "MA.SEN.07"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Juntar **grupos do mesmo tamanho** (3 cestos com 4 maçãs) é a primeira ideia de multiplicação. Muitas crianças resolvem esses problemas contando grupo a grupo ou em saltos (4, 8, 12) muito antes de saber a tabuada. O raciocínio de multiplicar é diferente do de somar e se constrói aos poucos.",
+        "comoParticipar": "Use situações de grupos iguais: pares de meias, rodas de carrinhos, ovos na caixa, dedos de duas mãos. Peça que desenhe ou monte os grupos e conte de grupo em grupo (4, 8, 12). Cantem contagens em saltos de 2, de 5 e de 10. Ainda não precisa saber a tabuada.",
+        "sinaisDeAtencao": "Muitas crianças só chegam a isso por volta dos 7 anos. Se aos 8 ela não consegue resolver problemas de grupos iguais montando-os com objetos, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nunes-bryant-children-doing-mathematics", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O tabuleiro de multiplicação com contas mostra grupos iguais de forma concreta: a criança monta os grupos antes de falar em tabuada.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Contar em saltos com palmas e passos (de 2 em 2, de 5 em 5) é uma prática comum: o ritmo dá forma à multiplicação. Como o aviso acima indica, as operações costumam ser formalizadas por volta dos 7 anos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Cantar as contagens em saltos é o início do que a tradição clássica chama de tabuada, que se memoriza com prática diária curta.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.OPE.08",
+      "linha": "MA.OPE",
+      "ordem": 8,
+      "titulo": "Relaciona adição e subtração",
+      "descricaoPais": "Sabe que 3 + 4 = 7 e que 7 − 3 = 4, e usa uma conta para conferir a outra.",
+      "evidencias": [
+        "Diz as contas que “moram na mesma família” (3, 4 e 7)",
+        "Confere uma subtração com a adição correspondente"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["MA.OPE.03", "MA.OPE.06"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Adição e subtração usam **os mesmos números vistos de lados diferentes**: 3 + 4 = 7 e 7 − 3 = 4. Entender isso permite conferir resultados e calcular com mais flexibilidade. É a ideia de parte e todo (decompor números) funcionando nos dois sentidos.",
+        "comoParticipar": "Mostre três números numa “casinha” (3, 4 e 7) e deixe a criança dizer todas as contas que moram nela (3 + 4, 4 + 3, 7 − 3, 7 − 4). Peça sempre que confira uma conta com a outra. Use objetos: tire as 3 das 7 e veja que sobram 4.",
+        "sinaisDeAtencao": "Perceber essa ligação leva tempo e vem com muita prática concreta. Se aos 8 anos ela trata cada conta como isolada, mesmo depois de montar com objetos, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "nunes-bryant-children-doing-mathematics"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com as barras numéricas e as tábuas de adição e de subtração, a criança vê as mesmas peças somando e tirando.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Parta do todo: o 7 e as partes que o formam. Como o aviso acima indica, as operações costumam ser apresentadas juntas, em histórias, por volta dos 7 anos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "A criança confere uma conta com a outra usando objetos, e só depois decora. Mantenha as lições curtas.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     }
   ]
 }
