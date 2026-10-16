@@ -86,8 +86,8 @@ export interface Marco {
   ordem: number;
   titulo: string;
   descricaoPais: string;
-  /** texto de apoio para os pais, lido sob demanda na jornada; ausente = ainda não escrito (aviso) */
-  orientacaoPais?: OrientacaoPais;
+  /** texto de apoio para os pais, lido sob demanda na jornada; obrigatório em todo marco */
+  orientacaoPais: OrientacaoPais;
   evidencias: string[];
   idadeTipica: number;
   idadeIntroducao: Partial<Record<Vertente, number>>;

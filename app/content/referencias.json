@@ -71,6 +71,20 @@
       "veiculo": "New York: W. W. Norton"
     },
     {
+      "id": "kamii-crianca-numero",
+      "autores": "KAMII, Constance",
+      "titulo": "A criança e o número: implicações educacionais da teoria de Piaget para a atuação junto a escolares de 4 a 6 anos",
+      "ano": 1985,
+      "veiculo": "Campinas: Papirus"
+    },
+    {
+      "id": "nunes-bryant-children-doing-mathematics",
+      "autores": "NUNES, Terezinha; BRYANT, Peter",
+      "titulo": "Children doing mathematics",
+      "ano": 1996,
+      "veiculo": "Oxford: Blackwell"
+    },
+    {
       "id": "morais-sistema-escrita-alfabetica",
       "autores": "MORAIS, Artur Gomes de",
       "titulo": "Sistema de escrita alfabética",

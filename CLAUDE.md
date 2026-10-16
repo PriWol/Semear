@@ -83,6 +83,7 @@ Siga `docs/DESIGN.md` (direção A, "Caderno de botânica"; ADR 0014). Cores, fo
 - [ ] Testes cobrindo as regras novas (unitários no domínio; integração no `dados/`; e2e se mudou um fluxo de tela).
 - [ ] `npm run check` e `npm run test:e2e` passando.
 - [ ] Conteúdo novo passa na validação (`tests/conteudo.test.ts`).
+- [ ] Todo marco novo traz `orientacaoPais` (por que importa, como participar, sinais de atenção e referências); sem ela a validação falha (ADR 0017).
 - [ ] Decisão técnica relevante registrada em `docs/adr/`.
 - [ ] Conceito técnico novo explicado no `docs/GUIA_APRENDIZADO.md`.
 - [ ] Especificação atualizada se o comportamento mudou.

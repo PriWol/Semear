@@ -22,7 +22,7 @@ const orientacao = (extra: Partial<OrientacaoPais> = {}): OrientacaoPais => ({
 
 function indiceComOrientacao(o: OrientacaoPais | undefined, idadeIntroducao = {}) {
   return indiceBase({
-    marcos: [marco('LG.FON.01', 1, { ...(o ? { orientacaoPais: o } : {}), idadeIntroducao })],
+    marcos: [marco('LG.FON.01', 1, { orientacaoPais: o, idadeIntroducao })],
     referencias: [ref('geral'), ref('mont'), ref('wal'), ref('cm')],
   });
 }

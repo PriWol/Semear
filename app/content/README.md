@@ -30,14 +30,14 @@ dentro de `app/` e abra um PR.
   "idadeIntroducao": { "Waldorf": 6.5 }, // só gera aviso, nunca bloqueia
   "preRequisitos": ["LG.FON.03"], // pode citar marcos de outras linhas
   "bncc": [], // obrigatório em LG e MA antes do lançamento (portfólio)
-  "orientacaoPais": {}, // opcional, ver abaixo
+  "orientacaoPais": {}, // obrigatório em todo marco, ver abaixo
 }
 ```
 
 ### Orientação para os pais
 
 Texto de apoio que a família lê **se quiser**: na jornada ele fica num bloco recolhido, "📖 Para os pais".
-Sem `orientacaoPais`, o bloco não aparece e a validação mostra um aviso (não bloqueia).
+**É obrigatório em todo marco** (ADR 0017): marco sem `orientacaoPais` é erro de validação e o CI falha. Só `porVertente` é opcional.
 
 ```jsonc
 "orientacaoPais": {

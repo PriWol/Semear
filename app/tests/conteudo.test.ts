@@ -10,18 +10,11 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
-  it('a linha de Consciência fonológica tem orientação para os pais em todos os marcos', () => {
-    const marcos = carregarConteudo().marcos.filter((m) => m.linha === 'LG.FON');
-    expect(marcos.length).toBeGreaterThan(0);
-    for (const m of marcos) expect(m.orientacaoPais, m.id).toBeDefined();
-  });
   it('nenhum texto aponta para o "aviso acima" (ele só aparece em certas condições)', () => {
     // O aviso de ritmo só aparece para a vertente principal e antes da idade de introdução.
     // O texto deve trazer a idade por {idade}, e não depender do aviso estar na tela.
     for (const m of carregarConteudo().marcos) {
-      const textos = Object.values(m.orientacaoPais?.porVertente ?? {}).map(
-        (t) => t.comoParticipar,
-      );
+      const textos = Object.values(m.orientacaoPais.porVertente ?? {}).map((t) => t.comoParticipar);
       for (const t of textos) expect(t, m.id).not.toMatch(/aviso acima/i);
     }
   });
@@ -159,15 +152,15 @@ describe('validarConteudo: orientação para os pais e referências', () => {
     });
 
   it('orientação completa e referência existente são válidas', () => {
-    const { erros, avisos } = validarConteudo(comOrientacao(orientacao()));
-    expect(erros).toEqual([]);
-    expect(avisos.some((a) => a.includes('LG.FON.01') && a.includes('orientação'))).toBe(false);
+    expect(validarConteudo(comOrientacao(orientacao())).erros).toEqual([]);
   });
 
-  it('marco sem orientação para os pais é só aviso', () => {
-    const { erros, avisos } = validarConteudo(conteudoBase());
-    expect(erros).toEqual([]);
-    expect(avisos).toContain('Marco LG.FON.01: ainda sem orientação para os pais');
+  it('acusa marco sem orientação para os pais (obrigatória em todo marco)', () => {
+    const c = conteudoBase({ atividades: [] });
+    c.marcos = [marco('LG.FON.01', 1, { orientacaoPais: undefined })];
+    expect(validarConteudo(c).erros).toContain(
+      'Marco LG.FON.01: falta a orientação para os pais (obrigatória em todo marco)',
+    );
   });
 
   it('acusa referência citada que não existe no catálogo', () => {
