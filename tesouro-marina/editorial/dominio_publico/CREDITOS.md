@@ -10,7 +10,20 @@ Tratamento: recorte das margens (`recorte_pd.py`) e conversão do papel amarelad
 
 ## Volume 5: reproduções de obras de arte (`v5/`)
 
-Todas as imagens vêm do Wikimedia Commons (`https://commons.wikimedia.org`), pelo arquivo indicado, e foram reduzidas a no máximo 2000 px no maior lado (JPEG, cores intactas, sem retoque). O SHA-256 do arquivo de origem de cada uma está em `obras.sha256.json`. A licença abaixo é a que o Commons registrava ao catalogar (outubro de 2026).
+As imagens vêm do Wikimedia Commons, de acervos de acesso aberto (Instituto de Arte de Chicago e National Gallery of Art) ou de arquivo fornecido pela editora, conforme a coluna "Fonte". Foram reduzidas a no máximo 2000 px no maior lado (JPEG, cores intactas, sem retoque). O SHA-256 do arquivo de origem de cada uma está em `obras.sha256.json`. A licença é a que a fonte registrava ao catalogar (outubro de 2026).
 
-| Arquivo | Obra e artista | Acervo | Arquivo no Commons | Situação |
+| Arquivo | Obra e artista | Acervo | Fonte | Situação |
 |---|---|---|---|---|
+| `v5/durer_lebre.jpg` | *A lebre jovem* (Feldhase), Albrecht Dürer (1471–1528), 1502 | Albertina, Viena | Wikimedia Commons, `File:Albrecht Dürer - Hare, 1502 - Google Art Project.jpg` | domínio público |
+| `v5/durer_primulas.jpg` | *Tufo de prímulas* (Tuft of Cowslips), Albrecht Dürer (1471–1528), 1526 | National Gallery of Art, Washington | National Gallery of Art, Washington, inv. 1991.217.1, https://www.nga.gov/artworks/74162 | CC0 (acesso aberto do acervo) |
+| `v5/kandinsky_quadrados.jpg` | *Estudo de cores: quadrados com círculos concêntricos*, Wassily Kandinsky (1866–1944), 1913 | Städtische Galerie im Lenbachhaus, Munique | Wikimedia Commons, `File:Vassily Kandinsky, 1913 - Color Study, Squares with Concentric Circles.jpg` | domínio público |
+| `v5/kandinsky_circulos.jpg` | *Vários círculos* (Several Circles), Wassily Kandinsky (1866–1944), 1926 | Museu Solomon R. Guggenheim, Nova York | Wikimedia Commons, `File:Vassily Kandinsky, 1926 - Several Circles, Gugg 0910 25.jpg` | domínio público |
+| `v5/monet_medas.jpg` | *Medas de trigo (fim do verão)* (Stacks of Wheat, End of Summer), Claude Monet (1840–1926), 1890–91 | Instituto de Arte de Chicago | Instituto de Arte de Chicago, inv. 1985.1103, https://www.artic.edu/artworks/64818 | domínio público (acesso aberto do acervo) |
+| `v5/monet_ninfeias.jpg` | *Ninfeias* (Water Lilies), Claude Monet (1840–1926), 1906 | Instituto de Arte de Chicago | Instituto de Arte de Chicago, inv. 1933.1157, https://www.artic.edu/artworks/16568 | domínio público (acesso aberto do acervo) |
+| `v5/vangogh_girassois.jpg` | *Girassóis* (Sunflowers), Vincent van Gogh (1853–1890), Arles, 1888–89 | a confirmar | arquivo fornecido pela editora (acervo e endereço de origem a confirmar) | domínio público |
+| `v5/cassatt_banho.jpg` | *O banho da criança* (The Child's Bath), Mary Cassatt (1844–1926), 1893 | Instituto de Arte de Chicago | Instituto de Arte de Chicago, inv. 1910.2, https://www.artic.edu/artworks/111442 | domínio público (acesso aberto do acervo) |
+| `v5/cassatt_poltrona.jpg` | *Menina na poltrona azul* (Little Girl in a Blue Armchair), Mary Cassatt (1844–1926), 1878 | National Gallery of Art, Washington | National Gallery of Art, Washington, inv. 1983.1.18, https://www.nga.gov/artworks/61368 | CC0 (acesso aberto do acervo) |
+| `v5/cassatt_praia.jpg` | *Crianças brincando na praia* (Children Playing on the Beach), Mary Cassatt (1844–1926), 1884 | National Gallery of Art, Washington | National Gallery of Art, Washington, inv. 1970.17.19, https://www.nga.gov/artworks/52163 | CC0 (acesso aberto do acervo) |
+
+
+Observações: os dois quadros de Kandinsky e os *Girassóis* de Van Gogh foram fornecidos pela dona do produto, porque o Commons recusou os pedidos por mais de uma hora. As dimensões dos arquivos de Kandinsky coincidem com as dos arquivos do Commons indicados; o hash registrado é o do arquivo recebido. Dos *Girassóis* não há endereço de origem registrado: confirmar acervo e fonte antes de imprimir.

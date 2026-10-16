@@ -91,7 +91,8 @@ class CatalogoReal(unittest.TestCase):
     def test_todo_credito_diz_autor_licenca_e_arquivo(self):
         for nome, (arq, autor, obra, ano, _acervo, lic) in fontes_v5.OBRAS.items():
             c = fontes_v5.credito(nome)
-            fonte = "Wikimedia Commons" if not arq.startswith(("aic:", "nga:")) else fontes_v5.REFERENCIAS[nome][1]
+            fonte = ("arquivo fornecido pela editora" if arq.startswith("envio:") else
+                     fontes_v5.REFERENCIAS[nome][1] if arq.startswith(("aic:", "nga:")) else "Wikimedia Commons")
             for parte in (autor, obra, ano, lic, fonte):
                 self.assertIn(parte, c, nome)
 

@@ -43,8 +43,8 @@ OBRAS = {
                     "Instituto de Arte de Chicago", "domínio público (acesso aberto do acervo)"),
     "monet_ninfeias": ("aic:3c27b499-af56-f0d5-93b5-a7f2f1ad5813",
                        "Claude Monet (1840–1926)", "<i>Ninfeias</i> (Water Lilies)", "1906", "Instituto de Arte de Chicago", "domínio público (acesso aberto do acervo)"),
-    "vangogh_girassois": ("Vincent Willem van Gogh, Dutch - Sunflowers - Google Art Project.jpg",
-                          "Vincent van Gogh (1853–1890)", "<i>Girassóis</i> (Sunflowers)", "Arles, janeiro de 1889", "", "domínio público"),
+    "vangogh_girassois": ("envio:vangogh_girassois",
+                          "Vincent van Gogh (1853–1890)", "<i>Girassóis</i> (Sunflowers)", "Arles, 1888–89", "", "domínio público"),
     "cassatt_banho": ("aic:3b885ae0-4d46-5fe4-d70a-00474827f02c",
                       "Mary Cassatt (1844–1926)", "<i>O banho da criança</i> (The Child's Bath)", "1893", "Instituto de Arte de Chicago", "domínio público (acesso aberto do acervo)"),
     "cassatt_poltrona": ("nga:6dc9ca49-ea8c-4314-985a-ba2cfc3965cd",
@@ -74,6 +74,8 @@ def credito(nome):
         inv, url = REFERENCIAS[nome]
         return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: {inv}, {url}. "
                 f"As cores variam de uma reprodução para outra.")
+    if arq.startswith("envio:"):   # arquivo entregue pela dona do produto, sem endereço de origem registrado
+        return f"{autor}, {obra}, {ano}. Reprodução em {lic}, arquivo fornecido pela editora. As cores variam de uma reprodução para outra."
     return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: Wikimedia Commons, <i>File:{arq}</i>. "
             f"As cores variam de uma reprodução para outra.")
 
@@ -131,6 +133,8 @@ def _pedir(url, cabecalhos):
 
 def _da_rede(chave):
     """chave: nome do arquivo no Commons, 'aic:<id da imagem>' ou 'nga:<uuid da imagem>'."""
+    if chave.startswith("envio:"):
+        raise FileNotFoundError(f"{chave}: arquivo fornecido à mão; coloque-o em build/obras/<nome>.orig")
     if chave.startswith("aic:"):
         # IIIF do Instituto de Arte de Chicago (acesso aberto); a barreira do site recusa clientes sem User-Agent de navegador
         return _pedir(f"https://www.artic.edu/iiif/2/{chave[4:]}/full/1686,/0/default.jpg",
@@ -192,7 +196,14 @@ def linhas_creditos():
     linhas = []
     for nome, (arq, autor, obra, ano, acervo, lic) in OBRAS.items():
         limpo = re.sub(r"<[^>]+>", lambda m: "*" if m.group(0) in ("<i>", "</i>") else "", obra)
-        linhas.append(f"| `v5/{nome}.jpg` | {limpo}, {autor}, {ano} | {acervo or 'ver legenda do Commons'} | `File:{arq}` | {lic} |")
+        if nome in REFERENCIAS:
+            inv, url = REFERENCIAS[nome]
+            fonte = f"{acervo}, {inv}, {url}"
+        elif arq.startswith("envio:"):
+            fonte = "arquivo fornecido pela editora (acervo e endereço de origem a confirmar)"
+        else:
+            fonte = f"Wikimedia Commons, `File:{arq}`"
+        linhas.append(f"| `v5/{nome}.jpg` | {limpo}, {autor}, {ano} | {acervo or 'a confirmar'} | {fonte} | {lic} |")
     return "\n".join(linhas)
 
 

@@ -263,16 +263,16 @@ def unidade2(L):
     L.add(c, aba="--d-musica")
 
     apreciar(L, "kandinsky_circulos", "Vários círculos", "Kandinsky, 1926 · olhar por um minuto, em silêncio",
-             ["Quais cores você vê? Quantas?", "Qual é o círculo maior? E o menor?", "Há círculos dentro de outros círculos? Onde?", "Algum círculo parece estar longe, e outro perto?",
-              "Se esse quadro fizesse música, seria forte ou fraca? Rápida ou lenta?"],
+             ["Quais cores você vê? Quantas?", "Qual é o círculo maior? De que cor ele é? E o menor?", "Há círculos dentro de outros círculos? Onde?", "Alguns círculos passam por cima de outros. O que acontece com as cores onde eles se cruzam?",
+              "De que cor é o fundo? Algum círculo parece estar longe, e outro perto?", "Se esse quadro fizesse música, seria forte ou fraca? Rápida ou lenta?"],
              "Deixe a obra aberta por um minuto, em silêncio, antes de qualquer pergunta. Faça uma pergunta de cada vez e aceite qualquer resposta. Depois feche o livro e peça: <i>conte o que você lembra</i>. "
-             "Os círculos de Kandinsky costumam parecer flutuar, e muitas crianças falam em bolhas, planetas ou balões; todas as respostas valem.",
+             "O maior círculo é preto, dentro de um anel azul com uma borda clara; em volta flutuam círculos de todos os tamanhos e cores, alguns transparentes, como se fossem de vidro colorido. Muitas crianças falam em bolhas, planetas ou balões; todas as respostas valem.",
              "olhar e conversar", "--d-musica", w=140, h=122)
 
     apreciar(L, "kandinsky_quadrados", "Quadrados com círculos", "Kandinsky, 1913 · um estudo de cores",
              ["Quantos quadrados você vê? E quantos círculos em cada um?", "Que cores tem o círculo do meio de cada quadrado?", "Qual quadrado você escolheria para você? Por quê?", "Os círculos de dentro e de fora se parecem? O que muda?"],
-             "É uma obra feita para estudar como as cores se comportam umas ao lado das outras. Pode ser comparada ao jogo dos círculos concêntricos desta unidade: um círculo dentro do outro, cada um de uma cor. "
-             "A reprodução desta obra é pequena e foi mantida em baixa resolução; ela não substitui a visita a um museu.",
+             "É uma aquarela feita para estudar como as cores se comportam umas ao lado das outras: doze quadrados, cada um com anéis de cores diferentes, um dentro do outro. Pode ser comparada ao jogo dos círculos concêntricos desta unidade. "
+             "A imagem disponível tem pouca resolução e perde nitidez no tamanho impresso; ela não substitui a visita a um museu.",
              "olhar e comparar", "--d-musica", w=150, h=110)
 
     import math
@@ -454,7 +454,7 @@ def unidade5(L):
         duracao="Dois fins de semana · dois encontros · 20 a 30 minutos. Olhar, misturar amarelos, pintar um vaso de flores.",
         objetivos=["Olhar com calma <i>Girassóis</i>, de Van Gogh, e dizer o que vê.", "Perceber que o amarelo tem muitas versões (mais claro, mais escuro, mais verde, mais laranja).",
                    "Misturar amarelos com um pouquinho de outras cores.", "Pintar um vaso de flores observando flores de verdade.", "Nomear flores e plantas em três idiomas, nos cartões."],
-        repertorio="<b>Obra:</b> Vincent van Gogh (1853–1890), <i>Girassóis</i> (Arles, janeiro de 1889). <b>Palavras:</b> amarelo, vaso, pétala, talo, semente, girassol. "
+        repertorio="<b>Obra:</b> Vincent van Gogh (1853–1890), <i>Girassóis</i> (Arles, 1888–89). <b>Palavras:</b> amarelo, vaso, pétala, talo, semente, girassol. "
                    "<b>Línguas:</b> <i>sunflower · le tournesol · helianthus</i>; <i>flower · la fleur · flos</i>.",
         materiais="Guache (amarelo, branco, um pouquinho de vermelho, verde e azul), pincel largo e fino, papel grosso, um vaso com flores de verdade (ou uma única flor).",
         vida="Colher ou comprar uma flor, pôr num vaso com água, regar plantas, observar uma planta crescer.",
@@ -478,8 +478,8 @@ def unidade5(L):
               "Deixe de lado a vida difícil do pintor: para esta idade, interessa o que ele fez, as flores e o amarelo.")}"""
     L.add(c, aba="--d-jogos")
 
-    apreciar(L, "vangogh_girassois", "Girassóis", "Van Gogh, 1889 · um vaso de flores e muitos amarelos",
-             ["Quantos girassóis você consegue contar?", "Todos os girassóis são iguais? Qual é o mais claro? E o mais escuro?", "Há botões ainda fechados? E flores já murchando?", "De que cor é o fundo? E a mesa?",
+    apreciar(L, "vangogh_girassois", "Girassóis", "Van Gogh, 1888–89 · um vaso de flores e muitos amarelos",
+             ["Quantos girassóis você consegue contar?", "Todos os girassóis são iguais? Qual é o mais claro? E o mais escuro?", "Alguma flor parece velha ou murchando? Qual? E quais têm o miolo marrom-escuro?", "De que cor é o fundo? E a mesa?",
               "Onde dá para ver a pincelada grossa da tinta?"],
              "O quadro tem uma assinatura, “Vincent”, escrita no vaso. Peça que ela procure. Como a tinta está bem grossa, a criança pode perceber os traços do pincel, mesmo na reprodução. "
              "Mostre também, se puder, um girassol de verdade, ao lado do livro, e pergunte em que se parecem e em que são diferentes.",
