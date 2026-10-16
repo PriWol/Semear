@@ -10,6 +10,17 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
+  it('MA.OPE tem marcos, com pré-requisitos que existem e ordem que acompanha a idade', () => {
+    const { marcos } = carregarConteudo();
+    const ids = new Set(marcos.map((m) => m.id));
+    const linha = marcos.filter((m) => m.linha === 'MA.OPE').sort((a, b) => a.ordem - b.ordem);
+    expect(linha.length).toBeGreaterThanOrEqual(8);
+    linha.forEach((m, i) => {
+      for (const p of m.preRequisitos) expect(ids.has(p), `${m.id} → ${p}`).toBe(true);
+      const anterior = linha[i - 1];
+      if (anterior) expect(m.idadeTipica, m.id).toBeGreaterThanOrEqual(anterior.idadeTipica);
+    });
+  });
   it('nenhum texto aponta para o "aviso acima" (ele só aparece em certas condições)', () => {
     // O aviso de ritmo só aparece para a vertente principal e antes da idade de introdução.
     // O texto deve trazer a idade por {idade}, e não depender do aviso estar na tela.

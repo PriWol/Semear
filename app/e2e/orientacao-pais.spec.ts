@@ -83,3 +83,18 @@ test('Matemática também traz o texto para os pais', async ({ page }) => {
   await expect(bloco.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
   await expect(bloco.locator('.referencias')).toContainText('KAMII, Constance');
 });
+
+test('a linha Operações aparece com texto para os pais e pré-requisito de outra linha', async ({
+  page,
+}) => {
+  await cadastrarFamiliaECrianca(page);
+  await page.getByRole('link', { name: /Matemática/ }).click();
+  await expect(page.getByRole('heading', { name: 'Operações' })).toBeVisible();
+
+  const m = marco(page, 'MA.OPE.04');
+  // MA.OPE.04 depende de MA.SEN.07 e MA.OPE.02, que ainda não estão consolidados
+  await expect(m).toContainText('Aguardando');
+  await m.getByText('Para os pais').click();
+  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(m.locator('.referencias')).toContainText('NUNES, Terezinha; BRYANT, Peter');
+});
