@@ -744,7 +744,7 @@ def encerramento(L):
         <tr><td><b>Van Gogh</b></td><td><i>Girassóis</i> · amarelo sobre amarelo</td></tr>
         <tr><td><b>Kandinsky</b></td><td><i>Vários círculos</i> · círculos, cores e música</td></tr></table></div>
       {adulto("o tempo na arte",
-              "Mostre as barras como ruas compridas de tempo: Dürer viveu há quase 500 anos; os outros quatro, há mais de 100. Mesmo assim, a lebre de Dürer, o lago de Monet e a poltrona de Cassatt "
+              "Mostre as barras como ruas compridas de tempo: Dürer viveu há quase 500 anos; os outros quatro viveram entre os anos 1800 e meados dos anos 1900. Mesmo assim, a lebre de Dürer, o lago de Monet e a poltrona de Cassatt "
               "vivem juntos na mesma parede da sua casa. Pergunte qual ela gostaria de visitar e por quê.")}"""
     L.add(c, aba="--d-artes")
 

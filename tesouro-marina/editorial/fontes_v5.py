@@ -23,6 +23,7 @@ SAIDA = os.path.join(AQUI, "dominio_publico", "v5")
 FONTE = os.path.join(AQUI, "build", "obras")
 MANIFESTO = os.path.join(AQUI, "dominio_publico", "obras.sha256.json")
 LIMITE_BYTES = 60_000_000
+ESPERA_MAX = 3600      # nunca espera mais de 1 h por pedido, mesmo que a fonte peça mais
 LADO_MAX = 2000        # px do maior lado (≈ 170 mm a 300 dpi)
 UA = "TesouroMarina/0.1 (educational, non-commercial; https://github.com/PriWol/Semear)"
 
@@ -33,10 +34,10 @@ OBRAS = {
     "durer_primulas": ("nga:21113c79-7136-4bce-9e8d-65b9254628bd",
                        "Albrecht Dürer (1471–1528)", "<i>Tufo de prímulas</i> (Tuft of Cowslips)", "1526",
                        "National Gallery of Art, Washington", "CC0 (acesso aberto do acervo)"),
-    "kandinsky_quadrados": ("Vassily Kandinsky, 1913 - Color Study, Squares with Concentric Circles.jpg",
+    "kandinsky_quadrados": ("envio:kandinsky_quadrados",
                             "Wassily Kandinsky (1866–1944)", "<i>Estudo de cores: quadrados com círculos concêntricos</i>", "1913",
                             "Städtische Galerie im Lenbachhaus, Munique", "domínio público"),
-    "kandinsky_circulos": ("Vassily Kandinsky, 1926 - Several Circles, Gugg 0910 25.jpg",
+    "kandinsky_circulos": ("envio:kandinsky_circulos",
                            "Wassily Kandinsky (1866–1944)", "<i>Vários círculos</i> (Several Circles)", "1926",
                            "Museu Solomon R. Guggenheim, Nova York", "domínio público"),
     "monet_medas": ("aic:a38e2828-ec6f-ece1-a30f-70243449197b",
@@ -68,6 +69,14 @@ REFERENCIAS = {
 }
 
 
+# Arquivos entregues à mão que têm um arquivo equivalente no Commons (mesmas dimensões), onde a licença está registrada.
+# Serve só de referência: o hash registrado é o do arquivo recebido, não o do Commons.
+EQUIVALENTE_NO_COMMONS = {
+    "kandinsky_quadrados": "Vassily Kandinsky, 1913 - Color Study, Squares with Concentric Circles.jpg",
+    "kandinsky_circulos": "Vassily Kandinsky, 1926 - Several Circles, Gugg 0910 25.jpg",
+}
+
+
 def credito(nome):
     arq, autor, obra, ano, acervo, lic = OBRAS[nome]
     onde = f" {acervo}." if acervo else ""
@@ -76,7 +85,7 @@ def credito(nome):
         return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: {inv}, {url}. "
                 f"As cores variam de uma reprodução para outra.")
     if arq.startswith("envio:"):   # arquivo entregue pela dona do produto, sem endereço de origem registrado
-        return f"{autor}, {obra}, {ano}. Reprodução em {lic}, arquivo fornecido pela editora. As cores variam de uma reprodução para outra."
+        return f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}, arquivo fornecido pela editora. As cores variam de uma reprodução para outra."
     return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: Wikimedia Commons, <i>File:{arq}</i>. "
             f"As cores variam de uma reprodução para outra.")
 
@@ -120,13 +129,13 @@ def _espera(retry_after):
     if not retry_after:
         return 600
     try:
-        return max(0, int(retry_after))
+        return min(ESPERA_MAX, max(0, int(retry_after)))
     except ValueError:
         pass
     try:
         from email.utils import parsedate_to_datetime
         from datetime import datetime, timezone
-        return max(0, int((parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds()))
+        return min(ESPERA_MAX, max(0, int((parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds())))
     except (TypeError, ValueError):
         return 600
 
@@ -144,7 +153,9 @@ def _pedir(url, cabecalhos):
             if e.code != 429:
                 raise
             # a fonte diz quanto esperar (Retry-After, em segundos); pedir antes disso só renova a espera
-            time.sleep(_espera(e.headers.get("Retry-After")) + 15)
+            espera = _espera(e.headers.get("Retry-After")) + 15
+            print(f"{url}: 429, esperando {espera} s antes de tentar de novo", file=sys.stderr, flush=True)
+            time.sleep(espera)
     raise RuntimeError(f"{url}: muitos pedidos recusados (429)")
 
 
@@ -218,7 +229,9 @@ def linhas_creditos():
             inv, url = REFERENCIAS[nome]
             fonte = f"{acervo}, {inv}, {url}"
         elif arq.startswith("envio:"):
-            fonte = "arquivo fornecido pela editora (acervo e endereço de origem a confirmar)"
+            eq = EQUIVALENTE_NO_COMMONS.get(nome)
+            fonte = ("arquivo fornecido pela editora (dimensões idênticas ao `File:" + eq + "` do Commons, que registra a licença)"
+                     if eq else "arquivo fornecido pela editora (acervo e endereço de origem a confirmar)")
         else:
             fonte = f"Wikimedia Commons, `File:{arq}`"
         linhas.append(f"| `v5/{nome}.jpg` | {limpo}, {autor}, {ano} | {acervo or 'a confirmar'} | {fonte} | {lic} |")

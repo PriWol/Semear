@@ -88,6 +88,7 @@ class Utilitarios(unittest.TestCase):
         self.assertEqual(fontes_v5._espera(None), 600)
         self.assertEqual(fontes_v5._espera("amanhã, talvez"), 600)
         self.assertEqual(fontes_v5._espera("Wed, 21 Oct 2015 07:28:00 GMT"), 0)   # data no passado: não espera
+        self.assertEqual(fontes_v5._espera("999999"), fontes_v5.ESPERA_MAX)       # teto de 1 h
 
     def test_envio_sem_arquivo_falha_com_mensagem_clara(self):
         with self.assertRaisesRegex(FileNotFoundError, "build/obras"):
@@ -125,9 +126,11 @@ class CatalogoReal(unittest.TestCase):
 
     def test_so_obras_de_autores_mortos_ha_mais_de_70_anos(self):
         import re
+        import datetime
+        limite = datetime.date.today().year - 70   # morreu antes de 1.º de janeiro do ano em que se completam 70 anos
         for nome, o in fontes_v5.OBRAS.items():
             morte = int(re.search(r"–(\d{4})\)", o[1]).group(1))
-            self.assertLess(morte, 2026 - 70, nome)
+            self.assertLess(morte, limite, nome)
 
     def test_creditos_md_bate_com_o_catalogo(self):
         caminho = os.path.join(os.path.dirname(fontes_v5.MANIFESTO), "CREDITOS.md")
