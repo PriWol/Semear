@@ -89,6 +89,26 @@
       "idade": [5, 8],
       "uso": "leitura-em-voz-alta",
       "porQue": "Trava-línguas e brincadeiras sonoras. Repitam devagar, depois mais rápido, e troquem uma sílaba para criar palavras novas."
+    },
+    {
+      "id": "livro-pedro-coelho",
+      "titulo": "O Conto do Pedro Coelho (The Tale of Peter Rabbit)",
+      "autor": "Beatrix Potter",
+      "vertentes": ["Charlotte Mason", "Clássico", "Waldorf", "Montessori"],
+      "marcos": [],
+      "idade": [3, 7],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Clássico curto, de frases simples e ilustrações de aquarela feitas a partir da observação da natureza. Leia devagar, mostre os desenhos e peça à criança que reconte a história com as próprias palavras (narração). Domínio público: também existe em inglês, para o ouvido se acostumar."
+    },
+    {
+      "id": "livro-narnia-leao-feiticeira",
+      "titulo": "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa",
+      "autor": "C. S. Lewis",
+      "vertentes": ["Clássico", "Charlotte Mason", "Religioso"],
+      "marcos": [],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Livro vivo para ler em voz alta, um capítulo por vez. Pare no fim do capítulo e peça que a criança conte o que aconteceu antes de seguir. Tem temas de coragem, perdão e sacrifício, com leitura cristã possível para quem quiser."
     }
   ]
 }
