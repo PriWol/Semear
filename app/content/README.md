@@ -6,14 +6,15 @@ dentro de `app/` e abra um PR.
 
 ## Arquivos
 
-| Arquivo                 | O que contém                                                          |
-| ----------------------- | --------------------------------------------------------------------- |
-| `dominios.json`         | Domínios, linhas, trilhas de língua e vertentes. Muda pouco.          |
-| `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                        |
-| `referencias.json`      | Catálogo de referências bibliográficas (ABNT) citadas nos marcos.     |
-| `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança.    |
-| `livros.json`           | Curadoria de livros.                                                  |
-| `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015). |
+| Arquivo                 | O que contém                                                            |
+| ----------------------- | ----------------------------------------------------------------------- |
+| `dominios.json`         | Domínios, linhas, trilhas de língua e vertentes. Muda pouco.            |
+| `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                          |
+| `referencias.json`      | Catálogo de referências bibliográficas (ABNT) citadas nos marcos.       |
+| `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança.      |
+| `livros.json`           | Curadoria de livros (`editora` e `linkCompra` são opcionais; só https). |
+| `acervo.json`           | Acervo gratuito (domínio público/licença aberta), ADR 0016.             |
+| `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015).   |
 
 ## Marco
 
@@ -36,7 +37,7 @@ dentro de `app/` e abra um PR.
 ### Orientação para os pais
 
 Texto de apoio que a família lê **se quiser**: na jornada ele fica num bloco recolhido, "📖 Para os pais".
-**É obrigatório em todo marco** (ADR 0016): marco sem `orientacaoPais` é erro de validação e o CI falha. Só `porVertente` é opcional.
+**É obrigatório em todo marco** (ADR 0017): marco sem `orientacaoPais` é erro de validação e o CI falha. Só `porVertente` é opcional.
 
 ```jsonc
 "orientacaoPais": {
@@ -108,3 +109,9 @@ validação e testes).
 - **erros** (marco inexistente, ordem repetida, resposta fora das opções…) fazem o CI falhar;
 - **avisos** (pré-requisito ainda não escrito, atividade em rascunho…) aparecem na tela
   **Configurações → Ver cobertura do conteúdo**.
+
+## Acervo gratuito
+
+`acervo.json` lista obras de acesso gratuito em português, inglês, latim e francês (2 a 8 anos). Cada item tem
+`idioma`, `idade`, `fonte`, `licenca`, `url` (só https) e `tipoLink`: `obra` abre o livro; `busca` abre a busca da
+própria fonte pelo título. A busca na tela roda no aparelho. Confira a licença antes de incluir uma obra nova.

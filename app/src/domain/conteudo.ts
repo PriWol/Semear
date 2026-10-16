@@ -269,7 +269,28 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     for (const m of l.marcos) {
       if (!idx.marco(m)) avisos.push(`Livro ${l.id}: marco ${m} ainda não existe`);
     }
+    if (l.linkCompra !== undefined && !enderecoHttpsValido(l.linkCompra)) {
+      erros.push(`Livro ${l.id}: linkCompra precisa ser um endereço https`);
+    }
+  }
+
+  for (const i of conteudo.acervo) {
+    unico(i.id, 'Item do acervo');
+    if (!enderecoHttpsValido(i.url))
+      erros.push(`Acervo ${i.id}: url precisa ser um endereço https`);
+    if (i.idade[0] > i.idade[1] || i.idade[0] < 2 || i.idade[1] > 8) {
+      erros.push(`Acervo ${i.id}: idade fora de 2 a 8 anos`);
+    }
   }
 
   return { erros, avisos };
+}
+
+/** Links do conteúdo só podem ser https (nada de javascript:, http ou endereço relativo). */
+export function enderecoHttpsValido(url: string): boolean {
+  try {
+    return new URL(url).protocol === 'https:';
+  } catch {
+    return false;
+  }
 }

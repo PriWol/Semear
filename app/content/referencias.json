@@ -83,6 +83,27 @@
       "titulo": "Children doing mathematics",
       "ano": 1996,
       "veiculo": "Oxford: Blackwell"
+    },
+    {
+      "id": "morais-sistema-escrita-alfabetica",
+      "autores": "MORAIS, Artur Gomes de",
+      "titulo": "Sistema de escrita alfabética",
+      "ano": 2012,
+      "veiculo": "São Paulo: Melhoramentos"
+    },
+    {
+      "id": "rasinski-fluent-reader",
+      "autores": "RASINSKI, Timothy V.",
+      "titulo": "The fluent reader: oral and silent reading strategies for building fluency, word recognition and comprehension",
+      "ano": 2010,
+      "veiculo": "2. ed. New York: Scholastic"
+    },
+    {
+      "id": "mason-home-education-4ed",
+      "autores": "MASON, Charlotte M.",
+      "titulo": "Home education",
+      "ano": 1905,
+      "veiculo": "4. ed. London: Kegan Paul, Trench, Trubner"
     }
   ]
 }

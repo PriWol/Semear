@@ -192,6 +192,26 @@ export interface Livro {
   idade: [number, number];
   uso: 'leitura-em-voz-alta' | 'leitura-pela-crianca' | 'apoio-ao-educador';
   porQue: string;
+  editora?: string;
+  /** página onde comprar (só https); abre em outra aba, o app não faz chamada nenhuma */
+  linkCompra?: string;
+}
+
+export type IdiomaAcervo = 'pt' | Idioma;
+
+/** Obra de acesso gratuito (domínio público ou licença aberta) que o app só aponta; nada é baixado. */
+export interface ItemAcervo {
+  id: string;
+  titulo: string;
+  autor: string;
+  idioma: IdiomaAcervo;
+  idade: [number, number];
+  fonte: string;
+  licenca: string;
+  url: string;
+  /** "obra" abre o livro; "busca" abre a busca da fonte por este título */
+  tipoLink: 'obra' | 'busca';
+  sobre: string;
 }
 
 export interface Conteudo {
@@ -199,6 +219,7 @@ export interface Conteudo {
   marcos: Marco[];
   atividades: Atividade[];
   livros: Livro[];
+  acervo: ItemAcervo[];
   referencias: Referencia[];
 }
 
