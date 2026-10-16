@@ -132,7 +132,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos 6,5 anos, como o aviso acima indica. Até lá, a criança vive os sons pelos versos, pelo canto e pelo movimento; se estiver curiosa, brinque, sem tratar como tarefa.",
+            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos {idade} anos. Até lá, a criança vive os sons pelos versos, pelo canto e pelo movimento; se estiver curiosa, brinque, sem tratar como tarefa.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -166,7 +166,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Esse tipo de manipulação é trabalho de idade escolar, por volta dos 7 anos, como o aviso acima indica. Antes disso, versos com palavras inventadas e jogos de troca de sons, na roda, já preparam o ouvido.",
+            "comoParticipar": "Esse tipo de manipulação é trabalho de idade escolar, por volta dos {idade} anos. Antes disso, versos com palavras inventadas e jogos de troca de sons, na roda, já preparam o ouvido.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -204,7 +204,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, as letras costumam nascer de imagens e histórias, e a atenção aos sons vem junto. Como o aviso acima indica, isso é pensado para por volta dos 7 anos.",
+            "comoParticipar": "Na pedagogia Waldorf, as letras costumam nascer de imagens e histórias, e a atenção aos sons vem junto. Isso é pensado para por volta dos {idade} anos.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -242,7 +242,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, a análise de sons em palavras costuma vir por volta de 7,5 anos, como o aviso acima indica, depois que as letras já foram vividas por imagens e histórias.",
+            "comoParticipar": "Na pedagogia Waldorf, a análise de sons em palavras costuma vir por volta de {idade} anos, depois que as letras já foram vividas por imagens e histórias.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {

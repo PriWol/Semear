@@ -10,6 +10,7 @@ import {
   type Marco,
   type OrientacaoPais,
   type OrientacaoVertente,
+  type Vertente,
   type Referencia,
 } from './tipos';
 
@@ -137,6 +138,14 @@ function validarOrientacao(
     }
     if (typeof t.comoParticipar !== 'string' || t.comoParticipar.trim() === '')
       erros.push(`Marco ${m.id}: texto da vertente ${vertente} com "comoParticipar" vazio`);
+    if (
+      typeof t.comoParticipar === 'string' &&
+      t.comoParticipar.includes('{idade}') &&
+      m.idadeIntroducao[vertente as Vertente] === undefined
+    )
+      erros.push(
+        `Marco ${m.id}: texto da vertente ${vertente} usa {idade}, mas o marco não tem idadeIntroducao dessa vertente`,
+      );
     if (Array.isArray(t.referencias)) citadas.push(...t.referencias);
     else
       erros.push(

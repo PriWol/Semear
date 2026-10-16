@@ -20,9 +20,9 @@ const orientacao = (extra: Partial<OrientacaoPais> = {}): OrientacaoPais => ({
   ...extra,
 });
 
-function indiceComOrientacao(o: OrientacaoPais | undefined) {
+function indiceComOrientacao(o: OrientacaoPais | undefined, idadeIntroducao = {}) {
   return indiceBase({
-    marcos: [marco('LG.FON.01', 1, o ? { orientacaoPais: o } : {})],
+    marcos: [marco('LG.FON.01', 1, { ...(o ? { orientacaoPais: o } : {}), idadeIntroducao })],
     referencias: [ref('geral'), ref('mont'), ref('wal'), ref('cm')],
   });
 }
@@ -89,5 +89,38 @@ describe('orientacaoParaFamilia', () => {
     );
     const r = orientacaoParaFamilia(idx, 'LG.FON.01', familia());
     expect(r?.referencias.map((x) => x.id)).toEqual(['geral', 'mont']);
+  });
+
+  it('troca {idade} pela idade de introdução da própria vertente, no formato brasileiro', () => {
+    const idx = indiceComOrientacao(
+      orientacao({
+        porVertente: {
+          Waldorf: { comoParticipar: 'Costuma vir por volta dos {idade} anos.', referencias: [] },
+          Montessori: { comoParticipar: 'Pode ser antes, até aos {idade}.', referencias: [] },
+        },
+      }),
+      { Waldorf: 6.5, Montessori: 4 },
+    );
+    const f = familia({ vertentePrincipal: 'Waldorf', inspiracoes: ['Montessori'] });
+    const r = orientacaoParaFamilia(idx, 'LG.FON.01', f);
+    expect(r?.vertentes.map((v) => v.comoParticipar)).toEqual([
+      'Costuma vir por volta dos 6,5 anos.',
+      'Pode ser antes, até aos 4.',
+    ]);
+  });
+
+  it('a idade aparece mesmo quando a família tem a vertente só como inspiração', () => {
+    const idx = indiceComOrientacao(
+      orientacao({
+        porVertente: {
+          Waldorf: { comoParticipar: 'Por volta dos {idade} anos.', referencias: [] },
+        },
+      }),
+      { Waldorf: 7 },
+    );
+    const f = familia({ vertentePrincipal: 'Montessori', inspiracoes: ['Waldorf'] });
+    expect(orientacaoParaFamilia(idx, 'LG.FON.01', f)?.vertentes[0]?.comoParticipar).toBe(
+      'Por volta dos 7 anos.',
+    );
   });
 });

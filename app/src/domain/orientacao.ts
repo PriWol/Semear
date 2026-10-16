@@ -19,6 +19,20 @@ export interface OrientacaoDaFamilia {
   referencias: Referencia[];
 }
 
+/** 6.5 → "6,5": as idades aparecem no formato brasileiro. */
+export function formatarIdade(idade: number): string {
+  return String(idade).replace('.', ',');
+}
+
+/**
+ * `{idade}` no texto de uma vertente vira a idade de introdução daquela vertente no marco. Assim o texto
+ * não depende do aviso de ritmo estar na tela (ele só aparece para a vertente principal e antes da idade)
+ * e a idade tem uma única fonte, `idadeIntroducao`.
+ */
+function preencherIdade(texto: string, idade: number | undefined): string {
+  return idade === undefined ? texto : texto.replace(/\{idade\}/g, formatarIdade(idade));
+}
+
 /**
  * Referência em ABNT. O título vem entre `*` (itálico) para passar por `textoRico`.
  * Ex.: `MORAIS, Artur Gomes de. *Consciência fonológica*. Belo Horizonte: Autêntica, 2019.`
@@ -34,8 +48,9 @@ export function orientacaoParaFamilia(
   marcoId: string,
   familia: Familia,
 ): OrientacaoDaFamilia | null {
-  const orientacao = idx.marco(marcoId)?.orientacaoPais;
-  if (!orientacao) return null;
+  const marco = idx.marco(marcoId);
+  const orientacao = marco?.orientacaoPais;
+  if (!marco || !orientacao) return null;
 
   const vertentesDaFamilia = [familia.vertentePrincipal, ...familia.inspiracoes];
   const vertentes: OrientacaoDaVertente[] = [];
@@ -46,7 +61,7 @@ export function orientacaoParaFamilia(
     vertentes.push({
       vertente,
       principal: vertente === familia.vertentePrincipal,
-      comoParticipar: texto.comoParticipar,
+      comoParticipar: preencherIdade(texto.comoParticipar, marco.idadeIntroducao[vertente]),
     });
     idsDeReferencia.push(...texto.referencias);
   }
