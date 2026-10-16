@@ -103,8 +103,10 @@ def _manifesto():
 def _registrar(chave, sha):
     man = _manifesto()
     man[chave] = sha
-    with open(MANIFESTO, "w", encoding="utf-8") as f:
+    tmp = MANIFESTO + ".tmp"   # grava inteiro e troca de uma vez: uma queda no meio não deixa o manifesto truncado
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(man, f, indent=1, sort_keys=True, ensure_ascii=False)
+    os.replace(tmp, MANIFESTO)
     print(f"registrado: {chave}")
 
 
@@ -255,13 +257,14 @@ def _para_srgb(im):
                 return ImageCms.profileToProfile(im, origem, ImageCms.createProfile("sRGB"), outputMode="RGB")
         except (ImageCms.PyCMSError, OSError):
             # perfil ilegível: segue como sRGB, que é o que a maioria dos visualizadores supõe
-            print("aviso: perfil ICC ilegível ou não convertido; a imagem segue como sRGB", file=sys.stderr)
+            print(f"aviso: perfil ICC não aplicado (ilegível, ou não combina com o modo {im.mode} da imagem); segue como sRGB", file=sys.stderr)
     return im.convert("RGB")
 
 
 def processar(nome):
     """Reduz ao tamanho de impressão e grava o JPEG tratado (cores fiéis à origem, em sRGB; sem retoque)."""
-    im = _para_srgb(Image.open(baixar(nome)))
+    with Image.open(baixar(nome)) as origem:
+        im = _para_srgb(origem)
     if max(im.size) > LADO_MAX:
         k = LADO_MAX / max(im.size)
         im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
