@@ -454,7 +454,7 @@ def unidade5(L):
         duracao="Dois fins de semana · dois encontros · 20 a 30 minutos. Olhar, misturar amarelos, pintar um vaso de flores.",
         objetivos=["Olhar com calma <i>Girassóis</i>, de Van Gogh, e dizer o que vê.", "Perceber que o amarelo tem muitas versões (mais claro, mais escuro, mais verde, mais laranja).",
                    "Misturar amarelos com um pouquinho de outras cores.", "Pintar um vaso de flores observando flores de verdade.", "Nomear flores e plantas em três idiomas, nos cartões."],
-        repertorio="<b>Obra:</b> Vincent van Gogh (1853–1890), <i>Girassóis</i> (Arles, 1888–89). <b>Palavras:</b> amarelo, vaso, pétala, talo, semente, girassol. "
+        repertorio="<b>Obra:</b> Vincent van Gogh (1853–1890), <i>Girassóis</i> (Arles, agosto de 1888, Neue Pinakothek, Munique). <b>Palavras:</b> amarelo, vaso, pétala, talo, semente, girassol. "
                    "<b>Línguas:</b> <i>sunflower · le tournesol · helianthus</i>; <i>flower · la fleur · flos</i>.",
         materiais="Guache (amarelo, branco, um pouquinho de vermelho, verde e azul), pincel largo e fino, papel grosso, um vaso com flores de verdade (ou uma única flor).",
         vida="Colher ou comprar uma flor, pôr num vaso com água, regar plantas, observar uma planta crescer.",
@@ -478,7 +478,7 @@ def unidade5(L):
               "Deixe de lado a vida difícil do pintor: para esta idade, interessa o que ele fez, as flores e o amarelo.")}"""
     L.add(c, aba="--d-jogos")
 
-    apreciar(L, "vangogh_girassois", "Girassóis", "Van Gogh, 1888–89 · um vaso de flores e muitos amarelos",
+    apreciar(L, "vangogh_girassois", "Girassóis", "Van Gogh, 1888 · um vaso de flores e muitos amarelos",
              ["Quantos girassóis você consegue contar?", "Todos os girassóis são iguais? Qual é o mais claro? E o mais escuro?", "Alguma flor parece velha ou murchando? Qual? E quais têm o miolo marrom-escuro?", "De que cor é o fundo? E a mesa?",
               "Onde dá para ver a pincelada grossa da tinta?"],
              "O quadro tem uma assinatura, “Vincent”, escrita no vaso. Peça que ela procure. Como a tinta está bem grossa, a criança pode perceber os traços do pincel, mesmo na reprodução. "
@@ -761,7 +761,7 @@ def encerramento(L):
     obras = "".join(f"<li>{fontes_v5.credito(n)}</li>" for n in fontes_v5.OBRAS)
     c = f"""<div class="miolo texto">{titulo("Obras e créditos", "Volume 5", 26)}
       <h2>Reproduções de obras de arte</h2>
-      <p style="font-size:9.2pt">Todas as obras são de artistas mortos há mais de 70 anos e estão em domínio público (ou CC0), segundo a fonte indicada em cada crédito: Wikimedia Commons ou acervo do museu. Os <i>Girassóis</i> foram fornecidos pela editora. As imagens foram reduzidas ao tamanho de impressão, sem retoque de cor. Uma fotografia nunca reproduz fielmente as cores de um original.</p>
+      <p style="font-size:9.2pt">Todas as obras são de artistas mortos há mais de 70 anos e estão em domínio público (ou CC0), segundo a fonte indicada em cada crédito: Wikimedia Commons ou acervo do museu. As imagens foram reduzidas ao tamanho de impressão, sem retoque de cor. Uma fotografia nunca reproduz fielmente as cores de um original.</p>
       <ul style="font-size:8.4pt;line-height:1.3">{obras}</ul>
       <h2>Fundamentos</h2><p style="font-size:9.4pt">Apreciação de arte por narração e por observação, com poucas obras e muita atenção (Charlotte Mason, <i>estudo de pintores</i>); processo antes do produto; cores primárias e misturas, modelagem e colagem como atividades de ateliê infantil. Nenhum material reproduz métodos ou produtos comerciais.</p>
       <h2>Ilustrações da coleção</h2><p style="font-size:9.4pt">Potes, pincéis, argilas, papéis, ninfeia, lebre, tufo, círculos e demais desenhos: aquarela digital procedural da coleção. Cartões de cores: textos da coleção. Tipografia: EB Garamond (licença OFL).</p>

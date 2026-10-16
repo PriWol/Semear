@@ -24,6 +24,6 @@ Opção 2, com duas ressalvas: o Instituto de Arte de Chicago e a National Galle
 
 ## Consequências
 - Commons e museus limitam o ritmo de pedidos (erro 429, com `Retry-After`); o download respeita o tempo pedido, e as imagens tratadas ficam no Git (cerca de 1 MB cada).
-- Os *Girassóis* de Van Gogh foram fornecidos pela editora, sem endereço de origem; antes de imprimir, convém registrar o acervo e o endereço de onde o arquivo veio.
+- Arquivo entregue à mão (`envio:`) só vale com acervo e endereço de origem: `verificar` falha sem isso. Os *Girassóis* chegaram assim, sem origem; a imagem enviada era da mesma pintura (Neue Pinakothek), mas a fonte não pôde ser comprovada, então o volume usa a reprodução do Projeto Yorck no Commons, marcada como domínio público.
 - A licença é a que o Commons registrava na data da catalogação; uma mudança posterior no Commons não altera o que já foi catalogado.
 - Mantemos a revisão humana: a dona do produto confere cada reprodução antes de a coleção ser impressa ou vendida.

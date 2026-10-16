@@ -97,7 +97,12 @@ class Utilitarios(unittest.TestCase):
             fontes_v5._da_rede("envio:qualquer")
 
     def test_credito_de_obra_sem_acervo_nao_deixa_buraco(self):
-        c = fontes_v5.credito("vangogh_girassois")
+        antes = dict(fontes_v5.OBRAS)
+        try:
+            fontes_v5.OBRAS["sem_acervo"] = ("envio:sem_acervo", "Autor (1800–1850)", "<i>X</i>", "1840", "", "domínio público")
+            c = fontes_v5.credito("sem_acervo")
+        finally:
+            fontes_v5.OBRAS.clear(); fontes_v5.OBRAS.update(antes)
         self.assertNotIn("None", c)
         self.assertNotIn("..", c)
         self.assertNotIn("  ", c)
