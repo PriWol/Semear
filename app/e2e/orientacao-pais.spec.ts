@@ -95,3 +95,18 @@ test('a linha Operações aparece com texto para os pais e pré-requisito de out
   await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
   await expect(m.locator('.referencias')).toContainText('NUNES, Terezinha; BRYANT, Peter');
 });
+
+test('a linha Sistema de numeração mostra o texto e o aviso de ritmo da pedagogia Waldorf', async ({
+  page,
+}) => {
+  await cadastrarFamiliaECrianca(page);
+  await page.getByRole('link', { name: /Matemática/ }).click();
+  await expect(page.getByRole('heading', { name: /Sistema de numeração/ })).toBeVisible();
+
+  const m = marco(page, 'MA.SND.03');
+  await m.getByText('Para os pais').click();
+  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(m.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
+  // O texto Waldorf remete ao aviso de ritmo, que só aparece porque o marco tem idade de introdução.
+  await expect(m.locator('.para-os-pais-texto')).toContainText('o aviso acima');
+});
