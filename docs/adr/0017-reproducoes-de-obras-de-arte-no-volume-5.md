@@ -11,10 +11,10 @@ dessas pinturas. Dos grandes acervos de acesso aberto, só o Instituto de Arte d
 ## Opções consideradas
 1. **Só ilustrações próprias (aquarela procedural):** sem risco de direitos, mas o volume deixaria de mostrar as obras que é a razão de existir.
 2. **Obras do Wikimedia Commons, só de autores mortos há mais de 70 anos, com licença conferida e SHA-256 registrado:** mesmo padrão do ADR 0011.
-3. **Obras de acervos de museus diretamente:** melhor qualidade em alguns casos, mas hosts bloqueados e termos de uso diferentes a cada acervo.
+3. **Obras de acervos de museus diretamente:** melhor qualidade em alguns casos, mas, como regra geral, hosts bloqueados e termos de uso diferentes a cada acervo. Só dois acervos preenchiam os requisitos (acesso aberto declarado e host liberado no ambiente); os demais ficam de fora.
 
 ## Decisão
-Opção 2, com duas ressalvas: o Instituto de Arte de Chicago e a National Gallery of Art (acesso aberto, CC0 para obras em domínio público) são fontes iguais ao Commons, e um arquivo entregue pela dona do produto também vale, desde que o hash seja registrado e o crédito diga que a origem foi o envio da editora.
+Combinação das opções 2 e 3: o Commons segue como fonte principal e, onde ele falhou ou o museu tem a melhor imagem, entram os dois acervos que declaram acesso aberto (6 das 10 obras vêm do AIC e da NGA, por causa do limite de pedidos do Commons). Duas ressalvas: o Instituto de Arte de Chicago e a National Gallery of Art (acesso aberto, CC0 para obras em domínio público) são aceitos porque publicam as obras em domínio público sob a política de acesso aberto do próprio museu (AIC: Open Access; NGA: CC0), sem exigir cadastro nem contornar limite de uso, e valem como o Commons: e um arquivo entregue pela dona do produto também vale, desde que o hash seja registrado e o crédito diga que a origem foi o envio da editora.
 
 - **Quais obras:** só autores mortos há mais de 70 anos (teste automático em `test_fontes_v5.py`) e imagens que o Commons marca como domínio público ou CC0. Obra ainda sob direitos autorais (por exemplo, as colagens de Matisse) é citada no texto, nunca reproduzida.
 - **Rede:** o download acontece só ao catalogar uma obra (`python3 fontes_v5.py registrar`), fora do app e fora do build dos PDFs. O build usa o JPEG já tratado, versionado em `dominio_publico/v5/`. Nada da família é enviado.
