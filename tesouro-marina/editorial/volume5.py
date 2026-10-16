@@ -414,9 +414,10 @@ def unidade4(L):
              "olhar e conversar", "--d-matematica", w=170, h=100)
 
     apreciar(L, "monet_ninfeias", "Ninfeias", "Monet, 1906 · um lago visto de cima",
-             ["Onde estão as flores? De que cor são?", "O que você acha que são as manchas verdes?", "Dá para ver o céu? E o que mais aparece na água?", "É de manhã, de tarde ou de noite? Como você sabe?"],
-             "Esta é uma das muitas pinturas do lago de ninfeias do jardim de Monet. A água reflete as nuvens, as plantas e a luz, e o pintor quis mostrar tudo isso com manchas. "
-             "Não é preciso decifrar nada: basta olhar e dizer o que se vê.",
+             ["Onde estão as flores? De que cor são? Quantas você acha?", "O que você acha que são as manchas verdes?", "A água parece ter nuvens? Que cores ela tem?", "Procure o nome do pintor e o ano, no canto de baixo.",
+              "É de manhã, de tarde ou de noite? Como você sabe?"],
+             "Esta é uma das muitas pinturas do lago de ninfeias do jardim de Monet. Quase não há margem nem céu: o quadro é a água, com folhas verdes boiando, poucas flores cor-de-rosa e o reflexo azulado das nuvens. "
+             "A assinatura e o ano (1906) estão no canto inferior direito. Não é preciso decifrar nada: basta olhar e dizer o que se vê.",
              "olhar e conversar", "--d-matematica", w=130, h=130)
 
     itens = [(img("jarra", "20mm"), "Molhe o pincel largo e a folha, de leve"),
@@ -556,17 +557,17 @@ def unidade6(L):
     L.add(c, aba="--d-historias")
 
     apreciar(L, "cassatt_banho", "O banho da criança", "Cassatt, 1893 · um colo, uma bacia e um pé",
-             ["Quantas pessoas você vê? O que cada uma está fazendo?", "O que a pessoa grande faz com a mão? E com o outro braço?", "Para onde cada uma olha?", "Que cores se repetem no quadro? Onde estão as listras?",
-              "Você gosta de tomar banho assim? Quem dá banho em você?"],
-             "O quadro foi pintado como se o olhar estivesse um pouco acima da cena, olhando de cima; isso era novidade na pintura da época. Cassatt se inspirou em gravuras japonesas, com cores chapadas e contornos claros. "
-             "Peça que ela mostre, com o próprio corpo, o gesto que vê (segurar, lavar). Depois feche o livro e peça que conte três coisas.",
-             "olhar e conversar", "--d-historias", w=100, h=145)
+             ["Quantas pessoas você vê? O que cada uma está fazendo?", "Onde está a mão da pessoa grande? E o outro braço dela?", "Para onde cada uma olha?", "Onde estão as listras? De que cores elas são?",
+              "Procure a jarra de água. Que desenho ela tem?", "Quem dá banho em você? Como é?"],
+             "O quadro mostra a cena vista um pouco de cima. A pessoa grande segura o pé da criança dentro da bacia, e as duas olham para a água. A criança está sentada no colo, com um pano branco, "
+             "e ao fundo há um papel de parede com flores. Peça que ela mostre, com o próprio corpo, o gesto que vê (segurar, lavar). Depois feche o livro e peça que conte três coisas.",
+             "olhar e conversar", "--d-historias", w=95, h=145)
 
     apreciar(L, "cassatt_poltrona", "Menina na poltrona azul", "Cassatt, 1878 · uma tarde de descanso",
-             ["O que a menina está fazendo? Como ela está sentada?", "Quantas poltronas você vê? De que cor são?", "Tem mais alguém ou algum bicho na sala? Onde?", "Para onde a menina olha? O que você acha que ela está pensando?",
-              "Onde você gosta de se sentar para descansar?"],
-             "Esta obra mostra uma menina sentada de um jeito bem natural, quase deitada na poltrona, como as crianças se sentam quando estão cansadas. Peça que ela imite a postura, rindo. "
-             "Depois procure junto os detalhes: o chão, as outras poltronas e quem mais aparece na sala.",
+             ["O que a menina está fazendo? Como ela está sentada? Onde está a mão dela?", "Quantas poltronas você vê? De que cor são?", "Procure o cachorrinho. Onde ele está? O que faz?", "Que desenhos tem o tecido das poltronas?",
+              "Para onde a menina olha? O que você acha que ela está pensando?", "Onde você gosta de se sentar para descansar?"],
+             "Esta obra mostra uma menina de vestido branco e faixa xadrez, quase deitada na poltrona azul, com a mão atrás da cabeça, como as crianças se sentam quando estão cansadas. Peça que ela imite a postura, rindo. "
+             "Depois procure junto os detalhes: as outras poltronas, o cachorrinho dormindo numa delas, as flores do tecido e a janela clara ao fundo.",
              "olhar e imaginar", "--d-historias", w=170, h=105)
 
     apreciar(L, "cassatt_mae", "Mãe prestes a lavar a filha sonolenta", "Cassatt, 1880 · o colo antes do banho",

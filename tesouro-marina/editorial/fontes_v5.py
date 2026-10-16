@@ -1,9 +1,9 @@
 """
 Reproduções de obras de arte do Volume 5: arquivo de origem, tratamento e crédito.
-As imagens vêm do Wikimedia Commons (https://commons.wikimedia.org). Só entram obras cujo autor morreu há mais de
-70 anos e que o Commons marca como domínio público (ou CC0). O arquivo de origem de cada obra é conferido por
-SHA-256 (dominio_publico/obras.sha256.json); as versões tratadas (JPEG) ficam em dominio_publico/v5 e é com elas que
-os PDFs são gerados, então o build dos PDFs não usa a rede.
+As imagens vêm do Wikimedia Commons (https://commons.wikimedia.org) ou de acervos de museus com acesso aberto (Instituto
+de Arte de Chicago e National Gallery of Art). Só entram obras cujo autor morreu há mais de 70 anos e que a fonte marca como
+domínio público (ou CC0). O arquivo de origem de cada obra é conferido por SHA-256 (dominio_publico/obras.sha256.json);
+as versões tratadas (JPEG) ficam em dominio_publico/v5 e é com elas que os PDFs são gerados, então o build dos PDFs não usa a rede.
 Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | creditos
 """
 import hashlib
@@ -39,13 +39,13 @@ OBRAS = {
                            "Museu Solomon R. Guggenheim, Nova York", "domínio público"),
     "monet_papoulas": ("Claude Monet - Poppy Field - Google Art Project.jpg",
                        "Claude Monet (1840–1926)", "<i>Os coquelicots</i> (Les Coquelicots)", "1873", "Musée d'Orsay, Paris", "domínio público"),
-    "monet_ninfeias": ("Claude Monet - Water Lilies - 1906, Ryerson.jpg",
-                       "Claude Monet (1840–1926)", "<i>Ninfeias</i> (Water Lilies)", "1906", "Instituto de Arte de Chicago", "domínio público"),
+    "monet_ninfeias": ("aic:3c27b499-af56-f0d5-93b5-a7f2f1ad5813",
+                       "Claude Monet (1840–1926)", "<i>Ninfeias</i> (Water Lilies)", "1906", "Instituto de Arte de Chicago", "domínio público (acesso aberto do acervo)"),
     "vangogh_girassois": ("Vincent Willem van Gogh, Dutch - Sunflowers - Google Art Project.jpg",
                           "Vincent van Gogh (1853–1890)", "<i>Girassóis</i> (Sunflowers)", "Arles, janeiro de 1889", "", "domínio público"),
-    "cassatt_banho": ("Mary Cassatt - The Child's Bath - Google Art Project.jpg",
-                      "Mary Cassatt (1844–1926)", "<i>O banho da criança</i> (The Child's Bath)", "1893", "Instituto de Arte de Chicago", "domínio público"),
-    "cassatt_poltrona": ("Mary Cassatt, Little Girl in a Blue Armchair, 1878, NGA 61368.jpg",
+    "cassatt_banho": ("aic:3b885ae0-4d46-5fe4-d70a-00474827f02c",
+                      "Mary Cassatt (1844–1926)", "<i>O banho da criança</i> (The Child's Bath)", "1893", "Instituto de Arte de Chicago", "domínio público (acesso aberto do acervo)"),
+    "cassatt_poltrona": ("nga:6dc9ca49-ea8c-4314-985a-ba2cfc3965cd",
                          "Mary Cassatt (1844–1926)", "<i>Menina na poltrona azul</i> (Little Girl in a Blue Armchair)", "1878",
                          "National Gallery of Art, Washington", "CC0 (acesso aberto do acervo)"),
     "cassatt_mae": ("Mary Cassatt - Mother About to Wash Her Sleepy Child - Google Art Project.jpg",
@@ -54,9 +54,21 @@ OBRAS = {
 }
 
 
+# nº de inventário e página da obra no acervo, para as obras que não vêm do Commons
+REFERENCIAS = {
+    "monet_ninfeias": ("inv. 1933.1157", "https://www.artic.edu/artworks/16568"),
+    "cassatt_banho": ("inv. 1910.2", "https://www.artic.edu/artworks/111442"),
+    "cassatt_poltrona": ("inv. 1983.1.18", "https://www.nga.gov/artworks/61368"),
+}
+
+
 def credito(nome):
     arq, autor, obra, ano, acervo, lic = OBRAS[nome]
     onde = f" {acervo}." if acervo else ""
+    if nome in REFERENCIAS:
+        inv, url = REFERENCIAS[nome]
+        return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: {inv}, {url}. "
+                f"As cores variam de uma reprodução para outra.")
     return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: Wikimedia Commons, <i>File:{arq}</i>. "
             f"As cores variam de uma reprodução para outra.")
 
@@ -95,22 +107,33 @@ def verificar():
     return 0
 
 
-def _da_rede(arquivo):
-    url = "https://upload.wikimedia.org/wikipedia/commons/" + _caminho_commons(arquivo)
-    for _ in range(12):   # o Commons limita o ritmo de pedidos (429): espera o tempo que ele pede e tenta de novo
+def _pedir(url, cabecalhos):
+    for _ in range(12):   # a fonte pode limitar o ritmo de pedidos (429): espera o tempo que ela pede e tenta de novo
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            req = urllib.request.Request(url, headers=cabecalhos)
             with urllib.request.urlopen(req, timeout=180) as r:
                 dados = r.read(LIMITE_BYTES + 1)
             if len(dados) > LIMITE_BYTES:
-                raise ValueError(f"{arquivo}: resposta maior que {LIMITE_BYTES} bytes")
+                raise ValueError(f"{url}: resposta maior que {LIMITE_BYTES} bytes")
             return dados
         except urllib.error.HTTPError as e:
             if e.code != 429:
                 raise
-            # o Commons diz quanto esperar (Retry-After, em segundos); pedir antes disso só renova a espera
+            # a fonte diz quanto esperar (Retry-After, em segundos); pedir antes disso só renova a espera
             time.sleep(int(e.headers.get("Retry-After") or 600) + 15)
-    raise RuntimeError(f"{arquivo}: muitos pedidos recusados (429)")
+    raise RuntimeError(f"{url}: muitos pedidos recusados (429)")
+
+
+def _da_rede(chave):
+    """chave: nome do arquivo no Commons, 'aic:<id da imagem>' ou 'nga:<uuid da imagem>'."""
+    if chave.startswith("aic:"):
+        # IIIF do Instituto de Arte de Chicago (acesso aberto); a barreira do site recusa clientes sem User-Agent de navegador
+        return _pedir(f"https://www.artic.edu/iiif/2/{chave[4:]}/full/1686,/0/default.jpg",
+                      {"User-Agent": "Mozilla/5.0 (compatible; TesouroMarina/0.1; educational; +https://github.com/PriWol/Semear)",
+                       "AIC-User-Agent": "TesouroMarina (educational; https://github.com/PriWol/Semear)"})
+    if chave.startswith("nga:"):
+        return _pedir(f"https://api.nga.gov/iiif/{chave[4:]}/full/!1800,1800/0/default.jpg", {"User-Agent": UA})
+    return _pedir("https://upload.wikimedia.org/wikipedia/commons/" + _caminho_commons(chave), {"User-Agent": UA})
 
 
 def _caminho_commons(arquivo):
