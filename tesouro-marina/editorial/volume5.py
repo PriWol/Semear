@@ -479,10 +479,10 @@ def unidade5(L):
     L.add(c, aba="--d-jogos")
 
     apreciar(L, "vangogh_girassois", "Girassóis", "Van Gogh, 1888 · um vaso de flores e muitos amarelos",
-             ["Quantos girassóis você consegue contar?", "Todos os girassóis são iguais? Qual é o mais claro? E o mais escuro?", "Alguma flor parece velha ou murchando? Qual? E quais têm o miolo marrom-escuro?", "De que cor é o fundo? E a mesa?",
+             ["Quantos girassóis você consegue contar?", "Todos os girassóis são iguais? Qual é o mais claro? E o mais escuro?", "Alguma flor parece velha ou murchando? Qual? E quais têm o miolo vermelho-escuro, cor de vinho?", "De que cor é o fundo? E a mesa?",
               "Onde dá para ver a pincelada grossa da tinta?"],
              "O quadro tem uma assinatura, “Vincent”, escrita no vaso. Peça que ela procure. Como a tinta está bem grossa, a criança pode perceber os traços do pincel, mesmo na reprodução. "
-             "Mostre também, se puder, um girassol de verdade, ao lado do livro, e pergunte em que se parecem e em que são diferentes.",
+             "Três flores têm o miolo vermelho-escuro, e uma, verde e caída perto do vaso, parece murchando. Mostre também, se puder, um girassol de verdade, ao lado do livro, e pergunte em que se parecem e em que são diferentes.",
              "olhar e comparar", "--d-jogos", w=115, h=140)
 
     amarelos = ["amarelo + um pouquinho de branco", "amarelo puro", "amarelo + uma gota de vermelho", "amarelo + uma gota de azul", "amarelo + um toque de verde", "amarelo + uma gota de preto"]
