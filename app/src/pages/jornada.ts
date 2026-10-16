@@ -35,10 +35,10 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
   reabrir = new Set();
 
   /** Bloco recolhido "Para os pais": a tela fica limpa e quem quer ler abre. */
-  const orientacaoDoMarco = (marcoId: string) => {
+  const orientacaoDoMarco = (chave: string, marcoId: string) => {
     const o = orientacaoParaFamilia(ctx.idx, marcoId, familia);
     if (!o) return '';
-    return html`<details class="para-os-pais" data-marco="${marcoId}" ${abertos.has(marcoId) ? 'open' : ''}>
+    return html`<details class="para-os-pais" data-marco="${chave}" ${abertos.has(chave) ? 'open' : ''}>
       <summary>📖 Para os pais</summary>
       <div class="para-os-pais-texto">
         <h3>Por que importa</h3>
@@ -112,7 +112,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                             </p>`
                           : ''
                       }
-                      ${orientacaoDoMarco(s.marco.id)}
+                      ${orientacaoDoMarco(s.chave, s.marco.id)}
                     </div>
                     <div class="estado" role="group" aria-label="Estado de ${s.marco.titulo}">
                       ${ESTADOS.map(
