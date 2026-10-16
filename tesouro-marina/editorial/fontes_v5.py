@@ -4,7 +4,7 @@ As imagens vêm do Wikimedia Commons (https://commons.wikimedia.org). Só entram
 70 anos e que o Commons marca como domínio público (ou CC0). O arquivo de origem de cada obra é conferido por
 SHA-256 (dominio_publico/obras.sha256.json); as versões tratadas (JPEG) ficam em dominio_publico/v5 e é com elas que
 os PDFs são gerados, então o build dos PDFs não usa a rede.
-Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes]
+Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | creditos
 """
 import hashlib
 import io
@@ -157,6 +157,16 @@ def processar(nome):
     return im.size
 
 
+def linhas_creditos():
+    """Linhas da tabela de CREDITOS.md (uma por obra), a partir de OBRAS."""
+    import re
+    linhas = []
+    for nome, (arq, autor, obra, ano, acervo, lic) in OBRAS.items():
+        limpo = re.sub(r"<[^>]+>", lambda m: "*" if m.group(0) in ("<i>", "</i>") else "", obra)
+        linhas.append(f"| `v5/{nome}.jpg` | {limpo}, {autor}, {ano} | {acervo or 'ver legenda do Commons'} | `File:{arq}` | {lic} |")
+    return "\n".join(linhas)
+
+
 if __name__ == "__main__":
     comando = sys.argv[1] if len(sys.argv) > 1 else ""
     nomes = sys.argv[2:] or list(OBRAS)
@@ -165,8 +175,10 @@ if __name__ == "__main__":
     elif comando in ("baixar", "registrar"):
         for n in nomes:
             baixar(n, registrar=(comando == "registrar"))
+    elif comando == "creditos":
+        print(linhas_creditos())
     elif comando == "gerar":
         for n in nomes:
             print(n, processar(n))
     else:
-        sys.exit("uso: python3 fontes_v5.py verificar | baixar | registrar [nomes] | gerar [nomes]")
+        sys.exit("uso: python3 fontes_v5.py verificar | baixar | registrar [nomes] | gerar [nomes] | creditos")

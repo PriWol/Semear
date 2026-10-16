@@ -275,13 +275,15 @@ def unidade2(L):
              "A reprodução desta obra é pequena e foi mantida em baixa resolução; ela não substitui a visita a um museu.",
              "olhar e comparar", "--d-musica", w=150, h=110)
 
+    import math
+    espiral = " ".join(f"L{70 + (2 + 20 * t / 90) * math.cos(t * 6 * math.pi / 90):.1f} {204 + (2 + 20 * t / 90) * math.sin(t * 6 * math.pi / 90):.1f}" for t in range(1, 91))
+    lacos = " ".join(f"L{25 + 160 * t / 120 - 8 * math.sin(t / 120 * 6 * math.pi):.1f} {242 - 8 * math.cos(t / 120 * 6 * math.pi):.1f}" for t in range(1, 121))
     svg = "".join([
         ponto_inicio(25, 74), pontilhado("M25 74 L185 74"),
         ponto_inicio(25, 108), pontilhado("M25 108 q10 -16 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0"),
-        ponto_inicio(25, 150), pontilhado("M25 150 " + " ".join(("l10 -14 l10 14" for _ in range(8)))),
-        ponto_inicio(70, 205), pontilhado("M70 205 " + " ".join(f"L{70 + (2 + 0.18 * t) * __import__('math').cos(t * 0.5) * 3.2 - 6.4:.1f} {205 + (2 + 0.18 * t) * __import__('math').sin(t * 0.5) * 3.2:.1f}" for t in range(1, 90))),
-        ponto_inicio(25, 258), pontilhado("M25 258 " + " ".join(
-            f"L{25 + 160 * t / 120 - 9 * __import__('math').sin(t / 120 * 6 * __import__('math').pi * 1.0):.1f} {258 - 12 * __import__('math').cos(t / 120 * 6 * __import__('math').pi):.1f}" for t in range(1, 121)))])
+        ponto_inicio(25, 150), pontilhado("M25 150 " + " ".join("l10 -14 l10 14" for _ in range(8))),
+        ponto_inicio(72, 204), pontilhado("M72 204 " + espiral),
+        ponto_inicio(25, 234), pontilhado("M25 234 " + lacos)])
     tracado(L, "Linhas que dançam", "seguir com o dedo, depois com o giz de cera", svg, "",
             adulto("traçar",
                    "Cada linha começa no círculo e vai até o fim da página. Primeiro ela segue com o dedo, depois com o giz de cera, devagar. Dê um jeito a cada linha: a reta “anda”, a onda “nada”, o zigue-zague “pula”, a espiral “gira”. "
