@@ -49,12 +49,45 @@ export interface Dominio {
   categorias?: string[];
 }
 
+/** Obra do catálogo de referências bibliográficas (content/referencias.json). Formato ABNT. */
+export interface Referencia {
+  id: string; // ex.: "montessori-mente-absorvente"
+  /** já no formato ABNT: "MONTESSORI, Maria" ou "WISE, Jessie; BAUER, Susan Wise" */
+  autores: string;
+  titulo: string;
+  ano: number;
+  /** local e editora (ex.: "São Paulo: Kirion") ou o meio, quando não é livro */
+  veiculo: string;
+  /** só para fontes de acesso livre e oficiais; livros não levam link */
+  link?: string;
+}
+
+/** O que a vertente da família acrescenta à orientação geral de um marco. */
+export interface OrientacaoVertente {
+  comoParticipar: string;
+  /** ids do catálogo de referências */
+  referencias: string[];
+}
+
+/** Texto pedagógico de um marco para os pais (§ orientação para os pais). */
+export interface OrientacaoPais {
+  porQueImporta: string;
+  comoParticipar: string;
+  sinaisDeAtencao: string;
+  /** ids do catálogo de referências */
+  referencias: string[];
+  /** só as vertentes que têm algo a acrescentar; as demais veem apenas o texto geral */
+  porVertente?: Partial<Record<Vertente, OrientacaoVertente>>;
+}
+
 export interface Marco {
   id: string; // ex.: "LG.FON.04"
   linha: string;
   ordem: number;
   titulo: string;
   descricaoPais: string;
+  /** texto de apoio para os pais, lido sob demanda na jornada; ausente = ainda não escrito (aviso) */
+  orientacaoPais?: OrientacaoPais;
   evidencias: string[];
   idadeTipica: number;
   idadeIntroducao: Partial<Record<Vertente, number>>;
@@ -166,6 +199,7 @@ export interface Conteudo {
   marcos: Marco[];
   atividades: Atividade[];
   livros: Livro[];
+  referencias: Referencia[];
 }
 
 // ---------- Dados da família (ficam no aparelho) ----------

@@ -97,6 +97,7 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
       atividade('atv-fon-2', ['LG.FON.02'], { revisa: ['LG.FON.01'] }),
       atividade('atv-sen-1', ['MA.SEN.01'], { duracaoMin: 15 }),
     ],
+    referencias: [],
     livros: [
       {
         id: 'livro-a',

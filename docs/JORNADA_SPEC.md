@@ -179,6 +179,8 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 > **Por que o Unschooling ficou de fora:** ele não usa sequência, sondagem nem sessões planejadas, que são justamente o que o Semear faz. Famílias *unschoolers* ainda podem usar o app como registro (marcar marcos observados), mas não vamos desenhar o produto para elas.
 
+> **Orientação para os pais:** cada marco pode trazer um texto pedagógico recolhido na tela ("📖 Para os pais"), com o geral, o que a vertente principal e as inspirações da família acrescentam, e referências bibliográficas em ABNT. Não bloqueia nada: marco sem texto só gera aviso na cobertura do conteúdo.
+
 > Os marcos extras usam o mesmo formato dos marcos comuns. A única diferença é o campo `vertentes`, que indica em quais vertentes eles aparecem.
 
 ---
@@ -202,6 +204,11 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
   "vertentes": null,                      // null = comum a todas; ["Montessori"] = marco extra
   "idiomas": null,                        // só no domínio LI: ["en","fr","la"]
   "bncc": [],                             // códigos da BNCC: OBRIGATÓRIO em LG e MA (portfólio, §8)
+  "orientacaoPais": {                     // opcional: texto de apoio, lido sob demanda ("Para os pais")
+    "porQueImporta": "...", "comoParticipar": "...", "sinaisDeAtencao": "...",
+    "referencias": ["id-em-referencias.json"],
+    "porVertente": { "Waldorf": { "comoParticipar": "...", "referencias": [] } }  // só quem tem algo a acrescentar
+  },
   "autoria": { "origem": "ia" | "humano", "revisadoPor": "...", "revisadoEm": "2026-10-20", "status": "rascunho" | "revisado" | "publicado" }
 }
 ```

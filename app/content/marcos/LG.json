@@ -10,7 +10,31 @@
       "idadeTipica": 3.5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Gostar de rimas é o primeiro sinal de que a criança presta atenção aos **sons da fala**, e não só ao que as palavras significam. Essa atenção aos sons (a *consciência fonológica*) está entre as habilidades que mais ajudam a prever como será a alfabetização.",
+        "comoParticipar": "Recitem parlendas, cantigas e quadrinhas (“Batatinha quando nasce…”) e pare antes da última palavra para ela completar. Leia em voz alta livros com rimas e inventem rimas bobas juntos. O objetivo é se divertir com o som, sem corrigir nem testar.",
+        "sinaisDeAtencao": "Por volta dos 3 a 4 anos, a maioria das crianças reage a rimas e completa versos conhecidos. Se aos 5 anos ela ainda não completa nenhum verso familiar, mesmo com muita exposição, vale conversar com a escola ou o pediatra e checar a audição. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["nelp-alfabetizacao-inicial", "bncc", "morais-consciencia-fonologica"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Antes das letras, prepare o ambiente de linguagem: converse muito, cante, recite e ouça com atenção o que a criança diz. A linguagem oral rica é a base de tudo o que vem depois.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "A linguagem chega pela imitação e pelo ritmo: versos de roda, canções de dedos e rimas com gestos, repetidos todos os dias do mesmo jeito. A criança vive a rima com o corpo e a voz, sem ser testada.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "A criança pequena gosta de repetir e decorar, e a tradição clássica aproveita isso: recitem parlendas e poemas curtos todos os dias, até saberem de cor.",
+            "referencias": ["sayers-lost-tools"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Faça da poesia parte do dia: leia ou recite um poema curto e bonito, com frequência, e deixe a criança repetir os versos de que gostou, sem cobrar. Poucos minutos de atenção plena valem mais que uma sessão longa.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.FON.02",
@@ -22,7 +46,31 @@
       "idadeTipica": 4,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Aqui a criança deixa de apenas gostar de rimas e passa a **comparar o final de duas palavras**. É um primeiro olhar para o som da palavra em si, separado do significado: PÃO e MÃO rimam, mas uma não tem nada a ver com a outra.",
+        "comoParticipar": "Brinquem de “rima ou não rima?”: diga pares (PÃO–MÃO, GATO–PATO, CASA–BOLA) e deixe ela responder. Depois inverta: ela inventa o par e você adivinha. Comece com pares bem diferentes e, se errar, apenas repita as duas palavras devagar. Não peça explicações.",
+        "sinaisDeAtencao": "Aos 4 anos é comum acertar só com ajuda ou confundir pares parecidos. Se aos 5 ou 6 anos ela ainda não separa o que rima do que não rima, apesar do jogo repetido, vale conversar com a escola e checar a audição. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["morais-consciencia-fonologica", "nelp-alfabetizacao-inicial"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Faça o jogo com objetos reais: pegue dois e diga seus nomes devagar, enfatizando os sons; a criança diz se rimam. Ainda sem mostrar letras.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Continue com versos e cantigas em que as rimas aparecem no ritmo. A análise consciente (“essas duas rimam?”) tende a ficar para a idade escolar; se a criança já gosta de apontar rimas por conta própria, deixe brincar, sem transformar em tarefa.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Depois que o poema estiver sabido de cor, pergunte quais palavras rimam. A rima ajuda a memória, e a conversa sobre ela nasce do que já foi decorado.",
+            "referencias": ["sayers-lost-tools"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Leia poesia com rimas e, de vez em quando, pare e deixe a criança dizer a palavra que rima, como parte natural da leitura, em momentos curtos.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.FON.03",
@@ -34,7 +82,31 @@
       "idadeTipica": 4.5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "A sílaba é a parte da fala que a criança percebe mais cedo. Separar a palavra em pedaços é a base para ler e escrever, e acompanha o que as pesquisas descrevem na escrita infantil: muitas crianças passam por uma fase em que usam **uma letra para cada sílaba** (a hipótese silábica).",
+        "comoParticipar": "Bata palmas ou dê um passo por sílaba, começando pelo nome da criança (A-NA, MA-RI-A) e pelos nomes da família. Depois, frutas, bichos e brinquedos. Pergunte “quantos pedaços?” e conte junto. Não é preciso escrever nada.",
+        "sinaisDeAtencao": "No começo, palavras longas costumam ser difíceis. Se aos 5 ou 6 anos ela ainda não consegue bater as sílabas de palavras curtas depois de semanas de brincadeira, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["morais-consciencia-fonologica", "ferreiro-teberosky-psicogenese"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Use objetos pequenos e cartas de figuras: diga o nome com voz clara, separando em pedaços, e só depois peça que ela mesma separe e conte.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "O ritmo da fala já ensina as sílabas: nomes e versos ditos com palmas, passos ou batidas na roda. A criança sente a divisão da palavra no corpo antes de pensar nela.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Esse trabalho prepara o ensino sistemático dos sons e das letras, que a tradição clássica costuma começar cedo e com ordem fixa.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Brinque de forma curta e alegre com coisas reais da vida e da natureza: nomes de aves, flores e bichos vistos no passeio, batidos em sílabas.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     },
     {
       "id": "LG.FON.04",
@@ -48,7 +120,27 @@
         "Waldorf": 6.5
       },
       "preRequisitos": ["LG.FON.03"],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Perceber que BOLA e BOTA começam com o mesmo pedaço é o que, mais adiante, permite ligar o **som** à **letra** que o representa. Em português, a sílaba costuma ser a unidade em que a criança consegue refletir antes de chegar aos sons isolados.",
+        "comoParticipar": "Jogue “quem começa igual?”: mostre três figuras (BOLA, BOTA, GATO) e pergunte qual não combina. Peça “diga outra palavra que começa com BO”. Use os nomes da família, alongue a sílaba ao falar (“BOOO-la”) e deixe a criança também desafiar você.",
+        "sinaisDeAtencao": "Aos 5 anos muitas crianças ainda hesitam; é esperado. Se por volta dos 6 ou 7 anos a dificuldade com rimas e sílabas persiste, junto com dificuldade de aprender os nomes das letras, vale procurar a escola e um fonoaudiólogo, porque essas dificuldades costumam aparecer antes de dificuldades de leitura. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["morais-consciencia-fonologica", "soares-alfabetizacao-metodos"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Use os jogos de sons: “Eu vejo uma coisa que começa com BO…”, com objetos reais. As letras de lixa entram depois, quando a criança já separa bem os sons.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos 6,5 anos, como o aviso acima indica. Até lá, a criança vive os sons pelos versos, pelo canto e pelo movimento; se estiver curiosa, brinque, sem tratar como tarefa.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Monte listas de palavras que começam com a mesma sílaba e recitem juntos. Isso prepara a leitura sistemática, ligando sílabas a letras em ordem.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     },
     {
       "id": "LG.FON.05",
@@ -62,7 +154,27 @@
         "Waldorf": 7
       },
       "preRequisitos": ["LG.FON.04"],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Tirar, trocar ou juntar sílabas (SAPATO sem SA → PATO) mostra que a criança já trata as sílabas como **peças que ela pode mover**, e não só ouvir. Essa flexibilidade sustenta, depois, o juntar e separar sons para ler e escrever.",
+        "comoParticipar": "Proponha desafios orais curtos: “diga CAMA sem CA”, “junte BO e LA”, “troque o MA de MALA por SA”. Use peças que ela possa mover (fichas, copos ou blocos, um por sílaba) para ver o que acontece. Poucos desafios por vez, com ar de brincadeira e sem placar.",
+        "sinaisDeAtencao": "Este marco costuma ser difícil. Se ela travar ou se frustrar, volte ao marco anterior: voltar não é retroceder. Se por volta dos 6 ou 7 anos ela não consegue juntar sílabas faladas, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["morais-consciencia-fonologica"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Dê objetos e fichas para manipular, uma ficha por sílaba. O movimento da mão ajuda a pensar: a criança vê e toca a palavra se desmontar e se montar.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Esse tipo de manipulação é trabalho de idade escolar, por volta dos 7 anos, como o aviso acima indica. Antes disso, versos com palavras inventadas e jogos de troca de sons, na roda, já preparam o ouvido.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Desmontar e montar palavras prepara o estudo da língua como um sistema de partes e regras, que mais tarde a gramática formaliza.",
+            "referencias": ["sayers-lost-tools"]
+          }
+        }
+      }
     },
     {
       "id": "LG.FON.06",
@@ -76,7 +188,31 @@
         "Waldorf": 7
       },
       "preRequisitos": ["LG.FON.04", "LG.LET.03"],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Saber que FACA começa com /f/ é o salto da sílaba para o **som isolado**. Como o alfabeto do português representa sons, ligar o som à letra é o coração da alfabetização.",
+        "comoParticipar": "Fale o **som**, não o nome da letra (/f/, e não “efe”). Comece pelos sons que dá para alongar (ffff, ssss, mmmm) e só depois pelos que não se alongam (/p/, /t/). Jogue “eu vejo algo que começa com /m/”. Só então ligue o som à letra, com letras móveis ou de lixa.",
+        "sinaisDeAtencao": "Muitas crianças só chegam a este marco entre 6 e 7 anos, o que está dentro do esperado. Se, depois de um ano de ensino sistemático, ela ainda não separa o som inicial das palavras, vale conversar com a escola e com um fonoaudiólogo. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "soares-alfabetizacao-metodos",
+          "morais-consciencia-fonologica",
+          "nelp-alfabetizacao-inicial"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Depois dos jogos de sons, a criança toca a letra de lixa enquanto fala o som, juntando o ouvido, o tato e a visão.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, as letras costumam nascer de imagens e histórias, e a atenção aos sons vem junto. Como o aviso acima indica, isso é pensado para por volta dos 7 anos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Ligue cada som à letra numa ordem fixa e revise todos os dias, em lições curtas. É a fase de aprender o “código” do alfabeto de forma sistemática.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     },
     {
       "id": "LG.FON.07",
@@ -90,7 +226,31 @@
         "Waldorf": 7.5
       },
       "preRequisitos": ["LG.FON.06"],
-      "bncc": []
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Separar /g/ /a/ /t/ /o/ é o nível mais fino da consciência dos sons, e o que mais ajuda a **escrever palavras novas**. Corresponde ao que as pesquisas chamam de hipótese alfabética: a criança percebe que cada letra representa um som menor que a sílaba.",
+        "comoParticipar": "Comece com palavras curtas, de 2 ou 3 sons (SOL, UVA, MAR). Use uma ficha ou botão para cada som: a criança desliza uma ficha a cada som que fala. Você mostra primeiro, ela imita, depois ela tenta sozinha. Só então monte a palavra com letras móveis.",
+        "sinaisDeAtencao": "Para muitas crianças, este marco só se firma junto com a escrita, então não tenha pressa. Se aos 7 ou 8 anos ela ainda não consegue separar os sons de palavras curtas, mesmo com ensino sistemático, procure a escola e um fonoaudiólogo. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "ferreiro-teberosky-psicogenese",
+          "morais-consciencia-fonologica",
+          "soares-alfabetizacao-metodos"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Escrever vem antes de ler: com o alfabeto móvel, a criança monta a palavra som a som, sem se preocupar com a ortografia certa.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, a análise de sons em palavras costuma vir por volta de 7,5 anos, como o aviso acima indica, depois que as letras já foram vividas por imagens e histórias.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Soletrar e separar sons faz parte do ensino sistemático dos sons e das letras, em lições curtas e diárias.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
     }
   ]
 }

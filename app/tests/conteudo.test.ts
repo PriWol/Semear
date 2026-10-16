@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { validarConteudo } from '../src/domain/conteudo';
 import { carregarConteudo } from '../src/conteudo';
+import type { OrientacaoPais, Referencia } from '../src/domain/tipos';
 import { atividade, conteudoBase, marco } from './fabricas';
 
 describe('conteúdo real (app/content)', () => {
@@ -8,6 +9,11 @@ describe('conteúdo real (app/content)', () => {
   it('não tem erros de validação', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
+  });
+  it('a linha de Consciência fonológica tem orientação para os pais em todos os marcos', () => {
+    const marcos = carregarConteudo().marcos.filter((m) => m.linha === 'LG.FON');
+    expect(marcos.length).toBeGreaterThan(0);
+    for (const m of marcos) expect(m.orientacaoPais, m.id).toBeDefined();
   });
   it('tem as atividades de exemplo publicadas', () => {
     const ids = carregarConteudo().atividades.map((a) => a.id);
@@ -116,5 +122,105 @@ describe('validarConteudo', () => {
       const a = atividade('m', [], { ...base, materialImpresso: m });
       expect(validarConteudo(conteudoBase({ atividades: [a] })).erros).toHaveLength(1);
     }
+  });
+});
+
+describe('validarConteudo: orientação para os pais e referências', () => {
+  const referencia = (id: string, extra: Partial<Referencia> = {}): Referencia => ({
+    id,
+    autores: 'AUTORA, Ana',
+    titulo: 'Obra',
+    ano: 2000,
+    veiculo: 'São Paulo: Editora',
+    ...extra,
+  });
+  const orientacao = (extra: Partial<OrientacaoPais> = {}): OrientacaoPais => ({
+    porQueImporta: 'a',
+    comoParticipar: 'b',
+    sinaisDeAtencao: 'c',
+    referencias: ['r1'],
+    ...extra,
+  });
+  const comOrientacao = (o: OrientacaoPais, referencias = [referencia('r1')]) =>
+    conteudoBase({
+      marcos: [marco('LG.FON.01', 1, { orientacaoPais: o })],
+      atividades: [], // as de conteudoBase citam marcos que este teste não declara
+      referencias,
+    });
+
+  it('orientação completa e referência existente são válidas', () => {
+    const { erros, avisos } = validarConteudo(comOrientacao(orientacao()));
+    expect(erros).toEqual([]);
+    expect(avisos.some((a) => a.includes('LG.FON.01') && a.includes('orientação'))).toBe(false);
+  });
+
+  it('marco sem orientação para os pais é só aviso', () => {
+    const { erros, avisos } = validarConteudo(conteudoBase());
+    expect(erros).toEqual([]);
+    expect(avisos).toContain('Marco LG.FON.01: ainda sem orientação para os pais');
+  });
+
+  it('acusa referência citada que não existe no catálogo', () => {
+    const c = comOrientacao(orientacao({ referencias: ['nao-existe'] }));
+    expect(validarConteudo(c).erros).toContain(
+      'Marco LG.FON.01: referência "nao-existe" não existe no catálogo',
+    );
+  });
+
+  it('acusa referência inexistente também dentro do texto de uma vertente', () => {
+    const c = comOrientacao(
+      orientacao({
+        porVertente: { Waldorf: { comoParticipar: 'x', referencias: ['nao-existe'] } },
+      }),
+    );
+    expect(validarConteudo(c).erros).toContain(
+      'Marco LG.FON.01: referência "nao-existe" não existe no catálogo',
+    );
+  });
+
+  it('acusa vertente desconhecida (dado de fora é validado)', () => {
+    const o = orientacao({
+      porVertente: { Esotérica: { comoParticipar: 'x', referencias: [] } },
+    } as unknown as Partial<OrientacaoPais>);
+    expect(validarConteudo(comOrientacao(o)).erros).toContain(
+      'Marco LG.FON.01: vertente "Esotérica" desconhecida na orientação para os pais',
+    );
+  });
+
+  it('acusa texto vazio na orientação', () => {
+    const c = comOrientacao(orientacao({ comoParticipar: '  ' }));
+    expect(validarConteudo(c).erros).toContain(
+      'Marco LG.FON.01: orientação para os pais com "comoParticipar" vazio',
+    );
+  });
+
+  it('acusa id de referência repetido', () => {
+    const c = comOrientacao(orientacao(), [referencia('r1'), referencia('r1')]);
+    expect(validarConteudo(c).erros).toContain('Referência com id repetido: r1');
+  });
+
+  it('acusa referência com dados incompletos ou ano inválido', () => {
+    const ruins = [
+      referencia('r1', { autores: '' }),
+      referencia('r1', { titulo: ' ' }),
+      referencia('r1', { veiculo: '' }),
+      referencia('r1', { ano: 20 }),
+    ];
+    for (const r of ruins) {
+      expect(
+        validarConteudo(comOrientacao(orientacao(), [r])).erros,
+        JSON.stringify(r),
+      ).toHaveLength(1);
+    }
+  });
+
+  it('só aceita link https (o link vira href na tela)', () => {
+    const ruins = ['javascript:alert(1)', 'http://exemplo.gov.br', 'exemplo.gov.br'];
+    for (const link of ruins) {
+      const c = comOrientacao(orientacao(), [referencia('r1', { link })]);
+      expect(validarConteudo(c).erros, link).toHaveLength(1);
+    }
+    const ok = comOrientacao(orientacao(), [referencia('r1', { link: 'https://exemplo.gov.br' })]);
+    expect(validarConteudo(ok).erros).toEqual([]);
   });
 });
