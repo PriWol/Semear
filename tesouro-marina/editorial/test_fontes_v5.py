@@ -178,7 +178,7 @@ class PedirComLimite(unittest.TestCase):
         self.assertEqual(abre.call_count, 12)
 
     def test_espera_acumulada_tem_orcamento(self):
-        # cada espera vale ESPERA_MAX + 15; três seguidas passam de ESPERA_TOTAL (2 h) e o pedido desiste antes da 3.ª
+        # cada espera vale ESPERA_MAX + 15 (3615 s); duas já passam de ESPERA_TOTAL (2 h), então o pedido dorme uma vez e desiste antes da 2.ª
         with mock.patch("fontes_v5.urllib.request.urlopen", side_effect=lambda *a, **k: (_ for _ in ()).throw(self._erro(429, 99999))) as abre, \
                 mock.patch("fontes_v5.time.sleep") as dorme:
             with self.assertRaisesRegex(RuntimeError, "espera acumulada"):
