@@ -30,6 +30,7 @@ Opção 3, mais as mudanças de modelo abaixo.
   Só no modo "equilibrado": com linhas de foco escolhidas à mão, nada é acrescentado. O "Trocar" percorre as outras complementares.
 - **Catálogo** `app/content/tesouro.json`: volumes, arquivo e unidades com páginas. Um teste confere que cada
   `materialImpresso` aponta para uma unidade do catálogo.
+- **Biblioteca com os volumes 1 a 4:** todos aparecem na Biblioteca e são baixados no deploy (cerca de 110 MB de PDFs `*-tela`). Só o Volume 4 tem atividades ligadas (piloto); os demais ficam disponíveis para consulta.
 - **Site:** o workflow `publicar-site.yml` baixa, para `dist/tesouro/`, os PDFs `*-tela` listados no catálogo,
   a partir da Release pública `tesouro-marina`, e confere o cabeçalho `%PDF-`. O service worker não os guarda
   no cache offline nem responde por eles (`navigateFallbackDenylist`). É preciso estar online ou ter baixado o arquivo.
@@ -49,4 +50,5 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - Privacidade inalterada: nenhum dado da família sai do aparelho, e o PDF vem do mesmo domínio do app.
 - O site só republica quando `app/` muda: se um PDF mudar na Release (paginação, conteúdo), rode o workflow "Publicar site" à mão (`workflow_dispatch`) e atualize o catálogo.
 - O catálogo é mantido à mão neste piloto; se os volumes mudarem de paginação, atualize o catálogo e rode `npm run check`.
+- Se a criança não tem atividade da jornada disponível, a sessão pode ser só a complementar (a educadora continua podendo trocar ou remover). Atividade com `idioma` nunca é complementar.
 - Atividades complementares ainda não têm "tema"; a escolha usa idade, vertente e novidade.

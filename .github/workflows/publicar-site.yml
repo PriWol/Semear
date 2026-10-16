@@ -45,6 +45,8 @@ jobs:
         run: |
           mkdir -p dist/tesouro
           for arquivo in $(node -e "for (const v of require('./content/tesouro.json').volumes) console.log(v.arquivo.replace('tesouro/', ''))"); do
+            # O nome vem do catálogo: só nome simples de PDF, nunca caminho (../) nem espaço.
+            echo "$arquivo" | grep -Eq '^[A-Za-z0-9._-]+\.pdf$' && [ "${arquivo#*..}" = "$arquivo" ]
             curl --fail --silent --show-error --location --retry 3 \
               --output "dist/tesouro/$arquivo" \
               "https://github.com/${{ github.repository }}/releases/download/tesouro-marina/$arquivo"

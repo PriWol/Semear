@@ -138,15 +138,18 @@ export function complementares(
   idade: number,
   recentes: Set<string>,
 ): Escolha[] {
-  return idx
-    .complementares()
-    .filter((a) => idade >= a.idade[0] && idade <= a.idade[1])
-    .map((atividade) => ({
-      atividade,
-      pista: PISTA_COMPLEMENTAR,
-      ...pontuar(atividade, familia, idade, recentes),
-    }))
-    .sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id));
+  return (
+    idx
+      .complementares()
+      // Atividade de idioma pertence a uma trilha de Línguas (com jornada), nunca é complementar.
+      .filter((a) => a.idioma === undefined && idade >= a.idade[0] && idade <= a.idade[1])
+      .map((atividade) => ({
+        atividade,
+        pista: PISTA_COMPLEMENTAR,
+        ...pontuar(atividade, familia, idade, recentes),
+      }))
+      .sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id))
+  );
 }
 
 export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): PropostaSessao {
