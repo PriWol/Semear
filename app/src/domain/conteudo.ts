@@ -196,8 +196,10 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     if (ordens.has(m.ordem)) erros.push(`Linha ${m.linha}: ordem ${m.ordem} repetida (${m.id})`);
     ordens.add(m.ordem);
     ordensPorLinha.set(m.linha, ordens);
-    if (m.orientacaoPais) validarOrientacao(m, m.orientacaoPais, idx, erros);
-    else avisos.push(`Marco ${m.id}: ainda sem orientação para os pais`);
+    // Dado de fora: o JSON pode não ter o campo, apesar do tipo.
+    const orientacao = m.orientacaoPais as OrientacaoPais | undefined;
+    if (orientacao) validarOrientacao(m, orientacao, idx, erros);
+    else erros.push(`Marco ${m.id}: falta a orientação para os pais (obrigatória em todo marco)`);
     for (const p of m.preRequisitos) {
       if (p === m.id) erros.push(`Marco ${m.id} é pré-requisito de si mesmo`);
       else if (!idx.marco(p)) avisos.push(`Marco ${m.id}: pré-requisito ${p} ainda não existe`);

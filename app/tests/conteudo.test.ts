@@ -10,14 +10,6 @@ describe('conteúdo real (app/content)', () => {
     const { erros } = validarConteudo(carregarConteudo());
     expect(erros).toEqual([]);
   });
-  it('as linhas com marcos escritos têm orientação para os pais em todos os marcos', () => {
-    // LG.FON e MA.SEN estão completas; as demais linhas ainda não têm marcos.
-    for (const linha of ['LG.FON', 'MA.SEN']) {
-      const marcos = carregarConteudo().marcos.filter((m) => m.linha === linha);
-      expect(marcos.length, linha).toBeGreaterThan(0);
-      for (const m of marcos) expect(m.orientacaoPais, m.id).toBeDefined();
-    }
-  });
   it('tem as atividades de exemplo publicadas', () => {
     const ids = carregarConteudo().atividades.map((a) => a.id);
     expect(ids).toEqual(expect.arrayContaining(['atv-caca-silabas', 'atv-feira-numeros']));
@@ -152,15 +144,15 @@ describe('validarConteudo: orientação para os pais e referências', () => {
     });
 
   it('orientação completa e referência existente são válidas', () => {
-    const { erros, avisos } = validarConteudo(comOrientacao(orientacao()));
-    expect(erros).toEqual([]);
-    expect(avisos.some((a) => a.includes('LG.FON.01') && a.includes('orientação'))).toBe(false);
+    expect(validarConteudo(comOrientacao(orientacao())).erros).toEqual([]);
   });
 
-  it('marco sem orientação para os pais é só aviso', () => {
-    const { erros, avisos } = validarConteudo(conteudoBase());
-    expect(erros).toEqual([]);
-    expect(avisos).toContain('Marco LG.FON.01: ainda sem orientação para os pais');
+  it('acusa marco sem orientação para os pais (obrigatória em todo marco)', () => {
+    const c = conteudoBase({ atividades: [] });
+    c.marcos = [marco('LG.FON.01', 1, { orientacaoPais: undefined })];
+    expect(validarConteudo(c).erros).toContain(
+      'Marco LG.FON.01: falta a orientação para os pais (obrigatória em todo marco)',
+    );
   });
 
   it('acusa referência citada que não existe no catálogo', () => {

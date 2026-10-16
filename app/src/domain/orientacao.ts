@@ -28,7 +28,7 @@ export function formatarReferencia(r: Referencia): string {
   return r.link ? `${base} Disponível em: ${r.link}.` : base;
 }
 
-/** null = o marco não existe ou ainda não tem orientação escrita (a tela não mostra nada). */
+/** null = o marco não existe (a tela não mostra nada). A orientação é obrigatória em todo marco (ADR 0016). */
 export function orientacaoParaFamilia(
   idx: IndiceConteudo,
   marcoId: string,

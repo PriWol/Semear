@@ -14,6 +14,13 @@ export function marco(id: string, ordem: number, extra: Partial<Marco> = {}): Ma
     idadeIntroducao: {},
     preRequisitos: [],
     bncc: [],
+    // Todo marco precisa de orientação para os pais; os testes usam uma mínima e válida.
+    orientacaoPais: {
+      porQueImporta: 'Porque sim.',
+      comoParticipar: 'Brinquem juntos.',
+      sinaisDeAtencao: 'Converse com a escola.',
+      referencias: [],
+    },
     ...extra,
   };
 }
