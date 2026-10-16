@@ -1,4 +1,4 @@
-# 0016. Orientação para os pais é obrigatória em todo marco
+# 0017. Orientação para os pais é obrigatória em todo marco
 
 - **Status:** Aceito. Complementa o ADR 0005.
 - **Data:** 2026-10-16

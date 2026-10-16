@@ -21,6 +21,7 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0013](0013-familia-de-exemplo-com-marcador-por-registro.md) | Família de exemplo com marcador por registro | Aceito |
 | [0014](0014-direcao-visual-caderno-de-botanica.md) | Direção visual "Caderno de botânica" e tokens compartilhados | Aceito |
 | [0015](0015-tesouro-na-biblioteca-do-app-e-atividades-complementares.md) | Tesouro na biblioteca do app e atividades complementares | Aceito |
-| [0016](0016-orientacao-para-os-pais-obrigatoria-em-todo-marco.md) | Orientação para os pais é obrigatória em todo marco | Aceito |
+| [0016](0016-acervo-gratuito-catalogo-offline.md) | Acervo gratuito como catálogo curado offline | Aceito |
+| [0017](0017-orientacao-para-os-pais-obrigatoria-em-todo-marco.md) | Orientação para os pais é obrigatória em todo marco | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
