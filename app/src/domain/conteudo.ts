@@ -1,5 +1,18 @@
 // Índice e validação do conteúdo curado. Funções puras: recebem o conteúdo já carregado.
-import type { Atividade, Conteudo, Dominio, Folha, Linha, Livro, Marco } from './tipos';
+import {
+  VERTENTES,
+  type Atividade,
+  type Conteudo,
+  type Dominio,
+  type Folha,
+  type Linha,
+  type Livro,
+  type Marco,
+  type OrientacaoPais,
+  type OrientacaoVertente,
+  type Vertente,
+  type Referencia,
+} from './tipos';
 
 export interface IndiceConteudo {
   conteudo: Conteudo;
@@ -17,6 +30,7 @@ export interface IndiceConteudo {
   /** atividades publicadas cujos marcos principais estão na linha */
   atividadesDaLinha(linhaId: string): Atividade[];
   livro(id: string): Livro | undefined;
+  referencia(id: string): Referencia | undefined;
 }
 
 export function linhaDoMarco(marcoId: string): string {
@@ -45,6 +59,7 @@ export function criarIndice(conteudo: Conteudo): IndiceConteudo {
   const publicadas = conteudo.atividades.filter((a) => a.autoria.status === 'publicado');
   const atividades = new Map(conteudo.atividades.map((a) => [a.id, a]));
   const livros = new Map(conteudo.livros.map((l) => [l.id, l]));
+  const referencias = new Map(conteudo.referencias.map((r) => [r.id, r]));
 
   return {
     conteudo,
@@ -59,6 +74,7 @@ export function criarIndice(conteudo: Conteudo): IndiceConteudo {
     atividadesDaLinha: (linhaId) =>
       publicadas.filter((a) => a.marcos.some((m) => linhaDoMarco(m) === linhaId)),
     livro: (id) => livros.get(id),
+    referencia: (id) => referencias.get(id),
   };
 }
 
@@ -93,6 +109,71 @@ function validarComplementar(a: Atividade, idx: IndiceConteudo, erros: string[])
   }
 }
 
+const CAMPOS_DA_ORIENTACAO = ['porQueImporta', 'comoParticipar', 'sinaisDeAtencao'] as const;
+
+/** Orientação para os pais: texto preenchido, vertentes conhecidas e referências que existem. */
+function validarOrientacao(
+  m: Marco,
+  o: OrientacaoPais,
+  idx: IndiceConteudo,
+  erros: string[],
+): void {
+  for (const campo of CAMPOS_DA_ORIENTACAO) {
+    if (typeof o[campo] !== 'string' || o[campo].trim() === '')
+      erros.push(`Marco ${m.id}: orientação para os pais com "${campo}" vazio`);
+  }
+  // Dado de fora: sem a lista, a tela da jornada quebraria ao montar as referências.
+  if (!Array.isArray(o.referencias))
+    erros.push(`Marco ${m.id}: orientação para os pais com "referencias" que não é uma lista`);
+  const citadas = Array.isArray(o.referencias) ? [...o.referencias] : [];
+  for (const [vertente, texto] of Object.entries(o.porVertente ?? {})) {
+    if (!(VERTENTES as readonly string[]).includes(vertente)) {
+      erros.push(`Marco ${m.id}: vertente "${vertente}" desconhecida na orientação para os pais`);
+      continue;
+    }
+    const t = texto as OrientacaoVertente | null;
+    if (typeof t !== 'object' || t === null) {
+      erros.push(`Marco ${m.id}: texto da vertente ${vertente} inválido`);
+      continue;
+    }
+    if (typeof t.comoParticipar !== 'string' || t.comoParticipar.trim() === '')
+      erros.push(`Marco ${m.id}: texto da vertente ${vertente} com "comoParticipar" vazio`);
+    if (
+      typeof t.comoParticipar === 'string' &&
+      t.comoParticipar.includes('{idade}') &&
+      m.idadeIntroducao[vertente as Vertente] === undefined
+    )
+      erros.push(
+        `Marco ${m.id}: texto da vertente ${vertente} usa {idade}, mas o marco não tem idadeIntroducao dessa vertente`,
+      );
+    if (Array.isArray(t.referencias)) citadas.push(...t.referencias);
+    else
+      erros.push(
+        `Marco ${m.id}: texto da vertente ${vertente} com "referencias" que não é uma lista`,
+      );
+  }
+  for (const id of new Set(citadas)) {
+    if (!idx.referencia(id)) erros.push(`Marco ${m.id}: referência "${id}" não existe no catálogo`);
+  }
+}
+
+/**
+ * Dado de fora: confere o formato antes de usar. O link hoje aparece só como texto na tela, mas aceitamos
+ * apenas https para que possa virar `href` sem risco (`javascript:` e similares ficam de fora).
+ */
+function validarReferencia(r: Referencia, erros: string[]): void {
+  const vazio = (t: unknown) => typeof t !== 'string' || t.trim() === '';
+  if (vazio(r.autores) || vazio(r.titulo) || vazio(r.veiculo))
+    erros.push(`Referência ${r.id}: autores, título e veículo são obrigatórios`);
+  // `*` vira itálico em textoRico e deformaria o ABNT (o título já entra entre asteriscos).
+  else if (/\*/.test(`${r.autores}${r.titulo}${r.veiculo}`))
+    erros.push(`Referência ${r.id}: autores, título e veículo não podem conter "*"`);
+  else if (!Number.isInteger(r.ano) || r.ano < 1000 || r.ano > 2100)
+    erros.push(`Referência ${r.id}: ano inválido`);
+  else if (r.link !== undefined && !/^https:\/\/\S+$/.test(r.link))
+    erros.push(`Referência ${r.id}: o link precisa começar com https://`);
+}
+
 export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
   const erros: string[] = [];
   const avisos: string[] = [];
@@ -118,6 +199,14 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     }
   }
 
+  // O catálogo tem seu próprio espaço de ids (não concorre com marcos nem atividades).
+  const idsDeReferencia = new Set<string>();
+  for (const r of conteudo.referencias) {
+    if (idsDeReferencia.has(r.id)) erros.push(`Referência com id repetido: ${r.id}`);
+    idsDeReferencia.add(r.id);
+    validarReferencia(r, erros);
+  }
+
   const ordensPorLinha = new Map<string, Set<number>>();
   for (const m of conteudo.marcos) {
     unico(m.id, 'Marco');
@@ -135,6 +224,10 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     if (ordens.has(m.ordem)) erros.push(`Linha ${m.linha}: ordem ${m.ordem} repetida (${m.id})`);
     ordens.add(m.ordem);
     ordensPorLinha.set(m.linha, ordens);
+    // Dado de fora: o JSON pode não ter o campo, apesar do tipo.
+    const orientacao = m.orientacaoPais as OrientacaoPais | undefined;
+    if (orientacao) validarOrientacao(m, orientacao, idx, erros);
+    else erros.push(`Marco ${m.id}: falta a orientação para os pais (obrigatória em todo marco)`);
     for (const p of m.preRequisitos) {
       if (p === m.id) erros.push(`Marco ${m.id} é pré-requisito de si mesmo`);
       else if (!idx.marco(p)) avisos.push(`Marco ${m.id}: pré-requisito ${p} ainda não existe`);

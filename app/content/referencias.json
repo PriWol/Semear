@@ -1,0 +1,109 @@
+{
+  "referencias": [
+    {
+      "id": "bncc",
+      "autores": "BRASIL. Ministério da Educação",
+      "titulo": "Base Nacional Comum Curricular",
+      "ano": 2018,
+      "veiculo": "Brasília: MEC"
+    },
+    {
+      "id": "morais-consciencia-fonologica",
+      "autores": "MORAIS, Artur Gomes de",
+      "titulo": "Consciência fonológica na educação infantil e no ciclo de alfabetização",
+      "ano": 2019,
+      "veiculo": "Belo Horizonte: Autêntica"
+    },
+    {
+      "id": "soares-alfabetizacao-metodos",
+      "autores": "SOARES, Magda",
+      "titulo": "Alfabetização: a questão dos métodos",
+      "ano": 2016,
+      "veiculo": "São Paulo: Contexto"
+    },
+    {
+      "id": "ferreiro-teberosky-psicogenese",
+      "autores": "FERREIRO, Emilia; TEBEROSKY, Ana",
+      "titulo": "Psicogênese da língua escrita",
+      "ano": 1999,
+      "veiculo": "Porto Alegre: Artmed"
+    },
+    {
+      "id": "nelp-alfabetizacao-inicial",
+      "autores": "NATIONAL EARLY LITERACY PANEL",
+      "titulo": "Developing early literacy: report of the National Early Literacy Panel",
+      "ano": 2008,
+      "veiculo": "Washington, DC: National Institute for Literacy"
+    },
+    {
+      "id": "montessori-mente-absorvente",
+      "autores": "MONTESSORI, Maria",
+      "titulo": "A mente absorvente",
+      "ano": 2021,
+      "veiculo": "São Paulo: Kirion"
+    },
+    {
+      "id": "steiner-educacao-crianca",
+      "autores": "STEINER, Rudolf",
+      "titulo": "A educação da criança segundo a ciência espiritual",
+      "ano": 1984,
+      "veiculo": "São Paulo: Antroposófica"
+    },
+    {
+      "id": "mason-home-education",
+      "autores": "MASON, Charlotte M.",
+      "titulo": "Home education",
+      "ano": 1886,
+      "veiculo": "London: Kegan Paul, Trench"
+    },
+    {
+      "id": "sayers-lost-tools",
+      "autores": "SAYERS, Dorothy L.",
+      "titulo": "The lost tools of learning",
+      "ano": 1947,
+      "veiculo": "Oxford: palestra proferida na Universidade de Oxford"
+    },
+    {
+      "id": "wise-bauer-well-trained-mind",
+      "autores": "WISE, Jessie; BAUER, Susan Wise",
+      "titulo": "The well-trained mind: a guide to classical education at home",
+      "ano": 1999,
+      "veiculo": "New York: W. W. Norton"
+    },
+    {
+      "id": "kamii-crianca-numero",
+      "autores": "KAMII, Constance",
+      "titulo": "A criança e o número: implicações educacionais da teoria de Piaget para a atuação junto a escolares de 4 a 6 anos",
+      "ano": 1985,
+      "veiculo": "Campinas: Papirus"
+    },
+    {
+      "id": "nunes-bryant-children-doing-mathematics",
+      "autores": "NUNES, Terezinha; BRYANT, Peter",
+      "titulo": "Children doing mathematics",
+      "ano": 1996,
+      "veiculo": "Oxford: Blackwell"
+    },
+    {
+      "id": "morais-sistema-escrita-alfabetica",
+      "autores": "MORAIS, Artur Gomes de",
+      "titulo": "Sistema de escrita alfabética",
+      "ano": 2012,
+      "veiculo": "São Paulo: Melhoramentos"
+    },
+    {
+      "id": "rasinski-fluent-reader",
+      "autores": "RASINSKI, Timothy V.",
+      "titulo": "The fluent reader: oral and silent reading strategies for building fluency, word recognition and comprehension",
+      "ano": 2010,
+      "veiculo": "2. ed. New York: Scholastic"
+    },
+    {
+      "id": "mason-home-education-4ed",
+      "autores": "MASON, Charlotte M.",
+      "titulo": "Home education",
+      "ano": 1905,
+      "veiculo": "4. ed. London: Kegan Paul, Trench, Trubner"
+    }
+  ]
+}
