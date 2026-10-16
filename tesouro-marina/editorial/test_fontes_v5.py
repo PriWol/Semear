@@ -125,6 +125,14 @@ class Utilitarios(unittest.TestCase):
                 fontes_v5.OBRAS["x"] = ("envio:x", "Autor (1800–1850)", "<i>X</i>", "1840", "Museu Y", "domínio público")
                 fontes_v5.REFERENCIAS["x"] = ("inv. 1", "https://museu.example/1")
                 self.assertEqual(fontes_v5.verificar(), 0)          # com acervo e endereço passa
+                fontes_v5.OBRAS["x"] = ("commons:X.jpg", "Autor (1800–1850)", "<i>X</i>", "1840", "", "domínio público")
+                fontes_v5.registrar_jpegs(["x"])
+                with open(fontes_v5.MANIFESTO) as f:
+                    m = json.load(f)
+                m["commons:X.jpg"] = "0" * 64
+                with open(fontes_v5.MANIFESTO, "w") as f:
+                    json.dump(m, f)
+                self.assertEqual(fontes_v5.verificar(), 1)          # obra de qualquer origem sem acervo é recusada
             finally:
                 fontes_v5.SAIDA, fontes_v5.MANIFESTO = antes[:2]
                 fontes_v5.OBRAS.clear(); fontes_v5.OBRAS.update(antes[2])

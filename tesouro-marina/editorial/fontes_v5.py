@@ -124,10 +124,10 @@ def verificar():
     faltam = sorted(o[0] for o in OBRAS.values() if o[0] not in man)
     sem_img = sorted(n for n in OBRAS if not os.path.exists(os.path.join(SAIDA, f"{n}.jpg")))
     trocadas = sorted(n for n in OBRAS if n not in sem_img and man.get(_chave_jpeg(n)) != _sha_jpeg(n))
-    # CLAUDE.md: "só domínio público, com fonte registrada". Arquivo entregue à mão só vale com acervo e endereço de origem.
-    sem_fonte = sorted(n for n, o in OBRAS.items() if o[0].startswith("envio:") and (not o[4] or n not in REFERENCIAS))
+    # CLAUDE.md: "só domínio público, com fonte registrada". Toda obra precisa de acervo; a entregue à mão, também do endereço de origem.
+    sem_fonte = sorted(n for n, o in OBRAS.items() if not o[4] or (o[0].startswith("envio:") and n not in REFERENCIAS))
     if sem_fonte:
-        print("obra enviada à mão sem acervo e endereço de origem registrados:\n  " + "\n  ".join(sem_fonte))
+        print("obra sem acervo (ou, se enviada à mão, sem endereço de origem) registrado:\n  " + "\n  ".join(sem_fonte))
     if trocadas:
         print("JPEG tratado diferente do registrado (ou sem registro) no manifesto:\n  " + "\n  ".join(trocadas))
     if faltam or sem_img or trocadas or sem_fonte:
