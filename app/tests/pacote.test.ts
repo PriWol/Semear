@@ -51,6 +51,10 @@ describe('gerarPacote (§5.7)', () => {
     expect(doc).toContain('Ficha de registro rápido');
   });
 
+  it('a ficha não parte uma linha de tabela entre duas páginas (#33)', () => {
+    expect(doc).toMatch(/\.registro tr \{[^}]*break-inside: avoid/);
+  });
+
   it('aplica a letra da criança e marca a opção no seletor', () => {
     expect(doc).toContain('<body class="letra-script">');
     expect(doc).toContain('<option value="script" selected>');
