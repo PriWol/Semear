@@ -159,6 +159,18 @@ class Utilitarios(unittest.TestCase):
 
 
 class CreditoEscapado(unittest.TestCase):
+    def test_inventario_e_endereco_de_museu_sao_escapados(self):
+        antes = (dict(fontes_v5.OBRAS), dict(fontes_v5.REFERENCIAS))
+        try:
+            fontes_v5.OBRAS["x"] = ("aic:x", "Autor (1800–1850)", "<i>X</i>", "1840", "Museu", "domínio público")
+            fontes_v5.REFERENCIAS["x"] = ("inv. 1 & 2", "https://museu.example/a?b=1&c=2")
+            c = fontes_v5.credito("x")
+        finally:
+            fontes_v5.OBRAS.clear(); fontes_v5.OBRAS.update(antes[0])
+            fontes_v5.REFERENCIAS.clear(); fontes_v5.REFERENCIAS.update(antes[1])
+        self.assertIn("inv. 1 &amp; 2", c)
+        self.assertIn("b=1&amp;c=2", c)
+
     def test_nome_de_arquivo_com_e_comercial_e_escapado(self):
         antes = dict(fontes_v5.OBRAS)
         try:
@@ -168,6 +180,27 @@ class CreditoEscapado(unittest.TestCase):
             fontes_v5.OBRAS.clear(); fontes_v5.OBRAS.update(antes)
         self.assertIn("Dürer &amp; Cia &lt;1&gt;.jpg", c)
         self.assertIn("<i>X</i>", c)
+
+
+class LimiteDePixels(unittest.TestCase):
+    def test_teto_sobe_so_dentro_do_bloco_e_volta(self):
+        antes = Image.MAX_IMAGE_PIXELS
+        with fontes_v5.limite_de_pixels():
+            self.assertEqual(Image.MAX_IMAGE_PIXELS, fontes_v5.PIXELS_MAX)
+        self.assertEqual(Image.MAX_IMAGE_PIXELS, antes)
+
+    def test_teto_volta_mesmo_com_erro(self):
+        antes = Image.MAX_IMAGE_PIXELS
+        with self.assertRaises(RuntimeError):
+            with fontes_v5.limite_de_pixels():
+                raise RuntimeError("falha")
+        self.assertEqual(Image.MAX_IMAGE_PIXELS, antes)
+
+    def test_aviso_de_bomba_de_descompressao_vira_erro(self):
+        import warnings
+        with self.assertRaises(Image.DecompressionBombWarning):
+            with fontes_v5.limite_de_pixels():
+                warnings.warn("grande", Image.DecompressionBombWarning)
 
 
 class PerfilDeCor(unittest.TestCase):
