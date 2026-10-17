@@ -129,3 +129,15 @@ test('a linha Escrita mostra a idade Waldorf já preenchida, sem o marcador {ida
   await expect(m.locator('.para-os-pais-texto')).not.toContainText('{idade}');
   await expect(m.locator('.referencias')).toContainText('FERREIRO, Emilia; TEBEROSKY, Ana');
 });
+
+test('a linha Geometria e espaço mostra o texto e as referências de espaço', async ({ page }) => {
+  await cadastrarFamiliaECrianca(page);
+  await page.getByRole('link', { name: /Matemática/ }).click();
+  await expect(page.getByRole('heading', { name: /Geometria e espaço/ })).toBeVisible();
+
+  const m = marco(page, 'MA.GEO.07');
+  await m.getByText('Para os pais').click();
+  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(m.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
+  await expect(m.locator('.referencias')).toContainText('PIAGET, Jean; INHELDER, Bärbel');
+});
