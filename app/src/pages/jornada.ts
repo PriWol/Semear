@@ -1,5 +1,5 @@
 import type { FabricaPagina } from '../ui/app';
-import { html } from '../ui/html';
+import { html, textoRico } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
 import { ESTADOS, IDIOMAS, type EstadoMarco } from '../domain/tipos';
 import {
@@ -10,7 +10,14 @@ import {
   posicionarAqui,
   type Pista,
 } from '../domain/jornada';
+import { formatarReferencia, orientacaoParaFamilia } from '../domain/orientacao';
 import { anos, ICONE_ESTADO, NOME_ESTADO } from '../ui/rotulos';
+
+/**
+ * Marcos cujo "Para os pais" estava aberto quando a tela foi redesenhada (ex.: ao marcar um
+ * estado). A tela inteira é refeita, então sem isso o texto fecharia no meio da leitura.
+ */
+let reabrir = new Set<string>();
 
 export const paginaJornada: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
@@ -24,6 +31,39 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
   const pistasDoDominio = pistas.filter((p) => p.dominio.id === dominioAtual?.id);
   const avisos = avisosTrilhas(ctx.idx, crianca, idade, estados);
   const porId = new Map(pistas.map((p) => [idPista(p), p]));
+  const abertos = reabrir;
+  reabrir = new Set();
+
+  /** Bloco recolhido "Para os pais": a tela fica limpa e quem quer ler abre. */
+  const orientacaoDoMarco = (chave: string, marcoId: string) => {
+    const o = orientacaoParaFamilia(ctx.idx, marcoId, familia);
+    if (!o) return '';
+    return html`<details class="para-os-pais" data-marco="${chave}" ${abertos.has(chave) ? 'open' : ''}>
+      <summary>📖 Para os pais</summary>
+      <div class="para-os-pais-texto">
+        <h3>Por que importa</h3>
+        <p>${textoRico(o.geral.porQueImporta)}</p>
+        <h3>Como participar</h3>
+        <p>${textoRico(o.geral.comoParticipar)}</p>
+        ${o.vertentes.map(
+          (
+            v,
+          ) => html`<h3>${v.principal ? `Na pedagogia ${v.vertente}` : `Inspiração ${v.vertente}`}</h3>
+            <p>${textoRico(v.comoParticipar)}</p>`,
+        )}
+        <h3>Sinais de atenção</h3>
+        <p>${textoRico(o.geral.sinaisDeAtencao)}</p>
+        ${
+          o.referencias.length
+            ? html`<h3>Para saber mais</h3>
+                <ul class="referencias">
+                  ${o.referencias.map((r) => html`<li>${textoRico(formatarReferencia(r))}</li>`)}
+                </ul>`
+            : ''
+        }
+      </div>
+    </details>`;
+  };
 
   const cartaoPista = (pista: Pista) => {
     const pos = posicaoDaLinha(ctx.idx, pista, estados, idade, familia.vertentePrincipal);
@@ -72,6 +112,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                             </p>`
                           : ''
                       }
+                      ${orientacaoDoMarco(s.chave, s.marco.id)}
                     </div>
                     <div class="estado" role="group" aria-label="Estado de ${s.marco.titulo}">
                       ${ESTADOS.map(
@@ -168,6 +209,11 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
           ctx.avisar('Posição atualizada.');
         }
         const y = window.scrollY;
+        reabrir = new Set(
+          [...raiz.querySelectorAll<HTMLElement>('details.para-os-pais[open]')].flatMap((d) =>
+            d.dataset.marco ? [d.dataset.marco] : [],
+          ),
+        );
         await ctx.atualizar();
         window.scrollTo(0, y);
       });

@@ -30,27 +30,58 @@ flowchart LR
 - As fases 0 a 3 listam os testes automáticos novos que entram com elas. Nas fases 4 a 6, eles estão nos critérios de
   aceite de cada estória e serão detalhados quando a fase chegar.
 
-## Visão geral
+## Revisão de out/2026: lançar aberto ao público, afterschooling primeiro
 
-| Fase | Versão | O que você consegue demonstrar no fim | Estórias |
-|---|---|---|---|
-| 0 · Base para testar | v0.2 | Abrir o site, ver a versão, carregar uma família de exemplo e imprimir uma sessão numa folha só | #38 #39 #33 #36 #31 |
-| 1 · Visual novo | v0.3 | Todas as telas e as folhas no visual "moderno e clássico", com navegação de app no celular | #14 #41 #42 #2 (parte 1) #15 |
-| 2 · Ciclo da sessão | v0.4 | Preparar → imprimir → aplicar → **registrar no celular** → jornada sugere ("parece pronto") e o pai confirma no mapa; buscar e imprimir uma atividade avulsa | #11 #13 · conteúdo: #21 #22 |
-| 3 · Rotina da semana | v0.5 | Planejar a semana (ex.: seg/qua/sex), imprimir tudo num arquivo só e acompanhar os dias feitos | #8 #9 #2 (parte 2) |
-| 4 · Pronto para o piloto | v0.6 | Endereço próprio, sondagem impressa para posicionar, guia das vertentes e estante de livros; 3 a 5 famílias usando | #34 #32 #17 #30 #12 → #28 |
-| 5 · Evidências e portfólio | v0.7 | Fotos dos trabalhos, ressondagem, sessão de irmãos e o **portfólio trimestral em PDF** | #10 #18 #19 #29 #20 |
-| 6 · Abrir ao público | v1.0 | Landing page, conta, teste gratuito (14 ou 30 dias, §9.3), pagamento por família e sincronização | #25 #26 #3 #6 #5 #4 #27 |
-| Trilha de conteúdo | contínua | Mais marcos, atividades, livros e ilustrações a cada lote | #21 #22 #23 #24 |
+Decisões da dona do produto (16/10/2026) que reordenam o plano:
 
-**Por que esta ordem:**
-- A Fase 0 vem primeiro porque tudo depois depende de você conseguir testar rápido o que foi publicado.
-- O visual (Fase 1) vem antes das telas novas: assim cada tela nova já nasce no estilo final, sem retrabalho.
-- O ciclo da sessão (Fase 2) fecha o "loop" do produto: sem registrar o progresso, a jornada não anda sozinha.
-- O **domínio próprio vem antes do piloto** (Fase 4): os dados ficam presos ao endereço onde foram criados.
-  Se as famílias do piloto começarem em `priwol.github.io` e depois mudarmos, elas teriam que exportar e importar.
-- Conta e pagamento (Fase 6) só depois do piloto de 8 semanas (#28) confirmar que o núcleo do produto funciona.
-  (O teste rápido com o PDF do protótipo, §12.2 da especificação, pode acontecer antes, a qualquer momento.)
+- **Meta:** lançar aberto ao público, com tudo polido (não há piloto fechado antes). O piloto (#28) vira
+  acompanhamento dos primeiros usuários depois do lançamento.
+- **Público inicial:** afterschooling (famílias com filhos na escola ou creche que complementam em casa).
+  Homeschooling vem depois.
+- **Faixa etária:** de **2 a 8 anos** (antes 3 a 8). Inclui creche, maternal e jardim.
+- **Sessão:** 30 minutos de atividade, mais o tempo de preparação do pai.
+- **Novo domínio:** formação e regulação emocional (hoje só existe o esboço DI.SOC na especificação, §5).
+- **Livros, obras e músicas:** dentro de cada sessão, numa estante separada, depois como venda de produtos
+  de terceiros e, mais adiante, dos livros da própria autora.
+- **Conteúdo:** revisado pela dona do produto. Depois, um login de **preceptor** (revisar, comentar, aprovar,
+  anexar imagens e texto) cujo envio vira entrada para a IA rascunhar a versão final.
+- **Comunidade de trocas:** só depois do lançamento.
+- **Assinatura: a revisitar.** Ideia atual: 7 dias grátis com restrição de materiais (ex.: Tesouro de Marina), depois
+  R$ 39,90 por mês por família + R$ 10 por criança. Conflita com o ADR 0010 (ver "Riscos" abaixo).
+
+### Etapas (substituem a tabela de fases; os detalhes das Fases 0 a 6 abaixo seguem valendo como referência)
+
+| Etapa | O que fecha | Estórias |
+|---|---|---|
+| A · Arrumar a casa | Roteiro e GitHub fiéis ao código; PRs de conteúdo e Dependabot mergeados | auditar #31 #33 #36 #38 #39 #41 #42; PRs #55 #64 a #67 |
+| B · Ciclo da sessão (sessão de 30 min) | Preparar → imprimir → aplicar → registrar → jornada sugere | #11 #13 #2 (parte 1) |
+| C · Faixa de 2 a 8 anos e emoções | Spec e conteúdo para 2 anos; domínio Formação e regulação emocional | novas: faixa 2–8, domínio emocional |
+| D · Rotina de afterschooling | Plano e impressão da semana | #8 #9 #2 (parte 2) |
+| E · Estante e indicações | Livro, obra ou música em cada sessão; estante filtrável | #12 · novas: tipo obra e música, indicação por sessão, ADR de links de terceiros |
+| F · Conteúdo para o lançamento | Lotes revisados pela dona; status de revisão no conteúdo | #21 #22 #23 #24 |
+| G · Pronto para abrir | Domínio, CSP, guia das vertentes, sondagem curta, termos/LGPD | #34 #32 #30 #17 #25 |
+| H · Conta e cobrança | Primeiro servidor: conta, teste, assinatura, restrição de materiais | #26 #3 #6 #5 · nova: revisão do modelo de preço (ADR 0010) |
+| I · Lançamento | Landing page e abertura ao público (v1.0) | #4 |
+| Depois | Portfólio e homeschooling, irmãos, sincronização, portal do preceptor, comunidade, livros próprios | #10 #18 #19 #20 #27 #29 · novas: portal do preceptor, comunidade |
+
+Rebaixadas para "Depois" porque o afterschooling não precisa delas no dia 1: portfólio jurídico (#20, #29), ressondagem (#18),
+fotos de evidências (#10), sessão de irmãos (#19). Sincronização (#27) sai do caminho do lançamento.
+
+### Riscos e perguntas abertas
+
+1. **Cobrança por criança contradiz o ADR 0010.** Com dados só no aparelho, o servidor não sabe quantas crianças a
+   família tem; cobrar por criança ou exige guardar essa contagem no servidor (muda a regra de privacidade) ou depende de
+   declaração do pai na compra. Decidir antes da etapa H.
+2. **Restringir o Tesouro de Marina não funciona hoje.** Os PDFs são servidos pelo site estático (ADR 0015), então quem
+   sabe o endereço baixa tudo. Restringir de verdade exige servidor com link assinado (etapa H) ou um recorte do que fica
+   livre. Até lá, o Tesouro completo fica disponível a todos.
+3. **O que acontece depois dos 7 dias?** Volta ao plano Livre (ADR 0010) ou bloqueia? O ADR 0010 diz que dados e histórico nunca ficam reféns.
+4. **Links de afiliado e venda de terceiros** exigem ADR (privacidade e ECA Digital: sem anúncios nem perfilamento).
+   Proposta: só na estante, nunca na folha da criança, sem rastreio no app, com aviso de afiliado.
+5. **Crianças de 2 anos:** o pacote precisa de atenção a materiais pequenos (engasgo) e a sessões de 30 min que sejam
+   várias atividades curtas; o texto da especificação (§1, decisão 2) e os marcos precisam de revisão pedagógica.
+6. **Portal do preceptor** é um segundo produto (login, upload de imagens, fila de revisão, integração com a IA). Até
+   existir, o fluxo de revisão é o PR no GitHub, e cada marco ou atividade ganha um campo `revisao` (rascunho, revisado, aprovado).
 
 ---
 

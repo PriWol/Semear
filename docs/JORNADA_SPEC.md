@@ -85,7 +85,7 @@
 
 ## 3. O mapa: domínios e linhas
 
-O mapa completo, com códigos e idades, está em [`data/journey/dominios.json`](../data/journey/dominios.json).
+O mapa completo, com códigos e idades, está em [`app/content/dominios.json`](../app/content/dominios.json).
 
 ### 3.0 Escopo do lançamento
 
@@ -179,6 +179,8 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 > **Por que o Unschooling ficou de fora:** ele não usa sequência, sondagem nem sessões planejadas, que são justamente o que o Semear faz. Famílias *unschoolers* ainda podem usar o app como registro (marcar marcos observados), mas não vamos desenhar o produto para elas.
 
+> **Orientação para os pais:** todo marco traz um texto pedagógico recolhido na tela ("📖 Para os pais"), com o geral, o que a vertente principal e as inspirações da família acrescentam, e referências bibliográficas em ABNT. É parte da definição de marco: marco sem esse texto é erro de validação e não entra no conteúdo (ADR 0017).
+
 > Os marcos extras usam o mesmo formato dos marcos comuns. A única diferença é o campo `vertentes`, que indica em quais vertentes eles aparecem.
 
 ---
@@ -202,6 +204,11 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
   "vertentes": null,                      // null = comum a todas; ["Montessori"] = marco extra
   "idiomas": null,                        // só no domínio LI: ["en","fr","la"]
   "bncc": [],                             // códigos da BNCC: OBRIGATÓRIO em LG e MA (portfólio, §8)
+  "orientacaoPais": {                     // OBRIGATÓRIO: texto de apoio, lido sob demanda ("Para os pais"; ADR 0017)
+    "porQueImporta": "...", "comoParticipar": "...", "sinaisDeAtencao": "...",
+    "referencias": ["id-em-referencias.json"],
+    "porVertente": { "Waldorf": { "comoParticipar": "...", "referencias": [] } }  // só quem tem algo a acrescentar
+  },
   "autoria": { "origem": "ia" | "humano", "revisadoPor": "...", "revisadoEm": "2026-10-20", "status": "rascunho" | "revisado" | "publicado" }
 }
 ```

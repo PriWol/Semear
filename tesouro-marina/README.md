@@ -2,7 +2,7 @@
 
 > **Onde estão os PDFs:** na Release [`tesouro-marina`](https://github.com/PriWol/Semear/releases/tag/tesouro-marina), atualizada automaticamente a cada merge no `main` que altere esta pasta (workflow `publicar-tesouro.yml`, ADR 0011). Os PDFs e as páginas de inspeção não ficam no Git; as tabelas abaixo citam os nomes dos arquivos.
 
-Currículo clássico ilustrado para a infância: 8 volumes, 563 páginas planejadas (4 volumes produzidos), em A4 imprimível.
+Currículo clássico ilustrado para a infância: 8 volumes, 570 páginas planejadas (5 volumes produzidos), em A4 imprimível.
 
 ## Primeira entrega (para aprovação)
 | Arquivo | O que é |
@@ -38,8 +38,11 @@ Currículo clássico ilustrado para a infância: 8 volumes, 563 páginas planeja
 ## Volume 4 — O mundo da música (75 páginas)
 `volume4/volume4-impressao.pdf`, `volume4/volume4-tela.pdf`, `volume4/inspecao/`, conteúdo em `editorial/volume4.py`. A notação (pauta, ritmo, musicograma) vem de `editorial/musica.py`, com testes em `editorial/test_musica.py`; instrumentos e bichos são motivos de `editorial/motivos5.py`. As cantigas e partituras de Walter Crane (*The Baby's Opera*) estão registradas em `fontes_v1.py`.
 
+## Volume 5 — O mundo das artes (67 páginas)
+`volume5/volume5-impressao.pdf`, `volume5/volume5-tela.pdf`, `volume5/inspecao/`, conteúdo em `editorial/volume5.py`. As reproduções de obras (Dürer, Kandinsky, Monet, Van Gogh e Mary Cassatt) vêm de acervos de acesso aberto (Instituto de Arte de Chicago e National Gallery of Art), ou do Wikimedia Commons, e estão registradas em `editorial/fontes_v5.py`, com testes em `editorial/test_fontes_v5.py`; potes, pincel, argila, papéis e demais desenhos são motivos de `editorial/motivos6.py`. Obras sem reprodução de acesso aberto (por exemplo, as colagens de Matisse, ainda protegidas nos Estados Unidos) são citadas no texto, mas não reproduzidas.
+
 ## Rede e privacidade
-O único acesso externo do pipeline é o download de páginas digitalizadas do Internet Archive (`editorial/fontes_v1.py`), feito só no build dos PDFs, fora do app. Nenhum dado de família é enviado. Cada página baixada é conferida pelo SHA-256 registrado em `editorial/dominio_publico/paginas.sha256.json`; página sem hash é recusada (para catalogar uma nova, confira a imagem e rode `python3 fontes_v1.py registrar`). Decisão registrada no ADR 0011.
+Os únicos acessos externos do pipeline são o download de páginas digitalizadas do Internet Archive (`editorial/fontes_v1.py`) e o de reproduções de obras do Wikimedia Commons e de acervos de museus (`editorial/fontes_v5.py`), feitos só ao catalogar imagens, fora do app e fora do build dos PDFs (que usa as imagens já tratadas e versionadas). Nenhum dado de família é enviado. Cada página baixada é conferida pelo SHA-256 registrado em `editorial/dominio_publico/paginas.sha256.json` (Internet Archive) ou `obras.sha256.json` (Commons); arquivo sem hash é recusado (para catalogar um novo, confira a imagem e rode `python3 fontes_v1.py registrar` ou `python3 fontes_v5.py registrar`). O download de `fontes_v5.py` respeita o `Retry-After` da fonte (até 1 h por pedido e 2 h no total); com o Commons limitando o ritmo, `baixar`/`registrar` podem demorar horas. O hash dos JPEGs tratados depende da versão do Pillow/libjpeg: ao regenerar em outra máquina, rode `python3 fontes_v5.py jpegs` e revise o diff do manifesto. Decisão registrada nos ADRs 0011 e 0018.
 
 ## Gerar de novo
 ```
@@ -51,5 +54,6 @@ python3 volume1.py         # Volume 1
 python3 volume2.py         # Volume 2
 python3 volume3.py         # Volume 3
 python3 volume4.py         # Volume 4
+python3 volume5.py         # Volume 5
 ```
 Requer também `pdftoppm` (poppler) para as páginas de inspeção. As ilustrações de domínio público já recortadas estão em `editorial/dominio_publico/`; só é preciso baixar páginas do Internet Archive para refazer recortes (`fontes_v1.py`).

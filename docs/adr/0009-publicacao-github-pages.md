@@ -44,7 +44,8 @@ rotas por hash funcionam em `/Semear/`).
   Solução definitiva: domínio próprio (ex.: `app.semear.com.br`), que isola a origem. Está no backlog.
 - **Dados do site antigo:** o site antigo gravava no `localStorage` (prefixo `semear_`). Eles **não são
   apagados** automaticamente: são dados que alguma família pode querer, e o app novo não os lê. O
-  arquivamento do site antigo (issue #32) decide se oferecemos exportar e depois apagar.
+  arquivamento do site antigo (#31) decidiu **não migrar nem apagar** esses dados: o app novo não os lê e o
+  site antigo era um MVP. O código antigo foi removido da raiz e fica na tag `1.0.0`.
 
 ## Consequências
 - Todo merge que toca `app/` publica automaticamente em ~2 minutos.

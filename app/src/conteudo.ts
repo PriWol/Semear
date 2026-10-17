@@ -1,9 +1,18 @@
 // Carrega o conteúdo curado de app/content (embutido no build pelo Vite; ADR 0005).
-import type { Atividade, Conteudo, Dominio, ItemAcervo, Livro, Marco } from './domain/tipos';
+import type {
+  Atividade,
+  Conteudo,
+  Dominio,
+  ItemAcervo,
+  Livro,
+  Marco,
+  Referencia,
+} from './domain/tipos';
 import { criarIndice, type IndiceConteudo } from './domain/conteudo';
 import dominiosJson from '../content/dominios.json';
 import livrosJson from '../content/livros.json';
 import acervoJson from '../content/acervo.json';
+import referenciasJson from '../content/referencias.json';
 
 const arquivosMarcos = import.meta.glob<{ marcos: Marco[] }>('../content/marcos/*.json', {
   eager: true,
@@ -21,6 +30,7 @@ export function carregarConteudo(): Conteudo {
     atividades: Object.values(arquivosAtividades),
     livros: (livrosJson as { livros: Livro[] }).livros,
     acervo: (acervoJson as { itens: ItemAcervo[] }).itens,
+    referencias: (referenciasJson as { referencias: Referencia[] }).referencias,
   };
 }
 

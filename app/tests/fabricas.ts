@@ -14,6 +14,13 @@ export function marco(id: string, ordem: number, extra: Partial<Marco> = {}): Ma
     idadeIntroducao: {},
     preRequisitos: [],
     bncc: [],
+    // Todo marco precisa de orientação para os pais; os testes usam uma mínima e válida.
+    orientacaoPais: {
+      porQueImporta: 'Porque sim.',
+      comoParticipar: 'Brinquem juntos.',
+      sinaisDeAtencao: 'Converse com a escola.',
+      referencias: [],
+    },
     ...extra,
   };
 }
@@ -97,6 +104,7 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
       atividade('atv-fon-2', ['LG.FON.02'], { revisa: ['LG.FON.01'] }),
       atividade('atv-sen-1', ['MA.SEN.01'], { duracaoMin: 15 }),
     ],
+    referencias: [],
     livros: [
       {
         id: 'livro-a',

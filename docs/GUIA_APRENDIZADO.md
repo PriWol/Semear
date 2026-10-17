@@ -174,6 +174,8 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Domínio** (produto) | Grande área do conhecimento: Linguagem, Matemática, Línguas. |
 | **Linha** | Sequência de aprendizagem dentro de um domínio (ex.: Consciência fonológica). |
 | **Marco** | Uma conquista observável numa linha (ex.: identifica a sílaba inicial). |
+| **Orientação para os pais** | Texto pedagógico de um marco, recolhido na jornada ("Para os pais"): por que importa, como participar, sinais de atenção e o que a vertente da família acrescenta. |
+| **Referência** | Obra do catálogo bibliográfico (`referencias.json`) citada nos marcos, exibida em ABNT. |
 | **Fronteira** | O primeiro marco da linha que a criança ainda não consolidou. |
 | **Marcos ativos** | Os marcos sendo trabalhados agora (fronteira + o seguinte, no máx. 2). |
 | **Pista** | Uma linha, ou uma linha num idioma (no domínio de Línguas). |
@@ -184,6 +186,8 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **SHA-256** | Impressão digital de um arquivo, usada para ter certeza de que ele não mudou. |
 | **Pulso** (música) | A batida regular que não muda, como os passos de quem caminha; o ritmo é o desenho das batidas sobre o pulso. |
 | **Musicograma** | A música desenhada como formas e cores, para acompanhar com o dedo enquanto se escuta. |
+| **Domínio público** | Obra cujos direitos autorais acabaram (no Brasil, 70 anos após a morte do autor) e que pode ser reproduzida livremente; vale para a obra, não para uma foto dela com direitos próprios. |
+| **Reprodução de obra** | Foto ou digitalização de um quadro; nunca tem exatamente a cor do original, e o volume 5 avisa isso. |
 | **SVG** | Desenho feito de linhas e formas descritas em texto; a pauta e as notas do Volume 4 são geradas assim, em `musica.py`. |
 | **Domínio** (código) | A camada do código com as regras de negócio (`src/domain/`). |
 | **Função pura** | Função sem efeitos colaterais: mesma entrada, mesma saída. |
