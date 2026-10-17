@@ -85,7 +85,7 @@
 
 ## 3. O mapa: domínios e linhas
 
-O mapa completo, com códigos e idades, está em [`data/journey/dominios.json`](../data/journey/dominios.json).
+O mapa completo, com códigos e idades, está em [`app/content/dominios.json`](../app/content/dominios.json).
 
 ### 3.0 Escopo do lançamento
 
