@@ -99,6 +99,26 @@ test('a linha Operações aparece com texto para os pais e pré-requisito de out
   await expect(m.locator('.referencias')).toContainText('NUNES, Terezinha; BRYANT, Peter');
 });
 
+test('a linha Grandezas e medidas mostra o texto e depende de marcos de outras linhas', async ({
+  page,
+}) => {
+  await cadastrarFamiliaECrianca(page);
+  await page.getByRole('link', { name: /Matemática/ }).click();
+  await expect(page.getByRole('heading', { name: /Grandezas e medidas/ })).toBeVisible();
+
+  const m = marco(page, 'MA.MED.07');
+  // A régua depende de ler números até 20 (MA.SND.04), de outra linha
+  await expect(m).toContainText('Aguardando');
+  // Em "Aguardando" só entram pré-requisitos de outras linhas; os da mesma linha (MA.MED.04) já são
+  // impostos pela ordem da linha.
+  await expect(m).toContainText('Lê e escreve números até 20');
+  await m.getByText('Para os pais').click();
+  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(m.locator('.referencias')).toContainText(
+    'PIAGET, Jean; INHELDER, Bärbel; SZEMINSKA',
+  );
+});
+
 test('a linha Sistema de numeração mostra o texto e a idade de introdução da pedagogia Waldorf', async ({
   page,
 }) => {
@@ -125,21 +145,4 @@ test('a linha Geometria e espaço mostra o texto e as referências de espaço', 
   await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
   await expect(m.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
   await expect(m.locator('.referencias')).toContainText('PIAGET, Jean; INHELDER, Bärbel');
-});
-
-test('a linha Grandezas e medidas mostra o texto e depende de marcos de outras linhas', async ({
-  page,
-}) => {
-  await cadastrarFamiliaECrianca(page);
-  await page.getByRole('link', { name: /Matemática/ }).click();
-  await expect(page.getByRole('heading', { name: /Grandezas e medidas/ })).toBeVisible();
-
-  const m = marco(page, 'MA.MED.07');
-  // A régua depende de medir com unidades (MA.MED.04) e de ler números até 20 (MA.SND.04)
-  await expect(m).toContainText('Aguardando');
-  await m.getByText('Para os pais').click();
-  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
-  await expect(m.locator('.referencias')).toContainText(
-    'PIAGET, Jean; INHELDER, Bärbel; SZEMINSKA',
-  );
 });

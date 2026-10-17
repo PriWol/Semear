@@ -1117,7 +1117,7 @@
       "idadeTipica": 5.5,
       "idadeIntroducao": {},
       "preRequisitos": ["MA.MED.01", "MA.SEN.06"],
-      "bncc": ["EF01MA15"],
+      "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Medir é **contar unidades**: quantos palmos tem a mesa? Para isso, a criança precisa repetir a unidade sem deixar buracos nem sobrepor, e perceber que a unidade escolhida muda o número (a mesa tem 8 palmos de criança e 5 de adulto). Essa descoberta explica por que precisamos de unidades padrão. Os estudos de Piaget, Inhelder e Szeminska mostram que a ideia se constrói aos poucos.",
         "comoParticipar": "Meçam coisas com o que há à mão: passos, palmos, pés, clipes, blocos. Mostre como colocar uma unidade depois da outra, sem espaços, e contar. Meçam a mesma coisa com duas unidades e comparem os números (“por que deu mais clipes que palmos?”). Meçam com o corpo da criança e o do adulto e conversem sobre a diferença.",
@@ -1183,10 +1183,10 @@
       ],
       "idadeTipica": 6,
       "idadeIntroducao": {},
-      "preRequisitos": ["MA.MED.03", "MA.SEN.06"],
+      "preRequisitos": ["MA.MED.03", "MA.SND.04"],
       "bncc": ["EF01MA17", "EF01MA18"],
       "orientacaoPais": {
-        "porQueImporta": "O calendário junta tempo e números: a criança precisa conhecer a sequência dos dias e dos meses, ler os números de 1 a 31 e perceber que o tempo se repete em **ciclos** (a semana volta a começar, o ano também).",
+        "porQueImporta": "O calendário junta tempo e números: a criança precisa conhecer a sequência dos dias e dos meses, ler os números do calendário (até 31, no começo com ajuda) e perceber que o tempo se repete em **ciclos** (a semana volta a começar, o ano também).",
         "comoParticipar": "Deixe um calendário à vista e marque o dia de hoje toda manhã. Cantem os dias da semana e os meses. Contem os dias até um evento esperado (aniversário, viagem), marcando cada dia. Pergunte: “que dia vem depois de quarta?”, “que mês vem antes de maio?”. Escrevam a data juntos.",
         "sinaisDeAtencao": "A ordem dos meses leva mais tempo que a dos dias. Se aos 8 anos ela não consegue dizer os dias da semana em ordem, mesmo com a rotina do calendário, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lorenzato-percepcao-matematica", "bncc"],
@@ -1266,7 +1266,7 @@
       "preRequisitos": ["MA.SND.05", "MA.OPE.02"],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "O dinheiro junta várias ideias: reconhecer valores, contar de 1 em 1 e de 5 em 5 e, principalmente, **trocar** (dez moedas de 1 real valem uma cédula de 10). Essa troca é a mesma ideia do valor posicional: dez unidades formam uma dezena.",
+        "porQueImporta": "O dinheiro junta várias ideias: reconhecer valores, juntar valores e, principalmente, **trocar** (dez moedas de 1 real valem uma cédula de 10). Essa troca é a mesma ideia do valor posicional: dez unidades formam uma dezena.",
         "comoParticipar": "Brinquem de mercadinho com dinheiro de brinquedo (ou moedas de verdade): coloque preços de 1 a 10 reais e deixe a criança vender e comprar. Peça que pague de jeitos diferentes (“com duas cédulas de 5”, “só com moedas”). Troquem: dez moedas por uma cédula. Em compras reais, deixe-a contar o troco com você.",
         "sinaisDeAtencao": "Valores em centavos e troco são difíceis e costumam vir depois. Se aos 8 anos ela não reconhece as moedas e cédulas mais usadas, mesmo depois de brincar de mercado, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lorenzato-percepcao-matematica", "bncc"],
