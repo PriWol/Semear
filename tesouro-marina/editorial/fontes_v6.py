@@ -22,8 +22,8 @@ SAIDA = os.path.join(AQUI, "dominio_publico", "v6")
 # nome: (arquivo no Commons, autoria, obra, ano, acervo ou digitalização, licença conferida no Commons)
 OBRAS = {
     "sabia": ("Turdus rufiventer - Coracina scutata, da Coleção Brasiliana Iconográfica.jpg",
-              "autoria desconhecida", "<i>Turdus rufiventer</i> e <i>Coracina scutata</i>", "século XIX (data a confirmar)",
-              "Brasiliana Iconográfica", "domínio público (marcação do Commons; autoria desconhecida)"),
+              "Jean-Théodore Descourtilz (1796–1855)", "<i>Turdus rufiventer</i> (figura 1 da prancha 26), de <i>Ornithologie brésilienne</i>", "1854–1856",
+              "Brasiliana Iconográfica", "domínio público (marcação do Commons; autoria atribuída pelo número e pelos nomes impressos na prancha)"),
     "bemtevi": ("Birds of La Plata (Plate) (7788867022).jpg",
                 "Henrik Grönvold (1858–1940), em W. H. Hudson (1841–1922)", "<i>Bienteveo Tyrant</i> (<i>Pitangus bolivianus</i>), de <i>Birds of La Plata</i>",
                 "1920", "Biodiversity Heritage Library", "domínio público"),
@@ -37,9 +37,14 @@ OBRAS = {
 }
 
 
+# prancha com mais de uma figura: só o trecho indicado (x0, y0, x1, y1, em pixels do arquivo de origem) entra no livro, sem retoque
+RECORTES = {"sabia": (860, 330, 2300, 1340)}
+
+
 def credito(nome):
     arq, autor, obra, ano, acervo, lic = OBRAS[nome]
-    return (f"{autor}, {obra}, {ano}. {acervo}. Prancha em {lic}: Wikimedia Commons, <i>File:{html.escape(arq)}</i>. "
+    recorte = " Recorte do original, sem retoque." if nome in RECORTES else ""
+    return (f"{autor}, {obra}, {ano}. {acervo}. Prancha em {lic}: Wikimedia Commons, <i>File:{html.escape(arq)}</i>.{recorte} "
             f"As cores variam de uma reprodução para outra.")
 
 
@@ -113,6 +118,8 @@ def processar(nome):
     """Reduz ao tamanho de impressão e grava o JPEG tratado (cores fiéis à origem, em sRGB; sem retoque)."""
     with limite_de_pixels(), Image.open(baixar(nome)) as origem:
         im = _para_srgb(origem)
+    if nome in RECORTES:
+        im = im.crop(RECORTES[nome])
     if max(im.size) > LADO_MAX:
         k = LADO_MAX / max(im.size)
         im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)

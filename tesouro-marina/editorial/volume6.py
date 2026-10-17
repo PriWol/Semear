@@ -271,13 +271,13 @@ def unidade2(L):
         dificil="olhar só uma prancha, só o bico, e dizer o que o bico faz.",
         alerta="Olhar e escutar bastam: nada de pegar filhote, tocar em ninho ou alimentar com pão. Lave as mãos depois de mexer em comedouro ou bebedouro."))
 
-    apreciar(L, "sabia", "O sabiá-laranjeira", "uma prancha antiga, com duas aves num galho com frutinhas",
-             ["Quantas aves você vê? Em que galho está cada uma?", "De que cor é a barriga da ave de cima? E as costas?", "De que cor é a ave de baixo? O que ela tem de laranja?",
-              "Como são os galhos? Você vê espinhos? E frutinhas, de que cor?", "Qual das duas aves tem o bico mais forte? Como você sabe?"],
-             "A ave de cima, de costas marrons e barriga cor de laranja, é o <b>sabiá-laranjeira</b>, <i>Turdus rufiventer</i> no rótulo da prancha. É a ave símbolo do Brasil e canta de manhã cedo e no fim da tarde. "
-             "A ave preta de peito alaranjado, na parte de baixo, é outra espécie, <i>Coracina scutata</i> no rótulo. Não é preciso explicar a diferença: basta que ela perceba que são duas aves, "
-             "e descreva cada uma. Peça que ela feche o livro e diga <b>três coisas</b> de cada ave.",
-             "olhar e comparar", "--d-musica", w=104, h=138)
+    apreciar(L, "sabia", "O sabiá-laranjeira", "uma prancha antiga, de Descourtilz, com um sabiá num galho com espinhos",
+             ["De que cor é a cabeça? E as costas?", "De que cor é a barriga? E o peito, tem manchinhas?", "Como é o bico: curto ou comprido? Fino ou grosso?",
+              "Como são as pernas e os pés? Como eles seguram o galho?", "Como é o galho? Você vê espinhos? E folhas, de que cor?"],
+             "Esta é a ave <b>sabiá-laranjeira</b>, <i>Turdus rufiventer</i> no rótulo da prancha: costas e cabeça marrons, barriga cor de laranja, peito claro com pintinhas. É a ave símbolo do Brasil. "
+             "A prancha é a de número 26 do livro <i>Ornithologie brésilienne</i>, de Jean-Théodore Descourtilz, que anotou que o sabiá é comum em toda parte, até nos jardins perto das casas, "
+             "e que canta no fim do dia, mesmo depois de uma tempestade. Na prancha inteira há outra ave (o pavó); aqui aparece só o sabiá. Peça que ela feche o livro e diga <b>três coisas</b> sobre ele.",
+             "olhar e comparar", "--d-musica", w=140, h=100)
 
     poema(L, "Canção do exílio", "Gonçalves Dias, 1843",
           ["Minha terra tem palmeiras,<br>Onde canta o Sabiá;<br>As aves, que aqui gorjeiam,<br>Não gorjeiam como lá."],

@@ -79,6 +79,43 @@ class CreditoEscapado(Isolado):
         self.assertIn("<i>X</i>", c)
 
 
+class Recortes(unittest.TestCase):
+    def test_todo_recorte_e_de_uma_prancha_do_catalogo_e_tem_caixa_valida(self):
+        for nome, (x0, y0, x1, y1) in fontes_v6.RECORTES.items():
+            self.assertIn(nome, fontes_v6.OBRAS)
+            self.assertLess(x0, x1)
+            self.assertLess(y0, y1)
+            self.assertGreaterEqual(min(x0, y0), 0)
+
+    def test_credito_de_prancha_recortada_avisa_que_e_recorte(self):
+        for nome in fontes_v6.RECORTES:
+            self.assertIn("Recorte do original", fontes_v6.credito(nome))
+
+    def test_processar_recorta_a_prancha_e_registra_o_jpeg(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            antes = (fontes_v6.SAIDA, fontes_v5.MANIFESTO, dict(fontes_v6.OBRAS), dict(fontes_v6.RECORTES), fontes_v5.FONTE, fontes_v6.FONTE)
+            try:
+                fontes_v6.SAIDA = os.path.join(tmp, "v6")
+                fontes_v5.MANIFESTO = os.path.join(tmp, "m.json")
+                fontes_v5.FONTE = fontes_v6.FONTE = os.path.join(tmp, "orig")
+                os.makedirs(fontes_v6.FONTE)
+                fontes_v6.OBRAS.clear()
+                fontes_v6.OBRAS["x"] = ("X.jpg", "Autor (1800–1850)", "<i>X</i>", "1840", "Acervo", "domínio público")
+                fontes_v6.RECORTES.clear()
+                fontes_v6.RECORTES["x"] = (10, 20, 60, 70)
+                Image.new("RGB", (100, 100), (30, 60, 90)).save(os.path.join(fontes_v6.FONTE, "x.orig"), "JPEG")
+                with open(os.path.join(fontes_v6.FONTE, "x.orig"), "rb") as f:
+                    sha = fontes_v5._sha256(f.read())
+                with open(fontes_v5.MANIFESTO, "w") as f:
+                    json.dump({"X.jpg": sha}, f)
+                self.assertEqual(fontes_v6.processar("x"), (50, 50))
+            finally:
+                fontes_v6.SAIDA, fontes_v5.MANIFESTO = antes[:2]
+                fontes_v6.OBRAS.clear(); fontes_v6.OBRAS.update(antes[2])
+                fontes_v6.RECORTES.clear(); fontes_v6.RECORTES.update(antes[3])
+                fontes_v5.FONTE, fontes_v6.FONTE = antes[4], antes[5]
+
+
 class CatalogoReal(unittest.TestCase):
     """O catálogo versionado (não a pasta temporária): todo item está completo e registrado."""
 
