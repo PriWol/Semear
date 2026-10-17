@@ -24,5 +24,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0016](0016-acervo-gratuito-catalogo-offline.md) | Acervo gratuito como catálogo curado offline | Aceito |
 | [0017](0017-orientacao-para-os-pais-obrigatoria-em-todo-marco.md) | Orientação para os pais é obrigatória em todo marco | Aceito |
 | [0018](0018-reproducoes-de-obras-de-arte-no-volume-5.md) | Reproduções de obras de arte no Volume 5 (Commons e acervos abertos) | Aceito |
+| [0019](0019-pranchas-de-naturalistas-no-volume-6.md) | Pranchas de naturalistas no Volume 6 (Commons e desenho próprio) | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

@@ -2,7 +2,7 @@
 Pranchas de naturalistas do Volume 6: arquivo de origem, tratamento e crédito.
 As imagens vêm do Wikimedia Commons e são gravuras e litografias antigas (Merian, Gould, Hudson/Grönvold e uma prancha da coleção
 Brasiliana Iconográfica). O que não existe como prancha antiga utilizável é desenhado pela coleção (motivos7.py), não baixado.
-As regras de proveniência são as do Volume 5 (ADR 0017): SHA-256 do arquivo de origem e do JPEG tratado no mesmo manifesto
+As regras de proveniência são as do Volume 5 (ADR 0018): SHA-256 do arquivo de origem e do JPEG tratado no mesmo manifesto
 (dominio_publico/obras.sha256.json), falha fechada, e build dos PDFs sem rede (usa os JPEGs de dominio_publico/v6).
 Este módulo reaproveita de fontes_v5.py o que não depende do volume: download com espera, conversão de cor e manifesto.
 Uso:  python3 fontes_v6.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | jpegs [nomes] | creditos

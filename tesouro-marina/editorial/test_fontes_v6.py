@@ -1,4 +1,4 @@
-"""Testes das pranchas de naturalistas do Volume 6 (ADR 0011, 0017 e 0018). Rodar: python3 -m unittest test_fontes_v6"""
+"""Testes das pranchas de naturalistas do Volume 6 (ADR 0011, 0018 e 0019). Rodar: python3 -m unittest test_fontes_v6"""
 import json
 import os
 import tempfile
