@@ -723,7 +723,7 @@ def unidade8(L):
       {adulto("uma obra para guardar",
               "Se a colagem ficar em outra folha (um papel maior, uma cartolina), cole aqui uma foto. O título é da criança; escreva o que ela disser. "
               "<b>Sobre os artistas:</b> as colagens de papel recortado de Henri Matisse, feitas nos últimos anos de sua vida, são das mais famosas do mundo. "
-              "Como ainda há direitos autorais sobre elas em vários países, não as reproduzimos aqui; vale procurar num livro de arte ou numa visita a um museu.")}"""
+              "Como não temos uma reprodução de acesso aberto delas (e em alguns países, como os Estados Unidos, ainda há direitos autorais), não as reproduzimos aqui; vale procurar num livro de arte ou numa visita a um museu.")}"""
     L.add(c, aba="--d-memoria")
 
     diario(L, "Meu museu de papel", "colar fotos e guardar o que ela fez nesta unidade", ["a colagem de formas", "a colagem do jardim", "a colagem da noite", "uma colagem livre"], "--d-memoria",
@@ -768,7 +768,7 @@ def encerramento(L):
       <ul style="font-size:8.4pt;line-height:1.3">{obras}</ul>
       <h2>Fundamentos</h2><p style="font-size:9.4pt">Apreciação de arte por narração e por observação, com poucas obras e muita atenção (Charlotte Mason, <i>estudo de pintores</i>); processo antes do produto; cores primárias e misturas, modelagem e colagem como atividades de ateliê infantil. Nenhum material reproduz métodos ou produtos comerciais.</p>
       <h2>Ilustrações da coleção</h2><p style="font-size:9.4pt">Potes, pincéis, argilas, papéis, ninfeia, lebre, tufo, círculos e demais desenhos: aquarela digital procedural da coleção. Cartões de cores: textos da coleção. Tipografia: EB Garamond (licença OFL).</p>
-      <h2>Henri Matisse</h2><p style="font-size:9.4pt">As colagens de papel recortado de Matisse são citadas no texto, mas não reproduzidas, porque as obras ainda têm direitos autorais em vários países.</p></div>"""
+      <h2>Henri Matisse</h2><p style="font-size:9.4pt">As colagens de papel recortado de Matisse são citadas no texto, mas não reproduzidas, porque não temos uma reprodução de acesso aberto delas (em alguns países, como os Estados Unidos, ainda há direitos autorais).</p></div>"""
     L.add(c)
 
     c = f"""<div class="miolo centro" style="top:50mm">
