@@ -126,3 +126,20 @@ test('a linha Geometria e espaço mostra o texto e as referências de espaço', 
   await expect(m.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
   await expect(m.locator('.referencias')).toContainText('PIAGET, Jean; INHELDER, Bärbel');
 });
+
+test('a linha Grandezas e medidas mostra o texto e depende de marcos de outras linhas', async ({
+  page,
+}) => {
+  await cadastrarFamiliaECrianca(page);
+  await page.getByRole('link', { name: /Matemática/ }).click();
+  await expect(page.getByRole('heading', { name: /Grandezas e medidas/ })).toBeVisible();
+
+  const m = marco(page, 'MA.MED.07');
+  // A régua depende de medir com unidades (MA.MED.04) e de ler números até 20 (MA.SND.04)
+  await expect(m).toContainText('Aguardando');
+  await m.getByText('Para os pais').click();
+  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(m.locator('.referencias')).toContainText(
+    'PIAGET, Jean; INHELDER, Bärbel; SZEMINSKA',
+  );
+});

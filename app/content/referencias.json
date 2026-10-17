@@ -132,6 +132,13 @@
       "titulo": "A representação do espaço na criança",
       "ano": 1993,
       "veiculo": "Tradução de Bernardina Machado de Albuquerque. Porto Alegre: Artes Médicas"
+    },
+    {
+      "id": "piaget-inhelder-szeminska-geometry",
+      "autores": "PIAGET, Jean; INHELDER, Bärbel; SZEMINSKA, Alina",
+      "titulo": "The child's conception of geometry",
+      "ano": 1960,
+      "veiculo": "Translated by E. A. Lunzer. London: Routledge and Kegan Paul"
     }
   ]
 }

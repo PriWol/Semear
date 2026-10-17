@@ -1014,6 +1014,269 @@
           }
         }
       }
+    },
+    {
+      "id": "MA.MED.01",
+      "linha": "MA.MED",
+      "ordem": 1,
+      "titulo": "Compara tamanhos e quantidades com palavras",
+      "descricaoPais": "Usa maior, menor, mais comprido, mais pesado, cheio e vazio para comparar coisas.",
+      "evidencias": [
+        "Diz qual de dois objetos é maior, mais comprido ou mais pesado",
+        "Usa palavras de comparação ao descrever objetos"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": ["EF01MA15"],
+      "orientacaoPais": {
+        "porQueImporta": "Medir começa com **comparar**: antes de qualquer régua, a criança compara dois objetos e usa palavras como maior, mais comprido, mais pesado, cabe mais. Esse vocabulário da medida é a base de toda a ideia de grandeza, e as pesquisas sobre a medida de comprimento mostram que a comparação direta é o primeiro passo.",
+        "comoParticipar": "Use o dia a dia: “qual copo tem mais suco?”, “qual lápis é mais comprido?”, “qual mochila é mais pesada?”. Deixe comparar com as mãos (um objeto em cada mão, para sentir o peso) e juntando as pontas dos objetos. Use sempre as palavras de comparação e peça que a criança as use. Inclua os opostos: curto e comprido, leve e pesado, cheio e vazio.",
+        "sinaisDeAtencao": "Aos 4 anos é comum confundir “maior” com “mais alto” ou “mais gordo”. Se aos 6 anos ela não compara dois objetos com essas palavras, mesmo com muita conversa, vale conversar com a escola e checar audição e linguagem. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["clements-sarama-early-math", "lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Os materiais sensoriais de dimensão (barras vermelhas de comprimento, torre rosa, escada marrom) educam a comparação e a graduação das dimensões.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Compare com o corpo e com coisas da natureza (o galho mais comprido, a pedra mais pesada): as palavras vêm da experiência.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.MED.02",
+      "linha": "MA.MED",
+      "ordem": 2,
+      "titulo": "Ordena objetos por tamanho",
+      "descricaoPais": "Põe objetos em ordem, do menor para o maior ou do mais curto ao mais comprido.",
+      "evidencias": [
+        "Ordena 5 objetos por comprimento ou tamanho",
+        "Encaixa o objeto que falta numa fila já ordenada"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.MED.01"],
+      "bncc": ["EF01MA15"],
+      "orientacaoPais": {
+        "porQueImporta": "Ordenar objetos (a **seriação**) exige comparar vários ao mesmo tempo: cada um é maior que o anterior e menor que o seguinte. Nas pesquisas sobre a medida de comprimento, ordenar em série é um dos primeiros níveis. No começo, a criança compara só dois a dois e erra a ordem; depois descobre que dá para procurar o menor de todos.",
+        "comoParticipar": "Use varetas, canudos, lápis ou colheres de tamanhos diferentes (de 5 a 7). Peça que ponha em ordem, do menor ao maior, alinhando uma ponta. Esconda um e peça que descubra qual falta. Troquem: ela embaralha, você ordena (e erra de propósito). Façam também com peso (latas cheias) e capacidade (copos).",
+        "sinaisDeAtencao": "No começo é comum ordenar só alguns e deixar os do meio fora do lugar. Se aos 6 anos ela ainda não ordena 4 ou 5 objetos por tamanho, mesmo alinhando-os por uma ponta, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["clements-sarama-early-math", "lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A escada marrom e as barras vermelhas foram feitas para isso: a criança ordena as peças por tamanho e confere sozinha, porque o próprio material mostra o erro.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.MED.03",
+      "linha": "MA.MED",
+      "ordem": 3,
+      "titulo": "Fala do tempo e da sequência do dia",
+      "descricaoPais": "Conta o que aconteceu no dia na ordem certa e usa antes, depois, ontem, hoje e amanhã.",
+      "evidencias": [
+        "Conta 3 ou 4 acontecimentos do dia na ordem",
+        "Usa ontem, hoje e amanhã corretamente"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": ["EF01MA16"],
+      "orientacaoPais": {
+        "porQueImporta": "O tempo não se vê nem se toca, por isso é uma grandeza difícil. A criança começa pelo que vive: a **sequência do dia** (acordar, comer, brincar, dormir) e palavras como antes, depois, ontem, hoje e amanhã. Uma rotina previsível ajuda muito a construir essa noção.",
+        "comoParticipar": "Mantenha uma rotina e fale dela: “primeiro o café, depois a escola, depois o almoço”. Faça um painel do dia com figuras e deixe a criança mover o marcador. No fim do dia, peça que conte o que aconteceu, na ordem. Use “ontem, hoje, amanhã” ligados a eventos (“amanhã é seu aniversário”). Brinque de ordenar as cenas de uma história.",
+        "sinaisDeAtencao": "Ontem e amanhã costumam ser confundidos até os 5 ou 6 anos. Se aos 7 anos ela não consegue contar em ordem o que aconteceu no dia, nem com a ajuda de figuras, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "A rotina e o ritmo (do dia, da semana, das estações e das festas) são a base da pedagogia Waldorf: a criança vive o tempo antes de medi-lo.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Um caderno da natureza ou um diário de poucas linhas ajuda a criança a registrar o que viu e quando.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.MED.04",
+      "linha": "MA.MED",
+      "ordem": 4,
+      "titulo": "Mede com unidades não padronizadas",
+      "descricaoPais": "Mede com passos, palmos ou clipes e conta quantas vezes a unidade cabe.",
+      "evidencias": [
+        "Mede um objeto repetindo uma unidade (palmo, clipe), sem deixar buracos nem sobrepor",
+        "Diz que o mesmo objeto dá números diferentes com unidades diferentes"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.MED.01", "MA.SEN.06"],
+      "bncc": ["EF01MA15"],
+      "orientacaoPais": {
+        "porQueImporta": "Medir é **contar unidades**: quantos palmos tem a mesa? Para isso, a criança precisa repetir a unidade sem deixar buracos nem sobrepor, e perceber que a unidade escolhida muda o número (a mesa tem 8 palmos de criança e 5 de adulto). Essa descoberta explica por que precisamos de unidades padrão. Os estudos de Piaget, Inhelder e Szeminska mostram que a ideia se constrói aos poucos.",
+        "comoParticipar": "Meçam coisas com o que há à mão: passos, palmos, pés, clipes, blocos. Mostre como colocar uma unidade depois da outra, sem espaços, e contar. Meçam a mesma coisa com duas unidades e comparem os números (“por que deu mais clipes que palmos?”). Meçam com o corpo da criança e o do adulto e conversem sobre a diferença.",
+        "sinaisDeAtencao": "Deixar buracos ou sobrepor unidades é comum no começo. Se aos 7 anos ela não consegue medir uma distância repetindo uma unidade, mesmo depois de ver como se faz, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "clements-sarama-early-math",
+          "piaget-inhelder-szeminska-geometry",
+          "lorenzato-percepcao-matematica",
+          "bncc"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As barras numéricas, divididas em partes iguais de cores alternadas, mostram a medida como um conjunto de unidades iguais.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Medir com o próprio corpo (passos, palmos, pés, braçadas) é a primeira medida na tradição Waldorf; as unidades padrão vêm depois, quando a criança sente a necessidade delas.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.MED.05",
+      "linha": "MA.MED",
+      "ordem": 5,
+      "titulo": "Compara pesos e capacidades na prática",
+      "descricaoPais": "Compara massas com uma balança de pratos e capacidades com copos.",
+      "evidencias": [
+        "Usa uma balança de pratos para comparar o peso de dois objetos",
+        "Compara quanto cabe em dois recipientes, enchendo-os com um copo"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.MED.01"],
+      "bncc": ["EF01MA15"],
+      "orientacaoPais": {
+        "porQueImporta": "Peso e capacidade não se descobrem só olhando: o objeto maior nem sempre é o mais pesado, e o recipiente mais alto nem sempre cabe mais. A criança precisa **testar**: equilibrar numa balança, encher com um copo e contar. É aqui que aparece a ideia de que a mesma água, em outra forma de copo, continua sendo a mesma quantidade.",
+        "comoParticipar": "Faça uma balança de pratos com um cabide e dois copos e compare objetos (“o que pesa mais: a pedra ou a esponja?”). Encham recipientes de formas diferentes com um copinho e contem: qual cabe mais? Despeje a mesma água num copo alto e fino e num baixo e largo e pergunte se a quantidade mudou. Deixe prever antes de testar.",
+        "sinaisDeAtencao": "Achar que o copo mais alto sempre cabe mais é muito comum até os 6 ou 7 anos. Se aos 8 anos ela ainda acha que a quantidade muda quando muda a forma do recipiente, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lorenzato-percepcao-matematica", "clements-sarama-early-math", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A vida prática (servir água, medir ingredientes, usar a balança de cozinha) ensina peso e capacidade pelo uso.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Cozinhar e cuidar da horta (medir água, pesar sementes) dão motivo real para comparar e medir, em lições curtas.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.MED.06",
+      "linha": "MA.MED",
+      "ordem": 6,
+      "titulo": "Usa o calendário e os dias da semana",
+      "descricaoPais": "Diz os dias da semana e os meses em ordem e acha uma data no calendário.",
+      "evidencias": [
+        "Diz os dias da semana e os meses do ano em ordem",
+        "Mostra no calendário o dia de hoje e o do aniversário"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.MED.03", "MA.SEN.06"],
+      "bncc": ["EF01MA17", "EF01MA18"],
+      "orientacaoPais": {
+        "porQueImporta": "O calendário junta tempo e números: a criança precisa conhecer a sequência dos dias e dos meses, ler os números de 1 a 31 e perceber que o tempo se repete em **ciclos** (a semana volta a começar, o ano também).",
+        "comoParticipar": "Deixe um calendário à vista e marque o dia de hoje toda manhã. Cantem os dias da semana e os meses. Contem os dias até um evento esperado (aniversário, viagem), marcando cada dia. Pergunte: “que dia vem depois de quarta?”, “que mês vem antes de maio?”. Escrevam a data juntos.",
+        "sinaisDeAtencao": "A ordem dos meses leva mais tempo que a dos dias. Se aos 8 anos ela não consegue dizer os dias da semana em ordem, mesmo com a rotina do calendário, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "O ritmo do ano, com as estações e as festas, é a base: o calendário nasce da vida e dos ciclos da natureza.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.MED.07",
+      "linha": "MA.MED",
+      "ordem": 7,
+      "titulo": "Mede com a régua em centímetros",
+      "descricaoPais": "Mede com a régua, começando do zero, e diz o comprimento em centímetros.",
+      "evidencias": [
+        "Mede objetos de até 20 cm começando do zero",
+        "Explica por que a régua precisa começar no zero"
+      ],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.MED.04", "MA.SND.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "A régua é uma **fila de unidades iguais** (centímetros) já marcadas: o número que a criança lê é quantas unidades cabem no objeto. Entender isso, e não apenas alinhar no zero, é o que transforma a medida de ritual em compreensão. Muitos erros vêm de começar no 1 ou de ler o número do lugar errado.",
+        "comoParticipar": "Antes da régua, meçam com uma fila de clipes e depois cubram com uma tira marcada: a criança vê que a régua é uma fila de unidades. Meçam objetos de casa começando do zero e, depois, deixem-na medir começando em outro número, para discutir o que muda. Estimem antes de medir: “quantos centímetros você acha?”.",
+        "sinaisDeAtencao": "Começar a medir no número 1, em vez do zero, é um erro muito comum. Se aos 8 anos ela ainda não consegue medir um objeto com a régua, mesmo depois de ver que ela é uma fila de unidades, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "clements-sarama-early-math",
+          "piaget-inhelder-szeminska-geometry",
+          "lorenzato-percepcao-matematica"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O trabalho com barras de comprimento graduadas prepara a régua: a criança já viu o comprimento como um conjunto de unidades.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.MED.08",
+      "linha": "MA.MED",
+      "ordem": 8,
+      "titulo": "Lê horas inteiras no relógio",
+      "descricaoPais": "Lê horas inteiras (3 horas, 7 horas) em um relógio de ponteiros.",
+      "evidencias": [
+        "Lê 8 de 10 horas inteiras em um relógio de ponteiros",
+        "Mostra no relógio a hora de um acontecimento do dia"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.MED.06", "MA.SND.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O relógio de ponteiros é difícil porque tem **dois ponteiros e um mostrador circular**: o pequeno mostra as horas, o grande, os minutos, e a leitura depende de saber qual é qual e de contar de 1 a 12. Começar pelas horas inteiras (ponteiro grande no 12) simplifica.",
+        "comoParticipar": "Tenha um relógio de ponteiros em casa e fale as horas dos acontecimentos (“o almoço é às 12 horas”). Faça um relógio de papel com ponteiros móveis e peça que mostre as horas do dia. Mostre que, na hora inteira, o ponteiro grande aponta para o 12. Relacione com a rotina e o painel do dia. Deixe os minutos para depois.",
+        "sinaisDeAtencao": "Ler o relógio de ponteiros é um aprendizado longo, que costuma se estender até os 8 ou 9 anos. Se aos 9 anos ela não lê as horas inteiras, mesmo com relógio e prática, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {}
+      }
+    },
+    {
+      "id": "MA.MED.09",
+      "linha": "MA.MED",
+      "ordem": 9,
+      "titulo": "Reconhece moedas e cédulas e faz trocas simples",
+      "descricaoPais": "Reconhece as moedas e cédulas e troca, por exemplo, dez moedas de 1 real por uma cédula de 10.",
+      "evidencias": [
+        "Reconhece as moedas e cédulas mais comuns e diz o valor",
+        "Junta moedas e cédulas para pagar um valor simples até 10 reais"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.SND.05", "MA.OPE.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O dinheiro junta várias ideias: reconhecer valores, contar de 1 em 1 e de 5 em 5 e, principalmente, **trocar** (dez moedas de 1 real valem uma cédula de 10). Essa troca é a mesma ideia do valor posicional: dez unidades formam uma dezena.",
+        "comoParticipar": "Brinquem de mercadinho com dinheiro de brinquedo (ou moedas de verdade): coloque preços de 1 a 10 reais e deixe a criança vender e comprar. Peça que pague de jeitos diferentes (“com duas cédulas de 5”, “só com moedas”). Troquem: dez moedas por uma cédula. Em compras reais, deixe-a contar o troco com você.",
+        "sinaisDeAtencao": "Valores em centavos e troco são difíceis e costumam vir depois. Se aos 8 anos ela não reconhece as moedas e cédulas mais usadas, mesmo depois de brincar de mercado, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O jogo do banco, com as contas douradas, trabalha a troca de dez unidades por uma dezena, a mesma ideia do dinheiro.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
     }
   ]
 }

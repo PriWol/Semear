@@ -13,7 +13,7 @@ describe('conteúdo real (app/content)', () => {
   it('linhas de Matemática novas têm marcos, pré-requisitos que existem e ordem que acompanha a idade', () => {
     const { marcos } = carregarConteudo();
     const ids = new Set(marcos.map((m) => m.id));
-    for (const id of ['MA.OPE', 'MA.SND', 'MA.GEO']) {
+    for (const id of ['MA.OPE', 'MA.SND', 'MA.GEO', 'MA.MED']) {
       const linha = marcos.filter((m) => m.linha === id).sort((a, b) => a.ordem - b.ordem);
       expect(linha.length, id).toBeGreaterThanOrEqual(8);
       // a ordem vai de 1 a N, sem buracos (a validação só acusa repetição)
