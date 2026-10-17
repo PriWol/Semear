@@ -275,7 +275,7 @@ def unidade2(L):
     apreciar(L, "kandinsky_quadrados", "Quadrados com círculos", "Kandinsky, 1913 · um estudo de cores",
              ["Quantos quadrados você vê? E quantos círculos em cada um?", "Que cores tem o círculo do meio de cada quadrado?", "Qual quadrado você escolheria para você? Por quê?", "Os círculos de dentro e de fora se parecem? O que muda?"],
              "É uma aquarela feita para estudar como as cores se comportam umas ao lado das outras: doze quadrados, cada um com anéis de cores diferentes, um dentro do outro. Pode ser comparada ao jogo dos círculos concêntricos desta unidade. "
-             "A imagem disponível tem pouca resolução e perde nitidez no tamanho impresso; ela não substitui a visita a um museu.",
+             "Uma reprodução não substitui a visita a um museu.",
              "olhar e comparar", "--d-musica", w=110, h=90)
 
     import math
@@ -314,7 +314,7 @@ def unidade3(L):
         objetivos=["Olhar com calma <i>A lebre jovem</i> e <i>Tufo de prímulas</i>, de Dürer.", "Apontar e nomear detalhes: orelhas, bigodes, olho, pelo, patas; folhas, raízes, flores.",
                    "Contar quantas coisas diferentes vê numa obra.", "Procurar no quintal ou na praça plantas e bichos de verdade e olhar de perto, com lupa.", "Desenhar um tufo de plantas observando de verdade."],
         repertorio="<b>Obras:</b> Albrecht Dürer (1471–1528), <i>A lebre jovem</i> (1502, aquarela da Albertina, em Viena) e <i>Tufo de prímulas</i> (1526, National Gallery of Art, em Washington). "
-                   "<b>Palavras:</b> pelo, bigode, orelha, folha, raiz, talo, detalhe. <b>Línguas:</b> <i>hare · le lièvre · lepus</i>; <i>primrose · la primevère · primula</i>; <i>root · la racine · radix</i>.",
+                   "<b>Palavras:</b> pelo, bigode, orelha, folha, raiz, talo, detalhe. <b>Línguas:</b> <i>hare · le lièvre · lepus</i>; <i>primrose · la primevère</i>; <i>root · la racine · radix</i>.",
         materiais="Uma lupa (se tiver), papel e lápis, lápis de cor, uma prancheta ou livro grosso para apoiar; as reproduções deste livro.",
         vida="Passear olhando o chão; levar uma lupa no bolso; separar três coisas pequenas encontradas no caminho.",
         etapas=[["Olhar a lebre em silêncio, de perto.", "Contar bigodes, orelhas, patas.", "Procurar o ano e a assinatura do artista."],
@@ -458,7 +458,7 @@ def unidade5(L):
         objetivos=["Olhar com calma <i>Girassóis</i>, de Van Gogh, e dizer o que vê.", "Perceber que o amarelo tem muitas versões (mais claro, mais escuro, mais verde, mais laranja).",
                    "Misturar amarelos com um pouquinho de outras cores.", "Pintar um vaso de flores observando flores de verdade.", "Nomear flores e plantas em três idiomas, nos cartões."],
         repertorio="<b>Obra:</b> Vincent van Gogh (1853–1890), <i>Girassóis</i> (Arles, agosto de 1888, Neue Pinakothek, Munique). <b>Palavras:</b> amarelo, vaso, pétala, talo, semente, girassol. "
-                   "<b>Línguas:</b> <i>sunflower · le tournesol · helianthus</i>; <i>flower · la fleur · flos</i>.",
+                   "<b>Línguas:</b> <i>sunflower · le tournesol</i>; <i>flower · la fleur · flos</i>.",
         materiais="Guache (amarelo, branco, um pouquinho de vermelho, verde e azul), pincel largo e fino, papel grosso, um vaso com flores de verdade (ou uma única flor).",
         vida="Colher ou comprar uma flor, pôr num vaso com água, regar plantas, observar uma planta crescer.",
         etapas=[["Olhar <i>Girassóis</i> em silêncio, por um minuto.", "Dizer quantas flores vê e como cada uma é diferente.", "Achar amarelos diferentes pela casa."],
@@ -498,9 +498,9 @@ def unidade5(L):
               "A paleta é um jeito de ela ver, por si, o que Van Gogh mostrou no quadro: que o amarelo tem muitos amarelos.")}"""
     L.add(c, aba="--d-jogos")
 
-    itens = [dict(pt="girassol", mot="girassol", en="sunflower", fr="tournesol", la="helianthus", dica="segue o sol; as sementes se comem"),
+    itens = [dict(pt="girassol", mot="girassol", en="sunflower", fr="tournesol", la=None, dica="segue o sol; as sementes se comem"),
              dict(pt="margarida", mot="margarida", en="daisy", fr="marguerite", la="bellis", dica="miolo amarelo, pétalas brancas"),
-             dict(pt="tulipa", mot="tulipa", en="tulip", fr="tulipe", la="tulipa", dica="vem de bulbo; flor de primavera"),
+             dict(pt="tulipa", mot="tulipa", en="tulip", fr="tulipe", la=None, dica="vem de bulbo; flor de primavera"),
              dict(pt="folha", mot="folha", en="leaf", fr="feuille", la="folium", dica="achar folhas de formas diferentes"),
              dict(pt="raminho", mot="raminho", en="twig", fr="brindille", la="ramus", dica="um galho pequeno, com folhas"),
              dict(pt="bolota", mot="bolota", en="acorn", fr="gland", la="glans", dica="o fruto do carvalho"),

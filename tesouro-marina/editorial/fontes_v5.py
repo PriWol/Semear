@@ -6,6 +6,7 @@ domínio público (ou CC0). O arquivo de origem de cada obra é conferido por SH
 as versões tratadas (JPEG) ficam em dominio_publico/v5 e é com elas que os PDFs são gerados, então o build dos PDFs não usa a rede.
 Uso:  python3 fontes_v5.py verificar | baixar [nomes] | registrar [nomes] | gerar [nomes] | jpegs [nomes] | creditos
 """
+import contextlib
 import hashlib
 import html
 import http.client
@@ -17,6 +18,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import warnings
 
 from PIL import Image, ImageCms, ImageOps
 
@@ -30,7 +32,7 @@ ESPERA_TOTAL = 7200    # e desiste depois de 2 h de espera acumulada num mesmo p
 TENTATIVAS_TRANSITORIAS = 3   # queda de rede, timeout ou 5xx: três novas tentativas
 ESPERA_TRANSITORIA = 30
 LADO_MAX = 2000        # px do maior lado (≈ 170 mm a 300 dpi)
-Image.MAX_IMAGE_PIXELS = 400_000_000   # originais grandes do Commons passam do limite padrão do Pillow; vale para baixar, registrar e gerar
+PIXELS_MAX = 400_000_000   # originais grandes do Commons (Google Art Project) passam do limite padrão do Pillow
 UA = "TesouroMarina/0.1 (educational, non-commercial; https://github.com/PriWol/Semear)"
 
 # nome: (arquivo no Commons, autor, obra, ano, acervo, licença conferida no Commons)
@@ -81,7 +83,7 @@ def credito(nome):
     onde = f" {acervo}." if acervo else ""
     if nome in REFERENCIAS:
         inv, url = REFERENCIAS[nome]
-        return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: {inv}, {url}. "
+        return (f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}: {html.escape(inv)}, {html.escape(url)}. "
                 f"As cores variam de uma reprodução para outra.")
     if arq.startswith("envio:"):   # arquivo entregue pela dona do produto, sem endereço de origem registrado
         return f"{autor}, {obra}, {ano}.{onde} Reprodução em {lic}, arquivo fornecido pela editora. As cores variam de uma reprodução para outra."
@@ -126,7 +128,8 @@ def registrar_jpegs(nomes=None):
 
 
 def verificar():
-    """Toda obra de OBRAS precisa ter o SHA-256 da origem e o do JPEG tratado no manifesto, e o JPEG tratado em v5/ tem de bater com ele."""
+    """Toda obra de OBRAS precisa ter o SHA-256 da origem e o do JPEG tratado no manifesto, e o JPEG tratado em v5/ tem de bater com ele.
+    Na CI não existe build/obras: aqui só se prende o JPEG tratado (o que vai para o PDF); o arquivo de origem é conferido por `baixar` e `gerar`."""
     man = _manifesto()
     faltam = sorted(o[0] for o in OBRAS.values() if o[0] not in man)
     sem_img = sorted(n for n in OBRAS if not os.path.exists(os.path.join(SAIDA, f"{n}.jpg")))
@@ -210,6 +213,20 @@ def _da_rede(chave):
     return _pedir("https://upload.wikimedia.org/wikipedia/commons/" + _caminho_commons(chave), {"User-Agent": UA})
 
 
+@contextlib.contextmanager
+def limite_de_pixels():
+    """Eleva o teto de pixels do Pillow só enquanto se abre um original grande, e restaura depois. Entre o teto e o dobro dele o Pillow só
+    avisa (DecompressionBombWarning); aqui o aviso vira erro, para o limite valer de fato."""
+    antes = Image.MAX_IMAGE_PIXELS
+    Image.MAX_IMAGE_PIXELS = PIXELS_MAX
+    try:
+        with warnings.catch_warnings():
+            warnings.simplefilter("error", Image.DecompressionBombWarning)
+            yield
+    finally:
+        Image.MAX_IMAGE_PIXELS = antes
+
+
 def _caminho_commons(arquivo):
     """Caminho do arquivo no servidor: /<h>/<hh>/<nome>, com h e hh vindos do MD5 do nome com sublinhados."""
     nome = arquivo.replace(" ", "_")
@@ -233,9 +250,10 @@ def baixar(nome, registrar=False):
     if not esperado and not registrar:
         raise ValueError(f"{arquivo}: sem SHA-256 no manifesto; confira a imagem e rode: python3 fontes_v5.py registrar")
     try:
-        Image.open(io.BytesIO(dados)).verify()
-    except Image.DecompressionBombError as e:
-        raise ValueError(f"{arquivo}: imagem grande demais ({e}); ajuste Image.MAX_IMAGE_PIXELS se a origem for confiável") from e
+        with limite_de_pixels():
+            Image.open(io.BytesIO(dados)).verify()
+    except (Image.DecompressionBombError, Image.DecompressionBombWarning) as e:
+        raise ValueError(f"{arquivo}: imagem maior que {PIXELS_MAX} pixels ({e})") from e
     except Exception as e:
         raise ValueError(f"{arquivo}: não é uma imagem válida ({e})") from e
     if not esperado:
@@ -263,7 +281,7 @@ def _para_srgb(im):
 
 def processar(nome):
     """Reduz ao tamanho de impressão e grava o JPEG tratado (cores fiéis à origem, em sRGB; sem retoque)."""
-    with Image.open(baixar(nome)) as origem:
+    with limite_de_pixels(), Image.open(baixar(nome)) as origem:
         im = _para_srgb(origem)
     if max(im.size) > LADO_MAX:
         k = LADO_MAX / max(im.size)

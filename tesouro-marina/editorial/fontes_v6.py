@@ -15,7 +15,7 @@ import sys
 
 from PIL import Image
 
-from fontes_v5 import AQUI, FONTE, LADO_MAX, _da_rede, _manifesto, _para_srgb, _registrar, _sha256
+from fontes_v5 import AQUI, FONTE, LADO_MAX, PIXELS_MAX, _da_rede, _manifesto, _para_srgb, _registrar, _sha256, limite_de_pixels
 
 SAIDA = os.path.join(AQUI, "dominio_publico", "v6")
 
@@ -95,9 +95,10 @@ def baixar(nome, registrar=False):
     if not esperado and not registrar:
         raise ValueError(f"{arquivo}: sem SHA-256 no manifesto; confira a imagem e rode: python3 fontes_v6.py registrar")
     try:
-        Image.open(io.BytesIO(dados)).verify()
-    except Image.DecompressionBombError as e:
-        raise ValueError(f"{arquivo}: imagem grande demais ({e})") from e
+        with limite_de_pixels():
+            Image.open(io.BytesIO(dados)).verify()
+    except (Image.DecompressionBombError, Image.DecompressionBombWarning) as e:
+        raise ValueError(f"{arquivo}: imagem maior que {PIXELS_MAX} pixels ({e})") from e
     except Exception as e:
         raise ValueError(f"{arquivo}: não é uma imagem válida ({e})") from e
     if not esperado:
@@ -110,7 +111,7 @@ def baixar(nome, registrar=False):
 
 def processar(nome):
     """Reduz ao tamanho de impressão e grava o JPEG tratado (cores fiéis à origem, em sRGB; sem retoque)."""
-    with Image.open(baixar(nome)) as origem:
+    with limite_de_pixels(), Image.open(baixar(nome)) as origem:
         im = _para_srgb(origem)
     if max(im.size) > LADO_MAX:
         k = LADO_MAX / max(im.size)
