@@ -115,6 +115,21 @@ test('a linha Sistema de numeração mostra o texto e a idade de introdução da
   await expect(m.locator('.para-os-pais-texto')).not.toContainText('aviso acima');
 });
 
+test('a linha Escrita mostra a idade Waldorf já preenchida, sem o marcador {idade}', async ({
+  page,
+}) => {
+  await cadastrarFamiliaECrianca(page);
+  await expect(page.getByRole('heading', { name: 'Escrita', exact: true })).toBeVisible();
+
+  const m = marco(page, 'LG.ESC.05');
+  await m.getByText('Para os pais').click();
+  await expect(m.getByRole('heading', { name: 'Na pedagogia Montessori' })).toBeVisible();
+  await expect(m.getByRole('heading', { name: 'Inspiração Waldorf' })).toBeVisible();
+  await expect(m.locator('.para-os-pais-texto')).toContainText('por volta dos 7 anos');
+  await expect(m.locator('.para-os-pais-texto')).not.toContainText('{idade}');
+  await expect(m.locator('.referencias')).toContainText('FERREIRO, Emilia; TEBEROSKY, Ana');
+});
+
 test('a linha Geometria e espaço mostra o texto e as referências de espaço', async ({ page }) => {
   await cadastrarFamiliaECrianca(page);
   await page.getByRole('link', { name: /Matemática/ }).click();

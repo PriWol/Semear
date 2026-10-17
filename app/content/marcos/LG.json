@@ -253,6 +253,295 @@
       }
     },
     {
+      "id": "LG.ESC.01",
+      "linha": "LG.ESC",
+      "ordem": 1,
+      "titulo": "Faz tentativas de escrever",
+      "descricaoPais": "Sabe que escrever é diferente de desenhar e faz rabiscos ou letras, dizendo o que escreveu.",
+      "evidencias": [
+        "Escreve por conta própria, com rabiscos ou letras, e diz o que “está escrito”",
+        "Distingue o que é desenho do que é escrita"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": ["EI03EF09"],
+      "orientacaoPais": {
+        "porQueImporta": "Antes de escrever “de verdade”, a criança descobre que a escrita é diferente do desenho e que serve para dizer coisas. As tentativas, mesmo com rabiscos e letras soltas, são o ponto de partida. Nessa fase, que Ferreiro e Teberosky chamam de **pré-silábica**, ela ainda não liga as letras aos sons, mas pensa muito sobre como a escrita funciona (quantas letras, quais letras).",
+        "comoParticipar": "Dê motivos reais para escrever: lista de compras, bilhete, legenda de um desenho, cartão de aniversário. Deixe a criança “escrever” do jeito dela e peça que “leia” o que escreveu. Escreva ao lado, em letra de forma, o que ela disse (você como escriba), sem corrigir a tentativa. Mantenha lápis, papel e canetas sempre à mão.",
+        "sinaisDeAtencao": "Aos 4 anos ainda é comum misturar desenho e escrita. Se aos 5 ou 6 anos a criança nunca tenta escrever, nem com rabiscos ou letras, e evita lápis e papel mesmo quando convidada, vale conversar com a escola e avaliar a coordenação da mão. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["ferreiro-teberosky-psicogenese", "soares-alfabetizacao-metodos", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Deixe material de escrita ao alcance (papel, lápis, alfabeto móvel): a criança tenta escrever quando quer, e na tradição Montessori a escrita costuma vir antes da leitura.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Antes de escrever palavras, a criança desenha formas e escuta histórias; a escrita nasce mais tarde, a partir das imagens. Acolha os rabiscos sem exigir nada.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "LG.ESC.02",
+      "linha": "LG.ESC",
+      "ordem": 2,
+      "titulo": "Escreve o próprio nome",
+      "descricaoPais": "Escreve o primeiro nome com as letras certas, ainda que fora de tamanho.",
+      "evidencias": ["Escreve o primeiro nome, com as letras na ordem, sem modelo"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.ESC.01"],
+      "bncc": ["EI03EF09"],
+      "orientacaoPais": {
+        "porQueImporta": "O nome próprio costuma ser a primeira palavra que a criança escreve, e a mais importante: é o seu **modelo estável de escrita**. Ela usa as letras do nome para escrever outras palavras (“começa com a letra do meu nome”) e aprende, com ele, que cada letra tem forma e ordem.",
+        "comoParticipar": "Escreva o nome da criança em tudo o que é dela (caderno, desenhos, cabide) e deixe-a copiar ou escrever. Brinque com as letras do nome: letras móveis, massinha, cartões; compare com o nome dos amigos (“quem tem a mesma letra?”). Peça que assine os desenhos. Aceite letras trocadas, tortas ou espelhadas no começo.",
+        "sinaisDeAtencao": "Aos 4 anos é comum escrever só algumas letras do nome. Se aos 6 anos ela ainda não escreve o próprio nome, mesmo com muita prática, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "ferreiro-teberosky-psicogenese",
+          "morais-sistema-escrita-alfabetica",
+          "bncc"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As letras de lixa e o alfabeto móvel permitem montar o próprio nome antes de escrevê-lo no papel.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Clássico": {
+            "comoParticipar": "A cópia cuidadosa do nome, bem formado e poucas vezes, é um bom primeiro exercício de cópia.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
+    },
+    {
+      "id": "LG.ESC.03",
+      "linha": "LG.ESC",
+      "ordem": 3,
+      "titulo": "Escreve uma letra para cada sílaba",
+      "descricaoPais": "Escreve cada sílaba com uma letra (por exemplo, AO para GATO).",
+      "evidencias": [
+        "Escreve palavras de 2 a 4 sílabas com uma letra por sílaba",
+        "Lê o que escreveu apontando uma letra para cada sílaba"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.ESC.02", "LG.FON.03"],
+      "bncc": ["EI03EF09", "EF01LP05"],
+      "orientacaoPais": {
+        "porQueImporta": "É um grande salto: a criança descobre que **a escrita representa a fala** e que cada pedaço da palavra (a sílaba) pode virar uma letra. Por isso ela pode escrever AO para GATO. Para Ferreiro e Teberosky, essa é a hipótese **silábica**, e escrever assim não é erro: é um jeito de pensar que leva à escrita alfabética.",
+        "comoParticipar": "Peça que escreva palavras do mundo dela (nomes, bichos, comidas) e fale devagar, batendo palmas nas sílabas. Depois peça que “leia” apontando uma letra para cada sílaba. Não corrija a hipótese; pergunte “quais sons você ouviu?” e mostre a escrita convencional ao lado, depois. Letras móveis ajudam muito.",
+        "sinaisDeAtencao": "Cada criança passa por essa fase em um tempo. Se aos 7 anos ela ainda escreve só com letras sem relação com o som, mesmo com atividades de sílabas e letras, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "ferreiro-teberosky-psicogenese",
+          "morais-sistema-escrita-alfabetica",
+          "soares-alfabetizacao-metodos"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O alfabeto móvel permite escrever espontaneamente as palavras pelo que se ouve, sem a preocupação com a letra bonita nem com a ortografia.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
+    },
+    {
+      "id": "LG.ESC.04",
+      "linha": "LG.ESC",
+      "ordem": 4,
+      "titulo": "Escreve com letras ligadas aos sons",
+      "descricaoPais": "Escreve palavras com mais de uma letra por sílaba, mas ainda esquece algumas.",
+      "evidencias": [
+        "Escreve palavras com letras que combinam com os sons, mesmo faltando algumas",
+        "Usa a letra certa para o som inicial na maioria das palavras"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.ESC.03", "LG.FON.04"],
+      "bncc": ["EF01LP05", "EF01LP02"],
+      "orientacaoPais": {
+        "porQueImporta": "A criança começa a escutar **os sons dentro das sílabas** (a hipótese **silábico-alfabética**): às vezes usa uma letra para a sílaba, às vezes duas. Ela está descobrindo que a letra representa um som menor que a sílaba, e por isso “esquece” letras e hesita.",
+        "comoParticipar": "Brinque de escrever palavras devagar, alongando os sons (“bbbooolaaa”), e pergunte “que som você ouve primeiro? e depois?”. Use letras móveis para montar e consertar a palavra. Compare a escrita dela com a convencional, com carinho (“olha, aqui tem mais uma letra”). Não corrija tudo de uma vez: escolha uma letra por vez.",
+        "sinaisDeAtencao": "Misturar as hipóteses é normal. Se aos 7 anos ela ainda escreve com uma letra por sílaba ou com letras aleatórias, apesar do ensino sistemático de sons e letras, vale conversar com a escola e com um fonoaudiólogo. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "ferreiro-teberosky-psicogenese",
+          "morais-sistema-escrita-alfabetica",
+          "soares-alfabetizacao-metodos"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Os jogos de sons (“eu vejo uma coisa que começa com…”), seguidos do alfabeto móvel, ligam o ouvido à letra.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Clássico": {
+            "comoParticipar": "O ensino fônico sistemático, em ordem e com revisão diária, leva a criança a ligar cada letra ao seu som.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
+    },
+    {
+      "id": "LG.ESC.05",
+      "linha": "LG.ESC",
+      "ordem": 5,
+      "titulo": "Escreve palavras com todos os sons",
+      "descricaoPais": "Escreve de forma alfabética, uma letra para cada som, ainda com erros de ortografia (CAZA para CASA).",
+      "evidencias": [
+        "Escreve 8 de 10 palavras ditadas com letras que representam todos os sons",
+        "Aceita que algumas palavras têm ortografia diferente do que ela ouve"
+      ],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["LG.ESC.04", "LG.FON.06"],
+      "bncc": ["EF01LP02", "EF01LP05"],
+      "orientacaoPais": {
+        "porQueImporta": "Na hipótese **alfabética**, a criança entende que cada letra representa um som e consegue escrever quase qualquer palavra. É aí que aparecem os erros de ortografia (CAZA, CASA), que mostram que ela pensa no som. Agora ela precisa aprender que a ortografia tem regras e exceções, e isso leva anos.",
+        "comoParticipar": "Comemore que ela escreve qualquer palavra e use os erros como ponto de conversa, sem corrigir tudo: escolha um erro por texto (“o S entre vogais tem som de Z, mas se escreve com S”). Façam listas de palavras com a mesma regra, caça-palavras e jogos de memória. Mantenha a escrita com sentido: bilhetes, cartas, diário, legendas.",
+        "sinaisDeAtencao": "Erros de ortografia são esperados por muitos anos. Se aos 8 anos ela ainda omite muitas letras ou escreve palavras sem relação com o som, mesmo com ensino sistemático, vale conversar com a escola e avaliar a leitura e a escrita. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "ferreiro-teberosky-psicogenese",
+          "morais-sistema-escrita-alfabetica",
+          "soares-alfabetizacao-metodos"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com o alfabeto móvel e os cartões de palavras, a criança escreve o que quiser, e o erro é visto como etapa; a correção vem da comparação com a palavra escrita corretamente.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, a escrita sistemática de palavras costuma começar no 1º ano, por volta dos {idade} anos, a partir de letras que nascem de imagens e histórias.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "É hora de ensinar a ortografia de modo ordenado, por famílias de palavras e regras, com ditados curtos e revisão.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "A cópia e o estudo de palavras de bons livros, poucas por vez, formam o olho para a ortografia.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "LG.ESC.06",
+      "linha": "LG.ESC",
+      "ordem": 6,
+      "titulo": "Escreve frases com maiúscula e ponto",
+      "descricaoPais": "Escreve uma frase completa, com letra maiúscula no começo e ponto no fim.",
+      "evidencias": [
+        "Escreve 3 frases ditadas ou inventadas, com maiúscula inicial e ponto final",
+        "Deixa espaço entre as palavras"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 7.5
+      },
+      "preRequisitos": ["LG.ESC.05"],
+      "bncc": ["EF01LP02"],
+      "orientacaoPais": {
+        "porQueImporta": "Escrever uma frase é mais que juntar palavras: exige **espaço entre as palavras**, pontuação e organização das ideias. A maiúscula e o ponto marcam onde a frase começa e termina, e ajudam o leitor (e a própria criança) a entender.",
+        "comoParticipar": "Peça frases sobre o dia (“O gato dormiu no sofá.”). Mostre o espaço entre as palavras (um dedo de distância), a maiúscula e o ponto. Alterne: você escreve uma frase com um erro de pontuação e ela corrige. Façam um diário de uma frase por dia. Leia a frase em voz alta para ver se faz sentido.",
+        "sinaisDeAtencao": "Juntar palavras (“ogatodormiu”) é comum no começo. Se aos 8 anos ela escreve sem espaços ou sem nenhuma pontuação, mesmo com lembretes e prática, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "soares-alfabetizacao-metodos",
+          "morais-sistema-escrita-alfabetica",
+          "bncc"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O alfabeto móvel permite montar a frase e ver o espaço entre as palavras antes de escrevê-la no papel.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, a escrita de frases costuma vir por volta dos {idade} anos, depois de muito trabalho com letras e palavras, a partir das histórias.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Pequenas frases copiadas de bons textos, com atenção à maiúscula e ao ponto, em poucos minutos por dia.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "A cópia de frases bonitas de bons livros (copywork) ensina a pontuação, a maiúscula e a boa forma da escrita.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "LG.ESC.07",
+      "linha": "LG.ESC",
+      "ordem": 7,
+      "titulo": "Escreve um texto curto com começo, meio e fim",
+      "descricaoPais": "Escreve um bilhete, uma legenda ou uma historinha com começo, meio e fim.",
+      "evidencias": [
+        "Escreve um texto de 3 a 5 frases com começo, meio e fim",
+        "Escreve um bilhete ou carta a alguém, dizendo para quê"
+      ],
+      "idadeTipica": 7.5,
+      "idadeIntroducao": {
+        "Waldorf": 8
+      },
+      "preRequisitos": ["LG.ESC.06", "LG.LIT.02"],
+      "bncc": ["EF15LP05"],
+      "orientacaoPais": {
+        "porQueImporta": "Escrever um texto é **organizar ideias para alguém ler**: escolher o que dizer, a ordem e o final. A criança usa o que aprendeu ouvindo histórias e recontando (começo, meio e fim). Escrever para uma pessoa de verdade (um bilhete, uma carta) dá motivo para caprichar.",
+        "comoParticipar": "Dê motivos reais: bilhete, convite, carta a um avô, receita, legenda de uma foto. Antes de escrever, converse: “o que você quer contar? como começa? como termina?”. Deixe fazer um rascunho com erros e passe a limpo só o que ela quiser mostrar. Leia o texto como um leitor interessado.",
+        "sinaisDeAtencao": "Textos muito curtos ou desorganizados são esperados no começo. Se aos 9 anos ela não consegue escrever duas ou três frases ligadas sobre algo que viveu, mesmo conversando antes, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["soares-alfabetizacao-metodos", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, os textos próprios costumam vir por volta dos {idade} anos, depois de muita escuta, reconto e cópia de textos bonitos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "A narração escrita faz parte da formação clássica: a criança conta por escrito o que ouviu ou leu, de início em poucas frases.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "A narração (primeiro oral, depois escrita) é o método central: a criança conta com as próprias palavras o que leu, depois de uma única leitura.",
+            "referencias": ["mason-home-education-4ed"]
+          }
+        }
+      }
+    },
+    {
+      "id": "LG.ESC.08",
+      "linha": "LG.ESC",
+      "ordem": 8,
+      "titulo": "Revisa e corrige o próprio texto",
+      "descricaoPais": "Relê o que escreveu, encontra erros ou partes confusas e melhora o texto.",
+      "evidencias": [
+        "Relê o próprio texto e corrige pelo menos um erro de pontuação ou ortografia",
+        "Acrescenta ou tira uma parte para melhorar o texto"
+      ],
+      "idadeTipica": 8,
+      "idadeIntroducao": {
+        "Waldorf": 8
+      },
+      "preRequisitos": ["LG.ESC.07"],
+      "bncc": ["EF15LP06"],
+      "orientacaoPais": {
+        "porQueImporta": "Revisar é o passo que transforma um rascunho em texto: a criança aprende a **ler o que escreveu com os olhos de outra pessoa** e a perceber o que falta, o que sobra e o que está errado. É difícil e vem depois de escrever com fluência.",
+        "comoParticipar": "Depois de escrever, deixe passar um tempo e peça que releia em voz alta, com o dedo na linha. Faça uma pergunta de cada vez: “falta algum ponto?”, “alguma palavra está estranha?”, “dá para dizer de outro jeito?”. Use lápis de cor para marcar o que vai mudar. Corrija com ela, sem tomar o lápis, e comemore cada melhoria.",
+        "sinaisDeAtencao": "Revisar sozinha costuma ser difícil até os 9 ou 10 anos. Se aos 9 anos ela não percebe nenhum erro ao reler em voz alta, nem com ajuda, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "soares-alfabetizacao-metodos"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, a revisão do próprio texto costuma vir mais tarde, por volta dos {idade} anos, depois de muito trabalho de escrita; antes, o cuidado com a letra e com a cópia faz esse papel.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Reescrever com atenção à gramática e à pontuação é exercício central do trivium, que ensina a ordenar o pensamento e a expressão.",
+            "referencias": ["sayers-lost-tools"]
+          }
+        }
+      }
+    },
+    {
       "id": "LG.LIT.01",
       "linha": "LG.LIT",
       "ordem": 1,
