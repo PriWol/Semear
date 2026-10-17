@@ -17,7 +17,6 @@ O educador cadastra a família e as crianças, posiciona cada criança numa **jo
 | `docs/` | Especificação, identidade visual (`DESIGN.md`), roteiro por fases (`ROADMAP.md`), ADRs e guia de aprendizado. |
 | `tesouro-marina/` | Coleção editorial impressa *O Grande Tesouro de Marina* (PDFs A4 gerados em Python + Playwright). Fora do `app/` e sem dados de família (ADR 0011). |
 | `prototipos/` | Mocks dos pacotes de sessão e das direções visuais (`design/`); referência visual, não é código do app. |
-| raiz (`index.html`, `assets/`, `data/`) | **Site antigo**, não é mais publicado (ADR 0009). Será arquivado; não alterar sem pedido explícito. |
 
 ## Comandos (rodar dentro de `app/`)
 ```bash

@@ -41,8 +41,8 @@ npm run test:e2e   # testes ponta a ponta (desktop e celular)
 Vite + TypeScript (PWA), IndexedDB (`idb`) para os dados locais, Vitest e Playwright para testes,
 GitHub Actions para CI, revisão por agentes e publicação no GitHub Pages.
 
-> Os arquivos na raiz (`index.html`, `assets/`, `data/` e os `.md` antigos) são do **site antigo**,
-> que não é mais publicado. O arquivamento está na issue #32.
+> O site antigo (MVP 1.0) foi removido da raiz e continua recuperável pela tag `1.0.0`
+> (`git show 1.0.0:data/resources.json`).
 
 ## 📝 Licença
 
