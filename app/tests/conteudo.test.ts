@@ -36,6 +36,18 @@ describe('conteúdo real (app/content)', () => {
       for (const t of textos) expect(t, m.id).not.toMatch(/aviso acima/i);
     }
   });
+  it('LG.ESC acompanha as hipóteses de escrita: pré-requisitos existem, ordem 1..N e idade não decresce', () => {
+    const { marcos } = carregarConteudo();
+    const ids = new Set(marcos.map((m) => m.id));
+    const linha = marcos.filter((m) => m.linha === 'LG.ESC').sort((a, b) => a.ordem - b.ordem);
+    expect(linha.length).toBeGreaterThanOrEqual(8);
+    expect(linha.map((m) => m.ordem)).toEqual(linha.map((_, i) => i + 1));
+    linha.forEach((m, i) => {
+      for (const p of m.preRequisitos) expect(ids.has(p), `${m.id} → ${p}`).toBe(true);
+      const anterior = linha[i - 1];
+      if (anterior) expect(m.idadeTipica, m.id).toBeGreaterThanOrEqual(anterior.idadeTipica);
+    });
+  });
   it('tem as atividades de exemplo publicadas', () => {
     const ids = carregarConteudo().atividades.map((a) => a.id);
     expect(ids).toEqual(expect.arrayContaining(['atv-caca-silabas', 'atv-feira-numeros']));
