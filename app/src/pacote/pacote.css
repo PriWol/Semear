@@ -360,7 +360,7 @@ table.registro {
 .registro th,
 .registro td {
   border: 1px solid var(--linha);
-  padding: 2.5mm;
+  padding: 1.6mm 2.5mm;
   text-align: left;
   vertical-align: top;
 }
@@ -373,9 +373,23 @@ table.registro {
   font-size: 14pt;
   width: 22mm;
 }
+/* As linhas de anotação ocupam só o espaço que sobra na folha (#33): com duas atividades a tabela
+   de evidências cresce e a ficha precisa continuar em uma página. */
+.linhas-nota {
+  flex: 1 1 0;
+  min-height: 14mm;
+  display: flex;
+  flex-direction: column;
+}
 .linhas-nota div {
+  flex: 1 1 0;
+  min-height: 7mm;
+  max-height: 10mm;
   border-bottom: 1px solid var(--linha);
-  height: 8mm;
+}
+/* Tabela inteira na mesma página: se não couber, quebra entre linhas, nunca no meio de uma. */
+.registro tr {
+  break-inside: avoid;
 }
 
 /* ---------- Modo tablet: só folhas da criança, uma por tela ---------- */

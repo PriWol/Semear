@@ -174,6 +174,8 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Domínio** (produto) | Grande área do conhecimento: Linguagem, Matemática, Línguas. |
 | **Linha** | Sequência de aprendizagem dentro de um domínio (ex.: Consciência fonológica). |
 | **Marco** | Uma conquista observável numa linha (ex.: identifica a sílaba inicial). |
+| **Orientação para os pais** | Texto pedagógico de um marco, recolhido na jornada ("Para os pais"): por que importa, como participar, sinais de atenção e o que a vertente da família acrescenta. |
+| **Referência** | Obra do catálogo bibliográfico (`referencias.json`) citada nos marcos, exibida em ABNT. |
 | **Fronteira** | O primeiro marco da linha que a criança ainda não consolidou. |
 | **Marcos ativos** | Os marcos sendo trabalhados agora (fronteira + o seguinte, no máx. 2). |
 | **Pista** | Uma linha, ou uma linha num idioma (no domínio de Línguas). |

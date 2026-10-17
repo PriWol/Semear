@@ -10,6 +10,7 @@ dentro de `app/` e abra um PR.
 | ----------------------- | ----------------------------------------------------------------------- |
 | `dominios.json`         | Domínios, linhas, trilhas de língua e vertentes. Muda pouco.            |
 | `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                          |
+| `referencias.json`      | Catálogo de referências bibliográficas (ABNT) citadas nos marcos.       |
 | `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança.      |
 | `livros.json`           | Curadoria de livros (`editora` e `linkCompra` são opcionais; só https). |
 | `acervo.json`           | Acervo gratuito (domínio público/licença aberta), ADR 0016.             |
@@ -29,8 +30,48 @@ dentro de `app/` e abra um PR.
   "idadeIntroducao": { "Waldorf": 6.5 }, // só gera aviso, nunca bloqueia
   "preRequisitos": ["LG.FON.03"], // pode citar marcos de outras linhas
   "bncc": [], // obrigatório em LG e MA antes do lançamento (portfólio)
+  "orientacaoPais": {}, // obrigatório em todo marco, ver abaixo
 }
 ```
+
+### Orientação para os pais
+
+Texto de apoio que a família lê **se quiser**: na jornada ele fica num bloco recolhido, "📖 Para os pais".
+**É obrigatório em todo marco** (ADR 0017): marco sem `orientacaoPais` é erro de validação e o CI falha. Só `porVertente` é opcional.
+
+```jsonc
+"orientacaoPais": {
+  "porQueImporta": "O que o marco desenvolve e por que isso conta.",
+  "comoParticipar": "Uma ou duas atividades simples para fazer em casa.",
+  "sinaisDeAtencao": "Quando vale conversar com a escola ou um profissional. Não é diagnóstico.",
+  "referencias": ["morais-consciencia-fonologica"], // ids de referencias.json
+  "porVertente": {
+    // só as vertentes com algo a acrescentar; as demais veem apenas o texto geral
+    "Waldorf": { "comoParticipar": "Como essa pedagogia trata o marco.", "referencias": ["steiner-educacao-crianca"] },
+  },
+}
+```
+
+- A família vê o texto geral, depois o da **vertente principal** ("Na pedagogia X") e o das **inspirações**.
+- O texto por vertente precisa concordar com `idadeIntroducao`: se o marco só entra aos 7 anos naquela
+  pedagogia, o texto diz isso e não propõe a tarefa antes.
+- Só cite obras que você conferiu (autor, título, editora e ano). Livros não levam link; fontes oficiais
+  de acesso livre podem levar, sempre `https://`.
+
+## Referência (`referencias.json`)
+
+```jsonc
+{
+  "id": "morais-consciencia-fonologica", // usado em "referencias" dos marcos
+  "autores": "MORAIS, Artur Gomes de", // já no formato ABNT
+  "titulo": "Consciência fonológica na educação infantil e no ciclo de alfabetização",
+  "ano": 2019,
+  "veiculo": "Belo Horizonte: Autêntica", // local: editora
+  "link": "https://…", // opcional
+}
+```
+
+Na tela a referência sai em ABNT: `AUTORES. *Título*. Veículo, ano.` Cada obra é escrita uma única vez aqui.
 
 ## Atividade
 
