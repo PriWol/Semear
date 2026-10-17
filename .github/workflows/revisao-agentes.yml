@@ -17,7 +17,10 @@ permissions:
 
 jobs:
   revisor:
-    if: github.event.pull_request.draft == false
+    # PR do Dependabot não tem acesso aos segredos do repositório (só aos do Dependabot) e a ação
+    # recusa atores bot; liberar o bot só trocaria esse erro por falta de credencial. Esses PRs só
+    # sobem versão de actions/dependências e passam por CI e por aprovação humana (ADR 0007).
+    if: github.event.pull_request.draft == false && github.actor != 'dependabot[bot]'
     name: Revisor (${{ matrix.foco }})
     runs-on: ubuntu-latest
     strategy:
