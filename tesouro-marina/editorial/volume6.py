@@ -186,12 +186,12 @@ def unidade1(L):
 
     c = f"""<div class="miolo">{titulo("Como se olha uma coisa só", "uma história curta, para contar antes de sair", 24)}
       <div class="centro" style="margin:3mm 0">{tira(["lupa", "folha", "raminho"], "36mm", "4mm")}</div>
-      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Marina tinha um caderno novo, sem nenhuma linha. “O que a gente escreve num caderno sem linhas?”, ela perguntou. “O que a gente vê”, disse o avô.
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Marina tinha um caderno novo, sem nenhuma linha. “O que a gente escreve num caderno sem linhas?”, ela perguntou. “O que a gente vê”, disse o papai.
       Eles saíram para o quintal e se sentaram no degrau.</p>
-      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">“Escolha uma coisa só”, disse o avô. Marina escolheu uma folha. “Agora fique olhando um minuto, sem falar.” O minuto demorou. Primeiro a folha era verde.
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">“Escolha uma coisa só”, disse o papai. Marina escolheu uma folha. “Agora fique olhando um minuto, sem falar.” O minuto demorou. Primeiro a folha era verde.
       Depois ela viu que tinha uma linha no meio e linhas menores saindo dela, como os galhos de uma árvore. A borda tinha uns dentinhos. Num cantinho, um furo pequeno: alguém já tinha comido um pedaço.</p>
-      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">“Agora desenhe”, disse o avô. Marina desenhou a linha do meio, as linhas pequenas, os dentinhos e o furo. No cantinho da página escreveu, com a ajuda do avô,
-      o dia e o lugar: <i>quintal, degrau, sol fraco</i>. Quando acabou, ela disse: “Nunca vi tanta coisa numa folha só.” O avô sorriu: “É por isso que a gente olha uma coisa de cada vez.”</p></div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">“Agora desenhe”, disse o papai. Marina desenhou a linha do meio, as linhas pequenas, os dentinhos e o furo. No cantinho da página escreveu, com a ajuda do papai,
+      o dia e o lugar: <i>quintal, degrau, sol fraco</i>. Quando acabou, ela disse: “Nunca vi tanta coisa numa folha só.” O papai sorriu: “É por isso que a gente olha uma coisa de cada vez.”</p></div>
       {adulto("contar e olhar",
               "Conte devagar, e peça que ela escolha a sua folha antes de sair. A ideia da unidade está na história: <b>uma coisa só, por um minuto, em silêncio</b>. "
               "A história é da coleção; o diário de natureza, como hábito, vem de Charlotte Mason.")}"""
