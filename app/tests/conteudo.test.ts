@@ -1,8 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { validarConteudo } from '../src/domain/conteudo';
-import type { Marco } from '../src/domain/tipos';
 import { carregarConteudo } from '../src/conteudo';
-import type { OrientacaoPais, Referencia } from '../src/domain/tipos';
+import type { Marco, OrientacaoPais, Referencia } from '../src/domain/tipos';
 import { atividade, conteudoBase, marco } from './fabricas';
 
 function marcosPorLinha() {
