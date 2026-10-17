@@ -126,7 +126,8 @@ def registrar_jpegs(nomes=None):
 
 
 def verificar():
-    """Toda obra de OBRAS precisa ter o SHA-256 da origem e o do JPEG tratado no manifesto, e o JPEG tratado em v5/ tem de bater com ele."""
+    """Toda obra de OBRAS precisa ter o SHA-256 da origem e o do JPEG tratado no manifesto, e o JPEG tratado em v5/ tem de bater com ele.
+    Na CI não existe build/obras: aqui só se prende o JPEG tratado (o que vai para o PDF); o arquivo de origem é conferido por `baixar` e `gerar`."""
     man = _manifesto()
     faltam = sorted(o[0] for o in OBRAS.values() if o[0] not in man)
     sem_img = sorted(n for n in OBRAS if not os.path.exists(os.path.join(SAIDA, f"{n}.jpg")))
