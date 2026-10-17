@@ -186,6 +186,54 @@
           "paginas": [60, 68]
         }
       ]
+    },
+    {
+      "numero": 5,
+      "titulo": "O mundo das artes",
+      "arquivo": "tesouro/volume5-tela.pdf",
+      "paginas": 67,
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Três cores, todas as cores",
+          "paginas": [6, 12]
+        },
+        {
+          "numero": 2,
+          "titulo": "Linhas e círculos",
+          "paginas": [13, 19]
+        },
+        {
+          "numero": 3,
+          "titulo": "Dürer, olhar de perto",
+          "paginas": [20, 27]
+        },
+        {
+          "numero": 4,
+          "titulo": "Monet e o jardim",
+          "paginas": [28, 34]
+        },
+        {
+          "numero": 5,
+          "titulo": "Van Gogh e os girassóis",
+          "paginas": [35, 42]
+        },
+        {
+          "numero": 6,
+          "titulo": "Mary Cassatt",
+          "paginas": [43, 50]
+        },
+        {
+          "numero": 7,
+          "titulo": "Modelar",
+          "paginas": [51, 55]
+        },
+        {
+          "numero": 8,
+          "titulo": "Colar",
+          "paginas": [56, 61]
+        }
+      ]
     }
   ]
 }

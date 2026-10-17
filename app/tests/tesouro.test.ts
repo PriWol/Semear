@@ -18,8 +18,15 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
     }
   });
 
-  it('os volumes 1 a 4 estão no catálogo, em ordem', () => {
-    expect(VOLUMES.map((v) => v.numero)).toEqual([1, 2, 3, 4]);
+  it('os volumes 1 a 5 estão no catálogo, em ordem', () => {
+    expect(VOLUMES.map((v) => v.numero)).toEqual([1, 2, 3, 4, 5]);
+  });
+
+  it('o volume 5 aponta para o PDF de tela e abre cada unidade na página do sumário do livro', () => {
+    const v5 = VOLUMES.find((v) => v.numero === 5)!;
+    expect(v5.arquivo).toBe('tesouro/volume5-tela.pdf');
+    expect(v5.paginas).toBe(67);
+    expect(v5.unidades.map((u) => u.paginas[0])).toEqual([6, 13, 20, 28, 35, 43, 51, 56]);
   });
 
   it('o arquivo é caminho relativo ao app (nada de endereço externo)', () => {
