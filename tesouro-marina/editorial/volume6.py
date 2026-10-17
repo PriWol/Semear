@@ -11,7 +11,8 @@ import sys
 
 from PIL import Image
 
-from livro import (Livro, VERSAO, adulto, cabeca_folha, cartoes, gerar_pdf, guia, img, lista, observacao, passos, poema, texto, titulo)
+from livro import (Livro, VERSAO, adulto, cabeca_folha, cartoes, gerar_pdf, guia, img, lista, observacao, passos, poema, sequencia, texto, titulo)
+from musica import linha_do_tempo
 import fontes_v6
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -389,9 +390,488 @@ def unidade3(L):
            "Desenhe ou cole aqui o que ela viu na caça aos bichinhos, com a data e o lugar. Se ela quiser, copie o que ela disser sobre cada desenho ao lado dele.")
 
 
+# ================================================================== U4 ÁRVORES E FOLHAS
+
+def unidade4(L):
+    inicio_unidade(L, 3)
+    guia(L, dict(
+        titulo="Unidade 4 · Árvores e folhas", aba="--d-memoria",
+        pergunta="Como é uma árvore por fora, de pertinho, e o que dá para fazer com as folhas que caem?",
+        duracao="Dois fins de semana · um passeio até uma árvore e um de coleção de folhas · 20 a 30 minutos.",
+        objetivos=["Escolher <b>uma</b> árvore perto de casa e voltar a ela mais de uma vez.", "Nomear as partes: raiz (escondida), tronco, galho, folha, flor, fruto.",
+                   "Olhar a casca com a ponta dos dedos e passar giz de cera sobre ela, no papel.", "Juntar folhas <b>caídas</b> e separar por forma, tamanho e cor.",
+                   "Dizer se a árvore tem folhas, flores ou frutos em cada visita."],
+        repertorio="<b>Palavras:</b> árvore, tronco, casca, galho, folha, nervura, raiz, fruto. <b>Línguas:</b> <i>tree · l’arbre · arbor</i>; <i>leaf · la feuille · folium</i>; <i>branch · la branche · ramus</i>.",
+        materiais="Papel fino, giz de cera sem o papel, lápis de cor, uma sacolinha de pano para folhas caídas, um pedaço de barbante para medir o tronco, uma lupa, o caderno de natureza.",
+        vida="Passar pela mesma árvore a caminho da escola ou da padaria e dizer uma coisa que mudou; separar as folhas secas do vaso em casa.",
+        etapas=[["Ir até a árvore escolhida e ficar um minuto quieta, olhando.", "Passar a mão no tronco e dizer como é a casca.", "Abraçar o tronco e ver se os braços dão a volta."],
+                ["Fazer o desenho da casca: papel no tronco e giz por cima.", "Juntar folhas caídas e olhar a nervura de cada uma.", "Separar as folhas em montinhos (grande e pequena, lisa e serrilhada)."],
+                ["Colar ou desenhar as folhas no caderno.", "Voltar à árvore uma semana depois e contar o que mudou.", "Dar um nome à árvore e contar a alguém por quê."]],
+        indicadores=["Diz o nome de pelo menos três partes da árvore.", "Descreve a casca com palavras (áspera, lisa, rachada, mole).", "Junta só folhas que já caíram.",
+                     "Separa as folhas por um critério e explica qual.", "Percebe o que mudou na árvore de uma visita para outra.", "Volta a falar da árvore sem ser lembrada."],
+        interesse="medir a sombra da árvore em horas diferentes do dia, ou procurar quantas espécies de folha há numa quadra.",
+        dificil="olhar uma folha só, grande, por um minuto, e passar o dedo pela nervura.",
+        alerta="Não suba em árvore desconhecida, não coma frutos nem sementes que achar e evite a seiva (algumas plantas queimam a pele ou coçam). Lave as mãos depois."))
+
+    c = f"""<div class="miolo">{titulo("A árvore da esquina", "uma história curta, para contar antes de sair", 24)}
+      <div class="centro" style="margin:3mm 0">{tira(["arvore_verao", "folha", "bolota"], "34mm", "4mm")}</div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Na esquina da rua da Marina havia uma árvore grande. Marina passava por ela todo dia e nunca tinha reparado. Um dia, o papai disse: “Vamos conhecer essa árvore?”
+      Eles chegaram bem pertinho, e Marina passou a mão no tronco. “É áspero, e tem uns buraquinhos”, ela disse. O papai deu o barbante: “Vamos ver quantos barbantes de tronco cabem em volta?” Deu duas voltas e meia.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Depois, Marina olhou para cima. Os galhos saíam do tronco e se abriam em outros galhos menores, e nos menores, as folhas. Algumas folhas estavam no chão. Ela pegou três, e cada uma era diferente:
+      uma grande e lisa, uma pequena e cheia de dentinhos, uma amarelada nas pontas. “Cada folha tem um jeito”, disse Marina.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Em casa, ela colou as três folhas no caderno e escreveu embaixo: <i>a árvore da esquina</i>. Na semana seguinte voltou lá e viu que tinha uma folha nova, bem verdinha, num galho de baixo.
+      “Ela está crescendo”, disse Marina. “Todo dia um pouquinho”, respondeu o papai.</p></div>
+      {adulto("contar e perguntar",
+              "Conte devagar, e peça que ela escolha uma árvore perto de casa para ser a <b>dela</b>. Pare em “cada folha tem um jeito” e pergunte o que ela acha que cada folha conta. A história é da coleção.")}"""
+    L.add(c, aba="--d-memoria")
+
+    itens = [(img("arvore_verao", "22mm"), "Ir até a árvore escolhida e ficar quieta"),
+             (img("folha", "20mm"), "Olhar bem uma folha: como é a nervura? E a borda?"),
+             (img("raminho", "22mm"), "Seguir um galho com o dedo, do tronco até as folhas"),
+             (img("bolota", "20mm"), "Procurar no chão: folhas, frutos, gravetos caídos"),
+             (img("lupa", "20mm"), "Olhar a casca de perto: tem buraquinhos? Tem algum bichinho?"),
+             (img("estrela", "20mm"), "Abraçar o tronco e dizer o que sentiu")]
+    passos(L, "Passeio até a árvore", "olhar uma árvore só, de perto e de longe", itens,
+           adulto("o passeio",
+                  "Escolha uma árvore que a Marina possa visitar de novo: da calçada, da praça, do quintal. O tempo importa mais que o número de árvores. "
+                  "Peça que ela olhe de <b>longe</b> (a forma da copa, a cor) e de <b>perto</b> (a casca, uma folha). Colete só o que já caiu; não arranque folhas nem galhos."),
+           aba="--d-memoria")
+
+    c = f"""<div class="miolo">{titulo("O desenho da casca", "passar o giz sobre o papel, contra o tronco", 26)}
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:8mm">{moldura_vazia("a casca da minha árvore", "92mm")}{moldura_vazia("a casca de outra árvore", "92mm")}</div>
+      <div class="caixa" style="margin-top:6mm;height:60mm"><div class="peq centro">como é a casca? (áspera, lisa, com buracos, com listras…)</div></div></div>
+      {adulto("frotagem",
+              "Segure uma folha de papel fino contra o tronco e peça que ela passe o lado do giz de cera, sem o papel do giz, devagar, até a textura aparecer. Faça com duas árvores diferentes e compare. "
+              "Escreva a data e o lugar atrás. Se o dia estiver difícil, a casca de uma só árvore já é uma boa atividade.")}"""
+    L.add(c, aba="--d-memoria")
+
+    c = f"""<div class="miolo">{titulo("Minha coleção de folhas", "colar ou contornar as folhas caídas", 26)}
+      <div class="centro" style="margin:2mm 0">{tira(["folha", "folha", "folha"], "16mm", "5mm")}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5mm;margin-top:4mm">{moldura_vazia("folha grande", "62mm")}{moldura_vazia("folha pequena", "62mm")}{moldura_vazia("folha de pontas", "62mm")}
+        {moldura_vazia("folha lisa", "62mm")}{moldura_vazia("folha com dentinhos", "62mm")}{moldura_vazia("folha amarela ou seca", "62mm")}</div></div>
+      {adulto("separar",
+              "Ela cola ou contorna as folhas caídas que juntou, em cada quadro. Não precisa dar nome à folha: o critério é <b>forma, tamanho ou cor</b>. Peça que explique por que pôs cada folha num quadro. "
+              "Se quiser, passe as folhas entre duas folhas de papel e ponha um livro por cima por alguns dias, para secarem sem enrolar.")}"""
+    L.add(c, aba="--d-memoria")
+
+    diario(L, "Minha árvore", "voltar à árvore e desenhar o que mudou", ["a árvore de longe", "uma folha de perto", "o que mudou", "o nome que eu dei"], "--d-memoria",
+           "Desenhe a árvore na primeira visita e outra vez, uma semana depois, no mesmo lugar. Nos outros dois quadros, ela desenha uma folha de perto e dá um nome à árvore. Escreva a data de cada desenho.")
+
+
+# ================================================================== U5 SEMENTES
+
+def unidade5(L):
+    inicio_unidade(L, 4)
+    guia(L, dict(
+        titulo="Unidade 5 · Sementes", aba="--d-vida",
+        pergunta="O que tem dentro de uma semente, e o que acontece quando ela encontra água e luz?",
+        duracao="Três fins de semana · um para plantar o feijão, um para observar todo dia e um para frutas e sementes.",
+        objetivos=["Plantar um feijão no algodão úmido e olhar todo dia o que acontece.", "Dizer que a raiz aparece primeiro e depois o broto.", "Abrir frutas e achar as sementes.",
+                   "Comparar sementes: grande e pequena, lisa e enrugada, clara e escura.", "Nomear em português (e, nos cartões, em inglês, francês e latim) nove frutas e sementes."],
+        repertorio="<b>Palavras:</b> semente, feijão, raiz, broto, folha, fruta, caroço. <b>Línguas:</b> <i>seed · la graine · semen</i>; <i>apple · la pomme · mālum</i>; <i>pea · le pois · pisum</i>.",
+        materiais="Feijão (de cozinha, seco), algodão, um copo transparente ou um potinho, água, uma janela com luz; frutas variadas (maçã, laranja, melancia, uva); uma lupa; o caderno de natureza.",
+        vida="Guardar as sementes das frutas do almoço num pratinho; regar a plantinha de manhã; olhar o feijão antes de dormir.",
+        etapas=[["Olhar os feijões secos: cor, forma, tamanho.", "Pôr um feijão no algodão úmido, no copo, perto da janela.", "Dizer o que acha que vai acontecer."],
+                ["Olhar o feijão todo dia e desenhar o que mudou.", "Regar o algodão, sem encharcar.", "Contar em que dia apareceu a raiz."],
+                ["Abrir uma fruta e achar as sementes, com a lupa.", "Comparar as sementes de duas frutas.", "Plantar uma semente num vaso e cuidar dela."]],
+        indicadores=["Diz o que a semente precisa (água e um lugar iluminado).", "Olha o feijão todo dia sem ser lembrada.", "Descreve a raiz e o broto com palavras dela.",
+                     "Abre uma fruta e acha as sementes sozinha.", "Compara duas sementes (tamanho, cor, jeito).", "Cuida da planta: rega, olha, conta."],
+        interesse="plantar sementes de frutas diferentes, em potinhos, e comparar quais nascem primeiro e quais demoram mais.",
+        dificil="olhar só o feijão seco, de pertinho, e dizer como ele é por fora.",
+        alerta="Sementes pequenas e feijão seco engasgam: só com um adulto por perto, e longe de quem ainda põe tudo na boca. Não coma semente que não conhece e lave as mãos depois de mexer em terra."))
+
+    c = f"""<div class="miolo">{titulo("O feijão da Marina", "uma história curta, para contar antes de plantar", 24)}
+      <div class="centro" style="margin:3mm 0">{tira(["ervilha", "gota", "sol", "folha"], "28mm", "4mm")}</div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Marina achou um feijão no fundo do pacote da cozinha. Era pequeno, marrom e duro. “Será que isto é um bichinho?”, ela perguntou. “É uma semente”, disse o papai.
+      “Dentro dele mora uma plantinha, bem pequena, dormindo.” “E como acorda?” “Com água e com luz.”</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Marina molhou um algodão, pôs o feijão em cima, no copo, e deixou na janela. No dia seguinte, nada. No outro, também nada. Mas no terceiro dia, o feijão estava mais gordinho, e do lado dele saía uma pontinha branca.
+      “É a raiz”, disse o papai. “Ela vai primeiro, para buscar água.”</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Dias depois, o feijão abriu e saiu dele uma coisinha verde, dobrada, que foi subindo em direção à luz. Marina desenhou o feijão todo dia no caderno. No fim da semana, ela tinha uma plantinha de verdade.
+      “Eu não fiz nada”, disse ela. “Você cuidou”, disse o papai. “O resto, a semente já sabia.”</p></div>
+      {adulto("contar e perguntar",
+              "Conte devagar, mostrando um feijão seco de verdade. Peça que ela adivinhe o que vai acontecer. Os dias exatos variam com o calor e o feijão: o importante é <b>olhar todo dia</b>. A história é da coleção.")}"""
+    L.add(c, aba="--d-vida")
+
+    itens = [(img("ervilha", "20mm"), "Escolher um feijão e olhar de perto"),
+             (img("tigela", "22mm"), "Molhar o algodão e pôr no fundo do copo"),
+             (img("ervilha", "18mm"), "Pôr o feijão em cima do algodão úmido"),
+             (img("sol", "20mm"), "Deixar o copo perto da janela, com luz"),
+             (img("gota", "18mm"), "Regar todo dia um pouquinho, sem encharcar"),
+             (img("lupa", "20mm"), "Olhar todo dia e desenhar o que mudou")]
+    passos(L, "Plantar um feijão", "algodão, água, luz e paciência", itens,
+           adulto("o experimento",
+                  "Use feijão de cozinha, seco e inteiro (alguns lotes não nascem: ponha dois ou três por segurança). Mantenha o algodão úmido, não encharcado. "
+                  "Em geral a raiz aparece em poucos dias e o broto em cerca de uma semana. Quando a planta crescer, passe para um vaso com terra. <b>Peça que ela adivinhe antes</b> de cada etapa."),
+           aba="--d-vida")
+
+    dias = "".join(f'<div class="caixa" style="height:40mm"><div class="peq centro">dia {i}</div></div>' for i in range(1, 11))
+    c = f"""<div class="miolo">{titulo("O diário do feijão", "um quadro para cada dia, desenhando o que se vê", 26)}
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4mm;margin-top:6mm">{dias}</div>
+      <div class="caixa" style="margin-top:8mm;height:70mm"><div class="peq centro">em que dia apareceu a raiz? E o broto? O que mais me chamou a atenção?</div></div></div>
+      {adulto("registrar",
+              "Ela desenha o feijão uma vez por dia, no mesmo horário. Nos dias em que parecer que nada mudou, também vale desenhar: é assim que se percebe a mudança. "
+              "Escreva por ela, com as palavras dela, o que disser.")}"""
+    L.add(c, aba="--d-vida")
+
+    linhas = "".join(f'<tr><td style="height:16mm;width:50mm;font-size:13pt">{a}</td><td style="width:36mm"></td><td style="width:40mm"></td><td></td></tr>'
+                     for a in ("maçã", "laranja", "melancia", "uva", "pera", "outra fruta: ____________"))
+    c = f"""<div class="miolo">{titulo("Quantas sementes tem a fruta?", "abrir, olhar com a lupa, contar", 26)}
+      <div class="centro" style="margin:2mm 0">{tira(["maca_cortada", "laranja", "melancia", "uva"], "26mm", "3mm")}</div>
+      <table class="tab" style="margin-top:4mm"><tr><th>Fruta</th><th>Quantas sementes?</th><th>Cor e tamanho</th><th>Como são? (lisa, achatada, dura…)</th></tr>{linhas}</table></div>
+      {adulto("contar",
+              "Ofereça um pedaço da fruta e peça que ela procure as sementes: algumas têm uma só (como o caroço do pêssego), outras têm muitas (melancia). A fruta é uma embalagem que a planta faz para as sementes. "
+              "Guarde algumas sementes secas para plantar depois. Atenção: sementes pequenas engasgam; fique ao lado e jogue-as fora com as cascas.")}"""
+    L.add(c, aba="--d-vida")
+
+    itens = [dict(pt="maçã", mot="maca", en="apple", fr="pomme", la="mālum", dica="tem sementes pretinhas no meio"),
+             dict(pt="pera", mot="pera", en="pear", fr="poire", la="pirum", dica="doce, de miolo macio"),
+             dict(pt="cereja", mot="cereja", en="cherry", fr="cerise", la="cerasum", dica="tem um caroço duro"),
+             dict(pt="uva", mot="uva", en="grape", fr="raisin", la="ūva", dica="cresce em cachos"),
+             dict(pt="laranja", mot="laranja", en="orange", fr="orange", la=None, dica="as sementes ficam nos gomos"),
+             dict(pt="melancia", mot="melancia", en="watermelon", fr="pastèque", la=None, dica="muitas sementes pretas"),
+             dict(pt="morango", mot="morango", en="strawberry", fr="fraise", la="frāgum", dica="as sementinhas ficam por fora"),
+             dict(pt="banana", mot="banana", en="banana", fr="banane", la=None, dica="as sementes são minúsculas"),
+             dict(pt="ervilha", mot="ervilha", en="pea", fr="pois", la="pisum", dica="as ervilhas moram numa vagem")]
+    cartoes(L, "frutas e sementes", itens, "Volume 6 · Frutas e sementes")
+
+    diario(L, "Minhas sementes", "desenhar as sementes que ela viu e a plantinha", ["o feijão no começo", "a plantinha depois", "uma semente de fruta", "a que eu quero plantar"], "--d-vida",
+           "Ela desenha o feijão no primeiro dia e depois a plantinha, e escolhe duas sementes de fruta para desenhar. Escreva as datas e o que ela contar.")
+
+
+# ================================================================== U6 ÁGUA E CHUVA
+
+def unidade6(L):
+    inicio_unidade(L, 5)
+    guia(L, dict(
+        titulo="Unidade 6 · Água e chuva", aba="--d-matematica",
+        pergunta="De onde vem a chuva, e para onde vai a água depois que cai?",
+        duracao="Dois fins de semana · um de experimentos com água e um de olhar a chuva (ou a poça) · 20 a 30 minutos.",
+        objetivos=["Contar o caminho da água: sol, nuvem, chuva, rio.", "Dizer o que flutua e o que afunda, depois de testar.", "Olhar e ouvir a chuva (ou a torneira) com atenção.",
+                   "Medir um pouco de água com um copo e comparar.", "Cuidar da água: não desperdiçar e não beber de poça."],
+        repertorio="<b>Palavras:</b> água, gota, nuvem, chuva, rio, poça, flutua, afunda, seca. <b>Línguas:</b> <i>water · l’eau · aqua</i>; <i>rain · la pluie · pluvia</i>; <i>cloud · le nuage · nubes</i>.",
+        materiais="Uma bacia, copos, uma jarra, objetos para testar (pedra, pena, folha, rolha, colher, madeira), um pote transparente, régua ou fita, o caderno de natureza.",
+        vida="Fechar a torneira ao escovar os dentes; olhar a chuva pela janela; molhar as plantas.",
+        etapas=[["Olhar a chuva (ou ouvir a água) e dizer o que vê e ouve.", "Fazer a bacia: o que flutua? o que afunda?", "Dizer por que acha que cada coisa fica ou afunda."],
+                ["Ordenar os quatro cartões do caminho da água.", "Pôr um pote ao ar livre para medir a chuva.", "Olhar a poça secando ao sol."],
+                ["Contar o caminho da água com as palavras dela.", "Desenhar a chuva, a nuvem ou o rio.", "Pensar em um jeito de economizar água em casa."]],
+        indicadores=["Diz o caminho da água na ordem certa (com ajuda dos cartões).", "Faz uma previsão antes de testar (“acho que a pedra afunda”).", "Anota o resultado do teste, com desenho ou palavra.",
+                     "Percebe que a poça some e pergunta para onde foi.", "Fecha a torneira ou poupa a água sem ser lembrada.", "Descreve o som da chuva com palavras dela."],
+        interesse="medir a chuva do mês, anotando quanta água o pote juntou em cada dia de chuva.",
+        dificil="olhar uma só gota na janela, escorrendo, e dizer para onde ela vai.",
+        alerta="Fique ao lado de qualquer água, até a da bacia. Não beba água de poça, rio ou chuva, e não deixe a criança entrar sozinha em água corrente. Em dia de trovão, fique dentro de casa."))
+
+    c = f"""<div class="miolo">{titulo("A viagem da gota", "uma história curta, para contar antes de olhar a chuva", 24)}
+      <div class="centro" style="margin:3mm 0">{tira(["gota", "sol", "nuvem", "guarda_chuva"], "26mm", "4mm")}</div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Uma gota de água morava num rio. Um dia, o sol esquentou o rio, e a gota ficou tão leve que subiu pelo ar, sem ninguém ver. Lá em cima, encontrou outras gotas, e todas juntas formaram uma nuvem.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">A nuvem foi ficando pesada, e começou a cair uma chuva. Plim, plim, plim. A gota caiu numa folha, escorreu para o chão e entrou num riacho. O riacho desceu a montanha, passou por pedras e virou rio.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Quando o sol esquentou o rio de novo, a gota subiu outra vez. “Será que já fui nuvem antes?”, perguntou a gota. Ninguém soube responder. Mas Marina, na janela, viu a chuva cair e disse: “Essa água já foi de outro rio, e vai voltar para ele.”</p></div>
+      {adulto("contar e perguntar",
+              "Conte devagar, e depois peça que ela conte de volta, com as próprias palavras, para onde a gota vai. A história resume o <b>ciclo da água</b>: evaporar, formar nuvem, chover, escorrer. "
+              "Não precisa usar as palavras difíceis. A história é da coleção.")}"""
+    L.add(c, aba="--d-matematica")
+
+    sequencia(L, "O caminho da água", "cortar os quatro cartões e ordenar",
+              [("o sol esquenta a água", f'<div class="centro">{img("sol", "30mm")}{img("m_riacho", "34mm")}</div>'),
+               ("a água sobe e vira nuvem", img("nuvem", "42mm", "margin:8mm auto 0")),
+               ("a nuvem solta a chuva", f'<div class="centro">{img("gota", "24mm")}{img("guarda_chuva", "26mm")}</div>'),
+               ("a água volta ao rio", img("m_riacho", "46mm", "margin:6mm auto 0"))],
+              adulto("ordenar",
+                     "Corte os cartões e embaralhe. Peça que ela ponha em ordem e conte o caminho em voz alta. Não existe uma única forma certa de contar: o que importa é ela perceber que a água <b>volta</b>. "
+                     "Depois, ela tenta contar a viagem a outra pessoa, com os cartões nas mãos.", estilo="position:absolute;left:18mm;right:18mm;bottom:16mm"),
+              aba="--d-matematica")
+
+    objetos = (("pedra", "pedra"), ("pena", "pena"), ("folha", "folha"), ("rolha", "rolha"), ("colher", "colher"), ("madeira", "pedaço de madeira"))
+    linhas = "".join(f'<tr><td style="width:30mm;text-align:center">{img(m, "16mm")}</td><td style="width:42mm;font-size:13pt">{n}</td><td style="width:42mm;font-size:12pt;color:var(--sepia)">acho que: ________</td><td style="font-size:12pt;color:var(--sepia)">foi: ________</td></tr>'
+                     for m, n in objetos)
+    c = f"""<div class="miolo">{titulo("Flutua ou afunda?", "adivinhar, testar na bacia e anotar", 26)}
+      <table class="tab" style="margin-top:6mm"><tr><th></th><th>Objeto</th><th>Antes de testar</th><th>Depois de testar</th></tr>{linhas}</table>
+      <div class="caixa" style="margin-top:8mm;height:58mm"><div class="peq centro">o que mais flutua? o que mais afunda? o que me surpreendeu?</div></div></div>
+      {adulto("prever e testar",
+              "Ela <b>adivinha primeiro</b>, escrevendo ou falando, e só depois testa na bacia. Não corrija a previsão: o erro é parte da descoberta. Pergunte o que os objetos que flutuam têm em comum (leves? ocos?). "
+              "Fique ao lado da bacia o tempo todo. Seque o chão depois.")}"""
+    L.add(c, aba="--d-matematica")
+
+    itens = [(img("nuvem", "22mm"), "Olhar o céu: tem nuvem? Como ela é?"),
+             (img("gota", "18mm"), "Ouvir a chuva (ou a torneira): é forte ou fraca?"),
+             (img("xicara", "20mm"), "Pôr um pote reto, aberto, no quintal ou na janela"),
+             (img("m_riacho", "24mm"), "Olhar para onde a água escorre"),
+             (img("sol", "20mm"), "Olhar uma poça ao sol: ela vai diminuindo?"),
+             (img("lupa", "20mm"), "Medir quanta água o pote juntou e anotar")]
+    passos(L, "Olhar a chuva", "ouvir, medir e acompanhar uma poça", itens,
+           adulto("a chuva",
+                  "Num dia de chuva fraca, vá com ela à janela ou à varanda: não precisa se molhar. Para medir, use um pote de lados retos e deixe-o fora até a chuva passar; com uma régua, meça a altura da água. "
+                  "Numa poça, risque o contorno com giz e volte mais tarde: ela encolheu? <b>Não beba, nem deixe beber</b>, água de chuva ou de poça."),
+           aba="--d-matematica")
+
+    diario(L, "Minha água", "desenhar a água e a chuva", ["a chuva que eu vi", "o caminho da água", "a poça e o sol", "como eu economizo água"], "--d-matematica",
+           "Ela desenha a chuva, o caminho da água, a poça e um jeito de economizar água em casa. Escreva a data e, ao lado de cada desenho, o que ela contar.")
+
+
+# ================================================================== U7 CÉU, SOL, LUA E ESTRELAS
+
+def unidade7(L):
+    inicio_unidade(L, 6)
+    guia(L, dict(
+        titulo="Unidade 7 · Céu, sol, lua e estrelas", aba="--d-ingles",
+        pergunta="O que muda no céu do amanhecer à noite, e como a lua muda de um dia para o outro?",
+        duracao="Quatro semanas de olhar · um encontro curto por semana · 15 a 20 minutos, de dia e à noite.",
+        objetivos=["Dizer onde o sol nasce, onde passa ao meio-dia e onde se põe.", "Medir a sombra de um objeto de manhã, ao meio-dia e à tarde.", "Desenhar a lua em noites diferentes e perceber que ela muda de forma.",
+                   "Olhar as estrelas e contar quantas vê.", "Ordenar o dia: amanhecer, meio-dia, entardecer, noite."],
+        repertorio="<b>Palavras:</b> sol, lua, estrela, nuvem, amanhecer, entardecer, noite, sombra, crescente, cheia. <b>Línguas:</b> <i>sun · le soleil · sol</i>; <i>moon · la lune · lūna</i>; <i>star · l’étoile · stēlla</i>.",
+        materiais="Um objeto que fique em pé no chão (um copo, um bloquinho), giz, fita, o caderno de natureza, uma lanterna pequena; uma noite com céu limpo.",
+        vida="Dizer, ao acordar, como está o céu; olhar a lua da janela antes de dormir.",
+        etapas=[["Olhar o sol no seu caminho (sem olhar para ele) e apontar onde nasce e onde se põe.", "Ordenar os quatro cartões do dia.", "Contar o que muda no céu entre uma hora e outra."],
+                ["Medir a sombra do copo de manhã, ao meio-dia e à tarde.", "Comparar: quando ela é mais comprida?", "Dizer por que acha que a sombra muda."],
+                ["Olhar a lua e desenhar no caderno, por vários dias.", "Contar as estrelas que consegue ver.", "Contar a alguém o que viu no céu."]],
+        indicadores=["Aponta o lado onde o sol nasce e o lado onde ele se põe.", "Ordena os quatro momentos do dia sem ajuda.", "Percebe que a sombra muda de tamanho.",
+                     "Desenha a lua com formas diferentes em dias diferentes.", "Conta estrelas com o dedo, sem pular.", "Faz perguntas sobre o céu."],
+        interesse="olhar a lua todo dia por um mês e fazer a tabela completa, ou procurar a estrela mais brilhante do começo da noite.",
+        dificil="olhar a lua pela janela por um minuto e dizer a forma que ela tem.",
+        alerta="<b>Nunca olhe diretamente para o sol</b>, nem com binóculo ou óculos escuros: machuca os olhos. Use a sombra para estudá-lo. À noite, fique sempre junto com a criança, em lugar seguro e iluminado."))
+
+    c = f"""<div class="miolo">{titulo("O sol, a lua e a Marina", "uma história curta, para contar antes de olhar o céu", 24)}
+      <div class="centro" style="margin:3mm 0">{tira(["sol", "nuvem", "lua", "estrela"], "28mm", "4mm")}</div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">De manhã, o sol aparece de um lado do céu. Marina via, da janela, uma luz alaranjada subindo atrás dos telhados. “É o sol acordando”, dizia o papai. Ao meio-dia, o sol ficava lá no alto,
+      e a sombra do poste ficava pequena, bem pertinho do poste. À tarde, o sol descia do outro lado, e a sombra crescia de novo, comprida, para o lado contrário.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Quando o sol sumia, o céu ficava rosa, depois azul-escuro. Aí aparecia a lua. Na primeira noite, era um pedacinho fino, como um sorriso. Uma semana depois, estava mais gorda. Depois, ficou redonda e clarinha.
+      E depois, foi sumindo, noite após noite, até quase não aparecer.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">“A lua está se mexendo?”, perguntou Marina. “Está”, disse o papai. “E o que muda é o pedaço dela que o sol ilumina, visto daqui da Terra.” Marina ficou pensando. Depois pegou o caderno e começou a desenhar a lua de cada noite.</p></div>
+      {adulto("contar e olhar",
+              "Conte devagar e, de preferência, perto de uma janela. A explicação do papai é a verdadeira, mas a Marina não precisa entender tudo: basta <b>olhar e anotar</b>. "
+              "Ao meio-dia, a sombra é mais curta; de manhã e à tarde, mais comprida. Lembre-se: o sol nasce no lado leste e se põe no oeste (aponte com ela, de onde ela está). A história é da coleção.")}"""
+    L.add(c, aba="--d-ingles")
+
+    sequencia(L, "O dia, do começo ao fim", "cortar os quatro cartões e ordenar",
+              [("o céu clareia", img("dia_amanhecer", "40mm")), ("o sol está no alto", img("dia_meiodia", "40mm")),
+               ("o sol está descendo", img("dia_entardecer", "40mm")), ("as estrelas aparecem", img("dia_noite", "40mm"))],
+              adulto("ordenar",
+                     "Embaralhe os cartões e peça que ela ponha em ordem e diga o que fazemos em cada momento do dia. Depois, pergunte: o que muda no céu? Por que a sombra muda? "
+                     "Se quiser, ela conta o seu dia usando os cartões.", estilo="position:absolute;left:18mm;right:18mm;bottom:16mm"),
+              aba="--d-ingles")
+
+    itens = [(img("dia_amanhecer", "24mm"), "De manhã: pôr o copo no chão, riscar o contorno com giz"),
+             (img("sol", "20mm"), "Com o giz, marcar onde termina a sombra do copo"),
+             (img("dia_meiodia", "24mm"), "Ao meio-dia: marcar de novo, sem mexer no copo"),
+             (img("sol", "20mm"), "A sombra ficou maior ou menor?"),
+             (img("dia_entardecer", "24mm"), "À tarde: marcar mais uma vez a sombra"),
+             (img("lupa", "20mm"), "Comparar as três marcas: onde está a mais curta?")]
+    passos(L, "A sombra do sol", "marcar a sombra de um copo em três momentos", itens,
+           adulto("a sombra",
+                  "Escolha um lugar de chão firme e com sol o dia inteiro. <b>Não mexa no copo</b> entre as marcas. A sombra mais curta é perto do meio-dia; de manhã e à tarde ela é mais comprida e fica de lados opostos. "
+                  "<b>Nunca olhe para o sol</b>: o estudo é só pela sombra."),
+           aba="--d-ingles")
+
+    cel = "".join(f'<div style="text-align:center"><div style="width:26mm;height:26mm;border:0.6pt dashed var(--linha);border-radius:50%;margin:0 auto"></div><div class="peq">{n}</div></div>' for n in range(1, 15))
+    c = f"""<div class="miolo">{titulo("A lua de cada noite", "desenhar, no círculo, a lua que se vê", 26)}
+      <div class="centro" style="margin:2mm 0">{tira(["lua", "estrela", "lua"], "18mm", "6mm")}</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6mm 4mm;margin-top:6mm">{cel}</div></div>
+      {adulto("olhar a lua",
+              "Em cada noite de céu limpo, no mesmo horário, ela olha a lua e pinta no círculo só a parte clara. Quando a lua não aparecer, deixe o círculo em branco e escreva “nublado”. "
+              "O ciclo todo dura cerca de um mês (29 dias e meio), então os 14 círculos mostram só a primeira metade; continue no caderno. A lua também pode aparecer de dia.")}"""
+    L.add(c, aba="--d-ingles")
+
+    diario(L, "Meu céu", "desenhar o céu que ela viu", ["o céu de manhã", "a sombra e o sol", "a lua que eu mais gostei", "as estrelas que eu contei"], "--d-ingles",
+           "Ela desenha o céu de manhã, a sombra que mediu, a lua de que mais gostou e as estrelas. Escreva as datas e quantas estrelas ela contou.")
+
+
+# ================================================================== U8 O CORPO HUMANO
+
+def unidade8(L):
+    inicio_unidade(L, 7)
+    guia(L, dict(
+        titulo="Unidade 8 · O corpo humano", aba="--d-historias",
+        pergunta="O que o meu corpo faz, e como eu cuido dele?",
+        duracao="Dois fins de semana · um para os sentidos e o coração, um para crescer e se cuidar · 20 a 30 minutos.",
+        objetivos=["Nomear partes do corpo (cabeça, braço, mão, perna, pé, olhos, ouvidos, nariz, boca).", "Ligar cada sentido à parte do corpo que o faz.", "Sentir o coração batendo, parado e depois de pular.",
+                   "Medir a mão e o pé, e perceber que o corpo cresce.", "Lavar as mãos em seis passos."],
+        repertorio="<b>Palavras:</b> cabeça, braço, mão, dedo, perna, pé, olho, ouvido, nariz, boca, coração. <b>Línguas:</b> <i>hand · la main · manus</i>; <i>foot · le pied · pes</i>; <i>heart · le cœur · cor</i>.",
+        materiais="Sabonete, toalha, uma fita métrica ou barbante, papel e lápis, um relógio com ponteiro de segundos; o caderno de natureza.",
+        vida="Lavar as mãos antes de comer; dizer como o corpo está (com sono, com fome, com calor); escovar os dentes.",
+        etapas=[["Nomear partes do corpo, apontando em si mesma.", "Fazer a tabela dos sentidos: com o que eu vejo? com o que eu escuto?", "Brincar de “mostre o seu nariz, a sua mão…”."],
+                ["Sentir o coração com a mão no peito, parada e depois de pular dez vezes.", "Contornar a mão no papel e medir.", "Aprender a lavar as mãos em seis passos."],
+                ["Desenhar o corpo todo no caderno.", "Dizer uma coisa que o corpo faz por ela.", "Ensinar a outra pessoa como lavar as mãos."]],
+        indicadores=["Nomeia partes do corpo sem ajuda.", "Liga cada sentido à parte do corpo certa.", "Sente o coração e diz que bate mais depois de pular.",
+                     "Contorna a própria mão e compara com a de um adulto.", "Lava as mãos nos seis passos, com ajuda ou sozinha.", "Diz como o corpo está (com sono, com fome, cansado)."],
+        interesse="medir a altura na parede, a cada dois ou três meses, com uma marca e a data, e comparar.",
+        dificil="só sentir o coração, com a mão no peito, por um minuto, e dizer o que sentiu.",
+        alerta="Use os nomes corretos de todas as partes do corpo, sem vergonha. O corpo é dela: respeite quando ela não quiser ser tocada, medida ou abraçada. Água morna e sabonete suave, sem esfregar com força."))
+
+    c = f"""<div class="miolo">{titulo("O corpo da Marina", "uma história curta, para contar e brincar", 24)}
+      <div class="centro" style="margin:3mm 0">{tira(["coracao", "pegada", "lupa", "sabonete"], "26mm", "4mm")}</div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">De manhã, Marina acordou e esticou os braços. “Meu corpo acordou!”, disse. O papai riu: “E o que ele sabe fazer?” Marina pensou. Os <b>olhos</b> abrem e veem a luz. Os <b>ouvidos</b> escutam o passarinho.
+      O <b>nariz</b> sente o cheiro do pão. A <b>boca</b> come, fala e canta. A <b>pele</b> sente quando a água está fria.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">“E o que eu não vejo?”, perguntou. “Seu coração”, disse o papai. Ele pôs a mão dela no peito. Bum-bum, bum-bum. Marina pulou dez vezes e pôs a mão no peito de novo. “Está mais rápido!” “Ele trabalha mais quando você corre”, disse o papai.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Antes do almoço, Marina lavou as mãos, esfregando com sabonete, na palma, nas costas e entre os dedos. “Por que lavar?”, perguntou. “Para tirar bichinhos tão pequenos que a gente não vê”, disse o papai. Marina lavou de novo, com mais cuidado.</p></div>
+      {adulto("contar e brincar",
+              "Conte apontando em si mesma cada parte do corpo, e peça que ela aponte também. A explicação sobre o coração e as mãos é simples e verdadeira. Use sempre os nomes corretos das partes do corpo. A história é da coleção.")}"""
+    L.add(c, aba="--d-historias")
+
+    linhas = "".join(f'<tr><td style="height:17mm;width:50mm;font-size:13pt">{a}</td><td style="font-size:13pt">{b}</td></tr>'
+                     for a, b in (("ver", "com os ________"), ("escutar", "com os ________"), ("cheirar", "com o ________"), ("provar o gosto", "com a ________"), ("sentir o frio e o calor", "com a ________")))
+    c = f"""<div class="miolo">{titulo("Com que parte do corpo?", "ligar cada sentido à parte que o faz", 26)}
+      <table class="tab" style="margin-top:6mm"><tr><th>Eu consigo…</th><th>Com…</th></tr>{linhas}</table>
+      <div class="caixa" style="margin-top:8mm;height:62mm"><div class="peq centro">desenhar a parte do corpo de que eu mais gosto, ou a que eu mais uso</div></div></div>
+      {adulto("os sentidos",
+              "Respostas: ver (olhos), escutar (ouvidos), cheirar (nariz), sentir o gosto (língua, dentro da boca), sentir frio e calor (pele). Pergunte primeiro; só depois mostre. "
+              "Vale experimentar: de olhos fechados, ela reconhece um cheiro? Um objeto, só pelo toque?")}"""
+    L.add(c, aba="--d-historias")
+
+    itens = [(img("coracao", "20mm"), "Sentar quieta e pôr a mão no peito: bum-bum"),
+             (img("pegada", "18mm"), "Pular dez vezes no lugar"),
+             (img("coracao", "22mm"), "Pôr a mão no peito de novo: está mais rápido?"),
+             (img("estrela", "20mm"), "Ficar quieta de novo e sentir o coração devagar"),
+             (img("lupa", "20mm"), "Contar as batidas por meio minuto, parada, com um adulto"),
+             (img("sabonete", "20mm"), "Dizer: o coração bate o tempo todo, até quando durmo")]
+    passos(L, "O coração", "sentir o coração parado e depois de pular", itens,
+           adulto("o coração",
+                  "Se ela não achar as batidas no peito, use a mão no pulso (do lado do polegar) ou no pescoço, com cuidado. Contar não é necessário: o importante é <b>perceber</b> que o coração bate mais rápido depois de pular e volta ao ritmo em silêncio. "
+                  "Não é exercício de resistência, nem prova."),
+           aba="--d-historias")
+
+    itens = [(img("gota", "18mm"), "Molhar as mãos com água"),
+             (img("sabonete", "20mm"), "Passar sabonete e fazer espuma"),
+             (img("estrela", "20mm"), "Esfregar a palma e as costas das mãos"),
+             (img("lupa", "20mm"), "Esfregar entre os dedos e em volta dos polegares"),
+             (img("gota", "20mm"), "Enxaguar com água, até a espuma sair"),
+             (img("toalha", "22mm"), "Secar com a toalha, bem seco")]
+    passos(L, "Lavar as mãos em seis passos", "antes de comer e depois de brincar fora", itens,
+           adulto("lavar as mãos",
+                  "O que importa é a <b>espuma e o tempo</b>: cerca de 20 segundos (o tempo de cantar duas vezes “Parabéns a você”). Mostre uma vez e deixe que ela faça. "
+                  "Lave as mãos depois de brincar na terra, depois de usar o banheiro e antes de comer. Água morna e sabonete suave."),
+           aba="--d-historias")
+
+    c = f"""<div class="miolo">{titulo("Quanto eu cresci", "contornar a mão e medir o corpo", 26)}
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:6mm">{moldura_vazia("o contorno da minha mão", "92mm")}{moldura_vazia("o contorno do meu pé", "92mm")}</div>
+      <table class="tab" style="margin-top:6mm"><tr><th>Data</th><th>Minha mão mede</th><th>Meu pé mede</th><th>Minha altura</th></tr>
+        <tr><td style="height:12mm"></td><td></td><td></td><td></td></tr><tr><td style="height:12mm"></td><td></td><td></td><td></td></tr></table></div>
+      {adulto("crescer",
+              "Contorne a mão e o pé dela no papel e meça com a fita (ou com um barbante, depois comparado com uma régua). Guarde a página com a data. Em três meses, repita e compare. "
+              "O corpo cresce no seu ritmo: nada de comparar com outras crianças.")}"""
+    L.add(c, aba="--d-historias")
+
+    diario(L, "Meu corpo", "desenhar o corpo todo e o que ele faz", ["eu inteira", "o que meu corpo faz", "como eu cuido do corpo", "o que eu quero aprender do corpo"], "--d-historias",
+           "Ela desenha o corpo todo no primeiro quadro e, nos outros, o que o corpo faz, como ela se cuida e o que quer aprender. Escreva o que ela contar, com as palavras dela.")
+
+
+# ================================================================== U9 AS ESTAÇÕES
+
+def unidade9(L):
+    inicio_unidade(L, 8)
+    guia(L, dict(
+        titulo="Unidade 9 · As estações", aba="--d-jogos",
+        pergunta="O que muda na natureza durante o ano, e por que os livros de outros países contam estações diferentes das nossas?",
+        duracao="O ano inteiro · uma visita por estação, de 15 a 20 minutos, à mesma árvore · mais uma leitura e uma conversa.",
+        objetivos=["Visitar a mesma árvore (ou canto) em quatro épocas do ano.", "Dizer o que mudou: folhas, flores, frutos, bichos, roupas.", "Ordenar as quatro estações.",
+                   "Ouvir a história de Deméter e Perséfone, adaptada, e dizer o que ela explica.", "Saber que, quando é verão aqui, é inverno no hemisfério norte."],
+        repertorio="<b>Palavras:</b> primavera, verão, outono, inverno, calor, frio, chuva, seca. <b>Línguas:</b> <i>spring · le printemps</i>; <i>summer · l’été</i>; <i>autumn · l’automne · autumnus</i>; <i>winter · l’hiver · hiems</i>. <b>Mito:</b> Deméter e Perséfone (Grécia antiga, adaptado).",
+        materiais="O caderno de natureza, lápis de cor, uma máquina fotográfica ou celular (se quiser), uma árvore ou canto de jardim para visitar toda estação.",
+        vida="Vestir a roupa da estação; dizer o mês e a estação; olhar uma planta do quintal e ver o que mudou.",
+        etapas=[["Escolher a árvore e visitar na primeira estação.", "Ouvir a história das estações.", "Dizer como está a árvore e o tempo."],
+                ["Visitar a árvore na estação seguinte.", "Ordenar os cartões das quatro árvores.", "Comparar: o que mudou?"],
+                ["Visitar nas outras estações.", "Desenhar a árvore nas quatro épocas.", "Contar a alguém o que o mito explica."]],
+        indicadores=["Diz o nome das quatro estações, na ordem.", "Aponta o que mudou na árvore de uma visita para outra.", "Associa cada estação a roupas, clima e frutas.",
+                     "Conta a história de Deméter e Perséfone com palavras dela.", "Diz que no outro hemisfério as estações são invertidas.", "Volta ao assunto sem ser lembrada."],
+        interesse="registrar, a cada estação, o que está na feira (frutas da época) e o que a árvore tem (flores, frutos ou folhas secas).",
+        dificil="olhar a árvore de hoje e dizer uma coisa dela: folhas, flores ou tempo.",
+        alerta="Em regiões com estações pouco marcadas, a mudança maior pode ser entre a época de chuva e a de seca: observe isso também. Protetor solar e água no verão; agasalho no inverno."))
+
+    c = f"""<div class="miolo">{titulo("A árvore em quatro estações", "uma história curta, para contar antes de olhar", 24)}
+      <div class="centro" style="margin:3mm 0">{tira(["arvore_primavera", "arvore_verao", "arvore_outono", "arvore_inverno"], "36mm", "2mm")}</div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Na primavera, a árvore da Marina ficou cheia de folhinhas verdes e flores pequenas. Os passarinhos faziam ninho nos galhos, e o ar cheirava a mato novo. No verão, as folhas ficaram escuras e fartas, e a sombra era boa para brincar.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">No outono, algumas folhas ficaram amarelas e vermelhas e começaram a cair. A Marina juntava as que caíam. No inverno, a árvore ficou quase sem folhas, só galhos finos contra o céu. “Ela morreu?”, perguntou Marina. “Está descansando”, disse o papai. “Quando a primavera chegar, vai brotar de novo.”</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">E brotou mesmo. Marina desenhou a árvore quatro vezes no caderno e guardou os quatro desenhos juntos. “É a mesma árvore”, disse. “Mas cada vez ela estava diferente.”</p></div>
+      {adulto("contar e olhar",
+              "Nem toda árvore perde as folhas, e em muitos lugares do Brasil as estações são pouco marcadas: a mudança principal pode ser entre chuva e seca. Adapte a história à <b>sua árvore e ao seu clima</b>. "
+              "A história é da coleção.")}"""
+    L.add(c, aba="--d-jogos")
+
+    c = f"""<div class="miolo">{titulo("Deméter e Perséfone", "um mito da Grécia antiga, para explicar as estações", 24)}
+      <div class="centro" style="margin:3mm 0">{tira(["tulipa", "uva", "folha"], "26mm", "5mm")}</div>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Há muito tempo, na Grécia, vivia uma deusa chamada <b>Deméter</b>, que cuidava das plantações: era ela quem fazia o trigo crescer e as árvores darem frutos. Sua filha, <b>Perséfone</b>, passava os dias colhendo flores nos campos.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Um dia, Hades, o rei do mundo que fica debaixo da terra, levou Perséfone para o seu reino. Deméter procurou por toda parte, e de tristeza deixou de cuidar das plantas: as folhas caíram, o frio chegou e nada crescia.
+      Então os deuses disseram a Hades que deixasse a menina voltar para casa.</p>
+      <p style="font-size:12.5pt;line-height:1.5;text-align:justify;hyphens:auto">Perséfone pôde voltar, mas tinha comido algumas sementes de romã no reino de baixo, e por isso devia passar uma parte do ano lá. Quando ela está com a mãe, Deméter fica alegre e as plantas florescem: é a primavera e o verão.
+      Quando Perséfone vai embora, Deméter fica triste e as folhas caem: é o outono e o inverno.</p></div>
+      {adulto("um mito, não uma explicação científica",
+              "Os gregos antigos contavam este mito para explicar por que as plantas florescem e depois descansam. A explicação de hoje é outra (a inclinação da Terra), que ela vai estudar mais tarde. "
+              "Conte curto, sem insistir nos detalhes do rei de baixo. Pergunte: <b>o que a história quer explicar?</b> A versão é adaptada para a idade; o mito é antigo e de domínio público.")}"""
+    L.add(c, aba="--d-jogos")
+
+    sequencia(L, "As quatro estações da árvore", "cortar os quatro cartões e ordenar, começando pela primavera",
+              [("primavera", img("arvore_primavera", "46mm")), ("verão", img("arvore_verao", "46mm")),
+               ("outono", img("arvore_outono", "46mm")), ("inverno", img("arvore_inverno", "46mm"))],
+              adulto("ordenar",
+                     "Embaralhe os cartões e peça que ela ponha em ordem, começando pela primavera. Pergunte o que há de diferente em cada árvore e que roupa ela usa em cada estação. "
+                     "Aqui no sul do Brasil, a primavera começa em setembro; nos livros europeus, em março.", estilo="position:absolute;left:18mm;right:18mm;bottom:16mm"),
+              aba="--d-jogos")
+
+    meses = (("Primavera", "setembro a dezembro", "março a junho"), ("Verão", "dezembro a março", "junho a setembro"),
+             ("Outono", "março a junho", "setembro a dezembro"), ("Inverno", "junho a setembro", "dezembro a março"))
+    linhas = "".join(f'<tr><td style="height:18mm;font-size:13pt"><b>{a}</b></td><td style="font-size:12pt">{b}</td><td style="font-size:12pt">{c}</td></tr>' for a, b, c in meses)
+    c = f"""<div class="miolo">{titulo("Aqui e do outro lado do mundo", "as estações no Brasil e no hemisfério norte", 26)}
+      <table class="tab" style="margin-top:6mm"><tr><th>Estação</th><th>No Brasil (hemisfério sul)</th><th>Na Europa e na América do Norte</th></tr>{linhas}</table>
+      <div class="caixa" style="margin-top:8mm;height:66mm"><div class="peq centro">o que as crianças de lá vestem no Natal? E nós? O que a gente come em cada estação?</div></div></div>
+      {adulto("o outro hemisfério",
+              "As estações são <b>invertidas</b> entre os dois lados da Terra: quando é verão aqui, é inverno lá. As datas dependem do ano; por isso, os meses são aproximados. "
+              "Muitas histórias clássicas (como as de Natal com neve) foram escritas no hemisfério norte: converse com ela sobre isso. Em muitas regiões do Brasil, a diferença principal é entre a época de chuva e a de seca.")}"""
+    L.add(c, aba="--d-jogos")
+
+    diario(L, "As estações da minha árvore", "desenhar a mesma árvore em quatro épocas do ano", ["primavera", "verão", "outono", "inverno"], "--d-jogos",
+           "Ela desenha a mesma árvore em cada estação, no mesmo lugar, e escreve (ou dita) o que mudou. Anote a data de cada visita. Se o clima da sua região for outro, nomeie os quadros com as épocas dela (chuva, seca).")
+
+
+# ================================================================== ENCERRAMENTO
+
+def encerramento(L):
+    L.unidade = "Encerramento"
+    INICIO["Encerramento"] = L.proximo
+
+    itens = [("Merian", 1647, 1717, "#c9963f"), ("Descourtilz", 1796, 1855, "#4f6b3a"), ("Gould", 1804, 1881, "#5f8f8a"),
+             ("Hudson", 1841, 1922, "#8a6f9e"), ("Grönvold", 1858, 1940, "#c0716b")]
+    c = f"""<div class="miolo">{titulo("Quem desenhou a natureza", "os naturalistas deste livro e quando viveram", 28)}
+      <div style="margin-top:8mm">{linha_do_tempo(itens, 1640, 1950)}</div>
+      <table class="tab" style="margin-top:8mm;font-size:11pt">
+        <tr><td style="width:34mm"><b>Merian</b></td><td><i>a lagarta, o casulo e a borboleta</i> · desenhou o bicho junto da planta onde ele vive</td></tr>
+        <tr><td><b>Descourtilz</b></td><td><i>o sabiá-laranjeira</i> · ave do Brasil, na <i>Ornithologie brésilienne</i></td></tr>
+        <tr><td><b>Gould</b></td><td><i>o beija-flor</i> · aves de asas pequenas e bico fino</td></tr>
+        <tr><td><b>Hudson e Grönvold</b></td><td><i>o bem-te-vi</i> · o escritor e o desenhista de um livro de aves</td></tr></table></div>
+      {adulto("o tempo e a natureza",
+              "Mostre as barras como ruas compridas de tempo: Merian viveu há mais de 300 anos e Grönvold há menos de cem. Mesmo assim, todos olharam com atenção para bichos e plantas, como a Marina fez neste livro. "
+              "Pergunte qual dos bichos ela gostaria de encontrar de verdade.")}"""
+    L.add(c, aba="--d-natureza")
+
+    diario(L, "Meu museu de natureza", "colar ou desenhar aqui o que ela mais gostou de olhar", ["a folha ou semente que eu mais gostei", "o bicho que eu mais gostei", "a coisa do céu que eu mais gostei", "o que eu quero olhar de novo"],
+           "--d-natureza", "Peça que ela escolha, entre o que olhou e o que juntou, o que levaria para um museu só dela. Escreva o motivo da escolha, com as palavras dela.", h="66mm")
+
+    for k in range(2):
+        linhas = "".join('<tr><td style="width:36mm;height:44mm"><div class="peq">data e lugar</div></td><td style="width:50mm"><div class="peq">o que olhei</div></td>'
+                         '<td><div class="peq">o que ela viu, fez ou disse</div></td></tr>' for _ in range(5))
+        c = f"""<div class="miolo">{titulo("Diário de natureza", "para o adulto · o que ela olhou, fez e disse — não é avaliação", 26)}
+          <table class="tab diario"><tr><th>Data e lugar</th><th>O que olhei</th><th>O que ela viu, fez ou disse</th></tr>{linhas}</table></div>"""
+        L.add(c, aba="--d-memoria")
+
+    pranchas = "".join(f"<li>{fontes_v6.credito(n)}</li>" for n in fontes_v6.OBRAS)
+    c = f"""<div class="miolo texto">{titulo("Pranchas e créditos", "Volume 6", 26)}
+      <h2>Pranchas de naturalistas</h2>
+      <p style="font-size:9.2pt">Todas as pranchas são de autores mortos há mais de 70 anos e estão em domínio público, segundo a fonte indicada em cada crédito (Wikimedia Commons). A prancha do sabiá-laranjeira entra pela marcação do Commons e pelo texto do livro de Descourtilz.</p>
+      <ul style="font-size:8.4pt;line-height:1.3">{pranchas}</ul>
+      <h2>Fundamentos</h2><p style="font-size:9.4pt">O diário de natureza, a observação de uma coisa só e a volta ao mesmo lugar vêm de Charlotte Mason (<i>Home Education</i>, 1886). A narração, o olhar e a conversa antes da explicação seguem a mesma tradição.</p>
+      <h2>Ilustrações da coleção</h2><p style="font-size:9.4pt">Folha, pena, gota, nuvem, sol, lua, estrela, lupa, galho, frutas, árvores, dias e demais desenhos: aquarela digital procedural da coleção, já usada em outros volumes. Nenhum desenho novo foi feito para este volume.</p>
+      <h2>Histórias</h2><p style="font-size:9.4pt">As histórias da Marina são da coleção. O mito de Deméter e Perséfone é antigo, de domínio público, e foi adaptado para a idade. <i>Canção do exílio</i> é de Gonçalves Dias (1823–1864), em domínio público.</p></div>"""
+    L.add(c)
+
+    c = f"""<div class="miolo centro" style="top:50mm">
+      <div style="font-size:12pt;letter-spacing:.25em;text-transform:uppercase;color:var(--sepia)">Até logo, Volume 6</div>
+      <div style="font-size:26pt;font-weight:500;margin:6mm 0">No próximo livro…</div>
+      <p style="font-size:15pt;line-height:1.6;font-style:italic">as primeiras línguas:<br>inglês e francês, com canções, cartões e jogos,<br>e um pouco de latim, para a Marina descobrir de onde vêm as palavras.</p>
+      <div style="margin-top:12mm">{tira(["livro", "estrela", "sino", "pena"], "28mm", "3mm")}</div>
+      <p class="peq" style="margin-top:8mm">Volume 7 · Primeiras línguas</p></div>"""
+    L.add(c, cabecalho=False)
+
+
 # ================================================================== MONTAGEM
 
-UNIDADES_PRONTAS = (unidade1, unidade2, unidade3)
+UNIDADES_PRONTAS = (unidade1, unidade2, unidade3, unidade4, unidade5, unidade6, unidade7, unidade8, unidade9)
 
 
 def montar(unidades=None):
@@ -400,6 +880,8 @@ def montar(unidades=None):
     n_sum = L.add("", cabecalho=False)
     for u in (unidades or UNIDADES_PRONTAS):
         u(L)
+    if not unidades:
+        encerramento(L)
     num, _ = L.paginas[n_sum - 1]
     L.paginas[n_sum - 1] = (num, f'<section class="pagina"><div class="moldura"></div>{sumario(INICIO)}'
                                  f'<div class="rodape"><span class="num">{num}</span></div></section>')

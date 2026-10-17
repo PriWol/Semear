@@ -59,6 +59,7 @@ jobs:
       - run: python3 volume3.py
       - run: python3 volume4.py
       - run: python3 volume5.py
+      - run: python3 volume6.py
       - name: Juntar os PDFs
         run: |
           mkdir -p ../pdfs

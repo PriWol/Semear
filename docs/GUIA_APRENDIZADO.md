@@ -152,6 +152,14 @@ dela com a que foi registrada quando a imagem foi conferida a olho. **Falha fech
 **Paralelo de gestão:** é o recebimento de mercadoria com nota fiscal: o que chega sem nota ou com nota que não
 bate não entra no estoque.
 
+### Recortar uma prancha sem mexer no original
+**O que é:** uma prancha antiga às vezes traz mais de uma figura (o sabiá e outra ave, por exemplo). Em vez de baixar outra
+imagem, o pipeline do Volume 6 guarda o arquivo de origem inteiro, conferido por SHA-256, e grava um JPEG só com o trecho
+indicado (`RECORTES` em `fontes_v6.py`), sem retoque de cor. O crédito do livro diz que é um recorte. O recorte também pode
+ser só visual (um quadro do estilo que mostra um pedaço da mesma imagem), como nos cartões da lagarta e da borboleta. (ADR 0019)
+
+**Paralelo de gestão:** é citar um trecho de um relatório: o relatório inteiro continua guardado, e a citação diz de onde veio.
+
 ### Versionamento (números de versão)
 **O que é:** cada publicação tem um número, como `0.2.0`. O primeiro número muda nas grandes viradas
 (o `1.0` será a abertura ao público), o do meio a cada fase do roteiro, e o último em correções
