@@ -23,5 +23,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0015](0015-tesouro-na-biblioteca-do-app-e-atividades-complementares.md) | Tesouro na biblioteca do app e atividades complementares | Aceito |
 | [0016](0016-acervo-gratuito-catalogo-offline.md) | Acervo gratuito como catálogo curado offline | Aceito |
 | [0017](0017-orientacao-para-os-pais-obrigatoria-em-todo-marco.md) | Orientação para os pais é obrigatória em todo marco | Aceito |
+| [0018](0018-reproducoes-de-obras-de-arte-no-volume-5.md) | Reproduções de obras de arte no Volume 5 (Commons e acervos abertos) | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
