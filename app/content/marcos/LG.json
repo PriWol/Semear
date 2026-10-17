@@ -657,7 +657,7 @@
       "idadeIntroducao": {
         "Waldorf": 7
       },
-      "preRequisitos": ["LG.FON.04", "LG.LET.03"],
+      "preRequisitos": ["LG.FON.04"],
       "bncc": ["EF01LP05", "EF12LP01"],
       "orientacaoPais": {
         "porQueImporta": "Ler BOLA ou GATO é juntar sílabas que a criança já sabe separar e reconhecer: é o primeiro uso real do **código alfabético**. Depende de conhecer os sons das letras e de separar sílabas. Em português, as sílabas simples (consoante + vogal) são as mais regulares e o melhor lugar para começar.",
@@ -757,102 +757,9 @@
       }
     },
     {
-      "id": "LG.LEI.04",
-      "linha": "LG.LEI",
-      "ordem": 4,
-      "titulo": "Lê um texto curto com fluência",
-      "descricaoPais": "Lê um parágrafo curto sem soletrar, com poucas paradas.",
-      "evidencias": ["Lê um texto de 3 a 5 frases em ritmo contínuo, com no máximo 2 tropeços"],
-      "idadeTipica": 7,
-      "idadeIntroducao": {
-        "Waldorf": 8
-      },
-      "preRequisitos": ["LG.LEI.02", "LG.LEI.03"],
-      "bncc": ["EF12LP01", "EF15LP16"],
-      "orientacaoPais": {
-        "porQueImporta": "Fluência é ler **com ritmo e sem soletrar**: quando decodificar fica automático, a atenção sobra para entender. Por isso reler os mesmos textos ajuda tanto.",
-        "comoParticipar": "Releiam o mesmo texto curto de 3 a 4 vezes, a criança lendo e você acompanhando. Leiam em dupla, um parágrafo cada. Poemas e cantigas são ótimos para treinar. Grave a leitura para ela se ouvir. Elogie o progresso, não a velocidade.",
-        "sinaisDeAtencao": "Parar bastante é normal no começo. Se aos 8 ou 9 anos ela ainda soletra quase todas as palavras, apesar de leitura diária, vale conversar com a escola e avaliar a leitura. Isto é uma orientação, não um diagnóstico.",
-        "referencias": ["rasinski-fluent-reader", "soares-alfabetizacao-metodos", "bncc"],
-        "porVertente": {
-          "Waldorf": {
-            "comoParticipar": "A leitura fluente costuma se firmar por volta dos {idade} anos, depois de muita prática com textos conhecidos.",
-            "referencias": ["steiner-educacao-crianca"]
-          },
-          "Clássico": {
-            "comoParticipar": "Reler em voz alta poemas e textos curtos bem escolhidos, em lições breves, forma o ouvido e a fluência.",
-            "referencias": ["wise-bauer-well-trained-mind"]
-          }
-        }
-      }
-    },
-    {
-      "id": "LG.LEI.05",
-      "linha": "LG.LEI",
-      "ordem": 5,
-      "titulo": "Lê em voz alta respeitando a pontuação",
-      "descricaoPais": "A voz muda no ponto, na vírgula, na pergunta e na exclamação.",
-      "evidencias": [
-        "Faz pausa no ponto e na vírgula",
-        "Muda a entonação em perguntas e exclamações"
-      ],
-      "idadeTipica": 7.5,
-      "idadeIntroducao": {},
-      "preRequisitos": ["LG.LEI.04"],
-      "bncc": ["EF15LP16", "EF15LP04"],
-      "orientacaoPais": {
-        "porQueImporta": "A pontuação é a **música do texto**: a voz desce no ponto, sobe na pergunta e pausa na vírgula. Ler assim mostra que a criança entende a frase, e não só decodifica.",
-        "comoParticipar": "Leia um trecho com e sem entonação e pergunte qual soa melhor. Façam teatrinhos: cada personagem lê uma fala respeitando a pontuação. Marque os sinais com cores (ponto, vírgula, interrogação) e deixe a criança ler as perguntas e exclamações com a voz certa.",
-        "sinaisDeAtencao": "Ler sem entonação é comum até a leitura ficar automática. Se aos 9 anos ela ainda lê tudo no mesmo tom, sem parar nos pontos, converse com a escola. Isto é uma orientação, não um diagnóstico.",
-        "referencias": ["rasinski-fluent-reader", "bncc"],
-        "porVertente": {
-          "Clássico": {
-            "comoParticipar": "Poesia lida em voz alta, com a pontuação como guia, é prática antiga para aprender a voz do texto.",
-            "referencias": ["wise-bauer-well-trained-mind"]
-          },
-          "Charlotte Mason": {
-            "comoParticipar": "Recite poemas de cor e depois leia os mesmos em voz alta, cuidando de cada pausa.",
-            "referencias": ["mason-home-education"]
-          }
-        }
-      }
-    },
-    {
-      "id": "LG.LEI.06",
-      "linha": "LG.LEI",
-      "ordem": 6,
-      "titulo": "Lê um livrinho inteiro com autonomia",
-      "descricaoPais": "Escolhe um livro para a idade e lê do começo ao fim, sozinha.",
-      "evidencias": ["Lê um livro ilustrado de 200 a 500 palavras sem ajuda", "Diz do que gostou"],
-      "idadeTipica": 8,
-      "idadeIntroducao": {},
-      "preRequisitos": ["LG.LEI.05"],
-      "bncc": ["EF02LP26", "EF15LP16"],
-      "orientacaoPais": {
-        "porQueImporta": "Ler um livro inteiro sozinho é a conquista do **leitor independente**: a criança junta fluência, compreensão e persistência. Escolher o livro e dizer do que gostou faz da leitura um prazer, e não só um dever.",
-        "comoParticipar": "Deixe-a escolher livros ilustrados de que gosta, com 200 a 500 palavras e vocabulário que conheça (o acervo gratuito do app pode ajudar). Reserve um horário tranquilo e um cantinho de leitura, e continue lendo em voz alta livros mais difíceis. Pergunte “do que você gostou?”, sem prova.",
-        "sinaisDeAtencao": "Algumas crianças gostam mais de livros do que outras, e isso não é problema. Se aos 9 anos ela evita qualquer leitura e lê com muito esforço, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
-        "referencias": ["bncc", "soares-alfabetizacao-metodos"],
-        "porVertente": {
-          "Montessori": {
-            "comoParticipar": "Deixe a criança escolher o livro e o momento: a leitura por escolha é valorizada na tradição Montessori.",
-            "referencias": ["montessori-mente-absorvente"]
-          },
-          "Clássico": {
-            "comoParticipar": "Livros bons e belos, com a leitura em voz alta continuando em livros mais difíceis, são a base da formação do leitor.",
-            "referencias": ["wise-bauer-well-trained-mind"]
-          },
-          "Charlotte Mason": {
-            "comoParticipar": "Mason pede “livros vivos”, bem escritos, em vez de livros-lição: escolha poucos e bons.",
-            "referencias": ["mason-home-education"]
-          }
-        }
-      }
-    },
-    {
       "id": "LG.LEI.07",
       "linha": "LG.LEI",
-      "ordem": 7,
+      "ordem": 4,
       "titulo": "Responde a perguntas literais sobre o que leu",
       "descricaoPais": "Encontra no texto a resposta para quem, onde, quando e o quê.",
       "evidencias": [
@@ -883,9 +790,39 @@
       }
     },
     {
+      "id": "LG.LEI.04",
+      "linha": "LG.LEI",
+      "ordem": 5,
+      "titulo": "Lê um texto curto com fluência",
+      "descricaoPais": "Lê um parágrafo curto sem soletrar, com poucas paradas.",
+      "evidencias": ["Lê um texto de 3 a 5 frases em ritmo contínuo, com no máximo 2 tropeços"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {
+        "Waldorf": 8
+      },
+      "preRequisitos": ["LG.LEI.02", "LG.LEI.03"],
+      "bncc": ["EF12LP01", "EF15LP16"],
+      "orientacaoPais": {
+        "porQueImporta": "Fluência é ler **com ritmo e sem soletrar**: quando decodificar fica automático, a atenção sobra para entender. Por isso reler os mesmos textos ajuda tanto.",
+        "comoParticipar": "Releiam o mesmo texto curto de 3 a 4 vezes, a criança lendo e você acompanhando. Leiam em dupla, um parágrafo cada. Poemas e cantigas são ótimos para treinar. Grave a leitura para ela se ouvir. Elogie o progresso, não a velocidade.",
+        "sinaisDeAtencao": "Parar bastante é normal no começo. Se aos 8 ou 9 anos ela ainda soletra quase todas as palavras, apesar de leitura diária, vale conversar com a escola e avaliar a leitura. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["rasinski-fluent-reader", "soares-alfabetizacao-metodos", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "A leitura fluente costuma se firmar por volta dos {idade} anos, depois de muita prática com textos conhecidos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Reler em voz alta poemas e textos curtos bem escolhidos, em lições breves, forma o ouvido e a fluência.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      }
+    },
+    {
       "id": "LG.LEI.08",
       "linha": "LG.LEI",
-      "ordem": 8,
+      "ordem": 6,
       "titulo": "Reconta por escrito ou oralmente o que leu",
       "descricaoPais": "Conta o texto lido com começo, meio e fim.",
       "evidencias": ["Reconta um texto lido na ordem certa, citando personagens e lugar"],
@@ -919,7 +856,7 @@
     {
       "id": "LG.LEI.09",
       "linha": "LG.LEI",
-      "ordem": 9,
+      "ordem": 7,
       "titulo": "Infere o que o texto não diz",
       "descricaoPais": "Descobre pelas pistas como o personagem se sente ou o que vai acontecer.",
       "evidencias": [
@@ -950,9 +887,40 @@
       }
     },
     {
+      "id": "LG.LEI.05",
+      "linha": "LG.LEI",
+      "ordem": 8,
+      "titulo": "Lê em voz alta respeitando a pontuação",
+      "descricaoPais": "A voz muda no ponto, na vírgula, na pergunta e na exclamação.",
+      "evidencias": [
+        "Faz pausa no ponto e na vírgula",
+        "Muda a entonação em perguntas e exclamações"
+      ],
+      "idadeTipica": 7.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LEI.04"],
+      "bncc": ["EF15LP16", "EF15LP04"],
+      "orientacaoPais": {
+        "porQueImporta": "A pontuação é a **música do texto**: a voz desce no ponto, sobe na pergunta e pausa na vírgula. Ler assim mostra que a criança entende a frase, e não só decodifica.",
+        "comoParticipar": "Leia um trecho com e sem entonação e pergunte qual soa melhor. Façam teatrinhos: cada personagem lê uma fala respeitando a pontuação. Marque os sinais com cores (ponto, vírgula, interrogação) e deixe a criança ler as perguntas e exclamações com a voz certa.",
+        "sinaisDeAtencao": "Ler sem entonação é comum até a leitura ficar automática. Se aos 9 anos ela ainda lê tudo no mesmo tom, sem parar nos pontos, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["rasinski-fluent-reader", "bncc"],
+        "porVertente": {
+          "Clássico": {
+            "comoParticipar": "Poesia lida em voz alta, com a pontuação como guia, é prática antiga para aprender a voz do texto.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Recite poemas de cor e depois leia os mesmos em voz alta, cuidando de cada pausa.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
       "id": "LG.LEI.10",
       "linha": "LG.LEI",
-      "ordem": 10,
+      "ordem": 9,
       "titulo": "Relaciona o texto com a própria experiência e com as ilustrações",
       "descricaoPais": "Liga o que leu a algo que viveu ou a outro livro, e vê o que a imagem acrescenta.",
       "evidencias": [
@@ -977,6 +945,38 @@
       }
     },
     {
+      "id": "LG.LEI.06",
+      "linha": "LG.LEI",
+      "ordem": 10,
+      "titulo": "Lê um livrinho inteiro com autonomia",
+      "descricaoPais": "Escolhe um livro para a idade e lê do começo ao fim, sozinha.",
+      "evidencias": ["Lê um livro ilustrado de 200 a 500 palavras sem ajuda", "Diz do que gostou"],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LG.LEI.05"],
+      "bncc": ["EF02LP26", "EF15LP16"],
+      "orientacaoPais": {
+        "porQueImporta": "Ler um livro inteiro sozinho é a conquista do **leitor independente**: a criança junta fluência, compreensão e persistência. Escolher o livro e dizer do que gostou faz da leitura um prazer, e não só um dever.",
+        "comoParticipar": "Deixe-a escolher livros ilustrados de que gosta, com 200 a 500 palavras e vocabulário que conheça (o acervo gratuito do app pode ajudar). Reserve um horário tranquilo e um cantinho de leitura, e continue lendo em voz alta livros mais difíceis. Pergunte “do que você gostou?”, sem prova.",
+        "sinaisDeAtencao": "Algumas crianças gostam mais de livros do que outras, e isso não é problema. Se aos 9 anos ela evita qualquer leitura e lê com muito esforço, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "soares-alfabetizacao-metodos"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Deixe a criança escolher o livro e o momento: a leitura por escolha é valorizada na tradição Montessori.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Clássico": {
+            "comoParticipar": "Livros bons e belos, com a leitura em voz alta continuando em livros mais difíceis, são a base da formação do leitor.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Mason pede “livros vivos”, bem escritos, em vez de livros-lição: escolha poucos e bons.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
       "id": "LG.LEI.11",
       "linha": "LG.LEI",
       "ordem": 11,
@@ -986,7 +986,7 @@
       "idadeTipica": 8,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.08", "LG.LEI.10"],
-      "bncc": ["EF15LP02", "EF12LP18"],
+      "bncc": ["EF15LP01", "EF15LP02"],
       "orientacaoPais": {
         "porQueImporta": "Saber do que o texto trata e que tipo de texto é (conto, poema, receita, notícia) ajuda a ler com o objetivo certo e a resumir. Cada gênero tem seu jeito de ser lido.",
         "comoParticipar": "Reúna textos variados (um conto, um poema, uma receita, um bilhete, uma notícia) e converse: “para que serve?”, “como a gente reconhece?”. Peça um resumo em uma frase. Leiam rótulos, receitas e cartas reais em casa.",

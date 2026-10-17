@@ -22,7 +22,7 @@ dentro de `app/` e abra um PR.
 {
   "id": "LG.FON.04", // <linha>.<número com 2 dígitos>
   "linha": "LG.FON",
-  "ordem": 4, // posição na linha (sem repetir)
+  "ordem": 4, // posição na linha (sem repetir); o `id` é estável e não precisa seguir a ordem
   "titulo": "Identifica a sílaba inicial",
   "descricaoPais": "Percebe que BOLA e BOTA começam com o mesmo pedaço.",
   "evidencias": ["Separa figuras pela sílaba inicial"],
