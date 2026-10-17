@@ -19,9 +19,10 @@ from motivos3 import MOTIVOS3  # noqa: E402
 from motivos4 import MOTIVOS4  # noqa: E402
 from motivos5 import MOTIVOS5  # noqa: E402
 from motivos6 import MOTIVOS6  # noqa: E402
+from motivos7 import MOTIVOS7  # noqa: E402
 import fontes_v1  # noqa: E402
 
-TODOS = {**SUBJECTS, **MOTIVOS2, **ARTE_EXTRA, **MOTIVOS3, **MOTIVOS4, **MOTIVOS5, **MOTIVOS6}
+TODOS = {**SUBJECTS, **MOTIVOS2, **ARTE_EXTRA, **MOTIVOS3, **MOTIVOS4, **MOTIVOS5, **MOTIVOS6, **MOTIVOS7}
 VERSAO = {"atual": "impressao"}   # "impressao" (papel branco) ou "tela" (papel creme)
 
 

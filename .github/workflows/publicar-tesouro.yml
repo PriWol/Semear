@@ -50,7 +50,8 @@ jobs:
       # Toda página de domínio público usada precisa ter SHA-256 registrado (falha fechada).
       - run: python3 fontes_v1.py verificar
       - run: python3 fontes_v5.py verificar
-      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_pdf test_musica
+      - run: python3 fontes_v6.py verificar
+      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_pdf test_musica
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
@@ -58,6 +59,7 @@ jobs:
       - run: python3 volume3.py
       - run: python3 volume4.py
       - run: python3 volume5.py
+      - run: python3 volume6.py
       - name: Juntar os PDFs
         run: |
           mkdir -p ../pdfs
