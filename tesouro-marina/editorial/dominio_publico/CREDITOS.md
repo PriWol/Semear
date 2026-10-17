@@ -26,3 +26,16 @@ As imagens vêm do Wikimedia Commons, de acervos de acesso aberto (Instituto de 
 | `v5/cassatt_praia.jpg` | *Crianças brincando na praia* (Children Playing on the Beach), Mary Cassatt (1844–1926), 1884 | National Gallery of Art, Washington | National Gallery of Art, Washington, inv. 1970.17.19, https://www.nga.gov/artworks/52163 | CC0 (acesso aberto do acervo) |
 
 Observações: os dois quadros de Kandinsky foram baixados do Commons depois que o limite de pedidos liberou (o do *Estudo de cores* é idêntico, byte a byte, ao arquivo que a editora tinha enviado). Os *Girassóis* vêm do Commons, em reprodução do Projeto Yorck (2002), marcada como domínio público (PD-Art); a imagem que a editora tinha enviado é da mesma pintura (Neue Pinakothek, Munique), mas tem outra origem (provavelmente fotografia licenciada em CC BY 4.0), por isso não foi usada. Os arquivos de origem têm SHA-256 em `obras.sha256.json`.
+
+## Volume 6: pranchas de naturalistas (`v6/`)
+
+Gravuras e litografias antigas baixadas do Wikimedia Commons (arquivo e página citados na coluna "Fonte"). Foram reduzidas a no máximo 2000 px no maior lado (JPEG, cores fiéis à origem em sRGB, sem retoque). O SHA-256 do arquivo de origem de cada uma está em `obras.sha256.json`, e o do JPEG tratado também. A licença é a que o Commons registrava ao catalogar (outubro de 2026).
+
+| Arquivo | Prancha e autoria | Acervo | Fonte | Situação |
+|---|---|---|---|---|
+| `v6/sabia.jpg` | *Turdus rufiventer* e *Coracina scutata*, autoria desconhecida, século XIX (data a confirmar) | Brasiliana Iconográfica | Wikimedia Commons, `File:Turdus rufiventer - Coracina scutata, da Coleção Brasiliana Iconográfica.jpg` | domínio público (marcação do Commons; autoria desconhecida) |
+| `v6/bemtevi.jpg` | *Bienteveo Tyrant* (*Pitangus bolivianus*), de *Birds of La Plata*, Henrik Grönvold (1858–1940), em W. H. Hudson (1841–1922), 1920 | Biodiversity Heritage Library | Wikimedia Commons, `File:Birds of La Plata (Plate) (7788867022).jpg` | domínio público |
+| `v6/beijaflor.jpg` | *Heliothrix phaïnolæma*, de *A Monograph of the Trochilidae*, vol. 4, John Gould (1804–1881) e Henry C. Richter (1821–1902), 1861 | livro digitalizado, via Wikimedia Commons | Wikimedia Commons, `File:Heliothrix phaïnolæma + Till. bulbosa - Gould -Humm.jpg` | domínio público |
+| `v6/merian_frangipani.jpg` | *Metamorphosis insectorum Surinamensium*, prancha 8, Maria Sibylla Merian (1647–1717), 1705 | Biodiversity Heritage Library | Wikimedia Commons, `File:Metamorphosis insectorum surinamensium (Pl. 8) BHL41398729.jpg` | domínio público |
+
+Observações: a prancha do sabiá é de autoria desconhecida (coleção Brasiliana Iconográfica); entra pela marcação "domínio público" do Commons e por ser uma gravura do século XIX, e deve ser reconferida antes da venda. A legenda da prancha do bem-te-vi diz *Pitangus bolivianus*; o livro mantém o nome da prancha. Os arquivos de origem foram conferidos, byte a byte, contra o tamanho e o SHA-1 que o Commons informa.
