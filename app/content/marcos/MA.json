@@ -766,6 +766,254 @@
           }
         }
       }
+    },
+    {
+      "id": "MA.GEO.01",
+      "linha": "MA.GEO",
+      "ordem": 1,
+      "titulo": "Usa palavras de posição e lugar",
+      "descricaoPais": "Usa e entende em cima, embaixo, dentro, fora, perto e longe.",
+      "evidencias": [
+        "Coloca um objeto em cima, embaixo, dentro ou ao lado, conforme o pedido",
+        "Diz onde está um objeto usando palavras de posição"
+      ],
+      "idadeTipica": 3.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Antes de nomear formas, a criança se orienta no espaço: o que está dentro, fora, em cima, perto. As pesquisas de Piaget e Inhelder mostram que as relações de vizinhança e de dentro e fora são as primeiras que a criança constrói. Dizer **onde** as coisas estão, com palavras, é a base de toda a geometria.",
+        "comoParticipar": "Brinque de “onde está?”: esconda um brinquedo e dê pistas (“está embaixo da mesa”, “dentro da caixa”). Troquem: ela esconde e você procura. Peça que coloque coisas em cima, embaixo, ao lado e entre. Use o corpo: passar por baixo da corda, por cima do banco. Fale as palavras de posição de forma natural ao longo do dia.",
+        "sinaisDeAtencao": "Aos 3 e 4 anos, ainda é comum confundir “em cima” e “embaixo”, ou “dentro” e “fora”. Se aos 5 anos ela não atende a pedidos simples de posição (“coloca embaixo da cadeira”), apesar de ouvi-los no dia a dia, vale conversar com a escola e checar audição e linguagem. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["piaget-inhelder-espaco", "lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O ambiente preparado, em que cada coisa tem seu lugar, ensina o espaço pelo uso: a criança guarda o material “ao lado de”, “em cima da” prateleira.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Jogos de roda e de movimento (passar por baixo, pelo meio, ao redor) ensinam a posição com o corpo, antes das palavras.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.GEO.02",
+      "linha": "MA.GEO",
+      "ordem": 2,
+      "titulo": "Reconhece formas planas simples",
+      "descricaoPais": "Reconhece círculo, quadrado, triângulo e retângulo, em qualquer tamanho e posição.",
+      "evidencias": [
+        "Nomeia 4 formas planas e as encontra em objetos do dia a dia",
+        "Reconhece a forma mesmo virada ou em tamanho diferente"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Reconhecer um círculo, um quadrado, um triângulo e um retângulo **pela aparência** é o primeiro nível do pensamento geométrico: a criança vê a forma inteira, antes de falar de lados e cantos. O desafio é reconhecê-la em qualquer tamanho e posição, e não só no desenho de sempre (um triângulo “de ponta-cabeça” continua sendo triângulo).",
+        "comoParticipar": "Procurem formas no dia a dia: o relógio redondo, a janela retangular, o lenço triangular. Façam uma caça às formas em casa e no passeio, recortem figuras de revistas e agrupem por forma. Mostre a mesma forma grande, pequena e virada e pergunte “ainda é um triângulo?”. Use sempre o nome certo.",
+        "sinaisDeAtencao": "Aos 4 anos é comum reconhecer só o círculo e o quadrado “em pé”. Se aos 6 anos ela ainda não reconhece formas simples, ou diz que o triângulo virado não é triângulo, mesmo com muita convivência com elas, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["van-hiele-structure-insight", "clements-sarama-early-math", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "O gabinete geométrico (gavetas com figuras de encaixe) permite tocar, contornar com o dedo e nomear cada forma.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Caminhem as formas no chão (círculo, triângulo) e desenhem no ar e na areia: a criança vive a forma com o corpo antes de dar nome a ela.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.GEO.03",
+      "linha": "MA.GEO",
+      "ordem": 3,
+      "titulo": "Reconhece sólidos do dia a dia",
+      "descricaoPais": "Associa bola, caixa e lata a seus sólidos e diz o que rola e o que empilha.",
+      "evidencias": [
+        "Associa 3 sólidos a objetos de casa (bola, caixa, lata)",
+        "Diz que a bola rola e a caixa, não"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.GEO.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Os objetos do mundo são **sólidos**, não desenhos: bola, caixa, lata. A criança aprende a reconhecê-los pelo tato e pelo uso (a bola rola, a caixa empilha) antes de usar os nomes (esfera, cubo, cilindro). Distinguir figura plana de sólido é um passo importante.",
+        "comoParticipar": "Reúna objetos de casa (bola, caixa de sapato, lata, funil, dado) e brinque de agrupar: “o que rola?”, “o que empilha?”. De olhos fechados, ela adivinha o objeto pelo tato. Construam torres com blocos e só depois dê o nome: esfera, cubo, cilindro, cone. Compare: “a moeda é plana; a bola, não”.",
+        "sinaisDeAtencao": "Os nomes técnicos vêm mais tarde; o importante é reconhecer pelo tato e pelo uso. Se aos 6 anos ela não distingue um objeto que rola de um que não rola, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lorenzato-percepcao-matematica", "clements-sarama-early-math", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Os sólidos geométricos (esfera, cubo, cilindro, cone, prismas) são um material clássico: a criança os toca, compara e só depois os nomeia.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Construa com materiais da natureza (pedras, madeira, cestos) e brinque com objetos de formas simples; os nomes técnicos podem esperar.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.GEO.04",
+      "linha": "MA.GEO",
+      "ordem": 4,
+      "titulo": "Descreve formas pelos lados e cantos",
+      "descricaoPais": "Diz que o triângulo tem 3 lados e 3 cantos e conta os lados do quadrado.",
+      "evidencias": [
+        "Conta lados e cantos de triângulo, quadrado e retângulo",
+        "Explica por que uma figura não é um triângulo"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.GEO.02", "MA.SEN.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Quando a criança começa a explicar **por que** uma figura é um triângulo (tem 3 lados e 3 cantos), ela passa do “parece” ao “tem”. É o segundo nível do pensamento geométrico: observar as propriedades das figuras. Isso exige contar com cuidado e ligar o que vê ao vocabulário (lado, canto).",
+        "comoParticipar": "Pegue um triângulo, um quadrado e um retângulo de papel e pergunte “quantos lados? quantos cantos?”, deixando-a contar com o dedo. Brinque de “qual é a figura?”: “tenho 4 lados e 4 cantos iguais” (quadrado). Compare o quadrado e o retângulo: o que muda? Desenhem figuras “impostoras”, como um triângulo com um lado curvo, e peça que expliquem por que não é triângulo.",
+        "sinaisDeAtencao": "Aos 5 anos muitas crianças ainda reconhecem a forma só pela aparência. Se aos 7 anos ela não consegue contar os lados e os cantos de figuras simples, mesmo com apoio, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["van-hiele-structure-insight", "clements-sarama-early-math", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As caixas de triângulos e as figuras de encaixe permitem comparar lados e cantos com as mãos antes de contá-los.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.GEO.05",
+      "linha": "MA.GEO",
+      "ordem": 5,
+      "titulo": "Compõe e decompõe figuras",
+      "descricaoPais": "Forma uma figura nova juntando peças e divide uma figura em partes.",
+      "evidencias": [
+        "Monta uma figura a partir de um modelo com peças (tangram, blocos)",
+        "Forma um retângulo com dois quadrados ou dois triângulos"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.GEO.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Juntar figuras para formar outras (dois triângulos formam um quadrado) e dividir uma figura em partes ajuda a ver como as formas se relacionam. É o mesmo raciocínio de **partes e todo** que a criança usa com os números, agora com formas, e prepara o trabalho com áreas e frações.",
+        "comoParticipar": "Brinquem com tangram ou com peças de papel: monte um barco, uma casa, um gato, copiando um modelo, e depois inventem figuras livres. Pergunte: “com dois triângulos, que figura dá?”, “dá para formar um quadrado com estas peças?”. Recortem um quadrado ao meio (de dois jeitos) e descubram o que sobra.",
+        "sinaisDeAtencao": "Montar com um modelo exige tentar e errar, e isso é normal. Se aos 7 anos ela desiste logo de montar figuras simples com peças, ou não consegue nem com um modelo de tamanho real, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["clements-sarama-early-math", "lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As caixas de triângulos, em que os triângulos se juntam para formar quadrados e retângulos, são um material pensado para esse trabalho.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.GEO.06",
+      "linha": "MA.GEO",
+      "ordem": 6,
+      "titulo": "Constrói a partir de um modelo",
+      "descricaoPais": "Copia uma construção com blocos e depois constrói a partir de um desenho.",
+      "evidencias": [
+        "Copia uma construção de 6 blocos",
+        "Constrói a partir de uma foto ou desenho simples"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.GEO.01", "MA.GEO.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Copiar uma construção olhando o modelo, e depois construir a partir de um desenho ou foto, exige **imaginar o espaço**: ver o que está na frente, o que está escondido, o que fica em cima. É a ponte do objeto real para a representação no papel.",
+        "comoParticipar": "Faça uma construção simples com blocos e peça que ela copie, primeiro olhando e depois só de memória. Fotografe construções e peça que ela as reconstrua a partir da foto. Comece com poucos blocos (4 a 6) e aumente aos poucos. Troquem os papéis: ela constrói e você copia.",
+        "sinaisDeAtencao": "Perceber o que fica escondido leva tempo. Se aos 7 anos ela não consegue copiar uma construção pequena com o modelo à frente, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "clements-sarama-early-math",
+          "piaget-inhelder-espaco",
+          "lorenzato-percepcao-matematica"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A torre rosa, a escada marrom e outros materiais de construção da educação sensorial ensinam, na prática, a organizar peças no espaço.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Brinquedos abertos (blocos, tocos de madeira, panos) deixam a criança construir livremente: o faz de conta em três dimensões vem antes de copiar modelos.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.GEO.07",
+      "linha": "MA.GEO",
+      "ordem": 7,
+      "titulo": "Segue e dá instruções de caminho",
+      "descricaoPais": "Segue “vire à direita, ande dois passos” e usa um mapa simples.",
+      "evidencias": [
+        "Segue 3 instruções de caminho",
+        "Dá instruções para chegar a um objeto escondido, com um mapa simples"
+      ],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.GEO.01", "MA.GEO.06"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Seguir e dar instruções de caminho junta linguagem, memória e orientação. Esquerda e direita são difíceis: dependem de saber qual lado é qual no próprio corpo e, depois, do ponto de vista de outra pessoa. Um mapa simples faz a ponte para ler **representações do espaço**.",
+        "comoParticipar": "Brinquem de caça ao tesouro: esconda um objeto e dê instruções (“três passos à frente, vire à direita”); depois troquem. Façam um mapa simples da sala ou do quintal, com um desenho para cada lugar. Uma pulseira na mão direita ajuda a lembrar. Use “frente”, “atrás”, “ao lado” e “entre” antes de esquerda e direita.",
+        "sinaisDeAtencao": "Confundir direita e esquerda é comum até os 7 ou 8 anos. Se aos 8 anos ela não segue instruções simples de caminho em duas etapas, mesmo com a pulseira, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["piaget-inhelder-espaco", "lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As atividades de movimento e vida prática (caminhar na linha, seguir percursos) trabalham o espaço com o corpo; o mapa vem depois, quando o percurso já está dominado.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Caminhar, saltar e dançar em roda e em linha ensina as direções com o corpo; os jogos de roda com “para a direita” e “para a esquerda” já fazem esse trabalho.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Passeios ao ar livre com um mapa desenhado pela criança, em lições curtas, ligam o espaço real ao desenho.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
+    },
+    {
+      "id": "MA.GEO.08",
+      "linha": "MA.GEO",
+      "ordem": 8,
+      "titulo": "Reconhece simetria",
+      "descricaoPais": "Dobra uma figura ao meio, vê se as metades combinam e completa a metade que falta.",
+      "evidencias": [
+        "Diz se uma figura é simétrica dobrando-a",
+        "Completa a outra metade de uma figura simétrica numa malha"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["MA.GEO.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Perceber que uma figura tem duas metades iguais (**simetria**) liga forma, espaço e beleza: borboletas, folhas e rostos são simétricos. A criança aprende a reconhecer o que “espelha”, um passo para a geometria dos movimentos.",
+        "comoParticipar": "Dobrem papéis ao meio: se as metades combinam, a figura é simétrica. Façam borboletas de tinta (pinte um lado e dobre). Peça que complete a outra metade de um desenho numa malha quadriculada. Procurem simetria em folhas, flores e no rosto. Com um espelho, “duplique” meio desenho.",
+        "sinaisDeAtencao": "Completar a outra metade é difícil no começo. Se aos 8 anos ela não reconhece que uma figura de metades iguais dobra ao meio, mesmo com a figura na mão, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["clements-sarama-early-math", "lorenzato-percepcao-matematica", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "O desenho de formas, com figuras simétricas e espelhadas, é um trabalho central das primeiras séries na tradição Waldorf. Em casa, desenhar padrões simétricos com a criança serve de apoio.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Observe folhas, flores e asas de borboleta e peça que a criança desenhe o que viu: o desenho de observação mostra a simetria na natureza.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      }
     }
   ]
 }

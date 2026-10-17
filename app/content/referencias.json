@@ -104,6 +104,34 @@
       "titulo": "Home education",
       "ano": 1905,
       "veiculo": "4. ed. London: Kegan Paul, Trench, Trubner"
+    },
+    {
+      "id": "clements-sarama-early-math",
+      "autores": "CLEMENTS, Douglas H.; SARAMA, Julie",
+      "titulo": "Learning and teaching early math: the learning trajectories approach",
+      "ano": 2014,
+      "veiculo": "2. ed. New York: Routledge"
+    },
+    {
+      "id": "van-hiele-structure-insight",
+      "autores": "VAN HIELE, Pierre M.",
+      "titulo": "Structure and insight: a theory of mathematics education",
+      "ano": 1986,
+      "veiculo": "Orlando: Academic Press"
+    },
+    {
+      "id": "lorenzato-percepcao-matematica",
+      "autores": "LORENZATO, Sérgio",
+      "titulo": "Educação infantil e percepção matemática",
+      "ano": 2006,
+      "veiculo": "Campinas: Autores Associados"
+    },
+    {
+      "id": "piaget-inhelder-espaco",
+      "autores": "PIAGET, Jean; INHELDER, Bärbel",
+      "titulo": "A representação do espaço na criança",
+      "ano": 1993,
+      "veiculo": "Tradução de Bernardina Machado de Albuquerque. Porto Alegre: Artes Médicas"
     }
   ]
 }
