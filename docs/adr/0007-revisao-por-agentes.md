@@ -10,6 +10,7 @@ A dona do produto é gerente de projetos e não revisa código linha a linha. O 
 - Cada PR é revisado por **dois agentes** (`.github/workflows/revisao-agentes.yml`):
   1. **Correção**: bugs, regras da especificação, testes faltando.
   2. **Segurança e privacidade**: injeção de HTML, dados da criança saindo do aparelho, dependências.
+- PRs abertos pelo Dependabot **não passam pelos agentes**: o job é pulado, porque esses PRs não recebem os segredos do repositório e a ação recusa atores bot. Ficam só com CI e aprovação humana.
 - O merge exige **CI verde + aprovação da dona do produto**.
 - A v1 vai num **único PR**, organizado em commits temáticos para facilitar a revisão.
 
