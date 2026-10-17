@@ -68,7 +68,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
       >();
       const ativos: string[] = [];
       for (const pista of pistasDaCrianca(ctx.idx, familia, c)) {
-        const pos = posicaoDaLinha(ctx.idx, pista, estados, idade, familia.vertentePrincipal);
+        const pos = posicaoDaLinha(ctx.idx, pista, estados, idade, familia);
         const d = porDominio.get(pista.dominio.id) ?? {
           nome: pista.dominio.nome,
           icone: pista.dominio.icone,

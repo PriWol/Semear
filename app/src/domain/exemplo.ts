@@ -77,7 +77,10 @@ export function criarExemplo(idx: IndiceConteudo, hoje: Date): DadosExemplo {
       const linha = idx.linha(linhaId);
       // Se o conteúdo mudar e o marco sumir, a linha fica sem posição em vez de quebrar o exemplo.
       if (!linha || !idx.marco(marcoId)) continue;
-      atual = { ...atual, ...posicionarAqui(idx, { linha }, marcoId, atual, posicionadoEm) };
+      atual = {
+        ...atual,
+        ...posicionarAqui(idx, { linha }, marcoId, atual, posicionadoEm, familia),
+      };
     }
     return { criancaId: m.id, estados: atual };
   });

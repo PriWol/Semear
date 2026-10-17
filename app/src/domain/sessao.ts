@@ -175,7 +175,7 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
   const filas: { pista: Pista; fila: Escolha[] }[] = [];
   const lacunas: Lacuna[] = [];
   for (const pista of pistas) {
-    const pos = posicaoDaLinha(idx, pista, estados, idade, familia.vertentePrincipal);
+    const pos = posicaoDaLinha(idx, pista, estados, idade, familia);
     if (pos.ativos.length === 0) continue;
     const fila = candidatas(idx, pista, pos.ativos, familia, idade, recentes).map((e) => ({
       ...e,

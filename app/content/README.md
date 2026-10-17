@@ -28,9 +28,15 @@ dentro de `app/` e abra um PR.
   "idadeTipica": 5,
   "idadeIntroducao": { "Waldorf": 6.5 }, // só gera aviso, nunca bloqueia
   "preRequisitos": ["LG.FON.03"], // pode citar marcos de outras linhas
+  "vertentes": null, // null ou ausente = comum a todas; ["Charlotte Mason"] = marco extra (ver abaixo)
   "bncc": [], // obrigatório em LG e MA antes do lançamento (portfólio)
 }
 ```
+
+**Marco extra por vertente:** com `vertentes: ["Charlotte Mason"]`, o marco só aparece para famílias cuja
+vertente principal ou inspiração esteja na lista, e não conta nos totais das demais. Um pré-requisito que
+aponte para um marco extra escondido é ignorado para essa família. Todo marco novo, extra ou não, precisa de
+`orientacaoPais` (ADR 0017).
 
 ## Atividade
 

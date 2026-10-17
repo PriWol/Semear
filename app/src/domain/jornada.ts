@@ -21,16 +21,25 @@ export function estadoDe(estados: EstadosCrianca, chave: string): EstadoMarco {
   return estados[chave]?.estado ?? 'nao-observado';
 }
 
+type FamiliaVertentes = Pick<Familia, 'vertentePrincipal' | 'inspiracoes'>;
+
 /** Vertentes que a família usa: a principal e as inspirações. */
-export function vertentesDaFamilia(familia: Pick<Familia, 'vertentePrincipal' | 'inspiracoes'>) {
+export function vertentesDaFamilia(familia: FamiliaVertentes) {
   return [familia.vertentePrincipal, ...familia.inspiracoes];
 }
 
+/**
+ * Marco extra: só aparece para a família se a vertente principal ou uma inspiração está em
+ * `vertentes`. Sem o campo (null ou ausente), o marco é comum a todas.
+ */
+export function marcoVisivel(marco: Pick<Marco, 'vertentes'>, familia: FamiliaVertentes): boolean {
+  if (!marco.vertentes) return true;
+  const usadas = vertentesDaFamilia(familia);
+  return marco.vertentes.some((v) => usadas.includes(v));
+}
+
 /** Linhas que aparecem para a família: as comuns e as extras das vertentes que ela usa. */
-export function linhasVisiveis(
-  dominio: Dominio,
-  familia: Pick<Familia, 'vertentePrincipal' | 'inspiracoes'>,
-): Linha[] {
+export function linhasVisiveis(dominio: Dominio, familia: FamiliaVertentes): Linha[] {
   const usadas = vertentesDaFamilia(familia);
   return (dominio.linhas ?? []).filter(
     (l) => l.vertentes === null || l.vertentes.some((v) => usadas.includes(v)),
@@ -46,7 +55,7 @@ export interface Pista {
 
 export function pistasDaCrianca(
   idx: IndiceConteudo,
-  familia: Pick<Familia, 'vertentePrincipal' | 'inspiracoes'>,
+  familia: FamiliaVertentes,
   crianca: Pick<Crianca, 'trilhas'>,
 ): Pista[] {
   const pistas: Pista[] = [];
@@ -70,10 +79,16 @@ export function idPista(p: Pick<Pista, 'linha' | 'idioma'>): string {
   return p.idioma ? `${p.linha.id}@${p.idioma}` : p.linha.id;
 }
 
-export function marcosDaPista(idx: IndiceConteudo, pista: Pick<Pista, 'linha' | 'idioma'>) {
+/** Marcos da pista que a família vê (idioma e vertentes); toda regra de posição parte daqui. */
+export function marcosDaPista(
+  idx: IndiceConteudo,
+  pista: Pick<Pista, 'linha' | 'idioma'>,
+  familia: FamiliaVertentes,
+) {
   return idx
     .marcosDaLinha(pista.linha.id)
-    .filter((m) => !pista.idioma || !m.idiomas || m.idiomas.includes(pista.idioma));
+    .filter((m) => !pista.idioma || !m.idiomas || m.idiomas.includes(pista.idioma))
+    .filter((m) => marcoVisivel(m, familia));
 }
 
 export interface SituacaoMarco {
@@ -107,19 +122,21 @@ export function posicaoDaLinha(
   pista: Pick<Pista, 'linha' | 'idioma'>,
   estados: EstadosCrianca,
   idade: number,
-  vertentePrincipal: Familia['vertentePrincipal'],
+  familia: FamiliaVertentes,
 ): PosicaoLinha {
-  const marcos = marcosDaPista(idx, pista);
+  const marcos = marcosDaPista(idx, pista, familia);
   const situacoes: SituacaoMarco[] = marcos.map((marco) => {
     const chave = chaveMarco(marco.id, pista.idioma);
+    // Pré-requisito que aponta para um marco extra que a família não vê é ignorado: não existe para ela.
     // Pré-requisitos da mesma linha não contam: a ordem da linha já garante a sequência.
     // Em Línguas, o pré-requisito de outra linha de Línguas é lido no mesmo idioma.
     const aguardando = marco.preRequisitos.filter((p) => {
-      if (!idx.marco(p) || linhaDoMarco(p) === pista.linha.id) return false;
+      const pre = idx.marco(p);
+      if (!pre || !marcoVisivel(pre, familia) || linhaDoMarco(p) === pista.linha.id) return false;
       const mesmoIdioma = pista.idioma && idx.dominioDaLinha(linhaDoMarco(p))?.trilhas;
       return estadoDe(estados, mesmoIdioma ? chaveMarco(p, pista.idioma) : p) !== 'consolidado';
     });
-    const intro = marco.idadeIntroducao[vertentePrincipal];
+    const intro = marco.idadeIntroducao[familia.vertentePrincipal];
     return {
       marco,
       chave,
@@ -174,8 +191,9 @@ export function posicionarAqui(
   marcoId: string,
   estados: EstadosCrianca,
   agora: string,
+  familia: FamiliaVertentes,
 ): Record<string, RegistroMarco> {
-  const marcos = marcosDaPista(idx, pista);
+  const marcos = marcosDaPista(idx, pista, familia);
   const alvo = marcos.findIndex((m) => m.id === marcoId);
   if (alvo < 0) throw new Error(`Marco ${marcoId} não pertence à linha ${pista.linha.id}`);
   const mudancas: Record<string, RegistroMarco> = {};
@@ -197,6 +215,7 @@ export function avisosTrilhas(
   crianca: Pick<Crianca, 'trilhas'>,
   idade: number,
   estados: EstadosCrianca,
+  familia: FamiliaVertentes,
 ): string[] {
   const li = idx.conteudo.dominios.find((d) => d.trilhas);
   if (!li?.trilhas) return [];
@@ -212,9 +231,10 @@ export function avisosTrilhas(
     if (!t) continue;
     if (idade < t.idadeInicio)
       avisos.push(`${t.nome} costuma começar por volta dos ${t.idadeInicio} anos.`);
-    const pendentes = (t.preRequisitos ?? []).filter(
-      (p) => idx.marco(p) && estadoDe(estados, p) === 'nao-observado',
-    );
+    const pendentes = (t.preRequisitos ?? []).filter((p) => {
+      const pre = idx.marco(p);
+      return pre && marcoVisivel(pre, familia) && estadoDe(estados, p) === 'nao-observado';
+    });
     if (pendentes.length) {
       avisos.push(
         `${t.nome}: o ideal é começar quando a leitura em português já estiver em andamento (${pendentes.join(', ')}).`,

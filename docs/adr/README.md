@@ -22,5 +22,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0014](0014-direcao-visual-caderno-de-botanica.md) | Direção visual "Caderno de botânica" e tokens compartilhados | Aceito |
 | [0015](0015-tesouro-na-biblioteca-do-app-e-atividades-complementares.md) | Tesouro na biblioteca do app e atividades complementares | Aceito |
 | [0016](0016-acervo-gratuito-catalogo-offline.md) | Acervo gratuito como catálogo curado offline | Aceito |
+| [0018](0018-marcos-extras-filtrados-por-vertente.md) | Marcos extras filtrados por vertente | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

@@ -180,6 +180,8 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 > **Por que o Unschooling ficou de fora:** ele não usa sequência, sondagem nem sessões planejadas, que são justamente o que o Semear faz. Famílias *unschoolers* ainda podem usar o app como registro (marcar marcos observados), mas não vamos desenhar o produto para elas.
 
 > Os marcos extras usam o mesmo formato dos marcos comuns. A única diferença é o campo `vertentes`, que indica em quais vertentes eles aparecem.
+>
+> **Como o app aplica o filtro (ADR 0018):** um marco com `vertentes` só aparece se a vertente principal ou uma inspiração da família está na lista; sem o campo (ou `null`), vale para todas. Marco escondido não existe para a família: não conta no "X/N consolidados", não vira fronteira nem "Aguardando", não entra no "Posicionar aqui" nem na sessão. **Pré-requisito que aponta para um marco extra escondido é ignorado** (nem bloqueia nem gera aviso). A tela de cobertura do conteúdo (`/conteudo`) é de curadoria e mostra todos os marcos.
 
 ---
 

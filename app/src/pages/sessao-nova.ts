@@ -35,7 +35,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
   const estados = await ctx.repo.estados(crianca.id);
   const historico = await ctx.repo.sessoes(crianca.id);
   const pistasComAtivos = pistasDaCrianca(ctx.idx, familia, crianca)
-    .map((p) => ({ p, pos: posicaoDaLinha(ctx.idx, p, estados, idade, familia.vertentePrincipal) }))
+    .map((p) => ({ p, pos: posicaoDaLinha(ctx.idx, p, estados, idade, familia) }))
     .filter((x) => x.pos.ativos.length > 0);
 
   // Estado local da página: a proposta pode ser ajustada antes de gerar o pacote.

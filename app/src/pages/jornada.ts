@@ -22,11 +22,11 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
   const dominios = ctx.idx.conteudo.dominios.filter((d) => d.comJornada);
   const dominioAtual = dominios.find((d) => d.id === params.d) ?? dominios[0];
   const pistasDoDominio = pistas.filter((p) => p.dominio.id === dominioAtual?.id);
-  const avisos = avisosTrilhas(ctx.idx, crianca, idade, estados);
+  const avisos = avisosTrilhas(ctx.idx, crianca, idade, estados, familia);
   const porId = new Map(pistas.map((p) => [idPista(p), p]));
 
   const cartaoPista = (pista: Pista) => {
-    const pos = posicaoDaLinha(ctx.idx, pista, estados, idade, familia.vertentePrincipal);
+    const pos = posicaoDaLinha(ctx.idx, pista, estados, idade, familia);
     const nome = pista.idioma ? `${pista.linha.nome} · ${IDIOMAS[pista.idioma]}` : pista.linha.nome;
     return html`<section class="cartao linha" id="linha-${idPista(pista)}">
       <header>
@@ -163,7 +163,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
           if (!pista || !marcoId) return;
           await ctx.repo.atualizarEstados(
             crianca.id,
-            posicionarAqui(ctx.idx, pista, marcoId, estados, agora),
+            posicionarAqui(ctx.idx, pista, marcoId, estados, agora, familia),
           );
           ctx.avisar('Posição atualizada.');
         }
