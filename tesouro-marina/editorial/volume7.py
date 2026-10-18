@@ -103,8 +103,11 @@ def carta(L):
       <p>Não faz mal. A criança pequena se beneficia de ouvir a língua com carinho, mesmo com sotaque; e vocês podem descobrir juntos. Para a pronúncia, use um dicionário com áudio ou
       uma gravação de falante nativo: o livro não grava nada, e as dicas do verso dos cartões são só um apoio.</p>
       <h2>O que este volume traz</h2>
-      <p>Oito unidades, uma para cada tema — <i>cumprimentos</i>, <i>a família</i>, <i>a casa</i>, <i>a comida</i>, <i>os animais</i>, <i>as cores</i>, <i>o corpo</i> e <i>a natureza</i> — e,
-      em cada uma, uma rima ou canção, cartões com o verso em inglês, francês e latim, um jogo e uma rotina curta.</p>
+      <p>""" + ("Esta é uma edição em produção: por enquanto, a primeira unidade (<i>cumprimentos</i>), com uma rima ou canção, cartões com o verso em inglês, francês e latim, um jogo e uma rotina curta. "
+                "O volume completo terá oito unidades (<i>cumprimentos</i>, <i>a família</i>, <i>a casa</i>, <i>a comida</i>, <i>os animais</i>, <i>as cores</i>, <i>o corpo</i> e <i>a natureza</i>) e uma seção de latim."
+                if parcial() else
+                "Oito unidades, uma para cada tema — <i>cumprimentos</i>, <i>a família</i>, <i>a casa</i>, <i>a comida</i>, <i>os animais</i>, <i>as cores</i>, <i>o corpo</i> e <i>a natureza</i> — e, "
+                "em cada uma, uma rima ou canção, cartões com o verso em inglês, francês e latim, um jogo e uma rotina curta.") + """</p>
       <div class="centro" style="margin-top:6mm">""" + tira(["mao_acenando", "janela_sol", "cama", "porta_aberta", "carinha_feliz"], "22mm", "2mm") + "</div>")
 
 
@@ -125,11 +128,19 @@ def como_usar(L):
       <div class="centro" style="margin-top:6mm">{tira(["mao_acenando", "janela_sol", "cama", "porta_aberta"], "22mm")}</div>""")
 
 
+def parcial(inicio=None):
+    """Verdadeiro enquanto faltam unidades: o workflow publica o PDF a cada merge, e ele não pode prometer o que não tem."""
+    return len(UNIDADES_PRONTAS) < len(UNIDADES) if inicio is None else not all(n in inicio for n, _ in UNIDADES)
+
+
 def sumario(inicio):
+    feitas = [(n, cor) for n, cor in UNIDADES if n in inicio]
     linhas = "".join(f'<tr><td><span class="bolinha" style="background:var({cor})"></span>{n.split(" · ")[0]}</td>'
-                     f'<td style="font-size:13pt">{n.split(" · ", 1)[1]}</td><td class="pg">{inicio.get(n, "")}</td></tr>' for n, cor in UNIDADES)
+                     f'<td style="font-size:13pt">{n.split(" · ", 1)[1]}</td><td class="pg">{inicio[n]}</td></tr>' for n, cor in feitas)
     linhas += f'<tr><td></td><td style="font-size:13pt">Encerramento · Créditos</td><td class="pg">{inicio.get("Encerramento", "")}</td></tr>'
-    return f"""<div class="miolo">{titulo("Sumário", "Volume 7 · Primeiras línguas", 30)}<table class="sumario">{linhas}</table>
+    aviso = ('<p class="peq centro" style="margin-top:6mm;font-style:italic">Edição em produção: as demais unidades e a seção de latim ainda não estão neste arquivo.</p>'
+             if parcial(inicio) else "")
+    return f"""<div class="miolo">{titulo("Sumário", "Volume 7 · Primeiras línguas", 30)}<table class="sumario">{linhas}</table>{aviso}
       <div class="centro" style="margin-top:8mm">{tira(["mao_acenando", "janela_sol", "cama", "porta_aberta", "porta", "carinha_feliz"], "22mm", "1.5mm")}</div></div>"""
 
 

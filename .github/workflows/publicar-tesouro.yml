@@ -51,7 +51,7 @@ jobs:
       - run: python3 fontes_v1.py verificar
       - run: python3 fontes_v5.py verificar
       - run: python3 fontes_v6.py verificar
-      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_pdf test_musica
+      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_volume7 test_pdf test_musica
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
