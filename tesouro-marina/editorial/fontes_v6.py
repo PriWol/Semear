@@ -120,9 +120,9 @@ def processar(nome):
         im = _para_srgb(origem)
     if nome in RECORTES:
         x0, y0, x1, y1 = RECORTES[nome]
-        if x1 > im.width or y1 > im.height:
-            # Image.crop preencheria o excesso com preto, sem erro
-            raise ValueError(f"{nome}: recorte {RECORTES[nome]} passa do tamanho da imagem de origem ({im.width}×{im.height})")
+        if not (0 <= x0 < x1 <= im.width and 0 <= y0 < y1 <= im.height):
+            # Image.crop preencheria o excesso com preto (ou devolveria imagem vazia), sem erro
+            raise ValueError(f"{nome}: recorte {RECORTES[nome]} fora da imagem de origem ({im.width}×{im.height})")
         im = im.crop(RECORTES[nome])
     if max(im.size) > LADO_MAX:
         k = LADO_MAX / max(im.size)

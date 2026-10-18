@@ -119,9 +119,10 @@ class Recortes(unittest.TestCase):
     def test_processar_recorta_a_prancha_e_registra_o_jpeg(self):
         self.assertEqual(self._com_prancha_falsa((10, 20, 60, 70)), (50, 50))
 
-    def test_processar_recusa_recorte_que_passa_da_imagem(self):
-        with self.assertRaisesRegex(ValueError, "passa do tamanho"):
-            self._com_prancha_falsa((10, 20, 160, 70))
+    def test_processar_recusa_recorte_fora_da_imagem(self):
+        for caixa in ((10, 20, 160, 70), (-5, 20, 60, 70), (60, 20, 10, 70), (10, 20, 60, 20)):
+            with self.subTest(caixa=caixa), self.assertRaisesRegex(ValueError, "fora da imagem"):
+                self._com_prancha_falsa(caixa)
 
 
 class CatalogoReal(unittest.TestCase):
