@@ -2,7 +2,7 @@
 
 > **Onde estão os PDFs:** na Release [`tesouro-marina`](https://github.com/PriWol/Semear/releases/tag/tesouro-marina), atualizada automaticamente a cada merge no `main` que altere esta pasta (workflow `publicar-tesouro.yml`, ADR 0011). Os PDFs e as páginas de inspeção não ficam no Git; as tabelas abaixo citam os nomes dos arquivos.
 
-Currículo clássico ilustrado para a infância: 8 volumes, 592 páginas planejadas (6 volumes produzidos), em A4 imprimível.
+Currículo clássico ilustrado para a infância: 8 volumes, 592 páginas planejadas (7 volumes produzidos), em A4 imprimível.
 
 ## Primeira entrega (para aprovação)
 | Arquivo | O que é |
@@ -44,8 +44,8 @@ Currículo clássico ilustrado para a infância: 8 volumes, 592 páginas planeja
 ## Volume 6 — O livro da natureza (90 páginas)
 `volume6/volume6-impressao.pdf`, `volume6/volume6-tela.pdf`, `volume6/inspecao/`, conteúdo em `editorial/volume6.py`. Nove unidades (diário da natureza, aves, insetos, árvores, sementes, água, céu, corpo humano e estações), com quatro pranchas antigas de naturalistas (sabiá-laranjeira, bem-te-vi, beija-flor e Merian) registradas em `editorial/fontes_v6.py` e testadas em `editorial/test_fontes_v6.py`. O resto é aquarela da coleção (`editorial/motivos7.py`, cerca de 70 motivos novos: bichos, folhas, fases da lua, corpo, estações), com a mesma abordagem dos volumes anteriores (ADR 0019).
 
-## Volume 7 — Primeiras línguas (em produção: abertura e unidade 1 de 8)
-`volume7/volume7-impressao.pdf`, `volume7/volume7-tela.pdf`, `volume7/inspecao/`, conteúdo em `editorial/volume7.py`. Inglês e francês em unidades paralelas, com latim só como cultura; cada cartão e cada página traz um idioma por vez, sempre com etiqueta. Por enquanto estão prontas a abertura, a unidade 1 (cumprimentos: rima inglesa das *Miss Pelicoes*, de Kate Greenaway; canção francesa *La Polichinelle*, com a partitura original de 1883; cartões; jogo e rotina) e o encerramento. As gravuras de domínio público (Greenaway e Boutet de Monvel) estão registradas em `editorial/fontes_v1.py`; o resto é aquarela da coleção (`editorial/motivos8.py`, com testes em `test_motivos8.py`). Decisões no ADR 0020.
+## Volume 7 — Primeiras línguas (64 páginas)
+`volume7/volume7-impressao.pdf`, `volume7/volume7-tela.pdf`, `volume7/inspecao/`, conteúdo em `editorial/volume7.py`. Inglês e francês em oito unidades paralelas (cumprimentos, família, casa, comida, animais, cores, corpo e natureza), com latim só como cultura (uma seção de 6 páginas com lemas, números romanos e palavras-mãe, e a linha de latim no verso dos cartões). Cada unidade tem 6 páginas: guia do adulto, uma rima inglesa de Kate Greenaway (*Under the Window*, 1878) ou de Walter Crane, uma canção francesa de *Vieilles chansons pour les petits enfants* (1883) com a partitura original na página, cartões em frente e verso e um jogo com rotina. Cada página e cada cartão traz um idioma por vez, sempre com etiqueta. As gravuras de domínio público estão registradas em `editorial/fontes_v1.py` (Greenaway, Boutet de Monvel e as de Crane, Brooke, Caldecott e Potter que já eram do catálogo); o resto é aquarela da coleção (`editorial/motivos8.py`, 19 motivos novos), com testes em `test_motivos8.py` e `test_volume7.py`. Decisões no ADR 0020.
 
 ## Rede e privacidade
 Os únicos acessos externos do pipeline são o download de páginas digitalizadas do Internet Archive (`editorial/fontes_v1.py`) e o de reproduções de obras do Wikimedia Commons e de acervos de museus (`editorial/fontes_v5.py`; `editorial/fontes_v6.py` baixa só do Commons, pelas mesmas regras, ADR 0019), feitos só ao catalogar imagens, fora do app e fora do build dos PDFs (que usa as imagens já tratadas e versionadas). Nenhum dado de família é enviado. Cada página baixada é conferida pelo SHA-256 registrado em `editorial/dominio_publico/paginas.sha256.json` (Internet Archive) ou `obras.sha256.json` (Commons); arquivo sem hash é recusado (para catalogar um novo, confira a imagem e rode `python3 fontes_v1.py registrar` ou `python3 fontes_v5.py registrar`). O download de `fontes_v5.py` respeita o `Retry-After` da fonte (até 1 h por pedido e 2 h no total); com o Commons limitando o ritmo, `baixar`/`registrar` podem demorar horas. O hash dos JPEGs tratados depende da versão do Pillow/libjpeg: ao regenerar em outra máquina, rode `python3 fontes_v5.py jpegs` e revise o diff do manifesto. Decisão registrada nos ADRs 0011 e 0018.
@@ -62,6 +62,6 @@ python3 volume3.py         # Volume 3
 python3 volume4.py         # Volume 4
 python3 volume5.py         # Volume 5
 python3 volume6.py         # Volume 6
-python3 volume7.py         # Volume 7 (parcial)
+python3 volume7.py         # Volume 7
 ```
 Requer também `pdftoppm` (poppler) para as páginas de inspeção. As ilustrações de domínio público já recortadas estão em `editorial/dominio_publico/`; só é preciso baixar páginas do Internet Archive para refazer recortes (`fontes_v1.py`).

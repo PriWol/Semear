@@ -158,10 +158,125 @@ def cama(seed=2131):
     return a
 
 
+# ------------------------------------------------------------------ unidades 2 a 8: casa, comida e cores
+
+def casa(seed=2201):
+    """A casa vermelha da rima de Kate Greenaway: paredes vermelhas, porta azul, telhado marrom."""
+    a = Aquarela(S, S, seed=seed)
+    a.wash(_ret(100, 520, 500, 560), "#7f9a52", 0.5, color2="#a0b870", edge=0.9)                                   # chão
+    a.wash(_ret(120, 265, 480, 530), ROSA, 0.75, color2="#d8928a", edge=1.0, outline=0.5, shade=(1, 0.5, 0.5))       # paredes
+    a.wash(_ret(385, 120, 440, 240), MADEIRA[0], 0.8, edge=0.9, outline=0.45)                                        # chaminé
+    a.wash(densify(np.array([(70, 285), (300, 100), (530, 285)], float), 200), "#8a5a3c", 0.8, color2="#a8764e", edge=1.0, outline=0.55, shade=(1, 0.5, 0.5))
+    for (x0, x1) in ((150, 230), (370, 450)):   # janelas: o vidro é reservado antes de pintar
+        a.lift(_ret(x0, 330, x1, 420), 0.95, 0.5)
+        a.wash(_ret(x0, 330, x1, 420), "#cfe3ee", 0.7, color2="#f6e7b5", edge=1.0, outline=0.45)
+        _tra(a, np.array([((x0 + x1) / 2, 330), ((x0 + x1) / 2, 420)]), MADEIRA[0], 6, 0.85, False)
+        _tra(a, np.array([(x0, 375), (x1, 375)]), MADEIRA[0], 6, 0.85, False)
+    a.wash(_ret(262, 380, 338, 530, 6), AZUL, 0.8, color2="#86a3bd", edge=1.0, outline=0.5)
+    a.wash(ellipse(320, 460, 8, 8, n=24), "#d8a63a", 0.9, edge=0.7)
+    return a
+
+
+def cadeira(seed=2211):
+    a = Aquarela(S, S, seed=seed)
+    for x0 in (160, 420):   # pés da frente e montantes do encosto
+        a.wash(_ret(x0, 330, x0 + 30, 550), MADEIRA[0], 0.8, edge=0.9, outline=0.45)
+        a.wash(_ret(x0, 90, x0 + 30, 340), MADEIRA[0], 0.8, edge=0.9, outline=0.45)
+    a.wash(_ret(190, 110, 420, 160, 6), MADEIRA[1], 0.7, edge=0.9, outline=0.45)       # travessa de cima
+    a.wash(_ret(190, 190, 420, 235, 6), MADEIRA[1], 0.7, edge=0.9, outline=0.45)       # travessa do meio
+    a.wash(_ret(135, 300, 475, 345, 8), "#c9963f", 0.75, color2="#dcb060", edge=1.0, outline=0.5, shade=(1, 0.5, 0.5))   # assento de palha
+    for x in range(150, 470, 40):
+        _tra(a, np.array([(x, 304), (x - 10, 342)]), "#9a7650", 3, 0.5, True)
+    return a
+
+
+def lampada(seed=2221):
+    """Lamparina de barro, como as dos romanos (lucerna), com a chama acesa."""
+    a = Aquarela(S, S, seed=seed)
+    corpo = np.vstack([bezier((110, 420), (110, 330), (230, 300), (330, 310)), bezier((330, 310), (430, 318), (500, 340), (530, 372)),
+                       bezier((530, 372), (520, 430), (450, 520), (320, 530)), bezier((320, 530), (200, 535), (110, 500), (110, 420))])
+    a.wash(densify(corpo, 240), "#c07a50", 0.8, color2="#d8986c", edge=1.0, outline=0.55, shade=(1, 0.5, 0.5), light=(230, 380, 40))
+    a.wash(ellipse(285, 410, 85, 58), "#8a5236", 0.55, edge=0.9, outline=0.4)           # bacia do óleo
+    a.wash(ellipse(285, 410, 40, 26), "#5a3624", 0.6, edge=0.8)
+    _tra(a, _bez(((110, 400), (50, 380), (40, 460), (110, 470))), "#9a5a38", 18, 0.85, False)   # alça
+    a.wash(densify(np.array([(512, 372), (572, 340), (566, 385)], float), 80), "#c07a50", 0.8, edge=0.9, outline=0.45)
+    chama = np.vstack([bezier((545, 336), (505, 290), (545, 250), (555, 205)), bezier((555, 205), (590, 250), (610, 300), (570, 338))])
+    a.wash(densify(chama, 120), "#f2b130", 0.85, color2="#f8d86a", edge=0.9, outline=0.3)
+    a.wash(ellipse(558, 305, 12, 26), "#fff3c0", 0.7, edge=0.6)
+    return a
+
+
+def pao(seed=2231):
+    a = Aquarela(S, S, seed=seed)
+    broa = np.vstack([bezier((60, 360), (60, 230), (200, 160), (320, 160)), bezier((320, 160), (440, 160), (545, 240), (540, 360)),
+                      bezier((540, 360), (535, 460), (430, 500), (300, 500)), bezier((300, 500), (170, 500), (65, 465), (60, 360))])
+    a.wash(densify(broa, 260), "#c98a3e", 0.8, color2="#e0a85a", edge=1.0, outline=0.55, shade=(1, 0.5, 0.5), light=(220, 250, 50))
+    for k, x in enumerate((165, 265, 365)):   # cortes da casca: levantar pigmento deixa a miga clara
+        corte = _bez(((x - 30, 330 - k * 6), (x - 5, 245), (x + 25, 250), (x + 40, 335 - k * 6)))
+        a.lift(np.vstack([corte, corte[::-1] + np.array([10, 16])]), 0.8, 0.8)
+        _tra(a, corte, "#8a5a28", 5, 0.7, True)
+    return a
+
+
+def queijo(seed=2241):
+    a = Aquarela(S, S, seed=seed)
+    frente = np.array([(95, 345), (505, 345), (505, 480), (95, 480)], float)
+    topo = np.array([(95, 345), (330, 190), (505, 345)], float)
+    a.wash(densify(frente, 200), "#e8b830", 0.8, color2="#f0cf5a", edge=1.0, outline=0.55, shade=(1, 0.5, 0.5))
+    a.wash(densify(topo, 200), "#f0cf5a", 0.7, color2="#f8e08a", edge=1.0, outline=0.5)
+    for (x, y, rx, ry) in ((165, 410, 24, 20), (330, 420, 32, 26), (445, 400, 20, 16), (330, 290, 20, 14)):   # buracos: papel à mostra
+        a.lift(ellipse(x, y, rx, ry, n=40), 0.9, 0.6)
+        a.wash(ellipse(x, y, rx, ry, n=40), "#b88a1c", 0.35, edge=1.0, outline=0.35)
+    return a
+
+
+def copo_leite(seed=2251):
+    a = Aquarela(S, S, seed=seed)
+    copo = np.array([(205, 140), (395, 140), (368, 530), (232, 530)], float)
+    a.wash(densify(copo, 200), "#cfe0ea", 0.5, color2="#e4eef4", edge=1.0, outline=0.55)
+    leite = np.array([(211, 215), (389, 215), (366, 524), (234, 524)], float)
+    a.wash(densify(leite, 200), "#d9dcd6", 0.55, color2="#eceae2", edge=0.8, outline=0.25, shade=(1, 0.5, 0.4))
+    a.wash(ellipse(300, 140, 95, 14, n=60), "#b8cfdc", 0.5, edge=1.0, outline=0.45)
+    a.wash(ellipse(300, 216, 89, 11, n=60), "#f4f1e8", 0.5, edge=0.8, outline=0.3)
+    return a
+
+
+def _bola(cor, c1, c2, seed):
+    a = Aquarela(S, S, seed=seed)
+    a.wash(ellipse(300, 300, 230, 230, n=200), c1, 0.55, color2=c2, edge=1.1, outline=0.45)
+    return a
+
+
+def circulo_rosa(seed=2261): return _bola("rosa", "#d9808a", "#e8a2a8", seed)
+def circulo_marrom(seed=2262): return _bola("marrom", "#7a5238", "#9a7452", seed)
+def circulo_preto(seed=2263): return _bola("preto", "#2e2a28", "#4e4844", seed)
+
+
+COMIDA = {"pao": pao, "queijo": queijo, "copo_leite": copo_leite}
+CASA2 = {"casa": casa, "cadeira": cadeira, "lampada": lampada}
+CORES = {"circulo_rosa": circulo_rosa, "circulo_marrom": circulo_marrom, "circulo_preto": circulo_preto}
+
+
+def coroa_louros(seed=2271):
+    """Coroa de louros dos romanos: folhas em arco, abertas embaixo, com um laço."""
+    a = Aquarela(S, S, seed=seed)
+    for lado in (1, -1):
+        for k in range(11):
+            t = k / 10
+            ang = math.radians(100 + t * 150)             # do pé ao topo do arco
+            cx, cy = 300 + lado * 205 * math.cos(ang) * -1, 300 + 205 * math.sin(ang) * -1
+            tx, ty = cx + lado * 80 * math.sin(ang) * -1 + 0, cy - 80 * math.cos(ang) * -1
+            a.wash(leaf((cx, cy), (tx, ty), 46), ("#5f8f3a", "#7aa04a", "#4f7a32")[k % 3], 0.65, edge=1.0, layers=2, outline=0.3)
+            a.wash(leaf((cx, cy), (cx + (tx - cx) * 0.9 + lado * 10, cy + (ty - cy) * 0.9), 30), "#8fae5a", 0.45, edge=0.8, layers=2)
+    a.wash(ellipse(300, 520, 28, 20), "#c43a2e", 0.8, edge=0.9, outline=0.4)     # laço
+    return a
+
+
+ROMA = {"coroa_louros": coroa_louros}
 GESTOS = {"mao_acenando": mao_acenando, "maos_juntas": maos_juntas, "polegar_cima": polegar_cima, "dedo_nao": dedo_nao, "carinha_feliz": carinha_feliz}
 CASA = {"porta": porta, "porta_aberta": porta_aberta, "janela_sol": janela_sol, "cama": cama}
 
-MOTIVOS8 = {**GESTOS, **CASA}
+MOTIVOS8 = {**GESTOS, **CASA, **CASA2, **COMIDA, **CORES, **ROMA}
 
 
 if __name__ == "__main__":

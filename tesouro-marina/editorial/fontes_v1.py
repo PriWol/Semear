@@ -145,10 +145,32 @@ ITENS.update({
     "greenaway_pelicoes":    ("underwindowpictv00greerich", 59, (0.03, 0.03, 0.97, 0.953), 1800),
     "monvel_polichinelle":   (MCGILL, 11, (0.203, 0.143, 0.892, 0.843), 2200),
     "monvel_polichinelle_cena": (MCGILL, 12, (0.12, 0.15, 0.80, 0.84), 2200),
+    # unidades 2 a 8: uma rima de Greenaway e uma canção de Boutet de Monvel por unidade (n = folha digitalizada; página impressa = n − 3)
+    "greenaway_carrinho":    ("underwindowpictv00greerich", 32, (0.03, 0.04, 0.97, 0.935), 1800),
+    "greenaway_casa_vermelha": ("underwindowpictv00greerich", 64, (0.03, 0.04, 0.97, 0.935), 1800),
+    "greenaway_tres_meninos": ("underwindowpictv00greerich", 46, (0.03, 0.03, 0.97, 0.952), 1800),
+    "greenaway_gansos_prancha": ("underwindowpictv00greerich", 33, (0.03, 0.04, 0.97, 0.945), 1800),
+    "greenaway_marias_cores": ("underwindowpictv00greerich", 31, (0.03, 0.03, 0.97, 0.95), 1800),
+    "greenaway_ventinho":    ("underwindowpictv00greerich", 26, (0.03, 0.04, 0.97, 0.95), 1800),
+    "greenaway_procissao":   ("underwindowpictv00greerich", 48, (0.03, 0.04, 0.97, 0.935), 1800),
+    "monvel_fais_dodo":      (MCGILL, 41, (0.203, 0.143, 0.892, 0.843), 2200),
+    "monvel_clair_de_lune":  (MCGILL, 9, (0.20, 0.143, 0.905, 0.85), 2200),
+    "monvel_boulangere":     (MCGILL, 16, (0.12, 0.15, 0.82, 0.84), 2200),
+    "monvel_mere_michel":    (MCGILL, 48, (0.12, 0.15, 0.82, 0.84), 2200),
+    "monvel_bois":           (MCGILL, 28, (0.12, 0.15, 0.80, 0.84), 2200),
+    "monvel_choux":          (MCGILL, 47, (0.203, 0.143, 0.892, 0.843), 2200),
+    "monvel_coucou":         (MCGILL, 39, (0.203, 0.143, 0.892, 0.843), 2200),
+    "monvel_frere_jacques":  (MCGILL, 21, (0.20, 0.15, 0.90, 0.88), 2200),
+    # recortes para os cartões da família (caixa da página e, depois, recorte secundário em frações da caixa)
+    "monvel_abraco":         (MCGILL, 41, (0.203, 0.143, 0.892, 0.843), 1000, (0.0, 0.40, 0.30, 0.97)),
+    "cartao_irmao":          ("underwindowpictv00greerich", 32, (0.03, 0.04, 0.97, 0.935), 1000, (0.02, 0.12, 0.27, 0.43)),
+    "cartao_irma":           ("underwindowpictv00greerich", 32, (0.03, 0.04, 0.97, 0.935), 1000, (0.30, 0.085, 0.53, 0.47)),
+    "cartao_bebe":           ("underwindowpictv00greerich", 32, (0.03, 0.04, 0.97, 0.935), 1000, (0.58, 0.25, 0.88, 0.48)),
+    "cartao_familia":        ("underwindowpictv00greerich", 48, (0.03, 0.04, 0.97, 0.935), 1000, (0.0, 0.0, 1.0, 0.43)),
 })
 # Fotografias de livro (fundo escuro, papel com sombra e mancha): não há papel limpo para virar transparência, então
 # entram como retângulo, só recortadas e reduzidas, como as reproduções de obras dos volumes 5 e 6.
-FIEL = {"monvel_polichinelle", "monvel_polichinelle_cena"}
+FIEL = {n for n in ITENS if n.startswith("monvel_")}
 FONTE = os.path.join(AQUI, "build", "paginas")   # páginas originais baixadas (não versionadas)
 
 
