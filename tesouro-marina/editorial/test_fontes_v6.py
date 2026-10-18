@@ -91,7 +91,8 @@ class Recortes(unittest.TestCase):
         for nome in fontes_v6.RECORTES:
             self.assertIn("Recorte do original", fontes_v6.credito(nome))
 
-    def test_processar_recorta_a_prancha_e_registra_o_jpeg(self):
+    def _com_prancha_falsa(self, caixa, lado=100):
+        """Executa processar("x") numa pasta temporária, com uma prancha de lado×lado e o recorte `caixa`."""
         with tempfile.TemporaryDirectory() as tmp:
             antes = (fontes_v6.SAIDA, fontes_v5.MANIFESTO, dict(fontes_v6.OBRAS), dict(fontes_v6.RECORTES), fontes_v5.FONTE, fontes_v6.FONTE)
             try:
@@ -102,18 +103,26 @@ class Recortes(unittest.TestCase):
                 fontes_v6.OBRAS.clear()
                 fontes_v6.OBRAS["x"] = ("X.jpg", "Autor (1800–1850)", "<i>X</i>", "1840", "Acervo", "domínio público")
                 fontes_v6.RECORTES.clear()
-                fontes_v6.RECORTES["x"] = (10, 20, 60, 70)
-                Image.new("RGB", (100, 100), (30, 60, 90)).save(os.path.join(fontes_v6.FONTE, "x.orig"), "JPEG")
+                fontes_v6.RECORTES["x"] = caixa
+                Image.new("RGB", (lado, lado), (30, 60, 90)).save(os.path.join(fontes_v6.FONTE, "x.orig"), "JPEG")
                 with open(os.path.join(fontes_v6.FONTE, "x.orig"), "rb") as f:
                     sha = fontes_v5._sha256(f.read())
                 with open(fontes_v5.MANIFESTO, "w") as f:
                     json.dump({"X.jpg": sha}, f)
-                self.assertEqual(fontes_v6.processar("x"), (50, 50))
+                return fontes_v6.processar("x")
             finally:
                 fontes_v6.SAIDA, fontes_v5.MANIFESTO = antes[:2]
                 fontes_v6.OBRAS.clear(); fontes_v6.OBRAS.update(antes[2])
                 fontes_v6.RECORTES.clear(); fontes_v6.RECORTES.update(antes[3])
                 fontes_v5.FONTE, fontes_v6.FONTE = antes[4], antes[5]
+
+    def test_processar_recorta_a_prancha_e_registra_o_jpeg(self):
+        self.assertEqual(self._com_prancha_falsa((10, 20, 60, 70)), (50, 50))
+
+    def test_processar_recusa_recorte_fora_da_imagem(self):
+        for caixa in ((10, 20, 160, 70), (-5, 20, 60, 70), (60, 20, 10, 70), (10, 20, 60, 20)):
+            with self.subTest(caixa=caixa), self.assertRaisesRegex(ValueError, "fora da imagem"):
+                self._com_prancha_falsa(caixa)
 
 
 class CatalogoReal(unittest.TestCase):
