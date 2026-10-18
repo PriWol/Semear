@@ -117,6 +117,21 @@ class ManifestoReal(unittest.TestCase):
     def test_todo_item_usado_tem_hash(self):
         self.assertEqual(fontes_v1.verificar(), 0)
 
+    def test_fotografias_de_livro_sao_itens_do_catalogo(self):
+        # um nome de FIEL fora de ITENS nunca seria gerado, e o erro só apareceria no build do volume
+        self.assertEqual(sorted(fontes_v1.FIEL - set(fontes_v1.ITENS)), [])
+
+    def test_item_fiel_sai_igual_nas_duas_versoes_de_papel(self):
+        nome = "monvel_polichinelle"
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(fontes_v1, "SAIDA", tmp), \
+                mock.patch.object(fontes_v1, "_da_rede", side_effect=OSError("sem rede nos testes")):
+            try:
+                fontes_v1.processar(nome)
+            except OSError:   # a página de origem não está em cache (build/ não é versionado): não há o que gerar
+                self.skipTest("página de origem fora do cache")
+            with open(os.path.join(tmp, f"{nome}_branco.jpg"), "rb") as a, open(os.path.join(tmp, f"{nome}_creme.jpg"), "rb") as b:
+                self.assertEqual(a.read(), b.read())
+
 
 if __name__ == "__main__":
     unittest.main()

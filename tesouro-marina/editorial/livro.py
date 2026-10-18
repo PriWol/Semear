@@ -20,9 +20,10 @@ from motivos4 import MOTIVOS4  # noqa: E402
 from motivos5 import MOTIVOS5  # noqa: E402
 from motivos6 import MOTIVOS6  # noqa: E402
 from motivos7 import MOTIVOS7  # noqa: E402
+from motivos8 import MOTIVOS8  # noqa: E402
 import fontes_v1  # noqa: E402
 
-TODOS = {**SUBJECTS, **MOTIVOS2, **ARTE_EXTRA, **MOTIVOS3, **MOTIVOS4, **MOTIVOS5, **MOTIVOS6, **MOTIVOS7}
+TODOS = {**SUBJECTS, **MOTIVOS2, **ARTE_EXTRA, **MOTIVOS3, **MOTIVOS4, **MOTIVOS5, **MOTIVOS6, **MOTIVOS7, **MOTIVOS8}
 VERSAO = {"atual": "impressao"}   # "impressao" (papel branco) ou "tela" (papel creme)
 
 
@@ -201,8 +202,9 @@ def observacao(L, t, sub, imagem_html, perguntas, adulto_html="", aba="--d-natur
 CW, CH, GX, GY = 60, 78, 15, 34
 
 
-def cartoes(L, t, itens, rodape, sub_frente=None):
-    """Folha de 9 cartões (frente) e verso espelhado. itens: dicts pt, mot|pd, en, fr, la, sci, dica."""
+def cartoes(L, t, itens, rodape, sub_frente=None, nota_latim=None):
+    """Folha de 9 cartões (frente) e verso espelhado. itens: dicts pt, mot|pd|html, en, fr, la, sci, dica.
+    la = None mostra "sem palavra clássica"; um texto em HTML vale como está. nota_latim troca a nota do rodapé do verso."""
     def img_de(it):
         if it.get("html"):
             return it["html"]
@@ -231,7 +233,7 @@ def cartoes(L, t, itens, rodape, sub_frente=None):
     c2 = f"""{cabeca_folha("Cartões · " + t, "verso · para o adulto · colunas espelhadas para coincidir com a frente")}
     <div class="grade" style="left:{GX}mm;top:{GY}mm;grid-template-columns:repeat(3,{CW}mm);grid-template-rows:repeat(3,{CH}mm)">{''.join(verso)}</div>
     {marcas_corte(GX, GY, 3, 3, CW, CH)}"""
-    L.add(c2 + rodape_folha(f"{L.proximo} · Latim: vogal com traço (ā, ē, ī, ō, ū) é longa · “sem palavra clássica”: os romanos não conheciam"),
+    L.add(c2 + rodape_folha(f"{L.proximo} · " + (nota_latim or "Latim: vogal com traço (ā, ē, ī, ō, ū) é longa · “sem palavra clássica”: os romanos não conheciam")),
           moldura=False, cabecalho=False, numero=False)
     return n1
 

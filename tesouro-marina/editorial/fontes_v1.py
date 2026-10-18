@@ -28,7 +28,10 @@ LIVROS = {
     "Thislittlepigwe00Cran": "Walter Crane, <i>This Little Pig Went to Market</i> (Londres: Routledge, c. 1870)",
     "babysoperabookof00cran": "Walter Crane, <i>The Baby's Opera: a book of old rhymes, with new dresses</i> (Londres: Routledge, 1900; 1.ª ed. 1877)",
     "fairytalesofbrot00grim": "Arthur Rackham, <i>The Fairy Tales of the Brothers Grimm</i> (Nova York: Doubleday, 1916)",
+    "McGillLibrary-rbsc_vieilles-chansons-petits-enfants_M1993W53V51900z-25297":
+        "Louis-Maurice Boutet de Monvel (1850–1913), <i>Vieilles chansons pour les petits enfants</i>, com acompanhamentos de Charles-Marie Widor (1844–1937) (Paris: E. Plon, Nourrit et Cie, 1883), exemplar digitalizado pela Biblioteca da Universidade McGill",
 }
+MCGILL = "McGillLibrary-rbsc_vieilles-chansons-petits-enfants_M1993W53V51900z-25297"
 
 # nome: (item, página, caixa, largura máxima em px)
 ITENS = {
@@ -137,6 +140,15 @@ ITENS.update({
     "opera_embalar":       ("babysoperabookof00cran", 57, None, 1700),
     "opera_sixpence":      ("babysoperabookof00cran", 38, None, 1700)
 })
+# ---- Volume 7 (Boutet de Monvel, n = folha digitalizada, a página impressa é n − 3; Greenaway, Under the Window)
+ITENS.update({
+    "greenaway_pelicoes":    ("underwindowpictv00greerich", 59, (0.03, 0.03, 0.97, 0.953), 1800),
+    "monvel_polichinelle":   (MCGILL, 11, (0.203, 0.143, 0.892, 0.843), 2200),
+    "monvel_polichinelle_cena": (MCGILL, 12, (0.12, 0.15, 0.80, 0.84), 2200),
+})
+# Fotografias de livro (fundo escuro, papel com sombra e mancha): não há papel limpo para virar transparência, então
+# entram como retângulo, só recortadas e reduzidas, como as reproduções de obras dos volumes 5 e 6.
+FIEL = {"monvel_polichinelle", "monvel_polichinelle_cena"}
 FONTE = os.path.join(AQUI, "build", "paginas")   # páginas originais baixadas (não versionadas)
 
 
@@ -271,6 +283,11 @@ def processar(nome, previa=False):
         out = out.resize((wmax, round(out.height * wmax / out.width)), Image.LANCZOS)
     if previa:
         return out
+    if nome in FIEL:
+        os.makedirs(SAIDA, exist_ok=True)
+        for sufixo in ("branco", "creme"):   # a mesma imagem nas duas saídas: ela traz o próprio papel
+            out.save(os.path.join(SAIDA, f"{nome}_{sufixo}.jpg"), quality=90, dpi=(300, 300), optimize=True)
+        return out.convert("RGBA")
     rgba = papel_para_alfa(out, papel)
     os.makedirs(SAIDA, exist_ok=True)
     # duas versões achatadas (JPEG, leves no PDF): papel branco (impressão) e creme (tela)
