@@ -22,6 +22,6 @@ Opção 3. Entram quatro pranchas do Wikimedia Commons, todas de autores mortos 
 
 ## Consequências
 - A autoria da prancha do sabiá é atribuída pelo número e pelos nomes impressos nela; o Commons a marca como domínio público. Deve ser reconferida antes da venda.
-- O volume passa de 71 para 90 páginas; o mapa da coleção e o total (573 → 592) foram atualizados.
+- O volume passa de 71 para 90 páginas; o mapa da coleção e o total (570 → 592) foram atualizados.
 - A legenda da prancha do bem-te-vi diz *Pitangus bolivianus* (nome de 1920); o livro mantém o nome da prancha e a conferência do nome atual fica pendente.
 - `fontes_v6.py` repete parte da estrutura de `fontes_v5.py` (`verificar`, `baixar`, `processar`), porque aquele módulo guarda o catálogo em variáveis do módulo. Unificar os dois num módulo único é uma melhoria futura.

@@ -1,7 +1,7 @@
 """
 VOLUME 6 — O LIVRO DA NATUREZA
 uso: python3 volume6.py            (monta o volume com as unidades já escritas; ver UNIDADES_PRONTAS)
-As ilustrações são pranchas antigas de naturalistas (fontes_v6.py) e motivos que a coleção já tem (ADR 0019): não se desenha nada novo aqui.
+As ilustrações são pranchas antigas de naturalistas (fontes_v6.py) e motivos em aquarela da coleção, os novos em motivos7.py (ADR 0019).
 """
 import html
 import os
