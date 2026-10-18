@@ -182,7 +182,7 @@ def unidade1(L):
     L.add(f"""<div class="miolo">{titulo("Pan ! Qu’est-c’ qu’est là ?", "canção tradicional francesa · a partitura é a original de 1883", 24)}
       <div class="centro" style="margin:3mm 0 0">{pd("monvel_polichinelle", "150mm", "margin:0 auto")}</div>
       {duas_colunas(versos("francês", FRANCES, ["Pan ! qu’est-c’ qu’est là ?", "C’est Polichinelle,", "Mam’selle.", "Pan ! qu’est-c’ qu’est là ?", "C’est Polichinell’ que v’là."], "fr"),
-                    versos("português · tradução da coleção", FRANCES, ["Pam! Quem está aí?", "É o Polichinelo,", "senhorita.", "Pam! Quem está aí?", "É o Polichinelo que chegou."]))}</div>
+                    versos("português · tradução da coleção", FRANCES, ["Pan! Quem está aí?", "É o Polichinelo,", "senhorita.", "Pan! Quem está aí?", "É o Polichinelo que chegou."]))}</div>
       {adulto("uma canção para cantar",
               "A melodia é a que está impressa na página: a linha de cima (<i>chant</i>, “canto”) é a voz, e a de baixo é o acompanhamento de piano de Charles-Marie Widor, que você pode deixar de lado. "
               "<i>Allegretto moderato</i> pede um andamento animado, sem pressa. No “pan!”, bata na mesa ou numa porta, como quem chega. <i>Mam’selle</i> é <i>mademoiselle</i> (“senhorita”), "
