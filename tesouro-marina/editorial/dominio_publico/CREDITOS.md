@@ -39,3 +39,24 @@ Gravuras e litografias antigas baixadas do Wikimedia Commons (arquivo e página 
 | `v6/merian_frangipani.jpg` | *Metamorphosis insectorum Surinamensium*, prancha 8, Maria Sibylla Merian (1647–1717), 1705 | Biodiversity Heritage Library | Wikimedia Commons, `File:Metamorphosis insectorum surinamensium (Pl. 8) BHL41398729.jpg` | domínio público |
 
 Observações: a prancha do sabiá é a de número 26 da *Ornithologie brésilienne* (Descourtilz, 1854–1856), em que a figura 1 é o *Turdus rufiventer* ("Sabiá Larangerra") e a figura 2 é a *Coracina scutata* ("Pavão"); a atribuição vem do número e dos nomes impressos na prancha e do texto do livro (Internet Archive, item `OrnithologieBre00Desc`), porque o Commons registra a autoria como desconhecida. O livro usa só um recorte da figura 1, sem retoque (`RECORTES` em `fontes_v6.py`). Deve ser reconferida antes da venda. A legenda da prancha do bem-te-vi diz *Pitangus bolivianus*; o livro mantém o nome da prancha. Os arquivos de origem foram conferidos, byte a byte, contra o tamanho e o SHA-1 que o Commons informa.
+
+## Volume 7: gravuras de rimas e canções (`v1/`)
+
+Mesmo catálogo e mesmas regras do Volume 1 (`fontes_v1.py`, SHA-256 de cada página de origem em `paginas.sha256.json`). Nenhuma imagem foi retocada; as fotografias do exemplar da McGill só foram recortadas dentro da moldura impressa e reduzidas a 2200 px, sem conversão do papel em transparência.
+
+| Arquivo | Obra e ilustrador | Edição | Fonte | Situação |
+|---|---|---|---|---|
+| `v1/greenaway_pelicoes_*.jpg` | *The twelve Miss Pelicoes*, Kate Greenaway (1846–1901) | *Under the Window*, Londres: George Routledge and Sons, 1878 | Internet Archive, item `underwindowpictv00greerich`, página n59 | domínio público (ilustradora morta em 1901; obra de 1878) |
+| `v1/monvel_polichinelle_*.jpg` | *La Polichinelle* (partitura), Louis-Maurice Boutet de Monvel (1850–1913), com acompanhamento de Charles-Marie Widor (1844–1937) | *Vieilles chansons pour les petits enfants*, Paris: E. Plon, Nourrit et Cie, 1883; exemplar digitalizado pela Biblioteca da Universidade McGill | Internet Archive, item `McGillLibrary-rbsc_vieilles-chansons-petits-enfants_M1993W53V51900z-25297`, folha n11 (página impressa 8) | domínio público (ilustrador morto em 1913, compositor em 1937; obra de 1883) |
+| `v1/monvel_polichinelle_cena_*.jpg` | *La Polichinelle* (cena com a letra), Boutet de Monvel | idem | mesmo item, folha n12 (página impressa 9) | domínio público |
+
+### Volume 7, unidades 2 a 8 (rimas de Greenaway, canções de Boutet de Monvel e recortes de cartões)
+
+Mesmas regras. As páginas de *Under the Window* e do exemplar da McGill de *Vieilles chansons pour les petits enfants* têm o SHA-256 da página de origem em `paginas.sha256.json`; nenhuma imagem foi retocada, e os recortes de cartões (`cartao_*`, `monvel_abraco`) são só caixas dentro das mesmas páginas.
+
+| Arquivos | Obra e ilustrador | Fonte (Internet Archive) | Situação |
+|---|---|---|---|
+| `v1/greenaway_carrinho_*`, `greenaway_casa_vermelha_*`, `greenaway_tres_meninos_*`, `greenaway_gansos_prancha_*`, `greenaway_marias_cores_*`, `greenaway_ventinho_*`, `greenaway_procissao_*`; recortes `cartao_irmao_*`, `cartao_irma_*`, `cartao_bebe_*`, `cartao_familia_*` | rimas e gravuras de Kate Greenaway (1846–1901), *Under the Window*, Londres: George Routledge and Sons, 1878 | item `underwindowpictv00greerich`, folhas n32, n64, n46, n33, n31, n26, n48 | domínio público (ilustradora morta em 1901; obra de 1878) |
+| `v1/monvel_fais_dodo_*`, `monvel_clair_de_lune_*`, `monvel_boulangere_*`, `monvel_mere_michel_*`, `monvel_bois_*`, `monvel_choux_*`, `monvel_coucou_*`, `monvel_frere_jacques_*`; recorte `monvel_abraco_*` | partituras e gravuras de Louis-Maurice Boutet de Monvel (1850–1913), com acompanhamento de Charles-Marie Widor (1844–1937), *Vieilles chansons pour les petits enfants*, Paris: E. Plon, Nourrit et Cie, 1883, exemplar da Biblioteca da Universidade McGill | item `McGillLibrary-rbsc_vieilles-chansons-petits-enfants_M1993W53V51900z-25297`, folhas n41, n9, n16, n48, n28, n47, n39, n21 (página impressa = n − 3) | domínio público (ilustrador morto em 1913, compositor em 1937; obra de 1883) |
+
+As gravuras de Crane (*This Little Pig*, *Little Red Riding Hood*), de Brooke e de Caldecott, que também aparecem nos cartões e nas rimas deste volume, já estavam registradas nas seções anteriores.
