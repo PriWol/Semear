@@ -1,6 +1,7 @@
 """Conferência do caderno de atividades: todo motivo citado existe, cada tipo tem ícone e o caderno monta sem erro."""
 import ast
 import os
+import re
 import unittest
 
 import caderno
@@ -24,7 +25,23 @@ class TestCaderno(unittest.TestCase):
         html = L.html()
         self.assertIn("nunca deixe a criança sozinha com água", html)
         self.assertEqual(len(L.paginas) % 2, 0)
-        self.assertEqual(len(caderno.INICIO), len(caderno.UNIDADES_PRONTAS))
+        self.assertEqual(len(caderno.INICIO), len(caderno.UNIDADES_PRONTAS) + 1)   # as unidades e o encerramento
+
+    def test_toda_unidade_tem_rimas_e_ao_menos_duas_atividades_de_acalmar(self):
+        caderno.INICIO.clear()
+        L = caderno.montar()
+        por_unidade = {}
+        for _, html in L.paginas:
+            m = re.search(r"Unidade (\d) ·", html)
+            if not m:
+                continue
+            d = por_unidade.setdefault(m.group(1), {"acalmar": 0, "cantar": 0})
+            d["acalmar"] += html.count(">Acalmar</span>")
+            d["cantar"] += html.count(">Cantar e rimar</span>")
+        self.assertEqual(sorted(por_unidade), [str(i) for i in range(1, 9)])
+        for u, d in por_unidade.items():
+            self.assertGreaterEqual(d["acalmar"], 2, f"unidade {u}")
+            self.assertGreaterEqual(d["cantar"], 1, f"unidade {u}")
 
 
 if __name__ == "__main__":
