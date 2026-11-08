@@ -772,7 +772,7 @@ def unidade5(L):
               ["É mole ou é dura?", "O que você fez?", "Quer uma bola ou uma cobra?"],
               "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é segura e é a versão simples do Volume 5, na unidade de modelar. "
               "Pode repetir todos os dias: a massa não “acaba”.",
-              atencao="a massa é salgada e não é comida: não deixe que ela coma; tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica.",
+              atencao="a massa é salgada e não é comida: não deixe que ela coma; tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. " + AGUA.capitalize(),
               variar=["Esconda um brinquedo grande na massa.", "Imprima a mão e o pé na massa.", "Faça um “bolo” e cante parabéns ao bichinho."])
 
     atividade(L, "Um quadro por um minuto", "mundo", "3 minutos",

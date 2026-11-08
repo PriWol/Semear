@@ -11,10 +11,10 @@ from test_motivos7 import _motivos_citados
 AQUI = os.path.dirname(os.path.abspath(__file__))
 PAGINAS = 84   # o README e o ADR 0021 declaram este total
 # toda página de atividade que fala de água; só as de EXCECOES (abaixo) ficam sem o aviso de supervisão
-ATIVIDADE_COM_AGUA = re.compile(r"\b(?:água|molh\w+|lav\w+|banho|chuva|poça|bacia|balde|banheira|mangueira|tanque|jarra|regador|despej\w+)\b")
+ATIVIDADE_COM_AGUA = re.compile(r"\b(?:água|molh\w+|lav\w+|banho|chuva|poça|bacia|balde|banheira|mangueira|tanque|jarra|regador|despej\w+)\b", re.IGNORECASE)
 EXCECOES = {   # a água só aparece de passagem: lavar as mãos, o banho como parte do dia, a chuva como tempo, ou letra de rima
     "Passeio dos cinco sentidos", "O dia em três tempos", "Voz de bicho", "O toucinho que sumiu", "Dançar e derreter", "Pintar com o dedo",
-    "Massinha de farinha", "Massagem nas mãos", "Caça-folhas", "Bichinho de perto", "Bichos de quintal", "Água e formigas", "Para limpar as mãos"}
+    "Massagem nas mãos", "Caça-folhas", "Bichinho de perto", "Bichos de quintal", "Água e formigas", "Para limpar as mãos"}
 
 
 def _texto(html):
