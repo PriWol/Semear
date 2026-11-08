@@ -83,11 +83,18 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
         id="previa"
         title="Pré-visualização do pacote"
         sandbox="allow-scripts allow-modals"
+        src="./previa.html"
       ></iframe>
     `,
     montar(raiz) {
       const iframe = raiz.querySelector<HTMLIFrameElement>('#previa');
-      if (iframe) iframe.srcdoc = documento;
+      // A prévia é uma página própria (public/previa.html) com CSP separada; o pacote chega por
+      // mensagem. srcdoc e blob herdariam a CSP do app e o script do pacote deixaria de rodar (#32).
+      iframe?.addEventListener(
+        'load',
+        () => iframe.contentWindow?.postMessage({ tipo: 'semear:documento', html: documento }, '*'),
+        { once: true },
+      );
 
       // A prévia é isolada (sandbox, sem a origem do app): o app não chama print() diretamente,
       // pede por mensagem e o próprio pacote imprime.

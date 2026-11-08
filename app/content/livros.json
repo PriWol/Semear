@@ -623,6 +623,142 @@
       "idade": [3, 5],
       "uso": "leitura-em-voz-alta",
       "porQue": "Conto de repetição com três irmãos e três casas. Dá para contar até 3 e recontar com bonecos."
+    },
+    {
+      "id": "musica-ciranda-cirandinha",
+      "tipo": "musica",
+      "titulo": "Ciranda, cirandinha",
+      "autor": "Cantiga de roda tradicional",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.FON.01", "LG.FON.02"],
+      "idade": [2, 6],
+      "uso": "ouvir-e-cantar",
+      "porQue": "A cantiga é cheia de **rimas e repetições**: cantar e bater palmas junto ajuda a criança a perceber o som final das palavras.",
+      "fonte": "Cantiga de roda de autoria desconhecida (domínio público); a letra varia de região para região.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "obra-noite-estrelada",
+      "tipo": "obra",
+      "titulo": "A noite estrelada",
+      "autor": "Vincent van Gogh",
+      "vertentes": ["Charlotte Mason", "Waldorf", "Montessori", "Clássico", "Religioso"],
+      "marcos": [],
+      "linhas": ["LG.NAR"],
+      "idade": [4, 8],
+      "uso": "observar-e-conversar",
+      "porQue": "Olhar um quadro por alguns minutos e **contar o que viu** é o começo da narração: a criança descreve, imagina e escolhe as palavras.",
+      "fonte": "Óleo sobre tela, 1889. Domínio público; acervo do Museu de Arte Moderna (MoMA), Nova York. Procure uma reprodução em boa qualidade para imprimir ou mostrar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "musica-peixe-vivo",
+      "tipo": "musica",
+      "titulo": "Peixe Vivo",
+      "autor": "Cantiga de roda tradicional",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.FON.01"],
+      "idade": [2, 8],
+      "uso": "ouvir-e-cantar",
+      "porQue": "Cantiga lenta, de **repetição e melodia fáceis**: boa para cantar junto e para conversar sobre o rio e os peixes.",
+      "fonte": "Cantiga tradicional de autoria desconhecida (domínio público); a letra varia de região para região. Migrada do site antigo (#84); confirmar a versão antes de aprovar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "musica-a-borboletinha",
+      "tipo": "musica",
+      "titulo": "A Borboletinha",
+      "autor": "Cantiga de roda tradicional",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.FON.01", "LG.FON.02"],
+      "idade": [2, 6],
+      "uso": "ouvir-e-cantar",
+      "porQue": "As **rimas e a repetição** de “borboletinha / na cozinha” ajudam a criança a perceber o som final das palavras.",
+      "fonte": "Cantiga tradicional de autoria desconhecida (domínio público); a letra varia de região para região. Migrada do site antigo (#84); confirmar a versão antes de aprovar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "musica-o-sapo-nao-lava-o-pe",
+      "tipo": "musica",
+      "titulo": "O Sapo Não Lava o Pé",
+      "autor": "Cantiga de roda tradicional",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.FON.01", "LG.FON.02"],
+      "idade": [3, 8],
+      "uso": "ouvir-e-cantar",
+      "porQue": "Cheia de **rimas bem-humoradas** (pé, chulé): brinque de inventar outras rimas com a criança.",
+      "fonte": "Cantiga tradicional de autoria desconhecida (domínio público); a letra varia de região para região. Migrada do site antigo (#84); confirmar a versão antes de aprovar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "historia-saci-perere",
+      "titulo": "O Saci-Pererê",
+      "autor": "Folclore brasileiro (tradição oral)",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.LIT.01", "LG.LIT.02"],
+      "linhas": ["LG.NAR"],
+      "idade": [4, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Conte a lenda e peça que a criança **reconte em sequência** o que aconteceu: é o treino da narração e do respeito à natureza.",
+      "fonte": "Lenda de tradição oral, sem autor; personagem do folclore brasileiro. Migrada do site antigo (#84): conte com as suas palavras ou escolha um reconto e confira a fonte antes de aprovar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "historia-iara",
+      "titulo": "A Lenda da Iara",
+      "autor": "Folclore brasileiro (tradição oral)",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.LIT.01", "LG.LIT.02"],
+      "linhas": ["LG.NAR"],
+      "idade": [6, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Conversem sobre o **cuidado com os rios**; depois a criança reconta a lenda com as próprias palavras.",
+      "fonte": "Lenda de tradição oral, sem autor; lenda amazônica da mãe-d'água. Migrada do site antigo (#84): conte com as suas palavras ou escolha um reconto e confira a fonte antes de aprovar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "historia-curupira",
+      "titulo": "O Curupira, Guardião da Floresta",
+      "autor": "Folclore brasileiro (tradição oral)",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.LIT.01", "LG.LIT.02"],
+      "linhas": ["LG.NAR"],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Boa para falar de **proteger a mata e os animais**; peça que a criança conte o que o Curupira faz e por quê.",
+      "fonte": "Lenda de tradição oral, sem autor; lenda indígena do protetor das matas. Migrada do site antigo (#84): conte com as suas palavras ou escolha um reconto e confira a fonte antes de aprovar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "historia-bumba-meu-boi",
+      "titulo": "Bumba Meu Boi",
+      "autor": "Folclore brasileiro (tradição oral)",
+      "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+      "marcos": ["LG.LIT.01", "LG.LIT.02"],
+      "linhas": ["LG.NAR"],
+      "idade": [5, 8],
+      "uso": "leitura-em-voz-alta",
+      "porQue": "Festa popular do Nordeste que junta **história, música e dança**: conte a história do boi e cantem ou dancem juntos.",
+      "fonte": "Lenda de tradição oral, sem autor; tradição popular do Nordeste. Migrada do site antigo (#84): conte com as suas palavras ou escolha um reconto e confira a fonte antes de aprovar.",
+      "revisao": {
+        "estado": "rascunho"
+      }
     }
   ]
 }

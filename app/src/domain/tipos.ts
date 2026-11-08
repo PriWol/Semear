@@ -80,6 +80,18 @@ export interface OrientacaoPais {
   porVertente?: Partial<Record<Vertente, OrientacaoVertente>>;
 }
 
+/** Etapas da revisão do conteúdo (#77): rascunho (IA) → revisado → aprovado (publicável). */
+export const ESTADOS_REVISAO = ['rascunho', 'revisado', 'aprovado'] as const;
+export type EstadoRevisao = (typeof ESTADOS_REVISAO)[number];
+
+export interface Revisao {
+  estado: EstadoRevisao;
+  /** quem revisou; obrigatório a partir de "revisado" */
+  por?: string;
+  /** quando (AAAA-MM-DD); obrigatório a partir de "revisado" */
+  em?: string;
+}
+
 export interface Marco {
   id: string; // ex.: "LG.FON.04"
   linha: string;
@@ -95,6 +107,8 @@ export interface Marco {
   vertentes?: Vertente[] | null;
   idiomas?: Idioma[] | null;
   bncc: string[];
+  /** ausente = conteúdo anterior à #77, tratado como publicado */
+  revisao?: Revisao;
 }
 
 export interface ItemFigura {
@@ -165,6 +179,15 @@ export interface Atividade {
   vertentes: Vertente[];
   idade: [number, number];
   duracaoMin: number;
+  /** tempo de preparo do adulto, à parte da duração (#71); sem o campo, o pacote mostra 5 min */
+  preparoMin?: number;
+  /**
+   * Cuidados de segurança que o pacote imprime junto dos materiais. Obrigatório quando a atividade
+   * começa antes dos 3 anos (peças pequenas, engasgo, água).
+   */
+  cuidados?: string;
+  /** palavras que ajudam a achar a atividade na busca (#13), além do título e do objetivo */
+  palavrasChave?: string[];
   objetivo: string;
   passos: Passo[];
   observar: { consolidado: string[]; emDesenvolvimento: string[] };
@@ -181,7 +204,13 @@ export interface Atividade {
     status: 'rascunho' | 'revisado' | 'publicado';
     revisadoEm?: string;
   };
+  /** revisão por etapas (#77); `autoria.status` segue valendo até a regra ser confirmada */
+  revisao?: Revisao;
 }
+
+/** Tipos de indicação da curadoria (#73): livro (o padrão), obra de arte ou música. */
+export const TIPOS_INDICACAO = ['livro', 'obra', 'musica'] as const;
+export type TipoIndicacao = (typeof TIPOS_INDICACAO)[number];
 
 export interface Livro {
   id: string;
@@ -190,11 +219,25 @@ export interface Livro {
   vertentes: Vertente[];
   marcos: string[];
   idade: [number, number];
-  uso: 'leitura-em-voz-alta' | 'leitura-pela-crianca' | 'apoio-ao-educador';
+  /** ausente = livro */
+  tipo?: TipoIndicacao;
+  uso:
+    | 'leitura-em-voz-alta'
+    | 'leitura-pela-crianca'
+    | 'apoio-ao-educador'
+    | 'observar-e-conversar'
+    | 'ouvir-e-cantar';
+  /** linhas da jornada às quais a indicação serve, além dos marcos (ex.: "LG.NAR") */
+  linhas?: string[];
+  /** de onde vem a obra ou a música (domínio público, acervo); obrigatória para obra e música */
+  fonte?: string;
+  /** versão gratuita ou de domínio público (só https); aparece só como texto no pacote impresso */
+  linkGratuito?: string;
   porQue: string;
   editora?: string;
   /** página onde comprar (só https); abre em outra aba, o app não faz chamada nenhuma */
   linkCompra?: string;
+  revisao?: Revisao;
 }
 
 export type IdiomaAcervo = 'pt' | Idioma;
@@ -243,6 +286,8 @@ export interface Crianca {
   /** null = automático (por idade e vertente) */
   letra: Letra | null;
   trilhas: Idioma[];
+  /** dias e duração do plano semanal, guardados para não escolher toda semana (#8) */
+  rotina?: { dias: ('seg' | 'ter' | 'qua' | 'qui' | 'sex' | 'sab' | 'dom')[]; duracaoMin: number };
   /** criança do exemplo (#39): só registros marcados são apagados com o exemplo */
   exemplo?: true;
 }
@@ -265,5 +310,7 @@ export interface Sessao {
   foco: string[] | 'equilibrado';
   atividadeIds: string[];
   livroId: string | null;
+  /** "avulsa": uma atividade escolhida na busca (#13), fora do plano da sessão */
+  tipo?: 'avulsa';
   exemplo?: true;
 }

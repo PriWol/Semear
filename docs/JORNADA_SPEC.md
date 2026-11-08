@@ -21,7 +21,7 @@
 | # | Tema | Decisão |
 |---|------|---------|
 | 1 | Produto | **Evolução do Semear**: a jornada vira o "cérebro" do plano semanal, do explorador e do diário. |
-| 2 | Faixa etária | **3 a 8 anos** (da educação infantil até o 2º ano / alfabetização consolidada). |
+| 2 | Faixa etária | **2 a 8 anos** (da creche e do maternal até o 2º ano / alfabetização consolidada). Decisão de 16/10/2026 (antes 3 a 8); ver ADR 0023. |
 | 3 | Vertentes × jornada | **Mapa único** para todas as vertentes, com **marcos extras** por vertente. |
 | 4 | Posicionamento | **Independente por linha**: a criança tem uma posição em cada linha de cada domínio. |
 | 5 | Hierarquia | **Domínio → Linha → Marco**, com marcos ordenados dentro da linha e pré-requisitos opcionais entre linhas. |
@@ -71,7 +71,7 @@
 | 49 | Backup | **Exportar/importar arquivo + lembrete após 30 dias** sem backup + pedido de armazenamento persistente. |
 
 > **O que a v1 do app ainda não implementa** (fica para versões seguintes; registrado após a revisão do PR #1):
-> selo "parece pronto" (§5.2); sondagem impressa e ressondagem (§5.4–5.5); no gerador de sessão (§5.6),
+> selo "parece pronto" (§5.2); a sondagem de outros domínios além de LG.FON e MA.SEN — a **sondagem inicial** (§5.4) existe desde a #17, em duas etapas, e a **ressondagem** (§5.5, #18) avisa no início quando uma linha com item de sondagem está parada há 8 semanas ou mais (ou sem registro, numa família com 8 semanas ou mais) e gera a sondagem só dessas linhas; os itens ainda estão em rascunho; no gerador de sessão (§5.6),
 > o ponto de "materiais disponíveis", a alternância sentada/movimento e a sessão conjunta de irmãos;
 > e o lançamento da ficha de registro no app (§5.7). O avanço continua manual, marco a marco, na tela da jornada.
 
@@ -94,6 +94,7 @@ O mapa completo, com códigos e idades, está em [`app/content/dominios.json`](.
 | 🗣️ LG Linguagem e Alfabetização | **Jornada completa** | Prioridade nº 1 |
 | 🔢 MA Matemática | **Jornada completa** | |
 | 🌍 LI Línguas (inglês, francês, latim) | **Jornada completa**, por trilha | Só as trilhas que o educador domina |
+| 💛 EM Formação e regulação emocional | **Jornada completa** (2 a 8 anos) | Substitui o esboço DI.SOC. Marcos em rascunho até a revisão da dona do produto (ADR 0024) |
 | 🎨 AR Artes e Música | **Só atividades** | Inclui artistas e música brasileira (Tarsila, Portinari, Villa-Lobos, cantigas) |
 | 🌎 NM Natureza, Mundo e Sociedade | **Só atividades** | Reaproveita os recursos atuais (folclore, plantio…). Jornada na v2. |
 | 🌱 DI Desenvolvimento Integral | **Só atividades** | Valores e rituais atuais do Semear. Jornada na v2. |
@@ -160,10 +161,20 @@ Desenho · Pintura · Modelagem · Ritmo e pulso · Canto · Escuta musical · A
 | NM.ESP Espaço e lugares | Casa, bairro, cidade, mapas, Brasil |
 | NM.CUL Cultura e diversidade | Folclore, festas, povos e regiões brasileiras |
 
+### 💛 EM: Formação e regulação emocional *(jornada completa, 2 a 8 anos)*
+| Linha | O que acompanha |
+|-------|-----------------|
+| EM.NOM Reconhecer e nomear emoções | Sentir com o corpo, ler rostos, nomear a própria emoção e perceber a do outro |
+| EM.REG Autorregulação | Da calma com o adulto (2 anos) à estratégia própria e à frustração de perder |
+| EM.CON Convivência e resolução de conflitos | Brincar ao lado, revezar, resolver conversando, combinar regras |
+| EM.VAL Valores e cuidado | Carinho, gentileza com sentido, cuidar de um ser vivo, refletir sobre os próprios atos |
+
+Regras do domínio: atividades sem material de risco, sem rotular a criança (nada de “birrenta” ou “tímida”) e com texto “Para os pais” que diz que não é diagnóstico. Os 16 marcos iniciais são `rascunho` (#77).
+
 ### 🌱 DI: Desenvolvimento Integral *(só atividades no lançamento)*
 | Linha | O que acompanha |
 |-------|-----------------|
-| DI.SOC Socioemocional e valores | Nomear emoções, autorregulação, convivência. Liga-se aos 8 valores do Semear. |
+| DI.SOC Socioemocional e valores | *Substituída pelo domínio EM (#72); fica só para as atividades antigas.* Liga-se aos 8 valores do Semear. |
 | DI.VPR Vida prática e autonomia | Cuidado de si, da casa e do outro |
 | DI.MAM Motor amplo | Equilíbrio, coordenação, ritmo corporal |
 | DI.MFI Motor fino | Pinça, recorte, encaixe, costura |

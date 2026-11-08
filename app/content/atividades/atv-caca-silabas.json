@@ -51,12 +51,30 @@
     "facil": "Peça que ela invente uma frase “maluca” em que tudo começa igual: *“PAto PAssa PAnela PAra o PAi.”*"
   },
   "materiais": [
-    { "item": "Uma bola", "deCasa": true },
-    { "item": "Uma bota ou sapato", "deCasa": true },
-    { "item": "Um bolo, biscoito ou bolacha", "deCasa": true },
-    { "item": "Uma colher (o “intruso”)", "deCasa": true },
-    { "item": "Lápis de cor ou giz de cera", "deCasa": false },
-    { "item": "Tesoura sem ponta (para recortar a memória antes)", "deCasa": false }
+    {
+      "item": "Uma bola",
+      "deCasa": true
+    },
+    {
+      "item": "Uma bota ou sapato",
+      "deCasa": true
+    },
+    {
+      "item": "Um bolo, biscoito ou bolacha",
+      "deCasa": true
+    },
+    {
+      "item": "Uma colher (o “intruso”)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou giz de cera",
+      "deCasa": false
+    },
+    {
+      "item": "Tesoura sem ponta (para recortar a memória antes)",
+      "deCasa": false
+    }
   ],
   "toqueVertente": {
     "Montessori": "Comece pelos **objetos reais** antes das figuras. Use uma bandeja e deixe a criança manusear e separar.",
@@ -69,7 +87,10 @@
       "texto": "Folha “ligue”: ligações certas",
       "resposta": "_____ de 5   ☐ sem ajuda   ☐ com ajuda"
     },
-    { "texto": "Folha “pinte”: acertos", "resposta": "_____ de 9   ☐ sem ajuda   ☐ com ajuda" },
+    {
+      "texto": "Folha “pinte”: acertos",
+      "resposta": "_____ de 9   ☐ sem ajuda   ☐ com ajuda"
+    },
     {
       "texto": "Disse uma palavra nova que começa igual?",
       "resposta": "☐ sim: ________________   ☐ não"
@@ -80,18 +101,48 @@
       "tipo": "ligar",
       "titulo": "Ligue as figuras que começam igual",
       "esquerda": [
-        { "emoji": "⚽", "texto": "Bola" },
-        { "emoji": "🏠", "texto": "Casa" },
-        { "emoji": "🦆", "texto": "Pato" },
-        { "emoji": "🐒", "texto": "Macaco" },
-        { "emoji": "🍌", "texto": "Banana" }
+        {
+          "emoji": "⚽",
+          "texto": "Bola"
+        },
+        {
+          "emoji": "🏠",
+          "texto": "Casa"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "Pato"
+        },
+        {
+          "emoji": "🐒",
+          "texto": "Macaco"
+        },
+        {
+          "emoji": "🍌",
+          "texto": "Banana"
+        }
       ],
       "direita": [
-        { "emoji": "🐴", "texto": "Cavalo" },
-        { "emoji": "🐋", "texto": "Baleia" },
-        { "emoji": "🧳", "texto": "Mala" },
-        { "emoji": "👢", "texto": "Bota" },
-        { "emoji": "🦜", "texto": "Papagaio" }
+        {
+          "emoji": "🐴",
+          "texto": "Cavalo"
+        },
+        {
+          "emoji": "🐋",
+          "texto": "Baleia"
+        },
+        {
+          "emoji": "🧳",
+          "texto": "Mala"
+        },
+        {
+          "emoji": "👢",
+          "texto": "Bota"
+        },
+        {
+          "emoji": "🦜",
+          "texto": "Papagaio"
+        }
       ]
     },
     {
@@ -99,22 +150,55 @@
       "titulo": "Pinte o quadradinho das figuras que começam como…",
       "grupos": [
         {
-          "modelo": { "emoji": "🐸", "texto": "sa · po" },
+          "modelo": {
+            "emoji": "🐸",
+            "texto": "sa · po"
+          },
           "itens": [
-            { "emoji": "👞", "texto": "Sapato" },
-            { "emoji": "🚗", "texto": "Carro" },
-            { "emoji": "🧼", "texto": "Sabonete" }
+            {
+              "emoji": "👞",
+              "texto": "Sapato"
+            },
+            {
+              "emoji": "🚗",
+              "texto": "Carro"
+            },
+            {
+              "emoji": "🧼",
+              "texto": "Sabonete"
+            }
           ]
         },
         {
-          "modelo": { "emoji": "🍌", "texto": "ba · na · na" },
+          "modelo": {
+            "emoji": "🍌",
+            "texto": "ba · na · na"
+          },
           "itens": [
-            { "emoji": "⛵", "texto": "Barco" },
-            { "emoji": "🎂", "texto": "Bolo" },
-            { "emoji": "🎈", "texto": "Balão" },
-            { "emoji": "🦆", "texto": "Pato" },
-            { "emoji": "🥔", "texto": "Batata" },
-            { "emoji": "🍎", "texto": "Maçã" }
+            {
+              "emoji": "⛵",
+              "texto": "Barco"
+            },
+            {
+              "emoji": "🎂",
+              "texto": "Bolo"
+            },
+            {
+              "emoji": "🎈",
+              "texto": "Balão"
+            },
+            {
+              "emoji": "🦆",
+              "texto": "Pato"
+            },
+            {
+              "emoji": "🥔",
+              "texto": "Batata"
+            },
+            {
+              "emoji": "🍎",
+              "texto": "Maçã"
+            }
           ]
         }
       ]
@@ -123,18 +207,54 @@
       "tipo": "cartas",
       "titulo": "Jogo da memória: o par começa igual!",
       "cartas": [
-        { "emoji": "⚽", "texto": "Bola" },
-        { "emoji": "🏠", "texto": "Casa" },
-        { "emoji": "🦆", "texto": "Pato" },
-        { "emoji": "🐸", "texto": "Sapo" },
-        { "emoji": "🐒", "texto": "Macaco" },
-        { "emoji": "🍌", "texto": "Banana" },
-        { "emoji": "👞", "texto": "Sapato" },
-        { "emoji": "👢", "texto": "Bota" },
-        { "emoji": "🧳", "texto": "Mala" },
-        { "emoji": "🛏️", "texto": "Cama" },
-        { "emoji": "🐋", "texto": "Baleia" },
-        { "emoji": "🤡", "texto": "Palhaço" }
+        {
+          "emoji": "⚽",
+          "texto": "Bola"
+        },
+        {
+          "emoji": "🏠",
+          "texto": "Casa"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "Pato"
+        },
+        {
+          "emoji": "🐸",
+          "texto": "Sapo"
+        },
+        {
+          "emoji": "🐒",
+          "texto": "Macaco"
+        },
+        {
+          "emoji": "🍌",
+          "texto": "Banana"
+        },
+        {
+          "emoji": "👞",
+          "texto": "Sapato"
+        },
+        {
+          "emoji": "👢",
+          "texto": "Bota"
+        },
+        {
+          "emoji": "🧳",
+          "texto": "Mala"
+        },
+        {
+          "emoji": "🛏️",
+          "texto": "Cama"
+        },
+        {
+          "emoji": "🐋",
+          "texto": "Baleia"
+        },
+        {
+          "emoji": "🤡",
+          "texto": "Palhaço"
+        }
       ]
     },
     {
@@ -143,5 +263,10 @@
       "legenda": "O adulto pode escrever embaixo o nome que a criança disser."
     }
   ],
-  "autoria": { "origem": "humano", "status": "publicado", "revisadoEm": "2026-10-13" }
+  "autoria": {
+    "origem": "humano",
+    "status": "publicado",
+    "revisadoEm": "2026-10-13"
+  },
+  "palavrasChave": ["rimas", "sílabas", "palavras", "som inicial"]
 }

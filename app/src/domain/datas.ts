@@ -37,3 +37,12 @@ export function dataBR(iso: string): string {
   const [a, m, d] = dataLocalISO(new Date(iso)).split('-');
   return `${d}/${m}/${a}`;
 }
+
+/** Data real no formato AAAA-MM-DD (recusa 2026-02-30 e 31/12/2026). */
+export function dataValida(texto: string): boolean {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(texto);
+  if (!m) return false;
+  const [ano, mes, dia] = [Number(m[1]), Number(m[2]), Number(m[3])];
+  const d = new Date(Date.UTC(ano, mes - 1, dia));
+  return d.getUTCFullYear() === ano && d.getUTCMonth() === mes - 1 && d.getUTCDate() === dia;
+}

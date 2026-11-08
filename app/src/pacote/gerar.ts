@@ -33,7 +33,15 @@ const USO_LIVRO: Record<Livro['uso'], string> = {
   'leitura-em-voz-alta': 'leitura em voz alta',
   'leitura-pela-crianca': 'leitura pela criança',
   'apoio-ao-educador': 'apoio ao educador',
+  'observar-e-conversar': 'observar e conversar',
+  'ouvir-e-cantar': 'ouvir e cantar',
 };
+
+const TITULO_INDICACAO = {
+  livro: '📚 Livro sugerido',
+  obra: '🖼️ Obra para apreciar',
+  musica: '🎵 Música para ouvir',
+} as const;
 
 function rodapeEducador(texto: string, pagina: string): HtmlSeguro {
   return html`<div class="rodape"><span>${texto}</span><span>${pagina}</span></div>`;
@@ -116,13 +124,21 @@ function toquesDaVertente(
   return lista;
 }
 
+const PREPARO_PADRAO_MIN = 5;
+
 function paginaMateriais(e: EntradaPacote): HtmlSeguro {
   const materiais = [
     ...new Map(e.atividades.flatMap((a) => a.materiais).map((m) => [m.item, m])).values(),
   ];
   const toques = toquesDaVertente(e);
+  const cuidados = [...new Set(e.atividades.map((a) => a.cuidados?.trim()).filter(Boolean))];
+  // O preparo é do adulto e fica fora da duração da sessão (#71). Sem dado, os 5 min de sempre.
+  // Se só parte das atividades informa o preparo, as outras contam os 5 min de sempre.
+  const preparo = e.atividades.some((a) => a.preparoMin !== undefined)
+    ? e.atividades.reduce((t, a) => t + (a.preparoMin ?? PREPARO_PADRAO_MIN), 0)
+    : PREPARO_PADRAO_MIN;
   return html`<section class="pagina educador">
-    <span class="etiqueta">Prepare antes · 5 min</span>
+    <span class="etiqueta">Prepare antes · ${preparo} min</span>
     <h1>Materiais e livro</h1>
     <div class="duas-col">
       <div>
@@ -132,9 +148,10 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
           <li>Folhas da criança impressas, ou o tablet no modo tablet</li>
           <li>Ficha de registro e uma caneta</li>
         </ul>
+        ${cuidados.length ? html`<p class="caixa cuidados"><b>⚠️ Cuidados:</b> ${cuidados.join(' ')}</p>` : ''}
       </div>
       <div>
-        <h2>📚 Livro sugerido</h2>
+        <h2>${TITULO_INDICACAO[e.livro?.tipo ?? 'livro']}</h2>
         ${
           e.livro
             ? html`<div class="livro">
@@ -143,9 +160,11 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
                   <p><b>${e.livro.titulo}</b><br />${e.livro.autor}</p>
                   <p><b>Uso:</b> ${USO_LIVRO[e.livro.uso]}.</p>
                   <p><b>Por quê:</b> ${textoRico(e.livro.porQue)}</p>
+                  ${e.livro.fonte ? html`<p><b>Fonte:</b> ${e.livro.fonte}</p>` : ''}
+                  ${e.livro.linkGratuito ? html`<p><b>Versão gratuita:</b> ${e.livro.linkGratuito}</p>` : ''}
                 </div>
               </div>`
-            : html`<p class="aviso-capa">Ainda não há livro da curadoria ligado a estes marcos.</p>`
+            : html`<p class="aviso-capa">Ainda não há indicação da curadoria ligada a estes marcos.</p>`
         }
       </div>
     </div>
@@ -258,6 +277,7 @@ window.addEventListener('message',function(e){if(e.source===window.parent&&e.dat
 function ajustarTablet(){var b=document.body;if(!b.classList.contains('tablet')){b.style.removeProperty('--zoom-tablet');return;}var h=window.innerHeight-54;b.style.setProperty('--zoom-tablet',String(Math.min(window.innerWidth/793.7,h/1122.5)));}
 window.addEventListener('resize',ajustarTablet);
 function alternarTablet(){var on=document.body.classList.toggle('tablet');document.getElementById('btnTablet').setAttribute('aria-pressed',String(on));ajustarTablet();}
+function mostrarDia(d){document.querySelectorAll('.dia-bloco').forEach(function(b){b.classList.toggle('oculto',d!=='todos'&&b.getAttribute('data-dia')!==d);});}
 function trocarLetra(v){document.body.classList.remove('letra-bastao','letra-script','letra-cursiva');document.body.classList.add('letra-'+v);}
 `;
 
@@ -277,30 +297,42 @@ const CSP = [
   "base-uri 'none'",
 ].join('; ');
 
-export function gerarPacote(e: EntradaPacote): string {
-  // A letra vem dos dados da criança (que podem vir de um backup): só valores conhecidos entram no HTML.
-  const letra = ehLetra(e.letra) ? e.letra : 'bastao';
-  const titulo = `Semear · ${e.sessao.codigo} · ${e.crianca.nome}`;
+/** As páginas de uma sessão, separadas por quem as lê (o plano semanal escolhe quais imprimir, #9). */
+export function paginasDaSessao(e: EntradaPacote): {
+  roteiro: HtmlSeguro;
+  materiais: HtmlSeguro;
+  folhas: HtmlSeguro[];
+  ficha: HtmlSeguro;
+} {
   const roteiro = html`<section class="pagina educador">
     <span class="etiqueta">Roteiro do educador · leia antes da sessão</span>
     ${e.atividades.map((a, i) => roteiroDaAtividade(a, e, i === 0))}
     ${rodapeEducador('Semear · Pacote de sessão · Roteiro', 'Educador')}
   </section>`;
-
   const folhas = e.atividades.flatMap((a) =>
     a.folhas.map((f, i) =>
       paginaDaFolha(f, `${a.marcos.join(' · ') || a.categoria || ''} · Folha ${i + 1}`),
     ),
   );
+  return { roteiro, materiais: paginaMateriais(e), folhas, ficha: paginaFicha(e) };
+}
 
+/** Documento HTML completo (CSS e script embutidos, CSP própria): funciona offline (ADR 0004). */
+export function montarDocumento(
+  titulo: string,
+  letraBruta: string,
+  corpo: HtmlSeguro,
+  /** HTML extra para a barra de controles (já escapado por quem chama); o plano semanal põe o seletor de dia */
+  barraExtra: HtmlSeguro | '' = '',
+): string {
+  // A letra vem dos dados da criança (que podem vir de um backup): só valores conhecidos entram no HTML.
+  const letra = ehLetra(letraBruta) ? letraBruta : 'bastao';
   const opcoesLetra = (Object.keys(NOME_LETRA) as Letra[])
     .map(
       (l) =>
         `<option value="${l}"${l === letra ? ' selected' : ''}>${escapar(NOME_LETRA[l])}</option>`,
     )
     .join('');
-
-  const corpo = html`${roteiro}${paginaMateriais(e)}${folhas}${paginaFicha(e)}`;
 
   return `<!doctype html>
 <html lang="pt-BR">
@@ -322,13 +354,19 @@ ${estilos}</style>
   <strong>🌱 Semear</strong>
   <button class="primario" onclick="window.print()">🖨️ Imprimir / salvar PDF</button>
   <button id="btnTablet" aria-pressed="false" onclick="alternarTablet()">📱 Modo tablet (só folhas da criança)</button>
-  <label>Letra da criança: <select onchange="trocarLetra(this.value)">${opcoesLetra}</select></label>
+  <label>Letra da criança: <select onchange="trocarLetra(this.value)">${opcoesLetra}</select></label>${barraExtra}
 </div>
 <main class="paginas">${corpo}</main>
 <script>${SCRIPT}</script>
 </body>
 </html>
 `;
+}
+
+export function gerarPacote(e: EntradaPacote): string {
+  const titulo = `Semear · ${e.sessao.codigo} · ${e.crianca.nome}`;
+  const p = paginasDaSessao(e);
+  return montarDocumento(titulo, e.letra, html`${p.roteiro}${p.materiais}${p.folhas}${p.ficha}`);
 }
 
 export function nomeArquivoPacote(sessao: Sessao, crianca: Crianca): string {

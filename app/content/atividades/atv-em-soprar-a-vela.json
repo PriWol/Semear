@@ -1,0 +1,68 @@
+{
+  "id": "atv-em-soprar-a-vela",
+  "titulo": "Soprar a vela: respirar para ficar calmo",
+  "marcos": ["EM.REG.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 5],
+  "duracaoMin": 6,
+  "preparoMin": 2,
+  "cuidados": "Atenção: nenhuma peça pequena que caiba na boca. Fique junto da criança o tempo todo. Sopre devagar, sem forçar o ar: se a criança ficar tonta, pare e deixe respirar normalmente.",
+  "objetivo": "A criança conhece um gesto de calma (respirar fundo e soprar devagar) num momento tranquilo, para usá-lo depois com ajuda.",
+  "passos": [
+    {
+      "titulo": "Cheirar a flor",
+      "minutos": 2,
+      "texto": "Estenda a mão com os dedos abertos: cada dedo é uma pétala. Façam juntos “cheirar a flor” pelo nariz, devagar."
+    },
+    {
+      "titulo": "Soprar a vela",
+      "minutos": 3,
+      "texto": "Feche a mão em volta de um dedo, que é a **vela**. A criança sopra bem devagar, “para a chama balançar sem apagar”. Repitam 3 vezes.",
+      "fala": "Sopra devagarinho!"
+    },
+    {
+      "titulo": "Quando estiver difícil",
+      "minutos": 1,
+      "texto": "Combine uma palavra: “vamos soprar a vela?”. Lembre dela em um momento bom, não só na crise."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Faz a respiração com o adulto",
+      "Aceita o convite na hora de se agitar, ainda que com ajuda"
+    ],
+    "emDesenvolvimento": [
+      "Sopra rápido ou ri, o que é normal nessa idade",
+      "Ainda não aceita o convite na hora difícil"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça só a parte de soprar, sem a flor.",
+    "facil": "Deixe-a escolher o animal que sopra (dragão, vento, leão)."
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material: só as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Soprou devagar",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    },
+    {
+      "texto": "Aceitou o convite em um momento difícil",
+      "resposta": "☐ ainda não tentei   ☐ não   ☐ com ajuda"
+    }
+  ],
+  "perguntaFicha": "Em que momento você usou o convite da vela?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

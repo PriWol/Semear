@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { validarConteudo } from '../src/domain/conteudo';
-import { carregarConteudo } from '../src/conteudo';
+import { carregarConteudo, carregarConteudoBruto } from '../src/conteudo';
 import type { Marco, OrientacaoPais, Referencia } from '../src/domain/tipos';
 import { atividade, conteudoBase, marco } from './fabricas';
 
@@ -16,7 +16,8 @@ function marcosPorLinha() {
 describe('conteúdo real (app/content)', () => {
   // Este teste é a "porta de qualidade" do conteúdo (ADR 0005): erros quebram o CI.
   it('não tem erros de validação', () => {
-    const { erros } = validarConteudo(carregarConteudo());
+    // O bruto inclui os rascunhos: eles também precisam passar na validação.
+    const { erros } = validarConteudo(carregarConteudoBruto());
     expect(erros).toEqual([]);
   });
   // O motor de jornada segue só a `ordem` dentro da linha (domain/jornada.ts), então uma ordem

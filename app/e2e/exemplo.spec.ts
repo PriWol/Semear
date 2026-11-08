@@ -13,9 +13,9 @@ test('explorar o exemplo, preparar uma sessão e apagar o exemplo', async ({ pag
   await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
   const faixa = page.locator('#faixa-exemplo');
   await expect(faixa).toBeVisible();
-  const ana = page.locator('.crianca-cartao', { hasText: 'Ana' });
+  const ana = page.locator('.crianca-cartao', { hasText: /\bAna\b/ });
   await expect(ana).toContainText('5 anos');
-  await expect(page.locator('.crianca-cartao', { hasText: 'Theo' })).toContainText('7 anos');
+  await expect(page.locator('.crianca-cartao', { hasText: /\bTheo\b/ })).toContainText('7 anos');
   await expect(page.locator('.lista-sessoes li')).toHaveCount(3);
   // O exemplo não dispara o lembrete de backup.
   await expect(page.locator('.alerta')).toHaveCount(0);

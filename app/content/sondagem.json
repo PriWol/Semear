@@ -1,0 +1,154 @@
+{
+  "itens": [
+    {
+      "id": "sd-lg-fon-01",
+      "marco": "LG.FON.01",
+      "instrucao": "Diga o começo de uma parlenda conhecida (“Batatinha quando nasce…”) e pare. Depois diga uma rima trocada de propósito.",
+      "consolidado": "Completa a parlenda e estranha ou ri da rima trocada.",
+      "emDesenvolvimento": "Completa só com ajuda, ou não percebe a troca.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-lg-fon-02",
+      "marco": "LG.FON.02",
+      "instrucao": "Diga 5 pares de palavras, em voz alta, sem mostrar figuras (3 que rimam, como bola/cola, e 2 que não rimam). Pergunte: “rima ou não rima?”.",
+      "consolidado": "Acerta 4 ou 5 dos 5 pares.",
+      "emDesenvolvimento": "Acerta 2 ou 3, ou só quando os pares são bem diferentes.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-lg-fon-03",
+      "marco": "LG.FON.03",
+      "instrucao": "Peça que bata palmas para cada pedacinho de 4 palavras (gato, borboleta, casa, sapato).",
+      "consolidado": "Separa corretamente ao menos 3 das 4 palavras.",
+      "emDesenvolvimento": "Bate, mas junta ou separa errado a maioria.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-lg-fon-04",
+      "marco": "LG.FON.04",
+      "instrucao": "Mostre 3 figuras (bola, bota, casa) e pergunte qual começa igual a “bolo”. Peça uma palavra que comece com “ca”.",
+      "consolidado": "Escolhe a figura certa e diz outra palavra que começa igual.",
+      "emDesenvolvimento": "Acerta só uma das duas tarefas ou com ajuda.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-lg-fon-05",
+      "marco": "LG.FON.05",
+      "instrucao": "Desafios orais: “diga ‘casa’ sem o ‘ca’”, “troque o ‘ba’ de ‘bota’ por ‘ro’”, e mais dois do mesmo tipo.",
+      "consolidado": "Acerta 3 dos 4 desafios.",
+      "emDesenvolvimento": "Acerta 1 ou 2, ou só os mais fáceis.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-lg-fon-06",
+      "marco": "LG.FON.06",
+      "instrucao": "Diga “mala, mola, sol” e pergunte quais começam com o mesmo som. Repita com outro trio.",
+      "consolidado": "Acerta os dois trios, pelo som e não pela sílaba.",
+      "emDesenvolvimento": "Confunde som e sílaba ou acerta um só.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-lg-fon-07",
+      "marco": "LG.FON.07",
+      "instrucao": "Peça que diga, um a um, os sons de “sol” e “fada” (s-o-l, f-a-d-a).",
+      "consolidado": "Separa os sons de palavras de 3 a 5 sons.",
+      "emDesenvolvimento": "Separa só em sílabas, ou perde sons no meio.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-01",
+      "marco": "MA.SEN.01",
+      "instrucao": "Peça que conte de 1 a 10, sem objetos.",
+      "consolidado": "Recita de 1 a 10 sem pular nenhum número.",
+      "emDesenvolvimento": "Pula ou troca números, ou para antes do 10.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-02",
+      "marco": "MA.SEN.02",
+      "instrucao": "Espalhe 5 objetos (tampinhas, feijões grandes) e peça que conte tocando um por vez.",
+      "consolidado": "Toca um objeto por número e chega ao 5 sem pular nem repetir.",
+      "emDesenvolvimento": "Conta falando, mas toca errado ou conta dois por vez.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-03",
+      "marco": "MA.SEN.03",
+      "instrucao": "Depois de contar 6 objetos, pergunte: “quantos são?”. Cubra-os com um pano e pergunte de novo.",
+      "consolidado": "Responde “seis” sem recontar.",
+      "emDesenvolvimento": "Recomeça a contagem a cada pergunta.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-04",
+      "marco": "MA.SEN.04",
+      "instrucao": "Mostre 1 a 4 objetos por 2 segundos e esconda. Pergunte “quantos eram?”. Repita com 3 quantidades.",
+      "consolidado": "Acerta 3 de 3 sem contar um por um.",
+      "emDesenvolvimento": "Acerta só 1 ou 2, ou só 1 e 2 objetos.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-05",
+      "marco": "MA.SEN.05",
+      "instrucao": "Mostre dois montinhos (7 e 5). Pergunte “onde tem mais?” e “onde tem menos?”. Repita com outro par.",
+      "consolidado": "Responde certo nas duas perguntas, nos dois pares.",
+      "emDesenvolvimento": "Acerta só quando a diferença é grande.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-06",
+      "marco": "MA.SEN.06",
+      "instrucao": "Dê 17 objetos e peça que conte todos, sem ajuda.",
+      "consolidado": "Conta os 17 sem se perder e diz o total.",
+      "emDesenvolvimento": "Se perde, pula ou repete perto do 13 ao 20.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-07",
+      "marco": "MA.SEN.07",
+      "instrucao": "Peça: “comece no 6 e conte mais 3”. Repita com “comece no 9 e conte mais 2”.",
+      "consolidado": "Conta a partir do número sem voltar ao 1, nas duas vezes.",
+      "emDesenvolvimento": "Precisa recomeçar do 1 ou acerta só uma.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "sd-ma-sen-08",
+      "marco": "MA.SEN.08",
+      "instrucao": "Dê 7 fichas e peça que as divida em dois montinhos de jeitos diferentes. Pergunte “quantas em cada um?”.",
+      "consolidado": "Acha ao menos 3 jeitos de decompor o 7.",
+      "emDesenvolvimento": "Acha 1 ou 2 jeitos, ou só com ajuda.",
+      "revisao": {
+        "estado": "rascunho"
+      }
+    }
+  ]
+}

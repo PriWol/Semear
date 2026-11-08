@@ -1,10 +1,11 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { validarConteudo } from '../domain/conteudo';
+import { carregarConteudoBruto } from '../conteudo';
 
 /** Visão para a curadoria: cobertura do conteúdo e problemas encontrados pela validação. */
 export const paginaConteudo: FabricaPagina = async (ctx) => {
-  const { erros, avisos } = validarConteudo(ctx.idx.conteudo);
+  const { erros, avisos } = validarConteudo(carregarConteudoBruto()); // inclui os rascunhos
   const dominios = ctx.idx.conteudo.dominios.filter((d) => d.comJornada);
 
   return {

@@ -217,3 +217,11 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Atividade complementar** | Atividade de um domínio sem jornada (música, artes…): não tem marcos e entra em no máximo uma por sessão (ADR 0015). |
 | **Material impresso** | Trecho de um volume d'O Grande Tesouro de Marina ligado a uma atividade; a Biblioteca abre o PDF na página certa. |
 | **Service worker** | Programa do navegador que guarda arquivos do app para uso offline; precisa ser instruído a não interceptar os PDFs. |
+| **CSP** | Content Security Policy: lista que diz ao navegador de onde scripts, estilos e conexões podem vir; bloqueia código injetado (ADR 0022). |
+| **Iframe sandbox** | Quadro isolado da página: sem a origem do app, só com o que for liberado. Um `srcdoc` herda a CSP do app; por isso a prévia usa `previa.html` (ADR 0022). |
+| **Faixa etária** | Idades que o produto atende (2 a 8 anos). O app avisa, mas não bloqueia, quem está fora (ADR 0023). |
+| **Preparo** | Tempo do adulto para separar materiais; fica fora dos 30 minutos de atividade da sessão (ADR 0023). |
+| **Regulação emocional** | Capacidade de perceber o que sente e voltar à calma. Aos 2 anos depende do adulto (“coregulação”); depois a criança assume aos poucos (ADR 0024). |
+| **Sondagem** | Folha curta aplicada no papel para descobrir onde a criança está em cada linha. Começa perto da idade, sobe se acertou, desce se não observou, e grava a posição com origem “sondagem” (#17, §5.4). |
+| **Migração de banco** | Mudança na estrutura do IndexedDB que roda ao abrir o app (aqui, v1 → v2 para criar os planos); precisa de teste e não volta atrás (ADR 0025). |
+| **Ressondagem** | Mini-sondagem só das linhas “paradas” (marco em desenvolvimento sem mudar há 8 semanas) ou “sem observação” (nenhum registro). Reaproveita a folha da sondagem inicial (#18). |

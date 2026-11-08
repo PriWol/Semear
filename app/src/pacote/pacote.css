@@ -415,6 +415,10 @@ body.tablet .pagina {
 body.tablet .rodape {
   display: none;
 }
+/* Plano semanal (#9): o seletor de dia esconde as folhas dos outros dias no modo tablet. */
+body.tablet .dia-bloco.oculto {
+  display: none;
+}
 
 /* ---------- Impressão ---------- */
 @page {

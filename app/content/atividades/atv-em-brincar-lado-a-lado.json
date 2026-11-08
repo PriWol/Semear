@@ -1,0 +1,73 @@
+{
+  "id": "atv-em-brincar-lado-a-lado",
+  "titulo": "Brincar lado a lado e revezar",
+  "marcos": ["EM.CON.01", "EM.CON.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 5,
+  "cuidados": "Atenção: nenhuma peça pequena que caiba na boca. Fique junto da criança o tempo todo. Escolha brinquedos grandes, sem partes soltas.",
+  "objetivo": "A criança brinca perto de outra, imita o que ela faz e experimenta esperar a vez com a ajuda do adulto.",
+  "passos": [
+    {
+      "titulo": "Cada um com o seu",
+      "minutos": 4,
+      "texto": "Dê a cada criança (ou a você e à criança) um conjunto igual de brinquedos grandes. Brinquem lado a lado, sem obrigar a dividir.",
+      "fala": "Olha o que ele está fazendo!"
+    },
+    {
+      "titulo": "Um brinquedo, duas vezes",
+      "minutos": 4,
+      "texto": "Ofereça **um** brinquedo para os dois. Diga: “agora é dele; depois é a sua vez”. Use uma música curta como relógio da vez.",
+      "fala": "Agora é a vez de quem?"
+    },
+    {
+      "titulo": "Fechamento",
+      "minutos": 2,
+      "texto": "Elogie o que deu certo (“você esperou!”) e guardem juntos."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Brinca ao lado de outra criança por alguns minutos",
+      "Espera a vez por cerca de um minuto, com ajuda"
+    ],
+    "emDesenvolvimento": [
+      "Quer só para si o brinquedo",
+      "Precisa que o adulto fique muito perto para esperar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Comece sem o revezamento, só com a parte lado a lado.",
+    "facil": "Aumente a espera com uma música mais longa."
+  },
+  "materiais": [
+    {
+      "item": "Dois conjuntos iguais de brinquedos grandes (blocos de pano, bolas, carrinhos)",
+      "deCasa": true
+    },
+    {
+      "item": "Uma música curta para marcar o tempo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Brincou ao lado de outra criança",
+      "resposta": "☐ não   ☐ por pouco tempo   ☐ por vários minutos"
+    },
+    {
+      "texto": "Esperou a vez",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "O que ajudou na hora de esperar?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
