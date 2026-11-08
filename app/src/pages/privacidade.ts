@@ -11,7 +11,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
   conteudo: html`
     <h1>Política de privacidade</h1>
     <p class="alerta" role="note">
-      Rascunho em revisão jurídica. Descreve o que o app faz hoje.
+      Rascunho, ainda sem revisão jurídica. Descreve o que o app faz hoje.
     </p>
     <section class="cartao">
       <h2>O que fica no seu aparelho</h2>

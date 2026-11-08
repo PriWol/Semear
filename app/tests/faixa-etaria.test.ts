@@ -104,4 +104,9 @@ describe('pacote: preparação à parte', () => {
     const doc = gerarPacote({ ...base, atividades: [atividade('a', ['LG.FON.01'])] });
     expect(doc).toContain('Prepare antes · 5 min');
   });
+  it('se só parte das atividades informa o preparo, as outras contam 5 min', () => {
+    const com = atividade('a', ['LG.FON.01'], { preparoMin: 12 });
+    const sem = atividade('b', ['LG.FON.01']);
+    expect(gerarPacote({ ...base, atividades: [com, sem] })).toContain('Prepare antes · 17 min');
+  });
 });

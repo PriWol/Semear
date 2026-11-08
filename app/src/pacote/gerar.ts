@@ -116,6 +116,8 @@ function toquesDaVertente(
   return lista;
 }
 
+const PREPARO_PADRAO_MIN = 5;
+
 function paginaMateriais(e: EntradaPacote): HtmlSeguro {
   const materiais = [
     ...new Map(e.atividades.flatMap((a) => a.materiais).map((m) => [m.item, m])).values(),
@@ -123,9 +125,10 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
   const toques = toquesDaVertente(e);
   const cuidados = [...new Set(e.atividades.map((a) => a.cuidados?.trim()).filter(Boolean))];
   // O preparo é do adulto e fica fora da duração da sessão (#71). Sem dado, os 5 min de sempre.
+  // Se só parte das atividades informa o preparo, as outras contam os 5 min de sempre.
   const preparo = e.atividades.some((a) => a.preparoMin !== undefined)
-    ? e.atividades.reduce((t, a) => t + (a.preparoMin ?? 0), 0)
-    : 5;
+    ? e.atividades.reduce((t, a) => t + (a.preparoMin ?? PREPARO_PADRAO_MIN), 0)
+    : PREPARO_PADRAO_MIN;
   return html`<section class="pagina educador">
     <span class="etiqueta">Prepare antes · ${preparo} min</span>
     <h1>Materiais e livro</h1>

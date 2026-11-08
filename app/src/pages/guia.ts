@@ -25,7 +25,7 @@ export const paginaGuia: FabricaPagina = async (ctx) => {
           : ''
       }
       ${guia.vertentes.map(
-        (s) => html`<section class="cartao" id="${s.vertente}" data-vertente="${s.vertente}">
+        (s) => html`<section class="cartao" data-vertente="${s.vertente}">
           <h2>${s.vertente}</h2>
           <p><b>${textoRico(s.resumo)}</b></p>
           <h3>Princípios</h3>

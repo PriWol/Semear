@@ -47,7 +47,7 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
         <label>
           Data de nascimento
           <input name="nascimento" type="date" required max="${hoje}" value="${c.nascimento}" />
-          <span class="nota" id="nota-faixa">O Semear é pensado para crianças de 2 a 8 anos.</span>
+          <span class="nota">O Semear é pensado para crianças de 2 a 8 anos.</span>
         </label>
         <label>
           Letra nas folhas

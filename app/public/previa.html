@@ -14,7 +14,7 @@
   <body>
     <script>
       // Só aceita o documento do app (a janela-mãe) e só uma vez.
-      var recebido = false; window.addEventListener('securitypolicyviolation', function (e) { console.log('VIOL ' + e.violatedDirective + ' ' + e.blockedURI); });
+      var recebido = false;
       window.addEventListener('message', function (e) {
         if (recebido || e.source !== window.parent) return;
         if (!e.data || e.data.tipo !== 'semear:documento' || typeof e.data.html !== 'string') return;
