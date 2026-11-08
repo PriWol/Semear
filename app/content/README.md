@@ -16,6 +16,24 @@ dentro de `app/` e abra um PR.
 | `acervo.json`           | Acervo gratuito (domínio público/licença aberta), ADR 0016.             |
 | `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015).   |
 
+## Revisão do conteúdo
+
+Marcos, atividades e livros aceitam o campo opcional `revisao` (#77):
+
+```jsonc
+"revisao": { "estado": "aprovado", "por": "Nome de quem revisou", "em": "2026-11-08" }
+```
+
+- `estado`: `rascunho` (escrito pela IA, ainda sem revisão), `revisado` (alguém leu) ou `aprovado` (pode ir para as famílias).
+  Valor fora desse conjunto é erro de validação. A partir de `revisado`, `por` e `em` (AAAA-MM-DD) são obrigatórios.
+- **Só o `aprovado` aparece no app.** Item sem `revisao` é o conteúdo anterior a este campo e continua aparecendo.
+  Conteúdo novo deve entrar com `revisao`.
+- Rascunhos e revisados continuam sendo validados (`carregarConteudoBruto`), mesmo escondidos.
+- **Fluxo:** a IA abre um PR com os itens em `rascunho`; quem revisa comenta no PR, e o último commit
+  troca o estado para `revisado`/`aprovado` com `por` e `em`. O merge é a aprovação registrada.
+- Nas atividades, `autoria.status` segue valendo até a regra ser confirmada; para aparecer, a atividade precisa estar
+  `publicado` **e** sem revisão ou `aprovada`.
+
 ## Marco
 
 ```jsonc

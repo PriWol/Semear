@@ -80,6 +80,18 @@ export interface OrientacaoPais {
   porVertente?: Partial<Record<Vertente, OrientacaoVertente>>;
 }
 
+/** Etapas da revisão do conteúdo (#77): rascunho (IA) → revisado → aprovado (publicável). */
+export const ESTADOS_REVISAO = ['rascunho', 'revisado', 'aprovado'] as const;
+export type EstadoRevisao = (typeof ESTADOS_REVISAO)[number];
+
+export interface Revisao {
+  estado: EstadoRevisao;
+  /** quem revisou; obrigatório a partir de "revisado" */
+  por?: string;
+  /** quando (AAAA-MM-DD); obrigatório a partir de "revisado" */
+  em?: string;
+}
+
 export interface Marco {
   id: string; // ex.: "LG.FON.04"
   linha: string;
@@ -95,6 +107,8 @@ export interface Marco {
   vertentes?: Vertente[] | null;
   idiomas?: Idioma[] | null;
   bncc: string[];
+  /** ausente = conteúdo anterior à #77, tratado como publicado */
+  revisao?: Revisao;
 }
 
 export interface ItemFigura {
@@ -181,6 +195,8 @@ export interface Atividade {
     status: 'rascunho' | 'revisado' | 'publicado';
     revisadoEm?: string;
   };
+  /** revisão por etapas (#77); `autoria.status` segue valendo até a regra ser confirmada */
+  revisao?: Revisao;
 }
 
 export interface Livro {
@@ -195,6 +211,7 @@ export interface Livro {
   editora?: string;
   /** página onde comprar (só https); abre em outra aba, o app não faz chamada nenhuma */
   linkCompra?: string;
+  revisao?: Revisao;
 }
 
 export type IdiomaAcervo = 'pt' | Idioma;

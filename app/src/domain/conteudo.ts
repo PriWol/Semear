@@ -1,4 +1,5 @@
 // Índice e validação do conteúdo curado. Funções puras: recebem o conteúdo já carregado.
+import { estaPublicavel, validarRevisao } from './revisao';
 import {
   VERTENTES,
   type Atividade,
@@ -56,7 +57,9 @@ export function criarIndice(conteudo: Conteudo): IndiceConteudo {
   }
   for (const lista of marcosPorLinha.values()) lista.sort((a, b) => a.ordem - b.ordem);
 
-  const publicadas = conteudo.atividades.filter((a) => a.autoria.status === 'publicado');
+  const publicadas = conteudo.atividades.filter(
+    (a) => a.autoria.status === 'publicado' && estaPublicavel(a),
+  );
   const atividades = new Map(conteudo.atividades.map((a) => [a.id, a]));
   const livros = new Map(conteudo.livros.map((l) => [l.id, l]));
   const referencias = new Map(conteudo.referencias.map((r) => [r.id, r]));
@@ -210,6 +213,7 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
   const ordensPorLinha = new Map<string, Set<number>>();
   for (const m of conteudo.marcos) {
     unico(m.id, 'Marco');
+    if (m.revisao !== undefined) validarRevisao(m.revisao, `Marco ${m.id}`, erros);
     const linha = idx.linha(m.linha);
     if (!linha) {
       erros.push(`Marco ${m.id}: linha ${m.linha} não existe`);
@@ -235,6 +239,7 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
   }
 
   for (const a of conteudo.atividades) {
+    if (a.revisao !== undefined) validarRevisao(a.revisao, `Atividade ${a.id}`, erros);
     unico(a.id, 'Atividade');
     if (a.marcos.length === 0) validarComplementar(a, idx, erros);
     if (a.materialImpresso) {
@@ -294,6 +299,7 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
 
   for (const l of conteudo.livros) {
     unico(l.id, 'Livro');
+    if (l.revisao !== undefined) validarRevisao(l.revisao, `Livro ${l.id}`, erros);
     for (const m of l.marcos) {
       if (!idx.marco(m)) avisos.push(`Livro ${l.id}: marco ${m} ainda não existe`);
     }

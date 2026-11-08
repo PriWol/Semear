@@ -8,6 +8,7 @@ import type {
   Marco,
   Referencia,
 } from './domain/tipos';
+import { estaPublicavel } from './domain/revisao';
 import { criarIndice, type IndiceConteudo } from './domain/conteudo';
 import dominiosJson from '../content/dominios.json';
 import livrosJson from '../content/livros.json';
@@ -23,7 +24,8 @@ const arquivosAtividades = import.meta.glob<Atividade>('../content/atividades/*.
   import: 'default',
 });
 
-export function carregarConteudo(): Conteudo {
+/** Tudo o que está nos JSON, inclusive rascunhos: é o que a validação precisa conferir. */
+export function carregarConteudoBruto(): Conteudo {
   return {
     dominios: (dominiosJson as { dominios: Dominio[] }).dominios,
     marcos: Object.values(arquivosMarcos).flatMap((a) => a.marcos),
@@ -32,6 +34,20 @@ export function carregarConteudo(): Conteudo {
     acervo: (acervoJson as { itens: ItemAcervo[] }).itens,
     referencias: (referenciasJson as { referencias: Referencia[] }).referencias,
   };
+}
+
+/** Só o conteúdo aprovado (ou anterior à #77, sem revisão) chega às famílias. */
+export function publicavel(c: Conteudo): Conteudo {
+  return {
+    ...c,
+    marcos: c.marcos.filter(estaPublicavel),
+    atividades: c.atividades.filter(estaPublicavel),
+    livros: c.livros.filter(estaPublicavel),
+  };
+}
+
+export function carregarConteudo(): Conteudo {
+  return publicavel(carregarConteudoBruto());
 }
 
 let indice: IndiceConteudo | null = null;
