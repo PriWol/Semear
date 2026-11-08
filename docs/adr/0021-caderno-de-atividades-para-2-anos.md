@@ -1,6 +1,6 @@
 # 0021. Caderno de atividades para crianças de 2 anos
 
-- **Status:** Aceito
+- **Status:** Aceito, com a conferência pediátrica das fontes pendente (ver Pendências)
 - **Data:** 2026-11-07
 
 ## Contexto
@@ -31,3 +31,11 @@ Cada atividade traz o tempo, o material de casa, o que fazer, o que dizer, pergu
 - O caderno não faz diagnóstico nem substitui o pediatra, e as indicações de quando procurar ajuda (birras muito longas, frequentes ou intensas; se ela se machuca ou machuca outros; perda de habilidades) vêm de fontes que divergem nas faixas de tempo, por isso ficam sem números. A carta à família e a página “Na hora da crise” mandam procurar o pediatra em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento.
 - O vídeo de referência do canal indicado pela dona do produto não pôde ser lido (o acesso ao YouTube falhou); o conteúdo dele não foi usado. Se a transcrição for enviada, as atividades devem ser revistas com ela.
 - O PDF sai junto com os dos volumes na Release `tesouro-marina` (workflow `publicar-tesouro.yml`).
+
+## Pendências
+- [ ] **Conferência por um pediatra** das orientações sobre a fase do “não”, atenção curta e quando procurar ajuda, antes de divulgar o caderno para outras famílias. Até lá, o PDF na Release é para uso da família da Marina. Quem decidir sobre a divulgação registra a decisão aqui.
+- [ ] Conferir a letra das parlendas tradicionais com a versão que a família usa.
+- O caderno não faz parte do app: `docs/JORNADA_SPEC.md` não é alterada.
+
+## Regras verificadas por teste
+`test_caderno.py` confere, página a página: o aviso de supervisão em toda atividade que usa água, quatro ou mais rimas e duas atividades de acalmar em cada unidade, o total de 84 páginas (par) e que cada montagem tem o seu sumário.
