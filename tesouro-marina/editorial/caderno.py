@@ -41,12 +41,12 @@ UNIDADES = [
     ("Unidade 7 · Uma palavra, dois jeitos", "Volume 7 · Primeiras línguas", "--d-ingles"),
     ("Unidade 8 · Brincar junto", "Volume 8 · Jogos e descobertas", "--d-jogos"),
 ]
-INICIO = {}
 
 
 class Caderno(Livro):
     def __init__(self):
         super().__init__(0, "Caderno de atividades da Marina")
+        self.inicio = {}   # primeira página de cada unidade, para o sumário; cada montagem tem o seu
 
     def cab(self):
         return f"Caderno de atividades · 2 anos" + (f" &nbsp;—&nbsp; {self.unidade}" if self.unidade else "")
@@ -57,7 +57,7 @@ class Caderno(Livro):
 
 def inicio_unidade(L, i):
     L.unidade = UNIDADES[i][0]
-    INICIO[L.unidade] = L.proximo
+    L.inicio[L.unidade] = L.proximo
 
 
 # ------------------------------------------------------------------ blocos
@@ -145,6 +145,7 @@ def rimas(L, t, itens, porque, tipo="cantar"):
 TRAD = "Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
 DOMPUB = "Cantiga de domínio público; a letra tem pequenas variações."
 COLECAO = "Rima escrita pela coleção."
+AGUA = "perto de água, <b>nunca deixe a criança sozinha com água</b>, nem por um instante, mesmo rasa."
 CAL = "Hoje o que ajudou a Marina a se acalmar foi… — data: ______"
 # ================================================================== ABERTURA
 
@@ -378,13 +379,13 @@ def unidade1(L):
               "Pode ser feito todo dia, no mesmo lugar, e vai ficando cada vez mais rico.",
               variar=["Faça de manhã e de noite: o que mudou no céu?", "Peça que ela “conte” para um bicho de pelúcia o que viu.", "Acene e diga tchau para quem passar na rua."])
 
-    rima(L, "Mindinho, seu vizinho", ["Mindinho,", "seu vizinho,", "pai de todos,", "fura-bolo,", "mata-piolho!"],
-         ["Segure a mãozinha dela, com a palma para cima.", "A cada verso, toque num dedo, do mindinho ao polegar.", "No fim, faça cócegas na palma. Depois deixe que ela faça em você."],
-         "Rima tradicional brasileira, de autoria desconhecida; as palavras variam um pouco de região para região.",
-         cena([("mao", 56, 20, 6), ("estrela", 24, 94, 12), ("mao", 56, 116, 6)], 62, 190),
-         "Jogos de dedos como este juntam rima, ritmo, toque e olhar, e a Marina ouve a mesma sequência de sons vezes seguidas. É por isso que a pedagogia Waldorf os usa com crianças pequenas. "
-         "Vá devagar e mantenha sempre a mesma ordem. As palavras “fura-bolo” e “mata-piolho” são nomes antigos dos dedos; ela não precisa saber o significado.",
-         variar=["Faça no pé, também: “mindinho do pé…”.", "Diga mais baixo, e depois mais alto, e deixe que ela escolha.", "Pare antes do fim e espere: ela completa a palavra?"])
+    rimas(L, "Para as mãozinhas", [
+        dict(t="Mindinho, seu vizinho", linhas=["Mindinho,", "seu vizinho,", "pai de todos,", "fura-bolo,", "mata-piolho!"],
+             gesto="segure a mãozinha dela, com a palma para cima, e toque um dedo a cada verso, do mindinho ao polegar; no fim, cócegas na palma. Depois deixe que ela faça em você. “Fura-bolo” e “mata-piolho” são nomes antigos dos dedos.", origem=TRAD, motivos=["mao", "estrela"]),
+        dict(t="Dois olhinhos", linhas=["Dois olhinhos, um nariz,", "uma boca que sorri;", "duas mãos, dois pezinhos,", "vem dar um beijinho aqui."],
+             gesto="toque nos olhos, no nariz, na boca, nas mãos e nos pés dela, ao ritmo da rima, e termine com um beijo onde ela escolher.", origem=COLECAO, motivos=["olho", "nariz", "boca"])],
+        "Jogos de dedos e de rosto juntam rima, ritmo, toque e olhar, e a Marina ouve a mesma sequência de sons vezes seguidas. É por isso que a pedagogia Waldorf os usa com crianças pequenas. "
+        "Vá devagar e mantenha sempre a mesma ordem. Para variar: faça no pé, diga mais baixo e depois mais alto, ou pare antes do fim e espere que ela complete a palavra.")
 
     atividade(L, "Água na bacia", "maos", "10 minutos",
               "uma bacia rasa, um copo plástico, uma colher, uma toalha, e coisas que boiam ou afundam (folha, tampa de pote grande, colher de pau, pedra lisa maior que o punho)",
@@ -395,7 +396,7 @@ def unidade1(L):
               ["Cadê a água?", "Boia ou afunda?", "O que mais quer pôr na água?"],
               "Despejar, mexer e ver as coisas boiarem e afundarem é ciência de verdade para quem tem 2 anos, e um dos trabalhos mais calmantes que existem. "
               "Use roupa que possa molhar, ou deixe só de fralda e avental.",
-              "<b>nunca deixe a criança sozinha com água, nem por um instante</b>, mesmo rasa. Esvazie a bacia no fim.",
+              AGUA.capitalize() + " Esvazie a bacia no fim.",
               variar=["Ponha uma gota de corante de comida: a água muda de cor.", "Dê uma esponja e deixe que ela torça: a água sai.", "Lave um brinquedo ou um pano junto com ela."])
 
     atividade(L, "Pular a poça", "corpo", "5 minutos",
@@ -407,7 +408,7 @@ def unidade1(L):
               ["A poça é grande ou pequena?", "Vamos pular rápido ou devagar?", "Quem sabe pular mais alto?"],
               "Pular junto, em pé, com comando de voz, trabalha o equilíbrio, a coordenação e as palavras que descrevem o movimento (rápido, devagar, alto, baixo). "
               "A brincadeira com poça serve também para olhar para o tempo: ontem choveu?",
-              "chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo.",
+              "chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. " + AGUA.capitalize(),
               variar=["Pule de um lado para o outro de uma linha de fita no chão.", "Faça o “sapo”: agachada, e pula bem baixo.", "Depois de pular, fiquem quietas e escutem a chuva (ou o silêncio)."])
 
 
@@ -440,7 +441,7 @@ def unidade1(L):
               ["Onde está a bolha?", "Grande ou pequena?", "Quem estourou?"],
               "Seguir com os olhos uma coisa que flutua devagar acalma, e soprar bolha grande exige um sopro lento: é respiração controlada disfarçada de brincadeira. "
               "Boa para o fim de um passeio ou antes de uma troca difícil (banho, sair do parque).",
-              atencao="o líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois.",
+              atencao="o líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. " + AGUA.capitalize(),
               variar=["Faça bolhas na hora do banho.", "Bolhas “paradas”: as que pousam na grama sem estourar.", "Deixe que ela escolha: bolha grande ou bolha pequena."],
               registro=CAL)
 
@@ -505,7 +506,9 @@ def unidade2(L):
     rimas(L, "O toucinho que sumiu", [
         dict(t="Cadê o toucinho?", linhas=["Cadê o toucinho que estava aqui?", "— O gato comeu.", "Cadê o gato? — Foi pro mato.", "Cadê o mato? — O fogo queimou.", "Cadê o fogo? — A água apagou.",
                                            "Cadê a água? — O boi bebeu.", "Cadê o boi? — Foi carregar milho.", "Cadê o milho? — A galinha comeu.", "Cadê a galinha? — Foi botar ovo…"],
-             gesto="a cada “cadê?”, abra as mãos e olhe em volta; a resposta vem de uma voz de cada vez, e ela pode fazer uma delas. A parlenda segue por muitos versos e tem muitas versões; aqui vai um trecho.", origem=TRAD, motivos=["gato", "gota", "ovo"])],
+             gesto="a cada “cadê?”, abra as mãos e olhe em volta; a resposta vem de uma voz de cada vez, e ela pode fazer uma delas. A parlenda segue por muitos versos e tem muitas versões; aqui vai um trecho.", origem=TRAD, motivos=["gato", "gota", "ovo"]),
+        dict(t="Quem faz assim?", linhas=["O gato faz miau,", "o pato faz quá-quá,", "o cachorro faz au-au,", "e a Marina faz…?"],
+             gesto="pare no último verso e espere uns segundos: ela completa com um som ou uma palavra (ou escolhe um bicho). Aceite qualquer resposta e repita com alegria.", origem=COLECAO, motivos=["gato", "patinho", "cachorro"])],
         "Parlendas de perguntas e respostas, como esta, treinam a escuta e a vez de falar, e são ótimas para esperar (na fila, no carro). Deixe que ela complete as respostas que souber: é uma conversa de verdade.")
 
     rimas(L, "Fazer as pazes", [
@@ -558,7 +561,7 @@ def unidade3(L):
               ["Quantos copos tem?", "Qual está em cima?", "Quer fazer mais alta?"],
               "Empilhar mostra causa e efeito e exige calma nas mãos; e derrubar e recomeçar é um treino de frustração em miniatura. Se ela ficar brava quando cai, "
               "nomeie (“que raiva quando cai!”) e ofereça recomeçar. Cada torre que ela refaz é uma pequena vitória sobre a raiva.",
-              atencao="blocos leves e sem peças pequenas; derrube longe do rosto.",
+              atencao="blocos leves e sem peças pequenas; derrube longe do rosto. " + AGUA.capitalize(),
               variar=["Com almofadas e travesseiros: uma torre fofa.", "Cada bloco, uma cor: “agora o vermelho”.", "Um copo de cada vez, enchendo com água (no quintal)."])
 
     atividade(L, "Muito e pouco", "conversar", "5 minutos",
@@ -628,6 +631,7 @@ def unidade3(L):
               ["Está devagar?", "Quer fazer mais devagar ainda?", "A torre ficou firme?"],
               "Mover-se devagar de propósito treina o controle do impulso, e dar uma tarefa com começo, meio e fim, curta e visível, sustenta a atenção por alguns minutos. "
               "É o contrário da “pressa” que costuma vir antes de uma birra.",
+              atencao=AGUA.capitalize(),
               variar=["Despeje água devagar de uma jarra para um copo.", "Leve uma bola de meia numa colher sem deixar cair.", "Andar como lesma até a porta."], registro=CAL)
 
 
@@ -804,7 +808,7 @@ def unidade5(L):
               ["O que a água fez?", "Cadê o que você pintou?", "Quer pintar o chão ou a parede?"],
               "Pintar com água tem todos os gestos da pintura, sem sujeira nem “errado”, porque o desenho some sozinho. O movimento repetido de pintar e ver secar é calmante e ensina a esperar. "
               "Ótima para depois de uma crise ou numa tarde difícil.",
-              atencao="com água em balde, não a deixe sozinha; esvazie o balde no fim.",
+              atencao="com água em balde, não a deixe sozinha; esvazie o balde no fim. " + AGUA.capitalize(),
               variar=["Pinte o espelho do banheiro.", "Pinte uma “pegada” de água com o pé.", "Pinte letras e formas grandes e depois apague."], registro=CAL)
 
     atividade(L, "Massagem nas mãos", "acalmar", "3 a 5 minutos",
@@ -851,7 +855,7 @@ def unidade6(L):
               ["A terra está seca ou molhada?", "Quanta água?", "A planta está feliz?"],
               "Cuidar de uma planta dá uma tarefa real, repetida todo dia, e mostra uma mudança lenta, a lição de esperar. “Pouquinho” e “para” treinam o controle das mãos. "
               "É também uma tarefa bem aceita por quem diz “não” a ordens: aqui ela é a responsável.",
-              atencao="não deixe que ela coma terra ou folhas; escolha uma planta que não seja tóxica.",
+              atencao="não deixe que ela coma terra ou folhas; escolha uma planta que não seja tóxica. " + AGUA.capitalize(),
               variar=["Plante um feijão no algodão (Volume 6, unidade 5).", "Regue as plantas do quintal.", "Desenhe a planta toda semana."])
 
     atividade(L, "Bichinho de perto", "mundo", "5 a 10 minutos",
@@ -875,7 +879,7 @@ def unidade6(L):
               ["É mole ou duro?", "O que você está fazendo?", "Quer pôr mais água?"],
               "A terra molhada oferece um dos melhores jogos sensoriais: macia, fria, moldável. É um espaço em que bagunça é permitida, o que alivia quem ouve muitos “não”. "
               "Combine antes o fim (“mais cinco minutos e vamos lavar”).",
-              atencao="não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois.",
+              atencao="não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. " + AGUA.capitalize(),
               variar=["Impressões de pedras e folhas na lama.", "Uma “pista de carrinho” de lama.", "Pintar o tronco com lama (e lavar)."])
 
     rimas(L, "Bichos de quintal", [
@@ -1077,7 +1081,7 @@ def unidade8(L):
               ["Para onde vai o glitter?", "Está caindo devagar ou depressa?", "Onde vamos guardar a garrafa?"],
               "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. Guarde no cantinho da calma e use quando ela já estiver mais tranquila, "
               "nunca como castigo nem como distração de uma crise já grande.",
-              atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir.",
+              atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. " + AGUA.capitalize(),
               variar=["Faça cada uma de uma cor (corante de comida).", "Use miçangas grandes seladas, só com o adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
 
     atividade(L, "Respirar com o bichinho", "acalmar", "3 a 5 minutos",
@@ -1097,7 +1101,7 @@ def unidade8(L):
 
 def encerramento(L):
     L.unidade = "Encerramento"
-    INICIO["Encerramento"] = L.proximo
+    L.inicio["Encerramento"] = L.proximo
     linhas = "".join('<tr><td style="height:15mm;width:24mm"></td><td></td><td></td><td></td></tr>' for _ in range(11))
     c = f"""<div class="miolo">{titulo("O que ajudou a Marina", "um registro de calma, para o adulto preencher", 26)}
       <div class="centro" style="margin:2mm 0">{tira(["bolhas", "estrela", "coracao", "lua"], "17mm", "5mm")}</div>
@@ -1140,6 +1144,7 @@ UNIDADES_PRONTAS = (unidade1, unidade2, unidade3, unidade4, unidade5, unidade6, 
 
 
 def montar(unidades=None):
+    """Monta o caderno. `unidades` (só para depuração) monta apenas as unidades dadas, sem encerramento: o sumário e a contagem de páginas ficam incompletos."""
     L = Caderno()
     capa(L); rosto(L); carta(L); como_usar(L)
     fase_do_nao(L)
@@ -1151,7 +1156,7 @@ def montar(unidades=None):
     if not unidades:
         encerramento(L)
     num, _ = L.paginas[n_sum - 1]
-    L.paginas[n_sum - 1] = (num, f'<section class="pagina"><div class="moldura"></div>{sumario(INICIO)}'
+    L.paginas[n_sum - 1] = (num, f'<section class="pagina"><div class="moldura"></div>{sumario(L.inicio)}'
                                  f'<div class="rodape"><span class="num">{num}</span></div></section>')
     return L
 
@@ -1161,7 +1166,6 @@ def main():
     ok = True
     for versao, nome in (("impressao", "caderno-impressao"), ("tela", "caderno-tela")):
         VERSAO["atual"] = versao
-        INICIO.clear()
         L = montar()
         h = os.path.join(AQUI, f"{nome}.html")
         with open(h, "w", encoding="utf-8") as f:
