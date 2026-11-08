@@ -679,13 +679,13 @@ def unidade4(L):
     atividade(L, "Chocalho de casa", "maos", "10 minutos",
               "uma garrafa plástica pequena e limpa, grãos grandes (grão-de-bico, feijão grande), cola quente e fita, fitas coloridas para enfeitar",
               cena([("chocalho", 40, 12, 8), ("tijolos", 28, 62, 20), ("pincel", 32, 104, 12), ("papel_azul", 28, 146, 16)], 48, 190),
-              ["Escolha com ela a garrafa e os grãos. Ela pode pôr os grãos dentro, com a colher.", "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela.", "Enfeitem a garrafa com fitas coloridas.",
+              ["Escolha com ela a garrafa e o que vai dentro (macarrão penne ou feijão grande). <b>Só o adulto põe os grãos na garrafa</b>; ela escolhe e olha.", "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela.", "Enfeitem a garrafa com fitas coloridas.",
                "Toquem: forte, fraco, rápido, devagar, e deitem o chocalho para silenciar."],
               ["Chacoalha! Que barulho! Chuá, chuá.", "Agora bem fraquinho.", "Quieto: o chocalho dormiu."],
               ["Que barulho faz?", "É forte ou fraco?", "Onde o chocalho dorme?"],
               "Fazer o próprio instrumento dá orgulho e cuidado: ele é “dela”. Os sons de grãos e garrafa são também suaves e repetitivos, bons para acalmar.",
-              atencao="tampa bem vedada com cola e fita antes de ela mexer; troque o chocalho se rachar ou soltar o conteúdo. Use só com você por perto.",
-              variar=["Chocalhos diferentes, com arroz, lentilha, areia.", "Cante e acompanhe com o chocalho.", "Guarde na “caixa dos sons”."])
+              atencao="os grãos ficam só nas mãos do adulto: confira que nenhum ficou solto no chão ou na mesa antes de ela chegar. Tampa bem vedada com cola e fita; troque o chocalho se rachar ou soltar o conteúdo. Use só com você por perto.",
+              variar=["Chocalhos diferentes, só com coisas grandes: macarrão penne, feijão grande, grão-de-bico graúdo (sempre selados pelo adulto).", "Cante e acompanhe com o chocalho.", "Guarde na “caixa dos sons”."])
 
     rimas(L, "Para marchar e rodar", [
         dict(t="Marcha, soldado", linhas=["Marcha, soldado,", "cabeça de papel;", "quem não marchar direito", "vai preso no quartel."],
