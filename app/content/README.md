@@ -103,6 +103,8 @@ como modelos completos. Campos principais:
 - `objetivo`, `passos`, `observar`, `ajustes`, `materiais`, `toqueVertente`: viram o roteiro do educador;
 - `evidencias` e `perguntaFicha`: viram a ficha de registro;
 - `folhas`: as páginas da criança (tipos abaixo);
+- `palavrasChave` (opcional): palavras que ajudam a achar a atividade na tela **Atividades** (#13), além do título, do objetivo e dos marcos. A busca ignora acento e maiúsculas;
+- `preparoMin` (opcional) e `cuidados`: o preparo do adulto, à parte da duração, e o aviso de segurança. `cuidados` é obrigatório (e a duração, de até 10 min) quando `idade` começa antes dos 3 anos;
 - `autoria.status`: só `"publicado"` aparece para as famílias.
 
 Nos textos, `**negrito**` e `*itálico*` funcionam. HTML não funciona (é escapado, por segurança).

@@ -186,6 +186,8 @@ export interface Atividade {
    * começa antes dos 3 anos (peças pequenas, engasgo, água).
    */
   cuidados?: string;
+  /** palavras que ajudam a achar a atividade na busca (#13), além do título e do objetivo */
+  palavrasChave?: string[];
   objetivo: string;
   passos: Passo[];
   observar: { consolidado: string[]; emDesenvolvimento: string[] };
@@ -289,5 +291,7 @@ export interface Sessao {
   foco: string[] | 'equilibrado';
   atividadeIds: string[];
   livroId: string | null;
+  /** "avulsa": uma atividade escolhida na busca (#13), fora do plano da sessão */
+  tipo?: 'avulsa';
   exemplo?: true;
 }

@@ -242,6 +242,12 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     if (a.revisao !== undefined) validarRevisao(a.revisao, `Atividade ${a.id}`, erros);
     unico(a.id, 'Atividade');
     if (a.marcos.length === 0) validarComplementar(a, idx, erros);
+    if (
+      a.palavrasChave !== undefined &&
+      (!Array.isArray(a.palavrasChave) ||
+        a.palavrasChave.some((p) => typeof p !== 'string' || p.trim() === ''))
+    )
+      erros.push(`Atividade ${a.id}: "palavrasChave" precisa ser uma lista de textos preenchidos`);
     if (a.idade[0] < 3) {
       // Aos 2 anos o risco é engasgo e a atenção é curta: aviso obrigatório e atividades curtas (#71).
       if (!a.cuidados?.trim())

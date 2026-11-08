@@ -376,6 +376,7 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
       !(s.foco === 'equilibrado' || listaDe(s.foco, ehTexto)) ||
       !listaDe(s.atividadeIds, ehTexto) ||
       !(s.livroId === null || ehTexto(s.livroId)) ||
+      !(s.tipo === undefined || s.tipo === 'avulsa') ||
       !marcadorOk(s)
     ) {
       falha('sessão inválida');
