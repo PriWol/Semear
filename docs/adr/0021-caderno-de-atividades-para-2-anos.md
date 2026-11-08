@@ -30,7 +30,7 @@ Cada atividade traz o tempo, o material de casa, o que fazer, o que dizer, pergu
 ## Consequências
 - O caderno não faz diagnóstico nem substitui o pediatra, e as indicações de quando procurar ajuda (birras muito longas, frequentes ou intensas; se ela se machuca ou machuca outros; perda de habilidades) vêm de fontes que divergem nas faixas de tempo, por isso ficam sem números. A carta à família e a página “Na hora da crise” mandam procurar o pediatra em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento.
 - O vídeo de referência do canal indicado pela dona do produto não pôde ser lido (o acesso ao YouTube falhou); o conteúdo dele não foi usado. Se a transcrição for enviada, as atividades devem ser revistas com ela.
-- O PDF sai junto com os dos volumes na Release `tesouro-marina` (workflow `publicar-tesouro.yml`).
+- O PDF **não** vai para a Release até a conferência pediátrica: o workflow `publicar-tesouro.yml` o guarda só como artefato (ver Pendências).
 
 - O runner dos jobs com Playwright (`Gerar os PDFs` e o e2e do app) foi fixado em `ubuntu-24.04`: o `ubuntu-latest` passou para o Ubuntu 26.04, que o Playwright 1.56.1 não suporta, e os dois jobs quebravam antes de qualquer teste. É uma mudança de ambiente sem relação com o caderno, mantida neste PR porque sem ela o CI não passa; deve ser desfeita quando o Playwright suportar o novo runner.
 

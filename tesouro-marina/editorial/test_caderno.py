@@ -9,6 +9,7 @@ import livro
 from test_motivos7 import _motivos_citados
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
+FRASE_AGUA = re.sub(r"<[^>]+>", "", caderno.AGUA).split(", ", 1)[1].split(",")[0]   # “nunca deixe a criança sozinha com água”, tirada da constante do caderno
 PAGINAS = 84   # o README e o ADR 0021 declaram este total
 # toda página de atividade que fala de água; só as de EXCECOES (abaixo) ficam sem o aviso de supervisão
 ATIVIDADE_COM_AGUA = re.compile(r"\b(?:água|molh\w+|lav\w+|banho|chuva|poça|bacia|balde|banheira|mangueira|tanque|jarra|regador|despej\w+)\b", re.IGNORECASE)
@@ -44,7 +45,7 @@ class TestCaderno(unittest.TestCase):
                 continue
             texto = _texto(html)
             titulo = re.search(r'<h1 class="titulo"[^>]*>([^<]+)', html).group(1).strip()
-            if ATIVIDADE_COM_AGUA.search(texto) and "sozinha com água" not in texto and titulo not in EXCECOES:
+            if ATIVIDADE_COM_AGUA.search(texto) and FRASE_AGUA not in texto and titulo not in EXCECOES:
                 sem_aviso.append(f"{n} ({titulo})")
         self.assertEqual(sem_aviso, [], "páginas de atividade com água sem o aviso de supervisão")
 
