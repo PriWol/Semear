@@ -49,7 +49,7 @@ class Caderno(Livro):
         self.inicio = {}   # primeira página de cada unidade, para o sumário; cada montagem tem o seu
 
     def cab(self):
-        return f"Caderno de atividades · 2 anos" + (f" &nbsp;—&nbsp; {self.unidade}" if self.unidade else "")
+        return "Caderno de atividades · 2 anos" + (f" &nbsp;—&nbsp; {self.unidade}" if self.unidade else "")
 
     def html(self):
         return super().html().replace("O Grande Tesouro de Marina — Volume 0", "O Grande Tesouro de Marina — Caderno de atividades (2 anos)")
@@ -91,7 +91,7 @@ def extras(variar, registro):
 
 def atividade(L, t, tipo, tempo, material, cenario, fazer, dizer, perguntas, porque, atencao="", variar=(), registro="Hoje a Marina… (uma palavra nova, um gesto, o que ela mais gostou) — data: ______"):
     """Uma atividade por página: etiqueta, tempo e material, cena, o que fazer e dizer, perguntas e o porquê para o adulto."""
-    nome, cor, _ = TIPOS[tipo]
+    cor = TIPOS[tipo][1]
     aviso = f'<br><b>Atenção:</b> {atencao}' if atencao else ""
     c = f"""<div class="miolo">
       <div class="centro" style="margin-top:1mm">{etiqueta(tipo)} <span class="peq" style="margin-left:2mm">{tempo}</span></div>
@@ -108,7 +108,7 @@ def atividade(L, t, tipo, tempo, material, cenario, fazer, dizer, perguntas, por
 
 def rima(L, t, linhas, como, origem, cenario, porque, tipo="cantar", variar=(), registro="Hoje a Marina… (qual dedo ela já sabe, que parte ela repete) — data: ______"):
     """Rima, parlenda ou cantiga: o texto grande e o gesto que a acompanha."""
-    nome, cor, _ = TIPOS[tipo]
+    cor = TIPOS[tipo][1]
     versos = "<br>".join(linhas)
     c = f"""<div class="miolo">
       <div class="centro" style="margin-top:1mm">{etiqueta(tipo)}</div>
@@ -125,7 +125,7 @@ def rima(L, t, linhas, como, origem, cenario, porque, tipo="cantar", variar=(), 
 
 def rimas(L, t, itens, porque, tipo="cantar"):
     """Uma página com duas rimas ou cantigas curtas. itens: dicts com t, linhas, gesto, origem, motivos."""
-    nome, cor, _ = TIPOS[tipo]
+    cor = TIPOS[tipo][1]
     blocos = ""
     for it in itens:
         versos = "<br>".join(it["linhas"])
@@ -292,7 +292,7 @@ def como_usar(L):
 
 def semana(L):
     dias = (("Segunda", "A cesta de tesouros", "Passeio dos cinco sentidos", "O dia em três tempos"),
-            ("Terça", "Bom dia, sol · Mindinho", "Estátua", "Cheirar a flor, soprar a vela"),
+            ("Terça", "Bom dia, sol · Mindinho, seu vizinho", "Estátua", "Cheirar a flor, soprar a vela"),
             ("Quarta", "Pintar com o dedo", "Caça-folhas", "Boa noite em três línguas"),
             ("Quinta", "Voz de bicho", "Pular a poça", "Balançar e cantar baixinho"),
             ("Sexta", "Massinha de farinha", "Minha vez, sua vez", "Respirar com o bichinho"),
@@ -561,8 +561,8 @@ def unidade3(L):
               ["Quantos copos tem?", "Qual está em cima?", "Quer fazer mais alta?"],
               "Empilhar mostra causa e efeito e exige calma nas mãos; e derrubar e recomeçar é um treino de frustração em miniatura. Se ela ficar brava quando cai, "
               "nomeie (“que raiva quando cai!”) e ofereça recomeçar. Cada torre que ela refaz é uma pequena vitória sobre a raiva.",
-              atencao="blocos leves e sem peças pequenas; derrube longe do rosto. " + AGUA.capitalize(),
-              variar=["Com almofadas e travesseiros: uma torre fofa.", "Cada bloco, uma cor: “agora o vermelho”.", "Um copo de cada vez, enchendo com água (no quintal)."])
+              atencao="blocos leves e sem peças pequenas; derrube longe do rosto. ",
+              variar=["Com almofadas e travesseiros: uma torre fofa.", "Cada bloco, uma cor: “agora o vermelho”.", "Empilhe na areia ou na toalha, para ver o que muda."])
 
     atividade(L, "Muito e pouco", "conversar", "5 minutos",
               "dois pratos e umas 8 frutas ou bolas de meia grandes (nada que caiba na boca)",
@@ -631,15 +631,15 @@ def unidade3(L):
               ["Está devagar?", "Quer fazer mais devagar ainda?", "A torre ficou firme?"],
               "Mover-se devagar de propósito treina o controle do impulso, e dar uma tarefa com começo, meio e fim, curta e visível, sustenta a atenção por alguns minutos. "
               "É o contrário da “pressa” que costuma vir antes de uma birra.",
-              atencao=AGUA.capitalize(),
-              variar=["Despeje água devagar de uma jarra para um copo.", "Leve uma bola de meia numa colher sem deixar cair.", "Andar como lesma até a porta."], registro=CAL)
+              atencao="copos ou almofadas estáveis; derrube a torre longe do rosto dela.",
+              variar=["Passe uma colher de pau de uma tigela para outra, sem derrubar.", "Leve uma bola de meia numa colher sem deixar cair.", "Andar como lesma até a porta."], registro=CAL)
 
 
 # ================================================================== U4 SOM E MOVIMENTO (Volume 4)
 
 def unidade4(L):
     ativ = [("Batuque de panela", "corpo", "5 a 8 min"), ("Estátua", "corpo", "5 min"), ("Os três sons", "mundo", "3 a 5 min"), ("Chocalho de casa", "maos", "10 min"),
-            ("Marcha, soldado · Ciranda · Se essa rua fosse minha · Devagar, devagarinho", "cantar", "2 min cada"),
+            ("Marcha, marcha, pé com pé · Ciranda · Se essa rua fosse minha · Devagar, devagarinho", "cantar", "2 min cada"),
             ("Balançar e cantar baixinho", "acalmar", "5 min"), ("Dançar e derreter", "acalmar", "5 min")]
     abertura_unidade(L, 3,
                      "No Volume 4 a Marina ouve o som e o silêncio, o pulso, o forte e o fraco. Aos 2 anos, isso vira <b>bater, dançar, parar, escutar e cantar</b>. "
@@ -692,8 +692,8 @@ def unidade4(L):
               variar=["Chocalhos diferentes, só com coisas grandes: macarrão penne, feijão grande, grão-de-bico graúdo (sempre selados pelo adulto).", "Cante e acompanhe com o chocalho.", "Guarde na “caixa dos sons”."])
 
     rimas(L, "Para marchar e rodar", [
-        dict(t="Marcha, soldado", linhas=["Marcha, soldado,", "cabeça de papel;", "quem não marchar direito", "vai preso no quartel."],
-             gesto="marchem juntas no lugar, no ritmo da batida; no último verso, parem de uma vez, como estátua.", origem=TRAD, motivos=["pegada", "pegada_esq"]),
+        dict(t="Marcha, marcha, pé com pé", linhas=["Marcha, marcha, pé com pé,", "um, dois, três, que bom que é!", "Marcha, marcha, pé com pé,", "e parou: estátua em pé!"],
+             gesto="marchem juntas no lugar, no ritmo da batida; no último verso, parem de uma vez, como estátua.", origem=COLECAO, motivos=["pegada", "pegada_esq"]),
         dict(t="Ciranda, cirandinha", linhas=["Ciranda, cirandinha,", "vamos todos cirandar;", "vamos dar a meia-volta,", "volta e meia vamos dar."],
              gesto="de mãos dadas, girem devagar em roda; na “meia-volta”, virem para o outro lado. Com duas pessoas, é uma roda de dois.", origem=TRAD, motivos=["maos_juntas", "estrela"])],
         "Marchar e rodar de mãos dadas são movimentos antigos de brincadeira, com pulso marcado. Os versos para na estátua ajudam a ela aprender a parar quando a música para.")
@@ -1006,7 +1006,7 @@ def unidade7(L):
 
 def unidade8(L):
     ativ = [("Esconde-esconde", "corpo", "5 a 10 min"), ("A caixa surpresa", "nomear", "5 min"), ("Minha vez, sua vez", "conversar", "5 min"), ("Siga a Marina", "corpo", "5 min"),
-            ("Corre, cotia · Cadê? Achou! · A canoa virou · Um elefante", "cantar", "2 min cada"),
+            ("Corre, cotia · Cadê? Achou! · O barquinho de papel · Um elefante", "cantar", "2 min cada"),
             ("A garrafa da calma", "acalmar", "10 min"), ("Respirar com o bichinho", "acalmar", "3 a 5 min")]
     abertura_unidade(L, 7,
                      "No Volume 8 a Marina brinca com os jogos da coleção. Aos 2 anos, isso vira <b>brincar junto: esperar a vez, mandar e obedecer, esconder e achar</b>. "
@@ -1066,8 +1066,8 @@ def unidade8(L):
         "Brincar de roda reúne rima, corpo e espera. O “cadê? achou!” treina a antecipação (o que vem depois?) e o susto bom.")
 
     rimas(L, "Mais duas, para contar e rir", [
-        dict(t="A canoa virou", linhas=["A canoa virou,", "pois deixaram ela virar;", "foi por causa da Maria", "que não soube remar.", "Se eu fosse um peixinho", "e soubesse nadar,", "eu tirava a Maria", "do fundo do mar."],
-             gesto="balançando sentadas, cante e, no “virou”, caiam juntas devagar para o lado, rindo. No fim, “tire” a Marina do fundo do mar com um abraço.", origem=TRAD, motivos=["barquinho", "peixe"]),
+        dict(t="O barquinho de papel", linhas=["Barquinho de papel", "vai passear no rio:", "balança pra lá,", "balança pra cá,", "chega devagar", "e vem me abraçar."],
+             gesto="sentadas, balancem de um lado para o outro, devagar, como um barquinho na água calma; no último verso, abracem-se. Serve também para acalmar.", origem=COLECAO, motivos=["barquinho", "m_riacho"]),
         dict(t="Um elefante", linhas=["Um elefante incomoda muita gente;", "dois elefantes incomodam, incomodam muito mais.", "Três elefantes incomodam muita gente;", "quatro elefantes incomodam, incomodam, incomodam muito mais."],
              gesto="mostre os dedos para cada número; cada elefante é uma voz mais grossa. Faça o elefante com o braço de tromba e deixe que ela escolha a voz.", origem=TRAD, motivos=["elefante"])],
         "A canoa e os elefantes são cantigas conhecidas, de jogos de roda. Elas juntam corpo, risada e números. Dá para fazer em qualquer lugar, com qualquer idade, e a Marina pode “conduzir”.")
@@ -1119,11 +1119,11 @@ def encerramento(L):
       psiquiatria infantil. <b>São inspirações, não regras</b>, e a leitura foi feita em páginas de divulgação, não nos textos originais: confira com o pediatra da Marina (ADR 0021).</p>
       <h2>Rimas, parlendas e cantigas</h2>
       <p><b>Tradicionais brasileiras</b>, de autoria desconhecida, de transmissão oral, com muitas variações regionais: <i>Mindinho, seu vizinho</i>; <i>Borboletinha</i>; <i>Cadê o toucinho?</i>; <i>O cravo brigou com a rosa</i>;
-      <i>Um, dois, feijão com arroz</i>; <i>Pirulito que bate, bate</i>; <i>Marcha, soldado</i>; <i>Ciranda, cirandinha</i>; <i>Se essa rua fosse minha</i>; <i>Meu limão, meu limoeiro</i>; <i>O sapo não lava o pé</i>;
-      <i>A dona aranha</i>; <i>Sapo-cururu</i>; <i>Peixe vivo</i>; <i>Corre, cotia</i>; <i>A canoa virou</i>; <i>Um elefante incomoda muita gente</i>. A versão da letra pode variar da que você conhece.</p>
+      <i>Um, dois, feijão com arroz</i>; <i>Pirulito que bate, bate</i>; <i>Ciranda, cirandinha</i>; <i>Se essa rua fosse minha</i>; <i>Meu limão, meu limoeiro</i>; <i>O sapo não lava o pé</i>;
+      <i>A dona aranha</i>; <i>Sapo-cururu</i>; <i>Peixe vivo</i>; <i>Corre, cotia</i>; <i>Um elefante incomoda muita gente</i>. A versão da letra pode variar da que você conhece.</p>
       <p><b>Em inglês e francês, de domínio público:</b> <i>Twinkle, twinkle, little star</i> (Jane Taylor, 1806), <i>Frère Jacques</i> (tradicional francesa), <i>Row, row, row your boat</i> (letra de 1852) e <i>Pat-a-cake</i> (rima inglesa do século XVII).
       As traduções em português são da coleção.</p>
-      <p><b>Escritas pela coleção:</b> <i>Bom dia, sol</i>; <i>Estou com raiva</i>; <i>Quantos dedinhos?</i>; <i>Grande e pequeno</i>; <i>As cores</i>; <i>Mão suja, mão limpa</i>; <i>Devagar, devagarinho</i>; <i>Formiguinha</i>; <i>Cadê? Achou!</i>;
+      <p><b>Escritas pela coleção:</b> <i>Bom dia, sol</i>; <i>Marcha, marcha, pé com pé</i>; <i>O barquinho de papel</i>; <i>Estou com raiva</i>; <i>Quantos dedinhos?</i>; <i>Grande e pequeno</i>; <i>As cores</i>; <i>Mão suja, mão limpa</i>; <i>Devagar, devagarinho</i>; <i>Formiguinha</i>; <i>Cadê? Achou!</i>;
       o acalanto da unidade 4 e a história do gatinho da unidade 2.</p>
       <h2>Ilustração</h2>
       <p>Todas as figuras são motivos em aquarela da coleção (<i>editorial/motivos*.py</i>). Nenhum dado de criança ou de família é coletado ou enviado.</p>""")
