@@ -30,6 +30,27 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
           O exemplo traz duas crianças fictícias já posicionadas, para você ver tudo funcionando.
           Dá para apagar depois com um toque.
         </p>
+      </section>
+      <section class="cartao como-funciona" aria-labelledby="como-funciona">
+        <h2 id="como-funciona">Como funciona</h2>
+        <ol>
+          <li><b>Cadastre</b> a família e as crianças (de 2 a 8 anos).</li>
+          <li>
+            <b>Posicione</b> cada criança na jornada: em cada linha, toque no marco em que ela está.
+          </li>
+          <li>
+            <b>Imprima a sessão</b>: roteiro para você, folhas para a criança e uma ficha de
+            registro. Também abre no tablet, sem internet.
+          </li>
+        </ol>
+        <p>
+          Escolha a pedagogia da sua família: Montessori, Waldorf, Clássica, Religiosa ou Charlotte
+          Mason. <a href="#/guia">Conheça as vertentes</a>.
+        </p>
+        <p class="nota">
+          Privacidade: os dados das crianças ficam só neste aparelho, e o app não usa anúncios nem
+          análise de uso. <a href="#/privacidade">Leia a política de privacidade</a>.
+        </p>
       </section>`,
       montar(raiz) {
         raiz

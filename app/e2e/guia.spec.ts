@@ -16,3 +16,11 @@ test('o cadastro leva ao guia com as cinco vertentes e como combiná-las', async
   ).toBeVisible();
   await expect(page.getByText('Textos em revisão')).toBeVisible();
 });
+
+test('a tela de boas-vindas explica o passo a passo e leva à privacidade', async ({ page }) => {
+  await page.goto('./');
+  await expect(page.getByRole('heading', { name: 'Como funciona' })).toBeVisible();
+  await page.getByRole('link', { name: /política de privacidade/ }).click();
+  await expect(page.getByRole('heading', { name: 'Política de privacidade' })).toBeVisible();
+  await expect(page.getByText('somente neste aparelho')).toBeVisible();
+});

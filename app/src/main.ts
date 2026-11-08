@@ -21,6 +21,7 @@ import { paginaBiblioteca } from './pages/biblioteca';
 import { paginaConteudo } from './pages/conteudo';
 import { paginaAcervo } from './pages/acervo';
 import { paginaGuia } from './pages/guia';
+import { paginaPrivacidade } from './pages/privacidade';
 
 const naoEncontrada: FabricaPagina = async () => ({
   titulo: 'Não encontrada',
@@ -48,6 +49,7 @@ async function iniciar() {
       '/biblioteca': paginaBiblioteca,
       '/acervo': paginaAcervo,
       '/guia': paginaGuia,
+      '/privacidade': paginaPrivacidade,
       '/conteudo': paginaConteudo,
       '/novidades': paginaNovidades,
     }),
