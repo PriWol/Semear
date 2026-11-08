@@ -1,6 +1,6 @@
 # 0022. Caderno de inglês para crianças de 2 anos
 
-- **Status:** Aceito (em produção: abertura e unidade 1)
+- **Status:** Aceito, com a conferência das orientações pendente (ver Pendências)
 - **Data:** 2026-11-08
 
 ## Contexto
@@ -28,3 +28,11 @@ O texto de apoio é em português; as falas são em inglês e marcadas com `lang
 - Como o caderno de atividades, o PDF **não vai para a Release**: o workflow o guarda só como artefato (14 dias) até a conferência das orientações pelo pediatra ou por uma fonoaudióloga que acompanhe crianças bilíngues.
 - Sem áudio: para a pronúncia, o adulto usa um dicionário com áudio ou uma gravação de falante nativo.
 - O caderno não substitui o pediatra nem uma fonoaudióloga que acompanhe crianças bilíngues.
+
+## Pendências
+- [ ] Conferir com um pediatra ou uma fonoaudióloga que acompanhe crianças bilíngues as orientações da carta e da página “Como funciona” (fase do “não”, atenção curta, quando procurar ajuda), antes de divulgar o caderno para outras famílias.
+- [ ] Conferir a letra das rimas tradicionais com a versão que a família usa.
+- O caderno não faz parte do app: `docs/JORNADA_SPEC.md` não é alterada.
+
+## Regras verificadas por teste
+`test_caderno_ingles.py` confere, página a página: o aviso de supervisão em toda atividade que usa água (e na unidade do banho inteira), o aviso de engasgo em toda atividade de comida, quatro ou mais rimas e duas atividades de acalmar por unidade, um livro por unidade presente na lista de livros, cada rima nos créditos da sua origem, a ausência das cantigas vetadas pelo ADR 0021, e o total de 90 páginas (par).
