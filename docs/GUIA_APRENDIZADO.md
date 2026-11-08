@@ -84,6 +84,11 @@ testes e verificações. Se algo falhar, o PR fica vermelho e não deve entrar.
 
 **Paralelo:** um *quality gate* automático em cada entrega, sem depender de alguém lembrar de conferir.
 
+### Teste de regra editorial (aviso por página)
+**O que é:** um teste que lê as páginas geradas e confere uma regra de conteúdo, em vez de uma função. No caderno de atividades, por exemplo, toda página que cita água precisa trazer o aviso de supervisão **na própria página**: checar só que a frase existe “em algum lugar” do livro deixaria uma página sem o aviso passar.
+
+**Paralelo:** um checklist de conformidade em que cada documento é conferido, não só o conjunto.
+
 ### Lint, formatação e tipos
 - **TypeScript** (tipos): o código declara o "formato" de cada dado. Erros como "esqueci um campo" são
   apontados **antes** de o app rodar. É um corretor ortográfico de lógica.

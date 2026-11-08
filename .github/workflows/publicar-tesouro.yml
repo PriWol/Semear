@@ -26,7 +26,7 @@ concurrency:
 jobs:
   gerar:
     name: Gerar os PDFs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # o Playwright ainda não suporta o Ubuntu 26.04 de ubuntu-latest
     timeout-minutes: 45
     defaults:
       run:
@@ -51,7 +51,7 @@ jobs:
       - run: python3 fontes_v1.py verificar
       - run: python3 fontes_v5.py verificar
       - run: python3 fontes_v6.py verificar
-      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_volume7 test_pdf test_musica
+      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_volume7 test_caderno test_pdf test_musica
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
@@ -61,6 +61,7 @@ jobs:
       - run: python3 volume5.py
       - run: python3 volume6.py
       - run: python3 volume7.py
+      - run: python3 caderno.py
       - name: Juntar os PDFs
         run: |
           mkdir -p ../pdfs
@@ -70,6 +71,13 @@ jobs:
         with:
           name: tesouro-marina-pdfs
           path: tesouro-marina/pdfs/
+          retention-days: 14
+      # O caderno de atividades fica só como artefato, fora da Release, até a conferência pediátrica (ADR 0021, Pendências).
+      # Para publicá-lo, acrescente ../caderno-2-anos/*.pdf ao cp acima.
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: caderno-2-anos-pdfs
+          path: tesouro-marina/caderno-2-anos/*.pdf
           retention-days: 14
 
   publicar:

@@ -38,7 +38,7 @@ jobs:
 
   e2e:
     name: Testes ponta a ponta
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # o Playwright ainda não suporta o Ubuntu 26.04 de ubuntu-latest
     needs: verificar
     defaults:
       run:
