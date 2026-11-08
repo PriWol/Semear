@@ -10,7 +10,11 @@ from test_motivos7 import _motivos_citados
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 PAGINAS = 84   # o README e o ADR 0021 declaram este total
-ATIVIDADE_COM_AGUA = re.compile(r"bacia|balde|despej\w+ (?:a )?água|enchendo|banheira|mangueira|tanque|regador|poça|jarra")
+# toda página de atividade que fala de água; só as de EXCECOES (abaixo) ficam sem o aviso de supervisão
+ATIVIDADE_COM_AGUA = re.compile(r"\b(?:água|molh\w+|lav\w+|banho|chuva|poça|bacia|balde|banheira|mangueira|tanque|jarra|regador|despej\w+)\b")
+EXCECOES = {   # a água só aparece de passagem: lavar as mãos, o banho como parte do dia, a chuva como tempo, ou letra de rima
+    "Passeio dos cinco sentidos", "O dia em três tempos", "Voz de bicho", "O toucinho que sumiu", "Dançar e derreter", "Pintar com o dedo",
+    "Massinha de farinha", "Massagem nas mãos", "Caça-folhas", "Bichinho de perto", "Bichos de quintal", "Água e formigas", "Para limpar as mãos"}
 
 
 def _texto(html):
@@ -39,9 +43,14 @@ class TestCaderno(unittest.TestCase):
             if "por que isto importa" not in html:   # só as páginas de atividade
                 continue
             texto = _texto(html)
-            if ATIVIDADE_COM_AGUA.search(texto) and "sozinha com água" not in texto:
-                sem_aviso.append(n)
+            titulo = re.search(r'<h1 class="titulo"[^>]*>([^<]+)', html).group(1).strip()
+            if ATIVIDADE_COM_AGUA.search(texto) and "sozinha com água" not in texto and titulo not in EXCECOES:
+                sem_aviso.append(f"{n} ({titulo})")
         self.assertEqual(sem_aviso, [], "páginas de atividade com água sem o aviso de supervisão")
+
+    def test_as_excecoes_do_aviso_de_agua_ainda_existem(self):
+        titulos = {re.search(r'<h1 class="titulo"[^>]*>([^<]+)', h).group(1).strip() for _, h in self.L.paginas if '<h1 class="titulo"' in h}
+        self.assertEqual(sorted(EXCECOES - titulos), [], "exceção que não corresponde a nenhuma página")
 
     def test_toda_unidade_tem_rimas_e_ao_menos_duas_atividades_de_acalmar(self):
         por_unidade = {}

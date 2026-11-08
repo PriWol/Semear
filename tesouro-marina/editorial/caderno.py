@@ -760,7 +760,7 @@ def unidade5(L):
               ["Quer fazer rápido ou devagar?", "O que é isto?", "Faz uma linha comprida?"],
               "O rabisco com o braço todo é a primeira forma de desenhar, e mexe os ombros e o corpo. Linhas e círculos são o que os artistas do Volume 5 (como Kandinsky) usavam. "
               "Não peça que ela “desenhe uma coisa”: deixe que o rabisco seja só rabisco.",
-              atencao="giz e giz de cera grossos, para não irem à boca.",
+              atencao="giz e giz de cera grossos, para não irem à boca. Se for no banho: " + AGUA,
               variar=["Rabisque ao som de música: rápida, lenta.", "Desenhe no vidro do boxe com tinta de banho.", "Uma linha longa pelo chão inteiro."])
 
     atividade(L, "Massinha de farinha", "maos", "10 minutos",
@@ -1075,14 +1075,14 @@ def unidade8(L):
     atividade(L, "A garrafa da calma", "acalmar", "10 minutos",
               "uma garrafa plástica transparente e pequena, água morna, uma colher de cola líquida transparente, glitter grosso, cola quente e fita",
               cena([("jarra", 34, 14, 10), ("estrela", 24, 58, 6), ("estrela", 20, 80, 24), ("gota", 18, 108, 14), ("coracao", 26, 144, 12)], 48, 190),
-              ["Encham a garrafa com água morna até quase o alto. Ela despeja a água e o glitter com a ajuda de um funil ou de uma colher.", "Ponha uma colher de cola líquida: ela deixa o glitter descer devagar.",
+              ["Encham a garrafa com água morna até quase o alto: ela despeja a água, sob supervisão, com a ajuda de um funil. <b>Só o adulto põe o glitter e a cola</b>; ela escolhe a cor e olha.", "O adulto acrescenta uma colher de cola líquida, que deixa o glitter descer devagar.",
                "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela, e testa se não vaza.", "Chacoalhem juntas e olhem o glitter cair, respirando devagar."],
               ["Vamos fazer uma garrafa mágica.", "Chacoalha… e olha o glitter descer, devagar, devagar.", "Quando fico brava, posso olhar a garrafa e respirar."],
               ["Para onde vai o glitter?", "Está caindo devagar ou depressa?", "Onde vamos guardar a garrafa?"],
               "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. Guarde no cantinho da calma e use quando ela já estiver mais tranquila, "
               "nunca como castigo nem como distração de uma crise já grande.",
               atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. " + AGUA.capitalize(),
-              variar=["Faça cada uma de uma cor (corante de comida).", "Use miçangas grandes seladas, só com o adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
+              variar=["Faça cada uma de uma cor (corante de comida).", "Troque o glitter por fitas coloridas cortadas grandes, postas só pelo adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
 
     atividade(L, "Respirar com o bichinho", "acalmar", "3 a 5 minutos",
               "um bichinho de pelúcia leve; uma manta ou tapete macio",
