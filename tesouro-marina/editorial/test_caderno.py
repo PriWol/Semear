@@ -53,6 +53,12 @@ class TestCaderno(unittest.TestCase):
         titulos = {re.search(r'<h1 class="titulo"[^>]*>([^<]+)', h).group(1).strip() for _, h in self.L.paginas if '<h1 class="titulo"' in h}
         self.assertEqual(sorted(EXCECOES - titulos), [], "exceção que não corresponde a nenhuma página")
 
+    def test_o_caderno_nao_traz_as_cantigas_vetadas_pelo_adr(self):
+        # ADR 0021: violência ou ameaça à criança, afogamento, ou ainda sob direitos autorais
+        vetadas = ["Atirei o pau", "Boi da cara preta", "Cuca vem", "Marcha, soldado", "A canoa virou", "Parabéns"]
+        texto = _texto(" ".join(h for _, h in self.L.paginas))
+        self.assertEqual([v for v in vetadas if v.lower() in texto.lower()], [])
+
     def test_toda_atividade_da_semana_de_exemplo_existe_no_caderno(self):
         titulos = set()
         for _, h in self.L.paginas:

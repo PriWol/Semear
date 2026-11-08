@@ -756,7 +756,7 @@ def unidade5(L):
               "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é segura e é a versão simples do Volume 5, na unidade de modelar. "
               "Pode repetir todos os dias: a massa não “acaba”.",
               atencao="a massa é salgada e não é comida: não deixe que ela coma; tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. " + AGUA,
-              variar=["Esconda um brinquedo grande na massa.", "Imprima a mão e o pé na massa.", "Faça um “bolo” e cante parabéns ao bichinho."])
+              variar=["Esconda um brinquedo grande na massa.", "Imprima a mão e o pé na massa.", "Faça um “bolo” e cante uma cantiga ao bichinho."])
 
     atividade(L, "Um quadro por um minuto", "mundo", "3 minutos",
               "uma obra do Volume 5 (os Girassóis, de Van Gogh, ou outra), ou qualquer livro de arte",
@@ -1053,7 +1053,7 @@ def unidade8(L):
              gesto="sentadas, balancem de um lado para o outro, devagar, como um barquinho na água calma; no último verso, abracem-se. Serve também para acalmar.", origem=COLECAO, motivos=["barquinho", "m_riacho"]),
         dict(t="Um elefante", linhas=["Um elefante incomoda muita gente;", "dois elefantes incomodam, incomodam muito mais.", "Três elefantes incomodam muita gente;", "quatro elefantes incomodam, incomodam, incomodam muito mais."],
              gesto="mostre os dedos para cada número; cada elefante é uma voz mais grossa. Faça o elefante com o braço de tromba e deixe que ela escolha a voz.", origem=TRAD, motivos=["elefante"])],
-        "A canoa e os elefantes são cantigas conhecidas, de jogos de roda. Elas juntam corpo, risada e números. Dá para fazer em qualquer lugar, com qualquer idade, e a Marina pode “conduzir”.")
+        "O barquinho é uma rima da coleção, para balançar com calma; os elefantes são uma cantiga conhecida de jogos de roda. As duas juntam corpo, risada e números ou ritmo. Dá para fazer em qualquer lugar, com qualquer idade, e a Marina pode “conduzir”.")
 
     atividade(L, "A garrafa da calma", "acalmar", "10 minutos",
               "uma garrafa plástica transparente e pequena, água morna, uma colher de cola líquida transparente, glitter grosso, cola quente e fita",
