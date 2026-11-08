@@ -179,6 +179,13 @@ export interface Atividade {
   vertentes: Vertente[];
   idade: [number, number];
   duracaoMin: number;
+  /** tempo de preparo do adulto, à parte da duração (#71); sem o campo, o pacote mostra 5 min */
+  preparoMin?: number;
+  /**
+   * Cuidados de segurança que o pacote imprime junto dos materiais. Obrigatório quando a atividade
+   * começa antes dos 3 anos (peças pequenas, engasgo, água).
+   */
+  cuidados?: string;
   objetivo: string;
   passos: Passo[];
   observar: { consolidado: string[]; emDesenvolvimento: string[] };

@@ -219,3 +219,5 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Service worker** | Programa do navegador que guarda arquivos do app para uso offline; precisa ser instruído a não interceptar os PDFs. |
 | **CSP** | Content Security Policy: lista que diz ao navegador de onde scripts, estilos e conexões podem vir; bloqueia código injetado (ADR 0022). |
 | **Iframe sandbox** | Quadro isolado da página: sem a origem do app, só com o que for liberado. Um `srcdoc` herda a CSP do app; por isso a prévia usa `previa.html` (ADR 0022). |
+| **Faixa etária** | Idades que o produto atende (2 a 8 anos). O app avisa, mas não bloqueia, quem está fora (ADR 0023). |
+| **Preparo** | Tempo do adulto para separar materiais; fica fora dos 30 minutos de atividade da sessão (ADR 0023). |

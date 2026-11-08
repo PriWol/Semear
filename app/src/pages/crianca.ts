@@ -2,6 +2,7 @@ import type { FabricaPagina } from '../ui/app';
 import { lerFormulario, lista, novoId } from '../ui/app';
 import { html } from '../ui/html';
 import { IDIOMAS, LETRAS, type Crianca, type Idioma } from '../domain/tipos';
+import { faixaEtaria } from '../domain/faixa';
 import { dataLocalISO, idadeEmAnos } from '../domain/datas';
 import { ehLetra } from '../domain/letra';
 import { letraPadrao, NOME_LETRA } from '../domain/letra';
@@ -46,6 +47,7 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
         <label>
           Data de nascimento
           <input name="nascimento" type="date" required max="${hoje}" value="${c.nascimento}" />
+          <span class="nota" id="nota-faixa">O Semear é pensado para crianças de 2 a 8 anos.</span>
         </label>
         <label>
           Letra nas folhas
@@ -108,7 +110,13 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
             trilhas: lista(d.trilhas) as Idioma[],
           };
           await ctx.repo.salvarCrianca(nova);
-          ctx.avisar('Dados salvos.');
+          // Só avisa: um irmão fora da faixa pode usar o app, mas as atividades são feitas para 2 a 8 anos.
+          const foraDaFaixa = faixaEtaria(nova.nascimento, agora);
+          ctx.avisar(
+            foraDaFaixa === 'abaixo' || foraDaFaixa === 'acima'
+              ? 'Dados salvos. Atenção: o Semear é pensado para crianças de 2 a 8 anos.'
+              : 'Dados salvos.',
+          );
           ctx.ir(existente ? '/' : `/jornada/${nova.id}`);
         });
       raiz.querySelector('#remover')?.addEventListener('click', async () => {

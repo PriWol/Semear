@@ -242,6 +242,15 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     if (a.revisao !== undefined) validarRevisao(a.revisao, `Atividade ${a.id}`, erros);
     unico(a.id, 'Atividade');
     if (a.marcos.length === 0) validarComplementar(a, idx, erros);
+    if (a.idade[0] < 3) {
+      // Aos 2 anos o risco é engasgo e a atenção é curta: aviso obrigatório e atividades curtas (#71).
+      if (!a.cuidados?.trim())
+        erros.push(
+          `Atividade ${a.id}: começa antes dos 3 anos e precisa de "cuidados" (materiais pequenos)`,
+        );
+      if (a.duracaoMin > 10)
+        erros.push(`Atividade ${a.id}: para 2 anos deve durar até 10 min (tem ${a.duracaoMin})`);
+    }
     if (a.materialImpresso) {
       // Dado de fora: confere o formato antes de usar (nunca lança, sempre reporta).
       const { volume, unidade, paginas } = a.materialImpresso;

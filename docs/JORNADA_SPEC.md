@@ -21,7 +21,7 @@
 | # | Tema | Decisão |
 |---|------|---------|
 | 1 | Produto | **Evolução do Semear**: a jornada vira o "cérebro" do plano semanal, do explorador e do diário. |
-| 2 | Faixa etária | **3 a 8 anos** (da educação infantil até o 2º ano / alfabetização consolidada). |
+| 2 | Faixa etária | **2 a 8 anos** (da creche e do maternal até o 2º ano / alfabetização consolidada). Decisão de 16/10/2026 (antes 3 a 8); ver ADR 0023. |
 | 3 | Vertentes × jornada | **Mapa único** para todas as vertentes, com **marcos extras** por vertente. |
 | 4 | Posicionamento | **Independente por linha**: a criança tem uma posição em cada linha de cada domínio. |
 | 5 | Hierarquia | **Domínio → Linha → Marco**, com marcos ordenados dentro da linha e pré-requisitos opcionais entre linhas. |

@@ -121,8 +121,13 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
     ...new Map(e.atividades.flatMap((a) => a.materiais).map((m) => [m.item, m])).values(),
   ];
   const toques = toquesDaVertente(e);
+  const cuidados = [...new Set(e.atividades.map((a) => a.cuidados?.trim()).filter(Boolean))];
+  // O preparo é do adulto e fica fora da duração da sessão (#71). Sem dado, os 5 min de sempre.
+  const preparo = e.atividades.some((a) => a.preparoMin !== undefined)
+    ? e.atividades.reduce((t, a) => t + (a.preparoMin ?? 0), 0)
+    : 5;
   return html`<section class="pagina educador">
-    <span class="etiqueta">Prepare antes · 5 min</span>
+    <span class="etiqueta">Prepare antes · ${preparo} min</span>
     <h1>Materiais e livro</h1>
     <div class="duas-col">
       <div>
@@ -132,6 +137,7 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
           <li>Folhas da criança impressas, ou o tablet no modo tablet</li>
           <li>Ficha de registro e uma caneta</li>
         </ul>
+        ${cuidados.length ? html`<p class="caixa cuidados"><b>⚠️ Cuidados:</b> ${cuidados.join(' ')}</p>` : ''}
       </div>
       <div>
         <h2>📚 Livro sugerido</h2>

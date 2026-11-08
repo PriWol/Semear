@@ -28,5 +28,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0020](0020-fontes-e-ilustracao-do-volume-7.md)                          | Fontes de letra, melodia e ilustração do Volume 7 (Primeiras línguas) | Aceito                                   |
 | [0021](0021-caderno-de-atividades-para-2-anos.md)                        | Caderno de atividades para crianças de 2 anos                         | Aceito (conferência pediátrica pendente) |
 | [0022](0022-csp-no-app-e-previa-em-pagina-propria.md)                    | CSP no app e prévia do pacote em página própria                       | Aceito                                   |
+| [0023](0023-faixa-etaria-de-2-a-8-anos.md) | Faixa etária de 2 a 8 anos | Aceito (conteúdo pendente) |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

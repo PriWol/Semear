@@ -5,7 +5,9 @@ import { linhaDoMarco } from './conteudo';
 import { diasEntre } from './datas';
 import { idPista, pistasDaCrianca, posicaoDaLinha, type Pista } from './jornada';
 
-export const DURACOES = [20, 40, 60] as const;
+export const DURACOES = [20, 30, 40, 60] as const;
+/** Sessão padrão: 30 minutos de atividade; a preparação do adulto é contada à parte (#71). */
+export const DURACAO_PADRAO = 30;
 /** Folga sobre a duração escolhida (10%), para não descartar uma atividade por poucos minutos. */
 const FOLGA = 1.1;
 const JANELA_DIAS = 14;

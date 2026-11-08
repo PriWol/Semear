@@ -1,16 +1,7 @@
 // Status de revisão do conteúdo (#77): o conteúdo é rascunhado por IA, revisado pela dona do
 // produto e, mais tarde, por preceptores. O app precisa saber o que já foi revisado.
+import { dataValida } from './datas';
 import { ESTADOS_REVISAO, type EstadoRevisao, type Revisao } from './tipos';
-
-const DATA_ISO = /^(\d{4})-(\d{2})-(\d{2})$/;
-
-function dataReal(texto: string): boolean {
-  const m = DATA_ISO.exec(texto);
-  if (!m) return false;
-  const [ano, mes, dia] = [Number(m[1]), Number(m[2]), Number(m[3])];
-  const d = new Date(Date.UTC(ano, mes - 1, dia));
-  return d.getUTCFullYear() === ano && d.getUTCMonth() === mes - 1 && d.getUTCDate() === dia;
-}
 
 /** Acrescenta a `erros` o que estiver errado em `revisao`; `onde` identifica o item na mensagem. */
 export function validarRevisao(revisao: unknown, onde: string, erros: string[]): void {
@@ -29,7 +20,7 @@ export function validarRevisao(revisao: unknown, onde: string, erros: string[]):
   if (typeof r.por !== 'string' || r.por.trim() === '') {
     erros.push(`${onde}: revisão "${r.estado}" precisa de "por" (quem revisou)`);
   }
-  if (typeof r.em !== 'string' || !dataReal(r.em)) {
+  if (typeof r.em !== 'string' || !dataValida(r.em)) {
     erros.push(`${onde}: revisão "${r.estado}" precisa de "em" no formato AAAA-MM-DD`);
   }
 }

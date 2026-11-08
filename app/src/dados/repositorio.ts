@@ -10,6 +10,7 @@ import {
   type RegistroMarco,
   type Sessao,
 } from '../domain/tipos';
+import { dataValida } from '../domain/datas';
 import { ehLetra } from '../domain/letra';
 import type { DadosExemplo } from '../domain/exemplo';
 
@@ -306,7 +307,7 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     Array.isArray(v) && v.every(valido);
   const ehVertente = (v: unknown) => (VERTENTES as readonly unknown[]).includes(v);
   const ehIdioma = (v: unknown) => ehTexto(v) && Object.hasOwn(IDIOMAS, v);
-  const ehData = (v: unknown) => ehTexto(v) && /^\d{4}-\d{2}-\d{2}$/.test(v);
+  const ehData = (v: unknown) => ehTexto(v) && dataValida(v);
   // O marcador do exemplo só pode faltar ou ser true (#39).
   const marcadorOk = (v: Record<string, unknown>) => v.exemplo === undefined || v.exemplo === true;
   const ehRegistro = (v: unknown) =>

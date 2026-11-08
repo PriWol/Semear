@@ -4,7 +4,7 @@ Este arquivo é lido automaticamente por agentes de IA (Claude Code) no início 
 Ele vale também para pessoas. Se uma regra daqui mudar, registre o motivo num ADR (`docs/adr/`).
 
 ## O que é o Semear
-App para famílias que educam em casa (homeschooling e afterschooling), para crianças de 3 a 8 anos.
+App para famílias que educam em casa (homeschooling e afterschooling), para crianças de 2 a 8 anos.
 O educador cadastra a família e as crianças, posiciona cada criança numa **jornada por domínios**
 (domínio → linha → marco) e gera **pacotes de sessão** para imprimir ou abrir num tablet.
 **A criança nunca usa o app.** Especificação completa: `docs/JORNADA_SPEC.md`.
