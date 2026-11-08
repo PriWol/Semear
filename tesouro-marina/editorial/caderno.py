@@ -50,7 +50,7 @@ class Caderno(Livro):
         self.inicio = {}   # primeira página de cada unidade, para o sumário; cada montagem tem o seu
 
     def cab(self):
-        return f"Caderno de atividades · 2 anos" + (f" &nbsp;—&nbsp; {self.unidade}" if self.unidade else "")
+        return "Caderno de atividades · 2 anos" + (f" &nbsp;—&nbsp; {self.unidade}" if self.unidade else "")
 
     def html(self):
         return super().html().replace("O Grande Tesouro de Marina — Volume 0", "O Grande Tesouro de Marina — Caderno de atividades (2 anos)")
@@ -92,7 +92,7 @@ def extras(variar, registro):
 
 def atividade(L, t, tipo, tempo, material, cenario, fazer, dizer, perguntas, porque, atencao="", variar=(), registro="Hoje a Marina… (uma palavra nova, um gesto, o que ela mais gostou) — data: ______"):
     """Uma atividade por página: etiqueta, tempo e material, cena, o que fazer e dizer, perguntas e o porquê para o adulto."""
-    nome, cor, _ = TIPOS[tipo]
+    cor = TIPOS[tipo][1]
     aviso = f'<br><b>Atenção:</b> {atencao}' if atencao else ""
     c = f"""<div class="miolo">
       <div class="centro" style="margin-top:1mm">{etiqueta(tipo)} <span class="peq" style="margin-left:2mm">{tempo}</span></div>
@@ -107,26 +107,9 @@ def atividade(L, t, tipo, tempo, material, cenario, fazer, dizer, perguntas, por
     return L.add(c, aba=cor)
 
 
-def rima(L, t, linhas, como, origem, cenario, porque, tipo="cantar", variar=(), registro="Hoje a Marina… (qual dedo ela já sabe, que parte ela repete) — data: ______"):
-    """Rima, parlenda ou cantiga: o texto grande e o gesto que a acompanha."""
-    nome, cor, _ = TIPOS[tipo]
-    versos = "<br>".join(linhas)
-    c = f"""<div class="miolo">
-      <div class="centro" style="margin-top:1mm">{etiqueta(tipo)}</div>
-      {titulo(t, None, 26)}
-      <div class="centro" style="margin:3mm 0">{cenario}</div>
-      <p style="font-size:17pt;line-height:1.55;text-align:center;font-style:italic;margin:3mm 0">{versos}</p>
-      {bloco("O gesto", passos_txt(como))}{extras(variar, registro)}
-      <div class="peq" style="margin-top:3mm">{origem}</div></div>
-      {adulto("por que isto importa", porque)}"""
-    return L.add(c, aba=cor)
-
-
-
-
 def rimas(L, t, itens, porque, tipo="cantar"):
     """Uma página com duas rimas ou cantigas curtas. itens: dicts com t, linhas, gesto, origem, motivos."""
-    nome, cor, _ = TIPOS[tipo]
+    cor = TIPOS[tipo][1]
     blocos = ""
     for it in itens:
         versos = "<br>".join(it["linhas"])
@@ -146,7 +129,7 @@ def rimas(L, t, itens, porque, tipo="cantar"):
 TRAD = "Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
 DOMPUB = "Cantiga de domínio público; a letra tem pequenas variações."
 COLECAO = "Rima escrita pela coleção."
-AGUA = "perto de água, <b>nunca deixe a criança sozinha com água</b>, nem por um instante, mesmo rasa."
+AGUA = "Com água por perto, <b>nunca deixe a criança sozinha com água</b>, nem por um instante, mesmo rasa."   # já com a inicial maiúscula, para vir depois de “Atenção:” ou de um ponto
 CAL = "Hoje o que ajudou a Marina a se acalmar foi… — data: ______"
 # ================================================================== ABERTURA
 
@@ -240,7 +223,7 @@ def fase_do_nao(L):
       combine uma “versão de 2 minutos” e deixe crescer devagar. Se ela soltar a atividade, tudo bem: guarde para outro dia.</p>
       <h2>Quando conversar com o pediatra</h2>
       <p>Procure o pediatra se as birras ficarem <b>muito longas, muito frequentes ou muito intensas</b>; se ela se machucar ou machucar os outros; se perder uma habilidade que já tinha; se a dificuldade continuar
-      ou piorar depois dos 4 anos; ou se você sentir que não está dando conta. <b>Este caderno não faz diagnóstico e não substitui o pediatra</b>; é só um conjunto de brincadeiras de apoio.</p>
+      ou piorar com o tempo; ou se você sentir que não está dando conta. <b>Este caderno não faz diagnóstico e não substitui o pediatra</b>; é só um conjunto de brincadeiras de apoio.</p>
       <p class="peq" style="margin-top:4mm">Base: orientações da SBP sobre a “crise dos dois anos” e materiais de pediatras e de associações de pais e de psiquiatria infantil (ver ADR 0021).
       Faixas e prazos variam de uma fonte para outra: vale conferir com o pediatra da Marina.</p>
       <div class="centro" style="margin-top:4mm">""" + tira(["estrela", "lua", "estrela"], "18mm", "6mm") + "</div>")
@@ -256,13 +239,13 @@ def cantinho_calma(L):
       <h2>O que pôr nele</h2>
       <ul>
         <li>um bichinho ou pano macio;</li>
-        <li>um livro de figuras e a garrafa da calma (receita abaixo);</li>
+        <li>um livro de figuras;</li>
         <li>um cata-vento ou bolhas de sabão, para soprar devagar (o adulto fica por perto);</li>
         <li>uma foto da família, ou uma almofada que cheire a casa.</li>
       </ul>
       <h2>A garrafa da calma</h2>
       <p>Garrafa de plástico transparente e pequena, quase cheia de água morna, com uma colher de cola líquida transparente e uma colher de glitter grosso. <b>O adulto fecha a tampa com cola quente e fita</b>,
-      testa se não vaza e <b>só deixa a criança usar com você por perto</b>. Chacoalhar e olhar o glitter descer devagar é um jeito de respirar mais lento. Não serve para mastigar nem para jogar.</p>
+      testa se não vaza e <b>só deixa a criança usar com você por perto</b>. Chacoalhar e olhar o glitter descer devagar é um jeito de respirar mais lento. Não serve para mastigar nem para jogar. <b>Guarde a garrafa fora do alcance dela</b> e leve-a ao cantinho só quando você estiver junto.</p>
       <h2>Como usar</h2>
       <p>“Quer ir ao cantinho? Eu vou com você.” Sentem juntas, respirem devagar, e deixe que ela escolha o que quer segurar. Saiam quando ela quiser.</p>""")
 
@@ -292,8 +275,8 @@ def como_usar(L):
 
 
 def semana(L):
-    dias = (("Segunda", "A cesta de tesouros", "Passeio dos cinco sentidos", "O dia em três tempos"),
-            ("Terça", "Bom dia, sol · Mindinho", "Estátua", "Cheirar a flor, soprar a vela"),
+    dias = (("Segunda", "A cesta de tesouros", "Passeio dos cinco sentidos", "Cinco respirações na mão"),
+            ("Terça", "Bom dia, sol · Mindinho, seu vizinho", "Estátua", "Cheirar a flor, soprar a vela"),
             ("Quarta", "Pintar com o dedo", "Caça-folhas", "Boa noite em três línguas"),
             ("Quinta", "Voz de bicho", "Pular a poça", "Balançar e cantar baixinho"),
             ("Sexta", "Massinha de farinha", "Minha vez, sua vez", "Respirar com o bichinho"),
@@ -397,7 +380,7 @@ def unidade1(L):
               ["Cadê a água?", "Boia ou afunda?", "O que mais quer pôr na água?"],
               "Despejar, mexer e ver as coisas boiarem e afundarem é ciência de verdade para quem tem 2 anos, e um dos trabalhos mais calmantes que existem. "
               "Use roupa que possa molhar, ou deixe só de fralda e avental.",
-              AGUA.capitalize() + " Esvazie a bacia no fim.",
+              AGUA + " Esvazie a bacia no fim.",
               variar=["Ponha uma gota de corante de comida: a água muda de cor.", "Dê uma esponja e deixe que ela torça: a água sai.", "Lave um brinquedo ou um pano junto com ela."])
 
     atividade(L, "Pular a poça", "corpo", "5 minutos",
@@ -409,7 +392,7 @@ def unidade1(L):
               ["A poça é grande ou pequena?", "Vamos pular rápido ou devagar?", "Quem sabe pular mais alto?"],
               "Pular junto, em pé, com comando de voz, trabalha o equilíbrio, a coordenação e as palavras que descrevem o movimento (rápido, devagar, alto, baixo). "
               "A brincadeira com poça serve também para olhar para o tempo: ontem choveu?",
-              "chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. " + AGUA.capitalize(),
+              "chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. " + AGUA,
               variar=["Pule de um lado para o outro de uma linha de fita no chão.", "Faça o “sapo”: agachada, e pula bem baixo.", "Depois de pular, fiquem quietas e escutem a chuva (ou o silêncio)."])
 
 
@@ -442,7 +425,7 @@ def unidade1(L):
               ["Onde está a bolha?", "Grande ou pequena?", "Quem estourou?"],
               "Seguir com os olhos uma coisa que flutua devagar acalma, e soprar bolha grande exige um sopro lento: é respiração controlada disfarçada de brincadeira. "
               "Boa para o fim de um passeio ou antes de uma troca difícil (banho, sair do parque).",
-              atencao="o líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. " + AGUA.capitalize(),
+              atencao="o líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. " + AGUA,
               variar=["Faça bolhas na hora do banho.", "Bolhas “paradas”: as que pousam na grama sem estourar.", "Deixe que ela escolha: bolha grande ou bolha pequena."],
               registro=CAL)
 
@@ -562,8 +545,8 @@ def unidade3(L):
               ["Quantos copos tem?", "Qual está em cima?", "Quer fazer mais alta?"],
               "Empilhar mostra causa e efeito e exige calma nas mãos; e derrubar e recomeçar é um treino de frustração em miniatura. Se ela ficar brava quando cai, "
               "nomeie (“que raiva quando cai!”) e ofereça recomeçar. Cada torre que ela refaz é uma pequena vitória sobre a raiva.",
-              atencao="blocos leves e sem peças pequenas; derrube longe do rosto. " + AGUA.capitalize(),
-              variar=["Com almofadas e travesseiros: uma torre fofa.", "Cada bloco, uma cor: “agora o vermelho”.", "Um copo de cada vez, enchendo com água (no quintal)."])
+              atencao="blocos leves e sem peças pequenas; derrube longe do rosto. ",
+              variar=["Com almofadas e travesseiros: uma torre fofa.", "Cada bloco, uma cor: “agora o vermelho”.", "Empilhe na areia ou na toalha, para ver o que muda."])
 
     atividade(L, "Muito e pouco", "conversar", "5 minutos",
               "dois pratos e umas 8 frutas ou bolas de meia grandes (nada que caiba na boca)",
@@ -632,15 +615,15 @@ def unidade3(L):
               ["Está devagar?", "Quer fazer mais devagar ainda?", "A torre ficou firme?"],
               "Mover-se devagar de propósito treina o controle do impulso, e dar uma tarefa com começo, meio e fim, curta e visível, sustenta a atenção por alguns minutos. "
               "É o contrário da “pressa” que costuma vir antes de uma birra.",
-              atencao=AGUA.capitalize(),
-              variar=["Despeje água devagar de uma jarra para um copo.", "Leve uma bola de meia numa colher sem deixar cair.", "Andar como lesma até a porta."], registro=CAL)
+              atencao="copos ou almofadas estáveis; derrube a torre longe do rosto dela.",
+              variar=["Passe uma colher de pau de uma tigela para outra, sem derrubar.", "Leve uma bola de meia numa colher sem deixar cair.", "Andar como lesma até a porta."], registro=CAL)
 
 
 # ================================================================== U4 SOM E MOVIMENTO (Volume 4)
 
 def unidade4(L):
     ativ = [("Batuque de panela", "corpo", "5 a 8 min"), ("Estátua", "corpo", "5 min"), ("Os três sons", "mundo", "3 a 5 min"), ("Chocalho de casa", "maos", "10 min"),
-            ("Marcha, soldado · Ciranda · Se essa rua fosse minha · Devagar, devagarinho", "cantar", "2 min cada"),
+            ("Marcha, marcha, pé com pé · Ciranda · Se essa rua fosse minha · Devagar, devagarinho", "cantar", "2 min cada"),
             ("Balançar e cantar baixinho", "acalmar", "5 min"), ("Dançar e derreter", "acalmar", "5 min")]
     abertura_unidade(L, 3,
                      "No Volume 4 a Marina ouve o som e o silêncio, o pulso, o forte e o fraco. Aos 2 anos, isso vira <b>bater, dançar, parar, escutar e cantar</b>. "
@@ -682,9 +665,9 @@ def unidade4(L):
               variar=["De olhos fechados, se ela quiser.", "Com a janela fechada e depois aberta: quais sons mudam?", "À noite, com a luz baixa."])
 
     atividade(L, "Chocalho de casa", "maos", "10 minutos",
-              "uma garrafa plástica pequena e limpa, grãos grandes (grão-de-bico, feijão grande), cola quente e fita, fitas coloridas para enfeitar",
+              "uma garrafa plástica pequena e limpa, grãos grandes (grão-de-bico, feijão grande), cola quente e fita, adesivos grandes ou fita adesiva colorida para enfeitar",
               cena([("chocalho", 40, 12, 8), ("tijolos", 28, 62, 20), ("pincel", 32, 104, 12), ("papel_azul", 28, 146, 16)], 48, 190),
-              ["Escolha com ela a garrafa e o que vai dentro (macarrão penne ou feijão grande). <b>Só o adulto põe os grãos na garrafa</b>; ela escolhe e olha.", "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela.", "Enfeitem a garrafa com fitas coloridas.",
+              ["Escolha com ela a garrafa e o que vai dentro (macarrão penne ou feijão grande). <b>Só o adulto põe os grãos na garrafa</b>; ela escolhe e olha.", "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela.", "Enfeitem a garrafa com adesivos grandes ou fita adesiva colorida, colados pelo adulto (nada de fitas soltas ou laços).",
                "Toquem: forte, fraco, rápido, devagar, e deitem o chocalho para silenciar."],
               ["Chacoalha! Que barulho! Chuá, chuá.", "Agora bem fraquinho.", "Quieto: o chocalho dormiu."],
               ["Que barulho faz?", "É forte ou fraco?", "Onde o chocalho dorme?"],
@@ -693,8 +676,8 @@ def unidade4(L):
               variar=["Chocalhos diferentes, só com coisas grandes: macarrão penne, feijão grande, grão-de-bico graúdo (sempre selados pelo adulto).", "Cante e acompanhe com o chocalho.", "Guarde na “caixa dos sons”."])
 
     rimas(L, "Para marchar e rodar", [
-        dict(t="Marcha, soldado", linhas=["Marcha, soldado,", "cabeça de papel;", "quem não marchar direito", "vai preso no quartel."],
-             gesto="marchem juntas no lugar, no ritmo da batida; no último verso, parem de uma vez, como estátua.", origem=TRAD, motivos=["pegada", "pegada_esq"]),
+        dict(t="Marcha, marcha, pé com pé", linhas=["Marcha, marcha, pé com pé,", "um, dois, três, que bom que é!", "Marcha, marcha, pé com pé,", "e parou: estátua em pé!"],
+             gesto="marchem juntas no lugar, no ritmo da batida; no último verso, parem de uma vez, como estátua.", origem=COLECAO, motivos=["pegada", "pegada_esq"]),
         dict(t="Ciranda, cirandinha", linhas=["Ciranda, cirandinha,", "vamos todos cirandar;", "vamos dar a meia-volta,", "volta e meia vamos dar."],
              gesto="de mãos dadas, girem devagar em roda; na “meia-volta”, virem para o outro lado. Com duas pessoas, é uma roda de dois.", origem=TRAD, motivos=["maos_juntas", "estrela"])],
         "Marchar e rodar de mãos dadas são movimentos antigos de brincadeira, com pulso marcado. Os versos para na estátua ajudam a ela aprender a parar quando a música para.")
@@ -761,20 +744,20 @@ def unidade5(L):
               ["Quer fazer rápido ou devagar?", "O que é isto?", "Faz uma linha comprida?"],
               "O rabisco com o braço todo é a primeira forma de desenhar, e mexe os ombros e o corpo. Linhas e círculos são o que os artistas do Volume 5 (como Kandinsky) usavam. "
               "Não peça que ela “desenhe uma coisa”: deixe que o rabisco seja só rabisco.",
-              atencao="giz e giz de cera grossos, para não irem à boca.",
+              atencao="giz e giz de cera grossos, para não irem à boca. Se for no banho: " + AGUA,
               variar=["Rabisque ao som de música: rápida, lenta.", "Desenhe no vidro do boxe com tinta de banho.", "Uma linha longa pelo chão inteiro."])
 
     atividade(L, "Massinha de farinha", "maos", "10 minutos",
-              "2 xícaras de farinha de trigo, 1 de sal, 1 de água morna e 1 colher de óleo (uma massinha caseira); uma tábua ou um pano",
+              "2 xícaras de farinha de trigo, só meia de sal, 1 de água morna e 1 colher de óleo (uma massinha caseira); uma tábua ou um pano",
               cena([("argila_bola", 30, 12, 16), ("argila_cobra", 34, 52, 12), ("argila_vaso", 30, 94, 8), ("tigela", 32, 134, 14)], 48, 190),
               ["Misture os ingredientes com ela (despejar e mexer já é brincadeira) até ficar uma massa macia.", "Deixe que ela aperte, bata, belisque, enrole. Mostre uma cobra e uma bola.", "Dê nome ao que sai: “uma bolinha!”, “uma cobrinha comprida!”.",
                "Guarde num pote fechado, na geladeira, por uns dias."],
               ["Aperta! Que macia.", "Enrola, enrola, enrola: uma cobrinha.", "Bate! Pam, pam, pam!"],
               ["É mole ou é dura?", "O que você fez?", "Quer uma bola ou uma cobra?"],
-              "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é segura e é a versão simples do Volume 5, na unidade de modelar. "
+              "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é barata e simples, e é a versão do Volume 5, na unidade de modelar. "
               "Pode repetir todos os dias: a massa não “acaba”.",
-              atencao="a massa é salgada e não é comida: não deixe que ela coma; tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica.",
-              variar=["Esconda um brinquedo grande na massa.", "Imprima a mão e o pé na massa.", "Faça um “bolo” e cante parabéns ao bichinho."])
+              atencao="a massa é salgada e não é comida: fique junto o tempo todo, não deixe que ela a leve à boca e tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. " + AGUA,
+              variar=["Esconda um brinquedo grande na massa.", "Imprima a mão e o pé na massa.", "Faça um “bolo” e cante uma cantiga ao bichinho."])
 
     atividade(L, "Um quadro por um minuto", "mundo", "3 minutos",
               "uma obra do Volume 5 (os Girassóis, de Van Gogh, ou outra), ou qualquer livro de arte",
@@ -809,7 +792,7 @@ def unidade5(L):
               ["O que a água fez?", "Cadê o que você pintou?", "Quer pintar o chão ou a parede?"],
               "Pintar com água tem todos os gestos da pintura, sem sujeira nem “errado”, porque o desenho some sozinho. O movimento repetido de pintar e ver secar é calmante e ensina a esperar. "
               "Ótima para depois de uma crise ou numa tarde difícil.",
-              atencao="com água em balde, não a deixe sozinha; esvazie o balde no fim. " + AGUA.capitalize(),
+              atencao="com água em balde, não a deixe sozinha; esvazie o balde no fim. " + AGUA,
               variar=["Pinte o espelho do banheiro.", "Pinte uma “pegada” de água com o pé.", "Pinte letras e formas grandes e depois apague."], registro=CAL)
 
     atividade(L, "Massagem nas mãos", "acalmar", "3 a 5 minutos",
@@ -856,7 +839,7 @@ def unidade6(L):
               ["A terra está seca ou molhada?", "Quanta água?", "A planta está feliz?"],
               "Cuidar de uma planta dá uma tarefa real, repetida todo dia, e mostra uma mudança lenta, a lição de esperar. “Pouquinho” e “para” treinam o controle das mãos. "
               "É também uma tarefa bem aceita por quem diz “não” a ordens: aqui ela é a responsável.",
-              atencao="não deixe que ela coma terra ou folhas; escolha uma planta que não seja tóxica. " + AGUA.capitalize(),
+              atencao="não deixe que ela coma terra ou folhas; escolha uma planta que não seja tóxica. " + AGUA,
               variar=["Plante um feijão no algodão (Volume 6, unidade 5).", "Regue as plantas do quintal.", "Desenhe a planta toda semana."])
 
     atividade(L, "Bichinho de perto", "mundo", "5 a 10 minutos",
@@ -880,12 +863,12 @@ def unidade6(L):
               ["É mole ou duro?", "O que você está fazendo?", "Quer pôr mais água?"],
               "A terra molhada oferece um dos melhores jogos sensoriais: macia, fria, moldável. É um espaço em que bagunça é permitida, o que alivia quem ouve muitos “não”. "
               "Combine antes o fim (“mais cinco minutos e vamos lavar”).",
-              atencao="não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. " + AGUA.capitalize(),
+              atencao="não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. " + AGUA,
               variar=["Impressões de pedras e folhas na lama.", "Uma “pista de carrinho” de lama.", "Pintar o tronco com lama (e lavar)."])
 
     rimas(L, "Bichos de quintal", [
-        dict(t="A dona aranha", linhas=["A dona aranha subiu pela parede.", "Veio a chuva forte e a derrubou.", "Já passou a chuva, o sol já vai surgindo,", "e a dona aranha continua a subir.", "Ela é teimosa e desobediente:", "sobe, sobe, sobe e nunca está contente."],
-             gesto="os dedos de uma mão “sobem” pelo seu braço; a “chuva” é uma chuva de dedos que derruba; abra as mãos como sol; e os dedos voltam a subir.", origem=TRAD, motivos=["aranha", "nuvem_chuva", "sol"]),
+        dict(t="A dona aranha", linhas=["A dona aranha subiu pela parede.", "Veio a chuva forte e a derrubou.", "Já passou a chuva, o sol já vai surgindo,", "e a dona aranha continua a subir."],
+             gesto="os dedos de uma mão “sobem” pelo seu braço; a “chuva” é uma chuva de dedos que derruba; abra as mãos como sol; e os dedos voltam a subir. Versão curta: a cantiga tem versões mais longas, que chamam a aranha de “teimosa”, rótulo que a página “A fase do não” manda evitar.", origem=TRAD, motivos=["aranha", "nuvem_chuva", "sol"]),
         dict(t="Sapo-cururu", linhas=["Sapo-cururu", "na beira do rio,", "quando o sapo canta, ó maninha,", "é porque tem frio.", "A mulher do sapo", "é quem está lá dentro,", "fazendo rendinha, ó maninha,", "para o casamento."],
              gesto="agache e pule como sapo nos versos “sapo-cururu”; fique quieta e abraçada nos outros, e termine com um sapo bem baixinho.", origem=TRAD, motivos=["m_riacho", "ninfeia"])],
         "A dona aranha é um jogo de dedos que fala de insistir depois de uma queda, o que vale para quem se frustra fácil: ela cai e sobe de novo. O sapo-cururu junta pulos e silêncio. "
@@ -1007,7 +990,7 @@ def unidade7(L):
 
 def unidade8(L):
     ativ = [("Esconde-esconde", "corpo", "5 a 10 min"), ("A caixa surpresa", "nomear", "5 min"), ("Minha vez, sua vez", "conversar", "5 min"), ("Siga a Marina", "corpo", "5 min"),
-            ("Corre, cotia · Cadê? Achou! · A canoa virou · Um elefante", "cantar", "2 min cada"),
+            ("Corre, cotia · Cadê? Achou! · O barquinho de papel · Um elefante", "cantar", "2 min cada"),
             ("A garrafa da calma", "acalmar", "10 min"), ("Respirar com o bichinho", "acalmar", "3 a 5 min")]
     abertura_unidade(L, 7,
                      "No Volume 8 a Marina brinca com os jogos da coleção. Aos 2 anos, isso vira <b>brincar junto: esperar a vez, mandar e obedecer, esconder e achar</b>. "
@@ -1063,27 +1046,27 @@ def unidade8(L):
         dict(t="Corre, cotia", linhas=["Corre, cotia, na casa da tia,", "corre, cipó, na casa da avó;", "lencinho na mão, caiu no chão."],
              gesto="em roda, com poucas pessoas, uma anda por fora com um lencinho; deixa cair atrás de alguém. Com a Marina, deixe cair atrás dela e corra de mão dada.", origem=TRAD, motivos=["gorro", "casinha"]),
         dict(t="Cadê? Achou!", linhas=["Cadê a Marina?", "Cadê, cadê?", "Está escondida?", "Eu vou achar você!", "Achou! Achou!", "Achou! Achou!"],
-             gesto="cubra o rosto dela com um lenço leve (ou o seu com as mãos) nos primeiros versos, e descubra no “achou”. Brinque com paciência: ela pode pedir muitas vezes.", origem=COLECAO, motivos=["olho", "carinha_feliz"])],
+             gesto="cubra o <b>seu</b> rosto com as mãos (ou com um lenço leve que ela possa puxar) nos primeiros versos e descubra no “achou”. Nunca cubra o rosto dela. Brinque com paciência: ela pode pedir muitas vezes.", origem=COLECAO, motivos=["olho", "carinha_feliz"])],
         "Brincar de roda reúne rima, corpo e espera. O “cadê? achou!” treina a antecipação (o que vem depois?) e o susto bom.")
 
     rimas(L, "Mais duas, para contar e rir", [
-        dict(t="A canoa virou", linhas=["A canoa virou,", "pois deixaram ela virar;", "foi por causa da Maria", "que não soube remar.", "Se eu fosse um peixinho", "e soubesse nadar,", "eu tirava a Maria", "do fundo do mar."],
-             gesto="balançando sentadas, cante e, no “virou”, caiam juntas devagar para o lado, rindo. No fim, “tire” a Marina do fundo do mar com um abraço.", origem=TRAD, motivos=["barquinho", "peixe"]),
+        dict(t="O barquinho de papel", linhas=["Barquinho de papel", "vai passear no rio:", "balança pra lá,", "balança pra cá,", "chega devagar", "e vem me abraçar."],
+             gesto="sentadas, balancem de um lado para o outro, devagar, como um barquinho na água calma; no último verso, abracem-se. Serve também para acalmar.", origem=COLECAO, motivos=["barquinho", "m_riacho"]),
         dict(t="Um elefante", linhas=["Um elefante incomoda muita gente;", "dois elefantes incomodam, incomodam muito mais.", "Três elefantes incomodam muita gente;", "quatro elefantes incomodam, incomodam, incomodam muito mais."],
              gesto="mostre os dedos para cada número; cada elefante é uma voz mais grossa. Faça o elefante com o braço de tromba e deixe que ela escolha a voz.", origem=TRAD, motivos=["elefante"])],
-        "A canoa e os elefantes são cantigas conhecidas, de jogos de roda. Elas juntam corpo, risada e números. Dá para fazer em qualquer lugar, com qualquer idade, e a Marina pode “conduzir”.")
+        "O barquinho é uma rima da coleção, para balançar com calma; os elefantes são uma cantiga conhecida de jogos de roda. As duas juntam corpo, risada e números ou ritmo. Dá para fazer em qualquer lugar, com qualquer idade, e a Marina pode “conduzir”.")
 
     atividade(L, "A garrafa da calma", "acalmar", "10 minutos",
               "uma garrafa plástica transparente e pequena, água morna, uma colher de cola líquida transparente, glitter grosso, cola quente e fita",
               cena([("jarra", 34, 14, 10), ("estrela", 24, 58, 6), ("estrela", 20, 80, 24), ("gota", 18, 108, 14), ("coracao", 26, 144, 12)], 48, 190),
-              ["Encham a garrafa com água morna até quase o alto. Ela despeja a água e o glitter com a ajuda de um funil ou de uma colher.", "Ponha uma colher de cola líquida: ela deixa o glitter descer devagar.",
+              ["<b>O adulto enche a garrafa</b> com água morna (testada no pulso, nunca quente) até quase o alto, e <b>só ele põe o glitter e a cola</b>; ela escolhe a cor e olha.", "O adulto acrescenta uma colher de cola líquida, que deixa o glitter descer devagar.",
                "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela, e testa se não vaza.", "Chacoalhem juntas e olhem o glitter cair, respirando devagar."],
               ["Vamos fazer uma garrafa mágica.", "Chacoalha… e olha o glitter descer, devagar, devagar.", "Quando fico brava, posso olhar a garrafa e respirar."],
               ["Para onde vai o glitter?", "Está caindo devagar ou depressa?", "Onde vamos guardar a garrafa?"],
-              "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. Guarde no cantinho da calma e use quando ela já estiver mais tranquila, "
+              "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. <b>Guarde a garrafa fora do alcance dela</b> e leve-a ao cantinho da calma só quando estiverem juntas, quando ela já estiver mais tranquila, "
               "nunca como castigo nem como distração de uma crise já grande.",
-              atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. " + AGUA.capitalize(),
-              variar=["Faça cada uma de uma cor (corante de comida).", "Use miçangas grandes seladas, só com o adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
+              atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. " + AGUA,
+              variar=["Faça cada uma de uma cor (corante de comida).", "Troque o glitter por pedaços grandes de papel colorido, postos só pelo adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
 
     atividade(L, "Respirar com o bichinho", "acalmar", "3 a 5 minutos",
               "um bichinho de pelúcia leve; uma manta ou tapete macio",
@@ -1120,11 +1103,11 @@ def encerramento(L):
       psiquiatria infantil. <b>São inspirações, não regras</b>, e a leitura foi feita em páginas de divulgação, não nos textos originais: confira com o pediatra da Marina (ADR 0021).</p>
       <h2>Rimas, parlendas e cantigas</h2>
       <p><b>Tradicionais brasileiras</b>, de autoria desconhecida, de transmissão oral, com muitas variações regionais: <i>Mindinho, seu vizinho</i>; <i>Borboletinha</i>; <i>Cadê o toucinho?</i>; <i>O cravo brigou com a rosa</i>;
-      <i>Um, dois, feijão com arroz</i>; <i>Pirulito que bate, bate</i>; <i>Marcha, soldado</i>; <i>Ciranda, cirandinha</i>; <i>Se essa rua fosse minha</i>; <i>Meu limão, meu limoeiro</i>; <i>O sapo não lava o pé</i>;
-      <i>A dona aranha</i>; <i>Sapo-cururu</i>; <i>Peixe vivo</i>; <i>Corre, cotia</i>; <i>A canoa virou</i>; <i>Um elefante incomoda muita gente</i>. A versão da letra pode variar da que você conhece.</p>
+      <i>Um, dois, feijão com arroz</i>; <i>Pirulito que bate, bate</i>; <i>Ciranda, cirandinha</i>; <i>Se essa rua fosse minha</i>; <i>Meu limão, meu limoeiro</i>; <i>O sapo não lava o pé</i>;
+      <i>A dona aranha</i>; <i>Sapo-cururu</i>; <i>Peixe vivo</i>; <i>Corre, cotia</i>; <i>Um elefante incomoda muita gente</i>. A versão da letra pode variar da que você conhece.</p>
       <p><b>Em inglês e francês, de domínio público:</b> <i>Twinkle, twinkle, little star</i> (Jane Taylor, 1806), <i>Frère Jacques</i> (tradicional francesa), <i>Row, row, row your boat</i> (letra de 1852) e <i>Pat-a-cake</i> (rima inglesa do século XVII).
       As traduções em português são da coleção.</p>
-      <p><b>Escritas pela coleção:</b> <i>Bom dia, sol</i>; <i>Estou com raiva</i>; <i>Quantos dedinhos?</i>; <i>Grande e pequeno</i>; <i>As cores</i>; <i>Mão suja, mão limpa</i>; <i>Devagar, devagarinho</i>; <i>Formiguinha</i>; <i>Cadê? Achou!</i>;
+      <p><b>Escritas pela coleção:</b> <i>Bom dia, sol</i>; <i>Marcha, marcha, pé com pé</i>; <i>O barquinho de papel</i>; <i>Dois olhinhos</i>; <i>Quem faz assim?</i>; <i>Estou com raiva</i>; <i>Quantos dedinhos?</i>; <i>Grande e pequeno</i>; <i>As cores</i>; <i>Mão suja, mão limpa</i>; <i>Devagar, devagarinho</i>; <i>Formiguinha</i>; <i>Cadê? Achou!</i>;
       o acalanto da unidade 4 e a história do gatinho da unidade 2.</p>
       <h2>Ilustração</h2>
       <p>Todas as figuras são motivos em aquarela da coleção (<i>editorial/motivos*.py</i>). Nenhum dado de criança ou de família é coletado ou enviado.</p>""")

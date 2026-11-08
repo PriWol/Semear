@@ -24,6 +24,7 @@ O texto de apoio é em português; as falas são em inglês e marcadas com `lang
 - **Visual:** motivos em aquarela da coleção, os mesmos dos outros cadernos.
 
 ## Consequências
-- O caderno de inglês depende dos blocos de `caderno.py` (PR do caderno de atividades): deve ser mergeado depois dele.
+- O caderno de inglês usa os blocos de `caderno.py` (o caderno de atividades, ADR 0021, já no `main`).
+- Como o caderno de atividades, o PDF **não vai para a Release**: o workflow o guarda só como artefato (14 dias) até a conferência das orientações pelo pediatra ou por uma fonoaudióloga que acompanhe crianças bilíngues.
 - Sem áudio: para a pronúncia, o adulto usa um dicionário com áudio ou uma gravação de falante nativo.
 - O caderno não substitui o pediatra nem uma fonoaudióloga que acompanhe crianças bilíngues.

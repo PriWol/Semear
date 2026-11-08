@@ -26,7 +26,7 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0018](0018-reproducoes-de-obras-de-arte-no-volume-5.md) | Reproduções de obras de arte no Volume 5 (Commons e acervos abertos) | Aceito |
 | [0019](0019-pranchas-de-naturalistas-no-volume-6.md) | Pranchas de naturalistas e motivos novos no Volume 6 | Aceito |
 | [0020](0020-fontes-e-ilustracao-do-volume-7.md) | Fontes de letra, melodia e ilustração do Volume 7 (Primeiras línguas) | Aceito |
-| [0021](0021-caderno-de-atividades-para-2-anos.md) | Caderno de atividades para crianças de 2 anos | Aceito |
-| [0022](0022-caderno-de-ingles-para-2-anos.md) | Caderno de inglês para crianças de 2 anos | Aceito |
+| [0021](0021-caderno-de-atividades-para-2-anos.md) | Caderno de atividades para crianças de 2 anos | Aceito (conferência pediátrica pendente) |
+| [0022](0022-caderno-de-ingles-para-2-anos.md) | Caderno de inglês para crianças de 2 anos | Aceito (em produção) |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
