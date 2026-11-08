@@ -11,6 +11,7 @@ import {
   mudancasDaSondagem,
   type Resultados,
 } from '../domain/sondagem';
+import { linhasParaRessondar } from '../domain/ressondagem';
 import { carregarSondagem } from '../conteudo';
 import { ESTADOS } from '../domain/tipos';
 import { NOME_ESTADO } from '../ui/rotulos';
@@ -28,7 +29,21 @@ export const paginaSondagem: FabricaPagina = async (ctx, params) => {
   const idade = idadeEmAnos(crianca.nascimento, new Date(ctx.agora()));
   const emRevisao = sondagem.itens.some((i) => i.revisao?.estado === 'rascunho');
 
-  const pistas = pistasDaCrianca(ctx.idx, familia, crianca)
+  const todas = pistasDaCrianca(ctx.idx, familia, crianca);
+  // Ressondagem (#18): só as linhas paradas ou sem observação, reaproveitando a mesma folha.
+  const idsRessondagem = new Set(
+    linhasParaRessondar(
+      ctx.idx,
+      todas,
+      sondagem,
+      await ctx.repo.estados(crianca.id),
+      familia.criadaEm,
+      ctx.agora(),
+    ).map((r) => idPista(r.pista)),
+  );
+  const soRessondagem = params.ressondagem === '1';
+  const pistas = todas
+    .filter((p) => !soRessondagem || idsRessondagem.has(idPista(p)))
     .map((pista) => ({
       pista,
       id: idPista(pista),
@@ -86,7 +101,7 @@ export const paginaSondagem: FabricaPagina = async (ctx, params) => {
     conteudo: html`
       <h1>Sondagem de ${crianca.nome}</h1>
       <p class="nota">
-        Aplique com ${crianca.nome} no papel, sem pressa e sem avisar que é uma prova. Marque o que
+        ${soRessondagem ? html`<b>Ressondagem:</b> só as linhas que não mudam há 8 semanas ou mais. ` : ''}Aplique com ${crianca.nome} no papel, sem pressa e sem avisar que é uma prova. Marque o que
         viu em cada item e toque em “Lançar resultados”. Se alguma linha ainda não ficar clara, o
         app traz mais um item só dela. Pode dividir em dias: lance o que já aplicou.
         <a href="#/jornada/${crianca.id}">Voltar à jornada</a>

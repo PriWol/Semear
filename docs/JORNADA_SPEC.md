@@ -71,7 +71,7 @@
 | 49 | Backup | **Exportar/importar arquivo + lembrete após 30 dias** sem backup + pedido de armazenamento persistente. |
 
 > **O que a v1 do app ainda não implementa** (fica para versões seguintes; registrado após a revisão do PR #1):
-> selo "parece pronto" (§5.2); ressondagem (§5.5) e a sondagem de outros domínios além de LG.FON e MA.SEN — a **sondagem inicial** (§5.4) existe desde a #17, em duas etapas, com os itens ainda em rascunho; no gerador de sessão (§5.6),
+> selo "parece pronto" (§5.2); a sondagem de outros domínios além de LG.FON e MA.SEN — a **sondagem inicial** (§5.4) existe desde a #17, em duas etapas, e a **ressondagem** (§5.5, #18) avisa no início quando uma linha com item de sondagem está parada há 8 semanas ou mais (ou sem registro, numa família com 8 semanas ou mais) e gera a sondagem só dessas linhas; os itens ainda estão em rascunho; no gerador de sessão (§5.6),
 > o ponto de "materiais disponíveis", a alternância sentada/movimento e a sessão conjunta de irmãos;
 > e o lançamento da ficha de registro no app (§5.7). O avanço continua manual, marco a marco, na tela da jornada.
 

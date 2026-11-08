@@ -3,6 +3,8 @@ import { html } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
 import { precisaLembreteBackup } from '../domain/backup';
 import { pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
+import { linhasParaRessondar } from '../domain/ressondagem';
+import { carregarSondagem } from '../conteudo';
 import { anos, dataCurta } from '../ui/rotulos';
 import { criarExemplo } from '../domain/exemplo';
 
@@ -102,12 +104,29 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         for (const id of pos.ativos) ativos.push(ctx.idx.marco(id)?.titulo ?? id);
       }
       const posicionada = Object.keys(estados).length > 0;
+      const paraRessondar = linhasParaRessondar(
+        ctx.idx,
+        pistasDaCrianca(ctx.idx, familia, c),
+        carregarSondagem(),
+        estados,
+        familia.criadaEm,
+        agora,
+      );
       return html`<article class="cartao crianca-cartao">
         <header>
           <h2>${c.nome}</h2>
           <span class="nota">${anos(idade)}</span>
           <a class="link-discreto" href="#/crianca/${c.id}">editar</a>
         </header>
+        ${
+          paraRessondar.length > 0
+            ? html`<p class="alerta" role="note">
+                ${paraRessondar.length === 1 ? '1 linha' : `${paraRessondar.length} linhas`} de
+                ${c.nome} pedem uma ressondagem.
+                <a href="#/sondagem/${c.id}?ressondagem=1">Fazer a ressondagem</a>
+              </p>`
+            : ''
+        }
         ${
           posicionada
             ? html`<ul class="progresso-dominios">

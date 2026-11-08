@@ -41,3 +41,33 @@ test('sondagem: etapa base, ajuste só na linha indefinida e posição gravada',
     page.locator('li.marco[data-marco="LG.FON.05"]').getByRole('button', { name: /Consolidado/ }),
   ).toHaveAttribute('aria-pressed', 'true');
 });
+
+// #18: depois de 8 semanas sem mudança, o início avisa e a ressondagem traz só as linhas paradas.
+test('ressondagem: o início avisa depois de 8 semanas e a folha traz só essas linhas', async ({
+  page,
+}) => {
+  await page.goto('./');
+  await page.getByRole('link', { name: 'Começar' }).click();
+  await page.getByLabel('Seu nome (educador)').fill('Maria');
+  await page.getByRole('radio', { name: /Montessori/ }).check();
+  await page.getByRole('button', { name: 'Continuar' }).click();
+  await expect(page.getByRole('heading', { name: 'Adicionar criança' })).toBeVisible();
+  await page.getByLabel('Nome').fill('Ana');
+  await page.getByLabel('Data de nascimento').fill('2021-03-15');
+  await page.getByRole('button', { name: 'Salvar' }).click();
+  await expect(page.getByRole('heading', { name: /Jornada de Ana/ })).toBeVisible();
+  await page
+    .locator('li.marco[data-marco="LG.FON.04"]')
+    .getByRole('button', { name: 'Está aqui' })
+    .click();
+
+  await page.getByRole('link', { name: 'Início' }).click();
+  await expect(page.getByText('pedem uma ressondagem')).toHaveCount(0); // tudo é de hoje
+
+  await page.clock.setFixedTime(new Date(Date.now() + 60 * 86_400_000)); // daqui a ~9 semanas
+  await page.reload();
+  await expect(page.getByText(/pedem uma ressondagem|pede uma ressondagem/)).toBeVisible();
+  await page.getByRole('link', { name: 'Fazer a ressondagem' }).click();
+  await expect(page.getByText('Ressondagem:')).toBeVisible();
+  await expect(page.locator('input[name$="|LG.FON.06"]').first()).toBeVisible();
+});
