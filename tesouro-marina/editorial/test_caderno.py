@@ -70,8 +70,8 @@ class TestCaderno(unittest.TestCase):
                 continue
             d = por_unidade.setdefault(m.group(1), {"acalmar": 0, "rimas": 0})
             d["acalmar"] += html.count(">Acalmar</span>")
-            if ">Cantar e rimar</span>" in html:   # `rimas()` traz um título h2 por rima; `rima()` traz uma só
-                d["rimas"] += html.count('<h2 class="titulo"') or 1
+            if ">Cantar e rimar</span>" in html:   # `rimas()` traz um título h2 por rima
+                d["rimas"] += html.count('<h2 class="titulo"')
         self.assertEqual(sorted(por_unidade), [str(i) for i in range(1, 9)])
         for u, d in por_unidade.items():
             self.assertGreaterEqual(d["acalmar"], 2, f"unidade {u}")

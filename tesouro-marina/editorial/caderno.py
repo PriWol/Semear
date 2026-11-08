@@ -106,23 +106,6 @@ def atividade(L, t, tipo, tempo, material, cenario, fazer, dizer, perguntas, por
     return L.add(c, aba=cor)
 
 
-def rima(L, t, linhas, como, origem, cenario, porque, tipo="cantar", variar=(), registro="Hoje a Marina… (qual dedo ela já sabe, que parte ela repete) — data: ______"):
-    """Rima, parlenda ou cantiga: o texto grande e o gesto que a acompanha."""
-    cor = TIPOS[tipo][1]
-    versos = "<br>".join(linhas)
-    c = f"""<div class="miolo">
-      <div class="centro" style="margin-top:1mm">{etiqueta(tipo)}</div>
-      {titulo(t, None, 26)}
-      <div class="centro" style="margin:3mm 0">{cenario}</div>
-      <p style="font-size:17pt;line-height:1.55;text-align:center;font-style:italic;margin:3mm 0">{versos}</p>
-      {bloco("O gesto", passos_txt(como))}{extras(variar, registro)}
-      <div class="peq" style="margin-top:3mm">{origem}</div></div>
-      {adulto("por que isto importa", porque)}"""
-    return L.add(c, aba=cor)
-
-
-
-
 def rimas(L, t, itens, porque, tipo="cantar"):
     """Uma página com duas rimas ou cantigas curtas. itens: dicts com t, linhas, gesto, origem, motivos."""
     cor = TIPOS[tipo][1]
@@ -145,7 +128,7 @@ def rimas(L, t, itens, porque, tipo="cantar"):
 TRAD = "Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
 DOMPUB = "Cantiga de domínio público; a letra tem pequenas variações."
 COLECAO = "Rima escrita pela coleção."
-AGUA = "perto de água, <b>nunca deixe a criança sozinha com água</b>, nem por um instante, mesmo rasa."
+AGUA = "Com água por perto, <b>nunca deixe a criança sozinha com água</b>, nem por um instante, mesmo rasa."   # já com a inicial maiúscula, para vir depois de “Atenção:” ou de um ponto
 CAL = "Hoje o que ajudou a Marina a se acalmar foi… — data: ______"
 # ================================================================== ABERTURA
 
@@ -239,7 +222,7 @@ def fase_do_nao(L):
       combine uma “versão de 2 minutos” e deixe crescer devagar. Se ela soltar a atividade, tudo bem: guarde para outro dia.</p>
       <h2>Quando conversar com o pediatra</h2>
       <p>Procure o pediatra se as birras ficarem <b>muito longas, muito frequentes ou muito intensas</b>; se ela se machucar ou machucar os outros; se perder uma habilidade que já tinha; se a dificuldade continuar
-      ou piorar depois dos 4 anos; ou se você sentir que não está dando conta. <b>Este caderno não faz diagnóstico e não substitui o pediatra</b>; é só um conjunto de brincadeiras de apoio.</p>
+      ou piorar com o tempo; ou se você sentir que não está dando conta. <b>Este caderno não faz diagnóstico e não substitui o pediatra</b>; é só um conjunto de brincadeiras de apoio.</p>
       <p class="peq" style="margin-top:4mm">Base: orientações da SBP sobre a “crise dos dois anos” e materiais de pediatras e de associações de pais e de psiquiatria infantil (ver ADR 0021).
       Faixas e prazos variam de uma fonte para outra: vale conferir com o pediatra da Marina.</p>
       <div class="centro" style="margin-top:4mm">""" + tira(["estrela", "lua", "estrela"], "18mm", "6mm") + "</div>")
@@ -396,7 +379,7 @@ def unidade1(L):
               ["Cadê a água?", "Boia ou afunda?", "O que mais quer pôr na água?"],
               "Despejar, mexer e ver as coisas boiarem e afundarem é ciência de verdade para quem tem 2 anos, e um dos trabalhos mais calmantes que existem. "
               "Use roupa que possa molhar, ou deixe só de fralda e avental.",
-              AGUA.capitalize() + " Esvazie a bacia no fim.",
+              AGUA + " Esvazie a bacia no fim.",
               variar=["Ponha uma gota de corante de comida: a água muda de cor.", "Dê uma esponja e deixe que ela torça: a água sai.", "Lave um brinquedo ou um pano junto com ela."])
 
     atividade(L, "Pular a poça", "corpo", "5 minutos",
@@ -408,7 +391,7 @@ def unidade1(L):
               ["A poça é grande ou pequena?", "Vamos pular rápido ou devagar?", "Quem sabe pular mais alto?"],
               "Pular junto, em pé, com comando de voz, trabalha o equilíbrio, a coordenação e as palavras que descrevem o movimento (rápido, devagar, alto, baixo). "
               "A brincadeira com poça serve também para olhar para o tempo: ontem choveu?",
-              "chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. " + AGUA.capitalize(),
+              "chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. " + AGUA,
               variar=["Pule de um lado para o outro de uma linha de fita no chão.", "Faça o “sapo”: agachada, e pula bem baixo.", "Depois de pular, fiquem quietas e escutem a chuva (ou o silêncio)."])
 
 
@@ -441,7 +424,7 @@ def unidade1(L):
               ["Onde está a bolha?", "Grande ou pequena?", "Quem estourou?"],
               "Seguir com os olhos uma coisa que flutua devagar acalma, e soprar bolha grande exige um sopro lento: é respiração controlada disfarçada de brincadeira. "
               "Boa para o fim de um passeio ou antes de uma troca difícil (banho, sair do parque).",
-              atencao="o líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. " + AGUA.capitalize(),
+              atencao="o líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. " + AGUA,
               variar=["Faça bolhas na hora do banho.", "Bolhas “paradas”: as que pousam na grama sem estourar.", "Deixe que ela escolha: bolha grande ou bolha pequena."],
               registro=CAL)
 
@@ -772,7 +755,7 @@ def unidade5(L):
               ["É mole ou é dura?", "O que você fez?", "Quer uma bola ou uma cobra?"],
               "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é segura e é a versão simples do Volume 5, na unidade de modelar. "
               "Pode repetir todos os dias: a massa não “acaba”.",
-              atencao="a massa é salgada e não é comida: não deixe que ela coma; tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. " + AGUA.capitalize(),
+              atencao="a massa é salgada e não é comida: não deixe que ela coma; tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. " + AGUA,
               variar=["Esconda um brinquedo grande na massa.", "Imprima a mão e o pé na massa.", "Faça um “bolo” e cante parabéns ao bichinho."])
 
     atividade(L, "Um quadro por um minuto", "mundo", "3 minutos",
@@ -808,7 +791,7 @@ def unidade5(L):
               ["O que a água fez?", "Cadê o que você pintou?", "Quer pintar o chão ou a parede?"],
               "Pintar com água tem todos os gestos da pintura, sem sujeira nem “errado”, porque o desenho some sozinho. O movimento repetido de pintar e ver secar é calmante e ensina a esperar. "
               "Ótima para depois de uma crise ou numa tarde difícil.",
-              atencao="com água em balde, não a deixe sozinha; esvazie o balde no fim. " + AGUA.capitalize(),
+              atencao="com água em balde, não a deixe sozinha; esvazie o balde no fim. " + AGUA,
               variar=["Pinte o espelho do banheiro.", "Pinte uma “pegada” de água com o pé.", "Pinte letras e formas grandes e depois apague."], registro=CAL)
 
     atividade(L, "Massagem nas mãos", "acalmar", "3 a 5 minutos",
@@ -855,7 +838,7 @@ def unidade6(L):
               ["A terra está seca ou molhada?", "Quanta água?", "A planta está feliz?"],
               "Cuidar de uma planta dá uma tarefa real, repetida todo dia, e mostra uma mudança lenta, a lição de esperar. “Pouquinho” e “para” treinam o controle das mãos. "
               "É também uma tarefa bem aceita por quem diz “não” a ordens: aqui ela é a responsável.",
-              atencao="não deixe que ela coma terra ou folhas; escolha uma planta que não seja tóxica. " + AGUA.capitalize(),
+              atencao="não deixe que ela coma terra ou folhas; escolha uma planta que não seja tóxica. " + AGUA,
               variar=["Plante um feijão no algodão (Volume 6, unidade 5).", "Regue as plantas do quintal.", "Desenhe a planta toda semana."])
 
     atividade(L, "Bichinho de perto", "mundo", "5 a 10 minutos",
@@ -879,7 +862,7 @@ def unidade6(L):
               ["É mole ou duro?", "O que você está fazendo?", "Quer pôr mais água?"],
               "A terra molhada oferece um dos melhores jogos sensoriais: macia, fria, moldável. É um espaço em que bagunça é permitida, o que alivia quem ouve muitos “não”. "
               "Combine antes o fim (“mais cinco minutos e vamos lavar”).",
-              atencao="não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. " + AGUA.capitalize(),
+              atencao="não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. " + AGUA,
               variar=["Impressões de pedras e folhas na lama.", "Uma “pista de carrinho” de lama.", "Pintar o tronco com lama (e lavar)."])
 
     rimas(L, "Bichos de quintal", [
@@ -1081,7 +1064,7 @@ def unidade8(L):
               ["Para onde vai o glitter?", "Está caindo devagar ou depressa?", "Onde vamos guardar a garrafa?"],
               "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. Guarde no cantinho da calma e use quando ela já estiver mais tranquila, "
               "nunca como castigo nem como distração de uma crise já grande.",
-              atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. " + AGUA.capitalize(),
+              atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. " + AGUA,
               variar=["Faça cada uma de uma cor (corante de comida).", "Troque o glitter por fitas coloridas cortadas grandes, postas só pelo adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
 
     atividade(L, "Respirar com o bichinho", "acalmar", "3 a 5 minutos",
