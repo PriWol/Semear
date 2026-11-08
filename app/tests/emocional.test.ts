@@ -40,4 +40,18 @@ describe('domínio de formação e regulação emocional', () => {
     expect(marcosEM().every((m) => m.revisao?.estado === 'rascunho')).toBe(true);
     expect(carregarConteudo().marcos.some((m) => m.id.startsWith('EM.'))).toBe(false);
   });
+  it('tem atividades em rascunho que cobrem as quatro linhas, sem material de risco nas de 2 anos', () => {
+    const c = carregarConteudoBruto();
+    const doEM = c.atividades.filter((a) => a.marcos.some((m) => m.startsWith('EM.')));
+    expect(doEM.length).toBeGreaterThanOrEqual(5);
+    const linhas = new Set(
+      doEM.flatMap((a) => a.marcos.map((m) => m.split('.').slice(0, 2).join('.'))),
+    );
+    expect([...linhas].sort()).toEqual([...LINHAS].sort());
+    for (const a of doEM) {
+      expect(a.revisao?.estado, a.id).toBe('rascunho');
+      if (a.idade[0] < 3) expect(a.cuidados, a.id).toMatch(/peça pequena|boca/);
+    }
+    expect(carregarConteudo().atividades.some((a) => a.id.startsWith('atv-em-'))).toBe(false);
+  });
 });

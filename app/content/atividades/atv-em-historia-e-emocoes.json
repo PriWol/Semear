@@ -1,0 +1,75 @@
+{
+  "id": "atv-em-historia-e-emocoes",
+  "titulo": "Roda de história: o que ele está sentindo?",
+  "marcos": ["EM.NOM.03", "EM.NOM.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Evite histórias com cenas de violência. Nunca compare a criança com o personagem nem a rotule (“você é igual a ele”).",
+  "objetivo": "A criança nomeia o que um personagem sente, diz o que causou a emoção e imagina que outra pessoa poderia sentir diferente.",
+  "passos": [
+    {
+      "titulo": "Leitura",
+      "minutos": 8,
+      "texto": "Leia uma história curta em que o personagem passe por uma emoção clara (perder algo, ganhar um amigo, ter medo). Pare 2 ou 3 vezes para perguntar.",
+      "fala": "Como ele está se sentindo? Por quê?"
+    },
+    {
+      "titulo": "E o outro?",
+      "minutos": 5,
+      "texto": "Escolha um segundo personagem: “E ele, sente igual ou diferente?”. Aceite qualquer resposta com sentido e pergunte o porquê.",
+      "fala": "O que o outro sente?"
+    },
+    {
+      "titulo": "A nossa vez",
+      "minutos": 5,
+      "texto": "Conte uma vez em que você sentiu a mesma emoção e peça que a criança conte a dela, se quiser. Sem obrigar.",
+      "fala": "E você, já sentiu isso?"
+    },
+    {
+      "titulo": "Fechamento",
+      "minutos": 2,
+      "texto": "Escolham juntos uma palavra de emoção do dia e desenhem uma cara para ela, se quiser."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Nomeia a emoção do personagem e a causa",
+      "Diz que outra pessoa pode sentir diferente"
+    ],
+    "emDesenvolvimento": [
+      "Nomeia só emoções simples (alegria, raiva)",
+      "Só fala de si, ainda não do outro"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Dê duas opções de emoção e pergunte qual combina.",
+    "facil": "Peça que invente o que o personagem sentiria em outra situação."
+  },
+  "materiais": [
+    {
+      "item": "Um livro de histórias com personagens que sentem emoções",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou a emoção do personagem",
+      "resposta": "☐ não   ☐ com opções   ☐ sozinha"
+    },
+    {
+      "texto": "Disse que o outro pode sentir diferente",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavra de emoção ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

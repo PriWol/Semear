@@ -19,6 +19,6 @@ Opção 2: domínio `EM` (💛) com quatro linhas: `EM.NOM` (reconhecer e nomear
 - Os textos por vertente (Montessori, Waldorf etc.) ficaram de fora desta primeira versão.
 
 ## Consequências
-- Falta escrever as atividades do domínio (sem material de risco, curtas para 2 anos; ADR 0023) e ligá-las à escolha da sessão.
+- Há 5 atividades em rascunho (`atv-em-*`): caras no espelho, soprar a vela, brincar lado a lado, roda de história e cuidar da planta. As de 2 anos têm até 10 min e `cuidados` (ADR 0023). Elas não têm folhas para a criança, por escolha (aos 2 anos o caderno do ADR 0021 não usa papel). A escolha da sessão passa a usá-las quando forem aprovadas.
 - Quando os marcos forem aprovados, o domínio aparece sozinho para as famílias: não há mais nada a ligar.
 - O cache do Vitest não percebe arquivos novos em `content/marcos/`; se um teste não enxergar o arquivo, apague `node_modules/.vitest-cache`.
