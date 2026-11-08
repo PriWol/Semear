@@ -10,6 +10,8 @@ import type {
 } from './domain/tipos';
 import { estaPublicavel } from './domain/revisao';
 import { criarIndice, type IndiceConteudo } from './domain/conteudo';
+import type { Guia } from './domain/guia';
+import guiaJson from '../content/guia.json';
 import dominiosJson from '../content/dominios.json';
 import livrosJson from '../content/livros.json';
 import acervoJson from '../content/acervo.json';
@@ -48,6 +50,10 @@ export function publicavel(c: Conteudo): Conteudo {
 
 export function carregarConteudo(): Conteudo {
   return publicavel(carregarConteudoBruto());
+}
+
+export function carregarGuia(): Guia {
+  return guiaJson as Guia;
 }
 
 let indice: IndiceConteudo | null = null;

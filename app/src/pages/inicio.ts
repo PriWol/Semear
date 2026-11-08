@@ -144,6 +144,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         <a class="botao" href="#/crianca/nova">+ Adicionar criança</a>
         <a class="botao" href="#/biblioteca">📚 Biblioteca</a>
         <a class="botao" href="#/acervo">🆓 Acervo gratuito</a>
+        <a class="botao" href="#/guia">🧭 Guia das vertentes</a>
       </p>
 
       <h2>Últimas sessões</h2>

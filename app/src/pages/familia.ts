@@ -41,7 +41,10 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
 
         <fieldset>
           <legend>Vertente principal</legend>
-          <p class="nota">Define o ritmo e os marcos extras. Dá para mudar depois.</p>
+          <p class="nota">
+            Define o ritmo e os marcos extras. Dá para mudar depois.
+            <a href="#/guia">Não sei qual escolher</a>
+          </p>
           ${VERTENTES.map(
             (v) =>
               html`<label class="opcao">

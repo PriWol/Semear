@@ -12,6 +12,7 @@ dentro de `app/` e abra um PR.
 | `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                          |
 | `referencias.json`      | Catálogo de referências bibliográficas (ABNT) citadas nos marcos.       |
 | `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança.      |
+| `guia.json`             | Guia das vertentes (#30): uma seção por vertente e como combiná-las.    |
 | `livros.json`           | Curadoria de livros (`editora` e `linkCompra` são opcionais; só https). |
 | `acervo.json`           | Acervo gratuito (domínio público/licença aberta), ADR 0016.             |
 | `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015).   |
