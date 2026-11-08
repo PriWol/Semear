@@ -26,7 +26,7 @@ concurrency:
 jobs:
   gerar:
     name: Gerar os PDFs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # o Playwright ainda não suporta o Ubuntu 26.04 de ubuntu-latest
     timeout-minutes: 45
     defaults:
       run:

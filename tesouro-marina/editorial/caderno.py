@@ -1130,7 +1130,7 @@ def encerramento(L):
       <div class="vinheta-sep">❦</div>
       <p style="font-size:13pt;font-style:italic;color:var(--sepia);max-width:120mm;margin:6mm auto">Quando ela disser “não”, respire. Quando ela disser “de novo”, repita. E quando ela disser “mamãe” ou “papai”, deixe tudo e olhe.</p>
       <div style="margin:10mm auto 0">{tira(ICONES, "20mm", "2mm")}</div>
-      <div style="margin-top:12mm;font-size:10pt;color:var(--sepia)">Caderno de atividades · volta ao Volume 3 a 8 quando ela crescer</div></div>"""
+      <div style="margin-top:12mm;font-size:10pt;color:var(--sepia)">Caderno de atividades · volte aos Volumes 1 a 8 da coleção quando ela crescer</div></div>"""
     L.add(c, cabecalho=False, numero=False)
 
 
