@@ -87,6 +87,16 @@ class TestCaderno(unittest.TestCase):
                         faltam.append(f"{titulo.strip()} (esperada em “{inicio}”)")
         self.assertEqual(faltam, [], "rima que não aparece na página de créditos da sua origem")
 
+    def test_a_coluna_antes_de_dormir_da_semana_so_tem_atividades_de_acalmar(self):
+        acalmar = set()
+        for _, h in self.L.paginas:
+            if ">Acalmar</span>" in h:
+                acalmar |= {x.strip() for x in re.findall(r'<h1 class="titulo"[^>]*>([^<]+)', h)}
+        semana = next(h for _, h in self.L.paginas if "Uma semana de exemplo" in h)
+        linhas = re.findall(r"<tr><td[^>]*><b>[^<]+</b></td><td[^>]*>[^<]*</td><td[^>]*>[^<]*</td><td[^>]*>([^<]+)</td></tr>", semana)
+        self.assertEqual(len(linhas), 7)
+        self.assertEqual([a for a in linhas if a.strip() not in acalmar], [], "“antes de dormir” precisa ser atividade de acalmar")
+
     def test_toda_atividade_da_semana_de_exemplo_existe_no_caderno(self):
         titulos = set()
         for _, h in self.L.paginas:

@@ -238,13 +238,13 @@ def cantinho_calma(L):
       <h2>O que pôr nele</h2>
       <ul>
         <li>um bichinho ou pano macio;</li>
-        <li>um livro de figuras e a garrafa da calma (receita abaixo);</li>
+        <li>um livro de figuras;</li>
         <li>um cata-vento ou bolhas de sabão, para soprar devagar (o adulto fica por perto);</li>
         <li>uma foto da família, ou uma almofada que cheire a casa.</li>
       </ul>
       <h2>A garrafa da calma</h2>
       <p>Garrafa de plástico transparente e pequena, quase cheia de água morna, com uma colher de cola líquida transparente e uma colher de glitter grosso. <b>O adulto fecha a tampa com cola quente e fita</b>,
-      testa se não vaza e <b>só deixa a criança usar com você por perto</b>. Chacoalhar e olhar o glitter descer devagar é um jeito de respirar mais lento. Não serve para mastigar nem para jogar.</p>
+      testa se não vaza e <b>só deixa a criança usar com você por perto</b>. Chacoalhar e olhar o glitter descer devagar é um jeito de respirar mais lento. Não serve para mastigar nem para jogar. <b>Guarde a garrafa fora do alcance dela</b> e leve-a ao cantinho só quando você estiver junto.</p>
       <h2>Como usar</h2>
       <p>“Quer ir ao cantinho? Eu vou com você.” Sentem juntas, respirem devagar, e deixe que ela escolha o que quer segurar. Saiam quando ela quiser.</p>""")
 
@@ -274,7 +274,7 @@ def como_usar(L):
 
 
 def semana(L):
-    dias = (("Segunda", "A cesta de tesouros", "Passeio dos cinco sentidos", "O dia em três tempos"),
+    dias = (("Segunda", "A cesta de tesouros", "Passeio dos cinco sentidos", "Cinco respirações na mão"),
             ("Terça", "Bom dia, sol · Mindinho, seu vizinho", "Estátua", "Cheirar a flor, soprar a vela"),
             ("Quarta", "Pintar com o dedo", "Caça-folhas", "Boa noite em três línguas"),
             ("Quinta", "Voz de bicho", "Pular a poça", "Balançar e cantar baixinho"),
@@ -866,8 +866,8 @@ def unidade6(L):
               variar=["Impressões de pedras e folhas na lama.", "Uma “pista de carrinho” de lama.", "Pintar o tronco com lama (e lavar)."])
 
     rimas(L, "Bichos de quintal", [
-        dict(t="A dona aranha", linhas=["A dona aranha subiu pela parede.", "Veio a chuva forte e a derrubou.", "Já passou a chuva, o sol já vai surgindo,", "e a dona aranha continua a subir.", "Ela é teimosa e desobediente:", "sobe, sobe, sobe e nunca está contente."],
-             gesto="os dedos de uma mão “sobem” pelo seu braço; a “chuva” é uma chuva de dedos que derruba; abra as mãos como sol; e os dedos voltam a subir.", origem=TRAD, motivos=["aranha", "nuvem_chuva", "sol"]),
+        dict(t="A dona aranha", linhas=["A dona aranha subiu pela parede.", "Veio a chuva forte e a derrubou.", "Já passou a chuva, o sol já vai surgindo,", "e a dona aranha continua a subir."],
+             gesto="os dedos de uma mão “sobem” pelo seu braço; a “chuva” é uma chuva de dedos que derruba; abra as mãos como sol; e os dedos voltam a subir. Versão curta: a cantiga tem versões mais longas, que chamam a aranha de “teimosa”, rótulo que a página “A fase do não” manda evitar.", origem=TRAD, motivos=["aranha", "nuvem_chuva", "sol"]),
         dict(t="Sapo-cururu", linhas=["Sapo-cururu", "na beira do rio,", "quando o sapo canta, ó maninha,", "é porque tem frio.", "A mulher do sapo", "é quem está lá dentro,", "fazendo rendinha, ó maninha,", "para o casamento."],
              gesto="agache e pule como sapo nos versos “sapo-cururu”; fique quieta e abraçada nos outros, e termine com um sapo bem baixinho.", origem=TRAD, motivos=["m_riacho", "ninfeia"])],
         "A dona aranha é um jogo de dedos que fala de insistir depois de uma queda, o que vale para quem se frustra fácil: ela cai e sobe de novo. O sapo-cururu junta pulos e silêncio. "
