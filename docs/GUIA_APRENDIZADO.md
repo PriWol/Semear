@@ -217,3 +217,5 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Atividade complementar** | Atividade de um domínio sem jornada (música, artes…): não tem marcos e entra em no máximo uma por sessão (ADR 0015). |
 | **Material impresso** | Trecho de um volume d'O Grande Tesouro de Marina ligado a uma atividade; a Biblioteca abre o PDF na página certa. |
 | **Service worker** | Programa do navegador que guarda arquivos do app para uso offline; precisa ser instruído a não interceptar os PDFs. |
+| **CSP** | Content Security Policy: lista que diz ao navegador de onde scripts, estilos e conexões podem vir; bloqueia código injetado (ADR 0022). |
+| **Iframe sandbox** | Quadro isolado da página: sem a origem do app, só com o que for liberado. Um `srcdoc` herda a CSP do app; por isso a prévia usa `previa.html` (ADR 0022). |
