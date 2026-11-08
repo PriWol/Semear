@@ -208,6 +208,10 @@ export interface Atividade {
   revisao?: Revisao;
 }
 
+/** Tipos de indicação da curadoria (#73): livro (o padrão), obra de arte ou música. */
+export const TIPOS_INDICACAO = ['livro', 'obra', 'musica'] as const;
+export type TipoIndicacao = (typeof TIPOS_INDICACAO)[number];
+
 export interface Livro {
   id: string;
   titulo: string;
@@ -215,7 +219,20 @@ export interface Livro {
   vertentes: Vertente[];
   marcos: string[];
   idade: [number, number];
-  uso: 'leitura-em-voz-alta' | 'leitura-pela-crianca' | 'apoio-ao-educador';
+  /** ausente = livro */
+  tipo?: TipoIndicacao;
+  uso:
+    | 'leitura-em-voz-alta'
+    | 'leitura-pela-crianca'
+    | 'apoio-ao-educador'
+    | 'observar-e-conversar'
+    | 'ouvir-e-cantar';
+  /** linhas da jornada às quais a indicação serve, além dos marcos (ex.: "LG.NAR") */
+  linhas?: string[];
+  /** de onde vem a obra ou a música (domínio público, acervo); obrigatória para obra e música */
+  fonte?: string;
+  /** versão gratuita ou de domínio público (só https); aparece só como texto no pacote impresso */
+  linkGratuito?: string;
   porQue: string;
   editora?: string;
   /** página onde comprar (só https); abre em outra aba, o app não faz chamada nenhuma */

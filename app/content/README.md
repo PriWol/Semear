@@ -6,17 +6,17 @@ dentro de `app/` e abra um PR.
 
 ## Arquivos
 
-| Arquivo                 | O que contém                                                            |
-| ----------------------- | ----------------------------------------------------------------------- |
-| `dominios.json`         | Domínios, linhas, trilhas de língua e vertentes. Muda pouco.            |
-| `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                          |
-| `referencias.json`      | Catálogo de referências bibliográficas (ABNT) citadas nos marcos.       |
-| `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança.      |
-| `guia.json`             | Guia das vertentes (#30): uma seção por vertente e como combiná-las.    |
-| `sondagem.json`         | Itens da sondagem impressa (#17): um por marco de LG.FON e MA.SEN.      |
-| `livros.json`           | Curadoria de livros (`editora` e `linkCompra` são opcionais; só https). |
-| `acervo.json`           | Acervo gratuito (domínio público/licença aberta), ADR 0016.             |
-| `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015).   |
+| Arquivo                 | O que contém                                                                                         |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| `dominios.json`         | Domínios, linhas, trilhas de língua e vertentes. Muda pouco.                                         |
+| `marcos/<DOMÍNIO>.json` | Marcos de cada domínio, ex.: `marcos/LG.json`.                                                       |
+| `referencias.json`      | Catálogo de referências bibliográficas (ABNT) citadas nos marcos.                                    |
+| `atividades/<id>.json`  | Uma atividade por arquivo, com roteiro, ficha e folhas da criança.                                   |
+| `guia.json`             | Guia das vertentes (#30): uma seção por vertente e como combiná-las.                                 |
+| `sondagem.json`         | Itens da sondagem impressa (#17): um por marco de LG.FON e MA.SEN.                                   |
+| `livros.json`           | Curadoria de livros, obras e músicas (ver abaixo). `editora` e `linkCompra` são opcionais; só https. |
+| `acervo.json`           | Acervo gratuito (domínio público/licença aberta), ADR 0016.                                          |
+| `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015).                                |
 
 ## Revisão do conteúdo
 
@@ -35,6 +35,15 @@ Marcos, atividades e livros aceitam o campo opcional `revisao` (#77):
   troca o estado para `revisado`/`aprovado` com `por` e `em`. O merge é a aprovação registrada.
 - Nas atividades, `autoria.status` segue valendo até a regra ser confirmada; para aparecer, a atividade precisa estar
   `publicado` **e** sem revisão ou `aprovada`.
+
+## Livros, obras e músicas (indicação da sessão)
+
+Cada item de `livros.json` é uma indicação que o pacote traz junto da sessão (#73). `tipo` é `livro` (o padrão), `obra` ou `musica`:
+
+- `obra` e `musica` exigem `fonte` (de onde vem: domínio público, acervo) e usam `uso` `observar-e-conversar` ou `ouvir-e-cantar`;
+- liga-se a `marcos` e/ou a `linhas` (ex.: `LG.NAR`): a sessão sugere a indicação cujo marco ou linha ela trabalha;
+- `linkGratuito` (opcional, só https) leva a uma versão gratuita ou de domínio público e aparece **só como texto** no pacote impresso;
+- a criança nunca abre o app: a indicação é para o adulto ou vai impressa.
 
 ## Marco
 

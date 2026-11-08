@@ -1,6 +1,7 @@
 // Índice e validação do conteúdo curado. Funções puras: recebem o conteúdo já carregado.
 import { estaPublicavel, validarRevisao } from './revisao';
 import {
+  TIPOS_INDICACAO,
   VERTENTES,
   type Atividade,
   type Conteudo,
@@ -320,6 +321,16 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     }
     if (l.linkCompra !== undefined && !enderecoHttpsValido(l.linkCompra)) {
       erros.push(`Livro ${l.id}: linkCompra precisa ser um endereço https`);
+    }
+    if (l.tipo !== undefined && !(TIPOS_INDICACAO as readonly string[]).includes(l.tipo))
+      erros.push(`Livro ${l.id}: tipo "${String(l.tipo)}" fora de ${TIPOS_INDICACAO.join(', ')}`);
+    if ((l.tipo === 'obra' || l.tipo === 'musica') && !l.fonte?.trim())
+      erros.push(`Livro ${l.id}: ${l.tipo} precisa de "fonte" registrada`);
+    for (const linha of l.linhas ?? []) {
+      if (!idx.linha(linha)) erros.push(`Livro ${l.id}: linha ${linha} não existe`);
+    }
+    if (l.linkGratuito !== undefined && !enderecoHttpsValido(l.linkGratuito)) {
+      erros.push(`Livro ${l.id}: linkGratuito precisa ser um endereço https`);
     }
   }
 

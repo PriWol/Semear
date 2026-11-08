@@ -268,8 +268,12 @@ export function sugerirLivro(
   const marcos = new Set(
     escolhas.flatMap((e) => [...e.atividade.marcos, ...(e.atividade.revisa ?? [])]),
   );
+  // A indicação liga por marco ou pela linha do marco (#73): obra e música costumam servir a uma linha toda.
+  const linhas = new Set([...marcos].map(linhaDoMarco));
   const candidatos = idx.conteudo.livros
-    .filter((l) => l.marcos.some((m) => marcos.has(m)))
+    .filter(
+      (l) => l.marcos.some((m) => marcos.has(m)) || (l.linhas ?? []).some((x) => linhas.has(x)),
+    )
     .map((l) => ({
       l,
       pontos:

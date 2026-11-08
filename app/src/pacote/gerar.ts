@@ -33,7 +33,15 @@ const USO_LIVRO: Record<Livro['uso'], string> = {
   'leitura-em-voz-alta': 'leitura em voz alta',
   'leitura-pela-crianca': 'leitura pela criança',
   'apoio-ao-educador': 'apoio ao educador',
+  'observar-e-conversar': 'observar e conversar',
+  'ouvir-e-cantar': 'ouvir e cantar',
 };
+
+const TITULO_INDICACAO = {
+  livro: '📚 Livro sugerido',
+  obra: '🖼️ Obra para apreciar',
+  musica: '🎵 Música para ouvir',
+} as const;
 
 function rodapeEducador(texto: string, pagina: string): HtmlSeguro {
   return html`<div class="rodape"><span>${texto}</span><span>${pagina}</span></div>`;
@@ -143,7 +151,7 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
         ${cuidados.length ? html`<p class="caixa cuidados"><b>⚠️ Cuidados:</b> ${cuidados.join(' ')}</p>` : ''}
       </div>
       <div>
-        <h2>📚 Livro sugerido</h2>
+        <h2>${TITULO_INDICACAO[e.livro?.tipo ?? 'livro']}</h2>
         ${
           e.livro
             ? html`<div class="livro">
@@ -152,9 +160,11 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
                   <p><b>${e.livro.titulo}</b><br />${e.livro.autor}</p>
                   <p><b>Uso:</b> ${USO_LIVRO[e.livro.uso]}.</p>
                   <p><b>Por quê:</b> ${textoRico(e.livro.porQue)}</p>
+                  ${e.livro.fonte ? html`<p><b>Fonte:</b> ${e.livro.fonte}</p>` : ''}
+                  ${e.livro.linkGratuito ? html`<p><b>Versão gratuita:</b> ${e.livro.linkGratuito}</p>` : ''}
                 </div>
               </div>`
-            : html`<p class="aviso-capa">Ainda não há livro da curadoria ligado a estes marcos.</p>`
+            : html`<p class="aviso-capa">Ainda não há indicação da curadoria ligada a estes marcos.</p>`
         }
       </div>
     </div>

@@ -78,7 +78,7 @@ describe('gerarPacote (§5.7)', () => {
   });
 
   it('sem livro, mostra um aviso no lugar', () => {
-    expect(gerarPacote(entrada({ livro: null }))).toContain('Ainda não há livro da curadoria');
+    expect(gerarPacote(entrada({ livro: null }))).toContain('Ainda não há indicação da curadoria');
   });
 });
 
