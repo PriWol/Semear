@@ -1,0 +1,344 @@
+{
+  "marcos": [
+    {
+      "id": "EM.NOM.01",
+      "linha": "EM.NOM",
+      "ordem": 1,
+      "titulo": "Mostra como se sente com o corpo e com palavras simples",
+      "descricaoPais": "Aos 2 anos, mostra alegria, raiva ou tristeza com o corpo e já diz uma palavra como “bravo” ou “mimi”.",
+      "evidencias": [
+        "Diz ou aponta como se sente quando o adulto pergunta, mesmo com uma só palavra"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Antes de saber falar sobre o que sente, a criança sente com o corpo inteiro. Quando o adulto **dá nome** ao que vê (“você está bravo porque acabou”), ela começa a ligar a sensação a uma palavra. É o primeiro degrau para, mais tarde, conseguir falar em vez de gritar.",
+        "comoParticipar": "Nomeie a emoção em frases curtas, no momento em que ela acontece: “Você está triste. Quer colo?”. Leiam livros com rostos expressivos e imitem as caras juntos no espelho. Não peça que ela “pare de chorar”; acolha primeiro e fale depois.",
+        "sinaisDeAtencao": "Aos 2 anos é comum a emoção sair em choro, grito ou birra. Se por volta dos 3 anos ela ainda não mostra de nenhuma forma como se sente, ou se as crises são muito intensas e frequentes, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.NOM.02",
+      "linha": "EM.NOM",
+      "ordem": 2,
+      "titulo": "Reconhece emoções básicas em rostos e figuras",
+      "descricaoPais": "Aponta quem está feliz, triste ou bravo numa figura ou no rosto de alguém.",
+      "evidencias": ["Aponta a figura “feliz”, “triste” ou “brava” quando é pedido"],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.NOM.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Reconhecer a emoção no **rosto do outro** é a base da empatia. A criança que aprende a ler rostos entende melhor o que acontece ao redor e se assusta menos com as reações dos outros.",
+        "comoParticipar": "Brinquem de “adivinha a cara”: o adulto faz uma expressão e a criança diz qual é, e depois trocam. Procurem emoções nos personagens de livros: “Como ele está se sentindo aqui?”. Comece com poucas emoções (alegria, tristeza, raiva e medo).",
+        "sinaisDeAtencao": "Algumas crianças demoram mais para olhar para rostos. Se aos 4 anos ela quase não olha nos olhos nem reage a expressões, vale conversar com o pediatra ou a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.NOM.03",
+      "linha": "EM.NOM",
+      "ordem": 3,
+      "titulo": "Nomeia a própria emoção e diz o que a causou",
+      "descricaoPais": "Diz “fiquei bravo porque ele pegou meu carrinho”.",
+      "evidencias": ["Conta como se sentiu e por quê, numa frase"],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.NOM.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Falar da emoção e da causa ajuda a criança a **resolver com palavras** o que antes resolvia com o corpo. Também dá ao adulto uma pista do que realmente aconteceu.",
+        "comoParticipar": "No fim do dia, conversem: “Qual foi o melhor momento? E teve algum difícil? Como você se sentiu?”. Ofereça opções quando ela não achar a palavra (“foi raiva ou foi tristeza?”) e nunca diga que a emoção está errada: o que importa é o que ela faz com a emoção.",
+        "sinaisDeAtencao": "Se aos 5 ou 6 anos ela ainda não consegue nomear nenhuma emoção, mesmo com ajuda e prática em casa, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.NOM.04",
+      "linha": "EM.NOM",
+      "ordem": 4,
+      "titulo": "Percebe que o outro sente de um jeito diferente e fala sobre isso",
+      "descricaoPais": "Entende que a mesma situação pode deixar um colega alegre e outro triste.",
+      "evidencias": ["Diz como o outro pode estar se sentindo e por quê"],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.NOM.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Entender que os outros sentem de forma diferente é o passo da **empatia**: sair do próprio ponto de vista. Sustenta a amizade, a cooperação e a resolução de conflitos.",
+        "comoParticipar": "Ao ler histórias, parem e perguntem: “O que ela sente? E o outro, o que sente?”. Depois de um desentendimento, ajude-a a imaginar o lado do outro, sem forçar um pedido de desculpas vazio.",
+        "sinaisDeAtencao": "Aos 6 anos ainda é comum pensar só em si mesma em momentos de raiva. Se a falta de percepção do outro for constante e causar sofrimento, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.REG.01",
+      "linha": "EM.REG",
+      "ordem": 1,
+      "titulo": "Aceita a presença do adulto para se acalmar",
+      "descricaoPais": "Quando está muito agitada, se acalma com colo, abraço ou a voz calma do adulto.",
+      "evidencias": ["Acalma-se, em alguns minutos, com a ajuda do adulto"],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Nessa idade a criança **não consegue se acalmar sozinha**: ela “pega emprestada” a calma do adulto. É assim que o cérebro aprende, com a repetição, o caminho de volta à calma.",
+        "comoParticipar": "Fique perto, fale baixo e devagar, ofereça colo ou apenas a sua presença. Evite sermão no meio da crise: explique depois, quando todos estiverem tranquilos. Crie um canto de calma com almofadas e um livro, e frequente-o nos momentos bons.",
+        "sinaisDeAtencao": "Birras fazem parte dos 2 anos. Procure ajuda se as crises forem muito longas, com autoagressão, ou se ela nunca aceita ser acalmada. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.REG.02",
+      "linha": "EM.REG",
+      "ordem": 2,
+      "titulo": "Usa uma estratégia simples de calma com o adulto",
+      "descricaoPais": "Respira “soprando a vela” ou abraça o ursinho para se acalmar, com a ajuda do adulto.",
+      "evidencias": ["Faz a respiração ou o gesto de calma quando o adulto propõe"],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.REG.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Estratégias de calma, **praticadas nos momentos tranquilos**, ficam disponíveis na hora difícil. A criança ainda precisa de ajuda, mas já conhece o caminho.",
+        "comoParticipar": "Brinquem de soprar bolhas, “cheirar a flor e soprar a vela” e de abraçar o bicho de pelúcia. Pratique quando ela está bem, sem esperar a crise. Na crise, convide: “vamos soprar a vela juntos?”.",
+        "sinaisDeAtencao": "Se aos 4 anos as crises seguem muito intensas e frequentes apesar da rotina e da prática, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.REG.03",
+      "linha": "EM.REG",
+      "ordem": 3,
+      "titulo": "Escolhe uma estratégia para se acalmar e volta à brincadeira",
+      "descricaoPais": "Percebe que está agitada, vai ao canto da calma ou respira e retorna.",
+      "evidencias": ["Usa uma estratégia por conta própria, ao menos uma vez por semana"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.REG.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "A **autorregulação** é uma das maiores preditoras de bem-estar e aprendizagem. Escolher a própria estratégia mostra que a criança já se observa e se cuida.",
+        "comoParticipar": "Deixe a escolha com ela: “O que ajuda você agora?”. Elogie o esforço (“você percebeu que estava bravo e foi respirar”), não só o resultado. Reconheça que o adulto também precisa se acalmar e mostre como faz.",
+        "sinaisDeAtencao": "Aos 5 anos é normal precisar de ajuda em momentos de muito cansaço ou fome. Se a dificuldade em se acalmar é constante e afeta a convivência, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.REG.04",
+      "linha": "EM.REG",
+      "ordem": 4,
+      "titulo": "Espera a vez e lida com a frustração de perder",
+      "descricaoPais": "Aguarda a vez num jogo e aceita perder sem desistir ou brigar.",
+      "evidencias": [
+        "Joga até o fim e aceita o resultado, com ajuda para se acalmar quando precisa"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.REG.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Perder, esperar e ouvir “não” são **treino para a vida**. A criança descobre que a frustração passa e que o jogo continua.",
+        "comoParticipar": "Joguem jogos simples de tabuleiro e de cartas, e deixe-a perder e ganhar de verdade. Fale sobre o sentimento (“dá raiva perder, né?”) antes de falar da regra. Comece por jogos curtos.",
+        "sinaisDeAtencao": "Aos 6 anos ainda é comum se chatear ao perder. Se isso a leva a evitar qualquer jogo ou a crises muito fortes, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.CON.01",
+      "linha": "EM.CON",
+      "ordem": 1,
+      "titulo": "Brinca ao lado de outras crianças e imita o que elas fazem",
+      "descricaoPais": "Brinca perto de outra criança, olha e imita, ainda sem brincar junto.",
+      "evidencias": ["Fica por perto de outra criança por alguns minutos e imita um gesto dela"],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Aos 2 anos a brincadeira é **paralela**: lado a lado, sem combinar. É o começo da convivência, e olhar e imitar são formas de aprender com o outro.",
+        "comoParticipar": "Marque encontros curtos com poucas crianças e tenha brinquedos repetidos, para evitar disputas. Não force a criança a dividir: o ato de dividir ainda não faz sentido nessa idade. Fique perto para ajudar quando precisar.",
+        "sinaisDeAtencao": "Algumas crianças demoram mais para se aproximar de outras. Se aos 3 anos ela evita qualquer contato e não imita ninguém, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.CON.02",
+      "linha": "EM.CON",
+      "ordem": 2,
+      "titulo": "Reveza com ajuda do adulto e começa a dividir",
+      "descricaoPais": "Espera um pouco a sua vez no escorregador ou no brinquedo, com o adulto ajudando.",
+      "evidencias": ["Espera a vez por um minuto, com ajuda do adulto"],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.CON.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Revezar é a **primeira regra social**. Com ajuda, a criança vê que esperar traz de volta o que ela quer.",
+        "comoParticipar": "Use um marcador de tempo visual (uma música curta, contar até 10) e diga: “Agora é do João; depois é a sua vez”. Cumpra a promessa de devolver a vez. Elogie quando esperar.",
+        "sinaisDeAtencao": "Aos 3 anos revezar ainda é muito difícil. Se toda interação termina em agressão (bater, morder) mesmo com ajuda e rotina, converse com o pediatra ou a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.CON.03",
+      "linha": "EM.CON",
+      "ordem": 3,
+      "titulo": "Resolve um conflito pequeno conversando, com a ajuda do adulto",
+      "descricaoPais": "Diz “não gostei” e propõe uma saída, com o adulto mediando.",
+      "evidencias": ["Diz o que sentiu e propõe uma solução, com mediação"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.CON.02", "EM.NOM.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Conflitos são **oportunidades de aprender**. Com mediação, a criança troca o grito ou o empurrão por uma conversa e descobre que dá para resolver.",
+        "comoParticipar": "Seja mediador, não juiz: ouça cada lado, nomeie as emoções e pergunte: “O que podemos fazer?”. Aceite as ideias dela, mesmo imperfeitas. Evite rótulos (“você é egoísta”).",
+        "sinaisDeAtencao": "Se aos 6 anos a criança só resolve brigas com agressão ou se sofre agressões repetidas dos colegas, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.CON.04",
+      "linha": "EM.CON",
+      "ordem": 4,
+      "titulo": "Combina regras de um jogo e as respeita",
+      "descricaoPais": "Combina as regras antes de brincar e lembra o outro quando alguém as esquece.",
+      "evidencias": ["Combina e cumpre regras de um jogo em grupo"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.CON.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Combinar e cumprir regras é a base da **cooperação e da justiça**: a criança entende que a regra vale para todos.",
+        "comoParticipar": "Antes de brincar, combinem as regras juntos e escrevam, se quiser. Quando surgir uma discussão, volte às regras combinadas. Mude as regras de comum acordo, e não por quem grita mais alto.",
+        "sinaisDeAtencao": "Aos 7 anos ainda é comum tentar mudar as regras quando está perdendo. Se a dificuldade é constante e afasta os colegas, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.VAL.01",
+      "linha": "EM.VAL",
+      "ordem": 1,
+      "titulo": "Faz um gesto de carinho quando alguém está triste, com ajuda",
+      "descricaoPais": "Oferece um abraço ou um brinquedo quando vê alguém chorando.",
+      "evidencias": ["Faz um gesto de carinho quando o adulto sugere"],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O cuidado com o outro **começa pelo exemplo**. A criança que é cuidada e vê o cuidado em volta aprende a cuidar.",
+        "comoParticipar": "Mostre: “Ele está triste. Vamos dar um abraço?”. Elogie o gesto sem exigir. Não obrigue a criança a abraçar ou a beijar quem ela não quer: o corpo é dela.",
+        "sinaisDeAtencao": "Algumas crianças só se aproximam do outro um pouco mais tarde. Não é falta de carinho. Se aos 4 anos ela é indiferente ao sofrimento dos outros sempre, converse com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.VAL.02",
+      "linha": "EM.VAL",
+      "ordem": 2,
+      "titulo": "Diz “por favor”, “obrigado” e “desculpa” com sentido",
+      "descricaoPais": "Usa as palavras de gentileza sem precisar de lembrete, e sabe por quê.",
+      "evidencias": ["Usa as palavras de gentileza por conta própria em uma semana de convivência"],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.VAL.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "As palavras de gentileza só têm valor quando **vêm com o sentimento**. O adulto que as usa com a criança é o melhor ensino.",
+        "comoParticipar": "Use as palavras com ela todos os dias. Evite exigir o “peça desculpa” na hora da raiva; peça que ela olhe o que causou no outro e ofereça reparar (“como você pode ajudar?”).",
+        "sinaisDeAtencao": "Aos 4 anos as palavras ainda saem por imitação, e isso é normal. Não há sinais de alerta específicos para este marco. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.VAL.03",
+      "linha": "EM.VAL",
+      "ordem": 3,
+      "titulo": "Cuida de um ser vivo ou de um espaço comum, com ajuda",
+      "descricaoPais": "Rega a planta, alimenta o bicho ou arruma o cantinho da casa, com o adulto.",
+      "evidencias": ["Participa de uma tarefa de cuidado toda semana"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.VAL.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cuidar de algo vivo ou compartilhado ensina **responsabilidade e pertencimento**: o que eu faço importa para o grupo.",
+        "comoParticipar": "Dê uma tarefa pequena e fixa (regar a planta, pôr a mesa), sempre acompanhada. Elogie o cuidado, não a perfeição. Evite punir se esquecer: lembre com carinho e volte à rotina.",
+        "sinaisDeAtencao": "Não há sinais de alerta específicos para este marco. Se a criança maltrata animais ou plantas de propósito e com frequência, converse com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "EM.VAL.04",
+      "linha": "EM.VAL",
+      "ordem": 4,
+      "titulo": "Conta uma situação em que foi justa ou gentil e explica por quê",
+      "descricaoPais": "Descreve algo que fez de bom pelo outro e por que achou importante.",
+      "evidencias": ["Conta uma situação e diz o motivo"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["EM.VAL.03", "EM.NOM.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Refletir sobre os próprios atos é o início do **julgamento moral**. A criança passa de “fiz porque mandaram” para “fiz porque é certo”.",
+        "comoParticipar": "Conte histórias e peça que ela conte as dela: “teve algum dia em que você ajudou alguém?”. Pergunte o porquê com curiosidade, e não como interrogatório. Mostre também os seus erros e como você os repara.",
+        "sinaisDeAtencao": "Não há sinais de alerta específicos para este marco. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["siegel-bryson-cerebro-crianca", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    }
+  ]
+}

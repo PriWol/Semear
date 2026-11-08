@@ -221,3 +221,4 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Iframe sandbox** | Quadro isolado da página: sem a origem do app, só com o que for liberado. Um `srcdoc` herda a CSP do app; por isso a prévia usa `previa.html` (ADR 0022). |
 | **Faixa etária** | Idades que o produto atende (2 a 8 anos). O app avisa, mas não bloqueia, quem está fora (ADR 0023). |
 | **Preparo** | Tempo do adulto para separar materiais; fica fora dos 30 minutos de atividade da sessão (ADR 0023). |
+| **Regulação emocional** | Capacidade de perceber o que sente e voltar à calma. Aos 2 anos depende do adulto (“coregulação”); depois a criança assume aos poucos (ADR 0024). |

@@ -94,6 +94,7 @@ O mapa completo, com códigos e idades, está em [`app/content/dominios.json`](.
 | 🗣️ LG Linguagem e Alfabetização | **Jornada completa** | Prioridade nº 1 |
 | 🔢 MA Matemática | **Jornada completa** | |
 | 🌍 LI Línguas (inglês, francês, latim) | **Jornada completa**, por trilha | Só as trilhas que o educador domina |
+| 💛 EM Formação e regulação emocional | **Jornada completa** (2 a 8 anos) | Substitui o esboço DI.SOC. Marcos em rascunho até a revisão da dona do produto (ADR 0024) |
 | 🎨 AR Artes e Música | **Só atividades** | Inclui artistas e música brasileira (Tarsila, Portinari, Villa-Lobos, cantigas) |
 | 🌎 NM Natureza, Mundo e Sociedade | **Só atividades** | Reaproveita os recursos atuais (folclore, plantio…). Jornada na v2. |
 | 🌱 DI Desenvolvimento Integral | **Só atividades** | Valores e rituais atuais do Semear. Jornada na v2. |
@@ -160,10 +161,20 @@ Desenho · Pintura · Modelagem · Ritmo e pulso · Canto · Escuta musical · A
 | NM.ESP Espaço e lugares | Casa, bairro, cidade, mapas, Brasil |
 | NM.CUL Cultura e diversidade | Folclore, festas, povos e regiões brasileiras |
 
+### 💛 EM: Formação e regulação emocional *(jornada completa, 2 a 8 anos)*
+| Linha | O que acompanha |
+|-------|-----------------|
+| EM.NOM Reconhecer e nomear emoções | Sentir com o corpo, ler rostos, nomear a própria emoção e perceber a do outro |
+| EM.REG Autorregulação | Da calma com o adulto (2 anos) à estratégia própria e à frustração de perder |
+| EM.CON Convivência e resolução de conflitos | Brincar ao lado, revezar, resolver conversando, combinar regras |
+| EM.VAL Valores e cuidado | Carinho, gentileza com sentido, cuidar de um ser vivo, refletir sobre os próprios atos |
+
+Regras do domínio: atividades sem material de risco, sem rotular a criança (nada de “birrenta” ou “tímida”) e com texto “Para os pais” que diz que não é diagnóstico. Os 16 marcos iniciais são `rascunho` (#77).
+
 ### 🌱 DI: Desenvolvimento Integral *(só atividades no lançamento)*
 | Linha | O que acompanha |
 |-------|-----------------|
-| DI.SOC Socioemocional e valores | Nomear emoções, autorregulação, convivência. Liga-se aos 8 valores do Semear. |
+| DI.SOC Socioemocional e valores | *Substituída pelo domínio EM (#72); fica só para as atividades antigas.* Liga-se aos 8 valores do Semear. |
 | DI.VPR Vida prática e autonomia | Cuidado de si, da casa e do outro |
 | DI.MAM Motor amplo | Equilíbrio, coordenação, ritmo corporal |
 | DI.MFI Motor fino | Pinça, recorte, encaixe, costura |
