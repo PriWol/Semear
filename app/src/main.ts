@@ -20,6 +20,7 @@ import { paginaConfig } from './pages/config';
 import { paginaBiblioteca } from './pages/biblioteca';
 import { paginaConteudo } from './pages/conteudo';
 import { paginaAcervo } from './pages/acervo';
+import { paginaSondagem } from './pages/sondagem';
 import { paginaGuia } from './pages/guia';
 import { paginaPrivacidade } from './pages/privacidade';
 
@@ -48,6 +49,7 @@ async function iniciar() {
       '/config': paginaConfig,
       '/biblioteca': paginaBiblioteca,
       '/acervo': paginaAcervo,
+      '/sondagem/:id': paginaSondagem,
       '/guia': paginaGuia,
       '/privacidade': paginaPrivacidade,
       '/conteudo': paginaConteudo,

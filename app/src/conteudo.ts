@@ -11,6 +11,8 @@ import type {
 import { estaPublicavel } from './domain/revisao';
 import { criarIndice, type IndiceConteudo } from './domain/conteudo';
 import type { Guia } from './domain/guia';
+import type { Sondagem } from './domain/sondagem';
+import sondagemJson from '../content/sondagem.json';
 import guiaJson from '../content/guia.json';
 import dominiosJson from '../content/dominios.json';
 import livrosJson from '../content/livros.json';
@@ -54,6 +56,10 @@ export function carregarConteudo(): Conteudo {
 
 export function carregarGuia(): Guia {
   return guiaJson as Guia;
+}
+
+export function carregarSondagem(): Sondagem {
+  return sondagemJson as Sondagem;
 }
 
 let indice: IndiceConteudo | null = null;
