@@ -91,4 +91,13 @@ describe('pacote da semana (#9)', () => {
   it('o nome do arquivo tem a criança sem acento e a data da segunda', () => {
     expect(nomeArquivoSemana(plano, c)).toBe('semear-semana-ana-lucia-2026-11-09.html');
   });
+  it('traz um seletor de dia para o modo tablet, que esconde as folhas dos outros dias', () => {
+    expect(tudo).toContain('Dia no tablet');
+    expect(tudo).toContain('mostrarDia(this.value)');
+    expect(contar(tudo, 'class="dia-bloco"')).toBe(2);
+    expect(tudo).toContain('function mostrarDia');
+    expect(tudo).toContain('body.tablet .dia-bloco.oculto');
+    // só roteiros: sem folhas, sem seletor
+    expect(doc('roteiros')).not.toContain('Dia no tablet');
+  });
 });

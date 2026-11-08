@@ -277,6 +277,7 @@ window.addEventListener('message',function(e){if(e.source===window.parent&&e.dat
 function ajustarTablet(){var b=document.body;if(!b.classList.contains('tablet')){b.style.removeProperty('--zoom-tablet');return;}var h=window.innerHeight-54;b.style.setProperty('--zoom-tablet',String(Math.min(window.innerWidth/793.7,h/1122.5)));}
 window.addEventListener('resize',ajustarTablet);
 function alternarTablet(){var on=document.body.classList.toggle('tablet');document.getElementById('btnTablet').setAttribute('aria-pressed',String(on));ajustarTablet();}
+function mostrarDia(d){document.querySelectorAll('.dia-bloco').forEach(function(b){b.classList.toggle('oculto',d!=='todos'&&b.getAttribute('data-dia')!==d);});}
 function trocarLetra(v){document.body.classList.remove('letra-bastao','letra-script','letra-cursiva');document.body.classList.add('letra-'+v);}
 `;
 
@@ -317,7 +318,13 @@ export function paginasDaSessao(e: EntradaPacote): {
 }
 
 /** Documento HTML completo (CSS e script embutidos, CSP própria): funciona offline (ADR 0004). */
-export function montarDocumento(titulo: string, letraBruta: string, corpo: HtmlSeguro): string {
+export function montarDocumento(
+  titulo: string,
+  letraBruta: string,
+  corpo: HtmlSeguro,
+  /** HTML extra para a barra de controles (já escapado por quem chama); o plano semanal põe o seletor de dia */
+  barraExtra: HtmlSeguro | '' = '',
+): string {
   // A letra vem dos dados da criança (que podem vir de um backup): só valores conhecidos entram no HTML.
   const letra = ehLetra(letraBruta) ? letraBruta : 'bastao';
   const opcoesLetra = (Object.keys(NOME_LETRA) as Letra[])
@@ -347,7 +354,7 @@ ${estilos}</style>
   <strong>🌱 Semear</strong>
   <button class="primario" onclick="window.print()">🖨️ Imprimir / salvar PDF</button>
   <button id="btnTablet" aria-pressed="false" onclick="alternarTablet()">📱 Modo tablet (só folhas da criança)</button>
-  <label>Letra da criança: <select onchange="trocarLetra(this.value)">${opcoesLetra}</select></label>
+  <label>Letra da criança: <select onchange="trocarLetra(this.value)">${opcoesLetra}</select></label>${barraExtra}
 </div>
 <main class="paginas">${corpo}</main>
 <script>${SCRIPT}</script>

@@ -15,5 +15,5 @@ As estórias #8 e #9 pedem o plano da semana de cada criança (várias sessões 
 
 ## Consequências
 - O app antigo (versão 1 do banco) não abre um banco já migrado para a versão 2 (`VersionError`); por isso, antes de testar, faça o backup (ver `docs/ROADMAP.md`, "Como uma estória vira algo testável").
-- Fica para depois: o modo tablet com navegação por dia, e a sessão conjunta de irmãos.
+- O documento da semana traz um seletor de dia para o modo tablet (mostra as folhas de um dia por vez). Fica para depois a sessão conjunta de irmãos.
 - Com pouco conteúdo publicado, algumas crianças terão dias sem atividade; o app mostra "Sem atividade neste dia".

@@ -55,16 +55,29 @@ export function gerarSemana(e: EntradaSemana): string {
     const p = paginasDaSessao(d.entrada);
     const educador = e.modo !== 'folhas';
     const crianca = e.modo !== 'roteiros';
+    const { dia } = d;
     return [
       educador ? separadorDoDia(d) : '',
       educador ? p.roteiro : '',
-      crianca ? p.folhas : [],
+      crianca ? html`<div class="dia-bloco" data-dia="${dia.dia}">${p.folhas}</div>` : [],
       educador ? p.ficha : '',
     ];
   });
   const corpo = html`${e.modo === 'folhas' ? '' : paginaMateriaisDaSemana(e)}${partes}`;
   const titulo = `Semear · semana de ${dataBR(`${e.plano.inicio}T12:00:00`)} · ${e.crianca.nome}`;
-  return montarDocumento(titulo, e.dias[0]?.entrada.letra ?? 'bastao', corpo);
+  // No modo tablet, o seletor mostra as folhas de um dia por vez (#9: navegação por dia).
+  const diasComFolhas = e.dias.filter((d) => d.entrada.atividades.length > 0);
+  const seletor =
+    e.modo !== 'roteiros' && diasComFolhas.length > 0
+      ? html`<label
+          >Dia no tablet:
+          <select onchange="mostrarDia(this.value)">
+            <option value="todos">Todos os dias</option>
+            ${diasComFolhas.map((d) => html`<option value="${d.dia.dia}">${NOME_DIA[d.dia.dia]}</option>`)}
+          </select></label
+        >`
+      : '';
+  return montarDocumento(titulo, e.dias[0]?.entrada.letra ?? 'bastao', corpo, seletor);
 }
 
 /** semear-semana-<criança>-<data>.html */
