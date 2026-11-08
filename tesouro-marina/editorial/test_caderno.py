@@ -97,6 +97,11 @@ class TestCaderno(unittest.TestCase):
         self.assertEqual(len(linhas), 7)
         self.assertEqual([a for a in linhas if a.strip() not in acalmar], [], "“antes de dormir” precisa ser atividade de acalmar")
 
+    def test_toda_pagina_da_garrafa_da_calma_manda_guarda_la_fora_do_alcance(self):
+        paginas = [(n, _texto(h)) for n, h in self.L.paginas if "garrafa da calma" in _texto(h).lower() and "Para o adulto" in _texto(h)]
+        self.assertGreaterEqual(len(paginas), 2)   # a atividade e o cantinho
+        self.assertEqual([n for n, t in paginas if "fora do alcance" not in t], [], "página da garrafa da calma sem “fora do alcance”")
+
     def test_toda_atividade_da_semana_de_exemplo_existe_no_caderno(self):
         titulos = set()
         for _, h in self.L.paginas:

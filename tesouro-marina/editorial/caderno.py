@@ -664,9 +664,9 @@ def unidade4(L):
               variar=["De olhos fechados, se ela quiser.", "Com a janela fechada e depois aberta: quais sons mudam?", "À noite, com a luz baixa."])
 
     atividade(L, "Chocalho de casa", "maos", "10 minutos",
-              "uma garrafa plástica pequena e limpa, grãos grandes (grão-de-bico, feijão grande), cola quente e fita, fitas coloridas para enfeitar",
+              "uma garrafa plástica pequena e limpa, grãos grandes (grão-de-bico, feijão grande), cola quente e fita, adesivos grandes ou fita adesiva colorida para enfeitar",
               cena([("chocalho", 40, 12, 8), ("tijolos", 28, 62, 20), ("pincel", 32, 104, 12), ("papel_azul", 28, 146, 16)], 48, 190),
-              ["Escolha com ela a garrafa e o que vai dentro (macarrão penne ou feijão grande). <b>Só o adulto põe os grãos na garrafa</b>; ela escolhe e olha.", "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela.", "Enfeitem a garrafa com fitas coloridas.",
+              ["Escolha com ela a garrafa e o que vai dentro (macarrão penne ou feijão grande). <b>Só o adulto põe os grãos na garrafa</b>; ela escolhe e olha.", "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela.", "Enfeitem a garrafa com adesivos grandes ou fita adesiva colorida, colados pelo adulto (nada de fitas soltas ou laços).",
                "Toquem: forte, fraco, rápido, devagar, e deitem o chocalho para silenciar."],
               ["Chacoalha! Que barulho! Chuá, chuá.", "Agora bem fraquinho.", "Quieto: o chocalho dormiu."],
               ["Que barulho faz?", "É forte ou fraco?", "Onde o chocalho dorme?"],
@@ -1058,14 +1058,14 @@ def unidade8(L):
     atividade(L, "A garrafa da calma", "acalmar", "10 minutos",
               "uma garrafa plástica transparente e pequena, água morna, uma colher de cola líquida transparente, glitter grosso, cola quente e fita",
               cena([("jarra", 34, 14, 10), ("estrela", 24, 58, 6), ("estrela", 20, 80, 24), ("gota", 18, 108, 14), ("coracao", 26, 144, 12)], 48, 190),
-              ["Encham a garrafa com água morna até quase o alto: ela despeja a água, sob supervisão, com a ajuda de um funil. <b>Só o adulto põe o glitter e a cola</b>; ela escolhe a cor e olha.", "O adulto acrescenta uma colher de cola líquida, que deixa o glitter descer devagar.",
+              ["<b>O adulto enche a garrafa</b> com água morna (testada no pulso, nunca quente) até quase o alto, e <b>só ele põe o glitter e a cola</b>; ela escolhe a cor e olha.", "O adulto acrescenta uma colher de cola líquida, que deixa o glitter descer devagar.",
                "<b>O adulto fecha a tampa com cola quente e fita</b>, longe dela, e testa se não vaza.", "Chacoalhem juntas e olhem o glitter cair, respirando devagar."],
               ["Vamos fazer uma garrafa mágica.", "Chacoalha… e olha o glitter descer, devagar, devagar.", "Quando fico brava, posso olhar a garrafa e respirar."],
               ["Para onde vai o glitter?", "Está caindo devagar ou depressa?", "Onde vamos guardar a garrafa?"],
-              "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. Guarde no cantinho da calma e use quando ela já estiver mais tranquila, "
+              "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. <b>Guarde a garrafa fora do alcance dela</b> e leve-a ao cantinho da calma só quando estiverem juntas, quando ela já estiver mais tranquila, "
               "nunca como castigo nem como distração de uma crise já grande.",
               atencao="só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. " + AGUA,
-              variar=["Faça cada uma de uma cor (corante de comida).", "Troque o glitter por fitas coloridas cortadas grandes, postas só pelo adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
+              variar=["Faça cada uma de uma cor (corante de comida).", "Troque o glitter por pedaços grandes de papel colorido, postos só pelo adulto.", "Conte quantas respirações o glitter leva para descer."], registro=CAL)
 
     atividade(L, "Respirar com o bichinho", "acalmar", "3 a 5 minutos",
               "um bichinho de pelúcia leve; uma manta ou tapete macio",
