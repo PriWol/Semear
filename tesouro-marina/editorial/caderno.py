@@ -1106,7 +1106,7 @@ def encerramento(L):
       <i>A dona aranha</i>; <i>Sapo-cururu</i>; <i>Peixe vivo</i>; <i>Corre, cotia</i>; <i>Um elefante incomoda muita gente</i>. A versão da letra pode variar da que você conhece.</p>
       <p><b>Em inglês e francês, de domínio público:</b> <i>Twinkle, twinkle, little star</i> (Jane Taylor, 1806), <i>Frère Jacques</i> (tradicional francesa), <i>Row, row, row your boat</i> (letra de 1852) e <i>Pat-a-cake</i> (rima inglesa do século XVII).
       As traduções em português são da coleção.</p>
-      <p><b>Escritas pela coleção:</b> <i>Bom dia, sol</i>; <i>Marcha, marcha, pé com pé</i>; <i>O barquinho de papel</i>; <i>Estou com raiva</i>; <i>Quantos dedinhos?</i>; <i>Grande e pequeno</i>; <i>As cores</i>; <i>Mão suja, mão limpa</i>; <i>Devagar, devagarinho</i>; <i>Formiguinha</i>; <i>Cadê? Achou!</i>;
+      <p><b>Escritas pela coleção:</b> <i>Bom dia, sol</i>; <i>Marcha, marcha, pé com pé</i>; <i>O barquinho de papel</i>; <i>Dois olhinhos</i>; <i>Quem faz assim?</i>; <i>Estou com raiva</i>; <i>Quantos dedinhos?</i>; <i>Grande e pequeno</i>; <i>As cores</i>; <i>Mão suja, mão limpa</i>; <i>Devagar, devagarinho</i>; <i>Formiguinha</i>; <i>Cadê? Achou!</i>;
       o acalanto da unidade 4 e a história do gatinho da unidade 2.</p>
       <h2>Ilustração</h2>
       <p>Todas as figuras são motivos em aquarela da coleção (<i>editorial/motivos*.py</i>). Nenhum dado de criança ou de família é coletado ou enviado.</p>""")

@@ -69,6 +69,24 @@ class TestCaderno(unittest.TestCase):
         texto = _texto(" ".join(h for _, h in self.L.paginas))
         self.assertEqual([v for v in vetadas if v.lower() in texto.lower()], [])
 
+    def test_toda_rima_aparece_nos_creditos_da_sua_origem(self):
+        creditos = _texto(next(h for _, h in self.L.paginas if "De onde vêm as ideias e as rimas" in h))
+        # origem impressa na página da rima -> (início e fim do trecho dos créditos em que o título deve aparecer)
+        trechos = {"Rima escrita pela coleção": ("Escritas pela coleção", "Ilustração"),
+                   "Rima tradicional brasileira": ("Tradicionais brasileiras", "Em inglês e francês")}
+        rimas = []
+        for _, html in self.L.paginas:
+            rimas += re.findall(r'<h2 class="titulo"[^>]*>([^<]+)</h2>.*?<div class="peq"[^>]*>([^<]+)</div>', html, re.DOTALL)
+        self.assertGreaterEqual(len(rimas), 32)
+        faltam = []
+        for titulo, origem in rimas:
+            for chave, (inicio, fim) in trechos.items():
+                if origem.startswith(chave):
+                    trecho = creditos.split(inicio, 1)[1].split(fim, 1)[0]
+                    if titulo.strip() not in trecho:
+                        faltam.append(f"{titulo.strip()} (esperada em “{inicio}”)")
+        self.assertEqual(faltam, [], "rima que não aparece na página de créditos da sua origem")
+
     def test_toda_atividade_da_semana_de_exemplo_existe_no_caderno(self):
         titulos = set()
         for _, h in self.L.paginas:
