@@ -135,6 +135,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         }
         <div class="acoes">
           <a class="botao primario" href="#/sessao/nova?crianca=${c.id}">Preparar sessão</a>
+          <a class="botao" href="#/semana/${c.id}">Planejar semana</a>
           <a class="botao" href="#/jornada/${c.id}"
             >${posicionada ? 'Ver jornada' : 'Posicionar'}</a
           >

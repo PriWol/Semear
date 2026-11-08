@@ -30,5 +30,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0022](0022-csp-no-app-e-previa-em-pagina-propria.md)                    | CSP no app e prévia do pacote em página própria                       | Aceito                                   |
 | [0023](0023-faixa-etaria-de-2-a-8-anos.md) | Faixa etária de 2 a 8 anos | Aceito (conteúdo pendente) |
 | [0024](0024-dominio-formacao-e-regulacao-emocional.md) | Domínio de formação e regulação emocional | Aceito (revisão pendente) |
+| [0025](0025-plano-semanal.md) | Plano semanal guardado no aparelho | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

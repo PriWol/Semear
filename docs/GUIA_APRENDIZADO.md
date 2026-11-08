@@ -223,3 +223,4 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Preparo** | Tempo do adulto para separar materiais; fica fora dos 30 minutos de atividade da sessão (ADR 0023). |
 | **Regulação emocional** | Capacidade de perceber o que sente e voltar à calma. Aos 2 anos depende do adulto (“coregulação”); depois a criança assume aos poucos (ADR 0024). |
 | **Sondagem** | Folha curta aplicada no papel para descobrir onde a criança está em cada linha. Começa perto da idade, sobe se acertou, desce se não observou, e grava a posição com origem “sondagem” (#17, §5.4). |
+| **Migração de banco** | Mudança na estrutura do IndexedDB que roda ao abrir o app (aqui, v1 → v2 para criar os planos); precisa de teste e não volta atrás (ADR 0025). |

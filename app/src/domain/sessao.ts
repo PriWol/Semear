@@ -22,6 +22,8 @@ export interface PedidoSessao {
   /** ids de pista ("LG.FON" ou "LI.VOC@en"), ou equilibrado */
   foco: string[] | 'equilibrado';
   agora: string;
+  /** atividades que não podem entrar (ex.: já planejadas em outro dia da semana, #8) */
+  excluir?: string[];
 }
 
 export interface Escolha {
@@ -192,7 +194,7 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
 
   // 3-4. Preenche a duração alternando entre as pistas (uma atividade por pista a cada rodada).
   const escolhas: Escolha[] = [];
-  const usadas = new Set<string>();
+  const usadas = new Set<string>(pedido.excluir ?? []);
   let minutos = 0;
   const limite = duracaoMin * FOLGA;
   let adicionou = true;

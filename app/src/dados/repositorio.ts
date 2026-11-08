@@ -12,6 +12,7 @@ import {
 } from '../domain/tipos';
 import { dataValida } from '../domain/datas';
 import { ehLetra } from '../domain/letra';
+import { DIAS, type PlanoSemana } from '../domain/semana';
 import type { DadosExemplo } from '../domain/exemplo';
 
 export const VERSAO_BACKUP = 1;
@@ -32,6 +33,8 @@ export interface Backup {
   estados: { criancaId: string; estados: EstadosCrianca }[];
   historico: EventoMarco[];
   sessoes: Sessao[];
+  /** planos semanais (#8); backups anteriores não têm */
+  planos?: PlanoSemana[];
 }
 
 export interface Repositorio {
@@ -53,6 +56,11 @@ export interface Repositorio {
   sessao(id: string): Promise<Sessao | null>;
   salvarSessao(sessao: Sessao): Promise<void>;
   removerSessao(id: string): Promise<void>;
+
+  /** planos semanais da criança, do mais recente para o mais antigo */
+  planos(criancaId: string): Promise<PlanoSemana[]>;
+  salvarPlano(plano: PlanoSemana): Promise<void>;
+  removerPlano(id: string): Promise<void>;
 
   /** data do último backup exportado (para o lembrete mensal) */
   ultimoBackup(): Promise<string | null>;
@@ -82,9 +90,10 @@ interface Esquema extends DBSchema {
     indexes: { porCrianca: string };
   };
   sessoes: { key: string; value: Sessao; indexes: { porCrianca: string } };
+  planos: { key: string; value: PlanoSemana; indexes: { porCrianca: string } };
 }
 
-const LOJAS = ['config', 'criancas', 'estados', 'historico', 'sessoes'] as const;
+const LOJAS = ['config', 'criancas', 'estados', 'historico', 'sessoes', 'planos'] as const;
 const CHAVE_FAMILIA = 'familia';
 const CHAVE_BACKUP = 'ultimoBackup';
 
@@ -92,8 +101,8 @@ const lerFamilia = (v: Familia | { em: string } | undefined): Familia | null =>
   v && 'educador' in v ? v : null;
 
 export async function abrirRepositorio(nomeBanco = 'semear'): Promise<Repositorio> {
-  const db = await openDB<Esquema>(nomeBanco, 1, {
-    // Versão 1 do esquema. Toda mudança futura entra aqui como "if (antiga < N) { ... }", com teste.
+  const db = await openDB<Esquema>(nomeBanco, 2, {
+    // Toda mudança de esquema entra aqui como "if (antiga < N) { ... }", com teste. v2: planos semanais (#8).
     upgrade(banco, antiga) {
       if (antiga < 1) {
         banco.createObjectStore('config');
@@ -105,6 +114,9 @@ export async function abrirRepositorio(nomeBanco = 'semear'): Promise<Repositori
         banco
           .createObjectStore('sessoes', { keyPath: 'id' })
           .createIndex('porCrianca', 'criancaId');
+      }
+      if (antiga < 2) {
+        banco.createObjectStore('planos', { keyPath: 'id' }).createIndex('porCrianca', 'criancaId');
       }
     },
   });
@@ -134,10 +146,13 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       await db.put('criancas', crianca);
     },
     async removerCrianca(id) {
-      const tx = db.transaction(['criancas', 'estados', 'historico', 'sessoes'], 'readwrite');
+      const tx = db.transaction(
+        ['criancas', 'estados', 'historico', 'sessoes', 'planos'],
+        'readwrite',
+      );
       await tx.objectStore('criancas').delete(id);
       await tx.objectStore('estados').delete(id);
-      for (const loja of ['historico', 'sessoes'] as const) {
+      for (const loja of ['historico', 'sessoes', 'planos'] as const) {
         let cursor = await tx.objectStore(loja).index('porCrianca').openCursor(id);
         while (cursor) {
           await cursor.delete();
@@ -179,6 +194,17 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       await db.delete('sessoes', id);
     },
 
+    async planos(criancaId) {
+      const lista = await db.getAllFromIndex('planos', 'porCrianca', criancaId);
+      return lista.sort((a, b) => b.inicio.localeCompare(a.inicio));
+    },
+    async salvarPlano(plano) {
+      await db.put('planos', plano);
+    },
+    async removerPlano(id) {
+      await db.delete('planos', id);
+    },
+
     async ultimoBackup() {
       const v = await db.get('config', CHAVE_BACKUP);
       return v && 'em' in v ? v.em : null;
@@ -197,6 +223,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
         estados: await db.getAll('estados'),
         historico: await db.getAll('historico'),
         sessoes: await db.getAll('sessoes'),
+        planos: await db.getAll('planos'),
       };
     },
     async importar(backup) {
@@ -213,6 +240,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
         for (const e of backup.estados) await tx.objectStore('estados').put(e);
         for (const h of backup.historico) await tx.objectStore('historico').add(h);
         for (const s of backup.sessoes) await tx.objectStore('sessoes').put(s);
+        for (const p of backup.planos ?? []) await tx.objectStore('planos').put(p);
         await tx.done;
       } catch (erro) {
         // Um erro de gravação não desfaz a transação sozinho: sem isto, as lojas já limpas seriam gravadas
@@ -259,7 +287,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       for (const c of doExemplo) {
         await tx.objectStore('criancas').delete(c.id);
         await tx.objectStore('estados').delete(c.id);
-        for (const loja of ['historico', 'sessoes'] as const) {
+        for (const loja of ['historico', 'sessoes', 'planos'] as const) {
           let cursor = await tx.objectStore(loja).index('porCrianca').openCursor(c.id);
           while (cursor) {
             await cursor.delete();
@@ -310,6 +338,31 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
   const ehData = (v: unknown) => ehTexto(v) && dataValida(v);
   // O marcador do exemplo só pode faltar ou ser true (#39).
   const marcadorOk = (v: Record<string, unknown>) => v.exemplo === undefined || v.exemplo === true;
+  const ehDia = (v: unknown) => (DIAS as readonly unknown[]).includes(v);
+  const ehRotina = (v: unknown) =>
+    ehObjeto(v) &&
+    listaDe(v.dias, ehDia) &&
+    typeof v.duracaoMin === 'number' &&
+    v.duracaoMin > 0 &&
+    v.duracaoMin <= 240;
+  const ehDiaPlano = (v: unknown) =>
+    ehObjeto(v) &&
+    ehDia(v.dia) &&
+    ehData(v.data) &&
+    typeof v.duracaoMin === 'number' &&
+    listaDe(v.atividadeIds, ehTexto) &&
+    (v.livroId === null || ehTexto(v.livroId)) &&
+    typeof v.feito === 'boolean' &&
+    (v.sessaoId === undefined || ehTexto(v.sessaoId));
+  const ehPlano = (v: unknown) =>
+    ehObjeto(v) &&
+    ehTexto(v.id) &&
+    ehTexto(v.criancaId) &&
+    ehData(v.inicio) &&
+    ehTexto(v.criadoEm) &&
+    ehRotina(v.rotina) &&
+    Array.isArray(v.dias) &&
+    v.dias.every(ehDiaPlano);
   const ehRegistro = (v: unknown) =>
     ehObjeto(v) &&
     (ESTADOS as readonly unknown[]).includes(v.estado) &&
@@ -353,6 +406,8 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     if (cr.letra !== null && !ehLetra(cr.letra)) falha(`letra desconhecida (${String(cr.nome)})`);
     if (!listaDe(cr.trilhas, ehIdioma)) falha(`línguas desconhecidas (${String(cr.nome)})`);
     if (!marcadorOk(cr)) falha(`marcador de exemplo inválido (${String(cr.nome)})`);
+    if (cr.rotina !== undefined && !ehRotina(cr.rotina))
+      falha(`rotina inválida (${String(cr.nome)})`);
   }
   for (const e of b.estados as unknown[]) {
     if (!ehObjeto(e) || !ehTexto(e.criancaId) || !ehObjeto(e.estados)) falha('estado sem criança');
@@ -382,4 +437,6 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
       falha('sessão inválida');
     }
   }
+  // Planos semanais (#8): ausentes nos backups anteriores; quando existem, valem a forma inteira.
+  if (b.planos !== undefined && !listaDe(b.planos, ehPlano)) falha('plano semanal inválido');
 }

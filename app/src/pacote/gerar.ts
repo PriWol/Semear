@@ -286,30 +286,36 @@ const CSP = [
   "base-uri 'none'",
 ].join('; ');
 
-export function gerarPacote(e: EntradaPacote): string {
-  // A letra vem dos dados da criança (que podem vir de um backup): só valores conhecidos entram no HTML.
-  const letra = ehLetra(e.letra) ? e.letra : 'bastao';
-  const titulo = `Semear · ${e.sessao.codigo} · ${e.crianca.nome}`;
+/** As páginas de uma sessão, separadas por quem as lê (o plano semanal escolhe quais imprimir, #9). */
+export function paginasDaSessao(e: EntradaPacote): {
+  roteiro: HtmlSeguro;
+  materiais: HtmlSeguro;
+  folhas: HtmlSeguro[];
+  ficha: HtmlSeguro;
+} {
   const roteiro = html`<section class="pagina educador">
     <span class="etiqueta">Roteiro do educador · leia antes da sessão</span>
     ${e.atividades.map((a, i) => roteiroDaAtividade(a, e, i === 0))}
     ${rodapeEducador('Semear · Pacote de sessão · Roteiro', 'Educador')}
   </section>`;
-
   const folhas = e.atividades.flatMap((a) =>
     a.folhas.map((f, i) =>
       paginaDaFolha(f, `${a.marcos.join(' · ') || a.categoria || ''} · Folha ${i + 1}`),
     ),
   );
+  return { roteiro, materiais: paginaMateriais(e), folhas, ficha: paginaFicha(e) };
+}
 
+/** Documento HTML completo (CSS e script embutidos, CSP própria): funciona offline (ADR 0004). */
+export function montarDocumento(titulo: string, letraBruta: string, corpo: HtmlSeguro): string {
+  // A letra vem dos dados da criança (que podem vir de um backup): só valores conhecidos entram no HTML.
+  const letra = ehLetra(letraBruta) ? letraBruta : 'bastao';
   const opcoesLetra = (Object.keys(NOME_LETRA) as Letra[])
     .map(
       (l) =>
         `<option value="${l}"${l === letra ? ' selected' : ''}>${escapar(NOME_LETRA[l])}</option>`,
     )
     .join('');
-
-  const corpo = html`${roteiro}${paginaMateriais(e)}${folhas}${paginaFicha(e)}`;
 
   return `<!doctype html>
 <html lang="pt-BR">
@@ -338,6 +344,12 @@ ${estilos}</style>
 </body>
 </html>
 `;
+}
+
+export function gerarPacote(e: EntradaPacote): string {
+  const titulo = `Semear · ${e.sessao.codigo} · ${e.crianca.nome}`;
+  const p = paginasDaSessao(e);
+  return montarDocumento(titulo, e.letra, html`${p.roteiro}${p.materiais}${p.folhas}${p.ficha}`);
 }
 
 export function nomeArquivoPacote(sessao: Sessao, crianca: Crianca): string {

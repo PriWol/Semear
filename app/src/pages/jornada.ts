@@ -153,7 +153,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
       <p class="nota">
         Em cada linha, toque em <b>“Está aqui”</b> no marco em que ${crianca.nome} está: os
         anteriores viram consolidados. Depois ajuste marco a marco quando precisar. Sem certeza de
-        onde ${crianca.nome} está? <a href="#/sondagem/${crianca.id}">Faça a sondagem</a>.
+        onde ${crianca.nome} está? <a href="#/sondagem/${crianca.id}">Faça a sondagem</a>. Quer organizar os dias? <a href="#/semana/${crianca.id}">Planejar a semana</a>.
       </p>
       <nav class="abas" aria-label="Domínios">
         ${dominios.map(

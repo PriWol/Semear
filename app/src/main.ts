@@ -22,6 +22,7 @@ import { paginaConteudo } from './pages/conteudo';
 import { paginaAcervo } from './pages/acervo';
 import { paginaSondagem } from './pages/sondagem';
 import { paginaAtividades } from './pages/atividades';
+import { paginaSemana } from './pages/semana';
 import { paginaGuia } from './pages/guia';
 import { paginaPrivacidade } from './pages/privacidade';
 
@@ -52,6 +53,7 @@ async function iniciar() {
       '/acervo': paginaAcervo,
       '/sondagem/:id': paginaSondagem,
       '/atividades': paginaAtividades,
+      '/semana/:id': paginaSemana,
       '/guia': paginaGuia,
       '/privacidade': paginaPrivacidade,
       '/conteudo': paginaConteudo,

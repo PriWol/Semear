@@ -269,6 +269,8 @@ export interface Crianca {
   /** null = automático (por idade e vertente) */
   letra: Letra | null;
   trilhas: Idioma[];
+  /** dias e duração do plano semanal, guardados para não escolher toda semana (#8) */
+  rotina?: { dias: ('seg' | 'ter' | 'qua' | 'qui' | 'sex' | 'sab' | 'dom')[]; duracaoMin: number };
   /** criança do exemplo (#39): só registros marcados são apagados com o exemplo */
   exemplo?: true;
 }
