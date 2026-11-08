@@ -49,6 +49,16 @@ class TestCaderno(unittest.TestCase):
                 sem_aviso.append(f"{n} ({titulo})")
         self.assertEqual(sem_aviso, [], "páginas de atividade com água sem o aviso de supervisão")
 
+    def test_as_paginas_isentas_nao_manipulam_agua(self):
+        # a isenção vale para quem cita água só de passagem; se a página passar a pedir bacia, balde, mangueira etc., precisa do aviso
+        risco = re.compile(r"\b(?:bacia|balde|banheira|mangueira|tanque|jarra|regador|despej\w+ (?:a )?água|enchendo|encha)\b", re.IGNORECASE)
+        indevidas = []
+        for n, html in self.L.paginas:
+            m = re.search(r'<h1 class="titulo"[^>]*>([^<]+)', html)
+            if m and m.group(1).strip() in EXCECOES and risco.search(_texto(html)):
+                indevidas.append(f"{n} ({m.group(1).strip()})")
+        self.assertEqual(indevidas, [], "página isenta do aviso que passou a manipular água")
+
     def test_as_excecoes_do_aviso_de_agua_ainda_existem(self):
         titulos = {re.search(r'<h1 class="titulo"[^>]*>([^<]+)', h).group(1).strip() for _, h in self.L.paginas if '<h1 class="titulo"' in h}
         self.assertEqual(sorted(EXCECOES - titulos), [], "exceção que não corresponde a nenhuma página")

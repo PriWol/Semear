@@ -1045,7 +1045,7 @@ def unidade8(L):
         dict(t="Corre, cotia", linhas=["Corre, cotia, na casa da tia,", "corre, cipó, na casa da avó;", "lencinho na mão, caiu no chão."],
              gesto="em roda, com poucas pessoas, uma anda por fora com um lencinho; deixa cair atrás de alguém. Com a Marina, deixe cair atrás dela e corra de mão dada.", origem=TRAD, motivos=["gorro", "casinha"]),
         dict(t="Cadê? Achou!", linhas=["Cadê a Marina?", "Cadê, cadê?", "Está escondida?", "Eu vou achar você!", "Achou! Achou!", "Achou! Achou!"],
-             gesto="cubra o rosto dela com um lenço leve (ou o seu com as mãos) nos primeiros versos, e descubra no “achou”. Brinque com paciência: ela pode pedir muitas vezes.", origem=COLECAO, motivos=["olho", "carinha_feliz"])],
+             gesto="cubra o <b>seu</b> rosto com as mãos (ou com um lenço leve que ela possa puxar) nos primeiros versos e descubra no “achou”. Nunca cubra o rosto dela. Brinque com paciência: ela pode pedir muitas vezes.", origem=COLECAO, motivos=["olho", "carinha_feliz"])],
         "Brincar de roda reúne rima, corpo e espera. O “cadê? achou!” treina a antecipação (o que vem depois?) e o susto bom.")
 
     rimas(L, "Mais duas, para contar e rir", [
