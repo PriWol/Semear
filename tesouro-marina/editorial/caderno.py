@@ -747,15 +747,15 @@ def unidade5(L):
               variar=["Rabisque ao som de música: rápida, lenta.", "Desenhe no vidro do boxe com tinta de banho.", "Uma linha longa pelo chão inteiro."])
 
     atividade(L, "Massinha de farinha", "maos", "10 minutos",
-              "2 xícaras de farinha de trigo, 1 de sal, 1 de água morna e 1 colher de óleo (uma massinha caseira); uma tábua ou um pano",
+              "2 xícaras de farinha de trigo, só meia de sal, 1 de água morna e 1 colher de óleo (uma massinha caseira); uma tábua ou um pano",
               cena([("argila_bola", 30, 12, 16), ("argila_cobra", 34, 52, 12), ("argila_vaso", 30, 94, 8), ("tigela", 32, 134, 14)], 48, 190),
               ["Misture os ingredientes com ela (despejar e mexer já é brincadeira) até ficar uma massa macia.", "Deixe que ela aperte, bata, belisque, enrole. Mostre uma cobra e uma bola.", "Dê nome ao que sai: “uma bolinha!”, “uma cobrinha comprida!”.",
                "Guarde num pote fechado, na geladeira, por uns dias."],
               ["Aperta! Que macia.", "Enrola, enrola, enrola: uma cobrinha.", "Bate! Pam, pam, pam!"],
               ["É mole ou é dura?", "O que você fez?", "Quer uma bola ou uma cobra?"],
-              "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é segura e é a versão simples do Volume 5, na unidade de modelar. "
+              "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é barata e simples, e é a versão do Volume 5, na unidade de modelar. "
               "Pode repetir todos os dias: a massa não “acaba”.",
-              atencao="a massa é salgada e não é comida: não deixe que ela coma; tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. " + AGUA,
+              atencao="a massa é salgada e não é comida: fique junto o tempo todo, não deixe que ela a leve à boca e tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. " + AGUA,
               variar=["Esconda um brinquedo grande na massa.", "Imprima a mão e o pé na massa.", "Faça um “bolo” e cante uma cantiga ao bichinho."])
 
     atividade(L, "Um quadro por um minuto", "mundo", "3 minutos",
