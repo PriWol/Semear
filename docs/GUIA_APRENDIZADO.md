@@ -225,3 +225,4 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Sondagem** | Folha curta aplicada no papel para descobrir onde a criança está em cada linha. Começa perto da idade, sobe se acertou, desce se não observou, e grava a posição com origem “sondagem” (#17, §5.4). |
 | **Migração de banco** | Mudança na estrutura do IndexedDB que roda ao abrir o app (aqui, v1 → v2 para criar os planos); precisa de teste e não volta atrás (ADR 0025). |
 | **Ressondagem** | Mini-sondagem só das linhas “paradas” (marco em desenvolvimento sem mudar há 8 semanas) ou “sem observação” (nenhum registro). Reaproveita a folha da sondagem inicial (#18). |
+| **Notificação local** | Aviso agendado pelo próprio aplicativo no aparelho, sem servidor. Usado no lembrete diário das atividades de hoje (ADR 0027). |

@@ -52,3 +52,23 @@ test('planejar a semana, marcar um dia e baixar a semana', async ({ page }) => {
   expect(doc).toContain('Materiais da semana');
   expect(doc).toMatch(/(Segunda|Quarta|Sexta) · Sessão S-/);
 });
+
+// #95: a família escolhe o lembrete diário na configuração e a preferência fica salva.
+test('lembrete diário: escolher o horário e guardar a preferência', async ({ page }) => {
+  await page.goto('./');
+  await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+  await expect(page.getByRole('heading', { name: /Olá/ })).toBeVisible();
+  await page.getByRole('link', { name: 'Config.' }).click();
+  await expect(page.getByRole('heading', { name: /Lembrete diário/ })).toBeVisible();
+  await expect(page.getByText('Os lembretes funcionam no aplicativo de celular')).toBeVisible();
+
+  await page.getByLabel('Avisar as atividades de hoje').check();
+  await page.getByLabel('Horário').fill('07:30');
+  await page.getByRole('button', { name: 'Salvar lembrete' }).click();
+  await expect(page.getByText('Lembrete salvo.')).toBeVisible();
+
+  await page.reload();
+  await expect(page.getByLabel('Avisar as atividades de hoje')).toBeChecked();
+  await expect(page.getByLabel('Horário')).toHaveValue('07:30');
+  await expect(page.getByLabel('Mostrar o nome da criança no aviso')).not.toBeChecked();
+});

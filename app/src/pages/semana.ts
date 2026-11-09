@@ -20,6 +20,7 @@ import {
 import type { Atividade, Sessao } from '../domain/tipos';
 import { gerarSemana, nomeArquivoSemana, type ModoSemana } from '../pacote/semana';
 import { baixarArquivo } from './sessao';
+import { sincronizarComOAparelho } from '../nativo/sincronizar';
 
 const DIAS_PADRAO: Dia[] = ['seg', 'qua', 'sex'];
 
@@ -151,6 +152,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           await ctx.repo.salvarCrianca({ ...crianca, rotina: nova });
           const novo = planejarSemana(ctx.idx, { ...(await base()), id: novoId(), rotina: nova });
           await ctx.repo.salvarPlano(novo);
+          void sincronizarComOAparelho(ctx, { pedirPermissao: false });
           await ctx.atualizar();
         });
 
@@ -163,6 +165,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
         if (acao === 'replanejar') {
           if (!confirm('Planejar de novo apaga o plano desta semana. Continuar?')) return;
           await ctx.repo.removerPlano(plano.id);
+          void sincronizarComOAparelho(ctx, { pedirPermissao: false });
           await ctx.atualizar();
           return;
         }
@@ -208,6 +211,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           }
         }
         if (novo) await ctx.repo.salvarPlano(novo);
+        void sincronizarComOAparelho(ctx, { pedirPermissao: false });
         await ctx.atualizar();
       });
 

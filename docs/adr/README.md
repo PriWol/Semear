@@ -31,5 +31,7 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0023](0023-faixa-etaria-de-2-a-8-anos.md) | Faixa etária de 2 a 8 anos | Aceito (conteúdo pendente) |
 | [0024](0024-dominio-formacao-e-regulacao-emocional.md) | Domínio de formação e regulação emocional | Aceito (revisão pendente) |
 | [0025](0025-plano-semanal.md) | Plano semanal guardado no aparelho | Aceito |
+| [0026](0026-modelo-de-assinatura-revisado.md) | Modelo de assinatura revisado: preço por faixa e plano Livre reduzido | Aceito (aprovação pendente) |
+| [0027](0027-aplicativo-nativo-e-lembretes-locais.md) | Aplicativo nativo e lembretes agendados no aparelho | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
