@@ -9,6 +9,7 @@ import {
   candidatas,
   complementares,
   PISTA_COMPLEMENTAR,
+  DURACAO_PADRAO,
   DURACOES,
   gerarCodigoSessao,
   proporSessao,
@@ -39,7 +40,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
     .filter((x) => x.pos.ativos.length > 0);
 
   // Estado local da página: a proposta pode ser ajustada antes de gerar o pacote.
-  let duracao: number = 40;
+  let duracao: number = DURACAO_PADRAO;
   let foco: string[] | 'equilibrado' = 'equilibrado';
   let proposta: PropostaSessao | null = null;
 
@@ -230,7 +231,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
       raiz.querySelector<HTMLFormElement>('#form-sessao')?.addEventListener('submit', (ev) => {
         ev.preventDefault();
         const d = lerFormulario(ev.currentTarget as HTMLFormElement);
-        duracao = Number(d.duracao ?? 40);
+        duracao = Number(d.duracao ?? DURACAO_PADRAO);
         foco = d.modo === 'escolher' ? lista(d.foco) : 'equilibrado';
         proposta = proporSessao(ctx.idx, {
           familia,

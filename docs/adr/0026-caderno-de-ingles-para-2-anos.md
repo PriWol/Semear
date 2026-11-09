@@ -1,4 +1,4 @@
-# 0022. Caderno de inglês para crianças de 2 anos
+# 0026. Caderno de inglês para crianças de 2 anos
 
 - **Status:** Aceito, com a conferência das orientações pendente (ver Pendências)
 - **Data:** 2026-11-08

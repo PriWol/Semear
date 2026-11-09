@@ -20,6 +20,11 @@ import { paginaConfig } from './pages/config';
 import { paginaBiblioteca } from './pages/biblioteca';
 import { paginaConteudo } from './pages/conteudo';
 import { paginaAcervo } from './pages/acervo';
+import { paginaSondagem } from './pages/sondagem';
+import { paginaAtividades } from './pages/atividades';
+import { paginaSemana } from './pages/semana';
+import { paginaGuia } from './pages/guia';
+import { paginaPrivacidade } from './pages/privacidade';
 
 const naoEncontrada: FabricaPagina = async () => ({
   titulo: 'Não encontrada',
@@ -46,6 +51,11 @@ async function iniciar() {
       '/config': paginaConfig,
       '/biblioteca': paginaBiblioteca,
       '/acervo': paginaAcervo,
+      '/sondagem/:id': paginaSondagem,
+      '/atividades': paginaAtividades,
+      '/semana/:id': paginaSemana,
+      '/guia': paginaGuia,
+      '/privacidade': paginaPrivacidade,
       '/conteudo': paginaConteudo,
       '/novidades': paginaNovidades,
     }),

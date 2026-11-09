@@ -80,7 +80,7 @@ jobs:
           name: caderno-2-anos-pdfs
           path: tesouro-marina/caderno-2-anos/*.pdf
           retention-days: 14
-      # O caderno de inglês tem o mesmo tratamento (ADR 0022).
+      # O caderno de inglês tem o mesmo tratamento (ADR 0026).
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: caderno-ingles-pdfs

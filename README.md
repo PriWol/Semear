@@ -1,6 +1,6 @@
 # 🌱 Semear
 
-App para famílias que educam os filhos em casa (homeschooling e afterschooling), de 3 a 8 anos.
+App para famílias que educam os filhos em casa (homeschooling e afterschooling), de 2 a 8 anos.
 O educador posiciona cada criança numa **jornada por domínios** (domínio → linha → marco) e, antes de
 cada sessão, gera um **pacote para imprimir ou abrir no tablet**: roteiro, materiais, folhas da criança
 e ficha de registro. **A criança nunca usa o app.**

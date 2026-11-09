@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Moldura da prévia do pacote (#32). Existe porque o iframe de srcdoc/blob herda a CSP do app
+     (script-src 'self'), o que mataria o script do pacote. Aqui a CSP é própria: o pacote recebe
+     o que já tinha antes (scripts inline), sem rede e sem acesso à origem do app (iframe sandbox). -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'"
+    />
+    <title>Prévia do pacote</title>
+  </head>
+  <body>
+    <script>
+      // Só aceita o documento do app (a janela-mãe) e só uma vez.
+      var recebido = false;
+      window.addEventListener('message', function (e) {
+        if (recebido || e.source !== window.parent) return;
+        if (!e.data || e.data.tipo !== 'semear:documento' || typeof e.data.html !== 'string') return;
+        recebido = true;
+        document.open();
+        document.write(e.data.html);
+        document.close();
+      });
+    </script>
+  </body>
+</html>

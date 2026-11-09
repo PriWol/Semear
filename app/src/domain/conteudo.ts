@@ -1,5 +1,7 @@
 // Índice e validação do conteúdo curado. Funções puras: recebem o conteúdo já carregado.
+import { estaPublicavel, validarRevisao } from './revisao';
 import {
+  TIPOS_INDICACAO,
   VERTENTES,
   type Atividade,
   type Conteudo,
@@ -56,7 +58,9 @@ export function criarIndice(conteudo: Conteudo): IndiceConteudo {
   }
   for (const lista of marcosPorLinha.values()) lista.sort((a, b) => a.ordem - b.ordem);
 
-  const publicadas = conteudo.atividades.filter((a) => a.autoria.status === 'publicado');
+  const publicadas = conteudo.atividades.filter(
+    (a) => a.autoria.status === 'publicado' && estaPublicavel(a),
+  );
   const atividades = new Map(conteudo.atividades.map((a) => [a.id, a]));
   const livros = new Map(conteudo.livros.map((l) => [l.id, l]));
   const referencias = new Map(conteudo.referencias.map((r) => [r.id, r]));
@@ -210,6 +214,7 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
   const ordensPorLinha = new Map<string, Set<number>>();
   for (const m of conteudo.marcos) {
     unico(m.id, 'Marco');
+    if (m.revisao !== undefined) validarRevisao(m.revisao, `Marco ${m.id}`, erros);
     const linha = idx.linha(m.linha);
     if (!linha) {
       erros.push(`Marco ${m.id}: linha ${m.linha} não existe`);
@@ -235,8 +240,24 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
   }
 
   for (const a of conteudo.atividades) {
+    if (a.revisao !== undefined) validarRevisao(a.revisao, `Atividade ${a.id}`, erros);
     unico(a.id, 'Atividade');
     if (a.marcos.length === 0) validarComplementar(a, idx, erros);
+    if (
+      a.palavrasChave !== undefined &&
+      (!Array.isArray(a.palavrasChave) ||
+        a.palavrasChave.some((p) => typeof p !== 'string' || p.trim() === ''))
+    )
+      erros.push(`Atividade ${a.id}: "palavrasChave" precisa ser uma lista de textos preenchidos`);
+    if (a.idade[0] < 3) {
+      // Aos 2 anos o risco é engasgo e a atenção é curta: aviso obrigatório e atividades curtas (#71).
+      if (!a.cuidados?.trim())
+        erros.push(
+          `Atividade ${a.id}: começa antes dos 3 anos e precisa de "cuidados" (materiais pequenos)`,
+        );
+      if (a.duracaoMin > 10)
+        erros.push(`Atividade ${a.id}: para 2 anos deve durar até 10 min (tem ${a.duracaoMin})`);
+    }
     if (a.materialImpresso) {
       // Dado de fora: confere o formato antes de usar (nunca lança, sempre reporta).
       const { volume, unidade, paginas } = a.materialImpresso;
@@ -294,11 +315,22 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
 
   for (const l of conteudo.livros) {
     unico(l.id, 'Livro');
+    if (l.revisao !== undefined) validarRevisao(l.revisao, `Livro ${l.id}`, erros);
     for (const m of l.marcos) {
       if (!idx.marco(m)) avisos.push(`Livro ${l.id}: marco ${m} ainda não existe`);
     }
     if (l.linkCompra !== undefined && !enderecoHttpsValido(l.linkCompra)) {
       erros.push(`Livro ${l.id}: linkCompra precisa ser um endereço https`);
+    }
+    if (l.tipo !== undefined && !(TIPOS_INDICACAO as readonly string[]).includes(l.tipo))
+      erros.push(`Livro ${l.id}: tipo "${String(l.tipo)}" fora de ${TIPOS_INDICACAO.join(', ')}`);
+    if ((l.tipo === 'obra' || l.tipo === 'musica') && !l.fonte?.trim())
+      erros.push(`Livro ${l.id}: ${l.tipo} precisa de "fonte" registrada`);
+    for (const linha of l.linhas ?? []) {
+      if (!idx.linha(linha)) erros.push(`Livro ${l.id}: linha ${linha} não existe`);
+    }
+    if (l.linkGratuito !== undefined && !enderecoHttpsValido(l.linkGratuito)) {
+      erros.push(`Livro ${l.id}: linkGratuito precisa ser um endereço https`);
     }
   }
 

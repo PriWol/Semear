@@ -1,4 +1,4 @@
-"""Conferência do caderno de inglês: todo motivo existe e as regras do ADR 0022 valem página a página (água, engasgo, rimas, acalmar, livros e créditos)."""
+"""Conferência do caderno de inglês: todo motivo existe e as regras do ADR 0026 valem página a página (água, engasgo, rimas, acalmar, livros e créditos)."""
 import ast
 import os
 import re
@@ -10,7 +10,7 @@ import livro
 from test_motivos7 import _motivos_citados
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
-PAGINAS = 90   # o README e o ADR 0022 declaram este total
+PAGINAS = 90   # o README e o ADR 0026 declaram este total
 FRASE_AGUA = re.sub(r"<[^>]+>", "", caderno.AGUA).split(", ", 1)[1].split(",")[0]   # “nunca deixe a criança sozinha com água”
 AGUA = re.compile(r"\b(?:água|molh\w+|lav\w+|banho|banheira|bacia|balde|chuva|poça|jarra|regador|despej\w+|encha\w*|torneira|piscina)\b", re.IGNORECASE)
 EXCECOES = {   # a água só aparece de passagem: o tempo, lavar as mãos, o banho como parte do dia, letra de rima

@@ -5,7 +5,9 @@ import { linhaDoMarco } from './conteudo';
 import { diasEntre } from './datas';
 import { idPista, pistasDaCrianca, posicaoDaLinha, type Pista } from './jornada';
 
-export const DURACOES = [20, 40, 60] as const;
+export const DURACOES = [20, 30, 40, 60] as const;
+/** Sessão padrão: 30 minutos de atividade; a preparação do adulto é contada à parte (#71). */
+export const DURACAO_PADRAO = 30;
 /** Folga sobre a duração escolhida (10%), para não descartar uma atividade por poucos minutos. */
 const FOLGA = 1.1;
 const JANELA_DIAS = 14;
@@ -20,6 +22,8 @@ export interface PedidoSessao {
   /** ids de pista ("LG.FON" ou "LI.VOC@en"), ou equilibrado */
   foco: string[] | 'equilibrado';
   agora: string;
+  /** atividades que não podem entrar (ex.: já planejadas em outro dia da semana, #8) */
+  excluir?: string[];
 }
 
 export interface Escolha {
@@ -190,7 +194,7 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
 
   // 3-4. Preenche a duração alternando entre as pistas (uma atividade por pista a cada rodada).
   const escolhas: Escolha[] = [];
-  const usadas = new Set<string>();
+  const usadas = new Set<string>(pedido.excluir ?? []);
   let minutos = 0;
   const limite = duracaoMin * FOLGA;
   let adicionou = true;
@@ -264,8 +268,12 @@ export function sugerirLivro(
   const marcos = new Set(
     escolhas.flatMap((e) => [...e.atividade.marcos, ...(e.atividade.revisa ?? [])]),
   );
+  // A indicação liga por marco ou pela linha do marco (#73): obra e música costumam servir a uma linha toda.
+  const linhas = new Set([...marcos].map(linhaDoMarco));
   const candidatos = idx.conteudo.livros
-    .filter((l) => l.marcos.some((m) => marcos.has(m)))
+    .filter(
+      (l) => l.marcos.some((m) => marcos.has(m)) || (l.linhas ?? []).some((x) => linhas.has(x)),
+    )
     .map((l) => ({
       l,
       pontos:

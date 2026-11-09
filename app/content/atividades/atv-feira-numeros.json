@@ -56,10 +56,22 @@
     "facil": "Pergunte *“quantos faltam para 20?”* e conte de 2 em 2 (prepara o MA.SEN.07)."
   },
   "materiais": [
-    { "item": "17 feijões grandes, tampinhas ou botões", "deCasa": true },
-    { "item": "Um pratinho ou pote para os “já contados”", "deCasa": true },
-    { "item": "Lápis de cor ou giz de cera", "deCasa": false },
-    { "item": "Tesoura sem ponta (para recortar as cartas, opcional)", "deCasa": false }
+    {
+      "item": "17 feijões grandes, tampinhas ou botões",
+      "deCasa": true
+    },
+    {
+      "item": "Um pratinho ou pote para os “já contados”",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou giz de cera",
+      "deCasa": false
+    },
+    {
+      "item": "Tesoura sem ponta (para recortar as cartas, opcional)",
+      "deCasa": false
+    }
   ],
   "toqueVertente": {
     "Charlotte Mason": "**Lições curtas**: no máximo 10 minutos por bloco, e você para enquanto a atenção ainda está boa. No final, peça que a criança **narre**: “me conta como você fez para não se perder”.",
@@ -68,7 +80,10 @@
     "Waldorf": "Conte com elementos da natureza (pedrinhas, castanhas) e um verso ritmado."
   },
   "evidencias": [
-    { "texto": "Contou os 17 feijões", "resposta": "☐ certo   ☐ errou por 1 ou 2   ☐ se perdeu" },
+    {
+      "texto": "Contou os 17 feijões",
+      "resposta": "☐ certo   ☐ errou por 1 ou 2   ☐ se perdeu"
+    },
     {
       "texto": "Estratégia usada",
       "resposta": "☐ apontou   ☐ arrastou   ☐ fez fileiras   ☐ agrupou de 10"
@@ -81,7 +96,10 @@
       "texto": "Folha “quadros de dez”: certos",
       "resposta": "_____ de 3   ☐ encheu o 1º quadro antes"
     },
-    { "texto": "Folha “onde tem mais”: certos", "resposta": "_____ de 4" }
+    {
+      "texto": "Folha “onde tem mais”: certos",
+      "resposta": "_____ de 4"
+    }
   ],
   "perguntaFicha": "Narração da criança: “como você fez para não se perder?”",
   "folhas": [
@@ -89,10 +107,26 @@
       "tipo": "contar",
       "titulo": "Conte o que tem na barraca e circule o número",
       "itens": [
-        { "emoji": "🍊", "quantidade": 12, "opcoes": [11, 12, 14] },
-        { "emoji": "🍓", "quantidade": 15, "opcoes": [13, 15, 16] },
-        { "emoji": "🥚", "quantidade": 17, "opcoes": [17, 18, 19] },
-        { "emoji": "🌽", "quantidade": 20, "opcoes": [18, 19, 20] }
+        {
+          "emoji": "🍊",
+          "quantidade": 12,
+          "opcoes": [11, 12, 14]
+        },
+        {
+          "emoji": "🍓",
+          "quantidade": 15,
+          "opcoes": [13, 15, 16]
+        },
+        {
+          "emoji": "🥚",
+          "quantidade": 17,
+          "opcoes": [17, 18, 19]
+        },
+        {
+          "emoji": "🌽",
+          "quantidade": 20,
+          "opcoes": [18, 19, 20]
+        }
       ]
     },
     {
@@ -106,30 +140,95 @@
       "titulo": "Circule o cesto que tem mais",
       "dica": "Se tiverem a mesma quantidade, pinte o quadradinho “iguais”.",
       "pares": [
-        { "a": { "emoji": "🥕", "quantidade": 8 }, "b": { "emoji": "🍅", "quantidade": 11 } },
-        { "a": { "emoji": "🍇", "quantidade": 14 }, "b": { "emoji": "🍋", "quantidade": 12 } },
-        { "a": { "emoji": "🥥", "quantidade": 9 }, "b": { "emoji": "🍍", "quantidade": 9 } },
-        { "a": { "emoji": "🍐", "quantidade": 18 }, "b": { "emoji": "🍑", "quantidade": 16 } }
+        {
+          "a": {
+            "emoji": "🥕",
+            "quantidade": 8
+          },
+          "b": {
+            "emoji": "🍅",
+            "quantidade": 11
+          }
+        },
+        {
+          "a": {
+            "emoji": "🍇",
+            "quantidade": 14
+          },
+          "b": {
+            "emoji": "🍋",
+            "quantidade": 12
+          }
+        },
+        {
+          "a": {
+            "emoji": "🥥",
+            "quantidade": 9
+          },
+          "b": {
+            "emoji": "🍍",
+            "quantidade": 9
+          }
+        },
+        {
+          "a": {
+            "emoji": "🍐",
+            "quantidade": 18
+          },
+          "b": {
+            "emoji": "🍑",
+            "quantidade": 16
+          }
+        }
       ]
     },
     {
       "tipo": "cartas",
       "titulo": "Jogo da barraca: ache o par do número",
       "cartas": [
-        { "numero": 11 },
-        { "numero": 13 },
-        { "numero": 15 },
-        { "numero": 17 },
-        { "numero": 19 },
-        { "numero": 20 },
-        { "quadroDez": 17 },
-        { "quadroDez": 11 },
-        { "quadroDez": 20 },
-        { "quadroDez": 15 },
-        { "quadroDez": 19 },
-        { "quadroDez": 13 }
+        {
+          "numero": 11
+        },
+        {
+          "numero": 13
+        },
+        {
+          "numero": 15
+        },
+        {
+          "numero": 17
+        },
+        {
+          "numero": 19
+        },
+        {
+          "numero": 20
+        },
+        {
+          "quadroDez": 17
+        },
+        {
+          "quadroDez": 11
+        },
+        {
+          "quadroDez": 20
+        },
+        {
+          "quadroDez": 15
+        },
+        {
+          "quadroDez": 19
+        },
+        {
+          "quadroDez": 13
+        }
       ]
     }
   ],
-  "autoria": { "origem": "humano", "status": "publicado", "revisadoEm": "2026-10-13" }
+  "autoria": {
+    "origem": "humano",
+    "status": "publicado",
+    "revisadoEm": "2026-10-13"
+  },
+  "palavrasChave": ["contagem", "números", "quantidades", "mercado"]
 }

@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
+import { openDB } from 'idb';
 import { abrirRepositorio, validarBackup, type Repositorio } from '../src/dados/repositorio';
 import type { Sessao } from '../src/domain/tipos';
 import { AGORA, crianca, familia } from './fabricas';
@@ -189,5 +190,93 @@ describe('validarBackup', () => {
     ],
   ])('recusa backup %s', (_, dado) => {
     expect(() => validarBackup(dado)).toThrow(/backup inválido/);
+  });
+});
+
+describe('planos semanais (#8)', () => {
+  const plano = (id: string, inicio: string, criancaId = 'c1') => ({
+    id,
+    criancaId,
+    inicio,
+    criadoEm: '2026-11-09T12:00:00.000Z',
+    rotina: { dias: ['seg' as const], duracaoMin: 40 },
+    dias: [
+      {
+        dia: 'seg' as const,
+        data: inicio,
+        duracaoMin: 40,
+        atividadeIds: ['a'],
+        livroId: null,
+        feito: false,
+      },
+    ],
+  });
+
+  it('guarda por criança, do mais recente para o mais antigo, e remove com a criança', async () => {
+    await repo.salvarCrianca(crianca({ id: 'c1' }));
+    await repo.salvarPlano(plano('p1', '2026-11-02'));
+    await repo.salvarPlano(plano('p2', '2026-11-09'));
+    await repo.salvarPlano(plano('p3', '2026-11-09', 'outra'));
+    expect((await repo.planos('c1')).map((p) => p.id)).toEqual(['p2', 'p1']);
+    await repo.removerPlano('p1');
+    expect((await repo.planos('c1')).map((p) => p.id)).toEqual(['p2']);
+    await repo.removerCrianca('c1');
+    expect(await repo.planos('c1')).toEqual([]);
+    expect((await repo.planos('outra')).length).toBe(1);
+  });
+  it('vai e volta no backup, e backup antigo (sem planos) continua valendo', async () => {
+    await repo.salvarFamilia(familia());
+    await repo.salvarCrianca(crianca({ id: 'c1' }));
+    await repo.salvarPlano(plano('p1', '2026-11-09'));
+    const backup = JSON.parse(JSON.stringify(await repo.exportar(AGORA)));
+    const outro = await abrirRepositorio(`teste-${++n}`);
+    await outro.importar(backup);
+    expect((await outro.planos('c1')).length).toBe(1);
+    const antigo = { ...backup };
+    delete antigo.planos; // backup de antes do plano semanal
+    expect(() => validarBackup(antigo)).not.toThrow();
+  });
+  it('recusa plano com dia, data ou lista inválidos', () => {
+    const base = {
+      app: 'semear',
+      versao: 1,
+      exportadoEm: AGORA,
+      familia: null,
+      criancas: [],
+      estados: [],
+      historico: [],
+      sessoes: [],
+    };
+    const p = plano('p1', '2026-11-09');
+    expect(() => validarBackup({ ...base, planos: [p] })).not.toThrow();
+    expect(() =>
+      validarBackup({ ...base, planos: [{ ...p, dias: [{ ...p.dias[0], dia: 'xyz' }] }] }),
+    ).toThrow();
+    expect(() => validarBackup({ ...base, planos: [{ ...p, inicio: '2026-02-31' }] })).toThrow();
+    expect(() => validarBackup({ ...base, planos: 'x' })).toThrow();
+  });
+});
+
+describe('migração do banco para a versão 2 (#8)', () => {
+  it('um banco da versão 1 ganha a loja de planos e mantém os dados', async () => {
+    const nome = `teste-migracao-${++n}`;
+    const v1 = await openDB(nome, 1, {
+      upgrade(banco) {
+        banco.createObjectStore('config');
+        banco.createObjectStore('criancas', { keyPath: 'id' });
+        banco.createObjectStore('estados', { keyPath: 'criancaId' });
+        banco
+          .createObjectStore('historico', { autoIncrement: true })
+          .createIndex('porCrianca', 'criancaId');
+        banco
+          .createObjectStore('sessoes', { keyPath: 'id' })
+          .createIndex('porCrianca', 'criancaId');
+      },
+    });
+    await v1.put('criancas', crianca({ id: 'c1', nome: 'Ana' }));
+    v1.close();
+    const novo = await abrirRepositorio(nome);
+    expect((await novo.crianca('c1'))?.nome).toBe('Ana');
+    expect(await novo.planos('c1')).toEqual([]);
   });
 });

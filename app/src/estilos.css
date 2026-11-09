@@ -487,6 +487,19 @@ progress {
   }
 }
 
+/* Com quatro links o menu não cabe na linha do celular: o cabeçalho quebra em duas linhas, com o
+   menu embaixo, em vez de estourar a largura da tela (e deslocar o conteúdo). */
+@media (max-width: 560px) {
+  .topo {
+    flex-wrap: wrap;
+  }
+  .topo nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 /* ---------- Família de exemplo (#39) ---------- */
 .faixa-exemplo {
   display: flex;

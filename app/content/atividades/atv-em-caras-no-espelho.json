@@ -1,0 +1,69 @@
+{
+  "id": "atv-em-caras-no-espelho",
+  "titulo": "Caras no espelho: que cara é essa?",
+  "marcos": ["EM.NOM.01", "EM.NOM.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 8,
+  "preparoMin": 3,
+  "cuidados": "Atenção: nenhuma peça pequena que caiba na boca. Fique junto da criança o tempo todo. Use um espelho que não quebre e fique preso na parede ou no chão.",
+  "objetivo": "A criança imita expressões (feliz, triste, brava, com medo) e começa a ligar cada cara a uma palavra.",
+  "passos": [
+    {
+      "titulo": "Olhem juntos",
+      "minutos": 2,
+      "texto": "Sentem diante de um espelho. Faça uma cara de **feliz** e diga “estou feliz!”. Deixe a criança imitar.",
+      "fala": "Como está a sua cara?"
+    },
+    {
+      "titulo": "Mais caras",
+      "minutos": 4,
+      "texto": "Mostre **triste**, **brava** e **surpresa**, uma de cada vez, sempre com a palavra. Troque: a criança faz uma cara e você adivinha.",
+      "fala": "Que cara você fez?"
+    },
+    {
+      "titulo": "Fechamento",
+      "minutos": 2,
+      "texto": "Termine com a cara de feliz e um abraço. Se a criança quiser parar antes, pare."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita ao menos duas expressões",
+      "Aponta ou diz uma palavra de emoção quando é pedido"
+    ],
+    "emDesenvolvimento": [
+      "Só olha o espelho, sem imitar",
+      "Imita, mas ainda não liga a cara à palavra"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique só em duas caras (feliz e triste).",
+    "facil": "Peça que ela faça a cara de um personagem do livro favorito."
+  },
+  "materiais": [
+    {
+      "item": "Espelho inteiro, firme e sem bordas soltas",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Imitou expressões",
+      "resposta": "☐ nenhuma   ☐ 1 ou 2   ☐ 3 ou mais"
+    },
+    {
+      "texto": "Disse ou apontou uma emoção",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavra de emoção ela usou hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

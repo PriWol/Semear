@@ -1,0 +1,74 @@
+{
+  "id": "atv-em-cuidar-da-planta",
+  "titulo": "Cuidar da planta: a nossa tarefa",
+  "marcos": ["EM.VAL.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 5,
+  "cuidados": "Escolha uma planta que não seja tóxica nem tenha espinhos. Mantenha fertilizantes e produtos fora do alcance. Fique junto, porque a criança pode querer provar a terra.",
+  "objetivo": "A criança participa de um cuidado fixo e simples com um ser vivo, e percebe que o seu gesto faz diferença.",
+  "passos": [
+    {
+      "titulo": "Conversa",
+      "minutos": 2,
+      "texto": "Olhem a planta juntos: “Será que ela está com sede?”. Toquem a terra.",
+      "fala": "Do que a planta precisa?"
+    },
+    {
+      "titulo": "Regar",
+      "minutos": 4,
+      "texto": "A criança rega com um copinho, com a sua ajuda, devagar. Observe sem corrigir cada gesto."
+    },
+    {
+      "titulo": "Quadro do cuidado",
+      "minutos": 2,
+      "texto": "Marquem no calendário da geladeira que hoje a planta foi cuidada."
+    },
+    {
+      "titulo": "Fechamento",
+      "minutos": 2,
+      "texto": "Pergunte como a planta pode estar se sentindo depois. Celebrem o cuidado, não o resultado."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz a tarefa com a ajuda do adulto", "Lembra da planta em outro dia"],
+    "emDesenvolvimento": [
+      "Esquece ou perde o interesse (normal)",
+      "Rega demais ou de menos, o que não é problema"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só toque na terra e olhe a planta.",
+    "facil": "Peça que ela diga quando a planta precisa de água."
+  },
+  "materiais": [
+    {
+      "item": "Uma planta resistente em vaso",
+      "deCasa": true
+    },
+    {
+      "item": "Copinho de plástico para regar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez a tarefa",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Lembrou em outro dia",
+      "resposta": "☐ não   ☐ com lembrete   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Como a criança falou da planta?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

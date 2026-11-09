@@ -1,0 +1,103 @@
+{
+  "combinar": {
+    "titulo": "Como combinar uma vertente principal com inspirações",
+    "texto": "A **vertente principal** define o ritmo (a idade em que cada tema entra) e os marcos extras da sua família. As **inspirações** não mudam o ritmo: elas ampliam as atividades e os livros sugeridos, com um toque de cada pedagogia. Um bom começo é escolher **uma** principal e **uma ou duas** inspirações. Se duas vertentes discordarem (por exemplo, a idade de começar a alfabetização), o app segue a principal. Dá para mudar a qualquer hora, sem perder o que a criança já fez.",
+    "exemplos": [
+      "Principal **Montessori** + inspiração **Charlotte Mason**: materiais concretos em casa e lições curtas com livros vivos.",
+      "Principal **Waldorf** + inspiração **Clássico**: ritmo e arte, mais versos e recitação.",
+      "Principal **Clássico** + inspiração **Religioso**: memorização e Trivium, com a formação na fé da família."
+    ]
+  },
+  "vertentes": [
+    {
+      "vertente": "Montessori",
+      "resumo": "Autonomia, materiais concretos e vida prática. A criança escolhe e repete até dominar.",
+      "principios": [
+        "A criança aprende fazendo, com as mãos, a partir de materiais concretos.",
+        "O adulto prepara o ambiente e observa; interfere pouco.",
+        "Liberdade com limites: a criança escolhe dentro do que foi preparado.",
+        "Respeito ao ritmo e aos períodos sensíveis de cada criança."
+      ],
+      "sessaoTipica": "Uma bandeja com poucos objetos reais, uma apresentação curta do adulto e tempo para a criança repetir sozinha. Pouco papel, muita manipulação.",
+      "ritmo": "Alfabetização e matemática começam a partir do concreto: letras de lixa e alfabeto móvel, barras e material dourado. As idades do app são típicas, e a criança pode adiantar ou esperar.",
+      "marcosExtras": "Educação dos sentidos (DI.SEN) e vida prática ampliada (verter, dobrar, preparar alimentos).",
+      "atividades": "Recortar, parear, manipular: cartas, bandejas com objetos reais.",
+      "referencias": ["montessori-mente-absorvente"],
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "vertente": "Waldorf",
+      "resumo": "Ritmo, arte e imaginação. A alfabetização formal vem mais tarde, depois de uma base sólida na oralidade e no movimento.",
+      "principios": [
+        "Aprender com o corpo, as mãos, o coração e depois a cabeça.",
+        "O ritmo do dia, da semana e do ano sustenta a criança.",
+        "Arte e imaginação como caminhos de aprendizagem.",
+        "Imitação e exemplo do adulto nos primeiros anos."
+      ],
+      "sessaoTipica": "Começa com um verso ou canção, segue com uma atividade artística ou de movimento e termina com uma história contada. Pouca figura pronta.",
+      "ritmo": "Leitura e escrita formais entram mais tarde que nas outras vertentes (cerca de 7 anos); antes, desenho de formas, versos, contos e trabalho manual. O app avisa quando um marco ainda não faz parte desse ritmo.",
+      "marcosExtras": "Ritmo e festivais (DI.RIT), desenho de formas e aquarela úmida.",
+      "atividades": "Desenho livre, versos, movimento e muito espaço em branco; menos letras isoladas cedo.",
+      "referencias": ["steiner-educacao-crianca"],
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "vertente": "Clássico",
+      "resumo": "Memorização e recitação nos primeiros anos, com a sequência do Trivium: gramática, lógica e retórica.",
+      "principios": [
+        "Cada fase da infância aprende de um jeito: acumular fatos, depois questionar, depois expressar.",
+        "Memorização feita com alegria é a base do pensamento.",
+        "Os livros e a linguagem estão no centro.",
+        "Aprender com ordem e disciplina amorosa."
+      ],
+      "sessaoTipica": "Recitação de um poema ou lista, leitura em voz alta, cópia curta e conversa sobre o que foi lido.",
+      "ritmo": "Na fase da gramática (cerca de 4 a 10 anos), a criança memoriza listas, poemas e cronologias; o latim entra por volta dos 6 anos, depois da leitura em português.",
+      "marcosExtras": "Memorização e recitação (LG.MEM) e narração (LG.ORA).",
+      "atividades": "Recitação, cópia e listas para memorizar.",
+      "referencias": ["sayers-lost-tools", "wise-bauer-well-trained-mind"],
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "vertente": "Religioso",
+      "resumo": "Formação na fé e nas virtudes, junto com a base comum do Semear. Você escolhe a tradição.",
+      "principios": [
+        "A fé e as virtudes fazem parte da educação, no dia a dia da família.",
+        "A tradição (católica, evangélica, judaica, espírita etc.) é da família; o app não impõe uma.",
+        "Orar, ler e viver juntos é mais importante do que decorar."
+      ],
+      "sessaoTipica": "Segue a base comum, com uma atividade a mais de oração, história sagrada ou prática de uma virtude.",
+      "ritmo": "O ritmo da base comum; as práticas religiosas seguem o calendário e o costume da sua tradição.",
+      "marcosExtras": "Vida espiritual (DI.ESP), configurável pela tradição da família.",
+      "atividades": "Mais atividades de vida espiritual; o restante segue a base comum.",
+      "referencias": [],
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "vertente": "Charlotte Mason",
+      "resumo": "Livros vivos, narração, lições curtas e muito tempo ao ar livre.",
+      "principios": [
+        "A criança é uma pessoa inteira: bons hábitos, boas ideias e boas histórias.",
+        "Lições curtas, com atenção total.",
+        "Livros vivos, em vez de livros-texto secos.",
+        "Narração: a criança conta com as próprias palavras o que ouviu.",
+        "Natureza e caderno da natureza todos os dias."
+      ],
+      "sessaoTipica": "Lições de 10 a 20 minutos, cada uma com um tema (leitura, narração, copywork, natureza), alternando atividades mais e menos exigentes.",
+      "ritmo": "Hábitos desde cedo; leitura e escrita com copywork e ditado preparado; ciência pela observação da natureza.",
+      "marcosExtras": "Narração oral e escrita (LG.NAR), copywork e ditado preparado; caderno da natureza, estudo de pintores e de compositores.",
+      "atividades": "Narração, cópia, caderno da natureza e lições curtas; poucas fichas de completar.",
+      "referencias": ["mason-home-education", "mason-home-education-4ed"],
+      "revisao": {
+        "estado": "rascunho"
+      }
+    }
+  ]
+}

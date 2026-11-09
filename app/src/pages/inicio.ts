@@ -3,6 +3,8 @@ import { html } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
 import { precisaLembreteBackup } from '../domain/backup';
 import { pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
+import { linhasParaRessondar } from '../domain/ressondagem';
+import { carregarSondagem } from '../conteudo';
 import { anos, dataCurta } from '../ui/rotulos';
 import { criarExemplo } from '../domain/exemplo';
 
@@ -29,6 +31,27 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         <p class="nota">
           O exemplo traz duas crianças fictícias já posicionadas, para você ver tudo funcionando.
           Dá para apagar depois com um toque.
+        </p>
+      </section>
+      <section class="cartao como-funciona" aria-labelledby="como-funciona">
+        <h2 id="como-funciona">Como funciona</h2>
+        <ol>
+          <li><b>Cadastre</b> a família e as crianças (de 2 a 8 anos).</li>
+          <li>
+            <b>Posicione</b> cada criança na jornada: em cada linha, toque no marco em que ela está.
+          </li>
+          <li>
+            <b>Imprima a sessão</b>: roteiro para você, folhas para a criança e uma ficha de
+            registro. Também abre no tablet, sem internet.
+          </li>
+        </ol>
+        <p>
+          Escolha a pedagogia da sua família: Montessori, Waldorf, Clássica, Religiosa ou Charlotte
+          Mason. <a href="#/guia">Conheça as vertentes</a>.
+        </p>
+        <p class="nota">
+          Privacidade: os dados das crianças ficam só neste aparelho, e o app não usa anúncios nem
+          análise de uso. <a href="#/privacidade">Leia a política de privacidade</a>.
         </p>
       </section>`,
       montar(raiz) {
@@ -81,12 +104,29 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         for (const id of pos.ativos) ativos.push(ctx.idx.marco(id)?.titulo ?? id);
       }
       const posicionada = Object.keys(estados).length > 0;
+      const paraRessondar = linhasParaRessondar(
+        ctx.idx,
+        pistasDaCrianca(ctx.idx, familia, c),
+        carregarSondagem(),
+        estados,
+        familia.criadaEm,
+        agora,
+      );
       return html`<article class="cartao crianca-cartao">
         <header>
           <h2>${c.nome}</h2>
           <span class="nota">${anos(idade)}</span>
           <a class="link-discreto" href="#/crianca/${c.id}">editar</a>
         </header>
+        ${
+          paraRessondar.length > 0
+            ? html`<p class="alerta" role="note">
+                ${paraRessondar.length === 1 ? '1 linha' : `${paraRessondar.length} linhas`} de
+                ${c.nome} pedem uma ressondagem.
+                <a href="#/sondagem/${c.id}?ressondagem=1">Fazer a ressondagem</a>
+              </p>`
+            : ''
+        }
         ${
           posicionada
             ? html`<ul class="progresso-dominios">
@@ -114,6 +154,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         }
         <div class="acoes">
           <a class="botao primario" href="#/sessao/nova?crianca=${c.id}">Preparar sessão</a>
+          <a class="botao" href="#/semana/${c.id}">Planejar semana</a>
           <a class="botao" href="#/jornada/${c.id}"
             >${posicionada ? 'Ver jornada' : 'Posicionar'}</a
           >
@@ -144,6 +185,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         <a class="botao" href="#/crianca/nova">+ Adicionar criança</a>
         <a class="botao" href="#/biblioteca">📚 Biblioteca</a>
         <a class="botao" href="#/acervo">🆓 Acervo gratuito</a>
+        <a class="botao" href="#/guia">🧭 Guia das vertentes</a>
       </p>
 
       <h2>Últimas sessões</h2>

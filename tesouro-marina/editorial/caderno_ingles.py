@@ -2,7 +2,7 @@
 CADERNO DE INGLÊS DA MARINA (2 anos) — para quem fala inglês com ela em casa; a língua materna dela é o português.
 uso: python3 caderno_ingles.py            (monta o caderno com as unidades já escritas; ver UNIDADES_PRONTAS)
 Métodos: entrada compreensível (Krashen e Terrell, Natural Approach), Resposta Física Total (Asher), língua por hora e lugar (Grosjean) com um falante de inglês,
-leitura dialogada (Whitehurst) e rimas e cantigas de domínio público. O adulto fala inglês; o texto de apoio é em português. Sem tela. Ver ADR 0022.
+leitura dialogada (Whitehurst) e rimas e cantigas de domínio público. O adulto fala inglês; o texto de apoio é em português. Sem tela. Ver ADR 0026.
 As páginas e os blocos são os do caderno de atividades (caderno.py); aqui ficam só o conteúdo e a ordem.
 """
 import os
@@ -1020,7 +1020,7 @@ def encerramento(L):
       <h1 class="titulo" style="font-size:24pt;margin-bottom:4mm">De onde vêm as ideias e as rimas</h1>
       <h2>Métodos</h2>
       <p>Entrada compreensível (Stephen Krashen e Tracy Terrell, <i>The Natural Approach</i>); Resposta Física Total (James Asher); língua por hora e lugar, em famílias bilíngues (François Grosjean); leitura dialogada (Grover Whitehurst); e, para o tempo ao ar livre, os sentidos e os hábitos, Charlotte Mason.
-      <b>São inspirações, não regras:</b> as buscas trouxeram manuais, resumos e páginas de divulgação, e não os textos originais, e quase nada específico sobre crianças de 2 anos. Este caderno não promete fluência. Confira as orientações sobre a fase do “não” e a atenção curta com o pediatra da Marina (ADR 0022).</p>
+      <b>São inspirações, não regras:</b> as buscas trouxeram manuais, resumos e páginas de divulgação, e não os textos originais, e quase nada específico sobre crianças de 2 anos. Este caderno não promete fluência. Confira as orientações sobre a fase do “não” e a atenção curta com o pediatra da Marina (ADR 0026).</p>
       <h2>Rimas e cantigas</h2>
       <p><b>Tradicionais inglesas, de autoria desconhecida e em domínio público:</b> <i>Open, shut them</i>; <i>This little piggy</i>; <i>Rub-a-dub-dub</i>; <i>Pease porridge hot</i>; <i>Hot cross buns</i>; <i>Jack be nimble</i>; <i>One, two, buckle my shoe</i>;
       <i>The Grand Old Duke of York</i>; <i>Rain, rain, go away</i>; <i>Round and round the garden</i>; <i>Itsy Bitsy Spider</i>; <i>Baa, baa, black sheep</i>; <i>Hey diddle diddle</i>; <i>Hickory dickory dock</i>; <i>Here we go round the mulberry bush</i>; <i>Tommy Thumb</i>. A letra pode variar da que você conhece.</p>

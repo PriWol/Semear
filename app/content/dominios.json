@@ -176,6 +176,34 @@
       "maxTrilhasAtivas": 2
     },
     {
+      "id": "EM",
+      "nome": "Formação e regulação emocional",
+      "icone": "💛",
+      "linhas": [
+        {
+          "id": "EM.NOM",
+          "nome": "Reconhecer e nomear emoções",
+          "vertentes": null
+        },
+        {
+          "id": "EM.REG",
+          "nome": "Autorregulação",
+          "vertentes": null
+        },
+        {
+          "id": "EM.CON",
+          "nome": "Convivência e resolução de conflitos",
+          "vertentes": null
+        },
+        {
+          "id": "EM.VAL",
+          "nome": "Valores e cuidado",
+          "vertentes": null
+        }
+      ],
+      "comJornada": true
+    },
+    {
       "id": "AR",
       "nome": "Artes e Música",
       "icone": "🎨",
