@@ -376,7 +376,7 @@ def unidade2(L):
               ["Are you warm?", "Do you want another squeeze?", "Is your body calm?"],
               "O abraço firme e lento, embrulhada numa toalha, é um modo conhecido de acalmar crianças pequenas, e dá uma sensação de proteção depois de um banho agitado ou de uma crise. Ela deve poder sair quando quiser. "
               "A frase “snug as a bug in a rug” é uma expressão inglesa famosa e fácil de repetir.",
-              atencao="deixe sempre o rosto livre e nunca cubra a cabeça; solte se ela se agitar.",
+              atencao="deixe sempre o rosto livre e nunca cubra a cabeça; solte se ela se agitar. Esvazie a banheira antes de sentar com ela. " + AGUA,
               variar=["Faça com a manta no quarto.", "Embrulhe o ursinho também.", "Cante baixinho enquanto balança."], registro=CAL)
 
     leitura(L, "Where Is Baby's Belly Button?", "Karen Katz", "5 a 10 minutos",

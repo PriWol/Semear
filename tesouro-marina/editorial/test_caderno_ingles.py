@@ -14,7 +14,7 @@ PAGINAS = 90   # o README e o ADR 0026 declaram este total
 FRASE_AGUA = re.sub(r"<[^>]+>", "", caderno.AGUA).split(", ", 1)[1].split(",")[0]   # “nunca deixe a criança sozinha com água”
 AGUA = re.compile(r"\b(?:água|molh\w+|lav\w+|banho|banheira|bacia|balde|chuva|poça|jarra|regador|despej\w+|encha\w*|torneira|piscina)\b", re.IGNORECASE)
 EXCECOES = {   # a água só aparece de passagem: o tempo, lavar as mãos, o banho como parte do dia, letra de rima
-    "What's the weather?", "Para o banho", "Mais para o banho", "Towel hug", "Ler juntos: Where Is Baby's Belly Button?", "Mais para a mesa", "Collect a leaf",
+    "What's the weather?", "Para o banho", "Mais para o banho", "Ler juntos: Where Is Baby's Belly Button?", "Mais para a mesa", "Collect a leaf",
     "Para a chuva e para o jardim", "Para a aranha e para olhar", "Feed the animals", "Soft hands", "I can do it!"}
 LIVRO_E_TITULO = re.compile(r'<h1 class="titulo"[^>]*>([^<]+)')
 
@@ -81,7 +81,7 @@ class TestCadernoIngles(unittest.TestCase):
     def test_toda_atividade_do_banho_traz_o_aviso_de_agua(self):
         banho = [(n, h) for n, h in self.L.paginas if "Unidade 2 ·" in h and "por que isto importa" in h and ">Cantar e rimar</span>" not in h and ">Ler juntos</span>" not in h]
         self.assertGreaterEqual(len(banho), 6)
-        self.assertEqual([n for n, h in banho if FRASE_AGUA not in _texto(h) and _titulo(h) not in EXCECOES], [])
+        self.assertEqual([_titulo(h) for n, h in banho if FRASE_AGUA not in _texto(h)], [])   # sem exceções: toda atividade do banho, inclusive a da toalha
 
     def test_toda_atividade_de_comida_traz_o_aviso_de_engasgo(self):
         comida = [(n, h) for n, h in self.L.paginas if "Unidade 3 ·" in h and "por que isto importa" in h and ">Cantar e rimar</span>" not in h and ">Ler juntos</span>" not in h]
