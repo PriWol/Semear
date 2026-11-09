@@ -23,6 +23,7 @@ import { paginaAcervo } from './pages/acervo';
 import { paginaSondagem } from './pages/sondagem';
 import { paginaAtividades } from './pages/atividades';
 import { paginaSemana } from './pages/semana';
+import { sincronizarComOAparelho } from './nativo/sincronizar';
 import { paginaGuia } from './pages/guia';
 import { paginaPrivacidade } from './pages/privacidade';
 
@@ -63,6 +64,8 @@ async function iniciar() {
     atualizarFaixaExemplo,
   );
   ligarFaixaExemplo(ctx);
+  // Reagenda os lembretes de hoje em diante (só faz algo dentro do aplicativo de celular, ADR 0027).
+  void sincronizarComOAparelho(ctx, { pedirPermissao: false });
   mostrarVersao();
   // Depois da primeira renderização, para não disputar a abertura do app (ADR 0009).
   void limparCachesAntigos('caches' in window ? caches : undefined);

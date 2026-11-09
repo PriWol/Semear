@@ -2,6 +2,9 @@ import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { validarBackup } from '../dados/repositorio';
 import { dataCurta } from '../ui/rotulos';
+import { horaValida, LEMBRETE_PADRAO } from '../domain/lembretes';
+import { ponteDoAparelho } from '../nativo/lembretes';
+import { sincronizarComOAparelho } from '../nativo/sincronizar';
 import { baixarArquivo } from './sessao';
 import { VERSAO } from '../versao';
 import { numeroCurto } from '../ui/versao';
@@ -9,6 +12,9 @@ import { numeroCurto } from '../ui/versao';
 export const paginaConfig: FabricaPagina = async (ctx) => {
   const ultimo = await ctx.repo.ultimoBackup();
   const persistente = (await navigator.storage?.persisted?.()) ?? false;
+  const familia = await ctx.repo.familia();
+  const lembrete = familia?.lembrete ?? LEMBRETE_PADRAO;
+  const noAplicativo = ponteDoAparelho(window as never) !== null;
 
   return {
     titulo: 'Configurações',
@@ -42,6 +48,43 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
           <a class="botao" href="#/conteudo">Ver cobertura do conteúdo</a>
         </div>
       </section>
+      ${
+        familia
+          ? html`<section class="cartao">
+              <h2>🔔 Lembrete diário</h2>
+              <p>
+                Todo dia, no horário que você escolher, o aplicativo avisa quais atividades do plano
+                da semana são de hoje. O aviso é gerado <b>neste aparelho</b>: nada é enviado a servidor.
+              </p>
+              ${
+                noAplicativo
+                  ? ''
+                  : html`<p class="nota">
+                      Os lembretes funcionam no aplicativo de celular. Aqui no navegador você já pode
+                      deixar a preferência escolhida.
+                    </p>`
+              }
+              <form class="formulario" id="form-lembrete">
+                <label class="opcao"
+                  ><input type="checkbox" name="ativo" ${lembrete.ativo ? 'checked' : ''} /> Avisar
+                  as atividades de hoje</label
+                >
+                <label
+                  >Horário
+                  <input type="time" name="hora" value="${lembrete.hora}" required />
+                </label>
+                <label class="opcao"
+                  ><input type="checkbox" name="incluirNome" ${lembrete.incluirNome ? 'checked' : ''} />
+                  Mostrar o nome da criança no aviso</label
+                >
+                <p class="nota">
+                  O aviso aparece na tela bloqueada. Por padrão ele não traz o nome da criança.
+                </p>
+                <button class="botao primario" type="submit">Salvar lembrete</button>
+              </form>
+            </section>`
+          : ''
+      }
       <section class="cartao" id="sobre">
         <h2>Sobre o app</h2>
         <p>
@@ -86,6 +129,32 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
           alert(erro instanceof Error ? erro.message : 'Não foi possível ler o arquivo.');
         }
       });
+      raiz
+        .querySelector<HTMLFormElement>('#form-lembrete')
+        ?.addEventListener('submit', async (ev) => {
+          ev.preventDefault();
+          const f = ev.currentTarget as HTMLFormElement;
+          const dados = new FormData(f);
+          const hora = String(dados.get('hora') ?? '');
+          if (!horaValida(hora) || !familia) {
+            ctx.avisar('Escolha um horário válido.');
+            return;
+          }
+          await ctx.repo.salvarFamilia({
+            ...familia,
+            lembrete: {
+              ativo: dados.get('ativo') !== null,
+              hora,
+              incluirNome: dados.get('incluirNome') !== null,
+            },
+          });
+          const r = await sincronizarComOAparelho(ctx, { pedirPermissao: true });
+          ctx.avisar(
+            r === 'sem-permissao'
+              ? 'Preferência salva, mas as notificações estão bloqueadas nas configurações do celular.'
+              : 'Lembrete salvo.',
+          );
+        });
       raiz.querySelector('#apagar')?.addEventListener('click', async () => {
         if (!confirm('Apagar TODOS os dados deste aparelho? Faça um backup antes.')) return;
         await ctx.repo.apagarTudo();

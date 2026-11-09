@@ -11,6 +11,7 @@ import {
   type Sessao,
 } from '../domain/tipos';
 import { dataValida } from '../domain/datas';
+import { horaValida } from '../domain/lembretes';
 import { ehLetra } from '../domain/letra';
 import { DIAS, type PlanoSemana } from '../domain/semana';
 import type { DadosExemplo } from '../domain/exemplo';
@@ -338,6 +339,12 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
   const ehData = (v: unknown) => ehTexto(v) && dataValida(v);
   // O marcador do exemplo só pode faltar ou ser true (#39).
   const marcadorOk = (v: Record<string, unknown>) => v.exemplo === undefined || v.exemplo === true;
+  const ehLembrete = (v: unknown) =>
+    ehObjeto(v) &&
+    typeof v.ativo === 'boolean' &&
+    typeof v.incluirNome === 'boolean' &&
+    ehTexto(v.hora) &&
+    horaValida(v.hora);
   const ehDia = (v: unknown) => (DIAS as readonly unknown[]).includes(v);
   const ehRotina = (v: unknown) =>
     ehObjeto(v) &&
@@ -387,6 +394,7 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
       !listaDe(f.inspiracoes, ehVertente) ||
       !listaDe(f.idiomasEducador, ehIdioma) ||
       !ehTexto(f.criadaEm) ||
+      !(f.lembrete === undefined || ehLembrete(f.lembrete)) ||
       !marcadorOk(f)
     ) {
       falha('dados da família incompletos ou desconhecidos');
