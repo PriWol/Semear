@@ -90,20 +90,20 @@ class TestCadernoIngles(unittest.TestCase):
 
     def test_toda_rima_aparece_nos_creditos_da_sua_origem(self):
         creditos = _texto(next(h for _, h in self.L.paginas if "De onde vêm as ideias e as rimas" in h))
-        trechos = {"Rima escrita pela coleção": ("Escritas pela coleção", "Livros"),
-                   "Rima tradicional inglesa": ("Tradicionais inglesas", "Com autoria conhecida")}
+        # trechos dos créditos: (início, fim)
+        trecho = {"desconhecida": ("Tradicionais inglesas", "Com autoria conhecida"), "conhecida": ("Com autoria conhecida", "Escritas pela coleção"),
+                  "coleção": ("Escritas pela coleção", "Livros")}
         rimas = []
         for _, html in self.L.paginas:
             rimas += re.findall(r'<h2 class="titulo"[^>]*>([^<]+)</h2>.*?<div class="peq"[^>]*>([^<]+)</div>', html, re.DOTALL)
         self.assertGreaterEqual(len(rimas), 32)
         faltam = []
         for titulo, origem in rimas:
-            for chave, (inicio, fim) in trechos.items():
-                if origem.startswith(chave) and titulo.strip() not in creditos.split(inicio, 1)[1].split(fim, 1)[0]:
-                    faltam.append(f"{titulo.strip()} (esperada em “{inicio}”)")
-            if "domínio público" in origem and not origem.startswith("Rima"):   # autoria conhecida
-                if titulo.strip() not in creditos.split("Com autoria conhecida", 1)[1].split("Escritas pela coleção", 1)[0]:
-                    faltam.append(f"{titulo.strip()} (esperada em “Com autoria conhecida”)")
+            # a seção esperada vem do que a própria página da rima declara
+            chave = "coleção" if origem.startswith("Rima escrita pela coleção") else "desconhecida" if "autoria desconhecida" in origem else "conhecida"
+            inicio, fim = trecho[chave]
+            if titulo.strip() not in creditos.split(inicio, 1)[1].split(fim, 1)[0]:
+                faltam.append(f"{titulo.strip()} (esperada em “{inicio}”)")
         self.assertEqual(faltam, [])
 
     def test_todo_livro_lido_esta_na_lista_de_livros(self):
