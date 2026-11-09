@@ -31,5 +31,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0023](0023-faixa-etaria-de-2-a-8-anos.md) | Faixa etária de 2 a 8 anos | Aceito (conteúdo pendente) |
 | [0024](0024-dominio-formacao-e-regulacao-emocional.md) | Domínio de formação e regulação emocional | Aceito (revisão pendente) |
 | [0025](0025-plano-semanal.md) | Plano semanal guardado no aparelho | Aceito |
+| [0026](0026-caderno-de-ingles-para-2-anos.md) | Caderno de inglês para crianças de 2 anos | Aceito (conferência pendente) |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

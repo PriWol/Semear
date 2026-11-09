@@ -51,7 +51,7 @@ jobs:
       - run: python3 fontes_v1.py verificar
       - run: python3 fontes_v5.py verificar
       - run: python3 fontes_v6.py verificar
-      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_volume7 test_caderno test_pdf test_musica
+      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_volume7 test_caderno test_caderno_ingles test_pdf test_musica
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
@@ -62,6 +62,7 @@ jobs:
       - run: python3 volume6.py
       - run: python3 volume7.py
       - run: python3 caderno.py
+      - run: python3 caderno_ingles.py
       - name: Juntar os PDFs
         run: |
           mkdir -p ../pdfs
@@ -78,6 +79,12 @@ jobs:
         with:
           name: caderno-2-anos-pdfs
           path: tesouro-marina/caderno-2-anos/*.pdf
+          retention-days: 14
+      # O caderno de inglês tem o mesmo tratamento (ADR 0026).
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: caderno-ingles-pdfs
+          path: tesouro-marina/caderno-ingles/*.pdf
           retention-days: 14
 
   publicar:
