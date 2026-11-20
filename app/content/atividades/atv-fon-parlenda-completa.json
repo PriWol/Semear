@@ -6,6 +6,7 @@
   "idade": [3, 5],
   "duracaoMin": 20,
   "preparoMin": 2,
+  "cuidados": "Atenção: fique junto da criança o tempo todo, principalmente aos 3 anos. Não é teste: se ela não completar o verso, complete você e siga a brincadeira, sem cobrar. Giz de cera e lápis só com supervisão, longe da boca.",
   "objetivo": "A criança se diverte com o **som** das palavras e completa versos conhecidos, percebendo quando uma rima não combina.",
   "passos": [
     {

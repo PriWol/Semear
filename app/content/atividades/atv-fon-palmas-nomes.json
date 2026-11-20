@@ -6,6 +6,7 @@
   "idade": [4, 6],
   "duracaoMin": 25,
   "preparoMin": 8,
+  "cuidados": "Atenção: fique junto da criança, principalmente aos 4 anos. Se der passos ou pulinhos, deixe o chão livre de brinquedos. Recorte as cartas você mesmo, antes, com tesoura sem ponta, longe dela.",
   "objetivo": "A criança percebe que a palavra se divide em **pedaços** (sílabas) e consegue marcá-los com palmas.",
   "passos": [
     {
@@ -42,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Fique só em nomes de 2 pedaços e bata junto com a criança.",
-    "facil": "Proponha palavras de 4 e 5 pedaços (*ce-le-bra-ção*) e peça que ela diga o que tem mais e menos."
+    "facil": "Proponha palavras de 4 pedaços ou mais (*ce-le-bra-ção*) e peça que ela diga o que tem mais e menos."
   },
   "materiais": [
     {

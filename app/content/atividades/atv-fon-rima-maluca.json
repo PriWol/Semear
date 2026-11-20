@@ -7,6 +7,7 @@
   "idade": [4, 7],
   "duracaoMin": 25,
   "preparoMin": 8,
+  "cuidados": "Atenção: a tesoura e o recorte das cartas são só do adulto, feitos antes da sessão e longe da criança. Fique junto durante o jogo e não cobre rimas: palavra inventada vale.",
   "objetivo": "A criança **inventa** palavras que rimam, percebendo que a rima está no som do final e não no significado.",
   "passos": [
     {

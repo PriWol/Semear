@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Use palavras de 2 sons (*uva*, *ou*) ou 3 (*sol*, *mar*) e deixe as figuras à vista.",
-    "facil": "Use palavras de 5 sons e peça que ela invente um robô para outras palavras."
+    "facil": "Use palavras mais longas (*prato*, *bolo*) e peça que ela invente um robô para outras palavras."
   },
   "materiais": [
     {

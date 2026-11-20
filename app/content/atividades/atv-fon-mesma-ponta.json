@@ -7,6 +7,7 @@
   "idade": [5, 8],
   "duracaoMin": 25,
   "preparoMin": 5,
+  "cuidados": "Atenção: use figuras ou objetos grandes, que não caibam na boca, e fique junto da criança. Se for recortar figuras, só o adulto usa a tesoura, antes da sessão.",
   "objetivo": "A criança percebe que palavras diferentes podem **terminar com o mesmo pedaço** (gaTO, paTO), ligando a rima à sílaba final.",
   "passos": [
     {

@@ -7,6 +7,7 @@
   "idade": [5, 8],
   "duracaoMin": 25,
   "preparoMin": 8,
+  "cuidados": "Atenção: o recorte das cartas é só do adulto, com tesoura sem ponta, antes da sessão. Cartas e papel não vão à boca. Se brincar no chão, deixe o espaço livre e fique junto da criança.",
   "objetivo": "A criança **identifica a sílaba final** das palavras e forma pares pelo som do fim.",
   "passos": [
     {

@@ -2,7 +2,7 @@
   "id": "atv-fon-botoes-sons",
   "titulo": "Um botão para cada som",
   "marcos": ["LG.FON.07", "LG.FON.10"],
-  "revisa": ["LG.FON.06", "LG.FON.10"],
+  "revisa": ["LG.FON.06"],
   "vertentes": ["Charlotte Mason", "Montessori", "Clássico"],
   "idade": [6, 8],
   "duracaoMin": 26,
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Use palavras de 2 ou 3 sons (*sol, mar*) com o adulto deslizando as fichas junto com a criança.",
-    "facil": "Use palavras de 5 sons ou com sons seguidos (*prato, brinco*), e peça que ela invente uma palavra."
+    "facil": "Use palavras mais longas ou com sons seguidos (*prato*), e peça que ela invente uma palavra."
   },
   "materiais": [
     {
