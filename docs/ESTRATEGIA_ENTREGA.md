@@ -169,3 +169,51 @@ Respostas às perguntas da seção 7. Valem como decisão registrada para as est
 Efeitos na ordem das ondas: a onda 3 deixa de ser "abrir ao público" e vira "pronto para abrir"; a abertura acontece depois da onda 4.
 
 **Nota de conflito (20/11):** a decisão sobre o #95 (`.ics`, "sem app de loja") e a do #75 ("plano básico", "uma atividade por semana") diferem do que os ADR 0028 e 0027 já registram no `main`. Esta tabela mantém a decisão dela como registrada; o que fazer com os ADRs está nas perguntas 1 e 2 da seção 7 e só ela escolhe.
+
+## 10. Decisões do PM por delegação (20/11/2026)
+
+A dona do produto delegou ao PM decidir as perguntas abertas da seção 7, com o objetivo de **lançar o app aberto ao público antes do Natal (24/12/2026)** gastando poucos tokens. Critério: o menor produto que pode ser aberto com qualidade, sem violar a privacidade. Tudo o que exige ação externa dela (domínio, contas de loja, advogado, verba, provedor de pagamento) **não foi decidido nem presumido** e está em "Para quando ela acordar". Ela pode reverter qualquer item abaixo.
+
+### 10.1 Decisões
+
+| Pergunta | Decisão | Por quê |
+|---|---|---|
+| Abertura sem conta (7) | **A v1 abre ao público sem conta, sem cobrança, gratuita e completa** (jornada, sondagem, sessões, semana, acervo, Tesouro). **Isto muda a decisão de 20/11** ("abrir só na onda 4"). | Conta e cobrança exigem ADR de servidor, provedor de pagamento e jurídico: ações externas que não cabem em 5 semanas. Sem elas, o produto aberto é o que já existe, mais o ciclo da sessão. |
+| Preço e plano (#75, 1) | **Sem preço na v1.** O produto completo é grátis por tempo indeterminado. Nada de "teste de 7 dias" (não há o que expirar). **Proposta (não feita) para depois:** manter o teste de 7 dias e o plano básico com uma atividade por semana; o plano básico **mantém jornada, sondagem e histórico** (a decisão dela não os tirou, e isso respeita "dados nunca ficam reféns"); preços R$ 49,90 e R$ 69,90 do ADR 0027 ficam como hipótese não confirmada. | Evita cobrar sem servidor. Quem usa na v1 não perde nada depois: o aviso de que o app é gratuito "por ora" entra nos termos. Qualquer assinatura exige ADR de backend e privacidade (#26) antes. |
+| Lembrete (#95, 2) | **Opção (a): `.ics` na v1**, como decisão dela de 20/11. Capacitor, lojas e notificação local **fora da v1**; o código de lembrete local fica dormente. A tela de Configurações deve parar de oferecer um lembrete que só funciona num app empacotado e oferecer "baixar lembretes (`.ics`)". **Proposta:** revisar o ADR 0028 (adiar o empacotamento) em PR próprio, que passa por ela. | Nada sai do aparelho, sem conta de loja e sem Mac. Cabe em uma estória pequena reaproveitando `domain/semana.ts`. |
+| Endereço (#34) | **A v1 sai em `priwol.github.io/Semear`.** Domínio próprio depois, com aviso de backup se já houver usuários. | O domínio ainda não existe e é ação dela. |
+| Rascunhos em conteúdo (3) | Segue a decisão dela de 20/11: valem como aprovados. A distinção "revisado pelo Curador x aprovado sem revisão" (#101) vai para depois da v1. | Não bloqueia o lançamento. |
+| Ilustrações (#24, 4) | **Emoji e arte de domínio público já registrada.** Sem banco novo na v1. | Sem verba; já decidido por ela. |
+| Piloto (5) | **Sem piloto.** #28 vira acompanhamento depois do lançamento. | Já decidido por ela. |
+| Links de terceiros (#74), vouchers (#100) | **Fora da v1.** Sem afiliados e sem vouchers (vouchers dependem de cobrança). | Sem cobrança não há o que promover; o afiliado exige ADR de privacidade. |
+| Materiais restritos (#76) | **Fora da v1.** O Tesouro segue aberto (ADR 0011). | Exige servidor. |
+| Termos e privacidade (#25) | **Na v1:** atualizar a política já existente e acrescentar termos curtos para app gratuito, local, sem conta. **Revisão por advogado fica pendente** (ver abaixo). | Há dados de criança só no aparelho, mas o aviso precisa ser claro. |
+| Línguas (#23) | **Fora da v1** (inglês fica no caderno da Release). | Conteúdo novo exige revisão dela; o prazo não comporta. |
+
+### 10.2 Fora da v1 (resumo)
+Conta, login, logout, pagamento, assinatura, vouchers, restrição de materiais, afiliados, sincronização, fotos de evidências, sessão de irmãos, portfólio, validação jurídica do portfólio, app de loja (Capacitor), domínio próprio, trilha de Línguas, comunidade e portal do preceptor.
+**Como vira monetização depois:** (1) ADR de servidor mínimo (só conta e assinatura) aprovado por ela; (2) escolha do provedor (ação dela); (3) teste de 7 dias e plano básico conforme a proposta acima; (4) aviso prévio de 30 dias aos usuários da v1. Quem já usava mantém os dados no aparelho.
+
+### 10.3 Ondas ajustadas
+Onda 0 (limpeza) e 1 (ciclo da sessão) mantidas. Onda 2 fica reduzida a um lote por linha (LG.FON, MA.SEN). Onda 3 passa a incluir `.ics`, landing simples e termos. **Onda 4 (conta e cobrança) sai da v1** e vira "pós-lançamento". A abertura passa a ser o fim da onda 3.
+
+### 10.4 Cronograma por semana (sem prometer o que não cabe)
+
+| Semana | Entrega | Condição |
+|---|---|---|
+| 1 (23 a 27/11) | Fechar as estórias já entregues; ROADMAP atualizado; #11 planejada e codificada; #22 lote LG.FON; #25 texto da v1 | Estórias liberadas aprovadas por ela |
+| 2 (30/11 a 4/12) | #11 mesclada (ela mescla, mexe em dados); #2 (parte que falta) e #15 (roteiro e2e); #22 lote MA.SEN | Ela revisa o lote LG.FON |
+| 3 (7 a 11/12) | `.ics` (#95 reduzida); landing v1 (#4 reduzida); aviso "gratuito por ora"; ajuste da tela de lembrete | |
+| 4 (14 a 18/12) | **Congelamento em 16/12** (só correção). QA ponta a ponta no celular, segurança e acessibilidade; roteiro de teste dela (cerca de 1 hora) | Conteúdo não aprovado até 14/12 fica de fora |
+| 5 (21 a 24/12) | Publicar entre 21 e 23/12; 24/12 é só folga para correção. Sem estória nova | Ela mescla o PR final e confere o roteiro |
+
+Riscos de prazo: dependem de ela aprovar estórias, conteúdo e mesclar PRs de dados, CSP, workflows e ADRs. Se a semana 1 passar sem aprovação, **corta-se o lote MA.SEN e o `.ics`**, nessa ordem; #11 e o texto de termos são o mínimo.
+
+### 10.5 Gasto de tokens
+- **No máximo 3 estórias `aprovada` por vez**; a próxima só é liberada quando uma fecha. Ordem: #11, #22 (lote LG.FON), #25; depois #2 e #15 juntas, #22 (MA.SEN), `.ics`, landing.
+- **Estória de código (#11):** PM, Dev B (plano), QA (casos, antes do código), Dev A, revisão de Dev B e Segurança (muda dados). Designer só olha a tela nova uma vez, no PR.
+- **Estória de conteúdo (#22):** Curador e PM, mais a dona do produto; **sem Dev, QA ou Designer** (só `tests/conteudo.test.ts` e CI).
+- **Texto e documentos (#25):** PM + Segurança/privacidade; sem Dev, QA nem Designer.
+- **Estórias pequenas de tela (`.ics`, landing):** Dev A + Dev B (revisão); QA só se mudar fluxo; Designer só se a tela for nova.
+- **Dispensado:** revisão de design e QA completo em PRs de conteúdo, documentos e fechamentos; auditorias tela por tela; releitura de issues já fechadas.
+- Fechar as 14 estórias já entregues custa só uma checagem do PM (evidência na tabela da seção 2), sem agentes.
