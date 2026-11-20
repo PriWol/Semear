@@ -6,6 +6,7 @@ import { letraDaCrianca } from '../domain/letra';
 import { DURACAO_PADRAO, DURACOES, gerarCodigoSessao } from '../domain/sessao';
 import {
   DIAS,
+  diaFeito,
   marcarFeito,
   materiaisDaSemana,
   NOME_DIA,
@@ -19,7 +20,8 @@ import {
 } from '../domain/semana';
 import type { Atividade, Sessao } from '../domain/tipos';
 import { gerarSemana, nomeArquivoSemana, type ModoSemana } from '../pacote/semana';
-import { observacoesDaSessao } from '../domain/registro';
+import { observacoesDaSessao, sessaoRegistrada } from '../domain/registro';
+import { ROTULO_FEITA } from '../ui/rotulos';
 import { baixarArquivo } from './sessao';
 import { sincronizarComOAparelho } from '../nativo/sincronizar';
 
@@ -77,10 +79,14 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
     <button class="botao primario" type="submit">Planejar semana</button>
   </form>`;
 
-  const diaCard = (
-    d: PlanoSemana['dias'][number],
-  ) => html`<section class="cartao dia-plano ${d.feito ? 'feito' : ''}" data-dia="${d.dia}">
-    <h2>${NOME_DIA[d.dia]} <span class="nota">${d.data.split('-').reverse().slice(0, 2).join('/')}${d.feito ? ' · feito ✓' : ''}</span></h2>
+  // O dia está "Feita ✓" se foi marcado à mão OU se a sessão dele já foi registrada pela ficha (#11).
+  const sessoesDaCrianca = await ctx.repo.sessoes(crianca.id);
+  const diaCard = (d: PlanoSemana['dias'][number]) => {
+    const feita = diaFeito(d, sessoesDaCrianca);
+    const sessaoDoDia = d.sessaoId ? sessoesDaCrianca.find((s) => s.id === d.sessaoId) : undefined;
+    const registrada = sessaoDoDia !== undefined && sessaoRegistrada(sessaoDoDia);
+    return html`<section class="cartao dia-plano ${feita ? 'feito' : ''}" data-dia="${d.dia}">
+    <h2>${NOME_DIA[d.dia]} <span class="nota">${d.data.split('-').reverse().slice(0, 2).join('/')}</span> ${feita ? html`<span class="selo-feita">${ROTULO_FEITA}</span>` : ''}</h2>
     ${
       d.atividadeIds.length === 0
         ? html`<p class="nota">Sem atividade neste dia.</p>`
@@ -96,10 +102,20 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
             })}
           </ul>`
     }
-    <button class="botao ${d.feito ? '' : 'primario'}" type="button" data-acao="feito" data-dia="${d.dia}">
-      ${d.feito ? 'Desmarcar' : 'Marcar como feito'}
-    </button>
+    ${
+      registrada
+        ? // Desmarcar apagaria a sessão e a observação dela: com registro, só se corrige.
+          html`<a class="botao" href="#/sessao/${sessaoDoDia.id}/registrar">Corrigir registro</a>`
+        : html`${
+            sessaoDoDia && d.feito
+              ? html`<a class="botao" href="#/sessao/${sessaoDoDia.id}/registrar">Registrar</a> `
+              : ''
+          }<button class="botao ${d.feito ? '' : 'primario'}" type="button" data-acao="feito" data-dia="${d.dia}">
+            ${d.feito ? 'Desmarcar' : 'Marcar como feito'}
+          </button>`
+    }
   </section>`;
+  };
 
   return {
     titulo: `Semana de ${crianca.nome}`,
@@ -188,7 +204,15 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           const d = plano.dias.find((x) => x.dia === dia);
           if (!d) return;
           if (d.feito) {
-            if (d.sessaoId) await ctx.repo.removerSessao(d.sessaoId);
+            if (d.sessaoId) {
+              // A sessão já registrada guarda observações: desmarcar não pode apagá-las (#11).
+              const ligada = sessoesDaCrianca.find((s) => s.id === d.sessaoId);
+              if (ligada && sessaoRegistrada(ligada)) {
+                ctx.avisar('Esta sessão já foi registrada. Use “Corrigir registro”.');
+                return;
+              }
+              await ctx.repo.removerSessao(d.sessaoId);
+            }
             novo = marcarFeito(plano, dia, false);
           } else {
             // Registra a sessão do dia no histórico, como se tivesse sido preparada pelo gerador.

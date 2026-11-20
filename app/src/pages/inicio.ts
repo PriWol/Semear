@@ -5,7 +5,8 @@ import { precisaLembreteBackup } from '../domain/backup';
 import { pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import { linhasParaRessondar } from '../domain/ressondagem';
 import { carregarSondagem } from '../conteudo';
-import { anos, dataCurta } from '../ui/rotulos';
+import { anos, dataCurta, ROTULO_FEITA } from '../ui/rotulos';
+import { sessaoRegistrada } from '../domain/registro';
 import { criarExemplo } from '../domain/exemplo';
 
 export const paginaInicio: FabricaPagina = async (ctx) => {
@@ -154,6 +155,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         }
         <div class="acoes">
           <a class="botao primario" href="#/sessao/nova?crianca=${c.id}">Preparar sessão</a>
+          <a class="botao" href="#/sessao/registrar?crianca=${c.id}">Registrar sessão</a>
           <a class="botao" href="#/semana/${c.id}">Planejar semana</a>
           <a class="botao" href="#/jornada/${c.id}"
             >${posicionada ? 'Ver jornada' : 'Posicionar'}</a
@@ -197,7 +199,10 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
                 const titulos = s.atividadeIds.map((id) => ctx.idx.atividade(id)?.titulo ?? id);
                 return html`<li>
                   <a href="#/sessao/${s.id}">
-                    <b>${s.codigo}</b> · ${crianca?.nome ?? '—'} · ${dataCurta(s.criadaEm)}
+                    <span
+                      ><b>${s.codigo}</b> · ${crianca?.nome ?? '—'} · ${dataCurta(s.criadaEm)}
+                      ${sessaoRegistrada(s) ? html`<span class="selo-feita">${ROTULO_FEITA}</span>` : ''}</span
+                    >
                     <span class="nota">${titulos.join(' + ')}</span>
                   </a>
                 </li>`;

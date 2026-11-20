@@ -27,6 +27,9 @@
   /* Medidas */
   --s-raio: 14px;
   --s-raio-p: 10px;
+  /* Alvo de toque mínimo (48 px) e anel de foco visível (3 px, recuo de 2 px) em todo controle (#11) */
+  --s-alvo-toque: 3rem;
+  --s-foco: var(--s-tinta);
   --s-espaco-1: 0.25rem;
   --s-espaco-2: 0.5rem;
   --s-espaco-3: 0.75rem;

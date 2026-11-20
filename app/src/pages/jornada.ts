@@ -1,5 +1,6 @@
 import type { FabricaPagina } from '../ui/app';
-import { html, textoRico } from '../ui/html';
+import { confiavel, html, textoRico } from '../ui/html';
+import { pareceProntoPara } from '../domain/registro';
 import { idadeEmAnos } from '../domain/datas';
 import { ESTADOS, IDIOMAS, type EstadoMarco } from '../domain/tipos';
 import {
@@ -13,6 +14,13 @@ import {
 import { formatarReferencia, orientacaoParaFamilia } from '../domain/orientacao';
 import { anos, ICONE_ESTADO, NOME_ESTADO } from '../ui/rotulos';
 
+/** Broto em linha (a especificação §5.2 pede ícone de broto e texto, sem emoji). Constante do próprio código. */
+const ICONE_BROTO = confiavel(
+  '<svg class="icone-broto" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+    '<path d="M12 21v-9" /><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z" />' +
+    '<path d="M12 15c0-3-2-5-6-5 0 3 2 5 6 5z" /></svg>',
+);
+
 /**
  * Marcos cujo "Para os pais" estava aberto quando a tela foi redesenhada (ex.: ao marcar um
  * estado). A tela inteira é refeita, então sem isso o texto fecharia no meio da leitura.
@@ -25,6 +33,8 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
   if (!familia || !crianca) throw new Error('Criança não encontrada.');
   const idade = idadeEmAnos(crianca.nascimento, new Date(ctx.agora()));
   const estados = await ctx.repo.estados(crianca.id);
+  // O histórico alimenta o selo "parece pronto" (§5.2): a ficha de registro não muda o estado do marco.
+  const historico = await ctx.repo.historico(crianca.id);
   const pistas = pistasDaCrianca(ctx.idx, familia, crianca);
   const dominios = ctx.idx.conteudo.dominios.filter((d) => d.comJornada);
   const dominioAtual = dominios.find((d) => d.id === params.d) ?? dominios[0];
@@ -93,6 +103,15 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                             : html`<span class="selo-ativo proximo">próximo</span>`
                           : ''
                       }
+                      ${
+                        pareceProntoPara(s.chave, estados, historico)
+                          ? html`<p class="reg-dica">
+                              <span class="selo-pronto">${ICONE_BROTO}parece pronto</span>
+                              Observado como consolidado em 2 sessões. Se você concorda, marque
+                              Consolidado aqui.
+                            </p>`
+                          : ''
+                      }
                       <p class="nota">${s.marco.descricaoPais}</p>
                       ${
                         s.aguardando.length
@@ -120,7 +139,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                           html`<button
                             type="button"
                             class="estado-botao ${s.estado === e ? 'marcado' : ''}"
-                            aria-pressed="${s.estado === e}"
+                            aria-pressed="${String(s.estado === e)}"
                             data-acao="estado"
                             data-chave="${s.chave}"
                             data-estado="${e}"
