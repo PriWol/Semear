@@ -61,6 +61,8 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Diagnóstico temporário: mostra a mensagem de erro completa. Remover depois que os agentes rodarem.
+          show_full_output: true
           prompt: |
             REPO: ${{ github.repository }}
             ESTÓRIA APROVADA: #${{ github.event.issue.number }}
