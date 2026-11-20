@@ -64,7 +64,7 @@ describe('busca de sessão para registrar', () => {
       (m) => m[1],
     );
     expect(links).toEqual(['s8', 's7', 's6', 's5', 's4', 's3']);
-    expect(conteudo.valor).toContain('<span class="selo-feita">Feita</span>');
+    expect(conteudo.valor).toContain('<span class="selo-feita">Feita ✓</span>');
     expect(conteudo.valor).toContain('Para registrar');
   });
 

@@ -25,7 +25,7 @@ Opção 3, com estas regras:
   transação nem abre a loja `estados`. Sessão inexistente e evento de outra sessão ou de outra criança são
   recusados com erro claro.
 - **Eventos com `origem: 'sessao'` e `sessaoId`.** Marco sem escolha na ficha não gera evento. Registrar a mesma
-  sessão de novo **acrescenta** eventos (o histórico nunca é apagado, §4.2) e **substitui** os campos da `Sessao`
+  sessão de novo acrescenta eventos **só dos marcos cujo estado observado mudou** em relação ao que a sessão já tinha registrado (corrigir só a duração ou a anotação não gera evento; reemitir tudo poria observações velhas depois de um "Está aqui" e faria o selo voltar sozinho). O histórico nunca é apagado (§4.2). O app pede confirmação antes de substituir um registro existente. E **substitui** os campos da `Sessao`
   (data do registro, duração real, engajamento, anotações): quem corrige pode apagar um detalhe.
 - **Selo "parece pronto" é derivado, nunca gravado** (`pareceProntoPara`, função pura em `domain/registro.ts`): o
   marco ainda não está *Consolidado* e teve a observação *Consolidado* em **2 sessões diferentes**. De cada sessão
@@ -64,3 +64,18 @@ Opção 3, com estas regras:
   percorre o histórico para apagar as observações de uma sessão).
 - Se um dia a regra do selo mudar (por exemplo, 3 sessões), muda uma constante e o teste; nenhum dado precisa ser
   convertido.
+
+## Pontos em aberto para a dona do produto
+Estas decisões não foram tomadas pelo time técnico; o comportamento atual está descrito para você escolher.
+1. **"Está aqui" e os marcos de adiante.** O "Está aqui" só grava eventos dos marcos que mudam de estado. Um marco
+   mais adiante que está *Não observado* não recebe evento, então as observações antigas dele continuam
+   contando para o selo. Dá para aceitar isso e ajustar a §5.2, ou mudar o formato do histórico para o "Está aqui"
+   zerar a linha inteira.
+2. **Onde ver o registro.** Não há tela de "histórico da criança": o registro aparece na página da sessão e o selo
+   na jornada. Aceitar assim, ou abrir uma estória de continuação.
+3. **Texto da estória #11.** O "Como testar" diz que "os marcos mudaram" depois do registro. Isso contradiz a §5.2
+   e este ADR (a ficha não muda o estado). O texto da estória precisa ser corrigido.
+4. **Número da versão.** Este trabalho subiu o app para 0.3.0. Pelo ADR 0012, confirmar 0.3.0 ou usar 0.2.1 no
+   primeiro PR da Fase 1.
+5. **Excluir sessão apaga as observações.** Isso contraria o "nada é apagado" da §4.2, mas evita eventos órfãos
+   que fariam o backup ser recusado. Confirmar a escolha.

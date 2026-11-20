@@ -82,7 +82,7 @@ história do que foi observado é outra.
 
 **Por que usamos:** a observação da sessão não muda o estado do marco (só o pai muda, no mapa). Guardar cada
 observação como um fato novo deixa o app calcular dicas, como o selo "parece pronto", sem mexer no que o pai decidiu.
-O que vale é a **ordem de gravação**, não a data: uma data pode estar errada, a ordem não. (ADR 0030, especificação §5.2)
+Ao corrigir um registro, só entra linha nova para o marco que **mudou**; repetir tudo poria observações velhas depois de um "Está aqui". O que vale é a **ordem de gravação**, não a data: uma data pode estar errada, a ordem não. (ADR 0030, especificação §5.2)
 
 ### Transação (tudo ou nada)
 **O que é:** um grupo de gravações que o banco trata como uma só: ou todas acontecem, ou nenhuma. É como um

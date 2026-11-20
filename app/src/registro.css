@@ -13,7 +13,7 @@
   gap: var(--s-espaco-1);
   padding: var(--s-espaco-1) var(--s-espaco-2);
   border-radius: var(--s-raio);
-  font-size: 0.8rem;
+  font-size: var(--s-texto-selo);
   font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
@@ -37,7 +37,7 @@
 }
 .reg-dica {
   margin: var(--s-espaco-1) 0 0;
-  font-size: 0.85rem;
+  font-size: var(--s-texto-p);
   color: var(--s-suave);
 }
 
@@ -100,7 +100,7 @@
 }
 .reg-opcoes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--s-espaco-2);
 }
 .reg-engajamento .reg-opcoes {
@@ -127,26 +127,33 @@
   align-items: center;
   justify-content: center;
   gap: var(--s-espaco-1);
+  min-width: 0;
   min-height: var(--s-alvo-toque);
-  padding: var(--s-espaco-2);
-  border: 1px solid var(--s-linha);
+  padding: var(--s-espaco-1);
+  border: 1px solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
   color: var(--s-tinta);
-  font-size: 0.9rem;
+  font-size: var(--s-texto-p);
+  font-weight: 700; /* mesmo peso marcado ou não: tocar não muda a largura */
   line-height: 1.2;
   text-align: center;
+  overflow-wrap: anywhere;
+}
+/* O ✓ ocupa lugar também nos não marcados (invisível), para o texto não se mexer ao tocar. */
+.reg-opcao .reg-rotulo::before {
+  content: '✓';
+  visibility: hidden;
 }
 .reg-opcao input:checked + .reg-rotulo {
-  padding: calc(var(--s-espaco-2) - 2px);
+  padding: calc(var(--s-espaco-1) - 2px);
   border-width: 3px;
   border-color: var(--s-principal);
   background: var(--s-principal-claro);
   color: var(--s-principal);
-  font-weight: 700;
 }
 .reg-opcao input:checked + .reg-rotulo::before {
-  content: '✓';
+  visibility: visible;
 }
 .reg-opcao input:focus-visible + .reg-rotulo {
   outline: 3px solid var(--s-foco);
@@ -174,7 +181,7 @@
 }
 .reg-ajuda {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: var(--s-texto-p);
   color: var(--s-suave);
 }
 .reg-campo {
@@ -182,7 +189,7 @@
   width: 100%;
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-2) var(--s-espaco-3);
-  border: 2px solid var(--s-linha);
+  border: 2px solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
   color: var(--s-tinta);
@@ -218,7 +225,7 @@ textarea.reg-campo {
 .reg-acoes .reg-contador {
   flex: 1 0 100%;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: var(--s-texto-selo);
   color: var(--s-suave);
 }
 .reg-acoes .botao,
@@ -256,9 +263,12 @@ textarea.reg-campo {
   color: var(--s-tinta);
   text-decoration: none;
 }
+.reg-lista-sessoes .selo-feita {
+  justify-self: start; /* sem isto o selo vira uma faixa de largura total */
+}
 .reg-lista-sessoes .reg-pendente {
   justify-self: start;
-  font-size: 0.8rem;
+  font-size: var(--s-texto-selo);
   font-weight: 700;
   color: var(--s-destaque-texto);
 }

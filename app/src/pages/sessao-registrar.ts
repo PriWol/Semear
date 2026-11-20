@@ -203,6 +203,14 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
           return;
         }
 
+        // Sessão já registrada: pede confirmação antes de trocar o registro anterior.
+        if (jaRegistrada) {
+          const em = dataCurta(sessao.registradaEm ?? sessao.criadaEm).slice(0, 5);
+          if (!confirm(`Esta sessão já foi registrada em ${em}. Substituir o registro anterior?`)) {
+            return;
+          }
+        }
+
         salvando = true;
         erro.hidden = true;
         botao.disabled = true;

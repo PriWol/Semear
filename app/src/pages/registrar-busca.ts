@@ -1,7 +1,7 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { acharSessaoPorCodigo, sessaoRegistrada, ultimasSessoes } from '../domain/registro';
-import { dataCurta } from '../ui/rotulos';
+import { dataCurta, ROTULO_FEITA } from '../ui/rotulos';
 
 /** Quantas sessões recentes a busca mostra como atalho. */
 const ATALHOS = 6;
@@ -66,7 +66,7 @@ export const paginaRegistrarBusca: FabricaPagina = async (ctx, params) => {
               <span class="nota">${titulos.join(' + ')}</span>
               ${
                 sessaoRegistrada(s)
-                  ? html`<span class="selo-feita">Feita</span>`
+                  ? html`<span class="selo-feita">${ROTULO_FEITA}</span>`
                   : html`<span class="reg-pendente">Para registrar</span>`
               }
             </a>

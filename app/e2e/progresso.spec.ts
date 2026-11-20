@@ -126,6 +126,68 @@ test('corrigir um registro: a sessão volta preenchida e conta como uma só', as
   await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
 });
 
+test('salvar uma sessão já registrada pede confirmação; cancelar não grava', async ({ page }) => {
+  await explorar(page);
+  const codigo = await gerarSessaoDaAna(page);
+  await page.getByRole('link', { name: 'Registrar', exact: true }).click();
+  await grupoDoMarco(page, 'LG.FON.04').getByLabel('Consolidado', { exact: true }).check();
+  await page.getByRole('button', { name: 'Salvar registro' }).click(); // primeira vez: sem pergunta
+  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+
+  await page.locator('.lista-sessoes li', { hasText: codigo }).getByRole('link').click();
+  await page.getByRole('link', { name: 'Corrigir registro' }).click();
+  await page.getByLabel(/Anotações/).fill('nota nova');
+  const perguntas: string[] = [];
+  page.removeAllListeners('dialog');
+  page.on('dialog', (d) => {
+    perguntas.push(d.message());
+    void d.dismiss();
+  });
+  await page.getByRole('button', { name: 'Salvar alterações' }).click();
+  await expect.poll(() => perguntas.length).toBe(1);
+  expect(perguntas[0]).toMatch(
+    /Esta sessão já foi registrada em \d{2}\/\d{2}\. Substituir o registro anterior\?/,
+  );
+  // Cancelou: continua na ficha, com o texto na tela, e nada foi gravado.
+  await expect(page.getByRole('heading', { name: 'Como foi a sessão?' })).toBeVisible();
+  await expect(page.getByLabel(/Anotações/)).toHaveValue('nota nova');
+  await expect(page.getByRole('button', { name: 'Salvar alterações' })).toBeEnabled();
+
+  page.removeAllListeners('dialog');
+  page.on('dialog', (d) => void d.accept());
+  await page.getByRole('button', { name: 'Salvar alterações' }).click();
+  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+  await page.locator('.lista-sessoes li', { hasText: codigo }).getByRole('link').click();
+  await expect(page.locator('.reg-anotacoes')).toHaveText('nota nova');
+});
+
+for (const largura of [320, 390]) {
+  test(`com um estado marcado, nada transborda em ${largura} px`, async ({ page }) => {
+    await page.setViewportSize({ width: largura, height: 800 });
+    await explorar(page);
+    await gerarSessaoDaAna(page);
+    await page.getByRole('link', { name: 'Registrar', exact: true }).click();
+    for (const est of ['Não observado', 'Em desenvolvimento', 'Consolidado']) {
+      await grupoDoMarco(page, 'LG.FON.04').getByLabel(est, { exact: true }).check();
+      const medidas = await page.evaluate(() => {
+        const cartao = document.querySelector('fieldset.reg-marco')!.getBoundingClientRect();
+        const botoes = [...document.querySelectorAll('fieldset.reg-marco .reg-rotulo')].map((b) =>
+          b.getBoundingClientRect(),
+        );
+        return {
+          rolagem: [document.documentElement.scrollWidth, document.documentElement.clientWidth],
+          sobra: Math.max(...botoes.map((b) => b.right - cartao.right)),
+          larguras: botoes.map((b) => Math.round(b.width)),
+        };
+      });
+      expect(medidas.rolagem[0]).toBeLessThanOrEqual(medidas.rolagem[1]!);
+      expect(medidas.sobra).toBeLessThanOrEqual(0);
+      // sem deslocamento: as três colunas têm a mesma largura marcado ou não
+      expect(new Set(medidas.larguras).size).toBe(1);
+    }
+  });
+}
+
 test('"Marcar como feito" no plano da semana é só um atalho: não conta para o selo', async ({
   page,
 }) => {
