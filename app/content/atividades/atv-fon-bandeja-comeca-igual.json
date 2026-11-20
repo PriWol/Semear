@@ -1,0 +1,135 @@
+{
+  "id": "atv-fon-bandeja-comeca-igual",
+  "titulo": "Bandeja: começa igual",
+  "marcos": ["LG.FON.04"],
+  "revisa": ["LG.FON.03"],
+  "vertentes": ["Montessori", "Charlotte Mason"],
+  "idade": [4, 7],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Atenção: use na bandeja só objetos grandes, que não caibam na boca (nada de moedas, botões ou tampinhas). Fique junto da criança, principalmente aos 4 anos, e mantenha giz e lápis longe da boca. Não é teste: se ela errar, repita os nomes devagar.",
+  "objetivo": "A criança percebe que palavras diferentes podem **começar com o mesmo pedaço** (BOla, BOta), ligando o som ao início da palavra.",
+  "passos": [
+    {
+      "titulo": "Olhar a bandeja",
+      "minutos": 5,
+      "texto": "Coloque na bandeja 6 objetos reais e **grandes** (bola, bota/sapato, bolo/biscoito, casa de brinquedo, cama de boneca, colher). Diga o nome de cada um devagar."
+    },
+    {
+      "titulo": "Quem começa igual?",
+      "minutos": 8,
+      "texto": "Pegue um objeto (*bola*) e peça que ela ache outro que **começa igual** (*bo-ta*). Prolongue o começo ao falar (*BOOO-la*). Se faltar, pergunte *“e se não tiver na bandeja?”*."
+    },
+    {
+      "titulo": "O intruso",
+      "minutos": 6,
+      "texto": "Escolha três (*bola, bota, casa*) e pergunte qual **não combina** no começo. Peça que ela diga outra palavra que começa com o pedaço dos dois que combinam."
+    },
+    {
+      "titulo": "Folha: pinte os que começam igual",
+      "minutos": 6,
+      "texto": "Leia a palavra-modelo marcando as sílabas com palmas e deixe a criança pintar o quadradinho."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "acerta 3 de 4 pares de “começa igual”",
+      "diz uma palavra nova que começa com o mesmo pedaço"
+    ],
+    "emDesenvolvimento": [
+      "acerta só quando você repete devagar o começo",
+      "confunde começar igual com rimar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use apenas 3 objetos e dois pedaços bem diferentes (BO × CA).",
+    "facil": "Peça que ela invente uma frase em que todas as palavras comecem igual (*“PApai PAssa PAnela”*)."
+  },
+  "materiais": [
+    {
+      "item": "Bandeja",
+      "deCasa": true
+    },
+    {
+      "item": "6 objetos grandes da casa",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "É o jogo dos sons com objetos reais, antes de qualquer letra. Deixe a criança conduzir a escolha dos objetos.",
+    "Charlotte Mason": "Depois da bandeja, peça que ela conte, em uma frase, como descobriu os pares (narração curta)."
+  },
+  "evidencias": [
+    {
+      "texto": "Acertos em “começa igual”",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse uma palavra que começa igual",
+      "resposta": "☐ sim: ________________   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "marcar",
+      "titulo": "Pinte o quadradinho das figuras que começam como…",
+      "grupos": [
+        {
+          "modelo": {
+            "emoji": "⚽",
+            "texto": "bo · la"
+          },
+          "itens": [
+            {
+              "emoji": "👢",
+              "texto": "Bota"
+            },
+            {
+              "emoji": "🏠",
+              "texto": "Casa"
+            },
+            {
+              "emoji": "🎂",
+              "texto": "Bolo"
+            }
+          ]
+        },
+        {
+          "modelo": {
+            "emoji": "🏠",
+            "texto": "ca · sa"
+          },
+          "itens": [
+            {
+              "emoji": "🛏️",
+              "texto": "Cama"
+            },
+            {
+              "emoji": "🍌",
+              "texto": "Banana"
+            },
+            {
+              "emoji": "🐴",
+              "texto": "Cavalo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["sílaba inicial", "começa igual", "objetos", "bandeja"]
+}

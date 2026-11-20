@@ -1,0 +1,146 @@
+{
+  "id": "atv-fon-pescaria-finais",
+  "titulo": "Pescaria de finais",
+  "marcos": ["LG.FON.09"],
+  "revisa": ["LG.FON.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Atenção: o recorte das cartas é só do adulto, com tesoura sem ponta, antes da sessão. Cartas e papel não vão à boca. Se brincar no chão, deixe o espaço livre e fique junto da criança.",
+  "objetivo": "A criança **identifica a sílaba final** das palavras e forma pares pelo som do fim.",
+  "passos": [
+    {
+      "titulo": "Montar o lago",
+      "minutos": 5,
+      "texto": "Estenda um papel azul no chão (o lago) e espalhe as cartas de figuras viradas para baixo (os peixes)."
+    },
+    {
+      "titulo": "Pescar e dizer o final",
+      "minutos": 10,
+      "texto": "A criança vira uma carta (*gato*), fala o nome e diz com que pedaço termina (*TO*). Depois procura outra carta que termine igual para ficar com o par."
+    },
+    {
+      "titulo": "Conferir juntos",
+      "minutos": 5,
+      "texto": "Diga os dois nomes e alongue o final para conferir se terminam igual."
+    },
+    {
+      "titulo": "Folha: desenho da pescaria",
+      "minutos": 5,
+      "texto": "A criança desenha o par de que mais gostou."
+    }
+  ],
+  "observar": {
+    "consolidado": ["forma 4 pares pelo final", "diz o pedaço final em voz alta"],
+    "emDesenvolvimento": [
+      "forma pares só quando as palavras começam igual",
+      "precisa que você alongue o final"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só 6 cartas, com finais muito diferentes.",
+    "facil": "Peça que ela encontre um terceiro nome para o par."
+  },
+  "materiais": [
+    {
+      "item": "Papel azul grande",
+      "deCasa": true
+    },
+    {
+      "item": "Cartas de figuras (recortadas antes)",
+      "deCasa": false
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Charlotte Mason": "Faça no tapete ou ao ar livre; conversem sobre um bicho ou coisa da carta como parte natural da brincadeira.",
+    "Clássico": "Cada par é uma pequena lista; releiam as listas no dia seguinte.",
+    "Religioso": "Pode-se incluir cartas de nomes de pessoas ou festas da tradição da família."
+  },
+  "evidencias": [
+    {
+      "texto": "Pares formados",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse o pedaço final",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Pescaria: o par termina igual!",
+      "cartas": [
+        {
+          "emoji": "🐱",
+          "texto": "Gato"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "Pato"
+        },
+        {
+          "emoji": "🐭",
+          "texto": "Rato"
+        },
+        {
+          "emoji": "🍽️",
+          "texto": "Prato"
+        },
+        {
+          "emoji": "⚽",
+          "texto": "Bola"
+        },
+        {
+          "emoji": "🧴",
+          "texto": "Cola"
+        },
+        {
+          "emoji": "🐸",
+          "texto": "Sapo"
+        },
+        {
+          "emoji": "🥤",
+          "texto": "Copo"
+        },
+        {
+          "emoji": "🪑",
+          "texto": "Mesa"
+        },
+        {
+          "emoji": "🍬",
+          "texto": "Bala"
+        },
+        {
+          "emoji": "🧳",
+          "texto": "Mala"
+        },
+        {
+          "emoji": "🐴",
+          "texto": "Sela"
+        }
+      ]
+    },
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe o par que você pescou",
+      "legenda": "O adulto escreve embaixo os nomes."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["pescaria", "sílaba final", "jogo", "cartas"]
+}

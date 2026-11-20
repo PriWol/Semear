@@ -1,0 +1,88 @@
+{
+  "id": "atv-fon-botoes-sons",
+  "titulo": "Um botão para cada som",
+  "marcos": ["LG.FON.07", "LG.FON.10"],
+  "revisa": ["LG.FON.06"],
+  "vertentes": ["Charlotte Mason", "Montessori", "Clássico"],
+  "idade": [6, 8],
+  "duracaoMin": 26,
+  "preparoMin": 5,
+  "cuidados": "Atenção: fichas, tampinhas e botões podem ir à boca de irmãos menores, então guarde tudo depois da atividade. Para 6 a 8 anos basta ficar por perto. Se ela errar, deslize as fichas junto com ela, sem cobrar.",
+  "objetivo": "A criança **separa a palavra em sons** (fonemas) e percebe que cada som é uma peça.",
+  "passos": [
+    {
+      "titulo": "Mostrar o jeito",
+      "minutos": 5,
+      "texto": "Desenhe três quadrinhos em fila. Diga *“sol”* devagar e, a cada som, deslize uma ficha para um quadrinho: */s/ → /o/ → /l/*. Mostre duas vezes."
+    },
+    {
+      "titulo": "A criança faz",
+      "minutos": 10,
+      "texto": "Ela repete com *mar*, *uva*, *pé*, depois palavras de 4 sons (*fada*, *faca*). Não use letras ainda. Se ela errar, deslize junto com ela."
+    },
+    {
+      "titulo": "Junte de volta",
+      "minutos": 6,
+      "texto": "Depois de separar, junte as fichas devagar e diga a palavra inteira (*/s/ /o/ /l/ → sol*). Mostre duas figuras e pergunte qual palavra tem mais sons (*sol* × *fada*)."
+    },
+    {
+      "titulo": "Folha: pinte os quadrinhos",
+      "minutos": 5,
+      "texto": "Para cada figura, a criança pinta um quadrinho para cada som."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "segmenta palavras de 3 a 5 sons em 3 de 4 tentativas",
+      "junta os sons de volta e diz a palavra inteira"
+    ],
+    "emDesenvolvimento": ["separa só em sílabas", "perde ou junta sons no meio da palavra"]
+  },
+  "ajustes": {
+    "dificil": "Use palavras de 2 ou 3 sons (*sol, mar*) com o adulto deslizando as fichas junto com a criança.",
+    "facil": "Use palavras mais longas ou com sons seguidos (*prato*), e peça que ela invente uma palavra."
+  },
+  "materiais": [
+    {
+      "item": "3 a 5 fichas grandes, tampinhas grandes ou botões grandes (só peças que não caibam na boca)",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Charlotte Mason": "Faça em lições curtas, uma palavra por vez, e peça que ela diga o que descobriu.",
+    "Montessori": "Use letras móveis só depois que ela já separa os sons com fichas.",
+    "Clássico": "Registre as palavras que ela já segmenta e revise na ordem."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras segmentadas",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Juntou os sons e disse a palavra",
+      "resposta": "_____ de 3   ☐ sem ajuda   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Pinte um quadrinho para cada som",
+      "legenda": "O adulto desenha 3 a 5 quadrinhos embaixo de cada figura (sol, mar, fada)."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["fonemas", "separar sons", "botões", "fichas"]
+}

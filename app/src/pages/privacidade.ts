@@ -41,7 +41,10 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
           criança;
         </li>
         <li>em que ponto cada criança está na jornada, e o histórico dessas mudanças;</li>
-        <li>as sessões que você gerou e os planos da semana;</li>
+        <li>
+          as sessões que você gerou e os planos da semana, com o que você registra sobre elas: a
+          duração, como a criança reagiu e as <b>anotações de texto livre</b> que você escrever;
+        </li>
         <li>a preferência de lembrete diário (ativo, hora, se mostra o nome da criança);</li>
         <li>a data do seu último backup.</li>
       </ul>
@@ -128,8 +131,9 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
       </p>
       <ul>
         <li>
-          o arquivo <b>não é criptografado</b>: ele mostra nomes, datas de nascimento e a jornada
-          das crianças;
+          o arquivo <b>não é criptografado</b>: ele mostra, em texto aberto, nomes, datas de
+          nascimento, a jornada das crianças e as anotações que você escreveu nas sessões. Evite
+          escrever nas anotações dados que você não quer ver no arquivo;
         </li>
         <li>quem guarda esse arquivo é você, no lugar que escolher. Nós não temos cópia;</li>
         <li>guarde em lugar seguro e não compartilhe com quem você não conhece;</li>

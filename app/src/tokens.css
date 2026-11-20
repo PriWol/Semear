@@ -27,14 +27,25 @@
   /* Medidas */
   --s-raio: 14px;
   --s-raio-p: 10px;
+  /* Alvo de toque mínimo (48 px) e anel de foco visível (3 px, recuo de 2 px) em todo controle (#11) */
+  --s-alvo-toque: 3rem;
+  --s-foco: var(--s-tinta);
+  --s-foco-largura: 3px;
+  --s-foco-recuo: 2px;
+  /* Bordas: fina (repouso), de campo e marcada (selecionado: mais grossa, nunca só cor) */
+  --s-borda: 1px;
+  --s-borda-campo: 2px;
+  --s-borda-marcada: 3px;
+  /* Borda de controle (WCAG 1.4.11, ao menos 3:1 sobre o papel); --s-linha é só decoração */
+  --s-borda-controle: var(--s-suave);
+  /* Tamanhos de texto do registro: nada abaixo de 14 px, e 16 px no que se lê e toca */
+  --s-texto-p: 1rem;
+  --s-texto-selo: 0.875rem;
   --s-espaco-1: 0.25rem;
   --s-espaco-2: 0.5rem;
   --s-espaco-3: 0.75rem;
   --s-espaco-4: 1rem;
   --s-espaco-5: 1.5rem;
   --s-espaco-6: 2rem;
-  /* Alvo mínimo de toque (3rem) e texto mínimo do rodapé (1rem), para o celular (#25) */
-  --s-alvo-toque: 3rem;
-  --s-texto-minimo: 1rem;
   --s-sombra: 0 1px 2px rgba(30, 43, 35, 0.06), 0 4px 12px rgba(30, 43, 35, 0.05);
 }

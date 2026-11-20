@@ -1,0 +1,88 @@
+{
+  "id": "atv-fon-poema-passeio",
+  "titulo": "Poema do passeio",
+  "marcos": ["LG.FON.01"],
+  "vertentes": ["Charlotte Mason", "Montessori", "Waldorf"],
+  "idade": [3, 6],
+  "duracaoMin": 24,
+  "preparoMin": 3,
+  "cuidados": "Atenção: em pátio ou praça, fique junto da criança e olhe por onde ela anda. Não deixe levar à boca folhas, sementes ou pedrinhas que apanhar. Não cobre que complete o verso.",
+  "objetivo": "A criança liga o gosto pelo **ritmo e pela rima** ao mundo real, completando versos feitos sobre o que viveu.",
+  "passos": [
+    {
+      "titulo": "Olhar e ouvir",
+      "minutos": 6,
+      "texto": "Num pátio, praça ou na janela, escolham uma coisa para observar (uma árvore, um passarinho, a chuva). Conversem sobre ela em frases curtas."
+    },
+    {
+      "titulo": "O verso do dia",
+      "minutos": 6,
+      "texto": "Diga um verso curto e com rima sobre o que viram, por exemplo: *“A chuva cai, o chão se molha; a gente olha pela folha.”* Repita devagar, com a voz e as mãos marcando o ritmo.",
+      "fala": "Escuta como o final soa parecido: molha… folha!"
+    },
+    {
+      "titulo": "Brincar com o verso",
+      "minutos": 6,
+      "texto": "Diga o verso e pare antes da última palavra para ela completar. Depois troque a palavra final por outra que combine e vejam como soa."
+    },
+    {
+      "titulo": "Folha: desenho do passeio",
+      "minutos": 6,
+      "texto": "A criança desenha o que foi observado."
+    }
+  ],
+  "observar": {
+    "consolidado": ["repete ou completa o verso", "reage quando a rima soa parecida"],
+    "emDesenvolvimento": [
+      "repete só partes do verso",
+      "prefere falar do passeio e ainda não presta atenção ao som"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use um verso de duas palavras que rimam (“chão, mão”) e brinque só com isso.",
+    "facil": "Peça que ela invente a palavra que fecha o verso, em vez de completar o seu."
+  },
+  "materiais": [
+    {
+      "item": "Uma janela, pátio ou praça para observar",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Charlotte Mason": "O passeio é o ponto de partida: observe de verdade, com atenção plena, e só depois traga o verso.",
+    "Montessori": "Leve um objeto real da natureza (folha, pedra) para tocar enquanto falam o verso.",
+    "Waldorf": "Cantem ou recitem o verso numa melodia simples, sempre a mesma, como parte do dia."
+  },
+  "evidencias": [
+    {
+      "texto": "Reagiu à rima ou completou o verso",
+      "resposta": "☐ sim: ________________   ☐ não"
+    },
+    {
+      "texto": "Desenhou o que observou",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe o que você viu no passeio",
+      "legenda": "O adulto pode escrever embaixo o nome que a criança disser."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["poema", "natureza", "rima", "passeio"]
+}

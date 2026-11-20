@@ -572,7 +572,7 @@ progress {
 }
 
 /* ---------- Rodapé (#25): termos e privacidade a um toque, em todas as telas ----------
-   Só tokens --s-* (tests/rodape-css.test.ts); some na impressão. */
+   Só tokens --s-* (tests/termos-privacidade.test.ts); some na impressão. */
 .rodape {
   display: flex;
   flex-wrap: wrap;
@@ -580,10 +580,10 @@ progress {
   justify-content: center;
   column-gap: var(--s-espaco-2);
   padding: var(--s-espaco-4);
-  border-top: 1px solid var(--s-linha);
+  border-top: var(--s-borda) solid var(--s-linha);
   background: var(--s-fundo);
   color: var(--s-suave);
-  font-size: var(--s-texto-minimo);
+  font-size: var(--s-texto-p);
   text-align: center;
 }
 .rodape a {

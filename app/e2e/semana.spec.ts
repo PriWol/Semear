@@ -36,7 +36,7 @@ test('planejar a semana, marcar um dia e baixar a semana', async ({ page }) => {
     .first()
     .getByRole('button', { name: 'Marcar como feito' })
     .click();
-  await expect(page.locator('section.dia-plano').first()).toContainText('feito ✓');
+  await expect(page.locator('section.dia-plano').first()).toContainText('Feita ✓');
 
   // a sessão do dia feito entra no histórico
   await page.getByRole('link', { name: 'Início' }).click();

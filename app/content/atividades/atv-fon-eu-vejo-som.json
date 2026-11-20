@@ -1,0 +1,128 @@
+{
+  "id": "atv-fon-eu-vejo-som",
+  "titulo": "Eu vejo algo que começa com /m/",
+  "marcos": ["LG.FON.06"],
+  "revisa": ["LG.FON.04"],
+  "vertentes": ["Montessori", "Charlotte Mason"],
+  "idade": [5, 8],
+  "duracaoMin": 25,
+  "preparoMin": 3,
+  "cuidados": "Atenção: ao procurar coisas pela sala, fique por perto e não deixe pegar o que for frágil, pesado ou alto demais. Objetos pequenos que caibam na boca ficam de fora. É brincadeira, não teste.",
+  "objetivo": "A criança identifica o **primeiro som** da palavra, separando-o da sílaba.",
+  "passos": [
+    {
+      "titulo": "Escutar o som",
+      "minutos": 5,
+      "texto": "Diga só o **som**, não o nome da letra: *“mmmm”*. Peça que a criança repita e sinta a boca. Faça o mesmo com */s/* e */f/*."
+    },
+    {
+      "titulo": "Eu vejo algo…",
+      "minutos": 10,
+      "texto": "Brinque: *“Eu vejo algo que começa com /m/”* (mesa, mala, mão). Deixe a criança achar na sala. Troque os papéis. Escolha palavras em que a **letra e o som** coincidem (mesa, sapo, faca)."
+    },
+    {
+      "titulo": "Qual é o intruso?",
+      "minutos": 6,
+      "texto": "Diga três palavras (*mala, mola, sol*) e pergunte qual **não começa igual**. Repita com *faca, foca, vaca*."
+    },
+    {
+      "titulo": "Folha: pinte quem começa com o som",
+      "minutos": 4,
+      "texto": "Leia as palavras em voz alta; ela pinta o quadradinho."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "acerta os dois trios pelo som e não pela sílaba",
+      "acha 3 coisas que começam com o som pedido"
+    ],
+    "emDesenvolvimento": ["confunde som com sílaba (MA×MO)", "acerta só os sons longos (/s/, /m/)"]
+  },
+  "ajustes": {
+    "dificil": "Use apenas sons longos (/m/, /s/, /f/) e dois objetos de cada vez.",
+    "facil": "Proponha sons que não se alongam (/p/, /t/) e palavras em que a letra tem outro som (*casa*, *cebola*)."
+  },
+  "materiais": [
+    {
+      "item": "Objetos pequenos e grandes da casa (sem peças que caibam na boca)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "É o jogo clássico dos sons, feito antes de apresentar a letra de lixa, e só depois se liga o som à letra.",
+    "Charlotte Mason": "Use coisas que vocês viram no passeio (mato, mosca, folha) em vez de objetos da mesa."
+  },
+  "evidencias": [
+    {
+      "texto": "Trios acertados",
+      "resposta": "_____ de 2   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Achou coisas que começam com o som",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "marcar",
+      "titulo": "Pinte as figuras que começam com o som…",
+      "grupos": [
+        {
+          "modelo": {
+            "emoji": "🧳",
+            "texto": "mmm (mala)"
+          },
+          "itens": [
+            {
+              "emoji": "🪑",
+              "texto": "Mesa"
+            },
+            {
+              "emoji": "🐸",
+              "texto": "Sapo"
+            },
+            {
+              "emoji": "🐒",
+              "texto": "Macaco"
+            }
+          ]
+        },
+        {
+          "modelo": {
+            "emoji": "☀️",
+            "texto": "sss (sol)"
+          },
+          "itens": [
+            {
+              "emoji": "🐸",
+              "texto": "Sapo"
+            },
+            {
+              "emoji": "🍌",
+              "texto": "Banana"
+            },
+            {
+              "emoji": "🔔",
+              "texto": "Sino"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["som inicial", "fonema", "primeiro som", "eu vejo"]
+}

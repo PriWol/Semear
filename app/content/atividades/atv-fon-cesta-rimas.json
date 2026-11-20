@@ -1,0 +1,138 @@
+{
+  "id": "atv-fon-cesta-rimas",
+  "titulo": "Cesta das rimas",
+  "marcos": ["LG.FON.02", "LG.FON.08"],
+  "revisa": ["LG.FON.01"],
+  "vertentes": ["Montessori", "Clássico"],
+  "idade": [4, 7],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Atenção: escolha objetos grandes, sem pontas nem bordas cortantes e sem peças soltas pequenas. Fique junto aos 4 anos. Se ela errar um par, repita os dois nomes devagar, sem cobrar.",
+  "objetivo": "A criança compara o **final de duas palavras** e começa a produzir palavras que rimam, com objetos reais nas mãos.",
+  "passos": [
+    {
+      "titulo": "Conhecer os objetos",
+      "minutos": 5,
+      "texto": "Coloque numa cesta 6 a 8 objetos reais e **grandes** (bola, cola em bastão, pente, copo, colher, mala de brinquedo, prato de plástico). Diga o nome de cada um devagar e deixe a criança tocar."
+    },
+    {
+      "titulo": "Rima ou não rima?",
+      "minutos": 8,
+      "texto": "Pegue dois objetos e diga os nomes (“bola, cola”). Pergunte: *“Rima ou não rima?”*. Comece com pares muito diferentes e depois com pares parecidos. Se errar, repita os dois nomes devagar, sem explicar.",
+      "fala": "Bola… cola. Terminam igual?"
+    },
+    {
+      "titulo": "Quem rima com…?",
+      "minutos": 6,
+      "texto": "Mostre um objeto e peça que ela ache na cesta o que rima. Depois proponha: *“E se não tiver na cesta? Diga uma palavra que rima”*; palavras inventadas valem."
+    },
+    {
+      "titulo": "Folha: ligue as rimas",
+      "minutos": 6,
+      "texto": "Leia em voz alta o nome de cada figura antes de ela ligar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "acerta 4 de 5 pares “rima ou não rima”",
+      "diz pelo menos uma palavra que rima, mesmo inventada"
+    ],
+    "emDesenvolvimento": [
+      "acerta só pares bem diferentes",
+      "diz palavra que começa igual, e não termina igual"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só 3 objetos e pares bem diferentes; deixe a criança só escutar e apontar.",
+    "facil": "Peça que ela invente uma quadrinha de duas linhas com o par que escolheu."
+  },
+  "materiais": [
+    {
+      "item": "Cesta ou caixa",
+      "deCasa": true
+    },
+    {
+      "item": "6 a 8 objetos grandes da casa",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Os objetos reais vêm antes das figuras; deixe a criança escolher o que quer rimar e conduza com perguntas.",
+    "Clássico": "Ao fim, recitem juntos uma parlenda com rima e peçam que ela aponte quais palavras rimam."
+  },
+  "evidencias": [
+    {
+      "texto": "Acertos no “rima ou não rima”",
+      "resposta": "_____ de 5   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse uma palavra que rima?",
+      "resposta": "☐ sim: ________________   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "ligar",
+      "titulo": "Ligue as figuras que rimam",
+      "esquerda": [
+        {
+          "emoji": "🐱",
+          "texto": "Gato"
+        },
+        {
+          "emoji": "🍞",
+          "texto": "Pão"
+        },
+        {
+          "emoji": "⚽",
+          "texto": "Bola"
+        },
+        {
+          "emoji": "🧳",
+          "texto": "Mala"
+        },
+        {
+          "emoji": "🐭",
+          "texto": "Rato"
+        }
+      ],
+      "direita": [
+        {
+          "emoji": "🍬",
+          "texto": "Bala"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "Pato"
+        },
+        {
+          "emoji": "🧴",
+          "texto": "Cola"
+        },
+        {
+          "emoji": "🍽️",
+          "texto": "Prato"
+        },
+        {
+          "emoji": "✋",
+          "texto": "Mão"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["rima", "rimar", "objetos", "cesta"]
+}

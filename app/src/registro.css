@@ -1,0 +1,298 @@
+/*
+ * Registro de sessão e selos de progresso (#11, docs/DESIGN.md, ADR 0014).
+ * Bloco separado do estilos.css: aqui só valem os tokens --s-* de tokens.css, nenhuma cor ou medida solta.
+ * Regras de acessibilidade: alvo de toque de pelo menos --s-alvo-toque (48 px), foco visível em todo
+ * controle e nunca a cor como única pista (o marcado tem borda mais grossa, ✓ e texto).
+ */
+
+/* ---------- Selos (pílulas) ---------- */
+.selo-feita,
+.selo-pronto {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-espaco-1);
+  padding: var(--s-espaco-1) var(--s-espaco-2);
+  border-radius: var(--s-raio);
+  font-size: var(--s-texto-selo);
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.selo-feita {
+  background: var(--s-principal-claro);
+  color: var(--s-principal);
+}
+.selo-pronto {
+  background: var(--s-destaque-claro);
+  color: var(--s-destaque-texto);
+}
+.icone-broto {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.reg-dica {
+  margin: var(--s-espaco-1) 0 0;
+  font-size: var(--s-texto-p);
+  color: var(--s-suave);
+}
+
+/* ---------- Página de registro ---------- */
+.reg-pagina {
+  display: grid;
+  gap: var(--s-espaco-4);
+  padding-bottom: 6rem;
+}
+.reg-contexto {
+  margin: 0;
+  color: var(--s-suave);
+}
+.reg-aviso {
+  margin: 0;
+  padding: var(--s-espaco-3) var(--s-espaco-4);
+  border-radius: var(--s-raio-p);
+  background: var(--s-destaque-claro);
+  color: var(--s-destaque-texto);
+}
+.reg-erro {
+  margin: 0;
+  padding: var(--s-espaco-3) var(--s-espaco-4);
+  border-radius: var(--s-raio-p);
+  border: var(--s-borda) solid var(--s-alerta);
+  background: var(--s-alerta-claro);
+  color: var(--s-alerta);
+  font-weight: 600;
+}
+.reg-erro[hidden] {
+  display: none;
+}
+.reg-form {
+  display: grid;
+  gap: var(--s-espaco-4);
+}
+
+/* ---------- Um marco: três botões grandes (rádios de verdade) ---------- */
+.reg-marco,
+.reg-engajamento {
+  min-width: 0;
+  margin: 0;
+  padding: var(--s-espaco-3) var(--s-espaco-4) var(--s-espaco-4);
+  border: var(--s-borda) solid var(--s-linha);
+  border-radius: var(--s-raio);
+  background: var(--s-papel);
+}
+.reg-marco legend,
+.reg-engajamento legend {
+  padding: 0 var(--s-espaco-2);
+  font-family: var(--s-fonte-titulo);
+  font-weight: 700;
+  color: var(--s-principal);
+}
+.reg-marco legend .reg-titulo {
+  display: block;
+  font-family: var(--s-fonte-texto);
+  font-weight: 400;
+  color: var(--s-tinta);
+}
+.reg-opcoes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s-espaco-2);
+}
+.reg-engajamento .reg-opcoes {
+  grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+}
+.reg-opcao {
+  position: relative;
+  display: flex;
+  min-height: var(--s-alvo-toque);
+}
+/* O rádio de verdade cobre o botão inteiro: toque, teclado e leitor de tela funcionam como num rádio. */
+.reg-opcao input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.reg-rotulo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-espaco-1);
+  min-width: 0;
+  min-height: var(--s-alvo-toque);
+  padding: var(--s-espaco-1);
+  border: var(--s-borda) solid var(--s-borda-controle);
+  border-radius: var(--s-raio-p);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+  font-size: var(--s-texto-p);
+  font-weight: 700; /* mesmo peso marcado ou não: tocar não muda a largura */
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+/* O ✓ ocupa lugar também nos não marcados (invisível), para o texto não se mexer ao tocar. */
+.reg-opcao .reg-rotulo::before {
+  content: '✓';
+  visibility: hidden;
+}
+.reg-opcao input:checked + .reg-rotulo {
+  padding: calc(var(--s-espaco-1) - (var(--s-borda-marcada) - var(--s-borda)));
+  border-width: var(--s-borda-marcada);
+  border-color: var(--s-principal);
+  background: var(--s-principal-claro);
+  color: var(--s-principal);
+}
+.reg-opcao input:checked + .reg-rotulo::before {
+  visibility: visible;
+}
+.reg-opcao input:focus-visible + .reg-rotulo {
+  outline: var(--s-foco-largura) solid var(--s-foco);
+  outline-offset: var(--s-foco-recuo);
+}
+
+/* ---------- Detalhes opcionais ---------- */
+.reg-detalhes {
+  display: grid;
+  gap: var(--s-espaco-4);
+  padding: var(--s-espaco-4);
+  border: var(--s-borda) solid var(--s-linha);
+  border-radius: var(--s-raio);
+  background: var(--s-papel);
+}
+.reg-detalhes h2 {
+  margin: 0;
+}
+.reg-campo-bloco {
+  display: grid;
+  gap: var(--s-espaco-1);
+}
+.reg-campo-bloco label {
+  font-weight: 700;
+}
+.reg-ajuda {
+  margin: 0;
+  font-size: var(--s-texto-p);
+  color: var(--s-suave);
+}
+.reg-campo {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: var(--s-alvo-toque);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
+  border-radius: var(--s-raio-p);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+  font: inherit;
+}
+/* A barra de ação fica grudada embaixo: o que ganha foco não pode parar atrás dela. */
+.reg-marco,
+.reg-campo,
+.reg-engajamento {
+  scroll-margin-bottom: 6rem;
+}
+textarea.reg-campo {
+  resize: vertical;
+}
+.reg-campo[aria-invalid='true'] {
+  border-color: var(--s-alerta);
+}
+.reg-campo:focus-visible,
+.reg-acoes a:focus-visible,
+.reg-acoes button:focus-visible,
+.reg-lista-sessoes a:focus-visible,
+.reg-busca button:focus-visible {
+  outline: var(--s-foco-largura) solid var(--s-foco);
+  outline-offset: var(--s-foco-recuo);
+}
+
+/* ---------- Barra de ação ---------- */
+.reg-acoes {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-espaco-3);
+  padding: var(--s-espaco-3) var(--s-espaco-4);
+  border-top: var(--s-borda) solid var(--s-linha);
+  background: var(--s-papel);
+}
+.reg-acoes .reg-contador {
+  flex: 1 0 100%;
+  margin: 0;
+  font-size: var(--s-texto-selo);
+  color: var(--s-suave);
+}
+.reg-acoes .botao,
+.reg-busca .botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--s-alvo-toque);
+}
+.reg-acoes button[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+/* ---------- Busca por código ---------- */
+.reg-busca {
+  display: grid;
+  gap: var(--s-espaco-3);
+}
+.reg-lista-sessoes {
+  display: grid;
+  gap: var(--s-espaco-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.reg-lista-sessoes a {
+  display: grid;
+  gap: var(--s-espaco-1);
+  min-height: var(--s-alvo-toque);
+  padding: var(--s-espaco-3) var(--s-espaco-4);
+  border: var(--s-borda) solid var(--s-linha);
+  border-radius: var(--s-raio);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+  text-decoration: none;
+}
+.reg-lista-sessoes .selo-feita {
+  justify-self: start; /* sem isto o selo vira uma faixa de largura total */
+}
+.reg-lista-sessoes .reg-pendente {
+  justify-self: start;
+  font-size: var(--s-texto-selo);
+  font-weight: 700;
+  color: var(--s-destaque-texto);
+}
+.reg-vazio {
+  display: grid;
+  gap: var(--s-espaco-3);
+}
+
+/* ---------- Resumo do registro na página da sessão ---------- */
+.reg-resumo {
+  display: grid;
+  gap: var(--s-espaco-2);
+}
+.reg-resumo h2 {
+  margin: 0;
+}
+.reg-anotacoes {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

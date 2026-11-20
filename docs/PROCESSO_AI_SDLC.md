@@ -54,3 +54,9 @@ CSP, `.github/`, `CLAUDE.md` ou `docs/adr/`. Fora disso, só você mescla.
    (ou usar CODEOWNERS nos caminhos sensíveis).
 4. Criar os rótulos acima.
 5. Os workflows só passam a valer depois de mesclados no `main`.
+
+## Se os agentes falharem em cerca de 1 segundo
+Falha rápida, sem turno e com custo zero costuma ser a credencial recusada pela API. Ligue `show_full_output: true`
+no passo da ação por uma rodada para ler a mensagem. `401 Invalid API key` significa segredo inválido: se houver os
+dois (`CLAUDE_CODE_OAUTH_TOKEN` e `ANTHROPIC_API_KEY`), apague o que não usa. Depois de corrigir, desligue o
+`show_full_output`, porque o log completo mostra a conversa do agente.

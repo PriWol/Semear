@@ -2,31 +2,16 @@ import './estilos.css';
 import { registerSW } from 'virtual:pwa-register';
 import { VERSAO } from './versao';
 import { rotuloVersao } from './ui/versao';
-import { paginaNovidades } from './pages/novidades';
 import './tokens.css';
+import './registro.css';
 import { abrirRepositorio } from './dados/repositorio';
 import { conteudo } from './conteudo';
 import { limparCachesAntigos } from './legado';
 import { atualizarFaixaExemplo, ligarFaixaExemplo } from './ui/exemplo';
 import { criarRotas, iniciarApp, type FabricaPagina } from './ui/app';
 import { html } from './ui/html';
-import { paginaInicio } from './pages/inicio';
-import { paginaFamilia } from './pages/familia';
-import { paginaCrianca } from './pages/crianca';
-import { paginaJornada } from './pages/jornada';
-import { paginaSessaoNova } from './pages/sessao-nova';
-import { paginaSessao } from './pages/sessao';
-import { paginaConfig } from './pages/config';
-import { paginaBiblioteca } from './pages/biblioteca';
-import { paginaConteudo } from './pages/conteudo';
-import { paginaAcervo } from './pages/acervo';
-import { paginaSondagem } from './pages/sondagem';
-import { paginaAtividades } from './pages/atividades';
-import { paginaSemana } from './pages/semana';
+import { ROTAS } from './rotas';
 import { sincronizarComOAparelho } from './nativo/sincronizar';
-import { paginaGuia } from './pages/guia';
-import { paginaPrivacidade } from './pages/privacidade';
-import { paginaTermos } from './pages/termos';
 
 const naoEncontrada: FabricaPagina = async () => ({
   titulo: 'Não encontrada',
@@ -43,25 +28,7 @@ async function iniciar() {
   const ctx = iniciarApp(
     raiz,
     { repo, idx: conteudo(), agora: () => new Date().toISOString() },
-    criarRotas({
-      '/': paginaInicio,
-      '/familia': paginaFamilia,
-      '/crianca/:id': paginaCrianca,
-      '/jornada/:id': paginaJornada,
-      '/sessao/nova': paginaSessaoNova,
-      '/sessao/:id': paginaSessao,
-      '/config': paginaConfig,
-      '/biblioteca': paginaBiblioteca,
-      '/acervo': paginaAcervo,
-      '/sondagem/:id': paginaSondagem,
-      '/atividades': paginaAtividades,
-      '/semana/:id': paginaSemana,
-      '/guia': paginaGuia,
-      '/privacidade': paginaPrivacidade,
-      '/termos': paginaTermos,
-      '/conteudo': paginaConteudo,
-      '/novidades': paginaNovidades,
-    }),
+    criarRotas(ROTAS),
     naoEncontrada,
     atualizarFaixaExemplo,
   );

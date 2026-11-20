@@ -3,6 +3,7 @@ import type { IndiceConteudo } from './conteudo';
 import { dataLocalISO } from './datas';
 import { idPista, pistasDaCrianca, posicaoDaLinha } from './jornada';
 import { candidatas, atividadesRecentes, proporSessao, proximaAlternativa } from './sessao';
+import { sessaoRegistrada } from './registro';
 import type { Crianca, EstadosCrianca, Familia, Sessao } from './tipos';
 
 export const DIAS = ['seg', 'ter', 'qua', 'qui', 'sex', 'sab', 'dom'] as const;
@@ -210,4 +211,15 @@ export function materiaisDaSemana(idx: IndiceConteudo, plano: PlanoSemana): Mate
     }
   }
   return [...mapa.values()];
+}
+
+/**
+ * O dia conta como feito se o pai marcou à mão ("Marcar como feito") OU se a sessão ligada a ele já
+ * foi registrada pela ficha (#11). O atalho manual continua valendo, mas não alimenta o selo
+ * "parece pronto": só a ficha gera observação.
+ */
+export function diaFeito(dia: DiaPlano, sessoes: Sessao[]): boolean {
+  if (dia.feito) return true;
+  const sessaoId = dia.sessaoId;
+  return sessaoId !== undefined && sessoes.some((s) => s.id === sessaoId && sessaoRegistrada(s));
 }

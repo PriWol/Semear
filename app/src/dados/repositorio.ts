@@ -1,11 +1,15 @@
 // Repositório: único ponto de acesso aos dados guardados no aparelho (ADR 0002).
 import { openDB, type DBSchema, type IDBPDatabase } from 'idb';
 import {
+  ANOTACOES_MAX,
+  DURACAO_REAL_MAX,
+  ENGAJAMENTOS,
   ESTADOS,
   IDIOMAS,
   VERTENTES,
   type Crianca,
   type EstadosCrianca,
+  type EventoMarco,
   type Familia,
   type RegistroMarco,
   type Sessao,
@@ -18,12 +22,8 @@ import type { DadosExemplo } from '../domain/exemplo';
 
 export const VERSAO_BACKUP = 1;
 
-/** Linha do histórico de marcos: nada é apagado (especificação §4.2). */
-export interface EventoMarco {
-  criancaId: string;
-  chave: string;
-  registro: RegistroMarco;
-}
+// O evento do histórico mora no domínio (tipos.ts); reexportado aqui para quem já importava daqui.
+export type { EventoMarco };
 
 export interface Backup {
   app: 'semear';
@@ -56,7 +56,14 @@ export interface Repositorio {
   sessoes(criancaId?: string): Promise<Sessao[]>;
   sessao(id: string): Promise<Sessao | null>;
   salvarSessao(sessao: Sessao): Promise<void>;
+  /** remove a sessão e as observações que a ficha dela gravou no histórico (#11) */
   removerSessao(id: string): Promise<void>;
+  /**
+   * Registra a ficha de uma sessão (#11): grava a sessão atualizada e acrescenta os eventos ao histórico,
+   * numa única transação (falhou, nada é gravado). NÃO toca em `estados`: só o pai muda o estado (§5.2).
+   * Recusa sessão que não existe e evento que não pertence a esta sessão e a esta criança.
+   */
+  registrarSessao(sessao: Sessao, eventos: EventoMarco[]): Promise<void>;
 
   /** planos semanais da criança, do mais recente para o mais antigo */
   planos(criancaId: string): Promise<PlanoSemana[]>;
@@ -192,7 +199,39 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       await db.put('sessoes', sessao);
     },
     async removerSessao(id) {
-      await db.delete('sessoes', id);
+      const tx = db.transaction(['sessoes', 'historico'], 'readwrite');
+      await tx.objectStore('sessoes').delete(id);
+      // Sem isto, o backup exportado depois teria eventos apontando para uma sessão que não existe.
+      let cursor = await tx.objectStore('historico').openCursor();
+      while (cursor) {
+        if (cursor.value.sessaoId === id) await cursor.delete();
+        cursor = await cursor.continue();
+      }
+      await tx.done;
+    },
+    async registrarSessao(sessao, eventos) {
+      const tx = db.transaction(['sessoes', 'historico'], 'readwrite');
+      try {
+        if (!(await tx.objectStore('sessoes').get(sessao.id))) {
+          throw new Error('Sessão não encontrada: o registro não foi salvo.');
+        }
+        if (eventos.some((e) => e.sessaoId !== sessao.id || e.criancaId !== sessao.criancaId)) {
+          throw new Error('Há um evento que não pertence a esta sessão: o registro não foi salvo.');
+        }
+        await tx.objectStore('sessoes').put(sessao);
+        for (const e of eventos) await tx.objectStore('historico').add(e);
+        await tx.done;
+      } catch (erro) {
+        // Como em importar: um erro dentro da transação não a desfaz sozinho; sem o abort, a sessão já
+        // gravada ficaria sem as observações.
+        tx.done.catch(() => undefined); // o abort rejeita tx.done de propósito
+        try {
+          tx.abort();
+        } catch {
+          // a transação já terminou (abortada pelo próprio navegador)
+        }
+        throw erro;
+      }
     },
 
     async planos(criancaId) {
@@ -277,6 +316,8 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
         }
       }
       for (const s of dados.sessoes) await tx.objectStore('sessoes').put(s);
+      // Depois dos eventos do posicionamento: a ordem do histórico é o que o selo "parece pronto" lê.
+      for (const h of dados.historico) await tx.objectStore('historico').add(h);
       await tx.done;
     },
 
@@ -296,10 +337,21 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
           }
         }
       }
+      const sessoesDoExemplo = new Set<string>();
       let cursor = await tx.objectStore('sessoes').openCursor();
       while (cursor) {
-        if (cursor.value.exemplo) await cursor.delete();
+        if (cursor.value.exemplo) {
+          sessoesDoExemplo.add(cursor.value.id);
+          await cursor.delete();
+        }
         cursor = await cursor.continue();
+      }
+      // As observações das sessões do exemplo saem junto (#11), nunca as de sessões reais.
+      let evento = await tx.objectStore('historico').openCursor();
+      while (evento) {
+        const sessaoId = evento.value.sessaoId;
+        if (sessaoId !== undefined && sessoesDoExemplo.has(sessaoId)) await evento.delete();
+        evento = await evento.continue();
       }
       const familia = lerFamilia(await tx.objectStore('config').get(CHAVE_FAMILIA));
       if (familia?.exemplo) {
@@ -370,6 +422,16 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     ehRotina(v.rotina) &&
     Array.isArray(v.dias) &&
     v.dias.every(ehDiaPlano);
+  // Instante ISO (com hora): a data do registro vem do `toISOString()` do app, nunca de texto livre.
+  const ehInstante = (v: unknown) =>
+    ehTexto(v) &&
+    /^\d{4}-\d{2}-\d{2}T/.test(v) &&
+    dataValida(v.slice(0, 10)) && // o Date aceita 31/02 e vira março: o dia precisa existir de verdade
+    !Number.isNaN(Date.parse(v));
+  const ehDuracaoReal = (v: unknown) =>
+    typeof v === 'number' && Number.isInteger(v) && v >= 1 && v <= DURACAO_REAL_MAX;
+  // Chaves que mexem no protótipo dos objetos: nenhum marco legítimo se chama assim.
+  const chaveProibida = (c: string) => ['__proto__', 'constructor', 'prototype'].includes(c);
   const ehRegistro = (v: unknown) =>
     ehObjeto(v) &&
     (ESTADOS as readonly unknown[]).includes(v.estado) &&
@@ -422,9 +484,18 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     if (!Object.values((e as { estados: object }).estados).every(ehRegistro)) {
       falha('estado de marco desconhecido');
     }
+    if (Object.keys((e as { estados: object }).estados).some(chaveProibida))
+      falha('chave de marco não permitida');
   }
   for (const h of b.historico as unknown[]) {
     if (!ehObjeto(h) || !ehTexto(h.criancaId) || !ehTexto(h.chave) || !ehRegistro(h.registro)) {
+      falha('histórico inválido');
+    }
+    if (chaveProibida((h as { chave: string }).chave)) falha('chave de marco não permitida');
+    if (
+      (h as { sessaoId?: unknown }).sessaoId !== undefined &&
+      !ehTexto((h as { sessaoId?: unknown }).sessaoId)
+    ) {
       falha('histórico inválido');
     }
   }
@@ -440,9 +511,41 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
       !listaDe(s.atividadeIds, ehTexto) ||
       !(s.livroId === null || ehTexto(s.livroId)) ||
       !(s.tipo === undefined || s.tipo === 'avulsa') ||
-      !marcadorOk(s)
+      !marcadorOk(s) ||
+      // Campos do registro (#11): opcionais, então backups anteriores continuam valendo.
+      !(s.registradaEm === undefined || ehInstante(s.registradaEm)) ||
+      !(s.duracaoReal === undefined || ehDuracaoReal(s.duracaoReal)) ||
+      !(
+        s.engajamento === undefined || (ENGAJAMENTOS as readonly unknown[]).includes(s.engajamento)
+      ) ||
+      !(s.anotacoes === undefined || (ehTexto(s.anotacoes) && s.anotacoes.length <= ANOTACOES_MAX))
     ) {
       falha('sessão inválida');
+    }
+  }
+  const ids = (b.sessoes as Record<string, unknown>[]).map((s) => s.id);
+  if (new Set(ids).size !== ids.length) {
+    // Ao importar, a segunda sessão com o mesmo id sobrescreveria a primeira em silêncio.
+    falha('há sessões com id repetido');
+  }
+  // Observação de sessão (#11): o evento precisa apontar para uma sessão do próprio backup, da mesma
+  // criança, e só a origem "sessao" leva sessaoId. Evento órfão deixaria o selo contando sessões fantasmas.
+  const criancaDaSessao = new Map(
+    (b.sessoes as Record<string, unknown>[]).map((s) => [s.id as string, s.criancaId]),
+  );
+  for (const h of b.historico as Record<string, unknown>[]) {
+    // Observação de sessão sem sessaoId nunca conta para o selo: não faz sentido guardá-la assim.
+    if ((h.registro as Record<string, unknown>).origem === 'sessao' && h.sessaoId === undefined) {
+      falha('observação de sessão sem sessaoId');
+    }
+    if (h.sessaoId === undefined) continue;
+    const registro = h.registro as Record<string, unknown>;
+    if (registro.origem !== 'sessao')
+      falha('observação de sessão com origem diferente de "sessao"');
+    if (!criancaDaSessao.has(h.sessaoId as string))
+      falha('observação de uma sessão que não existe');
+    if (criancaDaSessao.get(h.sessaoId as string) !== h.criancaId) {
+      falha('observação ligada a uma sessão de outra criança');
     }
   }
   // Planos semanais (#8): ausentes nos backups anteriores; quando existem, valem a forma inteira.
