@@ -13,15 +13,36 @@ import type { Sondagem } from '../src/domain/sondagem';
 // pelo menos 2 vertentes na união e não têm todas exatamente o mesmo conjunto de vertentes.
 // Regra 10 (idade): ao menos uma principal do marco tem faixa `idade` que contém a `idadeTipica`.
 // `idadeIntroducao` é POR VERTENTE (só para o aviso de ritmo), então não entra nesta regra.
-// O texto de `cuidados` não é checado além de "não vazio": o conteúdo dele é revisado pela dona
-// do produto (comparar textos entre atividades seria frágil).
+// Regra 7: `cuidados` é obrigatório (não vazio) em TODA atividade da linha, de qualquer idade
+// inicial. O texto em si é revisado pela dona do produto; não se compara texto entre atividades
+// (seria frágil).
 const LINHA = 'LG.FON';
+// Regressão (PR #107): os ids dos 7 marcos antigos não mudam e os 3 novos são 08 a 10; nenhuma
+// família é afetada. Mude esta lista só junto com uma migração.
+const IDS_ESPERADOS = Array.from(
+  { length: 10 },
+  (_, i) => `${LINHA}.${String(i + 1).padStart(2, '0')}`,
+);
 const MIN_MARCOS = 8;
 const MAX_MARCOS = 12;
 const MIN_ATIVIDADES = 2;
-const IDADE_COM_CUIDADOS = 3;
 // Formato dos ids de marco (ex.: LG.FON.04, MA.OPE.02): domínio.linha.número de 2 dígitos.
 const ID_MARCO = /^[A-Z]{2}\.[A-Z]{3}\.\d{2}$/;
+
+/** Regressão dos ids: a linha tem exatamente `esperados`, nem mais, nem menos. */
+function verificarIds(c: Conteudo, esperados: string[]): string[] {
+  const erros: string[] = [];
+  const ids = new Set(c.marcos.filter((m) => m.linha === LINHA).map((m) => m.id));
+  for (const id of esperados.filter((x) => !ids.has(x))) {
+    erros.push(
+      `O marco ${id} sumiu da linha ${LINHA} (os ids esperados são ${esperados[0]} a ${esperados[esperados.length - 1]}).`,
+    );
+  }
+  for (const id of [...ids].filter((x) => !esperados.includes(x))) {
+    erros.push(`O marco ${id} sobrou na linha ${LINHA}: não está entre os ids esperados.`);
+  }
+  return erros;
+}
 
 /** Devolve uma mensagem em português por problema encontrado; lista vazia = tudo certo. */
 function verificarCobertura(c: Conteudo, sondagem: Sondagem): string[] {
@@ -36,6 +57,14 @@ function verificarCobertura(c: Conteudo, sondagem: Sondagem): string[] {
     erros.push(
       `${LINHA} tem ${marcos.length} marcos; o esperado é de ${MIN_MARCOS} a ${MAX_MARCOS}.`,
     );
+  }
+
+  for (const a of atividades) {
+    for (const id of [...a.marcos, ...(a.revisa ?? [])]) {
+      if (id.startsWith(`${LINHA}.`) && !idsDaLinha.has(id)) {
+        erros.push(`Atividade ${a.id} cita o marco ${id}, que não existe.`);
+      }
+    }
   }
 
   marcos.forEach((m, i) => {
@@ -98,8 +127,10 @@ function verificarCobertura(c: Conteudo, sondagem: Sondagem): string[] {
         `Atividade ${a.id} tem idade [${de}, ${ate}]; precisa de 2 <= início <= fim <= 8.`,
       );
     }
-    if (a.idade[0] <= IDADE_COM_CUIDADOS && !(a.cuidados ?? '').trim()) {
-      erros.push(`Atividade ${a.id} começa aos ${a.idade[0]} anos e está sem \`cuidados\`.`);
+    if (!(a.cuidados ?? '').trim()) {
+      erros.push(
+        `Atividade ${a.id} está sem \`cuidados\` (obrigatório em toda atividade de ${LINHA}).`,
+      );
     }
   }
   return erros;
@@ -108,6 +139,9 @@ function verificarCobertura(c: Conteudo, sondagem: Sondagem): string[] {
 describe(`cobertura da linha ${LINHA} (conteúdo real)`, () => {
   it('cumpre os critérios de aceite da estória #22', () => {
     expect(verificarCobertura(carregarConteudoBruto(), carregarSondagem())).toEqual([]);
+  });
+  it('mantém exatamente os marcos LG.FON.01 a LG.FON.10 (ids estáveis)', () => {
+    expect(verificarIds(carregarConteudoBruto(), IDS_ESPERADOS)).toEqual([]);
   });
   // Só informa (sem asserção): o critério "sem lacunas para o que as famílias veem" fica SEM teste
   // até a dona do produto aprovar o lote (portão 2); então a meta abaixo é só `it.todo`.
@@ -164,6 +198,7 @@ describe('verificarCobertura detecta violações (dados sintéticos)', () => {
       observar: { consolidado: [], emDesenvolvimento: [] },
       materiais: [],
       evidencias: [],
+      cuidados: 'Supervisione.',
       ...extra,
     }) as Atividade;
 
@@ -334,45 +369,50 @@ describe('verificarCobertura detecta violações (dados sintéticos)', () => {
     outra.conteudo.marcos[1] = marcoBase(2, { preRequisitos: ['LG.LET.03'] });
     expect(verificarCobertura(outra.conteudo, outra.sondagem)).toEqual([]);
   });
-  it('regra 7 (limiar): começar aos 4 anos não exige cuidados; aos 3 exige', () => {
-    const { conteudo, sondagem } = montar();
-    conteudo.atividades[0] = atvBase('l4', ['LG.FON.01'], {
-      vertentes: ['Clássico'],
-      idade: [4, 6],
-    });
-    expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
-    conteudo.atividades[0] = atvBase('l3', ['LG.FON.01'], {
-      vertentes: ['Clássico'],
-      idade: [3, 6],
-    });
-    expect(verificarCobertura(conteudo, sondagem)).toEqual([
-      'Atividade l3 começa aos 3 anos e está sem `cuidados`.',
-    ]);
+  it('regressão dos ids: faltando ou sobrando marco falha', () => {
+    const removido = montar(10);
+    removido.conteudo.marcos.splice(4, 1);
+    const msg1 = verificarIds(removido.conteudo, IDS_ESPERADOS).join('\n');
+    expect(msg1).toContain('O marco LG.FON.05 sumiu da linha LG.FON');
+    const renomeado = montar(10);
+    renomeado.conteudo.marcos[4] = marcoBase(5, { id: 'LG.FON.15' });
+    const msg2 = verificarIds(renomeado.conteudo, IDS_ESPERADOS).join('\n');
+    expect(msg2).toContain('O marco LG.FON.05 sumiu da linha LG.FON');
+    expect(msg2).toContain('O marco LG.FON.15 sobrou na linha LG.FON');
   });
-  it('regra 7: atividade de 3 anos ou menos sem cuidados', () => {
+  it('atividade que cita marco inexistente da linha falha (marcos e revisa)', () => {
+    const { conteudo, sondagem } = montar(10);
+    conteudo.atividades.push(atvBase('fantasma', ['LG.FON.11']));
+    conteudo.atividades.push(atvBase('revisora', ['LG.FON.01'], { revisa: ['LG.FON.12'] }));
+    const msg = verificarCobertura(conteudo, sondagem);
+    expect(msg).toContain('Atividade fantasma cita o marco LG.FON.11, que não existe.');
+    expect(msg).toContain('Atividade revisora cita o marco LG.FON.12, que não existe.');
+  });
+  it('regra 7: toda atividade da linha precisa de cuidados, qualquer idade inicial', () => {
     const { conteudo, sondagem } = montar();
-    conteudo.atividades[0] = atvBase('a0a', ['LG.FON.01'], {
-      vertentes: ['Clássico'],
-      idade: [3, 5],
+    const vert = ['Clássico', 'Charlotte Mason'] as const;
+    // início aos 4, 6 e 3 anos: sem `cuidados` (ausente ou só espaços) falha
+    conteudo.atividades[0] = atvBase('i4', ['LG.FON.01'], {
+      vertentes: [vert[0]],
+      idade: [4, 6],
+      cuidados: undefined,
     });
-    conteudo.atividades[1] = atvBase('a0b', ['LG.FON.01'], {
-      vertentes: ['Charlotte Mason'],
-      idade: [2, 4],
+    conteudo.atividades[1] = atvBase('i6', ['LG.FON.01'], {
+      vertentes: [vert[1]],
+      idade: [6, 8],
       cuidados: '  ',
     });
-    const msg = verificarCobertura(conteudo, sondagem).join('\n');
-    expect(msg).toContain('Atividade a0a começa aos 3 anos e está sem `cuidados`');
-    expect(msg).toContain('Atividade a0b começa aos 2 anos e está sem `cuidados`');
-    conteudo.atividades[0] = atvBase('a0a', ['LG.FON.01'], {
-      vertentes: ['Clássico'],
-      idade: [3, 5],
-      cuidados: 'Supervisione.',
-    });
-    conteudo.atividades[1] = atvBase('a0b', ['LG.FON.01'], {
-      vertentes: ['Charlotte Mason'],
-      idade: [2, 4],
-      cuidados: 'Supervisione.',
-    });
+    conteudo.atividades[2] = atvBase('i3', ['LG.FON.02'], { idade: [3, 5], cuidados: '' });
+    const msg = verificarCobertura(conteudo, sondagem);
+    for (const id of ['i4', 'i6', 'i3']) {
+      expect(msg).toContain(
+        `Atividade ${id} está sem \`cuidados\` (obrigatório em toda atividade de LG.FON).`,
+      );
+    }
+    // com `cuidados` preenchido passam
+    conteudo.atividades[0] = atvBase('i4', ['LG.FON.01'], { vertentes: [vert[0]], idade: [4, 6] });
+    conteudo.atividades[1] = atvBase('i6', ['LG.FON.01'], { vertentes: [vert[1]], idade: [6, 8] });
+    conteudo.atividades[2] = atvBase('i3', ['LG.FON.02'], { idade: [3, 5] });
     expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
   });
 });
