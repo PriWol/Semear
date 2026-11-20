@@ -3,7 +3,7 @@
   "titulo": "O robô que fala devagar",
   "marcos": ["LG.FON.10"],
   "revisa": ["LG.FON.06"],
-  "vertentes": ["Montessori", "Clássico"],
+  "vertentes": ["Montessori", "Clássico", "Religioso"],
   "idade": [5, 8],
   "duracaoMin": 25,
   "preparoMin": 3,
@@ -57,7 +57,8 @@
   ],
   "toqueVertente": {
     "Montessori": "O jogo do “eu vejo” com sons separados: três objetos na mesa e a criança escolhe o que o robô disse.",
-    "Clássico": "Registre numa lista as palavras que ela já consegue juntar e revise todo dia."
+    "Clássico": "Registre numa lista as palavras que ela já consegue juntar e revise todo dia.",
+    "Religioso": "Se a família quiser, use nomes de pessoas ou festas da tradição de vocês como palavras do robô."
   },
   "evidencias": [
     {

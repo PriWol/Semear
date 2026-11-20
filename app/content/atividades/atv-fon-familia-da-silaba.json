@@ -1,0 +1,92 @@
+{
+  "id": "atv-fon-familia-da-silaba",
+  "titulo": "A família da sílaba",
+  "marcos": ["LG.FON.04"],
+  "revisa": ["LG.FON.03"],
+  "vertentes": ["Clássico", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 25,
+  "preparoMin": 3,
+  "cuidados": "Atenção: a atividade usa só voz, papel e lápis ou giz de cera. Fique junto da criança, principalmente aos 4 anos, e mantenha lápis e giz longe da boca. Não é teste: se ela não achar a palavra, ofereça uma e siga a brincadeira.",
+  "objetivo": "A criança reúne palavras que **começam com o mesmo pedaço** (a “família” da sílaba, como BO: BOla, BOta, BOlo, BOneca) e percebe que o começo igual é um jeito de agrupar palavras.",
+  "passos": [
+    {
+      "titulo": "Conhecer a família",
+      "minutos": 5,
+      "texto": "Diga a sílaba da vez (*BO*) e três palavras da família com o começo alongado: *BOOO-la, BOOO-ta, BOOO-lo*. Peça que ela repita e bata uma palma na primeira sílaba.",
+      "fala": "Todas começam com BO. É a família do BO!"
+    },
+    {
+      "titulo": "Chamar mais parentes",
+      "minutos": 8,
+      "texto": "Pergunte: *“quem mais é da família do BO?”*. Aceite palavras da casa e do dia a dia (*boneca, bolacha, boné*). Se ela disser uma que não é da família, repita as duas palavras devagar e deixe que ela mesma note a diferença, sem corrigir de imediato."
+    },
+    {
+      "titulo": "Cartaz da família",
+      "minutos": 7,
+      "texto": "Na folha, a criança desenha as palavras da família e você escreve o nome embaixo de cada uma, com o pedaço inicial em destaque. Guardem o cartaz para reler nos próximos dias."
+    },
+    {
+      "titulo": "Outra família",
+      "minutos": 5,
+      "texto": "Faça o mesmo, mais rápido, com a família do *CA* (*casa, cama, cavalo, caneca*) e peça que ela diga qual palavra não é da família (*mala*).",
+      "fala": "Qual dessas não é do CA?"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz 2 ou 3 palavras novas que começam com o mesmo pedaço",
+      "aponta qual palavra não é da família"
+    ],
+    "emDesenvolvimento": [
+      "diz palavras que rimam ou que ela lembra, mas com outro começo",
+      "acerta só quando você alonga o começo da palavra"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique só com uma família (*BO*) e ofereça duas opções (*bola ou casa?*) antes de pedir uma palavra nova.",
+    "facil": "Proponha uma família nova a cada dia e peça que ela invente uma frase com o máximo de palavras da família."
+  },
+  "materiais": [
+    {
+      "item": "Folha grande de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou giz de cera",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Registre as famílias num caderno de listas e releiam em voz alta todo dia. Isso prepara o estudo sistemático dos sons e das letras.",
+    "Religioso": "Se a família quiser, use palavras ligadas à tradição de vocês (nomes de pessoas, festas, lugares) como parte de cada família."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras novas da família",
+      "resposta": "_____ palavras   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Apontou o intruso?",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe a família da sílaba BO",
+      "legenda": "O adulto escreve embaixo o nome de cada desenho, destacando o começo."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "revisado",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["sílaba inicial", "começa igual", "família de palavras", "lista"]
+}
