@@ -6,6 +6,7 @@ import {
   VERTENTES,
   type Crianca,
   type EstadosCrianca,
+  type EventoMarco,
   type Familia,
   type RegistroMarco,
   type Sessao,
@@ -18,12 +19,8 @@ import type { DadosExemplo } from '../domain/exemplo';
 
 export const VERSAO_BACKUP = 1;
 
-/** Linha do histórico de marcos: nada é apagado (especificação §4.2). */
-export interface EventoMarco {
-  criancaId: string;
-  chave: string;
-  registro: RegistroMarco;
-}
+// O evento do histórico mora no domínio (tipos.ts); reexportado aqui para quem já importava daqui.
+export type { EventoMarco };
 
 export interface Backup {
   app: 'semear';

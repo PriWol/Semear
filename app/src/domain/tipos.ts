@@ -15,6 +15,17 @@ export type Idioma = keyof typeof IDIOMAS;
 export const ESTADOS = ['nao-observado', 'em-desenvolvimento', 'consolidado'] as const;
 export type EstadoMarco = (typeof ESTADOS)[number];
 
+/**
+ * Engajamento da criança na sessão (#11), como o educador percebeu. Guardamos o texto, não o emoji:
+ * os emojis (😴 🙂 😄 🤩) e os rótulos (Pouco, Normal, Animado, Empolgado) são só da tela.
+ */
+export const ENGAJAMENTOS = ['baixo', 'ok', 'bom', 'alto'] as const;
+export type Engajamento = (typeof ENGAJAMENTOS)[number];
+
+/** Limites dos detalhes do registro de uma sessão (#11). */
+export const DURACAO_REAL_MAX = 240;
+export const ANOTACOES_MAX = 500;
+
 export const LETRAS = ['bastao', 'script', 'cursiva'] as const;
 export type Letra = (typeof LETRAS)[number];
 
@@ -300,6 +311,15 @@ export interface RegistroMarco {
   origem: 'manual' | 'posicionamento' | 'sessao' | 'sondagem';
 }
 
+/** Linha do histórico de marcos: nada é apagado (especificação §4.2). */
+export interface EventoMarco {
+  criancaId: string;
+  chave: string;
+  registro: RegistroMarco;
+  /** só nos eventos de origem "sessao": a sessão cuja ficha gerou a observação (#11) */
+  sessaoId?: string;
+}
+
 /** Estados dos marcos de uma criança. Chave = id do marco, ou "id@idioma" no domínio de Línguas. */
 export type EstadosCrianca = Record<string, RegistroMarco>;
 
@@ -314,5 +334,12 @@ export interface Sessao {
   livroId: string | null;
   /** "avulsa": uma atividade escolhida na busca (#13), fora do plano da sessão */
   tipo?: 'avulsa';
+  /** ISO de quando a ficha foi lançada no app (#11); ausente = sessão ainda não registrada */
+  registradaEm?: string;
+  /** minutos reais, inteiro de 1 a 240 */
+  duracaoReal?: number;
+  engajamento?: Engajamento;
+  /** texto livre, no máximo 500 caracteres; sempre exibido como texto, nunca como HTML */
+  anotacoes?: string;
   exemplo?: true;
 }
