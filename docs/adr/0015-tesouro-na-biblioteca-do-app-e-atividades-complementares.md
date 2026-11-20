@@ -63,7 +63,8 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - **Peso:** a soma dos PDFs `*-tela` sobe para cerca de 237 MB (volumes 1 a 5, ~129 MB, mais os quatro novos, ~108 MB).
   Continuam fora do precache do service worker.
 - **Deploy:** o passo "Baixar os PDFs do Tesouro" de `publicar-site.yml` lê volumes e cadernos do catálogo, mantém a regra
-  de nome e a checagem `%PDF-` e, se o runner tiver `pdfinfo`, confere que o total de páginas bate com o catálogo.
+  de nome (que agora falha o job quando o nome é inválido) e a checagem `%PDF-`, garante o `pdfinfo` (instala `poppler-utils`
+  se faltar e falha com mensagem clara se não conseguir) e confere que o total de páginas de cada PDF bate com o catálogo.
 - **Biblioteca:** depois dos volumes, a seção "Cadernos para 2 anos" tem um aviso de saúde (orientações ainda não
   conferidas por profissional; não substituem o pediatra) acima dos cartões e dentro de cada um. Sem tela nova e sem mostrar o tamanho dos arquivos.
 - **Decisão da dona do produto (2026-11-20):** expor os cadernos no app antes da conferência pediátrica (ADR 0021 e 0026).
