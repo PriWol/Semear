@@ -47,6 +47,9 @@ Currículo clássico ilustrado para a infância: 8 volumes, 592 páginas planeja
 ## Volume 7 — Primeiras línguas (64 páginas)
 `volume7/volume7-impressao.pdf`, `volume7/volume7-tela.pdf`, `volume7/inspecao/`, conteúdo em `editorial/volume7.py`. Inglês e francês em oito unidades paralelas (cumprimentos, família, casa, comida, animais, cores, corpo e natureza), com latim só como cultura (uma seção de 6 páginas com lemas, números romanos e palavras-mãe, e a linha de latim no verso dos cartões). Cada unidade tem 6 páginas: guia do adulto, uma rima inglesa de Kate Greenaway (*Under the Window*, 1878) ou de Walter Crane, uma canção francesa de *Vieilles chansons pour les petits enfants* (1883) com a partitura original na página, cartões em frente e verso e um jogo com rotina. Cada página e cada cartão traz um idioma por vez, sempre com etiqueta. As gravuras de domínio público estão registradas em `editorial/fontes_v1.py` (Greenaway, Boutet de Monvel e as de Crane, Brooke, Caldecott e Potter que já eram do catálogo); o resto é aquarela da coleção (`editorial/motivos8.py`, 19 motivos novos), com testes em `test_motivos8.py` e `test_volume7.py`. Decisões no ADR 0020.
 
+## Volume 8 — Jogos e descobertas, primeira versão (32 páginas)
+`volume8/volume8-impressao.pdf`, `volume8/volume8-tela.pdf`, `volume8/inspecao/`, conteúdo em `editorial/volume8.py`. Versão menor (ADR 0031): só o que os cadernos de 2 anos prometem na unidade *Brincar junto* e o diário de observação do adulto. Quatro blocos (esconder e achar; minha vez, sua vez; mandar e obedecer; calma), com cartões *O que está na caixa?* e *A chefe mandou*, jogo da memória de 6 pares, dominó de 12 peças, loto de 3 cartelas, fichas da vez, rimas de roda e duas páginas de diário. Cada jogo tem versões de 2, 3 e 4 anos. Todas as figuras são aquarela da coleção (`editorial/motivos9.py`, 5 motivos novos), com testes em `test_motivos9.py` e `test_volume8.py`. **Ainda não vai para a Release**: o workflow publica só os volumes 1 a 7 até a dona do produto aprovar.
+
 ## Caderno de atividades da Marina, aos 2 anos (84 páginas)
 `caderno-2-anos/caderno-impressao.pdf`, `caderno-2-anos/caderno-tela.pdf`, conteúdo em `editorial/caderno.py`. Uma unidade por volume (1 a 8), com atividades de sete tipos (cantar e rimar, conversar, mostrar o mundo, fazer com as mãos, mexer o corpo, nomear e acalmar), sem tela e quase sem papel e lápis. Cada unidade traz rimas e parlendas e pelo menos duas atividades de acalmar; a abertura traz páginas para o adulto sobre a fase do “não”, o cantinho da calma e uma semana de exemplo. Decisões, fontes e cuidados no ADR 0021.
 
@@ -69,5 +72,6 @@ python3 volume4.py         # Volume 4
 python3 volume5.py         # Volume 5
 python3 volume6.py         # Volume 6
 python3 volume7.py         # Volume 7
+python3 volume8.py         # Volume 8 (primeira versão, ainda não publicada)
 ```
 Requer também `pdftoppm` (poppler) para as páginas de inspeção. As ilustrações de domínio público já recortadas estão em `editorial/dominio_publico/`; só é preciso baixar páginas do Internet Archive para refazer recortes (`fontes_v1.py`).

@@ -37,5 +37,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 
 | [0029](0029-processo-ai-sdlc.md) | Processo AI-SDLC com 8 agentes e dois portões humanos | Aceito |
 | [0030](0030-registro-de-sessao-sem-mudar-estado.md) | Registro de sessão grava observação e nunca muda o estado do marco | Aceito |
+| [0031](0031-volume-8-primeira-versao-menor.md) | Volume 8 em primeira versão menor, em dois PRs | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
