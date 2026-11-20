@@ -4,7 +4,11 @@ import { validarBackup } from '../dados/repositorio';
 import { dataCurta } from '../ui/rotulos';
 import { horaValida, LEMBRETE_PADRAO } from '../domain/lembretes';
 import { ponteDoAparelho } from '../nativo/lembretes';
-import { apagarTudoECancelarLembretes, sincronizarComOAparelho } from '../nativo/sincronizar';
+import {
+  apagarTudoECancelarLembretes,
+  AVISO_LEMBRETES_NAO_CANCELADOS,
+  sincronizarComOAparelho,
+} from '../nativo/sincronizar';
 import { baixarArquivo } from './sessao';
 import { VERSAO } from '../versao';
 import { numeroCurto } from '../ui/versao';
@@ -157,8 +161,11 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         });
       raiz.querySelector('#apagar')?.addEventListener('click', async () => {
         if (!confirm('Apagar TODOS os dados deste aparelho? Faça um backup antes.')) return;
-        await apagarTudoECancelarLembretes(ctx.repo);
+        const resultado = await apagarTudoECancelarLembretes(ctx.repo);
         ctx.ir('/');
+        // Os dados já foram apagados; se os lembretes (que podem mostrar o nome da criança) seguirem
+        // agendados, a pessoa precisa saber (#25).
+        if (resultado === 'lembretes-nao-cancelados') ctx.avisar(AVISO_LEMBRETES_NAO_CANCELADOS);
       });
     },
   };

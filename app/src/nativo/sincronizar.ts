@@ -12,19 +12,24 @@ import {
 /**
  * "Apagar tudo" (#25): limpa o banco e cancela os lembretes já agendados, que podem mostrar o nome da
  * criança na tela bloqueada. Sincronizar com lista vazia cancela os pendentes e não agenda nenhum. Se a
- * ponte falhar, o banco já foi limpo e o erro não derruba a tela. No navegador (sem ponte) nada muda.
+ * ponte falhar, o banco já foi limpo, o erro não derruba a tela e o resultado vira 'lembretes-nao-cancelados'. No navegador (sem ponte) nada muda.
  */
 export async function apagarTudoECancelarLembretes(
   repo: Pick<Repositorio, 'apagarTudo'>,
   ponte: Ponte | null = ponteDoAparelho(window as never),
-): Promise<void> {
+): Promise<'ok' | 'lembretes-nao-cancelados'> {
   await repo.apagarTudo();
   try {
     await sincronizarLembretes(ponte, [], { pedirPermissao: false });
+    return 'ok';
   } catch {
-    // lembrete é um extra: o apagar do banco já valeu
+    // o apagar do banco já valeu; quem chama avisa a pessoa de que os lembretes podem seguir agendados
+    return 'lembretes-nao-cancelados';
   }
 }
+
+export const AVISO_LEMBRETES_NAO_CANCELADOS =
+  'Os dados foram apagados, mas não consegui cancelar os lembretes deste aparelho. Desligue o lembrete diário nas configurações do aparelho ou desinstale o app.';
 
 /**
  * Reagenda os lembretes de hoje em diante. Roda na abertura do app e depois de mudar o plano ou a

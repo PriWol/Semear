@@ -33,19 +33,21 @@ function repoFalso(chamadas: string[]) {
 describe('apagar tudo cancela os lembretes agendados (#25)', () => {
   it('apaga o banco e depois cancela todos os lembretes, sem agendar nenhum', async () => {
     const { ponte, chamadas } = ponteFalsa();
-    await apagarTudoECancelarLembretes(repoFalso(chamadas), ponte);
+    expect(await apagarTudoECancelarLembretes(repoFalso(chamadas), ponte)).toBe('ok');
     expect(chamadas).toEqual(['apagarTudo', 'cancel:1,2']);
   });
 
-  it('se a ponte falhar, o banco já foi limpo e nenhum erro sobe', async () => {
+  it('se a ponte falhar, o banco já foi limpo, nenhum erro sobe e o resultado avisa', async () => {
     const { ponte, chamadas } = ponteFalsa(true);
-    await expect(apagarTudoECancelarLembretes(repoFalso(chamadas), ponte)).resolves.toBeUndefined();
+    await expect(apagarTudoECancelarLembretes(repoFalso(chamadas), ponte)).resolves.toBe(
+      'lembretes-nao-cancelados',
+    );
     expect(chamadas[0]).toBe('apagarTudo');
   });
 
   it('no navegador (sem ponte) só apaga o banco', async () => {
     const chamadas: string[] = [];
-    await apagarTudoECancelarLembretes(repoFalso(chamadas), null);
+    expect(await apagarTudoECancelarLembretes(repoFalso(chamadas), null)).toBe('ok');
     expect(chamadas).toEqual(['apagarTudo']);
   });
 });
