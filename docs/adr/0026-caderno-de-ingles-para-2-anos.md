@@ -1,6 +1,6 @@
 # 0026. Caderno de inglês para crianças de 2 anos
 
-- **Status:** Aceito, com a conferência das orientações pendente (ver Pendências)
+- **Status:** Aceito; a conferência das orientações é controle manual da dona do produto antes da venda (ver Pendências)
 - **Data:** 2026-11-08
 
 ## Contexto
@@ -25,12 +25,12 @@ O texto de apoio é em português; as falas são em inglês e marcadas com `lang
 
 ## Consequências
 - O caderno de inglês usa os blocos de `caderno.py` (o caderno de atividades, ADR 0021, já no `main`).
-- Como o caderno de atividades, o PDF **não vai para a Release**: o workflow o guarda só como artefato (14 dias) até a conferência das orientações pelo pediatra ou por uma fonoaudióloga que acompanhe crianças bilíngues.
+- Como o caderno de atividades, o PDF vai para a Release `tesouro-marina` (decisão da dona do produto, 2026-11-20), antes da conferência das orientações: o risco é dela, e a conferência fica como controle manual antes da venda.
 - Sem áudio: para a pronúncia, o adulto usa um dicionário com áudio ou uma gravação de falante nativo.
 - O caderno não substitui o pediatra nem uma fonoaudióloga que acompanhe crianças bilíngues.
 
 ## Pendências
-- [ ] Conferir com um pediatra ou uma fonoaudióloga que acompanhe crianças bilíngues as orientações da carta e da página “Como funciona” (fase do “não”, atenção curta, quando procurar ajuda), antes de divulgar o caderno para outras famílias.
+- [ ] Conferir com um pediatra ou uma fonoaudióloga que acompanhe crianças bilíngues as orientações da carta e da página “Como funciona” (fase do “não”, atenção curta, quando procurar ajuda), **antes de vender ou divulgar o caderno**. A dona do produto liberou o PDF na Release antes disso e fará a conferência manualmente.
 - [ ] Conferir a letra das rimas tradicionais com a versão que a família usa.
 - O caderno não faz parte do app: `docs/JORNADA_SPEC.md` não é alterada.
 
