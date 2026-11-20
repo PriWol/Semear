@@ -3,14 +3,17 @@
 import type { IndiceConteudo } from './conteudo';
 import { dataLocalISO } from './datas';
 import { posicionarAqui } from './jornada';
+import { montarRegistro, observacoesDaSessao } from './registro';
 import { gerarCodigoSessao } from './sessao';
-import type { Atividade, Crianca, EstadosCrianca, Familia, Sessao } from './tipos';
+import type { Atividade, Crianca, EstadosCrianca, EventoMarco, Familia, Sessao } from './tipos';
 
 export interface DadosExemplo {
   familia: Familia;
   criancas: Crianca[];
   estados: { criancaId: string; estados: EstadosCrianca }[];
   sessoes: Sessao[];
+  /** observações das sessões já registradas (#11); o posicionamento é gravado a partir de `estados` */
+  historico: EventoMarco[];
 }
 
 interface Modelo {
@@ -38,7 +41,8 @@ const THEO: Modelo = {
 };
 const MODELOS = [ANA, THEO];
 
-const DIA = 86_400_000;
+const HORA = 3_600_000;
+const DIA = 24 * HORA;
 
 /** Volta anos e meses no calendário, sem cair num dia inexistente (ex.: 31 de fevereiro). */
 function nascimentoPara(hoje: Date, anos: number, meses: number): string {
@@ -91,14 +95,22 @@ export function criarExemplo(idx: IndiceConteudo, hoje: Date): DadosExemplo {
     const dasLinhas = Object.keys(m.posicoes).flatMap((linhaId) => idx.atividadesDaLinha(linhaId));
     return [...new Set([...dosMarcos, ...dasLinhas])];
   };
-  const planos: { modelo: Modelo; atividade: Atividade | undefined; diasAtras: number }[] = [
-    { modelo: ANA, atividade: daCrianca(ANA)[0], diasAtras: 10 },
-    { modelo: THEO, atividade: daCrianca(THEO)[0], diasAtras: 6 },
-    { modelo: ANA, atividade: daCrianca(ANA)[1], diasAtras: 3 },
+  // Duas sessões já registradas e uma por registrar: dá para ver o "Feita ✓", o registro por correção e,
+  // registrando mais uma sessão da Ana, o selo "parece pronto" (§5.2).
+  const planos: {
+    modelo: Modelo;
+    atividade: Atividade | undefined;
+    diasAtras: number;
+    registrada: boolean;
+  }[] = [
+    { modelo: ANA, atividade: daCrianca(ANA)[0], diasAtras: 10, registrada: true },
+    { modelo: THEO, atividade: daCrianca(THEO)[0], diasAtras: 6, registrada: true },
+    { modelo: ANA, atividade: daCrianca(ANA)[1], diasAtras: 3, registrada: false },
   ];
 
   const sessoes: Sessao[] = [];
-  for (const { modelo, atividade, diasAtras } of planos) {
+  const historico: EventoMarco[] = [];
+  for (const { modelo, atividade, diasAtras, registrada } of planos) {
     if (!atividade) continue;
     const criadaEm = new Date(hoje.getTime() - diasAtras * DIA);
     const codigo = gerarCodigoSessao(
@@ -106,7 +118,7 @@ export function criarExemplo(idx: IndiceConteudo, hoje: Date): DadosExemplo {
       criadaEm,
       sessoes.map((s) => s.codigo),
     );
-    sessoes.push({
+    const sessao: Sessao = {
       id: `exemplo-sessao-${sessoes.length + 1}`,
       codigo,
       criancaId: modelo.id,
@@ -116,8 +128,27 @@ export function criarExemplo(idx: IndiceConteudo, hoje: Date): DadosExemplo {
       atividadeIds: [atividade.id],
       livroId: null,
       exemplo: true,
-    });
+    };
+    if (!registrada) {
+      sessoes.push(sessao);
+      continue;
+    }
+    // O registro do exemplo passa pelas mesmas regras do app: só observações, nenhum estado muda.
+    const ficha = observacoesDaSessao(sessao, idx);
+    const registro = montarRegistro(
+      sessao,
+      ficha,
+      {
+        estados: Object.fromEntries(ficha.map((o) => [o.chave, 'consolidado'])),
+        duracaoReal: sessao.duracaoMin,
+        engajamento: 'bom',
+        anotacoes: 'Pediu para repetir no dia seguinte.',
+      },
+      new Date(criadaEm.getTime() + 2 * HORA).toISOString(),
+    );
+    sessoes.push(registro.sessao);
+    historico.push(...registro.eventos);
   }
 
-  return { familia, criancas, estados, sessoes };
+  return { familia, criancas, estados, sessoes, historico };
 }
