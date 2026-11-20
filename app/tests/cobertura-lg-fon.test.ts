@@ -11,6 +11,8 @@ import type { Sondagem } from '../src/domain/sondagem';
 // complemento e NÃO conta para o mínimo de atividades nem para a variedade de vertentes.
 // Variedade de vertentes (versão forte, cabe no conteúdo real): as principais do marco cobrem
 // pelo menos 2 vertentes na união e não têm todas exatamente o mesmo conjunto de vertentes.
+// Regra 10 (idade): ao menos uma principal do marco tem faixa `idade` que contém a `idadeTipica`.
+// `idadeIntroducao` é POR VERTENTE (só para o aviso de ritmo), então não entra nesta regra.
 // O texto de `cuidados` não é checado além de "não vazio": o conteúdo dele é revisado pela dona
 // do produto (comparar textos entre atividades seria frágil).
 const LINHA = 'LG.FON';
@@ -18,6 +20,8 @@ const MIN_MARCOS = 8;
 const MAX_MARCOS = 12;
 const MIN_ATIVIDADES = 2;
 const IDADE_COM_CUIDADOS = 3;
+// Formato dos ids de marco (ex.: LG.FON.04, MA.OPE.02): domínio.linha.número de 2 dígitos.
+const ID_MARCO = /^[A-Z]{2}\.[A-Z]{3}\.\d{2}$/;
 
 /** Devolve uma mensagem em português por problema encontrado; lista vazia = tudo certo. */
 function verificarCobertura(c: Conteudo, sondagem: Sondagem): string[] {
@@ -59,9 +63,22 @@ function verificarCobertura(c: Conteudo, sondagem: Sondagem): string[] {
         `Ordem da linha ${LINHA} quebrada em ${m.id}: tem ordem ${m.ordem}, mas deveria ser ${i + 1} (única e contínua de 1 a N).`,
       );
     }
+    if (
+      dele.length > 0 &&
+      !dele.some((a) => a.idade[0] <= m.idadeTipica && m.idadeTipica <= a.idade[1])
+    ) {
+      erros.push(
+        `Marco ${m.id} tem idade típica ${m.idadeTipica}, mas nenhuma atividade principal cobre essa idade (faixas: ${dele.map((a) => `${a.id} [${a.idade[0]}, ${a.idade[1]}]`).join('; ')}).`,
+      );
+    }
     // Pré-requisito em OUTRA linha (ex.: LG.LET.03, que ainda não existe) é aviso conhecido da
-    // estória #22 e não falha aqui; só confere os da própria linha.
+    // estória #22 e não falha por não existir; só o formato do id é conferido.
     for (const pre of m.preRequisitos) {
+      if (!ID_MARCO.test(pre)) {
+        erros.push(
+          `Marco ${m.id} exige "${pre}", que não tem formato de id de marco (ex.: LG.LET.03).`,
+        );
+      }
       if (pre.startsWith(`${LINHA}.`) && !idsDaLinha.has(pre)) {
         erros.push(`Marco ${m.id} exige ${pre}, que não existe na linha ${LINHA}.`);
       }
@@ -92,9 +109,10 @@ describe(`cobertura da linha ${LINHA} (conteúdo real)`, () => {
   it('cumpre os critérios de aceite da estória #22', () => {
     expect(verificarCobertura(carregarConteudoBruto(), carregarSondagem())).toEqual([]);
   });
-  // Só registra (não falha): dá ao portão 2 um número verificável do que as famílias já veem.
-  // Enquanto houver rascunho, marcos podem ter menos de 2 atividades PUBLICADAS.
-  it('registra quantos marcos têm menos de 2 atividades publicadas', () => {
+  // Só informa (sem asserção): o critério "sem lacunas para o que as famílias veem" fica SEM teste
+  // até a dona do produto aprovar o lote (portão 2); então a meta abaixo é só `it.todo`.
+  // Este bloco imprime a contagem atual para o portão 2 ter um número verificável.
+  {
     const visivel = carregarConteudo();
     const poucos = visivel.marcos
       .filter((m) => m.linha === LINHA)
@@ -107,8 +125,8 @@ describe(`cobertura da linha ${LINHA} (conteúdo real)`, () => {
       `[${LINHA}] marcos publicados com menos de ${MIN_ATIVIDADES} atividades publicadas: ${poucos.length}` +
         (poucos.length ? ` (${poucos.map((x) => `${x.id}=${x.n}`).join(', ')})` : ''),
     );
-    expect(poucos.length).toBeGreaterThanOrEqual(0);
-  });
+  }
+  it.todo('pré-requisitos de outras linhas existem no conteúdo (quando LG.LET chegar)');
   it.todo(`meta: todo marco de ${LINHA} com pelo menos ${MIN_ATIVIDADES} atividades publicadas`);
 });
 
@@ -149,8 +167,8 @@ describe('verificarCobertura detecta violações (dados sintéticos)', () => {
       ...extra,
     }) as Atividade;
 
-  function montar() {
-    const marcos = Array.from({ length: 8 }, (_, i) => marcoBase(i + 1));
+  function montar(total = 8) {
+    const marcos = Array.from({ length: total }, (_, i) => marcoBase(i + 1));
     const atividades = marcos.flatMap((m, i) => [
       atvBase(`a${i}a`, [m.id], { vertentes: ['Clássico'] }),
       atvBase(`a${i}b`, [m.id], { vertentes: ['Clássico', 'Charlotte Mason'] }),
@@ -175,6 +193,12 @@ describe('verificarCobertura detecta violações (dados sintéticos)', () => {
       marcos: [...conteudo.marcos, ...[9, 10, 11, 12, 13].map((n) => marcoBase(n))],
     };
     expect(verificarCobertura(muitos, sondagem).join('\n')).toMatch(/tem 13 marcos/);
+  });
+  it('regra 1 (bordas): exatamente 8 e exatamente 12 marcos passam', () => {
+    const { conteudo, sondagem } = montar();
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
+    const doze = montar(12);
+    expect(verificarCobertura(doze.conteudo, doze.sondagem)).toEqual([]);
   });
   it('regra 2: BNCC apagado ou em branco', () => {
     const { conteudo, sondagem } = montar();
@@ -209,7 +233,13 @@ describe('verificarCobertura detecta violações (dados sintéticos)', () => {
     const dupla = ['Clássico', 'Charlotte Mason'] as Atividade['vertentes'];
     conteudo.atividades[0] = atvBase('a0a', ['LG.FON.01'], { vertentes: dupla });
     conteudo.atividades[1] = atvBase('a0b', ['LG.FON.01'], { vertentes: dupla });
-    expect(verificarCobertura(conteudo, sondagem).join('\n')).toContain('Marco LG.FON.01');
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([
+      'Marco LG.FON.01: as atividades principais não variam de vertente (união: Clássico, Charlotte Mason); precisa de pelo menos 2 vertentes e conjuntos diferentes entre elas.',
+    ]);
+    // 2 vertentes + as mesmas 2 + uma terceira com vertente diferente: passa
+    conteudo.atividades.push(atvBase('a0c', ['LG.FON.01'], { vertentes: ['Religioso'] }));
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
+    conteudo.atividades.pop();
     // conjuntos diferentes: passa
     conteudo.atividades[0] = atvBase('a0a', ['LG.FON.01'], { vertentes: ['Clássico'] });
     expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
@@ -223,6 +253,49 @@ describe('verificarCobertura detecta violações (dados sintéticos)', () => {
     expect(msg).toContain('Atividade x1 tem idade [6, 4]');
     expect(msg).toContain('Atividade x2 tem idade [4, 9]');
     expect(msg).toContain('Atividade x3 tem idade [1, 4]');
+  });
+  it('regra 9 (bordas): idades [2, 8] e [3, 3] passam', () => {
+    const { conteudo, sondagem } = montar();
+    conteudo.atividades[2] = atvBase('b1', ['LG.FON.02'], {
+      vertentes: ['Clássico'],
+      idade: [2, 8],
+      cuidados: 'ok',
+    });
+    conteudo.atividades[4] = atvBase('b2', ['LG.FON.03'], {
+      vertentes: ['Clássico'],
+      idade: [3, 3],
+      cuidados: 'ok',
+    });
+    conteudo.marcos[2] = marcoBase(3, { idadeTipica: 3 });
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
+  });
+  it('regra 10: pelo menos uma principal cobre a idade típica do marco', () => {
+    const { conteudo, sondagem } = montar();
+    conteudo.atividades[0] = atvBase('f1', ['LG.FON.01'], {
+      vertentes: ['Clássico'],
+      idade: [6, 8],
+    });
+    conteudo.atividades[1] = atvBase('f2', ['LG.FON.01'], {
+      vertentes: ['Charlotte Mason'],
+      idade: [6, 8],
+    });
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([
+      'Marco LG.FON.01 tem idade típica 4, mas nenhuma atividade principal cobre essa idade (faixas: f1 [6, 8]; f2 [6, 8]).',
+    ]);
+    // basta uma cobrir (limite incluído)
+    conteudo.atividades[1] = atvBase('f2', ['LG.FON.01'], {
+      vertentes: ['Charlotte Mason'],
+      idade: [4, 6],
+    });
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
+  });
+  it('regra 6c: pré-requisito de outra linha precisa ter formato de id válido', () => {
+    const { conteudo, sondagem } = montar();
+    conteudo.marcos[2] = marcoBase(3, { preRequisitos: ['LG.LET.3'] });
+    conteudo.marcos[3] = marcoBase(4, { preRequisitos: ['lg-let-03'] });
+    const msg = verificarCobertura(conteudo, sondagem).join('\n');
+    expect(msg).toContain('Marco LG.FON.03 exige "LG.LET.3", que não tem formato de id de marco');
+    expect(msg).toContain('Marco LG.FON.04 exige "lg-let-03", que não tem formato de id de marco');
   });
   it('regra 6b: pré-requisito inexistente na própria linha falha', () => {
     const { conteudo, sondagem } = montar();
@@ -260,6 +333,21 @@ describe('verificarCobertura detecta violações (dados sintéticos)', () => {
     const outra = montar();
     outra.conteudo.marcos[1] = marcoBase(2, { preRequisitos: ['LG.LET.03'] });
     expect(verificarCobertura(outra.conteudo, outra.sondagem)).toEqual([]);
+  });
+  it('regra 7 (limiar): começar aos 4 anos não exige cuidados; aos 3 exige', () => {
+    const { conteudo, sondagem } = montar();
+    conteudo.atividades[0] = atvBase('l4', ['LG.FON.01'], {
+      vertentes: ['Clássico'],
+      idade: [4, 6],
+    });
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([]);
+    conteudo.atividades[0] = atvBase('l3', ['LG.FON.01'], {
+      vertentes: ['Clássico'],
+      idade: [3, 6],
+    });
+    expect(verificarCobertura(conteudo, sondagem)).toEqual([
+      'Atividade l3 começa aos 3 anos e está sem `cuidados`.',
+    ]);
   });
   it('regra 7: atividade de 3 anos ou menos sem cuidados', () => {
     const { conteudo, sondagem } = montar();
