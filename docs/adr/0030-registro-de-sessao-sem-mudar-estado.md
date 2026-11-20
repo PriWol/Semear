@@ -65,17 +65,16 @@ Opção 3, com estas regras:
 - Se um dia a regra do selo mudar (por exemplo, 3 sessões), muda uma constante e o teste; nenhum dado precisa ser
   convertido.
 
-## Pontos em aberto para a dona do produto
-Estas decisões não foram tomadas pelo time técnico; o comportamento atual está descrito para você escolher.
-1. **"Está aqui" e os marcos de adiante.** O "Está aqui" só grava eventos dos marcos que mudam de estado. Um marco
-   mais adiante que está *Não observado* não recebe evento, então as observações antigas dele continuam
-   contando para o selo. Dá para aceitar isso e ajustar a §5.2, ou mudar o formato do histórico para o "Está aqui"
-   zerar a linha inteira.
-2. **Onde ver o registro.** Não há tela de "histórico da criança": o registro aparece na página da sessão e o selo
-   na jornada. Aceitar assim, ou abrir uma estória de continuação.
-3. **Texto da estória #11.** O "Como testar" diz que "os marcos mudaram" depois do registro. Isso contradiz a §5.2
-   e este ADR (a ficha não muda o estado). O texto da estória precisa ser corrigido.
-4. **Número da versão.** Este trabalho subiu o app para 0.3.0. Pelo ADR 0012, confirmar 0.3.0 ou usar 0.2.1 no
-   primeiro PR da Fase 1.
-5. **Excluir sessão apaga as observações.** Isso contraria o "nada é apagado" da §4.2, mas evita eventos órfãos
-   que fariam o backup ser recusado. Confirmar a escolha.
+## Decisões da dona do produto (20/11/2026)
+1. **"Está aqui" e os marcos de adiante: fica como está.** O "Está aqui" só grava eventos dos marcos que mudam de
+   estado. Um marco mais adiante que está *Não observado* não recebe evento, então as observações antigas dele
+   continuam contando para o selo. A §5.2 foi ajustada para dizer isso. O formato do histórico não muda.
+2. **Texto da estória #11: corrigido.** O "Como testar" passa a seguir a §5.2: o registro não muda o estado do
+   marco; o que aparece na jornada é o selo "parece pronto".
+3. **Versão 0.3.0: confirmada**, com as notas da versão em `app/content/novidades.json`.
+4. **Excluir sessão apaga as observações dela: aceito.** Contraria o "nada é apagado" da §4.2, mas evita eventos
+   órfãos que fariam o backup ser recusado.
+
+## Ainda em aberto
+- **Onde ver o registro.** Não há tela de "histórico da criança": o registro aparece na página da sessão e o selo
+  na jornada. Sem resposta até agora; segue assim até ela decidir entre aceitar ou abrir uma estória de continuação.
