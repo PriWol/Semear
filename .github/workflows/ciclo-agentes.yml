@@ -1,0 +1,72 @@
+name: Ciclo de agentes
+
+# Roda os agentes do processo AI-SDLC (ADR 0027, docs/PROCESSO_AI_SDLC.md) a partir de rótulos
+# colocados na estória. Rótulos colocados pelo GITHUB_TOKEN não disparam workflows; por isso só
+# a dona do produto (ou quem tem permissão de escrita) aciona cada etapa, e isso é o portão humano.
+# Atenção: a ação só roda quando este arquivo já existe, idêntico, no branch padrão.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: ciclo-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  pm:
+    # rótulo `ideia`: o PM transforma a ideia em estória e para em `aguardando-aprovacao`
+    if: github.event.label.name == 'ideia' && github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: anthropics/claude-code-action@374f254f5efaf968abfe15d399fd90972e8138b9 # v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            REPO: ${{ github.repository }}
+            ESTÓRIA/IDEIA: #${{ github.event.issue.number }}
+            Use o subagente `pm`. Reescreva a ideia como estória com critérios de aceite, comente na issue
+            e adicione o rótulo `aguardando-aprovacao`. NÃO adicione `aprovada`: isso é da dona do produto.
+          claude_args: >-
+            --allowedTools "Bash(gh issue comment:*),Bash(gh issue edit:*),Bash(gh issue view:*),Read,Grep,Glob"
+
+  desenvolver:
+    # rótulo `aprovada` (portão 1): plano técnico, desenho, testes, código e PR
+    if: github.event.label.name == 'aprovada' && github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+        working-directory: app
+      - uses: anthropics/claude-code-action@374f254f5efaf968abfe15d399fd90972e8138b9 # v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            REPO: ${{ github.repository }}
+            ESTÓRIA APROVADA: #${{ github.event.issue.number }}
+            Siga `docs/PROCESSO_AI_SDLC.md` (etapas 2 a 4):
+            1. subagente `dev-senior-b`: plano técnico, comentado na estória; se a estória tem rótulo `ui`,
+               o subagente `designer` desenha e aprova o plano; `qa` deriva os casos de teste.
+            2. Se tem rótulo `conteudo`, use `curador-pedagogico` e NÃO misture código no mesmo PR.
+            3. subagente `dev-senior-a`: testes primeiro, código, `npm run check` e `npm run test:e2e` verdes.
+            4. Abra o PR em um branch novo com `Closes #${{ github.event.issue.number }}` no corpo.
+            Nunca mescle. Se faltar informação, comente na estória e pare.
+          claude_args: >-
+            --allowedTools "Edit,Write,Read,Grep,Glob,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(gh pr create:*),Bash(gh issue comment:*),Bash(gh issue view:*)"

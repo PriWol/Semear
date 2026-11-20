@@ -1,8 +1,8 @@
 name: Revisão por agentes
 
-# Dois agentes revisam cada PR (ADR 0007). Requer o segredo CLAUDE_CODE_OAUTH_TOKEN
-# (gerado com `claude setup-token` ou pelo comando /install-github-app do Claude Code)
-# ou ANTHROPIC_API_KEY nas configurações do repositório.
+# Revisores por papel em cada PR (ADR 0007, ampliado pelo ADR 0027). Requer o segredo
+# CLAUDE_CODE_OAUTH_TOKEN ou ANTHROPIC_API_KEY. Achado bloqueante recebe o rótulo `bloqueado`,
+# que impede a mesclagem automática (merge-automatico.yml).
 # Atenção: por segurança, a ação só roda quando este arquivo já existe, idêntico, no branch padrão.
 # No PR que cria ou altera este arquivo, os revisores são pulados (e aparecem como "sucesso").
 
@@ -13,32 +13,35 @@ on:
 permissions:
   contents: read
   pull-requests: write
+  issues: write
   id-token: write
 
 jobs:
   revisor:
-    # PR do Dependabot não tem acesso aos segredos do repositório (só aos do Dependabot) e a ação
-    # recusa atores bot; liberar o bot só trocaria esse erro por falta de credencial. Esses PRs só
-    # sobem versão de actions/dependências e passam por CI e por aprovação humana (ADR 0007).
+    # PR do Dependabot não tem acesso aos segredos do repositório e a ação recusa atores bot (ADR 0007).
     if: github.event.pull_request.draft == false && github.actor != 'dependabot[bot]'
-    name: Revisor (${{ matrix.foco }})
+    name: Revisor (${{ matrix.agente }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         include:
-          - foco: correcao
+          - agente: dev-senior-b
             instrucoes: >-
-              Você é o revisor de CORREÇÃO. Procure bugs, divergências com docs/JORNADA_SPEC.md,
-              violações do CLAUDE.md (camadas, convenções, definição de pronto) e regras de negócio sem teste.
-              Para cada problema, aponte arquivo e linha, o cenário concreto que falha e a correção sugerida.
-          - foco: seguranca-privacidade
+              Use o subagente `dev-senior-b` como revisor de CORREÇÃO E ARQUITETURA: bugs, divergências com
+              docs/JORNADA_SPEC.md, violações do CLAUDE.md (camadas, convenções, definição de pronto),
+              migração de dados ausente e regras de negócio sem teste.
+          - agente: qa
             instrucoes: >-
-              Você é o revisor de SEGURANÇA E PRIVACIDADE. O app lida com dados de crianças, que devem
-              ficar no aparelho (CLAUDE.md, seção Privacidade). Procure: injeção de HTML/XSS (texto do
-              usuário ou do conteúdo sem escapar), dados enviados para fora do aparelho, dependências
-              novas suspeitas, segredos no código, permissões excessivas em workflows.
-              Para cada problema, aponte arquivo e linha, o risco concreto e a correção sugerida.
+              Use o subagente `qa`: cada critério de aceite da estória ligada (Closes/Refs) tem teste que
+              falharia sem a mudança? Casos de borda e faixa etária cobertos? Aponte lacunas.
+          - agente: seguranca-privacidade
+            instrucoes: >-
+              Use o subagente `seguranca-privacidade` com o checklist completo. Tem poder de veto.
+          - agente: designer
+            instrucoes: >-
+              Use o subagente `designer`. Se o PR não toca telas, folhas, CSS ou tokens, responda em uma
+              linha que não se aplica. Caso contrário revise contra docs/DESIGN.md e os tokens --s-*.
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -55,8 +58,10 @@ jobs:
             ${{ matrix.instrucoes }}
 
             Leia o CLAUDE.md antes de revisar. Revise apenas as mudanças deste PR.
-            Escreva em português. Publique os achados como comentários inline no PR e termine com
-            um comentário-resumo listando os achados por gravidade (bloqueante / importante / sugestão).
+            Escreva em português. Publique os achados como comentários inline e termine com um
+            comentário-resumo por gravidade (bloqueante / importante / sugestão), começando com
+            "Revisor ${{ matrix.agente }}:". Se houver achado BLOQUEANTE, rode
+            `gh pr edit ${{ github.event.pull_request.number }} --add-label bloqueado`.
             Se não houver problemas, diga isso em uma linha.
           claude_args: >-
-            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Read,Grep,Glob"
+            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr edit:*),Read,Grep,Glob"
