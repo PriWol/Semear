@@ -35,6 +35,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0027](0027-modelo-de-assinatura-revisado.md) | Modelo de assinatura revisado: preço por faixa e plano Livre reduzido | Aceito (aprovação pendente) |
 | [0028](0028-aplicativo-nativo-e-lembretes-locais.md) | Aplicativo nativo e lembretes agendados no aparelho | Aceito |
 
-| [0027](0027-processo-ai-sdlc.md) | Processo AI-SDLC com 8 agentes e dois portões humanos | Aceito |
+| [0029](0029-processo-ai-sdlc.md) | Processo AI-SDLC com 8 agentes e dois portões humanos | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

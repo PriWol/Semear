@@ -1,6 +1,6 @@
 # 0007. Revisão por dois agentes + aprovação humana; PR único da v1
 
-- **Status:** Aceito (parcialmente alterado pelo ADR 0027)
+- **Status:** Aceito (parcialmente alterado pelo ADR 0029)
 - **Data:** 2026-10-14
 
 ## Contexto

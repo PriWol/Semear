@@ -64,7 +64,7 @@ Siga `docs/DESIGN.md` (direção A, "Caderno de botânica"; ADR 0014). Cores, fo
 
 ## Fluxo de trabalho com IA (ADR 0006 e 0007)
 1. **Spec**: descreva a funcionalidade (o quê e por quê) ou aponte a seção da especificação.
-2. **Plano**: a IA propõe o plano; Dev Sênior B e Designer aprovam, e a dona do produto vê só o resumo (ADR 0027).
+2. **Plano**: a IA propõe o plano; Dev Sênior B e Designer aprovam, e a dona do produto vê só o resumo (ADR 0029).
 3. **Testes**: escreva/atualize os testes que descrevem o comportamento esperado.
 4. **Código**: implemente até os testes passarem.
 5. **Revisão**: `npm run check` e `npm run test:e2e` verdes; PR revisado pelos agentes (Dev B, QA, segurança/privacidade,

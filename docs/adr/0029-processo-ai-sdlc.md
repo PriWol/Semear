@@ -1,4 +1,4 @@
-# 0027. Processo AI-SDLC com 8 agentes e dois portões humanos
+# 0029. Processo AI-SDLC com 8 agentes e dois portões humanos
 
 - **Status:** Aceito (altera parcialmente o ADR 0007 e o fluxo do CLAUDE.md)
 - **Data:** 2026-11-20
