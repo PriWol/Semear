@@ -51,6 +51,9 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # PRs abertos pelos agentes do ciclo (ciclo-agentes.yml) saem como claude[bot]; sem isto os 4 revisores
+          # falham em 1 s com "non-human actor". Só esse bot, nunca '*'.
+          allowed_bots: 'claude'
           prompt: |
             REPO: ${{ github.repository }}
             PR: ${{ github.event.pull_request.number }}
