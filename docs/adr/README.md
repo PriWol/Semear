@@ -33,4 +33,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0025](0025-plano-semanal.md) | Plano semanal guardado no aparelho | Aceito |
 | [0026](0026-caderno-de-ingles-para-2-anos.md) | Caderno de inglês para crianças de 2 anos | Aceito (conferência pendente) |
 
+| [0027](0027-processo-ai-sdlc.md) | Processo AI-SDLC com 8 agentes e dois portões humanos | Aceito |
+
 Modelo para um novo ADR: copie `0000-modelo.md`.
