@@ -593,8 +593,13 @@ progress {
   padding-inline: var(--s-espaco-3);
   color: var(--s-principal);
 }
+.rodape a:focus-visible {
+  outline: var(--s-foco-largura) solid var(--s-foco);
+  outline-offset: var(--s-foco-recuo);
+}
 @media print {
   .rodape {
     display: none;
   }
 }
+/* ---------- fim do rodapé ---------- */

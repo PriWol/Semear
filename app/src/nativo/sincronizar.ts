@@ -1,7 +1,30 @@
 // Junta o que está no aparelho (família, crianças, planos) com as notificações locais (ADR 0028).
 import type { Contexto } from '../ui/app';
 import { LEMBRETE_PADRAO, planejarLembretes } from '../domain/lembretes';
-import { ponteDoAparelho, sincronizarLembretes, type ResultadoSincronia } from './lembretes';
+import type { Repositorio } from '../dados/repositorio';
+import {
+  ponteDoAparelho,
+  sincronizarLembretes,
+  type Ponte,
+  type ResultadoSincronia,
+} from './lembretes';
+
+/**
+ * "Apagar tudo" (#25): limpa o banco e cancela os lembretes já agendados, que podem mostrar o nome da
+ * criança na tela bloqueada. Sincronizar com lista vazia cancela os pendentes e não agenda nenhum. Se a
+ * ponte falhar, o banco já foi limpo e o erro não derruba a tela. No navegador (sem ponte) nada muda.
+ */
+export async function apagarTudoECancelarLembretes(
+  repo: Pick<Repositorio, 'apagarTudo'>,
+  ponte: Ponte | null = ponteDoAparelho(window as never),
+): Promise<void> {
+  await repo.apagarTudo();
+  try {
+    await sincronizarLembretes(ponte, [], { pedirPermissao: false });
+  } catch {
+    // lembrete é um extra: o apagar do banco já valeu
+  }
+}
 
 /**
  * Reagenda os lembretes de hoje em diante. Roda na abertura do app e depois de mudar o plano ou a

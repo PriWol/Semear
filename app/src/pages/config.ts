@@ -4,7 +4,7 @@ import { validarBackup } from '../dados/repositorio';
 import { dataCurta } from '../ui/rotulos';
 import { horaValida, LEMBRETE_PADRAO } from '../domain/lembretes';
 import { ponteDoAparelho } from '../nativo/lembretes';
-import { sincronizarComOAparelho } from '../nativo/sincronizar';
+import { apagarTudoECancelarLembretes, sincronizarComOAparelho } from '../nativo/sincronizar';
 import { baixarArquivo } from './sessao';
 import { VERSAO } from '../versao';
 import { numeroCurto } from '../ui/versao';
@@ -157,7 +157,7 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         });
       raiz.querySelector('#apagar')?.addEventListener('click', async () => {
         if (!confirm('Apagar TODOS os dados deste aparelho? Faça um backup antes.')) return;
-        await ctx.repo.apagarTudo();
+        await apagarTudoECancelarLembretes(ctx.repo);
         ctx.ir('/');
       });
     },

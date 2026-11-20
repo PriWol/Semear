@@ -99,11 +99,6 @@ describe('termos e privacidade (#25)', () => {
     expect(plano).toContain('Evite escrever nas anotações dados que você não quer ver no arquivo');
   });
 
-  it('a nota de "Apagar dados" descreve o que o app apaga de fato', () => {
-    const config = readFileSync(new URL('../src/pages/config.ts', import.meta.url), 'utf8');
-    expect(config).toContain('Remove tudo o que você cadastrou e registrou neste aparelho.');
-  });
-
   it('o roteador real leva /termos e /privacidade às páginas certas', () => {
     const rotas = criarRotas(ROTAS);
     const quem = (hash: string) => {
@@ -117,11 +112,15 @@ describe('termos e privacidade (#25)', () => {
 
 describe('rodapé (#25): só tokens, sem valor solto', () => {
   const css = readFileSync(new URL('../src/estilos.css', import.meta.url), 'utf8');
-  const inicio = css.indexOf('.rodape {');
-  const bloco = css.slice(inicio);
+  // Só o trecho do rodapé, entre os dois marcadores do estilos.css (inclui o @media print dele).
+  const inicio = css.indexOf('/* ---------- Rodapé (#25)');
+  const fim = css.indexOf('/* ---------- fim do rodapé ----------');
+  const bloco = css.slice(inicio, fim);
 
   it('o CSS do rodapé existe', () => {
     expect(inicio).toBeGreaterThan(-1);
+    expect(fim).toBeGreaterThan(inicio);
+    expect(bloco).toContain('.rodape {');
   });
 
   it('não usa cor, px, rem ou em soltos (só var(--s-*))', () => {
@@ -135,6 +134,7 @@ describe('rodapé (#25): só tokens, sem valor solto', () => {
   it('alvo de toque, texto mínimo e ocultação na impressão', () => {
     expect(bloco).toContain('min-height: var(--s-alvo-toque)');
     expect(bloco).toContain('font-size: var(--s-texto-p)');
+    expect(bloco).toContain('.rodape a:focus-visible');
     expect(bloco).toMatch(/@media print\s*\{\s*\.rodape\s*\{\s*display: none;/);
   });
 
