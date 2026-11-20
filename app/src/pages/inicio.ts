@@ -52,7 +52,8 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         </p>
         <p class="nota">
           Privacidade: os dados das crianças ficam só neste aparelho, e o app não usa anúncios nem
-          análise de uso. <a href="#/privacidade">Leia a política de privacidade</a>.
+          análise de uso. <a href="#/privacidade">Leia a política de privacidade</a> e os
+          <a href="#/termos">Termos de uso</a>.
         </p>
       </section>`,
       montar(raiz) {

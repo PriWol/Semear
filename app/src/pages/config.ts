@@ -4,7 +4,11 @@ import { validarBackup } from '../dados/repositorio';
 import { dataCurta } from '../ui/rotulos';
 import { horaValida, LEMBRETE_PADRAO } from '../domain/lembretes';
 import { ponteDoAparelho } from '../nativo/lembretes';
-import { sincronizarComOAparelho } from '../nativo/sincronizar';
+import {
+  apagarTudoECancelarLembretes,
+  AVISO_LEMBRETES_NAO_CANCELADOS,
+  sincronizarComOAparelho,
+} from '../nativo/sincronizar';
 import { baixarArquivo } from './sessao';
 import { VERSAO } from '../versao';
 import { numeroCurto } from '../ui/versao';
@@ -95,7 +99,7 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
       </section>
       <section class="cartao">
         <h2>Apagar dados</h2>
-        <p class="nota">Remove família, crianças, jornada e sessões deste aparelho.</p>
+        <p class="nota">Remove tudo o que você cadastrou e registrou neste aparelho.</p>
         <button class="botao perigo" type="button" id="apagar">Apagar tudo</button>
       </section>
     `,
@@ -157,8 +161,11 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         });
       raiz.querySelector('#apagar')?.addEventListener('click', async () => {
         if (!confirm('Apagar TODOS os dados deste aparelho? Faça um backup antes.')) return;
-        await ctx.repo.apagarTudo();
+        const resultado = await apagarTudoECancelarLembretes(ctx.repo);
         ctx.ir('/');
+        // Os dados já foram apagados; se os lembretes (que podem mostrar o nome da criança) seguirem
+        // agendados, a pessoa precisa saber (#25).
+        if (resultado === 'lembretes-nao-cancelados') ctx.avisar(AVISO_LEMBRETES_NAO_CANCELADOS);
       });
     },
   };

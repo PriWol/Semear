@@ -18,6 +18,7 @@ import { paginaAtividades } from './pages/atividades';
 import { paginaSemana } from './pages/semana';
 import { paginaGuia } from './pages/guia';
 import { paginaPrivacidade } from './pages/privacidade';
+import { paginaTermos } from './pages/termos';
 import { paginaNovidades } from './pages/novidades';
 
 export const ROTAS: Record<string, FabricaPagina> = {
@@ -37,6 +38,7 @@ export const ROTAS: Record<string, FabricaPagina> = {
   '/semana/:id': paginaSemana,
   '/guia': paginaGuia,
   '/privacidade': paginaPrivacidade,
+  '/termos': paginaTermos,
   '/conteudo': paginaConteudo,
   '/novidades': paginaNovidades,
 };

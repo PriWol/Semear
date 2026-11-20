@@ -570,3 +570,36 @@ progress {
   display: grid;
   gap: var(--s-espaco-1);
 }
+
+/* ---------- Rodapé (#25): termos e privacidade a um toque, em todas as telas ----------
+   Só tokens --s-* (tests/termos-privacidade.test.ts); some na impressão. */
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--s-espaco-2);
+  padding: var(--s-espaco-4);
+  border-top: var(--s-borda) solid var(--s-linha);
+  background: var(--s-fundo);
+  color: var(--s-suave);
+  font-size: var(--s-texto-p);
+  text-align: center;
+}
+.rodape a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
+  padding-inline: var(--s-espaco-3);
+  color: var(--s-principal);
+}
+.rodape a:focus-visible {
+  outline: var(--s-foco-largura) solid var(--s-foco);
+  outline-offset: var(--s-foco-recuo);
+}
+@media print {
+  .rodape {
+    display: none;
+  }
+}
+/* ---------- fim do rodapé ---------- */
