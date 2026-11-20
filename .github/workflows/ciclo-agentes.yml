@@ -1,6 +1,6 @@
 name: Ciclo de agentes
 
-# Roda os agentes do processo AI-SDLC (ADR 0027, docs/PROCESSO_AI_SDLC.md) a partir de rótulos
+# Roda os agentes do processo AI-SDLC (ADR 0029, docs/PROCESSO_AI_SDLC.md) a partir de rótulos
 # colocados na estória. Rótulos colocados pelo GITHUB_TOKEN não disparam workflows; por isso só
 # a dona do produto (ou quem tem permissão de escrita) aciona cada etapa, e isso é o portão humano.
 # Atenção: a ação só roda quando este arquivo já existe, idêntico, no branch padrão.

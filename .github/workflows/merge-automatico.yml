@@ -1,6 +1,6 @@
 name: Mesclagem automática
 
-# Papel do DevOps/Release (ADR 0027): liga a mesclagem automática só em PR elegível. As verificações
+# Papel do DevOps/Release (ADR 0029): liga a mesclagem automática só em PR elegível. As verificações
 # obrigatórias do ruleset "Proteger main" continuam valendo: o merge só ocorre com CI verde.
 # Nunca roda código do PR: só lê a lista de arquivos e rótulos por API.
 
@@ -42,4 +42,4 @@ jobs:
           gh pr comment "$pr" --repo "$REPO" --body "Elegível à mesclagem automática (sem conteúdo, dados, CSP, workflows ou ADR; revisores sem bloqueio). Mescla assim que as verificações obrigatórias ficarem verdes.
 
 ---
-_Gerado pelo processo AI-SDLC (ADR 0027)_"
+_Gerado pelo processo AI-SDLC (ADR 0029)_"

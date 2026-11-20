@@ -1,6 +1,6 @@
 # Processo AI-SDLC do Semear
 
-Decisão e motivos: [ADR 0027](adr/0027-processo-ai-sdlc.md). Agentes em `.claude/agents/`.
+Decisão e motivos: [ADR 0029](adr/0029-processo-ai-sdlc.md). Agentes em `.claude/agents/`.
 
 ## Seus portões (★)
 | Portão | Quando | Como você aprova |
