@@ -5,6 +5,7 @@ import { letraDaCrianca } from '../domain/letra';
 import type { Atividade } from '../domain/tipos';
 import { gerarPacote, nomeArquivoPacote } from '../pacote/gerar';
 import { rotuloDoMaterial } from '../domain/material';
+import { observacoesDaSessao } from '../domain/registro';
 import { enderecoDoMaterial } from '../tesouro';
 import { dataCurta } from '../ui/rotulos';
 
@@ -38,6 +39,7 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
     idade,
     letra: letraDaCrianca(crianca, idade, familia),
     atividades,
+    observacoes: observacoesDaSessao(sessao, ctx.idx),
     livro: sessao.livroId ? (ctx.idx.livro(sessao.livroId) ?? null) : null,
     marco: (id) => ctx.idx.marco(id),
   });

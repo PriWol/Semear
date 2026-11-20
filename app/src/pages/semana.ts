@@ -19,6 +19,7 @@ import {
 } from '../domain/semana';
 import type { Atividade, Sessao } from '../domain/tipos';
 import { gerarSemana, nomeArquivoSemana, type ModoSemana } from '../pacote/semana';
+import { observacoesDaSessao } from '../domain/registro';
 import { baixarArquivo } from './sessao';
 import { sincronizarComOAparelho } from '../nativo/sincronizar';
 
@@ -225,19 +226,20 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           const [a, m, dd] = dia.data.split('-').map(Number) as [number, number, number];
           const codigo = gerarCodigoSessao(crianca.nome, new Date(a, m - 1, dd), usados);
           usados.push(codigo);
+          const sessaoDoDia: Sessao = {
+            id: `${plano.id}-${dia.dia}`,
+            codigo,
+            criancaId: crianca.id,
+            criadaEm: agora,
+            duracaoMin: dia.duracaoMin,
+            foco: 'equilibrado',
+            atividadeIds: dia.atividadeIds,
+            livroId: dia.livroId,
+          };
           return {
             dia,
             entrada: {
-              sessao: {
-                id: `${plano.id}-${dia.dia}`,
-                codigo,
-                criancaId: crianca.id,
-                criadaEm: agora,
-                duracaoMin: dia.duracaoMin,
-                foco: 'equilibrado' as const,
-                atividadeIds: dia.atividadeIds,
-                livroId: dia.livroId,
-              },
+              sessao: sessaoDoDia,
               familia,
               crianca,
               idade,
@@ -245,6 +247,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
               atividades: dia.atividadeIds
                 .map(atividadeDe)
                 .filter((x): x is Atividade => x !== undefined),
+              observacoes: observacoesDaSessao(sessaoDoDia, ctx.idx),
               livro: dia.livroId ? (ctx.idx.livro(dia.livroId) ?? null) : null,
               marco: (id: string) => ctx.idx.marco(id),
             },
