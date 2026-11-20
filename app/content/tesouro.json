@@ -234,6 +234,220 @@
           "paginas": [56, 61]
         }
       ]
+    },
+    {
+      "numero": 6,
+      "titulo": "O livro da natureza",
+      "arquivo": "tesouro/volume6-tela.pdf",
+      "paginas": 90,
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "O diário da natureza",
+          "paginas": [6, 13]
+        },
+        {
+          "numero": 2,
+          "titulo": "Aves do quintal",
+          "paginas": [14, 21]
+        },
+        {
+          "numero": 3,
+          "titulo": "Insetos e pequenos bichos",
+          "paginas": [22, 30]
+        },
+        {
+          "numero": 4,
+          "titulo": "Árvores e folhas",
+          "paginas": [31, 38]
+        },
+        {
+          "numero": 5,
+          "titulo": "Sementes",
+          "paginas": [39, 47]
+        },
+        {
+          "numero": 6,
+          "titulo": "Água e chuva",
+          "paginas": [48, 55]
+        },
+        {
+          "numero": 7,
+          "titulo": "Céu, sol, lua e estrelas",
+          "paginas": [56, 65]
+        },
+        {
+          "numero": 8,
+          "titulo": "O corpo humano",
+          "paginas": [66, 75]
+        },
+        {
+          "numero": 9,
+          "titulo": "As estações",
+          "paginas": [76, 84]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "titulo": "Primeiras línguas",
+      "arquivo": "tesouro/volume7-tela.pdf",
+      "paginas": 64,
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Cumprimentos",
+          "paginas": [6, 11]
+        },
+        {
+          "numero": 2,
+          "titulo": "A família",
+          "paginas": [12, 17]
+        },
+        {
+          "numero": 3,
+          "titulo": "A casa",
+          "paginas": [18, 23]
+        },
+        {
+          "numero": 4,
+          "titulo": "A comida",
+          "paginas": [24, 29]
+        },
+        {
+          "numero": 5,
+          "titulo": "Os animais",
+          "paginas": [30, 35]
+        },
+        {
+          "numero": 6,
+          "titulo": "As cores",
+          "paginas": [36, 41]
+        },
+        {
+          "numero": 7,
+          "titulo": "O corpo",
+          "paginas": [42, 47]
+        },
+        {
+          "numero": 8,
+          "titulo": "A natureza",
+          "paginas": [48, 53]
+        },
+        {
+          "numero": 9,
+          "titulo": "Latim · De onde vêm as palavras",
+          "paginas": [54, 59]
+        }
+      ]
+    }
+  ],
+  "cadernos": [
+    {
+      "id": "atividades-2-anos",
+      "titulo": "Caderno de atividades da Marina",
+      "subtitulo": "2 anos",
+      "arquivo": "tesouro/caderno-tela.pdf",
+      "paginas": 84,
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Olhar a casa e o quintal",
+          "paginas": [10, 19],
+          "volume": 1
+        },
+        {
+          "numero": 2,
+          "titulo": "Contar e imitar",
+          "paginas": [20, 28],
+          "volume": 2
+        },
+        {
+          "numero": 3,
+          "titulo": "Muito, pouco, igual",
+          "paginas": [29, 37],
+          "volume": 3
+        },
+        {
+          "numero": 4,
+          "titulo": "Som e movimento",
+          "paginas": [38, 46],
+          "volume": 4
+        },
+        {
+          "numero": 5,
+          "titulo": "Olhar e sujar as mãos",
+          "paginas": [47, 55],
+          "volume": 5
+        },
+        {
+          "numero": 6,
+          "titulo": "Sair e tocar",
+          "paginas": [56, 64],
+          "volume": 6
+        },
+        {
+          "numero": 7,
+          "titulo": "Uma palavra, dois jeitos",
+          "paginas": [65, 72],
+          "volume": 7
+        },
+        {
+          "numero": 8,
+          "titulo": "Brincar junto",
+          "paginas": [73, 81],
+          "volume": 8
+        }
+      ]
+    },
+    {
+      "id": "ingles-2-anos",
+      "titulo": "Caderno de inglês da Marina",
+      "subtitulo": "2 anos",
+      "arquivo": "tesouro/caderno-ingles-tela.pdf",
+      "paginas": 90,
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Good morning",
+          "paginas": [8, 17]
+        },
+        {
+          "numero": 2,
+          "titulo": "Bath time",
+          "paginas": [18, 27]
+        },
+        {
+          "numero": 3,
+          "titulo": "Mealtime",
+          "paginas": [28, 37]
+        },
+        {
+          "numero": 4,
+          "titulo": "Let's play",
+          "paginas": [38, 47]
+        },
+        {
+          "numero": 5,
+          "titulo": "Outside",
+          "paginas": [48, 57]
+        },
+        {
+          "numero": 6,
+          "titulo": "Animals",
+          "paginas": [58, 67]
+        },
+        {
+          "numero": 7,
+          "titulo": "Family and feelings",
+          "paginas": [68, 77]
+        },
+        {
+          "numero": 8,
+          "titulo": "Bedtime",
+          "paginas": [78, 87]
+        }
+      ]
     }
   ]
 }
