@@ -1,6 +1,10 @@
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { carregarConteudo } from '../src/conteudo';
-import { enderecoDoMaterial, enderecoDoPdf, VOLUMES } from '../src/tesouro';
+import { CADERNOS, enderecoDoMaterial, enderecoDoPdf, VOLUMES } from '../src/tesouro';
+import { cartaoDoCaderno, rotuloAcompanha } from '../src/pages/biblioteca';
+import type { CadernoTesouro } from '../src/tesouro';
 import { rotuloDoMaterial } from '../src/domain/material';
 import { gerarPacote } from '../src/pacote/gerar';
 import { atividade, crianca, familia } from './fabricas';
@@ -18,8 +22,8 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
     }
   });
 
-  it('os volumes 1 a 5 estão no catálogo, em ordem', () => {
-    expect(VOLUMES.map((v) => v.numero)).toEqual([1, 2, 3, 4, 5]);
+  it('os volumes 1 a 7 estão no catálogo, em ordem', () => {
+    expect(VOLUMES.map((v) => v.numero)).toEqual([1, 2, 3, 4, 5, 6, 7]);
   });
 
   it('o volume 5 aponta para o PDF de tela e abre cada unidade na página do sumário do livro', () => {
@@ -62,6 +66,171 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
     for (const a of carregarConteudo().atividades.filter((x) => x.materialImpresso)) {
       expect(a.autoria.status, a.id).toBe('rascunho');
     }
+  });
+});
+
+// Cadernos para 2 anos (ADR 0015, adendo; ADR 0021 e 0026): não são volumes da coleção.
+const TODOS = [...VOLUMES, ...CADERNOS];
+
+describe('catálogo: volumes 6 e 7 e cadernos (estória #109)', () => {
+  it('os cadernos são o de atividades e o de inglês, nesta ordem', () => {
+    expect(CADERNOS.map((c) => c.id)).toEqual(['atividades-2-anos', 'ingles-2-anos']);
+  });
+
+  it('unidades sem buracos na numeração, em ordem, sem sobreposição e dentro do total', () => {
+    for (const c of TODOS) {
+      const nome = 'id' in c ? c.id : `volume ${c.numero}`;
+      c.unidades.forEach((u, i) => expect(u.numero, `${nome} posição ${i}`).toBe(i + 1));
+      let anterior = 0;
+      for (const u of c.unidades) {
+        expect(u.paginas[0], `${nome} U${u.numero}`).toBeGreaterThan(anterior);
+        expect(u.paginas[1]).toBeGreaterThanOrEqual(u.paginas[0]);
+        expect(u.paginas[1]).toBeLessThanOrEqual(c.paginas);
+        anterior = u.paginas[1];
+      }
+    }
+  });
+
+  it('nenhum arquivo se repete e todos casam a regra do deploy (caminho relativo)', () => {
+    const arquivos = TODOS.map((x) => x.arquivo);
+    expect(new Set(arquivos).size).toBe(arquivos.length);
+    for (const a of arquivos) {
+      expect(a).toMatch(/^tesouro\/[A-Za-z0-9._-]+\.pdf$/);
+      expect(a).not.toMatch(/^https?:|\.\./);
+    }
+  });
+
+  it('páginas totais e primeiras páginas das unidades conferem com os sumários', () => {
+    const total = (a: string) => TODOS.find((x) => x.arquivo === a)!;
+    const inicios = (a: string) => total(a).unidades.map((u) => u.paginas[0]);
+    expect(total('tesouro/volume6-tela.pdf').paginas).toBe(90);
+    expect(total('tesouro/volume7-tela.pdf').paginas).toBe(64);
+    expect(total('tesouro/caderno-tela.pdf').paginas).toBe(84);
+    expect(total('tesouro/caderno-ingles-tela.pdf').paginas).toBe(90);
+    expect(inicios('tesouro/volume6-tela.pdf')).toEqual([6, 14, 22, 31, 39, 48, 56, 66, 76]);
+    expect(inicios('tesouro/volume7-tela.pdf')).toEqual([6, 12, 18, 24, 30, 36, 42, 48, 54]);
+    expect(inicios('tesouro/caderno-tela.pdf')).toEqual([10, 20, 29, 38, 47, 56, 65, 73]);
+    expect(inicios('tesouro/caderno-ingles-tela.pdf')).toEqual([8, 18, 28, 38, 48, 58, 68, 78]);
+  });
+
+  it('a unidade 9 do volume 7 é a seção de latim, com título explícito', () => {
+    const u9 = VOLUMES.find((v) => v.numero === 7)!.unidades[8]!;
+    expect(u9.titulo).toBe('Latim · De onde vêm as palavras');
+    expect(u9.paginas).toEqual([54, 59]);
+  });
+
+  it('só as 8 unidades do caderno de atividades têm `volume`', () => {
+    for (const v of VOLUMES)
+      for (const u of v.unidades) expect(u.volume, `V${v.numero}`).toBeUndefined();
+    const ingles = CADERNOS.find((x) => x.id === 'ingles-2-anos')!;
+    for (const u of ingles.unidades) expect(u.volume).toBeUndefined();
+    const ativ = CADERNOS.find((x) => x.id === 'atividades-2-anos')!;
+    expect(ativ.unidades.every((u) => Number.isInteger(u.volume))).toBe(true);
+  });
+
+  it('páginas totais são inteiros positivos e os cadernos são de 2 anos', () => {
+    for (const x of TODOS) {
+      expect(Number.isInteger(x.paginas) && x.paginas > 0, x.arquivo).toBe(true);
+    }
+    for (const c of CADERNOS) {
+      expect(c.titulo.trim(), c.id).not.toBe('');
+      expect(c.subtitulo, c.id).toContain('2 anos');
+    }
+  });
+
+  it('o rótulo "acompanha" avisa quando o volume ainda não está no catálogo', () => {
+    const existentes = VOLUMES.map((v) => v.numero);
+    expect(rotuloAcompanha(7, existentes)).toBe('acompanha o Volume 7');
+    expect(rotuloAcompanha(8, existentes)).toBe(
+      'acompanha o Volume 8 (ainda não disponível no app)',
+    );
+  });
+
+  it('rótulo "acompanha": volume 0, 9 e não inteiro', () => {
+    const existentes = VOLUMES.map((v) => v.numero);
+    expect(rotuloAcompanha(0, existentes)).toBe('');
+    expect(rotuloAcompanha(1.5, existentes)).toBe('');
+    expect(rotuloAcompanha(-1, existentes)).toBe('');
+    expect(rotuloAcompanha(9, existentes)).toBe(
+      'acompanha o Volume 9 (ainda não disponível no app)',
+    );
+  });
+
+  it('caderno sem unidades não gera lista vazia', () => {
+    const saida = cartaoDoCaderno({
+      id: 'vazio',
+      titulo: 'Caderno vazio',
+      subtitulo: '2 anos',
+      aviso: 'Fale com o pediatra.',
+      arquivo: 'tesouro/vazio-tela.pdf',
+      paginas: 5,
+      unidades: [],
+    }).toString();
+    expect(saida).toContain('Caderno vazio · 2 anos');
+    expect(saida).toContain('Abrir o caderno');
+    expect(saida).not.toContain('<ul');
+    expect(saida).not.toContain('<li');
+  });
+
+  it('o caderno de atividades acompanha os volumes 1 a 8, um por unidade', () => {
+    const c = CADERNOS.find((x) => x.id === 'atividades-2-anos')!;
+    expect(c.unidades.map((u) => u.volume)).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+    for (const u of TODOS.flatMap((x) => x.unidades))
+      if (u.volume !== undefined) {
+        expect(u.volume).toBeGreaterThanOrEqual(1);
+        expect(u.volume).toBeLessThanOrEqual(8);
+      }
+  });
+
+  it('o endereço do caderno abre na página pedida', () => {
+    const ingles = CADERNOS.find((x) => x.id === 'ingles-2-anos')!;
+    expect(enderecoDoPdf(ingles, 58)).toBe('tesouro/caderno-ingles-tela.pdf#page=58');
+  });
+
+  it('os geradores e o workflow ainda produzem os nomes publicados (sem rede)', () => {
+    const raiz = resolve(__dirname, '../..');
+    const le = (p: string) => readFileSync(resolve(raiz, p), 'utf8');
+    const workflow = le('.github/workflows/publicar-tesouro.yml');
+    for (const [script, nome] of [
+      ['volume6.py', 'volume6'],
+      ['volume7.py', 'volume7'],
+      ['caderno.py', 'caderno'],
+      ['caderno_ingles.py', 'caderno-ingles'],
+    ] as const) {
+      const fonte = le(`tesouro-marina/editorial/${script}`);
+      expect(fonte, script).toContain(`"${nome}-impressao"`);
+      expect(fonte, script).toContain(`"${nome}-tela"`);
+      expect(workflow, script).toContain(`python3 ${script}`);
+    }
+  });
+});
+
+describe('cadernos: título e aviso vêm do próprio catálogo (estória #109)', () => {
+  it('todo caderno tem título, subtítulo e um aviso de saúde que cita o pediatra', () => {
+    for (const c of CADERNOS) {
+      expect(c.titulo.trim(), c.id).not.toBe('');
+      expect(c.subtitulo.trim(), c.id).not.toBe('');
+      expect(c.aviso.trim(), c.id).not.toBe('');
+      expect(c.aviso, c.id).toContain('pediatra');
+    }
+  });
+
+  it('um caderno de id desconhecido aparece com o título e o aviso dele, não de outro', () => {
+    const novo: CadernoTesouro = {
+      id: 'matematica-3-anos',
+      titulo: 'Caderno de contas',
+      subtitulo: '3 anos',
+      aviso: 'Aviso próprio do caderno novo, fale com o pediatra.',
+      arquivo: 'tesouro/caderno-contas-tela.pdf',
+      paginas: 10,
+      unidades: [{ numero: 1, titulo: 'Somar', paginas: [2, 5] }],
+    };
+    const saida = cartaoDoCaderno(novo).toString();
+    expect(saida).toContain('Caderno de contas · 3 anos');
+    expect(saida).toContain('Aviso próprio do caderno novo, fale com o pediatra.');
+    expect(saida).toContain('tesouro/caderno-contas-tela.pdf#page=2');
+    expect(saida).not.toContain('Caderno de atividades');
+    expect(saida).not.toContain('fonoaudióloga');
   });
 });
 

@@ -37,7 +37,7 @@ Cada atividade traz o tempo, o material de casa, o que fazer, o que dizer, pergu
 ## Pendências
 - [ ] **Conferência por um pediatra** das orientações sobre a fase do “não”, atenção curta e quando procurar ajuda, **antes de vender ou divulgar o caderno**. A dona do produto decidiu (2026-11-20) liberar o PDF na Release antes dessa conferência e a fará manualmente; o PDF e a Release, que é pública, trazem orientações ainda não conferidas até lá.
 - [ ] Conferir a letra das parlendas tradicionais com a versão que a família usa.
-- O caderno não faz parte do app: `docs/JORNADA_SPEC.md` não é alterada.
+- O caderno aparece na Biblioteca do app (adendo de 2026-11-20 ao ADR 0015), com aviso de saúde; a jornada e `docs/JORNADA_SPEC.md` não são alteradas.
 
 ## Regras verificadas por teste
 `test_caderno.py` confere, página a página: o aviso de supervisão em toda atividade que usa água, quatro ou mais rimas e duas atividades de acalmar em cada unidade, o total de 84 páginas (par) e que cada montagem tem o seu sumário.

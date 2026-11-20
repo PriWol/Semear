@@ -8,6 +8,8 @@ export interface UnidadeTesouro {
   numero: number;
   titulo: string;
   paginas: [number, number];
+  /** só no caderno de atividades: o volume da coleção que a unidade acompanha (1 a 8) */
+  volume?: number;
 }
 
 export interface VolumeTesouro {
@@ -19,7 +21,21 @@ export interface VolumeTesouro {
   unidades: UnidadeTesouro[];
 }
 
-export const VOLUMES: VolumeTesouro[] = (catalogoJson as { volumes: VolumeTesouro[] }).volumes;
+/** Caderno para 2 anos: material à parte, não é volume da coleção (ADR 0015, adendo). */
+export interface CadernoTesouro {
+  id: string;
+  titulo: string;
+  subtitulo: string;
+  /** aviso de saúde mostrado no cartão (orientações ainda sem conferência profissional) */
+  aviso: string;
+  arquivo: string;
+  paginas: number;
+  unidades: UnidadeTesouro[];
+}
+
+const catalogo = catalogoJson as { volumes: VolumeTesouro[]; cadernos: CadernoTesouro[] };
+export const VOLUMES: VolumeTesouro[] = catalogo.volumes;
+export const CADERNOS: CadernoTesouro[] = catalogo.cadernos;
 
 /** Endereço do trecho de uma atividade (primeira página da unidade), ou null se o volume não está no catálogo. */
 export function enderecoDoMaterial(m: MaterialImpresso): string | null {
@@ -28,6 +44,6 @@ export function enderecoDoMaterial(m: MaterialImpresso): string | null {
 }
 
 /** Endereço do PDF, abrindo na página pedida. Só caminho relativo: nenhuma chamada externa. */
-export function enderecoDoPdf(volume: VolumeTesouro, pagina = 1): string {
+export function enderecoDoPdf(volume: { arquivo: string }, pagina = 1): string {
   return `${volume.arquivo}#page=${pagina}`;
 }
