@@ -7,7 +7,7 @@
   "idade": [5, 8],
   "duracaoMin": 25,
   "preparoMin": 8,
-  "cuidados": "Atenção: use só peças grandes, que não caibam na boca. Fique junto da criança o tempo todo e não use tesoura com menores de 5 anos sem você segurar o papel.",
+  "cuidados": "Atenção: o recorte das cartas é só do adulto, com tesoura sem ponta, antes da sessão. Use caixas ou potes de plástico ou papelão, sem bordas cortantes (nada de lata aberta). Fique por perto e sem pressa.",
   "objetivo": "A criança **classifica palavras pelo primeiro som**, mesmo quando a letra é diferente.",
   "passos": [
     {
@@ -172,7 +172,7 @@
     "revisadoEm": "2026-11-20"
   },
   "revisao": {
-    "estado": "revisado",
+    "estado": "rascunho",
     "por": "Curador pedagógico (IA)",
     "em": "2026-11-20"
   },

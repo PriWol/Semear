@@ -7,7 +7,7 @@
   "idade": [5, 8],
   "duracaoMin": 25,
   "preparoMin": 8,
-  "cuidados": "Atenção: use só peças grandes, que não caibam na boca. Fique junto da criança o tempo todo e não use tesoura com menores de 5 anos sem você segurar o papel.",
+  "cuidados": "Atenção: faça as fichas de papelão ou papel grosso, grandes o bastante para não irem à boca (nada de botões). Se for recortar, só o adulto, antes da sessão. Fique por perto aos 5 anos e sem placar.",
   "objetivo": "A criança **tira e junta sílabas** oralmente, tratando-as como peças que se movem.",
   "passos": [
     {
@@ -126,7 +126,7 @@
     "revisadoEm": "2026-11-20"
   },
   "revisao": {
-    "estado": "revisado",
+    "estado": "rascunho",
     "por": "Curador pedagógico (IA)",
     "em": "2026-11-20"
   },

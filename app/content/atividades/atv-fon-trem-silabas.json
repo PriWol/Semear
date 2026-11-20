@@ -6,7 +6,7 @@
   "idade": [4, 7],
   "duracaoMin": 25,
   "preparoMin": 5,
-  "cuidados": "Atenção: use só peças grandes, que não caibam na boca. Fique junto da criança o tempo todo e não use tesoura com menores de 5 anos sem você segurar o papel.",
+  "cuidados": "Atenção: use blocos e copos de papel grandes, sem peças pequenas, e deixe o chão livre para o trem não ser pisado. Fique junto aos 4 anos. Se ela errar a conta dos vagões, conte de novo com ela, sem cobrar.",
   "objetivo": "A criança relaciona a palavra falada ao **número de pedaços** com algo que ela pode ver e mover.",
   "passos": [
     {
@@ -121,7 +121,7 @@
     "revisadoEm": "2026-11-20"
   },
   "revisao": {
-    "estado": "revisado",
+    "estado": "rascunho",
     "por": "Curador pedagógico (IA)",
     "em": "2026-11-20"
   },

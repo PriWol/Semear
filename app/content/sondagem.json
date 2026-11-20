@@ -77,7 +77,7 @@
       "consolidado": "Diz uma palavra que rima (real ou inventada) em 3 dos 4 desafios.",
       "emDesenvolvimento": "Repete a mesma palavra ou diz uma que começa igual, e não termina igual.",
       "revisao": {
-        "estado": "revisado",
+        "estado": "rascunho",
         "por": "Curador pedagógico (IA)",
         "em": "2026-11-20"
       }
@@ -89,7 +89,7 @@
       "consolidado": "Acerta os dois trios.",
       "emDesenvolvimento": "Escolhe pelo começo da palavra ou acerta só um trio.",
       "revisao": {
-        "estado": "revisado",
+        "estado": "rascunho",
         "por": "Curador pedagógico (IA)",
         "em": "2026-11-20"
       }
@@ -101,7 +101,7 @@
       "consolidado": "Descobre a palavra em 2 das 3 tentativas.",
       "emDesenvolvimento": "Repete os sons sem juntar ou chuta uma palavra que só começa igual.",
       "revisao": {
-        "estado": "revisado",
+        "estado": "rascunho",
         "por": "Curador pedagógico (IA)",
         "em": "2026-11-20"
       }

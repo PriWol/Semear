@@ -6,6 +6,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason", "Religioso"],
   "idade": [4, 7],
   "duracaoMin": 35,
+  "cuidados": "Atenção: o recorte das cartas do jogo da memória é só do adulto, com tesoura sem ponta, antes da sessão. Os objetos da mesa (bola, bota, colher, bolo) devem ser grandes e sem pontas. Fique junto da criança, principalmente aos 4 anos, e mantenha lápis e giz longe da boca.",
   "objetivo": "A criança percebe que palavras diferentes podem **começar com o mesmo pedaço** (BO-la, BO-ta). É a ponte entre brincar com sons e entender que a escrita representa a fala.",
   "passos": [
     {
