@@ -35,6 +35,9 @@ jobs:
             ESTÓRIA/IDEIA: #${{ github.event.issue.number }}
             Use o subagente `pm`. Reescreva a ideia como estória com critérios de aceite, comente na issue
             e adicione o rótulo `aguardando-aprovacao`. NÃO adicione `aprovada`: isso é da dona do produto.
+            Antes, leia docs/ESTRATEGIA_ENTREGA.md (veredito da estória e seção 9, decisões da dona do produto)
+            quando o arquivo existir, e não contradiga essas decisões. Se a estória já estiver entregue,
+            diga isso com a evidência e NÃO peça aprovação.
           claude_args: >-
             --allowedTools "Bash(gh issue comment:*),Bash(gh issue edit:*),Bash(gh issue view:*),Read,Grep,Glob"
 

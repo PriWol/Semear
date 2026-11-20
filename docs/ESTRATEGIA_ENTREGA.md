@@ -149,3 +149,18 @@ Não paralelizar: duas estórias que mexem em `app/src/dados/` ao mesmo tempo (r
 | Lançamento | Rodar o roteiro "do anúncio à assinatura" (ROADMAP, Fase 6). | 1 hora | v1.0 aberto ao público |
 
 Cronograma por ordem (sem datas): 0 (P) antes de 1 (M); 2 (G) corre ao lado de 1; 3 (M) começa quando 1 fecha e as decisões 1, 4 e 6 chegam; 4 (G) só depois da 3 e da decisão 1.
+
+## 9. Decisões da dona do produto (20/11/2026)
+Respostas às perguntas da seção 7. Valem como decisão registrada para as estórias com rótulo `decisao`.
+
+| # | Decisão |
+|---|---|
+| #75 Assinatura | **Teste de 7 dias** com o produto completo; depois, um **plano básico** com **uma atividade recomendada por semana**. Preço e regras do plano básico ainda a definir (o PM descreve as opções). |
+| #95 Lembrete | **Arquivo de calendário (`.ics`)**: sem servidor, sem app de loja. |
+| Conteúdo em rascunho | Emocional, músicas e histórias do site antigo e conteúdo de 2 anos **valem como aprovados**. É preciso **diferenciar** o que o agente pedagógico revisou do que ela aprovou sem essa revisão (nova estória). |
+| #24 Ilustrações | **Gratuitas** (domínio público ou licença livre, com fonte registrada; ver CLAUDE.md). Sem verba para encomendar. |
+| Lançamento / #28 | **Lançamento aberto direto**, sem piloto antes. Pode haver **promoções com vouchers de uso** (nova estória). |
+| #34 Domínio | Ainda **não existe**; ninguém usa o site para valer. Resolver depois, quando ela comprar o domínio. O aviso de backup só é necessário se houver usuários. |
+| Plano Livre sem conta | **Onda 4**: a abertura ao público espera conta e cobrança. |
+
+Efeitos na ordem das ondas: a onda 3 deixa de ser "abrir ao público" e vira "pronto para abrir"; a abertura acontece depois da onda 4.
