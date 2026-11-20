@@ -274,6 +274,8 @@ export interface Familia {
   inspiracoes: Vertente[];
   idiomasEducador: Idioma[];
   criadaEm: string;
+  /** lembrete diário das atividades de hoje (#95); ausente = desligado */
+  lembrete?: { ativo: boolean; hora: string; incluirNome: boolean };
   /** família de exemplo (#39): apagada junto com o exemplo */
   exemplo?: true;
 }
