@@ -146,6 +146,32 @@ describe('catálogo: volumes 6 e 7 e cadernos (estória #109)', () => {
     );
   });
 
+  it('rótulo "acompanha": volume 0, 9 e não inteiro', () => {
+    const existentes = VOLUMES.map((v) => v.numero);
+    expect(rotuloAcompanha(0, existentes)).toBe('');
+    expect(rotuloAcompanha(1.5, existentes)).toBe('');
+    expect(rotuloAcompanha(-1, existentes)).toBe('');
+    expect(rotuloAcompanha(9, existentes)).toBe(
+      'acompanha o Volume 9 (ainda não disponível no app)',
+    );
+  });
+
+  it('caderno sem unidades não gera lista vazia', () => {
+    const saida = cartaoDoCaderno({
+      id: 'vazio',
+      titulo: 'Caderno vazio',
+      subtitulo: '2 anos',
+      aviso: 'Fale com o pediatra.',
+      arquivo: 'tesouro/vazio-tela.pdf',
+      paginas: 5,
+      unidades: [],
+    }).toString();
+    expect(saida).toContain('Caderno vazio · 2 anos');
+    expect(saida).toContain('Abrir o caderno');
+    expect(saida).not.toContain('<ul');
+    expect(saida).not.toContain('<li');
+  });
+
   it('o caderno de atividades acompanha os volumes 1 a 8, um por unidade', () => {
     const c = CADERNOS.find((x) => x.id === 'atividades-2-anos')!;
     expect(c.unidades.map((u) => u.volume)).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);

@@ -20,9 +20,22 @@ interface DadosCartao {
 
 /** Texto de "acompanha o Volume N"; o Volume 8 está planejado mas ainda não existe no catálogo (ADR 0015, adendo). */
 export function rotuloAcompanha(volume: number, existentes: readonly number[]): string {
+  // Número que não é um volume possível (0, negativo, fracionário): sem rótulo, em vez de texto estranho.
+  if (!Number.isInteger(volume) || volume < 1) return '';
   return existentes.includes(volume)
     ? `acompanha o Volume ${volume}`
     : `acompanha o Volume ${volume} (ainda não disponível no app)`;
+}
+
+function rotuloDoVolume(u: UnidadeTesouro) {
+  const rotulo =
+    u.volume === undefined
+      ? ''
+      : rotuloAcompanha(
+          u.volume,
+          VOLUMES.map((v) => v.numero),
+        );
+  return rotulo ? html`<span class="nota"> · ${rotulo}</span>` : '';
 }
 
 function cartao(c: DadosCartao) {
@@ -34,7 +47,10 @@ function cartao(c: DadosCartao) {
         >${c.botao}</a
       >
     </p>
-    <ul>
+    ${
+      c.unidades.length === 0
+        ? ''
+        : html`<ul>
       ${c.unidades.map(
         (u) =>
           html`<li>
@@ -42,17 +58,11 @@ function cartao(c: DadosCartao) {
               >Unidade ${u.numero} · ${u.titulo}</a
             >
             <span class="nota">p. ${u.paginas[0]}–${u.paginas[1]}</span>
-            ${
-              u.volume
-                ? html`<span class="nota"> · ${rotuloAcompanha(
-                    u.volume,
-                    VOLUMES.map((v) => v.numero),
-                  )}</span>`
-                : ''
-            }
+            ${rotuloDoVolume(u)}
           </li>`,
       )}
-    </ul>
+    </ul>`
+    }
   </section>`;
 }
 
