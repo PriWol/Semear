@@ -1,4 +1,4 @@
-# 0026. Modelo de assinatura revisado: preço por faixa e plano Livre reduzido
+# 0027. Modelo de assinatura revisado: preço por faixa e plano Livre reduzido
 
 - **Status:** Aceito (substitui a parte de preços e de plano do ADR 0010; falta a dona do produto aprovar o texto)
 - **Data:** 2026-11-09
@@ -22,7 +22,7 @@ O ADR 0010 propunha um plano Livre amplo (jornada, sondagem, histórico e portf�
 ## Pontos em aberto
 - Definir a lista exata do que fica no Livre: quais materiais da biblioteca e quais funções.
 - O portfólio completo (ADR 0010) continua em qualquer plano?
-- Cobrança dentro do aplicativo de celular: as lojas costumam exigir a compra na loja, com comissão (ADR 0027). O preço de R$ 49,90 pode precisar de ajuste por plataforma.
+- Cobrança dentro do aplicativo de celular: as lojas costumam exigir a compra na loja, com comissão (ADR 0028). O preço de R$ 49,90 pode precisar de ajuste por plataforma.
 - Provedor de contas e de cobrança (escolha pendente) e o ADR de backend e privacidade, que continua exigido antes de qualquer código de conta ou assinatura.
 
 ## Consequências

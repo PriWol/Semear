@@ -1,4 +1,4 @@
-// Lembretes diários das atividades de hoje (#95, ADR 0027). Função pura: "agora" vem por parâmetro.
+// Lembretes diários das atividades de hoje (#95, ADR 0028). Função pura: "agora" vem por parâmetro.
 import type { PlanoSemana } from './semana';
 
 /** Preferência da família. O nome da criança fica de fora por padrão: a notificação aparece na tela bloqueada. */

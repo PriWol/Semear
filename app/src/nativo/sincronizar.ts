@@ -1,4 +1,4 @@
-// Junta o que está no aparelho (família, crianças, planos) com as notificações locais (ADR 0027).
+// Junta o que está no aparelho (família, crianças, planos) com as notificações locais (ADR 0028).
 import type { Contexto } from '../ui/app';
 import { LEMBRETE_PADRAO, planejarLembretes } from '../domain/lembretes';
 import { ponteDoAparelho, sincronizarLembretes, type ResultadoSincronia } from './lembretes';

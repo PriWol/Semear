@@ -1,4 +1,4 @@
-// Ponte com as notificações locais do aplicativo (Capacitor, ADR 0027). No navegador não faz nada.
+// Ponte com as notificações locais do aplicativo (Capacitor, ADR 0028). No navegador não faz nada.
 import type { Lembrete } from '../domain/lembretes';
 
 /** O pedaço do plugin LocalNotifications que usamos. */

@@ -1,8 +1,8 @@
-# 0027. Aplicativo nativo para celular e lembretes agendados no aparelho
+# 0028. Aplicativo nativo para celular e lembretes agendados no aparelho
 
 - **Status:** Aceito (a publicação nas lojas e a cobrança dentro do app seguem em aberto)
 - **Data:** 2026-11-09
-- **Relacionado:** 0002 (dados no aparelho), 0009 (publicação), 0025 (plano semanal), 0026, #95
+- **Relacionado:** 0002 (dados no aparelho), 0009 (publicação), 0025 (plano semanal), 0027, #95
 
 ## Contexto
 A dona do produto quer o Semear como aplicativo de celular e que a família receba, todo dia, uma notificação com as atividades do dia (#95). O app já é um PWA instalável, e o plano da semana já fica no aparelho.
@@ -22,6 +22,6 @@ Opção 2. O mesmo código web é empacotado com o Capacitor para Android e iPho
 ## Consequências
 - **Dependências novas (quando o empacotamento entrar):** `@capacitor/core`, `@capacitor/cli`, `@capacitor/android`, `@capacitor/ios` e `@capacitor/local-notifications`. Só o empacotamento usa; o app web continua sem elas.
 - **Lojas:** conta de desenvolvedor na Apple (cerca de US$ 99 por ano) e no Google (cerca de US$ 25, uma vez); valores a confirmar. Compilar para iPhone exige um Mac com Xcode.
-- **Cobrança:** as lojas costumam exigir que assinaturas digitais sejam compradas dentro do app, com comissão; isso afeta o preço (ADR 0026) e o provedor de cobrança.
+- **Cobrança:** as lojas costumam exigir que assinaturas digitais sejam compradas dentro do app, com comissão; isso afeta o preço (ADR 0027) e o provedor de cobrança.
 - **Privacidade:** nada novo sai do aparelho. Se um dia houver notificação enviada por servidor, é outro ADR.
 - Nesta etapa entram a regra pura, a preferência na configuração e o adaptador. O projeto Capacitor (Android e iOS) e a publicação nas lojas ficam para a etapa seguinte.

@@ -64,7 +64,7 @@ async function iniciar() {
     atualizarFaixaExemplo,
   );
   ligarFaixaExemplo(ctx);
-  // Reagenda os lembretes de hoje em diante (só faz algo dentro do aplicativo de celular, ADR 0027).
+  // Reagenda os lembretes de hoje em diante (só faz algo dentro do aplicativo de celular, ADR 0028).
   void sincronizarComOAparelho(ctx, { pedirPermissao: false });
   mostrarVersao();
   // Depois da primeira renderização, para não disputar a abertura do app (ADR 0009).

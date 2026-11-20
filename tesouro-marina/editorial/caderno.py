@@ -29,6 +29,7 @@ TIPOS = {
     "corpo": ("Mexer o corpo", "--d-vida", "pegada"),
     "nomear": ("Nomear", "--d-ingles", "cesta"),
     "acalmar": ("Acalmar", "--d-frances", "bolhas"),
+    "ler": ("Ler juntos", "--d-historias", "livro"),   # só usado no caderno de inglês
 }
 
 UNIDADES = [
@@ -252,7 +253,7 @@ def cantinho_calma(L):
 def como_usar(L):
     linhas = "".join(
         f'<tr><td style="width:24mm;text-align:center">{img(m, "13mm")}</td><td><b>{nome}</b><br><span style="font-size:10pt">{exemplo}</span></td></tr>'
-        for (nome, _, m), exemplo in zip(TIPOS.values(), (
+        for (nome, _, m), exemplo in zip(list(TIPOS.values())[:7], (
             "Parlendas, cantigas e jogos de dedos, sempre com um gesto junto.",
             "Falar do que se vê e do que se faz; esperar a vez dela; contar o dia.",
             "Passear, apresentar um bicho, uma planta, um lugar: o mundo de verdade.",
