@@ -139,7 +139,7 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 
 | Estória | O que entrega |
 |---|---|
-| #11 Informar progresso | "Registrar sessão" pelo código impresso, em cerca de 2 minutos no celular; selo "parece pronto" (ícone de broto + texto, conforme o `DESIGN.md`) |
+| #11 Informar progresso (**entregue**, ADR 0030) | "Registrar sessão" pelo código impresso, em cerca de 2 minutos no celular; selo "parece pronto" (ícone de broto + texto, conforme o `DESIGN.md`). A ficha grava só a observação e não muda o estado do marco; "Feita ✓" no início e no plano da semana; o backup leva as anotações |
 | #13 Atividades avulsas | Buscar ("rimas", "contar") e imprimir uma atividade só |
 | #21 + #22 (conteúdo) | Pipeline de conteúdo e as linhas LG.FON e MA.SEN completas, com BNCC |
 
@@ -148,6 +148,8 @@ Protótipo: `prototipos/design/direcoes-visuais.html`.
 2. Em "Registrar sessão", digite o código impresso (ex.: `S-1014-A1`) e marque os marcos. As observações ficam no histórico da Ana; a jornada ainda não muda.
 3. Na ficha da primeira sessão, marque um marco como *Consolidado* (o marco continua *Em desenvolvimento* no mapa). Prepare e registre uma
    segunda sessão com esse mesmo marco, também como *Consolidado*: aparece o selo "parece pronto". Confirme o marco no mapa: o selo some.
+   (A família de exemplo já traz uma sessão da Ana registrada com *Consolidado* em LG.FON.04: basta registrar uma segunda sessão
+   com "Caça às sílabas" para ver o selo.)
 4. Busque "sílaba" (sem acento) e imprima a atividade encontrada.
 
 **Testes automáticos novos:** unitário do registro e do selo "parece pronto" e da busca sem acento; integração do

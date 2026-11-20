@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { gerarPacote, nomeArquivoPacote, type EntradaPacote } from '../src/pacote/gerar';
 import { carregarConteudo } from '../src/conteudo';
 import { criarIndice } from '../src/domain/conteudo';
+import { observacoesDaSessao } from '../src/domain/registro';
 import type { Sessao } from '../src/domain/tipos';
 import { AGORA, crianca, familia } from './fabricas';
 
@@ -64,6 +65,32 @@ describe('gerarPacote (§5.7)', () => {
     expect(doc).toContain('LG.FON.04');
     expect(doc).toContain('LG.FON.03</b> (revisão)');
     expect(doc).toContain('MA.SEN.05</b> (revisão)');
+  });
+
+  it('a ficha imprime a lista de observacoesDaSessao, na mesma ordem (#11)', () => {
+    const obs = observacoesDaSessao(sessao, idx);
+    const ficha = gerarPacote(entrada({ observacoes: obs }));
+    const aposFicha = ficha.slice(ficha.indexOf('Ficha de registro rápido'));
+    const ids = [...aposFicha.matchAll(/<td>\s*<b>([A-Z]{2}\.[A-Z]{3}\.\d{2})<\/b>/g)].map(
+      (m) => m[1],
+    );
+    expect(ids).toEqual(obs.map((o) => o.marcoId));
+    // O que a tela de registro mostra é o que a ficha imprime: se a lista mudar, a ficha acompanha.
+    const so = gerarPacote(entrada({ observacoes: obs.slice(0, 1) }));
+    expect(so.slice(so.indexOf('Ficha de registro rápido'))).not.toContain(
+      `<b>${obs[1]!.marcoId}</b>`,
+    );
+  });
+
+  it('em Línguas, a ficha diz o idioma de cada linha', () => {
+    const d = gerarPacote(
+      entrada({
+        observacoes: [
+          { chave: 'LI.VOC.01@en', marcoId: 'LI.VOC.01', idioma: 'en', revisao: false },
+        ],
+      }),
+    );
+    expect(d).toContain('LI.VOC.01</b> · Inglês');
   });
 
   it('mostra só os toques das vertentes que a família usa', () => {

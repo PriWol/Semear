@@ -25,7 +25,7 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         <p>
           Seus dados ficam <b>só neste aparelho</b>. Faça backup com frequência e guarde o arquivo
           num lugar seguro (e-mail, nuvem, pendrive). O arquivo não é criptografado: ele contém os nomes,
-          as datas de nascimento e a jornada das crianças, então não compartilhe com outras pessoas.
+          as datas de nascimento, a jornada das crianças e as anotações das sessões, então não compartilhe com outras pessoas.
         </p>
         <p class="nota">
           Último backup: ${ultimo ? dataCurta(ultimo) : 'nunca'}.

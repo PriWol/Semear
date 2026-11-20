@@ -17,8 +17,10 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
       <h2>O que fica no seu aparelho</h2>
       <p>
         O nome do educador, os nomes e as datas de nascimento das crianças, as posições na jornada,
-        as sessões geradas e os backups ficam <b>somente neste aparelho</b>, no armazenamento do
-        navegador. Nós não recebemos esses dados e não os enviamos a nenhum servidor.
+        as sessões geradas, o que você registra sobre elas (duração, como a criança reagiu e as
+        <b>anotações de texto livre</b> que você escrever) e os backups ficam
+        <b>somente neste aparelho</b>, no armazenamento do navegador. Nós não recebemos esses dados
+        e não os enviamos a nenhum servidor.
       </p>
     </section>
     <section class="cartao">
@@ -48,8 +50,9 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
       <h2>Cuidado com o aparelho e o backup</h2>
       <p>
         Como os dados ficam no aparelho, limpar os dados do navegador ou trocar de aparelho apaga
-        tudo. Faça backup com frequência e guarde o arquivo em local seguro: ele contém os nomes e
-        as datas de nascimento das crianças.
+        tudo. Faça backup com frequência e guarde o arquivo em local seguro: ele contém os nomes,
+        as datas de nascimento das crianças e as anotações que você escreveu nas sessões. Evite
+        escrever nas anotações dados que você não quer ver no arquivo.
       </p>
     </section>
     <section class="cartao">

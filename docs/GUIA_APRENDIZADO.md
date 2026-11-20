@@ -28,6 +28,16 @@ sem saber onde ou como isso está guardado.
 
 **Por que importa:** se um dia trocarmos o banco (ou somarmos sincronização com servidor), só o balcão muda. (ADR 0002)
 
+### Regra pura derivada: o selo "parece pronto"
+**O que é:** o selo não é um dado guardado; é **calculado** a cada vez que a jornada abre, por uma função pura
+(`pareceProntoPara`, em `src/domain/registro.ts`) que olha o histórico: o marco ainda não está *Consolidado* e foi
+observado como *Consolidado* em **2 sessões diferentes**. De cada sessão vale só o último registro; um "Está aqui"
+zera o que veio antes dele.
+
+**Por que importa:** como é calculado e não guardado, a regra pode mudar (de 2 para 3 sessões, por exemplo) sem
+converter nenhum dado, e é testada sem abrir tela nenhuma: só entrega uma lista e recebe um sim ou não. O selo é
+uma **dica**: quem confirma o marco é o pai, no mapa. (ADR 0030)
+
 ---
 
 ## 2. Onde ficam os dados
@@ -60,6 +70,28 @@ tolerância), o app volta aos limites do plano Livre, sem apagar nem esconder ne
 antigos para o formato novo, para ninguém perder nada ao atualizar o app.
 
 **Paralelo:** como migrar uma planilha para um novo modelo de colunas sem perder as linhas antigas.
+
+**Quando não precisa migrar:** um campo **opcional** novo (como a duração real da sessão, #11) não exige
+migração: os registros antigos simplesmente não o têm e continuam valendo. Por isso o registro de sessão não
+subiu a versão do banco nem a do arquivo de backup (ADR 0030).
+
+### Histórico que só acrescenta ("append-only")
+**O que é:** em vez de editar uma linha, guardamos uma nova linha por acontecimento ("em 15/10, na sessão S-1014-A1,
+o marco foi observado como Consolidado"). Nada é apagado nem reescrito. O estado atual do marco é uma coisa; a
+história do que foi observado é outra.
+
+**Por que usamos:** a observação da sessão não muda o estado do marco (só o pai muda, no mapa). Guardar cada
+observação como um fato novo deixa o app calcular dicas, como o selo "parece pronto", sem mexer no que o pai decidiu.
+Ao corrigir um registro, só entra linha nova para o marco que **mudou**; repetir tudo poria observações velhas depois de um "Está aqui". O que vale é a **ordem de gravação**, não a data: uma data pode estar errada, a ordem não. (ADR 0030, especificação §5.2)
+
+### Transação (tudo ou nada)
+**O que é:** um grupo de gravações que o banco trata como uma só: ou todas acontecem, ou nenhuma. É como um
+cheque: ou o dinheiro sai de uma conta e entra na outra, ou nada acontece.
+
+**Por que usamos:** registrar uma sessão grava a sessão **e** as observações. Se a energia acaba no meio, o banco
+não pode ficar com a sessão marcada como feita e sem as observações. O repositório faz as duas gravações na
+mesma transação (`registrarSessao`) e desfaz tudo se uma falhar. A transação também nem abre o lugar dos estados dos
+marcos, o que garante, no próprio código, que a ficha não muda o estado.
 
 ---
 
@@ -225,4 +257,8 @@ hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 | **Sondagem** | Folha curta aplicada no papel para descobrir onde a criança está em cada linha. Começa perto da idade, sobe se acertou, desce se não observou, e grava a posição com origem “sondagem” (#17, §5.4). |
 | **Migração de banco** | Mudança na estrutura do IndexedDB que roda ao abrir o app (aqui, v1 → v2 para criar os planos); precisa de teste e não volta atrás (ADR 0025). |
 | **Ressondagem** | Mini-sondagem só das linhas “paradas” (marco em desenvolvimento sem mudar há 8 semanas) ou “sem observação” (nenhum registro). Reaproveita a folha da sondagem inicial (#18). |
+| **Observação (da sessão)** | O que o educador viu em cada marco depois da sessão (*Não observado*, *Em desenvolvimento*, *Consolidado*). Fica no histórico e **não muda** o estado do marco (#11, §5.2). |
+| **Selo "parece pronto"** | Dica na jornada: marco ainda não consolidado e observado como *Consolidado* em 2 sessões diferentes. Calculado, nunca guardado (ADR 0030). |
+| **Histórico "só acrescenta"** | Cada acontecimento vira uma linha nova; nada é editado nem apagado (exceto quando a sessão ou a criança é excluída). |
+| **Transação** | Grupo de gravações do banco que acontece inteiro ou não acontece. |
 | **Notificação local** | Aviso agendado pelo próprio aplicativo no aparelho, sem servidor. Usado no lembrete diário das atividades de hoje (ADR 0028). |

@@ -5,8 +5,9 @@ import { letraDaCrianca } from '../domain/letra';
 import type { Atividade } from '../domain/tipos';
 import { gerarPacote, nomeArquivoPacote } from '../pacote/gerar';
 import { rotuloDoMaterial } from '../domain/material';
+import { observacoesDaSessao, sessaoRegistrada } from '../domain/registro';
 import { enderecoDoMaterial } from '../tesouro';
-import { dataCurta } from '../ui/rotulos';
+import { dataCurta, ICONE_ENGAJAMENTO, NOME_ENGAJAMENTO, ROTULO_FEITA } from '../ui/rotulos';
 
 export function baixarArquivo(nome: string, conteudo: string, tipo: string) {
   const url = URL.createObjectURL(new Blob([conteudo], { type: tipo }));
@@ -38,10 +39,12 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
     idade,
     letra: letraDaCrianca(crianca, idade, familia),
     atividades,
+    observacoes: observacoesDaSessao(sessao, ctx.idx),
     livro: sessao.livroId ? (ctx.idx.livro(sessao.livroId) ?? null) : null,
     marco: (id) => ctx.idx.marco(id),
   });
   const nomeArquivo = nomeArquivoPacote(sessao, crianca);
+  const registrada = sessaoRegistrada(sessao);
 
   return {
     titulo: `Sessão ${sessao.codigo}`,
@@ -68,7 +71,40 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
           <span class="nota">${a.titulo} · ${rotuloDoMaterial(m)}</span>
         </p>`;
       })}
+      ${
+        registrada
+          ? html`<section class="cartao reg-resumo" aria-labelledby="titulo-registro">
+              <h2 id="titulo-registro">
+                Registro da sessão <span class="selo-feita">${ROTULO_FEITA}</span>
+              </h2>
+              <p class="nota">Registrada em ${dataCurta(sessao.registradaEm ?? sessao.criadaEm)}.</p>
+              ${
+                sessao.duracaoReal !== undefined
+                  ? html`<p>Duração real: ${sessao.duracaoReal} min (planejado: ${sessao.duracaoMin} min)</p>`
+                  : ''
+              }
+              ${
+                sessao.engajamento
+                  ? html`<p>
+                      Engajamento:
+                      ${ICONE_ENGAJAMENTO[sessao.engajamento]}
+                      ${NOME_ENGAJAMENTO[sessao.engajamento]}
+                    </p>`
+                  : ''
+              }
+              ${
+                sessao.anotacoes
+                  ? html`<p><b>Anotações</b></p>
+                      <p class="reg-anotacoes">${sessao.anotacoes}</p>`
+                  : ''
+              }
+            </section>`
+          : ''
+      }
       <div class="acoes barra-pacote">
+        <a class="botao" href="#/sessao/${sessao.id}/registrar"
+          >${registrada ? 'Corrigir registro' : 'Registrar'}</a
+        >
         <button class="botao primario" type="button" id="imprimir">🖨️ Imprimir / salvar PDF</button>
         <button class="botao" type="button" id="baixar">⬇️ Baixar arquivo</button>
         <button class="botao" type="button" id="abrir">↗️ Abrir em tela cheia</button>
@@ -110,7 +146,8 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
         setTimeout(() => URL.revokeObjectURL(url), 60_000);
       });
       raiz.querySelector('#excluir')?.addEventListener('click', async () => {
-        if (!confirm(`Excluir a sessão ${sessao.codigo}?`)) return;
+        const aviso = registrada ? ' O registro e as observações dela também serão apagados.' : '';
+        if (!confirm(`Excluir a sessão ${sessao.codigo}?${aviso}`)) return;
         await ctx.repo.removerSessao(sessao.id);
         ctx.avisar('Sessão excluída.');
         ctx.ir('/');

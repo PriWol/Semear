@@ -36,5 +36,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0028](0028-aplicativo-nativo-e-lembretes-locais.md) | Aplicativo nativo e lembretes agendados no aparelho | Aceito |
 
 | [0029](0029-processo-ai-sdlc.md) | Processo AI-SDLC com 8 agentes e dois portões humanos | Aceito |
+| [0030](0030-registro-de-sessao-sem-mudar-estado.md) | Registro de sessão grava observação e nunca muda o estado do marco | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

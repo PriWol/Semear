@@ -9,7 +9,9 @@ import type {
   Sessao,
   Vertente,
 } from '../domain/tipos';
+import { IDIOMAS } from '../domain/tipos';
 import { ehLetra, NOME_LETRA } from '../domain/letra';
+import { observacoesDasAtividades, type Observacao } from '../domain/registro';
 import { dataBR } from '../domain/datas';
 import { rotuloDoMaterial } from '../domain/material';
 import { escapar, html, textoRico, type HtmlSeguro } from '../ui/html';
@@ -24,6 +26,12 @@ export interface EntradaPacote {
   idade: number;
   letra: Letra;
   atividades: Atividade[];
+  /**
+   * Marcos da ficha de registro, vindos de `observacoesDaSessao` (domain/registro.ts): a ficha impressa
+   * e a tela de registro do app listam exatamente os mesmos marcos, na mesma ordem (#11). Sem o campo,
+   * a lista sai das próprias atividades pela mesma regra (só não distingue o idioma em Línguas).
+   */
+  observacoes?: Observacao[];
   livro: Livro | null;
   /** busca de marcos para mostrar os títulos na ficha */
   marco: (id: string) => Marco | undefined;
@@ -194,12 +202,7 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
 }
 
 function paginaFicha(e: EntradaPacote): HtmlSeguro {
-  const linhasMarco: { id: string; revisao: boolean }[] = [];
-  for (const a of e.atividades) {
-    for (const id of a.marcos) linhasMarco.push({ id, revisao: false });
-    for (const id of a.revisa ?? []) linhasMarco.push({ id, revisao: true });
-  }
-  const unicos = [...new Map(linhasMarco.map((l) => [l.id, l])).values()];
+  const unicos = e.observacoes ?? observacoesDasAtividades(e.atividades, () => false);
   const evidencias = e.atividades.flatMap((a) => a.evidencias);
   const pergunta =
     e.atividades.map((a) => a.perguntaFicha).find((p) => p) ??
@@ -229,7 +232,7 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
         (l) =>
           html`<tr>
             <td>
-              <b>${l.id}</b>${l.revisao ? ' (revisão)' : ''}<br />${e.marco(l.id)?.titulo ?? ''}
+              <b>${l.marcoId}</b>${l.idioma ? ` · ${IDIOMAS[l.idioma]}` : ''}${l.revisao ? ' (revisão)' : ''}<br />${e.marco(l.marcoId)?.titulo ?? ''}
             </td>
             <td class="c">☐</td>
             <td class="c">☐</td>
