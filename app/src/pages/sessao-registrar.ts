@@ -197,7 +197,7 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
 
         let registro;
         try {
-          registro = montarRegistro(sessao, ficha, entrada, ctx.agora());
+          registro = montarRegistro(sessao, ficha, entrada, ctx.agora(), anteriores);
         } catch (e) {
           mostrarErro(e instanceof Error ? e.message : ERRO_AO_SALVAR);
           return;

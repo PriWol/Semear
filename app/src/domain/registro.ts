@@ -93,7 +93,7 @@ const ehEngajamento = (v: unknown): v is Engajamento =>
 /**
  * Monta o registro: a sessão atualizada (com a data do registro e os detalhes) e um evento de histórico
  * por marco que o educador marcou. Marco sem escolha não gera evento. Recusa qualquer valor fora dos
- * conjuntos conhecidos. Não altera a sessão recebida. Registrar de novo troca os campos da sessão e
+ * conjuntos conhecidos. Ao corrigir (`anteriores`), só emite evento do marco que mudou. Não altera a sessão recebida. Registrar de novo troca os campos da sessão e
  * acrescenta novos eventos: o histórico nunca é apagado (§4.2).
  */
 export function montarRegistro(
@@ -101,6 +101,8 @@ export function montarRegistro(
   ficha: Observacao[],
   entrada: EntradaRegistro,
   agora: string,
+  /** o que já estava registrado nesta sessão (`observacoesRegistradas`); vazio no primeiro registro */
+  anteriores: Record<string, EstadoMarco> = {},
 ): ResultadoRegistro {
   const chavesDaFicha = new Set(ficha.map((o) => o.chave));
   for (const chave of Object.keys(entrada.estados)) {
@@ -142,12 +144,16 @@ export function montarRegistro(
   if (engajamento !== undefined) registrada.engajamento = engajamento;
   if (anotacoes) registrada.anotacoes = anotacoes;
 
-  const eventos: EventoMarco[] = escolhas.map(({ chave, estado }) => ({
-    criancaId: sessao.criancaId,
-    chave,
-    registro: { estado, atualizadoEm: agora, origem: 'sessao' },
-    sessaoId: sessao.id,
-  }));
+  // Ao corrigir, só o marco cujo estado observado MUDOU gera evento. Reemitir tudo poria observações
+  // velhas depois de um "Está aqui" no histórico e faria o selo voltar sozinho.
+  const eventos: EventoMarco[] = escolhas
+    .filter(({ chave, estado }) => anteriores[chave] !== estado)
+    .map(({ chave, estado }) => ({
+      criancaId: sessao.criancaId,
+      chave,
+      registro: { estado, atualizadoEm: agora, origem: 'sessao' },
+      sessaoId: sessao.id,
+    }));
   return { sessao: registrada, eventos };
 }
 
