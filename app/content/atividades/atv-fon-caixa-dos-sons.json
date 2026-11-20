@@ -1,0 +1,180 @@
+{
+  "id": "atv-fon-caixa-dos-sons",
+  "titulo": "Caixa dos sons",
+  "marcos": ["LG.FON.06"],
+  "revisa": ["LG.FON.04"],
+  "vertentes": ["Clássico", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Atenção: use só peças grandes, que não caibam na boca. Fique junto da criança o tempo todo e não use tesoura com menores de 5 anos sem você segurar o papel.",
+  "objetivo": "A criança **classifica palavras pelo primeiro som**, mesmo quando a letra é diferente.",
+  "passos": [
+    {
+      "titulo": "Preparar as caixas",
+      "minutos": 5,
+      "texto": "Use 3 caixas ou potes, cada um com uma figura-modelo (*mala* para /m/, *sol* para /s/, *faca* para /f/ ou *foca*). A criança fala o nome e o som inicial."
+    },
+    {
+      "titulo": "Guardar as cartas",
+      "minutos": 10,
+      "texto": "Entregue uma carta de cada vez; a criança diz o nome, o som inicial (*mmm*) e coloca na caixa certa. Dica: o som, não a letra (*cebola* vai com *sol*)."
+    },
+    {
+      "titulo": "Conferir juntos",
+      "minutos": 5,
+      "texto": "Abram as caixas e leiam o nome de cada carta em voz alta, com o som inicial alongado."
+    },
+    {
+      "titulo": "Folha: ligue ao som",
+      "minutos": 5,
+      "texto": "Leia as figuras e deixe a criança ligar ao som."
+    }
+  ],
+  "observar": {
+    "consolidado": ["classifica 8 de 10 cartas no som certo", "diz o som inicial em voz alta"],
+    "emDesenvolvimento": [
+      "classifica pela letra e não pelo som (*cebola* na caixa do /k/)",
+      "acerta só com o som alongado pelo adulto"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use duas caixas apenas (/m/ e /s/).",
+    "facil": "Acrescente um quarto som (/v/ ou /ʃ/ de *chave*) e peça uma carta nova de cada caixa."
+  },
+  "materiais": [
+    {
+      "item": "3 caixas ou potes",
+      "deCasa": true
+    },
+    {
+      "item": "Cartas de figuras (recortadas antes)",
+      "deCasa": false
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Tenha uma ordem fixa dos sons trabalhados e revise todo dia, em lições curtas.",
+    "Religioso": "Se a família usa nomes de santos ou festas da tradição, use-os como cartas extras."
+  },
+  "evidencias": [
+    {
+      "texto": "Cartas na caixa certa",
+      "resposta": "_____ de 10   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse o som inicial",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Cartas dos sons",
+      "cartas": [
+        {
+          "emoji": "🧳",
+          "texto": "Mala"
+        },
+        {
+          "emoji": "🪑",
+          "texto": "Mesa"
+        },
+        {
+          "emoji": "🐒",
+          "texto": "Macaco"
+        },
+        {
+          "emoji": "☀️",
+          "texto": "Sol"
+        },
+        {
+          "emoji": "🐸",
+          "texto": "Sapo"
+        },
+        {
+          "emoji": "🧅",
+          "texto": "Cebola"
+        },
+        {
+          "emoji": "🔪",
+          "texto": "Faca"
+        },
+        {
+          "emoji": "🦭",
+          "texto": "Foca"
+        },
+        {
+          "emoji": "🧚",
+          "texto": "Fada"
+        },
+        {
+          "emoji": "🔔",
+          "texto": "Sino"
+        },
+        {
+          "emoji": "🌽",
+          "texto": "Milho"
+        },
+        {
+          "emoji": "🔥",
+          "texto": "Fogo"
+        }
+      ]
+    },
+    {
+      "tipo": "ligar",
+      "titulo": "Ligue a figura ao som",
+      "esquerda": [
+        {
+          "emoji": "🧳",
+          "texto": "Mala"
+        },
+        {
+          "emoji": "☀️",
+          "texto": "Sol"
+        },
+        {
+          "emoji": "🔪",
+          "texto": "Faca"
+        },
+        {
+          "emoji": "🧅",
+          "texto": "Cebola"
+        },
+        {
+          "emoji": "🧚",
+          "texto": "Fada"
+        }
+      ],
+      "direita": [
+        {
+          "emoji": "",
+          "texto": "mmm"
+        },
+        {
+          "emoji": "",
+          "texto": "sss"
+        },
+        {
+          "emoji": "",
+          "texto": "fff"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "revisado",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["som inicial", "caixas", "classificar", "fonema"]
+}

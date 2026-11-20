@@ -1,0 +1,87 @@
+{
+  "id": "atv-fon-letras-moveis-sons",
+  "titulo": "Palavras com letras móveis",
+  "marcos": ["LG.FON.07"],
+  "revisa": ["LG.FON.06"],
+  "vertentes": ["Montessori", "Clássico"],
+  "idade": [6, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Atenção: use só peças grandes, que não caibam na boca. Fique junto da criança o tempo todo e não use tesoura com menores de 5 anos sem você segurar o papel.",
+  "objetivo": "A criança **liga cada som a uma letra** ao montar uma palavra curta.",
+  "passos": [
+    {
+      "titulo": "Escolher a palavra",
+      "minutos": 4,
+      "texto": "Mostre um objeto de 3 sons (*sol*, *mar*, *uva*). A criança diz o nome devagar, separando os sons."
+    },
+    {
+      "titulo": "Montar com letras",
+      "minutos": 10,
+      "texto": "Com o alfabeto móvel ou cartões de letras, a criança monta a palavra som a som. Não corrija a ortografia: o que importa é que cada som tenha uma letra."
+    },
+    {
+      "titulo": "Ler o que montou",
+      "minutos": 6,
+      "texto": "Peça que ela leia o que montou deslizando o dedo. Confira o som de cada letra."
+    },
+    {
+      "titulo": "Folha: desenho da palavra",
+      "minutos": 5,
+      "texto": "A criança desenha o objeto e escreve a palavra do jeito que sabe."
+    }
+  ],
+  "observar": {
+    "consolidado": ["monta palavras de 3 sons com uma letra por som", "lê o que montou"],
+    "emDesenvolvimento": [
+      "monta só a primeira e a última letra",
+      "usa letras que não têm relação com o som"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Dê só as letras da palavra (sem sobras) e comece por palavras de 2 sons.",
+    "facil": "Ofereça letras sobrando e palavras de 4 sons, com sílabas complexas."
+  },
+  "materiais": [
+    {
+      "item": "Letras móveis, cartões ou tampinhas grandes com letras (só peças grandes)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "É o alfabeto móvel: escrever vem antes de ler e a criança monta sem se preocupar com a ortografia certa.",
+    "Clássico": "Lições curtas e diárias, com palavras regulares e ordem fixa dos sons."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras montadas com um som por letra",
+      "resposta": "_____ de 3   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Leu o que montou",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe e escreva a palavra",
+      "legenda": "O adulto confere o som de cada letra com a criança."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "revisado",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["letras móveis", "fonemas", "escrever", "alfabeto móvel"]
+}

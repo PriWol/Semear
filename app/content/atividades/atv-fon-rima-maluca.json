@@ -1,0 +1,141 @@
+{
+  "id": "atv-fon-rima-maluca",
+  "titulo": "Rima maluca",
+  "marcos": ["LG.FON.08", "LG.FON.02"],
+  "revisa": ["LG.FON.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "objetivo": "A criança **inventa** palavras que rimam, percebendo que a rima está no som do final e não no significado.",
+  "passos": [
+    {
+      "titulo": "Eu começo, você termina",
+      "minutos": 6,
+      "texto": "Diga um verso curto e peça o final: *“O gato comeu o…”* (prato!), *“O sapo foi ao…”* (mato!). Aceite qualquer final que rime, mesmo inventado."
+    },
+    {
+      "titulo": "Palavras que rimam com o seu nome",
+      "minutos": 7,
+      "texto": "Procurem juntos palavras (reais ou inventadas) que rimam com o nome da criança e de pessoas da família. Rimas bobas são bem-vindas."
+    },
+    {
+      "titulo": "Jogo da memória das rimas",
+      "minutos": 8,
+      "texto": "Recorte as cartas antes da sessão. O par é formado por duas figuras que **rimam**. Diga o nome de cada carta em voz alta ao virar."
+    },
+    {
+      "titulo": "Folha: desenho da rima",
+      "minutos": 4,
+      "texto": "A criança desenha o par de rima de que mais gostou."
+    }
+  ],
+  "observar": {
+    "consolidado": ["diz uma palavra que rima em 3 de 4 tentativas", "inventa um versinho curto"],
+    "emDesenvolvimento": [
+      "repete a mesma palavra ou diz uma que começa igual",
+      "só rima quando você oferece o começo do verso"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Ofereça duas opções (“pão rima com mão ou com bola?”) antes de pedir que invente.",
+    "facil": "Peça que ela invente uma quadrinha de quatro versos e decore com você."
+  },
+  "materiais": [
+    {
+      "item": "Tesoura sem ponta (para recortar as cartas antes, só o adulto)",
+      "deCasa": false
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Charlotte Mason": "Faça em poucos minutos, sem cobrar, e deixe a criança narrar a quadrinha de volta.",
+    "Clássico": "Registrem as melhores rimas numa folha e releiam nos dias seguintes.",
+    "Religioso": "Pode-se usar rimas ligadas a cantigas ou a versos de tradição da família, se for o caso."
+  },
+  "evidencias": [
+    {
+      "texto": "Rimas inventadas",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Inventou um versinho?",
+      "resposta": "☐ sim: ________________   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Jogo da memória: o par rima!",
+      "cartas": [
+        {
+          "emoji": "🐱",
+          "texto": "Gato"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "Pato"
+        },
+        {
+          "emoji": "⚽",
+          "texto": "Bola"
+        },
+        {
+          "emoji": "🧴",
+          "texto": "Cola"
+        },
+        {
+          "emoji": "🍞",
+          "texto": "Pão"
+        },
+        {
+          "emoji": "✋",
+          "texto": "Mão"
+        },
+        {
+          "emoji": "🐭",
+          "texto": "Rato"
+        },
+        {
+          "emoji": "🍽️",
+          "texto": "Prato"
+        },
+        {
+          "emoji": "🧳",
+          "texto": "Mala"
+        },
+        {
+          "emoji": "🍬",
+          "texto": "Bala"
+        },
+        {
+          "emoji": "🏠",
+          "texto": "Casa"
+        },
+        {
+          "emoji": "🔥",
+          "texto": "Brasa"
+        }
+      ]
+    },
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe duas coisas que rimam",
+      "legenda": "O adulto pode escrever embaixo os nomes que a criança disser."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "revisado",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["rima", "inventar", "quadrinha", "memória"]
+}

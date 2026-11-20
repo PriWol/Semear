@@ -1,0 +1,129 @@
+{
+  "id": "atv-fon-trem-silabas",
+  "titulo": "Trem das sílabas",
+  "marcos": ["LG.FON.03"],
+  "vertentes": ["Montessori", "Clássico", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Atenção: use só peças grandes, que não caibam na boca. Fique junto da criança o tempo todo e não use tesoura com menores de 5 anos sem você segurar o papel.",
+  "objetivo": "A criança relaciona a palavra falada ao **número de pedaços** com algo que ela pode ver e mover.",
+  "passos": [
+    {
+      "titulo": "Montar o trem",
+      "minutos": 5,
+      "texto": "Use blocos, copos de papel ou fichas grandes. Cada peça é um **vagão** (uma sílaba). Diga *“sa-pa-to”* apontando um vagão por pedaço."
+    },
+    {
+      "titulo": "Qual é o trem da palavra?",
+      "minutos": 8,
+      "texto": "Diga uma palavra (*bo-ne-ca*, *gato*, *ba-na-na*) e peça que a criança monte o trem com o número de vagões. Confira juntos falando cada pedaço."
+    },
+    {
+      "titulo": "Trem maior, trem menor",
+      "minutos": 6,
+      "texto": "Mostre duas figuras e pergunte: *“qual palavra tem o trem mais comprido?”*. Dica: não pelo tamanho do objeto, e sim pelo tamanho do nome (*elefante* × *rato*)."
+    },
+    {
+      "titulo": "Folha: ligue ao número de vagões",
+      "minutos": 6,
+      "texto": "Leia o nome de cada figura antes de ela ligar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "monta o trem com o número certo de vagões em 3 de 4 palavras",
+      "diz qual palavra tem mais pedaços"
+    ],
+    "emDesenvolvimento": [
+      "acerta palavras curtas e erra as longas",
+      "confunde tamanho do objeto com tamanho do nome"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só palavras de 2 pedaços e fale cada pedaço junto com ela.",
+    "facil": "Peça que ela invente uma palavra de 5 pedaços (vale palavra inventada)."
+  },
+  "materiais": [
+    {
+      "item": "6 a 10 blocos grandes, copos de papel ou fichas",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe a criança montar e mexer nas peças; o movimento da mão ajuda a pensar.",
+    "Clássico": "Ao final, recitem a lista das palavras que vocês montaram, para fixar.",
+    "Religioso": "Se quiser, monte o trem com palavras ligadas a cantigas ou orações da família."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras montadas corretamente",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse qual tem mais pedaços",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "ligar",
+      "titulo": "Ligue cada figura ao número de vagões",
+      "esquerda": [
+        {
+          "emoji": "🐘",
+          "texto": "Elefante"
+        },
+        {
+          "emoji": "🐱",
+          "texto": "Gato"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "Pato"
+        },
+        {
+          "emoji": "🍌",
+          "texto": "Banana"
+        },
+        {
+          "emoji": "☀️",
+          "texto": "Sol"
+        }
+      ],
+      "direita": [
+        {
+          "emoji": "🚃",
+          "texto": "1 vagão"
+        },
+        {
+          "emoji": "🚃🚃",
+          "texto": "2 vagões"
+        },
+        {
+          "emoji": "🚃🚃🚃",
+          "texto": "3 vagões"
+        },
+        {
+          "emoji": "🚃🚃🚃🚃",
+          "texto": "4 vagões"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "revisado",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["sílabas", "blocos", "trem", "separar palavras"]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "atv-fon-parlenda-completa",
+  "titulo": "Parlenda para completar",
+  "marcos": ["LG.FON.01"],
+  "vertentes": ["Waldorf", "Clássico", "Charlotte Mason", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 20,
+  "preparoMin": 2,
+  "objetivo": "A criança se diverte com o **som** das palavras e completa versos conhecidos, percebendo quando uma rima não combina.",
+  "passos": [
+    {
+      "titulo": "Roda de abertura",
+      "minutos": 4,
+      "texto": "Sentem-se juntos e recitem a parlenda com gestos, bem devagar: *“Batatinha quando nasce, esparrama pelo chão. Menininha quando dorme, põe a mão no coração.”* Repitam duas vezes.",
+      "fala": "Vamos dizer juntos?"
+    },
+    {
+      "titulo": "Falta uma palavra",
+      "minutos": 6,
+      "texto": "Recite de novo e **pare antes da última palavra** de cada verso, com cara de espera. Deixe a criança completar. Se ela não disser, complete você, sem cobrar, e repita."
+    },
+    {
+      "titulo": "A rima trocada",
+      "minutos": 5,
+      "texto": "Diga um verso com a palavra errada de propósito (“esparrama pelo *sapato*”) e faça cara de surpresa. Vale rir junto: perceber que “soou esquisito” é o objetivo.",
+      "fala": "Será que é assim mesmo?"
+    },
+    {
+      "titulo": "Folha: desenho da parlenda",
+      "minutos": 5,
+      "texto": "A criança desenha o que mais gostou da parlenda. Se quiser, escreva embaixo o que ela contar."
+    }
+  ],
+  "observar": {
+    "consolidado": ["completa a parlenda quando você para", "ri ou estranha a rima trocada"],
+    "emDesenvolvimento": [
+      "completa só com ajuda ou depois de ouvir várias vezes",
+      "não percebe a troca, mas gosta de repetir"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só um verso curto e repita todos os dias da semana antes de pedir que complete.",
+    "facil": "Peça que ela invente um gesto para cada verso, ou recite uma parlenda mais longa (“A galinha do vizinho…”)."
+  },
+  "materiais": [
+    {
+      "item": "Uma parlenda conhecida da família (vale a versão da sua região)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou giz de cera",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Waldorf": "Faça como um ritual: mesma parlenda, mesmos gestos, no mesmo horário. A repetição é o centro.",
+    "Clássico": "Recitem juntos até saberem de cor, de modo que o poema fique guardado.",
+    "Charlotte Mason": "Mantenha curto e termine antes que ela se canse; no dia seguinte, comece pelo que ela lembra.",
+    "Religioso": "Se a família tem versos ou cantigas de tradição própria, use-os no lugar da parlenda."
+  },
+  "evidencias": [
+    {
+      "texto": "Completou o verso",
+      "resposta": "☐ sozinha   ☐ com ajuda   ☐ ainda não"
+    },
+    {
+      "texto": "Estranhou a rima trocada",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe o que você mais gostou da parlenda",
+      "legenda": "O adulto pode escrever embaixo o que a criança contar."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "revisado",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["parlenda", "rima", "cantiga", "versos"]
+}
