@@ -39,7 +39,7 @@ jobs:
             quando o arquivo existir, e não contradiga essas decisões. Se a estória já estiver entregue,
             diga isso com a evidência e NÃO peça aprovação.
           claude_args: >-
-            --allowedTools "Bash(gh issue comment:*),Bash(gh issue edit:*),Bash(gh issue view:*),Read,Grep,Glob"
+            --model claude-sonnet-5-5 --allowedTools "Bash(gh issue comment:*),Bash(gh issue edit:*),Bash(gh issue view:*),Read,Grep,Glob"
 
   desenvolver:
     # rótulo `aprovada` (portão 1): plano técnico, desenho, testes, código e PR
@@ -72,4 +72,4 @@ jobs:
             4. Abra o PR em um branch novo com `Closes #${{ github.event.issue.number }}` no corpo.
             Nunca mescle. Se faltar informação, comente na estória e pare.
           claude_args: >-
-            --allowedTools "Edit,Write,Read,Grep,Glob,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(gh pr create:*),Bash(gh issue comment:*),Bash(gh issue view:*)"
+            --model claude-sonnet-5-5 --allowedTools "Edit,Write,Read,Grep,Glob,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(gh pr create:*),Bash(gh issue comment:*),Bash(gh issue view:*)"
