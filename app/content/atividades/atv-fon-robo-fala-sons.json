@@ -1,0 +1,134 @@
+{
+  "id": "atv-fon-robo-fala-sons",
+  "titulo": "O robô que fala devagar",
+  "marcos": ["LG.FON.10"],
+  "revisa": ["LG.FON.06"],
+  "vertentes": ["Montessori", "Clássico", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 25,
+  "preparoMin": 3,
+  "cuidados": "Atenção: é um jogo de voz, então basta ficar por perto. Os 2 ou 3 objetos, se usados, devem ser grandes e sem pontas. Se ela errar, repita os sons mais devagar, sem cobrar.",
+  "objetivo": "A criança **junta sons falados** (/s/ /o/ /l/) para descobrir a palavra, o caminho inverso de ler.",
+  "passos": [
+    {
+      "titulo": "Conhecer o robô",
+      "minutos": 4,
+      "texto": "Diga que você é um robô que fala **devagarzinho, com pausa entre os sons**: */m/ … /a/ … /r/*. Peça que a criança descubra a palavra (*mar*)."
+    },
+    {
+      "titulo": "Adivinhe a palavra",
+      "minutos": 10,
+      "texto": "Fale palavras de 2 a 4 sons: *sol*, *mar*, *fada*, *faca*, *uva*. Se necessário, diminua a pausa. Deixe a criança escolher entre 2 ou 3 objetos reais antes de falar, se preferir."
+    },
+    {
+      "titulo": "Agora você é o robô",
+      "minutos": 6,
+      "texto": "Inverta: a criança fala os sons e você descobre. Erre uma vez de propósito para ela corrigir."
+    },
+    {
+      "titulo": "Folha: ligue o robô à palavra",
+      "minutos": 5,
+      "texto": "Leia os sons de cada robô e deixe a criança ligar à figura."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "junta os sons de 2 em 3 palavras",
+      "troca de papel e fala os sons de uma palavra"
+    ],
+    "emDesenvolvimento": [
+      "diz o som, mas não consegue juntar",
+      "adivinha a palavra por palpite, e não pela junção"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use palavras de 2 sons (*uva*, *ou*) ou 3 (*sol*, *mar*) e deixe as figuras à vista.",
+    "facil": "Use palavras mais longas (*prato*, *bolo*) e peça que ela invente um robô para outras palavras."
+  },
+  "materiais": [
+    {
+      "item": "2 ou 3 objetos reais grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "O jogo do “eu vejo” com sons separados: três objetos na mesa e a criança escolhe o que o robô disse.",
+    "Clássico": "Registre numa lista as palavras que ela já consegue juntar e revise todo dia.",
+    "Religioso": "Se a família quiser, use nomes de pessoas ou festas da tradição de vocês como palavras do robô."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras juntadas corretamente",
+      "resposta": "_____ de 3   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Foi o robô e falou os sons",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "ligar",
+      "titulo": "Ligue o robô à palavra",
+      "esquerda": [
+        {
+          "emoji": "🤖",
+          "texto": "/s/ /o/ /l/"
+        },
+        {
+          "emoji": "🤖",
+          "texto": "/m/ /a/ /r/"
+        },
+        {
+          "emoji": "🤖",
+          "texto": "/f/ /a/ /k/ /a/"
+        },
+        {
+          "emoji": "🤖",
+          "texto": "/u/ /v/ /a/"
+        },
+        {
+          "emoji": "🤖",
+          "texto": "/f/ /o/ /k/ /a/"
+        }
+      ],
+      "direita": [
+        {
+          "emoji": "☀️",
+          "texto": "Sol"
+        },
+        {
+          "emoji": "🌊",
+          "texto": "Mar"
+        },
+        {
+          "emoji": "🔪",
+          "texto": "Faca"
+        },
+        {
+          "emoji": "🍇",
+          "texto": "Uva"
+        },
+        {
+          "emoji": "🦭",
+          "texto": "Foca"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["fonemas", "juntar sons", "robô", "síntese"]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "atv-fon-troca-troca",
+  "titulo": "Troca-troca de sílabas",
+  "marcos": ["LG.FON.05"],
+  "revisa": ["LG.FON.04"],
+  "vertentes": ["Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [5, 8],
+  "duracaoMin": 24,
+  "preparoMin": 3,
+  "cuidados": "Atenção: fique junto da criança e use lápis ou giz só com supervisão. Palavra maluca é brincadeira: não corrija nem cobre, e pare se ela se cansar.",
+  "objetivo": "A criança **troca uma sílaba por outra** e percebe que muda a palavra inteira.",
+  "passos": [
+    {
+      "titulo": "Aquecimento",
+      "minutos": 4,
+      "texto": "Brinque de repetir palavras com palmas: *bo-ta*, *ca-ma*, *pa-ne-la*."
+    },
+    {
+      "titulo": "Troque o pedaço",
+      "minutos": 8,
+      "texto": "Diga: *“troque o BO de BOTA por RO”* (*ROTA*). Outros: *MALA → SALA*, *CAMA → LAMA*, *BOLA → COLA*. Aceite palavras inventadas."
+    },
+    {
+      "titulo": "Palavra maluca",
+      "minutos": 6,
+      "texto": "Crie palavras de mentira trocando uma sílaba (*sapato → sapalo*) e rindo juntos; peça que ela descubra a palavra de verdade."
+    },
+    {
+      "titulo": "Folha: desenho da palavra trocada",
+      "minutos": 6,
+      "texto": "A criança desenha uma das palavras novas (*rota, sala, lama*)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "troca a sílaba em 3 de 4 desafios",
+      "descobre a palavra de verdade por trás da maluca"
+    ],
+    "emDesenvolvimento": [
+      "acerta só com apoio visual",
+      "troca de lugar as sílabas em vez de substituir"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Volte para tirar e juntar sílabas (atividade *Sapataria*) com palavras de 2 sílabas.",
+    "facil": "Peça que ela invente uma troca e desafie você."
+  },
+  "materiais": [
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    },
+    {
+      "item": "Papel",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Como um jogo de partes e regras da língua, com ordem e repetição.",
+    "Religioso": "Pode-se usar palavras ligadas à tradição da família (nomes de pessoas, festas), em tom de brincadeira.",
+    "Charlotte Mason": "Poucos desafios, atenção plena e fim antes do cansaço."
+  },
+  "evidencias": [
+    {
+      "texto": "Trocas acertadas",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Descobriu a palavra de verdade",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Desenhe uma palavra que você trocou",
+      "legenda": "O adulto escreve o nome embaixo."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["trocar sílaba", "palavra maluca", "manipular sílabas"]
+}

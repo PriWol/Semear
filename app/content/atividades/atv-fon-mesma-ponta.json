@@ -1,0 +1,128 @@
+{
+  "id": "atv-fon-mesma-ponta",
+  "titulo": "A mesma pontinha",
+  "marcos": ["LG.FON.09"],
+  "revisa": ["LG.FON.04"],
+  "vertentes": ["Montessori", "Clássico"],
+  "idade": [5, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Atenção: use figuras ou objetos grandes, que não caibam na boca, e fique junto da criança. Se for recortar figuras, só o adulto usa a tesoura, antes da sessão.",
+  "objetivo": "A criança percebe que palavras diferentes podem **terminar com o mesmo pedaço** (gaTO, paTO), ligando a rima à sílaba final.",
+  "passos": [
+    {
+      "titulo": "Olhar o fim",
+      "minutos": 5,
+      "texto": "Mostre *gato* e *pato*. Diga bem alongado o final (*gaaa-TO, paaa-TO*) e pergunte: *“terminam igual?”*."
+    },
+    {
+      "titulo": "Qual termina diferente?",
+      "minutos": 8,
+      "texto": "Mostre três figuras (*gato, pato, bola*; *copo, sapo, mesa*) e peça que a criança aponte qual termina diferente."
+    },
+    {
+      "titulo": "Monte a família da pontinha",
+      "minutos": 6,
+      "texto": "Escolha uma pontinha (*TO*) e procurem juntos palavras que terminam com ela (*gato, pato, prato, rato, sapato*)."
+    },
+    {
+      "titulo": "Folha: pinte os que terminam igual",
+      "minutos": 6,
+      "texto": "Leia a palavra-modelo e marque a sílaba final com um traço no ar."
+    }
+  ],
+  "observar": {
+    "consolidado": ["acerta 3 de 4 trios", "diz outra palavra que termina igual"],
+    "emDesenvolvimento": [
+      "escolhe pelo começo e não pelo fim",
+      "acerta só quando você alonga o final"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 pares com finais muito diferentes e fale devagar.",
+    "facil": "Peça que ela invente uma frase em que todas as palavras terminem com o mesmo pedaço."
+  },
+  "materiais": [
+    {
+      "item": "Figuras ou objetos pequenos e grandes (sem peças pequenas)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Com objetos reais, passe o dedo no ar pelo pedaço final enquanto fala.",
+    "Clássico": "Ao fim, recitem juntos a lista dos “primos” da pontinha."
+  },
+  "evidencias": [
+    {
+      "texto": "Trios acertados",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse outra palavra que termina igual",
+      "resposta": "☐ sim: ________________   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "marcar",
+      "titulo": "Pinte os que terminam como…",
+      "grupos": [
+        {
+          "modelo": {
+            "emoji": "🐱",
+            "texto": "ga · TO"
+          },
+          "itens": [
+            {
+              "emoji": "🦆",
+              "texto": "Pato"
+            },
+            {
+              "emoji": "⚽",
+              "texto": "Bola"
+            },
+            {
+              "emoji": "🍽️",
+              "texto": "Prato"
+            }
+          ]
+        },
+        {
+          "modelo": {
+            "emoji": "⚽",
+            "texto": "bo · LA"
+          },
+          "itens": [
+            {
+              "emoji": "🧴",
+              "texto": "Cola"
+            },
+            {
+              "emoji": "🏠",
+              "texto": "Casa"
+            },
+            {
+              "emoji": "🐴",
+              "texto": "Sela"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["sílaba final", "termina igual", "rima", "fim da palavra"]
+}

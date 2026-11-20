@@ -1,0 +1,134 @@
+{
+  "id": "atv-fon-sapataria-silabas",
+  "titulo": "Sapataria: tira e junta sílabas",
+  "marcos": ["LG.FON.05"],
+  "revisa": ["LG.FON.04"],
+  "vertentes": ["Clássico", "Montessori", "Charlotte Mason"],
+  "idade": [5, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Atenção: faça as fichas de papelão ou papel grosso, grandes o bastante para não irem à boca (nada de botões). Se for recortar, só o adulto, antes da sessão. Fique por perto aos 5 anos e sem placar.",
+  "objetivo": "A criança **tira e junta sílabas** oralmente, tratando-as como peças que se movem.",
+  "passos": [
+    {
+      "titulo": "Montar o nome",
+      "minutos": 5,
+      "texto": "Use fichas (uma por sílaba): *SA* + *PA* + *TO*. A criança fala cada pedaço enquanto desliza uma ficha."
+    },
+    {
+      "titulo": "Tira uma sílaba",
+      "minutos": 8,
+      "texto": "Peça: *“diga SAPATO sem SA”* e deixe a criança tirar a ficha e dizer o que sobra (*PATO*). Depois *“cama sem CA”* (*MA*), *“boneca sem BO”* (*NECA*)."
+    },
+    {
+      "titulo": "Junta duas sílabas",
+      "minutos": 6,
+      "texto": "Diga *BO + LA* e peça a palavra. Repita com 3 pares. Se travar, mostre as fichas juntas."
+    },
+    {
+      "titulo": "Folha: ligue as sílabas",
+      "minutos": 6,
+      "texto": "Leia em voz alta os pedaços antes de ela ligar para formar a palavra."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "acerta 3 de 4 desafios de tirar ou juntar",
+      "diz o que sobra sem recomeçar a palavra"
+    ],
+    "emDesenvolvimento": [
+      "acerta só os desafios mais fáceis, com fichas",
+      "precisa dizer a palavra inteira de novo antes de responder"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique só em palavras de 2 sílabas e deixe as fichas à vista.",
+    "facil": "Proponha trocar uma sílaba (*bota → bola*) e peça uma palavra inventada."
+  },
+  "materiais": [
+    {
+      "item": "Fichas ou papeizinhos grandes (uma por sílaba)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Mostre que a palavra é feita de partes que se combinam; é o começo do pensamento sobre a língua como sistema.",
+    "Montessori": "Prefira fichas de madeira ou papelão grosso, que ela possa pegar e arrumar.",
+    "Charlotte Mason": "Mantenha curto, com poucas palavras, e peça no fim que ela conte qual foi mais divertida."
+  },
+  "evidencias": [
+    {
+      "texto": "Desafios acertados",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse o que sobra sem recomeçar",
+      "resposta": "☐ sim   ☐ não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "ligar",
+      "titulo": "Ligue a segunda sílaba que completa a palavra",
+      "esquerda": [
+        {
+          "emoji": "🛏️",
+          "texto": "CA"
+        },
+        {
+          "emoji": "⚽",
+          "texto": "BO"
+        },
+        {
+          "emoji": "🐱",
+          "texto": "GA"
+        },
+        {
+          "emoji": "🥤",
+          "texto": "CO"
+        },
+        {
+          "emoji": "🪑",
+          "texto": "ME"
+        }
+      ],
+      "direita": [
+        {
+          "emoji": "",
+          "texto": "LA"
+        },
+        {
+          "emoji": "",
+          "texto": "SA"
+        },
+        {
+          "emoji": "",
+          "texto": "MA"
+        },
+        {
+          "emoji": "",
+          "texto": "PO"
+        },
+        {
+          "emoji": "",
+          "texto": "TO"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-20"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-20"
+  },
+  "palavrasChave": ["manipular sílabas", "tirar sílaba", "juntar sílaba", "fichas"]
+}
