@@ -44,14 +44,23 @@ jobs:
       - name: Baixar os PDFs do Tesouro
         run: |
           mkdir -p dist/tesouro
-          for arquivo in $(node -e "for (const v of require('./content/tesouro.json').volumes) console.log(v.arquivo.replace('tesouro/', ''))"); do
+          # Volumes e cadernos para 2 anos (ADR 0015, adendo): uma linha "arquivo paginas" por PDF.
+          node -e "const c = require('./content/tesouro.json'); for (const v of [...c.volumes, ...c.cadernos]) console.log(v.arquivo.replace('tesouro/', ''), v.paginas)" > ../lista-tesouro.txt
+          while read -r arquivo paginas; do
             # O nome vem do catálogo: só nome simples de PDF, nunca caminho (../) nem espaço.
             echo "$arquivo" | grep -Eq '^[A-Za-z0-9._-]+\.pdf$' && [ "${arquivo#*..}" = "$arquivo" ]
             curl --fail --silent --show-error --location --retry 3 \
               --output "dist/tesouro/$arquivo" \
               "https://github.com/${{ github.repository }}/releases/download/tesouro-marina/$arquivo"
             head -c 5 "dist/tesouro/$arquivo" | grep -q '^%PDF-'
-          done
+            # Confere a paginação do catálogo com o PDF; sem pdfinfo no runner, só avisa.
+            if command -v pdfinfo > /dev/null; then
+              reais=$(pdfinfo "dist/tesouro/$arquivo" | awk '/^Pages:/ {print $2}')
+              [ "$reais" = "$paginas" ] || { echo "::error::$arquivo tem $reais páginas; o catálogo diz $paginas"; exit 1; }
+            else
+              echo "::warning::pdfinfo ausente; páginas de $arquivo não conferidas"
+            fi
+          done < ../lista-tesouro.txt
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: app/dist
