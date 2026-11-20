@@ -178,6 +178,16 @@ relata um problema, a primeira pergunta é "em qual versão?".
 Os endereços das telas ficam como `…/#/jornada/ana`. Isso permite publicar o app em qualquer
 hospedagem simples (como o GitHub Pages) sem erros ao recarregar. (ADR 0008)
 
+### Termos de uso e política de privacidade
+São duas páginas curtas, ligadas no rodapé de todas as telas e na boas-vindas, que dizem à família o
+que o app faz com os dados dela e em que condições é oferecido. Elas só valem se **cada afirmação for
+verdadeira frente ao código**: "nada vai a servidor" depende de não haver `fetch` nem analytics;
+"apagar tudo" depende de `apagarTudo` limpar mesmo todas as lojas do banco; "as letras ficam
+guardadas" depende do cache do service worker. Por isso, mudou o comportamento (conta, servidor,
+nova loja de dados, nova chamada externa), muda o texto no mesmo PR. A versão atual é inicial e não
+teve revisão jurídica; não promete preço, plano nem prazo, só diz que haverá aviso antes de
+qualquer cobrança. (#25)
+
 ---
 
 ## 6. Glossário rápido
