@@ -26,6 +26,8 @@ export interface CadernoTesouro {
   id: string;
   titulo: string;
   subtitulo: string;
+  /** aviso de saúde mostrado no cartão (orientações ainda sem conferência profissional) */
+  aviso: string;
   arquivo: string;
   paginas: number;
   unidades: UnidadeTesouro[];

@@ -42,12 +42,14 @@ jobs:
       # pelo próprio site (mesma origem, abrem na página certa). Release pública: sem token.
       # A lista sai do catálogo app/content/tesouro.json, para site e catálogo não divergirem.
       - name: Baixar os PDFs do Tesouro
+        env:
+          REPO: ${{ github.repository }}
         run: |
           mkdir -p dist/tesouro
           # A conferência de páginas precisa do pdfinfo (poppler-utils); sem ele o passo falha, não pula.
           command -v pdfinfo > /dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils; } || { echo "::error::não foi possível instalar o pdfinfo (poppler-utils)"; exit 1; }
           # Volumes e cadernos para 2 anos (ADR 0015, adendo): uma linha "arquivo paginas" por PDF.
-          node -e "const c = require('./content/tesouro.json'); for (const v of [...c.volumes, ...c.cadernos]) console.log(v.arquivo.replace('tesouro/', ''), v.paginas)" > ../lista-tesouro.txt
+          node -e "const c = require('./content/tesouro.json'); for (const v of [...c.volumes, ...c.cadernos]) console.log(v.arquivo.replace('tesouro/', ''), v.paginas)" > "$RUNNER_TEMP/lista-tesouro.txt"
           while read -r arquivo paginas; do
             # O nome vem do catálogo: só nome simples de PDF, nunca caminho (../) nem espaço.
             if ! echo "$arquivo" | grep -Eq '^[A-Za-z0-9._-]+\.pdf$' || [[ "$arquivo" == *..* ]]; then
@@ -55,12 +57,12 @@ jobs:
             fi
             curl --fail --silent --show-error --location --retry 3 \
               --output "dist/tesouro/$arquivo" \
-              "https://github.com/${{ github.repository }}/releases/download/tesouro-marina/$arquivo"
+              "https://github.com/$REPO/releases/download/tesouro-marina/$arquivo"
             head -c 5 "dist/tesouro/$arquivo" | grep -q '^%PDF-'
             # Confere a paginação do catálogo com a do PDF.
             reais=$(pdfinfo "dist/tesouro/$arquivo" | awk '/^Pages:/ {print $2}')
             [ "$reais" = "$paginas" ] || { echo "::error::$arquivo tem $reais páginas; o catálogo diz $paginas"; exit 1; }
-          done < ../lista-tesouro.txt
+          done < "$RUNNER_TEMP/lista-tesouro.txt"
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: app/dist

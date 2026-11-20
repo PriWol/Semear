@@ -3,6 +3,8 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { carregarConteudo } from '../src/conteudo';
 import { CADERNOS, enderecoDoMaterial, enderecoDoPdf, VOLUMES } from '../src/tesouro';
+import { cartaoDoCaderno, rotuloAcompanha } from '../src/pages/biblioteca';
+import type { CadernoTesouro } from '../src/tesouro';
 import { rotuloDoMaterial } from '../src/domain/material';
 import { gerarPacote } from '../src/pacote/gerar';
 import { atividade, crianca, familia } from './fabricas';
@@ -117,6 +119,33 @@ describe('catálogo: volumes 6 e 7 e cadernos (estória #109)', () => {
     expect(u9.paginas).toEqual([54, 59]);
   });
 
+  it('só as 8 unidades do caderno de atividades têm `volume`', () => {
+    for (const v of VOLUMES)
+      for (const u of v.unidades) expect(u.volume, `V${v.numero}`).toBeUndefined();
+    const ingles = CADERNOS.find((x) => x.id === 'ingles-2-anos')!;
+    for (const u of ingles.unidades) expect(u.volume).toBeUndefined();
+    const ativ = CADERNOS.find((x) => x.id === 'atividades-2-anos')!;
+    expect(ativ.unidades.every((u) => Number.isInteger(u.volume))).toBe(true);
+  });
+
+  it('páginas totais são inteiros positivos e os cadernos são de 2 anos', () => {
+    for (const x of TODOS) {
+      expect(Number.isInteger(x.paginas) && x.paginas > 0, x.arquivo).toBe(true);
+    }
+    for (const c of CADERNOS) {
+      expect(c.titulo.trim(), c.id).not.toBe('');
+      expect(c.subtitulo, c.id).toContain('2 anos');
+    }
+  });
+
+  it('o rótulo "acompanha" avisa quando o volume ainda não está no catálogo', () => {
+    const existentes = VOLUMES.map((v) => v.numero);
+    expect(rotuloAcompanha(7, existentes)).toBe('acompanha o Volume 7');
+    expect(rotuloAcompanha(8, existentes)).toBe(
+      'acompanha o Volume 8 (ainda não disponível no app)',
+    );
+  });
+
   it('o caderno de atividades acompanha os volumes 1 a 8, um por unidade', () => {
     const c = CADERNOS.find((x) => x.id === 'atividades-2-anos')!;
     expect(c.unidades.map((u) => u.volume)).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
@@ -147,6 +176,35 @@ describe('catálogo: volumes 6 e 7 e cadernos (estória #109)', () => {
       expect(fonte, script).toContain(`"${nome}-tela"`);
       expect(workflow, script).toContain(`python3 ${script}`);
     }
+  });
+});
+
+describe('cadernos: título e aviso vêm do próprio catálogo (estória #109)', () => {
+  it('todo caderno tem título, subtítulo e um aviso de saúde que cita o pediatra', () => {
+    for (const c of CADERNOS) {
+      expect(c.titulo.trim(), c.id).not.toBe('');
+      expect(c.subtitulo.trim(), c.id).not.toBe('');
+      expect(c.aviso.trim(), c.id).not.toBe('');
+      expect(c.aviso, c.id).toContain('pediatra');
+    }
+  });
+
+  it('um caderno de id desconhecido aparece com o título e o aviso dele, não de outro', () => {
+    const novo: CadernoTesouro = {
+      id: 'matematica-3-anos',
+      titulo: 'Caderno de contas',
+      subtitulo: '3 anos',
+      aviso: 'Aviso próprio do caderno novo, fale com o pediatra.',
+      arquivo: 'tesouro/caderno-contas-tela.pdf',
+      paginas: 10,
+      unidades: [{ numero: 1, titulo: 'Somar', paginas: [2, 5] }],
+    };
+    const saida = cartaoDoCaderno(novo).toString();
+    expect(saida).toContain('Caderno de contas · 3 anos');
+    expect(saida).toContain('Aviso próprio do caderno novo, fale com o pediatra.');
+    expect(saida).toContain('tesouro/caderno-contas-tela.pdf#page=2');
+    expect(saida).not.toContain('Caderno de atividades');
+    expect(saida).not.toContain('fonoaudióloga');
   });
 });
 

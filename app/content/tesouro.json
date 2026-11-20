@@ -345,8 +345,9 @@
   "cadernos": [
     {
       "id": "atividades-2-anos",
-      "titulo": "Caderno de atividades da Marina",
+      "titulo": "Caderno de atividades",
       "subtitulo": "2 anos",
+      "aviso": "Estas orientações ainda não foram conferidas por um profissional de saúde. Não substituem o pediatra; em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com ele.",
       "arquivo": "tesouro/caderno-tela.pdf",
       "paginas": 84,
       "unidades": [
@@ -402,8 +403,9 @@
     },
     {
       "id": "ingles-2-anos",
-      "titulo": "Caderno de inglês da Marina",
+      "titulo": "Caderno de inglês",
       "subtitulo": "2 anos",
+      "aviso": "Estas orientações ainda não foram conferidas por um profissional de saúde. Não substituem o pediatra; em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com ele ou com uma fonoaudióloga que acompanhe crianças bilíngues.",
       "arquivo": "tesouro/caderno-ingles-tela.pdf",
       "paginas": 90,
       "unidades": [

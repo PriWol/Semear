@@ -78,8 +78,12 @@ test('Biblioteca traz os cadernos para 2 anos, com aviso de saúde e sem chamada
   const atividades = page.locator('section.cartao', {
     has: page.getByRole('heading', { name: 'Caderno de atividades · 2 anos' }),
   });
-  for (let n = 1; n <= 8; n++)
+  for (let n = 1; n <= 7; n++)
     await expect(atividades.getByText(`acompanha o Volume ${n}`, { exact: false })).toHaveCount(1);
+  // O Volume 8 é planejado e ainda não está no app: a unidade 8 avisa.
+  await expect(
+    atividades.getByText('acompanha o Volume 8 (ainda não disponível no app)', { exact: false }),
+  ).toHaveCount(1);
   await expect(page.getByText('acompanha o Volume')).toHaveCount(8);
   await expect(page.getByRole('link', { name: /Unidade 6 · Animals/ })).toHaveAttribute(
     'href',

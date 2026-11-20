@@ -7,10 +7,6 @@ import type { CadernoTesouro, UnidadeTesouro, VolumeTesouro } from '../tesouro';
 // adendo; ADR 0021 e 0026): o aviso fica à vista, acima dos cartões e dentro de cada um.
 const AVISO_SAUDE =
   'Os cadernos trazem orientações sobre a fase do “não”, atenção curta e desenvolvimento que ainda não foram conferidas por um profissional de saúde. Não substituem o pediatra; em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com ele.';
-const AVISO_INGLES =
-  'Estas orientações ainda não foram conferidas por um profissional de saúde. Não substituem o pediatra; em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com ele ou com uma fonoaudióloga que acompanhe crianças bilíngues.';
-const AVISO_ATIVIDADES =
-  'Estas orientações ainda não foram conferidas por um profissional de saúde. Não substituem o pediatra; em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com ele.';
 
 interface DadosCartao {
   titulo: string;
@@ -20,6 +16,13 @@ interface DadosCartao {
   aviso?: string;
   /** nível do título: cartões de volume são h2; os de caderno ficam sob o h2 da seção */
   nivel: 2 | 3;
+}
+
+/** Texto de "acompanha o Volume N"; o Volume 8 está planejado mas ainda não existe no catálogo (ADR 0015, adendo). */
+export function rotuloAcompanha(volume: number, existentes: readonly number[]): string {
+  return existentes.includes(volume)
+    ? `acompanha o Volume ${volume}`
+    : `acompanha o Volume ${volume} (ainda não disponível no app)`;
 }
 
 function cartao(c: DadosCartao) {
@@ -39,7 +42,14 @@ function cartao(c: DadosCartao) {
               >Unidade ${u.numero} · ${u.titulo}</a
             >
             <span class="nota">p. ${u.paginas[0]}–${u.paginas[1]}</span>
-            ${u.volume ? html`<span class="nota"> · acompanha o Volume ${u.volume}</span>` : ''}
+            ${
+              u.volume
+                ? html`<span class="nota"> · ${rotuloAcompanha(
+                    u.volume,
+                    VOLUMES.map((v) => v.numero),
+                  )}</span>`
+                : ''
+            }
           </li>`,
       )}
     </ul>
@@ -54,17 +64,17 @@ const doVolume = (v: VolumeTesouro): DadosCartao => ({
   nivel: 2,
 });
 
-const doCaderno = (c: CadernoTesouro): DadosCartao => {
-  const ingles = c.id === 'ingles-2-anos';
-  return {
-    titulo: `${ingles ? 'Caderno de inglês' : 'Caderno de atividades'} · ${c.subtitulo}`,
+/** Cartão de um caderno: título e aviso saem do próprio catálogo, sem tratar ids à parte. */
+export function cartaoDoCaderno(c: CadernoTesouro) {
+  return cartao({
+    titulo: `${c.titulo} · ${c.subtitulo}`,
     arquivo: c,
     botao: 'Abrir o caderno',
     unidades: c.unidades,
     nivel: 3,
-    aviso: ingles ? AVISO_INGLES : AVISO_ATIVIDADES,
-  };
-};
+    aviso: c.aviso,
+  });
+}
 
 /** Biblioteca: abre os volumes e cadernos d'O Grande Tesouro de Marina direto na unidade (ADR 0015). */
 export const paginaBiblioteca: FabricaPagina = async () => ({
@@ -78,5 +88,5 @@ export const paginaBiblioteca: FabricaPagina = async () => ({
     ${VOLUMES.map((v) => cartao(doVolume(v)))}
     <h2>Cadernos para 2 anos</h2>
     <div class="alerta" role="note"><p>${AVISO_SAUDE}</p></div>
-    ${CADERNOS.map((c) => cartao(doCaderno(c)))}`,
+    ${CADERNOS.map(cartaoDoCaderno)}`,
 });
