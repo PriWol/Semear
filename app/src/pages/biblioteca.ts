@@ -18,11 +18,13 @@ interface DadosCartao {
   botao: string;
   unidades: UnidadeTesouro[];
   aviso?: string;
+  /** nível do título: cartões de volume são h2; os de caderno ficam sob o h2 da seção */
+  nivel: 2 | 3;
 }
 
 function cartao(c: DadosCartao) {
   return html`<section class="cartao">
-    <h2>${c.titulo}</h2>
+    ${c.nivel === 2 ? html`<h2>${c.titulo}</h2>` : html`<h3>${c.titulo}</h3>`}
     ${c.aviso ? html`<p class="nota">${c.aviso}</p>` : ''}
     <p>
       <a class="botao primario" href="${enderecoDoPdf(c.arquivo)}" target="_blank" rel="noopener"
@@ -49,6 +51,7 @@ const doVolume = (v: VolumeTesouro): DadosCartao => ({
   arquivo: v,
   botao: 'Abrir o volume',
   unidades: v.unidades,
+  nivel: 2,
 });
 
 const doCaderno = (c: CadernoTesouro): DadosCartao => {
@@ -58,6 +61,7 @@ const doCaderno = (c: CadernoTesouro): DadosCartao => {
     arquivo: c,
     botao: 'Abrir o caderno',
     unidades: c.unidades,
+    nivel: 3,
     aviso: ingles ? AVISO_INGLES : AVISO_ATIVIDADES,
   };
 };
@@ -73,6 +77,6 @@ export const paginaBiblioteca: FabricaPagina = async () => ({
     </p>
     ${VOLUMES.map((v) => cartao(doVolume(v)))}
     <h2>Cadernos para 2 anos</h2>
-    <p class="nota">${AVISO_SAUDE}</p>
+    <div class="alerta" role="note"><p>${AVISO_SAUDE}</p></div>
     ${CADERNOS.map((c) => cartao(doCaderno(c)))}`,
 });

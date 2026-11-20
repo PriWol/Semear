@@ -31,9 +31,56 @@ test('Biblioteca traz os cadernos para 2 anos, com aviso de saúde e sem chamada
   await expect(page.getByRole('heading', { name: 'Cadernos para 2 anos' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Caderno de atividades · 2 anos' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Caderno de inglês · 2 anos' })).toBeVisible();
+  // Aviso de saúde: 1 na seção (destacado, role note) + 1 em cada um dos 2 cartões.
+  const aviso = /ainda não foram conferidas por um profissional de saúde/;
+  await expect(page.getByText(aviso)).toHaveCount(3);
+  await expect(page.locator('div.alerta[role="note"]').getByText(aviso)).toBeVisible();
+  for (const nome of ['Caderno de atividades · 2 anos', 'Caderno de inglês · 2 anos'])
+    await expect(
+      page
+        .locator('section.cartao', { has: page.getByRole('heading', { name: nome }) })
+        .getByText(aviso),
+    ).toHaveCount(1);
+  // Hierarquia: seção em h2, cartões dos cadernos em h3; volumes continuam h2.
   await expect(
-    page.getByText(/ainda não foram conferidas por um profissional de saúde/).first(),
+    page.getByRole('heading', { name: 'Caderno de inglês · 2 anos', level: 3 }),
   ).toBeVisible();
+  await expect(page.getByRole('heading', { name: /^Volume 6 /, level: 2 })).toBeVisible();
+  // Botões de abrir com o endereço certo.
+  const arquivos: Record<string, string> = {
+    'Volume 1 ': 'volume1',
+    'Volume 2 ': 'volume2',
+    'Volume 3 ': 'volume3',
+    'Volume 4 ': 'volume4',
+    'Volume 5 ': 'volume5',
+    'Volume 6 ': 'volume6',
+    'Volume 7 ': 'volume7',
+  };
+  for (const [titulo, base] of Object.entries(arquivos))
+    await expect(
+      page
+        .locator('section.cartao', {
+          has: page.getByRole('heading', { name: new RegExp(`^${titulo}`) }),
+        })
+        .getByRole('link', { name: 'Abrir o volume' }),
+    ).toHaveAttribute('href', `tesouro/${base}-tela.pdf#page=1`);
+  const cadernos: Record<string, string> = {
+    'Caderno de atividades · 2 anos': 'caderno-tela',
+    'Caderno de inglês · 2 anos': 'caderno-ingles-tela',
+  };
+  for (const [titulo, base] of Object.entries(cadernos))
+    await expect(
+      page
+        .locator('section.cartao', { has: page.getByRole('heading', { name: titulo }) })
+        .getByRole('link', { name: 'Abrir o caderno' }),
+    ).toHaveAttribute('href', `tesouro/${base}.pdf#page=1`);
+  // O caderno de atividades diz qual volume cada unidade acompanha.
+  const atividades = page.locator('section.cartao', {
+    has: page.getByRole('heading', { name: 'Caderno de atividades · 2 anos' }),
+  });
+  for (let n = 1; n <= 8; n++)
+    await expect(atividades.getByText(`acompanha o Volume ${n}`, { exact: false })).toHaveCount(1);
+  await expect(page.getByText('acompanha o Volume')).toHaveCount(8);
   await expect(page.getByRole('link', { name: /Unidade 6 · Animals/ })).toHaveAttribute(
     'href',
     'tesouro/caderno-ingles-tela.pdf#page=58',
