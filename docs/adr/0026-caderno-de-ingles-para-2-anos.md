@@ -32,7 +32,7 @@ O texto de apoio é em português; as falas são em inglês e marcadas com `lang
 ## Pendências
 - [ ] Conferir com um pediatra ou uma fonoaudióloga que acompanhe crianças bilíngues as orientações da carta e da página “Como funciona” (fase do “não”, atenção curta, quando procurar ajuda), **antes de vender ou divulgar o caderno**. A dona do produto liberou o PDF na Release antes disso e fará a conferência manualmente.
 - [ ] Conferir a letra das rimas tradicionais com a versão que a família usa.
-- O caderno não faz parte do app: `docs/JORNADA_SPEC.md` não é alterada.
+- O caderno aparece na Biblioteca do app (adendo de 2026-11-20 ao ADR 0015), com aviso de saúde; a jornada e `docs/JORNADA_SPEC.md` não são alteradas.
 
 ## Regras verificadas por teste
 `test_caderno_ingles.py` confere, página a página: o aviso de supervisão em toda atividade que usa água (e na unidade do banho inteira), o aviso de engasgo em toda atividade de comida, quatro ou mais rimas e duas atividades de acalmar por unidade, um livro por unidade presente na lista de livros, cada rima nos créditos da sua origem, a ausência das cantigas vetadas pelo ADR 0021, e o total de 90 páginas (par).

@@ -16,7 +16,7 @@ dentro de `app/` e abra um PR.
 | `sondagem.json`         | Itens da sondagem impressa (#17): um por marco de LG.FON e MA.SEN.                                   |
 | `livros.json`           | Curadoria de livros, obras e músicas (ver abaixo). `editora` e `linkCompra` são opcionais; só https. |
 | `acervo.json`           | Acervo gratuito (domínio público/licença aberta), ADR 0016.                                          |
-| `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes e unidades; ADR 0015).                                |
+| `tesouro.json`          | Catálogo d'O Grande Tesouro de Marina (volumes, cadernos para 2 anos e unidades; ADR 0015).          |
 
 ## Revisão do conteúdo
 

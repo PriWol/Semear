@@ -30,7 +30,7 @@ Opção 3, mais as mudanças de modelo abaixo.
   Só no modo "equilibrado": com linhas de foco escolhidas à mão, nada é acrescentado. O "Trocar" percorre as outras complementares.
 - **Catálogo** `app/content/tesouro.json`: volumes, arquivo e unidades com páginas. Um teste confere que cada
   `materialImpresso` aponta para uma unidade do catálogo.
-- **Biblioteca com os volumes 1 a 5:** todos aparecem na Biblioteca e são baixados no deploy (cerca de 130 MB de PDFs `*-tela`; o Volume 5 entrou depois do piloto, com 20 MB). Só o Volume 4 tem atividades ligadas (piloto); os demais ficam disponíveis para consulta.
+- **Biblioteca com os volumes 1 a 5:** todos aparecem na Biblioteca e são baixados no deploy (cerca de 237 MB de PDFs (ver o adendo de 2026-11-20) `*-tela`; o Volume 5 entrou depois do piloto, com 20 MB). Só o Volume 4 tem atividades ligadas (piloto); os demais ficam disponíveis para consulta.
 - **Site:** o workflow `publicar-site.yml` baixa, para `dist/tesouro/`, os PDFs `*-tela` listados no catálogo,
   a partir da Release pública `tesouro-marina`, e confere o cabeçalho `%PDF-`. O service worker não os guarda
   no cache offline nem responde por eles (`navigateFallbackDenylist`). É preciso estar online ou ter baixado o arquivo.
@@ -52,3 +52,19 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - O catálogo é mantido à mão neste piloto; se os volumes mudarem de paginação, atualize o catálogo e rode `npm run check`.
 - Se a criança não tem atividade da jornada disponível, a sessão pode ser só a complementar (a educadora continua podendo trocar ou remover). Atividade com `idioma` nunca é complementar.
 - Atividades complementares ainda não têm "tema"; a escolha usa idade, vertente e novidade.
+
+## Adendo (2026-11-20): volumes 6 e 7 e cadernos para 2 anos (estória #109)
+
+- **Catálogo:** `app/content/tesouro.json` passa a ter `volumes` (1 a 7) e `cadernos` (`atividades-2-anos` e
+  `ingles-2-anos`). Os cadernos **não são volumes da coleção**: têm `id`, `titulo`, `subtitulo`, `arquivo`,
+  `paginas` e `unidades`; no caderno de atividades cada unidade traz `volume` (1 a 8), o volume que acompanha.
+  `MaterialImpresso` não muda e `enderecoDoMaterial` continua só para volumes. No Volume 7, a seção
+  "Latim · De onde vêm as palavras" entra como unidade 9 (decisão provisória; a dona do produto confirma no PR).
+- **Peso:** a soma dos PDFs `*-tela` sobe para cerca de 237 MB (volumes 1 a 5, ~129 MB, mais os quatro novos, ~108 MB).
+  Continuam fora do precache do service worker.
+- **Deploy:** o passo "Baixar os PDFs do Tesouro" de `publicar-site.yml` lê volumes e cadernos do catálogo, mantém a regra
+  de nome e a checagem `%PDF-` e, se o runner tiver `pdfinfo`, confere que o total de páginas bate com o catálogo.
+- **Biblioteca:** depois dos volumes, a seção "Cadernos para 2 anos" tem um aviso de saúde (orientações ainda não
+  conferidas por profissional; não substituem o pediatra) acima dos cartões e dentro de cada um. Sem tela nova e sem mostrar o tamanho dos arquivos.
+- **Decisão da dona do produto (2026-11-20):** expor os cadernos no app antes da conferência pediátrica (ADR 0021 e 0026).
+  A conferência continua sendo controle manual dela, **antes de vender ou divulgar** os cadernos.
