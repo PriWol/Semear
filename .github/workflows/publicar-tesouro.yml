@@ -67,6 +67,8 @@ jobs:
         run: |
           mkdir -p ../pdfs
           cp ../amostra/*.pdf ../volume*/*.pdf ../caderno-2-anos/*.pdf ../caderno-ingles/*.pdf ../pdfs/
+          # Manifesto de integridade (ADR 0031): o deploy do site confere cada PDF baixado contra ele.
+          (cd ../pdfs && sha256sum *.pdf > SHA256SUMS)
           ls -la ../pdfs
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
@@ -99,7 +101,9 @@ jobs:
               --notes "PDFs A4 da coleção O Grande Tesouro de Marina, gerados a partir de tesouro-marina/editorial. Arquivos *-impressao: fundo branco, para imprimir em papel creme. Arquivos *-tela: fundo creme, para ver na tela. Atualizada automaticamente a cada merge que altere tesouro-marina/."
           fi
           gh release upload tesouro-marina pdfs/*.pdf --clobber
-          # Remove anexos antigos que não existem mais (PDF renomeado ou apagado).
+          # O manifesto vai por último: quem lê o manifesto novo já encontra os PDFs novos (ADR 0031).
+          gh release upload tesouro-marina pdfs/SHA256SUMS --clobber
+          # Remove anexos antigos que não existem mais (PDF renomeado ou apagado); pdfs/SHA256SUMS existe, então é preservado.
           # (o envio acima não é atômico: um erro no meio deixa a Release parcial até o próximo merge)
           anexos=$(gh release view tesouro-marina --json assets -q '.assets[].name')
           while IFS= read -r nome; do
