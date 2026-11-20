@@ -52,6 +52,12 @@ Opção 3, com estas regras:
   `apagarExemplo` remove os eventos delas, nunca os de sessões reais.
 - **Engajamento:** guardamos o texto (`baixo`, `ok`, `bom`, `alto`); emojis e rótulos são só da tela.
 
+- **Desfazer uma escolha ao corrigir:** marco sem escolha não gera evento, então o histórico mantém o último
+  registro. O caminho para desfazer é marcar "Não observado" (gera evento). A tela não tem "limpar" (os rádios não
+  se desmarcam) e a ficha diz isso em uma frase.
+- **Backup:** `validarBackup` também recusa duas sessões com o mesmo `id` e `registradaEm` com dia inexistente
+  (ex.: 31/02).
+
 ## Consequências
 - Fica mais fácil: o selo é recalculável e testável sem tela; a ficha não pode estragar a jornada; nada de
   migração para quem já usa o app.

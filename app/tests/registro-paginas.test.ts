@@ -3,6 +3,7 @@ import { abrirRepositorio, type Repositorio } from '../src/dados/repositorio';
 import type { Contexto } from '../src/ui/app';
 import { paginaRegistrarBusca } from '../src/pages/registrar-busca';
 import { paginaSessaoRegistrar } from '../src/pages/sessao-registrar';
+import { paginaJornada } from '../src/pages/jornada';
 import { paginaPrivacidade } from '../src/pages/privacidade';
 import { montarRegistro, observacoesDaSessao } from '../src/domain/registro';
 import type { Sessao } from '../src/domain/tipos';
@@ -155,6 +156,67 @@ describe('ficha de registro no app', () => {
     await expect(paginaSessaoRegistrar(ctx(), { id: 'nada' })).rejects.toThrow(
       /Sessão não encontrada/,
     );
+  });
+});
+
+describe('desfazer uma escolha ao corrigir', () => {
+  it('a ficha explica o caminho e não oferece um "limpar" que não existe', async () => {
+    await repo.salvarSessao(sessao('s1', 14));
+    const h = (await paginaSessaoRegistrar(ctx(), { id: 's1' })).conteudo.valor;
+    expect(h).toContain('Para desfazer uma escolha, marque “Não observado”');
+    expect(h).not.toMatch(/limpar/i);
+    expect(h).not.toContain('type="reset"');
+  });
+
+  it('sem escolha não gera evento: o histórico mantém o último; “Não observado” gera', () => {
+    const s = sessao('s1', 14);
+    const ficha = observacoesDaSessao(s, idx);
+    const a = montarRegistro(s, ficha, { estados: { 'LG.FON.01': 'consolidado' } }, AGORA);
+    const anteriores = { 'LG.FON.01': 'consolidado' as const };
+    const sem = montarRegistro(a.sessao, ficha, { estados: {} }, AGORA, anteriores);
+    expect(sem.eventos).toEqual([]);
+    const desfaz = montarRegistro(
+      a.sessao,
+      ficha,
+      { estados: { 'LG.FON.01': 'nao-observado' } },
+      AGORA,
+      anteriores,
+    );
+    expect(desfaz.eventos.map((e) => e.registro.estado)).toEqual(['nao-observado']);
+  });
+});
+
+describe('regra de ouro (§5.2) pela jornada: o selo é dica, quem muda o estado é o pai', () => {
+  const K = 'LG.FON.01';
+  const obs = (id: string) => ({
+    criancaId: 'c1',
+    chave: K,
+    sessaoId: id,
+    registro: { estado: 'consolidado' as const, atualizadoEm: AGORA, origem: 'sessao' as const },
+  });
+  const marcoNaJornada = async () => {
+    const h = (await paginaJornada(ctx(), { id: 'c1' })).conteudo.valor;
+    const i = h.indexOf(`data-marco="${K}"`);
+    return h.slice(i, h.indexOf('</li>', i));
+  };
+
+  it('2 sessões Consolidado mostram o selo; o pai marca Consolidado e ele some; volta para Em desenvolvimento e ele reaparece', async () => {
+    for (const id of ['s1', 's2']) {
+      await repo.salvarSessao(sessao(id, id === 's1' ? 13 : 14));
+      await repo.registrarSessao({ ...sessao(id, 14), registradaEm: AGORA }, [obs(id)]);
+    }
+    expect(await repo.estados('c1')).toEqual({}); // a ficha não mexeu no estado
+    expect(await marcoNaJornada()).toContain('parece pronto');
+
+    const manual = (estado: 'consolidado' | 'em-desenvolvimento') =>
+      repo.atualizarEstados('c1', {
+        [K]: { estado, atualizadoEm: AGORA, origem: 'manual' },
+      });
+    await manual('consolidado');
+    expect(await marcoNaJornada()).not.toContain('parece pronto');
+
+    await manual('em-desenvolvimento'); // só "Está aqui" zera; o pai voltando o marco não
+    expect(await marcoNaJornada()).toContain('parece pronto');
   });
 });
 

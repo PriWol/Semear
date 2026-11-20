@@ -56,8 +56,16 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
                   Atividade complementar: não há marcos para registrar. Você ainda pode anotar como
                   foi.
                 </p>`
-              : ficha.map(
-                  (o, i) => html`<fieldset class="reg-marco">
+              : html`<p class="reg-ajuda">
+                    Para desfazer uma escolha, marque “Não observado”. Sem escolha, o marco fica como
+                    estava.
+                  </p>`
+          }
+            ${
+              ficha.length === 0
+                ? ''
+                : ficha.map(
+                    (o, i) => html`<fieldset class="reg-marco">
                     <legend>
                       <b>${o.marcoId}</b>${o.idioma ? ` · ${IDIOMAS[o.idioma]}` : ''}${o.revisao ? ' (revisão)' : ''}
                       <span class="reg-titulo">${ctx.idx.marco(o.marcoId)?.titulo ?? ''}</span>
@@ -76,8 +84,8 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
                       )}
                     </div>
                   </fieldset>`,
-                )
-          }
+                  )
+            }
 
           <section class="reg-detalhes" aria-labelledby="titulo-detalhes">
             <h2 id="titulo-detalhes">Detalhes (opcional)</h2>

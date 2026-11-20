@@ -424,7 +424,10 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     v.dias.every(ehDiaPlano);
   // Instante ISO (com hora): a data do registro vem do `toISOString()` do app, nunca de texto livre.
   const ehInstante = (v: unknown) =>
-    ehTexto(v) && /^\d{4}-\d{2}-\d{2}T/.test(v) && !Number.isNaN(Date.parse(v));
+    ehTexto(v) &&
+    /^\d{4}-\d{2}-\d{2}T/.test(v) &&
+    dataValida(v.slice(0, 10)) && // o Date aceita 31/02 e vira março: o dia precisa existir de verdade
+    !Number.isNaN(Date.parse(v));
   const ehDuracaoReal = (v: unknown) =>
     typeof v === 'number' && Number.isInteger(v) && v >= 1 && v <= DURACAO_REAL_MAX;
   // Chaves que mexem no protótipo dos objetos: nenhum marco legítimo se chama assim.
@@ -519,6 +522,11 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     ) {
       falha('sessão inválida');
     }
+  }
+  const ids = (b.sessoes as Record<string, unknown>[]).map((s) => s.id);
+  if (new Set(ids).size !== ids.length) {
+    // Ao importar, a segunda sessão com o mesmo id sobrescreveria a primeira em silêncio.
+    falha('há sessões com id repetido');
   }
   // Observação de sessão (#11): o evento precisa apontar para uma sessão do próprio backup, da mesma
   // criança, e só a origem "sessao" leva sessaoId. Evento órfão deixaria o selo contando sessões fantasmas.
