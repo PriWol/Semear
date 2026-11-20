@@ -79,7 +79,7 @@
 > existem no app. "Registrar sessão" (no início, na página da sessão e em `#/sessao/registrar`) acha a sessão pelo
 > código impresso (maiúsculas, espaços e hífens tanto faz) e abre "Como foi a sessão?": um grupo de 3 opções por
 > marco (a mesma lista da ficha impressa), duração real (1 a 240 min), engajamento (Pouco, Normal, Animado,
-> Empolgado) e anotações de até 500 caracteres. A ficha grava só a **observação** (evento de histórico com origem
+> Empolgado, com ícones de traço, sem emoji) e anotações de até 500 caracteres. A ficha grava só a **observação** (evento de histórico com origem
 > "sessão" e o id da sessão) e **nunca muda o estado do marco**. O selo é derivado do histórico e aparece na
 > jornada; sessões registradas mostram "Feita ✓" no início e no plano semanal. O backup agora leva as anotações.
 

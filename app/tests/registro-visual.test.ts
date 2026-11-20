@@ -35,8 +35,19 @@ describe('registro.css (bloco separado do CSS do registro)', () => {
 
   it('o foco aparece em todo controle do registro (anel de 3 px, recuo de 2 px)', () => {
     expect(semComentarios).toMatch(/:focus-visible/);
-    expect(semComentarios).toMatch(/outline:\s*3px solid var\(--s-foco\)/);
-    expect(semComentarios).toMatch(/outline-offset:\s*2px/);
+    expect(semComentarios).toMatch(/outline:\s*var\(--s-foco-largura\) solid var\(--s-foco\)/);
+    expect(semComentarios).toMatch(/outline-offset:\s*var\(--s-foco-recuo\)/);
+  });
+
+  it('espessuras de borda e de foco vêm de tokens: nenhum "Npx" solto', () => {
+    expect(semComentarios).not.toMatch(/\b\d+px\b/);
+    expect(tokens).toMatch(/--s-foco-largura:\s*3px/);
+    expect(tokens).toMatch(/--s-foco-recuo:\s*2px/);
+    expect(tokens).toMatch(/--s-borda-marcada:\s*3px/);
+  });
+
+  it('a barra sticky não esconde o que ganha foco (scroll-margin-bottom)', () => {
+    expect(semComentarios).toMatch(/scroll-margin-bottom:/);
   });
 
   it('os alvos de toque usam --s-alvo-toque', () => {

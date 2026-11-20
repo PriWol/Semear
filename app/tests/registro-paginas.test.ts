@@ -109,11 +109,35 @@ describe('ficha de registro no app', () => {
     expect(h).not.toContain('(revisão)'); // LG.FON.01 é principal em atv-fon-1: principal vale mais que revisão
   });
 
-  it('os quatro engajamentos têm emoji só como enfeite e o rótulo escrito', async () => {
+  it('os quatro engajamentos têm ícone de traço só como enfeite, o rótulo escrito e nenhum emoji', async () => {
     await repo.salvarSessao(sessao('s1', 14));
     const h = (await paginaSessaoRegistrar(ctx(), { id: 's1' })).conteudo.valor;
     for (const rotulo of ['Pouco', 'Normal', 'Animado', 'Empolgado']) expect(h).toContain(rotulo);
-    expect(h.match(/<span aria-hidden="true">/g)).toHaveLength(4);
+    const reg = h.slice(h.indexOf('reg-engajamento'));
+    expect(reg.match(/<svg[^>]*aria-hidden="true"/g)).toHaveLength(4);
+    expect(h).not.toMatch(/\p{Extended_Pictographic}/u);
+  });
+
+  it('as telas e os rótulos do registro não têm emoji', async () => {
+    const { readFileSync } = await import('node:fs');
+    const le = (f: string) => readFileSync(new URL(`../src/${f}`, import.meta.url), 'utf8');
+    // Em rotulos.ts só o bloco do engajamento (os ícones de estado da jornada são outra estória).
+    const rotulos = le('ui/rotulos.ts');
+    const engajamento = rotulos.slice(
+      rotulos.indexOf('NOME_ENGAJAMENTO'),
+      rotulos.indexOf('ROTULO_FEITA'),
+    );
+    expect(engajamento.length).toBeGreaterThan(100);
+    expect(engajamento).not.toMatch(/\p{Extended_Pictographic}/u);
+    for (const f of ['pages/sessao-registrar.ts', 'pages/registrar-busca.ts']) {
+      expect(le(f), f).not.toMatch(/\p{Extended_Pictographic}/u);
+    }
+  });
+
+  it('avisa junto das anotações que ficam só no aparelho e entram no backup', async () => {
+    await repo.salvarSessao(sessao('s1', 14));
+    const h = (await paginaSessaoRegistrar(ctx(), { id: 's1' })).conteudo.valor;
+    expect(h).toContain('Fica só neste aparelho e entra no backup.');
   });
 
   it('sessão já registrada: aviso, campos preenchidos e "Salvar alterações"', async () => {

@@ -118,7 +118,7 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
                       ${sessao.engajamento === e ? 'checked' : ''}
                     />
                     <span class="reg-rotulo"
-                      ><span aria-hidden="true">${ICONE_ENGAJAMENTO[e]}</span>
+                      >${ICONE_ENGAJAMENTO[e]}
                       ${NOME_ENGAJAMENTO[e]}</span
                     >
                   </label>`,
@@ -133,8 +133,11 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
                 name="anotacoes"
                 rows="4"
                 maxlength="${ANOTACOES_MAX}"
-                aria-describedby="contador-anotacoes"
+                aria-describedby="contador-anotacoes aviso-anotacoes"
               >${sessao.anotacoes ?? ''}</textarea>
+              <p class="reg-ajuda" id="aviso-anotacoes">
+                Fica só neste aparelho e entra no backup.
+              </p>
               <p class="reg-ajuda" id="contador-anotacoes">
                 <span id="contagem-anotacoes">${(sessao.anotacoes ?? '').length}</span> de
                 ${ANOTACOES_MAX}

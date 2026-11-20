@@ -17,7 +17,7 @@ export type EstadoMarco = (typeof ESTADOS)[number];
 
 /**
  * Engajamento da criança na sessão (#11), como o educador percebeu. Guardamos o texto, não o emoji:
- * os emojis (😴 🙂 😄 🤩) e os rótulos (Pouco, Normal, Animado, Empolgado) são só da tela.
+ * os ícones de traço e os rótulos (Pouco, Normal, Animado, Empolgado) são só da tela.
  */
 export const ENGAJAMENTOS = ['baixo', 'ok', 'bom', 'alto'] as const;
 export type Engajamento = (typeof ENGAJAMENTOS)[number];

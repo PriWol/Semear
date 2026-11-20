@@ -45,6 +45,19 @@ describe('validarBackup: sessões', () => {
   );
 });
 
+describe('validarBackup: observação de sessão', () => {
+  it('exige sessaoId quando a origem é "sessao"', () => {
+    const evento = (extra = {}) => ({
+      criancaId: 'c1',
+      chave: 'LG.FON.01',
+      registro: { estado: 'consolidado', atualizadoEm: AGORA, origem: 'sessao' },
+      ...extra,
+    });
+    expect(() => validarBackup({ ...base, historico: [evento()] })).toThrow(/sessaoId|sessão/);
+    expect(() => validarBackup({ ...base, historico: [evento({ sessaoId: 's1' })] })).not.toThrow();
+  });
+});
+
 describe('backup com observações do exemplo', () => {
   const idx = criarIndice(carregarConteudo());
   const HOJE = new Date(2026, 9, 14, 12);

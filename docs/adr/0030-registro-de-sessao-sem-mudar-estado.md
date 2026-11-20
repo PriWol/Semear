@@ -50,7 +50,7 @@ Opção 3, com estas regras:
   eventos órfãos e seria recusado. No plano semanal, uma sessão já registrada não pode ser "desmarcada".
 - **Família de exemplo (ADR 0013):** passa a trazer sessões registradas (para mostrar o selo) e uma por registrar.
   `apagarExemplo` remove os eventos delas, nunca os de sessões reais.
-- **Engajamento:** guardamos o texto (`baixo`, `ok`, `bom`, `alto`); emojis e rótulos são só da tela.
+- **Engajamento:** guardamos o texto (`baixo`, `ok`, `bom`, `alto`); ícones e rótulos são só da tela.
 
 - **Desfazer uma escolha ao corrigir:** marco sem escolha não gera evento, então o histórico mantém o último
   registro. O caminho para desfazer é marcar "Não observado" (gera evento). A tela não tem "limpar" (os rádios não
@@ -72,6 +72,8 @@ Opção 3, com estas regras:
   convertido.
 
 ## Decisões da dona do produto (20/11/2026)
+- **Engajamento com ícones de traço em vez de emojis**, por decisão dela em 20/11/2026, seguindo o `DESIGN.md`: um
+  broto que cresce (Pouco, Normal, Animado, Empolgado), com o rótulo escrito sempre visível. Os valores guardados não mudam.
 1. **"Está aqui" e os marcos de adiante: fica como está.** O "Está aqui" só grava eventos dos marcos que mudam de
    estado. Um marco mais adiante que está *Não observado* não recebe evento, então as observações antigas dele
    continuam contando para o selo. A §5.2 foi ajustada para dizer isso. O formato do histórico não muda.

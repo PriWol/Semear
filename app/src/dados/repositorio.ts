@@ -534,6 +534,10 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
     (b.sessoes as Record<string, unknown>[]).map((s) => [s.id as string, s.criancaId]),
   );
   for (const h of b.historico as Record<string, unknown>[]) {
+    // Observação de sessão sem sessaoId nunca conta para o selo: não faz sentido guardá-la assim.
+    if ((h.registro as Record<string, unknown>).origem === 'sessao' && h.sessaoId === undefined) {
+      falha('observação de sessão sem sessaoId');
+    }
     if (h.sessaoId === undefined) continue;
     const registro = h.registro as Record<string, unknown>;
     if (registro.origem !== 'sessao')

@@ -30,6 +30,12 @@
   /* Alvo de toque mínimo (48 px) e anel de foco visível (3 px, recuo de 2 px) em todo controle (#11) */
   --s-alvo-toque: 3rem;
   --s-foco: var(--s-tinta);
+  --s-foco-largura: 3px;
+  --s-foco-recuo: 2px;
+  /* Bordas: fina (repouso), de campo e marcada (selecionado: mais grossa, nunca só cor) */
+  --s-borda: 1px;
+  --s-borda-campo: 2px;
+  --s-borda-marcada: 3px;
   /* Borda de controle (WCAG 1.4.11, ao menos 3:1 sobre o papel); --s-linha é só decoração */
   --s-borda-controle: var(--s-suave);
   /* Tamanhos de texto do registro: nada abaixo de 14 px, e 16 px no que se lê e toca */

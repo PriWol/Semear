@@ -62,7 +62,7 @@
   margin: 0;
   padding: var(--s-espaco-3) var(--s-espaco-4);
   border-radius: var(--s-raio-p);
-  border: 1px solid var(--s-alerta);
+  border: var(--s-borda) solid var(--s-alerta);
   background: var(--s-alerta-claro);
   color: var(--s-alerta);
   font-weight: 600;
@@ -81,7 +81,7 @@
   min-width: 0;
   margin: 0;
   padding: var(--s-espaco-3) var(--s-espaco-4) var(--s-espaco-4);
-  border: 1px solid var(--s-linha);
+  border: var(--s-borda) solid var(--s-linha);
   border-radius: var(--s-raio);
   background: var(--s-papel);
 }
@@ -130,7 +130,7 @@
   min-width: 0;
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-1);
-  border: 1px solid var(--s-borda-controle);
+  border: var(--s-borda) solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
   color: var(--s-tinta);
@@ -146,8 +146,8 @@
   visibility: hidden;
 }
 .reg-opcao input:checked + .reg-rotulo {
-  padding: calc(var(--s-espaco-1) - 2px);
-  border-width: 3px;
+  padding: calc(var(--s-espaco-1) - (var(--s-borda-marcada) - var(--s-borda)));
+  border-width: var(--s-borda-marcada);
   border-color: var(--s-principal);
   background: var(--s-principal-claro);
   color: var(--s-principal);
@@ -156,8 +156,8 @@
   visibility: visible;
 }
 .reg-opcao input:focus-visible + .reg-rotulo {
-  outline: 3px solid var(--s-foco);
-  outline-offset: 2px;
+  outline: var(--s-foco-largura) solid var(--s-foco);
+  outline-offset: var(--s-foco-recuo);
 }
 
 /* ---------- Detalhes opcionais ---------- */
@@ -165,7 +165,7 @@
   display: grid;
   gap: var(--s-espaco-4);
   padding: var(--s-espaco-4);
-  border: 1px solid var(--s-linha);
+  border: var(--s-borda) solid var(--s-linha);
   border-radius: var(--s-raio);
   background: var(--s-papel);
 }
@@ -189,11 +189,17 @@
   width: 100%;
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-2) var(--s-espaco-3);
-  border: 2px solid var(--s-borda-controle);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
   color: var(--s-tinta);
   font: inherit;
+}
+/* A barra de ação fica grudada embaixo: o que ganha foco não pode parar atrás dela. */
+.reg-marco,
+.reg-campo,
+.reg-engajamento {
+  scroll-margin-bottom: 6rem;
 }
 textarea.reg-campo {
   resize: vertical;
@@ -206,8 +212,8 @@ textarea.reg-campo {
 .reg-acoes button:focus-visible,
 .reg-lista-sessoes a:focus-visible,
 .reg-busca button:focus-visible {
-  outline: 3px solid var(--s-foco);
-  outline-offset: 2px;
+  outline: var(--s-foco-largura) solid var(--s-foco);
+  outline-offset: var(--s-foco-recuo);
 }
 
 /* ---------- Barra de ação ---------- */
@@ -219,7 +225,7 @@ textarea.reg-campo {
   align-items: center;
   gap: var(--s-espaco-3);
   padding: var(--s-espaco-3) var(--s-espaco-4);
-  border-top: 1px solid var(--s-linha);
+  border-top: var(--s-borda) solid var(--s-linha);
   background: var(--s-papel);
 }
 .reg-acoes .reg-contador {
@@ -257,7 +263,7 @@ textarea.reg-campo {
   gap: var(--s-espaco-1);
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-3) var(--s-espaco-4);
-  border: 1px solid var(--s-linha);
+  border: var(--s-borda) solid var(--s-linha);
   border-radius: var(--s-raio);
   background: var(--s-papel);
   color: var(--s-tinta);

@@ -87,7 +87,7 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
                 sessao.engajamento
                   ? html`<p>
                       Engajamento:
-                      <span aria-hidden="true">${ICONE_ENGAJAMENTO[sessao.engajamento]}</span>
+                      ${ICONE_ENGAJAMENTO[sessao.engajamento]}
                       ${NOME_ENGAJAMENTO[sessao.engajamento]}
                     </p>`
                   : ''

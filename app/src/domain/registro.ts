@@ -93,7 +93,8 @@ const ehEngajamento = (v: unknown): v is Engajamento =>
 /**
  * Monta o registro: a sessão atualizada (com a data do registro e os detalhes) e um evento de histórico
  * por marco que o educador marcou. Marco sem escolha não gera evento. Recusa qualquer valor fora dos
- * conjuntos conhecidos. Ao corrigir (`anteriores`), só emite evento do marco que mudou. Não altera a sessão recebida. Registrar de novo troca os campos da sessão e
+ * conjuntos conhecidos. Ao corrigir (`anteriores`), só emite evento do marco que mudou.
+ * Não altera a sessão recebida. Registrar de novo troca os campos da sessão e
  * acrescenta novos eventos: o histórico nunca é apagado (§4.2).
  */
 export function montarRegistro(
@@ -172,7 +173,7 @@ export function observacoesRegistradas(
 }
 
 /** Mínimo de sessões diferentes com a observação "Consolidado" para o selo aparecer (§5.2). */
-const SESSOES_PARA_PARECER_PRONTO = 2;
+export const SESSOES_PARA_PARECER_PRONTO = 2;
 
 /**
  * Selo "parece pronto" (§5.2): o marco AINDA NÃO está Consolidado e teve a observação Consolidado em 2

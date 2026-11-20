@@ -1,6 +1,6 @@
 import type { FabricaPagina } from '../ui/app';
 import { confiavel, html, textoRico } from '../ui/html';
-import { pareceProntoPara } from '../domain/registro';
+import { pareceProntoPara, SESSOES_PARA_PARECER_PRONTO } from '../domain/registro';
 import { idadeEmAnos } from '../domain/datas';
 import { ESTADOS, IDIOMAS, type EstadoMarco } from '../domain/tipos';
 import {
@@ -107,7 +107,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                         pareceProntoPara(s.chave, estados, historico)
                           ? html`<p class="reg-dica">
                               <span class="selo-pronto">${ICONE_BROTO}parece pronto</span>
-                              Observado como consolidado em 2 sessões. Se você concorda, marque
+                              Observado como consolidado em ${SESSOES_PARA_PARECER_PRONTO} sessões. Se você concorda, marque
                               Consolidado aqui.
                             </p>`
                           : ''
