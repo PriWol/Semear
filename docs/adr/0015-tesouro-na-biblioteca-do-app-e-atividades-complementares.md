@@ -74,7 +74,6 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - **`pdfinfo` no deploy:** se o runner não tiver `pdfinfo`, o passo faz `sudo apt-get install poppler-utils` (pacote do
   repositório oficial do Ubuntu, em runner descartável do GitHub). Preferimos isso a falhar o deploy por falta da
   ferramenta; reavaliar se o runner passar a trazer o poppler.
-- **Pendência (estória à parte):** os PDFs baixados da Release pública só passam por checagem de nome, `%PDF-` e
-  contagem de páginas; não há verificação de integridade (sha256). Não entra agora porque os PDFs são regenerados a
-  cada merge em `tesouro-marina/` e o hash mudaria sempre. Precisa de build determinístico ou de um manifesto de
-  hashes publicado junto com a Release.
+- **Integridade (estória #111, resolvida; ADR 0031):** o deploy baixa o manifesto `SHA256SUMS` da Release e exige que
+  o sha256 de cada PDF baixado bata com a entrada dele, além de nome, `%PDF-` e páginas. Limite: o manifesto não
+  protege contra quem escreve na Release (troca PDF e manifesto juntos).
