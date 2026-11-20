@@ -95,7 +95,7 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
       </section>
       <section class="cartao">
         <h2>Apagar dados</h2>
-        <p class="nota">Remove família, crianças, jornada e sessões deste aparelho.</p>
+        <p class="nota">Remove tudo o que você cadastrou e registrou neste aparelho.</p>
         <button class="botao perigo" type="button" id="apagar">Apagar tudo</button>
       </section>
     `,

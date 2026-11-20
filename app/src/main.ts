@@ -26,6 +26,7 @@ import { paginaSemana } from './pages/semana';
 import { sincronizarComOAparelho } from './nativo/sincronizar';
 import { paginaGuia } from './pages/guia';
 import { paginaPrivacidade } from './pages/privacidade';
+import { paginaTermos } from './pages/termos';
 
 const naoEncontrada: FabricaPagina = async () => ({
   titulo: 'Não encontrada',
@@ -57,6 +58,7 @@ async function iniciar() {
       '/semana/:id': paginaSemana,
       '/guia': paginaGuia,
       '/privacidade': paginaPrivacidade,
+      '/termos': paginaTermos,
       '/conteudo': paginaConteudo,
       '/novidades': paginaNovidades,
     }),
