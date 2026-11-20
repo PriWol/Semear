@@ -1,6 +1,18 @@
 {
   "versoes": [
     {
+      "versao": "0.3.0",
+      "data": "2026-11-20",
+      "titulo": "Registrar a sessão",
+      "itens": [
+        "Registrar sessão: digite o código impresso na folha (maiúsculas, espaços e hífens tanto faz) e marque o que viu em cada marco, em cerca de 2 minutos.",
+        "A ficha grava só a observação: quem muda o estado do marco continua sendo você, no mapa da jornada.",
+        "Selo \"parece pronto\" na jornada, quando um marco foi observado como consolidado em 2 sessões diferentes. É só uma dica.",
+        "Sessões registradas mostram \"Feita ✓\" no início e no plano da semana.",
+        "O backup agora leva também as anotações que você escrever nas sessões."
+      ]
+    },
+    {
       "versao": "0.2.0",
       "data": "2026-10-14",
       "titulo": "Base para testar",

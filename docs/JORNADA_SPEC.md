@@ -71,9 +71,17 @@
 | 49 | Backup | **Exportar/importar arquivo + lembrete após 30 dias** sem backup + pedido de armazenamento persistente. |
 
 > **O que a v1 do app ainda não implementa** (fica para versões seguintes; registrado após a revisão do PR #1):
-> selo "parece pronto" (§5.2); a sondagem de outros domínios além de LG.FON e MA.SEN — a **sondagem inicial** (§5.4) existe desde a #17, em duas etapas, e a **ressondagem** (§5.5, #18) avisa no início quando uma linha com item de sondagem está parada há 8 semanas ou mais (ou sem registro, numa família com 8 semanas ou mais) e gera a sondagem só dessas linhas; os itens ainda estão em rascunho; no gerador de sessão (§5.6),
-> o ponto de "materiais disponíveis", a alternância sentada/movimento e a sessão conjunta de irmãos;
-> e o lançamento da ficha de registro no app (§5.7). O avanço continua manual, marco a marco, na tela da jornada.
+> a sondagem de outros domínios além de LG.FON e MA.SEN — a **sondagem inicial** (§5.4) existe desde a #17, em duas etapas, e a **ressondagem** (§5.5, #18) avisa no início quando uma linha com item de sondagem está parada há 8 semanas ou mais (ou sem registro, numa família com 8 semanas ou mais) e gera a sondagem só dessas linhas; os itens ainda estão em rascunho; no gerador de sessão (§5.6),
+> o ponto de "materiais disponíveis", a alternância sentada/movimento e a sessão conjunta de irmãos.
+> O avanço continua manual, marco a marco, na tela da jornada.
+>
+> **Registro de sessão (#11, ADR 0030):** o lançamento da ficha de registro e o selo "parece pronto" (§5.2) já
+> existem no app. "Registrar sessão" (no início, na página da sessão e em `#/sessao/registrar`) acha a sessão pelo
+> código impresso (maiúsculas, espaços e hífens tanto faz) e abre "Como foi a sessão?": um grupo de 3 opções por
+> marco (a mesma lista da ficha impressa), duração real (1 a 240 min), engajamento (Pouco, Normal, Animado,
+> Empolgado) e anotações de até 500 caracteres. A ficha grava só a **observação** (evento de histórico com origem
+> "sessão" e o id da sessão) e **nunca muda o estado do marco**. O selo é derivado do histórico e aparece na
+> jornada; sessões registradas mostram "Feita ✓" no início e no plano semanal. O backup agora leva as anotações.
 
 > **Recursos de demonstração (Fase 0, `docs/ROADMAP.md`):** a **família de exemplo** (Ana e Theo, fictícios, já
 > posicionados) deixa explorar o app sem cadastrar nada. Todo registro do exemplo leva um marcador, e "Apagar exemplo"
@@ -358,7 +366,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 ### 5.7 Pacote impresso da sessão
 1. **Roteiro do educador** (1 ou 2 páginas): objetivo, passo a passo, falas sugeridas, "o que observar" por marco.
 2. **Folhas da criança**: A4 retrato, letra grande, sem nome da marca em destaque. No **modo tablet**, uma página por tela, num PDF sem links.
-3. **Ficha de registro rápido**: uma linha por marco trabalhado, com ☐ Não observado ☐ Em desenvolvimento ☐ Consolidado e espaço para nota. O pai lança no app em cerca de 2 minutos, e cada linha tem um código curto que facilita achar o marco.
+3. **Ficha de registro rápido**: uma linha por marco trabalhado, com ☐ Não observado ☐ Em desenvolvimento ☐ Consolidado e espaço para nota. O pai lança no app em cerca de 2 minutos, e cada linha tem um código curto que facilita achar o marco. **No app (#11):** em "Registrar sessão" o pai digita o código da sessão impresso no alto da folha (ex.: `S-1014-A1`) e marca, por marco, *Não observado*, *Em desenvolvimento* ou *Consolidado*, com duração real, engajamento e anotações opcionais. O lançamento grava a observação e **não** muda o estado do marco (§5.2); marco sem escolha não gera registro, e a mesma sessão pode ser corrigida depois.
 4. **Materiais + livro**: checklist do que separar, com itens de casa destacados.
 
 ### 5.8 Diretrizes visuais das folhas
