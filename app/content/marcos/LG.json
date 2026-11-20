@@ -10,7 +10,7 @@
       "idadeTipica": 3.5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": [],
+      "bncc": ["EI02EF02", "EI03EF02"],
       "orientacaoPais": {
         "porQueImporta": "Gostar de rimas é o primeiro sinal de que a criança presta atenção aos **sons da fala**, e não só ao que as palavras significam. Essa atenção aos sons (a *consciência fonológica*) está entre as habilidades que mais ajudam a prever como será a alfabetização.",
         "comoParticipar": "Recitem parlendas, cantigas e quadrinhas (“Batatinha quando nasce…”) e pare antes da última palavra para ela completar. Leia em voz alta livros com rimas e inventem rimas bobas juntos. O objetivo é se divertir com o som, sem corrigir nem testar.",
@@ -46,7 +46,7 @@
       "idadeTipica": 4,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": [],
+      "bncc": ["EI02EF02", "EI03EF02"],
       "orientacaoPais": {
         "porQueImporta": "Aqui a criança deixa de apenas gostar de rimas e passa a **comparar o final de duas palavras**. É um primeiro olhar para o som da palavra em si, separado do significado: PÃO e MÃO rimam, mas uma não tem nada a ver com a outra.",
         "comoParticipar": "Brinquem de “rima ou não rima?”: diga pares (PÃO–MÃO, GATO–PATO, CASA–BOLA) e deixe ela responder. Depois inverta: ela inventa o par e você adivinha. Comece com pares bem diferentes e, se errar, apenas repita as duas palavras devagar. Não peça explicações.",
@@ -75,14 +75,14 @@
     {
       "id": "LG.FON.03",
       "linha": "LG.FON",
-      "ordem": 3,
+      "ordem": 4,
       "titulo": "Segmenta palavras em sílabas",
       "descricaoPais": "Bate palmas para cada pedaço da palavra.",
       "evidencias": ["Bate as sílabas de palavras de 2 a 4 sílabas"],
       "idadeTipica": 4.5,
       "idadeIntroducao": {},
       "preRequisitos": [],
-      "bncc": [],
+      "bncc": ["EF01LP06", "EF01LP05"],
       "orientacaoPais": {
         "porQueImporta": "A sílaba é a parte da fala que a criança percebe mais cedo. Separar a palavra em pedaços é a base para ler e escrever, e acompanha o que as pesquisas descrevem na escrita infantil: muitas crianças passam por uma fase em que usam **uma letra para cada sílaba** (a hipótese silábica).",
         "comoParticipar": "Bata palmas ou dê um passo por sílaba, começando pelo nome da criança (A-NA, MA-RI-A) e pelos nomes da família. Depois, frutas, bichos e brinquedos. Pergunte “quantos pedaços?” e conte junto. Não é preciso escrever nada.",
@@ -111,7 +111,7 @@
     {
       "id": "LG.FON.04",
       "linha": "LG.FON",
-      "ordem": 4,
+      "ordem": 5,
       "titulo": "Identifica a sílaba inicial",
       "descricaoPais": "Percebe que BOLA e BOTA começam com o mesmo pedaço.",
       "evidencias": ["Separa figuras pela sílaba inicial", "Diz outra palavra que começa igual"],
@@ -120,7 +120,7 @@
         "Waldorf": 6.5
       },
       "preRequisitos": ["LG.FON.03"],
-      "bncc": [],
+      "bncc": ["EF01LP09"],
       "orientacaoPais": {
         "porQueImporta": "Perceber que BOLA e BOTA começam com o mesmo pedaço é o que, mais adiante, permite ligar o **som** à **letra** que o representa. Em português, a sílaba costuma ser a unidade em que a criança consegue refletir antes de chegar aos sons isolados.",
         "comoParticipar": "Jogue “quem começa igual?”: mostre três figuras (BOLA, BOTA, GATO) e pergunte qual não combina. Peça “diga outra palavra que começa com BO”. Use os nomes da família, alongue a sílaba ao falar (“BOOO-la”) e deixe a criança também desafiar você.",
@@ -145,7 +145,7 @@
     {
       "id": "LG.FON.05",
       "linha": "LG.FON",
-      "ordem": 5,
+      "ordem": 6,
       "titulo": "Manipula sílabas",
       "descricaoPais": "Tira ou troca sílabas: SAPATO sem SA → PATO.",
       "evidencias": ["Acerta 3 de 4 desafios orais"],
@@ -154,7 +154,7 @@
         "Waldorf": 7
       },
       "preRequisitos": ["LG.FON.04"],
-      "bncc": [],
+      "bncc": ["EF01LP06", "EF01LP05"],
       "orientacaoPais": {
         "porQueImporta": "Tirar, trocar ou juntar sílabas (SAPATO sem SA → PATO) mostra que a criança já trata as sílabas como **peças que ela pode mover**, e não só ouvir. Essa flexibilidade sustenta, depois, o juntar e separar sons para ler e escrever.",
         "comoParticipar": "Proponha desafios orais curtos: “diga CAMA sem CA”, “junte BO e LA”, “troque o MA de MALA por SA”. Use peças que ela possa mover (fichas, copos ou blocos, um por sílaba) para ver o que acontece. Poucos desafios por vez, com ar de brincadeira e sem placar.",
@@ -179,7 +179,7 @@
     {
       "id": "LG.FON.06",
       "linha": "LG.FON",
-      "ordem": 6,
+      "ordem": 8,
       "titulo": "Identifica o som inicial (fonema)",
       "descricaoPais": "Sabe que FACA começa com /f/.",
       "evidencias": ["Separa figuras pelo som inicial"],
@@ -188,7 +188,7 @@
         "Waldorf": 7
       },
       "preRequisitos": ["LG.FON.04", "LG.LET.03"],
-      "bncc": [],
+      "bncc": ["EF01LP07", "EF01LP09"],
       "orientacaoPais": {
         "porQueImporta": "Saber que FACA começa com /f/ é o salto da sílaba para o **som isolado**. Como o alfabeto do português representa sons, ligar o som à letra é o coração da alfabetização.",
         "comoParticipar": "Fale o **som**, não o nome da letra (/f/, e não “efe”). Comece pelos sons que dá para alongar (ffff, ssss, mmmm) e só depois pelos que não se alongam (/p/, /t/). Jogue “eu vejo algo que começa com /m/”. Só então ligue o som à letra, com letras móveis ou de lixa.",
@@ -217,7 +217,7 @@
     {
       "id": "LG.FON.07",
       "linha": "LG.FON",
-      "ordem": 7,
+      "ordem": 10,
       "titulo": "Segmenta palavras em fonemas",
       "descricaoPais": "Fala os sons separados: /g/ /a/ /t/ /o/.",
       "evidencias": ["Segmenta palavras simples de 4 a 5 sons"],
@@ -226,7 +226,7 @@
         "Waldorf": 7.5
       },
       "preRequisitos": ["LG.FON.06"],
-      "bncc": [],
+      "bncc": ["EF01LP07", "EF01LP05"],
       "orientacaoPais": {
         "porQueImporta": "Separar /g/ /a/ /t/ /o/ é o nível mais fino da consciência dos sons, e o que mais ajuda a **escrever palavras novas**. Corresponde ao que as pesquisas chamam de hipótese alfabética: a criança percebe que cada letra representa um som menor que a sílaba.",
         "comoParticipar": "Comece com palavras curtas, de 2 ou 3 sons (SOL, UVA, MAR). Use uma ficha ou botão para cada som: a criança desliza uma ficha a cada som que fala. Você mostra primeiro, ela imita, depois ela tenta sozinha. Só então monte a palavra com letras móveis.",
@@ -250,6 +250,137 @@
             "referencias": ["wise-bauer-well-trained-mind"]
           }
         }
+      }
+    },
+    {
+      "id": "LG.FON.08",
+      "linha": "LG.FON",
+      "ordem": 3,
+      "titulo": "Inventa palavras que rimam",
+      "descricaoPais": "Diz uma palavra que rima com outra: PÃO… MÃO! Pode ser inventada.",
+      "evidencias": [
+        "Diz uma palavra que rima (real ou inventada) em 3 de 4 tentativas",
+        "Inventa um versinho com rima"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {
+        "Waldorf": 6
+      },
+      "preRequisitos": ["LG.FON.02"],
+      "bncc": ["EI03EF02", "EI02EF02"],
+      "orientacaoPais": {
+        "porQueImporta": "Reconhecer uma rima é uma coisa; **criar** uma é outra, mais difícil: a criança precisa guardar o final da palavra na cabeça, comparar com o que conhece e produzir algo novo. Rimar mostra que ela já trata o som da palavra como algo que dá para mexer, o que sustenta os próximos passos (sílabas e sons).",
+        "comoParticipar": "Brinque de “rima maluca”: você diz uma palavra (PÃO) e ela responde com qualquer palavra que termine igual, **mesmo inventada** (“pão, mão, tão, fão!”). Palavra inventada vale: o que conta é o som. Façam quadrinhas bobas juntos (“O gato comeu o…” “prato!”). Sem notas, sem corrigir: se ela errar, repita as duas palavras devagar e siga a brincadeira.",
+        "sinaisDeAtencao": "Muitas crianças só rimam sozinhas depois dos 5 anos, e dizer a mesma palavra ou uma que *começa* igual (PÃO–PATO) é um passo comum no caminho. Se aos 6 anos ela ainda não consegue inventar nenhuma rima, mesmo depois de muito jogo com versos e cantigas, vale conversar com a escola ou com o pediatra. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
+        "referencias": ["morais-consciencia-fonologica", "nelp-alfabetizacao-inicial", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Use uma cesta com objetos pequenos e seguros de que ela sabe o nome; peça que ela ache, entre eles, o que rima com o objeto que você mostra, e só depois que invente uma palavra nova.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, a criação consciente de rimas costuma vir por volta dos {idade} anos. Antes disso, a rima vive nos versos de roda e nas canções repetidas; se ela espontaneamente inventar versinhos, acolha com alegria, sem transformar em exercício.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Depois de decorar um poema curto, troquem a última palavra de alguns versos por outra que rima, e vejam quais continuam fazendo sentido.",
+            "referencias": ["sayers-lost-tools"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Leia um poema e, num dia tranquilo, convide: “e se o poeta tivesse escrito outra palavra que rima?”. Poucos minutos, com atenção plena, sem cobrar resultado.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "revisado",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-20"
+      }
+    },
+    {
+      "id": "LG.FON.09",
+      "linha": "LG.FON",
+      "ordem": 7,
+      "titulo": "Identifica a sílaba final",
+      "descricaoPais": "Percebe que GATO e PATO terminam com o mesmo pedaço: TO.",
+      "evidencias": [
+        "Separa figuras pela sílaba final",
+        "Diz qual palavra termina diferente num grupo de três"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {
+        "Waldorf": 7
+      },
+      "preRequisitos": ["LG.FON.04"],
+      "bncc": ["EF01LP09"],
+      "orientacaoPais": {
+        "porQueImporta": "Depois de perceber o **começo** da palavra (sílaba inicial), a criança aprende a olhar também para o **fim**. Isso liga a rima à análise da palavra: GATO e PATO rimam porque terminam com o mesmo pedaço. Comparar começo, meio e fim das palavras é uma habilidade que a BNCC descreve para o início da alfabetização.",
+        "comoParticipar": "Jogue “termina igual?”: mostre três figuras (GATO, PATO, BOLA) e pergunte qual termina diferente. Fale devagar, alongando o final (“gaaa-TO, paaa-TO”). Depois inverta e deixe que ela proponha o trio. Use nomes da família e objetos da casa; poucos desafios por vez, com ar de brincadeira.",
+        "sinaisDeAtencao": "Este é um marco intermediário: é comum a criança confundir final com começo, por hábito de olhar só para o início. Se aos 7 anos ela ainda não percebe que palavras que rimam terminam igual, apesar de jogos repetidos, vale conversar com a escola. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
+        "referencias": ["morais-consciencia-fonologica", "soares-alfabetizacao-metodos", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Com objetos reais numa bandeja, a criança separa os que “terminam igual”, passando o dedo no ar pelo pedaço final enquanto fala. O toque ajuda a pensar.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos {idade} anos. Até lá, a criança vive o final das palavras nas rimas dos versos e das cantigas, sem precisar nomear.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Monte listas de palavras que terminam com a mesma sílaba e recitem juntos, em lições curtas. Prepara o estudo posterior das terminações e da ortografia.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "revisado",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-20"
+      }
+    },
+    {
+      "id": "LG.FON.10",
+      "linha": "LG.FON",
+      "ordem": 9,
+      "titulo": "Junta sons falados para formar a palavra",
+      "descricaoPais": "Ouve /s/ /o/ /l/ e descobre que é SOL.",
+      "evidencias": ["Junta 3 a 4 sons ditos com pausa e diz a palavra (2 de 3 tentativas)"],
+      "idadeTipica": 6.5,
+      "idadeIntroducao": {
+        "Waldorf": 7.5
+      },
+      "preRequisitos": ["LG.FON.06"],
+      "bncc": ["EF01LP07"],
+      "orientacaoPais": {
+        "porQueImporta": "Juntar sons soltos (/s/ /o/ /l/ → SOL) é o caminho inverso de separar a palavra, e é exatamente o que a criança faz ao **ler** uma palavra nova: transformar letras em sons e os sons em palavra. Por isso costuma ser um pouco mais fácil que separar sons e vem junto com a leitura inicial.",
+        "comoParticipar": "Seja o “robô que fala devagar”: diga os sons separados, com uma pausa pequena (/m/ … /a/ … /r/) e deixe a criança descobrir a palavra (MAR). Comece por palavras de 2 ou 3 sons e com sons que dá para alongar (/s/, /f/, /m/). Fale o **som**, não o nome da letra. Inverta o jogo: ela vira o robô e você adivinha.",
+        "sinaisDeAtencao": "Muitas crianças só juntam sons com segurança entre 6 e 7 anos, junto com o aprendizado das letras. Se, depois de um ano de ensino sistemático, ela ainda não consegue juntar os sons de palavras curtas, converse com a escola e, se fizer sentido, com um fonoaudiólogo. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
+        "referencias": [
+          "soares-alfabetizacao-metodos",
+          "morais-consciencia-fonologica",
+          "nelp-alfabetizacao-inicial"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "É o “jogo do robô” com objetos: a criança escolhe entre dois ou três objetos o que o robô está falando, antes de ver qualquer letra.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, juntar sons para ler costuma vir por volta dos {idade} anos, depois das letras vividas por imagens e histórias. Até lá, jogos de adivinhar palavras ditas de forma lenta e brincada servem só de preparo do ouvido.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Clássico": {
+            "comoParticipar": "Juntar sons é a base da leitura sistemática (som → letra → palavra). Faça lições curtas e diárias, com palavras regulares, antes de avançar.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "revisado",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-20"
       }
     },
     {

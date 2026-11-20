@@ -71,6 +71,42 @@
       }
     },
     {
+      "id": "sd-lg-fon-08",
+      "marco": "LG.FON.08",
+      "instrucao": "Diga “pão” e peça uma palavra que rime (pode ser inventada). Repita com “gato”, “bola” e “mala”.",
+      "consolidado": "Diz uma palavra que rima (real ou inventada) em 3 dos 4 desafios.",
+      "emDesenvolvimento": "Repete a mesma palavra ou diz uma que começa igual, e não termina igual.",
+      "revisao": {
+        "estado": "revisado",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-20"
+      }
+    },
+    {
+      "id": "sd-lg-fon-09",
+      "marco": "LG.FON.09",
+      "instrucao": "Diga “gato, pato, bola” e pergunte qual termina diferente. Repita com “sapo, copo, mesa”.",
+      "consolidado": "Acerta os dois trios.",
+      "emDesenvolvimento": "Escolhe pelo começo da palavra ou acerta só um trio.",
+      "revisao": {
+        "estado": "revisado",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-20"
+      }
+    },
+    {
+      "id": "sd-lg-fon-10",
+      "marco": "LG.FON.10",
+      "instrucao": "Fale os sons com uma pausa e pergunte que palavra é: /s/ /o/ /l/ (sol), /m/ /a/ /r/ (mar), /f/ /a/ /k/ /a/ (faca).",
+      "consolidado": "Descobre a palavra em 2 das 3 tentativas.",
+      "emDesenvolvimento": "Repete os sons sem juntar ou chuta uma palavra que só começa igual.",
+      "revisao": {
+        "estado": "revisado",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-20"
+      }
+    },
+    {
       "id": "sd-ma-sen-01",
       "marco": "MA.SEN.01",
       "instrucao": "Peça que conte de 1 a 10, sem objetos.",
