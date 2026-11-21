@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u2-wash-wash-wash",
   "titulo": "Wash, wash, wash",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "marcos": ["LI.ESC.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

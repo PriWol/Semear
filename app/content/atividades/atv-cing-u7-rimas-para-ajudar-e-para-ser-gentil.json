@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u7-rimas-para-ajudar-e-para-ser-gentil",
   "titulo": "Rimas e cantigas: para ajudar e para ser gentil",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

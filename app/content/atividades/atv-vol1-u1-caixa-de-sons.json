@@ -1,0 +1,82 @@
+{
+  "id": "atv-vol1-u1-caixa-de-sons",
+  "titulo": "A caixa de sons: achar o par que faz o mesmo som",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Sentidos e classificação",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 1,
+    "paginas": [6, 14]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 10,
+  "cuidados": "Os potinhos precisam estar bem vedados, com a tampa presa com fita. Grãos e sal grosso só com o adulto por perto: depois do jogo, guarde a caixa fora da altura dela e confira que nenhum grão ficou solto na mesa ou no chão (risco de engasgo antes dos 3 anos).",
+  "palavrasChave": ["caixa de sons", "pares", "escutar", "montessori", "sons iguais"],
+  "objetivo": "A criança **escuta com atenção** seis potinhos fechados e acha os dois que fazem o mesmo som, conferindo o par pelo desenho no fundo.",
+  "passos": [
+    {
+      "titulo": "Montar a caixa (adulto)",
+      "minutos": 0,
+      "texto": "Seis potinhos opacos iguais: encha dois com um pouco de arroz, dois com feijão e dois com sal grosso, a mesma quantidade nos dois de cada par. Feche bem e passe fita adesiva em volta da tampa. As etiquetas (os círculos recortados da página do livro: maçã para o arroz, estrela para o feijão, folha para o sal grosso) vão *no fundo* dos potinhos, onde ela não vê enquanto brinca: o desenho igual mostra que os dois formam um par."
+    },
+    {
+      "titulo": "Descobrir",
+      "minutos": 2,
+      "texto": "Sacuda um potinho perto do ouvido dela, depois outro.",
+      "fala": "Este faz *chhh*, este faz *toc-toc*."
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 4,
+      "texto": "Com só dois pares na mesa, ela sacode e procura o som igual. Depois, os três pares. Ela confere sozinha, virando o potinho: é o “controle do erro”, sem precisar que o adulto diga se acertou."
+    },
+    {
+      "titulo": "Criar",
+      "minutos": 2,
+      "texto": "Ela sacode um potinho num ritmo e você imita; depois vocês trocam."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Fica atenta ao som de um potinho", "Encontra pelo menos um par"],
+    "emDesenvolvimento": [
+      "Quer só sacudir, sem procurar o par (tudo bem: é o primeiro passo)",
+      "Ainda não confere o par virando o potinho"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Comece com só dois pares na mesa, antes de pôr os três.",
+    "facil": "Ela cria um ritmo no potinho e você imita; depois trocam."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 1: Eu e meus sentidos)",
+      "deCasa": false
+    },
+    {
+      "item": "Seis potinhos opacos iguais, com tampa; arroz, feijão e sal grosso; fita adesiva",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fica atenta ao som de um potinho",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Encontra pelo menos um par",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Ela achou o par? Como conferiu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

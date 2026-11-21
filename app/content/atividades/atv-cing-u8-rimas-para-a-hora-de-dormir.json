@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u8-rimas-para-a-hora-de-dormir",
   "titulo": "Rimas e cantigas: para a hora de dormir",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

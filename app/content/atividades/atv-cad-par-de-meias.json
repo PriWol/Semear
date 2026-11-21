@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-par-de-meias",
+  "titulo": "Par de meias",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Sentidos e classificação",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 3,
+    "paginas": [32, 32]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Meias limpas e sem enfeites ou botões que se soltem; cesto raso e estável. Fique junto: nada de meias na boca ou enroladas perto do pescoço. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["meias", "pares", "igual", "diferente", "classificar"],
+  "objetivo": "A criança procura a meia igual entre meias misturadas, junta o par e diz “igual” ou “diferente”.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Espalhe as meias no chão e mostre uma: “cadê outra igual?”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Deixe que ela procure e junte as duas."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Diga “igual” quando for par, e “diferente” quando não for."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "No fim, dobre o par junto: é uma ajuda de verdade na casa."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Esta é azul. Cadê outra igual?” “Igual! Achou o par.” “Esta é diferente: é vermelha.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Qual é igual a esta? Qual é diferente? Quantas meias temos?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Parear sapatos, colheres ou tampas e potes. 2) Parear por cor: tudo o que é vermelho junto. 3) Esconda uma meia e peça para achar o par perdido."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Parear é a primeira forma de classificar, base da matemática, e ajudar na roupa é uma tarefa real, que dá orgulho. Se ela não tiver paciência, comece com 2 pares e aumente aos poucos."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "3 ou 4 pares de meias limpas de cores diferentes, bagunçadas num cesto",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 3",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "atv-cad-passeio-cinco-sentidos",
+  "titulo": "Passeio dos cinco sentidos",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 1,
+    "paginas": [12, 12]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Não deixe que ela prove plantas, frutinhas nem terra. Em lugar de mato alto, calçado fechado. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["passeio", "sentidos", "quintal", "natureza", "escutar"],
+  "objetivo": "A criança escuta, olha, cheira e toca o que há no quintal ou na praça, enquanto o adulto nomeia o que encontram.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Chegue ao lugar e fiquem em silêncio por um minuto, de pé ou sentadas."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "“Escuta!” Aponte a orelha e espere. Depois: “Olha!”, “Cheira!”, “Toca!”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Deixe que ela toque numa folha, na terra, numa casca, num tronco."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Nomeie o que encontrarem. Nenhuma pressa: um sentido já é um passeio."
+    },
+    {
+      "titulo": "Passo 5",
+      "minutos": 0,
+      "texto": "Na volta, lavem as mãos juntas."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Shhh… escuta! Que barulho é esse?” “Que cheiro bom! É a terra molhada.” “A folha é lisa. E o tronco é áspero.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O que você ouviu? Onde está o passarinho? Qual é mais macio: a folha ou a pedra?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Faça o passeio com um só sentido: hoje, só escutar; amanhã, só tocar. 2) Leve uma sacolinha para guardar uma folha ou uma pedra: um tesouro para a cesta. 3) Se estiver chovendo, faça da janela: ouvir a chuva, ver as gotas, sentir o vento."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Para Charlotte Mason, o trabalho da criança pequena é conhecer o mundo pelos cinco sentidos, ao ar livre. Não há o que acertar: o passeio é o objetivo. Faça no mesmo lugar várias vezes, para ela perceber o que mudou."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; um quintal, uma praça, uma varanda ou até a janela",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 1",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

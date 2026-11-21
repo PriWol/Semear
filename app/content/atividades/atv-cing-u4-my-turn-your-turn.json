@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u4-my-turn-your-turn",
   "titulo": "My turn, your turn",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "marcos": ["LI.ESC.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

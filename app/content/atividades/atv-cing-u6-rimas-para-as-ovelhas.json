@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u6-rimas-para-as-ovelhas",
   "titulo": "Rimas e cantigas: para as ovelhas",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

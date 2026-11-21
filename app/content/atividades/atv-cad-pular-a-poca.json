@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-pular-a-poca",
+  "titulo": "Pular a poça",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Movimento e coordenação",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 1,
+    "paginas": [16, 16]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["poça", "pular", "chuva", "equilíbrio", "movimento"],
+  "objetivo": "A criança pula com os dois pés juntos, depressa e devagar, numa poça ou num tapete que faz de poça, ao comando da voz.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Mostre como pular com os dois pés juntos, dobrando os joelhos."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Conte baixinho: “um, dois… e pula!”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Pulem depressa, depois devagarinho, na pontinha dos pés."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Troquem: agora ela diz quando pular."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Um, dois… e pula! Splash!” “Pula, pula, pula!” “Agora devagarinho, de mansinho.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "A poça é grande ou pequena? Vamos pular rápido ou devagar? Quem sabe pular mais alto?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Pule de um lado para o outro de uma linha de fita no chão. 2) Faça o “sapo”: agachada, e pula bem baixo. 3) Depois de pular, fiquem quietas e escutem a chuva (ou o silêncio)."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Pular junto, em pé, com comando de voz, trabalha o equilíbrio, a coordenação e as palavras que descrevem o movimento (rápido, devagar, alto, baixo). A brincadeira com poça serve também para olhar para o tempo: ontem choveu?"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Botas (ou pés descalços), uma poça de verdade, ou um tapete azul ou uma toalha no chão fazendo de poça",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 1",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

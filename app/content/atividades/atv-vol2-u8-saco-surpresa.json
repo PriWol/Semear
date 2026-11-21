@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol2-u8-saco-surpresa",
+  "titulo": "O saco surpresa: sentir sem ver",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Sentidos e classificação",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 8,
+    "paginas": [60, 66]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Use objetos conhecidos, sem pontas, que não caibam na boca (a chave e a pedra: escolha as grandes e de borda lisa). Fique junto e não deixe o saco com objetos ao alcance depois do jogo.",
+  "palavrasChave": ["saco surpresa", "tato", "texturas", "montessori", "adivinhar"],
+  "objetivo": "A criança tateia um objeto dentro de um saco, sem ver, e diz qual é; depois procura o igual só pelo tato e esconde um para o adulto adivinhar por pistas.",
+  "passos": [
+    {
+      "titulo": "Descobrir",
+      "minutos": 3,
+      "texto": "Ela vê os objetos (colher, chave, pena, pedra, laranja); você põe um no saco, ela tateia e diz qual é."
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 3,
+      "texto": "Você mostra um cartão (ou um objeto igual); ela procura no saco o mesmo, só pelo tato. Vocabulário: liso, áspero, macio, duro, frio, redondo, pontudo."
+    },
+    {
+      "titulo": "Criar",
+      "minutos": 2,
+      "texto": "Ela esconde um objeto e dá pistas: “é duro, é frio, abre a porta…”, e você adivinha.",
+      "fala": "É duro, é frio, abre a porta…"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Adivinha o objeto só pelo tato",
+      "Usa uma palavra de textura (liso, áspero, macio…)"
+    ],
+    "emDesenvolvimento": [
+      "Espia dentro do saco (normal: brinque de novo, sem cobrar)",
+      "Ainda não dá pistas"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Dois objetos só, bem diferentes (pena e pedra).",
+    "facil": "Ela esconde e dá pistas; você adivinha."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 8: A Princesa e a Ervilha e histórias do Brasil)",
+      "deCasa": false
+    },
+    {
+      "item": "Um saco de pano e cinco objetos conhecidos (colher, chave, pena, pedra, laranja)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Adivinha o objeto só pelo tato",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Usa uma palavra de textura (liso, áspero, macio…)",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras de textura ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

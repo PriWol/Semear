@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-caixa-surpresa",
+  "titulo": "A caixa surpresa",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Sentidos e classificação",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 8,
+    "paginas": [75, 75]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Só objetos maiores que o punho dela e sem pontas. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["caixa", "tato", "surpresa", "adivinhar", "objetos"],
+  "objetivo": "A criança põe a mão numa caixa, apalpa um objeto escondido e tenta dizer o que é, com pistas do adulto.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Ponha um objeto dentro da caixa, sem que ela veja."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Peça que ela ponha a mão pelo buraco e apalpe."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Pergunte: “o que será?”. Aceite “não sei” e dê pistas: “é redondo”, “serve para comer”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Tire o objeto e comemore: “era uma maçã!”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Põe a mão aqui. O que será?” “É redondo e liso… é uma maçã!” “Agora é a sua vez de escolher o que esconder.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "É duro ou mole? É grande ou pequeno? O que será?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Use objetos todos da cozinha. 2) Faça pares: o que está na caixa também está na mesa. 3) Ela esconde, você adivinha."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Sentir sem ver treina o tato e o vocabulário, e “não sei” é uma resposta boa. Ela escolhe o que esconder depois, e liderar o jogo ajuda quem tem muita vontade própria."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Uma caixa de sapato ou de papelão com um buraco do tamanho da mão; 3 ou 4 objetos de casa maiores que o punho dela",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 8",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

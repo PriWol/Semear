@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u8-brush-brush-brush",
   "titulo": "Brush, brush, brush",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "marcos": ["LI.ESC.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-voz-de-bicho",
+  "titulo": "Voz de bicho",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 2,
+    "paginas": [22, 22]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Sem gritar: o som deve ser alegre e em volume moderado. Se a voz ficar cansada, faça uma pausa e ofereça água. Bichinho de pelúcia sem olhos ou botões que se soltem. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["voz", "bichos", "grave", "agudo", "sussurro"],
+  "objetivo": "A criança brinca com a voz de bichos (grosso e alto, fino e baixinho, sussurro) e escolhe quem fala na conversa.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Escolha três bichos: um grande (leão), um pequeno (ratinho) e um que você sabe que ela gosta."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Cada bicho tem uma voz: o leão fala grosso e alto; o ratinho, fininho e baixinho, quase um sussurro."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Faça uma conversa curta entre os dois bichos. Deixe que ela escolha quem fala."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine com os bichos dormindo: voz de sono, bem baixa."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“O leão fala: ROOOAR! Bom dia!” “O ratinho fala: psiu, psiu… quase não dá pra ouvir.” “Agora todo mundo está com sono: shhh.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Como faz o gato? Quem fala baixinho? Qual voz a Marina quer?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Voz de monstro bravo que fica pequeno e dócil. 2) Voz de chuva (baixinho) e de trovão (alto). 3) Um bicho que fala só em sussurro."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Brincar de alto e baixo, grosso e fino, treina o controle da voz e mostra que ela pode escolher como falar. O sussurro e a “voz de sono” são o mesmo controle que usamos para acalmar. Nessa idade, muita criança adora “mandar” no bicho: deixe."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; um bichinho de pelúcia ajuda",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 2",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

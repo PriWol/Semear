@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u6-animal-sounds",
   "titulo": "Animal sounds",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "marcos": ["LI.VOC.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

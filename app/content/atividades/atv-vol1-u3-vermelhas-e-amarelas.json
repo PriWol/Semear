@@ -1,0 +1,78 @@
+{
+  "id": "atv-vol1-u3-vermelhas-e-amarelas",
+  "titulo": "Vermelhas e amarelas: separar frutas por cor",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Sentidos e classificação",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 3,
+    "paginas": [23, 33]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 3,
+  "cuidados": "Use frutas grandes ou os cartões de frutas do livro. Uvas, cerejas e jabuticabas inteiras são risco de engasgo antes dos 4 anos: corte as uvas ao comprido, retire caroços e sementes e ofereça sempre com a criança sentada. Quem usa a faca é o adulto.",
+  "palavrasChave": ["cores", "frutas", "classificar", "vermelho", "amarelo"],
+  "objetivo": "A criança separa frutas em duas cestas, a das vermelhas e a das amarelas, e inventa outro jeito de separar.",
+  "passos": [
+    {
+      "titulo": "Descobrir",
+      "minutos": 2,
+      "texto": "Mostre uma fruta vermelha e uma amarela e nomeie a cor de cada uma.",
+      "fala": "Esta é vermelha. Esta é amarela."
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 4,
+      "texto": "Ponha uma fruta de modelo em cada cesta e entregue as outras uma a uma: “onde mora esta?”. A laranja e a pera podem gerar boa conversa (“é amarela ou laranja?”): aceite a escolha dela se ela explicar.",
+      "fala": "Onde mora esta?"
+    },
+    {
+      "titulo": "Criar",
+      "minutos": 2,
+      "texto": "Ela inventa outro jeito de separar: grandes e pequenas, as que rolam e as que não rolam."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Põe a fruta na cesta da cor certa", "Explica por que escolheu uma cesta"],
+    "emDesenvolvimento": [
+      "Mistura as cores (normal: continue nomeando)",
+      "Prefere comer as frutas a separar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Duas frutas só, uma de cada cor, e ela diz “esta” ou “esta”.",
+    "facil": "Ela inventa outro critério de separação e explica."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 3: O jardim e o pomar)",
+      "deCasa": false
+    },
+    {
+      "item": "Frutas de verdade ou os cartões de frutas do livro; duas cestas",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Põe a fruta na cesta da cor certa",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Explica por que escolheu uma cesta",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que critério ela inventou para separar?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

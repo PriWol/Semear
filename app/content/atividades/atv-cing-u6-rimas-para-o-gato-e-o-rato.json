@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u6-rimas-para-o-gato-e-o-rato",
   "titulo": "Rimas e cantigas: para o gato e o rato",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

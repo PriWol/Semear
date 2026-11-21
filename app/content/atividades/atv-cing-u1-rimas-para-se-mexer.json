@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u1-rimas-para-se-mexer",
   "titulo": "Rimas e cantigas: para se mexer",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

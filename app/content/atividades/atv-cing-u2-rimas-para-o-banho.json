@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u2-rimas-para-o-banho",
   "titulo": "Rimas e cantigas: para o banho",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

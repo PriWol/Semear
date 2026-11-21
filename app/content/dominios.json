@@ -267,6 +267,7 @@
       "id": "NM",
       "nome": "Natureza, Mundo e Sociedade",
       "icone": "🌎",
+      "categorias": ["Observar a natureza", "Água, terra e plantas", "Tempo e rotina"],
       "linhas": [
         {
           "id": "NM.VIV",
@@ -300,6 +301,12 @@
       "id": "DI",
       "nome": "Desenvolvimento Integral",
       "icone": "🌱",
+      "categorias": [
+        "Vida prática",
+        "Sentidos e classificação",
+        "Jogos e brincadeiras",
+        "Movimento e coordenação"
+      ],
       "linhas": [
         {
           "id": "DI.SOC",

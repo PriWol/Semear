@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u3-rimas-mais-para-a-mesa",
   "titulo": "Rimas e cantigas: mais para a mesa",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

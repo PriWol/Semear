@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u1-stretch-and-wake-up",
   "titulo": "Stretch and wake up",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "marcos": ["LI.ESC.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

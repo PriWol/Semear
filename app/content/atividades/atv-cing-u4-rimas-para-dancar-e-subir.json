@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u4-rimas-para-dancar-e-subir",
   "titulo": "Rimas e cantigas: para dançar e subir",
-  "marcos": [],
-  "dominio": "AR",
-  "categoria": "Canto",
+  "marcos": ["LI.CAN.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

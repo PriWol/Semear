@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol7-u7-en",
+  "titulo": "O corpo em inglês: “This little pig” e o jogo “Faça como eu digo”",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 7,
+    "paginas": [42, 47]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "O corpo da criança é dela: peça licença antes de tocar (“posso fazer cócegas no pé?”) e pare quando ela disser não, em qualquer idioma. Espaço livre de quinas e degraus para se mexer. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "palavrasChave": ["inglês", "corpo", "comandos", "this little pig", "faça como eu digo"],
+  "objetivo": "A criança brinca com os dedos do pé numa rima inglesa e faz o gesto de comandos curtos em inglês (“Touch your nose!”), entendendo pelo corpo antes de entender pela palavra.",
+  "passos": [
+    {
+      "titulo": "Ouvir a rima",
+      "minutos": 3,
+      "texto": "Pegue o pé da Marina (com licença) e, a cada verso, balance um dedo, começando pelo maior; no “wee, wee, wee”, faça cócegas até o calcanhar. *Toe* é “dedo do pé” e *pig*, “porco”. O texto foi montado a partir das legendas das pranchas de *This Little Pig Went to Market* (Londres: Routledge, c. 1870, domínio público); o livro não traz melodia. Tradução da coleção: “Este porquinho foi ao mercado, / este porquinho ficou em casa, / este porquinho comeu rosbife, / este porquinho não comeu nada, / e este porquinho fez ‘uí! uí! uí!’ / o caminho todo para casa.”",
+      "fala": "This little pig went to market, / This little pig stayed at home, / This little pig had roast beef, / This little pig had none, / And this little pig cried “Wee! wee! wee!” / All the way home."
+    },
+    {
+      "titulo": "Faça como eu digo",
+      "minutos": 6,
+      "texto": "O adulto diz um comando em inglês e faz o gesto junto; a Marina faz o mesmo: *Touch your nose!* (toque o nariz), *Clap your hands!* (bata palmas), *Stamp your foot!* (bata o pé), *Close your eyes!* (feche os olhos), *Open your mouth!* (abra a boca). Quando ela já reconhecer, o adulto diz o comando e **não faz o gesto**: quem entendeu faz sozinha. Troquem: a Marina manda e o adulto obedece (e erra de propósito, para ela rir). No fim, uma parada: “stop!” e todos ficam imóveis como estátuas. Use só os comandos que ela já entende; se um for difícil, volte ao gesto sozinho. Não peça que ela diga os comandos em voz alta: o objetivo é ouvir e agir.",
+      "fala": "Touch your nose!"
+    },
+    {
+      "titulo": "No banho e ao vestir (opcional)",
+      "minutos": 1,
+      "texto": "Diga a parte do corpo em inglês: *foot* ao calçar a meia, *hand* ao lavar as mãos."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Segue um comando simples em inglês",
+      "Diz “wee, wee, wee” ao fim da rima, rindo"
+    ],
+    "emDesenvolvimento": [
+      "Só olha e faz o gesto depois de ver o adulto (tudo bem: o gesto junto é o ponto de partida)",
+      "Responde em português (repita a ideia em inglês, sem corrigir)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só a rima dos porquinhos, com a massagem nos dedos do pé.",
+    "facil": "Dois comandos em seguida, ou a Marina como chefe do jogo."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 7: O corpo)",
+      "deCasa": false
+    },
+    {
+      "item": "Espaço para se mexer; os cartões do corpo recortados, se quiser",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Segue um comando simples em inglês",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Diz “wee, wee, wee” ao fim da rima, rindo",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que comandos ela fez sem ver o gesto? Riu no “wee, wee, wee”?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

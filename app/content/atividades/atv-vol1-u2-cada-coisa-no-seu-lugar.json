@@ -1,0 +1,79 @@
+{
+  "id": "atv-vol1-u2-cada-coisa-no-seu-lugar",
+  "titulo": "Cada coisa no seu lugar: a história da ratinha arrumadeira",
+  "marcos": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 2,
+    "paginas": [15, 22]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "cuidados": "Use uma xícara, uma colher e um prato inquebráveis (plástico ou esmaltado) e sem pontas. Esconda a xícara só em lugares seguros da casa, com você por perto, sem gavetas pesadas nem armários altos. Nenhuma peça pequena que caiba na boca.",
+  "palavrasChave": ["ratinha", "xícara", "história", "arrumar", "narração"],
+  "objetivo": "A criança ouve a história da ratinha que perdeu a xícara, diz o que a ratinha perdeu, onde procurou e onde achou, e brinca de achar a xícara pela casa.",
+  "passos": [
+    {
+      "titulo": "Preparar os objetos",
+      "minutos": 1,
+      "texto": "Tenha à mão uma xícara, uma colher e um prato. Quando a história disser “a xícara ia para a prateleira”, ponha a xícara num lugar alto; a colher, numa gaveta. Ela vai querer fazer isso sozinha na segunda vez."
+    },
+    {
+      "titulo": "Contar a história",
+      "minutos": 4,
+      "texto": "Numa casinha pequena, embaixo do armário da cozinha, morava uma ratinha muito arrumadeira. Todo dia de manhã ela dizia: “Cada coisa no seu lugar!”. A xícara ia para a prateleira. A colher ia para a gaveta. O prato ia para o escorredor. Mas um dia a ratinha procurou, procurou… e não achou a sua xícara de chá! Então chamou as irmãs ratinhas, e todas vieram ajudar. Olharam embaixo da mesa: não estava. Olharam dentro da tigela: não estava. Até que a menorzinha gritou: “Achei!”. A xícara estava no chão, de cabeça para baixo, servindo de banquinho! A ratinha riu, lavou a xícara e guardou na prateleira: “Cada coisa no seu lugar!”.",
+      "fala": "Cada coisa no seu lugar!"
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 2,
+      "texto": "Depois de contar, pergunte: “O que a ratinha perdeu?”, “Onde elas procuraram?”, “Onde estava a xícara?”."
+    },
+    {
+      "titulo": "Procurar de verdade",
+      "minutos": 3,
+      "texto": "Brinque de esconder a xícara de verdade pela casa e procurem juntas, dizendo “não está… não está… achei!”. Na imagem do livro, conte as ratinhas com ela, tocando cada uma."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz o que a ratinha perdeu", "Guarda um objeto no lugar sem ser lembrada"],
+    "emDesenvolvimento": [
+      "Só quer procurar a xícara, sem responder às perguntas (tudo bem: a brincadeira também é narração)",
+      "Ainda precisa ver os objetos para lembrar a história"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Conte só a primeira parte e guardem juntas a xícara, a colher e o prato.",
+    "facil": "Ela conta a história de volta com os objetos na mão."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 2: Minha casa e meus objetos)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma xícara, uma colher e um prato inquebráveis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Diz o que a ratinha perdeu",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Guarda um objeto no lugar sem ser lembrada",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela respondeu sobre a ratinha? Onde escondeu a xícara?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
