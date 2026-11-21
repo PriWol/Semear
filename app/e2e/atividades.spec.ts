@@ -16,7 +16,8 @@ test('buscar → imprimir uma atividade avulsa', async ({ page }) => {
   await expect(page.locator('[data-atividade="atv-feira-numeros"]')).toHaveCount(0);
 
   // filtro por área
-  await page.getByRole('searchbox').fill('');
+  // (a área Matemática tem mais de 20 atividades: a busca "feira" mantém a atividade na primeira página)
+  await page.getByRole('searchbox').fill('feira');
   await page.getByLabel('Área').selectOption('MA');
   await expect(page.locator('[data-atividade="atv-feira-numeros"]')).toBeVisible();
   await expect(page.locator('[data-atividade="atv-caca-silabas"]')).toHaveCount(0);
@@ -136,5 +137,56 @@ for (const largura of [320, 390]) {
     );
     expect(rolagem).toBeLessThanOrEqual(0);
     expect(externas).toEqual([]);
+  });
+}
+
+// #130: 20 por vez, "Ver mais 20", contagem para leitor de tela e "Limpar filtros".
+test('lista paginada de 20 em 20, com contagem e limpar filtros', async ({ page }) => {
+  await page.goto('./');
+  await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+  await page.getByRole('link', { name: 'Atividades', exact: true }).click();
+
+  const cartoes = page.locator('[data-atividade]');
+  const contagem = page.locator('#contagem-atividades');
+  await expect(cartoes).toHaveCount(20);
+  await expect(contagem).toHaveAttribute('aria-live', 'polite');
+  await expect(contagem).toHaveText(/^Mostrando 20 de \d+ atividades$/);
+  await expect(page.getByRole('button', { name: 'Limpar filtros' })).toBeHidden();
+
+  await page.getByRole('button', { name: 'Ver mais 20' }).click();
+  await expect(cartoes).toHaveCount(40);
+  await expect(contagem).toHaveText(/^Mostrando 40 de \d+ atividades$/);
+
+  // qualquer filtro volta aos primeiros 20 e oferece "Limpar filtros"
+  await page.getByLabel('Duração').selectOption('60');
+  await expect(page.getByRole('button', { name: 'Limpar filtros' })).toBeVisible();
+  await expect(cartoes.first()).toBeVisible();
+  expect(await cartoes.count()).toBeLessThanOrEqual(20);
+
+  // sem resultado: mensagem e a mesma saída
+  await page.getByRole('searchbox').fill('zzzzqqqq');
+  await expect(page.getByText('Nenhuma atividade encontrada. Tente')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Limpar filtros' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Limpar filtros' }).click();
+  await expect(page.getByRole('searchbox')).toHaveValue('');
+  await expect(page.getByLabel('Duração')).toHaveValue('');
+  await expect(cartoes).toHaveCount(20);
+  await expect(contagem).toHaveText(/^Mostrando 20 de \d+ atividades$/);
+  await expect(page.getByRole('button', { name: 'Limpar filtros' })).toBeHidden();
+});
+
+for (const largura of [320, 390]) {
+  test(`lista de atividades sem rolagem horizontal em ${largura}px`, async ({ page }) => {
+    await page.setViewportSize({ width: largura, height: 800 });
+    await page.goto('./');
+    await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+    await page.getByRole('link', { name: 'Atividades', exact: true }).click();
+    await page.getByRole('searchbox').fill('a');
+    await expect(page.getByRole('button', { name: 'Limpar filtros' })).toBeVisible();
+    const rolagem = await page.evaluate(
+      () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    );
+    expect(rolagem).toBeLessThanOrEqual(0);
   });
 }

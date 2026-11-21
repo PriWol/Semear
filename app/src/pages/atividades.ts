@@ -4,6 +4,13 @@ import { html, type HtmlSeguro } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
 import { marcosVisiveis } from '../domain/conteudo';
 import { buscarAtividades, dominioDaAtividade } from '../domain/busca';
+import {
+  TAMANHO_PAGINA,
+  fatiarPagina,
+  mostrarLimparFiltros,
+  proximoLote,
+  textoContagem,
+} from '../domain/paginacao';
 import { imprimirAtividadeAvulsa } from './sessao-avulsa';
 import { VERTENTES, type Atividade, type Vertente } from '../domain/tipos';
 
@@ -24,27 +31,23 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
     publicadas.some((a) => dominioDaAtividade(a, ctx.idx) === d.id),
   );
 
-  const lista = (itens: Atividade[]): HtmlSeguro =>
-    itens.length === 0
-      ? html`<p class="nota">Nenhuma atividade encontrada. Tente outra palavra ou tire um filtro.</p>`
-      : html`<ul class="lista-atividades">
-          ${itens.map((a) => {
-            const folha = a.folhas[0];
-            return html`<li class="cartao" data-atividade="${a.id}">
-              <h3><a href="#/atividade/${a.id}">${a.titulo}</a></h3>
-              <p class="nota">
-                ${a.duracaoMin} min · ${a.idade[0]} a ${a.idade[1]} anos
-                ${marcosVisiveis(ctx.idx, a).length ? html`· ${marcosVisiveis(ctx.idx, a).join(', ')}` : ''}
-              </p>
-              <p>${a.objetivo.replace(/\*+/g, '')}</p>
-              ${folha ? html`<p class="nota">Primeira folha: ${folha.titulo}</p>` : ''}
-              <button class="botao primario" type="button" data-imprimir="${a.id}"
-                ${crianca ? '' : 'disabled'}>
-                🖨️ Imprimir esta atividade
-              </button>
-            </li>`;
-          })}
-        </ul>`;
+  const cartao = (a: Atividade): HtmlSeguro => {
+    const folha = a.folhas[0];
+    return html`<li class="cartao" data-atividade="${a.id}">
+      <h3><a href="#/atividade/${a.id}">${a.titulo}</a></h3>
+      <p class="nota">
+        ${a.duracaoMin} min · ${a.idade[0]} a ${a.idade[1]} anos
+        ${marcosVisiveis(ctx.idx, a).length ? html`· ${marcosVisiveis(ctx.idx, a).join(', ')}` : ''}
+      </p>
+      <p>${a.objetivo.replace(/\*+/g, '')}</p>
+      ${folha ? html`<p class="nota">Primeira folha: ${folha.titulo}</p>` : ''}
+      <button class="botao primario" type="button" data-imprimir="${a.id}"
+        ${crianca ? '' : 'disabled'}>
+        🖨️ Imprimir esta atividade
+      </button>
+    </li>`;
+  };
+  const cartoes = (itens: Atividade[]): string => itens.map((a) => cartao(a).valor).join('');
 
   return {
     titulo: 'Atividades',
@@ -105,16 +108,42 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
           </select></label
         >
       </form>
-      <div id="resultado-atividades" aria-live="polite">${lista(buscarAtividades(publicadas, { texto: '' }, ctx.idx).map((r) => r.atividade))}</div>
+      <p id="contagem-atividades" class="nota" role="status" aria-live="polite"></p>
+      <button class="link-botao" type="button" id="limpar-filtros" hidden>Limpar filtros</button>
+      <div id="resultado-atividades"></div>
+      <button class="botao" type="button" id="ver-mais" hidden></button>
     `,
     montar(raiz) {
       const form = raiz.querySelector<HTMLFormElement>('#filtros-atividades');
       const resultado = raiz.querySelector<HTMLElement>('#resultado-atividades');
-      if (!form || !resultado) return;
+      const contagem = raiz.querySelector<HTMLElement>('#contagem-atividades');
+      const limpar = raiz.querySelector<HTMLButtonElement>('#limpar-filtros');
+      const verMais = raiz.querySelector<HTMLButtonElement>('#ver-mais');
+      if (!form || !resultado || !contagem || !limpar || !verMais) return;
       form.addEventListener('submit', (ev) => ev.preventDefault());
 
       const campo = (n: string) => form.elements.namedItem(n) as HTMLInputElement | null;
       const escolhida = () => criancas.find((c) => c.id === campo('crianca')?.value) ?? crianca;
+
+      // Resultado completo da busca atual e quantos já aparecem (#130): muda busca/filtro, volta a 20.
+      let achadas: Atividade[] = [];
+      let mostrando = TAMANHO_PAGINA;
+
+      const valoresFiltro = () => ({
+        texto: campo('texto')?.value ?? '',
+        dominio: campo('dominio')?.value ?? '',
+        vertente: campo('vertente')?.value ?? '',
+        duracao: campo('duracao')?.value ?? '',
+        idade: campo('idade')?.value ?? '',
+      });
+
+      const atualizarRodape = () => {
+        contagem.textContent = textoContagem(achadas.length, mostrando);
+        limpar.hidden = !mostrarLimparFiltros(valoresFiltro());
+        const lote = proximoLote(achadas.length, mostrando);
+        verMais.hidden = lote === 0;
+        verMais.textContent = `Ver mais ${lote}`;
+      };
 
       const atualizar = () => {
         const alvo = escolhida();
@@ -128,7 +157,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
             : escolhaIdade
               ? Number(escolhaIdade)
               : undefined;
-        const achadas = buscarAtividades(
+        achadas = buscarAtividades(
           publicadas,
           {
             texto: campo('texto')?.value ?? '',
@@ -138,9 +167,44 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
             idade,
           },
           ctx.idx,
-        );
-        resultado.innerHTML = lista(achadas.map((r) => r.atividade)).valor;
+        ).map((r) => r.atividade);
+        mostrando = TAMANHO_PAGINA;
+        resultado.innerHTML =
+          achadas.length === 0
+            ? html`<p class="nota">
+                Nenhuma atividade encontrada. Tente outra palavra ou tire um filtro.
+              </p>`.valor
+            : `<ul class="lista-atividades">${cartoes(fatiarPagina(achadas, mostrando))}</ul>`;
+        atualizarRodape();
       };
+
+      const guardarFiltros = () => {
+        try {
+          sessionStorage.setItem(CHAVE_FILTROS, JSON.stringify(lerFormulario(form)));
+        } catch {
+          /* sem armazenamento: só não lembra */
+        }
+      };
+
+      // "Ver mais" acrescenta ao fim da lista, sem redesenhar o que já está na tela (o foco não se perde).
+      verMais.addEventListener('click', () => {
+        const lista = resultado.querySelector('ul');
+        if (!lista) return;
+        const antes = mostrando;
+        mostrando += proximoLote(achadas.length, mostrando);
+        lista.insertAdjacentHTML('beforeend', cartoes(achadas.slice(antes, mostrando)));
+        atualizarRodape();
+      });
+
+      limpar.addEventListener('click', () => {
+        for (const nome of ['texto', 'dominio', 'vertente', 'duracao', 'idade']) {
+          const el = campo(nome);
+          if (el) el.value = '';
+        }
+        atualizar();
+        guardarFiltros();
+        campo('texto')?.focus();
+      });
       // Filtros guardados na sessão do navegador: ao voltar da página de uma atividade, a busca continua.
       // Nada sai do aparelho; se o armazenamento falhar, a lista só abre sem filtros.
       try {
@@ -152,17 +216,13 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
           const el = campo(nome);
           if (el && typeof valor === 'string' && nome !== 'crianca') el.value = valor;
         }
-        atualizar();
       } catch {
         /* sem armazenamento: segue sem restaurar */
       }
+      atualizar();
       form.addEventListener('input', () => {
         atualizar();
-        try {
-          sessionStorage.setItem(CHAVE_FILTROS, JSON.stringify(lerFormulario(form)));
-        } catch {
-          /* sem armazenamento: só não lembra */
-        }
+        guardarFiltros();
       });
 
       let gerando = false;
