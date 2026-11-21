@@ -1,0 +1,96 @@
+{
+  "id": "atv-vol6-u4",
+  "titulo": "Árvores e folhas: uma árvore e suas visitas",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Caderno da natureza",
+  "materialImpresso": {
+    "volume": 6,
+    "unidade": 4,
+    "paginas": [31, 38]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Não suba em árvore desconhecida, não coma frutos nem sementes que achar e evite a seiva (algumas plantas queimam a pele ou coçam). Lave as mãos depois.",
+  "palavrasChave": ["árvore", "folhas", "casca", "tronco", "natureza"],
+  "objetivo": "A criança **escolhe uma árvore perto de casa e volta a ela mais de uma vez**, nomeia as partes (raiz, tronco, galho, folha, flor, fruto) e junta folhas caídas, separando por forma, tamanho e cor.",
+  "passos": [
+    {
+      "titulo": "Visitar a árvore escolhida",
+      "minutos": 8,
+      "texto": "Ir até a árvore escolhida e ficar um minuto quieta, olhando. Passar a mão no tronco e dizer como é a casca. Abraçar o tronco e ver se os braços dão a volta."
+    },
+    {
+      "titulo": "Desenho da casca e folhas caídas",
+      "minutos": 9,
+      "texto": "Fazer o desenho da casca: papel no tronco e giz por cima. Juntar folhas caídas e olhar a nervura de cada uma. Separar as folhas em montinhos (grande e pequena, lisa e serrilhada)."
+    },
+    {
+      "titulo": "Registrar e voltar",
+      "minutos": 8,
+      "texto": "Colar ou desenhar as folhas no caderno. Voltar à árvore uma semana depois e contar o que mudou. Dar um nome à árvore e contar a alguém por quê."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz o nome de pelo menos três partes da árvore.",
+      "Descreve a casca com palavras (áspera, lisa, rachada, mole).",
+      "Junta só folhas que já caíram.",
+      "Separa as folhas por um critério e explica qual."
+    ],
+    "emDesenvolvimento": [
+      "Ainda nomeia só uma ou duas partes da árvore",
+      "Junta folhas sem separar por um critério"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar uma folha só, grande, por um minuto, e passar o dedo pela nervura.",
+    "facil": "Se o interesse crescer: medir a sombra da árvore em horas diferentes do dia, ou procurar quantas espécies de folha há numa quadra."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 6",
+      "deCasa": false
+    },
+    {
+      "item": "Papel fino",
+      "deCasa": true
+    },
+    {
+      "item": "Giz de cera sem o papel",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Uma sacolinha de pano para folhas caídas",
+      "deCasa": true
+    },
+    {
+      "item": "Um pedaço de barbante para medir o tronco",
+      "deCasa": true
+    },
+    {
+      "item": "Uma lupa",
+      "deCasa": true
+    },
+    {
+      "item": "O caderno de natureza",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que mudou na árvore de uma visita para outra?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

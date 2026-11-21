@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol5-u7",
+  "titulo": "Modelar: bola, cobrinha e vaso de beliscão",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Modelagem",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 7,
+    "paginas": [51, 55]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 7],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Massa e argila não são para comer, e a massa caseira leva sal e farinha: observe crianças que ainda põem tudo na boca ou com alergia a trigo. Lave as mãos ao final e limpe a mesa com pano úmido.",
+  "palavrasChave": ["argila", "massinha", "modelagem", "escultura", "massa caseira"],
+  "objetivo": "A criança **aperta, rola, belisca e achata** a massa com as duas mãos e faz uma bola, uma cobrinha e um vaso de beliscão.",
+  "passos": [
+    {
+      "titulo": "Apertar, rolar e fazer bola e cobrinha",
+      "minutos": 6,
+      "texto": "Apertar, bater e rolar a massa sem forma definida. Fazer uma bola entre as palmas. Fazer uma cobrinha rolando na mesa."
+    },
+    {
+      "titulo": "Vaso e bichinho",
+      "minutos": 7,
+      "texto": "Fazer um vaso: abrir a bola com o polegar e girar. Juntar bola e cobrinha para fazer um bichinho. Alisar com um dedinho de água."
+    },
+    {
+      "titulo": "Inventar uma criatura",
+      "minutos": 7,
+      "texto": "Inventar uma criatura que não existe. Modelar uma pessoa que cuida dela (como Mary Cassatt pintou). Dar nome à peça e escolher onde guardá-la."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Rola uma cobrinha de espessura mais ou menos igual.",
+      "Faz uma bola e a achata num disco.",
+      "Beliscando, abre um vaso com paredes mais ou menos finas.",
+      "Junta duas peças com um pouco de água."
+    ],
+    "emDesenvolvimento": [
+      "Ainda só aperta e amassa, sem dar forma (já é a atividade)",
+      "Ainda precisa de ajuda para juntar duas peças"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: só apertar e amassar a massa por alguns minutos, sem fazer nada com ela.",
+    "facil": "Se o interesse crescer: olhar um vaso, um prato ou uma cuia de verdade e conversar sobre como alguém os fez com as mãos."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Argila de modelar ou massa caseira",
+      "deCasa": true
+    },
+    {
+      "item": "Uma tábua ou prato",
+      "deCasa": true
+    },
+    {
+      "item": "Um paninho úmido",
+      "deCasa": true
+    },
+    {
+      "item": "Um pote para guardar a massa",
+      "deCasa": true
+    },
+    {
+      "item": "Palitos lisos (opcional) para riscar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela fez com a massa e como contou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol6-u7",
+  "titulo": "Céu, sol, lua e estrelas: olhar o céu e a sombra",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Caderno da natureza",
+  "materialImpresso": {
+    "volume": 6,
+    "unidade": 7,
+    "paginas": [56, 65]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Nunca olhe diretamente para o sol, nem com binóculo ou óculos escuros: machuca os olhos. Use a sombra para estudá-lo. À noite, fique sempre junto com a criança, em lugar seguro e iluminado.",
+  "palavrasChave": ["céu", "sol", "lua", "estrelas", "sombra"],
+  "objetivo": "A criança **diz onde o sol nasce, onde passa ao meio-dia e onde se põe**, mede a sombra de um objeto em horas diferentes e desenha a lua em noites diferentes.",
+  "passos": [
+    {
+      "titulo": "O caminho do sol e os quatro momentos do dia",
+      "minutos": 6,
+      "texto": "Olhar o sol no seu caminho (sem olhar para ele) e apontar onde nasce e onde se põe. Ordenar os quatro cartões do dia. Contar o que muda no céu entre uma hora e outra."
+    },
+    {
+      "titulo": "Medir a sombra do copo",
+      "minutos": 7,
+      "texto": "Medir a sombra do copo de manhã, ao meio-dia e à tarde. Comparar: quando ela é mais comprida? Dizer por que acha que a sombra muda."
+    },
+    {
+      "titulo": "A lua e as estrelas",
+      "minutos": 7,
+      "texto": "Olhar a lua e desenhar no caderno, por vários dias. Contar as estrelas que consegue ver. Contar a alguém o que viu no céu."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta o lado onde o sol nasce e o lado onde ele se põe.",
+      "Ordena os quatro momentos do dia sem ajuda.",
+      "Percebe que a sombra muda de tamanho.",
+      "Desenha a lua com formas diferentes em dias diferentes."
+    ],
+    "emDesenvolvimento": [
+      "Ainda confunde a ordem dos momentos do dia",
+      "Ainda não percebe que a sombra muda de tamanho"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar a lua pela janela por um minuto e dizer a forma que ela tem.",
+    "facil": "Se o interesse crescer: olhar a lua todo dia por um mês e fazer a tabela completa, ou procurar a estrela mais brilhante do começo da noite."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 6",
+      "deCasa": false
+    },
+    {
+      "item": "Um objeto que fique em pé no chão (um copo, um bloquinho)",
+      "deCasa": true
+    },
+    {
+      "item": "Giz e fita",
+      "deCasa": true
+    },
+    {
+      "item": "O caderno de natureza",
+      "deCasa": true
+    },
+    {
+      "item": "Uma lanterna pequena",
+      "deCasa": true
+    },
+    {
+      "item": "Uma noite com céu limpo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que forma a lua tinha hoje e o que ela disse do céu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

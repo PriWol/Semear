@@ -1,0 +1,92 @@
+{
+  "id": "atv-vol5-u1",
+  "titulo": "Três cores, todas as cores: misturar na paleta",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Pintura",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 1,
+    "paginas": [6, 12]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 7],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Use tinta atóxica e fique por perto: pincel e tinta não vão à boca. Misturar demais deixa tudo marrom; é normal, e também é uma descoberta. Proteja a mesa e a roupa.",
+  "palavrasChave": ["guache", "cores", "misturar", "primárias", "tinta"],
+  "objetivo": "A criança **usa só vermelho, amarelo e azul (e branco)** para fazer outras cores e descobre, misturando, que duas cores fazem uma terceira.",
+  "passos": [
+    {
+      "titulo": "Descobrir as cores",
+      "minutos": 8,
+      "texto": "Pintar uma folha só de vermelho, outra de amarelo, outra de azul. Nomear cada cor em voz alta. Achar cada cor pela casa."
+    },
+    {
+      "titulo": "Misturar e ver o que nasce",
+      "minutos": 9,
+      "texto": "Misturar duas cores no meio da folha e ver o que nasce. Fazer a receita das cores. Pintar o arco-íris com três tintas."
+    },
+    {
+      "titulo": "Inventar uma cor",
+      "minutos": 8,
+      "texto": "Inventar uma cor nova e dar nome a ela. Pintar uma paisagem usando só as três cores e suas misturas. Escolher a cor preferida da semana."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Pega a tinta com o pincel limpo e lava antes de trocar de cor.",
+      "Diz o nome de pelo menos três cores sem ajuda.",
+      "Descobre sozinha que duas cores fazem uma terceira.",
+      "Pinta com manchas largas, sem ter medo de borrar."
+    ],
+    "emDesenvolvimento": [
+      "Mistura muitas cores e a tinta fica toda marrom (faz parte da descoberta)",
+      "Ainda precisa de ajuda para lavar o pincel entre uma cor e outra"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: só olhar as três tintas nos potes e escolher uma cor para pintar a folha toda.",
+    "facil": "Se o interesse crescer: misturar o branco para fazer cores claras (rosa, azul-bebê) e o preto, em gotas bem pequenas, para fazer cores escuras."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Guache atóxico (vermelho, amarelo, azul e branco)",
+      "deCasa": true
+    },
+    {
+      "item": "Dois pincéis",
+      "deCasa": true
+    },
+    {
+      "item": "Um pote com água e um pano",
+      "deCasa": true
+    },
+    {
+      "item": "Papel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Avental e jornal na mesa",
+      "deCasa": true
+    },
+    {
+      "item": "Uma paleta (um prato de papelão serve)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que cor ela inventou e que nome deu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

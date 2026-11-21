@@ -1,0 +1,84 @@
+{
+  "id": "atv-vol6-u9",
+  "titulo": "As estações: visitar a mesma árvore ao longo do ano",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Caderno da natureza",
+  "materialImpresso": {
+    "volume": 6,
+    "unidade": 9,
+    "paginas": [76, 84]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Protetor solar e água no verão; agasalho no inverno. Em regiões com estações pouco marcadas, a mudança maior pode ser entre a época de chuva e a de seca: observe isso também.",
+  "palavrasChave": ["estações", "primavera", "verão", "outono", "inverno"],
+  "objetivo": "A criança **visita a mesma árvore (ou canto) em quatro épocas do ano**, diz o que mudou (folhas, flores, frutos, bichos, roupas) e ordena as quatro estações.",
+  "passos": [
+    {
+      "titulo": "Escolher a árvore e ouvir a história das estações",
+      "minutos": 6,
+      "texto": "Escolher a árvore e visitar na primeira estação. Ouvir a história das estações. Dizer como está a árvore e o tempo."
+    },
+    {
+      "titulo": "Visitar na estação seguinte",
+      "minutos": 7,
+      "texto": "Visitar a árvore na estação seguinte. Ordenar os cartões das quatro árvores. Comparar: o que mudou?"
+    },
+    {
+      "titulo": "Desenhar as quatro épocas",
+      "minutos": 7,
+      "texto": "Visitar nas outras estações. Desenhar a árvore nas quatro épocas. Contar a alguém o que o mito explica."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz o nome das quatro estações, na ordem.",
+      "Aponta o que mudou na árvore de uma visita para outra.",
+      "Associa cada estação a roupas, clima e frutas.",
+      "Conta a história de Deméter e Perséfone com palavras dela."
+    ],
+    "emDesenvolvimento": [
+      "Ainda não diz as estações na ordem",
+      "Ainda não aponta o que mudou na árvore entre uma visita e outra"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar a árvore de hoje e dizer uma coisa dela: folhas, flores ou tempo.",
+    "facil": "Se o interesse crescer: registrar, a cada estação, o que está na feira (frutas da época) e o que a árvore tem (flores, frutos ou folhas secas)."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 6",
+      "deCasa": false
+    },
+    {
+      "item": "O caderno de natureza",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Máquina fotográfica ou celular (se quiser)",
+      "deCasa": true
+    },
+    {
+      "item": "Uma árvore ou canto de jardim para visitar a cada estação",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que mudou na árvore desde a última visita?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

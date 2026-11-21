@@ -1,0 +1,84 @@
+{
+  "id": "atv-vol5-u3",
+  "titulo": "Dürer, olhar de perto: a lebre e o tufo de plantas",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Estudo de pintores",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 3,
+    "paginas": [20, 27]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Não toque nem pegue bichos desconhecidos: olhar é suficiente. Lave as mãos depois de mexer em terra e plantas.",
+  "palavrasChave": ["Dürer", "lebre", "observação", "lupa", "plantas"],
+  "objetivo": "A criança **olha com calma** *A lebre jovem* e *Tufo de prímulas*, de Dürer, e aponta e nomeia detalhes (orelhas, bigodes, pelo; folhas, raízes, flores).",
+  "passos": [
+    {
+      "titulo": "Olhar a lebre",
+      "minutos": 8,
+      "texto": "Olhar a lebre em silêncio, de perto. Contar bigodes, orelhas, patas. Procurar o ano e a assinatura do artista."
+    },
+    {
+      "titulo": "Olhar o tufo e procurar no quintal",
+      "minutos": 9,
+      "texto": "Olhar o tufo de prímulas: quantas flores? quantas folhas? Procurar um tufo no quintal e olhar de perto, com lupa. Jogar o jogo da memória da lebre e das plantas."
+    },
+    {
+      "titulo": "Desenhar observando",
+      "minutos": 8,
+      "texto": "Desenhar um tufo observando de verdade. Escolher o detalhe de que mais gostou e contar por quê. Mostrar o desenho para alguém."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta pelo menos cinco detalhes da lebre.",
+      "Diz que há plantas diferentes no tufo.",
+      "Usa a lupa para olhar de perto uma folha ou um inseto.",
+      "Desenha com atenção, sem pressa."
+    ],
+    "emDesenvolvimento": [
+      "Aponta poucos detalhes da lebre",
+      "Ainda desenha depressa, sem olhar a planta"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar só a lebre, só as orelhas, por um minuto, e dizer o que as orelhas parecem.",
+    "facil": "Se o interesse crescer: procurar um bicho pequeno (caracol, joaninha, formiga) e olhar com lupa, desenhando só o que vê."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Uma lupa (se tiver)",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Uma prancheta ou livro grosso para apoiar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que detalhe ela mais gostou e o que contou dele?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol5-u4",
+  "titulo": "Monet e o jardim: pintar a luz com manchas",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Pintura",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 4,
+    "paginas": [28, 34]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Se for pintar fora de casa, proteja a roupa e leve água. Não precisa terminar: parar quando cansar é o ritmo certo. Guache não é para comer.",
+  "palavrasChave": ["Monet", "ninfeias", "luz", "paisagem", "manchas"],
+  "objetivo": "A criança **olha com calma** *Medas de trigo* e *Ninfeias*, de Monet, percebe que a cor muda ao longo do dia e pinta com manchas largas, sem contorno.",
+  "passos": [
+    {
+      "titulo": "Olhar as medas de trigo",
+      "minutos": 8,
+      "texto": "Olhar as *Medas de trigo*: de que cores são as medas? Dizer o que vê: céu, campo, medas, casas ao longe. Pintar uma folha só com manchas de rosa, lilás e amarelo."
+    },
+    {
+      "titulo": "Olhar as ninfeias e a luz do dia",
+      "minutos": 9,
+      "texto": "Olhar *Ninfeias*: onde estão as flores e as folhas? Ordenar os quatro momentos do dia. Olhar a luz da janela em duas horas diferentes."
+    },
+    {
+      "titulo": "Pintar uma paisagem com manchas",
+      "minutos": 8,
+      "texto": "Pintar uma paisagem com manchas, sem contorno. Dar nome à paisagem e dizer a hora do dia. Escolher a obra de Monet preferida."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Pinta com manchas largas, sem contornar tudo.",
+      "Aponta as cores das medas e do campo (rosa, lilás, amarelo).",
+      "Diz como a luz muda de manhã para a noite.",
+      "Ordena os quatro momentos do dia."
+    ],
+    "emDesenvolvimento": [
+      "Ainda contorna tudo antes de pintar",
+      "Ainda confunde a ordem dos momentos do dia"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar uma obra e dizer qual cor ela mais vê, sem pintar nada.",
+    "facil": "Se o interesse crescer: olhar a mesma árvore ou janela em três horas diferentes do dia e desenhar cada vez só as cores que viu."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Guache ou aquarela",
+      "deCasa": true
+    },
+    {
+      "item": "Pincel largo",
+      "deCasa": true
+    },
+    {
+      "item": "Papel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Água e pano",
+      "deCasa": true
+    },
+    {
+      "item": "Um jardim, uma praça ou uma planta de vaso para olhar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que nome ela deu à paisagem e a que hora do dia ela é?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
