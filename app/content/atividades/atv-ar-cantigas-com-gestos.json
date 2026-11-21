@@ -1,0 +1,63 @@
+{
+  "id": "atv-ar-cantigas-com-gestos",
+  "titulo": "Cantigas com gestos e pausas",
+  "marcos": ["AR.CAN.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 1,
+  "cuidados": "Fique junto, em local seguro, sem fones de ouvido. Cantigas sem letras de medo ou de ameaça: escolha as mais suaves. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança canta trechos de cantigas e imita os gestos, completando a última palavra.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 1,
+      "texto": "Escolha duas cantigas curtas (“Sapo cururu” e “Dona Aranha”, por exemplo)."
+    },
+    {
+      "titulo": "Cantar",
+      "minutos": 6,
+      "texto": "Cante com gestos e pare antes da última palavra, esperando que ela complete. Repita 2 ou 3 vezes.",
+      "fala": "Sapo cururu na beira do…"
+    },
+    {
+      "titulo": "Brincar",
+      "minutos": 3,
+      "texto": "Troquem: ela “rege” e você completa. Terminem com um abraço e uma cantiga calma."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta trechos", "Imita gestos"],
+    "emDesenvolvimento": ["Só faz os gestos (ótimo)", "Canta baixinho (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Cante só uma cantiga bem curta, várias vezes.",
+    "facil": "Peça que invente um gesto novo para a cantiga."
+  },
+  "materiais": [
+    {
+      "item": "Cantigas conhecidas",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cantou trechos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Fez os gestos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais cantigas ela mais pede?",
+  "palavrasChave": ["cantigas", "canto", "gestos", "música"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

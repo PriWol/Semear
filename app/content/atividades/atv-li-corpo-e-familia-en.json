@@ -1,0 +1,72 @@
+{
+  "id": "atv-li-corpo-e-familia-en",
+  "titulo": "My body, my family: corpo e família em inglês",
+  "marcos": ["LI.VOC.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 14,
+  "preparoMin": 5,
+  "cuidados": "Fotos impressas, nunca originais, e sem expor dados da família. Não publique nem envie o álbum a ninguém. Tesoura de ponta arredondada, só com supervisão.",
+  "objetivo": "A criança aprende partes do corpo e nomes da família em inglês e monta um pequeno álbum.",
+  "passos": [
+    {
+      "titulo": "Corpo",
+      "minutos": 5,
+      "texto": "Cantem “Head, shoulders, knees and toes” (cantiga tradicional), apontando cada parte, cada vez mais rápido.",
+      "fala": "Head, shoulders, knees and toes!"
+    },
+    {
+      "titulo": "Família",
+      "minutos": 6,
+      "texto": "Com 4 fotos da família, diga: mother, father, sister, brother (ou grandmother, grandfather). Ela aponta cada pessoa e repete."
+    },
+    {
+      "titulo": "Álbum",
+      "minutos": 3,
+      "texto": "Ela cola as fotos em uma folha e você escreve os nomes em inglês ao lado. Pendure em um lugar visível."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia 5 partes do corpo", "Nomeia 4 pessoas da família"],
+    "emDesenvolvimento": ["Confunde “sister” e “brother” (comum)", "Quer cantar sem parar (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Cante só com 3 partes do corpo.",
+    "facil": "Descreva alguém da família: “My mother has long hair”."
+  },
+  "materiais": [
+    {
+      "item": "Fotos impressas da família (cópias)",
+      "deCasa": true
+    },
+    {
+      "item": "Folha de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Cola",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou 5 partes do corpo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou 4 pessoas da família",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual pessoa ela mais gostou de nomear?",
+  "palavrasChave": ["corpo", "família", "head shoulders knees toes", "inglês"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

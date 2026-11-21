@@ -1,0 +1,78 @@
+{
+  "id": "atv-nm-do-que-precisa-para-viver",
+  "titulo": "Experimento: com e sem luz e água",
+  "marcos": ["NM.VIV.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 14,
+  "preparoMin": 5,
+  "cuidados": "Use sementes de feijão ou milho comuns, fora do alcance de crianças menores de 3 anos e de bichos de estimação, porque são pequenas e podem engasgar. Terra e algodão úmidos: lave as mãos depois. Não use sementes tratadas com produtos.",
+  "objetivo": "A criança planta duas sementes iguais em condições diferentes e prevê, depois observa, do que a planta precisa.",
+  "passos": [
+    {
+      "titulo": "Pergunta",
+      "minutos": 3,
+      "texto": "Pergunte: “Do que uma planta precisa para crescer?”. Anote as ideias dela sem corrigir, como palpites.",
+      "fala": "O que você acha que vai acontecer?"
+    },
+    {
+      "titulo": "Plantar",
+      "minutos": 8,
+      "texto": "Coloquem duas sementes de feijão em dois copos com algodão umedecido: um na janela e outro dentro de um armário escuro, mesmo com água igual. Se quiser um terceiro, deixe-o sem água."
+    },
+    {
+      "titulo": "Combinar",
+      "minutos": 3,
+      "texto": "Marquem na parede ou no calendário os dias de olhar. Em 7 a 10 dias, comparem. Ela desenha o que viu e conta do que a planta precisa."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Prevê o que vai acontecer", "Diz que a planta precisa de água e luz"],
+    "emDesenvolvimento": [
+      "Acha que a planta “fica triste” (explicação infantil, tudo bem)",
+      "Perde o interesse no meio do tempo"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça só um copo, com a semente na janela, e fale do que ela precisa.",
+    "facil": "Peça que registre o crescimento em um desenho por dia."
+  },
+  "materiais": [
+    {
+      "item": "2 copos transparentes",
+      "deCasa": true
+    },
+    {
+      "item": "Algodão",
+      "deCasa": true
+    },
+    {
+      "item": "Sementes de feijão",
+      "deCasa": true
+    },
+    {
+      "item": "Água",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez uma previsão",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse do que a planta precisa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela disse que as plantas precisam?",
+  "palavrasChave": ["plantas", "feijão", "experimento", "germinar"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

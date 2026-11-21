@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-do-menor-ao-maior",
+  "titulo": "Do menor ao maior, do claro ao escuro",
+  "marcos": ["DI.SEN.02"],
+  "vertentes": ["Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use objetos grandes e seguros. Cartões de tinta são papel: não deixe a criança colocá-los na boca. Fique junto e guarde tudo depois.",
+  "objetivo": "A criança ordena objetos por tamanho e cartões por tons de uma cor.",
+  "passos": [
+    {
+      "titulo": "Tamanho",
+      "minutos": 6,
+      "texto": "Dê 4 ou 5 copos (ou colheres) de tamanhos diferentes, em desordem. Mostre como organizar do menor ao maior, em fila. Depois, ela faz.",
+      "fala": "Maior ou menor?"
+    },
+    {
+      "titulo": "Cor",
+      "minutos": 6,
+      "texto": "Dê 4 cartões de tons de uma mesma cor (do claro ao escuro). Ela organiza em fila. Dê palavras: “claro”, “mais escuro”."
+    },
+    {
+      "titulo": "Conferir",
+      "minutos": 3,
+      "texto": "Ela mostra a fila e você pergunta: “Qual é o maior? Qual é o mais claro?”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ordena por tamanho", "Ordena por tons"],
+    "emDesenvolvimento": ["Confunde tons parecidos (normal)", "Quer só empilhar"]
+  },
+  "ajustes": {
+    "dificil": "Ordene só 3 objetos bem diferentes.",
+    "facil": "Ordene 7 ou mais itens, com diferenças pequenas."
+  },
+  "materiais": [
+    {
+      "item": "4 ou 5 copos ou colheres de tamanhos diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Cartões de tinta em tons de uma cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou por tamanho",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Ordenou por tons",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantos itens ela conseguiu ordenar?",
+  "palavrasChave": ["ordenar", "gradação", "tamanho", "cores"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

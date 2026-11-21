@@ -146,6 +146,111 @@
       "titulo": "O cérebro da criança: 12 estratégias revolucionárias para nutrir a mente em desenvolvimento do seu filho",
       "ano": 2015,
       "veiculo": "São Paulo: nVersos"
+    },
+    {
+      "id": "rcnei-conhecimento-de-mundo",
+      "autores": "BRASIL. Ministério da Educação. Secretaria de Educação Fundamental",
+      "titulo": "Referencial curricular nacional para a educação infantil: conhecimento de mundo",
+      "ano": 1998,
+      "veiculo": "v. 3. Brasília: MEC/SEF"
+    },
+    {
+      "id": "louv-ultima-crianca",
+      "autores": "LOUV, Richard",
+      "titulo": "A última criança na natureza: resgatando nossas crianças do transtorno do déficit de natureza",
+      "ano": 2016,
+      "veiculo": "São Paulo: Aquariana"
+    },
+    {
+      "id": "comstock-nature-study",
+      "autores": "COMSTOCK, Anna Botsford",
+      "titulo": "Handbook of nature study",
+      "ano": 1911,
+      "veiculo": "Ithaca: Comstock Publishing"
+    },
+    {
+      "id": "piaget-nocao-tempo",
+      "autores": "PIAGET, Jean",
+      "titulo": "Le développement de la notion de temps chez l'enfant",
+      "ano": 1946,
+      "veiculo": "Paris: Presses Universitaires de France"
+    },
+    {
+      "id": "almeida-passini-espaco",
+      "autores": "ALMEIDA, Rosângela Doin de; PASSINI, Elza Yasuko",
+      "titulo": "O espaço geográfico: ensino e representação",
+      "ano": 1989,
+      "veiculo": "São Paulo: Contexto"
+    },
+    {
+      "id": "cascudo-folclore",
+      "autores": "CASCUDO, Luís da Câmara",
+      "titulo": "Dicionário do folclore brasileiro",
+      "ano": 2012,
+      "veiculo": "12. ed. São Paulo: Global"
+    },
+    {
+      "id": "gallahue-desenvolvimento-motor",
+      "autores": "GALLAHUE, David L.; OZMUN, John C.",
+      "titulo": "Compreendendo o desenvolvimento motor: bebês, crianças, adolescentes e adultos",
+      "ano": 2005,
+      "veiculo": "São Paulo: Phorte"
+    },
+    {
+      "id": "ms-guia-atividade-fisica",
+      "autores": "BRASIL. Ministério da Saúde",
+      "titulo": "Guia de atividade física para a população brasileira",
+      "ano": 2021,
+      "veiculo": "Brasília: Ministério da Saúde"
+    },
+    {
+      "id": "lillard-montessori-ciencia",
+      "autores": "LILLARD, Angeline Stoll",
+      "titulo": "Montessori: a ciência por trás do gênio",
+      "ano": 2017,
+      "veiculo": "Porto Alegre: Artmed"
+    },
+    {
+      "id": "brito-musica-educacao-infantil",
+      "autores": "BRITO, Teca Alencar de",
+      "titulo": "Música na educação infantil: propostas para a formação integral da criança",
+      "ano": 2003,
+      "veiculo": "São Paulo: Peirópolis"
+    },
+    {
+      "id": "schafer-ouvido-pensante",
+      "autores": "SCHAFER, R. Murray",
+      "titulo": "O ouvido pensante",
+      "ano": 1991,
+      "veiculo": "São Paulo: Editora da UNESP"
+    },
+    {
+      "id": "lowenfeld-capacidade-criadora",
+      "autores": "LOWENFELD, Viktor; BRITTAIN, W. Lambert",
+      "titulo": "Desenvolvimento da capacidade criadora",
+      "ano": 1977,
+      "veiculo": "São Paulo: Mestre Jou"
+    },
+    {
+      "id": "barbosa-imagem-ensino-arte",
+      "autores": "BARBOSA, Ana Mae",
+      "titulo": "A imagem no ensino da arte",
+      "ano": 1991,
+      "veiculo": "São Paulo: Perspectiva"
+    },
+    {
+      "id": "cameron-young-learners",
+      "autores": "CAMERON, Lynne",
+      "titulo": "Teaching languages to young learners",
+      "ano": 2001,
+      "veiculo": "Cambridge: Cambridge University Press"
+    },
+    {
+      "id": "lightbown-spada-how-languages",
+      "autores": "LIGHTBOWN, Patsy M.; SPADA, Nina",
+      "titulo": "How languages are learned",
+      "ano": 2013,
+      "veiculo": "4. ed. Oxford: Oxford University Press"
     }
   ]
 }

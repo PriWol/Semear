@@ -1,0 +1,72 @@
+{
+  "id": "atv-di-momento-de-gratidao",
+  "titulo": "Um momento de gratidão em família",
+  "marcos": ["DI.ESP.01"],
+  "vertentes": ["Religioso"],
+  "idade": [2, 5],
+  "duracaoMin": 7,
+  "preparoMin": 1,
+  "cuidados": "Se usar vela, só o adulto acende e apaga, em lugar firme e fora do alcance (ou use uma luz de LED). Respeite a tradição da família e não obrigue a criança a participar.",
+  "objetivo": "A criança vive um momento curto de silêncio e de gratidão com a família, do jeito que a tradição da família propõe.",
+  "passos": [
+    {
+      "titulo": "Chamar",
+      "minutos": 1,
+      "texto": "Chame com voz calma: “Vamos ficar quietinhos e agradecer?”. Sentem-se perto, no mesmo lugar de sempre.",
+      "fala": "Vamos agradecer?"
+    },
+    {
+      "titulo": "Silêncio",
+      "minutos": 2,
+      "texto": "Respirem juntos em silêncio, por poucos segundos. Para o começo, conte até 5 baixinho."
+    },
+    {
+      "titulo": "Agradecer",
+      "minutos": 3,
+      "texto": "Cada um diz uma coisa pela qual é grato (“o pão”, “o abraço”). Se a família tem uma oração ou canto, façam agora, de modo curto e simples."
+    },
+    {
+      "titulo": "Fim",
+      "minutos": 1,
+      "texto": "Terminem com um abraço ou com um gesto combinado."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Participa do silêncio ou da gratidão", "Repete uma palavra, gesto ou canto"],
+    "emDesenvolvimento": ["Se distrai (normal)", "Prefere só olhar (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Reduza para o abraço e uma palavra de gratidão.",
+    "facil": "Peça que ela agradeça por três coisas e que diga por quê."
+  },
+  "materiais": [
+    {
+      "item": "Um cantinho tranquilo",
+      "deCasa": true
+    },
+    {
+      "item": "Vela de LED (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do silêncio",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Agradeceu com uma palavra",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Pelo que ela agradeceu?",
+  "palavrasChave": ["gratidão", "silêncio", "oração", "ritual", "espiritual"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

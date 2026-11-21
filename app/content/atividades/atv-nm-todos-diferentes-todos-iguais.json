@@ -1,0 +1,70 @@
+{
+  "id": "atv-nm-todos-diferentes-todos-iguais",
+  "titulo": "Somos diferentes, somos parecidos",
+  "marcos": ["NM.CUL.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Escolha livros e imagens que representem bem as pessoas (sem estereótipos). Evite perguntar à criança coisas pessoais da família de colegas. Fique junto para conversar.",
+  "objetivo": "A criança observa diferenças e semelhanças entre pessoas e famílias, e fala delas com respeito.",
+  "passos": [
+    {
+      "titulo": "Leitura",
+      "minutos": 8,
+      "texto": "Leia um livro ilustrado sobre famílias ou modos de viver diferentes. Pare e pergunte: “O que é igual à nossa família? O que é diferente?”.",
+      "fala": "O que é igual? O que é diferente?"
+    },
+    {
+      "titulo": "Dois círculos",
+      "minutos": 8,
+      "texto": "Desenhe dois círculos que se cruzam. Em um, o que há na nossa família; no outro, na família do livro. No meio, o que é igual."
+    },
+    {
+      "titulo": "Fechamento",
+      "minutos": 4,
+      "texto": "Pergunte: “O que a gente pode aprender com quem é diferente?”. Registre a frase dela."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Compara sem julgar", "Diz algo que as famílias têm em comum"],
+    "emDesenvolvimento": [
+      "Diz que o diferente é “estranho” (ouça e converse)",
+      "Compara só aparência"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Compare só duas coisas: o que comem e o que brincam.",
+    "facil": "Pesquise uma tradição de outro povo e apresente à família."
+  },
+  "materiais": [
+    {
+      "item": "Um livro ilustrado adequado",
+      "deCasa": true
+    },
+    {
+      "item": "Folha e lápis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Comparou sem julgar",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse o que há em comum",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela disse sobre as diferenças?",
+  "palavrasChave": ["diversidade", "respeito", "famílias", "semelhanças"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

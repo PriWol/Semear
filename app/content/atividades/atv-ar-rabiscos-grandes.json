@@ -1,0 +1,74 @@
+{
+  "id": "atv-ar-rabiscos-grandes",
+  "titulo": "Rabiscos grandes com giz",
+  "marcos": ["AR.DES.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Use giz de cera grosso, grande demais para engolir, e papel grande preso à mesa ou ao chão. Fique junto o tempo todo: giz e tinta podem ir à boca. Prefira materiais atóxicos e laváveis. Cubra o chão e use roupa que possa sujar.",
+  "objetivo": "A criança rabisca com liberdade, com movimentos grandes, e conta o que fez.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 2,
+      "texto": "Prenda uma folha grande de papel no chão ou na mesa. Coloque 3 giz de cera grossos de cores diferentes."
+    },
+    {
+      "titulo": "Rabiscar",
+      "minutos": 6,
+      "texto": "Deixe que ela desenhe do jeito que quiser. Desenhe ao lado, com movimentos diferentes (linhas, voltas, pontos), sem dar modelo. Comente o que vê.",
+      "fala": "Que linhas você fez!"
+    },
+    {
+      "titulo": "Nomear",
+      "minutos": 2,
+      "texto": "Se ela quiser, pergunte: “Me conta o seu desenho?”. Anote o que disser no canto da folha e a data."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Rabisca com prazer", "Diz o que fez, mesmo com uma palavra"],
+    "emDesenvolvimento": [
+      "Só usa uma cor (normal)",
+      "Rabisca fora do papel (reforce o limite com calma)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só uma cor e papel já preso na mesa.",
+    "facil": "Peça que faça linhas diferentes: rápidas, lentas, ondas, pontos."
+  },
+  "materiais": [
+    {
+      "item": "Papel grande",
+      "deCasa": true
+    },
+    {
+      "item": "Giz de cera grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Fita adesiva",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Rabiscou com prazer",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou o que fez",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela disse do seu desenho?",
+  "palavrasChave": ["rabisco", "giz de cera", "desenho livre", "primeiros traços"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

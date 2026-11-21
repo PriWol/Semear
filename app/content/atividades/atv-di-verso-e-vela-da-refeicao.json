@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-verso-e-vela-da-refeicao",
+  "titulo": "O verso e a vela antes de comer",
+  "marcos": ["DI.RIT.01"],
+  "vertentes": ["Waldorf"],
+  "idade": [2, 5],
+  "duracaoMin": 7,
+  "preparoMin": 2,
+  "cuidados": "Se usar vela, só o adulto acende e apaga, em lugar firme e fora do alcance, ou use uma vela de LED. Nada de fogo ao alcance da criança. Os versos devem ser simples e sem frases de medo.",
+  "objetivo": "A criança participa de um pequeno ritual antes da refeição, com um verso, uma vela e um gesto de gratidão.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 2,
+      "texto": "Ponha a vela (ou luz de LED) no centro da mesa. Chame a criança: “Está na hora do nosso verso”.",
+      "fala": "Hora do verso!"
+    },
+    {
+      "titulo": "Verso",
+      "minutos": 3,
+      "texto": "De mãos dadas, digam um verso curto e simples, sempre o mesmo (“Obrigado, pão, obrigado, sol, obrigado a quem cozinhou”)."
+    },
+    {
+      "titulo": "Comer",
+      "minutos": 2,
+      "texto": "O adulto apaga a vela e começam a comer, com calma. Repita todos os dias, de modo igual."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Participa do verso", "Antecipa o ritual"],
+    "emDesenvolvimento": ["Se distrai (normal)", "Quer apagar a vela (o adulto apaga)"]
+  },
+  "ajustes": {
+    "dificil": "Use só o gesto de dar as mãos, sem o verso.",
+    "facil": "Peça que invente um verso novo para a semana."
+  },
+  "materiais": [
+    {
+      "item": "Vela de LED ou vela em suporte seguro",
+      "deCasa": true
+    },
+    {
+      "item": "Um verso curto",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do ritual",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Antecipou o momento",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como foi o ritual hoje?",
+  "palavrasChave": ["ritual", "verso", "vela", "refeição", "ritmo"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "marcos": [
+    {
+      "id": "LI.ESC.01",
+      "linha": "LI.ESC",
+      "ordem": 1,
+      "titulo": "Reage a saudações e comandos simples com o corpo",
+      "descricaoPais": "Ouve “stand up” ou “lève-toi” e levanta, ou responde ao “hello” e ao “bonjour” com um gesto ou uma palavra.",
+      "evidencias": [
+        "Faz 3 ou mais ações simples quando pedida na língua (levantar, sentar, bater palmas)",
+        "Responde a um cumprimento com um gesto ou uma palavra"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "No início, a criança aprende a língua nova **com o corpo e com o ouvido**, antes de falar. Reagir a comandos mostra que ela entende, mesmo sem dizer nada, e dá segurança para o passo seguinte.",
+        "comoParticipar": "Escolha 4 ou 5 comandos (levantar, sentar, pular, bater palmas, girar) e use sempre as mesmas palavras, com gestos. Faça brincadeiras como “Simon says” e “Jacques a dit”. Vá a poucos minutos por dia, de preferência todos os dias. Não peça para ela repetir: deixe o corpo responder. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Não existe pressa nem “idade certa” para falar a língua nova: muitas crianças ficam um tempo só ouvindo (o chamado período silencioso). Se a criança tem muita dificuldade para entender comandos simples também em português, vale conversar com o pediatra ou a escola. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.ESC.02",
+      "linha": "LI.ESC",
+      "ordem": 2,
+      "titulo": "Acompanha uma história curta contada com figuras e entende as palavras-chave",
+      "descricaoPais": "Ouve uma história conhecida na língua nova, com figuras e gestos, e mostra a figura certa quando ouve uma palavra-chave.",
+      "evidencias": [
+        "Mostra a figura certa ao ouvir 4 ou mais palavras-chave",
+        "Acompanha a história até o fim"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.ESC.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Ouvir uma história com apoio de figuras e gestos dá à criança muita **língua compreensível**: ela entende o sentido pelo contexto e vai captando as palavras sem tradução. É assim que se aprende a escutar uma língua.",
+        "comoParticipar": "Escolha uma história que ela já conhece em português (como “Os três porquinhos”) e conte na língua nova, bem devagar, com figuras e gestos, repetindo as palavras-chave. Releia a mesma história várias vezes, em dias diferentes, antes de trocar por outra. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Se ela perde o interesse, volte a uma história mais curta ou a um jogo. Não é falta de capacidade. Se também tem muita dificuldade para acompanhar histórias em português, vale conversar com a escola ou o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.ESC.03",
+      "linha": "LI.ESC",
+      "ordem": 3,
+      "titulo": "Entende perguntas simples e instruções de dois passos",
+      "descricaoPais": "Ouve “go to the door and bring me the red ball” ou “va à la porte et apporte-moi la balle rouge” e faz as duas coisas.",
+      "evidencias": [
+        "Cumpre uma instrução de dois passos na língua",
+        "Responde com gesto ou palavra a uma pergunta simples"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.ESC.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Entender instruções com dois passos mostra que a criança **processa a língua** e não só palavras soltas. É a base para acompanhar uma conversa, uma aula ou uma brincadeira inteira na língua nova.",
+        "comoParticipar": "Faça jogos de “caça ao tesouro” e de “faça o que eu digo”, com instruções cada vez mais longas, ligando cores, objetos e lugares. Fale devagar, com frases curtas e gestos no começo, e reduza os gestos aos poucos. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Se ela confunde instruções mesmo em português ou esquece quase sempre o segundo passo, vale conversar com a escola ou o pediatra; isso pode não ter relação com a língua nova. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.FAL.01",
+      "linha": "LI.FAL",
+      "ordem": 1,
+      "titulo": "Repete cumprimentos e palavras simples na língua nova",
+      "descricaoPais": "Diz “hello”, “thank you” ou “bonjour”, “merci”, repetindo o adulto, com alegria.",
+      "evidencias": [
+        "Repete 4 ou mais palavras ou cumprimentos",
+        "Usa um cumprimento na hora certa, com ajuda"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.ESC.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "As primeiras palavras na língua nova são **brincar com os sons**. Repetir cumprimentos e palavras em situações reais (chegar, sair, agradecer) torna a fala natural e sem medo de errar.",
+        "comoParticipar": "Escolha 4 ou 5 expressões e use todos os dias nos mesmos momentos: ao chegar, ao sair, ao pedir, ao agradecer. Use um fantoche ou um bichinho de pelúcia que “só fala” na língua nova. Nunca corrija a pronúncia de forma direta: repita a palavra certa naturalmente. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Muitas crianças ficam um tempo sem falar a língua nova, o chamado período silencioso, e isso é normal. Se ela tem muita dificuldade para falar também em português ou parece não entender o que se fala, vale conversar com o pediatra ou um fonoaudiólogo. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.FAL.02",
+      "linha": "LI.FAL",
+      "ordem": 2,
+      "titulo": "Responde a perguntas simples com uma palavra ou uma frase curta",
+      "descricaoPais": "Responde “What's your name?” com “Ana” e “How are you?” com “Fine!”, ou as versões em francês.",
+      "evidencias": [
+        "Responde a 3 perguntas simples (nome, como está, idade) na língua",
+        "Responde sem precisar traduzir"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.FAL.01", "LI.ESC.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Responder é o primeiro passo para **conversar**: a criança usa o que entendeu para dizer algo seu. Perguntas curtas, com respostas simples, dão segurança e alegria de falar.",
+        "comoParticipar": "Brinque de entrevista com um fantoche ou um microfone de brinquedo. Faça as mesmas 3 perguntas em vários dias (nome, como está, idade) e aceite respostas de uma palavra. Depois ofereça uma frase completa como modelo: “I'm fine, thank you”, “Je vais bien, merci”. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Se ela hesita, evite insistir ou pedir “fale em inglês/francês”: ofereça a resposta pronta e deixe repetir. Se também tem muita dificuldade em responder perguntas em português, vale conversar com o pediatra ou a escola. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.FAL.03",
+      "linha": "LI.FAL",
+      "ordem": 3,
+      "titulo": "Conversa em frases simples sobre si mesma: nome, idade, gostos e família",
+      "descricaoPais": "Diz “My name is Ana. I'm seven. I like cats.” ou “Je m'appelle Ana. J'ai sept ans. J'aime les chats.”",
+      "evidencias": ["Diz 3 ou mais frases sobre si mesma", "Faz uma pergunta ao outro na língua"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.FAL.02", "LI.VOC.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Falar de si, em frases, é a **fala com sentido**: a criança sai da repetição e passa a dizer o que quer. É um grande salto e dá muito orgulho.",
+        "comoParticipar": "Faça um “cartão de apresentação” com desenhos e 3 ou 4 frases-modelo (nome, idade, o que gosta, quem mora com ela). Ela treina, apresenta a bichinhos, a familiares e a amigos (por vídeo, se a família concordar, sem divulgar na internet). Corrija só repetindo a frase certa, sem interromper. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Se ela evitar muito falar a língua, volte a atividades de escuta e jogos. Se aos 8 anos ainda tem muita dificuldade de montar frases mesmo em português, vale conversar com a escola ou um fonoaudiólogo. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.VOC.01",
+      "linha": "LI.VOC",
+      "ordem": 1,
+      "titulo": "Nomeia cores e animais comuns na língua nova",
+      "descricaoPais": "Diz “red”, “blue”, “cat”, “dog” ou “rouge”, “bleu”, “chat”, “chien” ao ver a cor ou o bicho.",
+      "evidencias": ["Nomeia 4 cores na língua", "Nomeia 4 animais na língua"],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.ESC.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cores e animais são o **vocabulário mais fácil** de aprender, porque são concretos, divertidos e fáceis de mostrar. Palavras aprendidas com objetos e figuras reais ficam melhor na memória.",
+        "comoParticipar": "Aprenda poucas palavras de cada vez (4 a 6) e use-as todos os dias, com os objetos reais ou figuras: “Where's the red car?”, “Où est le chat ?”. Brinque de achar, apontar e nomear. Repita muito, de maneiras diferentes, antes de passar para o próximo tema. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "A memória de palavras varia muito. Se ela não repete nenhuma palavra nova depois de muitas semanas e também tem dificuldade em português, vale conversar com a escola ou o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.VOC.02",
+      "linha": "LI.VOC",
+      "ordem": 2,
+      "titulo": "Nomeia partes do corpo e pessoas da família na língua nova",
+      "descricaoPais": "Mostra “head, shoulders, knees, toes”, ou “tête, épaules, genoux, pieds”, e nomeia mãe, pai, irmão e irmã.",
+      "evidencias": [
+        "Nomeia 5 ou mais partes do corpo na língua",
+        "Nomeia 4 pessoas da família na língua"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.VOC.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Corpo e família são temas **próximos e afetivos**, que a criança usa todos os dias. Aprender essas palavras permite começar pequenas conversas sobre si e sobre as pessoas da casa.",
+        "comoParticipar": "Cantem juntos canções de partes do corpo e façam um “álbum da família” com fotos e o nome de cada um na língua nova. Aponte e nomeie durante o banho, o vestir e as brincadeiras. Brinque com um boneco ou com o espelho. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Se ela evita muito falar dos familiares ou de si, ou parece muito ansiosa com o tema, não force e volte a temas mais leves. Em caso de dúvidas sobre seu desenvolvimento, converse com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.VOC.03",
+      "linha": "LI.VOC",
+      "ordem": 3,
+      "titulo": "Nomeia alimentos e diz do que gosta e do que não gosta",
+      "descricaoPais": "Diz “I like apples” e “I don't like fish”, ou “J'aime les pommes” e “Je n'aime pas le poisson”.",
+      "evidencias": ["Nomeia 6 ou mais alimentos na língua", "Diz do que gosta e do que não gosta"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.VOC.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Falar do que se gosta e não gosta é **dar opinião** em outra língua, o que torna o vocabulário útil e pessoal. Alimentos são ótimos para isso, porque a criança lida com eles todo dia.",
+        "comoParticipar": "Brinquem de mercadinho ou de restaurante com alimentos de verdade ou de brinquedo. Falem na hora das refeições: “Do you want water or milk?”, “Tu veux de l'eau ou du lait ?”. Faça um cardápio ilustrado e deixe que escolha. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Se houver recusa de comida muito intensa e frequente, não use o jogo de língua para pressionar a criança a comer. Em caso de dúvidas sobre alimentação, converse com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.CAN.01",
+      "linha": "LI.CAN",
+      "ordem": 1,
+      "titulo": "Participa de canções e rimas curtas na língua nova, com gestos",
+      "descricaoPais": "Canta ou faz os gestos de uma canção tradicional, como “Twinkle, twinkle” ou “Frère Jacques”.",
+      "evidencias": [
+        "Faz os gestos e canta partes de uma canção na língua",
+        "Pede para repetir a canção"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Canções e rimas são **a melhor porta de entrada** para uma língua nova: a melodia e o ritmo ajudam a lembrar palavras e a pronúncia, e a criança as repete com prazer, sem sentir que “estuda”.",
+        "comoParticipar": "Escolha uma canção curta e cante-a todos os dias por uma ou duas semanas, com os mesmos gestos. Use gravações de falantes nativos para ouvir a pronúncia (com o volume moderado) e depois cante junto sem a gravação. Não é preciso explicar o significado palavra por palavra: os gestos bastam. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "Algumas crianças só ouvem no começo e cantam depois. Respeite. Se ela não reage nem a canções em português, ou tem muita dificuldade com a fala, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.CAN.02",
+      "linha": "LI.CAN",
+      "ordem": 2,
+      "titulo": "Canta uma canção inteira na língua nova e a acompanha com gestos e movimentos",
+      "descricaoPais": "Canta “Row, row, row your boat” ou “Alouette” do começo ao fim, com os movimentos.",
+      "evidencias": ["Canta uma canção inteira na língua", "Faz os movimentos no tempo certo"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.CAN.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cantar uma canção inteira na língua nova mostra que a criança **memorizou os sons** e os associa ao sentido. É um grande ganho de pronúncia, de ritmo e de confiança.",
+        "comoParticipar": "Escolha uma canção por mês e a cante com frequência, até ficar de memória. Use cantigas tradicionais de domínio público (“Row, row, row your boat”, “Alouette”, “Au clair de la lune”). Faça um “caderno de canções” com desenhos de cada uma. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "A memória de letras demora. Se ela não consegue cantar nem uma canção em português de cor, vale conversar com a escola ou o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    },
+    {
+      "id": "LI.CAN.03",
+      "linha": "LI.CAN",
+      "ordem": 3,
+      "titulo": "Recita uma rima ou um poema curto de memória na língua nova",
+      "descricaoPais": "Recita “Humpty Dumpty” ou o primeiro verso de “Au clair de la lune” com ritmo e boa pronúncia.",
+      "evidencias": ["Recita 4 versos de memória", "Mantém o ritmo e a pronúncia"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["LI.CAN.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Decorar e recitar versos curtos treina a **memória, a pronúncia e o ritmo** da língua. A criança leva consigo um pedaço da língua que pode usar pelo resto da vida.",
+        "comoParticipar": "Escolha uma rima curta e tradicional (de domínio público) e a recite todos os dias, de memória, com gestos ou batendo o ritmo. Grave a sua voz ou use uma gravação de nativo para a pronúncia. Faça uma pequena “apresentação” em família, quando ela se sentir pronta. O educador precisa dominar a língua da trilha; se tiver dúvida de pronúncia, procure uma gravação de falante nativo.",
+        "sinaisDeAtencao": "A recitação não deve virar cobrança. Se ela se sente muito ansiosa para recitar, reduza para dois versos e para um público pequeno. Se tem muita dificuldade de memória em geral, vale conversar com a escola ou o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["cameron-young-learners", "lightbown-spada-how-languages"],
+        "porVertente": {
+          "Clássico": {
+            "comoParticipar": "Recitar versos de memória é prática típica da formação clássica, até em língua estrangeira.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Mason defende que a criança aprenda a língua estrangeira de ouvido e falando, em pequenos momentos diários, bem antes de qualquer gramática.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      },
+      "idiomas": ["en", "fr"]
+    }
+  ]
+}

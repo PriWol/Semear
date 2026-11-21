@@ -1,0 +1,75 @@
+{
+  "id": "atv-ar-adivinha-o-som",
+  "titulo": "Adivinha o som: instrumentos, forte e fraco",
+  "marcos": ["AR.ESC.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Instrumentos sem peças pequenas soltas; volume moderado, sem barulho forte perto do ouvido. Nunca use fones de ouvido para esta atividade. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança distingue sons e instrumentos pelo timbre e descreve se são fortes ou fracos, agudos ou graves.",
+  "passos": [
+    {
+      "titulo": "Explorar",
+      "minutos": 5,
+      "texto": "Mostre 3 instrumentos ou objetos sonoros (tambor, sininho, flauta de brinquedo ou chocalho). Toque cada um e diga o nome."
+    },
+    {
+      "titulo": "Adivinhar",
+      "minutos": 8,
+      "texto": "Com os olhos fechados (ou de costas), ela ouve um instrumento e diz qual é. Troque os papéis. Pergunte: “Foi forte ou fraco? Agudo ou grave?”.",
+      "fala": "Que som é esse?"
+    },
+    {
+      "titulo": "Passeio de escuta",
+      "minutos": 4,
+      "texto": "Fechem os olhos por um minuto e escutem os sons do ambiente. Contem quantos ouviram."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Distingue forte e fraco", "Reconhece 2 instrumentos"],
+    "emDesenvolvimento": ["Confunde agudo e grave (comum)", "Espia (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 instrumentos bem diferentes.",
+    "facil": "Use 5 instrumentos ou sons de objetos de casa."
+  },
+  "materiais": [
+    {
+      "item": "Tambor",
+      "deCasa": true
+    },
+    {
+      "item": "Sininho",
+      "deCasa": true
+    },
+    {
+      "item": "Flauta de brinquedo ou chocalho",
+      "deCasa": true
+    },
+    {
+      "item": "Um pano para vendar (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Distinguiu forte e fraco",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Reconheceu instrumentos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais sons ela mais reconheceu?",
+  "palavrasChave": ["timbre", "instrumentos", "forte e fraco", "escuta", "agudo e grave"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

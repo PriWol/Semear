@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-humpty-dumpty-en",
+  "titulo": "Humpty Dumpty: uma rima para recitar",
+  "marcos": ["LI.CAN.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Sem objetos frágeis na brincadeira: se usar um ovo de brinquedo, que seja de plástico ou de pano. Não use ovos de verdade para “cair”. A rima é tradicional e de domínio público.",
+  "objetivo": "A criança decora e recita uma rima curta em inglês, com o ritmo.",
+  "passos": [
+    {
+      "titulo": "Ouvir",
+      "minutos": 4,
+      "texto": "Recite a rima “Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall…” batendo o ritmo. Ela escuta e bate o ritmo com você.",
+      "fala": "Humpty Dumpty sat on a wall…"
+    },
+    {
+      "titulo": "Decorar",
+      "minutos": 8,
+      "texto": "Recitem linha por linha, apagando uma palavra por vez de um cartaz, até ela saber de cor. Repita várias vezes."
+    },
+    {
+      "titulo": "Apresentar",
+      "minutos": 3,
+      "texto": "Ela recita para alguém da casa, com gestos. Comemore."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Recita 4 versos", "Mantém o ritmo"],
+    "emDesenvolvimento": ["Esquece uma palavra (normal)", "Troca palavras (aceite e repita)"]
+  },
+  "ajustes": {
+    "dificil": "Recite só dois versos.",
+    "facil": "Invente uma nova rima com o mesmo ritmo."
+  },
+  "materiais": [
+    {
+      "item": "Cartaz com a rima escrita (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Ovo de brinquedo ou desenho",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Recitou 4 versos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Manteve o ritmo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantos versos ela recitou de memória?",
+  "palavrasChave": ["rima", "humpty dumpty", "recitar", "inglês", "memória"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

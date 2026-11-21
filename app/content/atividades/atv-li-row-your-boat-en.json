@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-row-your-boat-en",
+  "titulo": "Row, row, row your boat: remando juntos",
+  "marcos": ["LI.CAN.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 13,
+  "preparoMin": 2,
+  "cuidados": "Sente no chão, um de frente para o outro, e balance suavemente. Sem puxar os braços da criança com força. Em barquinho de papel na água, só com supervisão e sem deixar a criança sozinha perto da água.",
+  "objetivo": "A criança canta uma canção inteira em inglês, remando com o corpo.",
+  "passos": [
+    {
+      "titulo": "Aprender",
+      "minutos": 5,
+      "texto": "Cante a canção devagar, uma linha por vez, e ela repete. Mostre o movimento de remar, sentados frente a frente com as mãos dadas.",
+      "fala": "Row, row, row your boat…"
+    },
+    {
+      "titulo": "Cantar",
+      "minutos": 5,
+      "texto": "Cantem a canção inteira, 3 vezes, remando no tempo. Aumente a velocidade da segunda vez."
+    },
+    {
+      "titulo": "Caderno",
+      "minutos": 3,
+      "texto": "Ela desenha um barco e escreve (ou você escreve) o título na página de canções."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta a canção inteira", "Rema no tempo certo"],
+    "emDesenvolvimento": ["Esquece partes (normal)", "Quer só remar (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Cantem só a primeira frase.",
+    "facil": "Cantem em cânone, entrando uma voz de cada vez."
+  },
+  "materiais": [
+    {
+      "item": "Caderno e lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Espaço no chão",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cantou a canção inteira",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Remou no tempo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual parte da canção ela cantou melhor?",
+  "palavrasChave": ["row your boat", "canção", "inglês", "gestos"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

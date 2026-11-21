@@ -1,0 +1,75 @@
+{
+  "id": "atv-nm-roda-do-ciclo-de-vida",
+  "titulo": "Roda do ciclo de vida",
+  "marcos": ["NM.VIV.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Use tesoura com pontas arredondadas e ensine a segurar com cuidado. Sementes pequenas só com supervisão. Se for observar bichos vivos (lagartas, girinos), não toque com as mãos e devolva ao lugar onde estavam; lave as mãos.",
+  "objetivo": "A criança desenha e ordena as fases do ciclo de uma planta e o conta em voz alta.",
+  "passos": [
+    {
+      "titulo": "Lembrar",
+      "minutos": 4,
+      "texto": "Retome a planta que vocês acompanharam ou olhem uma árvore ou fruta: “Como ela começou?”. Peça que diga as fases que lembra.",
+      "fala": "E antes disso, como era?"
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 12,
+      "texto": "Em um prato de papel dividido em 4 partes, ela desenha: semente, broto, planta com flor, fruto. Ajude a recortar, se precisar."
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 4,
+      "texto": "Peça que gire a roda e conte a história da planta, da semente até o fruto. Convide a contar também a de um animal que ela conheça."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ordena ao menos três fases", "Conta o ciclo em voz alta"],
+    "emDesenvolvimento": ["Inverte fases (comum)", "Mistura plantas e animais"]
+  },
+  "ajustes": {
+    "dificil": "Faça só 3 fases e use as imagens de uma revista para colar.",
+    "facil": "Compare o ciclo da planta com o de uma borboleta ou de uma galinha."
+  },
+  "materiais": [
+    {
+      "item": "Prato de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": true
+    },
+    {
+      "item": "Uma planta ou fruta de verdade",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou as fases",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou com as próprias palavras",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual fase do ciclo ela mais gostou?",
+  "palavrasChave": ["ciclo de vida", "semente", "borboleta", "crescer"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

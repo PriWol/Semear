@@ -1,0 +1,71 @@
+{
+  "id": "atv-ar-pulso-com-tambor",
+  "titulo": "Tambor e chocalho: o pulso da música",
+  "marcos": ["AR.RIT.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 12,
+  "preparoMin": 10,
+  "cuidados": "Chocalhos devem ser feitos pelo adulto, com tampa selada com cola e fita (nunca com grãos soltos). Tambores de lata devem ter bordas lixadas e cobertas. Volume moderado: sons muito altos cansam os ouvidos. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança acompanha o pulso de uma cantiga com um instrumento simples.",
+  "passos": [
+    {
+      "titulo": "Instrumentos",
+      "minutos": 3,
+      "texto": "Mostre o tambor (uma lata com a borda coberta) e o chocalho (garrafa de plástico vedada com arroz). Deixe que toque livremente."
+    },
+    {
+      "titulo": "Pulso",
+      "minutos": 6,
+      "texto": "Cantem “Ciranda, cirandinha” e marquem o pulso com o tambor, batendo uma vez a cada sílaba forte. Troquem os papéis: ela marca, você canta.",
+      "fala": "Tum, tum, tum, tum."
+    },
+    {
+      "titulo": "Rápido e lento",
+      "minutos": 3,
+      "texto": "Cantem mais rápido e mais devagar. Ela segue o seu andamento com o instrumento."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Acompanha o pulso por 8 batidas", "Toca com cuidado"],
+    "emDesenvolvimento": ["Toca sem relação com a música (normal)", "Bate forte demais (reduza)"]
+  },
+  "ajustes": {
+    "dificil": "Marque o pulso no colo dela com as suas mãos.",
+    "facil": "Acrescente um instrumento para cada pessoa da família."
+  },
+  "materiais": [
+    {
+      "item": "Lata ou tambor de brinquedo",
+      "deCasa": true
+    },
+    {
+      "item": "Garrafa de plástico vedada, com arroz",
+      "deCasa": true
+    },
+    {
+      "item": "Colheres de pau",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Acompanhou o pulso",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Tocou com cuidado",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantas batidas ela acompanhou seguidas?",
+  "palavrasChave": ["pulso", "tambor", "chocalho", "ritmo", "instrumentos"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

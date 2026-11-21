@@ -1,0 +1,80 @@
+{
+  "id": "atv-nm-mini-ciclo-da-agua",
+  "titulo": "Mini ciclo da água no saco",
+  "marcos": ["NM.TER.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Use apenas água morna ou fria nesta atividade; nada de água fervente perto da criança. Deixe o saco longe de crianças menores (risco de sufocação). Se mostrar vapor da chaleira, o adulto faz a parte quente e mantém a criança afastada.",
+  "objetivo": "A criança monta um mini ciclo da água em um saco na janela, observa as gotas e conta o caminho da água.",
+  "passos": [
+    {
+      "titulo": "Pergunta",
+      "minutos": 3,
+      "texto": "“De onde vem a chuva?”. Anote o que ela pensa, sem corrigir.",
+      "fala": "O que você acha?"
+    },
+    {
+      "titulo": "Montar",
+      "minutos": 7,
+      "texto": "Em um saco transparente com fecho, coloque um pouco de água com corante azul e feche. Cole na janela ensolarada, com fita. Desenhe nuvem e sol por fora."
+    },
+    {
+      "titulo": "Observar",
+      "minutos": 3,
+      "texto": "Depois de algumas horas, olhem as gotinhas no alto do saco. Em outro dia, confirme o que mudou."
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 4,
+      "texto": "Ela conta o caminho da água com as próprias palavras. Pergunte como poupar água em casa (fechar a torneira ao escovar os dentes, por exemplo)."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Descreve a evaporação, a nuvem e a chuva", "Diz uma forma de poupar água"],
+    "emDesenvolvimento": ["Mistura a ordem do ciclo", "Foca só na chuva"]
+  },
+  "ajustes": {
+    "dificil": "Mostre só a gota na tampa da panela e a chuva.",
+    "facil": "Desenhe o ciclo completo com setas e legendas, e explique para outra pessoa."
+  },
+  "materiais": [
+    {
+      "item": "Saco transparente com fecho",
+      "deCasa": true
+    },
+    {
+      "item": "Água e corante azul",
+      "deCasa": true
+    },
+    {
+      "item": "Fita adesiva",
+      "deCasa": true
+    },
+    {
+      "item": "Marcador permanente",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Contou a ordem do ciclo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse como poupar água",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como ela explicou de onde vem a chuva?",
+  "palavrasChave": ["ciclo da água", "chuva", "evaporação", "nuvem"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

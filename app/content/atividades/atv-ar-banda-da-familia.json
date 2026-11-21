@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-banda-da-familia",
+  "titulo": "Banda da família: sons, silêncios e partitura",
+  "marcos": ["AR.RIT.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Escolha instrumentos seguros, sem peças pequenas soltas, e volume moderado. Combine antes o tempo da brincadeira, para evitar muito barulho. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança toca em grupo, segue o pulso e escreve o seu ritmo com símbolos.",
+  "passos": [
+    {
+      "titulo": "Combinar",
+      "minutos": 5,
+      "texto": "Cada um escolhe um instrumento e um padrão curto de 4 batidas. Marquem o pulso com palmas antes."
+    },
+    {
+      "titulo": "Tocar",
+      "minutos": 10,
+      "texto": "Entrem um de cada vez, em cima do pulso. Depois, todos juntos. Ela é a regente, ou escolhe quem entra. Combinem o fim: levantem a mão e todos param.",
+      "fala": "Entra você!"
+    },
+    {
+      "titulo": "Escrever",
+      "minutos": 5,
+      "texto": "Ela escreve o seu padrão com símbolos (● para um som curto, ▬ para um longo, um X para o silêncio) e os outros o tocam."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Toca em grupo no pulso", "Escreve o ritmo com símbolos"],
+    "emDesenvolvimento": ["Acelera (peça atenção ao pulso)", "Quer só mandar (troque os papéis)"]
+  },
+  "ajustes": {
+    "dificil": "Toque só em dupla, com um instrumento por pessoa.",
+    "facil": "Escolha uma música conhecida e toque o ritmo dela."
+  },
+  "materiais": [
+    {
+      "item": "Instrumentos simples: tambor, chocalho, colheres",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Tocou em grupo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Escreveu o ritmo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como foi a banda?",
+  "palavrasChave": ["banda", "ritmo em grupo", "partitura", "silêncio", "instrumentos"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

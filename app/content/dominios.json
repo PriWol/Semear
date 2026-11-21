@@ -219,6 +219,48 @@
         "Estudo de pintores",
         "Estudo de compositores",
         "Caderno da natureza"
+      ],
+      "linhas": [
+        {
+          "id": "AR.DES",
+          "nome": "Desenho",
+          "vertentes": null
+        },
+        {
+          "id": "AR.PIN",
+          "nome": "Pintura",
+          "vertentes": null
+        },
+        {
+          "id": "AR.MOD",
+          "nome": "Modelagem",
+          "vertentes": null
+        },
+        {
+          "id": "AR.RIT",
+          "nome": "Ritmo e pulso",
+          "vertentes": null
+        },
+        {
+          "id": "AR.CAN",
+          "nome": "Canto",
+          "vertentes": null
+        },
+        {
+          "id": "AR.ESC",
+          "nome": "Escuta musical",
+          "vertentes": null
+        },
+        {
+          "id": "AR.APR",
+          "nome": "Apreciação de artistas e compositores",
+          "vertentes": null
+        },
+        {
+          "id": "AR.NAT",
+          "nome": "Caderno da natureza",
+          "vertentes": null
+        }
       ]
     },
     {

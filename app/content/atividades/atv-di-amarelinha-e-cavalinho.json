@@ -1,0 +1,71 @@
+{
+  "id": "atv-di-amarelinha-e-cavalinho",
+  "titulo": "Amarelinha e cavalinho",
+  "marcos": ["DI.MAM.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 7],
+  "duracaoMin": 15,
+  "preparoMin": 3,
+  "cuidados": "Faça o desenho no chão plano, longe do trânsito e de superfícies molhadas. Use calçado fechado. Se houver outras crianças, deixe espaço entre elas.",
+  "objetivo": "A criança pula em um pé só, galopa e joga amarelinha, com ritmo e alegria.",
+  "passos": [
+    {
+      "titulo": "Desenhar",
+      "minutos": 4,
+      "texto": "Desenhem juntos uma amarelinha simples, com 6 casas numeradas, no chão de giz."
+    },
+    {
+      "titulo": "Pular",
+      "minutos": 8,
+      "texto": "Ela pula em um pé só nas casas simples e com os dois pés nas casas duplas, do 1 ao 6. Combine a regra com ela e troquem as regras. Conte os pulos em voz alta.",
+      "fala": "Um, dois, três, pulo!"
+    },
+    {
+      "titulo": "Cavalinho",
+      "minutos": 3,
+      "texto": "Terminem galopando pelo quintal ao som de uma música, trocando de direção ao sinal."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Dá 3 ou mais pulos em um pé só", "Galopa com ritmo"],
+    "emDesenvolvimento": ["Pula com os dois pés (esperado)", "Perde o equilíbrio (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Pule com apoio de uma mão e com poucas casas.",
+    "facil": "Adicione um desafio: jogar uma pedrinha e ir buscá-la pulando."
+  },
+  "materiais": [
+    {
+      "item": "Giz de lousa",
+      "deCasa": true
+    },
+    {
+      "item": "Uma pedrinha lisa ou saquinho de areia",
+      "deCasa": true
+    },
+    {
+      "item": "Espaço aberto",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Pulou em um pé",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Galopou com ritmo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantos pulos em um pé ela deu?",
+  "palavrasChave": ["amarelinha", "pular", "galope", "ritmo"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

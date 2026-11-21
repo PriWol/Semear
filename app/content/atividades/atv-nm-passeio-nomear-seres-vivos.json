@@ -1,0 +1,70 @@
+{
+  "id": "atv-nm-passeio-nomear-seres-vivos",
+  "titulo": "Passeio dos nomes: quem mora aqui?",
+  "marcos": ["NM.VIV.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 9,
+  "preparoMin": 5,
+  "cuidados": "Fique ao lado da criança o tempo todo. Não deixe provar folhas, flores ou sementes (algumas são tóxicas) nem pegar bichos que possam picar ou morder. Lave as mãos depois.",
+  "objetivo": "A criança observa seres vivos reais, ouve seus nomes, repete alguns e experimenta tocar com delicadeza.",
+  "passos": [
+    {
+      "titulo": "Combinar",
+      "minutos": 1,
+      "texto": "Mostre a cestinha: “Vamos procurar seres vivos? Eles se mexem, crescem ou têm folhas”. Combine só olhar e tocar com um dedinho.",
+      "fala": "Quem será que mora aqui?"
+    },
+    {
+      "titulo": "Passeio",
+      "minutos": 6,
+      "texto": "Caminhem pelo quintal, pela calçada ou pela praça. Quando ela olhar algo, diga o nome em voz clara (“formiga”, “árvore”) e deixe observar o tempo que quiser."
+    },
+    {
+      "titulo": "Cestinha",
+      "minutos": 2,
+      "texto": "Se ela quiser, junte uma folha ou pedrinha caída no chão para a cestinha. Nada de arrancar da planta."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta ou nomeia seres vivos", "Toca com delicadeza"],
+    "emDesenvolvimento": ["Esquece o nome depois (é normal)", "Quer pegar tudo de uma vez"]
+  },
+  "ajustes": {
+    "dificil": "Escolha só um ser vivo e fique com ele um tempinho.",
+    "facil": "Peça que ela conte qual é o seu bichinho ou planta favorita e por quê."
+  },
+  "materiais": [
+    {
+      "item": "Cestinha ou saquinho de pano",
+      "deCasa": true
+    },
+    {
+      "item": "Um quintal, janela ou praça",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou ou apontou seres vivos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Tocou com delicadeza",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual ser vivo mais chamou a atenção dela hoje?",
+  "toqueVertente": {
+    "Charlotte Mason": "Volte ao mesmo lugar em outros dias e note o que mudou: é o começo do caderno da natureza."
+  },
+  "palavrasChave": ["passeio", "natureza", "animais", "plantas", "quintal"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

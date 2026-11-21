@@ -1,0 +1,73 @@
+{
+  "id": "atv-ar-estudo-de-um-pintor-monet",
+  "titulo": "Estudo de um pintor: Claude Monet",
+  "marcos": ["AR.APR.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 18,
+  "preparoMin": 10,
+  "cuidados": "Use reproduções de domínio público (Monet morreu em 1926) e anote a fonte (por exemplo, a coleção do Musée d'Orsay, do Musée Marmottan Monet ou do museu que guarda a obra). Confira a licença da imagem antes de imprimir.",
+  "objetivo": "A criança olha com atenção obras de um pintor (aqui, Monet), descreve uma de memória e conhece um pouco de sua vida.",
+  "passos": [
+    {
+      "titulo": "Olhar",
+      "minutos": 5,
+      "texto": "Mostre uma obra de Monet (por exemplo, uma das séries de nenúfares). Ela olha em silêncio por 3 minutos, observando cores, luz e pinceladas."
+    },
+    {
+      "titulo": "Lembrar",
+      "minutos": 8,
+      "texto": "Esconda a obra. Peça que descreva de memória tudo o que viu. Depois mostre de novo e comparem.",
+      "fala": "O que você lembra?"
+    },
+    {
+      "titulo": "O pintor",
+      "minutos": 5,
+      "texto": "Conte em poucas frases quem foi o artista (viveu na França, pintava ao ar livre, observava a luz). Ela pergunta o que quiser e guarda a obra na sua pasta de pintores."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Reconhece obras do pintor", "Descreve uma obra de memória"],
+    "emDesenvolvimento": ["Esquece muitos detalhes (normal)", "Se distrai (use poucos minutos)"]
+  },
+  "ajustes": {
+    "dificil": "Use uma obra só e olhe 1 minuto.",
+    "facil": "Compare duas obras do artista e diga o que se repete."
+  },
+  "materiais": [
+    {
+      "item": "Reproduções de domínio público do mesmo pintor",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno ou pasta de pintores",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Descreveu uma obra de memória",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Reconheceu obras do pintor",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela lembrou do quadro?",
+  "palavrasChave": [
+    "monet",
+    "estudo de pintores",
+    "charlotte mason",
+    "memória visual",
+    "impressionismo"
+  ],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

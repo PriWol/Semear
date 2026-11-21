@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-mercadinho-ingles-en",
+  "titulo": "Little market: mercadinho em inglês",
+  "marcos": ["LI.VOC.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use alimentos de verdade só se a criança não tiver alergias e sob supervisão: atenção a alimentos que podem engasgar (uvas inteiras, castanhas). Se usar dinheiro de brinquedo, sem moedas pequenas.",
+  "objetivo": "A criança nomeia alimentos em inglês e diz o que gosta e o que não gosta, em uma brincadeira de mercado.",
+  "passos": [
+    {
+      "titulo": "Vocabulário",
+      "minutos": 4,
+      "texto": "Mostre 6 alimentos (apple, bread, milk, cheese, water, banana) e diga o nome de cada um. Ela repete e aponta.",
+      "fala": "Do you like apples?"
+    },
+    {
+      "titulo": "Mercado",
+      "minutos": 8,
+      "texto": "Brinquem de mercado: um é o vendedor, o outro é o cliente. “I want an apple, please.” “Here you are.” “Thank you!”."
+    },
+    {
+      "titulo": "Opinião",
+      "minutos": 3,
+      "texto": "Perguntem um ao outro: “Do you like cheese?”. Responda “I like…” ou “I don't like…”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia 6 alimentos", "Diz do que gosta e não gosta"],
+    "emDesenvolvimento": ["Diz só “yes/no” (aceite)", "Mistura com português (aceite)"]
+  },
+  "ajustes": {
+    "dificil": "Use só 3 alimentos e a frase “I like…”.",
+    "facil": "Faça um cardápio escrito com 5 pratos e preços."
+  },
+  "materiais": [
+    {
+      "item": "Alimentos de verdade ou de brinquedo",
+      "deCasa": true
+    },
+    {
+      "item": "Pratos e talheres de brinquedo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou 6 alimentos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse o que gosta",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela disse que gosta?",
+  "palavrasChave": ["comida", "mercado", "like", "inglês", "vocabulário"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

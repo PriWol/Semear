@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-cartao-de-apresentacao-en",
+  "titulo": "Meu cartão de apresentação em inglês",
+  "marcos": ["LI.FAL.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Se mostrar o cartão a alguém por vídeo, use ligações particulares com pessoas conhecidas. Não publique vídeo nem foto da criança em redes públicas e não use dados pessoais (sobrenome, endereço) no cartão.",
+  "objetivo": "A criança monta um cartão de apresentação e fala de si em frases simples, em inglês.",
+  "passos": [
+    {
+      "titulo": "Modelo",
+      "minutos": 5,
+      "texto": "Mostre frases-modelo: “My name is…”, “I'm … years old.”, “I like…”, “I have a…”. Preencha o seu exemplo em voz alta.",
+      "fala": "My name is…"
+    },
+    {
+      "titulo": "Cartão",
+      "minutos": 8,
+      "texto": "Ela faz o cartão com desenhos e as frases (você escreve, se necessário) sobre ela. Cuide para não colocar dados pessoais além do primeiro nome."
+    },
+    {
+      "titulo": "Apresentar",
+      "minutos": 4,
+      "texto": "Ela se apresenta ao bichinho, a você e a outra pessoa da casa, olhando para o cartão no começo, depois sem olhar."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz 3 ou mais frases", "Pergunta algo ao outro"],
+    "emDesenvolvimento": ["Mistura palavras em português (aceite)", "Fala baixinho (incentive)"]
+  },
+  "ajustes": {
+    "dificil": "Diga só a frase do nome e a da idade.",
+    "facil": "Acrescente perguntas: “What's your name? Do you like…?”."
+  },
+  "materiais": [
+    {
+      "item": "Cartolina ou folha",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse 3 frases",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Fez uma pergunta",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela contou de si?",
+  "palavrasChave": ["apresentação", "frases", "inglês", "falar de si"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

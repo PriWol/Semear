@@ -1,0 +1,79 @@
+{
+  "id": "atv-ar-pintura-com-as-maos",
+  "titulo": "Pintura com as mãos e esponjas",
+  "marcos": ["AR.PIN.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 5,
+  "cuidados": "Use tinta atóxica e lavável. Fique junto o tempo todo: a tinta pode ir à boca e o chão fica escorregadio. Cubra o chão e a mesa, use avental e lave as mãos depois. Se a tinta for de farinha, atenção a alergias (glúten).",
+  "objetivo": "A criança explora a tinta com as mãos, esponjas e pincéis grossos, descobrindo as cores.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 3,
+      "texto": "Forre o chão e a mesa. Coloque 2 ou 3 cores em pratinhos rasos e uma folha grande de papel. Vista um avental."
+    },
+    {
+      "titulo": "Pintar",
+      "minutos": 6,
+      "texto": "Deixe que pinte com os dedos, a palma da mão, uma esponja e um pincel grosso. Nomeie as cores e os gestos: “Você bateu com a esponja!”.",
+      "fala": "Que cor é essa?"
+    },
+    {
+      "titulo": "Lavar",
+      "minutos": 1,
+      "texto": "Lavem as mãos juntos e deixem o trabalho secar. Anote o nome e a data no canto."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Pinta com as mãos ou o pincel", "Diz uma cor ou mostra o que fez"],
+    "emDesenvolvimento": ["Evita sujar as mãos (respeite)", "Mistura tudo (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Use só um pincel e uma cor.",
+    "facil": "Convide-a a pintar um tema, como “a chuva”."
+  },
+  "materiais": [
+    {
+      "item": "Tinta guache lavável e atóxica",
+      "deCasa": true
+    },
+    {
+      "item": "Papel grande",
+      "deCasa": true
+    },
+    {
+      "item": "Esponja e pincel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Avental",
+      "deCasa": true
+    },
+    {
+      "item": "Pratos rasos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Explorou a tinta",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou uma cor",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais cores ela mais usou?",
+  "palavrasChave": ["tinta", "guache", "pintura com as mãos", "cores"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

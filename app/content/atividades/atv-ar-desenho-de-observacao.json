@@ -1,0 +1,71 @@
+{
+  "id": "atv-ar-desenho-de-observacao",
+  "titulo": "Desenho de observação: olhar de verdade",
+  "marcos": ["AR.DES.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Use lápis macio de ponta não muito afiada, em mesa estável. Se o objeto for uma planta, escolha uma sem espinhos e que não seja tóxica. Lave as mãos depois.",
+  "objetivo": "A criança desenha um objeto observando-o com atenção e inclui os detalhes que viu.",
+  "passos": [
+    {
+      "titulo": "Olhar",
+      "minutos": 5,
+      "texto": "Escolha um objeto (uma pera, uma folha). Peça que olhe por 1 minuto em silêncio, depois conte o que viu: forma, cor, linhas, pontos.",
+      "fala": "O que você vê?"
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 12,
+      "texto": "Ela desenha olhando para o objeto, e não de memória. Se ela olhar só o papel, lembre: “Olhe de novo para o objeto”."
+    },
+    {
+      "titulo": "Comparar",
+      "minutos": 3,
+      "texto": "Coloque o desenho ao lado do objeto e pergunte: “O que você viu no objeto que pôs no desenho? O que ainda dá para acrescentar?”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Desenha olhando para o objeto", "Inclui 3 ou mais detalhes"],
+    "emDesenvolvimento": ["Desenha de memória (volte ao objeto)", "Apaga muito"]
+  },
+  "ajustes": {
+    "dificil": "Escolha um objeto mais simples, como uma maçã ou uma folha grande.",
+    "facil": "Desenhe o mesmo objeto em outro dia e compare as diferenças."
+  },
+  "materiais": [
+    {
+      "item": "Objeto para desenhar",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis macio",
+      "deCasa": true
+    },
+    {
+      "item": "Folha de papel",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Olhou para o objeto enquanto desenhava",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Incluiu detalhes",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que detalhe ela descobriu?",
+  "palavrasChave": ["observação", "caderno de desenho", "natureza", "detalhes"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

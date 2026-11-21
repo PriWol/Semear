@@ -1,0 +1,74 @@
+{
+  "id": "atv-ar-primeiro-desenho-da-natureza",
+  "titulo": "Primeiro desenho da natureza",
+  "marcos": ["AR.NAT.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 6],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Escolha plantas sem espinhos e que não sejam tóxicas (nada de provar folhas ou flores). Não arranque plantas: desenhe no lugar. Cuide de picadas de insetos, use protetor solar e lave as mãos depois.",
+  "objetivo": "A criança observa um elemento da natureza com atenção e o desenha em uma folha de caderno.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 5,
+      "texto": "No quintal ou na praça, escolha com ela uma folha, flor ou inseto que a atraia. Peça que olhe “como um detetive”, por um minuto.",
+      "fala": "O que você vê?"
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 8,
+      "texto": "Ela desenha o que viu, na prancheta. Pergunte só sobre o que ela notou, sem corrigir."
+    },
+    {
+      "titulo": "Data e lugar",
+      "minutos": 2,
+      "texto": "Anote a data, o lugar e o nome do que observou (se souberem). Guardem o desenho no caderno da natureza."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Observa por 2 minutos", "Faz um desenho do que viu"],
+    "emDesenvolvimento": [
+      "Desenha de memória (volte ao objeto)",
+      "Se distrai com os bichinhos (normal)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Peça só que aponte e conte o que vê, sem desenhar.",
+    "facil": "Peça que desenhe duas coisas e compare."
+  },
+  "materiais": [
+    {
+      "item": "Prancheta ou livro firme",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de desenho",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Observou por 2 minutos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Fez o desenho",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela escolheu observar?",
+  "palavrasChave": ["caderno da natureza", "desenho de observação", "folhas", "passeio"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

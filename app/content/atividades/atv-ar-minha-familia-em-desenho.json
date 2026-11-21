@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-minha-familia-em-desenho",
+  "titulo": "Desenho da minha família",
+  "marcos": ["AR.DES.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 2,
+  "cuidados": "Use canetas hidrográficas laváveis e atóxicas; fique junto para a criança não levar à boca nem desenhar em móveis. Cubra a mesa.",
+  "objetivo": "A criança desenha pessoas (a família) e conta quem é cada uma.",
+  "passos": [
+    {
+      "titulo": "Conversa",
+      "minutos": 3,
+      "texto": "Pergunte quem mora na casa e como é cada pessoa: o cabelo, a roupa, o que faz. Olhe fotos, se quiser."
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 9,
+      "texto": "Ela desenha a família como quiser, em uma folha grande. Não corrija nem copie; ajude só se ela pedir.",
+      "fala": "Quem você desenhou?"
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 3,
+      "texto": "Ela conta quem é cada um. Escreva o nome ao lado de cada pessoa (ou ela mesma, se já escrever) e a data."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Desenha uma figura humana", "Diz quem é cada pessoa"],
+    "emDesenvolvimento": ["Faz “cabeçudos” (esperado)", "Não quer desenhar (respeite)"]
+  },
+  "ajustes": {
+    "dificil": "Peça só uma pessoa, a que ela escolher.",
+    "facil": "Peça que acrescente o chão, o sol e a casa."
+  },
+  "materiais": [
+    {
+      "item": "Folha grande",
+      "deCasa": true
+    },
+    {
+      "item": "Canetas hidrográficas ou giz de cera",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Desenhou pessoas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse quem é cada um",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela contou do desenho?",
+  "palavrasChave": ["família", "figura humana", "desenho", "retrato"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

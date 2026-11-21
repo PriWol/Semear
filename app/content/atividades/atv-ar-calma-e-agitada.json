@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-calma-e-agitada",
+  "titulo": "Música calma, música agitada",
+  "marcos": ["AR.ESC.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 3,
+  "cuidados": "Volume baixo ou moderado, sem fones de ouvido. Dance em local livre de quinas e brinquedos no chão. Fique junto o tempo todo. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança escuta duas músicas muito diferentes e reage com o corpo a cada uma.",
+  "passos": [
+    {
+      "titulo": "Calma",
+      "minutos": 3,
+      "texto": "Toque uma música calma (uma canção de ninar, uma peça suave). Deitem-se ou sentem-se em silêncio, de olhos fechados, e escutem."
+    },
+    {
+      "titulo": "Agitada",
+      "minutos": 3,
+      "texto": "Toque uma música animada (uma marchinha, um samba). Dancem juntos, pulando e batendo palmas.",
+      "fala": "Como o corpo quer ficar?"
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 2,
+      "texto": "Pergunte: “Qual você achou calma? E qual agitada?”. Ela aponta ou diz. Termine com a música calma."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Reage diferente a cada música", "Diz qual gostou"],
+    "emDesenvolvimento": ["Gosta só de uma (ótimo)", "Se agita demais (volte à calma)"]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 minutos de cada música.",
+    "facil": "Peça que invente movimentos para cada uma."
+  },
+  "materiais": [
+    {
+      "item": "Duas músicas bem diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Caixa de som, com volume moderado",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Reagiu diferente a cada música",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse de qual gostou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que música ela escolheu repetir?",
+  "palavrasChave": ["escuta", "música calma", "dançar", "emoções"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

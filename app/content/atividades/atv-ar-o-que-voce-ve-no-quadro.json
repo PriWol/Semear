@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-o-que-voce-ve-no-quadro",
+  "titulo": "O que você vê no quadro?",
+  "marcos": ["AR.APR.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 11,
+  "preparoMin": 5,
+  "cuidados": "Se usar reproduções impressas, use só obras de domínio público (por exemplo, “Tigre em uma tempestade tropical”, de Henri Rousseau, 1891, National Gallery, Londres) e confira a licença da imagem. Evite imagens que assustem a criança.",
+  "objetivo": "A criança olha uma obra com atenção e nomeia o que vê.",
+  "passos": [
+    {
+      "titulo": "Olhar",
+      "minutos": 3,
+      "texto": "Mostre a reprodução e diga o nome do artista e da obra. Deixe que olhe em silêncio por um minuto."
+    },
+    {
+      "titulo": "Dizer",
+      "minutos": 5,
+      "texto": "Pergunte: “O que você vê? Quais cores? O que está acontecendo?”. Aponte junto com o dedo e repita o que ela disser.",
+      "fala": "O que você vê?"
+    },
+    {
+      "titulo": "Imitar",
+      "minutos": 3,
+      "texto": "Peça que faça com o corpo ou a voz o que a obra mostra (o tigre, a chuva). Termine com “O que você mais gostou?”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Olha a obra com atenção", "Nomeia 3 elementos"],
+    "emDesenvolvimento": ["Olha pouco (normal)", "Só diz “bonito”"]
+  },
+  "ajustes": {
+    "dificil": "Mostre só uma parte da obra, bem simples.",
+    "facil": "Peça que invente um título para a obra."
+  },
+  "materiais": [
+    {
+      "item": "Reprodução impressa de obra de domínio público",
+      "deCasa": true
+    },
+    {
+      "item": "Um lugar para pendurar ou apoiar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Olhou com atenção",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou 3 coisas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela viu na obra?",
+  "palavrasChave": ["apreciação", "quadros", "pintores", "henri rousseau", "olhar"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "atv-ar-pontinhos-como-seurat",
+  "titulo": "Pontinhos como Seurat",
+  "marcos": ["AR.APR.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Use tinta atóxica e lavável e cotonetes (sem levar à boca: as pontas de algodão podem soltar). Cubra a mesa e use avental. A obra de referência é de domínio público (Georges Seurat, “Uma tarde de domingo na ilha de La Grande Jatte”, 1884–1886, Art Institute of Chicago): confira a licença da reprodução.",
+  "objetivo": "A criança observa uma obra feita de pontos e experimenta a técnica, explicando o que escolheu pintar.",
+  "passos": [
+    {
+      "titulo": "Olhar",
+      "minutos": 5,
+      "texto": "Mostre a obra de Seurat. Peça que olhe bem de perto e depois de longe, com os olhos meio fechados. O que muda?",
+      "fala": "O que muda de perto e de longe?"
+    },
+    {
+      "titulo": "Experimentar",
+      "minutos": 12,
+      "texto": "Com cotonetes e 3 ou 4 cores de tinta, ela pinta uma cena ou fruta feita só de pontinhos. Mostre como pontos de cores diferentes lado a lado se misturam no olhar."
+    },
+    {
+      "titulo": "Falar",
+      "minutos": 3,
+      "texto": "Ela mostra o trabalho de perto e de longe e explica o que escolheu. Anote o nome do artista que inspirou a técnica."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Experimenta a técnica dos pontinhos", "Explica o que escolheu"],
+    "emDesenvolvimento": [
+      "Pinta traços em vez de pontos (aceite)",
+      "Se frustra com o tempo (reduza)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça uma figura simples, como uma fruta, só com pontos.",
+    "facil": "Pinte duas versões do mesmo desenho: uma com pontos e uma com traços, e compare."
+  },
+  "materiais": [
+    {
+      "item": "Cotonetes",
+      "deCasa": true
+    },
+    {
+      "item": "Tinta guache em 3 ou 4 cores",
+      "deCasa": true
+    },
+    {
+      "item": "Papel",
+      "deCasa": true
+    },
+    {
+      "item": "Reprodução de domínio público da obra de Seurat",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Usou a técnica",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Explicou a escolha",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela pintou e por quê?",
+  "palavrasChave": ["seurat", "pontilhismo", "técnica", "cotonete", "artistas"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

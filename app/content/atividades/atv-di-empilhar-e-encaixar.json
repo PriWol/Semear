@@ -1,0 +1,71 @@
+{
+  "id": "atv-di-empilhar-e-encaixar",
+  "titulo": "Torre, caixa e tampas",
+  "marcos": ["DI.MFI.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Use apenas peças grandes demais para caber na boca (maiores que uma bola de pingue-pongue; teste com um rolo de papel higiênico). Fique junto o tempo todo e retire peças pequenas, pilhas e ímãs do ambiente.",
+  "objetivo": "A criança empilha blocos, coloca e tira objetos de uma caixa e abre e fecha potes, com as mãos.",
+  "passos": [
+    {
+      "titulo": "Torre",
+      "minutos": 4,
+      "texto": "No chão, empilhem blocos grandes (caixinhas, copos de plástico). Mostre e depois deixe que ela tente. Comemore quando cair: “De novo!”.",
+      "fala": "Em cima! Em cima!"
+    },
+    {
+      "titulo": "Caixa",
+      "minutos": 3,
+      "texto": "Ela põe e tira objetos grandes de uma caixa com tampa. Mostre como abrir e fechar a tampa."
+    },
+    {
+      "titulo": "Potes",
+      "minutos": 3,
+      "texto": "Dê 2 ou 3 potes com tampa de rosquear de tamanho grande. Ela abre e fecha, com a sua ajuda, se pedir."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Empilha 3 ou mais", "Abre e fecha potes"],
+    "emDesenvolvimento": ["Derruba tudo (esperado)", "Prefere só jogar os objetos (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Empilhem só 2 blocos grandes, com a sua mão.",
+    "facil": "Peça que construa uma casa para um bichinho."
+  },
+  "materiais": [
+    {
+      "item": "Blocos ou caixinhas grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Caixa com tampa",
+      "deCasa": true
+    },
+    {
+      "item": "Potes grandes de plástico com tampa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Empilhou 3 ou mais",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Abriu ou fechou um pote",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantos blocos ela empilhou?",
+  "palavrasChave": ["empilhar", "blocos", "encaixe", "mãos"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

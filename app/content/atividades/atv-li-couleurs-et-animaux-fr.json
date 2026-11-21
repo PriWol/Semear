@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-couleurs-et-animaux-fr",
+  "titulo": "Couleurs et animaux: caça às cores em francês",
+  "marcos": ["LI.VOC.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 13,
+  "preparoMin": 5,
+  "cuidados": "Use objetos grandes e seguros, sem peças pequenas. Fique junto. Não deixe a criança levar brinquedos à boca. Em passeio, siga as regras de segurança.",
+  "objetivo": "A criança aprende 4 cores e 4 animais em francês, com objetos e figuras.",
+  "passos": [
+    {
+      "titulo": "Cores",
+      "minutos": 5,
+      "texto": "Mostre 4 objetos (rouge, bleu, jaune, vert) e diga cada cor várias vezes. Peça: “Montre-moi le rouge !”. Ela mostra o objeto.",
+      "fala": "Montre-moi le rouge !"
+    },
+    {
+      "titulo": "Animais",
+      "minutos": 5,
+      "texto": "Mostre 4 bichinhos de brinquedo (chat, chien, oiseau, poisson) e faça os sons. Peça: “Où est le chat ?”. Ela aponta."
+    },
+    {
+      "titulo": "Jogo",
+      "minutos": 3,
+      "texto": "Esconda um bichinho e peça que ache: “Trouve le poisson bleu !”. Troquem os papéis."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia 4 cores", "Nomeia 4 animais"],
+    "emDesenvolvimento": ["Mistura cores (comum)", "Só aponta (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Aprenda só 2 cores e 2 animais.",
+    "facil": "Pergunte “C'est de quelle couleur ?” e “C'est quel animal ?”."
+  },
+  "materiais": [
+    {
+      "item": "4 objetos de cores diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "4 bichinhos de brinquedo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou 4 cores",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou 4 animais",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras ela já diz sozinha?",
+  "palavrasChave": ["cores", "animais", "vocabulário", "francês", "couleurs"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

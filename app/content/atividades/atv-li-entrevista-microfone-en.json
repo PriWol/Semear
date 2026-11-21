@@ -1,0 +1,71 @@
+{
+  "id": "atv-li-entrevista-microfone-en",
+  "titulo": "Microfone de brinquedo: perguntas em inglês",
+  "marcos": ["LI.FAL.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 12,
+  "preparoMin": 2,
+  "cuidados": "Use microfone de brinquedo sem pilhas expostas ou fones. Volume moderado. Fique junto e não force a criança a falar.",
+  "objetivo": "A criança responde a perguntas simples em inglês em uma entrevista de brincadeira.",
+  "passos": [
+    {
+      "titulo": "Perguntas",
+      "minutos": 4,
+      "texto": "Mostre 3 perguntas: “What's your name?”, “How are you?”, “How old are you?”. Responda você primeiro, para mostrar.",
+      "fala": "What's your name?"
+    },
+    {
+      "titulo": "Entrevista",
+      "minutos": 6,
+      "texto": "Com o microfone, faça as perguntas ao bichinho (que responde com a ajuda dela) e depois a ela. Aceite respostas de uma palavra."
+    },
+    {
+      "titulo": "Trocar",
+      "minutos": 2,
+      "texto": "Ela faz as perguntas e você responde, errando de brincadeira. Termine com um “Thank you!”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Responde às 3 perguntas", "Responde sem traduzir"],
+    "emDesenvolvimento": [
+      "Responde em português (aceite e repita em inglês)",
+      "Fica tímida (use o fantoche)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça só a pergunta do nome.",
+    "facil": "Acrescente “Where do you live?” e “What do you like?”."
+  },
+  "materiais": [
+    {
+      "item": "Microfone de brinquedo (ou rolo de papel)",
+      "deCasa": true
+    },
+    {
+      "item": "Bichinho de pelúcia",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Respondeu 3 perguntas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Respondeu sem traduzir",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que pergunta foi mais fácil?",
+  "palavrasChave": ["entrevista", "perguntas", "inglês", "conversa"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

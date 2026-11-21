@@ -1,0 +1,70 @@
+{
+  "id": "atv-ar-duas-obras-lado-a-lado",
+  "titulo": "Duas obras, lado a lado",
+  "marcos": ["AR.APR.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 16,
+  "preparoMin": 8,
+  "cuidados": "Use apenas obras de domínio público (por exemplo, Van Gogh, “A noite estrelada”, 1889, MoMA; Monet, “Impressão, nascer do sol”, 1872, Musée Marmottan Monet), confira a licença da reprodução e evite imagens que assustem.",
+  "objetivo": "A criança compara duas obras e diz o que cada uma a faz sentir.",
+  "passos": [
+    {
+      "titulo": "Olhar",
+      "minutos": 5,
+      "texto": "Coloque as duas obras lado a lado. Ela olha cada uma por um minuto, em silêncio."
+    },
+    {
+      "titulo": "Comparar",
+      "minutos": 8,
+      "texto": "Pergunte: “O que é igual? O que é diferente? Qual é mais calma? Qual tem mais movimento?”. Anote o que ela disser, em duas colunas.",
+      "fala": "O que é igual? E o que é diferente?"
+    },
+    {
+      "titulo": "Escolher",
+      "minutos": 3,
+      "texto": "Ela escolhe a favorita e diz o motivo. Se quiser, desenha o que a obra a fez imaginar."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz o que a obra faz sentir", "Compara as duas obras"],
+    "emDesenvolvimento": [
+      "Escolhe só pela cor (normal)",
+      "Responde “as duas são bonitas” (pergunte mais)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Compare só pelas cores.",
+    "facil": "Escreva uma frase sobre cada obra."
+  },
+  "materiais": [
+    {
+      "item": "Duas reproduções impressas de domínio público",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse o que sente",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Comparou as obras",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual obra ela escolheu e por quê?",
+  "palavrasChave": ["comparar obras", "van gogh", "monet", "emoção", "apreciação"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

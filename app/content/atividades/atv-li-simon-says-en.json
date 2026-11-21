@@ -1,0 +1,64 @@
+{
+  "id": "atv-li-simon-says-en",
+  "titulo": "Simon says: comandos em inglês",
+  "marcos": ["LI.ESC.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Brinque em espaço livre, sem quinas nem escadas. Cuidado com pulos e giros rápidos demais. Fique junto o tempo todo.",
+  "objetivo": "A criança entende e executa comandos simples em inglês, com gestos, em uma brincadeira de 10 minutos.",
+  "passos": [
+    {
+      "titulo": "Ensinar",
+      "minutos": 3,
+      "texto": "Mostre 4 comandos com gestos, repetindo cada um: “stand up”, “sit down”, “clap your hands”, “jump”. Ela imita sem precisar falar.",
+      "fala": "Stand up!"
+    },
+    {
+      "titulo": "Brincar",
+      "minutos": 6,
+      "texto": "Joguem “Simon says”: só vale quando disser “Simon says” antes do comando. Comece sem a regra do “Simon says”, só com os comandos, se for difícil."
+    },
+    {
+      "titulo": "Trocar",
+      "minutos": 1,
+      "texto": "Troquem os papéis: ela dá o comando (mesmo que em português) e você obedece em inglês. Termine com “Goodbye!”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz 3 ou mais ações pelo comando", "Responde “hello”"],
+    "emDesenvolvimento": ["Só imita o adulto (esperado)", "Fica quieta (período silencioso)"]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 comandos, com a sua demonstração.",
+    "facil": "Peça que ela dê os comandos em inglês."
+  },
+  "materiais": [
+    {
+      "item": "Espaço livre",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez as ações pelo comando",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Respondeu ao “hello”",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais comandos ela entendeu sem ajuda?",
+  "palavrasChave": ["simon says", "comandos", "inglês", "brincadeira"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

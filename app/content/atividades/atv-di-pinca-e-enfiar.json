@@ -1,0 +1,79 @@
+{
+  "id": "atv-di-pinca-e-enfiar",
+  "titulo": "Pinça, macarrão e cadarço",
+  "marcos": ["DI.MFI.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Use macarrão penne grande e cru, bolas de algodão e tiras de papel; nada de contas, botões, grãos ou peças pequenas, que podem engasgar. Fique junto o tempo todo. Cuidado com alergias a ingredientes (glúten, por exemplo).",
+  "objetivo": "A criança usa os dedos em pinça para transferir, rasgar e enfiar, em três jogos curtos.",
+  "passos": [
+    {
+      "titulo": "Transferir",
+      "minutos": 4,
+      "texto": "Com uma pinça de cozinha grande ou os dedos, ela passa bolas de algodão de uma tigela para outra. Conte em voz alta quantas passou.",
+      "fala": "Uma, duas…"
+    },
+    {
+      "titulo": "Rasgar",
+      "minutos": 3,
+      "texto": "Ela rasga papel (jornal, revista) em tiras e pedaços. Façam uma “chuva” de papel e colem em uma folha."
+    },
+    {
+      "titulo": "Enfiar",
+      "minutos": 3,
+      "texto": "Ponha um macarrão penne em um cadarço com uma ponta amarrada. Ela enfia, um a um, fazendo um colar. O adulto guarda o colar quando acabar."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Pega com o polegar e o indicador", "Enfia 3 ou mais peças"],
+    "emDesenvolvimento": ["Usa a mão toda (comum)", "Cansa rápido"]
+  },
+  "ajustes": {
+    "dificil": "Use pinça de cozinha bem grande e bolas maiores.",
+    "facil": "Peça que enfie um padrão: grande, pequeno, grande, pequeno."
+  },
+  "materiais": [
+    {
+      "item": "Pinça grande de cozinha",
+      "deCasa": true
+    },
+    {
+      "item": "Bolas de algodão",
+      "deCasa": true
+    },
+    {
+      "item": "Papel de jornal",
+      "deCasa": true
+    },
+    {
+      "item": "Macarrão penne",
+      "deCasa": true
+    },
+    {
+      "item": "Cadarço",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Transferiu com a pinça",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Enfiou peças",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantas peças ela enfiou?",
+  "palavrasChave": ["pinça", "enfiar", "rasgar", "dedos"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

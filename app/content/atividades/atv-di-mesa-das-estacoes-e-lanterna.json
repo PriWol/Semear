@@ -1,0 +1,79 @@
+{
+  "id": "atv-di-mesa-das-estacoes-e-lanterna",
+  "titulo": "Mesa das estações e lanterna de papel",
+  "marcos": ["DI.RIT.03"],
+  "vertentes": ["Waldorf"],
+  "idade": [4, 7],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Use lanterna de LED ou de papel, nunca com vela acesa dentro. Colete folhas e flores só caídas no chão, sem plantas tóxicas ou espinhos. Lave as mãos depois. Cuidado com sementes pequenas se houver crianças menores em casa.",
+  "objetivo": "A criança monta a mesa da estação com materiais da natureza e faz uma lanterna de papel para uma pequena festa em família.",
+  "passos": [
+    {
+      "titulo": "Coletar",
+      "minutos": 6,
+      "texto": "Passeio curto pelo quintal ou praça para juntar o que a estação oferece: folhas, flores caídas, frutos, pedrinhas."
+    },
+    {
+      "titulo": "Mesa",
+      "minutos": 5,
+      "texto": "Em um pano sobre uma mesinha, ela arruma o que trouxe. Conversem: “O que mudou desde a última estação?”.",
+      "fala": "O que a estação trouxe?"
+    },
+    {
+      "titulo": "Lanterna",
+      "minutos": 9,
+      "texto": "Com papel de seda ou vegetal e cola, ela faz uma lanterna com uma luz de LED dentro. À noite, façam um pequeno passeio de lanternas em casa ou no quintal, cantando."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ajuda a montar a mesa", "Participa da festa com a lanterna"],
+    "emDesenvolvimento": ["Quer levar tudo para casa (guarde as melhores)", "Se cansa no meio"]
+  },
+  "ajustes": {
+    "dificil": "Faça só a mesa, sem a lanterna.",
+    "facil": "Peça que ela escolha e explique o que colocar na mesa."
+  },
+  "materiais": [
+    {
+      "item": "Folhas e flores caídas",
+      "deCasa": true
+    },
+    {
+      "item": "Pano",
+      "deCasa": true
+    },
+    {
+      "item": "Papel de seda ou vegetal",
+      "deCasa": true
+    },
+    {
+      "item": "Cola",
+      "deCasa": true
+    },
+    {
+      "item": "Luz de LED",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Montou a mesa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Participou da lanterna",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela escolheu para a mesa da estação?",
+  "palavrasChave": ["estações", "lanterna", "festa", "mesa sazonal", "natureza"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

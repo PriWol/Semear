@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-de-que-lado-nasce-o-sol",
+  "titulo": "De que lado nasce o Sol? Comparando paisagens",
+  "marcos": ["NM.ESP.06"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Não olhe diretamente para o Sol em nenhum momento. A observação do nascer e do pôr do Sol é feita de longe, com o adulto junto, em local seguro e sem trânsito.",
+  "objetivo": "A criança descobre os pontos cardeais pela posição do Sol e compara duas paisagens.",
+  "passos": [
+    {
+      "titulo": "Sol",
+      "minutos": 8,
+      "texto": "De manhã, em uma janela, marquem de que lado o Sol aparece e anote com a data. À tarde, marque onde ele se põe. Ligue com um desenho (leste e oeste)."
+    },
+    {
+      "titulo": "Bússola da casa",
+      "minutos": 6,
+      "texto": "Desenhem uma rosa dos ventos e colem na parede, apontando para o lado certo. Procurem o norte em um mapa."
+    },
+    {
+      "titulo": "Paisagens",
+      "minutos": 6,
+      "texto": "Mostre duas fotos (cidade e campo, serra e praia) e peça que compare: o que é igual, o que é diferente, como as pessoas vivem.",
+      "fala": "O que muda de um lugar para o outro?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz de que lado o Sol nasce", "Compara duas paisagens"],
+    "emDesenvolvimento": ["Confunde leste e oeste", "Descreve só uma paisagem"]
+  },
+  "ajustes": {
+    "dificil": "Só observe o nascer do Sol e a paisagem da janela.",
+    "facil": "Desenhe um mapa da sua casa com a rosa dos ventos e a posição do Sol."
+  },
+  "materiais": [
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Duas fotos de paisagens diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Uma janela com vista do Sol",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse de que lado nasce o Sol",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Comparou paisagens",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela descobriu?",
+  "palavrasChave": ["pontos cardeais", "sol", "paisagem", "leste e oeste"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

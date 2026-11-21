@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-linha-da-minha-vida",
+  "titulo": "Linha da minha vida",
+  "marcos": ["NM.TEM.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Use fotos de cópia (não os originais, que se estragam). Se usar barbante e prendedores, fique junto, e não deixe a criança colocar o barbante no pescoço.",
+  "objetivo": "A criança organiza fotos da própria vida em ordem e conta o que mudou de uma idade para outra.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 6,
+      "texto": "Separem 4 ou 5 fotos (cópias) de idades diferentes: bebê, 1 ano, 2 anos, hoje. Conversem sobre cada uma.",
+      "fala": "O que você fazia aqui?"
+    },
+    {
+      "titulo": "Montar",
+      "minutos": 6,
+      "texto": "Em um barbante preso na parede ou em uma tira de papel, ela prende ou cola as fotos em ordem, do mais novo ao mais velho."
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 5,
+      "texto": "Ela mostra a linha e conta o que mudou: o que já sabe fazer agora. Se tiver o dia do aniversário, marque-o com uma vela de papel."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ordena as fotos da própria vida", "Diz o que mudou"],
+    "emDesenvolvimento": ["Mistura fotos de idades próximas", "Quer só olhar as fotos (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Use apenas 2 fotos: bebê e hoje.",
+    "facil": "Acrescente as idades de cada foto e marque quantos anos faltam para os 10."
+  },
+  "materiais": [
+    {
+      "item": "Cópias de fotos da criança",
+      "deCasa": true
+    },
+    {
+      "item": "Barbante e prendedores, ou tira de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Cola",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou as fotos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse o que mudou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela mais gostou de lembrar?",
+  "palavrasChave": ["fotos", "linha do tempo", "história pessoal", "aniversário", "bebê"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

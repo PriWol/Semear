@@ -1,0 +1,78 @@
+{
+  "id": "atv-nm-caixa-dos-cinco-sentidos",
+  "titulo": "Caixa dos cinco sentidos",
+  "marcos": ["NM.VIV.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use só objetos seguros e grandes demais para engolir (nada de peças pequenas, vidros ou pontas). Nos cheiros, use temperos suaves e de uso comum; sem produtos de limpeza. Atenção a alergias e ao que a criança possa pôr na boca.",
+  "objetivo": "A criança usa tato, olfato, audição, visão e paladar (só com alimento conhecido) para descobrir e nomear, ligando cada sentido à parte do corpo.",
+  "passos": [
+    {
+      "titulo": "Conversa",
+      "minutos": 3,
+      "texto": "Toque o nariz, as orelhas, os olhos, a língua e as mãos: “Com o que sentimos?”. Deixe que ela aponte e nomeie.",
+      "fala": "Com o que você sente o cheiro?"
+    },
+    {
+      "titulo": "Descobrir",
+      "minutos": 8,
+      "texto": "Com os olhos fechados ou de costas, ela descobre o que está na caixa: uma esponja (tato), cravo ou canela (cheiro), chocalho (som). Cada objeto é um sentido."
+    },
+    {
+      "titulo": "Registro",
+      "minutos": 4,
+      "texto": "Peça que desenhe ou mostre qual sentido usou em cada objeto. Se quiser, ela prova um pedaço de fruta conhecida (paladar)."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Liga o sentido à parte do corpo", "Descreve o que sentiu (macio, doce, alto)"],
+    "emDesenvolvimento": [
+      "Fica só no “gostei/não gostei”",
+      "Tem dificuldade em manter os olhos fechados"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só dois sentidos, com objetos bem diferentes.",
+    "facil": "Peça que descreva o objeto sem dizer o nome, para o adulto adivinhar."
+  },
+  "materiais": [
+    {
+      "item": "Caixa de sapato com furo para a mão",
+      "deCasa": true
+    },
+    {
+      "item": "Esponja, pano, colher de madeira",
+      "deCasa": true
+    },
+    {
+      "item": "Canela em pau ou cravo",
+      "deCasa": true
+    },
+    {
+      "item": "Chocalho feito com arroz em pote tampado e selado",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou o sentido usado",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Descreveu com uma palavra",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual sentido ela mais gostou de usar?",
+  "palavrasChave": ["sentidos", "corpo", "tato", "olfato"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

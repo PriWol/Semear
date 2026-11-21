@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-historia-e-conversa",
+  "titulo": "Uma história e uma conversa",
+  "marcos": ["DI.ESP.02"],
+  "vertentes": ["Religioso"],
+  "idade": [4, 8],
+  "duracaoMin": 18,
+  "preparoMin": 5,
+  "cuidados": "Escolha histórias adequadas à idade e evite as com cenas assustadoras ou ameaçadoras, ou conte-as com suavidade. Respeite as dúvidas e o silêncio da criança.",
+  "objetivo": "A criança escuta uma história da tradição da família e conta o que entendeu ou o que sentiu.",
+  "passos": [
+    {
+      "titulo": "Contar",
+      "minutos": 8,
+      "texto": "Conte ou leia uma história curta da tradição da família, com voz calma, em um lugar aconchegante. Pare em um ou dois momentos para olhar o rosto dela."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 6,
+      "texto": "Pergunte: “O que você mais gostou? O que a pessoa da história fez de bom?”. Aceite qualquer resposta e as perguntas que surgirem.",
+      "fala": "O que você achou?"
+    },
+    {
+      "titulo": "Registro",
+      "minutos": 4,
+      "texto": "Ela desenha a parte de que mais gostou. Escreva a legenda que ela disser."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Escuta a história até o fim", "Diz o que gostou ou entendeu"],
+    "emDesenvolvimento": ["Se distrai no meio (normal)", "Pergunta coisas difíceis (acolha)"]
+  },
+  "ajustes": {
+    "dificil": "Conte uma história bem curta, com um desenho.",
+    "facil": "Peça que conte a história a alguém e diga o que ela ensina."
+  },
+  "materiais": [
+    {
+      "item": "Um livro ou uma história da tradição da família",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Escutou até o fim",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou do que gostou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela perguntou?",
+  "palavrasChave": ["histórias", "tradição", "conversa", "fé", "ensinamento"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

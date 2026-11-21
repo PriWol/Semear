@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-viagem-pelo-mapa-do-brasil",
+  "titulo": "Viagem pelo mapa do Brasil",
+  "marcos": ["NM.ESP.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Se usar tesoura para um quebra-cabeça de mapa, use a de pontas arredondadas e fique junto. Se usar aplicativos, o adulto cuida da tela.",
+  "objetivo": "A criança localiza o Brasil, as regiões e o seu estado e relaciona cada região a algo que conhece.",
+  "passos": [
+    {
+      "titulo": "Mapa-múndi",
+      "minutos": 4,
+      "texto": "No globo ou no mapa, ela acha o Brasil. Pergunte: “Quais países vizinhos?”."
+    },
+    {
+      "titulo": "Brasil",
+      "minutos": 10,
+      "texto": "Em um mapa do Brasil, ela acha o seu estado e a sua cidade. Pinte as cinco regiões com cores diferentes e escreva os nomes (ou cole etiquetas)."
+    },
+    {
+      "titulo": "Viagem",
+      "minutos": 6,
+      "texto": "Ela escolhe uma região para “visitar”: o que comeria? Que música ouviria? Escreva ou desenhe um cartão-postal.",
+      "fala": "Para onde você viajaria?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Acha o Brasil e o seu estado", "Nomeia as regiões"],
+    "emDesenvolvimento": ["Mistura as regiões", "Quer só pintar (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Foque só no Brasil e no seu estado.",
+    "facil": "Acrescente as capitais e os estados de cada região."
+  },
+  "materiais": [
+    {
+      "item": "Mapa do Brasil impresso",
+      "deCasa": true
+    },
+    {
+      "item": "Globo ou mapa-múndi",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Achou o Brasil e o estado",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou regiões",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual região a deixou mais curiosa?",
+  "palavrasChave": ["brasil", "regiões", "estados", "mapa-múndi"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

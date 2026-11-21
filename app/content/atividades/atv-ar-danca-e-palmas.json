@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-danca-e-palmas",
+  "titulo": "Dança, palmas e balanço",
+  "marcos": ["AR.RIT.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Brinque em local livre de móveis e quinas, com chão antiderrapante. Volume baixo ou moderado, sem fones de ouvido. Fique junto e dance com ela. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança se movimenta e bate palmas com a música, acompanhando o pulso com o corpo.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 1,
+      "texto": "Escolha uma cantiga ou música alegre com pulso claro. Diga: “Vamos dançar?”."
+    },
+    {
+      "titulo": "Dançar",
+      "minutos": 5,
+      "texto": "Dancem juntos: balançar de um lado a outro, bater palmas, pisar forte e devagar. Imite os movimentos dela, depois ofereça os seus.",
+      "fala": "Palminhas!"
+    },
+    {
+      "titulo": "Parar",
+      "minutos": 2,
+      "texto": "Pare a música e congele; ela congela também. Depois volte. Termine devagar, balançando como em um berço."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Reage com o corpo à música", "Bate palmas ou balança"],
+    "emDesenvolvimento": ["Fica só olhando (ótimo)", "Fica fora do tempo (esperado)"]
+  },
+  "ajustes": {
+    "dificil": "Balance a criança no colo, ao ritmo da música.",
+    "facil": "Mude o ritmo da música: rápido, lento, e ela acompanha."
+  },
+  "materiais": [
+    {
+      "item": "Uma música com pulso claro",
+      "deCasa": true
+    },
+    {
+      "item": "Um espaço livre",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Reagiu com o corpo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Bateu palmas no ritmo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual música ela mais gostou?",
+  "palavrasChave": ["dançar", "palmas", "pulso", "música"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

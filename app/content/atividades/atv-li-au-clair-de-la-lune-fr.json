@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-au-clair-de-la-lune-fr",
+  "titulo": "Au clair de la lune: uma cantiga para recitar",
+  "marcos": ["LI.CAN.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Sem fogo (a cantiga cita vela): use apenas uma vela de LED ou desenho. A cantiga é tradicional e de domínio público.",
+  "objetivo": "A criança decora e recita ou canta o primeiro verso de uma cantiga em francês, com o ritmo.",
+  "passos": [
+    {
+      "titulo": "Ouvir",
+      "minutos": 4,
+      "texto": "Cante ou recite “Au clair de la lune, mon ami Pierrot, prête-moi ta plume pour écrire un mot”. Ela escuta e bate o ritmo com você.",
+      "fala": "Au clair de la lune…"
+    },
+    {
+      "titulo": "Decorar",
+      "minutos": 8,
+      "texto": "Repitam linha por linha, apagando uma palavra por vez de um cartaz, até ela saber de cor. Repita várias vezes."
+    },
+    {
+      "titulo": "Apresentar",
+      "minutos": 3,
+      "texto": "Ela recita ou canta para alguém da casa, com gestos. Comemore."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Recita 4 versos", "Mantém o ritmo"],
+    "emDesenvolvimento": ["Esquece uma palavra (normal)", "Troca palavras (aceite e repita)"]
+  },
+  "ajustes": {
+    "dificil": "Recite só dois versos.",
+    "facil": "Aprenda um segundo verso."
+  },
+  "materiais": [
+    {
+      "item": "Cartaz com a cantiga escrita (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Vela de LED (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Recitou 4 versos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Manteve o ritmo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantos versos ela recitou de memória?",
+  "palavrasChave": ["cantiga", "au clair de la lune", "recitar", "francês", "memória"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

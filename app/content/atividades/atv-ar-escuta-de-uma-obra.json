@@ -1,0 +1,77 @@
+{
+  "id": "atv-ar-escuta-de-uma-obra",
+  "titulo": "Escuta de uma obra: o que a música conta?",
+  "marcos": ["AR.ESC.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Volume moderado, em caixa de som, e nunca com fones de ouvido. Escolha obras de compositores de domínio público (Saint-Saëns, Grieg, Chiquinha Gonzaga) e gravações que você já tenha ou que sejam acessíveis em sua plataforma.",
+  "objetivo": "A criança escuta uma obra curta com atenção e conta o que imaginou, e desenha.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 3,
+      "texto": "Diga o nome da obra e do compositor. Peça que feche os olhos e imagine o que a música conta.",
+      "fala": "O que você vai imaginar?"
+    },
+    {
+      "titulo": "Escutar",
+      "minutos": 4,
+      "texto": "Toque a obra (2 a 3 minutos), sem falar. Se possível, toque duas vezes."
+    },
+    {
+      "titulo": "Contar e desenhar",
+      "minutos": 8,
+      "texto": "Ela conta o que viu e sentiu e desenha. Você conta o que imaginou também. Anote o nome da obra e do compositor no desenho."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Escuta até o fim", "Conta o que imaginou"],
+    "emDesenvolvimento": ["Se agita (ouça só um trecho)", "Diz “não sei” (volte mais vezes)"]
+  },
+  "ajustes": {
+    "dificil": "Escute só 1 minuto, deitados.",
+    "facil": "Compare duas obras do mesmo compositor e diga qual tem mais movimento."
+  },
+  "materiais": [
+    {
+      "item": "Gravação da obra",
+      "deCasa": true
+    },
+    {
+      "item": "Caixa de som",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Escutou até o fim",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou o que imaginou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que a música contou para ela?",
+  "palavrasChave": [
+    "compositores",
+    "música clássica",
+    "carnaval dos animais",
+    "chiquinha gonzaga",
+    "escuta"
+  ],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

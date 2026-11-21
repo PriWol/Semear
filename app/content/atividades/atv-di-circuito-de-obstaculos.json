@@ -1,0 +1,75 @@
+{
+  "id": "atv-di-circuito-de-obstaculos",
+  "titulo": "Circuito de obstáculos e corda",
+  "marcos": ["DI.MAM.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Monte o circuito em local plano, ao ar livre ou em salão, sem móveis duros nem escadas. Obstáculos baixos e macios. Use calçado fechado. Cordas só para pular (nunca no pescoço, nem para amarrar ninguém).",
+  "objetivo": "A criança percorre um circuito, pula corda e combina com outras pessoas as regras de um jogo.",
+  "passos": [
+    {
+      "titulo": "Montar",
+      "minutos": 6,
+      "texto": "Com almofadas, cordas, cones de papel e fita, façam um circuito: pular, rastejar, equilibrar, correr. Combinem as regras."
+    },
+    {
+      "titulo": "Circuito",
+      "minutos": 8,
+      "texto": "Ela percorre o circuito algumas vezes. Cronometre só contra si mesma, não contra os outros. Troquem os desafios.",
+      "fala": "Qual foi o mais difícil?"
+    },
+    {
+      "titulo": "Corda",
+      "minutos": 6,
+      "texto": "Treinem pular uma corda baixa, parada e depois balançando devagar. Conte os pulos juntos."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Pula corda ou obstáculos", "Segue as regras combinadas"],
+    "emDesenvolvimento": ["Pula poucas vezes (normal)", "Muda as regras no meio (converse)"]
+  },
+  "ajustes": {
+    "dificil": "Faça um circuito mais curto, com 3 obstáculos.",
+    "facil": "Desafie com mais voltas ou convide mais crianças."
+  },
+  "materiais": [
+    {
+      "item": "Corda",
+      "deCasa": true
+    },
+    {
+      "item": "Almofadas",
+      "deCasa": true
+    },
+    {
+      "item": "Fita adesiva ou giz",
+      "deCasa": true
+    },
+    {
+      "item": "Cones ou caixas de papelão",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Pulou corda ou obstáculos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Seguiu as regras",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Do que ela mais gostou no circuito?",
+  "palavrasChave": ["corda", "circuito", "jogos", "movimento", "regras"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

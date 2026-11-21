@@ -1,0 +1,64 @@
+{
+  "id": "atv-li-jacques-a-dit-fr",
+  "titulo": "Jacques a dit: comandos em francês",
+  "marcos": ["LI.ESC.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Brinque em espaço livre, sem quinas nem escadas. Cuidado com pulos e giros rápidos demais. Fique junto o tempo todo.",
+  "objetivo": "A criança entende e executa comandos simples em francês, com gestos, em uma brincadeira de 10 minutos.",
+  "passos": [
+    {
+      "titulo": "Ensinar",
+      "minutos": 3,
+      "texto": "Mostre 4 comandos com gestos, repetindo cada um: “lève-toi” (levanta), “assieds-toi” (senta), “tape des mains” (bata palmas), “saute” (pule).",
+      "fala": "Lève-toi !"
+    },
+    {
+      "titulo": "Brincar",
+      "minutos": 6,
+      "texto": "Joguem “Jacques a dit”: só vale quando disser “Jacques a dit” antes do comando. Comece sem essa regra, se for difícil."
+    },
+    {
+      "titulo": "Trocar",
+      "minutos": 1,
+      "texto": "Troquem os papéis: ela dá o comando (mesmo que em português) e você obedece em francês. Termine com “Au revoir !”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz 3 ou mais ações pelo comando", "Responde “bonjour”"],
+    "emDesenvolvimento": ["Só imita o adulto (esperado)", "Fica quieta (período silencioso)"]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 comandos, com a sua demonstração.",
+    "facil": "Peça que ela dê os comandos em francês."
+  },
+  "materiais": [
+    {
+      "item": "Espaço livre",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez as ações pelo comando",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Respondeu ao “bonjour”",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais comandos ela entendeu sem ajuda?",
+  "palavrasChave": ["jacques a dit", "comandos", "francês", "brincadeira"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

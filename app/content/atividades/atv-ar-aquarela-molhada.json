@@ -1,0 +1,79 @@
+{
+  "id": "atv-ar-aquarela-molhada",
+  "titulo": "Aquarela molhada: cores que se encontram",
+  "marcos": ["AR.PIN.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 17,
+  "preparoMin": 8,
+  "cuidados": "Use aquarela atóxica e papel apropriado. Fique junto: a água suja pode ser engolida. Cubra a mesa e use avental. Troque a água dos potes e lave as mãos depois.",
+  "objetivo": "A criança experimenta a aquarela molhada, deixa as cores se encontrarem e pinta uma cena.",
+  "passos": [
+    {
+      "titulo": "Molhar",
+      "minutos": 3,
+      "texto": "Com um pincel largo, passem água em toda a folha, até ficar brilhante. Mostre como prender o papel na mesa com fita."
+    },
+    {
+      "titulo": "Cores",
+      "minutos": 10,
+      "texto": "Ela pinta com 2 ou 3 cores e observa as cores se encontrarem. Pergunte o que vê (um céu? uma floresta?). Deixe a imaginação conduzir.",
+      "fala": "O que essas cores lembram?"
+    },
+    {
+      "titulo": "Secar",
+      "minutos": 4,
+      "texto": "Deixem secar. Quando seco, ela dá um nome e escreve a data no verso."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Pinta formas reconhecíveis", "Usa a água para espalhar a cor"],
+    "emDesenvolvimento": ["Usa tinta demais (normal)", "Rasga o papel (use papel mais grosso)"]
+  },
+  "ajustes": {
+    "dificil": "Use só duas cores e um pincel grosso.",
+    "facil": "Pinte com um tema, como “o pôr do sol”, e escolha as cores com intenção."
+  },
+  "materiais": [
+    {
+      "item": "Aquarela em pastilhas",
+      "deCasa": true
+    },
+    {
+      "item": "Papel de gramatura alta",
+      "deCasa": true
+    },
+    {
+      "item": "Pincéis de vários tamanhos",
+      "deCasa": true
+    },
+    {
+      "item": "Fita adesiva",
+      "deCasa": true
+    },
+    {
+      "item": "Potes de água",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Pintou com aquarela molhada",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Deu um nome ao trabalho",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais cores ela escolheu?",
+  "palavrasChave": ["aquarela", "molhado sobre molhado", "pincel", "cores"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

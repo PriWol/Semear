@@ -1,0 +1,75 @@
+{
+  "id": "atv-ar-massinha-sem-forma",
+  "titulo": "Massinha: apertar, rolar, bater",
+  "marcos": ["AR.MOD.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "A massinha caseira tem muito sal e não é para comer: fique junto, não deixe provar nem comer, e guarde-a em pote fechado. Cuidado com alergias a trigo (glúten) e use massinha atóxica. Nada de peças pequenas (miçangas) para enfeitar.",
+  "objetivo": "A criança explora a massinha com as mãos e faz formas simples, com liberdade.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 2,
+      "texto": "Ofereça um pedaço de massinha macia sobre uma bandeja ou um pano. Sente-se ao lado, com a sua também."
+    },
+    {
+      "titulo": "Explorar",
+      "minutos": 6,
+      "texto": "Mostre: apertar, bater, rolar, beliscar. Nomeie os gestos. Faça uma cobrinha e uma bolinha e deixe que ela faça as dela.",
+      "fala": "Aperta, aperta, rola!"
+    },
+    {
+      "titulo": "Guardar",
+      "minutos": 2,
+      "texto": "Guardem juntos a massinha no pote e lavem as mãos."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Explora a massinha com prazer", "Faz uma bolinha ou uma cobrinha"],
+    "emDesenvolvimento": ["Só aperta (ótimo)", "Quer levar à boca (retire e redirecione)"]
+  },
+  "ajustes": {
+    "dificil": "Use só as mãos, sem ferramentas.",
+    "facil": "Ofereça um rolinho e uma forma de biscoito para fazer pizza."
+  },
+  "materiais": [
+    {
+      "item": "Massinha de modelar atóxica",
+      "deCasa": true
+    },
+    {
+      "item": "Bandeja",
+      "deCasa": true
+    },
+    {
+      "item": "Rolinho de brinquedo (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Pote com tampa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Explorou a massinha",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Fez uma bolinha ou cobrinha",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela mais gostou de fazer com a massinha?",
+  "palavrasChave": ["massinha", "modelagem", "sensorial", "mãos"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

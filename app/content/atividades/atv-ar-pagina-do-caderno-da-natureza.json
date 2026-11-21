@@ -1,0 +1,70 @@
+{
+  "id": "atv-ar-pagina-do-caderno-da-natureza",
+  "titulo": "Uma página do caderno da natureza",
+  "marcos": ["AR.NAT.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Não arranque plantas nem pegue bichos desconhecidos. Cuidado com espinhos, picadas e plantas tóxicas; use protetor solar e lave as mãos depois. Fique junto da criança.",
+  "objetivo": "A criança faz uma página de caderno da natureza com desenho, data, lugar e uma frase.",
+  "passos": [
+    {
+      "titulo": "Olhar",
+      "minutos": 6,
+      "texto": "Em um passeio, ela escolhe algo para observar e olha por 2 minutos. Peça: “Conte o que você nota: cores, formas, quantidade”."
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 10,
+      "texto": "Ela desenha o que observou com atenção, em uma página do caderno. Leve também lápis de cor ou aquarela."
+    },
+    {
+      "titulo": "Escrever",
+      "minutos": 4,
+      "texto": "Ela escreve a data, o lugar e uma frase (“A folha é verde e tem veias…”). Se não souber o nome, anote “nome a descobrir”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz desenho e frase", "Anota data e lugar"],
+    "emDesenvolvimento": ["Escreve pouco (aceite)", "Desenha sem olhar de novo"]
+  },
+  "ajustes": {
+    "dificil": "Peça só o desenho e a data.",
+    "facil": "Acrescente uma pergunta: “O que eu queria descobrir sobre isso?”."
+  },
+  "materiais": [
+    {
+      "item": "Caderno sem pauta",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis e lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Um lugar com natureza",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez a página completa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Anotou data e lugar",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela anotou na página?",
+  "palavrasChave": ["caderno da natureza", "diário", "observação", "registro", "natureza"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-pula-e-chuta",
+  "titulo": "Pula-pula e bola grande",
+  "marcos": ["DI.MAM.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 2,
+  "cuidados": "Use bola macia e grande. Brinque em local plano, sem pedras ou móveis por perto, com chão limpo e calçado fechado. Nunca em cima de camas, sofás ou trampolins.",
+  "objetivo": "A criança pula com os dois pés e chuta ou joga uma bola grande em um jogo curto.",
+  "passos": [
+    {
+      "titulo": "Círculos",
+      "minutos": 4,
+      "texto": "Desenhe com giz, no chão, 4 círculos em fila. Ela pula de um para o outro com os dois pés, imitando um sapo.",
+      "fala": "Pula como um sapo!"
+    },
+    {
+      "titulo": "Bola",
+      "minutos": 6,
+      "texto": "Joguem uma bola grande de um lado a outro, e depois chutem. Aumente a distância devagar. Conte quantas vezes a bola chega."
+    },
+    {
+      "titulo": "Calma",
+      "minutos": 2,
+      "texto": "Terminem sentados, respirando, e falem do que foi mais divertido."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Pula com os dois pés", "Chuta ou joga a bola"],
+    "emDesenvolvimento": ["Pula com um pé de cada vez (esperado)", "Perde a bola (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Pule de um círculo só, de mãos dadas.",
+    "facil": "Desafie-a a pular e bater palmas ao mesmo tempo."
+  },
+  "materiais": [
+    {
+      "item": "Giz de lousa para o chão",
+      "deCasa": true
+    },
+    {
+      "item": "Bola grande e macia",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Pulou com os dois pés",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Chutou ou jogou a bola",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual brincadeira ela mais quis repetir?",
+  "palavrasChave": ["pular", "bola", "sapo", "coordenação"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

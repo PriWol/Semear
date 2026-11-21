@@ -1,0 +1,71 @@
+{
+  "id": "atv-di-quadro-de-tarefas-da-casa",
+  "titulo": "Minha tarefa na casa",
+  "marcos": ["DI.VPR.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "As tarefas devem ser adequadas à idade e seguras: nada de produtos de limpeza, de objetos pesados ou de subir em cadeiras. Fique por perto na primeira vez.",
+  "objetivo": "A criança escolhe e aprende uma tarefa da casa, cumpre-a durante uma semana e registra.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 4,
+      "texto": "Mostre 3 ou 4 tarefas (arrumar a cama, dobrar toalhas, regar a planta, pôr a mesa). Ela escolhe uma ou duas.",
+      "fala": "Qual você quer?"
+    },
+    {
+      "titulo": "Ensinar",
+      "minutos": 7,
+      "texto": "Mostre o passo a passo uma vez. Ela faz com você olhando e, depois, sozinha. Combine o horário."
+    },
+    {
+      "titulo": "Quadro",
+      "minutos": 4,
+      "texto": "Em uma folha, desenhem a semana e ela marca com um adesivo cada dia em que cumpriu. No fim, conversem como foi."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Cumpre a tarefa com pouca lembrança", "Marca o quadro"],
+    "emDesenvolvimento": ["Esquece (normal)", "Faz sem capricho"]
+  },
+  "ajustes": {
+    "dificil": "Combine só uma tarefa e uma hora fixa.",
+    "facil": "Ela ensina a tarefa a um irmão ou amigo."
+  },
+  "materiais": [
+    {
+      "item": "Folha para o quadro",
+      "deCasa": true
+    },
+    {
+      "item": "Adesivos ou lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Material da tarefa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cumpriu a tarefa 4 ou mais dias",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Marcou o quadro",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual tarefa ela escolheu?",
+  "palavrasChave": ["tarefas", "casa", "responsabilidade", "rotina"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

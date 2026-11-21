@@ -1,0 +1,75 @@
+{
+  "id": "atv-nm-teia-de-quem-come-quem",
+  "titulo": "Teia da vida: quem come quem?",
+  "marcos": ["NM.VIV.06"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Se o passeio for em local aberto, vá junto o tempo todo e evite lagoas e barrancos sem um adulto por perto. Não pegue bichos, insetos nem plantas desconhecidas. Lave as mãos e confira se há carrapatos ao voltar.",
+  "objetivo": "A criança observa um ambiente, desenha quem vive nele e liga os seres vivos em uma teia de alimentação simples.",
+  "passos": [
+    {
+      "titulo": "Explorar",
+      "minutos": 10,
+      "texto": "Em um quintal, jardim ou praça, procurem pistas de vida: ninho, teia, folha roída, formigueiro, pegadas. Anote o que viram."
+    },
+    {
+      "titulo": "Desenhar a teia",
+      "minutos": 10,
+      "texto": "Em uma folha, ela desenha 5 ou 6 seres que viu e liga com setas (de quem é comido para quem come). Conversem: “E se um sumisse?”."
+    },
+    {
+      "titulo": "Fechamento",
+      "minutos": 5,
+      "texto": "Peça que diga uma coisa que ela poderia fazer para cuidar desse lugar.",
+      "fala": "Quem depende de quem?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Liga seres vivos com setas", "Explica uma consequência (se sumir…)"],
+    "emDesenvolvimento": ["Faz ligações aleatórias", "Foca em um só animal"]
+  },
+  "ajustes": {
+    "dificil": "Faça a teia só com três seres vivos.",
+    "facil": "Acrescente o Sol e a água como parte da teia."
+  },
+  "materiais": [
+    {
+      "item": "Folha grande de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Lupa (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Um quintal, jardim ou praça",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ligou seres vivos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Explicou uma consequência",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual relação entre os seres vivos mais a surpreendeu?",
+  "palavrasChave": ["ecossistema", "cadeia alimentar", "habitat", "ambiente"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

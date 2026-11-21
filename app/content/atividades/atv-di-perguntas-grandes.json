@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-perguntas-grandes",
+  "titulo": "Caixa das perguntas grandes",
+  "marcos": ["DI.ESP.04"],
+  "vertentes": ["Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Tema sensível: escolha um momento calmo, sem pressa, e fique disposto a ouvir. Não force respostas e não use histórias que causem medo. Se a criança estiver passando por uma perda, procure apoio adequado.",
+  "objetivo": "A criança escreve suas perguntas grandes, conversa com a família e escuta como cada um pensa.",
+  "passos": [
+    {
+      "titulo": "Caixa",
+      "minutos": 6,
+      "texto": "Deixem uma caixa à mostra onde ela possa guardar bilhetes com as perguntas que tiver (de onde viemos, o que é o bem, o que acontece depois da morte). Hoje, ela escreve ou desenha uma."
+    },
+    {
+      "titulo": "Conversa",
+      "minutos": 12,
+      "texto": "Escolham uma pergunta e conversem com calma. O adulto responde conforme sua tradição e diz “não sei” se for o caso. Pergunte a opinião dela.",
+      "fala": "O que você acha?"
+    },
+    {
+      "titulo": "Fechamento",
+      "minutos": 2,
+      "texto": "Terminem com um gesto de carinho e guardem a pergunta ou a resposta."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz uma pergunta grande", "Diz o que pensa"],
+    "emDesenvolvimento": ["Fica em silêncio (normal)", "Quer só respostas rápidas"]
+  },
+  "ajustes": {
+    "dificil": "Escolha uma pergunta curta e responda em uma frase.",
+    "facil": "Convide-a a perguntar também a outra pessoa de confiança e comparar as respostas."
+  },
+  "materiais": [
+    {
+      "item": "Uma caixa ou pote",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez uma pergunta",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse o que pensa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual foi a pergunta de hoje?",
+  "palavrasChave": ["perguntas", "vida", "morte", "conversa", "sentido"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

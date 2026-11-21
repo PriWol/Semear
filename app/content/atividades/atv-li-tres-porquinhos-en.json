@@ -1,0 +1,71 @@
+{
+  "id": "atv-li-tres-porquinhos-en",
+  "titulo": "The Three Little Pigs: história com figuras",
+  "marcos": ["LI.ESC.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 8],
+  "duracaoMin": 14,
+  "preparoMin": 10,
+  "cuidados": "Cartões de papel sem pontas: fique junto ao recortar. Escolha uma versão suave da história, sem cenas assustadoras, e confira se a criança aguenta o lobo. A história é tradicional e de domínio público.",
+  "objetivo": "A criança acompanha a história dos três porquinhos em inglês, com figuras, e mostra a figura certa ao ouvir uma palavra-chave.",
+  "passos": [
+    {
+      "titulo": "Figuras",
+      "minutos": 4,
+      "texto": "Faça 6 cartões com desenhos simples: pig, house, straw, sticks, bricks, wolf. Mostre e diga cada palavra, com um gesto.",
+      "fala": "Pig! House!"
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 6,
+      "texto": "Conte em inglês frases curtas, com os cartões: “The wolf blows the house of straw. The house falls down!”. Pare e peça que mostre o cartão certo quando você disser uma palavra-chave."
+    },
+    {
+      "titulo": "Reconto",
+      "minutos": 4,
+      "texto": "Embaralhe os cartões e peça que os coloque em ordem da história. Ajude se precisar."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Mostra a figura certa", "Acompanha até o fim"],
+    "emDesenvolvimento": [
+      "Pede para traduzir (diga que está tudo bem não entender tudo)",
+      "Se distrai (use gestos)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só 3 cartões: pig, house e wolf.",
+    "facil": "Peça que conte a história em português, com os cartões em ordem."
+  },
+  "materiais": [
+    {
+      "item": "6 cartões de papel com desenhos",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Mostrou a figura certa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Acompanhou até o fim",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras ela mais reconheceu?",
+  "palavrasChave": ["história", "three little pigs", "porquinhos", "inglês", "cartões"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-quadro-da-rotina",
+  "titulo": "Meu dia em figuras",
+  "marcos": ["NM.TEM.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 5,
+  "cuidados": "Use papel e adesivos grandes (nada que caiba na boca). Se usar velcro ou ímã, escolha peças grandes e fique junto, porque as pequenas engasgam.",
+  "objetivo": "A criança nomeia os momentos do dia, ordena figuras e diz o que vem a seguir.",
+  "passos": [
+    {
+      "titulo": "Conversa",
+      "minutos": 2,
+      "texto": "“O que a gente faz quando acorda? E depois?”. Deixe que ela diga ou aponte com as mãos.",
+      "fala": "O que vem depois?"
+    },
+    {
+      "titulo": "Figuras",
+      "minutos": 6,
+      "texto": "Desenhe (ou use fotos) 4 momentos do dia em cartões grandes: acordar, comer, brincar, dormir. Ela cola ou prende em fila, de cima para baixo."
+    },
+    {
+      "titulo": "Brincar de ordem",
+      "minutos": 2,
+      "texto": "Cubra um cartão e pergunte: “O que vem agora?”. Troque de papel: deixe que ela pergunte a você."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz ou aponta o que vem depois", "Reconhece 3 ou 4 momentos"],
+    "emDesenvolvimento": ["Mistura a ordem (comum)", "Quer só mexer nos cartões"]
+  },
+  "ajustes": {
+    "dificil": "Use só dois cartões: de manhã e de noite.",
+    "facil": "Acrescente horários com o relógio de parede e conte quantos “sonos” faltam para o fim de semana."
+  },
+  "materiais": [
+    {
+      "item": "Cartões de papel grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou fotos da família",
+      "deCasa": true
+    },
+    {
+      "item": "Fita adesiva",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse o que vem a seguir",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Ordenou 3 ou mais cartões",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual momento ela mais reconheceu?",
+  "palavrasChave": ["rotina", "ordem", "dia", "figuras"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

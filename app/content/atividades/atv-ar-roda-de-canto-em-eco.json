@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-roda-de-canto-em-eco",
+  "titulo": "Roda de canto em eco",
+  "marcos": ["AR.CAN.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 15,
+  "preparoMin": 2,
+  "cuidados": "Cantem sem gritar e sem forçar a voz. Se a criança ficar rouca, pare e beba água. Brinque em local livre de móveis, no caso de dança em roda. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança canta uma melodia curta, em eco e em roda, ouvindo os outros.",
+  "passos": [
+    {
+      "titulo": "Melodia",
+      "minutos": 4,
+      "texto": "Cante uma melodia curta (“Alecrim dourado”) duas vezes. Peça que ela cante junto, com voz suave."
+    },
+    {
+      "titulo": "Eco",
+      "minutos": 6,
+      "texto": "Você canta uma frase e ela repete, como um eco. Troquem. Aumente o tamanho das frases.",
+      "fala": "Faz o eco!"
+    },
+    {
+      "titulo": "Roda",
+      "minutos": 5,
+      "texto": "Com mais gente, façam uma roda e cantem, uma voz de cada vez. Ouçam uns aos outros."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta uma melodia curta", "Canta em eco ou roda"],
+    "emDesenvolvimento": ["Desafina (esperado)", "Canta alto demais"]
+  },
+  "ajustes": {
+    "dificil": "Cante só a primeira frase em eco.",
+    "facil": "Cantem a mesma música em cânone, com entrada alternada."
+  },
+  "materiais": [
+    {
+      "item": "Uma melodia conhecida",
+      "deCasa": true
+    },
+    {
+      "item": "Mais uma pessoa para a roda (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cantou uma melodia curta",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Cantou em eco",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual frase ela cantou melhor?",
+  "palavrasChave": ["roda", "eco", "canto", "melodia", "afinação"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

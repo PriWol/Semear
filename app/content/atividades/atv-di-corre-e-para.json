@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-corre-e-para",
+  "titulo": "Corre e para: o jogo do sinal",
+  "marcos": ["DI.MAM.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 9,
+  "preparoMin": 1,
+  "cuidados": "Brinque em chão plano e livre de pedras, móveis e escadas sem proteção. Use calçados antiderrapantes ou pés descalços em chão limpo. Fique junto, sobretudo nos degraus.",
+  "objetivo": "A criança corre, para ao sinal e sobe e desce degraus baixos com segurança, em um jogo de poucos minutos.",
+  "passos": [
+    {
+      "titulo": "Jogo do sinal",
+      "minutos": 4,
+      "texto": "Em um espaço livre, diga “Vai!” (ela corre) e “Para!” (ela congela). Alterne e faça graça. Troquem de papel.",
+      "fala": "Vai! Para!"
+    },
+    {
+      "titulo": "Degrau",
+      "minutos": 3,
+      "texto": "Em um degrau baixo ou banquinho firme, ela sobe e desce, com a sua mão perto. Conte os degraus."
+    },
+    {
+      "titulo": "Calma",
+      "minutos": 2,
+      "texto": "Terminem deitados, respirando fundo: “Vamos ficar duros como uma pedra e depois moles como uma gelatina”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Corre e para ao sinal", "Sobe e desce degrau baixo"],
+    "emDesenvolvimento": ["Tropeça (esperado)", "Quer correr sem parar"]
+  },
+  "ajustes": {
+    "dificil": "Brinque só de correr até você.",
+    "facil": "Peça que corra de formas diferentes (como um coelho, uma tartaruga)."
+  },
+  "materiais": [
+    {
+      "item": "Espaço livre",
+      "deCasa": true
+    },
+    {
+      "item": "Um degrau baixo ou banquinho firme",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Parou ao sinal",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Subiu e desceu o degrau",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como foi o corpo dela hoje?",
+  "palavrasChave": ["correr", "equilíbrio", "degrau", "movimento"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-flutua-ou-afunda",
+  "titulo": "Flutua ou afunda?",
+  "marcos": ["NM.TER.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Fique ao lado da criança o tempo todo, mesmo com pouca água. Use objetos grandes demais para engolir (nada de peças pequenas). Seque o chão para evitar escorregões. Esvazie a bacia no fim.",
+  "objetivo": "A criança faz uma previsão, testa se objetos flutuam ou afundam e conta o que descobriu.",
+  "passos": [
+    {
+      "titulo": "Palpite",
+      "minutos": 4,
+      "texto": "Mostre 5 ou 6 objetos (colher de madeira, rolha, pedra grande, esponja, folha, moeda grande). Ela diz, para cada um: flutua ou afunda?",
+      "fala": "O que você acha?"
+    },
+    {
+      "titulo": "Testar",
+      "minutos": 8,
+      "texto": "Um a um, ela coloca na bacia. Separe em duas bandejas: flutuou e afundou. Conversem sobre as surpresas."
+    },
+    {
+      "titulo": "Conclusão",
+      "minutos": 3,
+      "texto": "Pergunte: “O que os que afundaram têm em comum?”. Aceite qualquer ideia (pesado, pequeno…)."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz previsão antes de testar", "Separa o que flutua do que afunda"],
+    "emDesenvolvimento": ["Acerta por acaso", "Quer testar tudo sem ouvir a pergunta"]
+  },
+  "ajustes": {
+    "dificil": "Teste só 3 objetos bem diferentes.",
+    "facil": "Faça um barquinho de papel alumínio ou de rolha e teste quantos “passageiros” ele carrega."
+  },
+  "materiais": [
+    {
+      "item": "Bacia com água",
+      "deCasa": true
+    },
+    {
+      "item": "Objetos grandes de casa",
+      "deCasa": true
+    },
+    {
+      "item": "Toalha",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Previu antes de testar",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Separou os grupos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual objeto a surpreendeu?",
+  "palavrasChave": ["água", "experimento", "flutuar", "afundar", "materiais"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

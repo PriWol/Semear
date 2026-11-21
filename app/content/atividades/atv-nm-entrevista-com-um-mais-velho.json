@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-entrevista-com-um-mais-velho",
+  "titulo": "Entrevista com um mais velho",
+  "marcos": ["NM.TEM.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Combine com o entrevistado antes, e avise a criança de que algumas lembranças podem ser tristes. Se a entrevista for online, o adulto fica junto e cuida do uso da tela e da privacidade (não grave nem compartilhe sem permissão).",
+  "objetivo": "A criança prepara perguntas, entrevista alguém mais velho e compara a infância dele com a sua.",
+  "passos": [
+    {
+      "titulo": "Perguntas",
+      "minutos": 7,
+      "texto": "Juntos, escrevam 3 ou 4 perguntas: “Como era sua casa? O que você comia? Do que brincava?”. Ela treina em voz alta."
+    },
+    {
+      "titulo": "Entrevista",
+      "minutos": 12,
+      "texto": "Ela entrevista a pessoa (pessoalmente ou por ligação). Você ajuda a anotar ou grava só o áudio, com permissão. Peça que mostre um objeto ou uma foto antiga."
+    },
+    {
+      "titulo": "Comparar",
+      "minutos": 6,
+      "texto": "Em duas colunas, “Antes” e “Hoje”, ela escreve ou desenha o que era diferente.",
+      "fala": "O que mudou?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz perguntas e ouve a resposta", "Compara antes e hoje"],
+    "emDesenvolvimento": ["Fica tímida ao perguntar", "Mistura antes e hoje"]
+  },
+  "ajustes": {
+    "dificil": "Faça só 2 perguntas e peça que ela desenhe a resposta.",
+    "facil": "Faça uma árvore genealógica simples com os nomes e as datas."
+  },
+  "materiais": [
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Um familiar mais velho",
+      "deCasa": true
+    },
+    {
+      "item": "Objeto ou foto antigos (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez as perguntas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Comparou antes e hoje",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual foi a descoberta mais surpreendente?",
+  "palavrasChave": ["entrevista", "avós", "história da família", "antigamente"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

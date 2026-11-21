@@ -1,0 +1,71 @@
+{
+  "id": "atv-ar-animal-de-argila",
+  "titulo": "Animal de argila com partes",
+  "marcos": ["AR.MOD.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Use argila atóxica e evite poeira de argila seca (não lixe nem varra a seco): limpe com pano úmido. Lave as mãos depois. Não use fornos nem fogo; deixe secar ao ar. Se usar massa de sal, não é comestível.",
+  "objetivo": "A criança modela um animal com partes bem unidas, alisa as emendas e deixa secar.",
+  "passos": [
+    {
+      "titulo": "Planejar",
+      "minutos": 4,
+      "texto": "Escolham um animal e desenhem rápido as suas partes (corpo, cabeça, patas, cauda). “De quais pedaços ele precisa?”."
+    },
+    {
+      "titulo": "Modelar",
+      "minutos": 14,
+      "texto": "Ela faz cada parte e une com um pouco de água, alisando as emendas com o dedo. Mostre como fazer sem apertar demais.",
+      "fala": "Como vamos unir as partes?"
+    },
+    {
+      "titulo": "Secar",
+      "minutos": 2,
+      "texto": "Deixe a peça secar por alguns dias, em local seguro. Depois, pode pintar com guache."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Modela 3 ou mais partes unidas", "Alisa as emendas"],
+    "emDesenvolvimento": ["As partes se soltam (mostre como unir)", "Se cansa no meio"]
+  },
+  "ajustes": {
+    "dificil": "Modele só um animal bem simples, com 2 partes.",
+    "facil": "Pinte a peça e escreva uma etiqueta com o nome do animal e a data."
+  },
+  "materiais": [
+    {
+      "item": "Argila atóxica ou massa de sal",
+      "deCasa": true
+    },
+    {
+      "item": "Bandeja e pano úmido",
+      "deCasa": true
+    },
+    {
+      "item": "Tinta guache (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Modelou com 3 ou mais partes",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Alisou as emendas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como ela uniu as partes?",
+  "palavrasChave": ["argila", "escultura", "animais", "modelagem", "cerâmica"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

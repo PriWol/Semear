@@ -1,0 +1,72 @@
+{
+  "id": "atv-li-corps-et-famille-fr",
+  "titulo": "Mon corps, ma famille: corpo e família em francês",
+  "marcos": ["LI.VOC.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 14,
+  "preparoMin": 5,
+  "cuidados": "Fotos impressas, nunca originais, e sem expor dados da família. Não publique nem envie o álbum a ninguém. Tesoura de ponta arredondada, só com supervisão.",
+  "objetivo": "A criança aprende partes do corpo e nomes da família em francês e monta um pequeno álbum.",
+  "passos": [
+    {
+      "titulo": "Corpo",
+      "minutos": 5,
+      "texto": "Brinquem apontando: la tête, les épaules, les genoux, les pieds, les mains. Cantem em francês a cantiga “Alouette, gentille alouette” (tradicional), que tem partes do corpo.",
+      "fala": "La tête !"
+    },
+    {
+      "titulo": "Família",
+      "minutos": 6,
+      "texto": "Com 4 fotos da família, diga: la mère (maman), le père (papa), la sœur, le frère (ou la grand-mère, le grand-père). Ela aponta cada pessoa e repete."
+    },
+    {
+      "titulo": "Álbum",
+      "minutos": 3,
+      "texto": "Ela cola as fotos em uma folha e você escreve os nomes em francês ao lado. Pendure em um lugar visível."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia 5 partes do corpo", "Nomeia 4 pessoas da família"],
+    "emDesenvolvimento": ["Confunde “sœur” e “frère” (comum)", "Quer cantar sem parar (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Brinquem só com 3 partes do corpo.",
+    "facil": "Descreva alguém da família: “Ma mère a les cheveux longs”."
+  },
+  "materiais": [
+    {
+      "item": "Fotos impressas da família (cópias)",
+      "deCasa": true
+    },
+    {
+      "item": "Folha de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Cola",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou 5 partes do corpo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou 4 pessoas da família",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual pessoa ela mais gostou de nomear?",
+  "palavrasChave": ["corpo", "família", "alouette", "francês"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

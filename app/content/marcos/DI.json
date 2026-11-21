@@ -1,0 +1,754 @@
+{
+  "marcos": [
+    {
+      "id": "DI.VPR.01",
+      "linha": "DI.VPR",
+      "ordem": 1,
+      "titulo": "Participa do cuidado de si: lava as mãos e tira peças simples de roupa",
+      "descricaoPais": "Lava as mãos com ajuda, tira meias e calças folgadas e diz “eu faço”.",
+      "evidencias": [
+        "Lava e seca as mãos com pouca ajuda",
+        "Tira uma peça de roupa folgada sozinha"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Aos 2 anos a criança quer **fazer sozinha**. Cada pequena tarefa de cuidado de si (lavar as mãos, tirar meias) alimenta a autonomia, a confiança e a coordenação, e reduz brigas na hora da rotina.",
+        "comoParticipar": "Deixe um banquinho firme na pia, o sabonete ao alcance e tempo extra para ela tentar. Escolha roupas folgadas e fáceis. Elogie o esforço: “Você tirou sozinha!”. Faça junto e vá soltando aos poucos, sem apressar.",
+        "sinaisDeAtencao": "Cada criança tem seu ritmo para a autonomia. Se aos 3 anos ela recusa de modo intenso e constante qualquer ajuda de cuidado pessoal, ou parece não imitar nenhum gesto do dia a dia, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "montessori-mente-absorvente"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Prepare o ambiente para que ela alcance sozinha: banquinho, toalha ao alcance, cabides baixos. A frase-chave é “ajude-me a fazer sozinha”.",
+            "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Hábitos de cuidado pessoal, repetidos com calma e gentileza todos os dias, formam o caráter e a ordem.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.VPR.02",
+      "linha": "DI.VPR",
+      "ordem": 2,
+      "titulo": "Serve-se e verte líquidos de uma jarra pequena e ajuda a pôr a mesa",
+      "descricaoPais": "Despeja água de uma jarra pequena no copo sem derramar muito e coloca talheres e guardanapos na mesa.",
+      "evidencias": [
+        "Verte água de uma jarra pequena para um copo, mesmo com alguns respingos",
+        "Coloca itens na mesa em lugares combinados"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.VPR.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Despejar, servir e arrumar a mesa trabalham **coordenação, concentração e senso de ordem**. Além disso, a criança sente que contribui com a família, o que melhora o comportamento nas refeições.",
+        "comoParticipar": "Ofereça uma jarra pequena com pouca água e uma bandeja, e uma esponja para limpar os respingos (faz parte da atividade). Deixe que ela ponha a mesa: guardanapo, garfo, colher. Mostre com calma, sem pressa, e deixe errar.",
+        "sinaisDeAtencao": "É esperado derramar bastante. Se aos 5 anos ela ainda não consegue controlar o movimento de despejar nem de colocar um copo na mesa, vale conversar com o pediatra ou a escola. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "A atividade de “verter” é um clássico da vida prática: comece com grãos secos, depois água, e deixe a criança repetir quantas vezes quiser.",
+            "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.VPR.03",
+      "linha": "DI.VPR",
+      "ordem": 3,
+      "titulo": "Veste-se com pouca ajuda e arruma os próprios pertences",
+      "descricaoPais": "Veste camiseta e calça, fecha zíper grande e guarda o sapato e a mochila no lugar.",
+      "evidencias": [
+        "Veste uma camiseta e uma calça com pouca ajuda",
+        "Guarda sapatos ou mochila no lugar combinado"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.VPR.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Vestir-se e arrumar as próprias coisas dá à criança **responsabilidade** e prepara a rotina escolar. Cada conquista (zíper, botão grande) é também um exercício de motricidade fina.",
+        "comoParticipar": "Deixe a roupa do dia separada em um lugar baixo, deixe-a escolher entre duas peças e dê tempo extra. Marque com adesivo a frente das peças. Cabides baixos e cestos ajudam a arrumar. Elogie o esforço.",
+        "sinaisDeAtencao": "Algumas crianças demoram mais para se vestir. Se aos 5 anos ela não tenta vestir nenhuma peça mesmo com tempo e apoio, ou se isso vem junto de outras dificuldades motoras, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Os “quadros de vestir” (zíper, botões, fivelas) treinam cada gesto antes de usá-lo na roupa de verdade.",
+            "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.VPR.04",
+      "linha": "DI.VPR",
+      "ordem": 4,
+      "titulo": "Prepara um lanche simples com ferramentas seguras",
+      "descricaoPais": "Descasca uma banana, passa pasta no pão, corta fruta macia com faca de mesa e serve.",
+      "evidencias": [
+        "Prepara um lanche simples com ajuda",
+        "Usa uma faca de mesa ou espátula com cuidado"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.VPR.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cozinhar junto ensina **sequência, medida, higiene e cuidado**, e a criança sente orgulho de alimentar a família. É um dos melhores exercícios de vida prática, com muitos conteúdos de matemática e ciências escondidos.",
+        "comoParticipar": "Comece com preparos sem fogo: lavar frutas, cortar banana ou queijo macio com faca de mesa, passar pasta, montar um sanduíche. Mostre devagar como segurar a faca e como manter a mão fora do caminho. Só o adulto mexe com fogo e facas afiadas.",
+        "sinaisDeAtencao": "Facas e fogão exigem a presença do adulto sempre. Se aos 8 anos houver recusa intensa e persistente de qualquer alimento novo ou de qualquer contato com comida, comente com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Preparar alimentos (descascar, cortar, espremer, fatiar) é atividade tradicional da vida prática; use ferramentas pequenas, do tamanho da mão dela.",
+            "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.VPR.05",
+      "linha": "DI.VPR",
+      "ordem": 5,
+      "titulo": "Cuida de um espaço seu e participa das tarefas da casa",
+      "descricaoPais": "Arruma a cama, prepara a mochila, dobra uma roupa e tem uma tarefa fixa na casa.",
+      "evidencias": [
+        "Cuida de um espaço seu com pouca lembrança",
+        "Cumpre uma tarefa fixa da casa durante uma semana"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.VPR.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Fazer parte das tarefas da casa mostra que a criança **pertence** e tem valor na família. Responsabilidade crescente na idade certa fortalece a autoestima e a organização que a escola exige.",
+        "comoParticipar": "Combine uma ou duas tarefas fixas (arrumar a cama, regar a planta, dobrar as toalhas) e use um quadro simples. Não pague nem castigue: a tarefa é parte da vida da casa. Ensine o passo a passo uma vez e depois deixe-a fazer.",
+        "sinaisDeAtencao": "Tarefas não devem virar disputa nem punição. Se houver brigas constantes e muito sofrimento em torno de qualquer responsabilidade por semanas, converse com o pediatra ou um profissional de saúde mental infantil. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "bncc", "mason-home-education"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason chama de formação do hábito a repetição de ações até virarem automáticas; um bom hábito por vez, com calma e constância.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MAM.01",
+      "linha": "DI.MAM",
+      "ordem": 1,
+      "titulo": "Anda, corre, sobe e desce degraus baixos com segurança",
+      "descricaoPais": "Corre sem cair muito, sobe e desce um degrau com apoio e agacha para pegar algo.",
+      "evidencias": ["Corre e para quando pedido", "Sobe e desce degraus baixos com apoio"],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Correr, subir e descer são as primeiras **conquistas do corpo no espaço**. Quando a criança tem liberdade para se mexer, ela fortalece os músculos, o equilíbrio e a confiança.",
+        "comoParticipar": "Ofereça tempo diário de movimento livre: correr no parque, subir degraus baixos com a sua mão por perto, engatinhar em almofadas. Evite deixá-la muito tempo presa em carrinhos ou na frente de telas. Brincadeiras de “pare e vá” ensinam a controlar o corpo.",
+        "sinaisDeAtencao": "As idades de caminhar e correr variam. Se aos 2 anos ela não anda de forma independente, cai muito mais que as outras ou parece muito dura ou muito mole, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["gallahue-desenvolvimento-motor", "ms-guia-atividade-fisica", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "O movimento livre e o brincar no chão são vistos como a base do desenvolvimento nos primeiros anos.",
+            "referencias": ["steiner-educacao-crianca"]
+          },
+          "Charlotte Mason": {
+            "comoParticipar": "Mason valoriza muito o ar livre, com a criança correndo e explorando sem aula.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MAM.02",
+      "linha": "DI.MAM",
+      "ordem": 2,
+      "titulo": "Pula com os dois pés e chuta e joga uma bola grande",
+      "descricaoPais": "Salta de um degrau baixo com os dois pés e chuta uma bola em direção a você.",
+      "evidencias": ["Pula com os dois pés juntos", "Chuta ou joga uma bola grande"],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MAM.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Pular e lançar bolas trabalha **força, coordenação e noção de espaço**. Jogos com bola também ensinam a esperar a vez e a brincar junto.",
+        "comoParticipar": "Pulem em poças, em círculos desenhados no chão, de almofadas no chão. Joguem uma bola grande para lá e para cá. Não precisa de “técnica”: o importante é brincar muito e com alegria.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se aos 4 anos ela não consegue pular com os dois pés ou evita todo tipo de brincadeira com movimento, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["gallahue-desenvolvimento-motor", "ms-guia-atividade-fisica", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MAM.03",
+      "linha": "DI.MAM",
+      "ordem": 3,
+      "titulo": "Equilibra-se em um pé por alguns segundos e anda sobre uma linha reta",
+      "descricaoPais": "Fica em um pé só contando até 3 e anda em uma fita no chão sem sair.",
+      "evidencias": [
+        "Equilibra-se em um pé por 2 a 3 segundos",
+        "Anda sobre uma linha reta no chão"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MAM.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O equilíbrio é a base de quase todos os movimentos e, além disso, ajuda a **atenção e o autocontrole**. A criança que treina equilíbrio brincando fica mais segura e se machuca menos.",
+        "comoParticipar": "Façam trilhas de fita no chão, caminhem sobre um tronco baixo, imitem o flamingo. Jogos de estátua e de “o chão é lava”, com almofadas, divertem e treinam. Não corrija o corpo dela o tempo todo: brinque.",
+        "sinaisDeAtencao": "Algumas crianças demoram mais para o equilíbrio. Se aos 5 anos ela não consegue ficar em um pé nem por 1 segundo ou cai com muita frequência, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["gallahue-desenvolvimento-motor", "ms-guia-atividade-fisica", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MAM.04",
+      "linha": "DI.MAM",
+      "ordem": 4,
+      "titulo": "Pula num pé só e galopa com ritmo",
+      "descricaoPais": "Pula em um pé só por alguns pulos, galopa como um cavalinho e muda de direção.",
+      "evidencias": ["Dá 3 ou mais pulos em um pé só", "Galopa com ritmo"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MAM.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Pular em um pé e galopar exigem **coordenação das duas metades do corpo** e noção de ritmo. São a ponte entre o movimento solto e os jogos com regras da idade escolar.",
+        "comoParticipar": "Brinquem de amarelinha simples, de cavalinho, de “siga o mestre” (mestre faz, todos imitam), com música para marcar o ritmo. Convide outras crianças. Sem competição: o desafio é consigo mesma.",
+        "sinaisDeAtencao": "Há muita variação entre crianças. Se aos 6 anos ela ainda não consegue pular em um pé só e tem muita dificuldade com outros movimentos, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["gallahue-desenvolvimento-motor", "ms-guia-atividade-fisica", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Jogos de roda com verso e movimento (galopar, pular, girar) são o jeito de trabalhar essas habilidades no ritmo do dia.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MAM.05",
+      "linha": "DI.MAM",
+      "ordem": 5,
+      "titulo": "Pula corda e participa de jogos de movimento com regras",
+      "descricaoPais": "Pula uma corda parada ou balançando e entra em jogos de pega-pega ou circuito, respeitando as regras.",
+      "evidencias": [
+        "Pula uma corda baixa ou em movimento",
+        "Segue as regras de um jogo de movimento com outras crianças"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MAM.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Os jogos de movimento unem **corpo, atenção e convivência**: a criança aprende a esperar a vez, aceitar regras e lidar com o ganhar e o perder. É uma das melhores ocasiões para praticar a autorregulação.",
+        "comoParticipar": "Ofereça cordas, bolas, elásticos e espaço. Brinquem de pega-pega, esconde-esconde, corrida de saco, circuito com obstáculos. Combine as regras antes e converse depois sobre como foi, sem foco em vencer.",
+        "sinaisDeAtencao": "Algumas crianças evitam jogos de movimento por vergonha ou por medo de errar. Convide devagar e sem comparar. Se a recusa for intensa e vier com outras dificuldades de coordenação, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["gallahue-desenvolvimento-motor", "ms-guia-atividade-fisica", "bncc"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason valoriza o movimento diário ao ar livre, com jogos e brincadeiras livres, e não aulas de ginástica longas.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MFI.01",
+      "linha": "DI.MFI",
+      "ordem": 1,
+      "titulo": "Pega objetos com a mão toda, empilha blocos grandes e encaixa peças simples",
+      "descricaoPais": "Empilha 3 ou 4 blocos, tira e põe objetos de uma caixa e vira a página de um livro de papel grosso.",
+      "evidencias": ["Empilha 3 ou mais blocos grandes", "Coloca e tira objetos de um recipiente"],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "As mãos são a ferramenta com que a criança explora tudo. Brincar de empilhar, encaixar e despejar fortalece os músculos da mão e a **coordenação entre olho e mão**, que serão usados para desenhar e escrever.",
+        "comoParticipar": "Ofereça blocos grandes, caixas para encher e esvaziar, potes com tampa para abrir e fechar e livros de papel grosso. Deixe que ela repita. Brinque no chão, junto, e descreva o que ela faz: “Você pôs o bloco em cima”.",
+        "sinaisDeAtencao": "O ritmo varia muito. Se aos 3 anos ela não empilha nenhum bloco nem segura objetos pequenos com os dedos, ou se usa só uma das mãos, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "gallahue-desenvolvimento-motor",
+          "rcnei-conhecimento-de-mundo",
+          "montessori-mente-absorvente"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Prefira poucos materiais, em bandejas, que a criança possa escolher e repetir; o “trabalho das mãos” é central.",
+            "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MFI.02",
+      "linha": "DI.MFI",
+      "ordem": 2,
+      "titulo": "Usa os dedos em pinça: pega, enfia e rasga com mais precisão",
+      "descricaoPais": "Pega um grão grande com o polegar e o indicador, enfia um macarrão em um barbante e rasga papel em tiras.",
+      "evidencias": [
+        "Pega objetos médios com o polegar e o indicador",
+        "Rasga papel em tiras ou pedaços"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MFI.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "A pinça (polegar e indicador) é o movimento da escrita e de muitas tarefas do dia a dia. Treinar com **brincadeiras** fortalece os dedos sem cansar e sem pressão de fazer certo.",
+        "comoParticipar": "Ofereça pinças de cozinha grandes para transferir bolas de algodão, tiras de papel para rasgar, massinha para beliscar e macarrão tipo penne para enfiar em um cadarço. Faça junto e sem pressa.",
+        "sinaisDeAtencao": "Algumas crianças demoram mais a usar a pinça. Se aos 4 anos ela evita qualquer atividade com os dedos ou tem muita dificuldade em segurar um lápis grosso, vale conversar com o pediatra ou a escola. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "gallahue-desenvolvimento-motor",
+          "montessori-mente-absorvente",
+          "lillard-montessori-ciencia"
+        ],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Trabalhos manuais simples (tricô de dedos, trançar, modelar cera) são feitos mais tarde; antes, o brincar livre com as mãos prepara a base.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MFI.03",
+      "linha": "DI.MFI",
+      "ordem": 3,
+      "titulo": "Corta papel com tesoura de ponta arredondada, em linha reta",
+      "descricaoPais": "Dá pequenos cortes e depois recorta uma tira de papel em linha reta.",
+      "evidencias": ["Corta uma tira de papel com a tesoura", "Segue uma linha reta grossa"],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MFI.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cortar com tesoura exige **as duas mãos fazendo coisas diferentes** e muita concentração. É uma preparação para a escrita e uma fonte de orgulho: “eu sei cortar sozinha”.",
+        "comoParticipar": "Mostre como segurar a tesoura (polegar para cima) e comece cortando tiras de papel macio e depois linhas grossas desenhadas. Deixe a criança praticar com cuidado. Estabeleça uma regra: tesoura só em cima da mesa, sentada.",
+        "sinaisDeAtencao": "Algumas crianças demoram a coordenar a tesoura. Se aos 5 anos ela ainda não corta nada com tesoura de criança, ou se muitas tarefas de mãos são muito difíceis, vale conversar com o pediatra ou a escola. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["gallahue-desenvolvimento-motor", "montessori-mente-absorvente", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Mostre o movimento devagar, em tarefas curtas e em uma bandeja, e deixe a criança repetir: o corte de tiras de papel é um material clássico.",
+            "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MFI.04",
+      "linha": "DI.MFI",
+      "ordem": 4,
+      "titulo": "Recorta formas simples, abotoa e faz laço com ajuda",
+      "descricaoPais": "Recorta um círculo ou um quadrado, abotoa botões grandes e começa a amarrar o cadarço com ajuda.",
+      "evidencias": ["Recorta uma forma simples", "Abotoa botões grandes"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MFI.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Recortar formas, abotoar e amarrar mostram **maturidade das mãos e atenção**, e permitem à criança cuidar de si. Também ajudam a controlar o lápis nos desenhos e na escrita.",
+        "comoParticipar": "Recortem figuras de revistas, formas geométricas e desenhos. Faça quadros com botões grandes, zíperes e cadarços para treinar. Deixe uma peça de roupa com botão à vista para treinar sem pressa.",
+        "sinaisDeAtencao": "Laços e botões vão mais devagar em algumas crianças. Se aos 6 anos ela tem muita dificuldade com qualquer tarefa de mãos (botões, tesoura, lápis) e se cansa muito rápido, vale conversar com a escola ou o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "gallahue-desenvolvimento-motor",
+          "montessori-mente-absorvente",
+          "lillard-montessori-ciencia"
+        ],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Os “quadros de vestir” (botões, zíper, fivelas, laços) preparam a criança antes de usar na roupa.",
+            "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.MFI.05",
+      "linha": "DI.MFI",
+      "ordem": 5,
+      "titulo": "Costura com agulha grossa em cartão furado e dobra papel com precisão",
+      "descricaoPais": "Costura pontos em cartão furado com agulha de plástico e dobra papéis com vincos bem marcados.",
+      "evidencias": [
+        "Costura 6 ou mais pontos em cartão furado",
+        "Dobra um papel ao meio com os cantos alinhados"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.MFI.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Costurar e dobrar pedem **paciência, precisão e planejamento**. É um trabalho que acalma e dá orgulho, e que prepara o controle fino do lápis e a atenção nos detalhes.",
+        "comoParticipar": "Prepare um cartão furado (com furador comum) e uma agulha de plástico grande com lã. Mostre o ponto básico, de baixo para cima e de cima para baixo. Dobre papéis de origami simples. Sem pressa e sem correção constante.",
+        "sinaisDeAtencao": "Algumas crianças têm mais facilidade e outras menos. Se aos 7 anos há muita dificuldade com qualquer tarefa de precisão com as mãos, ou dor ao usar os dedos, vale conversar com a escola ou o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "gallahue-desenvolvimento-motor",
+          "montessori-mente-absorvente",
+          "lillard-montessori-ciencia"
+        ],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Trabalhos manuais com lã, fios e dobraduras são centrais; comece pela costura simples em feltro, com a criança fazendo a sua própria peça.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.SEN.01",
+      "linha": "DI.SEN",
+      "ordem": 1,
+      "titulo": "Combina objetos iguais pelo tato e pela visão",
+      "descricaoPais": "Encontra o par igual entre duas cestas: duas conchas iguais, dois panos da mesma textura.",
+      "evidencias": [
+        "Combina 3 ou mais pares de objetos iguais",
+        "Diz com uma palavra o que sente (macio, áspero)"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Encontrar **iguais e diferentes** é a base da classificação e da linguagem: a criança percebe, compara e usa palavras para o que sente. Quando os sentidos são bem usados, o mundo fica mais rico e mais claro.",
+        "comoParticipar": "Monte uma bandeja com 3 pares de objetos (cores, texturas, tamanhos) e peça: “Cadê o igual a este?”. Comece com poucos objetos bem diferentes. Fale as palavras (macio, áspero, grande, pequeno) enquanto ela toca.",
+        "sinaisDeAtencao": "Algumas crianças reagem de modo muito forte a certas texturas ou sons. Respeite e vá aos poucos. Se for intenso e frequente, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.SEN.02",
+      "linha": "DI.SEN",
+      "ordem": 2,
+      "titulo": "Ordena objetos por tamanho, cor e intensidade",
+      "descricaoPais": "Organiza do menor ao maior e do mais claro ao mais escuro, e diz “maior” e “menor”.",
+      "evidencias": [
+        "Ordena 4 ou mais objetos do menor ao maior",
+        "Ordena 3 ou mais tons de uma cor do mais claro ao mais escuro"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.SEN.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Ordenar por **gradação** (do menor ao maior, do claro ao escuro) treina a atenção ao detalhe e prepara a matemática, a ciência e a arte. Os sentidos ficam mais finos.",
+        "comoParticipar": "Use materiais de casa: copos de tamanhos diferentes, cartões de tinta em tons de uma cor (de lojas de tinta), colheres de pau de vários tamanhos. Ofereça poucos itens no começo e aumente aos poucos. Elogie o cuidado.",
+        "sinaisDeAtencao": "Dificuldade em ordenar é comum no começo. Se aos 5 anos ela não percebe de jeito nenhum a diferença entre grande e pequeno, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.SEN.03",
+      "linha": "DI.SEN",
+      "ordem": 3,
+      "titulo": "Distingue sons e cheiros iguais em pares",
+      "descricaoPais": "Agita duas caixinhas e acha as que fazem o mesmo som; cheira dois frascos e acha os iguais.",
+      "evidencias": ["Acha 3 pares de sons iguais", "Acha 2 pares de cheiros iguais"],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.SEN.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O ouvido e o nariz precisam de treino, e é por isso que o **silêncio** e a atenção importam. Distinguir sons semelhantes é uma base para a consciência fonológica e para a música.",
+        "comoParticipar": "Faça caixinhas de sons com tampas bem fechadas (arroz, feijão, areia, clipes). Brinque com pares de cheiros de coisas comuns (canela, café, hortelã). Faça momentos de silêncio e peça que ela ouça os sons do ambiente.",
+        "sinaisDeAtencao": "Se ela parece não ouvir sons baixos, não responde a seu nome ou fala muito alto, vale conversar com o pediatra e fazer uma avaliação da audição. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.SEN.04",
+      "linha": "DI.SEN",
+      "ordem": 4,
+      "titulo": "Distingue pesos e texturas de olhos fechados",
+      "descricaoPais": "Ordena tabuinhas de pesos diferentes e acha pelo tato o objeto que está dentro de um saquinho.",
+      "evidencias": ["Ordena 3 pesos diferentes", "Acha um objeto pelo tato, dentro de um saco"],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.SEN.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Afinar o tato e a percepção de peso é treinar a atenção e o **vocabulário preciso** (leve, pesado, liso, áspero). É também uma preparação para a escrita, que usa um tato muito fino.",
+        "comoParticipar": "Faça um jogo de “saquinho do mistério” com objetos comuns e uma “tábua de pesos” com potes iguais cheios de materiais diferentes. Peça que ela descreva antes de adivinhar. Aceite todas as palavras.",
+        "sinaisDeAtencao": "Se ela evita muito tocar certos materiais ou tem reações intensas a texturas, respeite o limite e vá aos poucos; se isso afetar a alimentação, o vestir ou o brincar, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["montessori-mente-absorvente", "lillard-montessori-ciencia", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.RIT.01",
+      "linha": "DI.RIT",
+      "ordem": 1,
+      "titulo": "Participa de pequenos rituais diários: verso, vela e canção de dormir",
+      "descricaoPais": "Espera o verso antes da refeição, ajuda a acender a vela da mesa e canta a canção da hora de dormir.",
+      "evidencias": [
+        "Participa de um ritual diário da casa",
+        "Antecipa o momento (“já é a hora do verso?”)"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Rituais curtos e repetidos criam **segurança** e marcam a passagem de um momento a outro. Para a criança pequena, a repetição não é tédio: é conforto e a base da confiança no dia.",
+        "comoParticipar": "Escolha dois ou três rituais e mantenha-os: um verso curto antes da refeição, uma canção ao guardar os brinquedos, uma história e uma canção na hora de dormir. Use as mesmas palavras e o mesmo gesto. Não precisa ser perfeito, precisa ser constante.",
+        "sinaisDeAtencao": "Em fases de mudança (viagens, nascimento de irmão), os rituais ajudam muito; se a criança tiver muita aflição na hora de dormir por semanas, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["steiner-educacao-crianca", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "O ritmo diário e semanal é considerado o “respirar” da criança pequena: momentos de agitação e de calma que se alternam e se repetem.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.RIT.02",
+      "linha": "DI.RIT",
+      "ordem": 2,
+      "titulo": "Acompanha o ritmo da semana: cada dia com a sua atividade",
+      "descricaoPais": "Sabe que na terça se pinta e na quinta se assa pão, e espera por cada um.",
+      "evidencias": [
+        "Diz ou mostra o que acontece em um dia da semana",
+        "Participa da atividade fixa do dia"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.RIT.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O ritmo da semana ajuda a criança a **sentir o tempo** sem calendário: cada dia tem seu rosto. Ela passa a esperar com alegria e se organiza por dentro.",
+        "comoParticipar": "Combine uma atividade fixa para cada dia (segunda: desenhar; terça: pintar; quarta: assar pão; quinta: modelar; sexta: arrumar a casa). Não precisa ser rígido, e a família escolhe o que cabe na vida real. Falem do que vem “amanhã”.",
+        "sinaisDeAtencao": "Rotinas rígidas demais podem estressar. Se a criança reagir com muita aflição a qualquer mudança por semanas, converse com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["steiner-educacao-crianca", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Na pedagogia Waldorf, a semana tem atividades fixas (pintura, modelagem, culinária), e repeti-las dá sustentação e alegria.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.RIT.03",
+      "linha": "DI.RIT",
+      "ordem": 3,
+      "titulo": "Vive as estações do ano com a mesa sazonal e uma festa simples",
+      "descricaoPais": "Ajuda a montar a mesa da estação com folhas, flores e frutos, e participa de uma festa simples, como a das lanternas.",
+      "evidencias": [
+        "Ajuda a montar uma mesa ou cantinho da estação",
+        "Participa de uma festa simples da época"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.RIT.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "As festas das estações dão à criança um **calendário vivido**: o tempo se enche de cheiros, cores e gestos, e cada época ganha sentido. Também cultivam a gratidão e a alegria em família.",
+        "comoParticipar": "Façam uma mesa das estações com o que se encontra na natureza (folhas, flores, sementes, frutos). Marquem uma festa simples por estação: uma festa das lanternas, uma festa da colheita, uma festa da primavera. As datas originais vêm do hemisfério norte, então adaptem à sua região e à tradição da família.",
+        "sinaisDeAtencao": "As festas não precisam ser grandes: se a família está cansada, faça uma versão pequena. Se a criança ficar muito ansiosa com as mudanças de rotina da festa, simplifique. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["steiner-educacao-crianca", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "As festas sazonais (colheita, lanternas, Advento, Páscoa) seguem o ritmo do ano; as datas originais são europeias e muitas famílias brasileiras as adaptam ao clima e ao calendário local.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.RIT.04",
+      "linha": "DI.RIT",
+      "ordem": 4,
+      "titulo": "Ajuda a preparar uma festa da família e conta o sentido dela",
+      "descricaoPais": "Participa do preparo de uma festa (presente, enfeite, convite) e explica por que a família a celebra.",
+      "evidencias": [
+        "Faz uma parte do preparo de uma festa",
+        "Conta por que a família celebra essa data"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.RIT.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Quando a criança participa do **preparo** da festa, e não só da festa em si, ela entende que a alegria nasce de cuidado e de trabalho. As festas também contam a história e os valores da família.",
+        "comoParticipar": "Escolham uma data e preparem juntos: convite desenhado, enfeites de papel, um prato da família, um presente feito à mão. Conversem sobre o sentido da festa e sobre quem vem. Deixe a criança escolher e decidir uma parte.",
+        "sinaisDeAtencao": "Festas podem trazer ansiedade, barulho e muita gente. Combine com a criança, deixe uma pausa tranquila e respeite o seu limite. Se ela ficar muito aflita com festas por muito tempo, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["steiner-educacao-crianca", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "A preparação das festas, com trabalhos manuais e canções, é um dos principais modos de a criança viver o ritmo do ano.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.ESP.01",
+      "linha": "DI.ESP",
+      "ordem": 1,
+      "titulo": "Participa de momentos de silêncio, gratidão e canto ou oração da família",
+      "descricaoPais": "Fica quietinha por um instante, agradece com uma palavra e canta ou reza junto, conforme a tradição da família.",
+      "evidencias": [
+        "Participa de um momento de silêncio ou de gratidão",
+        "Repete uma palavra, um gesto ou um canto da família"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Os primeiros momentos de **silêncio e gratidão** vividos em família dão à criança uma experiência de paz e de pertencimento, antes de qualquer explicação. A criança aprende pelo exemplo e pela repetição carinhosa. Os textos e as práticas específicos ficam a cargo da tradição da família: o Semear não indica nenhum.",
+        "comoParticipar": "Escolha um momento curto e sempre no mesmo horário (antes de dormir, antes das refeições). Convide, não obrigue: “Vamos agradecer?”. Use poucas palavras, em tom calmo, e deixe que ela participe como puder (um gesto, uma palavra). Se a sua família não tem uma prática religiosa, o silêncio e a gratidão podem ser vividos de modo simples e sem religião.",
+        "sinaisDeAtencao": "Cada criança reage de um modo, e não existe “ritmo certo” para a vida espiritual. Se ela ficar muito agitada ou aflita em qualquer momento de silêncio por semanas, não force: converse com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.ESP.02",
+      "linha": "DI.ESP",
+      "ordem": 2,
+      "titulo": "Escuta histórias da tradição da família e conta o que entendeu",
+      "descricaoPais": "Escuta uma história sagrada ou de ensinamento da família e diz com as próprias palavras o que mais a tocou.",
+      "evidencias": [
+        "Escuta uma história da tradição da família até o fim",
+        "Reconta com as próprias palavras ou diz o que mais gostou"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.ESP.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "As histórias da tradição transmitem **valores, esperança e identidade** de um modo que a criança sente e guarda. Quando ela as reconta, está fazendo as histórias suas. Os textos e as práticas específicos ficam a cargo da tradição da família: o Semear não indica nenhum.",
+        "comoParticipar": "Conte ou leia histórias curtas da sua tradição, com linguagem simples, e depois pergunte: “O que você achou? Com quem você parece?”. Use livros ilustrados adequados à idade. Aceite perguntas e dúvidas com calma, inclusive “não sei”.",
+        "sinaisDeAtencao": "Algumas histórias podem assustar (violência, castigo). Escolha as mais acolhedoras e conte de um jeito proporcional à idade. Se a criança tiver medos intensos depois, converse com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.ESP.03",
+      "linha": "DI.ESP",
+      "ordem": 3,
+      "titulo": "Pratica a gratidão e uma virtude em uma ação concreta",
+      "descricaoPais": "Escolhe ajudar alguém, dividir algo ou agradecer de modo concreto, e diz por que fez.",
+      "evidencias": [
+        "Realiza uma ação concreta de gratidão ou de cuidado com alguém",
+        "Diz por que fez"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.ESP.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "As virtudes (gratidão, generosidade, perdão) ganham sentido quando viram **ação**. A criança aprende que a vida espiritual não é só palavras: é cuidar do outro e do mundo. Os textos e as práticas específicos ficam a cargo da tradição da família: o Semear não indica nenhum.",
+        "comoParticipar": "Escolha uma virtude por semana e pense com ela uma ação pequena e concreta: levar um bilhete ao vizinho, doar um brinquedo em bom estado, ajudar em casa sem ser pedida. Converse depois: “Como você se sentiu?”. Sem elogios exagerados e sem cobrança.",
+        "sinaisDeAtencao": "A criança pode se comparar ou se cobrar demais. Reforce que não se trata de ser perfeita, e sim de tentar. Se houver muita culpa ou ansiedade em torno do “ser boa”, vale conversar com o pediatra ou com um profissional. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "siegel-bryson-cerebro-crianca"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "DI.ESP.04",
+      "linha": "DI.ESP",
+      "ordem": 4,
+      "titulo": "Conversa sobre perguntas grandes: de onde viemos, o que é o bem, o que acontece depois da morte",
+      "descricaoPais": "Faz perguntas profundas sobre a vida e a morte e ouve com respeito a resposta da família.",
+      "evidencias": [
+        "Faz uma pergunta grande e escuta a resposta com atenção",
+        "Diz o que pensa, mesmo sem ter uma resposta pronta"
+      ],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.ESP.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "As crianças fazem **perguntas grandes** muito cedo. Quando o adulto escuta, responde com verdade e diz “não sei” quando for o caso, a criança aprende que pensar sobre o sentido da vida é bom e seguro. Os textos e as práticas específicos ficam a cargo da tradição da família: o Semear não indica nenhum.",
+        "comoParticipar": "Quando surgir uma pergunta grande (“para onde vão as pessoas que morrem?”), responda de acordo com a sua tradição, em linguagem simples e com carinho. Se não souber, diga: “Boa pergunta, vamos pensar juntos”. Evite respostas que causem medo. Respeite o jeito de cada pessoa pensar.",
+        "sinaisDeAtencao": "Perguntas sobre a morte e o medo podem vir após uma perda ou uma doença na família. Acolha e dê tempo. Se houver tristeza ou medo muito fortes que atrapalhem o sono ou o brincar por semanas, procure o pediatra ou um psicólogo infantil. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["bncc", "siegel-bryson-cerebro-crianca"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    }
+  ]
+}

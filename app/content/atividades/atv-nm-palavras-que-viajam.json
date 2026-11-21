@@ -1,0 +1,74 @@
+{
+  "id": "atv-nm-palavras-que-viajam",
+  "titulo": "Palavras que viajaram: de onde vem o nosso jeito?",
+  "marcos": ["NM.CUL.06"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Escolha fontes confiáveis e livros escritos por pessoas dos povos de que se fala. Evite imagens com estereótipos (cocar “de fantasia”, por exemplo). Fique junto para conversar.",
+  "objetivo": "A criança descobre palavras e hábitos brasileiros de origem indígena, africana e de imigrantes e entende que esses povos existem hoje.",
+  "passos": [
+    {
+      "titulo": "Palavras",
+      "minutos": 8,
+      "texto": "Mostre 6 ou 8 palavras de uso comum (abacaxi, tatu, caçula, samba, pizza, quibe) e diga de onde cada uma veio. Ela adivinha antes de saber."
+    },
+    {
+      "titulo": "Povos de hoje",
+      "minutos": 8,
+      "texto": "Leia ou mostre algo atual sobre um povo (um livro, um vídeo ou uma notícia): como as pessoas vivem hoje? Quais são os seus nomes e línguas?",
+      "fala": "E hoje, onde essas pessoas vivem?"
+    },
+    {
+      "titulo": "Cartaz",
+      "minutos": 4,
+      "texto": "Ela desenha um cartaz com as palavras e as suas origens, e conta a alguém."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Dá exemplos de palavras ou comidas de origens diversas",
+      "Diz que esses povos vivem hoje"
+    ],
+    "emDesenvolvimento": ["Fala “o índio” (corrija com carinho)", "Só lembra de uma origem"]
+  },
+  "ajustes": {
+    "dificil": "Escolha só 3 palavras e uma origem.",
+    "facil": "Pesquise a origem do nome de uma rua, rio ou cidade da região."
+  },
+  "materiais": [
+    {
+      "item": "Lista de palavras",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Livro ou site confiável",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Deu exemplos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse que os povos vivem hoje",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras mais a surpreenderam?",
+  "palavrasChave": ["palavras", "indígenas", "africanos", "imigrantes", "diversidade"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

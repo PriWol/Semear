@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-bichinhos-de-massinha",
+  "titulo": "Bichinhos de massinha",
+  "marcos": ["AR.MOD.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 6],
+  "duracaoMin": 16,
+  "preparoMin": 3,
+  "cuidados": "Massinha atóxica, sem enfeites pequenos (olhos de plástico, miçangas) se houver crianças menores. Fique junto e lave as mãos depois. Guarde a massinha em pote fechado.",
+  "objetivo": "A criança modela formas e pequenos bichinhos e os apresenta.",
+  "passos": [
+    {
+      "titulo": "Combinar",
+      "minutos": 3,
+      "texto": "Combine um tema: “Hoje vamos fazer um bichinho do jardim”. Mostre massinhas de 2 ou 3 cores."
+    },
+    {
+      "titulo": "Modelar",
+      "minutos": 10,
+      "texto": "Ela faz o bichinho como quiser (bolinhas, cobrinhas, bolinhas achatadas). Pergunte: “Como é o corpo? E as patas?”. Não faça por ela.",
+      "fala": "Que bicho é esse?"
+    },
+    {
+      "titulo": "Apresentar",
+      "minutos": 3,
+      "texto": "Ela apresenta o bichinho e conta o nome e onde mora. Deixe secar ao ar, se for argila ou massa de sal."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Modela 2 ou mais formas", "Nomeia o que fez"],
+    "emDesenvolvimento": ["Muda a ideia no meio (normal)", "Só amassa (explore o tema)"]
+  },
+  "ajustes": {
+    "dificil": "Faça só uma bolinha e uma cobrinha.",
+    "facil": "Peça que faça uma cena com 3 bichos e invente uma história."
+  },
+  "materiais": [
+    {
+      "item": "Massinha de modelar atóxica em cores",
+      "deCasa": true
+    },
+    {
+      "item": "Bandeja",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Modelou 2 formas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou o que fez",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que bichinho ela fez?",
+  "palavrasChave": ["massinha", "bichinhos", "modelar", "esculpir"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "atv-di-saquinho-misterio-e-pesos",
+  "titulo": "Saquinho do mistério e potes de peso",
+  "marcos": ["DI.SEN.04"],
+  "vertentes": ["Montessori"],
+  "idade": [6, 8],
+  "duracaoMin": 19,
+  "preparoMin": 10,
+  "cuidados": "Objetos do saquinho: seguros, sem pontas, vidros ou peças pequenas. Os potes de peso devem estar bem fechados. Atenção a alergias de pele a materiais (lã, por exemplo).",
+  "objetivo": "A criança descobre objetos pelo tato e ordena potes por peso, descrevendo o que sente.",
+  "passos": [
+    {
+      "titulo": "Saquinho",
+      "minutos": 8,
+      "texto": "Em um saco de pano, coloque 5 objetos (esponja, colher de pau, chave, pedra lisa grande, pano). Ela enfia a mão e descreve o que sente antes de adivinhar.",
+      "fala": "O que você sente?"
+    },
+    {
+      "titulo": "Pesos",
+      "minutos": 8,
+      "texto": "Com 3 potes iguais, fechados, cheios de arroz, de areia e de algodão, ela ordena do mais leve ao mais pesado, só pelo peso na mão."
+    },
+    {
+      "titulo": "Conferir",
+      "minutos": 3,
+      "texto": "Confiram com uma balança de cozinha. Conversem sobre o que descobriu."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Acha o objeto pelo tato", "Ordena 3 pesos"],
+    "emDesenvolvimento": ["Confunde pesos próximos", "Ri e se distrai"]
+  },
+  "ajustes": {
+    "dificil": "Use só 3 objetos bem diferentes.",
+    "facil": "Ordene 5 potes de pesos próximos e registre em uma tabela."
+  },
+  "materiais": [
+    {
+      "item": "Saco de pano",
+      "deCasa": true
+    },
+    {
+      "item": "5 objetos comuns e seguros",
+      "deCasa": true
+    },
+    {
+      "item": "3 potes iguais com tampa",
+      "deCasa": true
+    },
+    {
+      "item": "Arroz, areia e algodão",
+      "deCasa": true
+    },
+    {
+      "item": "Balança de cozinha",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Achou o objeto pelo tato",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Ordenou os pesos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual descrição mais criativa ela deu?",
+  "palavrasChave": ["peso", "tato", "mistério", "texturas"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

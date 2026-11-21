@@ -1,0 +1,75 @@
+{
+  "id": "atv-nm-grupos-de-seres-vivos",
+  "titulo": "Grupos de seres vivos: como você separa?",
+  "marcos": ["NM.VIV.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Use folhas e galhos caídos no chão; nada de arrancar plantas nem de pegar bichos. Evite folhas com espinhos ou de espécies tóxicas. Lave as mãos depois de pegar folhas e terra.",
+  "objetivo": "A criança observa semelhanças e diferenças, forma grupos de seres vivos e explica o critério escolhido.",
+  "passos": [
+    {
+      "titulo": "Coleta",
+      "minutos": 7,
+      "texto": "Juntem folhas caídas de várias árvores do quintal ou da praça. Cada uma é diferente: o que muda? Olhem a forma, a borda, o cheiro."
+    },
+    {
+      "titulo": "Separar",
+      "minutos": 8,
+      "texto": "Peça que forme grupos como quiser e explique o critério. Depois proponha um segundo critério e agrupem de novo."
+    },
+    {
+      "titulo": "Registro",
+      "minutos": 5,
+      "texto": "Ela cola as folhas em uma folha de papel por grupo e escreve (ou ditam) o nome do grupo.",
+      "fala": "Como você decidiu?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Forma grupos coerentes", "Explica o critério em uma frase"],
+    "emDesenvolvimento": ["Muda de critério no meio", "Não explica, mas separa bem (observe)"]
+  },
+  "ajustes": {
+    "dificil": "Faça só dois grupos, por exemplo, folhas grandes e pequenas.",
+    "facil": "Proponha criar uma “chave de identificação” com perguntas de sim ou não."
+  },
+  "materiais": [
+    {
+      "item": "Folhas caídas",
+      "deCasa": true
+    },
+    {
+      "item": "Folha de papel grande",
+      "deCasa": true
+    },
+    {
+      "item": "Cola",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Formou grupos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Explicou o critério",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais critérios ela usou?",
+  "palavrasChave": ["classificação", "folhas", "animais", "grupos"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

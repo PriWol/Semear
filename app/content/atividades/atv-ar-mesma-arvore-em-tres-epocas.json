@@ -1,0 +1,71 @@
+{
+  "id": "atv-ar-mesma-arvore-em-tres-epocas",
+  "titulo": "A mesma árvore em três épocas",
+  "marcos": ["AR.NAT.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Escolha uma árvore em local seguro e sem trânsito, e vá junto. Não suba na árvore nem arranque galhos. Não deixe provar frutos ou folhas sem a certeza de que são seguros.",
+  "objetivo": "A criança desenha a mesma árvore ou lugar em épocas diferentes e compara o que mudou.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 5,
+      "texto": "Escolham uma árvore ou um canteiro para acompanhar por alguns meses. Fotografem o lugar (com a localização desligada) e marquem a data."
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 12,
+      "texto": "Ela desenha a árvore com atenção a detalhes: folhas, tronco, flores, frutos. Escreva a data e o tempo (sol, chuva).",
+      "fala": "O que você nota hoje?"
+    },
+    {
+      "titulo": "Comparar",
+      "minutos": 3,
+      "texto": "Nas visitas seguintes, comparem o desenho novo com o anterior e conversem sobre o que mudou. Guardem tudo no caderno."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz 3 registros em épocas diferentes", "Compara o que mudou"],
+    "emDesenvolvimento": ["Esquece de voltar (lembre com um bilhete)", "Observa pouco"]
+  },
+  "ajustes": {
+    "dificil": "Observe só um galho ou uma folha.",
+    "facil": "Acrescente medidas (altura, tamanho das folhas) e uma tabela simples."
+  },
+  "materiais": [
+    {
+      "item": "Caderno da natureza",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis e lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Uma árvore ou canteiro para acompanhar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Registrou em 3 épocas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Comparou as mudanças",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que mudou na árvore?",
+  "palavrasChave": ["árvore", "estações", "caderno da natureza", "mudanças", "comparar"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "atv-di-lavar-as-maos-sozinha",
+  "titulo": "Eu lavo as minhas mãos",
+  "marcos": ["DI.VPR.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 9,
+  "preparoMin": 3,
+  "cuidados": "Fique junto o tempo todo: a água, o banquinho e o chão molhado exigem atenção. Use banquinho firme e antiderrapante, água morna (nunca quente) e sabonete suave. Seque o chão para evitar escorregões.",
+  "objetivo": "A criança aprende e repete os passos de lavar as mãos e de tirar peças simples, com cada vez menos ajuda.",
+  "passos": [
+    {
+      "titulo": "Mostrar devagar",
+      "minutos": 2,
+      "texto": "Mostre os passos em câmera lenta, falando pouco: molhar, ensaboar, esfregar, enxaguar, secar. Depois, ela imita.",
+      "fala": "Molhar, ensaboar, esfregar!"
+    },
+    {
+      "titulo": "Ela faz",
+      "minutos": 4,
+      "texto": "Ela lava com o banquinho e o sabonete ao alcance. Você só ajuda no que ela pedir. Cantem uma música curta para contar o tempo."
+    },
+    {
+      "titulo": "Roupas",
+      "minutos": 3,
+      "texto": "Em seguida, tira as meias e uma calça folgada com a ajuda mínima. Celebre o esforço, não o resultado perfeito."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Lava e seca as mãos com pouca ajuda", "Tira uma peça de roupa folgada"],
+    "emDesenvolvimento": ["Brinca com a água e ensaboa pouco (normal)", "Pede ajuda em tudo"]
+  },
+  "ajustes": {
+    "dificil": "Faça com a mão dela entre as suas, tirando a ajuda aos poucos.",
+    "facil": "Peça que ensine o passo a passo para um bichinho de pelúcia."
+  },
+  "materiais": [
+    {
+      "item": "Banquinho firme e antiderrapante",
+      "deCasa": true
+    },
+    {
+      "item": "Sabonete suave",
+      "deCasa": true
+    },
+    {
+      "item": "Toalha pequena",
+      "deCasa": true
+    },
+    {
+      "item": "Meias e calça folgadas",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Lavou as mãos com pouca ajuda",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Tirou uma peça",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual passo ela já faz sozinha?",
+  "palavrasChave": ["lavar as mãos", "autonomia", "vida prática", "roupas"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

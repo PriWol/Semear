@@ -1,0 +1,79 @@
+{
+  "id": "atv-di-verter-agua-e-pores-a-mesa",
+  "titulo": "Verter água e pôr a mesa",
+  "marcos": ["DI.VPR.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Use jarra pequena de plástico duro ou inox (nada de vidro ou cerâmica) e água fria. Nunca líquido quente. Seque o chão logo para evitar escorregões e fique por perto.",
+  "objetivo": "A criança despeja água de uma jarra para um copo, limpa o que derramar e arruma a mesa para a refeição.",
+  "passos": [
+    {
+      "titulo": "Mostrar",
+      "minutos": 2,
+      "texto": "Mostre o movimento devagar: segura a jarra com duas mãos, inclina, para quando enche. Mostre a esponja para o que derramar.",
+      "fala": "Devagarinho."
+    },
+    {
+      "titulo": "Verter",
+      "minutos": 5,
+      "texto": "Em uma bandeja, ela despeja água de uma jarra com pouca água para um copo. Repita. Se derramar, ela limpa com a esponja."
+    },
+    {
+      "titulo": "Pôr a mesa",
+      "minutos": 3,
+      "texto": "Peça que coloque guardanapos, garfos e colheres para cada pessoa. Conte juntos quantos lugares."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Despeja sem derramar muito", "Põe os itens da mesa"],
+    "emDesenvolvimento": ["Derrama bastante (esperado)", "Se cansa da repetição"]
+  },
+  "ajustes": {
+    "dificil": "Comece com arroz cru (e depois água), com ajuda na mão.",
+    "facil": "Peça que sirva a água para a família toda e conte os copos."
+  },
+  "materiais": [
+    {
+      "item": "Jarra pequena de plástico",
+      "deCasa": true
+    },
+    {
+      "item": "2 copos",
+      "deCasa": true
+    },
+    {
+      "item": "Bandeja",
+      "deCasa": true
+    },
+    {
+      "item": "Esponja",
+      "deCasa": true
+    },
+    {
+      "item": "Talheres e guardanapos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Despejou no copo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Pôs a mesa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quanto ela derramou? Melhorou na segunda vez?",
+  "palavrasChave": ["verter", "água", "pôr a mesa", "montessori"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

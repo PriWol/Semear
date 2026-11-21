@@ -1,0 +1,67 @@
+{
+  "id": "atv-nm-roda-de-cantigas",
+  "titulo": "Roda de cantigas e parlendas",
+  "marcos": ["NM.CUL.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 7],
+  "duracaoMin": 15,
+  "preparoMin": 2,
+  "cuidados": "Brinque em local livre de móveis, sem sapatos escorregadios. Em rodas, cuidado para não puxar braços com força. Escolha cantigas sem letras de violência ou ameaça.",
+  "objetivo": "A criança participa de uma roda, canta cantigas tradicionais e aprende uma parlenda de memória.",
+  "passos": [
+    {
+      "titulo": "Aquecer",
+      "minutos": 3,
+      "texto": "Comece com uma parlenda curta, batendo palmas: “Lá em cima do piano”."
+    },
+    {
+      "titulo": "Roda",
+      "minutos": 9,
+      "texto": "Façam uma roda com 2 ou mais pessoas e cantem 2 ou 3 cantigas (“Ciranda, cirandinha”, “Peixe vivo”, “Sapo cururu”), com os gestos.",
+      "fala": "Quem ensinou essa cantiga?"
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 3,
+      "texto": "Pergunte: “De qual você mais gostou? Já ouviu outras versões?”. Anote a versão da família."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta ou recita 2 cantigas", "Participa da roda"],
+    "emDesenvolvimento": ["Só ouve (ótimo)", "Troca a letra (aceite)"]
+  },
+  "ajustes": {
+    "dificil": "Escolha só uma cantiga curta.",
+    "facil": "Peça que ensine uma cantiga a alguém e anote as diferentes versões."
+  },
+  "materiais": [
+    {
+      "item": "Espaço livre",
+      "deCasa": true
+    },
+    {
+      "item": "Pessoas para a roda",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cantou ou recitou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Participou da roda",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais cantigas ela quis repetir?",
+  "palavrasChave": ["cantigas", "roda", "parlenda", "folclore"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
