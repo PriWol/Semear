@@ -48,12 +48,14 @@ class Caderno(Livro):
     def __init__(self):
         super().__init__(0, "Caderno de atividades da Marina")
         self.inicio = {}   # primeira página de cada unidade, para o sumário; cada montagem tem o seu
+        self.titulo_doc = "Caderno de atividades · 2 anos"   # metadado Title do PDF; igual ao nome na Biblioteca
 
     def cab(self):
         return "Caderno de atividades · 2 anos" + (f" &nbsp;—&nbsp; {self.unidade}" if self.unidade else "")
 
     def html(self):
-        return super().html().replace("O Grande Tesouro de Marina — Volume 0", "O Grande Tesouro de Marina — Caderno de atividades (2 anos)")
+        # a troca é feita aqui, uma só vez, para que as subclasses só definam `titulo_doc`
+        return super().html().replace("O Grande Tesouro de Marina — Volume 0", self.titulo_doc)
 
 
 def inicio_unidade(L, i):

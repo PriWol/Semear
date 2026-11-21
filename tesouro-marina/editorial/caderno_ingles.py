@@ -34,12 +34,10 @@ class CadernoIngles(Caderno):
     def __init__(self):
         super().__init__()
         self.titulo_volume = "Caderno de inglês da Marina"
+        self.titulo_doc = "Caderno de inglês · 2 anos"
 
     def cab(self):
         return "Caderno de inglês · 2 anos" + (f" &nbsp;—&nbsp; {self.unidade}" if self.unidade else "")
-
-    def html(self):
-        return super().html().replace("O Grande Tesouro de Marina — Volume 0", "O Grande Tesouro de Marina — Caderno de inglês (2 anos)")
 
 
 def inicio_unidade(L, i):
