@@ -603,3 +603,28 @@ progress {
   }
 }
 /* ---------- fim do rodapé ---------- */
+
+/* ---------- Atividade para ler ---------- */
+.atividade-leitura {
+  overflow-wrap: anywhere;
+}
+.atividade-leitura .cuidados {
+  font-weight: 600;
+}
+.atividade-leitura .fala {
+  margin: 0.3rem 0 0;
+  color: var(--suave);
+  font-style: italic;
+}
+.atividade-leitura .passos-leitura li {
+  margin-bottom: 10px;
+}
+.atividade-leitura .imprimir-atividade {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+}
+.lista-atividades h3 a {
+  color: inherit;
+}

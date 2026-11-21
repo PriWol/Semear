@@ -5,6 +5,8 @@ import { paginaRegistrarBusca } from '../src/pages/registrar-busca';
 import { paginaSessaoRegistrar } from '../src/pages/sessao-registrar';
 import { paginaSessao } from '../src/pages/sessao';
 import { paginaSessaoNova } from '../src/pages/sessao-nova';
+import { paginaAtividade } from '../src/pages/atividade';
+import { paginaAtividades } from '../src/pages/atividades';
 
 describe('rotas por hash (ADR 0008)', () => {
   it('separa caminho e parâmetros de busca', () => {
@@ -36,6 +38,12 @@ describe('rotas por hash (ADR 0008)', () => {
     expect(quem('#/sessao/nova')).toBe(paginaSessaoNova);
     // um id que se chama "registrar" também chega à tela de registro, não à busca
     expect(quem('#/sessao/registrar/registrar')).toBe(paginaSessaoRegistrar);
+  });
+  it('"/atividade/:id" abre a página da atividade; "/atividades" continua na lista', () => {
+    const rotas = criarRotas(ROTAS);
+    const quem = (caminho: string) => rotas.find((r) => r.padrao.test(caminho))?.fabrica;
+    expect(quem('/atividade/atv-x')).toBe(paginaAtividade);
+    expect(quem('/atividades')).toBe(paginaAtividades);
   });
   it('lista normaliza campos de formulário', () => {
     expect(lista(undefined)).toEqual([]);
