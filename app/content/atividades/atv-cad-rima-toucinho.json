@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-toucinho",
+  "titulo": "O toucinho que sumiu",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 2,
+    "paginas": [25, 25]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Sem materiais. Se for no carro, ela vai na cadeirinha, com cinto, e quem canta é o adulto que não está dirigindo. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["toucinho", "parlenda", "cadê", "bichos"],
+  "objetivo": "A criança escuta e completa parlendas de pergunta e resposta, treinando a escuta e a vez de falar.",
+  "passos": [
+    {
+      "titulo": "Cadê o toucinho?",
+      "minutos": 2,
+      "texto": "*Cadê o toucinho que estava aqui? / — O gato comeu. / Cadê o gato? — Foi pro mato. / Cadê o mato? — O fogo queimou. / Cadê o fogo? — A água apagou. / Cadê a água? — O boi bebeu. / Cadê o boi? — Foi carregar milho. / Cadê o milho? — A galinha comeu. / Cadê a galinha? — Foi botar ovo…* **O gesto:** a cada “cadê?”, abra as mãos e olhe em volta; a resposta vem de uma voz de cada vez, e ela pode fazer uma delas. A parlenda segue por muitos versos e tem muitas versões; aqui vai um trecho. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Quem faz assim?",
+      "minutos": 2,
+      "texto": "*O gato faz miau, / o pato faz quá-quá, / o cachorro faz au-au, / e (nome da criança) faz…?* **O gesto:** pare no último verso e espere uns segundos: ela completa com um som ou uma palavra (ou escolhe um bicho). Aceite qualquer resposta e repita com alegria. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Parlendas de perguntas e respostas, como esta, treinam a escuta e a vez de falar, e são ótimas para esperar (na fila, no carro). Deixe que ela complete as respostas que souber: é uma conversa de verdade."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 2",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

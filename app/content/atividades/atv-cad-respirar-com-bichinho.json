@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-respirar-com-bichinho",
+  "titulo": "Respirar com o bichinho",
+  "marcos": ["EM.REG.02"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 8,
+    "paginas": [81, 81]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: O bichinho fica só na barriga, nunca no rosto ou no pescoço; leve e sem peças soltas. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["respiração", "bichinho", "barriga", "calma"],
+  "objetivo": "A criança vê um bichinho de pelúcia subir e descer na barriga e faz a respiração virar algo que ela vê e sente.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Deitem de barriga para cima. Ponha o bichinho na barriga dela."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Inspirem pelo nariz, devagar: o bichinho sobe. Expirem pela boca: ele desce."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Faça junto, com o seu bichinho (ou a mão) na sua barriga."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Repitam cinco vezes. Terminem com um abraço no bichinho."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“O ursinho sobe… e desce.” “Sobe de novo… e desce devagar.” “Que respiração! O bichinho dormiu.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O bichinho está subindo? E agora está descendo? Quer fazer de novo?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Deitem lado a lado, cada uma com um bichinho. 2) Cantem “hummm” na expiração. 3) Faça de folha: sobe e desce com o vento."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Ver o bichinho subir e descer faz a respiração virar algo que ela vê e sente. É a mais antiga das atividades de respiração para crianças, e funciona bem no fim do dia ou depois de uma crise, quando ela está mais calma."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Um bichinho de pelúcia leve; uma manta ou tapete macio",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 8",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

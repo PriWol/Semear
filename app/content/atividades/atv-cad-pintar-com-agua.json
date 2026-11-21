@@ -1,0 +1,95 @@
+{
+  "id": "atv-cad-pintar-com-agua",
+  "titulo": "Pintar com água",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Pintura",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 5,
+    "paginas": [54, 54]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Com água em balde, não a deixe sozinha; esvazie o balde no fim. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["pintar com água", "pincel", "quintal", "calma"],
+  "objetivo": "A criança pinta com água uma parede ou o chão e vê o “desenho” sumir sozinho, num movimento repetido e calmante.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Dê a ela o pincel molhado e mostre: pinte a parede ou o chão."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Observem juntas: a água escurece o chão e depois some, bem devagar."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Deixe que ela “apague” o que você pintou e “apague” o que ela pintou."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Quando acabar, tire o balde e fiquem olhando a parede secar."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“A água pinta de escuro. Olha!” “Está sumindo, sumindo… devagar.” “Agora a parede está seca. Pinta de novo?”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O que a água fez? Cadê o que você pintou? Quer pintar o chão ou a parede?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Pinte o espelho do banheiro. 2) Pinte uma “pegada” de água com o pé. 3) Pinte letras e formas grandes e depois apague."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Pintar com água tem todos os gestos da pintura, sem sujeira nem “errado”, porque o desenho some sozinho. O movimento repetido de pintar e ver secar é calmante e ensina a esperar. Ótima para depois de uma crise ou numa tarde difícil."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Um pincel grosso (ou uma esponja) e um balde com água; uma parede, um muro ou o chão do quintal",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 5",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

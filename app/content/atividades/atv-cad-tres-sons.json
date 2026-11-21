@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-tres-sons",
+  "titulo": "Os três sons",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 4,
+    "paginas": [41, 41]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Se for da varanda ou da janela, confira antes que haja grade ou tela de proteção e não a deixe sozinha ali; perto da rua, segure a mão dela. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["escutar", "sons", "silêncio", "atenção"],
+  "objetivo": "A criança escuta em silêncio por um minuto, percebe até três sons e dá nome a eles.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Sentem juntas e diga: “vamos escutar três sons”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Fiquem em silêncio por um minuto. Levante um dedo para cada som que ouvir."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Cada som tem nome: “carro”, “passarinho”, “vento”. Deixe que ela diga também."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Depois, imitem um dos sons, bem baixinho."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Shhh… escuta. Um som!” “Era um passarinho! Piu, piu.” “Dois. Três. Que bom que a gente escutou.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O que você ouviu? De onde veio? Era um som alto ou baixinho?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) De olhos fechados, se ela quiser. 2) Com a janela fechada e depois aberta: quais sons mudam? 3) À noite, com a luz baixa."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Escutar em silêncio, mesmo por um minuto, treina a atenção e acalma. Funciona bem logo depois do batuque ou da estátua, para fechar a agitação. Não é preciso acertar o som: o que conta é ficar quieta e perceber."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum; um lugar com uns poucos sons (janela, quintal, varanda)",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

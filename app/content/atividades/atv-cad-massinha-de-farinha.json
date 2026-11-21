@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-massinha-de-farinha",
+  "titulo": "Massinha de farinha",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Modelagem",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 5,
+    "paginas": [50, 50]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: A massa é salgada e não é comida: fique junto o tempo todo, não deixe que ela a leve à boca e tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["massinha", "farinha", "modelar", "mãos"],
+  "objetivo": "A criança aperta, bate, belisca e enrola uma massinha caseira, fortalecendo as mãos e descarregando a raiva sem machucar ninguém.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Misture os ingredientes com ela (despejar e mexer já é brincadeira) até ficar uma massa macia."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Deixe que ela aperte, bata, belisque, enrole. Mostre uma cobra e uma bola."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Dê nome ao que sai: “uma bolinha!”, “uma cobrinha comprida!”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Guarde num pote fechado, na geladeira, por uns dias."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Aperta! Que macia.” “Enrola, enrola, enrola: uma cobrinha.” “Bate! Pam, pam, pam!”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "É mole ou é dura? O que você fez? Quer uma bola ou uma cobra?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Esconda um brinquedo grande na massa. 2) Imprima a mão e o pé na massa. 3) Faça um “bolo” e cante uma cantiga ao bichinho."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Apertar e bater a massa é bom para a força das mãos e para a raiva (descarregar, sem machucar ninguém). A massinha caseira é barata e simples, e é a versão do Volume 5, na unidade de modelar. Pode repetir todos os dias: a massa não “acaba”."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "2 xícaras de farinha de trigo, só meia de sal, 1 de água morna e 1 colher de óleo (uma massinha caseira); uma tábua ou um pano",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 5",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

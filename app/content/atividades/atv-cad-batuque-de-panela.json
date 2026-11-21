@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-batuque-de-panela",
+  "titulo": "Batuque de panela",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 4,
+    "paginas": [39, 39]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 8,
+  "cuidados": "Atenção: Se o barulho incomodar, bata numa almofada ou toalha dobrada; nunca perto dos ouvidos dela. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["batuque", "panela", "pulso", "ritmo", "tambor"],
+  "objetivo": "A criança sente o pulso (a batida regular) batendo numa panela e treina o forte e o fraco, o rápido e o devagar, e parar no silêncio.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Ponha a panela virada de boca para baixo. Bata o pulso, sempre igual: toc, toc, toc."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Deixe que ela bata também. Alterne: você, ela, você, ela."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Experimente forte e fraco, rápido e devagar. Peça que ela escolha."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine com um toc bem fraquinho e silêncio."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Toc, toc, toc: forte!” “Toc… toc… toc: fraco, bem fraquinho.” “Agora rápido: toc-toc-toc-toc! E devagar.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Quer forte ou fraco? Rápido ou devagar? Quem toca agora?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Bata no chão com a mão, no colo, na barriga. 2) Cante uma cantiga no ritmo da batida. 3) Dois instrumentos: um forte, um fraco."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "O pulso (a batida regular) é a base da música, e bater forte descarrega energia de um jeito aceito e divertido. Ter de parar no silêncio e esperar a vez treina o controle sem parecer lição."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Uma panela ou lata, uma colher de pau, e uma toalha dobrada para abafar, se for preciso",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

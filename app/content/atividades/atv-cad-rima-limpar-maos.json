@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-limpar-maos",
+  "titulo": "Para limpar as mãos",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 5,
+    "paginas": [53, 53]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: O sabão é para as mãos, não para beber; guarde-o fora do alcance depois, enxugue o chão molhado para ela não escorregar. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["lavar as mãos", "sabão", "sapo", "rotina"],
+  "objetivo": "A criança aprende uma rima fixa para a troca de atividade (pintar, lavar as mãos), o que avisa o fim e reduz o “não”.",
+  "passos": [
+    {
+      "titulo": "Mão suja, mão limpa",
+      "minutos": 2,
+      "texto": "*Mão suja, mão suja, / pra água vai! / Esfrega, esfrega, / a espuma sai. / Mão limpa, mão limpa, / cheirinho de sabão; / seca, seca, seca / na toalha, pronto, então!* **O gesto:** molhe as mãos, esfregue no “esfrega”, enxágue no “sai”, e seque cantando. É a rima da troca: pintura, massa, terra e comida acabam sempre assim. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "O sapo não lava o pé",
+      "minutos": 2,
+      "texto": "*O sapo não lava o pé, / não lava porque não quer. / Ele mora lá na lagoa / e não lava o pé porque não quer. / Mas que chulé!* **O gesto:** tape o nariz no “chulé” e faça a careta; mostre o pé do sapo sujo e depois limpo. É uma rima divertida para a hora de lavar os pés. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Uma rima fixa para cada troca (pintar → lavar as mãos) avisa o fim de uma atividade e reduz o “não”: ela já sabe o que vem. Use sempre a mesma música, na mesma ordem."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 5",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

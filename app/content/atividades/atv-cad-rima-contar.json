@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-contar",
+  "titulo": "Para contar e brincar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 3,
+    "paginas": [34, 34]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Sem materiais. Bata palmas e mostre os dedos sem pressa e sem cobrar a contagem. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["contar", "números", "feijão com arroz", "dedinhos"],
+  "objetivo": "A criança canta a sequência dos números com palmas e dedos, antes de entender a quantidade; o ritmo vem primeiro.",
+  "passos": [
+    {
+      "titulo": "Um, dois, feijão com arroz",
+      "minutos": 2,
+      "texto": "*Um, dois, feijão com arroz; / três, quatro, feijão no prato; / cinco, seis, falar inglês; / sete, oito, comer biscoito; / nove, dez, comer pastéis.* **O gesto:** bata palmas no ritmo e mostre os dedos de cada número: um, dois… Ela pode bater no joelho, ou nos seus joelhos. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Quantos dedinhos?",
+      "minutos": 2,
+      "texto": "*Cinco dedinhos tem esta mão, / e outros cinco, a outra mão. / Um, dois, três, quatro, cinco, / bate palmas: plim, plão!* **O gesto:** mostre uma mão aberta e a outra, conte tocando cada dedo, e bata palmas no “plim, plão”. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Parlendas de contar são o jeito mais antigo de aprender a sequência dos números: a criança canta antes de entender. Não cobre a quantidade: o ritmo vem primeiro."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 3",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { carregarConteudo, carregarConteudoBruto } from '../src/conteudo';
 import { validarConteudo } from '../src/domain/conteudo';
 import { IDADE_MAXIMA, IDADE_MINIMA } from '../src/domain/faixa';
+import { CADERNOS } from '../src/tesouro';
 
 // Domínio "Formação e regulação emocional" (#72): vale de 2 a 8 anos e é rascunho até a dona do
 // produto revisar (#77). Estes testes seguram o que não pode mudar sem ela perceber.
@@ -15,7 +16,12 @@ describe('domínio de formação e regulação emocional', () => {
     expect(d?.linhas?.map((l) => l.id)).toEqual(LINHAS);
   });
   it('passa na validação do conteúdo (inclui o texto para os pais de cada marco)', () => {
-    expect(validarConteudo(carregarConteudoBruto()).erros).toEqual([]);
+    expect(
+      validarConteudo(
+        carregarConteudoBruto(),
+        CADERNOS.map((c) => c.id),
+      ).erros,
+    ).toEqual([]);
   });
   it.each(LINHAS)(
     '%s tem marcos na ordem 1..N, começando aos 2 anos e sem passar dos 8',

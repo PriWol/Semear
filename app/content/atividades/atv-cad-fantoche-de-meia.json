@@ -1,0 +1,90 @@
+{
+  "id": "atv-cad-fantoche-de-meia",
+  "titulo": "O fantoche de meia",
+  "marcos": ["EM.NOM.01", "EM.REG.02"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 2,
+    "paginas": [23, 23]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Olhos bordados ou desenhados, nunca botões ou peças coladas que ela possa soltar e engolir. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["fantoche", "meia", "raiva", "não", "birra"],
+  "objetivo": "A criança vê um fantoche dizer “não”, ficar bravo e se acalmar respirando, e ajuda o fantoche a se acalmar com um gesto que já conhece.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Vista a meia na mão e faça o fantoche aparecer devagar, dizendo “oi!”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "O fantoche responde “não!” a tudo: “quer lanche?” “Não!”. Faça com voz engraçada, sem exagerar."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "De repente, o fantoche fica bravo (bate o pé). Peça ajuda a ela: “o que a gente faz?”. Respirem juntos: cheirar a flor, soprar a vela."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "O fantoche melhora, e agradece: “obrigado, (nome da criança)!”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Eu não quero! Não, não, não!” “Ele está bravo. Vamos respirar junto com ele?” “Pronto, a raiva já passou. Obrigado!”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Por que o fantoche está bravo? O que a gente faz quando fica bravo? O fantoche quer um abraço?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Fantoche de dedo, feito com uma luva velha. 2) Sombras de bicho na parede, com a lanterna. 3) O fantoche conta a história do dia da criança."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Crianças pequenas aprendem a lidar com emoções grandes olhando o boneco, porque é mais fácil ajudar o outro que a si mesma. Aqui o “não” do fantoche é aceito e depois superado, com o jeito de respirar que vocês já conhecem. Use sempre o mesmo fantoche, com a mesma voz."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Uma meia limpa e sem botões; olhos de feltro ou de caneta de tecido (nada colado que solte)",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 2",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

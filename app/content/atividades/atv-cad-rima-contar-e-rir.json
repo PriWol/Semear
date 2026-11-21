@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-contar-e-rir",
+  "titulo": "Mais duas, para contar e rir",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 8,
+    "paginas": [79, 79]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Balance devagar, sem sacudir. A voz grossa do elefante é de brincadeira: não precisa forçar a garganta, vale baixinho. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["barquinho", "elefante", "contar", "roda"],
+  "objetivo": "A criança balança como um barquinho e conta elefantes com vozes diferentes, juntando corpo, risada e números.",
+  "passos": [
+    {
+      "titulo": "O barquinho de papel",
+      "minutos": 2,
+      "texto": "*Barquinho de papel / vai passear no rio: / balança pra lá, / balança pra cá, / chega devagar / e vem me abraçar.* **O gesto:** sentadas, balancem de um lado para o outro, devagar, como um barquinho na água calma; no último verso, abracem-se. Serve também para acalmar. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Um elefante",
+      "minutos": 2,
+      "texto": "*Um elefante incomoda muita gente; / dois elefantes incomodam, incomodam muito mais. / Três elefantes incomodam muita gente; / quatro elefantes incomodam, incomodam, incomodam muito mais.* **O gesto:** mostre os dedos para cada número; cada elefante é uma voz mais grossa. Faça o elefante com o braço de tromba e deixe que ela escolha a voz. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "O barquinho é uma rima da coleção, para balançar com calma; os elefantes são uma cantiga conhecida de jogos de roda. As duas juntam corpo, risada e números ou ritmo. Dá para fazer em qualquer lugar, com qualquer idade, e a criança pode “conduzir”."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 8",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

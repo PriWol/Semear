@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-marchar",
+  "titulo": "Para marchar e rodar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 4,
+    "paginas": [43, 43]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Chão firme e sem escorregar. Na roda, gire devagar e nunca puxe nem erga a criança pelos braços. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["marcha", "ciranda", "roda", "estátua"],
+  "objetivo": "A criança marcha e roda de mãos dadas, com pulso marcado, e aprende a parar quando a música pára.",
+  "passos": [
+    {
+      "titulo": "Marcha, marcha, pé com pé",
+      "minutos": 2,
+      "texto": "*Marcha, marcha, pé com pé, / um, dois, três, que bom que é! / Marcha, marcha, pé com pé, / e parou: estátua em pé!* **O gesto:** marchem juntas no lugar, no ritmo da batida; no último verso, parem de uma vez, como estátua. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Ciranda, cirandinha",
+      "minutos": 2,
+      "texto": "*Ciranda, cirandinha, / vamos todos cirandar; / vamos dar a meia-volta, / volta e meia vamos dar.* **O gesto:** de mãos dadas, girem devagar em roda; na “meia-volta”, virem para o outro lado. Com duas pessoas, é uma roda de dois. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Marchar e rodar de mãos dadas são movimentos antigos de brincadeira, com pulso marcado. Os versos para na estátua ajudam a ela aprender a parar quando a música para."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

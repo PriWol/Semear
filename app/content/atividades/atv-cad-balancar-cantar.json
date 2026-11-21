@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-balancar-cantar",
+  "titulo": "Balançar e cantar baixinho",
+  "marcos": ["EM.REG.01"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 4,
+    "paginas": [45, 45]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Segure-a firme no colo e balance devagar, sem sacudir; se usar cadeira de balanço, ela precisa ser estável e longe de quinas e de móveis. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["balançar", "colo", "ninar", "cantiga", "calma"],
+  "objetivo": "A criança se acalma ao ser balançada devagar no colo ao som de uma cantiga baixinha, até o corpo amolecer.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Sente com ela no colo, de frente para o seu peito, e balance de um lado para o outro, bem devagar."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Cante baixinho a cantiga que está no passo “Para dizer”, com a voz bem suave. Repita."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Quando o corpo dela amolecer, vá parando de balançar, até ficarem paradas."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine com um beijo e um “está tudo bem”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Dorme, dorme, a lua vem,” “a noite chega e faz bem;” “fecha os olhos, o sono vem,” “e eu estou aqui também.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Quer balançar? Quer mais uma vez? Está gostoso?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Só cantarole, sem letra: “hummm”. 2) Cante o nome dela no lugar da lua. 3) Deitadas, com a mão dela no seu peito."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Balançar num ritmo regular e cantar baixinho é uma das formas mais antigas de acalmar uma criança: o corpo reconhece o ritmo, e a voz do adulto mostra que está tudo bem. Pode ser usado depois de uma crise, quando ela precisa de colo. A cantiga é da coleção; invente a sua."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "O colo, ou uma cadeira de balanço; luz baixa",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

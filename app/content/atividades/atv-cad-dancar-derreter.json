@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-dancar-derreter",
+  "titulo": "Dançar e derreter",
+  "marcos": ["EM.REG.02"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 4,
+    "paginas": [46, 46]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Espaço livre de tapetes soltos, quinas e objetos; deite no chão macio, devagar, sem se jogar. Fique junto. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["dançar", "derreter", "rápido", "devagar", "calma"],
+  "objetivo": "A criança gasta energia dançando rápido e depois “derrete” devagar no chão, aprendendo a passar do rápido para o lento.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Dancem rápido, como foguete: braços, pés, pulos."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Então diga “derrete!” e deixem o corpo ir devagar para o chão, como um sorvete ao sol."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Fiquem deitadas, respirando, por alguns segundos."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Levantem devagar e repita se ela quiser."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Rápido, rápido, rápido, como foguete!” “E agora derrete, derrete, derrete…” “Respira. O corpo ficou molinho.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Como está o corpo agora? Está mais quentinho? Mais mole? Quer ser foguete de novo?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Fogo e neve: quente e frio, rápido e lento. 2) Derreter só de uma vez, ou aos poucos. 3) Termine com um abraço de urso apertado."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Gastar energia e depois “derreter” ensina o corpo a passar do rápido para o lento. É um bom ritual antes do banho, do sono ou depois de uma brincadeira agitada. Nomeie o que ela sente (“o coração está batendo rápido”)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Um espaço livre; uma música rápida (cantada por você) e depois uma lenta",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

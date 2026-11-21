@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-corrida-de-lesma",
+  "titulo": "Corrida de lesma",
+  "marcos": ["EM.REG.02"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [64, 64]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Piso seco e livre de obstáculos, sem escorregar (cuidado com meias); em quintal, sem degraus nem poças fundas. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["lesma", "devagar", "corrida", "autocontrole"],
+  "objetivo": "A criança vence a corrida de quem for mais devagar e treina o autocontrole sem perceber.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Explique: “vence quem for o mais devagar”. Mostre andando bem, bem devagar."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Dê a largada e vão as duas, passo por passo, sem parar."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Elogie o devagar: “que lesma lenta! Quase parada!”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Quem chega por último ganha. Repita, trocando de “lesma”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Mais devagar… devagar… que lesma!” “Cada pé demora muito, muito tempo.” “Você ganhou: foi a lesma mais lenta!”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Você é lesma ou lebre? Dá para ir mais devagar? Quem ganhou?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Mãos de lesma: mover só as mãos, devagar. 2) Voz de lesma: falar bem devagar. 3) Deite e “seja uma lesma sonolenta”."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Fazer da lentidão uma vitória inverte o jogo: em vez de correr, ela precisa segurar o impulso, o que treina o autocontrole sem que ela perceba. É ótima antes de uma hora de quietude, ou para entrar numa loja ou consultório sem correr."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Um corredor, uma sala ou o quintal; uma linha de partida e uma de chegada (fita ou cadarço)",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

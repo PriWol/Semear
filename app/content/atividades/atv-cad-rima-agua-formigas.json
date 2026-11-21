@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-agua-formigas",
+  "titulo": "Água e formigas",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [62, 62]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Toque com dois dedos só se ela gostar. Perto de rio, lago ou piscina, fique ao lado dela. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["peixe vivo", "formiguinha", "devagar", "água"],
+  "objetivo": "A criança canta cantigas lentas de água e de formigas, que terminam no “devagarzinho” e ajudam a baixar a agitação.",
+  "passos": [
+    {
+      "titulo": "Peixe vivo",
+      "minutos": 2,
+      "texto": "*Como pode um peixe vivo / viver fora da água fria? / Como poderei viver / sem a tua, sem a tua, sem a tua companhia?* **O gesto:** faça as mãos de peixe nadando de um lado ao outro; no último verso, abrace-a. Cante devagar, como uma cantiga de ninar. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Formiguinha",
+      "minutos": 2,
+      "texto": "*Formiguinha, formiguinha, / leva a folha pro ninho; / passinho por passinho, / vai bem devagarzinho.* **O gesto:** com dois dedos, “ande” a formiguinha pelo braço dela, bem devagar, até o ombro. No último verso, pare e dê um beijo. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Cantigas de água e de bichos pequenos pedem voz suave e gestos lentos. A da formiguinha termina no “devagarzinho”, o que ajuda a baixar a agitação, e pode ser usada na hora de sair do parque."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
