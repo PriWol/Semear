@@ -1,0 +1,83 @@
+{
+  "id": "atv-em-colo-e-calma",
+  "titulo": "Colo, voz baixa e o ursinho que ficou bravo",
+  "marcos": ["EM.REG.01"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 8,
+  "preparoMin": 3,
+  "cuidados": "Atenção: use um bicho de pelúcia sem olhos ou botões soltos e sem peças que caibam na boca. Fique junto o tempo todo. Esta brincadeira é para um momento tranquilo, não para o meio de uma crise: se a criança estiver muito alterada, acolha primeiro e deixe a atividade para depois.",
+  "objetivo": "A criança vive, no faz de conta e com segurança, a experiência de ser acalmada pelo adulto: colo, voz baixa e tempo.",
+  "passos": [
+    {
+      "titulo": "O ursinho está bravo",
+      "minutos": 2,
+      "texto": "Sentem no tapete com um bicho de pelúcia. Faça o bicho bater o pezinho e “chorar” de mentira. Diga com voz baixa: *“O ursinho está bravo. Ele precisa de colo.”*",
+      "fala": "O ursinho está bravo. O que será que ajuda?"
+    },
+    {
+      "titulo": "Cuidar do ursinho",
+      "minutos": 4,
+      "texto": "Convide a criança a acalmar o bicho: um abraço, um balanço devagar, a mão nas costinhas. Fale baixinho junto dela e repita uma frase curta (*“calma, calma, o colo está aqui”*). Se ela preferir, acalme o bicho você e deixe-a só olhar."
+    },
+    {
+      "titulo": "A vez dela",
+      "minutos": 2,
+      "texto": "Ofereça colo à criança do mesmo jeito: voz baixa, balanço lento, sem perguntas. Se ela não quiser, encoste o bicho nela ou fique apenas ao lado. Encerre quando ela se afastar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Deixa-se abraçar ou balançar durante a brincadeira",
+      "Repete o gesto de acalmar com o bicho ou imita a voz baixa"
+    ],
+    "emDesenvolvimento": [
+      "Desvia ou sai da brincadeira (prefere olhar de longe, e isso também vale)",
+      "Fica agitada quando o bicho “chora” e precisa que você pare a cena"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça só o ursinho com sono: bicho deitado, canção de ninar e colo, sem a parte da raiva.",
+    "facil": "Deixe que ela conduza: ela “acalma” o bicho sozinha e conta com palavras ou gestos o que ele precisa."
+  },
+  "materiais": [
+    {
+      "item": "Bicho de pelúcia macio, sem partes soltas",
+      "deCasa": true
+    },
+    {
+      "item": "Tapete ou almofada",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe o bicho e a almofada num cantinho baixo, ao alcance, para ela voltar a ele quando quiser.",
+    "Waldorf": "Cante uma cantiga de ninar sempre igual (a repetição acalma) e movimente-se devagar; a criança aprende imitando o seu ritmo.",
+    "Clássico": "Escolha uma frase curta e repita sempre a mesma (*“calma, o colo está aqui”*): ela vira um verso conhecido.",
+    "Religioso": "Se fizer sentido para a família, termine com uma oração curta de acolhimento ou uma bênção sussurrada.",
+    "Charlotte Mason": "Faça a cena depois de um livro de bichos de que ela goste, mantendo o momento breve e sem sermão."
+  },
+  "evidencias": [
+    {
+      "texto": "Aceitou colo ou carinho durante a brincadeira",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Repetiu o gesto de acalmar o bicho",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que acalmou mais: o colo, a voz ou o balanço?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["acalmar", "birra", "colo", "pelúcia", "crise"]
+}

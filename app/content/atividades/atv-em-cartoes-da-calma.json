@@ -1,0 +1,106 @@
+{
+  "id": "atv-em-cartoes-da-calma",
+  "titulo": "Cartões da calma: o que ajuda quando fico bravo?",
+  "marcos": ["EM.REG.03"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [4, 6],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Atenção: tesoura só com ponta redonda e com o adulto perto. Não deixe a criança sozinha no canto da calma como castigo: ele é um lugar que ela escolhe, nunca uma punição. Faça a atividade em um momento tranquilo, não durante a raiva.",
+  "objetivo": "A criança conhece algumas estratégias para se acalmar (respirar, apertar uma almofada, beber água, pedir colo) e escolhe uma delas.",
+  "passos": [
+    {
+      "titulo": "Conversa de bastidor",
+      "minutos": 4,
+      "texto": "Conte um momento em que *você* ficou nervoso e o que fez para se acalmar. Pergunte: *“E você, o que ajuda quando fica muito bravo?”*. Aceite qualquer resposta.",
+      "fala": "O que ajuda o seu corpo a ficar calmo?"
+    },
+    {
+      "titulo": "Fazer os cartões",
+      "minutos": 6,
+      "texto": "Em 4 cartões, desenhem (ou colem figuras) quatro estratégias: **respirar de barriga** (mão na barriga, cheirar a flor e soprar a vela), **apertar uma almofada**, **beber água**, **pedir um abraço**. A criança decide o desenho de cada um."
+    },
+    {
+      "titulo": "Treinar com o corpo tranquilo",
+      "minutos": 6,
+      "texto": "Escolha um cartão e experimentem juntos, de verdade: três respirações lentas, apertar a almofada com força. Sinta e comente: *“Meu coração ficou mais devagar?”*. Troque: ela escolhe, você imita."
+    },
+    {
+      "titulo": "Escolher o lugar",
+      "minutos": 4,
+      "texto": "Combinem onde ficam os cartões e uma almofada (o canto da calma). Combine uma frase para usar na hora: *“Preciso de calma.”* Quando ela usar, elogie o esforço, e não o resultado."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escolhe um cartão e usa a estratégia sem ajuda no treino",
+      "Fala uma frase como “preciso de calma” ou aponta o canto"
+    ],
+    "emDesenvolvimento": [
+      "Só repete a estratégia quando o adulto sugere",
+      "Esquece os cartões quando está muito agitada (esperado: continue treinando fora da crise)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique em duas estratégias e faça você o primeiro exemplo, de novo, no dia seguinte.",
+    "facil": "Peça que ela ensine as estratégias a um irmão menor ou a um bicho de pelúcia."
+  },
+  "materiais": [
+    {
+      "item": "4 cartões de papel ou cartolina",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    },
+    {
+      "item": "Almofada",
+      "deCasa": true
+    },
+    {
+      "item": "Copo com água",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe os cartões e a almofada num cantinho que ela alcance e possa usar sozinha, sem pedir licença.",
+    "Waldorf": "Cante ou diga um verso curto de respiração antes de cada cartão; o ritmo ajuda o corpo a desacelerar.",
+    "Clássico": "Combinem uma frase para decorar (*“eu paro, eu respiro, eu escolho”*) e recitem juntos nos momentos calmos.",
+    "Religioso": "Se a família desejar, inclua um cartão de “um minuto de silêncio ou oração”, como forma de pausa.",
+    "Charlotte Mason": "Trate como formação de hábito: um cartão por semana, praticado sempre no mesmo horário tranquilo."
+  },
+  "evidencias": [
+    {
+      "texto": "Estratégias que ela nomeou ou escolheu",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Usou uma estratégia (no treino ou na vida real)",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Qual cartão ela escolheu primeiro?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meus cartões da calma",
+      "legenda": "Desenhe quatro coisas que ajudam você a ficar calmo."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["calma", "respirar", "canto da calma", "raiva", "autorregulação"]
+}

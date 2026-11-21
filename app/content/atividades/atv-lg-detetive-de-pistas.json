@@ -1,0 +1,87 @@
+{
+  "id": "atv-lg-detetive-de-pistas",
+  "titulo": "Detetive de pistas: o que o texto não diz?",
+  "marcos": ["LG.LEI.09"],
+  "vertentes": ["Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: leitura sentada de até 20 minutos. Não existe só uma resposta certa: aceite o que ela justificar com uma pista. Evite histórias com temas pesados (medo, perda) sem avisar antes.",
+  "objetivo": "A criança descobre, pelas pistas do texto ou das figuras, como o personagem se sente ou o que acontece depois, e mostra a pista.",
+  "passos": [
+    {
+      "titulo": "Ler com uma pausa",
+      "minutos": 5,
+      "texto": "Leia este trecho: *“Pedro olhou o prato vazio e ficou em silêncio. O sorvete tinha caído no chão. Seus olhos estavam brilhando e ele apertou a colher.”* Pare e pergunte: *“Como será que o Pedro está?”*"
+    },
+    {
+      "titulo": "Como você sabe?",
+      "minutos": 6,
+      "texto": "Depois de ouvir a resposta (triste, bravo...), pergunte: *“Como você sabe?”*. Ela aponta a pista (*“o sorvete caiu”*, *“os olhos brilhando”*). Ajude se ela só disser “eu sei”.",
+      "fala": "Qual é a pista?"
+    },
+    {
+      "titulo": "E agora, o que acontece?",
+      "minutos": 5,
+      "texto": "Leia o começo de outra história e **pare antes do final**: *“O que vai acontecer agora?”*. Ela faz uma previsão e justifica. Depois leiam e confiram: acertou? Mudou de ideia?"
+    },
+    {
+      "titulo": "Ser o detetive",
+      "minutos": 4,
+      "texto": "Ela esconde uma pista numa frase (*“Ana pegou o casaco e a luva.”*) e você descobre onde Ana vai (*frio*)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Responde “como você sabe?” apontando uma pista do texto",
+      "Prevê o que acontece depois e justifica"
+    ],
+    "emDesenvolvimento": [
+      "Responde só o que está escrito (mostre uma pista e peça outra)",
+      "Adivinha sem pista (pergunte “o que no texto faz você pensar isso?”)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use figuras do livro e pergunte só como o personagem se sente.",
+    "facil": "Peça que invente uma frase com pista escondida para você descobrir."
+  },
+  "materiais": [
+    {
+      "item": "Um conto ou livro ilustrado",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Waldorf": "A partir dos 8 anos: faça a previsão como adivinha de contador, parando a história no momento de suspense.",
+    "Clássico": "Ligue a pista ao “porque” e peça que ela diga a razão numa frase completa.",
+    "Religioso": "Se fizer sentido, use uma parábola e peça que ela descubra o sentimento do personagem.",
+    "Charlotte Mason": "Use um livro vivo e peça que a narração inclua o que ela supôs dos sentimentos."
+  },
+  "evidencias": [
+    {
+      "texto": "Apontou uma pista do texto",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Previu e justificou",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que pista ela encontrou no texto?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["inferência", "pistas", "detetive", "compreensão", "previsão"]
+}

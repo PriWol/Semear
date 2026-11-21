@@ -1,0 +1,88 @@
+{
+  "id": "atv-lg-releitura-do-detetive",
+  "titulo": "Releitura do detetive: o que posso melhorar?",
+  "marcos": ["LG.ESC.08"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 3,
+  "cuidados": "Atenção: sessão sentada de até 25 minutos; o texto é dela e merece respeito: não reescreva por cima. Uma pergunta de cada vez, sem lista de erros.",
+  "objetivo": "A criança relê o próprio texto, encontra pelo menos um erro de pontuação ou de ortografia e acrescenta ou tira uma parte para melhorar.",
+  "passos": [
+    {
+      "titulo": "Deixar descansar",
+      "minutos": 3,
+      "texto": "Pegue um texto que ela escreveu antes (um bilhete ou uma historinha) e deixe-o fora do alcance por um tempo, para voltar a ele com olhos novos."
+    },
+    {
+      "titulo": "Primeira passada: ler em voz alta",
+      "minutos": 6,
+      "texto": "Ela lê o texto em voz alta, com o dedo na linha. Pergunte: *“Soou bem? Alguma parte ficou estranha?”*. Marquem com lápis de cor o que quer mudar.",
+      "fala": "Soou bem quando você leu?"
+    },
+    {
+      "titulo": "Segunda passada: pontuação e palavras",
+      "minutos": 7,
+      "texto": "Uma pergunta por vez: *“Falta algum ponto?”*, *“Alguma palavra parece escrita de outro jeito?”*. Ela corrige com a cor."
+    },
+    {
+      "titulo": "Terceira passada: melhorar",
+      "minutos": 6,
+      "texto": "Pergunte: *“Dá para dizer de outro jeito? Falta alguma parte? Sobrou alguma?”*. Ela acrescenta ou tira uma parte e passa a limpo só o que quiser."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Relê o próprio texto e corrige pelo menos um erro",
+      "Acrescenta ou tira uma parte para melhorar"
+    ],
+    "emDesenvolvimento": [
+      "Acha que “está perfeito” e não vê nada para mudar (faça uma pergunta específica)",
+      "Quer reescrever tudo e desiste (limite-se a uma mudança por vez)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Revise só a pontuação e deixe o resto para outro dia.",
+    "facil": "Peça que troque de texto com um irmão ou amigo e sugira uma melhoria, com gentileza."
+  },
+  "materiais": [
+    {
+      "item": "Um texto escrito por ela (bilhete, historinha)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cores diferentes",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe uma lista de verificação (maiúscula, ponto, espaço) ao alcance, para ela conferir sozinha.",
+    "Waldorf": "Só a partir dos 8 anos: a revisão acontece ao passar a limpo no caderno de época, com capricho de letra e de ilustração.",
+    "Clássico": "Compare o texto dela com o de um bom autor (cópia ou ditado) e veja o que o outro faz de diferente.",
+    "Religioso": "Se fizer sentido, associe a revisão ao cuidado com a verdade e com o outro em quem vai ler.",
+    "Charlotte Mason": "Use a narração: ela lê em voz alta e a própria voz ajuda a notar o que soou estranho."
+  },
+  "evidencias": [
+    {
+      "texto": "Corrigiu ao menos um erro",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Acrescentou ou tirou uma parte",
+      "resposta": "☐ não   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela mudou no texto?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["revisar texto", "reescrever", "corrigir", "releitura", "edição"]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "atv-lg-palavra-esticada",
+  "titulo": "A palavra esticada: que sons eu ouço?",
+  "marcos": ["LG.ESC.04"],
+  "vertentes": ["Montessori", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: use letras móveis grandes e sem peças pequenas; deixe-as numa bandeja para não se perderem. Sem notas e sem “errado”: palavras com letras faltando fazem parte do caminho; mostre a forma convencional ao final, com carinho.",
+  "objetivo": "A criança escreve palavras esticando os sons e escolhendo as letras que combinam com o que ouve, ainda que falte alguma.",
+  "passos": [
+    {
+      "titulo": "Esticar a palavra",
+      "minutos": 4,
+      "texto": "Fale uma palavra bem devagar, esticando os sons (*bbbooolaaa*) e peça que ela faça o mesmo. Pergunte: *“Que som você ouve primeiro? E depois?”*",
+      "fala": "Que som você ouve primeiro?"
+    },
+    {
+      "titulo": "Escolher as letras",
+      "minutos": 8,
+      "texto": "Em letras móveis, ela monta a palavra som a som. Para cada som, ela escolhe a letra. Quando faltar alguma (BOA para BOLA), pergunte: *“Vamos esticar de novo? Tem mais algum som no meio?”*"
+    },
+    {
+      "titulo": "Comparar com carinho",
+      "minutos": 4,
+      "texto": "Mostre a forma convencional (BOLA) ao lado e conte: *“Olha, aqui tem mais uma letra! Os adultos escrevem assim.”* Se ela já tiver acertado, comemore."
+    },
+    {
+      "titulo": "Jogo do detetive",
+      "minutos": 4,
+      "texto": "Escreva uma palavra com uma letra faltando (*BO_A*) e peça que ela descubra o som que falta esticando a palavra."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escreve palavras com letras que combinam com os sons, mesmo faltando algumas",
+      "Usa a letra certa para o som inicial na maioria das palavras"
+    ],
+    "emDesenvolvimento": [
+      "Escreve só uma letra por sílaba (volte ao marco anterior sem pressa)",
+      "Escolhe letras aleatórias (reforce o som inicial e use letras de lixa ou cartões)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use palavras de 2 sílabas e sons longos (SOL, MESA, FACA) e mostre o primeiro som por ela.",
+    "facil": "Peça palavras de 3 sílabas ou mais (*PANELA*, *BORBOLETA*) e sem o modelo."
+  },
+  "materiais": [
+    {
+      "item": "Letras móveis grandes ou cartões com letras",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Figuras de objetos conhecidos",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "É o clássico “alfabeto móvel”: deixe-a compor palavras da casa sozinha, sem correção, e só depois mostre o modelo.",
+    "Clássico": "Depois da escrita, leiam as palavras em voz alta e façam uma pequena lista para copiar com cuidado.",
+    "Religioso": "Se desejar, use palavras de uma cantiga ou do versículo da semana.",
+    "Charlotte Mason": "Use poucas palavras por dia e, ao final, uma cópia curta e bem-feita de uma delas."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras escritas com a maioria dos sons",
+      "resposta": "_____ de 5"
+    },
+    {
+      "texto": "Som inicial certo",
+      "resposta": "_____ de 5"
+    }
+  ],
+  "perguntaFicha": "Qual som ela ainda esquece de escrever?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Escreva do jeito que você ouve",
+      "legenda": "Desenhe um objeto e escreva o nome dele pelos sons que você ouve."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "escrita espontânea",
+    "sons e letras",
+    "alfabeto móvel",
+    "escrever palavras",
+    "ouvir sons"
+  ]
+}

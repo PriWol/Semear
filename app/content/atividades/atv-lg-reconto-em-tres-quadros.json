@@ -1,0 +1,98 @@
+{
+  "id": "atv-lg-reconto-em-tres-quadros",
+  "titulo": "Recontar em três quadros",
+  "marcos": ["LG.LIT.02"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: papel dobrado em três, giz de cera e lápis fora da boca. Ajude só com perguntas (“e depois?”); corrija a ordem, e não as palavras dela.",
+  "objetivo": "A criança reconta uma história curta ouvida na ordem certa (começo, meio e fim), usando três desenhos como apoio.",
+  "passos": [
+    {
+      "titulo": "Ouvir a história",
+      "minutos": 6,
+      "texto": "Leia um conto curto com começo, meio e fim claros (como *A Galinha Ruiva*, conto popular, ou outro de que ela goste). Ao final, converse: *“Gostou? Qual parte foi mais legal?”*"
+    },
+    {
+      "titulo": "Dobrar a folha em três",
+      "minutos": 3,
+      "texto": "Dobrem uma folha em três partes e escrevam (você) no alto: **começo**, **meio** e **fim**."
+    },
+    {
+      "titulo": "Desenhar cada parte",
+      "minutos": 6,
+      "texto": "Ela desenha uma cena em cada parte: como a história começa, o que acontece no meio e como termina. Ajude: *“E depois, o que aconteceu?”*",
+      "fala": "E depois?"
+    },
+    {
+      "titulo": "Contar com os quadros",
+      "minutos": 5,
+      "texto": "Apontando cada quadro, ela reconta a história para você (ou para um bicho). Se trocar a ordem, pergunte: *“O que veio primeiro?”*"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Reconta a história na ordem certa, com ou sem as figuras",
+      "Usa começo, meio e fim ou palavras como “depois”"
+    ],
+    "emDesenvolvimento": [
+      "Esquece partes ou troca a ordem (esperado aos 5 anos; use mais pistas)",
+      "Só descreve as figuras sem narrar (peça “e o que aconteceu?”)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça só dois quadros (começo e fim) e conversem sobre o meio.",
+    "facil": "Peça que reconte sem desenhos e depois invente um final diferente."
+  },
+  "materiais": [
+    {
+      "item": "Folha de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou giz de cera",
+      "deCasa": true
+    },
+    {
+      "item": "Um conto curto ou livro ilustrado",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Use figuras ou miniaturas dos personagens para ela mover enquanto reconta, em vez de só falar.",
+    "Waldorf": "Reconte com bonequinhos de feltro ou de lã, ou em uma pequena roda de pano, usando a mesma frase de abertura sempre.",
+    "Clássico": "Memorizem juntos a fórmula de abertura e de fecho (*“Era uma vez... e viveram felizes”*).",
+    "Religioso": "Se quiser, use uma parábola curta e peça que ela conte a lição com as próprias palavras.",
+    "Charlotte Mason": "Faça a narração depois de uma única leitura, sem repetir; é o coração do método. Peça só que conte."
+  },
+  "evidencias": [
+    {
+      "texto": "Recontou na ordem",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou começo, meio e fim",
+      "resposta": "☐ não   ☐ só uma parte   ☐ as três"
+    }
+  ],
+  "perguntaFicha": "Que parte da história ela esqueceu ou confundiu?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Minha história em três quadros",
+      "legenda": "Desenhe o começo, o meio e o fim da história."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["recontar", "narração", "começo meio fim", "ordem dos fatos", "três quadros"]
+}

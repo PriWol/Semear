@@ -1,0 +1,93 @@
+{
+  "id": "atv-em-regras-do-nosso-jogo",
+  "titulo": "As regras do nosso jogo",
+  "marcos": ["EM.CON.04"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Atenção: se o jogo escolhido for de movimento (pega-pega, bola), escolha um espaço sem degraus e sem móveis e combine uma regra de segurança (“sem empurrar”). Combinar regras é para jogar junto: ninguém deve ser excluído por quem manda mais.",
+  "objetivo": "A criança combina as regras de um jogo antes de começar, escreve-as ou desenha-as e lembra o outro quando alguém as esquece.",
+  "passos": [
+    {
+      "titulo": "Escolher o jogo",
+      "minutos": 3,
+      "texto": "Escolham juntos um jogo simples (pique-esconde, jogo da memória, uma trilha). Diga: *“Antes de começar, vamos combinar as regras.”*"
+    },
+    {
+      "titulo": "Combinar e escrever",
+      "minutos": 8,
+      "texto": "Cada um sugere regras. Escrevam no papel (ela escreve, ou você escreve o que ela diz): **quem começa, o que vale, o que não vale, o que acontece quando alguém erra**. Leiam juntos e perguntem: *“É justo para todos?”*"
+    },
+    {
+      "titulo": "Jogar com as regras",
+      "minutos": 8,
+      "texto": "Joguem uma rodada. Quando surgir uma dúvida, volte ao papel. Peça que ela lembre você de uma regra e deixe-a ser o “guardião das regras” por uma rodada."
+    },
+    {
+      "titulo": "Mudar de comum acordo",
+      "minutos": 6,
+      "texto": "Se uma regra não deu certo, mudem em conjunto, dizendo *por quê*. Cada um diz sim ou não; só vale se os dois concordam. Registre a regra nova ao lado da antiga."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Combina regras antes de jogar e as escreve ou desenha",
+      "Lembra o outro de uma regra e aceita mudar de comum acordo"
+    ],
+    "emDesenvolvimento": [
+      "Quer mudar as regras no meio, quando está perdendo (comum; volte ao papel e à pergunta “é justo?”)",
+      "Impõe as próprias regras (pergunte o que o outro acha)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Combine só três regras e leia-as antes de cada rodada.",
+    "facil": "Convide outra criança ou um adulto e peça que ela explique as regras para quem chegou."
+  },
+  "materiais": [
+    {
+      "item": "Um jogo simples (tabuleiro, cartas, brincadeira de roda)",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis para o cartaz de regras",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe o cartaz de regras à vista e a criança como responsável por ele, trocando a pessoa a cada rodada.",
+    "Waldorf": "Use jogos de roda tradicionais com versos e peça que o grupo combine, em roda, quem começa e como se sai.",
+    "Clássico": "Numerem as regras e peçam que ela as recite antes de começar, como um pequeno código do jogo.",
+    "Religioso": "Relacione com a regra de ouro (*“trate o outro como gostaria de ser tratado”*), se combinar com a fé da família.",
+    "Charlotte Mason": "Use jogos tradicionais de pátio e trate a combinação como hábito de caráter: justiça, palavra dada."
+  },
+  "evidencias": [
+    {
+      "texto": "Regras combinadas e escritas",
+      "resposta": "_____ regras"
+    },
+    {
+      "texto": "Lembrou o outro de uma regra",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que regra ela mais defendeu?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "As regras do nosso jogo",
+      "legenda": "Desenhe ou escreva as regras que vocês combinaram."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["regras", "jogo", "combinar", "justiça", "acordo"]
+}

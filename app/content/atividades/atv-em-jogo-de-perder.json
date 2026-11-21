@@ -1,0 +1,87 @@
+{
+  "id": "atv-em-jogo-de-perder",
+  "titulo": "Jogo de ganhar e de perder",
+  "marcos": ["EM.REG.04"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: dados e peças pequenas só com a criança maior de 3 anos e sempre à vista; guarde-os depois. Deixe a criança perder de verdade em algumas rodadas, sem deixar o jogo desfazer a relação: o objetivo é treinar o sentir, não vencer.",
+  "objetivo": "A criança joga uma partida curta até o fim, espera a vez e usa uma frase ou um gesto para lidar com a vontade de ganhar.",
+  "passos": [
+    {
+      "titulo": "Antes de começar",
+      "minutos": 3,
+      "texto": "Diga: *“Em todo jogo, alguém ganha e alguém perde. Dá um pouco de raiva ou tristeza, e tudo bem.”* Combinem juntos uma frase para quando perder (por exemplo, *“que pena! Quero jogar de novo”*)."
+    },
+    {
+      "titulo": "Partida curta",
+      "minutos": 10,
+      "texto": "Jogue um jogo simples de 5 a 8 minutos (trilha com dado, jogo da memória, par ou ímpar de 3 rodadas). Faça comentários curtos sobre a **espera** (*“agora é a minha vez, você espera”*). Perca ou ganhe de verdade."
+    },
+    {
+      "titulo": "Quando alguém perde",
+      "minutos": 4,
+      "texto": "Se for ela, abra espaço: *“Dá raiva perder, né? Quer respirar?”*. Se for você, mostre como faz: *“Eu perdi! Que pena. Respirei e já passou.”* Não exija sorriso."
+    },
+    {
+      "titulo": "Conversa final",
+      "minutos": 3,
+      "texto": "Pergunte: *“Do que você mais gostou no jogo?”*, e só depois a parte da perda. Combine uma nova partida se ela quiser."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Joga até o fim sem abandonar",
+      "Espera a vez e aceita o resultado, com ou sem ajuda para se acalmar"
+    ],
+    "emDesenvolvimento": [
+      "Sai do jogo quando está perdendo",
+      "Muda as regras a seu favor ou chora forte ao perder (comum aos 5 e 6 anos; reduza a duração)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Jogue uma partida bem curta (3 jogadas) e acabe antes de a tensão crescer; depois, aumente aos poucos.",
+    "facil": "Troquem de lugar: ela explica as regras e escolhe quem começa, sem placar."
+  },
+  "materiais": [
+    {
+      "item": "Jogo simples de tabuleiro ou cartas, ou jogo da memória caseiro",
+      "deCasa": true
+    },
+    {
+      "item": "Dado",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe que ela prepare o jogo, arrume as peças e guarde ao final; assim o “fim” faz parte da atividade.",
+    "Waldorf": "Prefira jogos de roda e cantigas com “perde” suave (dança das cadeiras sem eliminar quem sai); o grupo continua junto.",
+    "Clássico": "Dê nome às virtudes do jogo (paciência, honestidade) e relembre uma frase de jogador honesto depois.",
+    "Religioso": "Conversem sobre perder com humildade e ganhar sem humilhar o outro, no tom da fé da família.",
+    "Charlotte Mason": "Use jogos tradicionais (damas, trilhas, jogo da velha) e trate a espera como hábito de caráter, sem sermão."
+  },
+  "evidencias": [
+    {
+      "texto": "Jogou até o fim",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Esperou a vez sem reclamar",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela fez ou disse quando perdeu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["perder", "frustração", "jogo", "esperar a vez", "tabuleiro"]
+}

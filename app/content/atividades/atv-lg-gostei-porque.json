@@ -1,0 +1,87 @@
+{
+  "id": "atv-lg-gostei-porque",
+  "titulo": "Gostei porque... (e aqui está o trecho)",
+  "marcos": ["LG.LEI.12"],
+  "vertentes": ["Clássico", "Charlotte Mason", "Religioso", "Montessori"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Atenção: não existe opinião errada, só opinião sem prova. Aceite “não gostei” se vier com motivo, sem dizer o que ela “deveria” achar.",
+  "objetivo": "A criança dá uma opinião sobre um texto (gostou ou não, concorda ou não) e a sustenta com um trecho que ela aponta e lê.",
+  "passos": [
+    {
+      "titulo": "Ler o texto",
+      "minutos": 6,
+      "texto": "Ela lê (ou escuta) um conto curto, um poema ou um trecho de livro de que se possa ter opinião."
+    },
+    {
+      "titulo": "Gostou? Por quê?",
+      "minutos": 6,
+      "texto": "Pergunte: *“Você gostou? Por quê?”*. Se ela disser só “gostei”, volte: *“O que você gostou?”*. Aceite opiniões diferentes da sua.",
+      "fala": "Qual parte provou o que você disse?"
+    },
+    {
+      "titulo": "Mostre o trecho",
+      "minutos": 6,
+      "texto": "Peça que ela ache no texto uma frase que apoie a opinião (*“eu achei engraçado porque aqui diz...”*) e leia em voz alta. Ajude a procurar, mas deixe que ela escolha."
+    },
+    {
+      "titulo": "Ouvir outra opinião",
+      "minutos": 2,
+      "texto": "Conte a sua opinião e o trecho que a sustenta. Pergunte: *“Podemos pensar diferente e os dois estarem certos?”*"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Dá uma opinião e cita um trecho que a apoia",
+      "Respeita uma opinião diferente da dela"
+    ],
+    "emDesenvolvimento": [
+      "Diz só “gostei” (pergunte “o que, exatamente?”)",
+      "Diz a razão sem trecho (peça que aponte onde está escrito)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Peça só a opinião e o motivo; o trecho você ajuda a encontrar.",
+    "facil": "Peça que escreva três frases com a opinião e o trecho citado entre aspas."
+  },
+  "materiais": [
+    {
+      "item": "Conto, poema ou trecho de livro",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Estruture a resposta em “opinião, prova, conclusão” e peça que repita a estrutura em voz alta.",
+    "Charlotte Mason": "Depois da narração, converse sobre o que ela achou e como sabe disso, em tom de conversa.",
+    "Religioso": "Se fizer sentido, converse sobre o que o trecho ensina e se concorda, sempre com respeito às opiniões dela.",
+    "Montessori": "Deixe-a escolher o texto e marcar o trecho com um marcador de papel que ela mesma coloca no livro."
+  },
+  "evidencias": [
+    {
+      "texto": "Deu opinião com motivo",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Citou um trecho",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual trecho ela escolheu para sustentar a opinião?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["opinião", "argumentar", "justificar", "citar o texto", "gostei porque"]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "atv-lg-quem-onde-o-que-aconteceu",
+  "titulo": "Quem, onde e o que aconteceu?",
+  "marcos": ["LG.LIT.01"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [4, 6],
+  "duracaoMin": 15,
+  "preparoMin": 3,
+  "cuidados": "Atenção: sente-se junto dela com o livro à vista; prefira histórias curtas (até 10 minutos) e pause se ela se dispersar. Não transforme as perguntas em prova: se ela não lembrar, releia o trecho com ela.",
+  "objetivo": "A criança escuta uma história e responde a perguntas simples sobre quem apareceu, onde foi e o que aconteceu.",
+  "passos": [
+    {
+      "titulo": "Antes de ler",
+      "minutos": 2,
+      "texto": "Mostre a capa e pergunte: *“Do que será que fala esta história?”*. Escolha um conto curto que ela conheça pouco (como *Os Três Porquinhos*, conto popular) ou um livro ilustrado de poucas páginas."
+    },
+    {
+      "titulo": "Leitura em voz alta",
+      "minutos": 6,
+      "texto": "Leia com calma, mostrando as figuras. Pare uma ou duas vezes: *“Quem apareceu agora?”*. Não explique demais."
+    },
+    {
+      "titulo": "Três perguntas",
+      "minutos": 4,
+      "texto": "Depois de ler, faça três perguntas: **Quem** apareceu? **Onde** foi? **O que aconteceu** no fim? Aceite respostas curtas e use as figuras do livro para ajudar.",
+      "fala": "Quem apareceu? Onde foi? O que aconteceu?"
+    },
+    {
+      "titulo": "A vez dela",
+      "minutos": 3,
+      "texto": "Ela faz uma pergunta e você responde (às vezes errando de propósito, para ela corrigir). Releia a página se ela quiser conferir."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Responde a 3 de 4 perguntas (quem, onde, o quê) sobre uma história lida em voz alta",
+      "Mostra a página ou figura que responde"
+    ],
+    "emDesenvolvimento": [
+      "Responde só com ajuda das figuras (esperado; releia o trecho)",
+      "Se distrai ou muda de assunto (use histórias mais curtas)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça só “quem?” e “o que aconteceu?”, com a figura à vista.",
+    "facil": "Peça também “por que será?” e “o que aconteceria se...?”, adiantando o marco seguinte."
+  },
+  "materiais": [
+    {
+      "item": "Um livro ilustrado curto ou conto popular em voz alta",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe o livro no cantinho de leitura, ao alcance, para ela folhear e “reler” as figuras sozinha depois.",
+    "Waldorf": "Conte de memória, sem livro, com a voz e o ritmo; depois converse como se fosse uma lembrança de passeio.",
+    "Clássico": "Releia a mesma história por alguns dias e peça que ela complete as frases conhecidas.",
+    "Religioso": "Se desejar, escolha uma história bíblica curta ou de uma tradição da família.",
+    "Charlotte Mason": "Escolha um livro vivo (bem escrito e curto) e peça que ela narre em poucas palavras, sem questionário."
+  },
+  "evidencias": [
+    {
+      "texto": "Perguntas respondidas (quem, onde, o quê)",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Usou a figura para responder",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que parte da história ela mais lembrou?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "A história que ouvi",
+      "legenda": "Desenhe quem apareceu e onde foi a história."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["história", "ouvir", "compreensão", "perguntas", "leitura em voz alta"]
+}

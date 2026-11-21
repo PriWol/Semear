@@ -1,0 +1,144 @@
+{
+  "id": "atv-lg-cartoes-de-palavras-simples",
+  "titulo": "Cartões de palavras: BOLA, GATO, SAPATO",
+  "marcos": ["LG.LEI.01"],
+  "vertentes": ["Montessori", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 20,
+  "preparoMin": 8,
+  "cuidados": "Atenção: recorte os cartões você mesmo ou com tesoura sem ponta e com supervisão. Evite sessões de mais de 20 minutos; a leitura cansa no começo. Sem pressa e sem comparar com outras crianças.",
+  "objetivo": "A criança lê palavras de sílabas simples (consoante + vogal), juntando as sílabas, como BOLA, GATO e SAPATO.",
+  "passos": [
+    {
+      "titulo": "Ler as sílabas",
+      "minutos": 5,
+      "texto": "Mostre as sílabas em cartões (BA, BO, LA, GA, TO, SA, PA). Ela diz o som de cada uma. Junte duas: *BO + LA*. Diga devagar e depois depressa: *“BO... LA... BOLA!”*",
+      "fala": "Que palavra se formou?"
+    },
+    {
+      "titulo": "Cartões com figura",
+      "minutos": 7,
+      "texto": "Mostre um cartão de palavra (BOLA) **sem a figura**. Ela lê e vira o cartão: a figura confirma. Comece pelas palavras de 2 sílabas e passe às de 3."
+    },
+    {
+      "titulo": "Jogo da pesca de palavras",
+      "minutos": 6,
+      "texto": "Espalhe os cartões. Você diz: *“Me dê a palavra que está escrita... SAPATO!”* ou ela lê e escolhe o objeto da casa que combina."
+    },
+    {
+      "titulo": "Mais uma vez",
+      "minutos": 2,
+      "texto": "Escolham uma palavra para ela ler em voz alta para outro adulto ou para um bicho. Elogie o esforço."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Lê 8 de 10 palavras de sílabas simples",
+      "Junta as sílabas sem apontar cada letra"
+    ],
+    "emDesenvolvimento": [
+      "Soletra as letras e esquece de juntar (volte às sílabas)",
+      "Adivinha pela figura em vez de ler (cubra a figura)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só palavras de 2 sílabas com a mesma vogal (BOBO, TATA) e a figura à vista.",
+    "facil": "Peça palavras de 3 e 4 sílabas (*BANANA*, *CAVALO*) e frases curtas."
+  },
+  "materiais": [
+    {
+      "item": "Cartões de papel (ou as cartas da folha)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    },
+    {
+      "item": "Objetos da casa que combinem com as palavras",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Use o alfabeto móvel e objetos pequenos: ela monta a palavra e coloca ao lado do objeto.",
+    "Clássico": "Leiam a lista de palavras em voz alta, como numa pequena lista de vocabulário.",
+    "Religioso": "Se desejar, use palavras de cantigas ou orações da família (como PAI, VOVÓ, LUZ).",
+    "Charlotte Mason": "Mantenha curto (poucas palavras novas por dia) e use palavras de um livro que vocês gostam."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras lidas",
+      "resposta": "_____ de 10"
+    },
+    {
+      "texto": "Lê sem soletrar as letras",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que palavras ela leu com mais facilidade?",
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Cartões de palavras simples",
+      "cartas": [
+        {
+          "emoji": "⚽",
+          "texto": "BOLA"
+        },
+        {
+          "emoji": "🐱",
+          "texto": "GATO"
+        },
+        {
+          "emoji": "👟",
+          "texto": "SAPATO"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "PATO"
+        },
+        {
+          "emoji": "🌙",
+          "texto": "LUA"
+        },
+        {
+          "emoji": "🔪",
+          "texto": "FACA"
+        },
+        {
+          "emoji": "🪑",
+          "texto": "MESA"
+        },
+        {
+          "emoji": "🐸",
+          "texto": "SAPO"
+        },
+        {
+          "emoji": "🕯️",
+          "texto": "VELA"
+        },
+        {
+          "emoji": "🐒",
+          "texto": "MACACO"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "ler palavras",
+    "sílabas simples",
+    "cartões",
+    "juntar sílabas",
+    "leitura inicial"
+  ]
+}
