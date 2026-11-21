@@ -126,7 +126,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
     <section class="cartao texto-corrido">
       <h2>Backup</h2>
       <p>
-        Em <a href="#/config">Config.</a>, “Baixar backup” cria um arquivo com tudo o que você
+        Em <a href="#/config">Ajustes</a>, “Guardar uma cópia dos meus dados” (o backup) cria um arquivo com tudo o que você
         cadastrou e registrou. Atenção:
       </p>
       <ul>
@@ -142,15 +142,15 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
           serviço;
         </li>
         <li>
-          “Restaurar backup” troca os dados do aparelho pelos do arquivo, depois de você confirmar.
+          “Trazer uma cópia guardada” troca os dados do aparelho pelos do arquivo, depois de você confirmar.
         </li>
       </ul>
     </section>
     <section class="cartao texto-corrido">
       <h2>Apagar tudo</h2>
       <p>
-        Em <a href="#/config">Config.</a>, no cartão “Apagar dados”, toque em “Apagar tudo” e
-        confirme.
+        Em <a href="#/config">Ajustes</a>, no grupo “Cuidado”, toque em “Apagar todos os dados deste
+        aparelho”, digite APAGAR e confirme.
       </p>
       <ul>
         <li>

@@ -33,6 +33,19 @@ export interface PlanoParaLembrar {
 
 export const horaValida = (h: string): boolean => /^([01]\d|2[0-3]):[0-5]\d$/.test(h);
 
+/**
+ * Junta os campos de hora e de minuto (relógio de 24 h) em "HH:MM". Devolve null se algum não for um
+ * inteiro de 1 ou 2 dígitos dentro do relógio. O campo `time` do navegador segue o idioma do
+ * aparelho (AM/PM) e não dá para forçar 24 h, por isso a tela usa dois campos.
+ */
+export function horaDe24h(hora: string, minuto: string): string | null {
+  const h = hora.trim();
+  const m = minuto.trim();
+  if (!/^\d{1,2}$/.test(h) || !/^\d{1,2}$/.test(m)) return null;
+  const composta = `${h.padStart(2, '0')}:${m.padStart(2, '0')}`;
+  return horaValida(composta) ? composta : null;
+}
+
 /** Id estável (a mesma semana e dia dão o mesmo número), para cancelar e reagendar sem duplicar. */
 function idDoLembrete(planoId: string, dia: string): number {
   let h = 0;

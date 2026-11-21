@@ -1,4 +1,5 @@
 import { escolherAtividade } from './proposta';
+import { abrirAjustes, apagarTudoPelosAjustes, confirmarTrazerCopia } from './ajustes-ajuda';
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 
@@ -85,34 +86,36 @@ test('os dados continuam no aparelho depois de recarregar', async ({ page }) => 
   await expect(page.locator('.alerta')).toContainText('ainda não fez nenhum backup');
 });
 
-test('backup: baixar, apagar tudo e restaurar', async ({ page }) => {
+test('cópia de segurança: guardar, apagar tudo e trazer de volta', async ({ page }) => {
   await cadastrarFamiliaECrianca(page);
-  await page.getByRole('link', { name: 'Config.' }).click();
+  await abrirAjustes(page);
 
   const [download] = await Promise.all([
     page.waitForEvent('download'),
-    page.getByRole('button', { name: 'Baixar backup' }).click(),
+    page.getByRole('button', { name: 'Guardar uma cópia dos meus dados' }).click(),
   ]);
   const arquivo = (await download.path())!;
-  await expect(page.getByText(/Último backup: \d{2}\/\d{2}\/\d{4}/)).toBeVisible();
+  await expect(page.getByText(/Última cópia: hoje \(\d{2}\/\d{2}\/\d{4}/)).toBeVisible();
 
-  await page.getByRole('button', { name: 'Apagar tudo' }).click();
+  await apagarTudoPelosAjustes(page);
   await expect(page.getByRole('heading', { name: 'Bem-vindo ao Semear' })).toBeVisible();
 
-  await page.getByRole('link', { name: 'Config.' }).click();
+  await abrirAjustes(page);
   await page.locator('#importar').setInputFiles(arquivo);
+  await confirmarTrazerCopia(page);
   await expect(page.getByRole('heading', { name: 'Olá, Maria!' })).toBeVisible();
   await expect(page.locator('.crianca-cartao')).toContainText('Ana');
 });
 
-test('arquivo de backup inválido não apaga os dados', async ({ page }) => {
+test('arquivo de cópia inválido mostra o erro no cartão e não apaga os dados', async ({ page }) => {
   await cadastrarFamiliaECrianca(page);
-  await page.getByRole('link', { name: 'Config.' }).click();
+  await abrirAjustes(page);
   await page.locator('#importar').setInputFiles({
     name: 'errado.json',
     mimeType: 'application/json',
     buffer: Buffer.from('{"app":"outro"}'),
   });
+  await expect(page.locator('#erro-copia')).toContainText('Arquivo de backup inválido');
   await page.getByRole('link', { name: 'Início' }).click();
   await expect(page.locator('.crianca-cartao')).toContainText('Ana');
 });

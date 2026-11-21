@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { abrirAjustes, apagarTudoPelosAjustes } from './ajustes-ajuda';
 
 // #25: o botão "Apagar tudo" também cancela os lembretes já agendados no aparelho (podem mostrar o nome
 // da criança na tela bloqueada). Simulamos o aplicativo de celular com um Capacitor falso que registra as
@@ -35,8 +36,10 @@ async function abrirConfigComExemplo(page: Page) {
   await page.goto('./');
   await page.getByRole('button', { name: 'Explorar com uma família de exemplo' }).click();
   await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
-  await page.getByRole('link', { name: 'Config.' }).click();
-  await expect(page.getByRole('button', { name: 'Apagar tudo' })).toBeVisible();
+  await abrirAjustes(page);
+  await expect(
+    page.getByRole('button', { name: 'Apagar todos os dados deste aparelho' }),
+  ).toBeVisible();
 }
 
 test('Apagar tudo limpa o banco, cancela os lembretes pendentes e não agenda nenhum', async ({
@@ -47,7 +50,7 @@ test('Apagar tudo limpa o banco, cancela os lembretes pendentes e não agenda ne
 
   // Só interessa o que acontece depois do clique (a abertura do app também sincroniza).
   await page.evaluate(() => ((window as never as { __chamadas: unknown[] }).__chamadas.length = 0));
-  await page.getByRole('button', { name: 'Apagar tudo' }).click();
+  await apagarTudoPelosAjustes(page);
 
   // (d) volta às boas-vindas
   await expect(page.getByRole('heading', { name: 'Como funciona' })).toBeVisible();
@@ -94,7 +97,7 @@ test('Apagar tudo limpa o banco, cancela os lembretes pendentes e não agenda ne
 test('se o cancelamento falhar, o banco é apagado e a pessoa é avisada', async ({ page }) => {
   await prepararPonte(page, true);
   await abrirConfigComExemplo(page);
-  await page.getByRole('button', { name: 'Apagar tudo' }).click();
+  await apagarTudoPelosAjustes(page);
 
   await expect(page.getByRole('heading', { name: 'Como funciona' })).toBeVisible();
   await expect(page.locator('#aviso')).toContainText(

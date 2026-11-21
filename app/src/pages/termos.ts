@@ -81,8 +81,8 @@ export const paginaTermos: FabricaPagina = async () => ({
     <section class="cartao texto-corrido">
       <h2>Como apagar tudo</h2>
       <p>
-        Em <a href="#/config">Config.</a>, no cartão “Apagar dados”, toque em “Apagar tudo” e
-        confirme. Isso apaga deste aparelho tudo o que você cadastrou e registrou, e não dá para
+        Em <a href="#/config">Ajustes</a>, no grupo “Cuidado”, toque em “Apagar todos os dados deste
+        aparelho”, digite APAGAR e confirme. Isso apaga deste aparelho tudo o que você cadastrou e registrou, e não dá para
         desfazer. Os detalhes estão na <a href="#/privacidade">Política de privacidade</a>.
       </p>
     </section>

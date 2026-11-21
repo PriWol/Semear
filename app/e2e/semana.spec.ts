@@ -1,3 +1,4 @@
+import { abrirAjustes } from './ajustes-ajuda';
 import { expect, test } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 
@@ -58,17 +59,19 @@ test('lembrete diário: escolher o horário e guardar a preferência', async ({ 
   await page.goto('./');
   await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
   await expect(page.getByRole('heading', { name: /Olá/ })).toBeVisible();
-  await page.getByRole('link', { name: 'Config.' }).click();
-  await expect(page.getByRole('heading', { name: /Lembrete diário/ })).toBeVisible();
-  await expect(page.getByText('Os lembretes funcionam no aplicativo de celular')).toBeVisible();
+  await abrirAjustes(page);
+  await expect(page.getByRole('heading', { name: 'Aviso diário' })).toBeVisible();
+  await expect(page.getByText('Os avisos só funcionam no aplicativo de celular')).toBeVisible();
 
-  await page.getByLabel('Avisar as atividades de hoje').check();
-  await page.getByLabel('Horário').fill('07:30');
-  await page.getByRole('button', { name: 'Salvar lembrete' }).click();
-  await expect(page.getByText('Lembrete salvo.')).toBeVisible();
+  await page.getByLabel('Me avisar das atividades do dia').check();
+  await page.getByLabel('Hora', { exact: true }).fill('7');
+  await page.getByLabel('Minutos').fill('30');
+  await page.getByRole('button', { name: 'Salvar aviso' }).click();
+  await expect(page.getByText('Aviso salvo.')).toBeVisible();
 
   await page.reload();
-  await expect(page.getByLabel('Avisar as atividades de hoje')).toBeChecked();
-  await expect(page.getByLabel('Horário')).toHaveValue('07:30');
-  await expect(page.getByLabel('Mostrar o nome da criança no aviso')).not.toBeChecked();
+  await expect(page.getByLabel('Me avisar das atividades do dia')).toBeChecked();
+  await expect(page.getByLabel('Hora', { exact: true })).toHaveValue('07');
+  await expect(page.getByLabel('Minutos')).toHaveValue('30');
+  await expect(page.getByLabel(/Mostrar o nome da criança no aviso/)).not.toBeChecked();
 });
