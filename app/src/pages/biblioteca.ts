@@ -18,7 +18,7 @@ interface DadosCartao {
   nivel: 2 | 3;
 }
 
-/** Texto de "acompanha o Volume N"; o Volume 8 está planejado mas ainda não existe no catálogo (ADR 0015, adendo). */
+/** Texto de "acompanha o Volume N"; só avisa "ainda não disponível" para um volume que não está no catálogo (ADR 0015, adendo). */
 export function rotuloAcompanha(volume: number, existentes: readonly number[]): string {
   // Número que não é um volume possível (0, negativo, fracionário): sem rótulo, em vez de texto estranho.
   if (!Number.isInteger(volume) || volume < 1) return '';
