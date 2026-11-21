@@ -15,16 +15,21 @@ export function ligarFaixaExemplo(ctx: Contexto): void {
     ?.addEventListener('click', () => void sairDoExemplo(ctx, '/'));
 }
 
+export const TEXTO_APAGAR_EXEMPLO =
+  'Apagar o exemplo? Saem a família de exemplo, a Ana, o Theo e as sessões deles. ' +
+  'O que você cadastrou continua neste aparelho.';
+
 /**
  * Apaga o exemplo depois de confirmar. Só os registros do exemplo saem (repositório): o que a pessoa
  * cadastrou enquanto explorava continua no aparelho.
  */
-export async function sairDoExemplo(ctx: Contexto, destino: string): Promise<void> {
-  const ok = confirm(
-    'Apagar o exemplo? Saem a família de exemplo, a Ana, o Theo e as sessões deles. ' +
-      'O que você cadastrou continua neste aparelho.',
-  );
-  if (!ok) return;
+export async function sairDoExemplo(
+  ctx: Contexto,
+  destino: string,
+  /** a faixa global usa o confirm() do navegador; os Ajustes passam a caixa própria */
+  confirmar: () => boolean | Promise<boolean> = () => confirm(TEXTO_APAGAR_EXEMPLO),
+): Promise<void> {
+  if (!(await confirmar())) return;
   const { familiaMantida } = await ctx.repo.apagarExemplo();
   if (familiaMantida) {
     // A família do exemplo ("Marina", Montessori…) ficou porque há crianças reais: sem conferir, os dados

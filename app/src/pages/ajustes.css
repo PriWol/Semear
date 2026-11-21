@@ -1,0 +1,279 @@
+/*
+ * Tela de Ajustes e caixa de confirmação (docs/DESIGN.md, ADR 0014).
+ * Bloco separado do estilos.css (que é de outra frente): aqui só valem os tokens --s-* de tokens.css.
+ * Alvo de toque de pelo menos --s-alvo-toque (48 px) e foco visível em todo controle.
+ */
+.ajustes {
+  color: var(--s-tinta);
+  font-family: var(--s-fonte-texto);
+}
+.ajustes h1,
+.ajustes h2 {
+  font-family: var(--s-fonte-titulo);
+  color: var(--s-principal);
+}
+.ajustes-sub {
+  margin: 0 0 var(--s-espaco-5);
+  color: var(--s-suave);
+}
+.ajustes .cartao {
+  background: var(--s-papel);
+  border: var(--s-borda) solid var(--s-linha);
+  border-radius: var(--s-raio);
+  box-shadow: var(--s-sombra);
+  padding: var(--s-espaco-5);
+  margin-bottom: var(--s-espaco-4);
+}
+.ajustes .cartao h2 {
+  margin: 0 0 var(--s-espaco-3);
+}
+.ajustes .nota {
+  color: var(--s-suave);
+  font-size: var(--s-texto-p);
+}
+.ajustes-resumo {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* Controles: alvo de 48 px, botão com largura natural (sem esticar no desktop) */
+.ajustes .botao,
+.ajustes summary {
+  min-height: var(--s-alvo-toque);
+  border-radius: var(--s-raio-p);
+}
+.ajustes .botao {
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+}
+.ajustes .botao.primario {
+  background: var(--s-principal);
+  border-color: var(--s-principal);
+  color: var(--s-papel);
+}
+.ajustes .botao.perigo {
+  background: var(--s-papel);
+  color: var(--s-alerta);
+  border-color: var(--s-alerta);
+}
+.ajustes .acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-espaco-3);
+}
+.ajustes :focus-visible,
+.dialogo-aj :focus-visible {
+  outline: var(--s-foco-largura) solid var(--s-foco);
+  outline-offset: var(--s-foco-recuo);
+}
+.ajustes label.opcao {
+  min-height: var(--s-alvo-toque);
+  align-items: center;
+}
+.ajustes label.opcao input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  flex: none;
+  accent-color: var(--s-principal);
+}
+
+/* Hora em 24 h: dois campos curtos lado a lado */
+.ajustes-hora {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--s-espaco-3);
+  border: var(--s-borda) solid var(--s-linha);
+  border-radius: var(--s-raio-p);
+  padding: var(--s-espaco-3) var(--s-espaco-4);
+}
+.ajustes-hora legend {
+  padding: 0 var(--s-espaco-2);
+}
+.ajustes-hora label {
+  display: grid;
+  gap: var(--s-espaco-1);
+}
+.ajustes-hora input,
+.dialogo-aj-campo input {
+  font: inherit;
+  min-height: var(--s-alvo-toque);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
+  border-radius: var(--s-raio-p);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+}
+.ajustes-hora input {
+  width: 4.5rem;
+  text-align: center;
+}
+.ajustes-dois-pontos {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: var(--s-alvo-toque);
+}
+.ajustes-so-app {
+  margin-top: 0;
+  padding: var(--s-espaco-3);
+  background: var(--s-destaque-claro);
+  color: var(--s-destaque-texto);
+  border-radius: var(--s-raio-p);
+}
+
+/* Cópia de segurança */
+.ajustes-ultima {
+  font-size: 1.15rem;
+  margin: 0 0 var(--s-espaco-3);
+}
+.ajustes-ultima-alerta b {
+  color: var(--s-alerta);
+}
+.ajustes .alerta {
+  background: var(--s-alerta-claro);
+  color: var(--s-tinta);
+  border-left: var(--s-borda-marcada) solid var(--s-alerta);
+  border-radius: var(--s-raio-p);
+  padding: var(--s-espaco-3) var(--s-espaco-4);
+}
+.ajustes .alerta[hidden] {
+  display: none;
+}
+.ajustes .alerta.erro {
+  border-left-width: var(--s-borda-marcada);
+  font-weight: 700;
+}
+.ajustes-detalhe {
+  margin-top: var(--s-espaco-4);
+}
+.ajustes summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--s-principal);
+}
+
+/* Listas de links */
+.ajustes-lista,
+.ajustes-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ajustes-lista li {
+  display: grid;
+  gap: var(--s-espaco-1);
+  padding: var(--s-espaco-3) 0;
+  border-top: var(--s-borda) solid var(--s-linha);
+}
+.ajustes-lista li:first-child {
+  border-top: 0;
+}
+.ajustes-lista a,
+.ajustes-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
+  font-weight: 700;
+  color: var(--s-principal);
+}
+.ajustes-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--s-espaco-5);
+}
+
+/* Cuidado: por último e afastado do resto */
+.ajustes .ajustes-cuidado {
+  margin-top: var(--s-espaco-6);
+  background: var(--s-alerta-claro);
+  border-color: var(--s-alerta);
+}
+.ajustes-cuidado h2 {
+  color: var(--s-alerta);
+}
+.ajustes-acao {
+  padding: var(--s-espaco-3) 0;
+  border-top: var(--s-borda) solid var(--s-alerta);
+}
+.ajustes-acao p {
+  margin-top: 0;
+}
+
+/* Caixa de confirmação (<dialog>) */
+.dialogo-aj {
+  box-sizing: border-box;
+  width: min(32rem, calc(100vw - 2 * var(--s-espaco-4)));
+  max-height: calc(100vh - 2 * var(--s-espaco-4));
+  overflow: auto;
+  padding: 0;
+  border: var(--s-borda-marcada) solid var(--s-alerta);
+  border-radius: var(--s-raio);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+  font-family: var(--s-fonte-texto);
+  box-shadow: var(--s-sombra);
+}
+.dialogo-aj::backdrop {
+  background: rgba(30, 43, 35, 0.55);
+}
+.dialogo-aj-corpo {
+  padding: var(--s-espaco-5);
+}
+.dialogo-aj h2 {
+  margin: 0 0 var(--s-espaco-3);
+  font-family: var(--s-fonte-titulo);
+  color: var(--s-alerta);
+}
+.dialogo-aj-texto p {
+  margin: 0 0 var(--s-espaco-3);
+}
+.dialogo-aj-campo {
+  display: grid;
+  gap: var(--s-espaco-2);
+  font-weight: 700;
+}
+.dialogo-aj-status {
+  margin: var(--s-espaco-3) 0 0;
+  min-height: 1.5em;
+  color: var(--s-principal);
+  font-weight: 700;
+}
+.dialogo-aj-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-espaco-3);
+  margin-top: var(--s-espaco-3);
+}
+.dialogo-aj .botao {
+  min-height: var(--s-alvo-toque);
+  padding: var(--s-espaco-2) var(--s-espaco-4);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
+  border-radius: var(--s-raio-p);
+  background: var(--s-papel);
+  color: var(--s-tinta);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.dialogo-aj .botao.primario {
+  background: var(--s-principal);
+  border-color: var(--s-principal);
+  color: var(--s-papel);
+}
+.dialogo-aj .botao.perigo {
+  background: var(--s-alerta);
+  border-color: var(--s-alerta);
+  color: var(--s-papel);
+}
+.dialogo-aj .botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+@media (max-width: 480px) {
+  .dialogo-aj-acoes .botao {
+    flex: 1 1 100%;
+  }
+}
