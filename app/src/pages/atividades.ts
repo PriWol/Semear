@@ -8,6 +8,7 @@ import { gerarCodigoSessao } from '../domain/sessao';
 import { VERTENTES, type Atividade, type Sessao, type Vertente } from '../domain/tipos';
 
 const DURACOES_MAX = [10, 20, 30, 40, 60];
+const IDADES = [2, 3, 4, 5, 6, 7, 8]; // faixa do app (2 a 8 anos)
 
 /**
  * Atividades avulsas (#13): busca uma atividade e imprime só ela, para reforçar uma área fora da
@@ -94,13 +95,14 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
             ${DURACOES_MAX.map((d) => html`<option value="${d}">até ${d} min</option>`)}
           </select></label
         >
-        ${
-          crianca
-            ? html`<label class="opcao"
-                ><input type="checkbox" name="idade" /> Só para a idade de ${crianca.nome}</label
-              >`
-            : ''
-        }
+        <label
+          >Idade
+          <select name="idade">
+            <option value="">Qualquer</option>
+            ${crianca ? html`<option value="crianca">Idade de ${crianca.nome}</option>` : ''}
+            ${IDADES.map((i) => html`<option value="${i}">${i} anos</option>`)}
+          </select></label
+        >
       </form>
       <div id="resultado-atividades" aria-live="polite">${lista(buscarAtividades(publicadas, { texto: '' }, ctx.idx).map((r) => r.atividade))}</div>
     `,
@@ -115,10 +117,16 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
 
       const atualizar = () => {
         const alvo = escolhida();
+        // "Idade de <criança>" usa a idade atual dela; os números escolhem uma idade qualquer (2 a 8).
+        const escolhaIdade = campo('idade')?.value ?? '';
         const idade =
-          campo('idade')?.checked && alvo
-            ? Math.floor(idadeEmAnos(alvo.nascimento, new Date(ctx.agora())))
-            : undefined;
+          escolhaIdade === 'crianca'
+            ? alvo
+              ? Math.floor(idadeEmAnos(alvo.nascimento, new Date(ctx.agora())))
+              : undefined
+            : escolhaIdade
+              ? Number(escolhaIdade)
+              : undefined;
         const achadas = buscarAtividades(
           publicadas,
           {

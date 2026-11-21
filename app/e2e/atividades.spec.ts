@@ -39,3 +39,19 @@ test('a lista de atividades abre com as atividades aprovadas', async ({ page }) 
   await expect(page.getByRole('heading', { name: 'Atividades' })).toBeVisible();
   await expect(page.locator('#resultado-atividades')).not.toBeEmpty();
 });
+
+// A busca filtra por idade: uma atividade de 2 a 4 anos aparece aos 3 e some aos 7 (a idade não precisa ser a de uma criança).
+test('buscar por idade', async ({ page }) => {
+  await page.goto('./');
+  await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+  await page.getByRole('link', { name: 'Atividades', exact: true }).click();
+  await page.getByLabel('Buscar').fill('pintar com o dedo');
+  const atividade = page.locator('[data-atividade="atv-cad-pintar-com-o-dedo"]');
+  await expect(atividade).toBeVisible();
+  await page.getByLabel('Idade').selectOption('3');
+  await expect(atividade).toBeVisible();
+  await page.getByLabel('Idade').selectOption('7');
+  await expect(atividade).toHaveCount(0);
+  await page.getByLabel('Idade').selectOption('');
+  await expect(atividade).toBeVisible();
+});
