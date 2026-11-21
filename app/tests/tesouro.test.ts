@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { carregarConteudo } from '../src/conteudo';
+import { carregarConteudo, carregarConteudoBruto } from '../src/conteudo';
 import { CADERNOS, enderecoDoMaterial, enderecoDoPdf, VOLUMES } from '../src/tesouro';
 import { cartaoDoCaderno, rotuloAcompanha } from '../src/pages/biblioteca';
 import type { CadernoTesouro } from '../src/tesouro';
@@ -97,9 +97,10 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
     }
   });
 
-  it('atividades do Tesouro são rascunho até a revisão da dona do produto', () => {
-    for (const a of carregarConteudo().atividades.filter((x) => x.materialImpresso)) {
-      expect(a.autoria.status, a.id).toBe('rascunho');
+  it('atividades do Tesouro só ficam publicadas depois da aprovação da dona do produto', () => {
+    // aprovação em lote de 2026-11-21: `revisao.estado` e `autoria.status` andam juntos
+    for (const a of carregarConteudoBruto().atividades.filter((x) => x.materialImpresso)) {
+      expect(a.autoria.status === 'publicado', a.id).toBe(a.revisao?.estado === 'aprovado');
     }
   });
 });

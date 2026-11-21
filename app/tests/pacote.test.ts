@@ -142,13 +142,13 @@ describe('gerarPacote com marco em rascunho (atividade aprovada que o cita)', ()
   const escondida = {
     ...base,
     id: 'atv-escondida',
-    marcos: [...base.marcos, 'DI.CAD.04'],
-    revisa: ['DI.CAD.05'],
+    marcos: [...base.marcos, 'ZZ.ESC.04'],
+    revisa: ['ZZ.ESC.05'],
   };
   const doc = gerarPacote(entrada({ atividades: [escondida] }));
 
   it('não imprime o id cru nem "·" com título vazio', () => {
-    expect(doc).not.toContain('DI.CAD');
+    expect(doc).not.toContain('ZZ.ESC');
     expect(doc).not.toMatch(/·\s*(<|\n|$)/);
     expect(doc).not.toContain('Revisão:');
   });
@@ -167,9 +167,9 @@ describe('gerarPacote com marco em rascunho (atividade aprovada que o cita)', ()
   });
 
   it('atividade só com marcos escondidos não vira "complementar"', () => {
-    const so = { ...escondida, marcos: ['DI.CAD.04'], revisa: undefined, categoria: 'Xis' };
+    const so = { ...escondida, marcos: ['ZZ.ESC.04'], revisa: undefined, categoria: 'Xis' };
     const d = gerarPacote(entrada({ atividades: [so] }));
     expect(d).not.toContain('<b>Atividade complementar:</b>');
-    expect(d).not.toContain('DI.CAD');
+    expect(d).not.toContain('ZZ.ESC');
   });
 });
