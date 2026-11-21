@@ -9,9 +9,10 @@ async function abrirExemplo(page: import('@playwright/test').Page) {
   await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
 }
 
-test('boas-vindas e topo mostram ícone SVG (e nenhum emoji)', async ({ page }) => {
+// A boas-vindas mostra a gravura do girassol (e não mais o ícone de planta); o topo continua com o ícone da marca.
+test('boas-vindas e topo mostram imagem e ícone SVG (e nenhum emoji)', async ({ page }) => {
   await page.goto('./');
-  await expect(page.locator('.boas-vindas .selo svg.icone')).toBeVisible();
+  await expect(page.locator('.boas-vindas img[data-gravura="girassol"]')).toBeVisible();
   await expect(page.locator('.topo .marca svg.icone')).toBeVisible();
   const texto = await page.locator('body').innerText();
   expect(texto).not.toMatch(EMOJI);
