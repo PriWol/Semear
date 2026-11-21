@@ -1,7 +1,7 @@
 {
   "id": "atv-vol2-u4-tambor-do-lobo",
   "titulo": "O tambor do Lobo: o ritmo das palavras",
-  "marcos": [],
+  "marcos": ["AR.RIT.02", "LG.FON.03"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {

@@ -1,7 +1,7 @@
 {
   "id": "atv-vol6-u2",
   "titulo": "Aves do quintal: escutar e olhar de perto",
-  "marcos": [],
+  "marcos": ["NM.VIV.01", "AR.NAT.01"],
   "dominio": "AR",
   "categoria": "Caderno da natureza",
   "materialImpresso": {

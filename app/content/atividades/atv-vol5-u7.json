@@ -1,7 +1,7 @@
 {
   "id": "atv-vol5-u7",
   "titulo": "Modelar: bola, cobrinha e vaso de beliscão",
-  "marcos": [],
+  "marcos": ["AR.MOD.01", "AR.MOD.02"],
   "dominio": "AR",
   "categoria": "Modelagem",
   "materialImpresso": {

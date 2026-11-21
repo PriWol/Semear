@@ -1,7 +1,7 @@
 {
   "id": "atv-vol1-u2-orquestra-cozinha",
   "titulo": "A orquestra da cozinha: pulso, forte e fraquinho",
-  "marcos": [],
+  "marcos": ["AR.RIT.02"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {
