@@ -50,14 +50,38 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
     expect(enderecoDoMaterial({ volume: 9, unidade: 1, paginas: [1, 2] })).toBeNull();
   });
 
+  it('o endereço do material de caderno vem do arquivo do catálogo; id desconhecido dá null (#118)', () => {
+    const c = CADERNOS[0]!;
+    expect(enderecoDoMaterial({ caderno: c.id, unidade: 8, paginas: [30, 35] })).toBe(
+      `${c.arquivo}#page=30`,
+    );
+    expect(enderecoDoMaterial({ caderno: 'nao-existe', unidade: 1, paginas: [1, 2] })).toBeNull();
+  });
+
+  it('o rótulo do caderno usa título e subtítulo do catálogo, sem texto fixo por id (#118)', () => {
+    const c = CADERNOS[0]!;
+    const rotulo = rotuloDoMaterial({ caderno: c.id, unidade: 8, paginas: [30, 35] }, CADERNOS);
+    expect(rotulo).toBe(`${c.titulo} · ${c.subtitulo}, Unidade 8 (p. 30–35)`);
+    const outro = [{ id: c.id, titulo: 'Caderno novo', subtitulo: '3 anos' }];
+    expect(rotuloDoMaterial({ caderno: c.id, unidade: 1, paginas: [2, 3] }, outro)).toBe(
+      'Caderno novo · 3 anos, Unidade 1 (p. 2–3)',
+    );
+    // sem o catálogo, não inventa título
+    expect(rotuloDoMaterial({ caderno: 'x', unidade: 1, paginas: [2, 3] })).toBe(
+      'Caderno do Tesouro · Unidade 1 (p. 2–3)',
+    );
+  });
+
   it('todo material impresso do conteúdo aponta para uma unidade do catálogo', () => {
     const comMaterial = carregarConteudo().atividades.filter((a) => a.materialImpresso);
     expect(comMaterial.length).toBeGreaterThan(0);
     for (const a of comMaterial) {
       const m = a.materialImpresso!;
-      const unidade = VOLUMES.find((v) => v.numero === m.volume)?.unidades.find(
-        (u) => u.numero === m.unidade,
-      );
+      const fonte =
+        m.caderno !== undefined
+          ? CADERNOS.find((c) => c.id === m.caderno)
+          : VOLUMES.find((v) => v.numero === m.volume);
+      const unidade = fonte?.unidades.find((u) => u.numero === m.unidade);
       expect(unidade?.paginas, a.id).toEqual(m.paginas);
     }
   });
@@ -266,5 +290,43 @@ describe('pacote com atividade complementar', () => {
     expect(doc).toContain('Escuta musical');
     expect(doc).toContain(rotuloDoMaterial(a.materialImpresso!));
     expect(doc).not.toContain('Marco principal');
+  });
+});
+
+describe('pacote com material de caderno (#118)', () => {
+  it('mostra o rótulo do caderno e escapa o texto vindo do catálogo', () => {
+    const c = CADERNOS[0]!;
+    const a = atividade('comp-caderno', [], {
+      dominio: 'AR',
+      categoria: 'Escuta musical',
+      folhas: [],
+      materialImpresso: { caderno: c.id, unidade: 8, paginas: [30, 35] },
+    });
+    const maliciosos = [{ id: c.id, titulo: '<img src=x onerror=alert(1)>', subtitulo: 'a&b' }];
+    const gerar = (cadernos: typeof maliciosos) =>
+      gerarPacote({
+        sessao: {
+          id: 's',
+          codigo: 'S-1',
+          criancaId: 'c1',
+          criadaEm: '2026-01-01T10:00:00Z',
+          duracaoMin: 20,
+          foco: 'equilibrado',
+          atividadeIds: ['comp-caderno'],
+          livroId: null,
+        },
+        familia: familia(),
+        crianca: crianca(),
+        idade: 2,
+        letra: 'bastao',
+        atividades: [a],
+        livro: null,
+        marco: () => undefined,
+        cadernos,
+      });
+    expect(gerar(CADERNOS)).toContain(`${c.titulo} · ${c.subtitulo}, Unidade 8`);
+    const doc = gerar(maliciosos);
+    expect(doc).not.toContain('<img src=x');
+    expect(doc).toContain('&lt;img src=x onerror=alert(1)&gt;');
   });
 });

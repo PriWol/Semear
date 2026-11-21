@@ -77,3 +77,8 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - **Integridade (estória #111, resolvida; ADR 0031):** o deploy baixa o manifesto `SHA256SUMS` da Release e exige que
   o sha256 de cada PDF baixado bata com a entrada dele, além de nome, `%PDF-` e páginas. Limite: o manifesto não
   protege contra quem escreve na Release (troca PDF e manifesto juntos).
+
+## Adendo (2026-11-21): `materialImpresso` pode apontar para um caderno (estória #118)
+
+- **Decisão:** `materialImpresso` é uma união: `{ volume, unidade, paginas }` ou `{ caderno, unidade, paginas }`, em que `caderno` é o `id` de um caderno de `tesouro.json`. Os dois juntos, ou nenhum, são recusados.
+- **Validação:** `domain/` é puro e não lê o catálogo; `validarConteudo` recebe a lista de ids de cadernos por parâmetro (sem ela, nenhum caderno é aceito). O rótulo (`rotuloDoMaterial`) e o pacote recebem os títulos do catálogo da mesma forma, e o endereço sai de `enderecoDoMaterial` (`tesouro/<arquivo>#page=P`; id desconhecido dá `null`). Nenhuma dependência nova nem chamada externa.

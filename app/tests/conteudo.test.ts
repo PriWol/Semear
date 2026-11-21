@@ -1,8 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { validarConteudo } from '../src/domain/conteudo';
 import { carregarConteudo, carregarConteudoBruto } from '../src/conteudo';
-import type { Marco, OrientacaoPais, Referencia } from '../src/domain/tipos';
+import type { Atividade, Marco, OrientacaoPais, Referencia } from '../src/domain/tipos';
+import { CADERNOS } from '../src/tesouro';
 import { atividade, conteudoBase, marco } from './fabricas';
+
+const IDS_CADERNOS = CADERNOS.map((c) => c.id);
 
 function marcosPorLinha() {
   const porLinha = new Map<string, Marco[]>();
@@ -17,7 +20,7 @@ describe('conteúdo real (app/content)', () => {
   // Este teste é a "porta de qualidade" do conteúdo (ADR 0005): erros quebram o CI.
   it('não tem erros de validação', () => {
     // O bruto inclui os rascunhos: eles também precisam passar na validação.
-    const { erros } = validarConteudo(carregarConteudoBruto());
+    const { erros } = validarConteudo(carregarConteudoBruto(), IDS_CADERNOS);
     expect(erros).toEqual([]);
   });
   // O motor de jornada segue só a `ordem` dentro da linha (domain/jornada.ts), então uma ordem
@@ -191,6 +194,43 @@ describe('validarConteudo', () => {
       const a = atividade('m', [], { ...base, materialImpresso: m });
       expect(validarConteudo(conteudoBase({ atividades: [a] })).erros).toHaveLength(1);
     }
+  });
+});
+
+describe('validarConteudo: material impresso de caderno (#118)', () => {
+  const base = { dominio: 'AR', categoria: 'Canto' };
+  const erros = (m: unknown) =>
+    validarConteudo(
+      conteudoBase({
+        atividades: [
+          atividade('m', [], { ...base, materialImpresso: m as Atividade['materialImpresso'] }),
+        ],
+      }),
+      ['atividades-2-anos'],
+    ).erros;
+
+  it('aceita caderno conhecido com unidade e páginas válidas', () => {
+    expect(erros({ caderno: 'atividades-2-anos', unidade: 8, paginas: [30, 35] })).toEqual([]);
+  });
+  it('recusa caderno inexistente, volume junto com caderno, nenhum dos dois e dados ruins', () => {
+    const ruins = [
+      { caderno: 'nao-existe', unidade: 1, paginas: [1, 2] },
+      { caderno: 'atividades-2-anos', volume: 4, unidade: 1, paginas: [1, 2] },
+      { unidade: 1, paginas: [1, 2] },
+      { caderno: '', unidade: 1, paginas: [1, 2] },
+      { caderno: 7, unidade: 1, paginas: [1, 2] },
+      { caderno: 'atividades-2-anos', unidade: 0, paginas: [1, 2] },
+      { caderno: 'atividades-2-anos', unidade: 1, paginas: [5, 2] },
+      { caderno: 'atividades-2-anos', unidade: 1, paginas: [1.5, 2] },
+    ];
+    for (const m of ruins) expect(erros(m), JSON.stringify(m)).toHaveLength(1);
+  });
+  it('sem a lista de cadernos conhecidos, recusa qualquer caderno (falha segura)', () => {
+    const a = atividade('m', [], {
+      ...base,
+      materialImpresso: { caderno: 'atividades-2-anos', unidade: 1, paginas: [1, 2] },
+    });
+    expect(validarConteudo(conteudoBase({ atividades: [a] })).erros).toHaveLength(1);
   });
 });
 

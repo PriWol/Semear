@@ -165,13 +165,19 @@ export interface Passo {
   fala?: string;
 }
 
-/** Trecho de um volume d'O Grande Tesouro de Marina (ADR 0015) que acompanha a atividade. */
-export interface MaterialImpresso {
-  volume: number;
+/** Posição do trecho dentro do PDF: unidade e páginas (primeira e última). */
+interface TrechoImpresso {
   unidade: number;
-  /** primeira e última página do trecho no PDF do volume */
   paginas: [number, number];
 }
+
+/**
+ * Trecho d'O Grande Tesouro de Marina (ADR 0015) que acompanha a atividade: de um volume da coleção
+ * ou de um caderno (id do catálogo `tesouro.json`; adendo do ADR 0015, #118). Um ou outro, nunca os dois.
+ */
+export type MaterialImpresso =
+  | (TrechoImpresso & { volume: number; caderno?: never })
+  | (TrechoImpresso & { caderno: string; volume?: never });
 
 export interface Atividade {
   id: string;

@@ -13,7 +13,7 @@ import { IDIOMAS } from '../domain/tipos';
 import { ehLetra, NOME_LETRA } from '../domain/letra';
 import { observacoesDasAtividades, type Observacao } from '../domain/registro';
 import { dataBR } from '../domain/datas';
-import { rotuloDoMaterial } from '../domain/material';
+import { rotuloDoMaterial, type IdentidadeCaderno } from '../domain/material';
 import { escapar, html, textoRico, type HtmlSeguro } from '../ui/html';
 import { paginaDaFolha } from './folhas';
 import tokens from '../tokens.css?raw';
@@ -35,6 +35,8 @@ export interface EntradaPacote {
   livro: Livro | null;
   /** busca de marcos para mostrar os títulos na ficha */
   marco: (id: string) => Marco | undefined;
+  /** cadernos do catálogo do Tesouro, para o rótulo do material impresso (#118) */
+  cadernos?: readonly IdentidadeCaderno[];
 }
 
 const USO_LIVRO: Record<Livro['uso'], string> = {
@@ -78,7 +80,7 @@ function roteiroDaAtividade(a: Atividade, e: EntradaPacote, primeira: boolean): 
       }
       ${a.revisa?.length ? html` &nbsp;·&nbsp; <b>Revisão:</b> ${a.revisa.map(nomeMarco).join(' · ')}` : ''}
     </p>
-    ${a.materialImpresso ? html`<p>📖 <b>Material impresso:</b> ${rotuloDoMaterial(a.materialImpresso)}</p>` : ''}
+    ${a.materialImpresso ? html`<p>📖 <b>Material impresso:</b> ${rotuloDoMaterial(a.materialImpresso, e.cadernos)}</p>` : ''}
     ${primeira ? cabecalhoMeta(e) : ''}
     <h2>🎯 Objetivo</h2>
     <p>${textoRico(a.objetivo)}</p>

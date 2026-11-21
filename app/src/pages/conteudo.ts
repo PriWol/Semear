@@ -2,10 +2,14 @@ import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { validarConteudo } from '../domain/conteudo';
 import { carregarConteudoBruto } from '../conteudo';
+import { CADERNOS } from '../tesouro';
 
 /** Visão para a curadoria: cobertura do conteúdo e problemas encontrados pela validação. */
 export const paginaConteudo: FabricaPagina = async (ctx) => {
-  const { erros, avisos } = validarConteudo(carregarConteudoBruto()); // inclui os rascunhos
+  const { erros, avisos } = validarConteudo(
+    carregarConteudoBruto(),
+    CADERNOS.map((c) => c.id),
+  ); // inclui os rascunhos
   const dominios = ctx.idx.conteudo.dominios.filter((d) => d.comJornada);
 
   return {

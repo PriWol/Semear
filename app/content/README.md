@@ -107,7 +107,7 @@ Na tela a referência sai em ABNT: `AUTORES. *Título*. Veículo, ano.` Cada obr
 Veja `atividades/atv-caca-silabas.json` (Linguagem) e `atividades/atv-feira-numeros.json` (Matemática)
 como modelos completos. Campos principais:
 
-- `marcos` (trabalhados; vazio = atividade **complementar**, que exige `dominio` sem jornada, ex.: `AR`, e `categoria`; pode trazer `materialImpresso` com `volume`, `unidade` e `paginas`, conferido contra `tesouro.json`) e `revisa` (aparecem como revisão na ficha);
+- `marcos` (trabalhados; vazio = atividade **complementar**, que exige `dominio` sem jornada, ex.: `AR`, e `categoria`; pode trazer `materialImpresso` com `volume` **ou** `caderno` (id do caderno em `tesouro.json`, nunca os dois), `unidade` e `paginas`, conferido contra `tesouro.json`) e `revisa` (aparecem como revisão na ficha);
 - `vertentes`, `idade` `[mín, máx]` e `duracaoMin`: usados pelo gerador de sessão para pontuar;
 - `objetivo`, `passos`, `observar`, `ajustes`, `materiais`, `toqueVertente`: viram o roteiro do educador;
 - `evidencias` e `perguntaFicha`: viram a ficha de registro;

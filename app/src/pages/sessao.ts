@@ -6,7 +6,7 @@ import type { Atividade } from '../domain/tipos';
 import { gerarPacote, nomeArquivoPacote } from '../pacote/gerar';
 import { rotuloDoMaterial } from '../domain/material';
 import { observacoesDaSessao, sessaoRegistrada } from '../domain/registro';
-import { enderecoDoMaterial } from '../tesouro';
+import { CADERNOS, enderecoDoMaterial } from '../tesouro';
 import { dataCurta, ICONE_ENGAJAMENTO, NOME_ENGAJAMENTO, ROTULO_FEITA } from '../ui/rotulos';
 
 export function baixarArquivo(nome: string, conteudo: string, tipo: string) {
@@ -42,6 +42,7 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
     observacoes: observacoesDaSessao(sessao, ctx.idx),
     livro: sessao.livroId ? (ctx.idx.livro(sessao.livroId) ?? null) : null,
     marco: (id) => ctx.idx.marco(id),
+    cadernos: CADERNOS,
   });
   const nomeArquivo = nomeArquivoPacote(sessao, crianca);
   const registrada = sessaoRegistrada(sessao);
@@ -68,7 +69,7 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
         return html`<p>
           📖
           <a href="${endereco}" target="_blank" rel="noopener">Abrir no livro</a>
-          <span class="nota">${a.titulo} · ${rotuloDoMaterial(m)}</span>
+          <span class="nota">${a.titulo} · ${rotuloDoMaterial(m, CADERNOS)}</span>
         </p>`;
       })}
       ${
