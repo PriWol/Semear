@@ -1,7 +1,7 @@
 {
   "id": "atv-vol2-u7-orquestra-de-casa",
   "titulo": "A orquestra de casa: cada voz, um instrumento",
-  "marcos": ["AR.RIT.02", "AR.ESC.02"],
+  "marcos": ["AR.RIT.02", "AR.ESC.02", "AR.RIT.04"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {
@@ -10,7 +10,7 @@
     "paginas": [54, 59]
   },
   "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
-  "idade": [3, 6],
+  "idade": [3, 7],
   "duracaoMin": 15,
   "preparoMin": 4,
   "cuidados": "Chocalho de arroz só bem fechado, com a tampa colada e fita em volta: grãos soltos são risco de engasgo. Volume moderado; nada de panela quente. Fique junto.",
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Só dois instrumentos (o tambor e o sino), um de cada vez.",
-    "facil": "Peça que ela invente uma música em que os quatro tocam e param juntos."
+    "facil": "Peça que ela invente uma música em que os quatro tocam e param juntos. Aos 7 anos, ela rege de verdade: combina com os músicos quando cada um entra e quando faz silêncio."
   },
   "materiais": [
     {

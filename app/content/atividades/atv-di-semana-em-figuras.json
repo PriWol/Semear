@@ -1,7 +1,7 @@
 {
   "id": "atv-di-semana-em-figuras",
   "titulo": "A nossa semana tem rosto",
-  "marcos": ["DI.RIT.02"],
+  "marcos": ["DI.RIT.02", "NM.TEM.04", "MA.MED.06"],
   "vertentes": ["Waldorf"],
   "idade": [3, 6],
   "duracaoMin": 15,

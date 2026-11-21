@@ -1,7 +1,7 @@
 {
   "id": "atv-li-alouette-fr",
   "titulo": "Alouette, gentille alouette: cantando as partes do corpo",
-  "marcos": ["LI.CAN.02"],
+  "marcos": ["LI.CAN.02", "LI.VOC.02"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [5, 8],
   "duracaoMin": 13,

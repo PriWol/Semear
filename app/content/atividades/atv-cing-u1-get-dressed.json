@@ -1,7 +1,7 @@
 {
   "id": "atv-cing-u1-get-dressed",
   "titulo": "Get dressed",
-  "marcos": ["LI.ESC.01"],
+  "marcos": ["LI.ESC.01", "DI.CAD.05"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "idioma": "en",

@@ -1,7 +1,7 @@
 {
   "id": "atv-tesouro-v4-u3",
   "titulo": "Forte e fraco, rápido e lento, grave e agudo",
-  "marcos": ["AR.ESC.02"],
+  "marcos": ["AR.ESC.02", "AR.CAN.02"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "materialImpresso": {

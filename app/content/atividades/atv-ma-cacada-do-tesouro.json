@@ -1,10 +1,10 @@
 {
   "id": "atv-ma-cacada-do-tesouro",
   "titulo": "Caçada do tesouro: o mapa da sala",
-  "marcos": ["MA.GEO.07"],
+  "marcos": ["MA.GEO.07", "NM.ESP.03"],
   "revisa": ["MA.GEO.01"],
   "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
-  "idade": [6, 8],
+  "idade": [5, 8],
   "duracaoMin": 28,
   "preparoMin": 10,
   "cuidados": "Escolha um percurso livre de degraus, quinas e objetos quebráveis e esconda o tesouro em lugar baixo. Atividades ao ar livre pedem adulto junto e sem portões abertos para a rua. Passos pequenos e sem correria.",
@@ -49,7 +49,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use só duas instruções e palavras como frente e atrás; deixe a pulseira à vista.",
+    "dificil": "Use só duas instruções e palavras como frente e atrás; deixe a pulseira à vista. Aos 5 anos, foque no mapa da sala (um símbolo para cada móvel e o X do tesouro) e use só frente, atrás e ao lado.",
     "facil": "Peça que ela invente um mapa de outro cômodo, com legenda, e que você siga as instruções dela."
   },
   "materiais": [

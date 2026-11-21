@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-regar-a-plantinha",
   "titulo": "Regar a plantinha",
-  "marcos": ["NM.VIV.03", "NM.VIV.01"],
+  "marcos": ["NM.VIV.03", "NM.VIV.01", "EM.VAL.03"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 6,

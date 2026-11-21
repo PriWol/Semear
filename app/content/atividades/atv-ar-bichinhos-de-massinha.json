@@ -1,7 +1,7 @@
 {
   "id": "atv-ar-bichinhos-de-massinha",
   "titulo": "Bichinhos de massinha",
-  "marcos": ["AR.MOD.02"],
+  "marcos": ["AR.MOD.02", "AR.MOD.03"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [4, 6],
   "duracaoMin": 16,

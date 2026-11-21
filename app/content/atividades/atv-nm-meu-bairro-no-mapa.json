@@ -1,7 +1,7 @@
 {
   "id": "atv-nm-meu-bairro-no-mapa",
   "titulo": "Meu bairro no mapa",
-  "marcos": ["NM.ESP.04"],
+  "marcos": ["NM.ESP.04", "MA.GEO.07"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [6, 8],
   "duracaoMin": 24,

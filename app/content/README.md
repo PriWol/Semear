@@ -116,6 +116,7 @@ como modelos completos. Campos principais:
 - `folhas`: as páginas da criança (tipos abaixo);
 - `palavrasChave` (opcional): palavras que ajudam a achar a atividade na tela **Atividades** (#13), além do título, do objetivo e dos marcos. A busca ignora acento e maiúsculas;
 - `preparoMin` (opcional) e `cuidados`: o preparo do adulto, à parte da duração, e o aviso de segurança. `cuidados` é obrigatório (e a duração, de até 10 min) quando `idade` começa antes dos 3 anos;
+- **A idade da atividade não precisa coincidir com a idade típica do marco** (decisão de 2026-11-21). Uma mesma atividade pode servir a várias idades, com exigência e pontos de trabalho diferentes: ligue-a a todo marco que ela de fato trabalha (o mais novo é a versão simples, o mais velho, a versão mais exigente), amplie `idade` até onde o conteúdo realmente vai e registre em `ajustes` o que muda por idade (`dificil` = o que se pede à criança menor; `facil` = o que se pede à maior). Use o que o texto da atividade já diz, sem inventar passos; só ligue o que a atividade de fato trabalha. Quem começa antes dos 3 anos continua exigindo `cuidados` e duração de até 10 min (e, se ligar a marco de EM, `cuidados` cita "peça pequena" ou "boca").
 - `autoria.status`: só `"publicado"` aparece para as famílias.
 
 Nos textos, `**negrito**` e `*itálico*` funcionam. HTML não funciona (é escapado, por segurança).

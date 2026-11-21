@@ -1,9 +1,9 @@
 {
   "id": "atv-ma-meu-dia-em-ordem",
   "titulo": "Meu dia em ordem: antes, depois, ontem e amanhã",
-  "marcos": ["MA.MED.03"],
+  "marcos": ["MA.MED.03", "NM.TEM.02"],
   "vertentes": ["Waldorf", "Charlotte Mason", "Montessori"],
-  "idade": [4, 6],
+  "idade": [3, 6],
   "duracaoMin": 24,
   "preparoMin": 8,
   "cuidados": "Atividade só de conversa e desenho, sem material pequeno. Use lápis e papel e fique por perto para o uso de tesoura, se houver recorte.",
@@ -43,8 +43,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use apenas 3 figuras e foque em *antes* e *depois* de um evento do dia, sem ontem e amanhã.",
-    "facil": "Peça que ela descreva a semana inteira, ou invente a rotina de um personagem."
+    "dificil": "Use apenas 3 figuras e foque em *antes* e *depois* de um evento do dia, sem ontem e amanhã. Aos 3 anos, é esse o ponto de partida: ela move o marcador do painel e responde “o que vem depois do almoço?”.",
+    "facil": "Peça que ela descreva a semana inteira, ou invente a rotina de um personagem. Aos 6 anos, ela conta o dia inteiro em ordem e usa *ontem, hoje e amanhã* sem as figuras."
   },
   "materiais": [
     {

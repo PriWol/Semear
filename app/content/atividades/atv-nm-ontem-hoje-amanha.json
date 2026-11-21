@@ -1,9 +1,9 @@
 {
   "id": "atv-nm-ontem-hoje-amanha",
   "titulo": "Ontem, hoje e amanhã",
-  "marcos": ["NM.TEM.02"],
+  "marcos": ["NM.TEM.02", "MA.MED.03"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
-  "idade": [3, 5],
+  "idade": [3, 6],
   "duracaoMin": 15,
   "preparoMin": 5,
   "cuidados": "Use papel e lápis de cera com ponta arredondada, longe de crianças que ainda põem tudo na boca. Fique junto.",
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Só dois quadros: antes e agora.",
-    "facil": "Acrescente anteontem e depois de amanhã."
+    "facil": "Acrescente anteontem e depois de amanhã. Aos 6 anos, ela conta o dia em ordem (primeiro, depois, por último) e usa as palavras sem os quadros."
   },
   "materiais": [
     {

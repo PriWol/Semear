@@ -1,7 +1,7 @@
 {
   "id": "atv-tesouro-v4-u5",
   "titulo": "Vivaldi: a Primavera",
-  "marcos": ["AR.ESC.03"],
+  "marcos": ["AR.ESC.03", "AR.ESC.04"],
   "dominio": "AR",
   "categoria": "Estudo de compositores",
   "materialImpresso": {
@@ -51,5 +51,9 @@
   "autoria": {
     "origem": "ia",
     "status": "rascunho"
+  },
+  "ajustes": {
+    "dificil": "Aos 4 ou 5 anos, basta gostar da música e seguir o tema com o gesto; se ela se cansar, escute só o começo e deixe o resto para outro dia.",
+    "facil": "Aos 7 ou 8 anos, ela também diz o nome do compositor (Vivaldi) e do que mais gostou."
   }
 }

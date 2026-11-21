@@ -1,7 +1,7 @@
 {
   "id": "atv-cing-u7-feeling-faces",
   "titulo": "Feeling faces",
-  "marcos": ["LI.ESC.01"],
+  "marcos": ["LI.ESC.01", "EM.NOM.02"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "idioma": "en",
@@ -13,7 +13,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Espelho inquebrável, firme (preso à parede ou apoiado no chão) e sem cantos afiados; fique junto, pois ela pode tentar subir nele.",
+  "cuidados": "Espelho inquebrável, firme (preso à parede ou apoiado no chão) e sem cantos afiados; fique junto, pois ela pode tentar subir nele. Mantenha longe peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "a família e os sentimentos", "feeling faces"],
   "objetivo": "Ouvir e usar inglês num momento fixo do dia (a família e os sentimentos), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
   "passos": [

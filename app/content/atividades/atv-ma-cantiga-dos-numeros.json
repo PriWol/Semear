@@ -1,7 +1,7 @@
 {
   "id": "atv-ma-cantiga-dos-numeros",
   "titulo": "Cantiga dos números: de 1 a 10",
-  "marcos": ["MA.SEN.01"],
+  "marcos": ["MA.SEN.01", "AR.CAN.01"],
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
   "idade": [2, 4],
   "duracaoMin": 9,

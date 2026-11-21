@@ -1,7 +1,7 @@
 {
   "id": "atv-vol5-u8",
   "titulo": "Colar: um quadro de papel rasgado",
-  "marcos": ["DI.MFI.03"],
+  "marcos": ["DI.MFI.03", "DI.MFI.04"],
   "dominio": "AR",
   "categoria": "Desenho",
   "materialImpresso": {

@@ -1,9 +1,9 @@
 {
   "id": "atv-nm-mapa-do-tesouro",
   "titulo": "Mapa do tesouro da sala",
-  "marcos": ["NM.ESP.03"],
+  "marcos": ["NM.ESP.03", "MA.GEO.07"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
-  "idade": [5, 7],
+  "idade": [5, 8],
   "duracaoMin": 20,
   "preparoMin": 5,
   "cuidados": "Esconda o tesouro (um brinquedo ou um doce) em um lugar seguro e baixo, sem subir em cadeiras ou móveis. Retire antes qualquer objeto quebrável ou perigoso do caminho.",
@@ -35,7 +35,7 @@
   },
   "ajustes": {
     "dificil": "Faça só o contorno da sala e três móveis.",
-    "facil": "Peça que desenhe o mapa da casa toda, com legenda e setas."
+    "facil": "Peça que desenhe o mapa da casa toda, com legenda e setas. Aos 8 anos, ela também dá as instruções de caminho em passos (“três passos à frente, vire à direita”) para você seguir."
   },
   "materiais": [
     {

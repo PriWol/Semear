@@ -1,7 +1,7 @@
 {
   "id": "atv-em-diario-do-bem",
   "titulo": "Diário do bem: o que eu fiz de justo ou gentil",
-  "marcos": ["EM.VAL.04"],
+  "marcos": ["EM.VAL.04", "DI.ESP.03"],
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [6, 8],
   "duracaoMin": 20,

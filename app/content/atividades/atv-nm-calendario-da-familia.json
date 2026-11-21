@@ -1,7 +1,7 @@
 {
   "id": "atv-nm-calendario-da-familia",
   "titulo": "Calendário da família",
-  "marcos": ["NM.TEM.04"],
+  "marcos": ["NM.TEM.04", "MA.MED.06"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [5, 8],
   "duracaoMin": 17,

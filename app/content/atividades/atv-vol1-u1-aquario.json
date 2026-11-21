@@ -1,7 +1,7 @@
 {
   "id": "atv-vol1-u1-aquario",
   "titulo": "Ouvir de olhos fechados: O Aquário",
-  "marcos": ["AR.ESC.01"],
+  "marcos": ["AR.ESC.01", "AR.ESC.03"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "materialImpresso": {
