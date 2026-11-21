@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u3-slow-bites",
+  "titulo": "Slow bites",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 3,
+    "paginas": [36, 36]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "slow bites"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "One slow bite. Chew, chew, chew. / Is it sweet? Is it soft? / Two slow bites. Three! All done."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Sentem sem pressa, sem outras distrações, e ponha três pedaços no prato dela."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Diga: “one slow bite”. Mostre como mastigar devagar e sentir o gosto."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Pergunte: “is it sweet? is it soft?”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Repita com o segundo e o terceiro pedaço."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "How does it taste? / Is it soft or crunchy? / Do you want another?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Prove de olhos fechados. Ela conta as mordidas: “one, two, three”. Faça de conta que a fruta é um “tesouro”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Comer devagar, prestando atenção ao gosto, é uma atividade de poucos minutos, com começo, meio e fim, que a criança consegue completar: ótimo para quem tem dificuldade de se concentrar por muito tempo. É também um jeito de baixar a agitação antes de uma refeição. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "três pedaços pequenos de uma fruta mole, no prato",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

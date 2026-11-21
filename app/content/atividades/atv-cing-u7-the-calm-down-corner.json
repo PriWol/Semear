@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u7-the-calm-down-corner",
+  "titulo": "The calm-down corner",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [76, 76]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "deixe fora do alcance dela a garrafa da calma, se houver; leve-a ao cantinho só quando estiverem juntas. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "a família e os sentimentos", "the calm-down corner"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "This is our calm-down corner. Come sit with me. / We sit. We breathe. We hug. / Smell the flower. Blow the candle. All better."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Num momento calmo, mostre o cantinho: “this is our calm-down corner”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Sentem juntas e diga o que se faz lá: “we sit, we breathe, we hug”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Respirem: “smell the flower, blow the candle”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Fiquem o quanto ela quiser, e saiam quando ela disser."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Do you want to sit here? / Do you want a hug? / Are you calm now?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Leve um livro de figuras. Escolham juntas o bichinho do cantinho. Cantem baixinho uma rima calma."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Visitar o cantinho nos momentos calmos, com as mesmas frases, faz dele um lugar conhecido e gostoso. Não é castigo: vocês vão juntas, e ela sai quando quiser. As frases (“we sit, we breathe, we hug”) são curtas e podem ser ditas no meio de uma crise, em voz baixa. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "o cantinho da calma (ver o caderno de atividades) ou um canto com manta e almofada",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

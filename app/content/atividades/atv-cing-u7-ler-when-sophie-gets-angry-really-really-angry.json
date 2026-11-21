@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u7-ler-when-sophie-gets-angry-really-really-angry",
+  "titulo": "Ler juntos: When Sophie Gets Angry — Really, Really Angry…",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [77, 77]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "palavrasChave": ["inglês", "english", "livro", "when sophie gets angry — really, really angry…"],
+  "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Sophie is angry. Look at her face. / She runs, she cries. Then she looks around. / Now she feels better. Her family is happy."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Leia numa hora calma, e não no meio da crise. Mostre a capa e o rosto de Sophie."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Pergunte: “how does Sophie feel?”. Deixe que ela aponte as cores e o rosto."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Mostre o que Sophie faz para se acalmar, e diga: “she goes outside”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "No fim, “she feels better”: pergunte como ela se acalma."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "How does Sophie feel? / What does she do? / What do you do when you're angry?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Ela escolhe a cor da raiva do livro. Procure o lugar do livro no parque. Leia uma vez em português, para ela entender a história."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "É um livro sobre a raiva e sobre como ela passa, e o livro de Molly Bang foi premiado (Caldecott Honor). Em leitura dialogada, as perguntas são sobre o rosto e as cores, que a criança entende, e sobre o que fazer, que ela mostra com o corpo. Leia depois que a crise passou, e nunca no meio dela. Se o livro parecer longo, leia só as páginas do meio. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta na figura", "Repete uma palavra ou pede o livro de novo"],
+    "emDesenvolvimento": ["Ainda só olha e escuta; ler uma página por dia já basta"]
+  },
+  "materiais": [
+    {
+      "item": "o livro *When Sophie Gets Angry — Really, Really Angry…* (Molly Bang), de uma biblioteca, livraria ou sebo",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "A criança apontou, repetiu uma palavra ou pediu o livro de novo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

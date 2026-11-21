@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u6-soft-hands",
+  "titulo": "Soft hands",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [65, 65]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "com animal de verdade, só se ele for calmo e você ficar junto, e nunca deixe a criança sozinha com ele; lave as mãos depois. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "os bichos", "soft hands"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Soft hands. Gentle, gentle. / Like this. Pat, pat, pat. / So gentle! The kitty likes it."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Mostre como fazer carinho no bicho: “soft hands”, com a mão aberta e devagar."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Pegue a mão dela e faça junto: “gentle, gentle”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Se ela bater ou apertar, pare, e diga calmamente: “soft hands, like this”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Elogie: “so gentle! The kitty likes it”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Are your hands soft? / Does the kitty like it? / Can you pat the kitty softly?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça carinho no próprio braço. Faça carinho no rosto do ursinho. Elogie sempre: “gentle hands!”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "“Soft hands” é uma frase curta e útil para a fase do “não”, em que as mãos às vezes batem ou apertam: ela aprende o que fazer com as mãos, em vez de só o que não fazer. Acariciar devagar, no ritmo, é calmante também para a criança. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "um bicho de pelúcia macio, ou o gato ou cachorro da casa, se ele gostar de carinho",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

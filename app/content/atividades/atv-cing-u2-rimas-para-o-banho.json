@@ -1,0 +1,58 @@
+{
+  "id": "atv-cing-u2-rimas-para-o-banho",
+  "titulo": "Rimas e cantigas: para o banho",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [23, 23]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Cante no banho ou fora dele, e se for no banho, com água por perto nunca deixe a criança sozinha, nem por um instante; bata a água de leve, sem jogar no rosto dela.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "o banho"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: o banho).",
+  "passos": [
+    {
+      "titulo": "Cantar: Rub-a-dub-dub",
+      "minutos": 2,
+      "texto": "O gesto: esfregue as mãos dela e as suas no ritmo de “rub-a-dub-dub”, bata palmas no “tub” e faça as mãos de barquinho no “sailed out to sea”. Cante-a no banho. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Rub-a-dub-dub, / three men in a tub, / and who do you think they be? / The butcher, the baker, / the candlestick-maker, / they all sailed out to sea."
+    },
+    {
+      "titulo": "Cantar: Splash, splash, splash",
+      "minutos": 2,
+      "texto": "O gesto: bata a água de leve no “splash”, e toque cada parte do corpo quando a rima nomear: mãos, dedos dos pés, nariz. Rima escrita pela coleção.",
+      "fala": "Splash, splash, splash, / bubbles in the bath; / wash my hands, wash my toes, / wash my little nose!"
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "A rima do banho marca o ritmo do banho, e a criança passa a antecipar as palavras. Cante as mesmas por semanas; a rima própria da coleção tem só palavras de objetos do banho. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

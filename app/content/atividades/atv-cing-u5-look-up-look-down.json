@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u5-look-up-look-down",
+  "titulo": "Look up, look down",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [49, 49]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "não olhe para o sol; em lugar com trânsito, mão dada o tempo todo.",
+  "palavrasChave": ["inglês", "english", "sair e passear", "look up, look down"],
+  "objetivo": "Ligar palavras em inglês ao que se vê, se toca e se sente no dia a dia (unidade: sair e passear).",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Look up! I see the sky. I see a cloud. / Look down! I see a stone. I see an ant. / What do you see? Show me."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Pare e diga “look up!”, apontando o céu: “the sky, the sun, a cloud, a bird”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Depois: “look down!”, apontando o chão: “the ground, a stone, an ant”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Fiquem em silêncio um minuto antes de nomear."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Deixe que ela aponte e diga o que quiser, em português: repita em inglês."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What do you see? / Where is the bird? / Is it big or small?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Procure só uma cor: “find something green”. Olhe só para cima hoje, só para baixo amanhã. Fotografe com os olhos: “click!”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Dar um nome ao que se vê, com o dedo apontando, é o que a entrada compreensível pede: a palavra vem com o objeto. “Up” e “down” são palavras de direção que o corpo entende, e olhar para cima e para baixo é um jeito de parar e olhar (Charlotte Mason). Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "um quintal, uma praça ou uma calçada",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

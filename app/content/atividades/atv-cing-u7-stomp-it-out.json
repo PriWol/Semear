@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u7-stomp-it-out",
+  "titulo": "Stomp it out",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [75, 75]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "Use um espaço sem tapete solto, quinas ou escadas; piso firme e sem escorregar, de preferência com sapato fechado ou meia antiderrapante. Fique junto. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "a família e os sentimentos", "stomp it out"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Angry feet! Stomp, stomp, stomp! / Now breathe in… and out. / Better? Let's have a hug."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Quando ela estiver calma, combine o jogo: “when you're angry, we stomp!”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Batam os pés juntos: “stomp, stomp, stomp!”, bem forte, três vezes."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Depois, respirem fundo: “breathe in… and out”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine com um abraço: “all better”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Are your feet angry? / Can you stomp louder? / How do you feel now?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Soque uma almofada: “punch the pillow”. Rasgue papel: “rip, rip, rip”. Sopre uma pena: “blow it away”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Dar à raiva um lugar no corpo (os pés), forte e curto, e depois uma respiração lenta, é um modo de a criança soltar a energia sem machucar ninguém. Combine o jogo antes, em um momento calmo, e depois, na raiva de verdade, basta dizer “let's stomp it out”. A rima “Estou com raiva” (do caderno de atividades) tem a mesma lógica. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "um espaço onde ela possa bater os pés",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

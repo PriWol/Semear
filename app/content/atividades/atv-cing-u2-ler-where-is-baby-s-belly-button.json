@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u2-ler-where-is-baby-s-belly-button",
+  "titulo": "Ler juntos: Where Is Baby's Belly Button?",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [27, 27]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "palavrasChave": ["inglês", "english", "livro", "where is baby's belly button?"],
+  "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Where is the belly button? Let's look. / Lift the flap. There it is! / Where is your tummy? Show me."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Sentem juntas, com o livro no colo, e deixe que ela abra as abas."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Faça a pergunta do título e espere: ela procura a página, aponta ou levanta a aba?"
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Ao achar, comemore e aponte a parte do corpo dela: “here's your tummy!”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Repita no banho: “where are your toes?”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Where are your hands? / Can you find your nose? / What's under the flap?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Procure as partes do corpo no ursinho. Esconda o rosto atrás de um pano: “where is [name]? Peekaboo!”. Ler uma só página por dia, se ela se cansar."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "É leitura dialogada (Whitehurst): a pergunta do livro é de completar e de “onde”, as mais fáceis para 2 anos, e as abas dão a ela uma tarefa de procurar. O livro de Karen Katz repete o jogo de achar, que a criança adora. Ligar o livro ao banho (“where are your toes?”) faz o inglês sair do livro e entrar na vida. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta na figura", "Repete uma palavra ou pede o livro de novo"],
+    "emDesenvolvimento": ["Ainda só olha e escuta; ler uma página por dia já basta"]
+  },
+  "materiais": [
+    {
+      "item": "o livro *Where Is Baby's Belly Button?* (Karen Katz), de uma biblioteca, livraria ou sebo",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "A criança apontou, repetiu uma palavra ou pediu o livro de novo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

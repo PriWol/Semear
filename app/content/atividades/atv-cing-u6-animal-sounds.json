@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u6-animal-sounds",
+  "titulo": "Animal sounds",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [59, 59]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Bichos de pelúcia ou figuras grandes, sem olhos de botão ou peças soltas que possam ser engolidas; confira costuras antes.",
+  "palavrasChave": ["inglês", "english", "os bichos", "animal sounds"],
+  "objetivo": "Nomear coisas em inglês com o objeto à vista e escolhendo entre duas opções (unidade: os bichos).",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "This is a dog. The dog says woof! / A cat. The cat says meow. / A duck says quack, quack!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Mostre um bicho e diga o nome: “dog”. Faça o som: “woof, woof”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Deixe que ela faça o som; repita o nome e acrescente: “a big dog”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Troque: “cat… meow”, “duck… quack”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Esconda um bicho: “where is the cat?”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What does the dog say? / Where is the cat? / Is the duck big or small?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Um bicho por dia, só um. Procure bichos no livro: “where is the cow?”. Esconda o bicho e dê dicas de som."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Nomear com o bicho na mão e fazer o som é uma entrada compreensível (Krashen e Terrell): a criança entende pelo objeto e pelo som, e o som ajuda a lembrar o nome. Os sons em inglês (woof, meow, quack) diferem do português (au-au, miau, quá-quá) e ela pode ficar com os dois. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "três bichos de pelúcia ou de figuras: cachorro, gato, pato",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

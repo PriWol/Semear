@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u8-good-night-to-everything",
+  "titulo": "Good night to everything",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 8,
+    "paginas": [81, 81]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Luz baixa, mas com o caminho livre: sem brinquedos no chão no trajeto até a cama; fique junto e não deixe que ela suba em móveis para alcançar a janela.",
+  "palavrasChave": ["inglês", "english", "hora de dormir", "good night to everything"],
+  "objetivo": "Ouvir e usar inglês num momento fixo do dia (hora de dormir), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Good night, sun. Good night, moon. / Good night, window. Good night, bed. / Good night, Marina. I love you."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Fiquem na porta, ou junto da cama, com a luz baixa."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Diga boa-noite a tudo o que vê: “good night, sun”, “good night, moon”, “good night, window”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Deixe que ela escolha o próximo: “what's next?”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Termine com “good night, Marina. I love you.”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Who is next? / Is the moon sleepy? / Can you say good night?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Boa-noite aos bichos de pelúcia. Um beijo para cada coisa. Em vez de “good night”, diga “sleep tight”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Um ritual de despedida, sempre igual e com a voz baixa, marca o fim do dia e ajuda a criança a se soltar do que a agitou. O livro *Goodnight Moon* faz o mesmo; aqui o ritual é seu e do quarto dela, e não reproduz o livro. As palavras (sun, moon, window, bed) vêm com o objeto na mão. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "o quarto, com a luz baixa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

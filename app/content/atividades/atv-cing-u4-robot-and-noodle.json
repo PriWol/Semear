@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u4-robot-and-noodle",
+  "titulo": "Robot and noodle",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 4,
+    "paginas": [45, 45]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "Espaço livre, sem móveis ou quinas por perto; o movimento de ficar mole (“noodle”) pode desequilibrar: fique ao lado e, se preferir, façam sentadas. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "brincar dentro de casa", "robot and noodle"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Robot! Stiff and strong. / Noodle! Soft and floppy. / Now we're calm. Breathe in… and out."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Fiquem em pé. Diga “robot!” e fiquem duros como robôs, braços e pernas bem firmes."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Depois diga “noodle!” e fiquem moles como macarrão cozido, braços e cabeça soltos."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Repita três vezes, cada vez mais devagar."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine deitados ou sentados: “soft and calm”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Are you a robot or a noodle? / Is your body soft? / Can you be a noodle?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça de gato: “stretch” e “soft”. Com música: rápida e lenta. Termine com a mão no peito: “feel your heart”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Alternar o corpo duro e o corpo mole é um jeito de sentir a diferença entre tensão e relaxamento, e funciona depois de uma brincadeira agitada ou de uma crise. “Robot” e “noodle” são palavras novas e engraçadas, que a criança repete com prazer. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "um espaço livre",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

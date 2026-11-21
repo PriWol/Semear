@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u8-teddy-breathing",
+  "titulo": "Teddy breathing",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 8,
+    "paginas": [85, 85]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "o ursinho fica só na barriga, nunca no rosto ou no pescoço; leve e sem peças soltas. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "hora de dormir", "teddy breathing"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Breathe in… the bear goes up. / Breathe out… the bear goes down. / Again. Nice and slow. Sleepy bear."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Deitem de barriga para cima. Ponha o ursinho na barriga dela."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Diga “breathe in… the bear goes up”; “breathe out… the bear goes down”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Faça junto, com o seu ursinho (ou a mão) na sua barriga."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Repitam cinco vezes, e terminem com um abraço no ursinho."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Is the bear going up? / And now going down? / Are you sleepy?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Deitem lado a lado, cada uma com um ursinho. Cantarolem “hmm” ao soltar o ar. Faça de folha: “up and down with the wind”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Ver o ursinho subir e descer faz a respiração virar algo que ela vê e sente, e a respiração pela barriga é a mais calma. É uma atividade clássica de respiração para crianças pequenas, e a frase de “up” e “down” liga ao que ela já aprendeu na unidade de brincar. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "um ursinho leve, e uma cama ou um tapete macio",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
