@@ -4,7 +4,7 @@
  * O pacote impresso tem estilos próprios em pacote/.
  */
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
 }
 
 * {
@@ -57,15 +57,15 @@ code {
   justify-content: space-between;
   gap: var(--s-espaco-3);
   padding: var(--s-espaco-2) var(--s-espaco-4);
-  background: var(--s-principal);
-  color: var(--s-papel);
+  background: var(--s-topo);
+  color: var(--s-topo-texto);
 }
 .marca {
   display: inline-flex;
   align-items: center;
   gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
-  color: var(--s-papel);
+  color: var(--s-topo-texto);
   font-family: var(--s-fonte-titulo);
   font-weight: 600;
   font-size: var(--s-texto-h3);
@@ -82,19 +82,19 @@ code {
   align-items: center;
   justify-content: center;
   min-height: var(--s-alvo-toque);
-  color: var(--s-papel);
+  color: var(--s-topo-texto);
   text-decoration: none;
   padding: var(--s-espaco-2) var(--s-espaco-3);
   border-radius: var(--s-raio-pilula);
   font-weight: 600;
 }
 .topo nav a.ativo {
-  background: var(--s-papel);
-  color: var(--s-principal);
+  background: var(--s-topo-ativo);
+  color: var(--s-topo-ativo-texto);
 }
 
 .topo :focus-visible {
-  outline-color: var(--s-papel);
+  outline-color: var(--s-topo-texto);
 }
 
 .conteudo-app {
@@ -495,7 +495,9 @@ progress {
   height: 80vh;
   border: var(--s-borda) solid var(--s-linha);
   border-radius: var(--s-raio);
-  background: var(--s-linha);
+  /* A folha é papel: continua clara com o app no escuro (ADR 0033) */
+  color-scheme: light;
+  background: var(--s-folha);
 }
 .tabela {
   width: 100%;
@@ -626,9 +628,9 @@ summary {
   margin-right: auto;
   margin-left: var(--s-espaco-2);
   padding: var(--s-espaco-1) var(--s-espaco-2);
-  border: var(--s-borda) solid var(--s-papel);
+  border: var(--s-borda) solid var(--s-topo-texto);
   border-radius: var(--s-raio-pilula);
-  color: var(--s-papel);
+  color: var(--s-topo-texto);
   font-size: var(--s-texto-selo);
   text-decoration: none;
   white-space: nowrap;

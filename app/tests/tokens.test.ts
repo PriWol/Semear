@@ -1,13 +1,14 @@
 import { readFileSync } from 'node:fs';
-import { describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it } from 'vitest';
 
 // Garante o contraste AA (WCAG 2.1) prometido em docs/DESIGN.md para cada par texto/fundo.
-const css = readFileSync(new URL('../src/tokens.css', import.meta.url), 'utf8');
+const claro = readFileSync(new URL('../src/tokens.css', import.meta.url), 'utf8');
+const escuro = readFileSync(new URL('../src/tokens-escuro.css', import.meta.url), 'utf8');
+// Fonte em uso na conferência; o tema escuro redefine os mesmos nomes e herda do claro o que não redefine.
+let css = claro;
 
 function token(nome: string): string {
-  const m = new RegExp(`--s-${nome}:\\s*(#[0-9a-f]{6})`, 'i').exec(css);
-  if (!m?.[1]) throw new Error(`token --s-${nome} não encontrado`);
-  return m[1];
+  return resolver(nome);
 }
 
 function luminancia(hex: string): number {
@@ -42,6 +43,10 @@ const pares: [string, string][] = [
   ['tinta', 'alerta-claro'],
   ['principal', 'papel'],
   ['papel', 'tinta'],
+  // barra do topo: texto, aba ativa e selo da versão
+  ['topo-texto', 'topo'],
+  ['topo-ativo-texto', 'topo-ativo'],
+  ['topo-ativo', 'topo'],
 ];
 
 // Componentes sem texto (WCAG 1.4.11): borda de campo e anel de foco precisam de 3:1 sobre o fundo.
@@ -61,12 +66,35 @@ function resolver(nome: string): string {
   return m[2] ? resolver(m[2]) : m[1]!;
 }
 
-describe('tokens visuais (direção A)', () => {
+describe.each([
+  ['claro', claro],
+  ['escuro', `${escuro}\n${claro}`],
+])('tokens visuais (direção A, tema %s)', (_tema, fonte) => {
+  beforeEach(() => {
+    css = fonte;
+  });
+
   it.each(pares)('texto --s-%s sobre --s-%s tem contraste AA (≥ 4,5:1)', (texto, fundo) => {
     expect(contraste(token(texto), token(fundo))).toBeGreaterThanOrEqual(4.5);
   });
 
   it.each(naoTexto)('--s-%s sobre --s-%s tem contraste de 3:1 (WCAG 1.4.11)', (a, b) => {
     expect(contraste(resolver(a), resolver(b))).toBeGreaterThanOrEqual(3);
+  });
+});
+
+describe('tema escuro: regras de forma', () => {
+  it('redefine só tokens existentes, só sob prefers-color-scheme: dark e sem preto/branco puro', () => {
+    expect(escuro).toMatch(/@media screen and \(prefers-color-scheme: dark\)/);
+    for (const [, nome] of escuro.matchAll(/^\s*(--s-[a-z-]+):/gm)) {
+      expect(claro).toContain(`${nome}:`);
+    }
+    expect(escuro).not.toMatch(/#(000000|ffffff)\b/i);
+  });
+
+  it('o fundo é escuro e o texto é claro', () => {
+    css = `${escuro}\n${claro}`;
+    expect(luminancia(token('fundo'))).toBeLessThan(0.05);
+    expect(luminancia(token('tinta'))).toBeGreaterThan(0.6);
   });
 });
