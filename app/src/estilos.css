@@ -60,6 +60,9 @@ code {
   color: var(--s-papel);
 }
 .marca {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
   color: var(--s-papel);
   font-family: var(--s-fonte-titulo);
   font-weight: 600;
@@ -71,6 +74,10 @@ code {
   gap: var(--s-espaco-1);
 }
 .topo nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--s-alvo-toque);
   color: var(--s-papel);
   text-decoration: none;
   padding: var(--s-espaco-2) var(--s-espaco-3);
@@ -158,6 +165,7 @@ code {
   align-items: center;
   justify-content: center;
   gap: var(--s-espaco-2);
+  min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-2) var(--s-espaco-4);
   border-radius: var(--s-raio-p);
   border: var(--s-borda-campo) solid var(--s-borda-controle);
@@ -189,6 +197,9 @@ code {
   padding: var(--s-espaco-3) var(--s-espaco-5);
 }
 .link-discreto {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
   background: none;
   border: none;
   padding: var(--s-espaco-1) var(--s-espaco-2);
@@ -223,7 +234,8 @@ code {
 .formulario select {
   font: inherit;
   color: var(--s-tinta);
-  padding: var(--s-espaco-3);
+  min-height: var(--s-alvo-toque);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
   border: var(--s-borda-campo) solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
@@ -241,13 +253,16 @@ legend {
 .formulario label.opcao,
 label.opcao {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--s-espaco-3);
   font-weight: 400;
+  min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-2) 0;
+  cursor: pointer;
 }
 label.opcao input {
-  margin-top: var(--s-espaco-1);
+  flex: none;
+  margin: 0;
   width: var(--s-caixa);
   height: var(--s-caixa);
   accent-color: var(--s-principal);
@@ -319,6 +334,9 @@ progress {
   padding-bottom: var(--s-espaco-1);
 }
 .abas a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
   white-space: nowrap;
   text-decoration: none;
   padding: var(--s-espaco-2) var(--s-espaco-4);
@@ -363,7 +381,9 @@ progress {
   margin-top: var(--s-espaco-2);
 }
 .para-os-pais summary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-1) var(--s-espaco-2);
   border-radius: var(--s-raio-p);
   color: var(--s-principal);
@@ -411,6 +431,8 @@ progress {
   justify-content: flex-end;
 }
 .estado-botao {
+  min-width: var(--s-alvo-toque);
+  min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-2) var(--s-espaco-3);
   border-radius: var(--s-raio-p);
   border: var(--s-borda-campo) solid var(--s-borda-controle);
@@ -518,7 +540,21 @@ progress {
 .faixa-exemplo[hidden] {
   display: none;
 }
+/* Link no meio de uma frase não pode crescer em linha, mas o toque dele vale ao menos o alvo mínimo:
+   o preenchimento vertical de um elemento em linha aumenta a área clicável sem mexer na entrelinha. */
+main :is(p, li) > a:not(.botao) {
+  padding-block: var(--s-espaco-3);
+}
+summary {
+  display: flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
+  cursor: pointer;
+}
 .link-botao {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
   background: none;
   border: none;
   padding: var(--s-espaco-2) var(--s-espaco-1);
@@ -531,6 +567,9 @@ progress {
 
 /* ---------- Versão e atualização (#38) ---------- */
 .topo .versao {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
   margin-right: auto;
   margin-left: var(--s-espaco-2);
   padding: var(--s-espaco-1) var(--s-espaco-2);
@@ -552,6 +591,24 @@ progress {
 }
 .faixa-atualizar[hidden] {
   display: none;
+}
+
+.lista-unidades {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lista-unidades li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--s-espaco-2);
+  min-height: var(--s-alvo-toque);
+}
+.lista-unidades a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
 }
 
 .lista-acervo {
@@ -576,7 +633,8 @@ progress {
 #filtros select {
   font: inherit;
   color: var(--s-tinta);
-  padding: var(--s-espaco-3);
+  min-height: var(--s-alvo-toque);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
   border: var(--s-borda-campo) solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
