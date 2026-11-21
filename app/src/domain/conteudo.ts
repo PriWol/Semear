@@ -1,4 +1,5 @@
 // Índice e validação do conteúdo curado. Funções puras: recebem o conteúdo já carregado.
+import { ehNomeDeIcone } from './icones';
 import { estaPublicavel, validarRevisao } from './revisao';
 import {
   TIPOS_INDICACAO,
@@ -216,6 +217,9 @@ export function validarConteudo(
 
   for (const d of conteudo.dominios) {
     unico(d.id, 'Domínio');
+    // Dado de fora: o ícone é um nome do conjunto (ADR 0034); emoji ou texto livre não passa.
+    if (!ehNomeDeIcone(d.icone))
+      erros.push(`Domínio ${d.id}: ícone "${String(d.icone)}" não existe no conjunto de ícones`);
     for (const l of d.linhas ?? []) {
       unico(l.id, 'Linha');
       if (!l.id.startsWith(`${d.id}.`))

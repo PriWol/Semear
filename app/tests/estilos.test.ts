@@ -86,3 +86,13 @@ describe('conforto e movimento', () => {
     expect(css).toMatch(/\.lista-atividades\s*\{[^}]*list-style: none/);
   });
 });
+
+describe('ícones (ADR 0034)', () => {
+  it('tokens de tamanho existem e o CSS os usa', () => {
+    expect(tokens).toContain('--s-icone: 1.25rem');
+    expect(tokens).toContain('--s-icone-g: 2rem');
+    expect(css).toMatch(/\.icone\s*\{[^}]*width:\s*var\(--s-icone\)/);
+    expect(css).toMatch(/\.icone-g\s*\{[^}]*var\(--s-icone-g\)/);
+    expect(css).toMatch(/\.icone\s*\{[^}]*flex-shrink:\s*0/);
+  });
+});

@@ -51,6 +51,7 @@ export interface Trilha {
 export interface Dominio {
   id: string; // ex.: "LG"
   nome: string;
+  /** nome do ícone de linha fina (domain/icones.ts), não um emoji (ADR 0034) */
   icone: string;
   /** false = só atividades, sem posicionamento (decisão 20) */
   comJornada: boolean;

@@ -56,6 +56,9 @@
   /* Formato: pílula, caixa de marcar, largura do app, largura de leitura (~65 caracteres, DESIGN.md) */
   --s-raio-pilula: 99px;
   --s-caixa: 1.5rem;
+  /* Ícones de linha fina (Phosphor regular, ADR 0034): junto ao texto e em destaque */
+  --s-icone: 1.25rem;
+  --s-icone-g: 2rem;
   --s-largura-app: 57.5rem;
   --s-largura-cartao-min: 17.5rem;
   --s-coluna-progresso: 5.625rem;

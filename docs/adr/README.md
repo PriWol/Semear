@@ -39,5 +39,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0030](0030-registro-de-sessao-sem-mudar-estado.md) | Registro de sessão grava observação e nunca muda o estado do marco | Aceito |
 | [0031](0031-integridade-dos-pdfs-do-tesouro-no-deploy.md) | Integridade (sha256) dos PDFs do Tesouro no deploy | Proposto |
 | [0032](0032-volume-8-primeira-versao-menor.md) | Volume 8 em primeira versão menor, em dois PRs | Aceito |
+| [0034](0034-icones-de-linha-fina-phosphor.md) | Ícones de linha fina: Phosphor (MIT), SVG copiados sem dependência | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
