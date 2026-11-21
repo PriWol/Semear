@@ -16,10 +16,14 @@ test('a versão aparece no topo e leva às novidades', async ({ page }) => {
   await expect(page.locator(`[data-versao="${version}"]`)).toBeVisible();
 });
 
-test('Configurações mostra versão, data e código da publicação', async ({ page }) => {
+test('Ajustes mostra a versão curta e, nos detalhes técnicos, número, data e código', async ({
+  page,
+}) => {
   await page.goto('./#/config');
   const sobre = page.locator('#sobre');
-  await expect(sobre).toContainText(`(${version})`);
+  await expect(sobre).toContainText(curta);
+  await sobre.getByText('Detalhes técnicos').click();
+  await expect(sobre).toContainText(version);
   await expect(sobre).toContainText(/publicada em\s+\d{2}\/\d{2}\/\d{4}/);
   await expect(sobre.locator('code')).toHaveText(/^([0-9a-f]{7}|local)$/);
 });

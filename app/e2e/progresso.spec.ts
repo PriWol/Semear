@@ -1,3 +1,4 @@
+import { abrirAjustes, apagarTudoPelosAjustes, confirmarTrazerCopia } from './ajustes-ajuda';
 import { escolherAtividade } from './proposta';
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
@@ -303,7 +304,7 @@ test('detalhes inválidos mostram o erro e não perdem o que foi marcado', async
   await expect(page.getByRole('button', { name: 'Salvar registro' })).toBeEnabled();
 });
 
-test('exportar e importar mantém o registro; um arquivo inválido mostra o erro e mantém os dados', async ({
+test('guardar e trazer a cópia mantém o registro; um arquivo inválido mostra o erro e mantém os dados', async ({
   page,
 }) => {
   const mensagens: string[] = [];
@@ -320,14 +321,16 @@ test('exportar e importar mantém o registro; um arquivo inválido mostra o erro
   await page.getByRole('button', { name: 'Salvar registro' }).click();
   await expect(page.locator('.lista-sessoes li', { hasText: codigo })).toContainText('Feita ✓');
 
-  await page.getByRole('link', { name: 'Config.' }).click();
+  await abrirAjustes(page);
   const [download] = await Promise.all([
     page.waitForEvent('download'),
-    page.getByRole('button', { name: 'Baixar backup' }).click(),
+    page.getByRole('button', { name: 'Guardar uma cópia dos meus dados' }).click(),
   ]);
   const arquivo = (await download.path())!;
   const texto = await readFile(arquivo, 'utf-8');
   expect(texto).toContain('Anotação do backup');
+  // Espera a tela se atualizar com a data da cópia antes de escolher arquivo (ela se redesenha depois do download).
+  await expect(page.getByText(/Última cópia: hoje/)).toBeVisible();
 
   // Um backup adulterado (observação de uma sessão que não existe) é recusado sem apagar nada.
   const adulterado = JSON.parse(texto) as { historico: Record<string, unknown>[] };
@@ -342,18 +345,18 @@ test('exportar e importar mantém o registro; um arquivo inválido mostra o erro
     mimeType: 'application/json',
     buffer: Buffer.from(JSON.stringify(adulterado)),
   });
-  await expect
-    .poll(() => mensagens.some((m) => m.includes('Arquivo de backup inválido')))
-    .toBe(true);
+  await expect(page.locator('#erro-copia')).toContainText('Arquivo de backup inválido');
+  expect(mensagens).toEqual([]); // nada de alert() do navegador
   await page.getByRole('link', { name: 'Início' }).click();
   await expect(page.locator('.lista-sessoes li', { hasText: codigo })).toContainText('Feita ✓');
 
   // Restaurar o backup bom: apaga tudo e importa; o registro continua lá.
-  await page.getByRole('link', { name: 'Config.' }).click();
-  await page.getByRole('button', { name: 'Apagar tudo' }).click();
+  await abrirAjustes(page);
+  await apagarTudoPelosAjustes(page);
   await expect(page.getByRole('heading', { name: 'Bem-vindo ao Semear' })).toBeVisible();
-  await page.getByRole('link', { name: 'Config.' }).click();
+  await abrirAjustes(page);
   await page.locator('#importar').setInputFiles(arquivo);
+  await confirmarTrazerCopia(page);
   await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
   await expect(page.locator('.lista-sessoes li', { hasText: codigo })).toContainText('Feita ✓');
   await page.locator('.lista-sessoes li', { hasText: codigo }).getByRole('link').click();

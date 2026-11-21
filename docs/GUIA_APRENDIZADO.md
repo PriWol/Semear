@@ -220,6 +220,16 @@ nova loja de dados, nova chamada externa), muda o texto no mesmo PR. A versão a
 teve revisão jurídica; não promete preço, plano nem prazo, só diz que haverá aviso antes de
 qualquer cobrança. (#25)
 
+### Caixa de confirmação com `<dialog>`
+`confirm()` e `alert()` do navegador aparecem diferentes em cada celular e não deixam oferecer um botão
+como "Guardar uma cópia primeiro". O elemento HTML `<dialog>`, aberto com `showModal()`, já traz o que
+precisamos: prende o foco dentro da caixa, fecha com Esc e devolve o foco ao botão que a abriu. Em
+`src/ui/dialogo.ts` ele recebe título, texto e botões; para a ação sem volta ("Apagar todos os dados")
+a caixa pede a palavra APAGAR (regra pura em `domain/confirmacao.ts`) antes de liberar o botão. Do mesmo
+modo, a hora do aviso usa dois campos (hora e minutos) porque o `input type=time` segue o idioma do
+aparelho (AM/PM) e não dá para forçar 24 h; a validação fica em `horaDe24h`. A tela de Ajustes
+(rota `#/config`) mostra a "última cópia" por `resumoUltimaCopia`, com alerta a partir de 30 dias.
+
 ---
 
 ## 6. Glossário rápido
