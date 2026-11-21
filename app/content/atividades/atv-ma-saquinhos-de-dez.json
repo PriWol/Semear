@@ -1,0 +1,103 @@
+{
+  "id": "atv-ma-saquinhos-de-dez",
+  "titulo": "Saquinhos de dez: dezenas e unidades",
+  "marcos": ["MA.SND.05"],
+  "revisa": ["MA.SND.04"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [6, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Palitos de sorvete têm lascas e pontas: lixe antes e não deixe a criança colocá-los na boca. Elásticos podem estalar: o adulto ensina a prender sem esticar demais.",
+  "objetivo": "A criança **agrupa em dezenas e unidades** (14 = 1 dezena e 4 unidades) e diz quantos grupos de dez e quantos soltos sobram.",
+  "passos": [
+    {
+      "titulo": "Um monte para contar",
+      "minutos": 5,
+      "texto": "Despeje 23 palitos e pergunte: *“como podemos contar sem nos perder?”* Deixe que ela proponha. Mostre o jeito de dez em dez, com elástico."
+    },
+    {
+      "titulo": "Grupos de dez",
+      "minutos": 8,
+      "texto": "Juntos, façam grupos de dez, um elástico em cada, e deixe os soltos à parte. *“Quantos grupos? Quantos soltos?”* Diga: *2 dezenas e 3 unidades: vinte e três*.",
+      "fala": "Quantas dezenas? Quantas unidades?"
+    },
+    {
+      "titulo": "Troca de dez por um",
+      "minutos": 6,
+      "texto": "Junte 10 palitos soltos e troque por um maço. Depois desfaça um maço em 10 soltos. Ela vê que é a mesma quantidade."
+    },
+    {
+      "titulo": "Folha: quantos de dez?",
+      "minutos": 6,
+      "texto": "Ela mostra o número no quadro de dez e diz quantas dezenas e unidades."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "forma grupos de dez e conta o que sobra, em coleções até 30",
+      "diz que 23 é 2 dezenas e 3 unidades",
+      "troca dez soltos por um maço"
+    ],
+    "emDesenvolvimento": [
+      "conta tudo de um em um mesmo depois de agrupar",
+      "esquece os soltos depois de contar as dezenas"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use coleções de 12 a 19, com um único grupo de dez, e deixe os soltos separados.",
+    "facil": "Dê 47 e peça que estime antes de contar; depois confira por dezenas."
+  },
+  "materiais": [
+    {
+      "item": "30 palitos de sorvete (lixados), canudos cortados ou tampinhas",
+      "deCasa": true
+    },
+    {
+      "item": "Elásticos",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "As contas douradas (unidade solta, barra de dez) são o material clássico: a criança troca dez unidades por uma barra e vê a dezena.",
+    "Charlotte Mason": "Use coisas reais, como feijões em saquinhos de dez, em lições curtas.",
+    "Clássico": "Registre e recite: *“duas dezenas e três unidades, vinte e três”* e repita ao longo da semana."
+  },
+  "evidencias": [
+    {
+      "texto": "Formou grupos de dez e contou os soltos",
+      "resposta": "_____ de 3   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse as dezenas e unidades",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "quadro-dez",
+      "titulo": "Mostre o número e circule as dezenas",
+      "dica": "Encha o primeiro quadro e depois o segundo.",
+      "numeros": [14, 17, 20]
+    },
+    {
+      "tipo": "desenho",
+      "titulo": "Meus saquinhos de dez",
+      "legenda": "A criança desenha os grupos de dez e os soltos para um número escolhido pelo adulto, como 26."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["dezena", "unidade", "agrupar de dez em dez", "troca"]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "atv-ma-trilha-do-sapo",
+  "titulo": "Trilha do sapo: somando a partir do maior",
+  "marcos": ["MA.OPE.04"],
+  "revisa": ["MA.SEN.07"],
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [6, 7],
+  "duracaoMin": 22,
+  "preparoMin": 8,
+  "cuidados": "Fichas e peões são pequenos: use peças grandes e guarde-os depois. Dado grande pode ir de brinquedo ao chão sem risco, mas fique por perto de irmãos menores.",
+  "objetivo": "A criança **soma até 10 contando a partir do maior número**, sem recontar o primeiro grupo.",
+  "passos": [
+    {
+      "titulo": "Mostrar o jeito",
+      "minutos": 4,
+      "texto": "Cubra 6 fichas com a mão e diga *“aqui tem 6; vêm mais 3”*. Coloque 3 ao lado e diga com ela: *seis… sete, oito, nove*. Marque com os dedos."
+    },
+    {
+      "titulo": "Trilha do sapo",
+      "minutos": 10,
+      "texto": "Numa trilha de 1 a 12 desenhada no papel, o sapo (um tampão) começa no 6. Ela joga o dado e diz *“estou no 6, mais 3: 7, 8, 9”*. Depois, repete com outras casas.",
+      "fala": "De onde você começa a contar?"
+    },
+    {
+      "titulo": "Sem esconder",
+      "minutos": 4,
+      "texto": "Agora só falando: *“8 e mais 2”*. Ela diz a conta de cabeça e confere contando tudo, até confiar."
+    },
+    {
+      "titulo": "Folha: a soma na trilha",
+      "minutos": 4,
+      "texto": "Ela conta a partir do número maior e circula o resultado."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "resolve somas até 10 contando a partir do maior, em 3 de 4",
+      "usa os dedos só para marcar os passos adicionais",
+      "confere contando tudo e vê que dá o mesmo"
+    ],
+    "emDesenvolvimento": ["recomeça do 1 em todas as contas", "perde a conta dos passos"]
+  },
+  "ajustes": {
+    "dificil": "Comece de 3 e mais 2, com as fichas à vista, e deixe-a contar tudo para provar.",
+    "facil": "Peça *“4 e mais 6”*: qual número é melhor para começar? E ela explica por quê."
+  },
+  "materiais": [
+    {
+      "item": "Papel com trilha desenhada de 1 a 12",
+      "deCasa": true
+    },
+    {
+      "item": "Um dado e um tampão grande",
+      "deCasa": true
+    },
+    {
+      "item": "Fichas grandes",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "O jogo da serpente da adição (uma serpente de contas coloridas) e a tábua de adição permitem somar com peças e ir passando ao cálculo de cabeça.",
+    "Clássico": "Depois de entender, recitem as somas em lições curtas: *“seis e três, nove”*.",
+    "Charlotte Mason": "Faça em lições curtas e faladas, com coisas reais; o cálculo de cabeça nasce do que a criança já provou com objetos."
+  },
+  "evidencias": [
+    {
+      "texto": "Somou a partir do maior",
+      "resposta": "_____ de 4   ☐ sem recontar   ☐ recontou"
+    },
+    {
+      "texto": "Conferiu contando tudo",
+      "resposta": "☐ sim   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "contar",
+      "titulo": "Conte os dois grupos juntos e circule o total",
+      "itens": [
+        {
+          "emoji": "🐸",
+          "quantidade": 7,
+          "opcoes": [6, 7, 8]
+        },
+        {
+          "emoji": "🐞",
+          "quantidade": 9,
+          "opcoes": [8, 9, 10]
+        },
+        {
+          "emoji": "🌼",
+          "quantidade": 8,
+          "opcoes": [7, 8, 9]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["somar", "contar a partir do maior", "trilha", "dado", "adição"]
+}

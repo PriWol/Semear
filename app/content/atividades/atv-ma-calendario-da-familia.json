@@ -1,0 +1,103 @@
+{
+  "id": "atv-ma-calendario-da-familia",
+  "titulo": "O calendário da família: dias e meses",
+  "marcos": ["MA.MED.06"],
+  "revisa": ["MA.MED.03"],
+  "vertentes": ["Waldorf", "Charlotte Mason", "Montessori", "Clássico"],
+  "idade": [6, 8],
+  "duracaoMin": 26,
+  "preparoMin": 8,
+  "cuidados": "Atividade de papel e lápis, sem materiais pequenos. Se usar adesivos ou fichas para marcar os dias, escolha peças grandes e guarde depois.",
+  "objetivo": "A criança **diz os dias da semana e os meses em ordem** e acha uma data no calendário.",
+  "passos": [
+    {
+      "titulo": "A cantiga dos dias",
+      "minutos": 4,
+      "texto": "Cantem os dias da semana, uma vez por dia, de segunda a domingo. Depois, brinque: *“que dia vem depois de quarta?”*, *“e antes de sexta?”*."
+    },
+    {
+      "titulo": "Marcar o dia de hoje",
+      "minutos": 6,
+      "texto": "Mostre o calendário do mês e marque o dia de hoje com um círculo. Ela escreve a data com você. Pergunte: *“qual foi ontem? e amanhã?”*.",
+      "fala": "Em que dia estamos?"
+    },
+    {
+      "titulo": "Contagem para um evento",
+      "minutos": 8,
+      "texto": "Escolha um evento esperado (aniversário, viagem). Ela conta quantos dias faltam, marcando cada dia no calendário com um risco."
+    },
+    {
+      "titulo": "Os meses do ano",
+      "minutos": 5,
+      "texto": "Cantem ou recitem os 12 meses e pergunte *“que mês vem depois de março?”*, *“e antes de maio?”*."
+    },
+    {
+      "titulo": "Folha: meu calendário",
+      "minutos": 3,
+      "texto": "Ela completa o calendário do mês e marca a data do aniversário."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz os dias da semana e os meses em ordem",
+      "mostra no calendário o dia de hoje e o do aniversário",
+      "responde “que dia vem depois de…?”"
+    ],
+    "emDesenvolvimento": [
+      "troca os dias da semana no meio da sequência",
+      "perde a ordem dos meses depois de junho"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Foque só nos dias da semana, com a cantiga e um painel simples, sem meses.",
+    "facil": "Peça que ela monte o calendário do mês seguinte, com as datas de eventos da família."
+  },
+  "materiais": [
+    {
+      "item": "Calendário do mês, impresso ou desenhado",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou canetinha",
+      "deCasa": true
+    },
+    {
+      "item": "Um evento esperado da família",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Waldorf": "O ritmo do ano, com as estações e as festas, é a base: o calendário nasce da vida e dos ciclos da natureza.",
+    "Charlotte Mason": "Registre o tempo no caderno da natureza (data, clima e o que observou), em poucas linhas por dia.",
+    "Montessori": "Mantenha um calendário da sala em que a criança marca os dias e os eventos que quiser.",
+    "Clássico": "Recitem os dias e os meses todo dia, como uma cantilena, até virarem automáticos."
+  },
+  "evidencias": [
+    {
+      "texto": "Disse os dias da semana em ordem",
+      "resposta": "☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Mostrou a data no calendário",
+      "resposta": "☐ hoje   ☐ aniversário   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meu calendário do mês",
+      "legenda": "O adulto desenha a grade do mês. A criança escreve os números, marca o dia de hoje com um círculo e o aniversário com um desenho."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["calendário", "dias da semana", "meses", "data", "tempo"]
+}

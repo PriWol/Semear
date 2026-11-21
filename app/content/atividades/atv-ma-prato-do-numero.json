@@ -1,0 +1,117 @@
+{
+  "id": "atv-ma-prato-do-numero",
+  "titulo": "O prato de cada número",
+  "marcos": ["MA.SND.02"],
+  "revisa": ["MA.SND.01"],
+  "vertentes": ["Montessori", "Charlotte Mason"],
+  "idade": [5, 6],
+  "duracaoMin": 19,
+  "preparoMin": 5,
+  "cuidados": "Use feijões, botões ou tampinhas grandes, que não caibam na boca, e guarde tudo ao final. Em lares com crianças menores, use pompons grandes ou rolhas de cortiça.",
+  "objetivo": "A criança **coloca a quantidade certa de objetos ao lado de cada algarismo de 0 a 9**, inclusive o 0 (prato vazio).",
+  "passos": [
+    {
+      "titulo": "Os pratos de papel",
+      "minutos": 4,
+      "texto": "Escreva 0, 1, 2, 3, 4 e 5 em pratinhos de papel. Mostre: *“No prato 3 cabem 3 feijões”* e coloque. Deixe que ela confira contando."
+    },
+    {
+      "titulo": "Pedido do adulto",
+      "minutos": 6,
+      "texto": "Peça *“ponha 4 colheres no prato 4”* e *“o prato 0 fica vazio”*. Depois troque: você põe feijões e ela acha o prato certo. Se errar, conte junto, sem culpa.",
+      "fala": "Quantos tem aqui? Qual é o prato?"
+    },
+    {
+      "titulo": "Sobe até o 9",
+      "minutos": 5,
+      "texto": "Acrescente os pratos de 6 a 9 e repita, devagar. Pare quando ela cansar; é melhor um dia só até 6."
+    },
+    {
+      "titulo": "Folha: conte e circule",
+      "minutos": 4,
+      "texto": "Na folha, ela conta e circula o algarismo que combina com a quantidade."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "coloca a quantidade certa ao lado de 4 de 5 algarismos",
+      "põe o prato 0 vazio sem hesitar",
+      "confere contando"
+    ],
+    "emDesenvolvimento": [
+      "conta e acerta, mas não liga ao algarismo",
+      "troca a quantidade por algarismo parecido"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só os pratos de 1 a 4 e conte junto com ela, apontando o algarismo e depois os objetos.",
+    "facil": "Esconda o algarismo e peça que ela escreva ou escolha o cartão que combina com os feijões."
+  },
+  "materiais": [
+    {
+      "item": "Pratos de papel ou potes com algarismos de 0 a 9",
+      "deCasa": true
+    },
+    {
+      "item": "Feijões, tampinhas ou pompons grandes (30)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "A caixa de fusos e os cartões com fichas fazem essa ligação: a criança coloca a quantidade certa em cada compartimento ou ao lado de cada algarismo.",
+    "Charlotte Mason": "Use objetos da casa e do passeio: a criança monta a quantidade e depois mostra o algarismo, poucos por vez."
+  },
+  "evidencias": [
+    {
+      "texto": "Acertou a quantidade para o algarismo",
+      "resposta": "_____ de 5   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Prato 0",
+      "resposta": "☐ deixou vazio   ☐ ainda não entende"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "contar",
+      "titulo": "Conte e circule o algarismo que combina",
+      "itens": [
+        {
+          "emoji": "🍎",
+          "quantidade": 4,
+          "opcoes": [3, 4, 5]
+        },
+        {
+          "emoji": "🐞",
+          "quantidade": 7,
+          "opcoes": [6, 7, 9]
+        },
+        {
+          "emoji": "🌻",
+          "quantidade": 2,
+          "opcoes": [2, 5, 8]
+        },
+        {
+          "emoji": "🍪",
+          "quantidade": 9,
+          "opcoes": [6, 8, 9]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["algarismo e quantidade", "pratinhos", "associação número quantidade"]
+}

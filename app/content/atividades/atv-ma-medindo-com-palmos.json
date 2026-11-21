@@ -1,0 +1,97 @@
+{
+  "id": "atv-ma-medindo-com-palmos",
+  "titulo": "Medindo com palmos, passos e clipes",
+  "marcos": ["MA.MED.04"],
+  "revisa": ["MA.MED.01"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 23,
+  "preparoMin": 5,
+  "cuidados": "Clipes e blocos pequenos podem ir à boca: use clipes grandes ou fita colorida em casas com irmãos menores e guarde tudo depois. Ande com calma, sem correr e sem obstáculos no caminho.",
+  "objetivo": "A criança **mede repetindo uma unidade** (palmo, passo, clipe), sem deixar buracos nem sobrepor, e vê que a mesma coisa dá números diferentes com unidades diferentes.",
+  "passos": [
+    {
+      "titulo": "Mostrar o jeito",
+      "minutos": 5,
+      "texto": "Meça a mesa com palmos: coloque um palmo depois do outro, sem espaços, e conte. *“A mesa tem 7 palmos.”* Deixe que ela tente e corrija os espaços junto com ela."
+    },
+    {
+      "titulo": "Palmo e clipe",
+      "minutos": 7,
+      "texto": "Meçam um livro com palmos e depois com clipes grandes. *“Por que deu mais clipes do que palmos?”* Deixe que ela explique.",
+      "fala": "Por que os números foram diferentes?"
+    },
+    {
+      "titulo": "Medir o corpo",
+      "minutos": 6,
+      "texto": "Meçam o quarto com os passos dela e depois com os seus. *“Por que deu diferente?”* Converse sobre o tamanho do passo de cada um."
+    },
+    {
+      "titulo": "Folha: registro",
+      "minutos": 5,
+      "texto": "Ela anota o que mediu e qual unidade usou."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "mede repetindo a unidade, sem buracos nem sobreposição",
+      "diz que o mesmo objeto dá números diferentes com unidades diferentes",
+      "conta bem as repetições"
+    ],
+    "emDesenvolvimento": [
+      "deixa buracos entre os palmos",
+      "mede com a unidade e esquece de dizer qual usou"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Meça com uma só unidade (palmos) e um objeto curto, e deixe que ela coloque os palmos devagar.",
+    "facil": "Peça que ela estime antes de medir e compare com o resultado."
+  },
+  "materiais": [
+    {
+      "item": "Clipes grandes, blocos ou fita de papel como unidade",
+      "deCasa": true
+    },
+    {
+      "item": "A própria mão e o pé",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "As barras numéricas, divididas em partes iguais de cores alternadas, mostram a medida como um conjunto de unidades iguais.",
+    "Waldorf": "Medir com o próprio corpo (passos, palmos, pés, braçadas) é a primeira medida na tradição Waldorf; as unidades padrão vêm depois, quando a criança sente a necessidade.",
+    "Charlotte Mason": "Meça coisas reais da casa e do quintal, e peça que a criança narre como mediu."
+  },
+  "evidencias": [
+    {
+      "texto": "Mediu sem buracos nem sobreposição",
+      "resposta": "☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Explicou números diferentes",
+      "resposta": "☐ sim   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Medi com…",
+      "legenda": "O adulto escreve “Medi ____ com ____ ” e a criança desenha o que mediu, a unidade e o número de repetições."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["medida", "palmo", "passo", "unidade não padronizada", "comprimento"]
+}

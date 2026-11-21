@@ -1,0 +1,98 @@
+{
+  "id": "atv-ma-grupos-de-iguais",
+  "titulo": "Grupos de iguais: rodas e meias",
+  "marcos": ["MA.OPE.07"],
+  "revisa": ["MA.OPE.05"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 23,
+  "preparoMin": 8,
+  "cuidados": "Fichas, palitos e tampinhas são pequenos: use peças grandes e guarde tudo depois. Em saltos de movimento, deixe o chão livre e seco.",
+  "objetivo": "A criança **resolve problemas de grupos iguais** montando os grupos com objetos ou desenhos e contando grupo a grupo.",
+  "passos": [
+    {
+      "titulo": "Rodas dos carrinhos",
+      "minutos": 6,
+      "texto": "Conte: *“3 carrinhos, cada um com 4 rodas”*. Ela monta 3 grupos de 4 fichas e conta de grupo em grupo: *4, 8, 12*. Deixe que ela explique como fez."
+    },
+    {
+      "titulo": "Mais situações",
+      "minutos": 8,
+      "texto": "Varie: pares de meias (5 pares), ovos na caixa (2 fileiras de 6), dedos de duas mãos (2 grupos de 5). Peça que monte ou desenhe antes de contar.",
+      "fala": "Quantos grupos? Quantos em cada?"
+    },
+    {
+      "titulo": "Contar em saltos",
+      "minutos": 5,
+      "texto": "Cantem em saltos de 2, de 5 e de 10, batendo palmas ou pulando. Não é tabuada: é sentir o padrão."
+    },
+    {
+      "titulo": "Folha: desenhe os grupos",
+      "minutos": 4,
+      "texto": "Ela desenha os grupos e escreve o total de cada problema."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "resolve 3 de 4 problemas de grupos iguais com objetos ou desenhos",
+      "conta de grupo em grupo (4, 8, 12)",
+      "explica quantos grupos e quantos em cada"
+    ],
+    "emDesenvolvimento": [
+      "conta tudo de um em um, sem agrupar",
+      "perde de vista quantos grupos já contou"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 grupos de 3 e deixe os grupos separados por prato, com a contagem em voz alta.",
+    "facil": "Peça que ela invente um problema para você e use 6 grupos de 5."
+  },
+  "materiais": [
+    {
+      "item": "20 fichas ou palitos grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Pratos pequenos, um por grupo",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "O tabuleiro de multiplicação com contas mostra grupos iguais de forma concreta: a criança monta os grupos antes de falar em tabuada.",
+    "Waldorf": "Contar em saltos com palmas e passos (de 2 em 2, de 5 em 5) dá forma à multiplicação. As operações costumam ser formalizadas por volta dos 7 anos.",
+    "Clássico": "Cantar as contagens em saltos é o início da tabuada, que se memoriza com prática diária curta.",
+    "Charlotte Mason": "Use situações reais (meias, ovos, rodas) e lições curtas."
+  },
+  "evidencias": [
+    {
+      "texto": "Resolveu problemas de grupos iguais",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Contou de grupo em grupo",
+      "resposta": "☐ sim   ☐ de um em um"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Grupos iguais",
+      "legenda": "A criança desenha os grupos de cada problema (3 carrinhos com 4 rodas, 5 pares de meias) e escreve quantos são no total."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["multiplicação", "grupos iguais", "contar em saltos", "tabuada", "rodas"]
+}

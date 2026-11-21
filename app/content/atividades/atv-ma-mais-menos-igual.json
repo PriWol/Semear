@@ -1,0 +1,139 @@
+{
+  "id": "atv-ma-mais-menos-igual",
+  "titulo": "Mais, menos ou igual: a partilha das bolachas",
+  "marcos": ["MA.SEN.05"],
+  "revisa": ["MA.SEN.03"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [5, 6],
+  "duracaoMin": 19,
+  "preparoMin": 5,
+  "cuidados": "Se usar bolachas de verdade, lave as mãos antes e confira alergias. Para os objetos de contar, use peças grandes que não caibam na boca e fique perto de irmãos menores.",
+  "objetivo": "A criança **diz onde tem mais, menos ou igual** (até 10) conferindo de dois jeitos: contando e emparelhando.",
+  "passos": [
+    {
+      "titulo": "Duas fileiras",
+      "minutos": 5,
+      "texto": "Ponha 6 botões grandes numa fileira e 4 em outra, bem espaçados. *“Onde tem mais?”* Deixe que ela escolha e depois confira de dois jeitos: contando e ligando um de cada lado.",
+      "fala": "Como você pode ter certeza?"
+    },
+    {
+      "titulo": "Muda a arrumação",
+      "minutos": 5,
+      "texto": "Junte os 6 botões num monte e espalhe os 6 em linha. Pergunte de novo: *“ainda tem o mesmo tanto?”* Deixe que ela confira contando."
+    },
+    {
+      "titulo": "Igual ou diferente",
+      "minutos": 5,
+      "texto": "Faça pares de coleções (5 e 5, 7 e 4, 3 e 8) e pergunte *“mais, menos ou igual?”*. Quando for igual, deixe-a mostrar com o emparelhamento."
+    },
+    {
+      "titulo": "Folha: circule onde tem mais",
+      "minutos": 4,
+      "texto": "A criança conta cada cesto e circula o maior. Se forem iguais, pinta “iguais”."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "escolhe corretamente onde tem mais em 3 de 4 pares",
+      "confere emparelhando ou contando sozinha",
+      "mantém a resposta quando a arrumação muda"
+    ],
+    "emDesenvolvimento": [
+      "decide pelo tamanho do monte, e não pelo número",
+      "muda de ideia quando espalhamos os objetos"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use coleções de até 5 e bem diferentes (2 e 5), emparelhando junto com ela.",
+    "facil": "Peça que ela invente uma comparação (*“quem tem mais, eu ou você?”*) e use números até 10."
+  },
+  "materiais": [
+    {
+      "item": "Botões grandes, tampinhas ou feijões grandes (10 a 12)",
+      "deCasa": true
+    },
+    {
+      "item": "Um pratinho",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Em bandeja, use dois conjuntos e deixe a criança ligar um de cada lado com as mãos antes de falar.",
+    "Waldorf": "Conte uma história de partilha (castanhas entre dois esquilos) e deixe a criança sentir o justo e o igual antes de dar o nome.",
+    "Charlotte Mason": "Faça poucas comparações de cada vez, com coisas reais (*“quem tem mais lápis?”*), e peça que conte como conferiu."
+  },
+  "evidencias": [
+    {
+      "texto": "Acertou onde tem mais",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Conferiu",
+      "resposta": "☐ contou   ☐ emparelhou   ☐ só olhou"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "comparar",
+      "titulo": "Circule onde tem mais",
+      "dica": "Se tiverem a mesma quantidade, pinte “iguais”.",
+      "pares": [
+        {
+          "a": {
+            "emoji": "🍪",
+            "quantidade": 5
+          },
+          "b": {
+            "emoji": "🍎",
+            "quantidade": 7
+          }
+        },
+        {
+          "a": {
+            "emoji": "🐟",
+            "quantidade": 8
+          },
+          "b": {
+            "emoji": "🐸",
+            "quantidade": 6
+          }
+        },
+        {
+          "a": {
+            "emoji": "🌼",
+            "quantidade": 4
+          },
+          "b": {
+            "emoji": "🌷",
+            "quantidade": 4
+          }
+        },
+        {
+          "a": {
+            "emoji": "🍇",
+            "quantidade": 9
+          },
+          "b": {
+            "emoji": "🍊",
+            "quantidade": 10
+          }
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["comparar", "mais", "menos", "igual", "partilha"]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "atv-ma-mais-um-menos-um",
+  "titulo": "Mais um, menos um: o cesto de frutas",
+  "marcos": ["MA.OPE.01"],
+  "revisa": ["MA.SEN.03"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 5,
+  "cuidados": "Use frutas inteiras grandes ou bolas de pano, sem pedaços pequenos. Nada de uvas inteiras, castanhas, grãos ou botões com menores de 4 anos, por risco de engasgo. Fique ao lado o tempo todo.",
+  "objetivo": "A criança **vê com objetos que juntar aumenta e tirar diminui** (até 5), respondendo *“e se eu juntar mais um?”*.",
+  "passos": [
+    {
+      "titulo": "Pôr no cesto",
+      "minutos": 4,
+      "texto": "Coloque 2 laranjas (ou bolas de pano) num cesto. *“Tem 2. Se eu colocar mais uma, quantas ficam?”* Deixe que ela adivinhe e confira contando."
+    },
+    {
+      "titulo": "Tirar do cesto",
+      "minutos": 4,
+      "texto": "Com 4 no cesto, peça que ela tire uma e diga: *“agora quantas?”*. Use as palavras *mais*, *sobrou* e *menos* e deixe os símbolos para depois.",
+      "fala": "Ficou mais ou menos?"
+    },
+    {
+      "titulo": "Pôr e tirar a mesa",
+      "minutos": 4,
+      "texto": "Peça que ponha 3 pratos e depois tire um. Pergunte: *“sobraram quantos?”* Aproveite o dia a dia para brincar assim."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz que tem mais depois de juntar e menos depois de tirar",
+      "confere contando e acerta quantas ficaram, com até 5 objetos",
+      "usa as palavras “mais” e “sobrou”"
+    ],
+    "emDesenvolvimento": [
+      "precisa contar tudo de novo a cada pergunta",
+      "ainda não liga o “mais um” ao número seguinte"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use 1 e 2 objetos apenas e mostre devagar, dizendo cada passo: *“tinha um, veio outro: dois”*.",
+    "facil": "Use até 8 objetos e pergunte antes de contar: *“quantas ficam? Será que sabe sem contar?”*."
+  },
+  "materiais": [
+    {
+      "item": "3 a 5 frutas inteiras ou bolas de pano grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Uma cesta",
+      "deCasa": true
+    },
+    {
+      "item": "Pratos de plástico",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Organize poucos objetos numa bandeja e deixe a criança fazer: juntar duas pilhas num prato, tirar uma. Só depois, os símbolos + e −.",
+    "Waldorf": "Viva a ação na rotina: partilhar o pão, pôr a mesa, juntar a lenha. As palavras “mais” e “menos” nascem da ação, antes dos símbolos.",
+    "Charlotte Mason": "Conte histórias curtas com coisas reais (*“duas laranjas e mais uma”*), em lições de poucos minutos."
+  },
+  "evidencias": [
+    {
+      "texto": "Respondeu “e se eu juntar mais um?”",
+      "resposta": "_____ de 3   ☐ sem contar   ☐ contando"
+    },
+    {
+      "texto": "Mostrou o que acontece ao tirar um",
+      "resposta": "☐ sim   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "contar",
+      "titulo": "Conte o que ficou",
+      "itens": [
+        {
+          "emoji": "🍊",
+          "quantidade": 3,
+          "opcoes": [2, 3, 4]
+        },
+        {
+          "emoji": "🍌",
+          "quantidade": 4,
+          "opcoes": [3, 4, 5]
+        },
+        {
+          "emoji": "🍐",
+          "quantidade": 2,
+          "opcoes": [1, 2, 3]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["juntar", "tirar", "mais um", "adição", "subtração", "frutas"]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "atv-ma-repartir-biscoitos",
+  "titulo": "Repartir os biscoitos: um para cada",
+  "marcos": ["MA.OPE.05"],
+  "revisa": ["MA.SEN.06"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 21,
+  "preparoMin": 5,
+  "cuidados": "Use biscoitos de verdade só se estiverem à mão e se não houver alergias, ou prefira fichas grandes. Lave as mãos antes e evite peças pequenas com irmãos menores.",
+  "objetivo": "A criança **reparte uma coleção em partes iguais** (até 4 pratos), distribuindo um a um até acabar.",
+  "passos": [
+    {
+      "titulo": "Dar um a cada",
+      "minutos": 6,
+      "texto": "Sente 3 bonecos, cada um com um prato. Entregue 12 fichas e diga: *“reparta por igual; dê um para cada, em rodadas”*. Ela distribui um por vez, sem pressa."
+    },
+    {
+      "titulo": "Ficou justo?",
+      "minutos": 5,
+      "texto": "Conte o que cada prato recebeu. Pergunte *“ficou igual para todos? sobrou?”*. Se sobrou, deixe que ela decida o que fazer.",
+      "fala": "Como saber se ficou justo?"
+    },
+    {
+      "titulo": "Mudar os pratos",
+      "minutos": 6,
+      "texto": "Repita com 2 pratos, depois com 4. Pergunte: *“quando tem mais pratos, cada um recebe mais ou menos?”*."
+    },
+    {
+      "titulo": "Folha: desenhe as partes iguais",
+      "minutos": 4,
+      "texto": "Ela desenha o que cada boneco recebeu, em partes iguais."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "distribui um a cada, em rodadas, sem pular",
+      "diz se ficou igual e sabe quando sobrou",
+      "reparte entre 2 a 4 pratos"
+    ],
+    "emDesenvolvimento": [
+      "dá várias fichas de uma vez, sem rodadas",
+      "não confere o que cada prato recebeu"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use 6 fichas e 2 pratos, e comece dando junto com ela, uma a uma.",
+    "facil": "Use 15 ou 20 fichas e 5 pratos, e pergunte *“e se um amigo chegar?”*."
+  },
+  "materiais": [
+    {
+      "item": "12 a 20 fichas, biscoitos ou feijões grandes",
+      "deCasa": true
+    },
+    {
+      "item": "3 a 4 pratos ou potes",
+      "deCasa": true
+    },
+    {
+      "item": "Bonecos para a mesa (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Com contas ou pinos, a criança distribui uma peça por vez em cada prato e vê o resto. Os materiais de divisão vêm depois, quando a ideia de partilha já está firme.",
+    "Waldorf": "Partilhar faz parte da vida da casa e da roda: o pão repartido, a refeição dividida. Histórias com personagens que dividem a colheita dão forma à divisão antes de qualquer conta.",
+    "Charlotte Mason": "Reparta coisas reais do dia (frutas, lápis) e peça que a criança narre o que viu."
+  },
+  "evidencias": [
+    {
+      "texto": "Repartiu um a cada, em rodadas",
+      "resposta": "☐ sim   ☐ com lembrete"
+    },
+    {
+      "texto": "Disse se ficou justo",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Cada boneco recebeu…",
+      "legenda": "A criança desenha 3 pratos e a quantidade que cada um recebeu, e escreve o número embaixo."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["dividir", "repartir", "partes iguais", "partilha", "justo"]
+}

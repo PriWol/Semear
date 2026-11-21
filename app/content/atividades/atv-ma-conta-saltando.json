@@ -1,0 +1,122 @@
+{
+  "id": "atv-ma-conta-saltando",
+  "titulo": "Conta saltando: começa no seis",
+  "marcos": ["MA.SEN.07"],
+  "revisa": ["MA.SEN.06"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [6, 7],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Se usar fichas ou botões, escolha peças grandes e guarde tudo depois: irmãos menores podem engolir. Ao pular a trilha, deixe o piso seco e sem tapete solto.",
+  "objetivo": "A criança **continua a contagem a partir de um número** (6… 7, 8, 9), sem voltar ao 1.",
+  "passos": [
+    {
+      "titulo": "Trilha no chão",
+      "minutos": 4,
+      "texto": "Faça com fita ou giz uma trilha de 1 a 10. A criança anda até o 6 e para. *“Agora dê mais 3 passos, contando a partir do 6.”* Ela diz *7, 8, 9*."
+    },
+    {
+      "titulo": "O pano esconde",
+      "minutos": 6,
+      "texto": "Mostre 6 fichas, cubra com um pano e diga *“aqui tem 6”*. Coloque mais 3 ao lado. A criança aponta o pano e diz *“seis…”* e conta as outras: *7, 8, 9*. Depois, descubra e confira contando tudo.",
+      "fala": "Aqui tem 6. E agora?"
+    },
+    {
+      "titulo": "Jogo de tabuleiro",
+      "minutos": 5,
+      "texto": "Em um jogo de trilha com dado, ela diz onde está e avança contando a partir da casa, não do início."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "continua do 6 sem voltar ao 1, em 3 de 4 tentativas",
+      "usa os dedos para marcar quantos passos deu",
+      "confere contando tudo e vê que dá o mesmo"
+    ],
+    "emDesenvolvimento": [
+      "volta ao 1 sempre que a conta começa",
+      "perde a conta dos passos adicionais"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Comece de números menores (3 e mais 2) e deixe-a contar tudo para provar; só depois cubra o primeiro grupo.",
+    "facil": "Troque o 6 por 8 ou 9 e peça que ela invente o desafio para o adulto resolver."
+  },
+  "materiais": [
+    {
+      "item": "Fita crepe ou giz (trilha de 1 a 10)",
+      "deCasa": true
+    },
+    {
+      "item": "9 fichas ou botões grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Um pano",
+      "deCasa": true
+    },
+    {
+      "item": "Jogo de tabuleiro com dado (opcional)",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Com as barras numéricas, junte a do 6 e a do 3 e conte a partir do 6: a criança vê o que acontece com a quantidade.",
+    "Waldorf": "Conte em movimento: ande contando até 6 e siga de 7 em diante, sem voltar ao início da trilha.",
+    "Clássico": "Recitem a sequência em voz alta a partir de números diferentes, como cantilena, e depois conferem com objetos.",
+    "Charlotte Mason": "Lição curta, falada, com coisas reais; peça que ela diga como fez."
+  },
+  "evidencias": [
+    {
+      "texto": "Contou a partir do 6",
+      "resposta": "_____ de 4   ☐ sem recontar   ☐ recontou tudo"
+    },
+    {
+      "texto": "Conferiu contando tudo",
+      "resposta": "☐ sim   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Cartas da trilha: de onde eu começo?",
+      "cartas": [
+        {
+          "numero": 3
+        },
+        {
+          "numero": 4
+        },
+        {
+          "numero": 5
+        },
+        {
+          "numero": 6
+        },
+        {
+          "numero": 7
+        },
+        {
+          "numero": 8
+        },
+        {
+          "numero": 2
+        },
+        {
+          "numero": 1
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["contar a partir", "continuar a contagem", "trilha", "contar para frente"]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "atv-ma-maior-menor-pesado",
+  "titulo": "Maior, menor, leve, pesado: a cesta de comparar",
+  "marcos": ["MA.MED.01"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Use só objetos grandes e seguros (bolas, colheres de pau, ursinhos, almofadas, caixas vazias), sem peças pequenas. Se usar água, só em copos de plástico e com a criança sentada, sem beber de recipientes que não sejam limpos. Fique ao lado o tempo todo.",
+  "objetivo": "A criança **compara dois objetos com palavras** (maior e menor, comprido e curto, leve e pesado, cheio e vazio).",
+  "passos": [
+    {
+      "titulo": "Dois ursinhos",
+      "minutos": 3,
+      "texto": "Mostre dois ursinhos, um grande e um pequeno. *“Qual é o maior?”* Deixe que ela aponte e diga a palavra com você. Repita com colheres: *comprida* e *curta*."
+    },
+    {
+      "titulo": "Peso nas mãos",
+      "minutos": 3,
+      "texto": "Ponha uma almofada em uma mão e um livro na outra (ou uma bola leve e outra mais pesada). Ela sente e diz: *“este é mais pesado”*.",
+      "fala": "Qual está mais pesado?"
+    },
+    {
+      "titulo": "Cheio e vazio",
+      "minutos": 3,
+      "texto": "Com dois copos de plástico, um cheio de água e outro vazio, ela diz qual está cheio e qual está vazio. Depois, encham juntos o copo vazio."
+    },
+    {
+      "titulo": "Ela escolhe",
+      "minutos": 1,
+      "texto": "Peça que traga *“o maior”* e *“o mais curto”* de uma cesta. Deixe que ela invente o próximo pedido."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz qual de dois objetos é maior, mais comprido ou mais pesado",
+      "usa as palavras de comparação ao descrever",
+      "traz o objeto pedido (o maior, o mais curto)"
+    ],
+    "emDesenvolvimento": [
+      "confunde “maior” com “mais alto” ou “mais gordo”",
+      "responde só “este” e “aquele”, sem usar as palavras"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use dois objetos muito diferentes (ursinho gigante e ursinho de bolso) e só uma palavra de cada vez.",
+    "facil": "Compare três objetos e peça a ordem: *“o menor, o médio e o maior”*."
+  },
+  "materiais": [
+    {
+      "item": "Dois ursinhos ou bolas de tamanhos diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Duas colheres de pau, uma curta e outra comprida",
+      "deCasa": true
+    },
+    {
+      "item": "Almofada e livro (para comparar pesos)",
+      "deCasa": true
+    },
+    {
+      "item": "Dois copos de plástico e um pouco de água",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Os materiais sensoriais de dimensão (barras vermelhas de comprimento, torre rosa, escada marrom) educam a comparação e a graduação das dimensões.",
+    "Waldorf": "Compare com o corpo e com coisas da natureza (o galho mais comprido, a pedra mais pesada): as palavras vêm da experiência.",
+    "Charlotte Mason": "Compare objetos reais do dia a dia (copos, lápis, mochilas), em lições curtas e com poucas palavras novas."
+  },
+  "evidencias": [
+    {
+      "texto": "Comparou dois objetos com palavras",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Palavras que usou",
+      "resposta": "☐ maior   ☐ menor   ☐ pesado   ☐ leve   ☐ cheio   ☐ vazio"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "comparar",
+      "titulo": "Circule o que tem mais",
+      "dica": "Veja qual lado tem mais e pinte o grupo maior.",
+      "pares": [
+        {
+          "a": {
+            "emoji": "🥤",
+            "quantidade": 2
+          },
+          "b": {
+            "emoji": "🥤",
+            "quantidade": 5
+          }
+        },
+        {
+          "a": {
+            "emoji": "🧸",
+            "quantidade": 4
+          },
+          "b": {
+            "emoji": "🧸",
+            "quantidade": 1
+          }
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["comparar", "maior", "menor", "leve", "pesado", "cheio", "vazio"]
+}
