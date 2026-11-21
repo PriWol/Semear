@@ -47,5 +47,20 @@
   --s-espaco-4: 1rem;
   --s-espaco-5: 1.5rem;
   --s-espaco-6: 2rem;
+  /* Escala de texto do app (etapa 1 da identidade, #41): títulos em Fraunces, sempre >= 14 px */
+  --s-texto-h1: 1.75rem;
+  --s-texto-h1-p: 1.5rem;
+  --s-texto-h2: 1.25rem;
+  --s-texto-h3: 1.125rem;
+  --s-texto-destaque: 3rem;
+  /* Formato: pílula, caixa de marcar, largura do app, largura de leitura (~65 caracteres, DESIGN.md) */
+  --s-raio-pilula: 99px;
+  --s-caixa: 1.5rem;
+  --s-largura-app: 57.5rem;
+  --s-largura-cartao-min: 17.5rem;
+  --s-coluna-progresso: 5.625rem;
+  --s-medida-leitura: 65ch;
+  /* Espaço reservado para barras fixas (registro, aviso flutuante) */
+  --s-barra-fixa: 6rem;
   --s-sombra: 0 1px 2px rgba(30, 43, 35, 0.06), 0 4px 12px rgba(30, 43, 35, 0.05);
 }
