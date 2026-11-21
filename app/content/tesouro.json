@@ -340,6 +340,39 @@
           "paginas": [54, 59]
         }
       ]
+    },
+    {
+      "numero": 8,
+      "titulo": "Jogos e descobertas",
+      "arquivo": "tesouro/volume8-tela.pdf",
+      "paginas": 32,
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Esconder e achar",
+          "paginas": [7, 14]
+        },
+        {
+          "numero": 2,
+          "titulo": "Minha vez, sua vez",
+          "paginas": [15, 19]
+        },
+        {
+          "numero": 3,
+          "titulo": "Mandar e obedecer",
+          "paginas": [20, 24]
+        },
+        {
+          "numero": 4,
+          "titulo": "Calma",
+          "paginas": [25, 28]
+        },
+        {
+          "numero": 5,
+          "titulo": "Diário de observação",
+          "paginas": [29, 30]
+        }
+      ]
     }
   ],
   "cadernos": [

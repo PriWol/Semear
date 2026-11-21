@@ -23,3 +23,6 @@ O PDF **não vai à Release** no PR A: o workflow `publicar-tesouro.yml` passa a
 - O sumário e os testes (`test_volume8.py`) recusam prometer o que não está no arquivo.
 - Precisa de revisão do Curador e aprovação da dona do produto (jogos para 2 anos, rimas, diário sem avaliação).
 - Depois da aprovação: inverter o glob do workflow e abrir o PR B.
+
+## Atualização (2026-11-21): PR B entregue
+A dona do produto aprovou o conteúdo e a publicação. O PR B inverte o glob do workflow (`volume[1-8]`, sem o artefato de rascunho), põe o Volume 8 no catálogo (32 páginas e 5 unidades conferidas no sumário do PDF com `pdfinfo`) e tira o aviso "ainda não disponível" da Biblioteca. Ordem de merge: o workflow Publicar tesouro roda no main antes do deploy do site; se o deploy correr junto e falhar por falta do PDF e do manifesto, basta reexecutá-lo.
