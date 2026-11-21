@@ -1,7 +1,7 @@
 {
   "id": "atv-vol1-u7-pintar-arvore",
   "titulo": "Pintar a árvore com as cores da estação",
-  "marcos": [],
+  "marcos": ["AR.PIN.03"],
   "dominio": "AR",
   "categoria": "Pintura",
   "materialImpresso": {

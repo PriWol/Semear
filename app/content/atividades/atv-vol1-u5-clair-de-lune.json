@@ -1,7 +1,7 @@
 {
   "id": "atv-vol1-u5-clair-de-lune",
   "titulo": "Música para a noite: Clair de lune",
-  "marcos": [],
+  "marcos": ["AR.ESC.01"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "materialImpresso": {

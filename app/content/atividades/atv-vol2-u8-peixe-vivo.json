@@ -1,7 +1,7 @@
 {
   "id": "atv-vol2-u8-peixe-vivo",
   "titulo": "Peixe vivo: cantar em roda",
-  "marcos": [],
+  "marcos": ["AR.CAN.01", "NM.CUL.02"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

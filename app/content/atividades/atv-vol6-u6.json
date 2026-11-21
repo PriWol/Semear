@@ -1,7 +1,7 @@
 {
   "id": "atv-vol6-u6",
   "titulo": "Água e chuva: o caminho da água e o que flutua",
-  "marcos": [],
+  "marcos": ["NM.TER.05", "NM.TER.03"],
   "dominio": "AR",
   "categoria": "Caderno da natureza",
   "materialImpresso": {

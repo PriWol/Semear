@@ -1,7 +1,7 @@
 {
   "id": "atv-tesouro-v4-u6",
   "titulo": "Bach: a onda de notas",
-  "marcos": [],
+  "marcos": ["AR.ESC.03"],
   "dominio": "AR",
   "categoria": "Estudo de compositores",
   "materialImpresso": {

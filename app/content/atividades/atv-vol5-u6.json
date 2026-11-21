@@ -1,7 +1,7 @@
 {
   "id": "atv-vol5-u6",
   "titulo": "Mary Cassatt: o cuidado em três quadros",
-  "marcos": [],
+  "marcos": ["AR.APR.01", "AR.APR.02"],
   "dominio": "AR",
   "categoria": "Estudo de pintores",
   "materialImpresso": {

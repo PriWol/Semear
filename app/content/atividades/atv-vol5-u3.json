@@ -1,7 +1,7 @@
 {
   "id": "atv-vol5-u3",
   "titulo": "Dürer, olhar de perto: a lebre e o tufo de plantas",
-  "marcos": [],
+  "marcos": ["AR.APR.01", "AR.DES.04"],
   "dominio": "AR",
   "categoria": "Estudo de pintores",
   "materialImpresso": {
