@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-deitar-olhar-nuvens",
+  "titulo": "Deitar e olhar as nuvens",
+  "marcos": ["EM.REG.01"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [63, 63]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Não olhe para o sol; use chapéu e protetor solar; verifique a grama (formigas, espinhos). Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["nuvens", "céu", "deitar", "calma", "manta"],
+  "objetivo": "A criança deita ao seu lado, em silêncio, olhando as nuvens, e baixa a agitação depois de correr.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Estendam a manta e deitem lado a lado, de barriga para cima, no sol brando ou na sombra."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Fiquem em silêncio um pouco, olhando o céu."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Procurem formas: “aquela nuvem parece um cachorro?”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Deixem que ela diga o que vê. Fiquem o quanto ela quiser."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Olha aquela nuvem. Parece um cachorro!” “Ela está se mexendo, devagar, devagar.” “Que bom ficar aqui deitada, olhando.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O que a nuvem parece? Qual nuvem é a maior? Para onde ela vai?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) À noite, olhando a lua e as estrelas. 2) Olhando o balanço das folhas de uma árvore. 3) Ouça os sons: o que dá para escutar deitada?"
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Deitar e olhar o céu pede quietude sem exigir nada. É um dos jeitos mais gostosos de baixar a agitação depois de correr, e serve também de conversa (o que você vê?). Boa para o fim de um passeio."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Uma manta ou toalha na grama, ou o colo; um dia com nuvens",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

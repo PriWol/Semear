@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-quintal",
+  "titulo": "Duas rimas para o quintal",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 1,
+    "paginas": [17, 17]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Ao balançá-la no joelho, segure-a firme e vá devagar, sem sacudir. Beijo só se ela quiser. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["borboletinha", "bom dia", "acordar", "rima"],
+  "objetivo": "A criança aprende rimas curtas com gesto (borboletinha e bom dia) e passa a pedi-las de novo, a ponto de virarem ritual de acordar.",
+  "passos": [
+    {
+      "titulo": "Borboletinha",
+      "minutos": 2,
+      "texto": "*Borboletinha / tá na cozinha / fazendo chocolate / para a madrinha. / Poti, poti, / perna de pau, / olho de vidro / e nariz de pica-pau, pau, pau.* **O gesto:** junte os polegares e abra as mãos como asas, batendo devagar; em “poti, poti”, balance-a no joelho; no último “pau”, um beijo. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Bom dia, sol",
+      "minutos": 2,
+      "texto": "*Bom dia, sol, bom dia, céu, / bom dia, nuvem de chapéu! / Bom dia, pé, bom dia, mão, / bom dia, (nome da criança), de coração!* **O gesto:** estique os braços para o alto no “sol”, aponte o céu, depois toque o pé, a mão e o peito. Boa para a hora de acordar. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Rimas curtas, sempre com um gesto, ensinam o ritmo da língua e dão à criança algo que ela pode pedir (“de novo!”). A do bom dia pode virar o ritual de acordar, e a repetição todos os dias é o que a torna calmante."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 1",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

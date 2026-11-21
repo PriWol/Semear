@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-limao-cores",
+  "titulo": "Meu limão e as cores",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 5,
+    "paginas": [52, 52]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Gire devagar e em espaço livre; pare se ela ficar tonta. Ao apontar as cores em coisas de verdade, use só objetos maiores que a boca dela. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["limão", "cores", "roda", "cantiga"],
+  "objetivo": "A criança canta uma cantiga de roda e uma rima de cores, ligando som, movimento e vocabulário.",
+  "passos": [
+    {
+      "titulo": "Meu limão, meu limoeiro",
+      "minutos": 2,
+      "texto": "*Meu limão, meu limoeiro, / meu pé de jacarandá; / uma vez, tindolelê, / outra vez, tindolalá.* **O gesto:** balance de um lado para o outro; em “tindolelê” e “tindolalá”, gire a mão e depois a outra. Fique em pé, rodando devagar. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "As cores",
+      "minutos": 2,
+      "texto": "*Vermelho, vermelho, cor de morango. / Amarelo, amarelo, cor de banana. / Azul, azul, cor do céu lá no alto. / Verde, verde, folha que se balança.* **O gesto:** aponte cada cor numa coisa de verdade, no cenário, na roupa. Deixe que ela aponte também. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "As cantigas de roda e as rimas de cor ligam som, movimento e vocabulário. A das cores, repetida, serve de ponte para o Volume 5 e para a hora da tinta."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 5",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-brincar-de-roda",
+  "titulo": "Para brincar de roda",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 8,
+    "paginas": [78, 78]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Roda com poucas pessoas e espaço livre; lenço leve; nunca cubra o rosto dela. Corra de mão dada, em chão firme, sem puxá-la pelo braço. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["roda", "corre cotia", "cadê achou", "lencinho"],
+  "objetivo": "A criança brinca de roda (corre, cotia) e de “cadê? achou!”, treinando a antecipação e o susto bom.",
+  "passos": [
+    {
+      "titulo": "Corre, cotia",
+      "minutos": 2,
+      "texto": "*Corre, cotia, na casa da tia, / corre, cipó, na casa da avó; / lencinho na mão, caiu no chão.* **O gesto:** em roda, com poucas pessoas, uma anda por fora com um lencinho; deixa cair atrás de alguém. Com a criança, deixe cair atrás dela e corra de mão dada. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Cadê? Achou!",
+      "minutos": 2,
+      "texto": "*Cadê (nome da criança)? / Cadê, cadê? / Está escondida? / Eu vou achar você! / Achou! Achou! / Achou! Achou!* **O gesto:** cubra o **seu** rosto com as mãos (ou com um lenço leve que ela possa puxar) nos primeiros versos e descubra no “achou”. Nunca cubra o rosto dela. Brinque com paciência: ela pode pedir muitas vezes. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Brincar de roda reúne rima, corpo e espera. O “cadê? achou!” treina a antecipação (o que vem depois?) e o susto bom."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 8",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

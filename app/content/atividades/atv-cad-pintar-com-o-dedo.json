@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-pintar-com-o-dedo",
+  "titulo": "Pintar com o dedo",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Pintura",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 5,
+    "paginas": [48, 48]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Tinta atóxica e lavável; não é para provar. Sem tinta ou corante perto de feridas ou de olhos; lave as mãos no fim. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["tinta", "dedo", "cores", "pintura"],
+  "objetivo": "A criança pinta com os dedos, misturando as três cores primárias, e sente tato, cor e movimento sem ter jeito errado.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Forre o chão ou a mesa, ponha o avental e deixe o pano úmido à mão."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Ponha uma colherada de cada cor num prato. Deixe que ela mergulhe o dedo e pinte onde quiser."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Quando as cores se misturarem, nomeie: “vermelho com amarelo… laranja!”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Depois, lavem as mãos juntas, cantando a rima da mão suja."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Vermelho! Amarelo! Azul!” “Misturou: olha, ficou laranja!” “A mão ficou toda colorida.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Que cor é esta? O que aconteceu quando misturou? Quer mais azul?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Pinte com uma esponja, uma folha, uma colher. 2) Pinte o próprio pé e deixe pegadas. 3) Pinte só de uma cor hoje."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Pintar com os dedos junta tato, cor e movimento, e não tem jeito errado: é um alívio para quem se frustra se algo “não fica bom”. As três cores primárias são as do Volume 5. O que importa é o gesto, não o desenho."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Tinta atóxica (ou iogurte natural com corante de comida), vermelha, amarela e azul; papel grande; avental velho; um pano úmido",
+      "deCasa": false
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 5",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

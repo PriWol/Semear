@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-historia-de-ninar",
+  "titulo": "Uma história de ninar",
+  "marcos": ["EM.REG.01"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 2,
+    "paginas": [28, 28]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Luz baixa, mas com o ambiente seguro e sem objetos no caminho. O bichinho de pelúcia não pode ter olhos ou botões que se soltem. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["ninar", "dormir", "história", "gatinho", "sono"],
+  "objetivo": "A criança ouve uma história curta, sempre igual, contada devagar e baixinho, para desacelerar o corpo na hora de dormir ou depois de uma crise.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Baixe a luz e fale mais devagar e mais baixo que o normal."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Afague as costas dela no ritmo da história, uma pausa a cada frase."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Conte sempre as mesmas palavras: a repetição é o que acalma."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "No fim, diga “boa noite” ao gatinho, e a ela."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Era uma vez um gatinho cinza.” “Ele brincou o dia inteiro: pulou, correu, subiu na almofada.” “Quando a noite chegou, os olhinhos ficaram pesados.” “Ele se enrolou, fez “rom-rom”…” “e dormiu bem quietinho.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O gatinho está com sono? E a criança? Faz rom-rom com ele?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Conte sem luz, só com a voz. 2) Troque o bicho por um da família: o cachorro, o pássaro. 3) Conte a mesma história por uma semana e veja o que ela passa a dizer junto."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Uma história curta, sempre igual e contada devagar, faz o corpo entender que é hora de desacelerar. Vale para dormir e também para depois de uma crise, quando ela está cansada e precisa de colo. Troque o gatinho pelo bicho preferido dela e use o nome dela só no fim."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Luz baixa, uma almofada ou o colo; o bichinho preferido dela",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 2",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

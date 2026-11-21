@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-bolhas-devagar",
+  "titulo": "Bolhas devagar",
+  "marcos": ["EM.REG.02"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 1,
+    "paginas": [19, 19]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: O líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["bolhas", "sabão", "soprar", "respiração"],
+  "objetivo": "A criança segue com os olhos uma bolha que flutua e sopra devagar, uma respiração controlada disfarçada de brincadeira, num momento calmo.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Sopre uma bolha de cada vez, bem devagar, e deixe que ela estoure com o dedo."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Pergunte: “bolha grande ou pequena?”. A grande vem de um sopro longo e lento."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Depois deixe que ela tente soprar. Peça “bem devagar, como o vento”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Quando ela se cansar, guarde o frasco e fiquem olhando a última bolha subir."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Olha como ela sobe… devagar, devagar.” “Plof! Acabou. Vem outra.” “Uma bolha grande! Que sopro comprido!”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Onde está a bolha? Grande ou pequena? Quem estourou?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Faça bolhas na hora do banho. 2) Bolhas “paradas”: as que pousam na grama sem estourar. 3) Deixe que ela escolha: bolha grande ou bolha pequena."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Seguir com os olhos uma coisa que flutua devagar acalma, e soprar bolha grande exige um sopro lento: é respiração controlada disfarçada de brincadeira. Boa para o fim de um passeio ou antes de uma troca difícil (banho, sair do parque)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Bolhas de sabão com varinha, e um lugar aberto ou o quintal",
+      "deCasa": false
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 1",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

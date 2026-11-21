@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-chocalho-de-casa",
+  "titulo": "Chocalho de casa",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 4,
+    "paginas": [42, 42]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Os grãos ficam só nas mãos do adulto: confira que nenhum ficou solto no chão ou na mesa antes de ela chegar. Tampa bem vedada com cola e fita; troque o chocalho se rachar ou soltar o conteúdo. Use só com você por perto. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["chocalho", "garrafa", "instrumento", "grãos"],
+  "objetivo": "A criança escolhe e toca um instrumento feito junto, o chocalho de garrafa, brincando de forte e fraco, rápido e devagar.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Escolha com ela a garrafa e o que vai dentro (macarrão penne ou feijão grande). **Só o adulto põe os grãos na garrafa**; ela escolhe e olha."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "**O adulto fecha a tampa com cola quente e fita**, longe dela."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Enfeitem a garrafa com adesivos grandes ou fita adesiva colorida, colados pelo adulto (nada de fitas soltas ou laços)."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Toquem: forte, fraco, rápido, devagar, e deitem o chocalho para silenciar."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Chacoalha! Que barulho! Chuá, chuá.” “Agora bem fraquinho.” “Quieto: o chocalho dormiu.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Que barulho faz? É forte ou fraco? Onde o chocalho dorme?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Chocalhos diferentes, só com coisas grandes: macarrão penne, feijão grande, grão-de-bico graúdo (sempre selados pelo adulto). 2) Cante e acompanhe com o chocalho. 3) Guarde na “caixa dos sons”."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Fazer o próprio instrumento dá orgulho e cuidado: ele é “dela”. Os sons de grãos e garrafa são também suaves e repetitivos, bons para acalmar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Uma garrafa plástica pequena e limpa, grãos grandes (grão-de-bico, feijão grande), cola quente e fita, adesivos grandes ou fita adesiva colorida para enfeitar",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
