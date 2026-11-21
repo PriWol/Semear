@@ -50,6 +50,14 @@ jobs:
           command -v pdfinfo > /dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils; } || { echo "::error::não foi possível instalar o pdfinfo (poppler-utils)"; exit 1; }
           # Volumes e cadernos para 2 anos (ADR 0015, adendo): uma linha "arquivo paginas" por PDF.
           node -e "const c = require('./content/tesouro.json'); for (const v of [...c.volumes, ...c.cadernos]) console.log(v.arquivo.replace('tesouro/', ''), v.paginas)" > "$RUNNER_TEMP/lista-tesouro.txt"
+          # Integridade (ADR 0031): o manifesto SHA256SUMS da Release lista o hash de cada PDF. Ele é dado externo:
+          # só é lido com awk, nunca executado, e nenhuma linha dele vira comando.
+          manifesto="$RUNNER_TEMP/SHA256SUMS"
+          curl --fail --silent --show-error --location --retry 3 \
+            --output "$manifesto" \
+            "https://github.com/$REPO/releases/download/tesouro-marina/SHA256SUMS" \
+            || { echo "::error::não foi possível baixar o manifesto SHA256SUMS da Release"; exit 1; }
+          [ -s "$manifesto" ] || { echo "::error::manifesto SHA256SUMS vazio"; exit 1; }
           while read -r arquivo paginas; do
             # O nome vem do catálogo: só nome simples de PDF, nunca caminho (../) nem espaço.
             if ! echo "$arquivo" | grep -Eq '^[A-Za-z0-9._-]+\.pdf$' || [[ "$arquivo" == *..* ]]; then
@@ -58,6 +66,15 @@ jobs:
             curl --fail --silent --show-error --location --retry 3 \
               --output "dist/tesouro/$arquivo" \
               "https://github.com/$REPO/releases/download/tesouro-marina/$arquivo"
+            # Exige UMA linha exata "<64 hex minúsculos>  <arquivo>" (a verificação em lote do sha256sum aceitaria linhas extras).
+            # Comparação de texto (substr), não regex, para o "." do nome não virar curinga.
+            esperado=$(awk -v alvo="$arquivo" '
+              length($0) == 66 + length(alvo) && substr($0, 1, 64) ~ /^[0-9a-f]+$/ \
+                && substr($0, 65, 2) == "  " && substr($0, 67) == alvo { n++; h = substr($0, 1, 64) }
+              END { if (n == 1) print h }' "$manifesto")
+            [ -n "$esperado" ] || { echo "::error::$arquivo sem entrada no manifesto"; exit 1; }
+            real=$(sha256sum "dist/tesouro/$arquivo" | awk '{print $1}')
+            [ "$real" = "$esperado" ] || { echo "::error::$arquivo: sha256 não confere com o manifesto"; exit 1; }
             head -c 5 "dist/tesouro/$arquivo" | grep -q '^%PDF-'
             # Confere a paginação do catálogo com a do PDF.
             reais=$(pdfinfo "dist/tesouro/$arquivo" | awk '/^Pages:/ {print $2}')

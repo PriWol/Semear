@@ -1,6 +1,6 @@
 """Motivos do Volume 8 (Jogos e descobertas): objetos dos jogos de brincar junto, pintados com o motor de aquarela.
 Mesmo estilo e mesma escala dos motivos anteriores (600 × 600 px, ≈ 5 cm a 300 dpi). Só objetos, como em docs/03-ilustracao.md.
-Poucos de propósito: a maior parte das figuras do volume já existe nos volumes anteriores (ADR 0031)."""
+Poucos de propósito: a maior parte das figuras do volume já existe nos volumes anteriores (ADR 0032)."""
 import numpy as np
 from aquarela import Aquarela, ellipse, bezier, densify
 from motivos2 import _ret

@@ -1,5 +1,5 @@
 """
-VOLUME 8 — JOGOS E DESCOBERTAS (primeira versão, estória #112; ADR 0031)
+VOLUME 8 — JOGOS E DESCOBERTAS (primeira versão, estória #112; ADR 0032)
 uso: python3 volume8.py
 Versão menor do volume: só o que os cadernos de 2 anos prometem para a unidade "Brincar junto" (esperar a vez, mandar e obedecer,
 esconder e achar, acalmar) mais o diário de observação do adulto, que o currículo promete desde o Volume 1

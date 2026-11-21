@@ -1,4 +1,4 @@
-# 0031. Volume 8 "Jogos e descobertas": primeira versão menor, em dois PRs
+# 0032. Volume 8 "Jogos e descobertas": primeira versão menor, em dois PRs
 
 - **Status:** Aceito (decisão da dona do produto, estória #112)
 - **Data:** 2026-11-20
