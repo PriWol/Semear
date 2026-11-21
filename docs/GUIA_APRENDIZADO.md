@@ -129,6 +129,9 @@ testes e verificações. Se algo falhar, o PR fica vermelho e não deve entrar.
 
 ---
 
+### Modo escuro com tokens
+O navegador informa se o aparelho prefere tema escuro (`@media (prefers-color-scheme: dark)`). Como todo estilo usa variáveis (`--s-fundo`, `--s-tinta`), basta redefinir os **mesmos nomes** nesse bloco e o app inteiro troca de cor, sem tocar nos estilos das telas. O contraste dos dois temas é testado em `tests/tokens.test.ts`. A folha impressa fica de fora de propósito: papel é sempre claro (ADR 0033).
+
 ## 4. Como trabalhamos com IA (vibe coding com disciplina)
 
 ### O fluxo: spec → plano → testes → código → revisão

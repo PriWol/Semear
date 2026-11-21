@@ -74,4 +74,6 @@ O ocre `--s-destaque` e a linha `--s-linha` **nunca** são cor de texto.
 | Margem de impressão ≥ 8 mm | Conteúdo encostado na borda |
 
 ## Modo escuro
-Fora do escopo por ora (opcional, depois). Os tokens já permitem: bastaria um segundo conjunto de valores.
+Automático, segue o aparelho (`prefers-color-scheme: dark`), sem botão (ADR 0033). Segundo conjunto dos mesmos tokens em `app/src/tokens-escuro.css`:
+fundo grafite-esverdeado `#1b201c`, papel `#242a25`, tinta marfim `#ebe6d9`, verde-musgo clareado `#8fbf9f`, ocre `#d4a547`, terracota `#eb9a82`; sem preto nem branco puros.
+Contraste AA conferido em `tests/tokens.test.ts` para os dois temas. A **folha** (prévia do pacote, impressão e arquivo baixado) é sempre clara: papel não escurece.

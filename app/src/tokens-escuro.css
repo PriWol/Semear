@@ -1,0 +1,30 @@
+/*
+ * Semear · tema escuro automático (ADR 0033, estória #130), mesma direção A "Caderno de botânica".
+ * Segue o aparelho (prefers-color-scheme), sem botão. Redefine os MESMOS nomes de tokens.css, então
+ * estilos.css e ajustes.css não têm valor novo. Fica num arquivo à parte porque o pacote impresso
+ * embute tokens.css e precisa continuar claro; só o app carrega este (main.ts). `screen` deixa a
+ * impressão do próprio app no claro. Contraste conferido em tests/tokens.test.ts.
+ * Marfim vira grafite-esverdeado quente; verde-musgo e ocre clareados; sem preto nem branco puros.
+ */
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --s-fundo: #1b201c;
+    --s-papel: #242a25;
+    --s-tinta: #ebe6d9;
+    --s-suave: #a9b2a8;
+    --s-linha: #353d36;
+    --s-principal: #8fbf9f;
+    --s-principal-claro: #2b3a31;
+    --s-destaque: #d4a547;
+    --s-destaque-claro: #3a3223;
+    --s-destaque-texto: #e0b866;
+    --s-alerta: #eb9a82;
+    --s-alerta-claro: #3d2a24;
+    --s-topo: var(--s-principal-claro);
+    --s-topo-texto: var(--s-tinta);
+    --s-topo-ativo: var(--s-principal);
+    --s-topo-ativo-texto: var(--s-fundo);
+    --s-sombra: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
+    --s-veu: rgba(0, 0, 0, 0.65);
+  }
+}
