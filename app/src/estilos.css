@@ -17,6 +17,7 @@ body {
   background: var(--s-fundo);
   color: var(--s-tinta);
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 a {
   color: var(--s-principal);
@@ -71,6 +72,8 @@ code {
 }
 .topo nav {
   display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
   gap: var(--s-espaco-1);
 }
 .topo nav a {
@@ -226,6 +229,7 @@ code {
   gap: var(--s-espaco-4);
 }
 .formulario label {
+  min-width: 0;
   display: grid;
   gap: var(--s-espaco-1);
   font-weight: 600;
@@ -234,6 +238,9 @@ code {
 .formulario select {
   font: inherit;
   color: var(--s-tinta);
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-2) var(--s-espaco-3);
   border: var(--s-borda-campo) solid var(--s-borda-controle);
@@ -476,6 +483,7 @@ progress {
 }
 .tabela th,
 .tabela td {
+  overflow-wrap: anywhere;
   text-align: left;
   padding: var(--s-espaco-2);
   border-bottom: var(--s-borda) solid var(--s-linha);
@@ -509,6 +517,25 @@ progress {
   }
   .topo nav a {
     padding: var(--s-espaco-2);
+  }
+}
+
+/* Em 320 px os quatro links do menu, com preenchimento de 8 px, somam mais que a largura útil:
+   reduz o preenchimento lateral (o alvo continua com 48 px de altura e o link cresce para
+   dividir a linha) e, se ainda faltar espaço, o nav quebra em duas linhas em vez de cortar. */
+@media (max-width: 400px) {
+  .topo {
+    padding-inline: var(--s-espaco-2);
+  }
+  .topo nav {
+    gap: 0;
+  }
+  .topo nav a {
+    flex: 1 1 auto;
+    padding-inline: var(--s-espaco-1);
+  }
+  .conteudo-app {
+    padding-inline: var(--s-espaco-3);
   }
 }
 
@@ -625,6 +652,7 @@ summary {
   gap: var(--s-espaco-3);
 }
 #filtros label {
+  min-width: 0;
   display: grid;
   gap: var(--s-espaco-1);
   font-weight: 600;
@@ -633,6 +661,9 @@ summary {
 #filtros select {
   font: inherit;
   color: var(--s-tinta);
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-2) var(--s-espaco-3);
   border: var(--s-borda-campo) solid var(--s-borda-controle);
