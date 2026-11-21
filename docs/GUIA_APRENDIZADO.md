@@ -197,6 +197,16 @@ ser só visual (um quadro do estilo que mostra um pedaço da mesma imagem), como
 
 **Paralelo de gestão:** é citar um trecho de um relatório: o relatório inteiro continua guardado, e a citação diz de onde veio.
 
+### Imagem com fundo transparente e `<picture>` para o tema escuro
+**O que é:** as gravuras das telas (ADR 0035) são WebP com **canal alfa**: cada pixel guarda a cor da tinta e *quanto* dela
+aparece (transparência). Assim o papel amarelado do livro some e a gravura assenta sobre qualquer fundo do app. Para o tema
+escuro há um segundo arquivo, com a mesma gravura em tinta clara; o `<picture>` com `<source media="(prefers-color-scheme: dark)">`
+faz o navegador escolher sozinho, sem JavaScript. O registro em `src/gravuras.ts` e o teste de SHA-256 repetem a "falha fechada" do
+Tesouro: arquivo que não bate com o registro derruba o teste.
+
+**Paralelo de gestão:** é ter o logotipo da empresa em duas versões (colorida e em branco) e deixar o sistema usar a certa conforme o
+fundo do documento, com uma planilha dizendo de onde veio cada arquivo.
+
 ### Versionamento (números de versão)
 **O que é:** cada publicação tem um número, como `0.2.0`. O primeiro número muda nas grandes viradas
 (o `1.0` será a abertura ao público), o do meio a cada fase do roteiro, e o último em correções
