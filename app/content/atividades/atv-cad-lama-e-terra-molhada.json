@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-lama-e-terra-molhada",
   "titulo": "Lama e terra molhada",
-  "marcos": [],
-  "dominio": "NM",
-  "categoria": "Água, terra e plantas",
+  "marcos": ["NM.TER.03"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 6,

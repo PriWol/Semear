@@ -1,9 +1,7 @@
 {
   "id": "atv-vol1-u3-abrir-uma-maca",
   "titulo": "Abrir uma maçã: o que tem por dentro?",
-  "marcos": [],
-  "dominio": "NM",
-  "categoria": "Observar a natureza",
+  "marcos": ["NM.VIV.04"],
   "materialImpresso": {
     "volume": 1,
     "unidade": 3,

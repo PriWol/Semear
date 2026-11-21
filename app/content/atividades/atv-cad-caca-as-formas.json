@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-caca-as-formas",
   "titulo": "Caça às formas",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Jogos e brincadeiras",
+  "marcos": ["MA.GEO.02"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 3,

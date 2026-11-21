@@ -1,9 +1,7 @@
 {
   "id": "atv-vol3-u1-um-muitos-ou-nenhum",
   "titulo": "Um, muitos ou nenhum? Separar em três cestas",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Sentidos e classificação",
+  "marcos": ["MA.SEN.05"],
   "materialImpresso": {
     "volume": 3,
     "unidade": 1,

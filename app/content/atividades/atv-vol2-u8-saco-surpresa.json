@@ -1,9 +1,7 @@
 {
   "id": "atv-vol2-u8-saco-surpresa",
   "titulo": "O saco surpresa: sentir sem ver",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Sentidos e classificação",
+  "marcos": ["DI.SEN.01", "DI.SEN.04"],
   "materialImpresso": {
     "volume": 2,
     "unidade": 8,

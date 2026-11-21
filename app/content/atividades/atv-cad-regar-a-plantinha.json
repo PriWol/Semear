@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-regar-a-plantinha",
   "titulo": "Regar a plantinha",
-  "marcos": [],
-  "dominio": "NM",
-  "categoria": "Água, terra e plantas",
+  "marcos": ["NM.VIV.03", "NM.VIV.01"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 6,
