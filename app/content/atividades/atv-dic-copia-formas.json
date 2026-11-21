@@ -1,0 +1,79 @@
+{
+  "id": "atv-dic-copia-formas",
+  "titulo": "Desenhando círculo, cruz e quadrado",
+  "marcos": ["DI.CAD.18", "DI.CAD.22", "DI.CAD.34"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 6],
+  "duracaoMin": 12,
+  "preparoMin": 2,
+  "cuidados": "Use lápis grosso ou giz de cera e fique por perto. Nada de levar lápis à boca; sente-se com a criança em cadeira estável. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança olha uma forma desenhada (círculo, cruz ou quadrado) e faz outra parecida, sem prova e sem correção.",
+  "passos": [
+    {
+      "titulo": "Aquecer",
+      "minutos": 2,
+      "texto": "Desenhem bolas e sóis no ar com o dedo e depois em uma folha grande, com giz de cera."
+    },
+    {
+      "titulo": "Olhe e faça",
+      "minutos": 6,
+      "texto": "Desenhe uma forma por vez (círculo, depois cruz, depois quadrado, no ritmo dela), sem nomear a figura e sem guiar a mão. Diga só: “faz um desenho como este?”. Aceite qualquer tentativa e elogie o esforço.",
+      "fala": "Faz um desenho como este?"
+    },
+    {
+      "titulo": "Ela é a professora",
+      "minutos": 4,
+      "texto": "Troquem os papéis: ela desenha uma forma e você tenta copiar, com alguns errinhos de propósito para ela mostrar como faz."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Desenha uma forma redonda parecida com um círculo",
+      "Cruza duas linhas perto do meio",
+      "Faz um quadrado com quatro lados e cantos"
+    ],
+    "emDesenvolvimento": [
+      "Faz formas pouco fechadas ou tortas: normal, o controle do lápis vem com a prática"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Peça as três formas e depois algumas composições (janela, casa).",
+    "facil": "Comece só pelo círculo, em folha grande."
+  },
+  "materiais": [
+    {
+      "item": "Folha sem pauta",
+      "deCasa": true
+    },
+    {
+      "item": "Giz de cera ou lápis grosso",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Desenhou uma forma parecida com um círculo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Desenhou uma cruz",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Desenhou um quadrado",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual forma ela mais gostou de desenhar?",
+  "palavrasChave": ["copiar", "círculo", "cruz", "quadrado", "desenho", "lápis"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "atv-ar-minha-familia-em-desenho",
   "titulo": "Desenho da minha família",
-  "marcos": ["AR.DES.02"],
+  "marcos": ["AR.DES.02", "DI.CAD.30"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [3, 6],
   "duracaoMin": 15,

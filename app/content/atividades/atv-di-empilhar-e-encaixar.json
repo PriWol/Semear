@@ -1,7 +1,7 @@
 {
   "id": "atv-di-empilhar-e-encaixar",
   "titulo": "Torre, caixa e tampas",
-  "marcos": ["DI.MFI.01"],
+  "marcos": ["DI.MFI.01", "DI.CAD.02", "DI.CAD.06"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [2, 3],
   "duracaoMin": 10,

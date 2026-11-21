@@ -1,0 +1,71 @@
+{
+  "id": "atv-dic-aponta-e-quem-faz",
+  "titulo": "Cadê? E quem faz?",
+  "marcos": ["DI.CAD.03", "DI.CAD.11"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Use livro de papel grosso ou cartões grandes, sem peças soltas, e fique junto o tempo todo. Nada de cartões pequenos que caibam na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança aponta figuras que você nomeia (“cadê o cachorro?”) e depois mostra quem faz uma ação (“quem mia?”, “quem late?”).",
+  "passos": [
+    {
+      "titulo": "Cadê?",
+      "minutos": 3,
+      "texto": "Abra um livro de figuras grandes (ou 4 cartões de animais e objetos conhecidos). Pergunte uma coisa de cada vez: “cadê a bola?”. Espere ela apontar e comemore. Se falar o nome, repita.",
+      "fala": "Cadê o cachorro?"
+    },
+    {
+      "titulo": "Quem faz?",
+      "minutos": 3,
+      "texto": "Com as figuras de bichos, pergunte: “quem mia?”, “quem late?”. Faça o som junto. Se ela errar, mostre a resposta e siga, sem cobrar.",
+      "fala": "Quem mia?"
+    },
+    {
+      "titulo": "Sua vez de perguntar",
+      "minutos": 2,
+      "texto": "Troquem: ela esconde uma figura e você pergunta “cadê?”, ou ela escolhe uma e você faz o som errado para ela corrigir, rindo."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta a figura que você nomeia",
+      "Aponta o bicho certo quando você pergunta quem mia ou quem late"
+    ],
+    "emDesenvolvimento": [
+      "Prefere só olhar ou falar os nomes: tudo bem, guarde a brincadeira para outro dia"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Pergunte por ações menos comuns: “quem voa?”, “quem pula?”.",
+    "facil": "Comece com só duas figuras bem diferentes."
+  },
+  "materiais": [
+    {
+      "item": "Livro de figuras grandes ou 4 cartões de animais e objetos conhecidos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Apontou figuras que você nomeou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Mostrou quem faz uma ação (quem mia, quem late)",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual figura ela mais gostou de apontar?",
+  "palavrasChave": ["apontar", "figuras", "cadê", "quem mia", "animais", "ações"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

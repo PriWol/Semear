@@ -1,7 +1,7 @@
 {
   "id": "atv-nm-roda-de-cantigas",
   "titulo": "Roda de cantigas e parlendas",
-  "marcos": ["NM.CUL.02"],
+  "marcos": ["NM.CUL.02", "DI.CAD.19"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [3, 7],
   "duracaoMin": 15,

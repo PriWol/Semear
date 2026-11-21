@@ -1,0 +1,75 @@
+{
+  "id": "atv-dic-eu-me-visto-com-ajuda",
+  "titulo": "Eu me visto, com você por perto",
+  "marcos": ["DI.CAD.05", "DI.CAD.13"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Use roupas folgadas e sem cordões soltos no pescoço. Fique junto o tempo todo. Cuidado com botões e fechos pequenos que possam soltar e ir à boca de outras crianças. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança veste uma peça de roupa (meias, casaco, camiseta folgada) com um adulto por perto, e ajuda só quando pede.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 2,
+      "texto": "Ofereça duas peças folgadas e deixe que ela escolha. Marque a frente da camiseta com um adesivo pequeno.",
+      "fala": "Qual você quer?"
+    },
+    {
+      "titulo": "Vestir",
+      "minutos": 6,
+      "texto": "Comece pelo mais fácil: meias e casaco aberto. Depois a camiseta: mostre “a cabeça passa pelo buraco grande”, depois o braço de cada vez. Ajude só quando ela pedir, e devagar. Sem pressa.",
+      "fala": "Agora o braço"
+    },
+    {
+      "titulo": "Comemorar",
+      "minutos": 2,
+      "texto": "Olhem no espelho: “você se vestiu!”. Elogie o esforço, não o resultado perfeito."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Veste meias ou casaco com você por perto",
+      "Enfia a cabeça e os braços na camiseta folgada"
+    ],
+    "emDesenvolvimento": [
+      "Pede ajuda em partes difíceis (calcanhar da meia, braço da camiseta): faz parte da idade"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Tente a camiseta inteira, sem ajuda, e depois o casaco.",
+    "facil": "Treine só meias, ou só colocar o braço na manga."
+  },
+  "materiais": [
+    {
+      "item": "Meias, casaco aberto e camiseta folgada",
+      "deCasa": true
+    },
+    {
+      "item": "Adesivo pequeno para marcar a frente",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Vestiu uma peça de roupa com você por perto",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Vestiu a camiseta sem ajuda",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual peça ela mais gostou de vestir?",
+  "palavrasChave": ["vestir", "roupa", "camiseta", "meias", "autonomia"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

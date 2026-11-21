@@ -1,0 +1,72 @@
+{
+  "id": "atv-dic-bola-pra-la-e-pra-ca",
+  "titulo": "Bola pra lá e pra cá: chutar e jogar",
+  "marcos": ["DI.CAD.04", "DI.CAD.12"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Use bola macia e leve. Brinque em local plano, longe de escadas, ruas, vidros e móveis. Fique junto e evite pisos escorregadios. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança chuta uma bola sem se apoiar e joga a bola com o braço levantado, em dois jogos curtos.",
+  "passos": [
+    {
+      "titulo": "Chute",
+      "minutos": 4,
+      "texto": "Ponha a bola parada no chão, a um passo dela. Convide: “chuta pra mim!”. Depois de cada chute, vá buscar a bola junto e repita. Aumente a distância aos poucos.",
+      "fala": "Chuta pra mim!"
+    },
+    {
+      "titulo": "Arremesso",
+      "minutos": 4,
+      "texto": "Segure uma caixa ou bacia a um passo e deixe que ela tente acertar a bola dentro, jogando com o braço levantado. Mostre o gesto primeiro, devagar. Cada bola dentro vira festa.",
+      "fala": "Bola na caixa!"
+    },
+    {
+      "titulo": "Calma",
+      "minutos": 2,
+      "texto": "Terminem sentados, respirando, e falem do que foi mais divertido."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Chutou a bola sem se segurar em nada", "Jogou a bola com o braço levantado"],
+    "emDesenvolvimento": [
+      "Chuta com o pé de apoio mal posicionado, ou joga sem levantar o braço: normal, repita outro dia"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Aumente a distância ou use um alvo desenhado na parede.",
+    "facil": "Fique bem perto e rolem a bola devagar."
+  },
+  "materiais": [
+    {
+      "item": "Bola grande e macia",
+      "deCasa": true
+    },
+    {
+      "item": "Caixa ou bacia grande",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Chutou a bola sem apoio",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Arremessou a bola com o braço levantado",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual brincadeira ela quis repetir?",
+  "palavrasChave": ["bola", "chutar", "arremessar", "jogar", "coordenação"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

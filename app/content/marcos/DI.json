@@ -803,6 +803,942 @@
         "por": "Dona do produto",
         "em": "2026-11-21"
       }
+    },
+    {
+      "id": "DI.CAD.01",
+      "linha": "DI.CAD",
+      "ordem": 1,
+      "titulo": "Tira peças de roupa",
+      "descricaoPais": "Tira por conta própria alguma peça de roupa, como sapatos que pedem um pouco de esforço, casaco, calça ou camiseta. A informação de quem convive com a criança vale. Parecido com DI.VPR.01 (que também inclui lavar as mãos); aqui o foco é só tirar a roupa. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 18 a 24 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Tira sapatos, casaco, calça ou camiseta sem que um adulto tire por ela",
+        "Faz isso na hora do banho ou de trocar de roupa, por iniciativa própria ou quando é convidada"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Tirar a roupa é um dos primeiros passos da autonomia no cuidado de si. Usa coordenação, equilíbrio e a vontade de fazer sozinha.",
+        "comoParticipar": "Dê tempo extra na hora do banho e escolha roupas folgadas, fáceis de tirar. Convide com leveza (“quer tirar o casaco?”), elogie o esforço e ajude só no que ela pedir.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 24 meses (2 anos), ainda não tira nenhuma peça de roupa, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.02",
+      "linha": "DI.CAD",
+      "ordem": 2,
+      "titulo": "Empilha 3 cubos formando uma torre",
+      "descricaoPais": "Empilha três cubos ou blocos, um sobre o outro, e a torre fica de pé quando a criança tira a mão. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 18 a 24 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Põe um bloco em cima do outro até formar uma torre",
+        "A torre fica de pé depois que ela solta os blocos"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Empilhar treina a coordenação entre olho e mão, a pontaria e a paciência. É base para encaixar, desenhar e, mais tarde, escrever.",
+        "comoParticipar": "Ofereça blocos grandes, caixinhas de papelão ou copos de plástico. Façam torres juntos, sem pressa; derrubar e recomeçar faz parte da graça. Use só peças grandes demais para caber na boca.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 24 meses (2 anos), ainda não empilha três blocos, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.03",
+      "linha": "DI.CAD",
+      "ordem": 3,
+      "titulo": "Aponta figuras que alguém nomeia",
+      "descricaoPais": "Quando alguém pergunta “cadê?”, aponta duas figuras conhecidas entre várias, em um livro ou em cartões. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 18 a 24 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Ao olhar um livro de figuras, aponta o que você nomeia",
+        "Mostra figuras conhecidas quando você pergunta “cadê o cachorro?”"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Entender palavras vem antes de falar. Apontar mostra que a criança liga a palavra à imagem, e isso sustenta o vocabulário que virá.",
+        "comoParticipar": "Olhem livros de figuras grandes por alguns minutos todos os dias. Nomeie uma figura de cada vez, pergunte “cadê?” e comemore quando ela apontar. Se ela falar o nome, repita e acrescente uma palavra.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 24 meses (2 anos), ainda não aponta figuras quando alguém as nomeia, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.04",
+      "linha": "DI.CAD",
+      "ordem": 4,
+      "titulo": "Chuta bola",
+      "descricaoPais": "Chuta uma bola sem se apoiar em móveis ou em outra pessoa. Parecido com o que DI.MAM.02 pede aos 3 anos (que também inclui pular e jogar); aqui o foco é só o chute, mais cedo. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 18 a 24 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Dá um chute na bola, em pé, sem se segurar em nada",
+        "Vai até a bola para chutar de novo"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Chutar pede equilíbrio por instantes sobre um pé e coordenação das pernas. É também um convite à brincadeira ao ar livre.",
+        "comoParticipar": "Use uma bola grande e leve, em espaço livre. Rolem a bola um para o outro e peça “chuta pra mim!”. Não exija pontaria: o que conta é o movimento e a alegria.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 24 meses (2 anos), ainda não chuta a bola sem apoio, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.05",
+      "linha": "DI.CAD",
+      "ordem": 5,
+      "titulo": "Veste-se com supervisão",
+      "descricaoPais": "Veste alguma peça de roupa, como calcinha, cueca, meias, sapatos ou casaco, com um adulto por perto. A informação de quem cuida vale. Difere de DI.VPR.03 (aos 4 anos, vestir-se com pouca ajuda): aqui basta uma peça, com supervisão. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 24 a 30 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Veste meias, casaco ou outra peça enquanto um adulto observa",
+        "Pede ajuda só nas partes difíceis, como o calcanhar da meia ou o botão"
+      ],
+      "idadeTipica": 2.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Vestir-se é treino de coordenação, de sequência (primeiro isto, depois aquilo) e de confiança: “eu consigo”.",
+        "comoParticipar": "Escolha roupas folgadas e deixe tempo para tentar. Comece pelo mais fácil (meias, casaco aberto) e ajude só no que ela pedir. Diga “o buraco da cabeça é grande”, “agora o braço”, sem apressar.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 30 meses (2 anos e meio), ainda não veste nenhuma peça de roupa, nem com um adulto por perto, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.06",
+      "linha": "DI.CAD",
+      "ordem": 6,
+      "titulo": "Empilha 6 cubos formando uma torre",
+      "descricaoPais": "Empilha seis cubos ou blocos, e a torre fica de pé quando a criança tira a mão. É a continuação da torre de 3 cubos. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 24 a 30 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Constrói uma torre mais alta, com cuidado para não derrubar",
+        "Comemora ou recomeça quando a torre cai"
+      ],
+      "idadeTipica": 2.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Torres mais altas pedem mãos mais firmes e atenção. A criança aprende por tentativa e erro que cada bloco precisa ficar bem encaixado no de baixo.",
+        "comoParticipar": "Aumente o desafio aos poucos, com os mesmos blocos de antes. Façam torres lado a lado e conte os blocos em voz alta. Derrube junto, rindo: é treino de calma.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 30 meses (2 anos e meio), ainda não empilha seis blocos, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.07",
+      "linha": "DI.CAD",
+      "ordem": 7,
+      "titulo": "Fala frases com 2 palavras",
+      "descricaoPais": "Junta pelo menos duas palavras numa frase que faz sentido e fala de uma ação, como “quer água”, “quer papar” ou “chuta bola”. A informação de quem convive com a criança vale. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 24 a 30 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Usa duas palavras juntas para pedir ou contar algo",
+        "Diz coisas como “quer água” ou “chuta bola”"
+      ],
+      "idadeTipica": 2.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Passar de palavras soltas para frases é um grande salto na comunicação: a criança consegue pedir, contar e ser entendida.",
+        "comoParticipar": "Converse durante a rotina (banho, comida, passeio). Quando ela disser “água”, responda “quer água?” e dê tempo. Repita o que ela diz acrescentando uma palavra, sem corrigir nem cobrar. Cantem e leiam juntos.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 30 meses (2 anos e meio), ainda não junta duas palavras numa frase, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.08",
+      "linha": "DI.CAD",
+      "ordem": 8,
+      "titulo": "Pula com os dois pés",
+      "descricaoPais": "Pula com os dois pés saindo do chão e chegando ao mesmo tempo, mesmo que não caia exatamente no mesmo lugar. Parecido com DI.MAM.02 (3 anos, que também inclui bola); aqui o foco é só o pulo. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 24 a 30 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Pula no lugar ou para a frente, com os dois pés juntos",
+        "Os dois pés tocam o chão ao mesmo tempo"
+      ],
+      "idadeTipica": 2.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Pular fortalece as pernas e desenvolve equilíbrio e coordenação do corpo todo.",
+        "comoParticipar": "Brinquem de pular como sapo ou de pular uma “poça” desenhada com giz. Dobrem os joelhos juntos e contem “um, dois, já!”. Use piso firme e calçado fechado ou pés descalços em chão seguro.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 30 meses (2 anos e meio), ainda não pula com os dois pés, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.09",
+      "linha": "DI.CAD",
+      "ordem": 9,
+      "titulo": "Brinca com outras crianças",
+      "descricaoPais": "Participa de brincadeiras com outras crianças da mesma idade. A informação de quem convive com a criança vale. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 30 a 36 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Brinca perto de outras crianças e interage com elas",
+        "Entra em brincadeiras de perseguir, esconder ou imitar"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Brincar com outras crianças ensina esperar a vez, dividir, imitar e perceber o outro. É a base da convivência.",
+        "comoParticipar": "Crie encontros curtos com outras crianças, em parque ou em casa, com poucos brinquedos disputados. Fique por perto, ajude a esperar a vez sem forçar a dividir e valorize o que deu certo.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 36 meses (3 anos), ainda não participa de brincadeiras com outras crianças, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.10",
+      "linha": "DI.CAD",
+      "ordem": 10,
+      "titulo": "Imita o desenho de uma linha",
+      "descricaoPais": "Depois de ver alguém fazer, faz no papel uma linha ou mais, de bom tamanho (a Caderneta fala em pelo menos 5 cm). Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 30 a 36 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Depois que você desenha uma linha, ela desenha outra parecida",
+        "Faz traços compridos, e não só pontinhos"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Imitar uma linha é o primeiro passo do desenho e da escrita: a criança aprende a guiar o lápis com a intenção de fazer o que viu.",
+        "comoParticipar": "Ofereça giz de cera grosso e folhas grandes. Faça uma linha devagar e convide: “faz igual?”. Aceite o traço dela como está, sem corrigir.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 36 meses (3 anos), ainda não imita uma linha desenhada por outra pessoa, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.11",
+      "linha": "DI.CAD",
+      "ordem": 11,
+      "titulo": "Reconhece 2 ações em figuras",
+      "descricaoPais": "Aponta a figura certa quando alguém pergunta sobre uma ação, como “quem mia?”, “quem late?”, “quem fala?” ou “quem galopa?”. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 30 a 36 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Mostra o gato quando você pergunta quem mia",
+        "Liga o som ou a ação ao bicho ou à pessoa certa"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Entender o que cada um faz amplia a compreensão da linguagem para além dos nomes das coisas: agora a criança entende ações.",
+        "comoParticipar": "Olhem livros de animais e brinquem de “quem mia? quem late? quem voa?”. Faça o som junto. Se ela errar, mostre a resposta e siga em frente, sem cobrar.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 36 meses (3 anos), ainda não aponta a figura certa quando perguntam sobre uma ação, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.12",
+      "linha": "DI.CAD",
+      "ordem": 12,
+      "titulo": "Arremessa bola",
+      "descricaoPais": "Arremessa a bola com o braço levantado, por cima (a Caderneta descreve como “acima do braço”). Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 30 a 36 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Joga a bola para a frente levantando o braço",
+        "Gosta de repetir a brincadeira"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Arremessar coordena braço, tronco e olhar, e prepara para jogos com bola mais adiante.",
+        "comoParticipar": "Brinquem de jogar bolas macias em uma caixa, uma bacia ou em um alvo desenhado na parede. Aumente a distância aos poucos. Use bola leve e espaço livre de objetos frágeis.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 36 meses (3 anos), ainda não arremessa a bola com o braço por cima, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.13",
+      "linha": "DI.CAD",
+      "ordem": 13,
+      "titulo": "Veste camiseta sem ajuda",
+      "descricaoPais": "Veste a camiseta ou o casaco, sem botão nem zíper, sem ajuda. A informação de quem cuida vale. Difere de DI.VPR.03 (aos 4 anos, vestir-se com pouca ajuda): aqui é uma peça simples e sem fecho. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 36 a 42 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Enfia a cabeça e os braços na camiseta sozinha",
+        "Veste casaco aberto, sem botão ou zíper, sem ajuda"
+      ],
+      "idadeTipica": 3.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.05"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Vestir uma peça inteira sozinha une coordenação, noção do próprio corpo e planejamento. É uma conquista de autonomia que a criança comemora.",
+        "comoParticipar": "Deixe a roupa organizada ao alcance, escolha camisetas folgadas e marque a frente com um adesivo pequeno. Espere um pouco antes de ajudar e elogie o esforço. Evite peças com cordões no pescoço.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 42 meses (3 anos e meio), ainda não veste camiseta ou casaco sem ajuda, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.14",
+      "linha": "DI.CAD",
+      "ordem": 14,
+      "titulo": "Move o polegar com a mão fechada",
+      "descricaoPais": "Com a mão fechada, levanta o polegar, como no sinal de “legal”, “ok” ou “tudo bem”, com uma ou as duas mãos, depois de ver alguém fazer. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 36 a 42 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Faz o sinal de “legal” com o polegar depois de ver você fazer",
+        "Consegue com uma mão ou com as duas"
+      ],
+      "idadeTipica": 3.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Mexer um dedo de cada vez mostra o controle fino das mãos, que depois será usado para segurar o lápis, abotoar e escrever.",
+        "comoParticipar": "Brinquem de “joinha”: faça o sinal e peça “faz igual?”. Cantem músicas com dedos e rimas de mãozinhas. Não force o dedo nem dobre à mão; se cansar, mude de brincadeira.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 42 meses (3 anos e meio), ainda não levanta o polegar com a mão fechada, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.15",
+      "linha": "DI.CAD",
+      "ordem": 15,
+      "titulo": "Compreende 2 adjetivos",
+      "descricaoPais": "Entende dois adjetivos ligados a sensações e responde de forma que faz sentido, por exemplo: “o que você faz quando está com fome?” (“eu como”), “com frio?” (“visto casaco”), “cansado?” (“vou deitar”). Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 36 a 42 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Conta o que faz quando está com fome, frio ou sono",
+        "As respostas combinam com a pergunta"
+      ],
+      "idadeTipica": 3.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Entender e usar palavras que descrevem sensações ajuda a criança a pedir o que precisa e a falar sobre si.",
+        "comoParticipar": "Aproveite o dia a dia: “está com frio? o que a gente faz?”. Faça perguntas leves, sem transformar em prova, e acolha qualquer resposta. Leia livros que falem de sensações.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 42 meses (3 anos e meio), ainda não responde de modo que combine com perguntas sobre fome, frio ou cansaço, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.16",
+      "linha": "DI.CAD",
+      "ordem": 16,
+      "titulo": "Equilibra-se em um pé só, 1 segundo",
+      "descricaoPais": "Fica em um pé só, sem se apoiar em nada, por pelo menos um segundo, em cada pé, depois de ver alguém fazer. Pode tentar várias vezes. Parecido com DI.MAM.03 (4 anos, que inclui andar sobre uma linha); aqui o marco é mais cedo e mais curto. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 83, faixa de 36 a 42 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Levanta um pé e fica sobre o outro sem se segurar",
+        "Consegue com o pé direito e com o esquerdo"
+      ],
+      "idadeTipica": 3.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O equilíbrio em um pé só é a base para correr, pular e subir escadas com segurança.",
+        "comoParticipar": "Brinquem de flamingo ou de estátua em um pé só, perto de uma parede ou de sua mão para dar segurança. Revezem os pés e comemorem cada tentativa. Use piso firme e sem tapete solto.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 42 meses (3 anos e meio), ainda não fica em um pé só, sem apoio, por um instante, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.17",
+      "linha": "DI.CAD",
+      "ordem": 17,
+      "titulo": "Junta objetos da mesma cor",
+      "descricaoPais": "Junta objetos da mesma cor, por exemplo cubos. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 42 a 48 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Separa brinquedos ou blocos por cor",
+        "Põe junto o que tem a mesma cor, mesmo sem dizer o nome da cor"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Perceber o que é igual e diferente é a base de classificar, comparar e, mais tarde, de contar e ler.",
+        "comoParticipar": "Brinquem de separar blocos, meias, tampinhas grandes ou frutas por cor. Pergunte “qual é igual a este?”. Se errar, deixe que ela perceba sozinha. Use só objetos grandes demais para caber na boca.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 48 meses (4 anos), ainda não junta objetos da mesma cor, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.18",
+      "linha": "DI.CAD",
+      "ordem": 18,
+      "titulo": "Copia um círculo",
+      "descricaoPais": "Olhando um círculo desenhado, faz com lápis uma forma parecida, fechada ou quase fechada. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 42 a 48 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Desenha uma forma redonda, mesmo irregular, depois de ver o modelo",
+        "A linha se fecha, ou quase"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.10"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Copiar um círculo mostra coordenação entre olho e mão e o controle do lápis, que preparam para as letras.",
+        "comoParticipar": "Desenhem juntos bolas, sóis e rodas, em folhas grandes e com giz de cera. Mostre um círculo e pergunte “faz um assim?”. Aceite qualquer forma redondinha e não corrija.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 48 meses (4 anos), ainda não desenha uma forma redonda parecida com o modelo, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.19",
+      "linha": "DI.CAD",
+      "ordem": 19,
+      "titulo": "Fala de modo claro e compreensível",
+      "descricaoPais": "Fala de um jeito que se entende (pronúncia dos sons e ideias ditas em sequência). A Caderneta chama isso de inteligibilidade da fala. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 42 a 48 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Dá para entender o que ela diz",
+        "Encadeia ideias, como “fui lá, vi o cachorro e ele latiu”"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Falar de modo compreensível permite que a criança conte, peça e se relacione com outras pessoas.",
+        "comoParticipar": "Converse bastante, com calma e olhando nos olhos. Repita o que ela disser de modo correto, sem corrigir diretamente. Cantem, recitem parlendas e leiam em voz alta. Evite imitar a fala trocada.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 48 meses (4 anos), ainda não fala de modo que os outros entendam, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.20",
+      "linha": "DI.CAD",
+      "ordem": 20,
+      "titulo": "Pula em um pé só",
+      "descricaoPais": "Pula em um pé só duas ou mais vezes, sem se apoiar em nada, depois de ver alguém fazer. A Caderneta coloca este marco aos 4 anos; em DI.MAM.04 ele aparece aos 5 anos, junto com galopar. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 42 a 48 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Dá dois ou mais pulinhos em um pé só",
+        "Faz isso sem se segurar em móveis nem em pessoas"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Pular em um pé só exige força, equilíbrio e coordenação, e prepara jogos como a amarelinha.",
+        "comoParticipar": "Brinquem de pular com uma perna só, primeiro segurando sua mão e depois sem apoio. Desenhe um caminho no chão e conte os pulinhos. Use piso firme e calçado fechado.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 48 meses (4 anos), ainda não pula em um pé só sem apoio, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.21",
+      "linha": "DI.CAD",
+      "ordem": 21,
+      "titulo": "Veste-se sem ajuda",
+      "descricaoPais": "Veste-se sem alguma ajuda. A informação de quem cuida vale. Difere de DI.VPR.03 (aos 4 anos, com pouca ajuda): aqui a criança se veste por inteiro, sem ajuda. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 48 a 54 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Escolhe e veste as roupas do dia sozinha",
+        "Só pede ajuda em casos raros, como fechos difíceis"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.13"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Vestir-se sozinha dá confiança e liberta a rotina da manhã. É um passo importante de autonomia.",
+        "comoParticipar": "Deixe as roupas ao alcance e dê tempo. Combinem uma ordem (roupa de baixo, roupa de cima, meias, sapatos). Evite apressar; elogie o esforço, não o resultado perfeito.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 54 meses (4 anos e meio), ainda não se veste sem ajuda, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.22",
+      "linha": "DI.CAD",
+      "ordem": 22,
+      "titulo": "Copia uma cruz",
+      "descricaoPais": "Olhando uma cruz desenhada, faz duas linhas que se cruzam perto do meio. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 48 a 54 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Desenha uma linha em pé e outra deitada que se cruzam",
+        "As linhas se encontram perto do meio"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.18"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cruzar linhas é um passo para formas mais difíceis (quadrado, letras como o T e o X) e mostra o controle do lápis.",
+        "comoParticipar": "Desenhem janelas, bandeiras e “x” de tesouro. Mostre uma cruz e peça “faz uma assim?”. Aceite qualquer cruz e não corrija; no dia seguinte, tente de novo.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 54 meses (4 anos e meio), ainda não desenha duas linhas que se cruzem, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.23",
+      "linha": "DI.CAD",
+      "ordem": 23,
+      "titulo": "Compreende 4 preposições",
+      "descricaoPais": "Entende pedidos com “em cima”, “embaixo”, “na frente” e “atrás”, por exemplo: “coloque o bloco em cima da mesa”, “embaixo da mesa”, “na minha frente”, “atrás de mim”. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 48 a 54 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Põe um objeto em cima, embaixo, na frente ou atrás, conforme você pede",
+        "Entende as palavras de lugar nas brincadeiras do dia a dia"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Palavras de lugar ajudam a entender instruções, a se orientar no espaço e, depois, a ler mapas e a seguir regras.",
+        "comoParticipar": "Brinquem de esconder um bichinho “embaixo da almofada” ou “atrás da porta”. Peça “põe o urso em cima da cadeira”. Troquem de papéis e deixe que ela dê as ordens.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 54 meses (4 anos e meio), ainda não cumpre pedidos com “em cima”, “embaixo”, “na frente” e “atrás”, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.24",
+      "linha": "DI.CAD",
+      "ordem": 24,
+      "titulo": "Equilibra-se em um pé só, 3 segundos",
+      "descricaoPais": "Fica em um pé só, sem apoio, por pelo menos três segundos, em cada pé, depois de ver alguém fazer. É a continuação do equilíbrio de 1 segundo. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 48 a 54 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Fica em um pé só por alguns segundos, contando devagar até três",
+        "Consegue com os dois pés"
+      ],
+      "idadeTipica": 4.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.16"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Equilíbrio mais longo mostra mais controle do corpo e prepara para correr, pular corda e andar de bicicleta.",
+        "comoParticipar": "Brinquem de flamingo e contem juntos até três. Troquem o pé. Sem comparar com ninguém: cada tentativa vale. Use piso firme e sem tapete solto.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 54 meses (4 anos e meio), ainda não fica em um pé só por alguns segundos, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.25",
+      "linha": "DI.CAD",
+      "ordem": 25,
+      "titulo": "Escova os dentes sem ajuda",
+      "descricaoPais": "Escova os dentes sem ajuda e sem supervisão (por algum tempo), incluindo pôr a pasta, escovar os dentes de trás e usar fio dental, se a criança recebeu treino para isso. A Caderneta pede para verificar se houve treino. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 54 a 60 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Escova os dentes sozinha, do começo ao fim, depois de ter aprendido",
+        "Põe a pasta na escova e alcança os dentes de trás"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cuidar dos próprios dentes é autonomia e hábito de saúde para a vida. A criança só consegue se alguém ensinou e deu tempo para treinar.",
+        "comoParticipar": "Escovem juntos todos os dias, mostrando o passo a passo. Deixe que ela tente e depois complete, com delicadeza. O Semear não dá orientação odontológica: para pasta, técnica e fio dental, siga o que o dentista ou o pediatra indicarem.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 60 meses (5 anos), ainda não escova os dentes sem ajuda, depois de ter recebido treino, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.26",
+      "linha": "DI.CAD",
+      "ordem": 26,
+      "titulo": "Aponta a linha mais comprida",
+      "descricaoPais": "Entre duas linhas desenhadas lado a lado, aponta a mais comprida, mesmo quando o papel é girado. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 54 a 60 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Compara dois objetos compridos, como lápis ou fitas, e mostra o maior",
+        "Continua acertando quando o objeto muda de posição"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Comparar tamanhos é base da medida e do raciocínio: a criança percebe que o comprimento continua o mesmo quando o objeto gira.",
+        "comoParticipar": "Brinquem de comparar fitas, lápis, canudos e pegadas. Pergunte “qual é mais comprido?” e vire o objeto de lado para ver. Sem prova: errar é parte do aprender.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 60 meses (5 anos), ainda não aponta o mais comprido, mesmo quando muda a posição, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.27",
+      "linha": "DI.CAD",
+      "ordem": 27,
+      "titulo": "Define 5 palavras",
+      "descricaoPais": "Explica o que são palavras do seu dia a dia (“o que é uma bola?”, “o que você sabe sobre o rio?”), dizendo para que serve, como é, de que é feita ou a que grupo pertence. Exemplo da Caderneta: rio = tem peixe, água, pescar. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 54 a 60 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Explica o que é uma bola, um rio ou uma cadeira com as próprias palavras",
+        "Diz para que serve, como é ou de que é feito"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Definir palavras mostra vocabulário e pensamento: para explicar, a criança precisa juntar o que sabe sobre o objeto.",
+        "comoParticipar": "Brinquem de “o que é?” com objetos de casa. Aceite respostas de qualquer tipo (“serve pra…”, “é redondo”, “tem água e peixe”). Conversem sobre palavras novas nas histórias. Sem cobrar nem corrigir.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 60 meses (5 anos), ainda não explica o que são palavras do cotidiano, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.28",
+      "linha": "DI.CAD",
+      "ordem": 28,
+      "titulo": "Equilibra-se em um pé só, 5 segundos",
+      "descricaoPais": "Fica em um pé só, sem apoio, por pelo menos cinco segundos, em cada pé. É a continuação do equilíbrio de 3 segundos. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 84, faixa de 54 a 60 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Fica em um pé só por um tempo mais longo, contando devagar até cinco",
+        "Consegue com os dois pés"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.24"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O equilíbrio firme sustenta jogos de movimento, andar de bicicleta e, adiante, a postura para escrever.",
+        "comoParticipar": "Desafiem-se com o flamingo, com braços abertos ou fechando os olhos por instantes. Contem juntos e troquem os pés. Use piso firme e sem tapete solto.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 60 meses (5 anos), ainda não fica em um pé só por um tempo mais longo, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.29",
+      "linha": "DI.CAD",
+      "ordem": 29,
+      "titulo": "Brinca de faz de conta com outras crianças",
+      "descricaoPais": "Participa de brincadeiras de faz de conta, como casinha ou escola, tanto em casa quanto na escola ou com amigos. A informação de quem convive com a criança vale. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 60 a 66 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Combina papéis com outras crianças (“eu sou a professora”)",
+        "Inventa histórias e cenas em grupo, em casa ou na escola"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O faz de conta em grupo desenvolve imaginação, linguagem, combinação de regras e empatia.",
+        "comoParticipar": "Ofereça materiais simples (panos, caixas, utensílios de brinquedo) e deixe a história ao comando das crianças. Entre se convidada, sem dirigir. Nomeie o que viu (“vocês montaram uma escola!”).",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 66 meses (5 anos e meio), ainda não participa de faz de conta com outras crianças, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.30",
+      "linha": "DI.CAD",
+      "ordem": 30,
+      "titulo": "Desenha uma pessoa com várias partes do corpo",
+      "descricaoPais": "Desenha uma pessoa (mamãe, papai, amigo, a própria criança) com partes do corpo, como olhos, braços, mãos, pernas e pés. Segundo a Caderneta, partes em pares (olhos, orelhas, braços, mãos, pernas, pés) contam como uma e só valem se os dois lados foram desenhados. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 60 a 66 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Desenha uma pessoa com cabeça, corpo e várias partes, como braços e pernas",
+        "Inclui detalhes do rosto e das mãos ou dos pés"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O desenho da figura humana mostra como a criança percebe o próprio corpo e o dos outros, e treina o controle do lápis.",
+        "comoParticipar": "Ofereça folhas sem pauta e peça “desenha a sua família?”. Espere até que ela termine, sem corrigir nem contar as partes. Escreva o nome e a data no canto. Guarde os desenhos para ver a evolução.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 66 meses (5 anos e meio), ainda não desenha uma pessoa com várias partes do corpo, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.31",
+      "linha": "DI.CAD",
+      "ordem": 31,
+      "titulo": "Faz analogias",
+      "descricaoPais": "Completa frases em que uma ideia se relaciona com outra, como “se o cavalo é grande, o rato é…”, “se o fogo é quente, o gelo é…” ou “se o Sol brilha de dia, a lua brilha de…”. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 60 a 66 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Completa frases como “se o cavalo é grande, o rato é…”",
+        "Entende a relação (opostos, dia e noite) e responde com uma palavra que combina"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Fazer analogias é pensar por relações (o oposto, o que combina). É base de raciocínio, de leitura e de matemática.",
+        "comoParticipar": "Brinquem de “se… então…” no carro, na fila e na mesa. Faça uma pergunta de cada vez e fale devagar. Aceite respostas diferentes e peça que expliquem. Não é prova.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 66 meses (5 anos e meio), ainda não completa frases que comparam duas ideias, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.32",
+      "linha": "DI.CAD",
+      "ordem": 32,
+      "titulo": "Marcha com ponta e calcanhar",
+      "descricaoPais": "Anda em linha reta, encostando a ponta de um pé no calcanhar do outro, sem se apoiar, depois de ver alguém demonstrar. A Caderneta pede alguns passos seguidos. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 60 a 66 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Anda sobre uma linha, com um pé na frente do outro, sem se segurar",
+        "Mantém o calcanhar perto da ponta do outro pé"
+      ],
+      "idadeTipica": 5.5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.28"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Andar com um pé na frente do outro mostra equilíbrio e coordenação finos, e prepara jogos de corda e trilhas.",
+        "comoParticipar": "Cole uma fita no chão e brinquem de equilibristas. Demonstre devagar e depois ande junto. Comecem com os braços abertos. Use piso firme e sem tapete solto.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 66 meses (5 anos e meio), ainda não anda com ponta e calcanhar em linha reta, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.33",
+      "linha": "DI.CAD",
+      "ordem": 33,
+      "titulo": "Aceita e segue regras nos jogos de mesa",
+      "descricaoPais": "Aceita e segue as regras de jogos de mesa. A informação de quem convive com a criança vale. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 66 a 72 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Espera a vez e segue as regras do jogo até o fim",
+        "Aceita quando perde, com a ajuda de um adulto se precisar"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Jogos com regras ensinam esperar, lidar com perder e respeitar o combinado, habilidades da vida em grupo e da escola.",
+        "comoParticipar": "Escolha jogos curtos e simples (memória, trilha com dado, dominó). Explique as regras antes e jogue de verdade. Nomeie sentimentos (“dá raiva perder, né?”) e combine uma partida revanche.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 72 meses (6 anos), ainda não aceita e segue as regras dos jogos de mesa, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.34",
+      "linha": "DI.CAD",
+      "ordem": 34,
+      "titulo": "Copia um quadrado",
+      "descricaoPais": "Olhando um quadrado desenhado, faz um desenho parecido. A Caderneta diz para não dar o nome da figura nem guiar a mão ou o lápis: só pedir “faz um desenho como este”. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 66 a 72 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Desenha quatro lados e quatro cantos parecidos com o modelo",
+        "Faz isso depois de ver o quadrado, sem que alguém guie a mão"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.22"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Copiar um quadrado exige percepção das linhas retas e dos cantos, e prepara para escrever letras e números.",
+        "comoParticipar": "Brinquem de desenhar janelas, caixas e casas. Mostre o desenho e convide “faz um assim?”. Elogie o esforço e deixe tentar mais de uma vez, sem ensinar passo a passo.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 72 meses (6 anos), ainda não desenha um quadrado parecido com o modelo, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.35",
+      "linha": "DI.CAD",
+      "ordem": 35,
+      "titulo": "Define 7 palavras",
+      "descricaoPais": "Explica o que são palavras do seu dia a dia, dizendo para que serve, como é, de que é feita ou a que grupo pertence. É a continuação de “Define 5 palavras”, com mais palavras. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 66 a 72 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Explica várias palavras do cotidiano com as próprias palavras",
+        "Usa “serve para…”, “é feito de…” ou “é um tipo de…”"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.27"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Quanto mais palavras a criança explica, mais rico é o vocabulário e mais organizado o pensamento, o que ajuda na leitura e na escrita.",
+        "comoParticipar": "Continuem a brincar de “o que é?” com objetos novos, bichos, lugares e ferramentas. Fale palavras novas nas conversas e nas histórias. Sem cobrar, sem corrigir.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 72 meses (6 anos), ainda não explica o que são várias palavras do cotidiano, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
+    },
+    {
+      "id": "DI.CAD.36",
+      "linha": "DI.CAD",
+      "ordem": 36,
+      "titulo": "Equilibra-se em um pé só, 7 segundos",
+      "descricaoPais": "Fica em um pé só, sem apoio, por pelo menos sete segundos, em cada pé. É a continuação do equilíbrio de 5 segundos. Fonte: Caderneta da Criança, 5. ed. (2022), pág. 85, faixa de 66 a 72 meses; a idade indicada é o fim da faixa.",
+      "evidencias": [
+        "Fica em um pé só por um tempo bem mais longo, contando devagar até sete",
+        "Consegue com os dois pés"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["DI.CAD.28"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Equilíbrio firme mostra controle do corpo e apoia esportes, dança e a postura para escrever.",
+        "comoParticipar": "Desafios com música (“a música parou: estátua de flamingo!”) e circuitos de equilíbrio. Contem juntos e troquem o pé. Use piso firme e sem tapete solto.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se, ao final dos 72 meses (6 anos), ainda não fica em um pé só por um tempo bem mais longo, ou se ela age de um modo diferente do que você espera, converse com profissionais de saúde, educação ou assistência social (Caderneta da Criança, pág. 53 e 79–80). Na maioria das vezes não é nada sério, mas quanto mais cedo um problema de desenvolvimento é identificado e enfrentado, melhores são os resultados. Se a criança nasceu prematura, use a idade corrigida (Caderneta, pág. 89). O Semear não substitui o acompanhamento pediátrico. Isto não é diagnóstico. Conferência por profissional de saúde pendente.",
+        "referencias": ["caderneta-crianca-2022"]
+      },
+      "revisao": {
+        "estado": "rascunho",
+        "por": "Curador pedagógico (IA)",
+        "em": "2026-11-21"
+      }
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "atv-di-pares-iguais-bandeja",
   "titulo": "Bandeja dos pares: acha o igual",
-  "marcos": ["DI.SEN.01"],
+  "marcos": ["DI.SEN.01", "DI.CAD.17"],
   "vertentes": ["Montessori"],
   "idade": [2, 4],
   "duracaoMin": 9,

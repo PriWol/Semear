@@ -1,7 +1,7 @@
 {
   "id": "atv-di-lavar-as-maos-sozinha",
   "titulo": "Eu lavo as minhas mãos",
-  "marcos": ["DI.VPR.01"],
+  "marcos": ["DI.VPR.01", "DI.CAD.01"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [2, 4],
   "duracaoMin": 9,

@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-maozinhas",
   "titulo": "Para as mãozinhas",
-  "marcos": [],
+  "marcos": ["DI.CAD.14"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

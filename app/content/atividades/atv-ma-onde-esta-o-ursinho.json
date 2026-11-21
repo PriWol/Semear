@@ -1,7 +1,7 @@
 {
   "id": "atv-ma-onde-esta-o-ursinho",
   "titulo": "Onde está o ursinho? Em cima, embaixo, dentro",
-  "marcos": ["MA.GEO.01"],
+  "marcos": ["MA.GEO.01", "DI.CAD.23"],
   "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
   "idade": [2, 5],
   "duracaoMin": 10,

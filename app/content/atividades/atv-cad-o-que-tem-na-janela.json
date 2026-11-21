@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-o-que-tem-na-janela",
   "titulo": "O que tem na janela?",
-  "marcos": [],
+  "marcos": ["DI.CAD.03", "DI.CAD.07"],
   "dominio": "NM",
   "categoria": "Observar a natureza",
   "materialImpresso": {

@@ -1,0 +1,90 @@
+{
+  "id": "atv-dic-um-pe-so",
+  "titulo": "Flamingo, saltinhos e trilha de passinhos",
+  "marcos": ["DI.CAD.16", "DI.CAD.20", "DI.CAD.24", "DI.CAD.28", "DI.CAD.32", "DI.CAD.36"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 12,
+  "preparoMin": 2,
+  "cuidados": "Brinque em piso firme, sem tapete solto, longe de móveis, quinas e escadas. Fique ao lado para segurar se perder o equilíbrio. Calçado fechado para os saltinhos. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança fica em um pé só por alguns segundos, dá pulinhos em um pé só e anda com um pé na frente do outro sobre uma fita, em um jogo de equilíbrio com níveis.",
+  "passos": [
+    {
+      "titulo": "Flamingo",
+      "minutos": 4,
+      "texto": "Fique ao lado de uma parede ou ofereça sua mão. Mostre: um pé no ar, como flamingo. Contem juntos devagar (um… dois… três…) e troquem o pé. Aumente o tempo aos poucos, com o que ela aguentar.",
+      "fala": "Flamingo de um pé só!"
+    },
+    {
+      "titulo": "Saltinhos",
+      "minutos": 4,
+      "texto": "Quando ela dominar o flamingo, peça pulinhos em um pé só: primeiro segurando sua mão, depois sozinha. Contem os pulinhos em voz alta.",
+      "fala": "Pula, pula, flamingo!"
+    },
+    {
+      "titulo": "Trilha de passinhos",
+      "minutos": 4,
+      "texto": "Cole uma fita de uns 3 metros no chão. Ela anda sobre a fita colocando um pé na frente do outro, com o calcanhar encostando na ponta do outro pé, de braços abertos. Demonstre devagar e depois andem juntos.",
+      "fala": "Passinho de equilibrista"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Fica em um pé só sem se segurar, contando devagar",
+      "Dá pulinhos em um pé só",
+      "Anda sobre a fita com um pé na frente do outro"
+    ],
+    "emDesenvolvimento": ["Perde o equilíbrio ou se apoia: normal, repita outro dia"]
+  },
+  "ajustes": {
+    "dificil": "Aumente o tempo do flamingo e peça passinhos de olhos fechados por instantes, bem perto de você.",
+    "facil": "Fique perto da parede e comece com um segundo só."
+  },
+  "materiais": [
+    {
+      "item": "Fita adesiva larga",
+      "deCasa": true
+    },
+    {
+      "item": "Uma parede ou sua mão para apoio",
+      "deCasa": true
+    },
+    {
+      "item": "Piso firme",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ficou em um pé só sem apoio",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Deu pulinhos em um pé só",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Andou com um pé na frente do outro",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual desafio ela quis repetir?",
+  "palavrasChave": [
+    "equilíbrio",
+    "pé só",
+    "flamingo",
+    "pular",
+    "passo ponta calcanhar",
+    "coordenação"
+  ],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

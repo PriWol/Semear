@@ -1,7 +1,7 @@
 {
   "id": "atv-vol1-u3-vermelhas-e-amarelas",
   "titulo": "Vermelhas e amarelas: separar frutas por cor",
-  "marcos": [],
+  "marcos": ["DI.CAD.17"],
   "dominio": "DI",
   "categoria": "Sentidos e classificação",
   "materialImpresso": {

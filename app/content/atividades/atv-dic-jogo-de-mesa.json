@@ -1,0 +1,71 @@
+{
+  "id": "atv-dic-jogo-de-mesa",
+  "titulo": "Jogo de mesa: as regras valem para todos",
+  "marcos": ["DI.CAD.33"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 7],
+  "duracaoMin": 15,
+  "preparoMin": 2,
+  "cuidados": "Se houver criança menor por perto, retire peças pequenas e dados do alcance. Sente-se junto o tempo todo. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança joga uma partida curta de um jogo de mesa simples (memória, trilha com dado, dominó), seguindo as regras até o fim.",
+  "passos": [
+    {
+      "titulo": "Combinar as regras",
+      "minutos": 3,
+      "texto": "Escolha um jogo curto e simples, como jogo da memória, trilha com dado ou dominó. Explique as regras em poucas frases e peça que ela diga com as próprias palavras como se joga.",
+      "fala": "Como se joga?"
+    },
+    {
+      "titulo": "Jogar",
+      "minutos": 9,
+      "texto": "Joguem de verdade, esperando a vez de cada um. Comente a espera (“agora é a minha vez, você espera”) e perca ou ganhe sem fingir. Se alguém quebrar a regra, volte ao combinado com calma.",
+      "fala": "Agora é a minha vez"
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 3,
+      "texto": "Pergunte do que ela mais gostou e, se perdeu, como se sentiu. Combinem uma revanche, se quiserem."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Espera a vez e segue as regras até o fim da partida",
+      "Aceita quando perde, com ajuda se precisar"
+    ],
+    "emDesenvolvimento": [
+      "Tem dificuldade para esperar ou aceitar a derrota: normal, nomeie o sentimento e tente outra partida mais curta"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Inclua um jogo com mais regras ou crie uma regra nova junto.",
+    "facil": "Use um jogo de uma só regra e partidas bem curtas."
+  },
+  "materiais": [
+    {
+      "item": "Jogo de memória, trilha com dado ou dominó",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Seguiu as regras do jogo até o fim",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Esperou a vez e aceitou o resultado",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que regra foi mais difícil de seguir?",
+  "palavrasChave": ["jogo de mesa", "regras", "esperar a vez", "memória", "dominó", "trilha"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

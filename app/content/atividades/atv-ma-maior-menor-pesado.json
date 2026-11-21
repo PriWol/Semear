@@ -1,7 +1,7 @@
 {
   "id": "atv-ma-maior-menor-pesado",
   "titulo": "Maior, menor, leve, pesado: a cesta de comparar",
-  "marcos": ["MA.MED.01"],
+  "marcos": ["MA.MED.01", "DI.CAD.26"],
   "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
   "idade": [2, 5],
   "duracaoMin": 10,
