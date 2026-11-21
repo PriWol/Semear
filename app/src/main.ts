@@ -3,6 +3,7 @@ import { registerSW } from 'virtual:pwa-register';
 import { VERSAO } from './versao';
 import { rotuloVersao } from './ui/versao';
 import './tokens.css';
+import './tokens-escuro.css';
 import './registro.css';
 import { abrirRepositorio } from './dados/repositorio';
 import { conteudo } from './conteudo';
