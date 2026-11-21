@@ -1,7 +1,7 @@
 {
   "id": "atv-cing-u5-collect-a-leaf",
   "titulo": "Collect a leaf",
-  "marcos": [],
+  "marcos": ["NM.VIV.01", "LI.ESC.01"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "idioma": "en",

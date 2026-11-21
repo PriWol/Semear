@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-pintar-com-agua",
   "titulo": "Pintar com água",
-  "marcos": [],
+  "marcos": ["AR.PIN.01"],
   "dominio": "AR",
   "categoria": "Pintura",
   "materialImpresso": {

@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-limpar-maos",
   "titulo": "Para limpar as mãos",
-  "marcos": [],
+  "marcos": ["DI.VPR.01", "AR.CAN.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

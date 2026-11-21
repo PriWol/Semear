@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-batuque-de-panela",
   "titulo": "Batuque de panela",
-  "marcos": [],
+  "marcos": ["AR.RIT.02"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {

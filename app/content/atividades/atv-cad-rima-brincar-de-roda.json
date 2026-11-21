@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-brincar-de-roda",
   "titulo": "Para brincar de roda",
-  "marcos": [],
+  "marcos": ["NM.CUL.02", "AR.CAN.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

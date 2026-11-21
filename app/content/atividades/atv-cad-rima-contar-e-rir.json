@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-contar-e-rir",
   "titulo": "Mais duas, para contar e rir",
-  "marcos": [],
+  "marcos": ["MA.SEN.01", "AR.CAN.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

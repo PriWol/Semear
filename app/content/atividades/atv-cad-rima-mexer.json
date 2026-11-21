@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-mexer",
   "titulo": "Mais duas para mexer",
-  "marcos": [],
+  "marcos": ["AR.CAN.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

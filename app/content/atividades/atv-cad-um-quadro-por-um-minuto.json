@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-um-quadro-por-um-minuto",
   "titulo": "Um quadro por um minuto",
-  "marcos": [],
+  "marcos": ["AR.APR.01"],
   "dominio": "AR",
   "categoria": "Apreciação de artistas",
   "materialImpresso": {

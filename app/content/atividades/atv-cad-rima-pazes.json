@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-pazes",
   "titulo": "Fazer as pazes",
-  "marcos": [],
+  "marcos": ["EM.REG.02"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

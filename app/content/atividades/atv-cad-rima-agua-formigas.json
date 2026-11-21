@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-agua-formigas",
   "titulo": "Água e formigas",
-  "marcos": [],
+  "marcos": ["AR.CAN.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {
