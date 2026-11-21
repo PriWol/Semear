@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u3-ler-the-very-hungry-caterpillar",
+  "titulo": "Ler juntos: The Very Hungry Caterpillar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 3,
+    "paginas": [37, 37]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "palavrasChave": ["inglês", "english", "livro", "the very hungry caterpillar"],
+  "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Look! The caterpillar is hungry. / One apple. Where is the apple? / Now the caterpillar is full."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Sentem com o livro e deixe que ela vire a página; mostre o buraco que a lagarta faz."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Em cada página, nomeie a comida e conte: “one apple”, “two pears”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Peça que ela aponte a fruta: “where is the strawberry?”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "No fim, falem da borboleta: “a beautiful butterfly”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What did the caterpillar eat? / How many pears? / Can you find the strawberry?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Procure na cozinha o que a lagarta comeu. Conte os buraquinhos da página. Leia só até a quinta página, se ela se cansar."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Leitura dialogada (Whitehurst) com um livro de comida e de contar: as palavras vêm com a imagem e a repetição. As comidas do livro também podem ser procuradas na cozinha (“where is the apple?”), o que leva o inglês do livro à vida. Em dias de recusa à mesa, ler o livro antes do lanche ajuda. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta na figura", "Repete uma palavra ou pede o livro de novo"],
+    "emDesenvolvimento": ["Ainda só olha e escuta; ler uma página por dia já basta"]
+  },
+  "materiais": [
+    {
+      "item": "o livro *The Very Hungry Caterpillar* (Eric Carle), de uma biblioteca, livraria ou sebo",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "A criança apontou, repetiu uma palavra ou pediu o livro de novo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u2-bubble-breathing",
+  "titulo": "Bubble breathing",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [25, 25]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. A espuma e o líquido de bolhas não são para beber e podem irritar os olhos. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "o banho", "bubble breathing"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Breathe in… and blow, blow, blow. / Look, a big bubble! Nice and slow. / Pop! One more time?"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Ponha um pouco de espuma na palma da mão dela, ou sopre uma bolha com a varinha."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Mostre: “breathe in… and blow”. Sopre devagar e olhe a bolha ir."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Deixe que ela sopre a espuma: “blow the bubbles away”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine com um abraço: “nice and slow”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Can you blow? / Where did the bubble go? / Is your body slow now?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Sopre um barquinho de papel na água. “Blow the duck” de um lado ao outro da banheira. Faça a “barba” de espuma: “ho, ho, ho”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Soprar devagar ajuda o corpo a baixar o ritmo, e a espuma dá um motivo concreto para o sopro. O banho calmo, com voz baixa, também ajuda a criança que está agitada ou brava. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "bolhas de sabão na banheira ou espuma na palma da mão",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

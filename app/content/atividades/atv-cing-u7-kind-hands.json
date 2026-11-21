@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u7-kind-hands",
+  "titulo": "Kind hands",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [72, 72]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Ursinho macio e sem peças pequenas (olhos e nariz bordados, não de plástico solto). Se ela bater no ursinho ou em você, responda com calma, sem castigo e sem culpa.",
+  "palavrasChave": ["inglês", "english", "a família e os sentimentos", "kind hands"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: a família e os sentimentos.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Hands are for hugs. Hands are for helping. / Hands are not for hitting. Show me a hug. / Clap, clap, clap! Good hands."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Mostre: “hands are for hugs”, e abrace o ursinho; depois “hands are for helping”, e ajude a pôr algo no lugar."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Pergunte: “what can hands do?”. Ela mostra: bater palmas, abraçar, pegar, acenar."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Se ela bater, pare com calma: “hands are not for hitting. Hands are for hugs.”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Ofereça o que fazer com a energia: “clap your hands!”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What are hands for? / Can you give a hug? / Can you clap?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça um abraço no ursinho. Dê um “high five”: “up high!”. Aperte a mão dela: “nice to meet you”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Dizer o que as mãos podem fazer, e não só o que não podem, é o conselho mais comum para a fase em que a criança bate: dê a ela uma alternativa (abraçar, bater palmas) em vez de só um “não”. A frase “hands are not for hitting” é curta e fácil de repetir, e há livros infantis com esse título. Use sempre o mesmo tom calmo, sem gritar. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "um ursinho ou um boneco macio",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

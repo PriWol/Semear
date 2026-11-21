@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u3-smell-the-soup-blow-the-soup",
+  "titulo": "Smell the soup, blow the soup",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 3,
+    "paginas": [35, 35]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "teste a temperatura da comida antes de servir: morna, nunca quente. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "smell the soup, blow the soup"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Smell the soup… mmm, it smells so good. / Now blow the soup. Nice and slow. / It's warm now. Let's eat."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Antes de comer, sentem com a comida na frente, ainda sem tocar."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "“Smell the soup”: inspire pelo nariz. “Blow the soup”: sopre devagar pela boca."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Faça junto, duas vezes, e só então: “now we eat”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Se a comida estiver quente demais, espere: “it's too hot, let's blow more”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Does it smell good? / Is it hot or warm? / Can you blow?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "“Smell the flower, blow the candle” (da unidade 1) antes de comer. Sopre o chá morno. Cheire as frutas: “smell the orange”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Cheirar e soprar a comida é uma respiração calma disfarçada, e dá a ela um jeito de esperar a comida esfriar, em vez de querer comer na hora. Serve também de “porta” para o início da refeição, e ajuda quem chega à mesa agitada. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "uma xícara de sopa morna (não quente) ou um prato de comida morna",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u5-walk-run-stop",
+  "titulo": "Walk, run, stop",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [52, 52]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "em lugar com carros, só com ela de mão dada; nunca solte a mão dela na beira da calçada.",
+  "palavrasChave": ["inglês", "english", "sair e passear", "walk, run, stop"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: sair e passear.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Walk, walk, walk. Hold my hand. / Run, run, run! And… stop! / Stop at the edge. Good job stopping!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "De mãos dadas, diga “walk” e caminhem; “run” e corram um pouco; “stop!” e parem."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Pare sempre na beira da calçada: “stop at the edge. Hold my hand.”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Deixe que ela diga “walk”, “run” e “stop” e que você obedeça."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Termine com um abraço: “good listening”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Do you want to walk or run? / Can you stop? / Where do we stop?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Corra de formiga: pequenos passos. Pare como estátua: “freeze”. Faça o carrinho: “beep beep, stop”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "“Walk, run, stop” é uma Resposta Física Total com um uso de segurança: a criança aprende a parar ao comando, e o “stop at the edge” é uma regra que vale na rua. Também é uma brincadeira de controle do impulso: ela corre, e para quando você diz. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "uma calçada larga, um parque ou um corredor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

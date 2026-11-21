@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u8-whisper-time",
+  "titulo": "Whisper time",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 8,
+    "paginas": [82, 82]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Não deixe cobertor, travesseiro fofo ou bichos soltos perto do rosto de quem dorme; fique junto, deitada ao lado, e fale baixinho, sem pôr nada sobre o rosto dela.",
+  "palavrasChave": ["inglês", "english", "hora de dormir", "whisper time"],
+  "objetivo": "Ouvir e usar inglês num momento fixo do dia (hora de dormir), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Shh, let's whisper. / Today we played in the park. That was fun. / Tell me one nice thing. Sleep tight."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Deitem e fale em voz de sussurro: “let's whisper”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Conte uma coisa boa do dia, em uma frase: “we played in the park”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Peça uma coisa a ela: “tell me one nice thing”. Aceite uma palavra."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Termine com um sussurro: “sleep tight”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What was fun? / Who did we see? / Are you sleepy?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Conte três coisas: “first, then, last”. Sussurre no ouvido do ursinho. Ela conta uma coisa só, em português: repita em inglês."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Falar em sussurro é um ótimo jeito de baixar o ritmo, e contar uma coisa boa do dia, em uma frase, treina a memória e termina o dia em paz. Em inglês, a frase é sempre a mesma, e ela a reconhece. Se ela não quiser falar, só escute: o silêncio também vale. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "o quarto, com a luz baixa e o ursinho",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u5-collect-a-leaf",
+  "titulo": "Collect a leaf",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [50, 50]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "só folhas caídas; não tire do galho nem leve à boca; lave as mãos depois.",
+  "palavrasChave": ["inglês", "english", "sair e passear", "collect a leaf"],
+  "objetivo": "Ligar palavras em inglês ao que se vê, se toca e se sente no dia a dia (unidade: sair e passear).",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "I found a leaf! A big, green leaf. / This one is small and yellow. Into the basket. / Three leaves! We did it."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Combine: “let's find three leaves”. Só as que já estão no chão."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Cada folha vai para a cesta com um nome: “big leaf”, “small leaf”, “green”, “yellow”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Em casa, ponham as folhas em fila: “big, bigger, biggest”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Pare em três ou cinco folhas: é uma tarefa com fim."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Is it big or small? / What color is it? / How many leaves?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Esfregue uma folha: “it smells”. Faça um “tapete de folhas” e pule: “crunch!”. Procure só folhas vermelhas."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Procurar folhas dá um objetivo ao passeio, e contar até três ou cinco ajuda quem tem pouca paciência a saber quando acaba. Comparar tamanho e cor (“big, small, green, yellow”) é vocabulário de verdade, com o objeto na mão. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "uma sacola de pano ou uma cesta",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

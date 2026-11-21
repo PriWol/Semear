@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u3-set-the-table",
+  "titulo": "Set the table",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 3,
+    "paginas": [30, 30]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias. Só objetos inquebráveis e sem pontas.",
+  "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "set the table"],
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: comer e ajudar na mesa.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "This is a plate. Can you put it here? / Spoon, cup, napkin. Thank you! / One plate, two plates. We're ready."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Mostre cada objeto e diga o nome: “plate”, “cup”, “spoon”, “napkin”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Peça que ela leve um de cada vez à mesa: “bring me the spoon”, “put it here”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Conte os lugares: “one plate for Mama, one plate for you”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Ao terminar, agradeçam: “thank you for helping”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Where does the spoon go? / Can you bring me the cup? / How many plates?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Ela põe a mesa do ursinho. Quem leva o prato é “the helper of the day”. Troque de objeto: “fork”, “bowl”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Pôr a mesa é uma tarefa de verdade, dada à criança como ajuda (Montessori), que muita criança na fase do “não” aceita com orgulho. As palavras (plate, cup, spoon) vêm com o objeto na mão, e os comandos simples (“bring me”, “put it here”) são Resposta Física Total. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "um prato, um copo e uma colher de plástico ou de inox, e um guardanapo de tecido; tudo inquebrável",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

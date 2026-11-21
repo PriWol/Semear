@@ -1,0 +1,58 @@
+{
+  "id": "atv-cing-u7-rimas-para-ajudar-e-para-ser-gentil",
+  "titulo": "Rimas e cantigas: para ajudar e para ser gentil",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [74, 74]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Na rima “I can do it”, o bloco colocado na caixa deve ser grande e sem peças pequenas; o carinho em ursinho ou em você, só com mão aberta e devagar.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "a família e os sentimentos"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: a família e os sentimentos).",
+  "passos": [
+    {
+      "titulo": "Cantar: I can do it",
+      "minutos": 2,
+      "texto": "O gesto: faça uma tarefa pequena no ritmo (ponha um bloco na caixa); no último verso, estenda a mão para pedir ajuda. É a rima do “eu faço!”. Rima escrita pela coleção.",
+      "fala": "I can do it, I can do it, / one, two, three; / and if I need some help, / you can help me!"
+    },
+    {
+      "titulo": "Cantar: Soft hands",
+      "minutos": 2,
+      "texto": "O gesto: faça carinho no ursinho, devagar, no ritmo da rima; no “stroke the cat”, alise o braço dela com um dedo, bem de leve. Rima escrita pela coleção.",
+      "fala": "Soft hands, soft hands, / pat, pat, pat; / gentle hands, gentle hands, / stroke the cat."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "As rimas da coleção dão, em inglês, as frases da fase do “não”: “I can do it” (eu faço) e “soft hands” (mãos delicadas). Cantá-las nos momentos calmos faz delas um recurso para a hora difícil. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

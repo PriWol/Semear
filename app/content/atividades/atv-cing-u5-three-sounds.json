@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u5-three-sounds",
+  "titulo": "Three sounds",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [56, 56]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "Se for ao ar livre, fique com ela de mão dada perto de ruas e de água; em silêncio, não se afaste dela. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "sair e passear", "three sounds"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Shh… listen. One sound! / It's a bird. Tweet, tweet. / Two sounds. Three. Good listening."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Sentem juntos e diga: “let's listen for three sounds”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Fiquem em silêncio um minuto. Levante um dedo a cada som."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Dê o nome de cada um: “a bird”, “a car”, “the wind”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Depois, imitem um dos sons, bem baixinho."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What do you hear? / Is it loud or quiet? / Where is it coming from?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "De olhos fechados, se ela quiser. Em casa, de dia e de noite: o que muda?. Com um sino: “ding, ding, listen”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Escutar em silêncio, mesmo por um minuto, treina a atenção e acalma. É uma das atividades mais curtas e mais fáceis de repetir em qualquer lugar. “Listen” e “quiet” são palavras úteis, e “good listening” é um elogio que vale ao dia todo. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "nenhum; um lugar com poucos sons",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

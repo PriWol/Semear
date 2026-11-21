@@ -1,0 +1,58 @@
+{
+  "id": "atv-cing-u2-rimas-mais-para-o-banho",
+  "titulo": "Rimas e cantigas: mais para o banho",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [24, 24]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Balançar sentados, devagar, num lugar seguro e fora da banheira; no giro de mãos dadas, gire devagar, em chão seco e sem obstáculos, e pare se ela ficar tonta.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "o banho"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: o banho).",
+  "passos": [
+    {
+      "titulo": "Cantar: Row, row, row your boat",
+      "minutos": 2,
+      "texto": "O gesto: sentados, balancem para a frente e para trás, como quem rema. Faz o banho virar uma pausa tranquila. Cantiga de domínio público (letra publicada em 1852).",
+      "fala": "Row, row, row your boat, / gently down the stream. / Merrily, merrily, merrily, merrily, / life is but a dream."
+    },
+    {
+      "titulo": "Cantar: Here we go round the mulberry bush",
+      "minutos": 2,
+      "texto": "O gesto: gire de mãos dadas na primeira estrofe e, na segunda, mime lavar as mãos. Depois troque o verbo: “dry our toes”, “brush our teeth”. É uma rima feita para as rotinas. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Here we go round the mulberry bush, / the mulberry bush, the mulberry bush; / here we go round the mulberry bush / on a cold and frosty morning. / This is the way we wash our hands, / wash our hands, wash our hands; / this is the way we wash our hands / on a cold and frosty morning."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "“Here we go round the mulberry bush” é uma rima que aceita qualquer verbo, e por isso serve de rotina do dia inteiro: lavar, vestir, comer. Repetida, vira a “música do banho”. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

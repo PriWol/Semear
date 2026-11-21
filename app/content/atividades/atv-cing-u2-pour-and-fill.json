@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u2-pour-and-fill",
+  "titulo": "Pour and fill",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [21, 21]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Use só recipientes de plástico inquebrável, maiores que a boca dela.",
+  "palavrasChave": ["inglês", "english", "o banho", "pour and fill"],
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: o banho.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Fill it up. Pour, pour, pour. / It's full! Now it's empty. / Splash! The cup is empty."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Deixe que ela encha um copo e despeje em outro: “fill it up”, “pour it out”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Compare: “big cup, small cup”; “full”, “empty”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Jogue um brinquedo: “it floats!”; uma colher: “it sinks!”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Termine esvaziando a bacia juntos: “all gone”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Is it full or empty? / Big cup or small cup? / Does it float or sink?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Corante de comida: “blue water”, “yellow water”. Um peneira: “it goes through!”. Lave o brinquedo de cada banho: “wash the duck”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Encher e despejar é ciência de verdade para quem tem 2 anos, e as palavras (full, empty, big, small, float, sink) vêm com o objeto na mão, que é o modo mais seguro de aprender uma palavra. A atividade também acalma: o movimento repetido de despejar tem ritmo. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "copos e potes de plástico de tamanhos diferentes, uma colher grande, na banheira ou numa bacia rasa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "atv-cing-u4-rimas-para-pular-e-contar",
+  "titulo": "Rimas e cantigas: para pular e contar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 4,
+    "paginas": [43, 43]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "A “vela” é só de faz de conta: nunca use fogo. Pular por cima de um pano no chão, só em piso firme e seco, sem escorregar; o pano fica esticado, sem dobras em que ela tropece.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "brincar dentro de casa"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: brincar dentro de casa).",
+  "passos": [
+    {
+      "titulo": "Cantar: Jack be nimble",
+      "minutos": 2,
+      "texto": "O gesto: ponha um pano no chão (a “vela” é de faz de conta, nunca fogo) e pulem juntos por cima no “jump”. Repita mais rápido e mais devagar. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Jack be nimble, / Jack be quick, / Jack jump over / the candlestick."
+    },
+    {
+      "titulo": "Cantar: One, two, buckle my shoe",
+      "minutos": 2,
+      "texto": "O gesto: mostre os dedos de cada número; mime fivelar o sapato, bater à porta, pegar gravetos. Cante só até quatro, se ela se cansar. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "One, two, buckle my shoe; / three, four, knock at the door; / five, six, pick up sticks; / seven, eight, lay them straight; / nine, ten, a big fat hen."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Rimas de pular e de contar juntam corpo e números, e as palavras de verbos (jump, knock, pick up) se aprendem pelo gesto. Escolha uma por semana e repita. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

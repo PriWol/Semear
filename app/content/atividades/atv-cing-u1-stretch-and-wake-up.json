@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u1-stretch-and-wake-up",
+  "titulo": "Stretch and wake up",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 1,
+    "paginas": [10, 10]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "chão firme e sem escorregar.",
+  "palavrasChave": ["inglês", "english", "acordar e se arrumar", "stretch and wake up"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: acordar e se arrumar.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Stretch up high! Reach for the sky! / Touch your toes. Shake, shake, shake your hands. / Jump! One, two, three. And stop."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Mostre cada movimento e diga a frase ao mesmo tempo: “stretch up high” (braços para cima)."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Depois: “touch your toes”, “shake your hands”, “jump!”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Deixe que ela faça com você; não corrija os movimentos, só mostre de novo."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Termine com “stop” e uma respiração: “big breath in… and out”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Can you jump? / Can you touch your toes? / Where are your hands?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça de bicho: stretch like a cat, jump like a frog. Ela dá os comandos e você faz. “Slow motion”: faça tudo muito devagar."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Esta é a Resposta Física Total de James Asher: a criança mostra que entendeu com o corpo, sem precisar falar. Comandos curtos e visíveis, os mesmos todo dia, são o melhor jeito de começar uma língua com quem tem 2 anos. “Jump” e “stop” treinam também o controle do impulso: pular, e parar quando o adulto diz. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "um espaço livre ao lado da cama",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

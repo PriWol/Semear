@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u7-feeling-faces",
+  "titulo": "Feeling faces",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [70, 70]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Espelho inquebrável, firme (preso à parede ou apoiado no chão) e sem cantos afiados; fique junto, pois ela pode tentar subir nele.",
+  "palavrasChave": ["inglês", "english", "a família e os sentimentos", "feeling faces"],
+  "objetivo": "Ouvir e usar inglês num momento fixo do dia (a família e os sentimentos), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "I'm happy! Look at my smile. / Now I'm angry. Grrr. It's okay to feel angry. / Sad. Sleepy. Surprised! Now happy again."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Sentem de frente para o espelho. Faça uma cara feliz e diga “happy”; ela imita."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Faça as outras: “sad” (boca para baixo), “angry” (testa franzida), “sleepy” (olhos pesados), “surprised”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Diga a frase “it's okay to feel angry”. Faça cada cara, e depois volte à feliz."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Deixe que ela escolha uma cara e você imite."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "How do you feel? / Are you happy or sad? / Can you make an angry face?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Fotos da família com caras diferentes. Cara de bicho: um leão bravo, um coelho com medo. Cara do ursinho: “Teddy is sad”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Dar nome às emoções, em um momento calmo, é o primeiro passo para ela usá-las no meio da raiva, em vez de gritar ou bater. “It's okay to feel angry” diz à criança que o sentimento é aceito, e o que se faz com ele é que muda. Repita muitas vezes: o vocabulário dos sentimentos leva tempo. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "um espelho inquebrável, ou o seu rosto",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

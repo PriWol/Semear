@@ -1,0 +1,58 @@
+{
+  "id": "atv-cing-u1-rimas-para-acordar",
+  "titulo": "Rimas e cantigas: para acordar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 1,
+    "paginas": [13, 13]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Toque no rosto dela só com as mãos limpas e com delicadeza; em “Open, shut them”, os dedos só até o queixo, sem entrar na boca; pare se ela não gostar do toque.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "acordar e se arrumar"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: acordar e se arrumar).",
+  "passos": [
+    {
+      "titulo": "Cantar: Good morning to you",
+      "minutos": 2,
+      "texto": "O gesto: toque a mão dela, o nariz e as bochechas em “bright shining faces”; abra os braços no “good morning to you”. Cante baixinho, na mesma melodia que você conhece. “Good Morning to All”, de Patty Smith Hill e Mildred J. Hill (1893), em domínio público.",
+      "fala": "Good morning to you, / good morning to you, / we're all in our places / with bright shining faces, / good morning to you."
+    },
+    {
+      "titulo": "Cantar: Open, shut them",
+      "minutos": 2,
+      "texto": "O gesto: abra e feche as mãos, bata uma palma e pouse no colo; depois “ande” com os dedos até o queixo e abra a boca. Ela vai querer o “de novo”. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Open, shut them, open, shut them, / give a little clap. / Open, shut them, open, shut them, / lay them in your lap. / Creep them, creep them, creep them, creep them, / right up to your chin; / open wide your little mouth, / but do not let them in."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Rimas de dedos e de mãos, como estas, são o melhor material de inglês aos 2 anos: curtas, repetidas, com gesto, e a criança entende pelo corpo. Cante as mesmas por semanas. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

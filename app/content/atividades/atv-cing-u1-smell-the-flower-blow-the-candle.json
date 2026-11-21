@@ -1,0 +1,88 @@
+{
+  "id": "atv-cing-u1-smell-the-flower-blow-the-candle",
+  "titulo": "Smell the flower, blow the candle",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 1,
+    "paginas": [15, 15]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "A vela é só de faz de conta (o dedo erguido); nunca use vela acesa. Se usar uma flor de verdade, confira que não é planta tóxica e que ela não vai levá-la à boca.",
+  "palavrasChave": [
+    "inglês",
+    "english",
+    "acordar e se arrumar",
+    "smell the flower, blow the candle"
+  ],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Smell the flower… mmm, it smells so good. / Now blow the candle… whoooo. Nice and slow. / One more time. Slow and gentle."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Sentem de frente, com você mais perto que de costume."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "“Smell the flower”: inspire devagar pelo nariz, de olhos fechados. “Blow the candle”: sopre pela boca, bem comprido, com o dedo dela de vela."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Faça junto, no mesmo ritmo, três vezes."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine com um abraço: “well done, breather!”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What does the flower smell like? / Did the candle go out? / How does your body feel?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Sopre uma pena ou um cata-vento. “Smell the soup, blow the soup”, na hora de comer. Dragão: sopro forte; gatinho: sopro fraquinho."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Soprar devagar é o jeito mais simples de baixar o ritmo do corpo. Faça com ela calma, no momento fixo de inglês: assim, quando a raiva vier, bastará dizer “let's smell the flower” e ela já conhecerá o caminho. Não force: se ela recusar, respire você e deixe que ela olhe. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "nenhum (uma flor de verdade ou desenhada ajuda); a vela é só de faz de conta: o dedo erguido",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

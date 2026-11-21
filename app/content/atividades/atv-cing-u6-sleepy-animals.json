@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u6-sleepy-animals",
+  "titulo": "Sleepy animals",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [66, 66]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Cubra os bichos, e não a criança, com a manta; bichos de pelúcia sem peças soltas e nada de cobrir o rosto dela; luz baixa, mas suficiente para você enxergar. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "os bichos", "sleepy animals"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "The animals are sleepy. Let's tuck them in. / Night night, kitty. Shh, shh. / They're sleeping. Let's be quiet."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Alinhem os bichos e diga: “the animals are sleepy”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Cubra cada um com a manta, devagar: “night night, doggy”, “night night, kitty”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Falem baixinho: “shh, they're sleeping”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Terminem com um beijo em cada bicho e um para ela."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Are they sleepy? / Who needs a blanket? / Can you say night night?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Cante a canção de ninar para os bichos. Cada um tem o seu lugar. Ela escolhe quem dorme primeiro."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Pôr os bichos para dormir é uma brincadeira de faz de conta com voz baixa e movimentos lentos, e a criança cuida de quem está cansado: é uma das melhores atividades de acalmar antes do sono ou depois de uma crise. As frases (“night night”, “shh”) já preparam a unidade da hora de dormir. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "bichos de pelúcia e uma manta; luz baixa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

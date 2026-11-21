@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u1-cat-stretch",
+  "titulo": "Cat stretch",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 1,
+    "paginas": [16, 16]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "Use tapete que não escorregue, com espaço livre ao redor; faça o movimento devagar e não force o corpo dela além do que ela faz sozinha. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "acordar e se arrumar", "cat stretch"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Stretch like a cat. Nice and slow. / Round your back. Now relax. / Purr, purr, purr. What a calm kitty."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Fique de quatro, como um gato, e mostre: “cat stretch”: peito para baixo e bumbum para cima, bem devagar."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Depois “round back”: arredonde as costas, como gato bravo, e solte."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Façam três vezes, bem devagar, respirando."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine sentadas, com a mão no peito: “purr, purr”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Are you a cat? / Can you purr? / Is your body slow now?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Seja outro bicho: um cachorro que sacode, uma lesma bem lenta. Com música baixa. Antes de dormir, com a luz baixa."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Alongar devagar, como um bichinho, é um movimento que acalma depois de uma noite ou de uma crise, e é uma das posturas mais simples das brincadeiras de yoga para crianças pequenas. O ronronar (um som baixo e contínuo) ajuda a soltar a respiração. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "um tapete macio, no chão",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
