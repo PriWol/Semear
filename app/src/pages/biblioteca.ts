@@ -50,7 +50,7 @@ function cartao(c: DadosCartao) {
     ${
       c.unidades.length === 0
         ? ''
-        : html`<ul>
+        : html`<ul class="lista-unidades">
       ${c.unidades.map(
         (u) =>
           html`<li>
