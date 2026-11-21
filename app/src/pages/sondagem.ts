@@ -15,6 +15,7 @@ import { linhasParaRessondar } from '../domain/ressondagem';
 import { carregarSondagem } from '../conteudo';
 import { ESTADOS } from '../domain/tipos';
 import { NOME_ESTADO } from '../ui/rotulos';
+import { icone } from '../ui/icones';
 
 /**
  * Sondagem impressa (#17, §5.4): a etapa base traz três itens por linha; depois que o educador
@@ -65,7 +66,7 @@ export const paginaSondagem: FabricaPagina = async (ctx, params) => {
       <form id="form-sondagem" class="formulario">
         ${linhas.map(
           (p) => html`<section class="cartao">
-            <h3>${p.pista.dominio.icone} ${p.pista.linha.nome}</h3>
+            <h3>${icone(p.pista.dominio.icone)} ${p.pista.linha.nome}</h3>
             ${(atuais.get(p.id) ?? []).map((marcoId) => {
               const item = itemDoMarco(marcoId);
               const marco = ctx.idx.marco(marcoId);
@@ -90,7 +91,7 @@ export const paginaSondagem: FabricaPagina = async (ctx, params) => {
           </section>`,
         )}
         <div class="acoes">
-          <button class="botao" type="button" id="imprimir-sondagem">🖨️ Imprimir esta etapa</button>
+          <button class="botao" type="button" id="imprimir-sondagem">${icone('printer')} Imprimir esta etapa</button>
           <button class="botao primario" type="submit">Lançar resultados</button>
         </div>
       </form>`;

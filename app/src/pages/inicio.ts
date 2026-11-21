@@ -1,5 +1,6 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
+import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
 import { precisaLembreteBackup } from '../domain/backup';
 import { pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
@@ -138,7 +139,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
                     .map(
                       (d) =>
                         html`<li>
-                          <span>${d.icone} ${d.nome}</span>
+                          <span>${icone(d.icone)} ${d.nome}</span>
                           <progress max="${d.total}" value="${d.cons}"></progress>
                           <span class="nota">${d.cons}/${d.total}</span>
                         </li>`,
@@ -174,7 +175,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
       ${
         precisaBackup
           ? html`<div class="alerta">
-              💾
+              ${icone('floppy-disk')}
               ${
                 ultimoBackup
                   ? `Seu último backup foi em ${dataCurta(ultimoBackup)}.`
@@ -196,9 +197,9 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
       }
       <p>
         <a class="botao" href="#/crianca/nova">+ Adicionar criança</a>
-        <a class="botao" href="#/biblioteca">📚 Biblioteca</a>
-        <a class="botao" href="#/acervo">🆓 Acervo gratuito</a>
-        <a class="botao" href="#/guia">🧭 Guia das vertentes</a>
+        <a class="botao" href="#/biblioteca">${icone('books')} Biblioteca</a>
+        <a class="botao" href="#/acervo">${icone('gift')} Acervo gratuito</a>
+        <a class="botao" href="#/guia">${icone('compass')} Guia das vertentes</a>
       </p>
 
       <h2>Últimas sessões</h2>

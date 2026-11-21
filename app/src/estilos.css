@@ -4,7 +4,7 @@
  * O pacote impresso tem estilos próprios em pacote/.
  */
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
 }
 
 * {
@@ -57,14 +57,15 @@ code {
   justify-content: space-between;
   gap: var(--s-espaco-3);
   padding: var(--s-espaco-2) var(--s-espaco-4);
-  background: var(--s-principal);
-  color: var(--s-papel);
+  background: var(--s-topo);
+  color: var(--s-topo-texto);
 }
 .marca {
   display: inline-flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
-  color: var(--s-papel);
+  color: var(--s-topo-texto);
   font-family: var(--s-fonte-titulo);
   font-weight: 600;
   font-size: var(--s-texto-h3);
@@ -81,19 +82,19 @@ code {
   align-items: center;
   justify-content: center;
   min-height: var(--s-alvo-toque);
-  color: var(--s-papel);
+  color: var(--s-topo-texto);
   text-decoration: none;
   padding: var(--s-espaco-2) var(--s-espaco-3);
   border-radius: var(--s-raio-pilula);
   font-weight: 600;
 }
 .topo nav a.ativo {
-  background: var(--s-papel);
-  color: var(--s-principal);
+  background: var(--s-topo-ativo);
+  color: var(--s-topo-ativo-texto);
 }
 
 .topo :focus-visible {
-  outline-color: var(--s-papel);
+  outline-color: var(--s-topo-texto);
 }
 
 .conteudo-app {
@@ -122,6 +123,19 @@ code {
 }
 .nota {
   color: var(--s-suave);
+}
+
+/* Ícones de linha fina (ADR 0034): herdam a cor do texto (currentColor) e alinham com a linha de base. */
+.icone {
+  width: var(--s-icone);
+  height: var(--s-icone);
+  flex-shrink: 0;
+  vertical-align: -0.2em;
+  fill: currentColor;
+}
+.icone-g {
+  width: var(--s-icone-g);
+  height: var(--s-icone-g);
 }
 .alerta {
   background: var(--s-alerta-claro);
@@ -289,8 +303,12 @@ label.opcao input {
   padding: var(--s-espaco-6) var(--s-espaco-4);
 }
 .boas-vindas .selo {
-  font-size: var(--s-texto-destaque);
   margin: 0;
+  color: var(--s-principal);
+}
+.boas-vindas .selo .icone {
+  width: var(--s-texto-destaque);
+  height: var(--s-texto-destaque);
 }
 /* Gravuras botânicas (ADR 0035): ornamento de respiro, nunca atrás de texto. A altura vem dos tokens e
    a largura acompanha a proporção; max-width impede rolagem lateral em tela estreita. */
@@ -383,6 +401,7 @@ progress {
 .abas a {
   display: inline-flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
   white-space: nowrap;
   text-decoration: none;
@@ -430,6 +449,7 @@ progress {
 .para-os-pais summary {
   display: inline-flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-1) var(--s-espaco-2);
   border-radius: var(--s-raio-p);
@@ -515,7 +535,9 @@ progress {
   height: 80vh;
   border: var(--s-borda) solid var(--s-linha);
   border-radius: var(--s-raio);
-  background: var(--s-linha);
+  /* A folha é papel: continua clara com o app no escuro (ADR 0033) */
+  color-scheme: light;
+  background: var(--s-folha);
 }
 .tabela {
   width: 100%;
@@ -620,6 +642,7 @@ main :is(p, li) > a:not(.botao) {
 summary {
   display: flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
   cursor: pointer;
 }
@@ -645,9 +668,9 @@ summary {
   margin-right: auto;
   margin-left: var(--s-espaco-2);
   padding: var(--s-espaco-1) var(--s-espaco-2);
-  border: var(--s-borda) solid var(--s-papel);
+  border: var(--s-borda) solid var(--s-topo-texto);
   border-radius: var(--s-raio-pilula);
-  color: var(--s-papel);
+  color: var(--s-topo-texto);
   font-size: var(--s-texto-selo);
   text-decoration: none;
   white-space: nowrap;

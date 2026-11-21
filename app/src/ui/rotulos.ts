@@ -1,6 +1,7 @@
 import { dataBR } from '../domain/datas';
 import type { Engajamento, EstadoMarco } from '../domain/tipos';
 import { confiavel, type HtmlSeguro } from './html';
+import { icone } from './icones';
 
 /** Engajamento (#11): o texto guardado é "baixo/ok/bom/alto"; ícone e rótulo são só da tela. */
 export const NOME_ENGAJAMENTO: Record<Engajamento, string> = {
@@ -10,19 +11,19 @@ export const NOME_ENGAJAMENTO: Record<Engajamento, string> = {
   alto: 'Empolgado',
 };
 
-const icone = (tracos: string) =>
+const broto = (tracos: string) =>
   confiavel(
     `<svg class="icone-broto" viewBox="0 0 24 24" aria-hidden="true" focusable="false">${tracos}</svg>`,
   );
 
 /** Ícones de traço (sem emoji, DESIGN.md): um broto que cresce com o engajamento. Constantes do próprio código. */
 export const ICONE_ENGAJAMENTO: Record<Engajamento, HtmlSeguro> = {
-  baixo: icone('<path d="M12 21v-5" /><path d="M12 16c0-2.5 1.5-4 4-4 0 2.5-1.5 4-4 4z" />'),
-  ok: icone('<path d="M12 21v-9" /><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z" />'),
-  bom: icone(
+  baixo: broto('<path d="M12 21v-5" /><path d="M12 16c0-2.5 1.5-4 4-4 0 2.5-1.5 4-4 4z" />'),
+  ok: broto('<path d="M12 21v-9" /><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z" />'),
+  bom: broto(
     '<path d="M12 21v-9" /><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z" /><path d="M12 15c0-3-2-5-6-5 0 3 2 5 6 5z" />',
   ),
-  alto: icone(
+  alto: broto(
     '<path d="M12 21V8" /><path d="M12 8c0-3 1-5 3-6 1 3 0 5-3 6z" /><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6z" /><path d="M12 16c0-3-2-5-6-5 0 3 2 5 6 5z" />',
   ),
 };
@@ -36,10 +37,11 @@ export const NOME_ESTADO: Record<EstadoMarco, string> = {
   consolidado: 'Consolidado',
 };
 
-export const ICONE_ESTADO: Record<EstadoMarco, string> = {
+/** Ícones de linha fina (ADR 0034); o "não observado" é um círculo de texto, não um emoji. */
+export const ICONE_ESTADO: Record<EstadoMarco, HtmlSeguro | string> = {
   'nao-observado': '○',
-  'em-desenvolvimento': '🌱',
-  consolidado: '✅',
+  'em-desenvolvimento': icone('plant'),
+  consolidado: icone('check-circle'),
 };
 
 /** DD/MM/AAAA no fuso do aparelho. */

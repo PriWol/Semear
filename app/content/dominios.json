@@ -5,7 +5,7 @@
     {
       "id": "LG",
       "nome": "Linguagem e Alfabetização",
-      "icone": "🗣️",
+      "icone": "chat-circle-text",
       "linhas": [
         {
           "id": "LG.ORA",
@@ -58,7 +58,7 @@
     {
       "id": "MA",
       "nome": "Matemática",
-      "icone": "🔢",
+      "icone": "calculator",
       "linhas": [
         {
           "id": "MA.SEN",
@@ -101,7 +101,7 @@
     {
       "id": "LI",
       "nome": "Línguas",
-      "icone": "🌍",
+      "icone": "translate",
       "comJornada": true,
       "trilhas": [
         {
@@ -178,7 +178,7 @@
     {
       "id": "EM",
       "nome": "Formação e regulação emocional",
-      "icone": "💛",
+      "icone": "heart",
       "linhas": [
         {
           "id": "EM.NOM",
@@ -206,7 +206,7 @@
     {
       "id": "AR",
       "nome": "Artes e Música",
-      "icone": "🎨",
+      "icone": "palette",
       "comJornada": true,
       "categorias": [
         "Desenho",
@@ -266,7 +266,7 @@
     {
       "id": "NM",
       "nome": "Natureza, Mundo e Sociedade",
-      "icone": "🌎",
+      "icone": "tree",
       "categorias": ["Observar a natureza", "Água, terra e plantas", "Tempo e rotina"],
       "linhas": [
         {
@@ -300,7 +300,7 @@
     {
       "id": "DI",
       "nome": "Desenvolvimento Integral",
-      "icone": "🌱",
+      "icone": "person-simple",
       "categorias": [
         "Vida prática",
         "Sentidos e classificação",

@@ -129,6 +129,9 @@ testes e verificações. Se algo falhar, o PR fica vermelho e não deve entrar.
 
 ---
 
+### Modo escuro com tokens
+O navegador informa se o aparelho prefere tema escuro (`@media (prefers-color-scheme: dark)`). Como todo estilo usa variáveis (`--s-fundo`, `--s-tinta`), basta redefinir os **mesmos nomes** nesse bloco e o app inteiro troca de cor, sem tocar nos estilos das telas. O contraste dos dois temas é testado em `tests/tokens.test.ts`. A folha impressa fica de fora de propósito: papel é sempre claro (ADR 0033).
+
 ## 4. Como trabalhamos com IA (vibe coding com disciplina)
 
 ### O fluxo: spec → plano → testes → código → revisão
@@ -291,4 +294,5 @@ aparelho (AM/PM) e não dá para forçar 24 h; a validação fica em `horaDe24h`
 | **Selo "parece pronto"** | Dica na jornada: marco ainda não consolidado e observado como *Consolidado* em 2 sessões diferentes. Calculado, nunca guardado (ADR 0030). |
 | **Histórico "só acrescenta"** | Cada acontecimento vira uma linha nova; nada é editado nem apagado (exceto quando a sessão ou a criança é excluída). |
 | **Transação** | Grupo de gravações do banco que acontece inteiro ou não acontece. |
+| **Ícone SVG inline** | Desenho vetorial escrito dentro do HTML; com `fill="currentColor"` herda a cor do texto. O app copia só os ~26 ícones Phosphor (MIT) que usa em `ui/icones.ts`, sem pacote nem rede; decorativo leva `aria-hidden`, sozinho leva `aria-label` (ADR 0034). |
 | **Notificação local** | Aviso agendado pelo próprio aplicativo no aparelho, sem servidor. Usado no lembrete diário das atividades de hoje (ADR 0028). |

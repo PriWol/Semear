@@ -1,5 +1,6 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
+import { icone } from '../ui/icones';
 import { validarConteudo } from '../domain/conteudo';
 import { carregarConteudoBruto } from '../conteudo';
 import { CADERNOS } from '../tesouro';
@@ -44,7 +45,7 @@ export const paginaConteudo: FabricaPagina = async (ctx) => {
       ${dominios.map(
         (d) =>
           html`<section class="cartao">
-            <h2>${d.icone} ${d.nome}</h2>
+            <h2>${icone(d.icone)} ${d.nome}</h2>
             <table class="tabela">
               <tr>
                 <th>Linha</th>

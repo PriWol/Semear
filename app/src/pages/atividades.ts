@@ -1,6 +1,7 @@
 import type { FabricaPagina } from '../ui/app';
 import { lerFormulario } from '../ui/app';
 import { html, type HtmlSeguro } from '../ui/html';
+import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
 import { marcosVisiveis } from '../domain/conteudo';
 import { buscarAtividades, dominioDaAtividade } from '../domain/busca';
@@ -43,7 +44,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
       ${folha ? html`<p class="nota">Primeira folha: ${folha.titulo}</p>` : ''}
       <button class="botao primario" type="button" data-imprimir="${a.id}"
         ${crianca ? '' : 'disabled'}>
-        🖨️ Imprimir esta atividade
+        ${icone('printer')} Imprimir esta atividade
       </button>
     </li>`;
   };
@@ -82,7 +83,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
           >Área
           <select name="dominio">
             <option value="">Todas</option>
-            ${dominios.map((d) => html`<option value="${d.id}">${d.icone} ${d.nome}</option>`)}
+            ${dominios.map((d) => html`<option value="${d.id}">${d.nome}</option>`)}
           </select></label
         >
         <label

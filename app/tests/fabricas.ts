@@ -50,7 +50,7 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
       {
         id: 'LG',
         nome: 'Linguagem',
-        icone: '🗣️',
+        icone: 'chat-circle-text',
         comJornada: true,
         linhas: [
           { id: 'LG.FON', nome: 'Fonológica', vertentes: null },
@@ -60,14 +60,14 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
       {
         id: 'MA',
         nome: 'Matemática',
-        icone: '🔢',
+        icone: 'calculator',
         comJornada: true,
         linhas: [{ id: 'MA.SEN', nome: 'Senso numérico', vertentes: null }],
       },
       {
         id: 'LI',
         nome: 'Línguas',
-        icone: '🌍',
+        icone: 'translate',
         comJornada: true,
         maxTrilhasAtivas: 2,
         trilhas: [
@@ -82,7 +82,7 @@ export function conteudoBase(extra: Partial<Conteudo> = {}): Conteudo {
       {
         id: 'AR',
         nome: 'Artes',
-        icone: '🎨',
+        icone: 'palette',
         comJornada: false,
         categorias: ['Escuta musical', 'Canto'],
       },

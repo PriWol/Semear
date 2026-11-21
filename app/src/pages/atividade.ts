@@ -1,5 +1,6 @@
 import type { FabricaPagina } from '../ui/app';
 import { html, textoRico } from '../ui/html';
+import { icone } from '../ui/icones';
 import { atividadePublicada, leituraDaAtividade } from '../domain/leitura';
 import { rotuloDoMaterial } from '../domain/material';
 import { CADERNOS, enderecoDoMaterial } from '../tesouro';
@@ -68,7 +69,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
               : ''
           }
           <button class="botao primario" type="button" id="imprimir-atividade" ${crianca ? '' : 'disabled'}>
-            🖨️ Imprimir esta atividade
+            ${icone('printer')} Imprimir esta atividade
           </button>
           ${
             crianca
@@ -81,19 +82,19 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
 
         ${
           leitura.cuidados
-            ? html`<p class="alerta cuidados" role="note"><b>⚠️ Cuidados:</b> ${leitura.cuidados}</p>`
+            ? html`<p class="alerta cuidados" role="note"><b>${icone('warning')} Cuidados:</b> ${leitura.cuidados}</p>`
             : ''
         }
 
-        <h2>🎯 Objetivo</h2>
+        <h2>${icone('target')} Objetivo</h2>
         <p>${textoRico(a.objetivo)}</p>
 
-        <h2>🧺 Materiais</h2>
+        <h2>${icone('basket')} Materiais</h2>
         <ul>
           ${a.materiais.map((m) => html`<li>${m.item}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
         </ul>
 
-        <h2>🧭 Passo a passo</h2>
+        <h2>${icone('compass')} Passo a passo</h2>
         <ol class="passos-leitura">
           ${a.passos.map(
             (p) =>
@@ -104,19 +105,19 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
           )}
         </ol>
 
-        <h2>👀 O que observar</h2>
-        <h3>✅ Consolidado se…</h3>
+        <h2>${icone('eye')} O que observar</h2>
+        <h3>${icone('check-circle')} Consolidado se…</h3>
         <ul>
           ${a.observar.consolidado.map((t) => html`<li>${textoRico(t)}</li>`)}
         </ul>
-        <h3>🌱 Em desenvolvimento se…</h3>
+        <h3>${icone('plant')} Em desenvolvimento se…</h3>
         <ul>
           ${a.observar.emDesenvolvimento.map((t) => html`<li>${textoRico(t)}</li>`)}
         </ul>
 
         ${
           a.ajustes?.facil || a.ajustes?.dificil
-            ? html`<h2>🔁 Ajustes na hora</h2>
+            ? html`<h2>${icone('arrows-clockwise')} Ajustes na hora</h2>
                 <ul>
                   ${a.ajustes.facil ? html`<li><b>Está fácil?</b> ${textoRico(a.ajustes.facil)}</li>` : ''}
                   ${a.ajustes.dificil ? html`<li><b>Está difícil?</b> ${textoRico(a.ajustes.dificil)}</li>` : ''}
@@ -126,7 +127,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
 
         ${
           leitura.toques.length
-            ? html`<h2>🌿 Toque da vertente</h2>
+            ? html`<h2>${icone('leaf')} Toque da vertente</h2>
                 <ul>
                   ${leitura.toques.map(
                     (t) =>
@@ -140,7 +141,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
 
         ${
           a.materialImpresso
-            ? html`<h2>📖 Material impresso</h2>
+            ? html`<h2>${icone('book-open')} Material impresso</h2>
                 <p>
                   ${rotuloDoMaterial(a.materialImpresso, CADERNOS)}
                   ${

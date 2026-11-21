@@ -217,7 +217,7 @@
   box-shadow: var(--s-sombra);
 }
 .dialogo-aj::backdrop {
-  background: rgba(30, 43, 35, 0.55);
+  background: var(--s-veu);
 }
 .dialogo-aj-corpo {
   padding: var(--s-espaco-5);
