@@ -33,6 +33,23 @@ describe('estilos.css (direção A)', () => {
       /:focus-visible\s*\{\s*outline:\s*var\(--s-foco-largura\) solid var\(--s-foco\)/,
     );
   });
+
+  it('campos e botões têm borda de controle (3:1), nunca só --s-linha', () => {
+    for (const seletor of [
+      '.botao {',
+      '.formulario select {',
+      '#filtros select {',
+      '.estado-botao {',
+    ]) {
+      const bloco = css.slice(css.indexOf(seletor), css.indexOf('}', css.indexOf(seletor)));
+      expect(bloco, seletor).toContain('var(--s-borda-controle)');
+    }
+  });
+
+  it('avisos de texto usam terracota escura, não uma cor própria', () => {
+    expect(css).toMatch(/\.aviso-marco\s*\{[^}]*color:\s*var\(--s-alerta\)/);
+    expect(css).toMatch(/\.link-botao\s*\{[^}]*color:\s*var\(--s-alerta\)/);
+  });
 });
 
 describe('fontes (DESIGN.md: Fraunces nos títulos, Inter no texto)', () => {

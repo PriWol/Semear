@@ -82,6 +82,10 @@ code {
   color: var(--s-principal);
 }
 
+.topo :focus-visible {
+  outline-color: var(--s-papel);
+}
+
 .conteudo-app {
   max-width: var(--s-largura-app);
   margin: 0 auto;
@@ -156,7 +160,7 @@ code {
   gap: var(--s-espaco-2);
   padding: var(--s-espaco-2) var(--s-espaco-4);
   border-radius: var(--s-raio-p);
-  border: var(--s-borda) solid var(--s-linha);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
   background: var(--s-papel);
   color: var(--s-tinta);
   font: inherit;
@@ -165,7 +169,7 @@ code {
   text-decoration: none;
 }
 .botao:hover {
-  border-color: var(--s-principal);
+  border-color: var(--s-tinta);
 }
 .botao.primario {
   background: var(--s-principal);
@@ -220,7 +224,7 @@ code {
   font: inherit;
   color: var(--s-tinta);
   padding: var(--s-espaco-3);
-  border: var(--s-borda) solid var(--s-linha);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
 }
@@ -322,7 +326,7 @@ progress {
   background: var(--s-papel);
   color: var(--s-tinta);
   font-weight: 600;
-  border: var(--s-borda) solid var(--s-linha);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
 }
 .abas a.ativo {
   background: var(--s-principal);
@@ -409,7 +413,7 @@ progress {
 .estado-botao {
   padding: var(--s-espaco-2) var(--s-espaco-3);
   border-radius: var(--s-raio-p);
-  border: var(--s-borda) solid var(--s-linha);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
   background: var(--s-papel);
   color: var(--s-tinta);
   font-size: var(--s-texto-p);
@@ -417,7 +421,7 @@ progress {
 }
 .estado-botao.marcado {
   background: var(--s-principal-claro);
-  border-color: var(--s-principal);
+  border: var(--s-borda-marcada) solid var(--s-principal);
 }
 .rotulo-estado {
   position: absolute;
@@ -566,6 +570,16 @@ progress {
 #filtros label {
   display: grid;
   gap: var(--s-espaco-1);
+  font-weight: 600;
+}
+#filtros input:not([type='radio']):not([type='checkbox']),
+#filtros select {
+  font: inherit;
+  color: var(--s-tinta);
+  padding: var(--s-espaco-3);
+  border: var(--s-borda-campo) solid var(--s-borda-controle);
+  border-radius: var(--s-raio-p);
+  background: var(--s-papel);
 }
 
 /* ---------- Rodapé (#25): termos e privacidade a um toque, em todas as telas ----------
