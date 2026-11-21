@@ -740,18 +740,18 @@ summary {
   font-weight: 600;
 }
 .atividade-leitura .fala {
-  margin: 0.3rem 0 0;
-  color: var(--suave);
+  margin: var(--s-espaco-1) 0 0;
+  color: var(--s-suave);
   font-style: italic;
 }
 .atividade-leitura .passos-leitura li {
-  margin-bottom: 10px;
+  margin-bottom: var(--s-espaco-3);
 }
 .atividade-leitura .imprimir-atividade {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  gap: 12px;
+  gap: var(--s-espaco-3);
 }
 .lista-atividades h3 a {
   color: inherit;
