@@ -56,6 +56,10 @@ CSP, `.github/`, `CLAUDE.md` ou `docs/adr/`. Fora disso, só você mescla.
 5. Os workflows só passam a valer depois de mesclados no `main`.
 
 ## Se os agentes falharem em cerca de 1 segundo
+PR aberto por um agente do ciclo sai como `claude[bot]`; o `revisao-agentes.yml` aceita só esse bot
+(`allowed_bots: 'claude'`). Sem isso os 4 revisores falham em ~1 s com "non-human actor" e a mesclagem
+automática não acontece.
+
 Falha rápida, sem turno e com custo zero costuma ser a credencial recusada pela API. Ligue `show_full_output: true`
 no passo da ação por uma rodada para ler a mensagem. `401 Invalid API key` significa segredo inválido: se houver os
 dois (`CLAUDE_CODE_OAUTH_TOKEN` e `ANTHROPIC_API_KEY`), apague o que não usa. Depois de corrigir, desligue o
