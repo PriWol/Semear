@@ -83,3 +83,8 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - **Catálogo:** `app/content/tesouro.json` passa a ter os volumes 1 a 8. O Volume 8, "Jogos e descobertas" (32 páginas, 5 unidades: os quatro blocos de jogos e o diário), entra como os volumes 6 e 7 e é publicado na Release e no manifesto `SHA256SUMS` (ADR 0031).
 - **Rótulo:** "acompanha o Volume 8" aparece normalmente na unidade 8 do caderno de 2 anos. O texto "(ainda não disponível no app)" continua só para número de volume fora do catálogo.
 - **Peso:** o PDF de tela do Volume 8 soma ao total de PDFs baixados no deploy (ver o tamanho real na Release).
+
+## Adendo (2026-11-21): `materialImpresso` pode apontar para um caderno (estória #118)
+
+- **Decisão:** `materialImpresso` é uma união: `{ volume, unidade, paginas }` ou `{ caderno, unidade, paginas }`, em que `caderno` é o `id` de um caderno de `tesouro.json`. Os dois juntos, ou nenhum, são recusados.
+- **Validação:** `domain/` é puro e não lê o catálogo; `validarConteudo` recebe a lista de ids de cadernos por parâmetro (sem ela, nenhum caderno é aceito). O rótulo (`rotuloDoMaterial`) e o pacote recebem os títulos do catálogo da mesma forma, e o endereço sai de `enderecoDoMaterial` (`tesouro/<arquivo>#page=P`; id desconhecido dá `null`). Nenhuma dependência nova nem chamada externa.

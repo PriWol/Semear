@@ -37,10 +37,13 @@ const catalogo = catalogoJson as { volumes: VolumeTesouro[]; cadernos: CadernoTe
 export const VOLUMES: VolumeTesouro[] = catalogo.volumes;
 export const CADERNOS: CadernoTesouro[] = catalogo.cadernos;
 
-/** Endereço do trecho de uma atividade (primeira página da unidade), ou null se o volume não está no catálogo. */
+/** Endereço do trecho de uma atividade (primeira página da unidade), ou null se o volume ou caderno não está no catálogo. */
 export function enderecoDoMaterial(m: MaterialImpresso): string | null {
-  const v = VOLUMES.find((x) => x.numero === m.volume);
-  return v ? enderecoDoPdf(v, m.paginas[0]) : null;
+  const fonte =
+    m.caderno !== undefined
+      ? CADERNOS.find((x) => x.id === m.caderno)
+      : VOLUMES.find((x) => x.numero === m.volume);
+  return fonte ? enderecoDoPdf(fonte, m.paginas[0]) : null;
 }
 
 /** Endereço do PDF, abrindo na página pedida. Só caminho relativo: nenhuma chamada externa. */
