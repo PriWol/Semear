@@ -15,6 +15,7 @@ import { paginaConteudo } from './pages/conteudo';
 import { paginaAcervo } from './pages/acervo';
 import { paginaSondagem } from './pages/sondagem';
 import { paginaAtividades } from './pages/atividades';
+import { paginaAtividade } from './pages/atividade';
 import { paginaSemana } from './pages/semana';
 import { paginaGuia } from './pages/guia';
 import { paginaPrivacidade } from './pages/privacidade';
@@ -35,6 +36,7 @@ export const ROTAS: Record<string, FabricaPagina> = {
   '/acervo': paginaAcervo,
   '/sondagem/:id': paginaSondagem,
   '/atividades': paginaAtividades,
+  '/atividade/:id': paginaAtividade,
   '/semana/:id': paginaSemana,
   '/guia': paginaGuia,
   '/privacidade': paginaPrivacidade,

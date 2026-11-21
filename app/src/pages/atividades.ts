@@ -1,13 +1,14 @@
 import type { FabricaPagina } from '../ui/app';
-import { novoId } from '../ui/app';
+import { lerFormulario } from '../ui/app';
 import { html, type HtmlSeguro } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
 import { marcosVisiveis } from '../domain/conteudo';
 import { buscarAtividades, dominioDaAtividade } from '../domain/busca';
-import { gerarCodigoSessao } from '../domain/sessao';
-import { VERTENTES, type Atividade, type Sessao, type Vertente } from '../domain/tipos';
+import { imprimirAtividadeAvulsa } from './sessao-avulsa';
+import { VERTENTES, type Atividade, type Vertente } from '../domain/tipos';
 
 const DURACOES_MAX = [10, 20, 30, 40, 60];
+const CHAVE_FILTROS = 'semear:filtros-atividades';
 const IDADES = [2, 3, 4, 5, 6, 7, 8]; // faixa do app (2 a 8 anos)
 
 /**
@@ -30,7 +31,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
           ${itens.map((a) => {
             const folha = a.folhas[0];
             return html`<li class="cartao" data-atividade="${a.id}">
-              <h3>${a.titulo}</h3>
+              <h3><a href="#/atividade/${a.id}">${a.titulo}</a></h3>
               <p class="nota">
                 ${a.duracaoMin} min · ${a.idade[0]} a ${a.idade[1]} anos
                 ${marcosVisiveis(ctx.idx, a).length ? html`· ${marcosVisiveis(ctx.idx, a).join(', ')}` : ''}
@@ -140,7 +141,29 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
         );
         resultado.innerHTML = lista(achadas.map((r) => r.atividade)).valor;
       };
-      form.addEventListener('input', atualizar);
+      // Filtros guardados na sessão do navegador: ao voltar da página de uma atividade, a busca continua.
+      // Nada sai do aparelho; se o armazenamento falhar, a lista só abre sem filtros.
+      try {
+        const salvo = JSON.parse(sessionStorage.getItem(CHAVE_FILTROS) ?? '{}') as Record<
+          string,
+          unknown
+        >;
+        for (const [nome, valor] of Object.entries(salvo)) {
+          const el = campo(nome);
+          if (el && typeof valor === 'string' && nome !== 'crianca') el.value = valor;
+        }
+        atualizar();
+      } catch {
+        /* sem armazenamento: segue sem restaurar */
+      }
+      form.addEventListener('input', () => {
+        atualizar();
+        try {
+          sessionStorage.setItem(CHAVE_FILTROS, JSON.stringify(lerFormulario(form)));
+        } catch {
+          /* sem armazenamento: só não lembra */
+        }
+      });
 
       let gerando = false;
       raiz.addEventListener('click', async (ev) => {
@@ -149,23 +172,13 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
         if (!botao || !alvo || gerando) return;
         gerando = true; // evita duas sessões com o mesmo código num clique duplo
         botao.disabled = true;
-        const criadaEm = ctx.agora();
-        const existentes = (await ctx.repo.sessoes()).map((s) => s.codigo);
         const atividade = publicadas.find((a) => a.id === botao.dataset.imprimir);
-        if (!atividade) return;
-        const sessao: Sessao = {
-          id: novoId(),
-          codigo: gerarCodigoSessao(alvo.nome, new Date(criadaEm), existentes),
-          criancaId: alvo.id,
-          criadaEm,
-          duracaoMin: atividade.duracaoMin,
-          foco: 'equilibrado',
-          atividadeIds: [atividade.id],
-          livroId: null,
-          tipo: 'avulsa',
-        };
-        await ctx.repo.salvarSessao(sessao);
-        ctx.ir(`/sessao/${sessao.id}`);
+        if (!atividade) {
+          gerando = false;
+          botao.disabled = false;
+          return;
+        }
+        await imprimirAtividadeAvulsa(ctx, atividade, alvo);
       });
     },
   };
