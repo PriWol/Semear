@@ -9,7 +9,8 @@ export async function escolherAtividade(page: Page, titulo: string): Promise<voi
   const primeira = page.locator('#proposta .escolhas li').first();
   await expect(primeira).toBeVisible();
   for (let i = 0; i < 40; i++) {
-    if ((await primeira.locator('b').innerText()).trim() === titulo) return;
+    // O título completo traz um subtítulo ("Caça às sílabas: começa igual!"); basta o começo coincidir.
+    if ((await primeira.locator('b').innerText()).trim().startsWith(titulo)) return;
     const trocar = primeira.getByRole('button', { name: 'Trocar' });
     if ((await trocar.count()) === 0) break;
     await trocar.click();
