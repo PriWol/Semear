@@ -495,8 +495,13 @@ progress {
 .aviso-flutuante {
   position: fixed;
   left: 50%;
-  bottom: var(--s-espaco-5);
+  /* Acima da barra fixa do registro e da área segura do iPhone, e sem capturar o toque: o aviso
+     some sozinho e nunca fica entre a pessoa e um botão. */
+  bottom: calc(var(--s-barra-fixa) + env(safe-area-inset-bottom));
   transform: translateX(-50%);
+  max-width: calc(100% - 2 * var(--s-espaco-4));
+  pointer-events: none;
+  text-align: center;
   z-index: 10;
   background: var(--s-tinta);
   color: var(--s-papel);
@@ -638,6 +643,17 @@ summary {
   min-height: var(--s-alvo-toque);
 }
 
+.lista-atividades {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Texto corrido de Guia, Termos e Privacidade: no máximo ~65 caracteres por linha (DESIGN.md). */
+.texto-corrido :is(p, li) {
+  max-width: var(--s-medida-leitura);
+}
+
 .lista-acervo {
   list-style: none;
   padding: 0;
@@ -669,6 +685,18 @@ summary {
   border: var(--s-borda-campo) solid var(--s-borda-controle);
   border-radius: var(--s-raio-p);
   background: var(--s-papel);
+}
+
+/* Quem pede menos movimento (configuração do aparelho) não vê transição nem animação. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ---------- Rodapé (#25): termos e privacidade a um toque, em todas as telas ----------

@@ -65,3 +65,24 @@ describe('fontes (DESIGN.md: Fraunces nos títulos, Inter no texto)', () => {
     expect(css).toMatch(/h1,\s*h2,\s*h3\s*\{[^}]*font-family:\s*var\(--s-fonte-titulo\)/);
   });
 });
+
+describe('conforto e movimento', () => {
+  it('prefers-reduced-motion desliga transições e animações', () => {
+    expect(css).toMatch(/@media \(prefers-reduced-motion: reduce\)[\s\S]*transition-duration/);
+  });
+
+  it('o aviso flutuante respeita a área segura e não captura o toque', () => {
+    const bloco = css.slice(
+      css.indexOf('.aviso-flutuante {'),
+      css.indexOf('}', css.indexOf('.aviso-flutuante {')),
+    );
+    expect(bloco).toContain('env(safe-area-inset-bottom)');
+    expect(bloco).toContain('pointer-events: none');
+  });
+
+  it('o texto corrido é limitado a 65 caracteres e a lista de atividades não tem marcadores', () => {
+    expect(css).toMatch(/\.texto-corrido :is\(p, li\)\s*\{\s*max-width: var\(--s-medida-leitura\)/);
+    expect(tokens).toMatch(/--s-medida-leitura:\s*65ch/);
+    expect(css).toMatch(/\.lista-atividades\s*\{[^}]*list-style: none/);
+  });
+});

@@ -16,7 +16,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
       Versão inicial, ainda sem revisão jurídica. Escrevemos o que o app faz hoje, com as palavras
       mais simples que encontramos. Atualizada em novembro de 2026.
     </p>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Em resumo</h2>
       <ul>
         <li>Tudo o que você cadastra e registra no Semear fica só no seu aparelho.</li>
@@ -28,7 +28,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         <li>Você pode baixar tudo em um backup ou apagar tudo, quando quiser.</li>
       </ul>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>O que fica no seu aparelho</h2>
       <p>
         Tudo o que você cadastra e registra no app fica guardado no armazenamento do navegador,
@@ -54,7 +54,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         pessoas reais.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>O que não fazemos</h2>
       <ul>
         <li>Não enviamos os dados da sua família a servidor.</li>
@@ -64,7 +64,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         <li>Não pedimos conta, e-mail nem senha.</li>
       </ul>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>O que sai do seu aparelho</h2>
       <p>
         O Semear é um site. Para ele abrir e funcionar, o aparelho precisa fazer alguns pedidos pela
@@ -95,14 +95,14 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
       </ul>
       <p>Fora isso, o app não faz outras chamadas pela internet.</p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Lembrete diário</h2>
       <p>
         É uma notificação gerada no próprio aparelho. Se você marcar “Mostrar o nome da criança no
         aviso”, o nome aparece na tela bloqueada. Desmarque se outras pessoas veem a tela.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Pacote de sessão e impressão</h2>
       <p>
         O pacote é montado no seu aparelho. Ele foi configurado para não enviar nada para fora: ele
@@ -115,7 +115,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         semear-s01-ana.html). Guarde e compartilhe o arquivo com cuidado.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Funcionar sem internet</h2>
       <p>
         O navegador guarda no aparelho uma cópia do app e da letra principal do app, para ele abrir
@@ -123,7 +123,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         aparecer com as letras que o aparelho já tem. Essa cópia não tem os dados da sua família.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Backup</h2>
       <p>
         Em <a href="#/config">Config.</a>, “Baixar backup” cria um arquivo com tudo o que você
@@ -146,7 +146,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         </li>
       </ul>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Apagar tudo</h2>
       <p>
         Em <a href="#/config">Config.</a>, no cartão “Apagar dados”, toque em “Apagar tudo” e
@@ -170,7 +170,7 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         <li>Como nunca recebemos os seus dados, não há nada guardado por nós para apagar.</li>
       </ul>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Seus dados, suas escolhas</h2>
       <ul>
         <li><b>Ver e levar com você:</b> baixe o backup quando quiser.</li>
@@ -180,21 +180,21 @@ export const paginaPrivacidade: FabricaPagina = async () => ({
         </li>
       </ul>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Crianças</h2>
       <p>
         O Semear é para adultos que educam. A criança nunca usa o app. Quem cadastra, e decide o que
         registrar, é você. Os dados da criança não saem do aparelho.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Cuidado com o aparelho</h2>
       <p>
         Como tudo fica no aparelho, limpar os dados do navegador, perder ou trocar de aparelho apaga
         tudo. Faça backup de vez em quando. O app avisa quando faz tempo.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Se algo mudar</h2>
       <p>
         Se um dia o app passar a guardar dados fora do seu aparelho, esta página será atualizada
