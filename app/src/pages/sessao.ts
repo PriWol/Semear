@@ -1,5 +1,6 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
+import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
 import { letraDaCrianca } from '../domain/letra';
 import type { Atividade } from '../domain/tipos';
@@ -67,7 +68,7 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
         const endereco = m ? enderecoDoMaterial(m) : null;
         if (!m || !endereco) return [];
         return html`<p>
-          📖
+          ${icone('book-open')}
           <a href="${endereco}" target="_blank" rel="noopener">Abrir no livro</a>
           <span class="nota">${a.titulo} · ${rotuloDoMaterial(m, CADERNOS)}</span>
         </p>`;
@@ -106,9 +107,9 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
         <a class="botao" href="#/sessao/${sessao.id}/registrar"
           >${registrada ? 'Corrigir registro' : 'Registrar'}</a
         >
-        <button class="botao primario" type="button" id="imprimir">🖨️ Imprimir / salvar PDF</button>
-        <button class="botao" type="button" id="baixar">⬇️ Baixar arquivo</button>
-        <button class="botao" type="button" id="abrir">↗️ Abrir em tela cheia</button>
+        <button class="botao primario" type="button" id="imprimir">${icone('printer')} Imprimir / salvar PDF</button>
+        <button class="botao" type="button" id="baixar">${icone('download-simple')} Baixar arquivo</button>
+        <button class="botao" type="button" id="abrir">${icone('arrow-square-out')} Abrir em tela cheia</button>
         <button class="botao perigo" type="button" id="excluir">Excluir</button>
       </div>
       <p class="nota">

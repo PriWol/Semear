@@ -1,6 +1,7 @@
 import type { FabricaPagina } from '../ui/app';
 import { lerFormulario, lista, novoId } from '../ui/app';
 import { html, type HtmlSeguro } from '../ui/html';
+import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
 import { marcosVisiveis } from '../domain/conteudo';
 import { IDIOMAS, type Sessao } from '../domain/tipos';
@@ -113,7 +114,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
           : ''
       }
       <p>
-        📚
+        ${icone('books')}
         <b>Livro:</b>
         ${p.livro ? `${p.livro.titulo}, de ${p.livro.autor}` : 'nenhum livro da curadoria para estes marcos'}
       </p>
@@ -189,7 +190,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
                         ${foco !== 'equilibrado' && foco.includes(idPista(p)) ? 'checked' : ''}
                       />
                       <span
-                        >${p.dominio.icone}
+                        >${icone(p.dominio.icone)}
                         ${p.linha.nome}${p.idioma ? ` · ${IDIOMAS[p.idioma]}` : ''}
                         <span class="nota"
                           >${pos.ativos.map((m) => ctx.idx.marco(m)?.titulo ?? m).join(' · ')}</span

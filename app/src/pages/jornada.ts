@@ -13,6 +13,7 @@ import {
 } from '../domain/jornada';
 import { formatarReferencia, orientacaoParaFamilia } from '../domain/orientacao';
 import { anos, ICONE_ESTADO, NOME_ESTADO } from '../ui/rotulos';
+import { icone } from '../ui/icones';
 
 /** Broto em linha (a especificação §5.2 pede ícone de broto e texto, sem emoji). Constante do próprio código. */
 const ICONE_BROTO = confiavel(
@@ -49,7 +50,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
     const o = orientacaoParaFamilia(ctx.idx, marcoId, familia);
     if (!o) return '';
     return html`<details class="para-os-pais" data-marco="${chave}" ${abertos.has(chave) ? 'open' : ''}>
-      <summary>📖 Para os pais</summary>
+      <summary>${icone('book-open')} Para os pais</summary>
       <div class="para-os-pais-texto">
         <h3>Por que importa</h3>
         <p>${textoRico(o.geral.porQueImporta)}</p>
@@ -86,7 +87,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
       </header>
       ${
         pos.total === 0
-          ? html`<p class="nota">📝 Conteúdo desta linha em breve.</p>`
+          ? html`<p class="nota">${icone('note-pencil')} Conteúdo desta linha em breve.</p>`
           : html`<ol class="marcos">
               ${pos.marcos.map(
                 (s) =>
@@ -116,7 +117,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                       ${
                         s.aguardando.length
                           ? html`<p class="aviso-marco">
-                              ⏳ Aguardando:
+                              ${icone('hourglass')} Aguardando:
                               ${s.aguardando
                                 .map((id) => ctx.idx.marco(id)?.titulo ?? id)
                                 .join(', ')}
@@ -126,7 +127,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                       ${
                         s.avisoRitmo
                           ? html`<p class="aviso-marco">
-                              🕰️ Na pedagogia ${familia.vertentePrincipal}, este marco costuma vir
+                              ${icone('clock')} Na pedagogia ${familia.vertentePrincipal}, este marco costuma vir
                               por volta dos ${s.avisoRitmo} anos.
                             </p>`
                           : ''
@@ -181,7 +182,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
               href="#/jornada/${crianca.id}?d=${d.id}"
               class="${d.id === dominioAtual?.id ? 'ativo' : ''}"
               aria-current="${d.id === dominioAtual?.id ? 'page' : 'false'}"
-              >${d.icone} ${d.nome}</a
+              >${icone(d.icone)} ${d.nome}</a
             >`,
         )}
       </nav>
