@@ -18,6 +18,7 @@ import {
 import { baixarArquivo } from './sessao';
 import { VERSAO } from '../versao';
 import { numeroCurto } from '../ui/versao';
+import { CREDITO_GRAVURAS } from '../gravuras';
 import { abrirDialogo, paragrafo } from '../ui/dialogo';
 import { sairDoExemplo } from '../ui/exemplo';
 
@@ -217,6 +218,10 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
             <li><a href="#/termos">Termos de uso</a></li>
             <li><a href="#/conteudo">Cobertura do conteúdo</a></li>
           </ul>
+          <details class="ajustes-detalhe" id="creditos-gravuras">
+            <summary>Créditos das gravuras</summary>
+            <p>${CREDITO_GRAVURAS}</p>
+          </details>
           <details class="ajustes-detalhe">
             <summary>Detalhes técnicos</summary>
             <p>
