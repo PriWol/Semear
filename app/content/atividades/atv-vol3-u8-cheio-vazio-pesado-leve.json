@@ -1,0 +1,86 @@
+{
+  "id": "atv-vol3-u8-cheio-vazio-pesado-leve",
+  "titulo": "Cheio e vazio, pesado e leve: a balança de cabide",
+  "marcos": ["MA.MED.05"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 8,
+    "paginas": [57, 63]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 6],
+  "duracaoMin": 12,
+  "preparoMin": 5,
+  "cuidados": "Água e criança pequena: um adulto ao lado o tempo todo; copos inquebráveis, pano à mão e chão seco. A balança de cabide fica pendurada em lugar firme e baixo, com saquinhos de objetos grandes (nada que caiba na boca).",
+  "objetivo": "A criança **compara capacidades e pesos na prática**: cheio, vazio e metade; pesado e leve.",
+  "passos": [
+    {
+      "titulo": "Cheio e vazio",
+      "minutos": 4,
+      "texto": "Na pia, com um copo transparente: encher, esvaziar e encher até a metade (marque a metade com fita). Derramou? Enxugue com o pano.",
+      "fala": "Está cheio, vazio ou pela metade?"
+    },
+    {
+      "titulo": "Pesado e leve",
+      "minutos": 4,
+      "texto": "Ela segura um objeto em cada mão e diz qual pesa mais. Antes de pôr na balança, ela adivinha: *uma pedrinha ou uma pena? Uma maçã ou um morango?*"
+    },
+    {
+      "titulo": "Balança de cabide",
+      "minutos": 4,
+      "texto": "Pendure dois saquinhos nas pontas de um cabide: o lado mais pesado desce. Confira com ela se o palpite estava certo."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz cheio, vazio e metade", "Diz qual é mais pesado segurando os dois"],
+    "emDesenvolvimento": ["Aponta o mais pesado, mas ainda não explica", "Mistura cheio com pesado"]
+  },
+  "ajustes": {
+    "dificil": "Só cheio e vazio na pia.",
+    "facil": "Cozinhem juntos com medidas: uma xícara de farinha, duas colheres de açúcar."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 8: Medir e ordenar)",
+      "deCasa": false
+    },
+    {
+      "item": "Copo transparente inquebrável e uma jarra",
+      "deCasa": true
+    },
+    {
+      "item": "Fita para marcar a metade",
+      "deCasa": true
+    },
+    {
+      "item": "Um cabide e dois saquinhos",
+      "deCasa": true
+    },
+    {
+      "item": "Objetos para pesar: uma maçã, um morango, uma pedra grande, uma pena",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse qual pesa mais",
+      "resposta": "_____ de 3"
+    },
+    {
+      "texto": "Previu antes de pôr na balança",
+      "resposta": "☐ não   ☐ às vezes   ☐ sempre"
+    }
+  ],
+  "perguntaFicha": "Quantas vezes o palpite dela acertou na balança?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["capacidade", "peso", "pesado e leve", "balança", "cheio e vazio", "medidas"]
+}

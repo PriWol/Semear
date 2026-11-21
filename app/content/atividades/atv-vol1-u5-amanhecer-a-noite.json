@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol1-u5-amanhecer-a-noite",
+  "titulo": "Do amanhecer à noite: pôr o dia em ordem",
+  "marcos": ["MA.MED.03"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 5,
+    "paginas": [44, 51]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Nunca olhar diretamente para o sol, nem por um instante; vale também para lupas e binóculos. A tesoura para recortar os quatro quadros é só do adulto.",
+  "objetivo": "A criança **ordena quatro momentos do dia** (o sol nasce, meio-dia, o sol se põe, noite) e fala do que muda no céu.",
+  "passos": [
+    {
+      "titulo": "Descobrir",
+      "minutos": 3,
+      "texto": "Olhem os quatro quadros e contem o que muda: onde está o sol, a cor do céu, a janela acesa."
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 4,
+      "texto": "Com os quadros recortados e misturados, ela os põe em fila: *“primeiro… depois…”*. Comece com só dois (dia e noite). A ordem certa é a da página: o sol nasce, meio-dia, o sol se põe, noite.",
+      "fala": "O que vem depois?"
+    },
+    {
+      "titulo": "Criar",
+      "minutos": 3,
+      "texto": "Use os cartões na rotina: *“agora é o sol se pondo: hora do banho”*."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz “noite” ou “dia” diante dos cartões",
+      "Põe dois cartões do dia na ordem certa"
+    ],
+    "emDesenvolvimento": [
+      "Reconhece dia e noite, mas ainda mistura os momentos do meio",
+      "Precisa de ajuda para dizer o que vem depois"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só dois quadros: dia e noite.",
+    "facil": "Peça que ela invente o que se faz em cada momento do dia."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 5: O céu: sol, lua, nuvens e chuva)",
+      "deCasa": false
+    },
+    {
+      "item": "Os quatro quadros da unidade (recortados pelo adulto)",
+      "deCasa": true
+    },
+    {
+      "item": "Uma janela de onde se veja o céu",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou os momentos do dia",
+      "resposta": "☐ 2 cartões   ☐ 3 cartões   ☐ os 4"
+    }
+  ],
+  "perguntaFicha": "Que palavras de tempo ela usou (primeiro, depois, noite…)?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["dia e noite", "sequência do dia", "tempo", "sol", "lua", "rotina"]
+}

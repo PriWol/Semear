@@ -1,0 +1,94 @@
+{
+  "id": "atv-vol1-u2-por-a-mesa",
+  "titulo": "Pôr a mesa: cada coisa no seu contorno",
+  "marcos": ["MA.SEN.02"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 2,
+    "paginas": [15, 22]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Use prato, copo e colher inquebráveis e do tamanho dela, sem pontas. Faca não entra nesta atividade. Fique perto enquanto ela carrega as peças com as duas mãos.",
+  "objetivo": "A criança faz **correspondência um a um**: põe cada objeto no seu lugar (e um prato para cada pessoa) sem sobrar nem faltar.",
+  "passos": [
+    {
+      "titulo": "Descobrir",
+      "minutos": 3,
+      "texto": "Ponha, no jogo americano com os contornos (guardanapo, prato, colher e copo), um objeto de cada vez, **nomeando**. Deixe que ela repita."
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 4,
+      "texto": "Entregue os quatro objetos misturados e deixe que ela encontre o lugar de cada um. Não corrija: se um ficar fora do contorno, pergunte “será que cabe?”.",
+      "fala": "Onde mora a colher?"
+    },
+    {
+      "titulo": "Criar",
+      "minutos": 3,
+      "texto": "Monte jogos americanos para a família e pergunte: *“quantos pratos faltam?”*."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Põe um item em cada lugar sem sobrar nem faltar (até 3)",
+      "Usa o objeto pelo nome ao pedir (“quero a colher”)"
+    ],
+    "emDesenvolvimento": [
+      "Ainda pega o objeto sem olhar o contorno",
+      "Precisa de ajuda para saber se faltou ou sobrou"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só dois contornos (prato e colher).",
+    "facil": "Peça que ela leve o prato à pia, com as duas mãos, ao fim da refeição."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 2: Minha casa e meus objetos)",
+      "deCasa": false
+    },
+    {
+      "item": "Prato, copo e colher inquebráveis",
+      "deCasa": true
+    },
+    {
+      "item": "Guardanapo",
+      "deCasa": true
+    },
+    {
+      "item": "Jogo americano com os contornos (imprima em papel grosso ou cole sobre papelão e plastifique; se seus objetos forem de outro tamanho, contorne-os à mão sobre a folha)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Objetos postos no lugar certo",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Disse se faltou ou sobrou",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Quantos objetos ela pôs no lugar sozinha?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "pôr a mesa",
+    "jogo americano",
+    "um para cada",
+    "vida prática",
+    "correspondência"
+  ]
+}

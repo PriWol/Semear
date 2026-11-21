@@ -1,0 +1,85 @@
+{
+  "id": "atv-vol2-u7-torre-dos-musicos",
+  "titulo": "Os Músicos de Bremen: a torre dos músicos",
+  "marcos": ["MA.MED.02"],
+  "revisa": ["MA.SEN.03"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 7,
+    "paginas": [54, 59]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 4,
+  "cuidados": "A tesoura para recortar os cartões é só do adulto; cole em papelão de bordas lisas. Sem peças pequenas. Se usar bichinhos de verdade, sem olhos ou botões soltos.",
+  "objetivo": "A criança **ordena quatro tamanhos** do maior para o menor e conta os músicos até quatro.",
+  "passos": [
+    {
+      "titulo": "Contar",
+      "minutos": 4,
+      "texto": "Conte *Os Músicos de Bremen* (irmãos Grimm): o jumento, o cão, o gato e o galo; à noite, na floresta, formam uma torre e cantam ao mesmo tempo: *“Ii-óó! Au-au! Miau! Cocoricó!”*. Faça você as quatro vozes, uma de cada vez e depois todas juntas."
+    },
+    {
+      "titulo": "Montar a torre",
+      "minutos": 5,
+      "texto": "Os cartões têm tamanhos diferentes, como os animais. Ela monta a torre: o maior embaixo (jumento), depois o cão, o gato e o galo no alto. Em cada cartão que pôr, faz a voz do bicho. Comece com dois; quatro é mais difícil que três (Cachinhos).",
+      "fala": "Quem fica embaixo? E lá em cima?"
+    },
+    {
+      "titulo": "Contar os músicos",
+      "minutos": 3,
+      "texto": "*“Quantos músicos há na torre?”* Toque um por um: um, dois, três, quatro."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ordena do maior ao menor", "Conta até 4 tocando um de cada vez"],
+    "emDesenvolvimento": [
+      "Ordena três, mas ainda erra com quatro",
+      "Conta de memória, sem tocar cada músico"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só dois cartões: o maior e o menor.",
+    "facil": "Peça que ela invente um quinto músico e onde ele fica na torre."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 7: Os Músicos de Bremen)",
+      "deCasa": false
+    },
+    {
+      "item": "Quatro bichinhos de tamanhos diferentes (ou os cartões recortados)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou os músicos",
+      "resposta": "☐ 2   ☐ 3   ☐ os 4"
+    },
+    {
+      "texto": "Contou os músicos tocando",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Até quanto ela contou e quantos ordenou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "músicos de bremen",
+    "seriação",
+    "torre",
+    "contar até quatro",
+    "grande e pequeno",
+    "animais"
+  ]
+}

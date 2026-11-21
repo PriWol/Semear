@@ -1,0 +1,82 @@
+{
+  "id": "atv-vol3-u5-casa-de-formas",
+  "titulo": "Uma casa de formas: compor com triângulo, quadrado e retângulo",
+  "marcos": ["MA.GEO.05"],
+  "revisa": ["MA.GEO.02"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 5,
+    "paginas": [36, 42]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [4, 7],
+  "duracaoMin": 12,
+  "preparoMin": 4,
+  "cuidados": "A tesoura para recortar as formas é só do adulto (ou tesoura de pontas redondas com ele ao lado). Cola atóxica; fique junto.",
+  "objetivo": "A criança **compõe uma figura com formas** (uma casa, um bicho, uma flor) e diz quais formas usou.",
+  "passos": [
+    {
+      "titulo": "Olhar o modelo",
+      "minutos": 3,
+      "texto": "O modelo é feito só de formas: telhado triângulo, parede quadrado, porta retângulo, sol círculo. *“Que formas você vê?”*.",
+      "fala": "Que formas você vê?"
+    },
+    {
+      "titulo": "Montar e colar",
+      "minutos": 7,
+      "texto": "Com as peças do tabuleiro (ou formas novas recortadas em papel colorido), ela monta e cola a casa dela. Qualquer composição vale: um bicho, um carro, uma flor."
+    },
+    {
+      "titulo": "Contar a figura",
+      "minutos": 2,
+      "texto": "Peça que ela diga quais formas usou."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Compõe uma figura com três formas", "Diz o nome das formas que usou"],
+    "emDesenvolvimento": [
+      "Cola as formas sem compor uma figura",
+      "Ainda precisa de ajuda para escolher as formas"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Copie só o telhado e a parede (triângulo e quadrado).",
+    "facil": "Peça que ela invente um bicho de formas e diga quantas usou."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 5: As formas)",
+      "deCasa": false
+    },
+    {
+      "item": "As formas recortadas (do tabuleiro ou de papel colorido)",
+      "deCasa": true
+    },
+    {
+      "item": "Cola atóxica",
+      "deCasa": true
+    },
+    {
+      "item": "Uma folha para a composição",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Compôs uma figura com formas",
+      "resposta": "☐ 2 formas   ☐ 3 formas   ☐ 4 ou mais"
+    }
+  ],
+  "perguntaFicha": "O que ela construiu com as formas?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["compor formas", "casa", "colagem", "geometria", "figura", "triângulo"]
+}

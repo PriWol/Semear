@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol2-u1-como-ele-se-sentia",
+  "titulo": "Como o patinho se sentia? Olhar as imagens e conversar",
+  "marcos": ["EM.NOM.02", "EM.NOM.03"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 1,
+    "paginas": [6, 13]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "É uma conversa. Aceite as palavras que ela escolher e, se ela lembrar de algo triste, acolha sem insistir. Sem objetos pequenos.",
+  "objetivo": "A criança **liga cada imagem a um sentimento** (triste, sozinho, com saudade, feliz) e fala de uma vez em que sentiu o mesmo.",
+  "passos": [
+    {
+      "titulo": "Olhar e nomear",
+      "minutos": 4,
+      "texto": "Aponte cada imagem do livro e pergunte: *“como o patinho está se sentindo aqui?”* (no terreiro, na casa da velhinha, vendo as aves no céu e já como cisne). As palavras sob as imagens são sugestões: aceite as dela.",
+      "fala": "Como o patinho está se sentindo aqui?"
+    },
+    {
+      "titulo": "Fazer a cara",
+      "minutos": 3,
+      "texto": "Façam, juntos, no espelho, a cara de cada sentimento."
+    },
+    {
+      "titulo": "Quando foi comigo?",
+      "minutos": 3,
+      "texto": "*“Quando você se sentiu assim?”* Conte uma vez em que você também se sentiu assim. Se ela não quiser contar, tudo bem."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Usa uma palavra de sentimento sobre o personagem",
+      "Faz a cara que combina com o sentimento"
+    ],
+    "emDesenvolvimento": [
+      "Aponta a imagem, mas ainda não diz o sentimento",
+      "Usa só “triste” e “feliz”"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique com duas imagens: a triste e a feliz.",
+    "facil": "Peça que ela invente o que diria ao patinho para ele se sentir melhor."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 1: O Patinho Feio)",
+      "deCasa": false
+    },
+    {
+      "item": "Um espelho firme (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou sentimentos nas imagens",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Contou uma situação própria",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavras de sentimento ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["sentimentos", "emoções", "patinho feio", "espelho", "conversa"]
+}

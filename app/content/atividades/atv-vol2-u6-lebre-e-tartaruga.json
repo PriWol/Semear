@@ -1,0 +1,81 @@
+{
+  "id": "atv-vol2-u6-lebre-e-tartaruga",
+  "titulo": "A Lebre e a Tartaruga: ouvir a fábula e dramatizar a corrida",
+  "marcos": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 6,
+    "paginas": [47, 53]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [3, 6],
+  "duracaoMin": 12,
+  "preparoMin": 3,
+  "cuidados": "Espaço livre de quinas e de tapetes soltos para correr e “dormir” no chão. Se brincarem de soltar os nós do Leão e o Rato, o barbante vai frouxo e só em bichinho de pelúcia, nunca em pessoa.",
+  "objetivo": "A criança **escuta uma fábula**, diz o que aconteceu no fim e ouve (sem obrigação) a frase que ensina, a moral.",
+  "passos": [
+    {
+      "titulo": "Contar",
+      "minutos": 4,
+      "texto": "Conte *A Lebre e a Tartaruga* (Esopo): a lebre caçoa da tartaruga, dispara na corrida, dorme no caminho; a tartaruga segue passo a passo e cruza a chegada primeiro. Termine com a frase da tartaruga: *“devagar e sempre se chega lá”*."
+    },
+    {
+      "titulo": "Perguntar",
+      "minutos": 3,
+      "texto": "Pergunte primeiro *“quem ganhou?”* e só depois *“por quê?”*.",
+      "fala": "Quem ganhou a corrida?"
+    },
+    {
+      "titulo": "Dramatizar",
+      "minutos": 5,
+      "texto": "Marque a chegada com fita no chão: ela é a tartaruga; você, a lebre que dorme no meio do caminho. Depois troquem. Em outro dia, conte *O Leão e o Rato*: amarre frouxamente os pulsos de um bichinho grande com barbante e deixe que ela, como o ratinho, solte nó por nó."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz quem ganhou a corrida", "Dramatiza uma parte da fábula"],
+    "emDesenvolvimento": [
+      "Lembra a corrida, mas ainda não diz por que a tartaruga ganhou",
+      "Só escuta, sem dramatizar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só a corrida dramatizada.",
+    "facil": "Peça que ela invente outra corrida e quem ganha."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 6: Fábulas: a lebre, a tartaruga, o leão e o rato)",
+      "deCasa": false
+    },
+    {
+      "item": "Fita para marcar a chegada no chão",
+      "deCasa": true
+    },
+    {
+      "item": "Dois bichinhos (lebre ou coelho e tartaruga)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse quem ganhou",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Explicou o motivo, com as palavras dela",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "O que ela disse sobre por que a tartaruga ganhou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["fábula", "esopo", "lebre e tartaruga", "leão e rato", "dramatizar", "moral"]
+}

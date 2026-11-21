@@ -1,0 +1,78 @@
+{
+  "id": "atv-vol2-u1-o-cisne",
+  "titulo": "O Cisne de Saint-Saëns: dançar com o lenço",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 1,
+    "paginas": [6, 13]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 6],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Espaço livre de quinas e de objetos no chão; pés descalços ou de meia só em chão que não escorregue. O lenço é leve e nunca é amarrado no pescoço. Fique perto da criança.",
+  "objetivo": "A criança **escuta uma melodia longa e lenta** e a acompanha com movimentos contínuos e devagar.",
+  "passos": [
+    {
+      "titulo": "Escutar",
+      "minutos": 3,
+      "texto": "Toque *O Cisne*, de Saint-Saëns (*O Carnaval dos Animais*, 1886), cerca de três minutos: um violoncelo canta uma melodia longa e lenta sobre as ondas de dois pianos."
+    },
+    {
+      "titulo": "Ser o cisne",
+      "minutos": 3,
+      "texto": "Com um lenço branco, ela é o cisne: braços compridos, passos bem devagar, sem parar."
+    },
+    {
+      "titulo": "Comparar",
+      "minutos": 2,
+      "texto": "Compare com *O Aquário* (Volume 1): *“as duas têm água; qual é mais calma?”*.",
+      "fala": "Qual é mais calma?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Move-se devagar, sem parar, com a música", "Diz qual música achou mais calma"],
+    "emDesenvolvimento": ["Se mexe depressa, sem acompanhar", "Ainda não compara as duas músicas"]
+  },
+  "ajustes": {
+    "dificil": "Só escute no colo, balançando.",
+    "facil": "Peça que ela mostre com o lenço quando a melodia sobe e quando desce."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 1: O Patinho Feio)",
+      "deCasa": false
+    },
+    {
+      "item": "Um lenço branco",
+      "deCasa": true
+    },
+    {
+      "item": "Uma gravação de *O Cisne* (Saint-Saëns)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela fez com o lenço durante a música?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "saint-saëns",
+    "o cisne",
+    "carnaval dos animais",
+    "dança",
+    "música lenta",
+    "lenço"
+  ]
+}

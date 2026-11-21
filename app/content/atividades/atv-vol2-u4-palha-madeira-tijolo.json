@@ -1,0 +1,97 @@
+{
+  "id": "atv-vol2-u4-palha-madeira-tijolo",
+  "titulo": "Os Três Porquinhos: palha, madeira, tijolo e contar até três",
+  "marcos": ["MA.SEN.03"],
+  "revisa": ["MA.SEN.02"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 4,
+    "paginas": [31, 38]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 5,
+  "cuidados": "Palha, palitos e gravetos podem ter farpas e pontas: o adulto escolhe e confere antes. Peças de brinquedo grandes demais para a boca. Se usar um tijolo de verdade, que seja leve e segurado com ajuda.",
+  "objetivo": "A criança **compara materiais** (leve e pesado, fraco e forte) e **conta até três** tocando um de cada vez, entendendo que o último número diz quantos há.",
+  "passos": [
+    {
+      "titulo": "Contar a história e o refrão",
+      "minutos": 4,
+      "texto": "Conte *Os Três Porquinhos* (casas de palha, de madeira e de tijolos). Diga o refrão com ritmo, batendo nas pernas: *Por-qui-nho, por-qui-nho, dei-xa eu en-trar!* Na segunda vez, ela responde “Não, não!”. Sopre de verdade na hora de soprar."
+    },
+    {
+      "titulo": "Palha, madeira ou tijolo?",
+      "minutos": 4,
+      "texto": "Ela segura cada material (palha ou palitos, gravetos, um tijolo ou bloco): *“qual é mais leve? qual é mais pesado?”* e *“qual casa o Lobo não conseguiu derrubar? Por quê?”*.",
+      "fala": "Qual é mais pesado?"
+    },
+    {
+      "titulo": "Um, dois, três",
+      "minutos": 4,
+      "texto": "Toque cada porquinho dizendo um número por toque: 1; 1, 2; 1, 2, 3. O número grande diz **quantos há**. Depois, com blocos ou botões grandes, ela conta 3 objetos."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Conta 3 objetos tocando cada um", "Diz qual casa é a mais forte e por quê"],
+    "emDesenvolvimento": [
+      "Recita 1, 2, 3, mas ainda não toca um objeto para cada número",
+      "Ainda não compara leve e pesado com palavras"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o refrão e o sopro na palha.",
+    "facil": "Peça que ela invente uma quarta casa e o material dela."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 4: Os Três Porquinhos)",
+      "deCasa": false
+    },
+    {
+      "item": "Palha ou palitos de picolé",
+      "deCasa": true
+    },
+    {
+      "item": "Gravetos",
+      "deCasa": true
+    },
+    {
+      "item": "Blocos de montar",
+      "deCasa": true
+    },
+    {
+      "item": "Um tijolo leve ou um bloco pesado",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Contou 3 objetos tocando um de cada vez",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Disse o resultado (último número)",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que material ela disse ser o mais forte?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "três porquinhos",
+    "contar até três",
+    "leve e pesado",
+    "materiais",
+    "casas",
+    "refrão"
+  ]
+}

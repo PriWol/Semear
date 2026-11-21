@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol1-u3-primavera-corpo",
+  "titulo": "Ouvir A Primavera de Vivaldi com o corpo",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 3,
+    "paginas": [23, 33]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Deixe o espaço livre de quinas e de tapetes soltos. O “trovão” é batido de leve nas próprias pernas. Volume moderado; pare se ela se assustar com a parte forte.",
+  "objetivo": "A criança **escuta uma música descritiva** e reconhece um tema que volta, respondendo a ele com o corpo.",
+  "passos": [
+    {
+      "titulo": "Primeira escuta, no colo",
+      "minutos": 4,
+      "texto": "Toque o 1º movimento (Allegro) de *A Primavera*, de Vivaldi (Concerto em mi maior, RV 269; cerca de três minutos e meio, conforme a gravação). Aponte cada desenho do musicograma quando a música chegar nele. Os desenhos são sinais de som, não figuras para colorir."
+    },
+    {
+      "titulo": "Segunda escuta, com movimento",
+      "minutos": 4,
+      "texto": "Façam juntos: o **tema** (marchar e bater palmas leves), os **pássaros** (dedinhos voando, “piu, piu”), o **riacho** (braços em onda, devagar) e a **trovoada** (tambor nas pernas, forte!). O tema volta várias vezes: palmas de novo."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 2,
+      "texto": "*“Quando veio o trovão, a música ficou forte ou fraquinha?”*",
+      "fala": "Quando veio o trovão, a música ficou forte ou fraquinha?"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Reage com o movimento combinado quando o tema volta",
+      "Diz se o trovão era forte ou fraquinho"
+    ],
+    "emDesenvolvimento": [
+      "Só escuta no colo, sem fazer os movimentos",
+      "Ainda não percebe quando o tema volta"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só a primeira escuta, no colo.",
+    "facil": "Peça que ela invente outro movimento para os pássaros."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 3: O jardim e o pomar)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma gravação do 1º movimento de *A Primavera* (Vivaldi)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Qual parte da música ela mais quis repetir?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "vivaldi",
+    "primavera",
+    "estações",
+    "música descritiva",
+    "escuta ativa",
+    "musicograma"
+  ]
+}

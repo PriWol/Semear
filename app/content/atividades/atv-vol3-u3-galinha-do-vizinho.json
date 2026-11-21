@@ -1,0 +1,71 @@
+{
+  "id": "atv-vol3-u3-galinha-do-vizinho",
+  "titulo": "A galinha do vizinho: rima de contar com os dedos",
+  "marcos": ["MA.SEN.01"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 3,
+    "paginas": [21, 28]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 1,
+  "cuidados": "Se contarem ovos de verdade, que seja de uma caixa de ovos, com cuidado: ovo cru quebra fácil e ninguém põe o ovo na boca; lavem as mãos depois. Ou use ovos de brinquedo.",
+  "objetivo": "A criança **recita e acompanha a contagem** de uma rima, mostrando um dedo a cada número.",
+  "passos": [
+    {
+      "titulo": "Dizer e mostrar",
+      "minutos": 3,
+      "texto": "Diga a rima mostrando um dedo a cada número: *“A galinha do vizinho bota ovo amarelinho; bota um, bota dois, bota três, bota quatro, bota cinco, bota seis, bota sete, bota oito, bota nove, bota dez!”*."
+    },
+    {
+      "titulo": "Esperar o número",
+      "minutos": 3,
+      "texto": "Aos poucos, pare antes do número (*“bota um, bota…”*) e espere que ela complete.",
+      "fala": "Bota um, bota…?"
+    },
+    {
+      "titulo": "Ovos de verdade (opcional)",
+      "minutos": 2,
+      "texto": "Em outro momento, contem ovos de uma caixa de ovos: ela tem lugares, e cada ovo ocupa um."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Completa o número que o adulto deixa no ar",
+      "Recita a rima mostrando os dedos"
+    ],
+    "emDesenvolvimento": [
+      "Acompanha a melodia, mas ainda sem os números",
+      "Pula números ao recitar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só até “bota três”.",
+    "facil": "Peça que ela esconda um dedo e diga quantos faltam."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 3: Contar até cinco (e até nove))",
+      "deCasa": false
+    },
+    {
+      "item": "Uma caixa de ovos (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Até que número ela completou a rima?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["galinha do vizinho", "rima de contar", "números", "dedos", "ovos", "recitar"]
+}

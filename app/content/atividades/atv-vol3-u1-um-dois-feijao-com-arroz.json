@@ -1,0 +1,65 @@
+{
+  "id": "atv-vol3-u1-um-dois-feijao-com-arroz",
+  "titulo": "Um, dois, feijão com arroz: recitar com palmas e dedos",
+  "marcos": ["MA.SEN.01"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 1,
+    "paginas": [6, 12]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 1,
+  "cuidados": "Nesta primeira vez, use só palmas e dedos: feijões e botões só com o adulto ao lado e guardados depois. Sentados, sem peças pequenas no chão.",
+  "objetivo": "A criança **recita a sequência numérica** de uma parlenda, com palmas e dedos. Recitar é como cantar: ainda não é o mesmo que contar.",
+  "passos": [
+    {
+      "titulo": "Recitar com palmas",
+      "minutos": 4,
+      "texto": "Recite batendo palmas no ritmo: *“Um, dois, feijão com arroz; três, quatro, feijão no prato; cinco, seis, chegou minha vez; sete, oito, comer biscoito; nove, dez, comer pastéis!”* Há versões regionais da parlenda; use a que vocês conhecem."
+    },
+    {
+      "titulo": "Mostrar com os dedos",
+      "minutos": 4,
+      "texto": "Nos números, mostre os dedos (um dedo, dois dedos…). Aos 2 ou 3 anos, recitar até dez é uma **música**, não uma contagem: ela pode recitar bem e ainda contar só até três. As duas coisas são boas.",
+      "fala": "Quantos dedos você mostrou?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Acompanha a parlenda com gestos", "Recita a sequência até 5 ou mais"],
+    "emDesenvolvimento": ["Acompanha só as palmas, sem as palavras", "Pula números ao recitar"]
+  },
+  "ajustes": {
+    "dificil": "Só a primeira linha: “Um, dois, feijão com arroz”.",
+    "facil": "Peça que ela mostre os dedos de cada número, sem ajuda."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 1: Um, nenhum e muitos)",
+      "deCasa": false
+    },
+    {
+      "item": "Nada além das mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Recitou a sequência até",
+      "resposta": "_____ (número)"
+    }
+  ],
+  "perguntaFicha": "Até que número ela recitou sem errar?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["parlenda", "feijão com arroz", "recitar", "números", "dedos", "palmas"]
+}

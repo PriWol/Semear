@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol2-u8-quantos-colchoes",
+  "titulo": "A Princesa e a Ervilha: quantos colchões?",
+  "marcos": ["MA.SEN.03", "MA.OPE.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 8,
+    "paginas": [60, 66]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 6],
+  "duracaoMin": 12,
+  "preparoMin": 3,
+  "cuidados": "Ervilha e feijão são pequenos o bastante para engasgar ou entrar no nariz: use sempre com o adulto ao lado e guarde depois. A pilha de almofadas fica baixa e estável; a criança só se deita nela com o adulto ao lado.",
+  "objetivo": "A criança **conta até 5** tocando um objeto de cada vez e começa a **juntar e tirar** pequenas quantidades.",
+  "passos": [
+    {
+      "titulo": "Contar a história",
+      "minutos": 3,
+      "texto": "Conte *A Princesa e a Ervilha* (Andersen): a rainha põe uma ervilha no estrado da cama e, por cima, muitos colchões; só uma princesa de verdade sentiria. Pergunte: *“o que estava embaixo dos colchões?”*."
+    },
+    {
+      "titulo": "Quantos colchões?",
+      "minutos": 5,
+      "texto": "Com almofadas ou toalhas dobradas, montem pilhas de 1 a 5. Toque cada uma de baixo para cima, dizendo um número por toque: o número grande diz **quantos há**.",
+      "fala": "Quantas almofadas tem a pilha?"
+    },
+    {
+      "titulo": "E se eu tirar um?",
+      "minutos": 4,
+      "texto": "*“Se eu tirar um, quantos ficam?”* Ela confere contando de novo. Quando 5 ficar fácil, vá até 10. Para rir: ponham um feijão embaixo da última almofada e vejam se ela sente."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Conta até 5 com correspondência", "Diz quantos ficam quando se tira um"],
+    "emDesenvolvimento": [
+      "Conta de memória, sem tocar cada almofada",
+      "Perde a conta quando a pilha passa de 3"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Pilhas de 1 a 3, só contando.",
+    "facil": "Vá até 10 almofadas e peça que ela diga quantas faltam para 10."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 8: A Princesa e a Ervilha e histórias do Brasil)",
+      "deCasa": false
+    },
+    {
+      "item": "Almofadas ou toalhas dobradas",
+      "deCasa": true
+    },
+    {
+      "item": "Um grão de ervilha ou feijão (só com o adulto ao lado)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Contou a pilha tocando um de cada vez",
+      "resposta": "☐ até 3   ☐ até 5   ☐ além de 5"
+    },
+    {
+      "texto": "Disse quantos ficaram ao tirar um",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Até quanto ela contou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "princesa e a ervilha",
+    "contar até cinco",
+    "almofadas",
+    "andersen",
+    "tirar",
+    "correspondência"
+  ]
+}

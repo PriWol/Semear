@@ -1,0 +1,79 @@
+{
+  "id": "atv-vol1-u7-quatro-estacoes-pintura",
+  "titulo": "As quatro estações na pintura: olhar, comparar, escolher",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Apreciação de artistas",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 7,
+    "paginas": [60, 67]
+  },
+  "vertentes": ["Charlotte Mason", "Waldorf", "Clássico"],
+  "idade": [2, 6],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "É só olhar e conversar, sem peças pequenas. Se saírem para ver árvores, fique junto da criança e longe da rua.",
+  "objetivo": "A criança **compara quatro pinturas** (Greenaway, Caldecott e Potter), diz o que muda de uma estação para outra e escolhe a de que mais gosta.",
+  "passos": [
+    {
+      "titulo": "Olhar as quatro",
+      "minutos": 3,
+      "texto": "No livro: primavera (Greenaway: uma moça lê sob uma árvore em flor), verão (Greenaway: girassóis altos e uma mãe com o bebê), outono (Caldecott: folhas avermelhadas caindo no bosque) e inverno (Potter: uma rua coberta de neve e um gato atravessando)."
+    },
+    {
+      "titulo": "Comparar",
+      "minutos": 3,
+      "texto": "Pergunte: *“em qual faz frio? em qual tem flor? em qual as folhas caem?”*.",
+      "fala": "Em qual faz frio?"
+    },
+    {
+      "titulo": "Escolher",
+      "minutos": 2,
+      "texto": "*“De qual você gosta mais?”* Se quiser, conte: nos livros de longe o inverno tem neve; aqui é mais fresquinho. Procurem os sinais da sua região: os ipês florindo no fim do inverno, as chuvas de verão, as mangas na primavera e no verão."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Nomeia ao menos duas estações",
+      "Diz o que muda na árvore (flor, fruta, folha caindo, galho sem folha)"
+    ],
+    "emDesenvolvimento": ["Só aponta, sem dizer o que muda", "Ainda mistura as estações"]
+  },
+  "ajustes": {
+    "dificil": "Compare só duas imagens (verão e inverno).",
+    "facil": "Peça que ela invente o título de cada pintura."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 7: As estações)",
+      "deCasa": false
+    },
+    {
+      "item": "Nada além do livro",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Qual estação ela escolheu e o que disse sobre ela?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "estações",
+    "apreciação",
+    "quadros",
+    "greenaway",
+    "caldecott",
+    "potter",
+    "primavera",
+    "inverno"
+  ]
+}

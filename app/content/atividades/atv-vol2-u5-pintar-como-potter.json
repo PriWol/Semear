@@ -1,0 +1,84 @@
+{
+  "id": "atv-vol2-u5-pintar-como-potter",
+  "titulo": "Como Beatrix Potter pintava: olhar e pintar com aguada",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Pintura",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 5,
+    "paginas": [39, 46]
+  },
+  "vertentes": ["Charlotte Mason", "Waldorf", "Clássico"],
+  "idade": [3, 7],
+  "duracaoMin": 12,
+  "preparoMin": 4,
+  "cuidados": "Aquarela escolar atóxica e pincel macio; avental e papel protegendo a mesa. Água em copo de plástico firme. Tinta não vai à boca: fique junto.",
+  "objetivo": "A criança **observa uma aquarela de perto** e experimenta a pintura com aguada, vendo a cor se espalhar na água.",
+  "passos": [
+    {
+      "titulo": "Olhar de perto",
+      "minutos": 4,
+      "texto": "Abra o livro numa aquarela do Coelho Pedro e pergunte: *“Ache a gata branca. Ela está olhando o quê?”*, *“Ache o Pedro, pequenino, lá atrás”*, *“Que cores há na água? E nas folhas?”*, *“A gata é de verdade ou de história?”*."
+    },
+    {
+      "titulo": "Pintar como Potter",
+      "minutos": 7,
+      "texto": "Beatrix Potter pintava com aquarela em camadas leves, por isso o branco do papel aparece. Molhe o papel com um pincel só com água e depois toque com tinta verde ou azul: a cor se espalha sozinha. Ela vai gostar de ver a mancha crescer."
+    },
+    {
+      "titulo": "Guardar",
+      "minutos": 1,
+      "texto": "Guarde a pintura com a data."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Mistura água e tinta com intenção",
+      "Diz uma diferença entre um coelho de verdade e o Pedro"
+    ],
+    "emDesenvolvimento": [
+      "Pinta sem molhar o papel antes",
+      "Prefere só olhar as imagens: também vale"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só olhar a aquarela e fazer uma mancha de uma cor.",
+    "facil": "Peça que pinte, com aguada, o céu e a água de uma cena do livro."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 5: O Coelho Pedro)",
+      "deCasa": false
+    },
+    {
+      "item": "Aquarela escolar",
+      "deCasa": true
+    },
+    {
+      "item": "Pincel",
+      "deCasa": true
+    },
+    {
+      "item": "Papel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Copo de plástico com água",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse quando a cor se espalhou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["aquarela", "beatrix potter", "pintura", "aguada", "apreciação", "cores"]
+}

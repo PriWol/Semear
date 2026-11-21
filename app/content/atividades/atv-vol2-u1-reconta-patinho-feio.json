@@ -1,0 +1,81 @@
+{
+  "id": "atv-vol2-u1-reconta-patinho-feio",
+  "titulo": "O Patinho Feio: ouvir em duas partes e recontar com cartões",
+  "marcos": ["LG.LIT.02"],
+  "revisa": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 1,
+    "paginas": [6, 13]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 4,
+  "cuidados": "A história é longa para a idade: conte em duas partes, em dias ou momentos diferentes se ela cansar. A tesoura para recortar os cartões de sequência é só do adulto.",
+  "objetivo": "A criança **escuta uma história em várias partes**, lembra o começo no fim e a **reconta em ordem** com quatro cenas.",
+  "passos": [
+    {
+      "titulo": "Primeira parte",
+      "minutos": 5,
+      "texto": "Conte o Patinho Feio até a casa da velhinha. Pare e pergunte: *“por que os bichos implicavam com o patinho?”* e *“o que o patinho sabia fazer muito bem?”* (nadar). Não é preciso tirar lição; deixe a pergunta no ar.",
+      "fala": "O que o patinho sabia fazer muito bem?"
+    },
+    {
+      "titulo": "Segunda parte",
+      "minutos": 5,
+      "texto": "Conte o inverno, a primavera e o cisne. Depois: *“o que o patinho viu na água?”* e *“ele era mesmo feio?”*. Mostre a primeira imagem (o ninho) e a última (o cisne): *“é o mesmo?”*."
+    },
+    {
+      "titulo": "Cartões de sequência",
+      "minutos": 5,
+      "texto": "Quatro cenas: o ninho, o terreiro, o voo e o cisne. Comece só com o ninho e o cisne; depois as quatro. Ela segura um cartão e conta *“o que aconteceu aqui”*. A ordem certa é a da folha."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Lembra que o patinho era diferente dos irmãos",
+      "Reconta em ordem duas ou três cenas"
+    ],
+    "emDesenvolvimento": [
+      "Lembra só do começo ou só do fim",
+      "Ainda precisa de ajuda para ordenar os cartões"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Conte só o começo e o fim, com duas imagens.",
+    "facil": "Peça que ela invente um amigo para o patinho."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 1: O Patinho Feio)",
+      "deCasa": false
+    },
+    {
+      "item": "Cartões de sequência da unidade (recortados pelo adulto)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cenas postas na ordem certa",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Disse como a história termina",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Como ela contou o final da história?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["patinho feio", "andersen", "recontar", "sequência", "narração", "conto"]
+}
