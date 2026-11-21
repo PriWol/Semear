@@ -1,0 +1,73 @@
+{
+  "id": "atv-vol1-u1-aquario",
+  "titulo": "Ouvir de olhos fechados: O Aquário",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 1,
+    "paginas": [6, 14]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 6],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Escute deitados ou no colo, com a luz baixa e o volume baixo, perto da criança. Sem objetos pequenos por perto.",
+  "objetivo": "A criança **escuta com atenção** uma música calma e imagina o que ela mostra, sentindo se é rápida ou devagar, alta ou baixinha.",
+  "passos": [
+    {
+      "titulo": "Preparar o ambiente",
+      "minutos": 2,
+      "texto": "Deitados ou no colo, com a luz baixa. Peça que ela feche os olhos e “veja” o aquário."
+    },
+    {
+      "titulo": "Escutar",
+      "minutos": 3,
+      "texto": "Toque *O Aquário*, de Saint-Saëns (*O Carnaval dos Animais*, 1886), uma escuta curta, de cerca de dois minutos e meio. Os pianos fazem a água ondular; flautas e cordas desenham os peixes; uma celesta (ou harmônica de vidro) faz os brilhos: “plim”. A obra é de domínio público; use a gravação que tiver, que tem direitos próprios."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 3,
+      "texto": "Pergunte pouco: *“a música era rápida ou devagar? alta ou baixinha?”*. Não é preciso explicar mais; repita a mesma escuta em outros dias.",
+      "fala": "A música era rápida ou devagar?"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Fica atenta à música por alguns segundos",
+      "Diz (ou mostra com o corpo) se era rápida ou devagar, alta ou baixinha"
+    ],
+    "emDesenvolvimento": [
+      "Se mexe e quer parar antes: tudo bem, é uma escuta curta",
+      "Ainda não consegue dizer como era a música"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Escute só um trecho e pare quando ela se cansar.",
+    "facil": "Peça que ela mostre com as mãos a água ondulando."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 1: Eu e meus sentidos)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma gravação de *O Aquário* (celular ou aparelho de som)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela disse ou fez ao escutar?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["saint-saëns", "aquário", "carnaval dos animais", "música calma", "escuta"]
+}

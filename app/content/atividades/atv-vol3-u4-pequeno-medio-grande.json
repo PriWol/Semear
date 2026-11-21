@@ -1,0 +1,85 @@
+{
+  "id": "atv-vol3-u4-pequeno-medio-grande",
+  "titulo": "Do pequeno ao grande: três círculos em ordem",
+  "marcos": ["MA.MED.02"],
+  "revisa": ["MA.MED.01"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 4,
+    "paginas": [29, 35]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 4,
+  "cuidados": "A tesoura para recortar os círculos é só do adulto; cole em papelão de bordas lisas. Sem peças pequenas.",
+  "objetivo": "A criança **ordena três tamanhos** (pequeno, médio, grande) e usa as palavras maior e menor.",
+  "passos": [
+    {
+      "titulo": "Descobrir",
+      "minutos": 3,
+      "texto": "Mostre os três círculos recortados (cole sobre papelão para durar): *“qual é o maior?”*.",
+      "fala": "Qual é o maior?"
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 5,
+      "texto": "Ela põe cada círculo no quadro do seu tamanho, do pequeno ao grande."
+    },
+    {
+      "titulo": "Criar",
+      "minutos": 4,
+      "texto": "Empilhem o pequeno sobre o médio sobre o grande, como um alvo; depois ao contrário: *“por que o grande não cabe em cima?”*."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ordena três sem ajuda", "Usa “médio”"],
+    "emDesenvolvimento": [
+      "Acerta o maior e o menor, mas troca o médio",
+      "Ainda precisa de ajuda para ordenar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só dois círculos: o maior e o menor.",
+    "facil": "Use três potes de tamanhos diferentes e guarde-os um dentro do outro."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 4: Grande, médio e pequeno)",
+      "deCasa": false
+    },
+    {
+      "item": "Os três círculos recortados (papelão)",
+      "deCasa": true
+    },
+    {
+      "item": "Potes de tamanhos diferentes (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou os três círculos",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavras de tamanho ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "pequeno médio grande",
+    "seriação",
+    "círculos",
+    "tamanho",
+    "maior e menor",
+    "ordenar"
+  ]
+}

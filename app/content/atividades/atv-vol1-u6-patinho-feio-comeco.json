@@ -1,0 +1,87 @@
+{
+  "id": "atv-vol1-u6-patinho-feio-comeco",
+  "titulo": "O começo de O Patinho Feio: como ele se sentiu?",
+  "marcos": ["EM.NOM.02", "EM.NOM.03"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 6,
+    "paginas": [52, 59]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Conversa sobre sentimentos, sem nenhuma peça pequena que caiba na boca e sem água por perto. Aceite qualquer resposta e não force: se ela contar que já se sentiu diferente, apenas escute e acolha.",
+  "objetivo": "A criança **escuta o começo de um conto** e começa a **nomear sentimentos** (triste, sozinho, feliz) e o que os causou.",
+  "passos": [
+    {
+      "titulo": "Contar o começo",
+      "minutos": 4,
+      "texto": "Conte a versão curta: no verão, perto do lago, uma mamãe pata choca os ovos; saem patinhos amarelinhos e, por último, um patinho grande, cinzento, diferente dos outros. Os bichos do terreiro dizem *“que patinho feio!”*, mas a mamãe pata o vê nadar e diz: *“ele nada tão bem! É meu filho também.”* A história para aí; o resto fica para o Volume 2."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 4,
+      "texto": "Pergunte: *“como o patinho se sentiu quando disseram que ele era feio?”* e *“o que a mamãe pata fez?”*. Aceite qualquer resposta e **nomeie o sentimento**: triste, sozinho, feliz com a mamãe.",
+      "fala": "Como o patinho se sentiu?"
+    },
+    {
+      "titulo": "Olhar a imagem (opcional)",
+      "minutos": 2,
+      "texto": "Na imagem de John R. Neill, a pata branca está com os patinhos no ninho: *“quem está feliz aqui?”*."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Fala de um sentimento do patinho (“triste”, “sozinho”)",
+      "Diz o que a mamãe pata fez"
+    ],
+    "emDesenvolvimento": [
+      "Escuta, mas ainda não nomeia o sentimento",
+      "Responde só apontando para a imagem"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Pergunte só: “o patinho ficou triste ou feliz?”.",
+    "facil": "Pergunte: “e você, já se sentiu assim?” (sem insistir)."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 6: Água, lago e patos)",
+      "deCasa": false
+    },
+    {
+      "item": "Nada além do livro e de um lugar sossegado",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou o sentimento do patinho",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Disse a causa",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavra de sentimento ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "patinho feio",
+    "sentimentos",
+    "emoções",
+    "história",
+    "acolhimento",
+    "diferente"
+  ]
+}

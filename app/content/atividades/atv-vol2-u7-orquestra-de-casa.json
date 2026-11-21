@@ -1,0 +1,89 @@
+{
+  "id": "atv-vol2-u7-orquestra-de-casa",
+  "titulo": "A orquestra de casa: cada voz, um instrumento",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 7,
+    "paginas": [54, 59]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 4,
+  "cuidados": "Chocalho de arroz só bem fechado, com a tampa colada e fita em volta: grãos soltos são risco de engasgo. Volume moderado; nada de panela quente. Fique junto.",
+  "objetivo": "A criança **toca na sua vez e depois junto com os outros**, associa cada voz a um instrumento (timbre) e aprende a reger.",
+  "passos": [
+    {
+      "titulo": "Cada músico, um instrumento",
+      "minutos": 4,
+      "texto": "Distribuam: o jumento (*ii-óó!*, voz grave e comprida) na tigela ou panela grande; o cão (*au-au!*, batidas curtas) no tambor; o gato (*miau!*, voz que sobe e desce) no chocalho de arroz da caixa de sons; o galo (*cocoricó!*, voz aguda e forte) no sino."
+    },
+    {
+      "titulo": "Tocar",
+      "minutos": 7,
+      "texto": "1) Cada músico toca sozinho, na sua vez. 2) Dois juntos. 3) Os quatro ao mesmo tempo, forte! 4) A regente levanta a mão: silêncio!",
+      "fala": "Quem toca agora?"
+    },
+    {
+      "titulo": "Ela rege",
+      "minutos": 4,
+      "texto": "Ela é a regente e aponta quem toca; depois troquem: ela toca e você rege."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Toca só quando é a vez dela", "Rege: aponta e para os músicos"],
+    "emDesenvolvimento": [
+      "Toca o tempo todo, sem esperar a vez",
+      "Ainda não associa a voz ao instrumento"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só dois instrumentos (o tambor e o sino), um de cada vez.",
+    "facil": "Peça que ela invente uma música em que os quatro tocam e param juntos."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 7: Os Músicos de Bremen)",
+      "deCasa": false
+    },
+    {
+      "item": "Tambor ou panela",
+      "deCasa": true
+    },
+    {
+      "item": "Sino",
+      "deCasa": true
+    },
+    {
+      "item": "Chocalho de arroz bem vedado",
+      "deCasa": true
+    },
+    {
+      "item": "Tigela e colher",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Ela esperou a vez de tocar?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "orquestra",
+    "instrumentos",
+    "regência",
+    "timbre",
+    "músicos de bremen",
+    "esperar a vez"
+  ]
+}

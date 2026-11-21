@@ -1,0 +1,74 @@
+{
+  "id": "atv-vol3-u3-de-uma-olhada",
+  "titulo": "De uma olhada só: quantos pontos, sem contar?",
+  "marcos": ["MA.SEN.04"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 3,
+    "paginas": [21, 28]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 6],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Atividade só com papel e pontos desenhados; sem peças pequenas. Mostre por um segundo e esconda, sem pressa nem cobrança.",
+  "objetivo": "A criança **reconhece pequenas quantidades (1, 2, 3) de uma olhada**, sem contar, e confere contando depois.",
+  "passos": [
+    {
+      "titulo": "Mostrar e esconder",
+      "minutos": 3,
+      "texto": "Cubra a página com uma folha, mostre um quadro por um segundo e esconda de novo: *“quantos você viu?”*. Até três, o olho reconhece a quantidade de uma vez, como nos dados.",
+      "fala": "Quantos você viu?"
+    },
+    {
+      "titulo": "Conferir contando",
+      "minutos": 3,
+      "texto": "Descubram o quadro e confiram contando, um toque para cada ponto."
+    },
+    {
+      "titulo": "Mesmo número, outro jeito",
+      "minutos": 2,
+      "texto": "A disposição muda de quadro para quadro de propósito: três pontos em linha e três em diagonal são o mesmo três."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Reconhece 2 e 3 de uma olhada", "Confere contando e chega ao mesmo número"],
+    "emDesenvolvimento": ["Só reconhece 1 e 2 de uma olhada", "Chuta sem conferir"]
+  },
+  "ajustes": {
+    "dificil": "Só 1 e 2, mostrando por mais tempo.",
+    "facil": "Use dados de verdade (grandes) e vá até 4."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 3: Contar até cinco (e até nove))",
+      "deCasa": false
+    },
+    {
+      "item": "Uma folha para cobrir a página",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis para desenhar mais quadros de pontos (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Quadros acertados de uma olhada",
+      "resposta": "_____ de 6"
+    }
+  ],
+  "perguntaFicha": "Quantos quadros ela acertou sem contar?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["subitização", "pontos", "dados", "quantidade", "de uma olhada", "contar"]
+}

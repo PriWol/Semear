@@ -1,0 +1,81 @@
+{
+  "id": "atv-vol1-u7-pintar-arvore",
+  "titulo": "Pintar a árvore com as cores da estação",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Pintura",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 7,
+    "paginas": [60, 67]
+  },
+  "vertentes": ["Charlotte Mason", "Waldorf", "Clássico"],
+  "idade": [2, 6],
+  "duracaoMin": 10,
+  "preparoMin": 4,
+  "cuidados": "Use guache atóxico e pincel grosso, com avental e papel protegendo a mesa. Fique junto: tinta não vai à boca nem aos olhos. Lave as mãos no fim.",
+  "objetivo": "A criança **pinta escolhendo as cores** pela estação que vê pela janela e fala sobre as escolhas.",
+  "passos": [
+    {
+      "titulo": "Olhar pela janela",
+      "minutos": 3,
+      "texto": "Antes de pintar, olhem a árvore de hoje: *“tem flor? fruta? folha caindo?”*.",
+      "fala": "Como está a árvore hoje?"
+    },
+    {
+      "titulo": "Pintar",
+      "minutos": 6,
+      "texto": "Guache e pincel grosso; a página toda pode ser pintada. Deixe que ela escolha as cores: não há cor errada. Pergunte só: *“por que você escolheu esta?”*."
+    },
+    {
+      "titulo": "Guardar",
+      "minutos": 1,
+      "texto": "Imprima mais de uma cópia e pinte uma árvore a cada estação; guarde todas juntas, com a data."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escolhe as cores de propósito",
+      "Diz uma coisa que mudou na árvore (flor, fruta, folha caindo)"
+    ],
+    "emDesenvolvimento": [
+      "Pinta sem relacionar com a árvore de verdade",
+      "Só quer misturar as tintas: também vale, é o mesmo gesto"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Ofereça só duas cores.",
+    "facil": "Peça que pinte a árvore de outra estação, de memória."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 7: As estações)",
+      "deCasa": false
+    },
+    {
+      "item": "Guache em quatro cores (verde-claro, verde-escuro, laranja, branco)",
+      "deCasa": true
+    },
+    {
+      "item": "Pincel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Avental e papel para proteger a mesa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que cores ela escolheu e por quê?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["pintura", "guache", "árvore", "estações", "cores", "arte"]
+}

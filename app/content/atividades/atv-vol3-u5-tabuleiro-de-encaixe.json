@@ -1,0 +1,85 @@
+{
+  "id": "atv-vol3-u5-tabuleiro-de-encaixe",
+  "titulo": "O tabuleiro de encaixe: círculo, quadrado, triângulo e retângulo",
+  "marcos": ["MA.GEO.02"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 5,
+    "paginas": [36, 42]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 5,
+  "cuidados": "A tesoura para recortar as peças é só do adulto; cole em papelão de bordas lisas e peças grandes demais para a boca. Fique junto.",
+  "objetivo": "A criança **reconhece e nomeia quatro formas** e encaixa cada peça no seu contorno.",
+  "passos": [
+    {
+      "titulo": "Descobrir",
+      "minutos": 3,
+      "texto": "Contorne cada peça com o dedo dela, dizendo o nome: círculo, quadrado, triângulo, retângulo. As cores não combinam com nada de propósito: a pista é só a forma.",
+      "fala": "Que forma é esta?"
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 5,
+      "texto": "Ela encaixa cada peça no contorno certo: o triângulo só cabe no triângulo."
+    },
+    {
+      "titulo": "Caçar formas",
+      "minutos": 4,
+      "texto": "Procurem formas pela casa: *“o prato é redondo; o livro, um retângulo”*."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia o círculo e mais duas formas", "Encaixa as quatro formas"],
+    "emDesenvolvimento": [
+      "Encaixa por tentativa, sem dizer o nome",
+      "Confunde quadrado e retângulo"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o círculo: procurem coisas redondas pela casa.",
+    "facil": "Dobre um guardanapo: um quadrado vira retângulo ou triângulo."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 5: As formas)",
+      "deCasa": false
+    },
+    {
+      "item": "As quatro peças recortadas e coladas em papelão",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou formas",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Encaixou as peças",
+      "resposta": "_____ de 4"
+    }
+  ],
+  "perguntaFicha": "Que formas ela nomeou e achou pela casa?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "formas",
+    "círculo",
+    "quadrado",
+    "triângulo",
+    "retângulo",
+    "encaixe",
+    "geometria"
+  ]
+}

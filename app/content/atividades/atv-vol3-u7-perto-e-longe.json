@@ -1,0 +1,70 @@
+{
+  "id": "atv-vol3-u7-perto-e-longe",
+  "titulo": "Perto e longe numa pintura de Caldecott",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Apreciação de artistas",
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 7,
+    "paginas": [50, 56]
+  },
+  "vertentes": ["Charlotte Mason", "Waldorf", "Clássico"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Na janela, ou ao andar para longe e voltar, fique junto: janela fechada ou com tela e espaço sem rua. Sem peças pequenas.",
+  "objetivo": "A criança **olha uma pintura** e fala do que está perto e do que está longe, notando que o que está longe parece pequeno.",
+  "passos": [
+    {
+      "titulo": "Olhar a pintura",
+      "minutos": 4,
+      "texto": "No livro, na pintura de Randolph Caldecott (*R. Caldecott’s Picture Book*, 1880): *“o que está perto de nós? (a vaca grande, as plantinhas) e o que está longe? (a casa, os morros)”*, *“por que as vacas lá de trás parecem pequenas?”*, *“o gato está mais perto da vaca ou da casa?”*."
+    },
+    {
+      "titulo": "Na janela",
+      "minutos": 3,
+      "texto": "Olhem pela janela: *“aquele carro lá longe parece pequenininho; e aqui perto?”*. Não é preciso explicar a perspectiva.",
+      "fala": "O que está perto? E longe?"
+    },
+    {
+      "titulo": "Com o corpo",
+      "minutos": 3,
+      "texto": "Brinquem de andar para longe e voltar para perto, acenando."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz o que está perto e o que está longe",
+      "Percebe que o que está longe parece menor"
+    ],
+    "emDesenvolvimento": ["Aponta, mas ainda não usa perto e longe", "Mistura perto e longe"]
+  },
+  "ajustes": {
+    "dificil": "Só uma pergunta: “o que está mais perto de nós?”.",
+    "facil": "Peça que ela desenhe algo perto e algo longe."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 7: Onde está?)",
+      "deCasa": false
+    },
+    {
+      "item": "Nada além do livro e de uma janela",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que palavras de distância ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["perto e longe", "perspectiva", "caldecott", "apreciação", "pintura", "janela"]
+}

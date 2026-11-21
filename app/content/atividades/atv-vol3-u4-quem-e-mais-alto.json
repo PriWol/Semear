@@ -1,0 +1,81 @@
+{
+  "id": "atv-vol3-u4-quem-e-mais-alto",
+  "titulo": "Quem é mais alto? A fita de alturas da família",
+  "marcos": ["MA.MED.01"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 4,
+    "paginas": [29, 35]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 4,
+  "cuidados": "Use fita que não estrague a parede. Cada um se encosta de pé no chão, sem subir em cadeira ou banco para a medida. Lápis só com o adulto ao lado.",
+  "objetivo": "A criança **compara alturas lado a lado** com palavras (mais alto, mais baixo, igual) e vê as marcas em ordem.",
+  "passos": [
+    {
+      "titulo": "Montar a fita",
+      "minutos": 3,
+      "texto": "Cole uma tira de papel comprida na parede, do chão para cima."
+    },
+    {
+      "titulo": "Marcar",
+      "minutos": 5,
+      "texto": "Cada pessoa encosta as costas na parede e faz-se uma marca na altura da cabeça, com o nome e a data. Pergunte: *“quem é mais alto, você ou o papai?”*. Na fita, as marcas ficam em ordem sozinhas.",
+      "fala": "Quem é mais alto, você ou o papai?"
+    },
+    {
+      "titulo": "Guardar",
+      "minutos": 2,
+      "texto": "Volte à fita daqui a alguns meses: ela vai gostar de ver que cresceu."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Compara alturas lado a lado", "Diz quem é mais alto e quem é mais baixo"],
+    "emDesenvolvimento": [
+      "Diz quem é maior, mas só quando está ao lado da pessoa",
+      "Ainda não usa “mais alto”"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Compare só duas pessoas.",
+    "facil": "Peça que ela ordene as marcas da família do menor ao maior."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 4: Grande, médio e pequeno)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma tira de papel comprida",
+      "deCasa": true
+    },
+    {
+      "item": "Fita adesiva que não estrague a parede",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Comparou duas alturas com palavras",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Quem ela disse ser o mais alto?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["altura", "comparar", "mais alto", "fita", "crescer", "medida"]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "atv-vol3-u2-um-passo-para-cada-batida",
+  "titulo": "Um passo para cada batida: marcha e pulso",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 2,
+    "paginas": [13, 20]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 1,
+  "cuidados": "Espaço livre de quinas e de tapetes soltos; meias antiderrapantes ou pés descalços em chão firme. Bata de leve na panela ou no tambor, sem barulho forte perto dos ouvidos.",
+  "objetivo": "A criança dá **um passo para cada batida** de um pulso regular: correspondência um a um no tempo.",
+  "passos": [
+    {
+      "titulo": "Marchar no pulso",
+      "minutos": 4,
+      "texto": "Você bate o tambor (ou a panela) num pulso regular e ela dá um passo para cada batida. Comece devagar. Cantem juntos *“Marcha, soldado, cabeça de papel; se não marchar direito, vai preso no quartel”* (cantiga tradicional)."
+    },
+    {
+      "titulo": "Mudar o andamento",
+      "minutos": 3,
+      "texto": "Batidas rápidas, passos rápidos; batidas lentas, passos de gigante.",
+      "fala": "Um passo para cada batida!"
+    },
+    {
+      "titulo": "Parar",
+      "minutos": 1,
+      "texto": "Quando você para, ela para."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Dá um passo para cada batida", "Para quando o pulso para"],
+    "emDesenvolvimento": [
+      "Anda em ritmo próprio, sem seguir a batida",
+      "Ainda perde o passo quando o andamento muda"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o andamento devagar.",
+    "facil": "Peça que ela bata o tambor e você marche."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 2: Um para cada)",
+      "deCasa": false
+    },
+    {
+      "item": "Um tambor ou uma panela",
+      "deCasa": true
+    },
+    {
+      "item": "Uma colher de pau",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Ela acompanhou o pulso quando mudou o andamento?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["marcha", "pulso", "tambor", "passos", "ritmo", "um a um"]
+}

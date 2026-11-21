@@ -1,0 +1,77 @@
+{
+  "id": "atv-vol2-u4-tambor-do-lobo",
+  "titulo": "O tambor do Lobo: o ritmo das palavras",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 4,
+    "paginas": [31, 38]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Tambor ou panela com colher de pau, em volume moderado para não cansar os ouvidos; nada de panela quente. Fique junto, sentados.",
+  "objetivo": "A criança **bate o pulso das palavras** (sílabas fortes e fracas) e percebe que as palavras têm pedaços.",
+  "passos": [
+    {
+      "titulo": "Dizer batendo",
+      "minutos": 4,
+      "texto": "No tambor (ou na panela), uma batida forte em cada sílaba forte; as fracas dizem-se sem bater: **POR**-qui-nho **POR**-qui-nho; **DEI**-xa eu en-**TRAR**!; **NÃO, NÃO, NÃO**!; **SO**-prar e **BU**-far."
+    },
+    {
+      "titulo": "Os nomes",
+      "minutos": 4,
+      "texto": "Batam o nome dela e o de cada pessoa da família, uma batida por sílaba: *“quantas batidas tem cada nome?”*.",
+      "fala": "Quantas batidas tem o seu nome?"
+    },
+    {
+      "titulo": "Trocar",
+      "minutos": 2,
+      "texto": "Ela bate e você adivinha a palavra."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Bate no ritmo das palavras do refrão",
+      "Diz quantas batidas tem o próprio nome"
+    ],
+    "emDesenvolvimento": [
+      "Bate sem relacionar com as sílabas",
+      "Ainda perde o ritmo no meio da frase"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o refrão “Por-qui-nho, por-qui-nho”.",
+    "facil": "Peça que ela invente um ritmo novo para o Lobo soprar."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 4: Os Três Porquinhos)",
+      "deCasa": false
+    },
+    {
+      "item": "Um tambor ou uma panela",
+      "deCasa": true
+    },
+    {
+      "item": "Uma colher de pau",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Quantas batidas tem o nome dela?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["ritmo", "sílabas", "tambor", "lobo", "pulso", "nome"]
+}

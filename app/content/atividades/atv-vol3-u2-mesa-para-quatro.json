@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol3-u2-mesa-para-quatro",
+  "titulo": "Mesa para quatro: um prato para cada, sobra ou falta?",
+  "marcos": ["MA.SEN.02"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 2,
+    "paginas": [13, 20]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Use pratos e colheres inquebráveis, sem facas nem garfos pontudos. A tesoura (se recortar o quadro da mesa) é só do adulto. Fique perto ao carregar as peças.",
+  "objetivo": "A criança **põe um prato e uma colher para cada lugar** e percebe quando sobra e quando falta.",
+  "passos": [
+    {
+      "titulo": "A mesa dos porquinhos",
+      "minutos": 3,
+      "texto": "Conte: o papai porco conta os filhos (um, dois, três, quatro) e põe um prato para cada um e uma colher para cada prato; chega a vovó, e **falta um prato**! Com bichinhos de pelúcia e pratos de verdade, repitam a história e deixe que ela descubra sozinha que falta."
+    },
+    {
+      "titulo": "Mesa para quatro",
+      "minutos": 4,
+      "texto": "Sobre o quadro da mesa, ela traz quatro pratos e quatro colheres e põe um em cada lugar. Depois entregue **cinco** pratos (sobra um!) ou **três** (falta um).",
+      "fala": "Sobrou ou faltou?"
+    },
+    {
+      "titulo": "A mesa da família",
+      "minutos": 3,
+      "texto": "*“Quantas pessoas vão jantar hoje?”* Ela conta a família e põe a mesa."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Põe um objeto para cada lugar sem pular", "Diz “falta um” ou “sobrou um”"],
+    "emDesenvolvimento": [
+      "Põe os pratos, mas ainda não percebe quando falta",
+      "Põe só no que está mais perto"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só pôr a mesa juntos, para duas pessoas.",
+    "facil": "Festa de bichinhos para cinco: “quantos pratos?”."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 2: Um para cada)",
+      "deCasa": false
+    },
+    {
+      "item": "Quatro pratos e quatro colheres inquebráveis",
+      "deCasa": true
+    },
+    {
+      "item": "Bichinhos de pelúcia",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Pôs um item para cada lugar",
+      "resposta": "☐ até 3   ☐ até 4   ☐ mais de 4"
+    },
+    {
+      "texto": "Disse se sobrou ou faltou",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Quantas pessoas ela contou à mesa?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "pôr a mesa",
+    "um para cada",
+    "sobra e falta",
+    "correspondência",
+    "porquinhos",
+    "vida prática"
+  ]
+}
