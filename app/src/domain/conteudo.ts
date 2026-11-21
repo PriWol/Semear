@@ -178,7 +178,11 @@ function validarReferencia(r: Referencia, erros: string[]): void {
     erros.push(`Referência ${r.id}: o link precisa começar com https://`);
 }
 
-export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
+export function validarConteudo(
+  conteudo: Conteudo,
+  /** ids dos cadernos do catálogo do Tesouro (domain/ não lê o catálogo); sem eles, nenhum caderno é aceito */
+  cadernosConhecidos: readonly string[] = [],
+): ResultadoValidacao {
   const erros: string[] = [];
   const avisos: string[] = [];
   const idx = criarIndice(conteudo);
@@ -260,9 +264,20 @@ export function validarConteudo(conteudo: Conteudo): ResultadoValidacao {
     }
     if (a.materialImpresso) {
       // Dado de fora: confere o formato antes de usar (nunca lança, sempre reporta).
-      const { volume, unidade, paginas } = a.materialImpresso;
+      const { volume, caderno, unidade, paginas } = a.materialImpresso as {
+        volume?: unknown;
+        caderno?: unknown;
+        unidade: unknown;
+        paginas: unknown;
+      };
       const inteiro = (n: unknown): n is number => Number.isInteger(n) && (n as number) >= 1;
-      if (!inteiro(volume) || !inteiro(unidade))
+      if (volume !== undefined && caderno !== undefined)
+        erros.push(`Atividade ${a.id}: material impresso com volume e caderno ao mesmo tempo`);
+      else if (volume === undefined && caderno === undefined)
+        erros.push(`Atividade ${a.id}: material impresso sem volume nem caderno`);
+      else if (caderno !== undefined && !cadernosConhecidos.includes(caderno as string))
+        erros.push(`Atividade ${a.id}: caderno ${String(caderno)} não existe no catálogo`);
+      else if ((volume !== undefined && !inteiro(volume)) || !inteiro(unidade))
         erros.push(`Atividade ${a.id}: material impresso com volume ou unidade inválidos`);
       else if (
         !Array.isArray(paginas) ||
