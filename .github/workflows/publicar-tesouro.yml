@@ -51,7 +51,7 @@ jobs:
       - run: python3 fontes_v1.py verificar
       - run: python3 fontes_v5.py verificar
       - run: python3 fontes_v6.py verificar
-      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_volume7 test_caderno test_caderno_ingles test_pdf test_musica
+      - run: python3 -m unittest -v test_fontes_v1 test_fontes_v5 test_fontes_v6 test_motivos7 test_motivos8 test_motivos9 test_volume7 test_volume8 test_caderno test_caderno_ingles test_pdf test_musica
       # Cada script falha se algum bloco sair da área segura da página (pdf.js).
       - run: python3 build_amostra.py
       - run: python3 volume1.py
@@ -61,12 +61,17 @@ jobs:
       - run: python3 volume5.py
       - run: python3 volume6.py
       - run: python3 volume7.py
+      - run: python3 volume8.py
       - run: python3 caderno.py
       - run: python3 caderno_ingles.py
       - name: Juntar os PDFs
         run: |
           mkdir -p ../pdfs
-          cp ../amostra/*.pdf ../volume*/*.pdf ../caderno-2-anos/*.pdf ../caderno-ingles/*.pdf ../pdfs/
+          # O Volume 8 é rascunho (estória #112, PR A): vai só como artefato, fora da Release e do manifesto,
+          # até a dona do produto aprovar o conteúdo e o PR B colocá-lo no catálogo do app.
+          cp ../amostra/*.pdf ../volume[1-7]/*.pdf ../caderno-2-anos/*.pdf ../caderno-ingles/*.pdf ../pdfs/
+          mkdir -p ../rascunho
+          cp ../volume8/*.pdf ../rascunho/
           # Manifesto de integridade (ADR 0031): o deploy do site confere cada PDF baixado contra ele.
           (cd ../pdfs && sha256sum *.pdf > SHA256SUMS)
           ls -la ../pdfs
@@ -74,6 +79,11 @@ jobs:
         with:
           name: tesouro-marina-pdfs
           path: tesouro-marina/pdfs/
+          retention-days: 14
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: tesouro-marina-volume8-rascunho
+          path: tesouro-marina/rascunho/
           retention-days: 14
 
   publicar:
