@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol6-u8",
+  "titulo": "O corpo humano: sentidos, coração e mãos limpas",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Caderno da natureza",
+  "materialImpresso": {
+    "volume": 6,
+    "unidade": 8,
+    "paginas": [66, 75]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 7],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Use os nomes corretos de todas as partes do corpo, sem vergonha. O corpo é dela: respeite quando ela não quiser ser tocada, medida ou abraçada. Água morna e sabonete suave, sem esfregar com força. Pular dez vezes só em espaço livre e sem tropeço.",
+  "palavrasChave": ["corpo humano", "sentidos", "coração", "lavar as mãos", "medir"],
+  "objetivo": "A criança **nomeia partes do corpo**, liga cada sentido à parte que o faz, sente o coração batendo (parada e depois de pular) e lava as mãos em seis passos.",
+  "passos": [
+    {
+      "titulo": "Nomear partes do corpo e os sentidos",
+      "minutos": 8,
+      "texto": "Nomear partes do corpo, apontando em si mesma. Fazer a tabela dos sentidos: com o que eu vejo? com o que eu escuto? Brincar de “mostre o seu nariz, a sua mão…”."
+    },
+    {
+      "titulo": "O coração e a medida da mão",
+      "minutos": 9,
+      "texto": "Sentir o coração com a mão no peito, parada e depois de pular dez vezes. Contornar a mão no papel e medir. Aprender a lavar as mãos em seis passos."
+    },
+    {
+      "titulo": "Desenhar o corpo e lavar as mãos",
+      "minutos": 8,
+      "texto": "Desenhar o corpo todo no caderno. Dizer uma coisa que o corpo faz por ela. Ensinar a outra pessoa como lavar as mãos."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Nomeia partes do corpo sem ajuda.",
+      "Liga cada sentido à parte do corpo certa.",
+      "Sente o coração e diz que bate mais depois de pular.",
+      "Contorna a própria mão e compara com a de um adulto."
+    ],
+    "emDesenvolvimento": [
+      "Nomeia só algumas partes do corpo",
+      "Ainda precisa de ajuda para lavar as mãos nos seis passos"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: só sentir o coração, com a mão no peito, por um minuto, e dizer o que sentiu.",
+    "facil": "Se o interesse crescer: medir a altura na parede, a cada dois ou três meses, com uma marca e a data, e comparar."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 6",
+      "deCasa": false
+    },
+    {
+      "item": "Sabonete e toalha",
+      "deCasa": true
+    },
+    {
+      "item": "Uma fita métrica ou barbante",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Um relógio com ponteiro de segundos",
+      "deCasa": true
+    },
+    {
+      "item": "O caderno de natureza",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que parte do corpo ela mais gostou de descobrir hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

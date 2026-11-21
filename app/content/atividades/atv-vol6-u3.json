@@ -1,0 +1,84 @@
+{
+  "id": "atv-vol6-u3",
+  "titulo": "Insetos e pequenos bichos: da lagarta à borboleta",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Caderno da natureza",
+  "materialImpresso": {
+    "volume": 6,
+    "unidade": 3,
+    "paginas": [22, 30]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Não pegue lagarta peluda nem bicho desconhecido: algumas queimam. Olhe com a lupa, de longe, e lave as mãos depois de mexer em terra e plantas. Solte sempre o bicho onde foi achado.",
+  "palavrasChave": ["insetos", "borboleta", "lagarta", "lupa", "metamorfose"],
+  "objetivo": "A criança **olha a prancha de Maria Sibylla Merian**, reconhece a lagarta, o casulo e a borboleta, diz em que ordem aparecem e procura bichinhos de verdade com lupa, sem pegar.",
+  "passos": [
+    {
+      "titulo": "Olhar a prancha de Merian",
+      "minutos": 8,
+      "texto": "Olhar a prancha de Merian em silêncio. Achar a lagarta, o casulo e a borboleta. Dizer qual vem primeiro."
+    },
+    {
+      "titulo": "Ordenar e procurar com a lupa",
+      "minutos": 9,
+      "texto": "Ordenar os três recortes (lagarta, casulo, borboleta). Sair com a lupa e procurar bichinhos num canto do quintal. Contar quantas patas tem um inseto."
+    },
+    {
+      "titulo": "Desenhar e comparar com a aranha",
+      "minutos": 8,
+      "texto": "Desenhar um bichinho que viu de perto. Comparar com a aranha: quantas patas? Contar para alguém o caminho da lagarta até a borboleta."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta a lagarta, o casulo e a borboleta na prancha.",
+      "Ordena os três recortes sem ajuda.",
+      "Usa a lupa e diz o que viu de perto.",
+      "Diz que o inseto tem seis patas."
+    ],
+    "emDesenvolvimento": [
+      "Ainda confunde a ordem lagarta, casulo e borboleta",
+      "Ainda tem medo ou nojo de olhar o bichinho de perto (respeite)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar só a lagarta da prancha, por um minuto, e dizer como ela é.",
+    "facil": "Se o interesse crescer: criar, com um adulto, uma lagarta de verdade numa caixa com folhas, e ver o que acontece (e soltar a borboleta depois)."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 6",
+      "deCasa": false
+    },
+    {
+      "item": "Uma lupa",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de natureza",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Um pote transparente com furinhos na tampa (para olhar um bichinho por pouco tempo e soltá-lo no mesmo lugar)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que bichinho ela viu de perto e como ele era?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

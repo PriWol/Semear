@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol5-u6",
+  "titulo": "Mary Cassatt: o cuidado em três quadros",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Estudo de pintores",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 6,
+    "paginas": [43, 50]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Água só com um adulto junto o tempo todo. Conversar sobre cuidado pode despertar lembranças: acolha o que ela disser, sem exigir. Se a família dela é diferente da dos quadros, vale dizer isso com naturalidade.",
+  "palavrasChave": ["Mary Cassatt", "retrato", "família", "cuidado", "apreciação"],
+  "objetivo": "A criança **olha com calma três obras de Mary Cassatt**, diz o que as pessoas fazem uma com a outra (segurar, lavar, descansar) e faz o retrato de alguém que cuida dela.",
+  "passos": [
+    {
+      "titulo": "Olhar O banho da criança",
+      "minutos": 8,
+      "texto": "Olhar *O banho da criança* em silêncio, por um minuto. Dizer o que cada pessoa está fazendo. Procurar as cores que se repetem."
+    },
+    {
+      "titulo": "Comparar e ordenar o banho",
+      "minutos": 9,
+      "texto": "Olhar as outras duas obras e comparar. Ordenar os quatro cartões da hora do banho. Cuidar de uma boneca: dar banho, secar, pôr para dormir."
+    },
+    {
+      "titulo": "Retrato de quem cuida",
+      "minutos": 8,
+      "texto": "Fazer o retrato de quem cuida dela. Contar uma história para o retrato. Escolher a obra de Cassatt de que mais gostou."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Descreve o que as pessoas fazem em cada obra.",
+      "Compara duas obras (o que é igual, o que é diferente).",
+      "Ordena os quatro cartões do banho.",
+      "Faz o retrato de alguém, com cabeça, corpo e mãos."
+    ],
+    "emDesenvolvimento": [
+      "Descreve só quem está no quadro, ainda sem o que fazem",
+      "Ainda troca a ordem dos cartões do banho"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar só uma obra, por pouco tempo, e dizer quem está no quadro.",
+    "facil": "Se o interesse crescer: olhar fotos de família com ela e conversar sobre quem está com quem, e o que estão fazendo."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Papel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou giz de cera",
+      "deCasa": true
+    },
+    {
+      "item": "Guache",
+      "deCasa": true
+    },
+    {
+      "item": "Uma bacia, uma toalha e um sabonete (para a sequência)",
+      "deCasa": true
+    },
+    {
+      "item": "Um espelho ou uma foto da família",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "De quem ela fez o retrato e que história contou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

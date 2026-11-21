@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol5-u8",
+  "titulo": "Colar: um quadro de papel rasgado",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Desenho",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 8,
+    "paginas": [56, 61]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Tesoura sempre sem ponta e cola atóxica; pedaços muito pequenos de papel são risco de engasgo para os menores. Guarde os pedaços num envelope e lave as mãos ao final.",
+  "palavrasChave": ["colagem", "papel", "tesoura", "cola", "rasgar"],
+  "objetivo": "A criança **pinta papéis, rasga e corta** (com tesoura sem ponta) e compõe uma colagem com formas simples, passando a cola e posicionando as peças com cuidado.",
+  "passos": [
+    {
+      "titulo": "Pintar os papéis (um dia antes)",
+      "minutos": 8,
+      "texto": "Pintar folhas de papel com as tintas da Unidade 1. Deixar secar de um dia para o outro. Olhar as cores que ficaram."
+    },
+    {
+      "titulo": "Rasgar, cortar e experimentar",
+      "minutos": 9,
+      "texto": "Rasgar o papel em tiras e manchas. Cortar um círculo, uma tira e um triângulo. Experimentar a composição sem colar."
+    },
+    {
+      "titulo": "Colar a composição",
+      "minutos": 8,
+      "texto": "Colar a composição, uma peça de cada vez. Dar um nome à colagem. Mostrar para alguém da família."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Rasga o papel em pedaços de tamanhos diferentes.",
+      "Corta uma forma simples com a tesoura sem ponta.",
+      "Passa cola só no verso da peça, sem exagero.",
+      "Experimenta o lugar da peça antes de colar."
+    ],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para cortar com a tesoura",
+      "Passa cola demais ou cola tudo de uma vez, sem experimentar o lugar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: só rasgar papel e fazer uma pilha de pedaços coloridos, sem colar nada.",
+    "facil": "Se o interesse crescer: olhar colagens em livros de arte e perguntar o que o artista usou e como as formas foram postas."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Papéis que ela pintou na primeira sessão (secos)",
+      "deCasa": true
+    },
+    {
+      "item": "Revistas velhas ou papel de embrulho",
+      "deCasa": true
+    },
+    {
+      "item": "Cola atóxica",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": true
+    },
+    {
+      "item": "Uma folha grossa de fundo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que nome ela deu à colagem e o que contou dela?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
