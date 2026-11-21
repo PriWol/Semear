@@ -14,7 +14,8 @@ test('o cadastro leva ao guia com as cinco vertentes e como combiná-las', async
   await expect(
     page.getByRole('heading', { name: /combinar uma vertente principal/ }),
   ).toBeVisible();
-  await expect(page.getByText('Textos em revisão')).toBeVisible();
+  // Guia aprovado (2026-11-21): o aviso "Textos em revisão" só aparece se algum texto voltar a rascunho.
+  await expect(page.getByText('Textos em revisão')).toHaveCount(0);
 });
 
 test('a tela de boas-vindas explica o passo a passo e leva à privacidade', async ({ page }) => {

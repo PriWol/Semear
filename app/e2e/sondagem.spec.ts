@@ -18,10 +18,10 @@ test('sondagem: etapa base, ajuste só na linha indefinida e posição gravada',
   const marcar = (marco: string, estado: string) =>
     page.locator(`input[name$="|${marco}"][value="${estado}"]`).check();
 
-  // Fonologia: acha a fronteira na etapa base (04 e 05 consolidados, 06 ainda aprendendo).
+  // Fonologia: acha a fronteira na etapa base (04 e 05 consolidados, 09 ainda aprendendo).
   await marcar('LG.FON.04', 'consolidado');
   await marcar('LG.FON.05', 'consolidado');
-  await marcar('LG.FON.06', 'em-desenvolvimento');
+  await marcar('LG.FON.09', 'em-desenvolvimento');
   // Senso numérico: tudo consolidado, então falta ver o próximo marco.
   await marcar('MA.SEN.05', 'consolidado');
   await marcar('MA.SEN.06', 'consolidado');
@@ -36,7 +36,7 @@ test('sondagem: etapa base, ajuste só na linha indefinida e posição gravada',
   await page.getByRole('button', { name: 'Lançar resultados' }).click();
 
   await expect(page.getByRole('heading', { name: /Jornada de Ana/ })).toBeVisible();
-  await expect(page.locator('li.marco[data-marco="LG.FON.06"]')).toContainText('trabalhando agora');
+  await expect(page.locator('li.marco[data-marco="LG.FON.09"]')).toContainText('trabalhando agora');
   await expect(
     page.locator('li.marco[data-marco="LG.FON.05"]').getByRole('button', { name: /Consolidado/ }),
   ).toHaveAttribute('aria-pressed', 'true');
