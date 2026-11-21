@@ -1,0 +1,93 @@
+{
+  "id": "atv-cad-massagem-nas-maos",
+  "titulo": "Massagem nas mãos",
+  "marcos": ["EM.REG.01"],
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 5,
+    "paginas": [55, 55]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Se ela tiver pele sensível ou alergia, teste antes uma pontinha de creme; não deixe o creme ir aos olhos ou à boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["massagem", "mãos", "creme", "carinho", "calma"],
+  "objetivo": "A criança recebe um toque firme e lento nas mãos, pede licença, aceita ou recusa e se acalma, sabendo que o corpo é dela.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Pergunte: “posso fazer carinho nas suas mãos?”. Só comece se ela aceitar."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Ponha um pouquinho de creme nas mãos e alise a palma dela, devagar, com uma pressão firme."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Passe um dedinho de cada vez, do punho até a ponta."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Se ela quiser, deixe que ela faça em você."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Palma… devagar… cada dedinho.” “Que mãozinha macia.” “Quer que eu pare ou quer mais?”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Está gostoso? Quer mais ou quer parar? Quer fazer na minha mão?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Faça nos pés. 2) Cantarole baixinho enquanto massageia. 3) Troquem: ela faz em você."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "O toque firme e lento é calmante e aproxima vocês. Pedir licença e parar quando ela quiser também ensina que o corpo é dela. Combine bem com o final do dia, depois do banho ou antes de dormir."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aceitou fazer com você por perto, num momento calmo",
+      "Pediu de novo ou imitou o gesto"
+    ],
+    "emDesenvolvimento": [
+      "Ainda só olha, sem aceitar fazer",
+      "Ri ou se agita, o que é comum nessa idade"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "Um creme hidratante suave (ou óleo) sem perfume forte, se ela gostar; nada mais",
+      "deCasa": false
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 5",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

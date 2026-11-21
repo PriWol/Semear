@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-bichos-de-quintal",
+  "titulo": "Bichos de quintal",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [61, 61]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Pulos em chão firme e sem escorregar, longe de poças fundas e de degraus. Perto de rio ou lago, fique ao lado dela. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["aranha", "sapo-cururu", "bichos", "dedos"],
+  "objetivo": "A criança canta jogos de dedos e de pulos sobre bichos e vê a dona aranha cair e subir de novo.",
+  "passos": [
+    {
+      "titulo": "A dona aranha",
+      "minutos": 2,
+      "texto": "*A dona aranha subiu pela parede. / Veio a chuva forte e a derrubou. / Já passou a chuva, o sol já vai surgindo, / e a dona aranha continua a subir.* **O gesto:** os dedos de uma mão “sobem” pelo seu braço; a “chuva” é uma chuva de dedos que derruba; abra as mãos como sol; e os dedos voltam a subir. Versão curta: a cantiga tem versões mais longas, que chamam a aranha de “teimosa”, rótulo que a página “A fase do não” manda evitar. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Sapo-cururu",
+      "minutos": 2,
+      "texto": "*Sapo-cururu / na beira do rio, / quando o sapo canta, ó maninha, / é porque tem frio. / A mulher do sapo / é quem está lá dentro, / fazendo rendinha, ó maninha, / para o casamento.* **O gesto:** agache e pule como sapo nos versos “sapo-cururu”; fique quieta e abraçada nos outros, e termine com um sapo bem baixinho. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "A dona aranha é um jogo de dedos que fala de insistir depois de uma queda, o que vale para quem se frustra fácil: ela cai e sobe de novo. O sapo-cururu junta pulos e silêncio. Cantá-las ao ar livre, olhando a parede ou o rio, liga o verso ao mundo."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

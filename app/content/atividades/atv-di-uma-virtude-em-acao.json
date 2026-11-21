@@ -1,0 +1,71 @@
+{
+  "id": "atv-di-uma-virtude-em-acao",
+  "titulo": "Uma virtude em ação: a semana da gratidão",
+  "marcos": ["DI.ESP.03"],
+  "vertentes": ["Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Doações só de itens em bom estado, e nunca de dinheiro ou objetos de valor sem o adulto. Respeite o sigilo e a dignidade das pessoas ajudadas. A criança não deve sair sozinha para entregar nada.",
+  "objetivo": "A criança escolhe uma virtude, pensa em uma ação concreta e a realiza, contando depois por que fez.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 6,
+      "texto": "Converse sobre uma virtude (gratidão, generosidade, perdão): “O que seria isso em uma ação?”. Ela escolhe uma ação possível nesta semana.",
+      "fala": "Como podemos fazer isso?"
+    },
+    {
+      "titulo": "Fazer",
+      "minutos": 10,
+      "texto": "Realizem a ação juntos: escrever um bilhete de agradecimento, separar um brinquedo para doar, ajudar um vizinho. O adulto faz o que exige segurança."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 4,
+      "texto": "Depois, pergunte: “Como você se sentiu? Como acha que a outra pessoa se sentiu?”. Aceite qualquer resposta."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Realiza a ação combinada", "Diz por que fez"],
+    "emDesenvolvimento": ["Faz por obrigação (converse)", "Se frustra se não houver agradecimento"]
+  },
+  "ajustes": {
+    "dificil": "Escolha uma ação já pronta, como um bilhete de agradecimento.",
+    "facil": "Faça um “diário da gratidão” por uma semana."
+  },
+  "materiais": [
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Objetos para doar (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Um destinatário da ação",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez a ação",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse o motivo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que virtude e qual ação ela escolheu?",
+  "palavrasChave": ["gratidão", "virtudes", "generosidade", "ação", "valores"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

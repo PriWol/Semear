@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u8-rimas-para-a-hora-de-dormir",
+  "titulo": "Rimas e cantigas: para a hora de dormir",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 8,
+    "paginas": [83, 83]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Balance no colo com firmeza e devagar; nada de cobrir o rosto dela com manta ou bicho; luz baixa, mas com o chão livre para você andar com ela.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "hora de dormir"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: hora de dormir).",
+  "passos": [
+    {
+      "titulo": "Cantar: Twinkle, twinkle, little star",
+      "minutos": 2,
+      "texto": "O gesto: abra e feche as mãos como estrelas que piscam, e aponte o céu em “up above”. Cante bem baixinho. Poema de Jane Taylor (1806), em domínio público; melodia tradicional.",
+      "fala": "Twinkle, twinkle, little star, / how I wonder what you are! / Up above the world so high, / like a diamond in the sky."
+    },
+    {
+      "titulo": "Cantar: Hush, little baby",
+      "minutos": 2,
+      "texto": "O gesto: balance a criança no colo, devagar, no ritmo da cantiga; no fim, cantarole. É uma canção de ninar tradicional, com muitas versões. Canção de ninar tradicional dos Estados Unidos, de autoria desconhecida e em domínio público.",
+      "fala": "Hush, little baby, don't say a word, / Mama's gonna buy you a mockingbird. / And if that mockingbird won't sing, / Mama's gonna buy you a diamond ring."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Canções de ninar cantadas baixinho, balançando, são uma das formas mais antigas de acalmar uma criança, e em inglês elas são tão boas quanto em português. A mesma canção, todas as noites, vira o sinal de que o dia acabou. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

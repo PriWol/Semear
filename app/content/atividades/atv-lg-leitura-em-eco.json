@@ -1,0 +1,93 @@
+{
+  "id": "atv-lg-leitura-em-eco",
+  "titulo": "Leitura em eco: ler de novo, ler melhor",
+  "marcos": ["LG.LEI.04"],
+  "vertentes": ["Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Atenção: sessão de até 20 minutos, sem cronômetro: elogie o progresso, e não a velocidade. Se a criança ficar tensa, leia junto com ela. Evite ler diante de muita gente.",
+  "objetivo": "A criança lê um texto curto de 3 a 5 frases em ritmo contínuo, sem soletrar, com poucas paradas.",
+  "passos": [
+    {
+      "titulo": "Você lê, ela escuta",
+      "minutos": 3,
+      "texto": "Leia uma parlenda que ela conheça (*A galinha do vizinho / bota ovo amarelinho...*) ou um poema curto, apontando as palavras. Depois, ela acompanha com o dedo."
+    },
+    {
+      "titulo": "Eco",
+      "minutos": 6,
+      "texto": "Você lê uma frase em voz alta e ela repete, imitando o ritmo, como um eco. Depois, ela lê junto com você, e por fim sozinha.",
+      "fala": "Leia como se estivesse contando."
+    },
+    {
+      "titulo": "Relendo",
+      "minutos": 6,
+      "texto": "Leiam o mesmo texto três ou quatro vezes (cada vez, mais fluente). Ela reparou em quais palavras tropeçou? Treinem só essas."
+    },
+    {
+      "titulo": "Gravar e ouvir",
+      "minutos": 5,
+      "texto": "Com a permissão dela, grave a leitura no celular e ouçam juntos (a gravação fica só no aparelho). Pergunte: *“O que soou bem?”*"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Lê 3 a 5 frases em ritmo contínuo, com no máximo 2 tropeços",
+      "Melhora de uma leitura para a seguinte"
+    ],
+    "emDesenvolvimento": [
+      "Lê palavra por palavra (releia o texto em dupla)",
+      "Lê rápido e erra palavras (peça que leia como quem conta)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só duas frases e leiam em dupla, uma frase cada.",
+    "facil": "Peça que leia um poema para a família, como numa pequena sessão de leitura."
+  },
+  "materiais": [
+    {
+      "item": "Texto curto (parlenda, poema ou trecho de livro)",
+      "deCasa": true
+    },
+    {
+      "item": "Celular para gravar (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Waldorf": "Leia versos e poemas com ritmo e gesto, para o corpo ajudar o ritmo da leitura.",
+    "Clássico": "Memorizem o poema depois de relido e recitem-no de cor, como treino de fluência.",
+    "Religioso": "Se desejar, use um salmo ou uma oração curta da tradição da família.",
+    "Charlotte Mason": "Use um poema bem escrito e leiam em voz alta com cuidado, uma vez por dia."
+  },
+  "evidencias": [
+    {
+      "texto": "Tropeços na última leitura",
+      "resposta": "_____ (máx. 2)"
+    },
+    {
+      "texto": "Melhorou entre a primeira e a última leitura",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Em quais palavras ela tropeçou?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meu poema favorito",
+      "legenda": "Copie os versos que mais gostou e desenhe a cena."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["fluência", "leitura em voz alta", "poema", "parlenda", "releitura"]
+}

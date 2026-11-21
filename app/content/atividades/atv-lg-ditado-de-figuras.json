@@ -1,0 +1,137 @@
+{
+  "id": "atv-lg-ditado-de-figuras",
+  "titulo": "Ditado de figuras e a regra do dia",
+  "marcos": ["LG.ESC.05"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Atenção: sessão sentada, com pausa a cada 10 minutos; evite o clima de prova. Não corrija todos os erros: escolha apenas um por rodada e mostre a regra com carinho. Letra feia ou invertida não é “erro” aqui.",
+  "objetivo": "A criança escreve palavras ouvidas com uma letra para cada som e descobre que algumas palavras têm ortografia diferente do que se ouve.",
+  "passos": [
+    {
+      "titulo": "Escolher dez figuras",
+      "minutos": 4,
+      "texto": "Separe dez figuras (casa, rosa, gato, queijo, chave, carro, árvore, bola, lua, escola). Ela olha cada figura e diga o nome."
+    },
+    {
+      "titulo": "Ditado de figuras",
+      "minutos": 8,
+      "texto": "Mostre a figura **e fale o nome devagar**. Ela escreve do jeito que ouve. Não diga se está certo ainda. Quando acabar, você escreve a forma convencional ao lado."
+    },
+    {
+      "titulo": "Uma regra por vez",
+      "minutos": 8,
+      "texto": "Escolha **um** erro comum (CAZA/CASA) e mostre: *“Esse S entre duas vogais soa como Z, mas se escreve com S.”* Procurem juntos outras palavras assim (rosa, mesa, casa, coisa) e escrevam uma lista.",
+      "fala": "Que palavras têm o mesmo jeitinho?"
+    },
+    {
+      "titulo": "Reescrever e brincar",
+      "minutos": 5,
+      "texto": "Ela corrige apenas a palavra da regra do dia. Termine com um jogo de memória ou caça-palavras curto."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escreve 8 de 10 palavras com letras que representam todos os sons",
+      "Aceita que algumas palavras têm ortografia diferente do que ouve"
+    ],
+    "emDesenvolvimento": [
+      "Esquece letras no meio da palavra (peça que estique o som)",
+      "Resiste a ver a forma convencional (comemore a tentativa e mostre só uma palavra)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só 5 figuras com sílabas simples (BOLA, LUA, GATO, CASA, PATO).",
+    "facil": "Peça que invente e escreva uma frase com cada palavra que acertou."
+  },
+  "materiais": [
+    {
+      "item": "10 figuras de revista, desenhos ou cartões",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe as figuras numa bandeja; ela escolhe quais escrever e confere sozinha com a escrita do adulto.",
+    "Waldorf": "Só a partir dos 7 anos: use a mesma lógica dentro de um verso ou conto, e peça que ela escreva palavras da história.",
+    "Clássico": "Cada regra vira um pequeno “verso” para memorizar (*“entre vogais, o S soa Z”*).",
+    "Religioso": "Se quiser, use palavras de um texto da fé da família como ditado.",
+    "Charlotte Mason": "Faça ditado curto e bem preparado: ela estuda a palavra antes, e só então escreve."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras escritas com todos os sons",
+      "resposta": "_____ de 10"
+    },
+    {
+      "texto": "Percebeu a regra do dia",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual regra ela descobriu hoje?",
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Figuras do ditado",
+      "cartas": [
+        {
+          "emoji": "🏠",
+          "texto": "casa"
+        },
+        {
+          "emoji": "🌹",
+          "texto": "rosa"
+        },
+        {
+          "emoji": "🐱",
+          "texto": "gato"
+        },
+        {
+          "emoji": "🧀",
+          "texto": "queijo"
+        },
+        {
+          "emoji": "🔑",
+          "texto": "chave"
+        },
+        {
+          "emoji": "🚗",
+          "texto": "carro"
+        },
+        {
+          "emoji": "🌳",
+          "texto": "árvore"
+        },
+        {
+          "emoji": "⚽",
+          "texto": "bola"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "ditado",
+    "ortografia",
+    "escrever palavras",
+    "erros de escrita",
+    "regra ortográfica"
+  ]
+}

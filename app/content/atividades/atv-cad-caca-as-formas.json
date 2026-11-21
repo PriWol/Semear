@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-caca-as-formas",
+  "titulo": "Caça às formas",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Jogos e brincadeiras",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 3,
+    "paginas": [33, 33]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Combine antes o que pode pegar: nada quebrável, pontudo, quente ou de limpeza. Fique junto enquanto procuram pela casa, longe de escadas e quinas. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["formas", "redondo", "quadrado", "procurar", "casa"],
+  "objetivo": "A criança passa o dedo no contorno de um prato (“redondo”) e procura, pela casa ou pelo quintal, coisas redondas e quadradas.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Mostre um prato e diga: “redondo”. Passe o dedo na borda dele, com ela."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Saiam pela casa procurando coisas redondas: relógio, tampa, bola."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Depois, coisas quadradas ou compridas: janela, caixa, porta."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Cada achado vale um “achamos!” e uma palma."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“O prato é redondo, como uma lua.” “A janela é quadrada. Quatro cantinhos!” “Você achou uma coisa redonda!”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O que mais é redondo? Cadê uma coisa quadrada? A bola rola? E a caixa?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Faça a forma com o corpo: braços em círculo, mãos em quadrado. 2) Desenhe com o dedo no ar, na areia ou no vidro embaçado. 3) Procure só uma forma por dia."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Procurar formas no mundo mistura movimento, atenção e vocabulário. Dá ao “passeio dentro de casa” um objetivo, útil nos dias em que não dá para sair. Passar o dedo no contorno ajuda ela a sentir a forma."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; a casa ou o quintal",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 3",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

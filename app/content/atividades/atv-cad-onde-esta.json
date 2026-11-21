@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-onde-esta",
+  "titulo": "Onde está?",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Jogos e brincadeiras",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 2,
+    "paginas": [24, 24]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Panos leves e limpos; nunca cubra a cabeça ou o rosto dela com pano. O brinquedo deve ser maior que o punho dela e sem peças soltas. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["esconder", "achar", "cadê", "pano", "memória"],
+  "objetivo": "A criança descobre um brinquedo escondido sob um pano ou atrás de uma almofada e depois esconde, para o adulto procurar.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Mostre o brinquedo, cubra com o pano e pergunte “cadê?”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Deixe que ela descubra. Comemore: “achou!”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Depois esconda atrás de uma almofada, sem que ela veja, e dê pistas: “está perto da janela”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Troquem: ela esconde, e você procura devagar, fingindo não achar."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Cadê o coelhinho? Sumiu!” “Será que está embaixo do pano? Achou!” “Agora você esconde. Eu vou procurar.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Onde está o coelhinho? Quem escondeu? Quer esconder agora?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Três panos, um brinquedo: em qual está? 2) Esconda um som (um sininho) e procurem juntas. 3) Esconda você: “cadê a mamãe/o papai?”, e apareça."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Esconder e achar treina a memória e o saber que as coisas continuam existindo mesmo quando não se veem, e exige esperar para descobrir. Quando é a vez dela de esconder, ela lidera, e muita criança que diz “não” a ordens adora mandar nas regras do jogo."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Dois ou três panos (ou guardanapos de tecido) e um brinquedo ou bichinho que ela goste",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 2",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

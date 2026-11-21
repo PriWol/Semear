@@ -1,0 +1,67 @@
+{
+  "id": "atv-nm-ontem-hoje-amanha",
+  "titulo": "Ontem, hoje e amanhã",
+  "marcos": ["NM.TEM.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use papel e lápis de cera com ponta arredondada, longe de crianças que ainda põem tudo na boca. Fique junto.",
+  "objetivo": "A criança conta o que fez ontem, o que faz hoje e o que fará amanhã, usando as palavras certas.",
+  "passos": [
+    {
+      "titulo": "Três quadros",
+      "minutos": 3,
+      "texto": "Dobre uma folha em três partes: ONTEM, HOJE, AMANHÃ. Mostre com o dedo em cada uma.",
+      "fala": "O que foi ontem?"
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 9,
+      "texto": "Ela desenha (ou escolhe fotos) o que fez ontem, o que faz hoje e o que vai fazer amanhã. Você escreve a legenda que ela disser."
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 3,
+      "texto": "Ela “lê” o seu painel a alguém: “Ontem… hoje… amanhã…”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Usa ontem, hoje e amanhã", "Conta fatos em ordem"],
+    "emDesenvolvimento": ["Troca ontem e amanhã (comum)", "Só aponta, sem contar"]
+  },
+  "ajustes": {
+    "dificil": "Só dois quadros: antes e agora.",
+    "facil": "Acrescente anteontem e depois de amanhã."
+  },
+  "materiais": [
+    {
+      "item": "Folha dobrada em três",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cera ou de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Usou as palavras do tempo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou em ordem",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras do tempo ela usou?",
+  "palavrasChave": ["ontem", "hoje", "amanhã", "sequência", "tempo"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

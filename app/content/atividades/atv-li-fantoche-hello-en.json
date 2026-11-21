@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-fantoche-hello-en",
+  "titulo": "Hello, Teddy! O fantoche que fala inglês",
+  "marcos": ["LI.FAL.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 9,
+  "preparoMin": 2,
+  "cuidados": "Use um bichinho de pelúcia sem partes pequenas soltas (olhos de botão podem se soltar). Fique junto e retire peças pequenas do ambiente.",
+  "objetivo": "A criança repete cumprimentos em inglês com um fantoche e os usa nos momentos certos.",
+  "passos": [
+    {
+      "titulo": "Apresentar",
+      "minutos": 3,
+      "texto": "Apresente o fantoche, que só fala inglês: “Hello! I'm Teddy”. Faça Teddy acenar e dar a mão. Ela cumprimenta como quiser.",
+      "fala": "Hello, Teddy!"
+    },
+    {
+      "titulo": "Repetir",
+      "minutos": 5,
+      "texto": "Teddy diz “thank you”, “please”, “goodbye” em situações (pede uma bolacha de brinquedo, agradece, se despede). Ela repete e dá objetos."
+    },
+    {
+      "titulo": "Despedida",
+      "minutos": 1,
+      "texto": "Teddy dorme: “Goodnight, Teddy”. Combine que, no dia seguinte, ele volta falando inglês."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Repete 4 ou mais palavras", "Usa um cumprimento na hora certa"],
+    "emDesenvolvimento": ["Só acena (ótimo)", "Fala em português com o fantoche (aceite)"]
+  },
+  "ajustes": {
+    "dificil": "Repita só “hello” e “goodbye”.",
+    "facil": "Peça que ela apresente o Teddy a outra pessoa, em inglês."
+  },
+  "materiais": [
+    {
+      "item": "Bichinho de pelúcia ou fantoche",
+      "deCasa": true
+    },
+    {
+      "item": "Objetos de brinquedo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Repetiu 4 palavras",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Usou um cumprimento",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras ela repetiu?",
+  "palavrasChave": ["fantoche", "hello", "cumprimentos", "inglês", "primeiras palavras"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

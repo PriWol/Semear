@@ -1,0 +1,71 @@
+{
+  "id": "atv-di-eu-me-visto",
+  "titulo": "Eu me visto e arrumo as minhas coisas",
+  "marcos": ["DI.VPR.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 15,
+  "preparoMin": 3,
+  "cuidados": "Use roupas folgadas e sem cordões soltos no pescoço. Fique por perto. Cuidado com botões e fechos pequenos que possam soltar e ir à boca de irmãos menores.",
+  "objetivo": "A criança escolhe e veste a roupa do dia com pouca ajuda e guarda seus pertences no lugar.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 3,
+      "texto": "Ofereça duas roupas e deixe que ela escolha. Pergunte: “Qual é a frente?”. Ajude a marcar a frente com adesivo.",
+      "fala": "Qual a frente?"
+    },
+    {
+      "titulo": "Vestir",
+      "minutos": 8,
+      "texto": "Ela se veste. Você ajuda só quando pedir e conta até 20 para ela ir terminando antes de você acabar. Treine o zíper grande."
+    },
+    {
+      "titulo": "Arrumar",
+      "minutos": 4,
+      "texto": "Ela guarda o pijama, os sapatos e a mochila no lugar combinado. Celebrem o cantinho organizado."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Veste camiseta e calça", "Guarda os pertences"],
+    "emDesenvolvimento": ["Vira a roupa ao contrário (comum)", "Pede ajuda no zíper"]
+  },
+  "ajustes": {
+    "dificil": "Treine só uma peça por dia.",
+    "facil": "Peça que ensine uma criança menor a se vestir."
+  },
+  "materiais": [
+    {
+      "item": "Roupas folgadas",
+      "deCasa": true
+    },
+    {
+      "item": "Adesivos",
+      "deCasa": true
+    },
+    {
+      "item": "Cesto ou gaveta baixa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Vestiu com pouca ajuda",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Guardou no lugar",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quanto de ajuda foi preciso hoje?",
+  "palavrasChave": ["vestir", "roupas", "zíper", "autonomia", "arrumar"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "atv-ma-cantiga-dos-numeros",
+  "titulo": "Cantiga dos números: de 1 a 10",
+  "marcos": ["MA.SEN.01"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [2, 4],
+  "duracaoMin": 9,
+  "cuidados": "Atividade para ficar junto o tempo todo. Ao pular ou subir degraus, a criança de 2 a 3 anos precisa de um adulto ao lado e de piso seco, sem tapete solto. Use só os dedos e o corpo, sem objetos pequenos na boca.",
+  "objetivo": "A criança **recita os números de 1 a 10 em ordem**, no ritmo de uma cantiga, sem precisar contar objetos ainda.",
+  "passos": [
+    {
+      "titulo": "Cantar com os dedos",
+      "minutos": 3,
+      "texto": "Sentados de frente um para o outro, cantem *“Um, dois, feijão com arroz; três, quatro, feijão no prato”* e levantem um dedo a cada número. Repita duas vezes, devagar.",
+      "fala": "Um… dois… feijão com arroz!"
+    },
+    {
+      "titulo": "Subir e contar",
+      "minutos": 4,
+      "texto": "Em dois ou três degraus (ou em passos pela sala), diga o número a cada passo e deixe a criança dizer com você. Se ela pular um número, apenas recomece do ponto em que parou, cantando junto."
+    },
+    {
+      "titulo": "Cantar por último",
+      "minutos": 2,
+      "texto": "Peça que ela “conte para o ursinho” e deixe que escolha: com palmas, pulinhos ou só falando. Termine com um abraço."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "recita de 1 a 5 em ordem, mesmo com ajuda do ritmo (aos 2 anos)",
+      "recita de 1 a 10 sem pular, aos 3 ou 4 anos",
+      "pede para repetir a cantiga"
+    ],
+    "emDesenvolvimento": [
+      "pula números (do 4 ao 6, por exemplo)",
+      "recita só quando você começa junto"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique só até o 5 e repita três vezes, com os dedos de uma mão. A criança de 2 anos pode apenas ouvir e bater palmas.",
+    "facil": "Peça que ela comece no 3 e continue sozinha, ou invente uma cantiga com os números."
+  },
+  "materiais": [
+    {
+      "item": "Degraus ou um corredor para andar contando",
+      "deCasa": true
+    },
+    {
+      "item": "As próprias mãos",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Se tiver as barras numéricas, deixe a criança passar a mão por elas em ordem enquanto canta, sem cobrar a quantidade.",
+    "Waldorf": "Conte com o corpo e com a roda: palmas, pulinhos e cantigas de roda. O verso e o movimento vêm antes de qualquer exercício.",
+    "Clássico": "Faça como quem decora um poema: poucos minutos por dia, todos os dias, sempre na mesma ordem.",
+    "Charlotte Mason": "Faça uma lição curta e pare enquanto a criança ainda está gostando."
+  },
+  "evidencias": [
+    {
+      "texto": "Recitou de 1 a 10",
+      "resposta": "☐ até 5   ☐ até 10   ☐ só com você"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meus dez dedos",
+      "legenda": "Para ficar no caderno: o adulto contorna a mão da criança e ela pinta cada dedo. Não precisa escrever os números."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["recitar", "números", "parlenda", "cantiga", "sequência numérica"]
+}

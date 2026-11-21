@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-meu-bairro-no-mapa",
+  "titulo": "Meu bairro no mapa",
+  "marcos": ["NM.ESP.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 24,
+  "preparoMin": 10,
+  "cuidados": "Se for usar um aplicativo de mapas, o adulto controla a tela e desliga a localização ao terminar. No passeio, siga as regras de trânsito e fique junto da criança.",
+  "objetivo": "A criança localiza lugares conhecidos em um mapa e guia um trajeto curto usando pontos de referência.",
+  "passos": [
+    {
+      "titulo": "Olhar o mapa",
+      "minutos": 6,
+      "texto": "Mostre um mapa do bairro, impresso. Ela acha a sua casa e depois outros lugares conhecidos. Marque cada um com um adesivo ou círculo.",
+      "fala": "Onde estamos no mapa?"
+    },
+    {
+      "titulo": "Trajeto",
+      "minutos": 8,
+      "texto": "Ela escolhe um destino e descreve o caminho com referências: “depois da padaria, vire na esquina da escola”. Você segue as instruções dela."
+    },
+    {
+      "titulo": "Passeio",
+      "minutos": 10,
+      "texto": "Se possível, façam o caminho a pé com o mapa na mão, com ela guiando e você apenas cuidando da segurança."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Acha lugares no mapa", "Dá instruções com pontos de referência"],
+    "emDesenvolvimento": ["Confunde direita e esquerda (comum)", "Gira o mapa e se perde"]
+  },
+  "ajustes": {
+    "dificil": "Use um mapa só da rua, com 3 lugares.",
+    "facil": "Peça que desenhe o seu próprio mapa do trajeto com legenda."
+  },
+  "materiais": [
+    {
+      "item": "Mapa impresso do bairro",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Adesivos ou canetas",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Achou lugares no mapa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Guiou o trajeto",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como ela descreveu o caminho?",
+  "palavrasChave": ["mapa", "bairro", "orientação", "referências"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "atv-ar-canone-em-familia",
+  "titulo": "Cânone em família e caderno de canções",
+  "marcos": ["AR.CAN.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 18,
+  "preparoMin": 3,
+  "cuidados": "Cantem em volume suave e com pausas para beber água. Respeite a voz da criança em fase de mudança ou cansada.",
+  "objetivo": "A criança aprende um cânone simples, canta em grupo e registra as canções que sabe.",
+  "passos": [
+    {
+      "titulo": "Aprender",
+      "minutos": 5,
+      "texto": "Cantem um cânone curto (“Frei Jacó”, por exemplo) todos juntos até ficar seguro."
+    },
+    {
+      "titulo": "Cânone",
+      "minutos": 8,
+      "texto": "Dividam em dois grupos: um começa e o segundo entra uma frase depois. Se alguém se perder, comecem de novo, sem culpa.",
+      "fala": "Agora entra o segundo grupo!"
+    },
+    {
+      "titulo": "Caderno",
+      "minutos": 5,
+      "texto": "Ela escreve (ou desenha) o título das canções que já sabe de memória, em um caderno de canções da família."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta um cânone com apoio", "Lista 5 canções de memória"],
+    "emDesenvolvimento": ["Se perde na segunda voz (normal)", "Esquece letras"]
+  },
+  "ajustes": {
+    "dificil": "Cantem um cânone mais curto, com uma voz forte de apoio.",
+    "facil": "Ensine o cânone a outra pessoa da família."
+  },
+  "materiais": [
+    {
+      "item": "Um cânone simples",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno e lápis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cantou o cânone",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Anotou canções de memória",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais canções fazem parte do caderno?",
+  "palavrasChave": ["cânone", "canto em grupo", "repertório", "canções"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

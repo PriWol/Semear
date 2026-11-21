@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol1-u3-cesta-do-pomar",
+  "titulo": "A cesta do pomar: uma história para recontar",
+  "marcos": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 3,
+    "paginas": [23, 33]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Uvas, cerejas e jabuticabas inteiras são risco de engasgo antes dos 4 anos: corte as uvas ao comprido, retire caroços e sementes e ofereça sempre com a criança sentada. Quem usa a faca é o adulto.",
+  "objetivo": "A criança **escuta uma história cumulativa**, antecipa a frase que se repete e responde a perguntas simples sobre o que aconteceu.",
+  "passos": [
+    {
+      "titulo": "Cesta de verdade",
+      "minutos": 3,
+      "texto": "Mostre uma cesta com 3 ou 4 frutas de verdade e deixe que ela segure e cheire cada uma."
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 4,
+      "texto": "Conte *A cesta do pomar*: Marina colhe uma maçã, uma pera, uma banana e uma laranja, e a cesta fica cada vez mais cheia. Pare antes da frase repetida e espere: *“— Uma maçã para a…”*. Mexa o nariz quando o ratinho mexer os bigodes.",
+      "fala": "Uma maçã para a…?"
+    },
+    {
+      "titulo": "Perguntas",
+      "minutos": 3,
+      "texto": "*“O que Marina achou primeiro?”*; tire as frutas da cesta e peça que ela as devolva **na ordem da história**; *“o ratinho estava com fome: o que ele ganhou?”*. Não corrija: repita a fala dela ampliando (“Maçã! Uma maçã vermelha e redonda”)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Completa a frase “— Uma maçã para a…”",
+      "Responde “o que Marina achou primeiro?” com uma palavra ou um gesto"
+    ],
+    "emDesenvolvimento": [
+      "Só escuta a história, sem completar a frase repetida",
+      "Ainda não lembra a ordem das frutas"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só a cesta e a história; o resto espera.",
+    "facil": "Pergunte: “se você encontrasse o ratinho, o que daria a ele?”."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 3: O jardim e o pomar)",
+      "deCasa": false
+    },
+    {
+      "item": "Cesta pequena",
+      "deCasa": true
+    },
+    {
+      "item": "3 ou 4 frutas de verdade",
+      "deCasa": true
+    },
+    {
+      "item": "Faca sem ponta (só o adulto usa)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Completou a frase que se repete",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Respondeu às perguntas",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "perguntaFicha": "O que ela disse sobre a história, com as palavras dela?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["história", "pomar", "frutas", "cumulativa", "recontar", "narração"]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-lenda-brasileira",
+  "titulo": "Uma lenda brasileira, contada e recontada",
+  "marcos": ["NM.CUL.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Escolha lendas adequadas à idade e confira se a criança se assusta; troque por outra se for o caso. Evite imagens muito assustadoras. Em bonecos de papel, use tesoura de pontas arredondadas e fique junto.",
+  "objetivo": "A criança escuta uma lenda do folclore, reconta com as próprias palavras e a representa com desenho ou bonecos.",
+  "passos": [
+    {
+      "titulo": "Contar",
+      "minutos": 7,
+      "texto": "Conte uma lenda curta, de memória ou lendo (por exemplo, a do Curupira ou a da Vitória-régia). Faça pausas e deixe que ela faça sons e gestos."
+    },
+    {
+      "titulo": "Recontar",
+      "minutos": 8,
+      "texto": "Peça que reconte com as próprias palavras, com um desenho ou com bonecos de papel. Ajude com “E depois?”. Aceite versões novas.",
+      "fala": "E depois, o que aconteceu?"
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 5,
+      "texto": "Pergunte: “O que a lenda quer ensinar?”, “Como você mudaria?”. Fale de onde a lenda vem."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Reconta com começo, meio e fim", "Diz de que parte gostou"],
+    "emDesenvolvimento": ["Esquece partes (normal)", "Mistura com outras histórias"]
+  },
+  "ajustes": {
+    "dificil": "Conte uma lenda bem curta e peça só um desenho.",
+    "facil": "Peça que escreva uma frase ou um parágrafo e leia para outra pessoa."
+  },
+  "materiais": [
+    {
+      "item": "Uma lenda adequada à idade",
+      "deCasa": true
+    },
+    {
+      "item": "Papel, lápis e tesoura sem ponta",
+      "deCasa": true
+    },
+    {
+      "item": "Bonecos de papel ou fantoches",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Recontou a lenda",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Falou do que gostou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual lenda ela escolheu?",
+  "palavrasChave": ["lendas", "saci", "curupira", "folclore", "narração"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

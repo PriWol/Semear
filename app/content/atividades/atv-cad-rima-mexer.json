@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-mexer",
+  "titulo": "Mais duas para mexer",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 3,
+    "paginas": [35, 35]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Espaço livre de quinas e objetos; ao ficar na ponta dos pés e ao agachar, chão firme e sem escorregar. Abrace sem apertar. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["pirulito", "grande", "pequeno", "contrários"],
+  "objetivo": "A criança brinca com rimas de corpo que mostram os contrários (grande e pequeno, depressa e devagar) e sente a diferença entre agitar e acalmar.",
+  "passos": [
+    {
+      "titulo": "Pirulito que bate, bate",
+      "minutos": 2,
+      "texto": "*Pirulito que bate, bate, / pirulito que já bateu; / quem gosta de mim é ela, / quem gosta dela sou eu.* **O gesto:** bata palmas no ritmo e, no “ela”, aponte para a criança; no “eu”, abrace-a. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Grande e pequeno",
+      "minutos": 2,
+      "texto": "*Grande, grande, grande, / braços para o céu! / Pequeno, pequeno, pequeno, / encolhido no chapéu!* **O gesto:** levante os braços e fique na ponta dos pés; depois agache e esconda a cabeça. Faça devagar, depois rápido. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Rimas com o corpo gastam energia e ensinam os contrários (grande e pequeno, depressa e devagar). Faça rápido para animar e devagar para terminar: é um jeito de a criança sentir a diferença entre agitar e acalmar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 3",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

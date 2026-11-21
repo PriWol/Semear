@@ -1,0 +1,82 @@
+{
+  "id": "atv-vol7-u6-fr",
+  "titulo": "As cores em francês: “Nous n’irons plus au bois” e a caça às cores",
+  "marcos": ["LI.VOC.01"],
+  "idioma": "fr",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 6,
+    "paginas": [36, 41]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Não pare para “testar” se ela sabe as cores, e não corrija a cor que ela disser: pergunte “onde você viu essa cor?”. Tintas e giz de cera só os que forem atóxicos. Na caça às cores, combine antes o que pode pegar (nada quebrável ou pontudo) e fique junto. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em francês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "palavrasChave": ["francês", "cores", "rouge", "bleu", "caça às cores"],
+  "objetivo": "A criança ouve uma canção francesa cheia de cor, aponta o cartão da cor que o adulto nomeia em francês e acha, pela casa, algo da cor do cartão.",
+  "passos": [
+    {
+      "titulo": "Ouvir a canção",
+      "minutos": 3,
+      "texto": "A melodia é a da partitura impressa (a linha de cima, *chant*); o livro traz a estrofe de abertura, e as outras vão entrando na roda, uma criança de cada vez. Os versos escolhidos trazem *blanc* (branco) e *fraise* (morango, vermelho). A gravura é cheia de cor: peça que ela ache o azul dos passarinhos, o rosa das flores e o verde das folhas, em português, e diga a cor em francês. Tradução da coleção: “Não iremos mais ao bosque, / os loureiros foram cortados. // E Joana, a pastora, / com o seu cesto branco, / indo colher o morango / e a flor da roseira-brava.”",
+      "fala": "Nous n’irons plus au bois, / Les lauriers sont coupés. // Et Jeanne, la bergère, / Avec son blanc panier, / Allant cueillir la fraise / Et la fleur d’églantier."
+    },
+    {
+      "titulo": "Mostrar os cartões",
+      "minutos": 1,
+      "texto": "Com os cartões das cores, diga a cor em francês: rouge, bleu, jaune, vert, orange, violet, rose, marron, noir. Ela aponta o cartão da cor que você nomeia."
+    },
+    {
+      "titulo": "A caça às cores",
+      "minutos": 5,
+      "texto": "Cada um escolhe um cartão de cor e diz a cor em francês (“bleu”). Saiam pela casa (ou pela rua) para achar algo daquela cor: uma meia, uma folha, um brinquedo. Ponham o que acharam ao lado do cartão e olhem juntos: “quantas coisas azuis?”. Para terminar, a Marina escolhe a **cor do dia** e veste ou usa algo dela até a hora de dormir. Evite perguntar “que cor é essa?”: diga você o nome e deixe que ela escolha.",
+      "fala": "Bleu !"
+    },
+    {
+      "titulo": "Para variar (opcional)",
+      "minutos": 1,
+      "texto": "Misturar duas tintas e dar nome à cor nova, em francês: azul e amarelo dão verde; vermelho e amarelo dão laranja."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta o cartão da cor que ouve", "Acha um objeto da cor pedida"],
+    "emDesenvolvimento": [
+      "Só acha os objetos, sem dizer a cor (tudo bem: diga você, em francês)",
+      "Mistura as cores (normal)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só duas cores, a preferida dela e mais uma, com a caça às cores só na sala.",
+    "facil": "Misturar duas tintas e dar nome à cor nova, em francês."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 6: As cores)",
+      "deCasa": false
+    },
+    {
+      "item": "Os cartões das cores recortados; uma cesta, fitas ou panos de todas as cores",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Aponta o cartão da cor que ouve",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Acha um objeto da cor pedida",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que cores ela achou? Qual foi a cor do dia?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

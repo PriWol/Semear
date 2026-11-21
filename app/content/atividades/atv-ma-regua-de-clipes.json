@@ -1,0 +1,98 @@
+{
+  "id": "atv-ma-regua-de-clipes",
+  "titulo": "Da fila de clipes à régua: centímetros",
+  "marcos": ["MA.MED.07"],
+  "revisa": ["MA.MED.04"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [6, 8],
+  "duracaoMin": 24,
+  "preparoMin": 8,
+  "cuidados": "Clipes pequenos são engolíveis: use clipes grandes e guarde a caixinha depois. Régua de plástico ou madeira sem lascas, e tesoura sem ponta apenas com adulto por perto.",
+  "objetivo": "A criança **mede objetos de até 20 cm com a régua, começando do zero**, e explica por que o zero é o começo.",
+  "passos": [
+    {
+      "titulo": "Fila de clipes",
+      "minutos": 6,
+      "texto": "Meça um lápis com clipes grandes em fila, sem espaços. Conte. Depois, cubra a fila com uma tira de papel e marque cada clipe: *“está nascendo uma régua!”*."
+    },
+    {
+      "titulo": "A régua de verdade",
+      "minutos": 8,
+      "texto": "Mostre a régua: *“cada risquinho é uma unidade, um centímetro”*. Meçam o lápis começando do 0. Depois, comece do 1 de propósito e pergunte o que mudou.",
+      "fala": "Por que começamos do zero?"
+    },
+    {
+      "titulo": "Estimar e medir",
+      "minutos": 6,
+      "texto": "Antes de medir, ela diz quantos centímetros acha que tem (uma borracha, um clipe, um lápis). Depois confere com a régua. Anote em uma tabela."
+    },
+    {
+      "titulo": "Folha: meça e escreva",
+      "minutos": 4,
+      "texto": "Ela mede objetos desenhados e escreve o comprimento em centímetros."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "mede objetos de até 20 cm começando do zero",
+      "explica por que a régua começa no zero",
+      "estima antes de medir"
+    ],
+    "emDesenvolvimento": ["começa a medir no número 1", "lê o risquinho ao lado em vez do número"]
+  },
+  "ajustes": {
+    "dificil": "Meça só objetos curtos (5 a 10 cm) e coloque o objeto sempre encostado no zero.",
+    "facil": "Peça que ela meça um objeto que sai da régua (mais de 20 cm), em duas etapas."
+  },
+  "materiais": [
+    {
+      "item": "Régua de 20 a 30 cm",
+      "deCasa": true
+    },
+    {
+      "item": "Clipes grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Fita de papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Objetos para medir: lápis, borracha, folha",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "O trabalho com barras de comprimento graduadas prepara a régua: a criança já viu o comprimento como um conjunto de unidades.",
+    "Charlotte Mason": "Meça objetos reais da casa em lições curtas, e peça que a criança explique como mediu.",
+    "Clássico": "Recitem a sequência dos centímetros enquanto passam o dedo na régua, até ela virar familiar."
+  },
+  "evidencias": [
+    {
+      "texto": "Mediu começando do zero",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Explicou por que começa no zero",
+      "resposta": "☐ sim   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Quantos centímetros?",
+      "legenda": "O adulto desenha 4 linhas de comprimentos diferentes (3 cm, 5 cm, 8 cm, 12 cm). A criança mede cada uma com a régua e escreve o número ao lado."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["régua", "centímetros", "medir", "zero", "comprimento"]
+}

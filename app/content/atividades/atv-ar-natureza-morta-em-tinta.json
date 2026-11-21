@@ -1,0 +1,79 @@
+{
+  "id": "atv-ar-natureza-morta-em-tinta",
+  "titulo": "Natureza-morta com frutas",
+  "marcos": ["AR.PIN.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Use tinta atóxica e frutas de verdade só para olhar. Fique junto e lave as mãos depois. Cubra a mesa e use avental. Não deixe a fruta ficar estragando por dias.",
+  "objetivo": "A criança pinta uma natureza-morta observando as frutas e escolhe as cores com intenção.",
+  "passos": [
+    {
+      "titulo": "Montar",
+      "minutos": 5,
+      "texto": "Arrume 2 ou 3 frutas sobre um pano, perto da janela. Peça que olhe e descreva as cores que vê (não só “vermelho”, mas “vermelho escuro e um brilho claro”).",
+      "fala": "Que cores você vê?"
+    },
+    {
+      "titulo": "Pintar",
+      "minutos": 15,
+      "texto": "Ela pinta as frutas misturando as cores até chegar perto do que vê. Lembre-a de olhar para as frutas."
+    },
+    {
+      "titulo": "Falar",
+      "minutos": 5,
+      "texto": "Ela explica por que escolheu as cores e o que mais gostou. Compare com o trabalho de um pintor que fez natureza-morta, se quiser."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Pinta observando as frutas", "Explica a escolha das cores"],
+    "emDesenvolvimento": ["Usa as cores “de caixa” (normal)", "Se frustra com o resultado"]
+  },
+  "ajustes": {
+    "dificil": "Pinte só uma fruta, grande e simples.",
+    "facil": "Pinte a mesma natureza-morta em horários diferentes e compare a luz."
+  },
+  "materiais": [
+    {
+      "item": "Frutas",
+      "deCasa": true
+    },
+    {
+      "item": "Pano",
+      "deCasa": true
+    },
+    {
+      "item": "Tinta guache ou aquarela",
+      "deCasa": true
+    },
+    {
+      "item": "Papel",
+      "deCasa": true
+    },
+    {
+      "item": "Pincéis",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Pintou observando",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Explicou as cores",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que cor ela achou mais difícil?",
+  "palavrasChave": ["natureza-morta", "frutas", "pintura", "observação"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

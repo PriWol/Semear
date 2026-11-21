@@ -1,0 +1,77 @@
+{
+  "id": "atv-vol2-u2-cachinhos-tres-vozes",
+  "titulo": "Cachinhos Dourados: contar com três vozes",
+  "marcos": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 2,
+    "paginas": [14, 21]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Se dramatizarem com tigelas e colheres de verdade, prefira as inquebráveis; pelúcias sem peças soltas. Conversa sem culpa: Cachinhos errou, mas pode pensar em outro jeito.",
+  "objetivo": "A criança **escuta com vozes diferentes** (grossa, média, fininha), antecipa a fala que se repete e lembra a ordem do que Cachinhos fez.",
+  "passos": [
+    {
+      "titulo": "Contar com as vozes",
+      "minutos": 4,
+      "texto": "Conte *Cachinhos Dourados e os Três Ursos* (versão da coleção). O segredo são as vozes: **grave e lenta** para o Papai Urso, **média** para a Mamãe Ursa, **fininha e rápida** para o Ursinho. Mingau quente demais, frio demais, bom; cadeira dura, mole, boa (mas quebrou!); cama alta, baixa, certinha."
+    },
+    {
+      "titulo": "Segunda leitura",
+      "minutos": 3,
+      "texto": "Agora ela faz a voz do Ursinho. Pare antes da fala repetida e espere: *“Alguém provou o meu mingau…”*.",
+      "fala": "Alguém provou o meu…?"
+    },
+    {
+      "titulo": "Lembrar e pensar",
+      "minutos": 3,
+      "texto": "*“O que Cachinhos comeu? Onde sentou? Onde dormiu?”* (três lembranças em ordem). Depois, de pensar: *“Cachinhos podia ter entrado na casa dos ursos? O que ela podia ter feito?”* (bater, esperar, pedir desculpas). Não há uma resposta só."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz pelo menos duas vozes diferentes", "Completa a fala repetida"],
+    "emDesenvolvimento": [
+      "Só escuta, sem fazer as vozes",
+      "Ainda não lembra a ordem (mingau, cadeira, cama)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só as três vozes, com a primeira cena.",
+    "facil": "Proponha trocar um personagem: e se fossem três lobos?"
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 2: Cachinhos Dourados e os Três Ursos)",
+      "deCasa": false
+    },
+    {
+      "item": "Três bichinhos de pelúcia (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez as vozes",
+      "resposta": "☐ 1 voz   ☐ 2 vozes   ☐ 3 vozes"
+    },
+    {
+      "texto": "Lembrou o que Cachinhos fez",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "perguntaFicha": "Qual voz ela mais gostou de fazer?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["cachinhos dourados", "três ursos", "vozes", "conto", "grande médio pequeno"]
+}

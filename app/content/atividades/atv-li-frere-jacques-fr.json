@@ -1,0 +1,64 @@
+{
+  "id": "atv-li-frere-jacques-fr",
+  "titulo": "Frère Jacques com gestos",
+  "marcos": ["LI.CAN.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Cante sem fones de ouvido, volume moderado, com a criança no colo ou ao lado. A canção tradicional francesa é de domínio público.",
+  "objetivo": "A criança canta e faz os gestos de uma canção em francês, ouvindo a pronúncia.",
+  "passos": [
+    {
+      "titulo": "Ouvir",
+      "minutos": 3,
+      "texto": "Cante ou toque uma gravação de “Frère Jacques”, mostrando os gestos (dormir, sinos tocando: “ding, dang, dong”)."
+    },
+    {
+      "titulo": "Cantar",
+      "minutos": 5,
+      "texto": "Cantem juntos, 3 ou 4 vezes, com os gestos. Na última, cante só o começo e deixe que ela complete o final.",
+      "fala": "Frère Jacques, Frère Jacques…"
+    },
+    {
+      "titulo": "Calma",
+      "minutos": 2,
+      "texto": "Terminem deitados, cantando baixinho, balançando como se fossem sinos."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz os gestos", "Canta partes da canção"],
+    "emDesenvolvimento": ["Só ouve (ótimo)", "Canta em português (aceite, é “Frei Jacó”)"]
+  },
+  "ajustes": {
+    "dificil": "Cante só o primeiro verso, várias vezes.",
+    "facil": "Cantem em cânone com duas vozes."
+  },
+  "materiais": [
+    {
+      "item": "Uma gravação ou a sua voz",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez os gestos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Cantou partes",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais partes ela cantou?",
+  "palavrasChave": ["canção", "frère jacques", "francês", "gestos", "comptines"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

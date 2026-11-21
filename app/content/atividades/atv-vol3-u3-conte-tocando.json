@@ -1,0 +1,82 @@
+{
+  "id": "atv-vol3-u3-conte-tocando",
+  "titulo": "Conte tocando: tantos botões quanto o número diz",
+  "marcos": ["MA.SEN.03"],
+  "revisa": ["MA.SEN.02"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 3,
+    "paginas": [21, 28]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Botões, feijões e contas pequenas só com o adulto ao lado e guardados depois; prefira botões grandes, tampinhas ou contas de madeira com mais de 3 cm, que não caibam na boca. Fique junto durante toda a atividade.",
+  "objetivo": "A criança **conta objetos tocando um de cada vez** e entende que o **último número dito é a quantidade**.",
+  "passos": [
+    {
+      "titulo": "Contar tocando",
+      "minutos": 4,
+      "texto": "Com 1 a 3 botões grandes ou tampinhas, mostre: um número para cada toque, e o último diz quantos há. Conte junto, devagar. Fique no 1 a 3 enquanto for preciso; o 4 e o 5 vêm depois.",
+      "fala": "Quantos são?"
+    },
+    {
+      "titulo": "Pôr a quantidade",
+      "minutos": 4,
+      "texto": "Em pratinhos desenhados com os números, ela põe a quantidade de botões que o número diz, tocando e contando. Comece só com 1, 2 e 3 (cubra os outros com papel)."
+    },
+    {
+      "titulo": "Inverter",
+      "minutos": 2,
+      "texto": "Ela põe botões num prato e você diz o número. De vez em quando erre de propósito, para ela corrigir."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Conta 3 objetos tocando cada um", "Responde “quantos?” com o último número"],
+    "emDesenvolvimento": [
+      "Recita os números, mas toca mais de um objeto por número",
+      "Responde “quantos?” contando de novo"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só contar os degraus da escada, subindo com você.",
+    "facil": "Ela conta para o ratinho de pelúcia, como professora."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 3: Contar até cinco (e até nove))",
+      "deCasa": false
+    },
+    {
+      "item": "Botões grandes ou tampinhas",
+      "deCasa": true
+    },
+    {
+      "item": "Pratinhos ou forminhas de papel",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Contou tocando um de cada vez",
+      "resposta": "☐ até 3   ☐ até 5   ☐ além de 5"
+    },
+    {
+      "texto": "Respondeu “quantos?” com o último número",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Até quanto ela contou tocando?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["contar", "cardinalidade", "botões", "quantos", "um a um", "números"]
+}

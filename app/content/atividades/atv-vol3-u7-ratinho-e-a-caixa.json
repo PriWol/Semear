@@ -1,0 +1,96 @@
+{
+  "id": "atv-vol3-u7-ratinho-e-a-caixa",
+  "titulo": "Onde está o ratinho? Palavras de lugar e cartões de ordens",
+  "marcos": ["MA.GEO.01"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 7,
+    "paginas": [50, 56]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Use uma pelúcia sem peças soltas. Nas ordens, é a pelúcia que fica em cima da cadeira, não a criança. Em “fique atrás da porta”, cuide dos dedos na dobradiça. Fique por perto.",
+  "objetivo": "A criança **entende e usa palavras de lugar** (dentro, fora, em cima, embaixo, ao lado, atrás, na frente) com o corpo e com a fala.",
+  "passos": [
+    {
+      "titulo": "Ratinho e caixa",
+      "minutos": 4,
+      "texto": "Com uma caixa de sapato e o ratinho de pelúcia, repitam as posições: **dentro, fora, em cima, ao lado**; depois acrescentem **embaixo, atrás, na frente**. Você diz, ela faz.",
+      "fala": "Onde está o ratinho?"
+    },
+    {
+      "titulo": "Ela põe, você diz",
+      "minutos": 3,
+      "texto": "Ela põe o ratinho e você diz onde ele está. Erre de vez em quando, para ela corrigir."
+    },
+    {
+      "titulo": "Cartões de ordens",
+      "minutos": 3,
+      "texto": "Você lê, ela faz: *“Ponha o urso em cima da cadeira”*, *“Esconda a bola embaixo da almofada”*, *“Ponha o livro dentro da cesta”*. Ordem com duas partes (colher na xícara e xícara em cima da mesa) é mais difícil: guarde para depois."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Põe um objeto dentro, em cima e embaixo, quando pedido",
+      "Diz onde algo está usando uma palavra de lugar"
+    ],
+    "emDesenvolvimento": [
+      "Obedece com ajuda do gesto do adulto",
+      "Mistura em cima e embaixo, ou atrás e na frente"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só dentro e fora, com a caixa e o ratinho.",
+    "facil": "Ela dá as ordens ao adulto, que faz."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 7: Onde está?)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma caixa de sapato",
+      "deCasa": true
+    },
+    {
+      "item": "Um ratinho (ou outra pelúcia)",
+      "deCasa": true
+    },
+    {
+      "item": "Uma cadeira, uma almofada e uma cesta",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Obedeceu a ordens de lugar",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Disse onde estava o ratinho com uma palavra de lugar",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavras de lugar ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "dentro e fora",
+    "em cima",
+    "embaixo",
+    "palavras de lugar",
+    "caixa",
+    "posição",
+    "ordens"
+  ]
+}

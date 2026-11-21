@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-festas-do-brasil",
+  "titulo": "Festas do Brasil: viajando pelo calendário",
+  "marcos": ["NM.CUL.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Se cozinharem, só o adulto mexe em fogo e facas. Cuidado com alergias e com fogos de artifício (não use). Em festas com fogueira, só observe de longe, com adultos.",
+  "objetivo": "A criança conhece uma festa de uma região, localiza-a no mapa e vive um pouco dela.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 5,
+      "texto": "No mapa do Brasil, escolha com ela uma festa (por exemplo, o bumba meu boi, no Maranhão). Pergunte: “O que você acha que acontece?”."
+    },
+    {
+      "titulo": "Conhecer",
+      "minutos": 10,
+      "texto": "Leia sobre a festa, olhe fotos e ouça uma música. Ela desenha um elemento (o boi, uma roupa, uma bandeirinha).",
+      "fala": "O que as pessoas fazem nessa festa?"
+    },
+    {
+      "titulo": "Viver",
+      "minutos": 5,
+      "texto": "Façam algo juntos: uma comida, uma dança, um enfeite. Depois conversem: “De qual parte você mais gostou?”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia 3 festas", "Liga uma festa a uma região"],
+    "emDesenvolvimento": ["Mistura as festas", "Quer só fazer o enfeite (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Escolha só a festa junina, mais próxima.",
+    "facil": "Compare duas festas: o que é igual e o que é diferente."
+  },
+  "materiais": [
+    {
+      "item": "Mapa do Brasil",
+      "deCasa": true
+    },
+    {
+      "item": "Livros ou fotos da festa",
+      "deCasa": true
+    },
+    {
+      "item": "Material de enfeite",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Falou de 3 festas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Ligou uma festa a uma região",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual festa ela escolheu?",
+  "palavrasChave": ["festas", "regiões", "bumba meu boi", "festa junina", "carnaval"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

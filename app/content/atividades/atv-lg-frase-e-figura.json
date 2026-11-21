@@ -1,0 +1,132 @@
+{
+  "id": "atv-lg-frase-e-figura",
+  "titulo": "Leio a frase e mostro a figura",
+  "marcos": ["LG.LEI.02"],
+  "vertentes": ["Montessori", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [6, 7],
+  "duracaoMin": 20,
+  "preparoMin": 8,
+  "cuidados": "Atenção: tesoura sem ponta e supervisão para recortar. Frases curtas, letra grande e boa luz: a leitura de frases cansa a vista no começo. Faça pausas.",
+  "objetivo": "A criança lê frases curtas como “O gato bebe leite” e mostra a figura que combina.",
+  "passos": [
+    {
+      "titulo": "Frase com ação",
+      "minutos": 5,
+      "texto": "Escreva uma frase em letra grande (*O gato bebe leite.*). Ela lê e faz a ação com um bicho de pelúcia ou o próprio corpo (*“O sapo pula.”*)."
+    },
+    {
+      "titulo": "Frases e figuras",
+      "minutos": 8,
+      "texto": "Misture cartões de frase e figuras. Ela lê cada frase e mostra a figura que combina. Se ela travar, peça que leia pedaço por pedaço (*O gato... bebe... leite*) e depois de uma vez.",
+      "fala": "Qual figura combina com a frase?"
+    },
+    {
+      "titulo": "Livrinho de uma frase por página",
+      "minutos": 5,
+      "texto": "Dobrem folhas ao meio e façam um livrinho de 4 páginas: uma frase e um desenho por página. Ela lê, e você lê a página seguinte."
+    },
+    {
+      "titulo": "Troca",
+      "minutos": 2,
+      "texto": "Ela escolhe uma frase para você fazer a ação, e rimos juntos."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Lê 3 frases curtas e mostra a figura que combina",
+      "Entende o que a frase diz (faz a ação ou desenha)"
+    ],
+    "emDesenvolvimento": [
+      "Lê palavra por palavra sem sentido (releia a frase toda por ela, depois com ela)",
+      "Adivinha pela figura (cubra a figura)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use frases de 3 palavras (*O sapo pula.*) e figuras sem distrações.",
+    "facil": "Peça que escreva uma frase para você ler e fazer."
+  },
+  "materiais": [
+    {
+      "item": "Cartões com frases e figuras (use a folha)",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Bicho de pelúcia",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Use cartões de leitura com ação (“pule”, “sente”): ela lê e executa, em silêncio.",
+    "Clássico": "Releia a mesma frase em voz alta, devagar, várias vezes, como numa recitação.",
+    "Religioso": "Se desejar, use frases curtas de uma cantiga da família.",
+    "Charlotte Mason": "Use frases de um livro de que ela goste e mantenha sessões curtas e fáceis."
+  },
+  "evidencias": [
+    {
+      "texto": "Frases lidas com a figura certa",
+      "resposta": "_____ de 3"
+    },
+    {
+      "texto": "Lê sem ajuda",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que frase ela leu com mais prazer?",
+  "folhas": [
+    {
+      "tipo": "ligar",
+      "titulo": "Ligue a frase à figura",
+      "esquerda": [
+        {
+          "emoji": "📖",
+          "texto": "O gato bebe leite."
+        },
+        {
+          "emoji": "📖",
+          "texto": "O sapo pula."
+        },
+        {
+          "emoji": "📖",
+          "texto": "A vovó faz bolo."
+        },
+        {
+          "emoji": "📖",
+          "texto": "O pato nada."
+        }
+      ],
+      "direita": [
+        {
+          "emoji": "🐸",
+          "texto": "sapo"
+        },
+        {
+          "emoji": "🦆",
+          "texto": "pato"
+        },
+        {
+          "emoji": "🐱",
+          "texto": "gato"
+        },
+        {
+          "emoji": "🎂",
+          "texto": "bolo"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["frases", "ler frases", "frase e figura", "livrinho", "leitura"]
+}

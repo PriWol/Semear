@@ -1,0 +1,75 @@
+{
+  "id": "atv-di-preparando-uma-festa",
+  "titulo": "Preparando uma festa em família",
+  "marcos": ["DI.RIT.04"],
+  "vertentes": ["Waldorf"],
+  "idade": [6, 8],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Se houver cozinha, só o adulto mexe com fogo, forno e facas. Enfeites sem peças pequenas se houver crianças menores. Tesoura de ponta arredondada e fique junto.",
+  "objetivo": "A criança planeja e prepara uma parte de uma festa da família e conta o seu sentido.",
+  "passos": [
+    {
+      "titulo": "Planejar",
+      "minutos": 6,
+      "texto": "Escolham a data e conversem: “Por que fazemos essa festa? Quem vai vir? O que vamos fazer?”. Ela anota uma lista com 3 coisas a preparar.",
+      "fala": "Por que celebramos?"
+    },
+    {
+      "titulo": "Preparar",
+      "minutos": 14,
+      "texto": "Ela faz o convite, o enfeite ou ajuda no preparo de um prato. O adulto cuida do que é perigoso."
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 5,
+      "texto": "No dia da festa (ou em um ensaio), ela explica a alguém por que a festa existe e o que preparou."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz uma parte do preparo", "Conta o sentido da festa"],
+    "emDesenvolvimento": ["Perde o foco (normal)", "Quer só a parte divertida"]
+  },
+  "ajustes": {
+    "dificil": "Escolha só uma tarefa para ela, como o convite.",
+    "facil": "Peça que planeje a festa toda com uma lista e um mapa da mesa."
+  },
+  "materiais": [
+    {
+      "item": "Papel, lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Ingredientes simples ou material de enfeite",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": true
+    },
+    {
+      "item": "Cola",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez uma parte do preparo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou o sentido da festa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual parte do preparo mais a encantou?",
+  "palavrasChave": ["festa", "preparar", "presente", "convite", "tradição"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

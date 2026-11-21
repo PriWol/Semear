@@ -1,0 +1,82 @@
+{
+  "id": "atv-vol7-u6-en",
+  "titulo": "As cores em inglês: cinco irmãzinhas e cinco malmequeres, e a caça às cores",
+  "marcos": ["LI.VOC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 6,
+    "paginas": [36, 41]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Não pare para “testar” se ela sabe as cores, e não corrija a cor que ela disser: pergunte “onde você viu essa cor?”. Tintas e giz de cera só os que forem atóxicos. Na caça às cores, combine antes o que pode pegar (nada quebrável ou pontudo) e fique junto. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "palavrasChave": ["inglês", "cores", "red", "blue", "caça às cores"],
+  "objetivo": "A criança ouve uma rima inglesa que fala de verde, amarelo e vermelho, aponta o cartão da cor que o adulto nomeia em inglês e acha, pela casa, algo da cor do cartão.",
+  "passos": [
+    {
+      "titulo": "Ouvir a rima",
+      "minutos": 3,
+      "texto": "Diga os versos apontando, na gravura, as meninas e os vasos. Aparecem três cores: *green* (verde), *yellow* (amarelo) e *red* (vermelho). *Muff* é um regalo de pele para aquecer as mãos; *marigold* é o malmequer. É uma rima de *Under the Window*, de Kate Greenaway (1878, domínio público); o livro não traz melodia. Conte as meninas e os vasos: são cinco de cada. Tradução da coleção: “Cinco irmãzinhas caminhando em fila; / não é essa a melhor maneira de as meninas andarem? / Cada uma de chapéu redondo, cada uma de regalo, / e cada uma com um casaco novo de lã verde. // Cinco malmequeres plantados em fila; / não é essa a melhor maneira de os malmequeres crescerem? / Cada um com um talo verde, e todos os cinco com / uma flor amarela brilhante e um vaso novo vermelho.”",
+      "fala": "Five little sisters walking in a row; / Now, isn’t that the best way for little girls to go? / Each had a round hat, each had a muff, / And each had a new pelisse of soft green stuff. // Five little marigolds standing in a row; / Now, isn’t that the best way for marigolds to grow? / Each with a green stalk, and all the five had got / A bright yellow flower, and a new red pot."
+    },
+    {
+      "titulo": "Mostrar os cartões",
+      "minutos": 1,
+      "texto": "Com os cartões das cores, diga a cor em inglês: red, blue, yellow, green, orange, purple, pink, brown, black. Ela aponta o cartão da cor que você nomeia."
+    },
+    {
+      "titulo": "A caça às cores",
+      "minutos": 5,
+      "texto": "Cada um escolhe um cartão de cor e diz a cor em inglês (“blue”). Saiam pela casa (ou pela rua) para achar algo daquela cor: uma meia, uma folha, um brinquedo. Ponham o que acharam ao lado do cartão e olhem juntos: “quantas coisas azuis?”. Para terminar, a Marina escolhe a **cor do dia** e veste ou usa algo dela até a hora de dormir. Evite perguntar “que cor é essa?”: diga você o nome e deixe que ela escolha.",
+      "fala": "Blue!"
+    },
+    {
+      "titulo": "Para variar (opcional)",
+      "minutos": 1,
+      "texto": "Misturar duas tintas e dar nome à cor nova, em inglês: azul e amarelo dão verde; vermelho e amarelo dão laranja."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta o cartão da cor que ouve", "Acha um objeto da cor pedida"],
+    "emDesenvolvimento": [
+      "Só acha os objetos, sem dizer a cor (tudo bem: diga você, em inglês)",
+      "Mistura as cores (normal)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só duas cores, a preferida dela e mais uma, com a caça às cores só na sala.",
+    "facil": "Misturar duas tintas e dar nome à cor nova, em inglês."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 6: As cores)",
+      "deCasa": false
+    },
+    {
+      "item": "Os cartões das cores recortados; uma cesta, fitas ou panos de todas as cores",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Aponta o cartão da cor que ouve",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Acha um objeto da cor pedida",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que cores ela achou? Qual foi a cor do dia?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

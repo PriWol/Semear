@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u6-rimas-para-o-gato-e-o-rato",
+  "titulo": "Rimas e cantigas: para o gato e o rato",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [64, 64]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Os pulos e os braços de violino no ar pedem espaço livre, sem quinas por perto; os dedos que sobem pelo braço, com toque leve; pare se ela não gostar.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "os bichos"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: os bichos).",
+  "passos": [
+    {
+      "titulo": "Cantar: Hey diddle diddle",
+      "minutos": 2,
+      "texto": "O gesto: faça o violino com os braços, pule por cima da lua com a mão, e fuja como o prato com a colher. É uma rima do absurdo, e o riso é o objetivo. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Hey diddle diddle, / the cat and the fiddle, / the cow jumped over the moon; / the little dog laughed / to see such sport, / and the dish ran away with the spoon."
+    },
+    {
+      "titulo": "Cantar: Hickory dickory dock",
+      "minutos": 2,
+      "texto": "O gesto: suba os dedos pelo braço dela (o rato) até “one”, e desça rápido; bata uma palma no “one”. É uma rima para “up” e “down” e para contar até um. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Hickory, dickory, dock, / the mouse ran up the clock; / the clock struck one, / the mouse ran down, / hickory, dickory, dock."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Rimas de bichos e de absurdos fazem rir, e o riso ajuda a criança a lembrar. “Up” e “down” aparecem de novo, desta vez com o dedinho, e a rima do rato é uma das primeiras de contar. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

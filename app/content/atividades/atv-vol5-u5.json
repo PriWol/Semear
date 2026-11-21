@@ -1,0 +1,84 @@
+{
+  "id": "atv-vol5-u5",
+  "titulo": "Van Gogh e os girassóis: quantos amarelos?",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Pintura",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 5,
+    "paginas": [35, 42]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Se usar flores de verdade, evite as que podem fazer mal se comidas e lave as mãos depois de mexer nelas. Guache não é para comer.",
+  "palavrasChave": ["Van Gogh", "girassol", "amarelo", "flores", "pintura"],
+  "objetivo": "A criança **olha com calma** *Girassóis*, de Van Gogh, percebe que o amarelo tem muitas versões e as faz misturando um pouquinho de outras cores.",
+  "passos": [
+    {
+      "titulo": "Olhar os girassóis",
+      "minutos": 8,
+      "texto": "Olhar *Girassóis* em silêncio, por um minuto. Dizer quantas flores vê e como cada uma é diferente. Achar amarelos diferentes pela casa."
+    },
+    {
+      "titulo": "Misturar amarelos",
+      "minutos": 9,
+      "texto": "Misturar amarelos: com branco, com um toque de vermelho, com azul. Fazer a paleta de amarelos. Jogar os cartões das plantas."
+    },
+    {
+      "titulo": "Pintar um vaso de flores",
+      "minutos": 8,
+      "texto": "Pintar um vaso de flores olhando as de verdade. Escolher o amarelo preferido e dar um nome a ele. Mostrar o quadro para alguém."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz que cada girassol do quadro é diferente.",
+      "Mistura amarelo com outra cor de propósito.",
+      "Pinta pelo menos três amarelos diferentes.",
+      "Pinta um vaso de flores olhando as de verdade."
+    ],
+    "emDesenvolvimento": [
+      "Ainda usa um só amarelo",
+      "Ainda não olha as flores de verdade ao pintar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar o quadro, escolher o girassol de que mais gosta e dizer por quê.",
+    "facil": "Se o interesse crescer: olhar uma flor por dia durante uma semana e pintar só uma pétala, com o amarelo mais parecido que ela conseguir."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Guache (amarelo, branco e um pouquinho de vermelho, verde e azul)",
+      "deCasa": true
+    },
+    {
+      "item": "Pincel largo e fino",
+      "deCasa": true
+    },
+    {
+      "item": "Papel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Um vaso com flores de verdade (ou uma única flor)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Qual foi o amarelo preferido dela e que nome ela deu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

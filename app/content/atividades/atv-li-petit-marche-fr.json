@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-petit-marche-fr",
+  "titulo": "Au marché : mercadinho em francês",
+  "marcos": ["LI.VOC.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use alimentos de verdade só se a criança não tiver alergias e sob supervisão: atenção a alimentos que podem engasgar (uvas inteiras, castanhas). Se usar dinheiro de brinquedo, sem moedas pequenas.",
+  "objetivo": "A criança nomeia alimentos em francês e diz o que gosta e o que não gosta, em uma brincadeira de mercado.",
+  "passos": [
+    {
+      "titulo": "Vocabulário",
+      "minutos": 4,
+      "texto": "Mostre 6 alimentos (la pomme, le pain, le lait, le fromage, l'eau, la banane) e diga o nome de cada um. Ela repete e aponta.",
+      "fala": "Tu aimes les pommes ?"
+    },
+    {
+      "titulo": "Mercado",
+      "minutos": 8,
+      "texto": "Brinquem de mercado: “Je voudrais une pomme, s'il vous plaît.” “Voilà.” “Merci !”. Um é o vendedor e o outro, o cliente."
+    },
+    {
+      "titulo": "Opinião",
+      "minutos": 3,
+      "texto": "Perguntem um ao outro: “Tu aimes le fromage ?”. Responda “J'aime…” ou “Je n'aime pas…”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia 6 alimentos", "Diz do que gosta e não gosta"],
+    "emDesenvolvimento": ["Diz só “oui/non” (aceite)", "Mistura com português (aceite)"]
+  },
+  "ajustes": {
+    "dificil": "Use só 3 alimentos e a frase “J'aime…”.",
+    "facil": "Faça um cardápio escrito com 5 pratos e preços."
+  },
+  "materiais": [
+    {
+      "item": "Alimentos de verdade ou de brinquedo",
+      "deCasa": true
+    },
+    {
+      "item": "Pratos e talheres de brinquedo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou 6 alimentos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse o que gosta",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela disse que gosta?",
+  "palavrasChave": ["comida", "mercado", "j'aime", "francês", "vocabulário"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

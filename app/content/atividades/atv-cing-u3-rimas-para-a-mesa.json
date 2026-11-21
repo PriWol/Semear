@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u3-rimas-para-a-mesa",
+  "titulo": "Rimas e cantigas: para a mesa",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 3,
+    "paginas": [33, 33]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Cante antes ou depois da comida, e não com a boca cheia; em “hot”, é só gesto de abanar: nunca ofereça comida quente a ela. Fique junto e com ela sentada.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "comer e ajudar na mesa"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: comer e ajudar na mesa).",
+  "passos": [
+    {
+      "titulo": "Cantar: Pease porridge hot",
+      "minutos": 2,
+      "texto": "O gesto: bata as mãos dela nas suas no ritmo; “hot”, abane como se estivesse quente; “cold”, esfregue os braços. É um jogo de palmas antigo. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Pease porridge hot, / pease porridge cold, / pease porridge in the pot, / nine days old."
+    },
+    {
+      "titulo": "Cantar: Hot cross buns",
+      "minutos": 2,
+      "texto": "O gesto: cante e mostre um dedo para “one”, dois para “two”; no “hot”, sopre. Funciona bem à mesa, enquanto o prato chega. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Hot cross buns! Hot cross buns! / One a penny, two a penny, / hot cross buns!"
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Rimas de comida e de contar (“one a penny, two a penny”) ensinam palavras e números pelo ritmo. Cante antes de comer, quando a criança está esperando: ela passa a esperar cantando. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

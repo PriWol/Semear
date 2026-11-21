@@ -1,0 +1,95 @@
+{
+  "id": "atv-vol2-u5-onde-esta-o-pedro",
+  "titulo": "O Coelho Pedro: onde ele está? O mapa da horta",
+  "marcos": ["MA.GEO.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 5,
+    "paginas": [39, 46]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 4,
+  "cuidados": "Pelúcia sem peças soltas. Ao esconder e procurar, fique junto e sem móveis instáveis. Alface, rabanete e vagem de verdade são para ver e cheirar; se provarem, corte em pedaços pequenos e com a criança sentada.",
+  "objetivo": "A criança **usa palavras de lugar** (dentro, embaixo, atrás, perto, longe) e **segue um percurso** num mapa simples.",
+  "passos": [
+    {
+      "titulo": "Contar uma parte",
+      "minutos": 4,
+      "texto": "Conte a primeira parte de *O Coelho Pedro* (Beatrix Potter, 1902): a mamãe avisa para não entrar na horta, mas Pedro se espreme por baixo da porteira. Pergunte: *“o que a mamãe disse?”* e *“o Pedro obedeceu?”*."
+    },
+    {
+      "titulo": "Onde ele está?",
+      "minutos": 4,
+      "texto": "Use as palavras de lugar: Pedro está **embaixo** da rede, **dentro** do regador, **atrás** do vaso. Depois, com um bichinho de pelúcia: *“ponha o coelho dentro da caixa… embaixo da mesa… atrás da cortina”*.",
+      "fala": "O coelho está dentro ou fora da caixa?"
+    },
+    {
+      "titulo": "O mapa da horta",
+      "minutos": 4,
+      "texto": "Com o dedo, ela faz o caminho do Pedro seguindo os números: da toca à porteira, aos rabanetes, ao galpão, ao lago e ao portão. *“O que fica perto do lago?”* · *“qual lugar é mais longe da toca?”*. Se quiser, desenhem o mapa da casa de vocês."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Usa “embaixo”, “dentro” ou “atrás” para dizer onde algo está",
+      "Percorre o mapa com o dedo"
+    ],
+    "emDesenvolvimento": [
+      "Obedece à ordem de lugar, mas ainda não usa a palavra",
+      "Mistura dentro/fora ou atrás/na frente"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só dentro e fora, com a caixa e a pelúcia.",
+    "facil": "Peça que ela esconda o coelho e dê pistas com palavras de lugar."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 5: O Coelho Pedro)",
+      "deCasa": false
+    },
+    {
+      "item": "Um bichinho de pelúcia",
+      "deCasa": true
+    },
+    {
+      "item": "Uma caixa",
+      "deCasa": true
+    },
+    {
+      "item": "Alface, rabanete e vagem de verdade (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Usou palavras de lugar",
+      "resposta": "_____ de 3"
+    },
+    {
+      "texto": "Percorreu o mapa com o dedo",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavras de lugar ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "coelho pedro",
+    "beatrix potter",
+    "palavras de lugar",
+    "mapa",
+    "horta",
+    "dentro e fora"
+  ]
+}

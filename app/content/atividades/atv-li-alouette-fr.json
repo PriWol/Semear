@@ -1,0 +1,64 @@
+{
+  "id": "atv-li-alouette-fr",
+  "titulo": "Alouette, gentille alouette: cantando as partes do corpo",
+  "marcos": ["LI.CAN.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 13,
+  "preparoMin": 2,
+  "cuidados": "Brinque em espaço livre e sem quinas. Os toques nas partes do corpo devem ser suaves. Esta canção tradicional é de domínio público.",
+  "objetivo": "A criança canta uma canção inteira em francês e toca as partes do corpo citadas.",
+  "passos": [
+    {
+      "titulo": "Aprender",
+      "minutos": 5,
+      "texto": "Cante devagar: “Alouette, gentille alouette, alouette, je te plumerai”. Mostre as partes do corpo (la tête, le bec, le nez, le dos). Ela repete e toca cada parte.",
+      "fala": "Alouette, gentille alouette !"
+    },
+    {
+      "titulo": "Cantar",
+      "minutos": 5,
+      "texto": "Cantem a canção com as partes do corpo, acrescentando uma a cada vez, como em uma “cantiga de acumular”."
+    },
+    {
+      "titulo": "Caderno",
+      "minutos": 3,
+      "texto": "Ela desenha uma cotovia (alouette) e escreve (ou você escreve) o título na página de canções."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta a canção inteira", "Toca as partes corretas"],
+    "emDesenvolvimento": ["Esquece partes (normal)", "Mistura as partes do corpo (comum)"]
+  },
+  "ajustes": {
+    "dificil": "Cantem só com duas partes do corpo.",
+    "facil": "Acrescente mais partes do corpo ou troque por outras (la main, le pied)."
+  },
+  "materiais": [
+    {
+      "item": "Caderno e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cantou a canção inteira",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Tocou as partes certas",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que partes do corpo ela cantou?",
+  "palavrasChave": ["alouette", "canção", "francês", "partes do corpo"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

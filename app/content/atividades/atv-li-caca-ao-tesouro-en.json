@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-caca-ao-tesouro-en",
+  "titulo": "Treasure hunt: instruções em inglês",
+  "marcos": ["LI.ESC.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 16,
+  "preparoMin": 5,
+  "cuidados": "Esconda objetos em lugares baixos e seguros, sem subir em móveis. Retire objetos quebráveis do caminho. Fique junto da criança.",
+  "objetivo": "A criança entende instruções de dois passos em inglês e as cumpre em uma caça ao tesouro dentro de casa.",
+  "passos": [
+    {
+      "titulo": "Vocabulário",
+      "minutos": 4,
+      "texto": "Relembre: red, blue, ball, book, door, table, “bring me”, “put on the…”. Faça com objetos reais.",
+      "fala": "Bring me the red ball."
+    },
+    {
+      "titulo": "Caça",
+      "minutos": 10,
+      "texto": "Dê instruções de dois passos: “Go to the door and bring me the red ball”, “Look under the table and take the book”. Aumente as dificuldades aos poucos."
+    },
+    {
+      "titulo": "Trocar",
+      "minutos": 2,
+      "texto": "Ela dá as instruções (em inglês, se conseguir) e você obedece, errando de brincadeira."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Cumpre instruções de dois passos", "Responde às perguntas com gestos"],
+    "emDesenvolvimento": ["Esquece o segundo passo (comum)", "Quer traduzir (permita)"]
+  },
+  "ajustes": {
+    "dificil": "Dê instruções de um só passo, com gestos.",
+    "facil": "Dê instruções de três passos."
+  },
+  "materiais": [
+    {
+      "item": "Objetos de casa de cores diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Uma sala",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cumpriu instrução de dois passos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Respondeu com gesto",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual instrução foi mais difícil?",
+  "palavrasChave": ["instruções", "caça ao tesouro", "inglês", "compreensão"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

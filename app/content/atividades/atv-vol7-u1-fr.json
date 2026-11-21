@@ -1,0 +1,85 @@
+{
+  "id": "atv-vol7-u1-fr",
+  "titulo": "Cumprimentos em francês: a canção “Pan ! Qu’est-c’ qu’est là ?” e o jogo “Toc, toc! Quem é?”",
+  "marcos": ["LI.ESC.01", "LI.FAL.01"],
+  "idioma": "fr",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 1,
+    "paginas": [6, 11]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Se usar uma porta de verdade para o jogo, cuidado com os dedos dela na dobradiça; a porta de papelão (ou de papel dobrado) é mais segura. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em francês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "palavrasChave": ["francês", "cumprimentos", "bonjour", "canção", "porta"],
+  "objetivo": "A criança ouve uma canção francesa curta, acena e responde ao cumprimento do adulto num jogo de bater à porta, sem ser cobrada a repetir.",
+  "passos": [
+    {
+      "titulo": "Ouvir a canção",
+      "minutos": 3,
+      "texto": "A melodia é a impressa na página do livro (a linha de cima, *chant*); a de baixo é o acompanhamento de piano, que você pode deixar de lado. É uma canção tradicional, com a partitura original de 1883, e o tempo é animado, sem pressa. No “pan!”, bata na mesa ou numa porta, como quem chega. *Mam’selle* é *mademoiselle* (“senhorita”), e Polichinelo é um bufão dos teatros de fantoches. Tradução da coleção: “Pan! Quem está aí? / É o Polichinelo, / senhorita. / Pan! Quem está aí? / É o Polichinelo que chegou.”",
+      "fala": "Pan ! qu’est-c’ qu’est là ? / C’est Polichinelle, / Mam’selle. / Pan ! qu’est-c’ qu’est là ? / C’est Polichinell’ que v’là."
+    },
+    {
+      "titulo": "Mostrar os cartões",
+      "minutos": 2,
+      "texto": "Com os cartões de cumprimentos com a figura para cima, diga a palavra em francês e mostre a figura: bonjour, bonjour, bonne nuit, au revoir, s’il vous plaît, merci, oui, non, ça va ?. Sem pedir que ela repita."
+    },
+    {
+      "titulo": "O jogo da porta",
+      "minutos": 4,
+      "texto": "O adulto fica atrás de uma porta (de verdade ou de papel dobrado) e bate: *toc, toc!*. A Marina pergunta “*quem é?*” (em português; a pergunta não troca de idioma). O adulto responde com um cumprimento em francês (“bonjour !”), abre a porta e acena. Depois trocam de lugar. Por fim, ela escolhe um cartão e o adulto adivinha o cumprimento. Quem erra, ri.",
+      "fala": "Bonjour !"
+    },
+    {
+      "titulo": "Na rotina do dia (opcional)",
+      "minutos": 1,
+      "texto": "Cumprimente na hora certa, sempre com o mesmo gesto: de manhã e à tarde, *bonjour*; ao anoitecer, *bonsoir*; para dormir, *bonne nuit*. Se ela já entende, peça que escolha, entre dois cartões, o que combina com a figura."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Acena ao ver alguém, sem ser lembrada",
+      "Repete o “pan!” da canção ou brinca de bater à porta"
+    ],
+    "emDesenvolvimento": [
+      "Só olha a gravura e escuta (tudo bem: ouvir já é o objetivo)",
+      "Responde em português (ótimo: repita a ideia em francês, sem corrigir)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o cartão *bonjour*, com o aceno. Uma palavra basta.",
+    "facil": "Cumprimentar em duas línguas no mesmo dia (uma de manhã, outra à noite) e fazer um cartaz com os cumprimentos da casa."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 1: Cumprimentos)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma porta de papelão ou uma folha de papel dobrada; os cartões de cumprimentos recortados",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Acena ao ver alguém, sem ser lembrada",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Repete o “pan!” da canção ou brinca de bater à porta",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela fez ao ouvir o cumprimento? Acenou, respondeu, riu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

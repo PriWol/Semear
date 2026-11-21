@@ -1,0 +1,82 @@
+{
+  "id": "atv-vol7-u5-fr",
+  "titulo": "Os animais em francês: “La mère Michel” e o jogo “Como fala o bicho?”",
+  "marcos": ["LI.VOC.01"],
+  "idioma": "fr",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 5,
+    "paginas": [30, 35]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Bichos de verdade: olhar e conversar de longe, sem puxar o rabo nem pôr o dedo perto da boca; lavar as mãos depois de mexer em qualquer animal. Bichos de brinquedo sem peças que se soltem. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em francês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "palavrasChave": ["francês", "animais", "chat", "chien", "la mère michel"],
+  "objetivo": "A criança ouve uma canção francesa sobre um gato perdido, aponta o cartão do bicho que o adulto nomeia em francês e imita o som do bicho do jeito francês.",
+  "passos": [
+    {
+      "titulo": "Ouvir a canção",
+      "minutos": 3,
+      "texto": "A melodia é a da partitura impressa (a linha de cima, *chant*). *Chat* é “gato”; *mère* é “mãe” e *compère* é “compadre”. Na gravura, a mãe Michel grita da janela e Lustucru, o vizinho, aparece na porta de uma casa de comida, com uma panela na mão. O gato não aparece: ele só existe nos versos, e a graça é procurá-lo com a imaginação. Tradução da coleção: “É a mãe Michel que perdeu o seu gato, / que grita pela janela: ‘quem o devolve?’ / E o compadre Lustucru lhe respondeu: / ‘Vá, mãe Michel, o seu gato não está perdido.’”",
+      "fala": "C’est la mèr’ Michel qui a perdu son chat, / Qui cri’ par la f’nêtre à qui le lui rendra. / Et l’ compèr’ Lustucru qui lui a répondu: / Allez, la mèr’ Michel, vot’ chat n’est pas perdu."
+    },
+    {
+      "titulo": "Mostrar os cartões",
+      "minutos": 2,
+      "texto": "Mostre os cartões da unidade (e os bichos de brinquedo, se tiver) e diga o nome em francês: chat, chien, vache, cheval, coq, canard, lièvre, poisson, souris. Ela aponta o cartão do bicho que você nomeia, sem precisar repetir."
+    },
+    {
+      "titulo": "Como fala o bicho?",
+      "minutos": 4,
+      "texto": "O adulto faz o som de um bicho, do jeito francês, e a Marina mostra o cartão: *miaou* (gato), *ouaf* (cachorro), *meuh* (vaca), *coin-coin* (pato), *cocorico* (galo). Depois é a vez dela: ela faz um som e o adulto adivinha. Valem os sons dela, também. Os bichos fazem o mesmo som em qualquer lugar; quem muda é a maneira de escrever esse som. Na rua, quando ouvirem um bicho de verdade, perguntem: “como ele faz, em francês?”.",
+      "fala": "Miaou ! Ouaf ! Meuh !"
+    },
+    {
+      "titulo": "Para depois (opcional)",
+      "minutos": 1,
+      "texto": "Dizer o nome do bicho em francês ao ver um de verdade, na rua, num livro ou na tela, sem pedir que ela repita."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta o cartão do bicho que ouve nomear", "Imita o som do bicho"],
+    "emDesenvolvimento": [
+      "Só olha as gravuras e imita em português (tudo bem: repita o som em francês, sem corrigir)",
+      "Ainda mistura os cartões"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o cartão do gato e o som dele, *miaou*.",
+    "facil": "Parear o cartão com o bicho de brinquedo, ou brincar de “que bicho sou eu?”, só com o som."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 5: Os animais)",
+      "deCasa": false
+    },
+    {
+      "item": "Os cartões dos animais recortados; bichos de brinquedo ou de pelúcia, uma cesta",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Aponta o cartão do bicho que ouve nomear",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Imita o som do bicho",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que bichos ela apontou? Que sons imitou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "atv-ma-tabela-dos-cem",
+  "titulo": "Tabela dos cem: de dez em dez",
+  "marcos": ["MA.SND.07"],
+  "revisa": ["MA.SND.05"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Lápis de cor, giz e tesoura sem ponta: fique por perto. Para os ditados, use fichas grandes se quiser material de apoio.",
+  "objetivo": "A criança **conta de 10 em 10 até 100** e lê e escreve números de dois algarismos.",
+  "passos": [
+    {
+      "titulo": "A tabela de 1 a 100",
+      "minutos": 8,
+      "texto": "Em uma folha quadriculada de 10 por 10, escreva 1 a 100. A criança pinta os números 10, 20, 30… e percebe que ficam todos na mesma coluna.",
+      "fala": "O que você vê nos números pintados?"
+    },
+    {
+      "titulo": "Cantar saltando",
+      "minutos": 5,
+      "texto": "Cantem de 10 em 10 (*10, 20, 30…*) e de 5 em 5, batendo palmas. Depois, ela faz sozinha."
+    },
+    {
+      "titulo": "Qual número falta?",
+      "minutos": 6,
+      "texto": "Cubra números da tabela com uma moeda de papel e peça que ela diga qual está escondido. Depois, um ditado de 4 números (23, 47, 62, 98)."
+    },
+    {
+      "titulo": "Folha: minha tabela",
+      "minutos": 6,
+      "texto": "A criança completa uma tabela com números faltando, a seu ritmo."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "conta de 10 em 10 até 100",
+      "lê e escreve 8 de 10 números até 99",
+      "acha o padrão das colunas"
+    ],
+    "emDesenvolvimento": ["pula do 39 para o 50", "inverte números de dois algarismos (36 e 63)"]
+  },
+  "ajustes": {
+    "dificil": "Use a tabela só até 50 e conte junto, apontando cada passo.",
+    "facil": "Peça que ela invente uma charada com o padrão da tabela (*“estou na coluna do 5…”*)."
+  },
+  "materiais": [
+    {
+      "item": "Folha quadriculada 10 x 10 ou papel e régua",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou giz de cera",
+      "deCasa": false
+    },
+    {
+      "item": "Moedas de papel para cobrir números",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "A tábua dos cem e as tábuas de Séguin das dezenas (10, 20, 30…) mostram os padrões: a criança monta a sequência até 100 com cartões.",
+    "Waldorf": "Para quem segue a vertente, esse trabalho costuma ficar para o 1º ano, por volta dos 7 anos: conte em saltos de 10 caminhando e batendo palmas, antes de escrever.",
+    "Clássico": "Recitar de 10 em 10 e copiar a tabela, em lições curtas, fixa o padrão.",
+    "Charlotte Mason": "Poucos minutos por dia, com a tabela à vista, e peça que ela explique o padrão que descobriu."
+  },
+  "evidencias": [
+    {
+      "texto": "Contou de 10 em 10 até 100",
+      "resposta": "☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Escreveu números de dois algarismos",
+      "resposta": "_____ de 4   ☐ sem inverter"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Minha tabela dos cem",
+      "legenda": "O adulto escreve parte da tabela com números faltando e a criança completa. Pintar a coluna dos 10, 20, 30… destaca o padrão."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["tabela dos cem", "contar de dez em dez", "números até 100", "padrões"]
+}

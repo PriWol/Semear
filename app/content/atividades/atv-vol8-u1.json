@@ -1,0 +1,89 @@
+{
+  "id": "atv-vol8-u1",
+  "titulo": "Esconder e achar: esconde-esconde, “cadê? achou!” e a caixa surpresa",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Jogos e brincadeiras",
+  "materialImpresso": {
+    "volume": 8,
+    "unidade": 1,
+    "paginas": [7, 14]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 4],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Esconderijos seguros: cortina, atrás da porta, embaixo da mesa; nada de geladeira, baú, caixa fechada ou lugar pequeno demais, e o adulto vê onde ela está o tempo todo. Nunca cubra o rosto dela, nem a esconda em lugar fechado; se ela se assustar com o escuro, a cortina, a caixa ou o sumiço, pare e abrace. Objetos só maiores que o punho dela e sem pontas; nada que caiba na boca.",
+  "palavrasChave": ["esconde-esconde", "cadê", "achou", "caixa surpresa", "jogo"],
+  "objetivo": "A criança brinca de sumir e aparecer sem medo, espera o “achou!”, sente com a mão o que está na caixa e diz o nome do objeto.",
+  "passos": [
+    {
+      "titulo": "Esconde-esconde",
+      "minutos": 4,
+      "texto": "Esconda-se atrás da cortina, deixando um pedacinho à mostra, e diga: “cadê o papai? cadê a mamãe?”. Quando ela chegar, abrace: “achou!”. Troque: ela se esconde, e você procura devagar, fingindo que não acha. Combine o fim: “mais uma vez e acabou”.",
+      "fala": "Cadê o papai? Será que está aqui?"
+    },
+    {
+      "titulo": "Cadê? Achou! (rima da coleção)",
+      "minutos": 2,
+      "texto": "Cubra o *seu* rosto com as mãos (ou com um lenço leve que ela possa puxar) nos primeiros versos e descubra no “achou”. Nunca cubra o rosto dela. Ela pode pedir muitas vezes: repita.",
+      "fala": "Cadê a Marina? / Cadê, cadê? / Está escondida? / Eu vou achar você! / Achou! Achou! / Achou! Achou!"
+    },
+    {
+      "titulo": "A caixa surpresa",
+      "minutos": 2,
+      "texto": "Ponha um objeto na caixa sem que ela veja e peça que ela ponha a mão pelo buraco e apalpe. Pergunte: “o que será?”. Aceite “não sei” e dê pistas: “é redondo”, “serve para comer”. Tire o objeto e comemore.",
+      "fala": "Põe a mão aqui. O que será?"
+    },
+    {
+      "titulo": "Os três níveis (para crescer)",
+      "minutos": 0,
+      "texto": "**2 anos:** você se esconde e ela procura; um objeto por vez na caixa, com pista. **3 anos:** ela se esconde e conta até três antes de você procurar; cinco objetos na mesa, e ela tira um e diz o nome. **4 anos:** ela esconde um brinquedo e você pergunta “está perto ou longe?”; ela acha o cartão do que sentiu."
+    },
+    {
+      "titulo": "Jogo da memória (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Com o jogo “Achados de casa” recortado: **2 anos:** só 3 pares, com todas as cartas viradas para cima. **3 anos:** 4 ou 5 pares, viradas para baixo. **4 anos:** os 6 pares. Cada um vira duas cartas na sua vez; se forem iguais, ficam com quem achou, e se não forem, voltam. Ninguém conta pontos."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ri ou se surpreende no “achou!”", "Põe a mão na caixa sem medo"],
+    "emDesenvolvimento": [
+      "Fica insegura quando alguém some (tudo bem: volte ao “cadê? achou!” no colo)",
+      "Ainda não diz o nome do objeto sem olhar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só “cadê? achou!” com as mãos no rosto do adulto, no colo. Um minuto basta.",
+    "facil": "Mais objetos na caixa, ela como “escondedora” e você como quem procura."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 8 (unidade 1: Esconder e achar)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma cortina ou uma porta; uma caixa de sapato com um buraco do tamanho da mão; 3 a 5 objetos de casa maiores que o punho dela",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ri ou se surpreende no “achou!”",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Põe a mão na caixa sem medo",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Onde ela se escondeu? Ficou com medo ou riu no “achou!”?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

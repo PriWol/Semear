@@ -1,0 +1,131 @@
+{
+  "id": "atv-ma-pares-do-dez",
+  "titulo": "Pares do dez: jogo de cartas",
+  "marcos": ["MA.OPE.06"],
+  "revisa": ["MA.SEN.08"],
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 24,
+  "preparoMin": 8,
+  "cuidados": "Tesoura sem ponta para as cartas, com o adulto por perto. Se usar dados ou fichas, escolha peças grandes e guarde-as depois, por causa de irmãos menores.",
+  "objetivo": "A criança **calcula de cabeça somas até 10** usando as partes do número e forma os pares que fazem 10.",
+  "passos": [
+    {
+      "titulo": "Aquecimento com dados",
+      "minutos": 4,
+      "texto": "Ela joga dois dados e diz a soma. Se precisar, conta a partir do maior. Explique que algumas somas já são conhecidas (4 e 4, 5 e 5)."
+    },
+    {
+      "titulo": "Jogo dos pares do dez",
+      "minutos": 10,
+      "texto": "Espalhe cartas com 0 a 10 viradas para cima. Cada um procura pares que fazem 10 (6 e 4, 7 e 3). Quem achar fica com o par. Peça que explique: *“como você sabe?”*.",
+      "fala": "Como você pensou?"
+    },
+    {
+      "titulo": "Somas conhecidas",
+      "minutos": 6,
+      "texto": "Pergunte somas rápidas (*3 e 2, 5 e 1, 4 e 3*) e peça que explique o caminho (*“sei que 4 e 4 são 8, então 4 e 5…”*). Só pergunte as somas que ela já entendeu."
+    },
+    {
+      "titulo": "Folha: pares do dez",
+      "minutos": 4,
+      "texto": "Ela liga os números que, juntos, dão 10."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "responde de cabeça 8 de 10 somas até 10",
+      "forma os pares do 10 sem contar",
+      "explica o caminho usando outra soma que sabe"
+    ],
+    "emDesenvolvimento": ["conta nos dedos todas as somas", "acerta só as somas pequenas"]
+  },
+  "ajustes": {
+    "dificil": "Use somas até 5 e deixe os dedos à mostra; só depois peça de cabeça.",
+    "facil": "Peça pares de 20 (12 e 8) ou somas de três números (2 e 3 e 5)."
+  },
+  "materiais": [
+    {
+      "item": "20 cartas de papel com 0 a 10 (duas de cada)",
+      "deCasa": true
+    },
+    {
+      "item": "Dois dados (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Com as barras e as contas coloridas, a criança confere as somas e forma os pares do 10, antes de passar ao cálculo de cabeça.",
+    "Clássico": "Depois de entender, os fatos de soma são memorizados com prática diária curta, até ficarem automáticos.",
+    "Charlotte Mason": "Primeiro prove com objetos, depois decore: a criança confere cada combinação com coisas reais e só então a repete de cabeça."
+  },
+  "evidencias": [
+    {
+      "texto": "Somas respondidas de cabeça",
+      "resposta": "_____ de 10   ☐ sem dedos   ☐ com dedos"
+    },
+    {
+      "texto": "Pares do 10",
+      "resposta": "_____ de 6"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Cartas dos pares do dez",
+      "cartas": [
+        {
+          "numero": 1
+        },
+        {
+          "numero": 9
+        },
+        {
+          "numero": 2
+        },
+        {
+          "numero": 8
+        },
+        {
+          "numero": 3
+        },
+        {
+          "numero": 7
+        },
+        {
+          "numero": 4
+        },
+        {
+          "numero": 6
+        },
+        {
+          "numero": 5
+        },
+        {
+          "numero": 5
+        },
+        {
+          "numero": 0
+        },
+        {
+          "numero": 10
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["somar de cabeça", "pares do dez", "jogo de cartas", "fatos de soma"]
+}

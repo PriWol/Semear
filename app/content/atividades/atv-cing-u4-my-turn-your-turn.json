@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u4-my-turn-your-turn",
+  "titulo": "My turn, your turn",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 4,
+    "paginas": [42, 42]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Bola leve e macia (ou meia enrolada), sem peças pequenas; jogue de perto, devagar, longe de quinas de móveis e de escadas.",
+  "palavrasChave": ["inglês", "english", "brincar dentro de casa", "my turn, your turn"],
+  "objetivo": "Ouvir e usar inglês num momento fixo do dia (brincar dentro de casa), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "My turn! Here it comes. / Your turn! Roll it to me. / Thank you for sharing. Good job!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Sentem de frente, a dois passos. Role a bola: “my turn!”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Quando ela devolver: “your turn!”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Faça uma pausa e espere; se ela quiser ficar com a bola, diga “my turn… then your turn”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Aumentem para três jogadores quando ela já souber."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Whose turn is it? / Do you want to roll it? / Can you give it to me?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Revezem para empilhar blocos. Com um ursinho: “Teddy's turn!”. Cantem a frase no ritmo."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Esperar a vez é uma das coisas mais difíceis aos 2 anos: a criança precisa segurar o desejo de ter a bola o tempo todo. “My turn / your turn” é uma frase curta, repetida, que ela pode usar com outras crianças. Quando ficar brava com a bola indo embora, dê nome à emoção (“you're upset”) e continue. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "uma bola leve ou uma meia enrolada; um espaço no chão",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

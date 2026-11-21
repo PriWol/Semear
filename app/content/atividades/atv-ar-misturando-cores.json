@@ -1,0 +1,79 @@
+{
+  "id": "atv-ar-misturando-cores",
+  "titulo": "Misturando cores: o que será que vai dar?",
+  "marcos": ["AR.PIN.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use tinta atóxica e lavável. Fique junto: a tinta pode ir à boca. Cubra a mesa e use avental. Lave as mãos depois.",
+  "objetivo": "A criança prevê e mistura cores primárias, descobre as secundárias e as registra.",
+  "passos": [
+    {
+      "titulo": "Palpite",
+      "minutos": 3,
+      "texto": "Mostre azul, amarelo e vermelho. Pergunte: “Se misturarmos azul com amarelo, o que acontece?”. Aceite o palpite.",
+      "fala": "O que você acha?"
+    },
+    {
+      "titulo": "Misturar",
+      "minutos": 8,
+      "texto": "Ela mistura duas cores de cada vez em um prato, com um pincel, e vê o resultado. Repita com todas as combinações."
+    },
+    {
+      "titulo": "Cartão",
+      "minutos": 4,
+      "texto": "Ela pinta um “cartão de cores” com cada mistura e cola uma etiqueta com o nome (verde, laranja, roxo)."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Mistura e nomeia o resultado", "Prevê o resultado"],
+    "emDesenvolvimento": ["Prevê errado (é aprendizado)", "Mistura demais (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Faça só 2 misturas, com ajuda.",
+    "facil": "Descubra tons claros e escuros misturando branco e preto."
+  },
+  "materiais": [
+    {
+      "item": "Tinta guache em 3 cores primárias",
+      "deCasa": true
+    },
+    {
+      "item": "Pratos rasos",
+      "deCasa": true
+    },
+    {
+      "item": "Pincel",
+      "deCasa": true
+    },
+    {
+      "item": "Papel",
+      "deCasa": true
+    },
+    {
+      "item": "Avental",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Misturou 2 cores e nomeou",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Fez uma previsão",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual mistura mais a surpreendeu?",
+  "palavrasChave": ["misturar cores", "primárias", "verde", "laranja", "roxo"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u3-rimas-mais-para-a-mesa",
+  "titulo": "Rimas e cantigas: mais para a mesa",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 3,
+    "paginas": [34, 34]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Cantar e contar mordidas só com ela sentada e acompanhada, e sem comida na boca durante a risada (risco de engasgo); lave as mãos como a rima manda, com água por perto e você junto.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "comer e ajudar na mesa"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: comer e ajudar na mesa).",
+  "passos": [
+    {
+      "titulo": "Cantar: Yum, yum, yum",
+      "minutos": 2,
+      "texto": "O gesto: esfregue a barriga no “yum”, mostre os dedos para contar as mordidas. Serve para começar a comer com alegria. Rima escrita pela coleção.",
+      "fala": "Yum, yum, yum, / food for my tum; / one bite, two bites, three, / yum, yum, yum for me!"
+    },
+    {
+      "titulo": "Cantar: Wash your hands",
+      "minutos": 2,
+      "texto": "O gesto: faça o gesto de lavar, enxaguar e secar as mãos junto com ela, antes de cada refeição. É a rima da troca: acaba a brincadeira, começa a comida. Rima escrita pela coleção.",
+      "fala": "Wash, wash, wash your hands, / bubbles, bubbles, one, two, three; / rinse, rinse, rinse them clean, / dry, dry, dry, and now we eat!"
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Uma rima fixa para a troca (brincar → lavar as mãos → comer) avisa o fim de uma atividade e reduz o “não”: ela já sabe o que vem. Use sempre a mesma música, na mesma ordem. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

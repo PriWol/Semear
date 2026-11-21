@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u5-puddle-jump",
+  "titulo": "Puddle jump",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [51, 51]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Chão firme e sem escorregar; poça só se a água estiver limpa e você vir o fundo.",
+  "palavrasChave": ["inglês", "english", "sair e passear", "puddle jump"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: sair e passear.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "One, two, three… splash! / Jump, jump, jump! A big puddle. / Now slow. Nice and slow."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Mostre o pulo com os dois pés: “jump, jump, jump!”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Conte: “one, two, three… splash!”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Alternem rápido e devagar: “fast”, “slow”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Troquem: ela diz quando pular."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Is the puddle big or small? / Fast or slow? / Who jumps next?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Pule uma fita no chão. Pule de sapo: “frog jump”. Em casa, um tapete azul: “the puddle”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Pular junto, com comando de voz, trabalha equilíbrio e coordenação e as palavras que descrevem o movimento (fast, slow, big, small), e é Resposta Física Total. É uma das brincadeiras mais queridas por quem gosta de chuva e de bagunça. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "botas (ou pés descalços), uma poça rasa e limpa, ou um tapete azul fazendo de poça",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

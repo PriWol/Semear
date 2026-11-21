@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-o-que-tem-na-janela",
+  "titulo": "O que tem na janela?",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 1,
+    "paginas": [13, 13]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Janela alta ou sem proteção: segure-a firme no colo, longe do parapeito, e só abra se houver tela ou grade. Fique junto o tempo todo. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["janela", "olhar", "narrar", "céu", "conversar"],
+  "objetivo": "A criança olha pela janela com o adulto, que narra devagar o que se vê (sol, nuvem, carro) e espera ela apontar ou falar.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Leve-a no colo, até a janela, e fiquem olhando juntas."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Diga, bem devagar, o que você vê: “tem sol”, “vem uma nuvem”, “passou um carro”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Espere uns 5 segundos. Se ela apontar ou falar algo, repita o que ela quis dizer e acrescente uma palavra."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Termine com um tchau: “tchau, nuvem; tchau, sol”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Tem sol hoje. O sol está quentinho.” “Olha a nuvem! Branca e fofa.” “Você viu o passarinho? Ele voou!”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O que você está vendo? Cadê o sol? Está calor ou está frio?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Faça de manhã e de noite: o que mudou no céu? 2) Peça que ela “conte” para um bicho de pelúcia o que viu. 3) Acene e diga tchau para quem passar na rua."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Narrar o que se vê e ampliar o que a criança diz (“carro” → “o carro grande passou”) é uma das formas mais eficazes de estimular a fala. Não corrija os erros: repita certo, de passagem. Pode ser feito todo dia, no mesmo lugar, e vai ficando cada vez mais rico."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Uma janela, uma varanda ou a porta aberta",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 1",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

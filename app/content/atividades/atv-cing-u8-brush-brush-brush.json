@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u8-brush-brush-brush",
+  "titulo": "Brush, brush, brush",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 8,
+    "paginas": [79, 79]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Pasta só uma pontinha, do tamanho de um grão de arroz; fique junto e sem deixar que ela engula a espuma.",
+  "palavrasChave": ["inglês", "english", "hora de dormir", "brush, brush, brush"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: hora de dormir.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Time to brush our teeth. Open wide! / Brush, brush, brush. Front, back, top. / Spit, spit. All clean!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Mostre a escova: “toothbrush”, e uma pontinha de pasta: “a little bit”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Escovem juntas, no espelho: “brush, brush, brush the front, the back, the top”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "“Open wide”: ela abre a boca, e você escova a dela, depois ela escova a sua."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "“Spit, spit”: cuspir a espuma; “rinse”; “all clean!”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Where are your teeth? / Can you open wide? / Are your teeth clean?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Escove o dente do ursinho. Cantem a rima desta unidade. Ela escolhe a cor da escova."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Escovar os dentes é um ritual da hora de dormir, e as palavras (teeth, brush, open wide, spit) vêm com o gesto. Com 2 anos, a criança ainda precisa que o adulto escove, e brincar de trocar (ela escova o adulto) dá a ela o papel de quem faz. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "escova de dentes, uma pasta com pouco flúor (um grão de arroz) e um copo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

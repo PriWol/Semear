@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u6-rimas-para-as-ovelhas",
+  "titulo": "Rimas e cantigas: para as ovelhas",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [63, 63]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Ande de mãos dadas em piso firme e sem obstáculos; se usar um bicho de pelúcia como ovelhinha, que não tenha peças soltas nem olhos de botão.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "os bichos"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: os bichos).",
+  "passos": [
+    {
+      "titulo": "Cantar: Baa, baa, black sheep",
+      "minutos": 2,
+      "texto": "O gesto: faça o som da ovelha e mostre as sacolas com os dedos (“three bags full”). Pode perguntar e responder revezando as vozes. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Baa, baa, black sheep, / have you any wool? / Yes sir, yes sir, / three bags full."
+    },
+    {
+      "titulo": "Cantar: Mary had a little lamb",
+      "minutos": 2,
+      "texto": "O gesto: faça a ovelhinha com as mãos, e ande de mãos dadas no “everywhere that Mary went”. No lugar de Mary, ponha o nome dela, se quiser. Poema de Sarah Josepha Hale (1830), em domínio público.",
+      "fala": "Mary had a little lamb, / its fleece was white as snow; / and everywhere that Mary went / the lamb was sure to go."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Rimas de bichos, com sons e com perguntas e respostas, são o jeito mais fácil de ouvir o inglês: curtas, repetidas e com gesto. “Yes sir” é uma resposta que ela pode aprender a dizer. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

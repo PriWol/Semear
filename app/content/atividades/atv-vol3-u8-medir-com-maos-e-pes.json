@@ -1,0 +1,91 @@
+{
+  "id": "atv-vol3-u8-medir-com-maos-e-pes",
+  "titulo": "Medir com as mãos e com os pés: quantos palmos?",
+  "marcos": ["MA.MED.04"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 8,
+    "paginas": [57, 63]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [4, 7],
+  "duracaoMin": 15,
+  "preparoMin": 2,
+  "cuidados": "Medir deitado na cama ou no chão: fique junto e sem objetos pontudos. Sem peças pequenas. Se medirem a pessoa deitada, só com a permissão dela.",
+  "objetivo": "A criança **mede com uma unidade do corpo** (a mão e o pé), colocando uma depois da outra e contando quantas couberam.",
+  "passos": [
+    {
+      "titulo": "Medir com a mão",
+      "minutos": 6,
+      "texto": "Mostre como pôr uma mão depois da outra, sem deixar espaço e sem sobrepor, e conte cada uma. Meçam, por exemplo, a mesa da cozinha e a cama. Escreva o número que ela contou.",
+      "fala": "Quantas mãos tem a mesa?"
+    },
+    {
+      "titulo": "A mão do adulto",
+      "minutos": 4,
+      "texto": "Meça a mesma coisa com a sua mão: dá menos mãos! *“Por quê?”* Porque a mão do adulto é maior. É por isso que existem o metro e a régua: todo mundo medir igual."
+    },
+    {
+      "titulo": "Com os pés",
+      "minutos": 5,
+      "texto": "Pé ante pé (o calcanhar encostado na ponta do outro pé) da cama até a porta; depois com passos. A mesma distância dá mais pés do que passos."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Coloca a mão uma depois da outra, sem espaço",
+      "Conta as mãos (com ajuda) e diz o resultado"
+    ],
+    "emDesenvolvimento": [
+      "Deixa espaço entre as mãos ou as sobrepõe",
+      "Conta de memória, sem tocar cada mão"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Meça só com os pés, até a porta.",
+    "facil": "Meça o papai deitado em mãos da criança."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 8: Medir e ordenar)",
+      "deCasa": false
+    },
+    {
+      "item": "Nada além das mãos e dos pés",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis para anotar os números",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Mediu com mãos ou pés, sem espaços",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Contou as unidades",
+      "resposta": "_____ de 3 medidas"
+    }
+  ],
+  "perguntaFicha": "Quantas mãos e quantos pés ela contou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "medir",
+    "palmos",
+    "mãos e pés",
+    "medida",
+    "unidade não padronizada",
+    "comprimento"
+  ]
+}

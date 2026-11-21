@@ -1,0 +1,74 @@
+{
+  "id": "atv-vol8-u2",
+  "titulo": "Minha vez, sua vez: rolar a bola e esperar",
+  "marcos": ["EM.CON.02"],
+  "materialImpresso": {
+    "volume": 8,
+    "unidade": 2,
+    "paginas": [15, 19]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 4],
+  "duracaoMin": 8,
+  "preparoMin": 3,
+  "cuidados": "Nenhuma peça pequena que caiba na boca: use uma bola leve ou uma meia enrolada, sem peças soltas. Se usar o dominó, o loto ou as fichas recortadas, as peças são maiores que o punho da criança e, quando o jogo acaba, vão para uma caixa fora do alcance dela. Aos 2 anos é normal ficar brava quando a bola vai embora: dê nome ao que ela sente e continue, sem sermão.",
+  "palavrasChave": ["revezar", "esperar a vez", "bola", "dominó", "loto", "jogo"],
+  "objetivo": "A criança **diz “minha vez” e “sua vez” e espera a vez do outro** num jogo curto em que ninguém precisa perder.",
+  "passos": [
+    {
+      "titulo": "Rolar a bola",
+      "minutos": 3,
+      "texto": "Sentem no chão, de frente, a uns dois passos. Role a bola devagar até ela: “minha vez!”. Quando ela rolar de volta: “sua vez!”.",
+      "fala": "Minha vez! Lá vai a bola. Agora é a sua vez!"
+    },
+    {
+      "titulo": "Esperar um pouquinho",
+      "minutos": 3,
+      "texto": "Deixe uma pausa e espere. Se ela quiser ficar com a bola, diga “agora é a minha, e depois a sua”."
+    },
+    {
+      "titulo": "Chamar mais alguém (quando ela já souber)",
+      "minutos": 2,
+      "texto": "Chame outra pessoa para a roda quando ela já souber. Aos 3 anos, em roda de três pessoas; aos 4, cada um diz o nome de quem recebe a bola."
+    },
+    {
+      "titulo": "Dominó, loto e fichas da vez (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Siga as instruções “como brincar” do livro. Aos 2 anos, só 4 peças do dominó (você ajuda a achar a igual) ou uma cartela do loto com as 4 fichas dela."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Rola a bola de volta",
+      "Diz “minha vez” ou “sua vez” sozinha",
+      "Espera o outro sem tomar a peça",
+      "Pede para jogar de novo"
+    ],
+    "emDesenvolvimento": [
+      "Fica brava quando a bola vai embora e depois se recompõe (é normal)",
+      "Ainda precisa que o adulto diga de quem é a vez"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só rolar a bola, duas ou três vezes: esperar a vez já é um jogo inteiro.",
+    "facil": "Mais pessoas na roda, mais peças no dominó, ela como quem distribui as peças."
+  },
+  "materiais": [
+    { "item": "Tesouro de Marina, Volume 8", "deCasa": false },
+    { "item": "Uma bola leve ou uma meia enrolada", "deCasa": true },
+    { "item": "Um espaço no chão", "deCasa": true }
+  ],
+  "evidencias": [
+    { "texto": "Esperou a vez de rolar a bola", "resposta": "☐ não   ☐ às vezes   ☐ sim" },
+    { "texto": "Disse “minha vez” ou “sua vez”", "resposta": "☐ não   ☐ com ajuda   ☐ sozinha" }
+  ],
+  "perguntaFicha": "Ela esperou a vez? O que disse ou fez quando a bola foi embora?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

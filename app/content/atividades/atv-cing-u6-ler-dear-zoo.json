@@ -1,0 +1,81 @@
+{
+  "id": "atv-cing-u6-ler-dear-zoo",
+  "titulo": "Ler juntos: Dear Zoo",
+  "marcos": ["LI.VOC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [67, 67]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Livro com abas: fique junto e deixe que ela abra as abas com o dedo, sem puxar, para que não rasgue e leve pedaços à boca.",
+  "palavrasChave": ["inglês", "english", "livro", "dear zoo"],
+  "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "What's in the box? Let's look. / A lion! Roar! Can you roar? / It's too big. Send it back."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Sentem com o livro e deixe que ela abra as abas, uma a uma."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Antes de abrir, pergunte: “what's in the box?”. Deixe que ela adivinhe."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Abra, e nomeie o bicho: “an elephant! It's too big”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Diga a razão de cada devolução: “too big”, “too tall”, “too fierce” (com a mão ou a voz) e mostre."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What's in the box? / Is it big or small? / What does it say?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça o som e o movimento de cada bicho. Esconda os bichos de pelúcia na caixa e adivinhem. Leia até o terceiro bicho, se ela se cansar."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "É leitura dialogada (Whitehurst) com um livro de abas, em que cada página tem uma pergunta e uma surpresa, e a criança participa abrindo. O livro de Rod Campbell tem poucas palavras, repetidas, e adjetivos (big, tall, fierce) que se mostram com o corpo. O final, em que o bicho certo chega, é um final feliz. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta na figura", "Repete uma palavra ou pede o livro de novo"],
+    "emDesenvolvimento": ["Ainda só olha e escuta; ler uma página por dia já basta"]
+  },
+  "materiais": [
+    {
+      "item": "o livro *Dear Zoo* (Rod Campbell), de uma biblioteca, livraria ou sebo",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "A criança apontou, repetiu uma palavra ou pediu o livro de novo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

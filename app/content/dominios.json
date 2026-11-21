@@ -219,12 +219,55 @@
         "Estudo de pintores",
         "Estudo de compositores",
         "Caderno da natureza"
+      ],
+      "linhas": [
+        {
+          "id": "AR.DES",
+          "nome": "Desenho",
+          "vertentes": null
+        },
+        {
+          "id": "AR.PIN",
+          "nome": "Pintura",
+          "vertentes": null
+        },
+        {
+          "id": "AR.MOD",
+          "nome": "Modelagem",
+          "vertentes": null
+        },
+        {
+          "id": "AR.RIT",
+          "nome": "Ritmo e pulso",
+          "vertentes": null
+        },
+        {
+          "id": "AR.CAN",
+          "nome": "Canto",
+          "vertentes": null
+        },
+        {
+          "id": "AR.ESC",
+          "nome": "Escuta musical",
+          "vertentes": null
+        },
+        {
+          "id": "AR.APR",
+          "nome": "Apreciação de artistas e compositores",
+          "vertentes": null
+        },
+        {
+          "id": "AR.NAT",
+          "nome": "Caderno da natureza",
+          "vertentes": null
+        }
       ]
     },
     {
       "id": "NM",
       "nome": "Natureza, Mundo e Sociedade",
       "icone": "🌎",
+      "categorias": ["Observar a natureza", "Água, terra e plantas", "Tempo e rotina"],
       "linhas": [
         {
           "id": "NM.VIV",
@@ -258,6 +301,12 @@
       "id": "DI",
       "nome": "Desenvolvimento Integral",
       "icone": "🌱",
+      "categorias": [
+        "Vida prática",
+        "Sentidos e classificação",
+        "Jogos e brincadeiras",
+        "Movimento e coordenação"
+      ],
       "linhas": [
         {
           "id": "DI.SOC",

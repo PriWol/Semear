@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u8-pajamas-on",
+  "titulo": "Pajamas on",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 8,
+    "paginas": [80, 80]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Pijama próprio para dormir (justo ao corpo, sem cordões e sem enfeites soltos); vista-a sentada na cama ou no colo, sem deixá-la em pé em lugar alto.",
+  "palavrasChave": ["inglês", "english", "hora de dormir", "pajamas on"],
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: hora de dormir.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Five more minutes. Then pajamas. / Blue or yellow? You choose. / Arms in. Head through. All dressed!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Avise antes: “five more minutes, then pajamas”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Dê uma escolha: “the blue pajamas or the yellow ones?”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Diga cada peça ao vestir: “arms in”, “head through”, “legs in”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "No fim: “all dressed! Now we're cozy”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Which pajamas do you want? / Where are your arms? / Are you cozy?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Vista o ursinho primeiro. Uma peça por noite em inglês. Cantem “pajamas on”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Trocar de roupa para dormir é uma troca que pode gerar “não”. Um aviso antes, uma escolha entre duas coisas e uma sequência de palavras sempre iguais ajudam a criança a aceitar. Se ela recusar, diga “okay, then pajamas in two minutes”, e cumpra. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "o pijama e o ursinho",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

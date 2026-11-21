@@ -1,0 +1,125 @@
+{
+  "id": "atv-ma-onze-a-dezenove",
+  "titulo": "De onze a dezenove: dez e mais alguns",
+  "marcos": ["MA.SND.04"],
+  "revisa": ["MA.SEN.06"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [6, 7],
+  "duracaoMin": 21,
+  "preparoMin": 5,
+  "cuidados": "Se usar fichas ou tampinhas, escolha peças grandes e guarde tudo depois: irmãos menores podem engolir. Tesoura sem ponta para recortar os cartões, com o adulto por perto.",
+  "objetivo": "A criança **lê e escreve os números de 11 a 19** vendo cada um como *dez e mais alguns*.",
+  "passos": [
+    {
+      "titulo": "Montar com o quadro de dez",
+      "minutos": 6,
+      "texto": "Encha o quadro de dez com 10 fichas e junte 4 ao lado: *“dez e mais quatro: catorze”*. Escreva o 14 e mostre que o 1 está no lugar do dez."
+    },
+    {
+      "titulo": "Ler a lista em ordem",
+      "minutos": 4,
+      "texto": "Escreva de 10 a 20 em uma tira e leia junto, apontando. Deixe que ela leia sozinha e conte os números que erra."
+    },
+    {
+      "titulo": "Ditado curto",
+      "minutos": 6,
+      "texto": "Fale *“quinze”*, *“treze”*, *“dezenove”*. Ela monta com as fichas e depois escreve. Se inverter (41 por 14), confira com as fichas.",
+      "fala": "Quantos grupos de dez? E quantos soltos?"
+    },
+    {
+      "titulo": "Folha: quadros de dez",
+      "minutos": 5,
+      "texto": "Ela mostra o número com bolinhas e depois escreve."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "lê e escreve 8 de 10 números entre 10 e 20",
+      "diz “dez e mais…” ao ver o número",
+      "confere com o quadro de dez"
+    ],
+    "emDesenvolvimento": ["inverte (41 em vez de 14)", "trava no 12, 13 e 15 (nomes irregulares)"]
+  },
+  "ajustes": {
+    "dificil": "Use só de 11 a 15 e mantenha as fichas à vista a cada número.",
+    "facil": "Passe aos números de 20 a 29 e peça que ela descubra o padrão sozinha."
+  },
+  "materiais": [
+    {
+      "item": "10 a 19 fichas ou tampinhas grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Quadro de dez desenhado em papel",
+      "deCasa": true
+    },
+    {
+      "item": "Papel, lápis e uma tira para a lista de 10 a 20",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "As tábuas de Séguin (as de 11 a 19) apresentam cada número como 10 e mais alguns: a criança vê o 1 como dezena e monta o número com os algarismos.",
+    "Clássico": "Recitar a sequência até 20 e escrevê-la em ordem, em lições curtas, firma os nomes irregulares.",
+    "Charlotte Mason": "Poucos números por lição, sempre montados antes de escritos, e a criança conta como pensou."
+  },
+  "evidencias": [
+    {
+      "texto": "Leu os números de 11 a 19",
+      "resposta": "_____ de 10   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Escreveu o ditado",
+      "resposta": "_____ de 5   ☐ inverteu algum"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "quadro-dez",
+      "titulo": "Mostre o número com bolinhas",
+      "dica": "Encha o primeiro quadro, depois continue no segundo.",
+      "numeros": [12, 14, 17, 19]
+    },
+    {
+      "tipo": "cartas",
+      "titulo": "Cartas para parear número e quadro de dez",
+      "cartas": [
+        {
+          "numero": 13
+        },
+        {
+          "numero": 15
+        },
+        {
+          "numero": 18
+        },
+        {
+          "numero": 11
+        },
+        {
+          "quadroDez": 13
+        },
+        {
+          "quadroDez": 15
+        },
+        {
+          "quadroDez": 18
+        },
+        {
+          "quadroDez": 11
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["números de onze a dezenove", "dez e mais", "quadro de dez", "ler números"]
+}

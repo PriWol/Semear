@@ -1,0 +1,105 @@
+{
+  "id": "atv-ma-borboleta-simetrica",
+  "titulo": "Borboleta simétrica: dobrar e conferir",
+  "marcos": ["MA.GEO.08"],
+  "revisa": ["MA.GEO.04"],
+  "vertentes": ["Waldorf", "Charlotte Mason", "Montessori"],
+  "idade": [6, 8],
+  "duracaoMin": 28,
+  "preparoMin": 8,
+  "cuidados": "Use tinta guache atóxica e lavável, com avental ou roupa velha. Tesoura sem ponta com adulto por perto. Não deixe a criança colocar pincel ou tinta na boca e lave as mãos ao final.",
+  "objetivo": "A criança **reconhece simetria**: dobra uma figura ao meio, vê se as metades combinam e completa a metade que falta.",
+  "passos": [
+    {
+      "titulo": "A borboleta de tinta",
+      "minutos": 8,
+      "texto": "Dobre uma folha ao meio. Pingue tinta de um lado, feche e pressione. Abra: *“o que aconteceu? As duas asas ficaram iguais?”* Deixe que ela explique.",
+      "fala": "Como as duas asas ficaram?"
+    },
+    {
+      "titulo": "Dobra para conferir",
+      "minutos": 7,
+      "texto": "Recorte figuras (coração, folha, borboleta, uma letra) e peça que ela dobre ao meio: *“as metades combinam?”* As que combinam são simétricas. Teste uma que não combina (uma figura torta)."
+    },
+    {
+      "titulo": "Completar a metade",
+      "minutos": 8,
+      "texto": "Em papel quadriculado, desenhe metade de uma casa ou de uma borboleta e peça que ela complete a outra metade do outro lado da linha. Confira dobrando."
+    },
+    {
+      "titulo": "Folha: ache o outro lado",
+      "minutos": 5,
+      "texto": "Ela desenha a outra metade em cada figura da folha."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz se a figura é simétrica dobrando-a",
+      "completa a outra metade em uma malha",
+      "acha simetria em folhas, flores ou no rosto"
+    ],
+    "emDesenvolvimento": [
+      "completa a metade, mas em tamanho diferente",
+      "acha que toda figura bonita é simétrica"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use figuras de dobra simples (um coração) e só conferindo dobrando, sem desenhar.",
+    "facil": "Peça que ela desenhe um padrão simétrico em papel quadriculado e invente a própria figura."
+  },
+  "materiais": [
+    {
+      "item": "Papel branco",
+      "deCasa": true
+    },
+    {
+      "item": "Tinta guache e pincel",
+      "deCasa": true
+    },
+    {
+      "item": "Papel quadriculado",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": false
+    },
+    {
+      "item": "Um espelho pequeno de plástico (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Waldorf": "O desenho de formas, com figuras simétricas e espelhadas, é um trabalho central das primeiras séries na tradição Waldorf. Em casa, desenhar padrões simétricos com cuidado já é uma boa preparação.",
+    "Charlotte Mason": "Observe folhas, flores e asas de borboleta, e peça que a criança desenhe o que viu: o desenho de observação mostra a simetria na natureza.",
+    "Montessori": "Com um espelho de segurança, a criança vê a metade refletida e a compara com o desenho."
+  },
+  "evidencias": [
+    {
+      "texto": "Disse se a figura é simétrica",
+      "resposta": "_____ de 4   ☐ dobrando   ☐ só olhando"
+    },
+    {
+      "texto": "Completou a outra metade",
+      "resposta": "☐ sim   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Complete a outra metade",
+      "legenda": "O adulto desenha metade de uma borboleta, de uma casa e de uma árvore, deixando uma linha no meio. A criança desenha a outra metade e confere dobrando."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["simetria", "dobradura", "espelho", "borboleta", "metades"]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "atv-vol3-u6-padroes-de-som-e-de-corpo",
+  "titulo": "Padrões de som e de corpo: palma, perna, palma, perna",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 6,
+    "paginas": [43, 49]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 6],
+  "duracaoMin": 8,
+  "preparoMin": 1,
+  "cuidados": "Sentados, sem peças pequenas; bata de leve nas pernas. Fique junto da criança. Não há certo e errado: se ela inventar uma regra nova, vale.",
+  "objetivo": "A criança **continua um padrão de som e de movimento** (palma e perna), a base do ritmo na música.",
+  "passos": [
+    {
+      "titulo": "Palma, perna",
+      "minutos": 3,
+      "texto": "Faça o padrão **palma, perna, palma, perna…** algumas vezes e pare: ela continua."
+    },
+    {
+      "titulo": "Outros padrões",
+      "minutos": 3,
+      "texto": "Experimente *palma, palma, dlém* (batendo o sino ou a colher), *pé, pé, pulo* e *forte, fraco, forte, fraco…*. Se a regra for difícil, volte ao primeiro.",
+      "fala": "E depois, o que vem?"
+    },
+    {
+      "titulo": "Ela inventa",
+      "minutos": 2,
+      "texto": "Ela inventa um padrão e você continua. Se ela mudar a regra no meio, diga *“ah, mudou!”*: perceber a mudança também é entender o padrão."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Continua um padrão de palmas", "Percebe quando o padrão muda"],
+    "emDesenvolvimento": [
+      "Imita o último gesto, sem seguir a regra",
+      "Só acompanha quando o adulto faz junto"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só palma, perna, palma, perna.",
+    "facil": "Padrões de três (palma, palma, dlém) e padrões inventados por ela."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 6: Padrões)",
+      "deCasa": false
+    },
+    {
+      "item": "Um sino ou uma colher (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Qual padrão ela conseguiu continuar?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["padrões", "ritmo", "palma e perna", "repetição", "música", "corpo"]
+}

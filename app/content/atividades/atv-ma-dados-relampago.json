@@ -1,0 +1,116 @@
+{
+  "id": "atv-ma-dados-relampago",
+  "titulo": "Quantos pontinhos? Jogo-relâmpago",
+  "marcos": ["MA.SEN.04"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [4, 6],
+  "duracaoMin": 15,
+  "preparoMin": 3,
+  "cuidados": "Dados, fichas e dominós têm peças pequenas: com irmãos menores por perto, use dados grandes ou cartas de papel e guarde tudo no fim. Se a criança ainda leva objetos à boca, fique ao lado.",
+  "objetivo": "A criança **diz de relance quantos pontos tem (de 1 a 4)**, sem contar um por um.",
+  "passos": [
+    {
+      "titulo": "Relâmpago com a mão",
+      "minutos": 3,
+      "texto": "Mostre 2 dedos por um segundo e esconda. *“Quantos?”* Depois 1, 3 e 4. Se ela contar, tudo bem: mostre de novo, mais devagar."
+    },
+    {
+      "titulo": "Cartas de pontos",
+      "minutos": 6,
+      "texto": "Faça 8 cartas com 1 a 4 pontos (dois de cada). Vire uma por 2 segundos e pergunte quantos. Acertou? Ela fica com a carta. Se errar, mostre a carta e conte junto.",
+      "fala": "Quantos você viu?"
+    },
+    {
+      "titulo": "Dado de verdade",
+      "minutos": 4,
+      "texto": "Ela joga um dado e diz o número sem contar os pontos. Depois, jogue dois dados pequenos e some de olho só até 4."
+    },
+    {
+      "titulo": "Folha: sem contar",
+      "minutos": 2,
+      "texto": "Na folha, ela olha o grupo e circula o número sem apontar com o dedo."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz 1, 2, 3 e 4 de relance, em 4 de 5 cartas",
+      "reconhece o padrão do dado sem contar"
+    ],
+    "emDesenvolvimento": [
+      "conta um por um até 1, 2 ou 3 pontos",
+      "confunde 3 e 4 ao ver rapidamente"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Mostre as cartas por 4 segundos e comece só com 1, 2 e 3. Depois, peça que ela toque e conte para conferir.",
+    "facil": "Inclua cartas de 5 e 6 pontos em desenho de dado e pergunte *“de que jeito você viu: 3 e mais 2?”*."
+  },
+  "materiais": [
+    {
+      "item": "Papel e canetinha para fazer cartas de 1 a 4 pontos",
+      "deCasa": true
+    },
+    {
+      "item": "Um dado grande (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "A escada de contas coloridas mostra cada quantidade como um conjunto que se vê de uma vez; deixe a criança olhar sem contar.",
+    "Charlotte Mason": "Jogue em lições de poucos minutos, e pare enquanto ela ainda quer jogar de novo.",
+    "Clássico": "Mostre as cartas sempre na mesma ordem, como em um jogo de recitação, e depois embaralhe."
+  },
+  "evidencias": [
+    {
+      "texto": "Disse a quantidade de relance",
+      "resposta": "_____ de 5   ☐ sem contar   ☐ contando"
+    },
+    {
+      "texto": "Reconheceu o padrão do dado",
+      "resposta": "☐ 1 e 2   ☐ até 3   ☐ até 4"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "contar",
+      "titulo": "Olhe rápido e circule o número",
+      "itens": [
+        {
+          "emoji": "🔴",
+          "quantidade": 2,
+          "opcoes": [2, 3, 4]
+        },
+        {
+          "emoji": "🔵",
+          "quantidade": 3,
+          "opcoes": [2, 3, 4]
+        },
+        {
+          "emoji": "🟢",
+          "quantidade": 4,
+          "opcoes": [3, 4, 5]
+        },
+        {
+          "emoji": "🟡",
+          "quantidade": 1,
+          "opcoes": [1, 2, 3]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["subitizar", "dado", "dominó", "ver de relance", "pontinhos"]
+}

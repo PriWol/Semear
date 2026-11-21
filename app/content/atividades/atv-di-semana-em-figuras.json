@@ -1,0 +1,71 @@
+{
+  "id": "atv-di-semana-em-figuras",
+  "titulo": "A nossa semana tem rosto",
+  "marcos": ["DI.RIT.02"],
+  "vertentes": ["Waldorf"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use papel e lápis de cor sem material solto e pequeno. As atividades de cada dia devem ser seguras (sem fogo para a criança).",
+  "objetivo": "A criança monta a semana da família com uma figura por dia e diz o que faz em cada dia.",
+  "passos": [
+    {
+      "titulo": "Escolher",
+      "minutos": 4,
+      "texto": "Conversem: “O que gostamos de fazer toda semana?”. Escolha uma atividade para cada dia (pintar, assar pão, passear, visitar a vovó)."
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 8,
+      "texto": "Ela desenha uma figura para cada dia em um cartão e prende em fila, da segunda ao domingo.",
+      "fala": "E terça-feira, o que fazemos?"
+    },
+    {
+      "titulo": "Hoje",
+      "minutos": 3,
+      "texto": "Todo dia, pela manhã, ela aponta o cartão do dia e conta o que farão. Comece hoje."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz o que acontece em um dia", "Participa da atividade do dia"],
+    "emDesenvolvimento": ["Mistura os dias (comum)", "Quer mudar tudo (converse)"]
+  },
+  "ajustes": {
+    "dificil": "Faça só 3 dias, com as atividades mais marcantes.",
+    "facil": "Peça que ela escreva o nome de cada dia."
+  },
+  "materiais": [
+    {
+      "item": "7 cartões",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Fita ou prendedores",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse o que fazem em um dia",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Participou da atividade do dia",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual dia da semana ela mais espera?",
+  "palavrasChave": ["semana", "ritmo", "rotina", "waldorf"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "atv-nm-passeio-pela-casa",
+  "titulo": "Passeio pela casa: onde fica cada coisa?",
+  "marcos": ["NM.ESP.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Feche portas de áreas perigosas (cozinha em uso, escadas, varanda, produtos de limpeza) e fique junto o tempo todo. Escolha objetos seguros para carregar, sem cantos ou peças pequenas.",
+  "objetivo": "A criança conhece os cômodos, ouve seus nomes e leva objetos ao lugar certo.",
+  "passos": [
+    {
+      "titulo": "Passeio",
+      "minutos": 3,
+      "texto": "Visitem juntos os cômodos e diga: “Aqui é o banheiro, onde tomamos banho”. Deixe que ela toque e olhe.",
+      "fala": "Onde estamos?"
+    },
+    {
+      "titulo": "Entregar",
+      "minutos": 5,
+      "texto": "Dê um objeto de cada vez (toalha, ursinho, colher de plástico) e peça que leve ao cômodo certo. Vá junto no começo."
+    },
+    {
+      "titulo": "Voltar",
+      "minutos": 2,
+      "texto": "Ao final, “Onde levamos a toalha?”. Celebre os acertos e conte juntos."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia ou aponta cômodos", "Leva o objeto ao lugar"],
+    "emDesenvolvimento": ["Leva ao lugar errado (normal)", "Prefere ficar só em um cômodo"]
+  },
+  "ajustes": {
+    "dificil": "Use só dois cômodos.",
+    "facil": "Peça que ela descreva o caminho até o cômodo: “Vire à direita, depois…”."
+  },
+  "materiais": [
+    {
+      "item": "Objetos seguros da casa",
+      "deCasa": true
+    },
+    {
+      "item": "Os cômodos da casa",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou ou apontou o cômodo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Levou o objeto ao lugar",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais lugares ela já sabe nomear?",
+  "palavrasChave": ["casa", "cômodos", "lugares", "orientação"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

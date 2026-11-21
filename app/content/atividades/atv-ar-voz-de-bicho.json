@@ -1,0 +1,63 @@
+{
+  "id": "atv-ar-voz-de-bicho",
+  "titulo": "Voz de bicho: forte, fraca, grave e aguda",
+  "marcos": ["AR.CAN.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 12,
+  "preparoMin": 1,
+  "cuidados": "Sem gritar: o som deve ser alegre, e não forçado. Se a criança ficar rouca, faça uma pausa e beba água. Evite cantar com a garganta cansada ou doente. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança canta uma canção inteira e brinca com a voz, mudando a altura e a força.",
+  "passos": [
+    {
+      "titulo": "Aquecer",
+      "minutos": 3,
+      "texto": "Imitem bichos com a voz: o leão (grave), o passarinho (agudo), o ratinho (baixinho). Aponte com a mão para cima e para baixo.",
+      "fala": "Agora a voz do passarinho!"
+    },
+    {
+      "titulo": "Cantar",
+      "minutos": 6,
+      "texto": "Cantem “Peixe vivo” (ou outra canção conhecida) do início ao fim. Repita uma vez com voz de bicho."
+    },
+    {
+      "titulo": "Escolher",
+      "minutos": 3,
+      "texto": "Ela escolhe a voz da última vez que cantam e explica por quê."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta uma canção inteira", "Muda a voz"],
+    "emDesenvolvimento": ["Esquece partes (normal)", "Grita (convide a cantar baixinho)"]
+  },
+  "ajustes": {
+    "dificil": "Cantem só uma estrofe da canção.",
+    "facil": "Cantem com palavras diferentes ou mudando o final da canção."
+  },
+  "materiais": [
+    {
+      "item": "Uma canção conhecida",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cantou a canção inteira",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Mudou a voz",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual voz de bicho foi a favorita?",
+  "palavrasChave": ["voz", "agudo", "grave", "canto", "cantiga"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

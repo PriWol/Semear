@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u5-ler-rosie-s-walk",
+  "titulo": "Ler juntos: Rosie's Walk",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [57, 57]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "palavrasChave": ["inglês", "english", "livro", "rosie's walk"],
+  "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Rosie goes for a walk. Look, a hen. / Over the haystack. Under the tree. / Where is the hen now?"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Sentem juntos, com o livro aberto; leia o texto curto e deixe que ela olhe as figuras."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Aponte para onde Rosie anda: “across the yard”, “around the pond”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Mostre as posições com a mão: “over”, “under”, “through”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Saiam depois para uma caminhada e nomeiem os lugares: “over the grass”, “under the tree”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Where is the hen? / Is she over the haystack or under the tree? / What do you see in the picture?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça o percurso do livro com almofadas: “over the pillow”. Procure a raposa em cada página. Leia só até a metade."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "É leitura dialogada (Whitehurst): o texto do livro é curto e todo de posições (“across”, “over”, “under”), que se entendem com a mão e com o corpo; a graça está nas figuras, que o texto não conta. O passeio depois do livro leva as palavras de posição para a vida. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta na figura", "Repete uma palavra ou pede o livro de novo"],
+    "emDesenvolvimento": ["Ainda só olha e escuta; ler uma página por dia já basta"]
+  },
+  "materiais": [
+    {
+      "item": "o livro *Rosie's Walk* (Pat Hutchins), de uma biblioteca, livraria ou sebo",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "A criança apontou, repetiu uma palavra ou pediu o livro de novo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

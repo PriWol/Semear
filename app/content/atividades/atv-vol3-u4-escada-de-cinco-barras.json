@@ -1,0 +1,76 @@
+{
+  "id": "atv-vol3-u4-escada-de-cinco-barras",
+  "titulo": "A escada de cinco barras: ordenar do mais curto ao mais comprido",
+  "marcos": ["MA.MED.02"],
+  "materialImpresso": {
+    "volume": 3,
+    "unidade": 4,
+    "paginas": [29, 35]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [4, 6],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "A tesoura para recortar as barras é só do adulto; cole em papelão de bordas lisas. Sem peças pequenas.",
+  "objetivo": "A criança **ordena cinco barras** por comprimento, formando uma escada, e vê que cada barra tem uma unidade a mais.",
+  "passos": [
+    {
+      "titulo": "Montar com três",
+      "minutos": 5,
+      "texto": "As barras são inspiradas nas barras vermelhas de Montessori: cada uma tem o tamanho de uma, duas, três, quatro ou cinco barrinhas. Alinhe pela esquerda e comece com três bem diferentes (1, 3 e 5): *“qual é a mais comprida?”*."
+    },
+    {
+      "titulo": "As cinco",
+      "minutos": 6,
+      "texto": "Acrescente as outras duas e deixe que ela as ponha em ordem, formando uma escada. Se ficar difícil, volte para três.",
+      "fala": "Qual vem depois?"
+    },
+    {
+      "titulo": "Quantas barrinhas?",
+      "minutos": 4,
+      "texto": "*“Quantas barras pequenas cabem na maior?”* Ponham as barrinhas lado a lado e contem: cinco."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Ordena cinco barras com uma ou duas correções",
+      "Conta as barrinhas que cabem na maior"
+    ],
+    "emDesenvolvimento": [
+      "Ordena três, mas se perde com cinco",
+      "Ainda não alinha as barras pela esquerda"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só as barras 1, 3 e 5.",
+    "facil": "Depois da escada, peça que ela a monte da maior para a menor."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 3 (unidade 4: Grande, médio e pequeno)",
+      "deCasa": false
+    },
+    {
+      "item": "As cinco barras recortadas e coladas em papelão",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou as barras",
+      "resposta": "☐ 3   ☐ 4   ☐ as 5"
+    }
+  ],
+  "perguntaFicha": "Quantas barras ela ordenou sem ajuda?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["barras", "seriação", "comprimento", "escada", "montessori", "ordenar cinco"]
+}

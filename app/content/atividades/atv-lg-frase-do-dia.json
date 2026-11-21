@@ -1,0 +1,95 @@
+{
+  "id": "atv-lg-frase-do-dia",
+  "titulo": "A frase do dia: maiúscula, espaço e ponto",
+  "marcos": ["LG.ESC.06"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Atenção: sessão sentada de até 20 minutos, com pausas. Postura e iluminação boas. Sem corrigir tudo: escolha um ponto por dia (maiúscula, espaço ou ponto final).",
+  "objetivo": "A criança escreve uma frase completa, com letra maiúscula no começo, espaço entre as palavras e ponto no fim.",
+  "passos": [
+    {
+      "titulo": "A frase do dia",
+      "minutos": 4,
+      "texto": "Converse: *“O que aconteceu de bom hoje?”* e peça que ela diga uma frase pronta. Diga em voz alta e peça que repita antes de escrever, para guardar a frase.",
+      "fala": "Qual é a sua frase?"
+    },
+    {
+      "titulo": "Escrever com os três cuidados",
+      "minutos": 8,
+      "texto": "Mostre os três cuidados: **maiúscula** no começo, **um dedo** de espaço entre as palavras, **ponto** no fim. Ela escreve a frase e confere cada cuidado com o dedo."
+    },
+    {
+      "titulo": "Detetive do ponto",
+      "minutos": 5,
+      "texto": "Escreva (ou mostre) duas frases com erro: sem ponto, sem maiúscula. Ela acha e corrige com lápis de cor.",
+      "fala": "Onde está o erro?"
+    },
+    {
+      "titulo": "Ler de volta",
+      "minutos": 3,
+      "texto": "Ela lê a frase em voz alta apontando cada palavra. Guardem a frase num caderno de “frases do dia”."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escreve frase com maiúscula inicial e ponto final, com espaço entre as palavras",
+      "Acha o erro de pontuação em frases mostradas"
+    ],
+    "emDesenvolvimento": [
+      "Junta as palavras (“ogatodormiu”): peça que use um dedo de espaço",
+      "Esquece o ponto: reforce lendo em voz alta com pausa"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Escolha só um cuidado (por exemplo, o ponto final) e treine só ele durante a semana.",
+    "facil": "Peça duas frases ligadas (o gato dormiu. Ele sonhou com peixes.) e a leitura com a entonação certa."
+  },
+  "materiais": [
+    {
+      "item": "Caderno pautado ou folha",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Apresente maiúscula e ponto com cartões de gramática simples e deixe-a mexer neles.",
+    "Waldorf": "Só a partir dos 7 anos e meio: a frase nasce de uma história que a classe viveu, escrita à mão, com capricho e cor.",
+    "Clássico": "Faça cópia da frase de um bom autor e depois peça uma frase de autoria dela.",
+    "Religioso": "Se desejar, a frase do dia pode ser uma gratidão a Deus pelo que viveu.",
+    "Charlotte Mason": "Use uma frase tirada da narração de um livro lido e peça cópia curta e atenta."
+  },
+  "evidencias": [
+    {
+      "texto": "Frases com maiúscula e ponto",
+      "resposta": "_____ de 3"
+    },
+    {
+      "texto": "Espaço entre palavras",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que cuidado de escrita ela esqueceu mais?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "A minha frase do dia",
+      "legenda": "Escreva uma frase sobre o seu dia. Lembre: maiúscula, espaço e ponto."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["frase", "maiúscula", "ponto final", "espaço entre palavras", "pontuação"]
+}

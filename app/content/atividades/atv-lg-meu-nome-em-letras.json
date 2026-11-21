@@ -1,0 +1,106 @@
+{
+  "id": "atv-lg-meu-nome-em-letras",
+  "titulo": "Meu nome em letras de muitos jeitos",
+  "marcos": ["LG.ESC.02"],
+  "vertentes": ["Montessori", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [4, 6],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: massinha e letras móveis só com a criança sentada à mesa e sob supervisão; as letras devem ser grandes, sem peças pequenas que caibam na boca. Não a obrigue a escrever o nome “bonito”: letras trocadas de tamanho ou de lado fazem parte do caminho.",
+  "objetivo": "A criança escreve o primeiro nome com as letras na ordem certa, passando pelas letras móveis, pela massinha e pelo lápis.",
+  "passos": [
+    {
+      "titulo": "Conhecer o nome",
+      "minutos": 3,
+      "texto": "Escreva o nome dela em letra de imprensa num cartão grande. Conte as letras e diga cada uma com o som e o nome: *“M de Maria. Quantas letras tem seu nome?”*",
+      "fala": "Quantas letras tem o seu nome?"
+    },
+    {
+      "titulo": "Montar com letras móveis",
+      "minutos": 5,
+      "texto": "Dê as letras do nome embaralhadas (recortadas em papel ou de madeira grandes) e peça que monte por cima do cartão. Depois, tire o cartão e peça que monte sozinha. Ajude só se ela travar."
+    },
+    {
+      "titulo": "Fazer em massinha",
+      "minutos": 5,
+      "texto": "Ela modela as letras do nome em cobrinhas de massinha, olhando o cartão. Cada letra pronta, você diz: *“Esta é o A. Que som ela faz?”*"
+    },
+    {
+      "titulo": "Escrever no papel",
+      "minutos": 5,
+      "texto": "Com lápis grosso, ela escreve o nome no desenho dela (sem copiar o cartão se quiser tentar sozinha). Elogie o esforço, e não só o resultado."
+    },
+    {
+      "titulo": "Quem tem a mesma letra?",
+      "minutos": 2,
+      "texto": "Compare com o nome de alguém da família: *“Quem tem a mesma letra que você?”*"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escreve o primeiro nome com as letras na ordem, mesmo fora de tamanho",
+      "Aponta a primeira letra do nome e diz o som"
+    ],
+    "emDesenvolvimento": [
+      "Escreve só algumas letras do nome (comum aos 4 anos; ofereça o cartão)",
+      "Troca a ordem das letras ou espelha uma letra (esperado; mostre o modelo com calma)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Comece só pela primeira letra do nome e escreva o resto você, ao lado dela.",
+    "facil": "Peça que escreva também o nome de um amigo ou do irmão e compare as letras."
+  },
+  "materiais": [
+    {
+      "item": "Cartão com o nome escrito em letra de imprensa",
+      "deCasa": true
+    },
+    {
+      "item": "Letras do nome recortadas em papel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Massinha caseira ou comprada",
+      "deCasa": false
+    },
+    {
+      "item": "Lápis grosso e papel",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Ofereça letras móveis grandes e letras de lixa do nome, para ela sentir o formato com o dedo antes de escrever.",
+    "Clássico": "Diga o nome das letras em voz alta, em sequência, como em uma pequena recitação do próprio nome.",
+    "Religioso": "Se fizer sentido, mostre o significado do nome ou o santo ou o nome de uma pessoa querida.",
+    "Charlotte Mason": "Use a escrita do nome no dia a dia (desenhos, cartões) e mantenha as sessões curtas; copie letras só por alguns minutos."
+  },
+  "evidencias": [
+    {
+      "texto": "Escreveu o nome com letras na ordem",
+      "resposta": "☐ não   ☐ com modelo   ☐ sem modelo"
+    },
+    {
+      "texto": "Letras certas do nome",
+      "resposta": "_____ de _____"
+    }
+  ],
+  "perguntaFicha": "Quais letras ela já domina do próprio nome?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meu nome",
+      "legenda": "Escreva o seu nome e decore com desenhos."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["nome", "escrever o nome", "letras do nome", "massinha", "letras móveis"]
+}

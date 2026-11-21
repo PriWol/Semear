@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-diario-da-lua",
+  "titulo": "Diário da Lua",
+  "marcos": ["NM.TER.06"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Observe a Lua sempre com um adulto, em local seguro, sem trânsito e com luz. Não use binóculos ou telescópios para olhar o Sol.",
+  "objetivo": "A criança observa e desenha a Lua em várias noites e identifica como ela muda.",
+  "passos": [
+    {
+      "titulo": "Começo",
+      "minutos": 5,
+      "texto": "Ela desenha a Lua de hoje (se visível) em um quadrado, com a data. Combine de olhar sempre na mesma hora, quando possível."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 5,
+      "texto": "Perguntem: “Ela vai estar igual amanhã? Por quê?”. Anote o palpite."
+    },
+    {
+      "titulo": "Repetir",
+      "minutos": 5,
+      "texto": "Nas noites seguintes, ela completa os quadrados. Depois de uma semana, compare os desenhos e converse sobre o que mudou.",
+      "fala": "O que mudou?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Desenha a Lua em 3 ou mais noites", "Diz que a forma muda aos poucos"],
+    "emDesenvolvimento": ["Esquece de observar", "Noite nublada (peça que anote “nublado”)"]
+  },
+  "ajustes": {
+    "dificil": "Observe só 3 noites seguidas.",
+    "facil": "Descubra o nome de cada fase e escreva ao lado de cada desenho."
+  },
+  "materiais": [
+    {
+      "item": "Caderno ou folha com quadrados",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Um lugar de onde se veja o céu",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Observou em várias noites",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse que a Lua muda",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela descobriu sobre a Lua?",
+  "palavrasChave": ["lua", "fases da lua", "caderno", "registro", "céu"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

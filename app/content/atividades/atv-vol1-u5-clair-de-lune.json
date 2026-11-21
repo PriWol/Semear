@@ -1,0 +1,84 @@
+{
+  "id": "atv-vol1-u5-clair-de-lune",
+  "titulo": "Música para a noite: Clair de lune",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 5,
+    "paginas": [44, 51]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Luz baixa e volume baixo. A lanterna é só do adulto; ela “passeia a lua” sem apontar para os olhos de ninguém. Fique perto da criança.",
+  "objetivo": "A criança **escuta com calma** uma peça de piano e a acompanha com movimentos bem lentos, como uma música para a hora de dormir.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 2,
+      "texto": "Apague a luz e acenda uma lanterna. Deixe que ela faça a “lua” passear devagar pelo teto."
+    },
+    {
+      "titulo": "Escutar",
+      "minutos": 6,
+      "texto": "Toque *Clair de lune*, de Debussy (da *Suíte bergamasca*, 1905), cerca de cinco minutos de piano solo, muito suave. Se ela se mexer, que seja bem devagar, “para não acordar a lua”.",
+      "fala": "Vamos passear com a lua sem fazer barulho?"
+    },
+    {
+      "titulo": "Fechar",
+      "minutos": 2,
+      "texto": "Fale pouco. Esta é uma música para repetir antes de dormir, pela semana inteira."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Fica tranquila ouvindo por alguns minutos",
+      "Move a lua da lanterna devagar, no ritmo da música"
+    ],
+    "emDesenvolvimento": [
+      "Se agita e quer parar antes: pare sem cobrança",
+      "Ainda não acompanha com movimentos lentos"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Escute só o começo, com a luz baixa e no colo.",
+    "facil": "Peça que ela desenhe a lua depois de ouvir."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 5: O céu: sol, lua, nuvens e chuva)",
+      "deCasa": false
+    },
+    {
+      "item": "Lanterna",
+      "deCasa": true
+    },
+    {
+      "item": "Uma gravação de *Clair de lune* (Debussy)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Como ela ficou durante a música (calma, agitada, sonolenta)?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "debussy",
+    "clair de lune",
+    "luar",
+    "hora de dormir",
+    "música calma",
+    "lanterna"
+  ]
+}

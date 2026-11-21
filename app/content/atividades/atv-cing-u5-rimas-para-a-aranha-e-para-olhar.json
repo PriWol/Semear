@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u5-rimas-para-a-aranha-e-para-olhar",
+  "titulo": "Rimas e cantigas: para a aranha e para olhar",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [54, 54]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Os dedos que sobem pelo braço são só gesto e brincadeira, com toque leve; ao girar a cabeça e apontar, fique junto e em lugar firme e sem obstáculos.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "sair e passear"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: sair e passear).",
+  "passos": [
+    {
+      "titulo": "Cantar: Itsy Bitsy Spider",
+      "minutos": 2,
+      "texto": "O gesto: faça a aranha com os dedos subindo pelo braço, a chuva com os dedos caindo, o sol com as mãos abertas, e a aranha subindo de novo. É uma rima de insistir depois de cair. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "The itsy bitsy spider / climbed up the waterspout; / down came the rain / and washed the spider out; / out came the sun / and dried up all the rain, / and the itsy bitsy spider / climbed up the spout again."
+    },
+    {
+      "titulo": "Cantar: Look around",
+      "minutos": 2,
+      "texto": "O gesto: aponte para cima, para baixo, e gire a cabeça nos dois primeiros versos; nos últimos, espere e deixe que ela responda com um gesto. Cante ao chegar a qualquer lugar. Rima escrita pela coleção.",
+      "fala": "Look up, look down, / look all around; / what do you see? / what do you hear?"
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "A aranha é uma rima de insistir: ela cai, e sobe de novo, o que vale para quem se frustra fácil. A rima da coleção serve de ritual de chegada ao passeio: sempre as mesmas perguntas, e a criança aprende a olhar e a ouvir. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

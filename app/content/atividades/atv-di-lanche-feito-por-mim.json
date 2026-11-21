@@ -1,0 +1,75 @@
+{
+  "id": "atv-di-lanche-feito-por-mim",
+  "titulo": "Lanche feito por mim",
+  "marcos": ["DI.VPR.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "O adulto fica ao lado o tempo todo. Só facas de mesa ou de plástico duro, nunca facas afiadas, e só em alimentos macios. Sem fogo, sem forno, sem liquidificador. Lave as mãos antes, evite alimentos que a criança tenha alergia e corte uvas e alimentos redondos ao meio.",
+  "objetivo": "A criança prepara um lanche simples seguindo os passos, usa uma faca de mesa com cuidado e serve à família.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 3,
+      "texto": "Lavem as mãos e as frutas. Mostre o plano: “Hoje faremos um sanduíche de queijo e uma salada de banana”.",
+      "fala": "Qual é o primeiro passo?"
+    },
+    {
+      "titulo": "Fazer",
+      "minutos": 12,
+      "texto": "Ela corta a banana em rodelas e passa pasta no pão com uma faca de mesa. Mostre como segurar a faca e manter a outra mão com os dedos para trás."
+    },
+    {
+      "titulo": "Servir",
+      "minutos": 5,
+      "texto": "Ela monta os pratos, coloca na mesa e serve a família. Depois ajuda a lavar o que usou."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Prepara o lanche com ajuda", "Usa a faca de mesa com cuidado"],
+    "emDesenvolvimento": ["Corta de modo desigual (normal)", "Quer comer tudo na hora"]
+  },
+  "ajustes": {
+    "dificil": "Peça só que monte (sem cortar).",
+    "facil": "Faça uma receita com medidas, escrevendo a lista de ingredientes."
+  },
+  "materiais": [
+    {
+      "item": "Pão, queijo ou pasta",
+      "deCasa": true
+    },
+    {
+      "item": "Banana",
+      "deCasa": true
+    },
+    {
+      "item": "Faca de mesa",
+      "deCasa": true
+    },
+    {
+      "item": "Tábua e pratos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Preparou o lanche",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Usou a faca com cuidado",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como ela se saiu com a faca?",
+  "palavrasChave": ["cozinhar", "lanche", "receita", "vida prática", "faca"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

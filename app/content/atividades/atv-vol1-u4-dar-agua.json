@@ -1,0 +1,85 @@
+{
+  "id": "atv-vol1-u4-dar-agua",
+  "titulo": "Dar água: cuidar de quem tem sede",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Vida prática",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 4,
+    "paginas": [34, 43]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Use uma jarra pequena, leve e que não quebre, e deixe um pano por perto: o chão molhado escorrega. Com um animal, só um bicho calmo e manso, com você ao lado, e lavem as mãos depois.",
+  "palavrasChave": ["água", "jarra", "servir", "vida prática", "cuidar"],
+  "objetivo": "A criança enche uma jarra até a marca, serve a água devagar num potinho (para um bicho ou uma planta) e seca o que molhar.",
+  "passos": [
+    {
+      "titulo": "Preparar (adulto)",
+      "minutos": 0,
+      "texto": "Marque na jarra uma linha com fita até onde ela deve encher: é o controle do erro. Uma jarra pequena e leve, com bico, e um pano sempre por perto."
+    },
+    {
+      "titulo": "Encher e pôr o potinho",
+      "minutos": 3,
+      "texto": "Ela enche a jarra até a marca. Ponha o potinho no chão, firme."
+    },
+    {
+      "titulo": "Servir",
+      "minutos": 3,
+      "texto": "Servir devagar, sem derramar. Se molhou, secar com o pano: derramar faz parte, e o passo de secar está aqui de propósito.",
+      "fala": "O gato agradece!"
+    },
+    {
+      "titulo": "Também as plantas",
+      "minutos": 2,
+      "texto": "Também as plantas têm sede. Se não houver animal em casa, regue uma planta."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Enche a jarra até a marca",
+      "Serve sem derramar muito ou seca sozinha o que derramou"
+    ],
+    "emDesenvolvimento": [
+      "Derrama bastante (é normal: derramar faz parte)",
+      "Ainda precisa de ajuda para segurar a jarra"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só servir uma vez, com você segurando a jarra junto.",
+    "facil": "Ela regula quanto servir e seca tudo sozinha."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 4: Os animais da fazenda e do bosque)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma jarra pequena e leve com bico, um potinho, fita e um pano",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Enche a jarra até a marca",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Serve sem derramar muito ou seca sozinha o que derramou",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quanto ela derramou? Quem recebeu a água?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

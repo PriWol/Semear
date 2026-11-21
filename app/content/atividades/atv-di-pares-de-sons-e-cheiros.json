@@ -1,0 +1,71 @@
+{
+  "id": "atv-di-pares-de-sons-e-cheiros",
+  "titulo": "Caixinhas de sons e frascos de cheiro",
+  "marcos": ["DI.SEN.03"],
+  "vertentes": ["Montessori"],
+  "idade": [4, 7],
+  "duracaoMin": 15,
+  "preparoMin": 10,
+  "cuidados": "As caixinhas de som são fechadas e coladas pelo adulto: nada de grãos soltos ao alcance (risco de engasgo e de pôr no nariz ou no ouvido). Cheiros só de alimentos e temperos comuns, sem produtos de limpeza ou perfumes fortes. Atenção a alergias e a asma.",
+  "objetivo": "A criança acha pares de sons e de cheiros iguais, com atenção e silêncio.",
+  "passos": [
+    {
+      "titulo": "Sons",
+      "minutos": 7,
+      "texto": "Em 6 caixinhas fechadas (2 de arroz, 2 de feijão, 2 de sal, por exemplo), ela agita uma a uma e acha as duas que soam iguais.",
+      "fala": "Qual faz o mesmo som?"
+    },
+    {
+      "titulo": "Cheiros",
+      "minutos": 6,
+      "texto": "Com frascos fechados com um pano furado por cima, com canela, café, cravo: ela cheira os pares e acha os iguais. Diga os nomes."
+    },
+    {
+      "titulo": "Silêncio",
+      "minutos": 2,
+      "texto": "Fechem os olhos por um minuto e escutem os sons ao redor. Depois, contem quantos ouviram."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Acha 3 pares de sons iguais", "Acha 2 pares de cheiros iguais"],
+    "emDesenvolvimento": ["Confunde os sons parecidos", "Cheira só de passagem"]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 pares muito diferentes.",
+    "facil": "Aumente os pares e use sons mais parecidos (arroz e quirera)."
+  },
+  "materiais": [
+    {
+      "item": "6 caixinhas pequenas fechadas, com grãos diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Frascos de vidro grosso ou potes com temperos",
+      "deCasa": true
+    },
+    {
+      "item": "Pano para cobrir",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Achou os pares de sons",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Achou os pares de cheiros",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela ouviu no silêncio?",
+  "palavrasChave": ["sons", "cheiros", "pares", "silêncio", "audição"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

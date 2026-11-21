@@ -1,0 +1,77 @@
+{
+  "id": "atv-vol2-u6-rapido-devagar-musica",
+  "titulo": "Rápido e devagar na música: Tartarugas e Hemíones",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 6,
+    "paginas": [47, 53]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Espaço livre de quinas, com tapete firme para andar de quatro. Corra só em chão que não escorregue, com o adulto perto.",
+  "objetivo": "A criança **percebe o andamento** da música (rápido e lento) e o acompanha com o corpo.",
+  "passos": [
+    {
+      "titulo": "Hemíones: depressa",
+      "minutos": 3,
+      "texto": "Ouça *Hemíones* (de *O Carnaval dos Animais*, de Saint-Saëns): dois pianos sobem e descem a toda velocidade, como os burros selvagens da Ásia. Corram pela sala."
+    },
+    {
+      "titulo": "Tartarugas: devagar",
+      "minutos": 3,
+      "texto": "Ouça *Tartarugas*: Saint-Saëns pegou o cancã, uma dança rapidíssima, e mandou tocar muito, muito devagar. Andem de quatro, bem devagar. As duas peças juntas têm menos de três minutos."
+    },
+    {
+      "titulo": "Qual é?",
+      "minutos": 4,
+      "texto": "Toque uma das duas sem avisar e ela escolhe se é a lebre ou a tartaruga.",
+      "fala": "É a lebre ou a tartaruga?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Move-se no andamento da música", "Diz se a música é rápida ou lenta"],
+    "emDesenvolvimento": [
+      "Se move no mesmo ritmo nas duas músicas",
+      "Ainda não escolhe entre lebre e tartaruga"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só uma das músicas, a que ela preferir.",
+    "facil": "Peça que ela invente um terceiro bicho e como ele se move."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 6: Fábulas: a lebre, a tartaruga, o leão e o rato)",
+      "deCasa": false
+    },
+    {
+      "item": "Gravações de *Hemíones* e *Tartarugas* (Saint-Saëns)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Ela acertou entre a lebre e a tartaruga?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "saint-saëns",
+    "tartarugas",
+    "hemíones",
+    "andamento",
+    "rápido e lento",
+    "carnaval dos animais"
+  ]
+}

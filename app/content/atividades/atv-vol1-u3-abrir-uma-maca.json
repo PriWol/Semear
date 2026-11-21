@@ -1,0 +1,81 @@
+{
+  "id": "atv-vol1-u3-abrir-uma-maca",
+  "titulo": "Abrir uma maçã: o que tem por dentro?",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 3,
+    "paginas": [23, 33]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Quem corta a maçã é o adulto, com a faca longe do alcance dela e a criança sentada. Maçã crua em pedaços grandes pode engasgar antes dos 4 anos: se ela for provar, ofereça em fatias bem finas ou ralada. As sementes são só para olhar, não para comer. Lavem as mãos antes e depois.",
+  "palavrasChave": ["maçã", "semente", "estrela", "observação", "casca"],
+  "objetivo": "A criança observa uma maçã por fora e por dentro, nomeia casca, polpa, estrela e sementes, e descobre que uma maçã nova pode nascer de uma semente.",
+  "passos": [
+    {
+      "titulo": "Por fora",
+      "minutos": 3,
+      "texto": "Olhem a maçã inteira: de que cor é a **casca**? Lisa ou áspera?"
+    },
+    {
+      "titulo": "Abrir",
+      "minutos": 1,
+      "texto": "O adulto corta a maçã **atravessada**, pelo meio da barriga (no sentido do “equador”, e não de cima para baixo): assim aparecem os cinco compartimentos de sementes em forma de estrela."
+    },
+    {
+      "titulo": "Por dentro",
+      "minutos": 5,
+      "texto": "A **polpa** é clara: que cheiro tem? No meio, uma **estrela**! Quantas pontas? Vamos contar. As **sementes** ficam escondidas na estrela. Uma maçã nova pode nascer de uma semente. Nomeie as partes com as palavras certas (casca, polpa, semente, cabinho), mostrando cada uma."
+    },
+    {
+      "titulo": "Para depois (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Guarde algumas sementes num algodão úmido: em alguns dias, talvez germinem (o Volume 6 volta a isso). Depois, faça o mesmo com uma pera e compare: a pera também tem estrela?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia pelo menos duas partes da maçã", "Conta as pontas da estrela"],
+    "emDesenvolvimento": [
+      "Só quer provar a maçã (tudo bem: deixe e olhem juntas depois)",
+      "Ainda mistura os nomes das partes"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só a casca e a estrela: dois nomes bastam.",
+    "facil": "Comparem com uma pera e procurem a estrela nela também."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 3: O jardim e o pomar)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma maçã e uma faca (só o adulto usa)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeia pelo menos duas partes da maçã",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Conta as pontas da estrela",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais nomes ela usou? Contou as pontas da estrela?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "atv-ar-instrumentos-da-orquestra",
+  "titulo": "Caderno dos compositores e dos instrumentos",
+  "marcos": ["AR.ESC.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 10,
+  "cuidados": "Volume moderado, sem fones de ouvido. Em passeios a ensaios e concertos, respeite as regras do local e fique junto da criança.",
+  "objetivo": "A criança conhece instrumentos da orquestra e dois compositores, e faz o seu caderno com o que aprendeu.",
+  "passos": [
+    {
+      "titulo": "Instrumentos",
+      "minutos": 8,
+      "texto": "Mostre imagens de instrumentos das 4 famílias (violino, flauta, trompete, tambor) e uma gravação de cada. Ela tenta ouvir quem toca o quê.",
+      "fala": "Que instrumento é esse?"
+    },
+    {
+      "titulo": "Compositores",
+      "minutos": 8,
+      "texto": "Escolham 2 compositores (por exemplo, Tchaikovsky e Carlos Gomes, ambos de domínio público) e ouçam um trecho de cada. Ela conta o que sentiu."
+    },
+    {
+      "titulo": "Caderno",
+      "minutos": 4,
+      "texto": "Ela faz uma página com o instrumento ou compositor de que mais gostou (desenho, nome, uma frase). Registre a fonte das imagens."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Reconhece 3 instrumentos", "Nomeia 2 compositores e obras"],
+    "emDesenvolvimento": ["Confunde instrumentos parecidos", "Esquece nomes (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Escolha só 3 instrumentos e um compositor.",
+    "facil": "Compare a mesma música em dois instrumentos diferentes."
+  },
+  "materiais": [
+    {
+      "item": "Gravações de instrumentos e compositores",
+      "deCasa": true
+    },
+    {
+      "item": "Caixa de som",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Reconheceu instrumentos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou 2 compositores",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "De que compositor ou instrumento ela mais gostou?",
+  "palavrasChave": ["orquestra", "instrumentos", "compositores", "caderno", "escuta"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

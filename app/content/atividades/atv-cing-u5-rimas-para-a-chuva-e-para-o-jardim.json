@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u5-rimas-para-a-chuva-e-para-o-jardim",
+  "titulo": "Rimas e cantigas: para a chuva e para o jardim",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 5,
+    "paginas": [53, 53]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "As cócegas e o toque no braço só se ela gostar e param quando pedir; se cantarem olhando pela janela, segure-a junto à janela e nunca a deixe subir no parapeito.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "sair e passear"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: sair e passear).",
+  "passos": [
+    {
+      "titulo": "Cantar: Rain, rain, go away",
+      "minutos": 2,
+      "texto": "O gesto: mostre a chuva com os dedos caindo e abane para mandar embora; no terceiro verso, ponha o nome da criança. Cante olhando a janela. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Rain, rain, go away, / come again another day; / little [Marina] wants to play, / rain, rain, go away."
+    },
+    {
+      "titulo": "Cantar: Round and round the garden",
+      "minutos": 2,
+      "texto": "O gesto: faça um círculo na palma dela com o dedo; “one step, two step”: suba os dedos pelo braço; “tickle you”: cócegas debaixo do braço. É um jogo antigo de mão. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Round and round the garden / like a teddy bear; / one step, two step, / tickle you under there!"
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Rimas de chuva e de jardim ligam o inglês ao que ela vê da janela, e as de mão têm o toque, o que ajuda quem se distrai fácil. O “de novo!” depois das cócegas é o melhor pedido. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

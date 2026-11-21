@@ -1,0 +1,77 @@
+{
+  "id": "atv-vol1-u6-tema-cisne",
+  "titulo": "O tema do cisne: dançar devagar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 6,
+    "paginas": [52, 59]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 6],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Espaço livre de quinas e de objetos no chão; meias ou pés descalços só em chão que não escorregue. Os lenços são leves e nunca amarrados no pescoço. Fique perto da criança.",
+  "objetivo": "A criança **escuta uma melodia lenta** e a acompanha com movimentos longos e devagar, dizendo como a música lhe parece.",
+  "passos": [
+    {
+      "titulo": "Escutar",
+      "minutos": 3,
+      "texto": "Procure a “cena do lago” de *O Lago dos Cisnes*, de Tchaikovsky (o tema que abre o 2º ato, com a melodia do oboé sobre o tremor das cordas); são uns três minutos."
+    },
+    {
+      "titulo": "Dançar como cisnes",
+      "minutos": 3,
+      "texto": "Com um lenço leve em cada mão, dancem devagar: braços longos, passos na ponta dos pés."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 2,
+      "texto": "*“Essa música é alegre ou triste?”* Não há resposta errada: ela pode dizer “bonita”.",
+      "fala": "Essa música é alegre ou triste?"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Move-se devagar, acompanhando a música",
+      "Diz uma palavra sobre a música (triste, bonita…)"
+    ],
+    "emDesenvolvimento": [
+      "Se mexe depressa, sem acompanhar a música",
+      "Ainda não consegue dizer como a música lhe parece"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só escute no colo, balançando devagar.",
+    "facil": "Peça que ela invente como o cisne anda quando a música fica mais forte."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 6: Água, lago e patos)",
+      "deCasa": false
+    },
+    {
+      "item": "Dois lenços leves",
+      "deCasa": true
+    },
+    {
+      "item": "Uma gravação da cena do lago (*O Lago dos Cisnes*)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Como ela disse que era a música?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["tchaikovsky", "lago dos cisnes", "balé", "dança", "lenço", "escuta"]
+}

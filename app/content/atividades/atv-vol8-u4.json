@@ -1,0 +1,76 @@
+{
+  "id": "atv-vol8-u4",
+  "titulo": "Calma: respirar com o bichinho e balançar",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "materialImpresso": {
+    "volume": 8,
+    "unidade": 4,
+    "paginas": [25, 28]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 4],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Nenhuma peça pequena que caiba na boca: o bichinho fica só na barriga, nunca no rosto ou no pescoço, e é leve e sem peças soltas. Brinque num dia tranquilo, não como castigo e sem substituir o abraço. A garrafa da calma (opcional, outro dia) é feita só pelo adulto, com água morna testada no pulso, nunca quente, e tampa fechada com cola quente e fita, longe da criança; nunca a deixe sozinha com água, nem por um instante. Guarde a garrafa fora do alcance dela e troque-a se vazar ou rachar. Se as crises ficarem muito longas, frequentes ou intensas, converse com o pediatra (conferência por profissional ainda pendente).",
+  "palavrasChave": ["calma", "respirar", "garrafa da calma", "acalmar", "crise", "birra"],
+  "objetivo": "A criança **conhece, num dia tranquilo, um jeito de se acalmar** (respirar devagar vendo o bichinho subir e descer e balançar com uma rima lenta), para já conhecer o caminho nos dias difíceis.",
+  "passos": [
+    {
+      "titulo": "Respirar com o bichinho",
+      "minutos": 5,
+      "texto": "Deitem de barriga para cima e ponha o bichinho na barriga dela. Inspirem pelo nariz, devagar: o bichinho sobe. Expirem pela boca: ele desce. Faça junto, com o seu bichinho (ou a mão) na sua barriga. Repitam cinco vezes e terminem com um abraço no bichinho.",
+      "fala": "O ursinho sobe… e desce."
+    },
+    {
+      "titulo": "Balançar com a rima",
+      "minutos": 3,
+      "texto": "Sentadas, balancem de um lado para o outro, devagar, como um barquinho na água calma, com a rima *O barquinho de papel*; no último verso, abracem-se."
+    },
+    {
+      "titulo": "A garrafa da calma (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Só o adulto enche a garrafa, põe o glitter e a cola e fecha a tampa; ela escolhe a cor e olha. Depois, chacoalhem juntas e olhem o glitter descer, respirando devagar. Siga o passo a passo do livro."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Acompanha o bichinho com os olhos",
+      "Respira mais devagar",
+      "Pede a garrafa da calma",
+      "Balança com a rima"
+    ],
+    "emDesenvolvimento": [
+      "Ainda ri ou se agita durante a respiração (é normal nessa idade)",
+      "Ainda precisa do adulto calmo ao lado para se acalmar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só um abraço e a rima do barquinho, bem baixinho. A calma do adulto é o que ela “pega”.",
+    "facil": "Uma respiração contada de 1 a 5, e uma segunda garrafa de outra cor."
+  },
+  "materiais": [
+    { "item": "Tesouro de Marina, Volume 8", "deCasa": false },
+    { "item": "Um bichinho de pelúcia leve", "deCasa": true },
+    { "item": "Uma manta ou tapete macio", "deCasa": true },
+    {
+      "item": "Garrafa da calma, feita só pelo adulto (opcional): garrafa plástica transparente pequena, água morna, cola líquida transparente, glitter grosso, cola quente e fita",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    { "texto": "Respirou mais devagar com o bichinho", "resposta": "☐ não   ☐ às vezes   ☐ sim" },
+    {
+      "texto": "Aceitou o abraço ou a rima para se acalmar",
+      "resposta": "☐ ainda não tentei   ☐ não   ☐ com ajuda"
+    }
+  ],
+  "perguntaFicha": "Hoje o que ajudou a se acalmar foi…",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

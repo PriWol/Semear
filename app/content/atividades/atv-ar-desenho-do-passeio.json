@@ -1,0 +1,74 @@
+{
+  "id": "atv-ar-desenho-do-passeio",
+  "titulo": "O desenho do nosso passeio",
+  "marcos": ["AR.DES.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 20,
+  "preparoMin": 2,
+  "cuidados": "Use canetas e lápis atóxicos; evite pontas muito afiadas. Fique junto para a criança não se machucar. Cubra a mesa.",
+  "objetivo": "A criança desenha uma cena de um passeio ou de uma história, com chão, céu e detalhes, e a conta.",
+  "passos": [
+    {
+      "titulo": "Lembrar",
+      "minutos": 4,
+      "texto": "Conversem sobre um passeio ou uma história: “O que você viu? Quem estava lá?”. Ela fecha os olhos e “vê” a cena."
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 12,
+      "texto": "Ela desenha a cena em uma folha, com tempo. Ajude só a lembrar os detalhes (“tinha nuvens?”).",
+      "fala": "O que mais tinha lá?"
+    },
+    {
+      "titulo": "Contar",
+      "minutos": 4,
+      "texto": "Ela conta a história do desenho. Dê um título e anote a data. Guarde em uma pasta."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Desenha corpo completo", "Põe chão e céu"],
+    "emDesenvolvimento": [
+      "Mantém objetos soltos, sem chão (comum até os 6)",
+      "Perde-se nos detalhes"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Peça só uma cena simples, com uma pessoa.",
+    "facil": "Peça que desenhe 3 quadros em sequência, como uma história em quadrinhos."
+  },
+  "materiais": [
+    {
+      "item": "Folha de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor ou hidrocores",
+      "deCasa": true
+    },
+    {
+      "item": "Pasta para guardar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Desenhou chão e céu",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou a história do desenho",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual cena ela escolheu?",
+  "palavrasChave": ["desenho de cena", "passeio", "história", "memória"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

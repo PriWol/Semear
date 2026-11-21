@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u2-wash-wash-wash",
+  "titulo": "Wash, wash, wash",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [20, 20]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa.",
+  "palavrasChave": ["inglês", "english", "o banho", "wash, wash, wash"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: o banho.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Wash your hands. Rub, rub, rub. / Wash your feet. One foot, two feet. / Rinse, rinse, rinse. All clean!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Mostre cada parte do corpo, diga o nome e lave-a devagar com ela: “wash your hands”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Depois peça: “wash your feet”, “wash your tummy”. Ela mostra com a mão, ou lava."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Deixe que ela lave o boneco: “wash the baby”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "No fim, “rinse” (enxaguar) e “all clean”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Where are your hands? / Can you wash your tummy? / Is the baby clean?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Lave o ursinho no banho, com pouca água. “Wash, wash, wash” cantando a rima da unidade. Ela diz qual parte lavar agora."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "É a Resposta Física Total de James Asher: a criança mostra que entendeu com o corpo, e o banho já traz o objeto e o gesto de cada palavra. Comandos curtos, os mesmos todo dia. Deixar que ela lave o boneco dá a ela o papel de quem cuida, que muita criança dessa idade adora. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "o banho, ou um boneco e uma bacia (só com você junto)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

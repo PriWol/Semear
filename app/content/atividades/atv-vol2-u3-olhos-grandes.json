@@ -1,0 +1,87 @@
+{
+  "id": "atv-vol2-u3-olhos-grandes",
+  "titulo": "Chapeuzinho Vermelho: que olhos grandes você tem!",
+  "marcos": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 3,
+    "paginas": [22, 30]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [3, 6],
+  "duracaoMin": 12,
+  "preparoMin": 3,
+  "cuidados": "Medo pequeno: a versão da coleção é suave (a vovó se esconde no armário e ninguém é devorado). Se o Lobo assustar, deixe que ela seja o Lobo; se alguma parte incomodar, pule. Fique junto, no colo se ela quiser.",
+  "objetivo": "A criança **antecipa o diálogo repetido**, nomeia partes do rosto e responde a perguntas simples sobre a história.",
+  "passos": [
+    {
+      "titulo": "Contar",
+      "minutos": 5,
+      "texto": "Conte a versão suave: a mãe dá uma cesta com bolo e mel para a vovó doente e pede que ela vá pelo caminho; o Lobo sugere colher flores e chega primeiro; a vovó se esconde no armário. Antes de virar a página, pergunte: *“o que você acha que vai acontecer?”*. Qualquer palpite é bom."
+    },
+    {
+      "titulo": "O diálogo",
+      "minutos": 4,
+      "texto": "Diga as perguntas devagar, apontando nos olhos, nas orelhas e na boca dela: *“Que olhos grandes você tem! — São para te ver melhor”*, e o mesmo com as orelhas (*para te ouvir melhor*) e a boca. Na terceira leitura, ela faz a Chapeuzinho e você o Lobo; depois, troquem.",
+      "fala": "Que olhos grandes você tem!"
+    },
+    {
+      "titulo": "Lembrar",
+      "minutos": 3,
+      "texto": "*“O que a mãe pediu?”* · *“A Chapeuzinho saiu do caminho?”* · *“Quem ajudou?”* (o lenhador)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Completa “que olhos grandes você tem!”",
+      "Diz o que a mãe pediu (não sair do caminho)"
+    ],
+    "emDesenvolvimento": [
+      "Escuta, mas ainda não completa as falas",
+      "Fica com medo do Lobo: tudo bem, deixe que ela escolha o papel"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o diálogo dos “olhos grandes”, com o espelho.",
+    "facil": "Peça que ela invente outro conselho da mãe."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 3: Chapeuzinho Vermelho)",
+      "deCasa": false
+    },
+    {
+      "item": "Um lenço vermelho (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Completou o diálogo repetido",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Respondeu às perguntas",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "perguntaFicha": "Que parte da história ela quis repetir?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "chapeuzinho vermelho",
+    "lobo",
+    "diálogo",
+    "conto",
+    "partes do rosto",
+    "dramatizar"
+  ]
+}

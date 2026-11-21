@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-lama-e-terra-molhada",
+  "titulo": "Lama e terra molhada",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Água, terra e plantas",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [60, 60]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["lama", "terra", "água", "sensorial", "sujar"],
+  "objetivo": "A criança mistura terra e água com as mãos e a colher, faz “bolos” e “sopas” e depois lava as mãos e os pés.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Ponha terra na bacia e um pouco de água. Deixe que ela misture com as mãos e a colher."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Faça “bolos”, “sopas”, “montanhas”, ou só espalhe."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Se quiser, enfeite com folhas e pedras."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "No fim, lavem as mãos e os pés na mangueira ou no tanque, cantando “mão suja, mão limpa”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Que lama macia! Squash, squash.” “Fazemos um bolo de lama.” “Agora está na hora de lavar.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "É mole ou duro? O que você está fazendo? Quer pôr mais água?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Impressões de pedras e folhas na lama. 2) Uma “pista de carrinho” de lama. 3) Pintar o tronco com lama (e lavar)."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "A terra molhada oferece um dos melhores jogos sensoriais: macia, fria, moldável. É um espaço em que bagunça é permitida, o que alivia quem ouve muitos “não”. Combine antes o fim (“mais cinco minutos e vamos lavar”)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Terra, água, uma bacia e colheres; roupa que possa sujar; um canto do quintal",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

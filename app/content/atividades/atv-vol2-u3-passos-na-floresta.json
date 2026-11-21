@@ -1,0 +1,81 @@
+{
+  "id": "atv-vol2-u3-passos-na-floresta",
+  "titulo": "Os passos na floresta: Grieg, cada vez mais depressa",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 3,
+    "paginas": [22, 30]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Espaço livre de quinas e de tapetes soltos; meias antiderrapantes ou pés descalços em chão firme. A música termina forte: baixe o volume. É suspense de brincadeira; se ela se assustar, pare. Fique perto.",
+  "objetivo": "A criança **percebe uma música que acelera e cresce** e a acompanha com o corpo, do passo de pontinha à corrida, parando no último acorde.",
+  "passos": [
+    {
+      "titulo": "Combinar",
+      "minutos": 2,
+      "texto": "Explique: a música é de suspense; vocês vão andar na ponta dos pés. Deixe que ela decida se quer ser a Chapeuzinho ou o Lobo."
+    },
+    {
+      "titulo": "Escutar e andar",
+      "minutos": 6,
+      "texto": "Toque *Na gruta do Rei da Montanha*, de Grieg (de *Peer Gynt*, 1875; cerca de dois minutos e meio). Uma melodia curta repete-se muitas vezes, cada vez mais rápida e mais forte. Andem pela sala na ponta dos pés, cada vez mais depressa, até correr, e **parem juntos no último acorde**."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 2,
+      "texto": "*“A música ficou mais rápida ou mais devagar? Mais forte ou mais fraquinha?”*",
+      "fala": "A música ficou mais rápida?"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Percebe que a música fica mais rápida e forte",
+      "Para junto com o último acorde"
+    ],
+    "emDesenvolvimento": [
+      "Corre desde o começo, sem acompanhar o crescendo",
+      "Ainda não consegue parar junto com a música"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só escute e bata palmas cada vez mais depressa.",
+    "facil": "Peça que ela invente como o Lobo anda no começo e no fim da música."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 3: Chapeuzinho Vermelho)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma gravação de *Na gruta do Rei da Montanha* (Grieg)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela fez quando a música ficou mais rápida?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "grieg",
+    "peer gynt",
+    "rei da montanha",
+    "crescendo",
+    "andamento",
+    "lobo",
+    "corrida"
+  ]
+}

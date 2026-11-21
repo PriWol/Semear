@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u2-bath-time",
+  "titulo": "Bath time!",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [19, 19]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Teste a temperatura no pulso, esvazie a banheira ao terminar e nunca saia do banheiro, nem para atender o telefone.",
+  "palavrasChave": ["inglês", "english", "o banho", "bath time!"],
+  "objetivo": "Ouvir e usar inglês num momento fixo do dia (o banho), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "It's bath time! Let's go to the bathroom. / In you go. The water is warm. Splash! / Bubbles or no bubbles? You choose."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Prepare tudo antes de a chamar, e teste a água no seu pulso: morna, nunca quente."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Diga sempre as mesmas frases na mesma ordem: “bath time”, “take off your clothes”, “in you go”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Dê uma escolha: “bubbles or no bubbles?”, “duck or boat?”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Narre o que faz: “water, soap, bubbles”. Termine com “all done, let's get out”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Is the water warm? / Where is the duck? / Do you want the soap?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Um só objeto novo por dia: hoje, “soap”. Cante a rima da unidade ao encher a banheira. Deixe que ela escolha a ordem: “wash your face or your feet first?”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Um momento do dia que se repete, com as mesmas palavras, é o melhor lugar para o inglês de “língua por hora e lugar” (Grosjean): o banho já tem a sua sequência, e a criança entende as palavras pelos objetos. Escolher entre duas coisas ajuda na fase do “não”. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "a banheira ou a bacia, sabonete, toalha, copos de plástico e um brinquedo que boie",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

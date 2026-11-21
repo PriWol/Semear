@@ -1,0 +1,91 @@
+{
+  "id": "atv-ma-onde-esta-o-ursinho",
+  "titulo": "Onde está o ursinho? Em cima, embaixo, dentro",
+  "marcos": ["MA.GEO.01"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Esconda o ursinho só em lugares baixos e seguros: nada de armários altos, janelas ou escadas. Mantenha caixas e sacolas plásticas longe do rosto da criança e fique ao lado o tempo todo.",
+  "objetivo": "A criança **entende e usa palavras de posição** (em cima, embaixo, dentro, fora, ao lado, perto, longe), no brinquedo e com o corpo.",
+  "passos": [
+    {
+      "titulo": "Esconde-esconde do ursinho",
+      "minutos": 4,
+      "texto": "Mostre o ursinho e esconda-o *embaixo* da cadeira, enquanto a criança vê. Diga: *“o ursinho está embaixo da cadeira!”* e deixe que ela ache. Repita com *dentro da caixa* e *em cima da mesa*.",
+      "fala": "Onde está o ursinho?"
+    },
+    {
+      "titulo": "Ela esconde, você procura",
+      "minutos": 3,
+      "texto": "Troque: a criança esconde o ursinho e você dá palpites errados (*“em cima da mesa?”*) para ela corrigir com a palavra certa: *“não, dentro da caixa!”*."
+    },
+    {
+      "titulo": "Com o corpo",
+      "minutos": 3,
+      "texto": "Passe por baixo da corda ou da mesa e por cima de uma almofada. Diga em voz alta o que o corpo faz: *“por baixo”*, *“por cima”*."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "coloca o objeto em cima, embaixo, dentro ou ao lado, conforme o pedido",
+      "diz onde o ursinho está usando uma palavra de posição",
+      "pede para esconder de novo"
+    ],
+    "emDesenvolvimento": [
+      "usa só “aqui” e “ali” para apontar",
+      "confunde em cima e embaixo, dentro e fora"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use apenas “dentro” e “fora” com uma caixa grande e diga as palavras enquanto mostra.",
+    "facil": "Peça duas posições juntas: *“ponha o ursinho dentro da caixa e a caixa embaixo da mesa”*."
+  },
+  "materiais": [
+    {
+      "item": "Um ursinho ou boneco macio",
+      "deCasa": true
+    },
+    {
+      "item": "Uma caixa grande, aberta e sem tampa",
+      "deCasa": true
+    },
+    {
+      "item": "Almofadas, cadeira ou mesa",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "O ambiente preparado, em que cada coisa tem seu lugar, ensina o espaço pelo uso: a criança guarda o material *ao lado de* e *em cima da* prateleira.",
+    "Waldorf": "Jogos de roda e de movimento (passar por baixo, pelo meio, ao redor) ensinam a posição com o corpo, antes das palavras.",
+    "Charlotte Mason": "Faça em lições curtas, em situações reais da casa, com palavras bem ditas."
+  },
+  "evidencias": [
+    {
+      "texto": "Atendeu aos pedidos de posição",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse onde o ursinho estava",
+      "resposta": "☐ com a palavra   ☐ apontando"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Onde está o ursinho?",
+      "legenda": "O adulto desenha uma caixa e uma mesa. A criança desenha o ursinho dentro da caixa, embaixo da mesa e em cima da mesa, e diz a palavra de cada lugar."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["posição", "em cima", "embaixo", "dentro", "fora", "espaço"]
+}

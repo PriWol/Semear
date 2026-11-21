@@ -1,0 +1,85 @@
+{
+  "id": "atv-lg-ler-com-a-voz-certa",
+  "titulo": "Ler com a voz certa: ponto, vírgula, pergunta e exclamação",
+  "marcos": ["LG.LEI.05"],
+  "vertentes": ["Clássico", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: leia sentada, com a garganta hidratada e sem forçar a voz. O teatrinho é uma brincadeira: não faça pessoas “atuarem” diante de plateia contra a vontade.",
+  "objetivo": "A criança lê em voz alta fazendo pausa no ponto e na vírgula e mudando a entonação em perguntas e exclamações.",
+  "passos": [
+    {
+      "titulo": "Com e sem entonação",
+      "minutos": 4,
+      "texto": "Leia uma frase de dois jeitos: sem pausa e sem entonação, e depois com. Pergunte: *“Qual soa melhor? O que mudou?”*"
+    },
+    {
+      "titulo": "Marcar os sinais",
+      "minutos": 5,
+      "texto": "Em uma frase escrita, marque os sinais com cores: **ponto** (pausa longa), **vírgula** (pausa curta), **?** (voz sobe), **!** (voz forte). Ela lê obedecendo às cores.",
+      "fala": "Quem manda na voz: o ponto ou a vírgula?"
+    },
+    {
+      "titulo": "Teatrinho",
+      "minutos": 8,
+      "texto": "Leiam um diálogo curto (como *— Você viu o meu gato? — Não! — Que pena!*). Cada um lê uma fala, respeitando a pontuação. Invertam os papéis."
+    },
+    {
+      "titulo": "Adivinhe qual é qual",
+      "minutos": 3,
+      "texto": "Ela lê uma frase com e sem os sinais para você adivinhar qual é qual."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Faz pausa no ponto e na vírgula",
+      "Muda a entonação em perguntas e exclamações"
+    ],
+    "emDesenvolvimento": [
+      "Lê tudo no mesmo tom (volte ao “com e sem entonação”)",
+      "Para antes ou depois do sinal (releia com o dedo)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Treine só o ponto e a pergunta, com frases curtas e uma cor por sinal.",
+    "facil": "Peça que leia um trecho de livro com vozes diferentes para cada personagem."
+  },
+  "materiais": [
+    {
+      "item": "Frases escritas ou um diálogo curto",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Recitem um poema, respeitando a pausa dos versos e da pontuação, e depois leiam de novo.",
+    "Charlotte Mason": "Peça uma leitura em voz alta de um trecho de livro vivo, com cuidado e expressão."
+  },
+  "evidencias": [
+    {
+      "texto": "Pausou no ponto e na vírgula",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    },
+    {
+      "texto": "Mudou a voz na pergunta e na exclamação",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual sinal ela leu melhor?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["pontuação", "entonação", "leitura em voz alta", "teatro", "vírgula"]
+}

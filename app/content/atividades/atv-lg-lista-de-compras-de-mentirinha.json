@@ -1,0 +1,98 @@
+{
+  "id": "atv-lg-lista-de-compras-de-mentirinha",
+  "titulo": "Lista de compras de mentirinha",
+  "marcos": ["LG.ESC.01"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [4, 5],
+  "duracaoMin": 15,
+  "preparoMin": 3,
+  "cuidados": "Atenção: lápis e canetas de ponta grossa, fora da boca. Use papel sem bordas muito afiadas e supervisione. Não corrija a escrita dela: rabisco, letra solta e desenho são todos caminhos válidos nesta idade.",
+  "objetivo": "A criança percebe que escrever é diferente de desenhar e faz a sua própria tentativa (rabisco ou letras), dizendo o que “está escrito”.",
+  "passos": [
+    {
+      "titulo": "Por que fazer uma lista?",
+      "minutos": 3,
+      "texto": "Diga: *“Vamos ao mercadinho de faz de conta? Vamos anotar o que comprar para não esquecer.”* Mostre uma lista de verdade, com letras, e uma figura ao lado. Pergunte: *“Qual é a escrita e qual é o desenho?”*"
+    },
+    {
+      "titulo": "Ela escreve do jeito dela",
+      "minutos": 6,
+      "texto": "Entregue papel e lápis. Ela “escreve” cada item (pão, leite, banana) como conseguir: rabisco, bolinhas ou letras que conhece. Ao lado, você escreve a palavra em letra de forma, **sem tirar o trabalho dela**. Peça: *“Me lê o que você escreveu?”*",
+      "fala": "Me lê o que você escreveu?"
+    },
+    {
+      "titulo": "Desenhar e escrever são diferentes",
+      "minutos": 3,
+      "texto": "Ao lado de cada item, ela pode fazer um desenho. Pergunte: *“Este é o desenho do pão e este é o nome do pão, certo?”* Ouça a explicação dela."
+    },
+    {
+      "titulo": "Usar a lista",
+      "minutos": 3,
+      "texto": "Com a lista na mão, “comprem” os itens de faz de conta ou de verdade pela casa. Cada item que encontram, ela marca com um risco."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Faz marcas de escrita diferentes dos desenhos (rabiscos em linha ou letras)",
+      "Diz o que escreveu quando você pergunta"
+    ],
+    "emDesenvolvimento": [
+      "Faz só desenhos e não distingue da escrita (continue mostrando, sem cobrar)",
+      "Diz que “não sabe” e quer só copiar (aceite e valorize a tentativa própria)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Escrevam juntos um só item e deixe que ela faça a marca dele, mesmo que seja um risco.",
+    "facil": "Peça que ela escreva uma frase que quer mandar numa carta, com letras ou rabiscos, e leia para você."
+  },
+  "materiais": [
+    {
+      "item": "Papel (folha ou caderno)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis grosso ou giz de cera",
+      "deCasa": true
+    },
+    {
+      "item": "Embalagens ou figuras de mercado (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe papel e lápis sempre ao alcance, num cestinho, para ela escrever quando tiver vontade, e mostre que a mão escreve da esquerda para a direita.",
+    "Waldorf": "Mantenha como faz de conta e arte: a lista pode ser feita com giz de cera e imaginação, sem aula de letras formais.",
+    "Clássico": "Você pode ler a lista em voz alta, apontando cada item, como um pequeno recital de palavras.",
+    "Religioso": "Se desejar, use a lista para algo ligado à rotina da fé (lista de coisas para agradecer).",
+    "Charlotte Mason": "Parta de uma lista real da casa; a escrita nasce de uma necessidade, não de um exercício."
+  },
+  "evidencias": [
+    {
+      "texto": "Fez marcas de escrita diferentes do desenho",
+      "resposta": "☐ não   ☐ rabiscos   ☐ letras"
+    },
+    {
+      "texto": "Disse o que escreveu",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "O que ela “leu” da própria escrita?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Minha lista de compras",
+      "legenda": "Escreva do seu jeito o que vamos comprar e desenhe ao lado."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["escrever", "rabisco", "lista", "nome das coisas", "desenho ou escrita"]
+}

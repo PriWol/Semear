@@ -1,0 +1,71 @@
+{
+  "id": "atv-ar-eco-ritmico",
+  "titulo": "Jogo do eco com palmas",
+  "marcos": ["AR.RIT.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 14,
+  "preparoMin": 1,
+  "cuidados": "Palmas e batidas em volume moderado; sem fones de ouvido. Use instrumentos seguros e sem peças pequenas soltas. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "objetivo": "A criança repete padrões rítmicos e cria os seus para o adulto repetir.",
+  "passos": [
+    {
+      "titulo": "Palavras",
+      "minutos": 4,
+      "texto": "Bata o ritmo de palavras: “ba-na-na”, “ma-ra-cu-já”, o nome dela. Uma palma por sílaba. Ela repete.",
+      "fala": "Faz o eco!"
+    },
+    {
+      "titulo": "Eco",
+      "minutos": 6,
+      "texto": "Você bate padrões curtos (3 a 4 palmas) e ela repete. Aumente aos poucos. Mude para tambor ou colheres."
+    },
+    {
+      "titulo": "Inverter",
+      "minutos": 4,
+      "texto": "Ela inventa o padrão e você repete (errando de brincadeira às vezes). Escrevam o padrão com pontos e traços: ● ● ▬."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Repete um padrão de 3 a 4 palmas", "Cria um padrão"],
+    "emDesenvolvimento": ["Perde a sequência (normal)", "Acelera (tente ir mais devagar)"]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 palmas e palavras de 2 sílabas.",
+    "facil": "Use 6 ou mais batidas e dois instrumentos diferentes."
+  },
+  "materiais": [
+    {
+      "item": "Palmas",
+      "deCasa": true
+    },
+    {
+      "item": "Tambor ou colheres (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Folha e lápis para o registro",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Repetiu um padrão",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Criou um padrão",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual foi o padrão mais longo que ela repetiu?",
+  "palavrasChave": ["ritmo", "eco", "palmas", "sílabas", "padrão"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u7-who-is-who",
+  "titulo": "Who is who?",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [69, 69]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Fotos de papel resistentes e sem cantos pontudos; fique junto para que ela não leve a foto à boca e não rasgue em pedaços pequenos.",
+  "palavrasChave": ["inglês", "english", "a família e os sentimentos", "who is who?"],
+  "objetivo": "Nomear coisas em inglês com o objeto à vista e escolhendo entre duas opções (unidade: a família e os sentimentos).",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "This is Mama. This is Papa. / Where is Grandma? Show me. / Papa is cooking. Mama is reading."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Mostre uma foto e diga quem é: “Mama”, “Papa”, “Grandma”, “baby”, “brother”, “sister”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Aponte para a pessoa na foto e depois para a pessoa de verdade, se estiver por perto."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Pergunte: “where is Papa?”. Aceite o apontar."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Diga o que cada um faz: “Mama is reading”, “Papa is cooking”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Who is this? / Where is the baby? / What is Mama doing?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça um “livro da família” de fotos, com um nome em cada página. Brinque de esconder uma foto: “where is Papa?”. Diga “I love you” a cada foto."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Os nomes da família são as primeiras palavras de uma criança em qualquer língua, e as fotos dão o objeto a que a palavra se liga. Use os termos que fazem sentido na sua família: este caderno não presume quem mora na casa dela. Ela já conhece essas pessoas, o que faz da atividade um acerto garantido, e isso ajuda quem se frustra fácil. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "fotos da família (de papel, não no celular), ou desenhos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

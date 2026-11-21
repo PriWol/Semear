@@ -1,0 +1,74 @@
+{
+  "id": "atv-nm-calendario-do-tempo",
+  "titulo": "Calendário do tempo e das estações",
+  "marcos": ["NM.TER.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Em dias de sol, use chapéu e protetor, evite o Sol forte e não olhe para o Sol. Em saídas, fique perto de uma criança pequena e fora de áreas com raios.",
+  "objetivo": "A criança observa o céu, desenha o tempo de cada dia por uma semana ou mais e fala das mudanças ao longo do ano.",
+  "passos": [
+    {
+      "titulo": "Montar",
+      "minutos": 6,
+      "texto": "Em uma folha, desenhem uma tabela com os dias do mês. Combinem símbolos: sol, nuvem, chuva, vento."
+    },
+    {
+      "titulo": "Observar",
+      "minutos": 5,
+      "texto": "Hoje, olhem o céu e ela desenha o símbolo do dia. Nos próximos dias, repitam na mesma hora: leva só 2 minutos.",
+      "fala": "Como está o tempo hoje?"
+    },
+    {
+      "titulo": "Contar e falar",
+      "minutos": 6,
+      "texto": "Depois de uma semana, conte quantos dias de sol e de chuva. Pergunte: “E nas outras estações, como será?”. Procure fotos da família em outras épocas."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Registra o tempo por alguns dias", "Nomeia as estações do ano"],
+    "emDesenvolvimento": [
+      "Esquece de registrar (normal)",
+      "Confunde estações (muito comum no Brasil)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Registre só uma semana e depois pare.",
+    "facil": "Compare o seu calendário com o de uma cidade de outra região, procurando em um jornal ou site."
+  },
+  "materiais": [
+    {
+      "item": "Folha grande",
+      "deCasa": true
+    },
+    {
+      "item": "Canetas coloridas",
+      "deCasa": true
+    },
+    {
+      "item": "Calendário",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Registrou o tempo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou estações",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela percebeu nos dias?",
+  "palavrasChave": ["calendário", "estações", "clima", "registro"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

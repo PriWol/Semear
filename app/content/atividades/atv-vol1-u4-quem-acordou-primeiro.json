@@ -1,0 +1,74 @@
+{
+  "id": "atv-vol1-u4-quem-acordou-primeiro",
+  "titulo": "Quem acordou primeiro? Uma história com sons",
+  "marcos": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 4,
+    "paginas": [34, 43]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [2, 5],
+  "duracaoMin": 10,
+  "preparoMin": 2,
+  "cuidados": "Se usar bichinhos de brinquedo, escolha os sem peças soltas (olhos ou botões que caibam na boca). Se visitarem animais de verdade, a criança só toca com o adulto e com a permissão do dono, e lava as mãos depois.",
+  "objetivo": "A criança **acompanha uma história cumulativa**, imita o som de cada animal e antecipa quem vem depois.",
+  "passos": [
+    {
+      "titulo": "Primeira vez: você faz os sons",
+      "minutos": 4,
+      "texto": "Conte *Quem acordou primeiro?*: o galo canta (*cocoricó*), a vaca (*muuu*), o porco (*oinc, oinc*), os gansos saem em fila (*quén, quén*), o cavalo bate o casco (*iiirrrí*) e o gato, só no fim, responde baixinho (*miau*). Faça você todos os sons."
+    },
+    {
+      "titulo": "Segunda vez: ela faz os sons",
+      "minutos": 3,
+      "texto": "Faça só o começo de cada fala (*“O porco virou para o outro lado…”*) e espere que ela faça o som.",
+      "fala": "Quem vem depois?"
+    },
+    {
+      "titulo": "Pôr em ordem",
+      "minutos": 3,
+      "texto": "Com os cartões de animais (ou bichinhos) na mesa, ela põe em ordem quem acordou: galo, vaca, porco, gansos, cavalo e o gato por último. Termine: *“e na nossa casa, quem acorda primeiro?”*."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o som certo ao ver o animal", "Antecipa o próximo animal da história"],
+    "emDesenvolvimento": ["Só escuta, sem fazer os sons", "Ainda não lembra a ordem dos animais"]
+  },
+  "ajustes": {
+    "dificil": "Conte só a primeira parte e os sons, sem pôr em ordem.",
+    "facil": "Peça que ela invente um animal novo e o som dele."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 4: Os animais da fazenda e do bosque)",
+      "deCasa": false
+    },
+    {
+      "item": "Bichinhos de brinquedo (vaca, porco, cavalo, galo, gato) ou os cartões da unidade",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Fez o som do animal",
+      "resposta": "_____ de 6"
+    },
+    {
+      "texto": "Antecipou quem vinha depois",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Qual som ela mais gostou de fazer?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["fazenda", "animais", "sons dos bichos", "história", "sequência"]
+}

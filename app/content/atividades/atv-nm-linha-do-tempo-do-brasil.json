@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-linha-do-tempo-do-brasil",
+  "titulo": "Linha do tempo do Brasil: de onde viemos",
+  "marcos": ["NM.TEM.06"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [7, 8],
+  "duracaoMin": 23,
+  "preparoMin": 10,
+  "cuidados": "Escolha livros e imagens adequados à idade. Evite imagens muito violentas e fique junto para conversar. Prefira livros de autores variados e confira a indicação de idade de cada obra.",
+  "objetivo": "A criança conhece alguns marcos da história do Brasil de vários pontos de vista e os ordena em uma linha do tempo.",
+  "passos": [
+    {
+      "titulo": "Leitura",
+      "minutos": 8,
+      "texto": "Leia em voz alta um trecho curto de um livro adequado à idade, sobre os povos que já viviam aqui e a chegada de outros povos. Pare para conversar.",
+      "fala": "O que você entendeu?"
+    },
+    {
+      "titulo": "Linha do tempo",
+      "minutos": 10,
+      "texto": "Em uma tira de papel, marquem 4 ou 5 marcos (povos indígenas, chegada dos europeus, povos africanos, imigrantes, hoje) e ela ilustra cada um."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 5,
+      "texto": "Pergunte: “Como cada grupo viveu essa época?”. Ouça as emoções e as dúvidas dela sem pressa."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Ordena 4 ou mais marcos", "Fala de mais de um ponto de vista"],
+    "emDesenvolvimento": ["Mistura épocas", "Foca só em um grupo"]
+  },
+  "ajustes": {
+    "dificil": "Faça só 3 marcos e conte a história com bonecos ou desenhos.",
+    "facil": "Acrescente datas aproximadas e compare com a linha da própria família."
+  },
+  "materiais": [
+    {
+      "item": "Tira de papel comprida",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Livro ilustrado adequado à idade",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou os marcos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Falou de mais de um grupo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela perguntou?",
+  "palavrasChave": ["história do Brasil", "linha do tempo", "povos", "indígenas"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

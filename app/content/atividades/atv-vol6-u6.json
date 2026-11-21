@@ -1,0 +1,88 @@
+{
+  "id": "atv-vol6-u6",
+  "titulo": "Água e chuva: o caminho da água e o que flutua",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Caderno da natureza",
+  "materialImpresso": {
+    "volume": 6,
+    "unidade": 6,
+    "paginas": [48, 55]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 7],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Fique ao lado de qualquer água, até a da bacia. Nunca deixe a criança sozinha com água, nem por um instante. Não beba água de poça, rio ou chuva, e não deixe a criança entrar sozinha em água corrente. Em dia de trovão, fique dentro de casa.",
+  "palavrasChave": ["água", "chuva", "flutua", "afunda", "experimento"],
+  "objetivo": "A criança **conta o caminho da água** (sol, nuvem, chuva, rio) e diz o que flutua e o que afunda, depois de testar.",
+  "passos": [
+    {
+      "titulo": "Olhar a chuva e testar na bacia",
+      "minutos": 8,
+      "texto": "Olhar a chuva (ou ouvir a água) e dizer o que vê e ouve. Fazer a bacia: o que flutua? o que afunda? Dizer por que acha que cada coisa fica ou afunda."
+    },
+    {
+      "titulo": "Cartões do caminho da água e medir a chuva",
+      "minutos": 9,
+      "texto": "Ordenar os quatro cartões do caminho da água. Pôr um pote ao ar livre para medir a chuva. Olhar a poça secando ao sol."
+    },
+    {
+      "titulo": "Contar e desenhar",
+      "minutos": 8,
+      "texto": "Contar o caminho da água com as palavras dela. Desenhar a chuva, a nuvem ou o rio. Pensar em um jeito de economizar água em casa."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz o caminho da água na ordem certa (com ajuda dos cartões).",
+      "Faz uma previsão antes de testar (“acho que a pedra afunda”).",
+      "Anota o resultado do teste, com desenho ou palavra.",
+      "Percebe que a poça some e pergunta para onde foi."
+    ],
+    "emDesenvolvimento": [
+      "Ainda não faz previsão antes de testar",
+      "Ainda precisa dos cartões para contar o caminho da água"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar uma só gota na janela, escorrendo, e dizer para onde ela vai.",
+    "facil": "Se o interesse crescer: medir a chuva do mês, anotando quanta água o pote juntou em cada dia de chuva."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 6",
+      "deCasa": false
+    },
+    {
+      "item": "Uma bacia, copos e uma jarra",
+      "deCasa": true
+    },
+    {
+      "item": "Objetos para testar (pedra, pena, folha, rolha, colher, madeira)",
+      "deCasa": true
+    },
+    {
+      "item": "Um pote transparente",
+      "deCasa": true
+    },
+    {
+      "item": "Régua ou fita",
+      "deCasa": true
+    },
+    {
+      "item": "O caderno de natureza",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ela achou que ia afundar e o que aconteceu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,872 @@
+{
+  "marcos": [
+    {
+      "id": "AR.DES.01",
+      "linha": "AR.DES",
+      "ordem": 1,
+      "titulo": "Rabisca com prazer e dá nome ao que fez",
+      "descricaoPais": "Faz riscos e voltas no papel com giz ou lápis grosso e diz “é o cachorro” ou “é a mamãe”.",
+      "evidencias": [
+        "Rabisca com giz ou lápis grosso por alguns minutos",
+        "Diz com uma palavra o que fez"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O rabisco é o **começo do desenho e da escrita**: a criança descobre que o seu gesto deixa uma marca. O prazer de rabiscar sem “certo e errado” é o que sustenta, depois, o gosto de desenhar.",
+        "comoParticipar": "Ofereça papel grande, giz de cera grosso e tempo. Sente-se ao lado, desenhe também e não pergunte “o que é isso?” o tempo todo; comente o que vê: “Você fez linhas rápidas e redondas!”. Guarde alguns rabiscos datados para ver a evolução.",
+        "sinaisDeAtencao": "O desenho varia muito de criança para criança. Se aos 3 anos ela evita completamente segurar giz ou lápis, ou usa só uma das mãos sempre e com muita dificuldade, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "rcnei-conhecimento-de-mundo", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "Ofereça poucos materiais, de boa qualidade, em uma bandeja baixa que ela alcance e escolha sozinha.",
+            "referencias": ["montessori-mente-absorvente"]
+          },
+          "Waldorf": {
+            "comoParticipar": "Os blocos de cera de abelha e os giz grandes, em cores puras, são típicos dessa fase, sem modelos para copiar.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.DES.02",
+      "linha": "AR.DES",
+      "ordem": 2,
+      "titulo": "Desenha formas fechadas e personagens simples",
+      "descricaoPais": "Faz círculos fechados, pessoas “cabeçudas” com olhos, boca e braços saindo da cabeça, e diz quem são.",
+      "evidencias": [
+        "Desenha uma forma fechada (círculo)",
+        "Faz uma figura humana simples e diz quem é"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.DES.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Quando a criança fecha um círculo e vê nele uma pessoa, ela passa do gesto ao **símbolo**: o desenho passa a representar algo. É um grande salto do pensamento, que prepara a escrita.",
+        "comoParticipar": "Converse sobre os desenhos: “Quem é? Onde está? O que está fazendo?”. Ofereça canetas hidrográficas e giz de cera. Não corrija o desenho (“a cabeça não é assim”) e evite copiar para ela. Mostre a figura humana e o rosto no espelho.",
+        "sinaisDeAtencao": "O desenho de pessoas aparece em ritmos diferentes. Se aos 5 anos ela não faz nenhuma figura reconhecível ou evita desenhar, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "bncc", "barbosa-imagem-ensino-arte"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Evita-se pedir à criança pequena que desenhe “a coisa certa”: o desenho nasce do brincar e da imaginação, sem modelo.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.DES.03",
+      "linha": "AR.DES",
+      "ordem": 3,
+      "titulo": "Desenha figuras com corpo e cenas com chão e céu",
+      "descricaoPais": "Desenha uma pessoa com cabeça, tronco, braços e pernas e põe o chão e o céu na cena.",
+      "evidencias": [
+        "Desenha pessoas com cabeça, tronco, braços e pernas",
+        "Desenha uma cena com chão e céu"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.DES.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Aos 5 anos o desenho **conta histórias**: aparecem a linha do chão, o céu, o sol e os detalhes. É uma linguagem da criança para dizer o que viu e sentiu.",
+        "comoParticipar": "Peça que desenhe uma cena de um passeio ou de uma história: “Onde foi? Quem estava lá?”. Deixe que invente. Elogie os detalhes e a escolha das cores, e evite perguntar “o que é?”. Dê tempo para terminar.",
+        "sinaisDeAtencao": "A forma de desenhar é muito individual. Se aos 6 anos ela não organiza nenhuma cena ou evita desenhar, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "bncc", "barbosa-imagem-ensino-arte"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason propõe que a criança desenhe de memória e de observação o que viu em suas saídas, em vez de copiar modelos prontos.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.DES.04",
+      "linha": "AR.DES",
+      "ordem": 4,
+      "titulo": "Desenha a partir da observação, com detalhes",
+      "descricaoPais": "Desenha uma folha, uma fruta ou um brinquedo olhando para o objeto, com forma e detalhes.",
+      "evidencias": [
+        "Desenha um objeto observando-o diretamente",
+        "Inclui 3 ou mais detalhes que viu"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.DES.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Desenhar o que se vê, e não só o que se lembra, ensina a **olhar com atenção**. Essa habilidade serve ao desenho, à ciência (caderno da natureza) e a qualquer tarefa que peça cuidado e paciência.",
+        "comoParticipar": "Coloque um objeto simples à frente (uma pera, uma flor, uma concha) e diga: “Olhe bem e desenhe o que vê, não o que acha que é”. Faça junto. Valorize as observações (“você notou o cabinho!”). Não use borracha o tempo todo: a linha viva importa.",
+        "sinaisDeAtencao": "Alguns se frustram por não achar o desenho parecido com o objeto. Acolha: o objetivo é olhar, não ficar igual. Se a frustração for muito intensa e frequente, converse com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "lowenfeld-capacidade-criadora",
+          "barbosa-imagem-ensino-arte",
+          "mason-home-education"
+        ],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Desenhos de observação de objetos da natureza, no caderno da natureza, são um dos principais exercícios de Mason.",
+            "referencias": ["mason-home-education"]
+          },
+          "Clássico": {
+            "comoParticipar": "Observar com precisão e descrever por escrito é um exercício de “gramática” aplicado à arte.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.PIN.01",
+      "linha": "AR.PIN",
+      "ordem": 1,
+      "titulo": "Explora a tinta com as mãos, esponjas e pincéis grossos",
+      "descricaoPais": "Passa a tinta no papel com os dedos, a esponja ou o pincel grande, e gosta de ver as cores e as marcas.",
+      "evidencias": [
+        "Pinta com as mãos ou com um pincel grosso",
+        "Diz o nome de uma cor ou mostra o que fez"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Sentir a tinta é uma **experiência dos sentidos** e uma descoberta da cor: a criança aprende que pode transformar o papel com o gesto. Não importa o resultado, o que importa é o prazer.",
+        "comoParticipar": "Ofereça tinta guache lavável e atóxica (ou tinta feita em casa com farinha e corante) em potinhos estáveis, papel grande e roupas que possam sujar. Dê 2 ou 3 cores. Sente-se ao lado e comente: “Você usou o azul no meio!”.",
+        "sinaisDeAtencao": "Algumas crianças evitam sujar as mãos, e isso é válido. Não force. Se a aversão a texturas for muito intensa e frequente (alimentos, roupas, banhos), vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "rcnei-conhecimento-de-mundo", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Aquarelas muito diluídas, em poucas cores puras, para pintar “molhado sobre molhado”, são típicas; para as menores, comece só com uma cor.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.PIN.02",
+      "linha": "AR.PIN",
+      "ordem": 2,
+      "titulo": "Mistura duas cores e diz o que descobriu",
+      "descricaoPais": "Mistura azul e amarelo e “descobre” o verde; diz “fiz laranja!”.",
+      "evidencias": [
+        "Mistura duas cores e nomeia o resultado",
+        "Prevê o que acontece com duas cores"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.PIN.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Misturar cores é uma **descoberta científica e artística**: a criança prevê, testa e vê o resultado, e passa a escolher as cores com intenção.",
+        "comoParticipar": "Ofereça só as três cores primárias (azul, amarelo e vermelho) e água, e deixe que ela misture à vontade. Pergunte: “O que será que vai dar?” antes de misturar. Faça cartões de “cores que descobrimos”, com nomes.",
+        "sinaisDeAtencao": "Algumas crianças demoram a nomear as cores ou confundem algumas. Nessa idade isso é comum. Se aos 6 anos ela troca muitas cores de forma constante, vale conversar com o pediatra para uma avaliação da visão das cores. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "bncc", "rcnei-conhecimento-de-mundo"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Pintar só com as três cores primárias e descobrir as outras misturando é um exercício clássico.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.PIN.03",
+      "linha": "AR.PIN",
+      "ordem": 3,
+      "titulo": "Pinta com pincel e controla a tinta, formas e cenas",
+      "descricaoPais": "Pinta uma casa, uma flor ou uma paisagem com pincel e controle, e usa a aquarela molhada.",
+      "evidencias": [
+        "Pinta formas reconhecíveis com pincel",
+        "Usa a água com a aquarela para clarear ou espalhar a cor"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.PIN.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Com o pincel, a criança aprende a **controlar o gesto** e a perceber o efeito da água na cor. A pintura vira uma linguagem para contar histórias e sentir.",
+        "comoParticipar": "Ofereça aquarela de qualidade escolar, papel mais grosso e pincéis de vários tamanhos. Mostre o “molhado sobre molhado”, passando água no papel antes. Deixe pintar de livre escolha e converse sobre o que vê.",
+        "sinaisDeAtencao": "A paciência para pintar varia. Se aos 7 anos ela evita pintura por muita frustração, converse com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "bncc", "barbosa-imagem-ensino-arte"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "A aquarela úmida (“molhado sobre molhado”), com poucas cores e sem formas fixas, é uma prática central.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.PIN.04",
+      "linha": "AR.PIN",
+      "ordem": 4,
+      "titulo": "Pinta observando frutas ou paisagens e escolhe as cores com intenção",
+      "descricaoPais": "Pinta uma fruta ou uma paisagem olhando, mistura as cores até chegar perto do que vê e explica as suas escolhas.",
+      "evidencias": ["Pinta um objeto ou paisagem observando-os", "Explica a escolha das cores"],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.PIN.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Pintar o que se vê une **observação, mistura de cores e controle**. A criança aprende que as cores do mundo são mais variadas do que parece e escolhe com intenção.",
+        "comoParticipar": "Monte uma natureza-morta simples (frutas sobre um pano) ou vá a uma janela com paisagem. Peça que olhe e misture até chegar perto do que vê. Pergunte: “Por que escolheu essa cor?”. Mostre pinturas de artistas que observaram o mesmo tema.",
+        "sinaisDeAtencao": "Algumas crianças se frustram porque “não ficou igual”. Mostre que cada pintura é uma interpretação. Se a frustração for muito intensa, converse com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "barbosa-imagem-ensino-arte", "bncc"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason liga a pintura à observação direta da natureza, no caderno da natureza e em saídas, com aquarela.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.MOD.01",
+      "linha": "AR.MOD",
+      "ordem": 1,
+      "titulo": "Apalpa, aperta e rola a massinha com as mãos",
+      "descricaoPais": "Aperta, belisca, bate e faz bolinhas e cobrinhas de massinha, com prazer.",
+      "evidencias": [
+        "Explora a massinha com as mãos",
+        "Faz uma bolinha ou uma cobrinha, com ajuda"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Mexer na massinha **fortalece as mãos** e é um brincar sensorial: a criança descobre o peso, a maciez e a transformação do material. É um ótimo caminho para a motricidade fina e para a imaginação.",
+        "comoParticipar": "Ofereça massinha macia (comprada ou caseira) em uma bandeja, com poucas ferramentas (rolinho, forma de biscoito). Brinque junto: “Vamos fazer uma cobrinha!”. Não precisa ter forma: o importante é mexer.",
+        "sinaisDeAtencao": "Algumas crianças evitam sentir a massinha, e isso é válido. Não force. Se a aversão a texturas for muito intensa e frequente, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "rcnei-conhecimento-de-mundo", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "A cera de abelha, aquecida nas mãos, é o material típico de modelagem; para os pequenos, massinha ou barro macio servem bem.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.MOD.02",
+      "linha": "AR.MOD",
+      "ordem": 2,
+      "titulo": "Modela bolinhas, cobrinhas e figuras simples e as nomeia",
+      "descricaoPais": "Faz uma cobrinha, um ninho com ovinhos ou um boneco simples, e diz o que é.",
+      "evidencias": ["Modela 2 ou mais formas simples", "Nomeia o que fez"],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.MOD.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Quando a criança dá **forma e nome** à massa, ela une a mão, a imaginação e a linguagem. O resultado importa menos do que o processo de transformar.",
+        "comoParticipar": "Convide: “Vamos fazer um bichinho?”. Ofereça massinha em 2 ou 3 cores e deixe que invente. Pergunte pela história do que fez. Se quiser, faça junto de um tema (o jardim, o mar), sem copiar modelo.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se aos 5 anos ela evita qualquer trabalho com as mãos ou tem muita dificuldade com a força e o controle, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "bncc", "rcnei-conhecimento-de-mundo"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.MOD.03",
+      "linha": "AR.MOD",
+      "ordem": 3,
+      "titulo": "Modela uma figura com partes e cuida da peça",
+      "descricaoPais": "Faz um animal com corpo, cabeça e patas bem unidos, alisa as emendas e cuida da peça até secar.",
+      "evidencias": [
+        "Modela uma figura com 3 ou mais partes bem unidas",
+        "Alisa as emendas e cuida da peça"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.MOD.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Modelar uma figura com várias partes exige **planejamento, força e cuidado**. A criança aprende que uma obra se faz em etapas e que se pode cuidar do próprio trabalho.",
+        "comoParticipar": "Use argila (de loja de artes, atóxica) ou massa de sal. Mostre como unir as partes com um pouco de água e alisar as emendas. Deixe secar ao ar e, depois, pintar. Mostre esculturas de artistas (animais de cerâmica popular, por exemplo).",
+        "sinaisDeAtencao": "Algumas crianças se frustram com peças que racham ou caem. Mostre como consertar e aceite o erro. Se a frustração for muito intensa e frequente, converse com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["lowenfeld-capacidade-criadora", "barbosa-imagem-ensino-arte", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.RIT.01",
+      "linha": "AR.RIT",
+      "ordem": 1,
+      "titulo": "Bate palmas e balança o corpo no ritmo da música",
+      "descricaoPais": "Balança, bate palmas e dança quando ouve uma música, mesmo sem estar sempre no tempo.",
+      "evidencias": [
+        "Reage com o corpo a uma música",
+        "Bate palmas ou balança em um ritmo regular por alguns segundos"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O corpo é o **primeiro instrumento** da criança. Balançar, bater palmas e dançar com a música constroem o sentido de ritmo, a coordenação e o prazer de fazer música em conjunto.",
+        "comoParticipar": "Coloque uma música com pulso claro (cantigas, música brasileira, música de roda) e dance junto, segurando-a no colo ou de mãos dadas. Faça palmas, bata no colo, balance. Não corrija o tempo: acompanhe o dela e depois ofereça o seu.",
+        "sinaisDeAtencao": "Cada criança tem seu jeito de reagir à música. Se aos 3 anos ela não reage a nenhum som ou música, ou não responde quando é chamada pelo nome, vale conversar com o pediatra para avaliar a audição. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "rcnei-conhecimento-de-mundo", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Os jogos de dedos, as cantigas com gestos e os balanços ritmados são a música dos primeiros anos, sem instrumentos elaborados.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.RIT.02",
+      "linha": "AR.RIT",
+      "ordem": 2,
+      "titulo": "Marca o pulso da música com instrumentos simples",
+      "descricaoPais": "Bate o tambor ou o chocalho acompanhando o ritmo constante de uma música.",
+      "evidencias": [
+        "Acompanha o pulso de uma música por 8 batidas",
+        "Toca um instrumento simples com cuidado"
+      ],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.RIT.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Sentir e marcar o **pulso** (a batida regular) é a base de toda a música: dançar, cantar, tocar e, mais tarde, ler partituras. Tocar junto ensina a ouvir os outros.",
+        "comoParticipar": "Ofereça instrumentos simples (tambor de lata, chocalho de garrafa fechada, colheres de pau) e cantem juntos, batendo o pulso. Comece batendo no corpo (colo, peito). Cantigas como “Ciranda, cirandinha” têm pulso fácil de sentir.",
+        "sinaisDeAtencao": "Muitos pequenos têm dificuldade em manter o pulso: isso melhora com o tempo e com a prática. Se aos 5 anos ela não consegue acompanhar nenhum pulso, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Cantar e tocar canções simples faz parte do dia a dia, em pequenos momentos, sem aula longa.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.RIT.03",
+      "linha": "AR.RIT",
+      "ordem": 3,
+      "titulo": "Imita padrões rítmicos curtos, como um eco",
+      "descricaoPais": "Repete com palmas ou tambor um padrão curto que você tocou (curto-curto-longo).",
+      "evidencias": ["Repete um padrão de 3 a 4 palmas", "Cria um padrão para o adulto repetir"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.RIT.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Imitar ritmos exige **ouvir, lembrar e reproduzir**: a criança treina a memória auditiva, a atenção e a coordenação. É a base para ler e escrever ritmo mais tarde.",
+        "comoParticipar": "Brinque de “eco”: você bate um padrão curto e ela repete. Depois, inverta: ela cria e você repete. Use palavras como apoio (“ba-na-na”, “ma-ra-cu-já”), batendo uma palma por sílaba. Use os nomes da família.",
+        "sinaisDeAtencao": "Padrões rítmicos exigem atenção auditiva. Se aos 6 anos ela tem muita dificuldade em repetir qualquer sequência curta de palmas e também de sons e palavras, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
+        "porVertente": {
+          "Clássico": {
+            "comoParticipar": "Recitar versos e parlendas batendo o ritmo é um bom exercício de memória e de ouvido.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.RIT.04",
+      "linha": "AR.RIT",
+      "ordem": 4,
+      "titulo": "Toca ritmos em grupo, com sons curtos, longos e silêncios",
+      "descricaoPais": "Toca em grupo, entra e para na hora certa e escreve um ritmo com sons e silêncios.",
+      "evidencias": [
+        "Toca em grupo seguindo o pulso",
+        "Representa um ritmo com sons e silêncios no papel"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.RIT.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Tocar em grupo ensina a **escutar e esperar**: cada um tem a sua parte para o todo soar bem. É um exercício de atenção e de convivência.",
+        "comoParticipar": "Faça uma banda da família: cada um com um instrumento simples (tambor, chocalho, colheres) e um padrão. Marquem o pulso e entrem um de cada vez. Inventem símbolos para sons curtos, longos e silêncios, e leiam como partitura.",
+        "sinaisDeAtencao": "Alguns têm dificuldade em esperar a vez ou se desanimam com os erros. Acolha e brinque primeiro. Se houver muito sofrimento em atividades de grupo, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.CAN.01",
+      "linha": "AR.CAN",
+      "ordem": 1,
+      "titulo": "Canta trechos de canções conhecidas e imita os gestos",
+      "descricaoPais": "Canta partes das canções que conhece, completa a última palavra e faz os gestos.",
+      "evidencias": ["Canta trechos ou palavras de 2 ou mais canções", "Imita gestos da canção"],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cantar é uma das primeiras formas de **brincar com a língua**: a melodia ajuda a lembrar as palavras, o ritmo e os sons. Cantar junto também aproxima e acalma.",
+        "comoParticipar": "Cante sempre, no dia a dia: ao trocar a roupa, no banho, na hora de dormir. Escolha poucas canções e repita muitas vezes. Faça pausas para que ela complete a última palavra. Não precisa cantar bem: ela precisa da sua voz.",
+        "sinaisDeAtencao": "A fala e o canto aparecem em tempos diferentes. Se aos 2 anos e meio ela quase não fala nem imita sons, ou perdeu palavras que já dizia, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "rcnei-conhecimento-de-mundo", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "Cantar sem acompanhamento, em melodias simples e de poucas notas, é típico da primeira infância.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.CAN.02",
+      "linha": "AR.CAN",
+      "ordem": 2,
+      "titulo": "Canta canções inteiras e muda a voz: forte, fraca, aguda e grave",
+      "descricaoPais": "Canta uma canção do começo ao fim e brinca com a voz: grossa de leão, fina de passarinho.",
+      "evidencias": ["Canta uma canção inteira", "Muda a voz para forte ou fraca, aguda ou grave"],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.CAN.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Cantar a canção inteira exige **memória, atenção e controle da respiração**. Brincar com a voz desenvolve a escuta e a expressão, e ensina o que a voz faz.",
+        "comoParticipar": "Cantem juntos no carro, na cozinha, no banho. Brinque de “voz de bicho”: leão (grave), passarinho (agudo), ratinho (baixinho). Cante sem pressa e em um tom confortável para ela (mais agudo que o seu).",
+        "sinaisDeAtencao": "Voz rouca ou fraca por muito tempo, rouquidão que não melhora ou grito constante exigem avaliação. Se a voz dela estiver rouca por mais de duas semanas, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.CAN.03",
+      "linha": "AR.CAN",
+      "ordem": 3,
+      "titulo": "Canta afinando melodias curtas e canta em roda e em eco",
+      "descricaoPais": "Canta uma melodia simples sem desafinar muito e canta em roda, respondendo ao canto do outro.",
+      "evidencias": ["Canta uma melodia curta acompanhando o tom", "Canta em eco ou em roda"],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.CAN.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Afinar é uma habilidade que se **aprende ouvindo e cantando muito**. Cantar em roda e em eco treina a escuta do outro e o gosto pelo coletivo.",
+        "comoParticipar": "Cantem canções de poucas notas (cantigas de roda, “Alecrim dourado”, “Ciranda, cirandinha”) e brinquem de “eco”: você canta uma frase e ela repete. Deixe-a cantar também sozinha, sem corrigir demais. Gravar a voz dela (com a permissão dela) e ouvir pode ajudar.",
+        "sinaisDeAtencao": "Quase toda criança aprende a cantar afinado com tempo e prática. Se aos 7 anos há muita dificuldade em reproduzir qualquer melodia, converse com a escola. Isso não é um diagnóstico. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
+        "porVertente": {
+          "Clássico": {
+            "comoParticipar": "Cantar cânones e canções tradicionais em grupo faz parte da formação desde cedo.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.CAN.04",
+      "linha": "AR.CAN",
+      "ordem": 4,
+      "titulo": "Canta em grupo, em cânone simples, e memoriza canções",
+      "descricaoPais": "Canta um cânone simples com outras pessoas, ouve a outra voz e memoriza várias canções.",
+      "evidencias": [
+        "Canta um cânone a duas vozes sem se perder, com apoio",
+        "Canta 5 ou mais canções de memória"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.CAN.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "O cânone é um dos primeiros exercícios de **cantar com os outros**: a criança segura a sua parte enquanto ouve a do outro. Um repertório de canções de memória é um tesouro para a vida.",
+        "comoParticipar": "Ensine um cânone curto (“Frère Jacques”/“Frei Jacó”, por exemplo) primeiro todos juntos, depois com a segunda voz entrando. Façam um caderno de canções da família e revisitem as favoritas. Cantem em ocasiões simples: viagens, refeições.",
+        "sinaisDeAtencao": "Manter a própria linha com outras vozes é difícil para muitos. Seja paciente. Se há muita frustração em cantar em grupo, volte a cantar em eco por um tempo. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason propõe um repertório pequeno de boas canções, aprendidas aos poucos e cantadas com frequência.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.ESC.01",
+      "linha": "AR.ESC",
+      "ordem": 1,
+      "titulo": "Escuta música calma e agitada e reage com o corpo",
+      "descricaoPais": "Fica quieta com uma música suave, dança com uma música animada e mostra o que sente.",
+      "evidencias": [
+        "Reage de modo diferente a uma música calma e a uma agitada",
+        "Diz ou mostra se gostou"
+      ],
+      "idadeTipica": 2,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Ouvir música com **atenção** (e não só como fundo) ensina a criança a sentir e a distinguir o que a música provoca. É o começo da escuta musical e também da regulação das emoções.",
+        "comoParticipar": "Reserve alguns minutos por dia de escuta sem outra atividade: uma música calma antes do sono, uma animada para dançar. Diga o que sente: “Que música tranquila”. Varie estilos: canções de ninar, música brasileira, música clássica curta. Evite deixar música ligada o dia todo.",
+        "sinaisDeAtencao": "A reação à música varia. Se aos 3 anos ela não reage a nenhum som ou música, ou se alguns sons a assustam intensamente e sempre, vale conversar com o pediatra para avaliar a audição. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
+        "porVertente": {
+          "Waldorf": {
+            "comoParticipar": "A música ao vivo, cantada ou tocada de modo simples por quem convive com a criança, é preferida às gravações.",
+            "referencias": ["steiner-educacao-crianca"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.ESC.02",
+      "linha": "AR.ESC",
+      "ordem": 2,
+      "titulo": "Distingue sons: forte e fraco, agudo e grave, e instrumentos pelo som",
+      "descricaoPais": "Diz se o som é forte ou fraco, agudo ou grave, e reconhece o som do tambor, do sino ou da flauta.",
+      "evidencias": [
+        "Distingue sons fortes e fracos, e agudos e graves",
+        "Reconhece 2 ou 3 instrumentos pelo som"
+      ],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.ESC.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Escutar com precisão (altura, volume, timbre) é a base do ouvido musical e também **ajuda a linguagem**: quem escuta bem os sons escuta bem as palavras.",
+        "comoParticipar": "Brinque de “adivinha o som”: com os olhos fechados, ela diz que instrumento é, se é forte ou fraco, agudo ou grave. Faça passeios de escuta (“que sons ouvimos?”). Mostre vídeos e discos de instrumentos de verdade, sempre com o volume moderado.",
+        "sinaisDeAtencao": "Se ela parece ouvir pouco, pede muitas vezes que você repita ou aumenta muito o volume da TV, vale conversar com o pediatra para uma avaliação da audição. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["schafer-ouvido-pensante", "brito-musica-educacao-infantil", "bncc"],
+        "porVertente": {
+          "Montessori": {
+            "comoParticipar": "As caixas de sons e os sinos são material clássico de educação do ouvido: comece com contrastes grandes e vá refinando.",
+            "referencias": ["montessori-mente-absorvente"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.ESC.03",
+      "linha": "AR.ESC",
+      "ordem": 3,
+      "titulo": "Escuta uma obra curta de um compositor e conta o que imaginou",
+      "descricaoPais": "Escuta um trecho de música clássica ou brasileira e diz o que viu, sentiu ou imaginou.",
+      "evidencias": [
+        "Escuta uma obra de 2 a 3 minutos com atenção",
+        "Conta o que imaginou ou sentiu"
+      ],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.ESC.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Ouvir uma obra inteira com atenção, uma vez por semana, **forma o gosto e a imaginação**. A criança aprende que a música pode contar histórias sem palavras, e passa a reconhecer a obra e o compositor.",
+        "comoParticipar": "Escolha uma obra curta por vez (por exemplo, “O cisne” ou “O leão”, de *O carnaval dos animais*, de Saint-Saëns; “Na gruta do rei da montanha”, de Grieg; “Ó abre alas”, de Chiquinha Gonzaga) e ouça mais de uma vez em dias diferentes. Depois da escuta, pergunte o que imaginou, sem certo ou errado.",
+        "sinaisDeAtencao": "Cada criança tem seu gosto e seu tempo de atenção. Se aos 8 anos ela não consegue ouvir nenhuma música por 1 minuto, converse com a escola ou o pediatra; não use isso como cobrança. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "schafer-ouvido-pensante",
+          "brito-musica-educacao-infantil",
+          "barbosa-imagem-ensino-arte"
+        ],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason propõe o “estudo de compositores”: ouvir várias obras de um mesmo compositor por um período (um trimestre, por exemplo), com atenção e sem comentários demais.",
+            "referencias": ["mason-home-education"]
+          },
+          "Clássico": {
+            "comoParticipar": "Conhecer obras e compositores centrais da tradição ocidental e brasileira faz parte da formação cultural.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.ESC.04",
+      "linha": "AR.ESC",
+      "ordem": 4,
+      "titulo": "Reconhece instrumentos da orquestra e compositores e diz do que gostou",
+      "descricaoPais": "Reconhece a flauta, o violino e o tambor numa música, nomeia 2 ou 3 compositores e diz de quais obras gosta.",
+      "evidencias": [
+        "Reconhece 3 ou mais instrumentos da orquestra",
+        "Nomeia 2 compositores e uma obra de cada um"
+      ],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.ESC.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Conhecer os instrumentos e os compositores é entrar na **conversa da cultura**: a criança passa a ter nomes e referências para falar do que ouve e a descobrir seu gosto.",
+        "comoParticipar": "Montem um mural com os instrumentos, por famílias (cordas, madeiras, metais, percussão), e escutem uma obra em que cada um aparece. Façam um “caderno de compositores” com nome, país, época e uma obra de cada um. Visitem uma apresentação ou ensaio aberto, se houver.",
+        "sinaisDeAtencao": "A escuta atenta de música longa cresce com o tempo. Se ela se cansa, ouça trechos curtos. Não há atraso nisso. Isto é uma orientação, não um diagnóstico.",
+        "referencias": [
+          "schafer-ouvido-pensante",
+          "brito-musica-educacao-infantil",
+          "barbosa-imagem-ensino-arte"
+        ],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Estudo de compositores: um compositor por trimestre, com poucas obras repetidas ao longo do tempo.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.APR.01",
+      "linha": "AR.APR",
+      "ordem": 1,
+      "titulo": "Olha uma obra de arte e diz o que vê",
+      "descricaoPais": "Olha uma pintura com atenção, aponta o que reconhece (um animal, uma cor, uma pessoa) e diz o que vê.",
+      "evidencias": ["Olha uma obra por 1 ou 2 minutos", "Aponta e nomeia 3 coisas que vê"],
+      "idadeTipica": 3,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Olhar uma obra de arte devagar ensina a criança a **observar e a descrever**. Ela aprende que uma imagem tem muito a dizer e que o seu olhar é importante.",
+        "comoParticipar": "Escolha uma obra por vez, simples e colorida, e pergunte: “O que você vê?”. Aponte junto. Não explique antes: deixe-a olhar primeiro. Use reproduções de domínio público e conte o nome da obra e do artista. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons, conferindo a licença antes de imprimir.",
+        "sinaisDeAtencao": "Algumas crianças olham pouco tempo, e isso é normal nessa idade. Se aos 5 anos ela não olha para nenhuma imagem nem aponta o que vê, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["barbosa-imagem-ensino-arte", "rcnei-conhecimento-de-mundo", "bncc"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Mason propõe olhar uma obra em silêncio por alguns minutos e depois descrevê-la; as crianças pequenas começam por poucos segundos.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.APR.02",
+      "linha": "AR.APR",
+      "ordem": 2,
+      "titulo": "Diz o que uma obra a faz sentir e compara duas obras",
+      "descricaoPais": "Diz “essa me deixa calma” ou “essa é agitada” e compara duas pinturas.",
+      "evidencias": [
+        "Diz o que sente diante de uma obra",
+        "Compara duas obras (o que é igual e diferente)"
+      ],
+      "idadeTipica": 5,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.APR.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Dizer o que a obra provoca é **ligar a arte à emoção**. Comparar duas obras ensina a notar detalhes e a ter critérios próprios para gostar ou não gostar, com respeito.",
+        "comoParticipar": "Escolha duas obras bem diferentes (por exemplo, “A noite estrelada”, de Van Gogh, e “Impressão, nascer do sol”, de Monet) e pergunte: “Qual lembra calma? Qual tem mais movimento? Por quê?”. Aceite qualquer resposta com razão e deixe que escolha a favorita. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons, conferindo a licença antes de imprimir.",
+        "sinaisDeAtencao": "Algumas crianças acham difícil falar de sentimentos. Dê tempo e use palavras simples. Se aos 7 anos ela não consegue dizer nada sobre uma imagem, vale conversar com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["barbosa-imagem-ensino-arte", "bncc", "lowenfeld-capacidade-criadora"]
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.APR.03",
+      "linha": "AR.APR",
+      "ordem": 3,
+      "titulo": "Estuda um pintor: olha várias obras e conta uma de memória",
+      "descricaoPais": "Conhece 3 ou 4 obras de um mesmo pintor, diz o nome dele e descreve uma delas de memória.",
+      "evidencias": [
+        "Reconhece 3 ou mais obras do mesmo pintor",
+        "Descreve de memória uma obra, com detalhes"
+      ],
+      "idadeTipica": 7,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.APR.02"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Conhecer **um artista a fundo**, e não muitos de passagem, forma o olhar e a memória visual. A criança começa a reconhecer o estilo e a fazer ligações entre as obras.",
+        "comoParticipar": "Escolha um pintor por período (por exemplo, Monet) e olhe com a criança uma obra por semana, em silêncio, por 5 minutos. Esconda a imagem e peça que descreva tudo o que lembra. Depois, olhem de novo e comparem. Leiam um pouco da vida do artista, em linguagem simples. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons, conferindo a licença antes de imprimir.",
+        "sinaisDeAtencao": "A memória visual cresce com a prática. Não cobre perfeição. Se ela se frustra, reduza o tempo e use obras mais simples. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["barbosa-imagem-ensino-arte", "bncc", "mason-home-education"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "É o “estudo de pintores” de Mason: um pintor por vez, algumas obras, olhadas em silêncio e narradas depois de memória.",
+            "referencias": ["mason-home-education"]
+          },
+          "Clássico": {
+            "comoParticipar": "Conhecer os grandes artistas e suas obras é parte da formação cultural; use uma linha do tempo.",
+            "referencias": ["wise-bauer-well-trained-mind"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.APR.04",
+      "linha": "AR.APR",
+      "ordem": 4,
+      "titulo": "Experimenta uma técnica inspirada em um artista e explica a escolha",
+      "descricaoPais": "Cria um trabalho inspirado em um artista (por exemplo, pontinhos como Seurat) e explica o que escolheu.",
+      "evidencias": ["Experimenta uma técnica de um artista", "Explica o que escolheu fazer"],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.APR.03"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Experimentar a técnica de um artista é **entender por dentro** como a obra foi feita. A criança passa de espectadora a criadora e valoriza o trabalho do outro.",
+        "comoParticipar": "Escolha um artista e uma técnica simples (pontinhos de Seurat com cotonetes e tinta, pinceladas de Van Gogh, ondas de Hokusai). Olhem a obra, tentem a técnica e conversem: “Por que o artista fez assim? E você?”. O resultado é livre e não precisa copiar a obra. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons, conferindo a licença antes de imprimir.",
+        "sinaisDeAtencao": "Alguns acham que “não sabem desenhar” e se desanimam. Mostre que o foco é a experiência e não a perfeição. Se houver muita frustração com artes, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["barbosa-imagem-ensino-arte", "lowenfeld-capacidade-criadora", "bncc"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "Deixe que a criança primeiro conheça e olhe com atenção a obra, e só depois experimente: evite copiar a obra.",
+            "referencias": ["mason-home-education"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.NAT.01",
+      "linha": "AR.NAT",
+      "ordem": 1,
+      "titulo": "Observa um elemento da natureza e faz um desenho livre dele",
+      "descricaoPais": "Olha uma folha, uma flor ou um bichinho, e desenha como vê, com os traços que consegue.",
+      "evidencias": ["Observa um elemento da natureza por 2 minutos", "Faz um desenho dele"],
+      "idadeTipica": 4,
+      "idadeIntroducao": {},
+      "preRequisitos": [],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Desenhar o que se observa liga o **olhar atento à mão**. É o primeiro passo do caderno da natureza: a criança aprende que a natureza é uma fonte infinita de coisas para olhar.",
+        "comoParticipar": "Em um passeio, ofereça uma prancheta com papel e lápis de cor. Peça que olhe uma folha ou flor “como um detetive” e desenhe. Não corrija: valorize o que ela notou. Combine voltar ao mesmo lugar em outro dia.",
+        "sinaisDeAtencao": "O desenho de observação evolui devagar. Se aos 6 anos ela não olha para o objeto ao desenhar, ofereça mais tempo e atividades de olhar. Não é um atraso. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["comstock-nature-study", "mason-home-education", "louv-ultima-crianca"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "O caderno da natureza (nature notebook) é central: a criança desenha o que observou fora de casa e anota a data e o lugar.",
+            "referencias": ["mason-home-education", "comstock-nature-study"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.NAT.02",
+      "linha": "AR.NAT",
+      "ordem": 2,
+      "titulo": "Faz uma página de caderno da natureza com desenho, data, nome e uma frase",
+      "descricaoPais": "Desenha o que viu, escreve a data e o lugar e uma frase sobre o que observou.",
+      "evidencias": ["Faz uma página com desenho e uma frase", "Anota data e lugar"],
+      "idadeTipica": 6,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.NAT.01"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Registrar a observação em uma página une **olhar, arte e escrita**. A criança passa a ter um diário próprio de descobertas, que guarda a memória do que viu.",
+        "comoParticipar": "Compre ou monte um caderno simples e vá com ela observar ao menos uma vez por semana. Ela desenha, escreve a data, o lugar e uma frase (ou dita para você). Mostre fontes (livros de plantas e bichos) para achar o nome. Não é necessário saber nomear tudo.",
+        "sinaisDeAtencao": "Escrever pode cansar. Se ela não quiser escrever, deixe-a ditar a frase. Se a escrita for muito difícil e frustrante aos 8 anos, converse com a escola. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["comstock-nature-study", "mason-home-education", "louv-ultima-crianca"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "O caderno da natureza com desenhos, datas e nomes é o “livro de campo” da criança; livros-guia ajudam a identificar, depois da observação.",
+            "referencias": ["mason-home-education", "comstock-nature-study"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    },
+    {
+      "id": "AR.NAT.03",
+      "linha": "AR.NAT",
+      "ordem": 3,
+      "titulo": "Mantém o caderno da natureza ao longo do tempo e compara observações",
+      "descricaoPais": "Volta ao mesmo lugar em épocas diferentes, desenha de novo e compara o que mudou.",
+      "evidencias": [
+        "Faz ao menos 3 registros do mesmo lugar ou ser vivo em épocas diferentes",
+        "Compara o que mudou"
+      ],
+      "idadeTipica": 8,
+      "idadeIntroducao": {},
+      "preRequisitos": ["AR.NAT.02", "NM.TER.04"],
+      "bncc": [],
+      "orientacaoPais": {
+        "porQueImporta": "Observar **ao longo do tempo** é o que transforma um desenho em ciência: a criança percebe mudanças, ciclos e padrões e entende o ritmo das estações.",
+        "comoParticipar": "Escolha uma árvore, um canteiro ou um canto do jardim e volte a ele a cada semana ou mês. Compare a página de hoje com as anteriores: “O que mudou? O que continua igual?”. Façam um índice do caderno e guardem-no como memória da família.",
+        "sinaisDeAtencao": "Manter um caderno por meses exige constância. Se a criança perder o interesse, deixe um tempo e retome em outra estação. Não é um problema. Isto é uma orientação, não um diagnóstico.",
+        "referencias": ["comstock-nature-study", "mason-home-education", "louv-ultima-crianca"],
+        "porVertente": {
+          "Charlotte Mason": {
+            "comoParticipar": "O caderno ao longo do ano mostra a mudança das estações: um calendário da natureza com as datas das primeiras flores, aves e frutos.",
+            "referencias": ["mason-home-education", "comstock-nature-study"]
+          }
+        }
+      },
+      "revisao": {
+        "estado": "rascunho"
+      }
+    }
+  ]
+}

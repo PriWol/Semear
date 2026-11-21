@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u1-rimas-para-se-mexer",
+  "titulo": "Rimas e cantigas: para se mexer",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 1,
+    "paginas": [14, 14]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "As cócegas de “This little piggy” só se ela gostar e param quando pedir; o chão deve estar firme e sem obstáculos para andar e esticar.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "acordar e se arrumar"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: acordar e se arrumar).",
+  "passos": [
+    {
+      "titulo": "Cantar: Sun is up",
+      "minutos": 2,
+      "texto": "O gesto: faça o gesto do sol com os braços, estique alto, toque os pés e saia andando. Troque “Marina” pelo nome do bichinho se quiser. Rima escrita pela coleção.",
+      "fala": "Sun is up, sun is up, / time to wake, time to wake, / stretch up high, touch your toes, / good morning, Marina, off we go!"
+    },
+    {
+      "titulo": "Cantar: This little piggy",
+      "minutos": 2,
+      "texto": "O gesto: toque um dedo do pé de cada vez, do dedão ao mindinho; no “wee, wee, wee” suba as cócegas pela perna. É uma rima antiga, muito usada para trocar de roupa. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "This little piggy went to market, / this little piggy stayed at home, / this little piggy had roast beef, / this little piggy had none, / and this little piggy cried “wee, wee, wee” / all the way home."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Rimas para o corpo transformam a rotina de se vestir em brincadeira. Quando ela estiver com pressa ou com “não”, dê a ela uma escolha (“sun is up” ou “this little piggy”?) em vez de uma ordem. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "atv-nm-mapa-do-tesouro",
+  "titulo": "Mapa do tesouro da sala",
+  "marcos": ["NM.ESP.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 7],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Esconda o tesouro (um brinquedo ou um doce) em um lugar seguro e baixo, sem subir em cadeiras ou móveis. Retire antes qualquer objeto quebrável ou perigoso do caminho.",
+  "objetivo": "A criança desenha o mapa visto de cima de uma sala ou de um quarto e o usa para achar um objeto escondido.",
+  "passos": [
+    {
+      "titulo": "Olhar de cima",
+      "minutos": 4,
+      "texto": "Suba-a em uma cadeira firme, com ajuda, ou mostre uma foto da sala vista de cima. “E se fôssemos um passarinho?”.",
+      "fala": "O que o passarinho veria?"
+    },
+    {
+      "titulo": "Mapa",
+      "minutos": 10,
+      "texto": "Em uma folha, ela desenha a sala: porta, janela, sofá, mesa. Ajude a posicionar as coisas. Marque um X onde o tesouro está escondido."
+    },
+    {
+      "titulo": "Caçada",
+      "minutos": 6,
+      "texto": "Peça que um adulto escolha um esconderijo e desenhe em outro mapa, ou troque os papéis. Ela segue o mapa e acha o tesouro."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Desenha a porta, janela e móveis nos lugares",
+      "Segue o mapa para achar o tesouro"
+    ],
+    "emDesenvolvimento": ["Desenha “de lado” (esperado)", "Posiciona as coisas ao acaso"]
+  },
+  "ajustes": {
+    "dificil": "Faça só o contorno da sala e três móveis.",
+    "facil": "Peça que desenhe o mapa da casa toda, com legenda e setas."
+  },
+  "materiais": [
+    {
+      "item": "Folhas de papel",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Um objeto como tesouro",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Desenhou 4 ou mais elementos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Achou o tesouro",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que detalhes ela colocou no mapa?",
+  "palavrasChave": ["mapa", "espaço", "tesouro", "visão de cima"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

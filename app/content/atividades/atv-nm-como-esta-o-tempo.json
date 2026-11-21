@@ -1,0 +1,70 @@
+{
+  "id": "atv-nm-como-esta-o-tempo",
+  "titulo": "Como está o tempo hoje?",
+  "marcos": ["NM.TER.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [2, 4],
+  "duracaoMin": 9,
+  "preparoMin": 1,
+  "cuidados": "Fique junto o tempo todo. Em dias de sol, use chapéu e protetor e evite o horário das 10h às 16h. Em dias de chuva, só com chuva fraca e sem raios. Não deixe a criança olhar direto para o Sol.",
+  "objetivo": "A criança sente o tempo com o corpo, nomeia o que percebe e escolhe a roupa de acordo.",
+  "passos": [
+    {
+      "titulo": "Olhar",
+      "minutos": 2,
+      "texto": "Vão até a janela ou a porta e olhem o céu: “E hoje, sol ou chuva?”. Deixe que ela diga ou aponte.",
+      "fala": "Como está o tempo?"
+    },
+    {
+      "titulo": "Sentir",
+      "minutos": 4,
+      "texto": "Saiam por um instante e sintam: o vento nas mãos, o sol nos braços, a chuva fina na palma, o chão frio ou quente."
+    },
+    {
+      "titulo": "Vestir",
+      "minutos": 3,
+      "texto": "De volta, ela escolhe uma peça de roupa para esse tempo (chapéu, casaco, galocha). Diga o nome do tempo de novo."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia ou aponta o tempo", "Escolhe a roupa com ajuda"],
+    "emDesenvolvimento": [
+      "Só repete o que você diz (normal)",
+      "Se incomoda com a sensação (respeite)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique só na janela, sem sair.",
+    "facil": "Peça que “conte” para um bicho de pelúcia como está o tempo."
+  },
+  "materiais": [
+    {
+      "item": "Uma janela ou porta",
+      "deCasa": true
+    },
+    {
+      "item": "Roupas variadas: chapéu, casaco, galocha",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou o tempo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Escolheu a roupa",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que palavras ela usou para o tempo?",
+  "palavrasChave": ["clima", "chuva", "sol", "vento", "tempo"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

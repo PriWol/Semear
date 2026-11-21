@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-maozinhas",
+  "titulo": "Para as mãozinhas",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 1,
+    "paginas": [14, 14]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Cócegas e toques só se ela gostar e por pouco tempo; pare se ela se afastar. Mãos limpas e sem anéis ou pulseiras soltas. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["dedos", "mindinho", "parlenda", "rima"],
+  "objetivo": "A criança brinca com jogos de dedos e de rosto, com rima, ritmo e toque, ouvindo sempre a mesma sequência de sons.",
+  "passos": [
+    {
+      "titulo": "Mindinho, seu vizinho",
+      "minutos": 2,
+      "texto": "*Mindinho, / seu vizinho, / pai de todos, / fura-bolo, / mata-piolho!* **O gesto:** segure a mãozinha dela, com a palma para cima, e toque um dedo a cada verso, do mindinho ao polegar; no fim, cócegas na palma. Depois deixe que ela faça em você. “Fura-bolo” e “mata-piolho” são nomes antigos dos dedos. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Dois olhinhos",
+      "minutos": 2,
+      "texto": "*Dois olhinhos, um nariz, / uma boca que sorri; / duas mãos, dois pezinhos, / vem dar um beijinho aqui.* **O gesto:** toque nos olhos, no nariz, na boca, nas mãos e nos pés dela, ao ritmo da rima, e termine com um beijo onde ela escolher. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Jogos de dedos e de rosto juntam rima, ritmo, toque e olhar, e a criança ouve a mesma sequência de sons vezes seguidas. É por isso que a pedagogia Waldorf os usa com crianças pequenas. Vá devagar e mantenha sempre a mesma ordem. Para variar: faça no pé, diga mais baixo e depois mais alto, ou pare antes do fim e espere que ela complete a palavra."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 1",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

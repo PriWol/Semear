@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol7-u2-en",
+  "titulo": "A família em inglês: o carrinho da irmãzinha e o jogo “Quem é quem?”",
+  "marcos": ["LI.VOC.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 2,
+    "paginas": [12, 17]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Famílias são diferentes: se na casa da Marina quem cuida é outra pessoa (uma tia, um avô, duas mães, dois pais), use a palavra que combina com a vida dela; os cartões são um ponto de partida, não um modelo. Cartões e fotos recortados ficam fora do alcance de crianças menores quando o jogo acaba. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo.",
+  "palavrasChave": ["inglês", "família", "mother", "sister", "cartões"],
+  "objetivo": "A criança ouve uma rima inglesa sobre uma irmã e aponta o cartão certo quando o adulto diz mãe, pai, bebê, irmão, irmã ou avó em inglês.",
+  "passos": [
+    {
+      "titulo": "Ouvir a rima",
+      "minutos": 3,
+      "texto": "Diga os versos balançando, como quem puxa um carrinho. Aqui *draw* quer dizer “puxar” (o carrinho), e não “desenhar”, como a gravura mostra: o irmão vai na frente, a irmã puxa e a irmãzinha vai sentada. Mostre *sister* (irmã) e *baby* (bebê) na gravura. É uma rima de *Under the Window*, de Kate Greenaway (1878, domínio público); o livro não traz melodia, por isso é para dizer. Tradução da coleção: “Num carrinho tão pequeno / puxei a minha irmã; / e prometi puxá-la / pelo mundo afora. // Ainda não partimos — / confesso com tristeza — / porque a nossa viagem / fica sempre para amanhã.”",
+      "fala": "In go-cart so tiny / My sister I drew; / And I’ve promised to draw her / The wide world through. // We have not yet started— / I own it with sorrow— / Because our trip’s always / Put off till to-morrow."
+    },
+    {
+      "titulo": "O jogo dos cartões",
+      "minutos": 5,
+      "texto": "Espalhem os cartões da família com a figura para cima. O adulto diz uma palavra em inglês (“mother!”) e a Marina aponta o cartão, sem pedir que repita: mother, father, baby, brother, sister, grandmother, family, hug, love. Depois ela aponta uma pessoa de verdade (ou uma foto) e o adulto diz a palavra.",
+      "fala": "Mother!"
+    },
+    {
+      "titulo": "Na vida de todo dia (opcional)",
+      "minutos": 2,
+      "texto": "Diga a palavra do idioma da semana ao abraçar (*hug*) e ao apresentar as pessoas da casa, sem pedir que ela repita. Olhar as fotos antigas da família e dizer quem é a avó, quem é o irmão, quem é o bebê."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta o cartão certo quando ouve a palavra",
+      "Pareia o cartão com uma foto da família"
+    ],
+    "emDesenvolvimento": [
+      "Só olha as gravuras e as fotos (tudo bem: ouvir já é o objetivo)",
+      "Responde em português (repita a ideia em inglês, sem corrigir)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só o cartão *mother* (ou a pessoa que cuida dela), de colo.",
+    "facil": "Fazer um cartaz da família com fotos e os cartões, e apresentar a família ao ursinho: “esta é a mamãe”."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 2: A família)",
+      "deCasa": false
+    },
+    {
+      "item": "Os cartões da família recortados; fotos da família ou desenhos; uma caixa de sapatos para guardar os cartões",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Aponta o cartão certo quando ouve a palavra",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Pareia o cartão com uma foto da família",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que cartão ela apontou primeiro? Quem ela reconheceu nas fotos?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

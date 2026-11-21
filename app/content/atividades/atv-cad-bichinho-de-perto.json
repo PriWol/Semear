@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-bichinho-de-perto",
+  "titulo": "Bichinho de perto",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [59, 59]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Olhar, nunca pegar; afaste-se de abelhas, vespas, aranhas e lagartas peludas; sapato fechado; lave as mãos. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["bichinho", "formiga", "caracol", "observar", "respeito"],
+  "objetivo": "A criança se aproxima devagar de um bichinho (formiga, caracol, joaninha), fica quieta olhando e se despede sem tocar.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Procurem um bichinho pequeno (formiga, caracol, joaninha) e chegue de mansinho: “shhh”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Fiquem quietas olhando. Não toquem, não peguem."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Diga o nome dele e o que ele faz: “a formiga carrega comida”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Despeçam-se: “tchau, formiga, vá para casa”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Shhh, chegamos de mansinho.” “A formiga está carregando uma migalha. Quanta força!” “Ele tem casa. Vamos deixar ele ir.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Onde ele está indo? Quantas perninhas? Qual é o nome dele?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Siga uma formiga por um minuto. 2) Desenhe o bicho depois, com giz. 3) Olhe o caracol de dia de chuva."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Aproximar-se devagar de um bicho é um exercício de controle: ela precisa ficar quieta e baixar a voz para não assustá-lo. Funciona porque a razão é do bicho (e não uma ordem sua). Mostra também respeito pelos seres vivos, ideia central do Volume 6."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; uma lupa de brinquedo, se quiser; um jardim, uma praça ou um vaso",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

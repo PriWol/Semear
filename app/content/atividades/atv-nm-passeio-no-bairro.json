@@ -1,0 +1,71 @@
+{
+  "id": "atv-nm-passeio-no-bairro",
+  "titulo": "Passeio no bairro: quem trabalha aqui?",
+  "marcos": ["NM.ESP.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Segure a mão da criança perto de ruas e atravesse só na faixa, com o semáforo. Não se afaste do adulto e não fale com estranhos sozinha. Leve água e protetor solar.",
+  "objetivo": "A criança conhece lugares do bairro, conversa com quem trabalha neles e diz para que servem.",
+  "passos": [
+    {
+      "titulo": "Antes de sair",
+      "minutos": 3,
+      "texto": "Combine o roteiro com 3 lugares (padaria, praça, escola). Diga: “Vamos descobrir quem trabalha em cada um”."
+    },
+    {
+      "titulo": "Passeio",
+      "minutos": 10,
+      "texto": "Em cada parada, deixe a criança cumprimentar e perguntar uma coisa a quem trabalha. Ajude com a pergunta, se precisar.",
+      "fala": "O que você faz aqui?"
+    },
+    {
+      "titulo": "Em casa",
+      "minutos": 4,
+      "texto": "Ela desenha o lugar de que mais gostou e conta a quem trabalha lá."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia lugares e para que servem", "Diz o que alguém faz no trabalho"],
+    "emDesenvolvimento": ["Tem vergonha de perguntar (comum)", "Quer ficar só em um lugar"]
+  },
+  "ajustes": {
+    "dificil": "Visite só um lugar e converse com uma pessoa.",
+    "facil": "Faça um mini cartaz com os lugares e as profissões."
+  },
+  "materiais": [
+    {
+      "item": "Caderno e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Garrafinha de água",
+      "deCasa": true
+    },
+    {
+      "item": "Um roteiro curto no bairro",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou lugares",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Falou de um trabalho",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual lugar mais despertou curiosidade?",
+  "palavrasChave": ["bairro", "profissões", "passeio", "comunidade"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

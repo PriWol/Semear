@@ -1,0 +1,75 @@
+{
+  "id": "atv-di-costura-no-cartao",
+  "titulo": "Costura em cartão furado e dobradura",
+  "marcos": ["DI.MFI.05"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [6, 8],
+  "duracaoMin": 18,
+  "preparoMin": 5,
+  "cuidados": "Use agulha de plástico de ponta romba, do tipo para crianças, e lã grossa. Nada de agulhas de metal. Fique junto e guarde a agulha depois de usar. Se houver irmãos menores, recolha a agulha e a lã logo.",
+  "objetivo": "A criança costura pontos em um cartão furado e dobra papel com cantos alinhados.",
+  "passos": [
+    {
+      "titulo": "Preparar",
+      "minutos": 3,
+      "texto": "Fure um cartão com um furador, em linha, a cada 2 cm. Corte um fio de lã de uns 50 cm com a ponta endurecida com fita."
+    },
+    {
+      "titulo": "Costurar",
+      "minutos": 10,
+      "texto": "Mostre o ponto: sobe pelo furo 1, desce no 2, sobe no 3. Ela costura a linha toda. Se quiser, faça um desenho (uma estrela, um coração).",
+      "fala": "Sobe e desce."
+    },
+    {
+      "titulo": "Dobrar",
+      "minutos": 5,
+      "texto": "Dobrem papel quadrado em um barquinho ou uma casinha simples. Foco em alinhar os cantos antes de apertar o vinco."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Costura 6 ou mais pontos", "Dobra com os cantos alinhados"],
+    "emDesenvolvimento": ["Perde o furo (comum)", "Embola a lã (normal)"]
+  },
+  "ajustes": {
+    "dificil": "Costure só 3 furos e com a mão dela entre as suas.",
+    "facil": "Costure um desenho livre e uma pequena bolsinha de feltro."
+  },
+  "materiais": [
+    {
+      "item": "Cartão ou cartolina furada",
+      "deCasa": true
+    },
+    {
+      "item": "Agulha de plástico grande",
+      "deCasa": true
+    },
+    {
+      "item": "Lã grossa",
+      "deCasa": true
+    },
+    {
+      "item": "Papel quadrado",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Costurou 6 ou mais pontos",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Dobrou com cantos alinhados",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela fez de mais difícil?",
+  "palavrasChave": ["costura", "dobradura", "agulha", "origami", "motor fino"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

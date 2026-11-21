@@ -1,0 +1,81 @@
+{
+  "id": "atv-cing-u1-ler-brown-bear-brown-bear-what-do-you-see",
+  "titulo": "Ler juntos: Brown Bear, Brown Bear, What Do You See?",
+  "marcos": ["LI.VOC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 1,
+    "paginas": [17, 17]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "palavrasChave": ["inglês", "english", "livro", "brown bear, brown bear, what do you see?"],
+  "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Look! A bear. What color is the bear? / What does the bear see? / Can you roar? Roar like a lion!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Sentem juntas, com ela no colo, e deixe que ela segure o livro."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Mostre a capa e diga o título. Vire a página e aponte o bicho."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Faça a pergunta do livro e espere: ela completa, aponta ou imita o bicho?"
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Repita o livro quantas vezes ela pedir; a cada vez, faça uma pergunta diferente."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "What do you see? / Where is the bird? / Can you point to the fish?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Imite o som de cada bicho. Procure no quarto os bichos e as cores do livro. Leia em português uma vez, para ela entender a história, e depois em inglês."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "É leitura dialogada (Grover Whitehurst): em vez de só ler, você pergunta e acrescenta. Para 2 anos, as perguntas mais úteis são as de completar (ela diz a palavra que falta), as abertas (“what do you see?”) e as de “o quê / onde”. O livro de Bill Martin Jr. e Eric Carle repete a mesma pergunta em cada página, o que ajuda a criança a entender e a falar antes de saber ler. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aponta na figura", "Repete uma palavra ou pede o livro de novo"],
+    "emDesenvolvimento": ["Ainda só olha e escuta; ler uma página por dia já basta"]
+  },
+  "materiais": [
+    {
+      "item": "o livro *Brown Bear, Brown Bear, What Do You See?* (Bill Martin Jr. e Eric Carle), de uma biblioteca, livraria ou sebo",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "A criança apontou, repetiu uma palavra ou pediu o livro de novo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

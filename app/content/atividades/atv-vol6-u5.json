@@ -1,0 +1,96 @@
+{
+  "id": "atv-vol6-u5",
+  "titulo": "Sementes: plantar um feijão e olhar todo dia",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Caderno da natureza",
+  "materialImpresso": {
+    "volume": 6,
+    "unidade": 5,
+    "paginas": [39, 47]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 7],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Sementes pequenas e feijão seco engasgam: só com um adulto por perto, e longe de quem ainda põe tudo na boca. Não coma semente que não conhece e lave as mãos depois de mexer em terra.",
+  "palavrasChave": ["sementes", "feijão", "germinação", "plantar", "frutas"],
+  "objetivo": "A criança **planta um feijão no algodão úmido** e olha todo dia o que acontece, percebendo que a raiz aparece primeiro e depois o broto.",
+  "passos": [
+    {
+      "titulo": "Olhar os feijões e plantar um",
+      "minutos": 8,
+      "texto": "Olhar os feijões secos: cor, forma, tamanho. Pôr um feijão no algodão úmido, no copo, perto da janela. Dizer o que acha que vai acontecer."
+    },
+    {
+      "titulo": "Olhar o feijão todo dia",
+      "minutos": 9,
+      "texto": "Olhar o feijão todo dia e desenhar o que mudou. Regar o algodão, sem encharcar. Contar em que dia apareceu a raiz."
+    },
+    {
+      "titulo": "Abrir frutas e achar as sementes",
+      "minutos": 8,
+      "texto": "Abrir uma fruta e achar as sementes, com a lupa. Comparar as sementes de duas frutas. Plantar uma semente num vaso e cuidar dela."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz o que a semente precisa (água e um lugar iluminado).",
+      "Olha o feijão todo dia sem ser lembrada.",
+      "Descreve a raiz e o broto com palavras dela.",
+      "Abre uma fruta e acha as sementes sozinha."
+    ],
+    "emDesenvolvimento": [
+      "Ainda precisa ser lembrada de olhar o feijão",
+      "Ainda encharca o algodão ao regar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: olhar só o feijão seco, de pertinho, e dizer como ele é por fora.",
+    "facil": "Se o interesse crescer: plantar sementes de frutas diferentes, em potinhos, e comparar quais nascem primeiro e quais demoram mais."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 6",
+      "deCasa": false
+    },
+    {
+      "item": "Feijão (de cozinha, seco)",
+      "deCasa": true
+    },
+    {
+      "item": "Algodão",
+      "deCasa": true
+    },
+    {
+      "item": "Um copo transparente ou um potinho",
+      "deCasa": true
+    },
+    {
+      "item": "Água e uma janela com luz",
+      "deCasa": true
+    },
+    {
+      "item": "Frutas variadas (maçã, laranja, melancia, uva)",
+      "deCasa": true
+    },
+    {
+      "item": "Uma lupa",
+      "deCasa": true
+    },
+    {
+      "item": "O caderno de natureza",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Em que dia apareceu a raiz e o que ela desenhou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

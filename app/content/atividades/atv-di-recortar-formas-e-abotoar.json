@@ -1,0 +1,78 @@
+{
+  "id": "atv-di-recortar-formas-e-abotoar",
+  "titulo": "Formas recortadas e botões grandes",
+  "marcos": ["DI.MFI.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 7],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Tesoura de ponta arredondada, só sentada. Botões grandes, de pelo menos 3 cm, costurados com firmeza em um pano (nunca soltos). Fique junto, sobretudo com irmãos menores por perto.",
+  "objetivo": "A criança recorta uma forma simples e treina o abotoar em um pano com botões grandes.",
+  "passos": [
+    {
+      "titulo": "Recortar",
+      "minutos": 7,
+      "texto": "Desenhe um círculo e um quadrado grandes em papel. Ela recorta devagar, girando o papel com a outra mão. Cole em uma folha para fazer um boneco."
+    },
+    {
+      "titulo": "Abotoar",
+      "minutos": 6,
+      "texto": "Em um pedaço de pano ou camisa, ela abotoa e desabotoa 3 ou 4 botões grandes. Mostre a “casinha” e o “botão que entra na casa”.",
+      "fala": "O botão entra na casinha!"
+    },
+    {
+      "titulo": "Laço",
+      "minutos": 4,
+      "texto": "Treinem amarrar o cadarço de um sapato velho em cima da mesa, com a sua ajuda, passo a passo."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Recorta uma forma simples", "Abotoa botões grandes"],
+    "emDesenvolvimento": [
+      "Recorta com cantos arredondados (normal)",
+      "Se frustra com o laço (normal)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Recorte só uma forma com os lados retos.",
+    "facil": "Recorte um animal ou uma silhueta mais complexa."
+  },
+  "materiais": [
+    {
+      "item": "Tesoura de ponta arredondada",
+      "deCasa": true
+    },
+    {
+      "item": "Papel",
+      "deCasa": true
+    },
+    {
+      "item": "Pano ou camisa com botões grandes",
+      "deCasa": true
+    },
+    {
+      "item": "Sapato com cadarço",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Recortou uma forma",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Abotoou botões",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual das tarefas foi mais difícil?",
+  "palavrasChave": ["recortar", "botões", "laço", "formas"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

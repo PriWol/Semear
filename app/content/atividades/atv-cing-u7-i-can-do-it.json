@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u7-i-can-do-it",
+  "titulo": "I can do it!",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [71, 71]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "escolha tarefas seguras, sem objetos pontudos nem água quente.",
+  "palavrasChave": ["inglês", "english", "a família e os sentimentos", "i can do it!"],
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: a família e os sentimentos.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Do you want to try? You can do it. / Do you need help? Yes or no? / You did it! All by yourself!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Escolha uma tarefa que ela consegue com pouca ajuda e diga: “do you want to try?”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Espere e não ajude logo: “you can do it”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Se ela pedir, ajude só um pouco: “do you need help?”; deixe que ela diga “yes” ou “no”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Ao terminar: “you did it! All by yourself!”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Can you do it? / Do you need help? / Are you proud?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Ela guarda os próprios sapatos. Ela põe o prato na pia. Ela escolhe a camiseta: “this one or that one?”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "“Eu faço!” é a frase mais típica da fase do “não”: a criança quer fazer sozinha, e o adulto acaba brigando com ela por pressa. Dar tempo, oferecer ajuda como pergunta (“do you need help?”) e elogiar o resultado (“you did it!”) transforma a briga em orgulho. A palavra “help” é uma das mais úteis a aprender. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "uma tarefa que ela pode quase fazer sozinha: calçar um sapato, abrir uma caixa, lavar um pano",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

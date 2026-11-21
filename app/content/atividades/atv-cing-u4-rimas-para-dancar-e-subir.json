@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u4-rimas-para-dancar-e-subir",
+  "titulo": "Rimas e cantigas: para dançar e subir",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 4,
+    "paginas": [44, 44]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Piso firme e sem obstáculos para bater os pés e marchar; ao agachar e levantar, fique ao lado para ela não cair.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "brincar dentro de casa"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: brincar dentro de casa).",
+  "passos": [
+    {
+      "titulo": "Cantar: Stomp, stomp, stomp",
+      "minutos": 2,
+      "texto": "O gesto: bata os pés, bata palmas, pare como estátua e volte a dançar no “go”. É a rima da brincadeira “stomp and freeze”. Rima escrita pela coleção.",
+      "fala": "Stomp, stomp, stomp your feet, / clap, clap, clap, clap, clap; / stop, stop, stop and freeze, / one, two, three… go!"
+    },
+    {
+      "titulo": "Cantar: The Grand Old Duke of York",
+      "minutos": 2,
+      "texto": "O gesto: marchem juntos; levantem-se nos “up” e agachem nos “down”, e fiquem no meio no último verso. É uma rima antiga para aprender “up” e “down”. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Oh, the grand old Duke of York, / he had ten thousand men; / he marched them up to the top of the hill, / and he marched them down again. / And when they were up, they were up, / and when they were down, they were down, / and when they were only half-way up, / they were neither up nor down."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "“Up” e “down” são as primeiras palavras de direção, e esta rima as mostra com o corpo inteiro. A criança entende pelo movimento antes de falar, e depois pede “again!”. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

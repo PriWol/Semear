@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-caca-folhas",
+  "titulo": "Caça-folhas",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [57, 57]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Atenção: Só folhas caídas; não tire do galho; nada de plantas desconhecidas na boca; lave as mãos depois. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["folhas", "passeio", "coleção", "tamanho", "cor"],
+  "objetivo": "A criança junta cinco folhas caídas, dá nome a cada uma (grande, pequena, amarela) e as põe em fila, da maior para a menor.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Combine: “vamos achar cinco folhas”. Só as que já estão no chão."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Cada folha que ela achar entra na cesta, com um nome: “grande”, “pequena”, “amarela”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Em casa, espalhem as folhas e ponham em fila, da maior para a menor."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Colem uma folha no caderno de natureza (Volume 6), se ela quiser."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Olha uma folha! É grande e verde.” “Esta é pequena e seca. Faz crec, crec.” “Cinco folhas! Conseguimos.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Qual é a maior? Qual folha você mais gostou? Tem folha amarela?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Procure só folhas verdes, ou só secas. 2) Esfregue uma folha e cheire. 3) Faça um “tapete de folhas” e pule em cima."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Procurar folhas dá um objetivo ao passeio, e contar até cinco ajuda quem tem pouca paciência a saber quando acaba. Comparar o tamanho e a cor é vocabulário e matemática ao mesmo tempo. A coleção de folhas combina com a unidade 4 do Volume 6."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Uma sacola de pano ou uma cesta; um quintal, uma praça ou uma calçada com árvores",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

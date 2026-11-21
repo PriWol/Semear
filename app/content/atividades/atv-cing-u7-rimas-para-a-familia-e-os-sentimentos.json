@@ -1,0 +1,56 @@
+{
+  "id": "atv-cing-u7-rimas-para-a-familia-e-os-sentimentos",
+  "titulo": "Rimas e cantigas: para a família e os sentimentos",
+  "marcos": ["LI.CAN.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 7,
+    "paginas": [73, 73]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Cante-a quando ela estiver calma; os pés batendo no gesto de raiva em piso firme e sem escorregar; se ela se irritar, pare a rima e fique junto, sem forçar.",
+  "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "a família e os sentimentos"],
+  "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: a família e os sentimentos).",
+  "passos": [
+    {
+      "titulo": "Cantar: Tommy Thumb",
+      "minutos": 2,
+      "texto": "O gesto: esconda os polegares atrás das costas e mostre-os no “here I am”; balance-os como quem cumprimenta. Depois, com os outros dedos, invente os nomes: Peter Pointer, Toby Tall… Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "fala": "Tommy Thumb, Tommy Thumb, / where are you? / Here I am, here I am, / how do you do?"
+    },
+    {
+      "titulo": "Cantar: Happy, sad, angry, sleepy",
+      "minutos": 2,
+      "texto": "O gesto: faça o gesto de cada sentimento (palmas, esfregar os olhos, bater os pés, suspirar) e termine no suspiro, com um abraço. Cante-a quando ela estiver calma. Rima escrita pela coleção.",
+      "fala": "Happy, happy, clap, clap, clap; / sad, sad, rub your eyes; / angry, angry, stomp, stomp, stomp; / sleepy, sleepy, sigh."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "A primeira rima é um jogo de dedos da família (o polegar é o “Tommy”), e a segunda dá um gesto para cada sentimento, e termina no mais calmo. Cante as duas quando ela estiver tranquila: assim os gestos ficam prontos para a hora difícil. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Faz o gesto da rima", "Completa uma palavra ou pede de novo"],
+    "emDesenvolvimento": ["Ainda só escuta e observa os gestos"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material; só a sua voz e as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

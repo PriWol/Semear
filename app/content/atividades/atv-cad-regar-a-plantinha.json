@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-regar-a-plantinha",
+  "titulo": "Regar a plantinha",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Água, terra e plantas",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 6,
+    "paginas": [58, 58]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 8,
+  "cuidados": "Atenção: Não deixe que ela coma terra ou folhas; escolha uma planta que não seja tóxica. Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["planta", "regar", "água", "terra", "cuidar"],
+  "objetivo": "A criança despeja um pouco de água numa planta, para quando for suficiente e olha a água sumir na terra.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Mostre a terra e ponha o dedo: “seca ou molhada?”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Deixe que ela despeje a água, só um pouco. “Para!” quando for suficiente."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Fiquem olhando a água sumir na terra."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Marquem um dia para olhar de novo: “amanhã a planta vai estar assim?”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“A planta está com sede. Só um pouquinho!” “Glub, glub… a terra bebeu a água.” “Amanhã a gente olha de novo.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "A terra está seca ou molhada? Quanta água? A planta está feliz?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Plante um feijão no algodão (Volume 6, unidade 5). 2) Regue as plantas do quintal. 3) Desenhe a planta toda semana."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Cuidar de uma planta dá uma tarefa real, repetida todo dia, e mostra uma mudança lenta, a lição de esperar. “Pouquinho” e “para” treinam o controle das mãos. É também uma tarefa bem aceita por quem diz “não” a ordens: aqui ela é a responsável."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Um vaso com uma planta resistente, um regador pequeno ou uma jarra, um prato embaixo",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 6",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

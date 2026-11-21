@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-pares-iguais-bandeja",
+  "titulo": "Bandeja dos pares: acha o igual",
+  "marcos": ["DI.SEN.01"],
+  "vertentes": ["Montessori"],
+  "idade": [2, 4],
+  "duracaoMin": 9,
+  "preparoMin": 5,
+  "cuidados": "Use só objetos grandes demais para caber na boca (maiores que uma bola de pingue-pongue); nada de botões, pedrinhas ou contas. Fique junto o tempo todo e guarde tudo depois.",
+  "objetivo": "A criança combina pares de objetos iguais pela vista e pelo tato e nomeia o que sente.",
+  "passos": [
+    {
+      "titulo": "Mostrar",
+      "minutos": 2,
+      "texto": "Mostre uma bandeja com 3 objetos e uma cesta com os 3 pares. Pegue um e procure o par, devagar. Depois, ela tenta.",
+      "fala": "Cadê o igual?"
+    },
+    {
+      "titulo": "Combinar",
+      "minutos": 5,
+      "texto": "Ela combina os pares um por um. Fale as palavras do que sente: “macio”, “áspero”, “liso”. Troque os objetos para repetir."
+    },
+    {
+      "titulo": "Olhos fechados",
+      "minutos": 2,
+      "texto": "Se ela quiser, feche os olhos (ou cubra-os com um pano) e ache o par pelo tato."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Combina 3 ou mais pares", "Usa uma palavra para a textura"],
+    "emDesenvolvimento": ["Pega sem olhar (normal)", "Quer ficar com um só objeto"]
+  },
+  "ajustes": {
+    "dificil": "Use só 2 pares muito diferentes.",
+    "facil": "Use 5 pares com diferenças sutis (lixa fina e grossa)."
+  },
+  "materiais": [
+    {
+      "item": "Pares de objetos grandes: panos, escovas, colheres",
+      "deCasa": true
+    },
+    {
+      "item": "Duas cestas ou bandejas",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Combinou os pares",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou uma textura",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais pares foram mais fáceis?",
+  "palavrasChave": ["pares", "tato", "sentidos", "montessori"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

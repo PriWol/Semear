@@ -1,0 +1,75 @@
+{
+  "id": "atv-nm-calendario-da-familia",
+  "titulo": "Calendário da família",
+  "marcos": ["NM.TEM.04"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [5, 8],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Use tesoura de pontas arredondadas e fique junto ao recortar. Nada de canetas permanentes em móveis.",
+  "objetivo": "A criança monta o calendário do mês, marca datas importantes da família e diz o dia da semana de hoje.",
+  "passos": [
+    {
+      "titulo": "Montar",
+      "minutos": 8,
+      "texto": "Desenhe uma grade de 7 colunas (dom a sáb). Ela escreve (ou você ajuda) os dias da semana no alto e os números nos quadros, acompanhando o mês."
+    },
+    {
+      "titulo": "Marcar",
+      "minutos": 6,
+      "texto": "Marcar com desenho os dias especiais: aniversários, feriados, consultas, visitas. Pergunte: “Quantos dias faltam para o seu aniversário?”."
+    },
+    {
+      "titulo": "Hoje",
+      "minutos": 3,
+      "texto": "Aponte o dia de hoje e use as palavras: “Hoje é terça. Ontem foi segunda. Amanhã será quarta”.",
+      "fala": "Que dia é hoje?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz os dias da semana em ordem", "Acha hoje no calendário"],
+    "emDesenvolvimento": ["Troca a ordem dos dias (comum)", "Se perde nos números"]
+  },
+  "ajustes": {
+    "dificil": "Monte só uma semana, com um desenho por dia.",
+    "facil": "Calcule quantos dias faltam para uma data e riscar cada dia que passa."
+  },
+  "materiais": [
+    {
+      "item": "Folha grande",
+      "deCasa": true
+    },
+    {
+      "item": "Régua",
+      "deCasa": true
+    },
+    {
+      "item": "Canetas coloridas",
+      "deCasa": true
+    },
+    {
+      "item": "Um calendário real, para consultar",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse os dias da semana",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Achou o dia de hoje no calendário",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais datas ela escolheu marcar?",
+  "palavrasChave": ["calendário", "dias da semana", "meses", "aniversário"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

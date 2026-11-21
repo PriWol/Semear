@@ -1,0 +1,62 @@
+{
+  "id": "atv-vol2-u8-peixe-vivo",
+  "titulo": "Peixe vivo: cantar em roda",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 8,
+    "paginas": [60, 66]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 6],
+  "duracaoMin": 8,
+  "preparoMin": 1,
+  "cuidados": "Roda de mãos dadas com cuidado: balance sem puxar, em espaço livre de quinas. Sem peças pequenas. Fique junto da criança.",
+  "objetivo": "A criança **canta uma cantiga de roda** tradicional e relaciona a letra ao que viu: o peixe e a água.",
+  "passos": [
+    {
+      "titulo": "Cantar em roda",
+      "minutos": 5,
+      "texto": "Cantem de mãos dadas, em roda, balançando: *“Como pode o peixe vivo viver fora da água fria? Como poderei viver, como poderei viver, sem a tua, sem a tua, sem a tua companhia?”* (cantiga de roda tradicional, conhecida em todo o Brasil)."
+    },
+    {
+      "titulo": "Conversar",
+      "minutos": 3,
+      "texto": "Pergunte: *“o peixe vive fora da água?”* e lembre da experiência da bacia (Volume 1). A Iara, que canta no fundo do rio, bem podia cantar esta canção.",
+      "fala": "O peixe vive fora da água?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Canta um trecho da cantiga", "Responde que o peixe precisa da água"],
+    "emDesenvolvimento": ["Escuta e balança, sem cantar", "Ainda não relaciona o peixe com a água"]
+  },
+  "ajustes": {
+    "dificil": "Só balançar e cantar o primeiro verso.",
+    "facil": "Peça que ela invente um verso novo, com outro bicho."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 8: A Princesa e a Ervilha e histórias do Brasil)",
+      "deCasa": false
+    },
+    {
+      "item": "Nada além de um espaço livre",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Quanto da cantiga ela cantou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["peixe vivo", "cantiga de roda", "canto", "roda", "música brasileira"]
+}

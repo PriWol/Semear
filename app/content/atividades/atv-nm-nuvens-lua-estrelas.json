@@ -1,0 +1,70 @@
+{
+  "id": "atv-nm-nuvens-lua-estrelas",
+  "titulo": "Olhar o céu: de dia e de noite",
+  "marcos": ["NM.TER.02"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Nunca olhe diretamente para o Sol, nem com óculos escuros. Para observar à noite, fique junto, em local seguro e sem trânsito. Deite em cobertor limpo, longe de ninhos de formigas.",
+  "objetivo": "A criança observa o céu de dia e de noite e diz o que vê em cada um.",
+  "passos": [
+    {
+      "titulo": "Céu do dia",
+      "minutos": 6,
+      "texto": "Deitados no quintal ou na praça, olhem as nuvens: “Que forma tem?”. Deixe que inventem. Aponte a sombra, sem olhar para o Sol."
+    },
+    {
+      "titulo": "Céu da noite",
+      "minutos": 5,
+      "texto": "À noite, da janela ou do quintal, procure a Lua e as estrelas. Diga: “De dia tem Sol; de noite, Lua e estrelas”. Em outro dia, repitam.",
+      "fala": "O que tem no céu agora?"
+    },
+    {
+      "titulo": "Desenhar",
+      "minutos": 4,
+      "texto": "Uma folha com duas metades, DIA e NOITE: ela desenha o que viu em cada uma."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz o que há no céu de dia e de noite", "Desenha as duas metades"],
+    "emDesenvolvimento": [
+      "Estranha ver a Lua de dia (ela pode aparecer mesmo)",
+      "Perde o interesse rápido"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Olhe só um dos céus, com uma única pergunta.",
+    "facil": "Peça que invente uma história sobre a Lua e o Sol."
+  },
+  "materiais": [
+    {
+      "item": "Cobertor",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Disse algo do céu do dia",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse algo do céu da noite",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "O que ela viu no céu?",
+  "palavrasChave": ["céu", "lua", "estrelas", "nuvens", "dia e noite"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

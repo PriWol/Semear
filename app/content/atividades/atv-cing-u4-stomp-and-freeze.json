@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u4-stomp-and-freeze",
+  "titulo": "Stomp and freeze",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 4,
+    "paginas": [39, 39]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "chão firme e sem obstáculos.",
+  "palavrasChave": ["inglês", "english", "brincar dentro de casa", "stomp and freeze"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: brincar dentro de casa.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Stomp, stomp, stomp your feet! / Freeze! Don't move. / One, two, three… go!"
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Cante ou ponha uma música e comecem: “stomp, stomp, stomp!”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "De repente, diga “freeze!” e as duas ficam paradas como estátua."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Conte “one, two, three” e diga “go!” para voltar a dançar."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Troquem de papéis: ela diz “freeze”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Can you stomp? / Can you freeze? / Who says freeze now?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Freeze de bicho: “freeze like a cat”. Freeze bem devagar: “slow motion”. Dance com um lenço e deixe cair no “freeze”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Parar de repente no meio do movimento é um exercício de controle do impulso, e uma brincadeira de Resposta Física Total: “stomp”, “freeze” e “go” são comandos que a criança entende pelo corpo. Deixar que ela dê o comando ajuda quem gosta de mandar. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "uma música cantada por você e um espaço livre de obstáculos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

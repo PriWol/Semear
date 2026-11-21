@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol2-u8-lendas-da-mata",
+  "titulo": "Histórias da mata brasileira: Curupira, Saci e Iara",
+  "marcos": ["LG.LIT.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 8,
+    "paginas": [60, 66]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [3, 7],
+  "duracaoMin": 12,
+  "preparoMin": 3,
+  "cuidados": "Conte uma lenda por vez, de modo leve: para esta idade o Curupira é um protetor da mata, não um bicho-papão. Se alguma parte assustar, pule. Se forem imitar pegadas ou o salto do Saci, em espaço livre e sem escorregar.",
+  "objetivo": "A criança **escuta lendas da tradição oral brasileira**, imagina e responde a perguntas simples sobre cada personagem.",
+  "passos": [
+    {
+      "titulo": "Curupira",
+      "minutos": 4,
+      "texto": "Conte: o Curupira é o guardião da mata, um menino pequeno, de cabelo vermelho como fogo, e tem os **pés virados para trás**: quem segue as pegadas pensa que ele foi para um lado e ele foi para o outro, para proteger os bichos. Pergunte: *“por que ele tem os pés virados?”* e deixe que ela imagine.",
+      "fala": "Por que o Curupira tem os pés virados?"
+    },
+    {
+      "titulo": "Saci e Iara",
+      "minutos": 5,
+      "texto": "Conte, com leveza: o Saci-Pererê é um menino de uma perna só, brincalhão, com um gorro vermelho mágico, que esconde coisas e passa pulando num redemoinho de vento. A Iara mora no fundo dos rios e canta tão bonito que até os peixes param de nadar para ouvir."
+    },
+    {
+      "titulo": "Para onde ele foi?",
+      "minutos": 3,
+      "texto": "Com os pés pintados de guache (ou só de meia) em papel grande, andem para a frente e depois para trás e comparem as pegadas."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Nomeia o Curupira e diz como são os pés dele",
+      "Reconta uma lenda em poucas frases"
+    ],
+    "emDesenvolvimento": [
+      "Escuta, mas ainda não lembra os personagens",
+      "Prefere ouvir só uma lenda"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Conte só o Curupira.",
+    "facil": "Peça que ela invente outro morador da mata."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 8: A Princesa e a Ervilha e histórias do Brasil)",
+      "deCasa": false
+    },
+    {
+      "item": "Papel grande (opcional)",
+      "deCasa": true
+    },
+    {
+      "item": "Guache lavável (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Falou sobre um personagem",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Qual lenda ela quis ouvir de novo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["curupira", "saci", "iara", "lendas", "folclore", "tradição oral", "mata"]
+}

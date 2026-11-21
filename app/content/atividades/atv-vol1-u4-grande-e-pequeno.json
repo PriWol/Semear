@@ -1,0 +1,76 @@
+{
+  "id": "atv-vol1-u4-grande-e-pequeno",
+  "titulo": "Grande e pequeno: quem é maior?",
+  "marcos": ["MA.MED.01"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 4,
+    "paginas": [34, 43]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Atividade de conversa e gestos, sem peças pequenas. Se compararem com animais de verdade, a criança só toca com o adulto e com a permissão do dono; lave as mãos depois.",
+  "objetivo": "A criança **compara dois tamanhos com palavras** (grande, pequeno, maior, menor), pensando nos animais de verdade.",
+  "passos": [
+    {
+      "titulo": "A pergunta",
+      "minutos": 3,
+      "texto": "Mostre os pares de animais do livro e pergunte sobre os de verdade, porque as imagens não estão na escala real: *“quem é maior, a vaca ou o gato?”*.",
+      "fala": "Quem é maior?"
+    },
+    {
+      "titulo": "Mostrar com o corpo",
+      "minutos": 3,
+      "texto": "Braços bem abertos para a vaca; dois dedinhos para o rato. Troquem: ela mostra e você adivinha o animal."
+    },
+    {
+      "titulo": "Outros pares",
+      "minutos": 2,
+      "texto": "Cavalo e rato; porco e sapo. Aos 2 anos, comparar dois é o certo; ordenar três (gato, porco, vaca) é o desafio seguinte."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz “grande” e “pequeno” comparando dois animais",
+      "Mostra o tamanho com o corpo"
+    ],
+    "emDesenvolvimento": [
+      "Aponta o maior, mas ainda não usa a palavra",
+      "Mistura “grande” e “pequeno”"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique em um só par de animais bem diferentes (vaca e rato).",
+    "facil": "Proponha ordenar três: gato, porco e vaca."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 4: Os animais da fazenda e do bosque)",
+      "deCasa": false
+    },
+    {
+      "item": "Os cartões de animais da unidade (ou bichinhos de brinquedo)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Comparou dois animais com palavras",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavras de tamanho ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["grande e pequeno", "tamanho", "comparar", "maior", "menor", "animais"]
+}

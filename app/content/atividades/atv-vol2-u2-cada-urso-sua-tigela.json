@@ -1,0 +1,93 @@
+{
+  "id": "atv-vol2-u2-cada-urso-sua-tigela",
+  "titulo": "Cada urso com a sua tigela: grande, médio e pequeno",
+  "marcos": ["MA.MED.02"],
+  "revisa": ["MA.MED.01"],
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 2,
+    "paginas": [14, 21]
+  },
+  "vertentes": ["Montessori", "Clássico", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 12,
+  "preparoMin": 4,
+  "cuidados": "Use tigelas e colheres inquebráveis, sem pontas. A tesoura para recortar a folha é só do adulto. Pelúcias sem peças soltas.",
+  "objetivo": "A criança **ordena três tamanhos** (grande, médio, pequeno) e faz a correspondência: cada urso com a sua tigela e a sua colher.",
+  "passos": [
+    {
+      "titulo": "Descobrir",
+      "minutos": 3,
+      "texto": "Com as tigelas recortadas e misturadas (ou três tigelas de verdade), pergunte: *“qual é a maior? e a menor?”*.",
+      "fala": "Qual é a maior?"
+    },
+    {
+      "titulo": "Relacionar",
+      "minutos": 5,
+      "texto": "Ela põe cada tigela no lugar do urso certo (o quadro grande, o médio e o pequeno) e depois uma colher para cada tigela: a colher grande com a tigela grande. Se ela trocar a média, pergunte *“será que cabe?”* e deixe que ela confira."
+    },
+    {
+      "titulo": "Criar",
+      "minutos": 4,
+      "texto": "Façam o mesmo com tigelas de verdade e pelúcias."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Diz grande, médio e pequeno apontando", "Ordena três tigelas reais"],
+    "emDesenvolvimento": [
+      "Acerta o maior e o menor, mas troca o médio",
+      "Ainda precisa de ajuda para ligar colher e tigela"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só as duas tigelas mais diferentes (grande e pequena).",
+    "facil": "Sirva a fruta em tigelas de tamanhos diferentes: “a grande para o papai, a pequena para você”."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 2: Cachinhos Dourados e os Três Ursos)",
+      "deCasa": false
+    },
+    {
+      "item": "Três tigelas de tamanhos diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Três colheres de tamanhos diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Três bichinhos de pelúcia",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Ordenou as três tigelas",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Combinou cada colher com a tigela",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "perguntaFicha": "Que palavras de tamanho ela usou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "grande médio pequeno",
+    "seriação",
+    "tigelas",
+    "ursos",
+    "correspondência",
+    "tamanho"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "atv-vol1-u2-orquestra-cozinha",
+  "titulo": "A orquestra da cozinha: pulso, forte e fraquinho",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Ritmo e pulso",
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 2,
+    "paginas": [15, 22]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Colheres de pau e uma tigela de plástico ou metal, firme no colo ou sobre a mesa. Bata de leve para não machucar os ouvidos nem as mãos. Nada de panela quente ou de colher de metal.",
+  "objetivo": "A criança **mantém um pulso regular** batendo a colher na tigela e começa a perceber forte e fraquinho e o silêncio combinado.",
+  "passos": [
+    {
+      "titulo": "Pulso",
+      "minutos": 3,
+      "texto": "Bata a colher na tigela sempre igual, como um relógio, enquanto cantam *“Pirulito que bate bate, pirulito que já bateu; quem gosta de mim é ela, quem gosta dela sou eu”* (cantiga tradicional)."
+    },
+    {
+      "titulo": "Forte e fraquinho",
+      "minutos": 3,
+      "texto": "Uma batida forte, uma de leve: *tum, tim, tum, tim*. Se ela estiver cansada, volte ao pulso simples."
+    },
+    {
+      "titulo": "Silêncio",
+      "minutos": 2,
+      "texto": "Três batidas e… *psiu!*: as mãos param no ar. Deixe que ela seja a regente: ela mostra a mão aberta para parar.",
+      "fala": "Quem manda parar?"
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Bate um pulso regular por alguns tempos",
+      "Para quando o adulto faz o sinal de silêncio"
+    ],
+    "emDesenvolvimento": [
+      "Ainda bate em ritmo solto, sem pulso",
+      "Não percebe a diferença entre forte e fraquinho"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique só no pulso. Aos 2 anos, manter o pulso por alguns tempos já é uma conquista.",
+    "facil": "Experimente rápido e devagar: quatro batidinhas rápidas, depois quatro bem devagar."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 2: Minha casa e meus objetos)",
+      "deCasa": false
+    },
+    {
+      "item": "Colheres de pau",
+      "deCasa": true
+    },
+    {
+      "item": "Tigela de plástico ou metal",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Por quanto tempo ela manteve o pulso?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["ritmo", "pulso", "colher", "tigela", "música", "forte e fraco"]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "atv-ma-fita-dos-numeros",
+  "titulo": "A fita dos números de 0 a 20",
+  "marcos": ["MA.SND.06"],
+  "revisa": ["MA.SEN.05"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [6, 7],
+  "duracaoMin": 23,
+  "preparoMin": 5,
+  "cuidados": "Tesoura sem ponta para as cartas, com o adulto por perto. Sem objetos pequenos nesta atividade; se usar fichas para conferir, escolha peças grandes.",
+  "objetivo": "A criança **ordena números até 20** e diz qual de dois números é o maior, sem contar objetos.",
+  "passos": [
+    {
+      "titulo": "Montar a fita",
+      "minutos": 6,
+      "texto": "Cole uma tira com os números de 0 a 20 na parede ou na mesa. Cantem juntos subindo a fita, apontando cada número."
+    },
+    {
+      "titulo": "Quem vem depois?",
+      "minutos": 5,
+      "texto": "Pergunte *“quem vem depois do 14?”*, *“e antes do 9?”*. Esconda um número com o dedo e deixe que ela diga qual é.",
+      "fala": "Qual número está escondido?"
+    },
+    {
+      "titulo": "Qual é maior?",
+      "minutos": 6,
+      "texto": "Mostre duas cartas (13 e 17). Ela diz qual é maior e confere vendo quem está mais para frente na fita. Se não souber, confira com objetos.",
+      "fala": "Como você sabe?"
+    },
+    {
+      "titulo": "Folha: ponha na ordem",
+      "minutos": 6,
+      "texto": "Recortem as cartas e ponham 5 números em ordem, do menor para o maior."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "ordena 5 números até 20",
+      "diz o maior de dois números sem contar objetos",
+      "usa a fita para conferir"
+    ],
+    "emDesenvolvimento": [
+      "confunde maior e menor",
+      "erra a ordem de números que passam por 10 (9, 10, 11)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só números até 10 e peça que ela confira andando com o dedo na fita.",
+    "facil": "Peça para ordenar do maior para o menor e escolha números bem próximos (16, 17, 18)."
+  },
+  "materiais": [
+    {
+      "item": "Tira de papel com os números de 0 a 20",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": false
+    },
+    {
+      "item": "Cartas com números (feitas no papel)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "A tábua dos cem e as barras numéricas mostram a ordem dos números: cada um tem seu lugar e seu tamanho.",
+    "Waldorf": "Caminhem uma fita no chão contando em voz alta e em ritmo; a criança sente a ordem antes de escrever.",
+    "Clássico": "Recitem a sequência até 20 e depois do 20 de trás para frente, como cantilena.",
+    "Charlotte Mason": "Lição curta, com poucos números por vez, e a criança explica como soube qual era maior."
+  },
+  "evidencias": [
+    {
+      "texto": "Ordenou 5 números",
+      "resposta": "☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse o maior de dois números",
+      "resposta": "_____ de 4"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Recorte e ponha os números em ordem",
+      "cartas": [
+        {
+          "numero": 4
+        },
+        {
+          "numero": 9
+        },
+        {
+          "numero": 12
+        },
+        {
+          "numero": 13
+        },
+        {
+          "numero": 15
+        },
+        {
+          "numero": 17
+        },
+        {
+          "numero": 18
+        },
+        {
+          "numero": 20
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["ordem dos números", "maior e menor", "fita numérica", "reta numérica"]
+}

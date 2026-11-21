@@ -1,0 +1,87 @@
+{
+  "id": "atv-cing-u1-get-dressed",
+  "titulo": "Get dressed",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Escuta musical",
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 1,
+    "paginas": [11, 11]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Fique junto enquanto ela se veste, sem deixá-la em pé sobre a cama; deixe fora do alcance sapatos com cadarço comprido e roupas com botões ou enfeites soltos, que podem ir à boca.",
+  "palavrasChave": ["inglês", "english", "acordar e se arrumar", "get dressed"],
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: acordar e se arrumar.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Red socks or blue socks? You choose. / One sock, two socks! Put on your shoes. / All dressed! You look great."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Mostre duas meias de cores diferentes e deixe que ela escolha: “red socks or blue socks?”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Diga o nome de cada peça ao vesti-la: “put on your socks”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Deixe que ela faça o que consegue (puxar a meia, enfiar o braço) e ajude no resto."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "No fim, olhe no espelho: “all dressed!”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Which one? / Where's your sock? / Can you put it on?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Uma peça por dia em inglês: hoje, só “socks”. Escolha de cores: “which color today?”. Vista o ursinho antes."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Escolher entre duas coisas que você aceita dá à criança um pouco de controle, e na fase do “não” isso evita muitas brigas. Vestir-se é também uma tarefa de vida prática (ideia da educação Montessori) e um bom contexto para nomear peças de roupa com o objeto na mão. Se ela recusar, mude a escolha, não a regra. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "as roupas do dia, dispostas na cama: meias, camiseta, calça, sapato",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

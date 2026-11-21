@@ -1,0 +1,76 @@
+{
+  "id": "atv-vol1-u1-cinco-janelinhas",
+  "titulo": "As cinco janelinhas: um poema com gestos",
+  "marcos": ["LG.FON.01"],
+  "materialImpresso": {
+    "volume": 1,
+    "unidade": 1,
+    "paginas": [6, 14]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Waldorf"],
+  "idade": [2, 5],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Fique sentado junto da criança. O poema usa só o corpo (olhos, orelhas, nariz, boca e dedos): sem objetos pequenos. Se ela não quiser que toquem o rosto dela, mostre só em você.",
+  "objetivo": "A criança **brinca com o som das palavras que rimam** (olhar, escutar, cheirar, provar) e nomeia as partes do corpo ligadas aos sentidos.",
+  "passos": [
+    {
+      "titulo": "Dizer e mostrar",
+      "minutos": 3,
+      "texto": "Diga o poema devagar, apontando em você e depois nela: *“Duas janelas para olhar, duas conchinhas para escutar, um narizinho para cheirar, uma boquinha para provar, e dez dedinhos, devagarinho, para tocar o mundo inteirinho.”* As “janelas” são os olhos e as “conchinhas”, as orelhas.",
+      "fala": "Para que serve este narizinho?"
+    },
+    {
+      "titulo": "Esperar a palavra",
+      "minutos": 3,
+      "texto": "Na terceira vez, pare antes da última palavra de cada verso e espere: *“Duas janelas para…”*. Se ela completar, repita a palavra e sorria. Se não, complete você, sem insistir."
+    },
+    {
+      "titulo": "Olhar a imagem (opcional)",
+      "minutos": 2,
+      "texto": "Abra o Tesouro na imagem de Kate Greenaway (*Under the Window*, 1878): *“Quantas crianças estão na janela? O que elas estão olhando?”* (são três; deixe que ela imagine o que veem)."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta a parte do corpo quando o adulto diz o sentido",
+      "Completa a palavra final de um verso quando o adulto para"
+    ],
+    "emDesenvolvimento": [
+      "Só escuta e faz os gestos, sem completar as palavras",
+      "Ainda confunde as partes do rosto"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Diga só o poema com os gestos, sem esperar a palavra final.",
+    "facil": "Peça que ela invente um gesto novo para o poema."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 1 (unidade 1: Eu e meus sentidos)",
+      "deCasa": false
+    },
+    {
+      "item": "Nada além do próprio corpo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Completou a palavra final do verso",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que palavra ela completou ou que gesto inventou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["poema", "rima", "sentidos", "corpo", "as cinco janelinhas"]
+}

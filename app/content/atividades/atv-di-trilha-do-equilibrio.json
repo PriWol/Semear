@@ -1,0 +1,67 @@
+{
+  "id": "atv-di-trilha-do-equilibrio",
+  "titulo": "Trilha do equilíbrio e o flamingo",
+  "marcos": ["DI.MAM.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 6],
+  "duracaoMin": 12,
+  "preparoMin": 3,
+  "cuidados": "A trilha fica no chão, nunca em lugares altos. Use chão plano e livre, sem tapetes soltos ou meias escorregadias. Fique perto, com a mão pronta, sem segurá-la a todo momento.",
+  "objetivo": "A criança anda sobre uma linha e fica em um pé só, em um jogo de equilíbrio.",
+  "passos": [
+    {
+      "titulo": "Montar",
+      "minutos": 3,
+      "texto": "Cole uma fita adesiva de uns 3 metros no chão, reta e depois com uma curva. Mostre: “Vamos andar como equilibristas”."
+    },
+    {
+      "titulo": "Trilha",
+      "minutos": 6,
+      "texto": "Ela anda sobre a fita, com os braços abertos, de frente e depois de lado. Aumente o desafio: carregar um bichinho de pelúcia.",
+      "fala": "Cuidado para não cair!"
+    },
+    {
+      "titulo": "Flamingo",
+      "minutos": 3,
+      "texto": "Imite um flamingo, com um pé no ar, e contem até 3. Troque o pé. Celebre cada segundo a mais."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Anda na linha sem sair", "Fica um pé só por 2 ou 3 segundos"],
+    "emDesenvolvimento": ["Põe o pé fora da linha (esperado)", "Não aguenta nem 1 segundo (treine)"]
+  },
+  "ajustes": {
+    "dificil": "Anda na linha com a mão dada.",
+    "facil": "Pedir que ande de costas ou com um livro leve sobre a cabeça."
+  },
+  "materiais": [
+    {
+      "item": "Fita adesiva ou barbante no chão",
+      "deCasa": true
+    },
+    {
+      "item": "Bicho de pelúcia",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Andou na linha",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Equilibrou-se em um pé",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quantos segundos ela aguentou em um pé?",
+  "palavrasChave": ["equilíbrio", "flamingo", "trilha", "fita"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

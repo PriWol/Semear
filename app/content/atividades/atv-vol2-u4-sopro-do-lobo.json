@@ -1,0 +1,77 @@
+{
+  "id": "atv-vol2-u4-sopro-do-lobo",
+  "titulo": "O sopro do Lobo: o que o sopro consegue mover?",
+  "marcos": [],
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
+  "materialImpresso": {
+    "volume": 2,
+    "unidade": 4,
+    "paginas": [31, 38]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Soprar com a boca ou com um canudo só sentada, e nunca sugar pelo canudo. Pedrinha, palitos e algodão: só com o adulto ao lado e longe da boca; para quem ainda leva tudo à boca, use objetos maiores (pena, folha grande, colher). O secador de cabelo é segurado só pelo adulto, na potência fria, longe do rosto da criança e da água.",
+  "palavrasChave": ["sopro", "lobo", "prever", "testar", "três porquinhos"],
+  "objetivo": "A criança adivinha, testa soprando e separa o que o sopro leva do que não sai do lugar.",
+  "passos": [
+    {
+      "titulo": "Prever",
+      "minutos": 3,
+      "texto": "Ponha cada objeto real na mesa (pena, algodão, folha seca, pedrinha, colher, palitos). Antes de soprar, ela adivinha: “o sopro vai levar?”.",
+      "fala": "O sopro vai levar?"
+    },
+    {
+      "titulo": "Testar",
+      "minutos": 4,
+      "texto": "Ela sopra, com a boca ou com um canudo, e cola o desenho do objeto no lado certo: “voou!” ou “não saiu do lugar” (pesado demais para o sopro). Esperado: pena, algodão e folha seca voam; pedrinha e colher não saem do lugar; os palitos dependem de quantos são."
+    },
+    {
+      "titulo": "Criar (opcional, outro dia)",
+      "minutos": 3,
+      "texto": "Construam três casinhas (palitos soltos, gravetos amarrados, blocos) e soprem com um secador de cabelo na potência fria, com o adulto segurando. Qual cai primeiro?"
+    }
+  ],
+  "observar": {
+    "consolidado": ["Adivinha antes de soprar", "Separa o que voa do que fica"],
+    "emDesenvolvimento": [
+      "Sopra sem adivinhar (tudo bem: peça a previsão na vez seguinte)",
+      "Ainda não separa os objetos pelo resultado"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só três objetos (pena, folha, pedrinha), sem canudo.",
+    "facil": "Construam as casinhas e comparem qual cai primeiro."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 2 (unidade 4: Os Três Porquinhos)",
+      "deCasa": false
+    },
+    {
+      "item": "Uma pena, algodão, uma folha seca, uma pedrinha, uma colher e palitos; um canudo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Adivinha antes de soprar",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Separa o que voa do que fica",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais objetos o sopro levou? O que ela adivinhou certo?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

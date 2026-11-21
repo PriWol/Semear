@@ -1,0 +1,86 @@
+{
+  "id": "atv-vol7-u2-fr",
+  "titulo": "A família em francês: “Fais dodo, Colas”, “Frère Jacques” e o jogo “Quem é quem?”",
+  "marcos": ["LI.VOC.02", "LI.CAN.01"],
+  "idioma": "fr",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 2,
+    "paginas": [12, 17]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "Famílias são diferentes: se na casa da Marina quem cuida é outra pessoa (uma tia, um avô, duas mães, dois pais), use a palavra que combina com a vida dela; os cartões são um ponto de partida, não um modelo. Na roda, segurem as mãos sem puxar e com espaço livre. Cartões e fotos recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "palavrasChave": ["francês", "família", "maman", "frère jacques", "canção de ninar"],
+  "objetivo": "A criança ouve uma canção de ninar francesa, aponta o cartão certo quando o adulto diz mãe, pai, bebê, irmão, irmã ou avó em francês e canta *Frère Jacques* em roda.",
+  "passos": [
+    {
+      "titulo": "Ouvir a canção de ninar",
+      "minutos": 3,
+      "texto": "Cante bem baixo, embalando; a melodia é a impressa na página (a linha de cima, *chant*), e o acompanhamento de piano você pode ignorar. *Dodo* é como as crianças francesas chamam o sono (*faire dodo*, “dormir”), *lolo* é o leite, e *Colas* é *Nicolas*. Tradução da coleção: “Dorme, Colas, meu irmãozinho; / dorme, você vai ganhar leitinho; / a mamãe está lá em cima / fazendo bolo, / o papai está lá embaixo / fazendo chocolate: / dorme, Colas, meu irmãozinho, / dorme, você vai ganhar leitinho.”",
+      "fala": "Fais dodo, Colas, mon p’tit frère; / Fais dodo, t’auras du lolo; / Maman est en haut / Qui fait du gâteau, / Papa est en bas / Qui fait du chocolat: / Fais dodo, Colas, mon p’tit frère, / Fais dodo, t’auras du lolo."
+    },
+    {
+      "titulo": "O jogo dos cartões",
+      "minutos": 3,
+      "texto": "Espalhem os cartões da família com a figura para cima. O adulto diz uma palavra em francês (“maman !”) e a Marina aponta o cartão, sem pedir que repita: mère, père, bébé, frère, sœur, grand-mère, famille, câlin, amour. Depois ela aponta uma pessoa de verdade (ou uma foto) e o adulto diz a palavra.",
+      "fala": "Maman !"
+    },
+    {
+      "titulo": "Frère Jacques em roda",
+      "minutos": 3,
+      "texto": "Para terminar, cantem em roda, balançando como os sinos da gravura. Quando ela souber, comecem uma segunda voz depois da primeira frase (um cânone). Tradução da coleção: “Irmão Jacques, irmão Jacques, / está dormindo? está dormindo? / toque as matinas, toque as matinas, / din, din, dom! din, din, dom!”.",
+      "fala": "Frère Jacques, Frère Jacques, / Dormez-vous? Dormez-vous? / Sonnez les matines, sonnez les matines, / Din, din, don! Din, din, don!"
+    },
+    {
+      "titulo": "Na vida de todo dia (opcional)",
+      "minutos": 1,
+      "texto": "Diga a palavra do idioma da semana ao abraçar (*câlin*) e ao apresentar as pessoas da casa, sem pedir que ela repita."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta o cartão certo quando ouve a palavra",
+      "Segura a mão de alguém na roda de *Frère Jacques*"
+    ],
+    "emDesenvolvimento": [
+      "Só escuta a canção de ninar (tudo bem: ouvir já é o objetivo)",
+      "Responde em português (repita a ideia em francês, sem corrigir)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só a canção de ninar, de colo, com a luz baixa, e o cartão *mère* (ou a pessoa que cuida dela).",
+    "facil": "Fazer um cartaz da família e inventar uma canção de ninar com os nomes da casa."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 2: A família)",
+      "deCasa": false
+    },
+    {
+      "item": "Os cartões da família recortados; fotos da família ou desenhos; uma caixa de sapatos para guardar os cartões",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Aponta o cartão certo quando ouve a palavra",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Segura a mão de alguém na roda de *Frère Jacques*",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que cartão ela apontou primeiro? Cantou ou balançou na roda?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

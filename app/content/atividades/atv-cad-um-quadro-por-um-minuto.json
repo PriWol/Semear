@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-um-quadro-por-um-minuto",
+  "titulo": "Um quadro por um minuto",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Apreciação de artistas",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 5,
+    "paginas": [51, 51]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "Atenção: Apoie o livro de arte no chão ou no seu colo, sem deixá-lo pesado sobre as pernas dela; folhas soltas e recortes não vão à boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["quadro", "obra de arte", "Van Gogh", "olhar", "girassóis"],
+  "objetivo": "A criança olha uma obra de arte em silêncio por um minuto e conta o que vê, treinando a atenção sem exigir fala nem tarefa.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Abra o livro no quadro e sentem de frente para ele, juntas."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Fiquem em silêncio por um minuto, só olhando."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Depois pergunte: “o que você vê?”. Aceite qualquer resposta."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Feche o livro e conte: “vimos flores amarelas”."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Olha quanta cor! Amarelo, amarelo.” “Tem flores. E um vaso.” “Que quadro bonito. Vamos olhar mais um pouquinho?”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "O que você vê? Qual cor você mais gosta? Tem flor? Quantas?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Escolha o mesmo quadro por uma semana. 2) Imite o quadro com o corpo: flor, sol. 3) Procure no quintal algo da mesma cor."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Olhar uma imagem por um minuto, em silêncio, treina a atenção sem exigir fala nem tarefa, e apresenta a ela uma obra de verdade, como fazem os museus com os pequenos. Um minuto basta: se ela quiser mais, ótimo; se não, fim."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Uma obra do Volume 5 (os Girassóis, de Van Gogh, ou outra), ou qualquer livro de arte",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 5",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

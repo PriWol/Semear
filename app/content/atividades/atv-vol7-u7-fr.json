@@ -1,0 +1,80 @@
+{
+  "id": "atv-vol7-u7-fr",
+  "titulo": "O corpo em francês: “Savez-vous planter les choux ?” e o jogo “Faça como eu digo”",
+  "marcos": ["LI.ESC.01", "LI.CAN.01"],
+  "idioma": "fr",
+  "materialImpresso": {
+    "volume": 7,
+    "unidade": 7,
+    "paginas": [42, 47]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [3, 6],
+  "duracaoMin": 10,
+  "preparoMin": 3,
+  "cuidados": "O corpo da criança é dela: peça licença antes de tocar (“posso fazer cócegas no pé?”) e pare quando ela disser não, em qualquer idioma. Espaço livre de quinas e degraus para se mexer. Na roda, segurem as mãos sem puxar. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em francês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "palavrasChave": ["francês", "corpo", "comandos", "savez-vous planter les choux", "roda"],
+  "objetivo": "A criança canta e faz o gesto de plantar com o pé e com a mão numa canção de roda francesa, e faz o gesto de comandos curtos em francês (“Touche ton nez !”).",
+  "passos": [
+    {
+      "titulo": "Ouvir e cantar a canção de roda",
+      "minutos": 4,
+      "texto": "A melodia é a da partitura impressa (a linha de cima, *chant*). A cada estrofe nomeia-se outra parte do corpo e faz-se o gesto de plantar com ela: *le pied* (o pé), *la main* (a mão), *le coude* (o cotovelo), *le nez* (o nariz). Comecem pelo pé e pela mão, e deixem que ela invente as próximas. Tradução da coleção: “Vocês sabem plantar couves / ao modo, ao modo? / Vocês sabem plantar couves / ao modo da nossa terra? / Plantamos com o pé, / ao modo, ao modo, / plantamos com o pé, / ao modo da nossa terra.”",
+      "fala": "Savez-vous planter les choux / À la mode, à la mode, / Savez-vous planter les choux / À la mode de chez nous ? / On les plante avec le pied, / À la mode, à la mode, / On les plante avec le pied, / À la mode de chez nous."
+    },
+    {
+      "titulo": "Faça como eu digo",
+      "minutos": 5,
+      "texto": "O adulto diz um comando em francês e faz o gesto junto; a Marina faz o mesmo: *Touche ton nez !* (toque o nariz), *Tape dans tes mains !* (bata palmas), *Tape du pied !* (bata o pé), *Ferme les yeux !* (feche os olhos), *Ouvre la bouche !* (abra a boca). Quando ela já reconhecer, o adulto diz o comando e **não faz o gesto**: quem entendeu faz sozinha. Troquem: a Marina manda e o adulto obedece (e erra de propósito, para ela rir). No fim, uma parada: “stop !” e todos ficam imóveis como estátuas. Use só os comandos que ela já entende; não peça que ela diga os comandos em voz alta: o objetivo é ouvir e agir.",
+      "fala": "Touche ton nez !"
+    },
+    {
+      "titulo": "No banho e ao vestir (opcional)",
+      "minutos": 1,
+      "texto": "Diga a parte do corpo em francês: *pied* ao calçar a meia, *main* ao lavar as mãos."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Faz o gesto de cada verso da canção das couves",
+      "Segue um comando simples em francês"
+    ],
+    "emDesenvolvimento": [
+      "Só olha e faz o gesto depois de ver o adulto (tudo bem: o gesto junto é o ponto de partida)",
+      "Responde em português (repita a ideia em francês, sem corrigir)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Só a canção das couves, com o pé e a mão.",
+    "facil": "Inventar um verso novo (“plantamos com o cotovelo”) ou ensinar o ursinho a tocar o nariz."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 7 (unidade 7: O corpo)",
+      "deCasa": false
+    },
+    {
+      "item": "Espaço para se mexer; os cartões do corpo recortados, se quiser",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Faz o gesto de cada verso da canção das couves",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Segue um comando simples em francês",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que gestos ela fez? Inventou uma parte do corpo nova na canção?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

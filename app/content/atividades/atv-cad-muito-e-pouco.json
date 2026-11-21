@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-muito-e-pouco",
+  "titulo": "Muito e pouco",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Sentidos e classificação",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 3,
+    "paginas": [31, 31]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Atenção: Frutas ou bolas bem maiores que a boca dela. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["muito", "pouco", "quantidade", "contar", "frutas"],
+  "objetivo": "A criança compara dois pratos (um com uma fruta, outro com cinco), diz ou aponta onde tem muito e onde tem pouco, e entrega “poucas” e “muitas”.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Ponha uma fruta num prato e cinco no outro."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Pergunte: “qual tem muito? qual tem pouco?”. Aceite o apontar."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Peça: “me dá poucas”, “me dá muitas”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Conte tocando em cada fruta, uma a uma, e deixe que ela repita o que souber."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Aqui tem uma. Aqui tem muitas.” “Um, dois, três, quatro, cinco!” “Você quer muitas ou poucas?”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Qual prato tem mais? Quantas você quer? Vamos contar juntas?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Na feira ou no mercado: “quantas laranjas?”. 2) Com colheres, com meias, com sapatos. 3) Divida as frutas entre dois bichinhos de pelúcia."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Antes de conhecer os números, a criança entende “muito” e “pouco”. Contar tocando cada objeto, um a um, faz a ligação entre o número e a coisa. Peça sempre “me dá…” e agradeça: é uma tarefa de verdade, e muita criança que diz “não” adora ser ajudante."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Dois pratos e umas 8 frutas ou bolas de meia grandes (nada que caiba na boca)",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 3",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

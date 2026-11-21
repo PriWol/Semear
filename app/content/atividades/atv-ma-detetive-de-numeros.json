@@ -1,0 +1,122 @@
+{
+  "id": "atv-ma-detetive-de-numeros",
+  "titulo": "Detetive de números",
+  "marcos": ["MA.SND.01"],
+  "revisa": ["MA.SEN.03"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [4, 6],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "A caça é dentro de casa ou em passeio acompanhado, nunca sozinha. Evite que a criança mexa em botões de elevador e tomadas só para ver os números.",
+  "objetivo": "A criança **reconhece e nomeia os algarismos de 0 a 9** que aparecem no dia a dia.",
+  "passos": [
+    {
+      "titulo": "Caça aos números",
+      "minutos": 8,
+      "texto": "Dê uma lupa de papel e saiam pela casa procurando algarismos: relógio, calendário, controle remoto, número da casa. Quando ela achar, diga o nome e deixe repetir. *“Detetive, que número é este?”*"
+    },
+    {
+      "titulo": "Cartões em ordem misturada",
+      "minutos": 7,
+      "texto": "Mostre os cartões de 0 a 9, um de cada vez, fora de ordem. Primeiro só diga o nome. Depois pergunte *“qual é este?”*. Separe os que ela já conhece dos que ainda estão em treino."
+    },
+    {
+      "titulo": "Folha: cartas dos números",
+      "minutos": 5,
+      "texto": "A criança recorta os cartões e brinca de esconder um número e adivinhar qual está faltando."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "nomeia 8 dos 10 algarismos fora de ordem",
+      "acha algarismos fora de casa",
+      "troca poucos (6 e 9, 2 e 5)"
+    ],
+    "emDesenvolvimento": [
+      "conhece só os algarismos do nome ou da idade",
+      "troca os algarismos parecidos (6 e 9)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Mostre só 3 ou 4 algarismos por vez, os do dia a dia dela (a idade, o número da casa).",
+    "facil": "Peça que ela escreva ou desenhe o número no ar e invente uma história para cada um."
+  },
+  "materiais": [
+    {
+      "item": "Cartões de papel com um algarismo de 0 a 9 cada",
+      "deCasa": true
+    },
+    {
+      "item": "Calendário, relógio, embalagens com números",
+      "deCasa": true
+    },
+    {
+      "item": "Lupa de brinquedo ou de papelão (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Os algarismos de lixa ligam o nome ao tato do traçado: a criança passa o dedo e diz o nome.",
+    "Charlotte Mason": "Mostre poucos algarismos por vez, bem feitos, e retome ao longo da semana.",
+    "Clássico": "Faça uma recitação curta do 0 ao 9 e depois mostre fora de ordem, como uma chamada."
+  },
+  "evidencias": [
+    {
+      "texto": "Nomeou os algarismos mostrados fora de ordem",
+      "resposta": "_____ de 10   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Achou algarismos na vida real",
+      "resposta": "_____ achados"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Cartas dos algarismos",
+      "cartas": [
+        {
+          "numero": 0
+        },
+        {
+          "numero": 1
+        },
+        {
+          "numero": 2
+        },
+        {
+          "numero": 3
+        },
+        {
+          "numero": 4
+        },
+        {
+          "numero": 5
+        },
+        {
+          "numero": 6
+        },
+        {
+          "numero": 7
+        },
+        {
+          "numero": 8
+        },
+        {
+          "numero": 9
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["algarismos", "numerais", "reconhecer números", "números do dia a dia"]
+}

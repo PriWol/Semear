@@ -1,0 +1,84 @@
+{
+  "id": "atv-vol5-u2",
+  "titulo": "Linhas e círculos: olhar Kandinsky e riscar ouvindo música",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Estudo de pintores",
+  "materialImpresso": {
+    "volume": 5,
+    "unidade": 2,
+    "paginas": [13, 19]
+  },
+  "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
+  "idade": [4, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Música em volume baixo. Giz de cera e lápis longe de quem ainda põe tudo na boca. Olhar uma obra por um minuto, em silêncio, já é uma atividade completa.",
+  "palavrasChave": ["Kandinsky", "linhas", "círculos", "apreciação", "música"],
+  "objetivo": "A criança **olha com calma duas obras de Kandinsky** e diz o que vê (cores, formas, tamanhos); depois traça retas, ondas, espirais e círculos.",
+  "passos": [
+    {
+      "titulo": "Olhar com calma",
+      "minutos": 8,
+      "texto": "Olhar *Vários círculos* em silêncio, por um minuto. Dizer o que vê: cores, tamanhos, quantos. Traçar uma linha reta e uma onda com o dedo."
+    },
+    {
+      "titulo": "Círculos e música",
+      "minutos": 9,
+      "texto": "Olhar *Quadrados com círculos concêntricos*. Traçar círculos dentro de círculos. Ouvir música e riscar linhas “do jeito dela”."
+    },
+    {
+      "titulo": "Desenho só de linhas e círculos",
+      "minutos": 8,
+      "texto": "Fazer um desenho só de linhas e círculos. Pintar círculos que se sobrepõem (guache aguado). Dar nome ao desenho e dizer que música ele tem."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Descreve a obra com pelo menos três palavras (cores, formas, tamanhos).",
+      "Traça uma onda e uma espiral com o giz de cera.",
+      "Faz círculos de tamanhos diferentes.",
+      "Diz como uma linha parece (calma, brava, pulando)."
+    ],
+    "emDesenvolvimento": [
+      "Ainda descreve a obra com uma ou duas palavras",
+      "Ainda não lembra detalhes com o livro fechado"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Se o dia estiver difícil: só olhar *Vários círculos* e dizer qual círculo ela escolheria para si.",
+    "facil": "Se o interesse crescer: ouvir uma peça curta e pedir que ela risque o que ouve, com giz de cera, enquanto a música toca."
+  },
+  "materiais": [
+    {
+      "item": "Tesouro de Marina, Volume 5",
+      "deCasa": false
+    },
+    {
+      "item": "Papel grosso",
+      "deCasa": true
+    },
+    {
+      "item": "Giz de cera ou lápis de cor",
+      "deCasa": true
+    },
+    {
+      "item": "Guache",
+      "deCasa": true
+    },
+    {
+      "item": "Uma música sem palavras (instrumental), em volume baixo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "Que nome ela deu ao desenho e que música ele tem?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

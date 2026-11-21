@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u3-wash-your-hands-let-s-eat",
+  "titulo": "Wash your hands, let's eat",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 3,
+    "paginas": [29, 29]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 5,
+  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias.",
+  "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "wash your hands, let's eat"],
+  "objetivo": "Ouvir e usar inglês num momento fixo do dia (comer e ajudar na mesa), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "It's lunchtime! Let's wash our hands. / Rub, rub, rub. Rinse. Dry. / Sit down. Let's eat."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 2,
+      "texto": "Avise com antecedência: “five more minutes, then it's lunchtime”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Lavem as mãos juntos: “water, soap, rub, rub, rinse, dry”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Sentem à mesa e diga: “let's eat!”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 1,
+      "texto": "Ao acabar: “all done?”, “wipe your hands”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Are you hungry? / Are your hands clean? / Where is your spoon?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Cante “wash your hands” (rima desta unidade) na pia. Ela escolhe: “this towel or that towel?”. Lave as mãos do ursinho."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "A mesma sequência de palavras, todos os dias, no mesmo momento, é o que a abordagem de língua por hora e lugar pede, e o aviso de antecedência reduz as brigas na troca de atividade, que é um ponto difícil na fase do “não”. Lavar as mãos juntos é também uma tarefa de vida prática (Montessori). Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "uma pia ou bacia, sabonete e a mesa posta",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

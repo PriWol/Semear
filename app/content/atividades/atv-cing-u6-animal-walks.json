@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u6-animal-walks",
+  "titulo": "Animal walks",
+  "marcos": ["LI.ESC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [60, 60]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "chão firme e sem obstáculos.",
+  "palavrasChave": ["inglês", "english", "os bichos", "animal walks"],
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: os bichos.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Hop, hop, hop like a bunny. / Waddle, waddle like a duck. / Slow, slow like a turtle."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Mostre um bicho e faça o andar: “hop like a bunny”, “waddle like a duck”, “stomp like an elephant”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Ela imita; depois, ela escolhe o bicho."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Alterne fast e slow: “run like a horse, creep like a turtle”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Termine com “freeze like a statue”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Can you hop? / Can you waddle? / Which animal are you?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Ela faz o bicho e você adivinha. Marchem como elefante e voltem como lesma. Faça o bicho dormindo: “sleepy cat”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "É uma Resposta Física Total, com os bichos como pretexto: os verbos (hop, waddle, stomp, creep) são aprendidos pelo corpo, e as variações de ritmo (fast, slow) servem para gastar energia e voltar à calma. A criança dessa idade adora ser bicho. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "um espaço livre, no chão firme",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "atv-di-primeiros-cortes",
+  "titulo": "Primeiros cortes: a tesoura segura",
+  "marcos": ["DI.MFI.03"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 6],
+  "duracaoMin": 12,
+  "preparoMin": 3,
+  "cuidados": "Use tesoura de crianças, de ponta arredondada, do tamanho da mão. Sente-se ao lado, só use sentada à mesa, e nunca ande com a tesoura na mão. Guarde-a depois. Cuidado com canhotos: ofereça tesoura para canhoto, se for o caso.",
+  "objetivo": "A criança corta tiras e linhas retas de papel com uma tesoura segura.",
+  "passos": [
+    {
+      "titulo": "Combinar",
+      "minutos": 2,
+      "texto": "Mostre a tesoura e as regras: só sentada, só papel, sempre devolver para a caixa. Ela repete as regras com suas palavras.",
+      "fala": "Só papel!"
+    },
+    {
+      "titulo": "Tiras",
+      "minutos": 5,
+      "texto": "Dê tiras de papel de 3 cm de largura. Ela corta cortes curtos; depois corta a tira em pedaços. Depois, linhas retas desenhadas com caneta grossa."
+    },
+    {
+      "titulo": "Colar",
+      "minutos": 5,
+      "texto": "Com os pedaços, ela cria uma colagem com cola em bastão, uma “chuva” ou uma “cerca”. Valorize o resultado dela."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Corta uma tira de papel", "Segue uma linha reta grossa"],
+    "emDesenvolvimento": [
+      "Corta fora da linha (esperado)",
+      "Usa as duas mãos juntas na tesoura (normal no começo)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Dê tiras de papelão bem fino ou massinha para cortar.",
+    "facil": "Desenhe linhas onduladas, em zigue-zague e círculos para recortar."
+  },
+  "materiais": [
+    {
+      "item": "Tesoura de ponta arredondada",
+      "deCasa": true
+    },
+    {
+      "item": "Papel ou cartolina em tiras",
+      "deCasa": true
+    },
+    {
+      "item": "Cola em bastão",
+      "deCasa": true
+    },
+    {
+      "item": "Caneta grossa para riscar a linha",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Cortou a tira",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Seguiu a linha",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Como ela segurou a tesoura?",
+  "palavrasChave": ["tesoura", "recortar", "colagem", "motor fino"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

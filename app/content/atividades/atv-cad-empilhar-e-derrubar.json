@@ -1,0 +1,92 @@
+{
+  "id": "atv-cad-empilhar-e-derrubar",
+  "titulo": "Empilhar e derrubar",
+  "marcos": [],
+  "dominio": "DI",
+  "categoria": "Movimento e coordenação",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 3,
+    "paginas": [30, 30]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 8,
+  "cuidados": "Atenção: Blocos leves e sem peças pequenas; derrube longe do rosto. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["torre", "blocos", "empilhar", "derrubar", "causa e efeito"],
+  "objetivo": "A criança empilha 3 a 5 copos ou blocos leves, derruba a torre e recomeça, contando os blocos que voltam para a caixa.",
+  "passos": [
+    {
+      "titulo": "Passo 1",
+      "minutos": 0,
+      "texto": "Faça uma torre de 3 e deixe que ela derrube: “tudo cai!”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 0,
+      "texto": "Depois, deixe que ela construa. Ajude só se ela pedir."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 0,
+      "texto": "Se a torre cair sozinha, não conserte: diga “caiu” e “de novo?”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Guardem juntas, contando os blocos que voltam para a caixa."
+    },
+    {
+      "titulo": "Para dizer",
+      "minutos": 0,
+      "texto": "“Um, dois, três… em cima. E… pum! Caiu!” “De novo? Vamos fazer outra torre.” “Quantos copos tem? Vamos contar.”"
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Quantos copos tem? Qual está em cima? Quer fazer mais alta?"
+    },
+    {
+      "titulo": "Para variar",
+      "minutos": 0,
+      "texto": "1) Com almofadas e travesseiros: uma torre fofa. 2) Cada bloco, uma cor: “agora o vermelho”. 3) Empilhe na areia ou na toalha, para ver o que muda."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Empilhar mostra causa e efeito e exige calma nas mãos; e derrubar e recomeçar é um treino de frustração em miniatura. Se ela ficar brava quando cai, nomeie (“que raiva quando cai!”) e ofereça recomeçar. Cada torre que ela refaz é uma pequena vitória sobre a raiva."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "3 a 5 copos plásticos, caixinhas de papelão ou blocos grandes e leves",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 3",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "atv-cing-u2-towel-hug",
+  "titulo": "Towel hug",
+  "marcos": ["EM.REG.01", "EM.REG.02"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 2,
+    "paginas": [26, 26]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 3,
+  "cuidados": "deixe sempre o rosto livre e nunca cubra a cabeça; solte se ela se agitar. Esvazie a banheira antes de sentar com ela. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "palavrasChave": ["inglês", "english", "o banho", "towel hug"],
+  "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "Snug as a bug in a rug. / Squeeze, squeeze. A big hug. / And relax. All better."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 1,
+      "texto": "Enrole-a bem, da cabeça aos pés, deixando o rosto livre, e sente com ela no colo."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 1,
+      "texto": "Balance devagar e diga: “snug as a bug in a rug”."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 1,
+      "texto": "Aperte com firmeza, mas com delicadeza: “squeeze, squeeze”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 0,
+      "texto": "Solte aos poucos: “and… relax”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Are you warm? / Do you want another squeeze? / Is your body calm?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Faça com a manta no quarto. Embrulhe o ursinho também. Cante baixinho enquanto balança."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "O abraço firme e lento, embrulhada numa toalha, é um modo conhecido de acalmar crianças pequenas, e dá uma sensação de proteção depois de um banho agitado ou de uma crise. Ela deve poder sair quando quiser. A frase “snug as a bug in a rug” é uma expressão inglesa famosa e fácil de repetir. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Aceita fazer junto com o adulto", "Respira mais devagar ou relaxa o corpo"],
+    "emDesenvolvimento": [
+      "Ainda precisa de ajuda para começar ou recusa; tudo bem, volte ao português e tente outro dia"
+    ]
+  },
+  "materiais": [
+    {
+      "item": "uma toalha grande e quentinha",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que ajudou a criança a se acalmar hoje?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

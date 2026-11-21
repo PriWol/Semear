@@ -1,0 +1,85 @@
+{
+  "id": "atv-cing-u6-mama-and-baby",
+  "titulo": "Mama and baby",
+  "marcos": ["LI.VOC.01"],
+  "idioma": "en",
+  "materialImpresso": {
+    "caderno": "ingles-2-anos",
+    "unidade": 6,
+    "paginas": [62, 62]
+  },
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 3],
+  "duracaoMin": 10,
+  "cuidados": "Figuras ou bichos de plástico grandes demais para caber na boca dela e sem partes soltas; fique junto, pois bichos de plástico pequenos são risco de engasgo.",
+  "palavrasChave": ["inglês", "english", "os bichos", "mama and baby"],
+  "objetivo": "Ouvir e usar inglês num momento fixo do dia (os bichos), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
+  "passos": [
+    {
+      "titulo": "Frases em inglês",
+      "minutos": 0,
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "fala": "This is the mama cat. This is the baby. / Mama says meow. Baby says mew, mew. / Where is the baby duck? Show me."
+    },
+    {
+      "titulo": "Passo 1",
+      "minutos": 3,
+      "texto": "Mostre o par: “a cat and a kitten”. Aponte: “mama cat, baby cat”."
+    },
+    {
+      "titulo": "Passo 2",
+      "minutos": 3,
+      "texto": "Faça o som dos dois: um grave, outro agudo."
+    },
+    {
+      "titulo": "Passo 3",
+      "minutos": 2,
+      "texto": "Deixe que ela junte as famílias: “where is the baby?”."
+    },
+    {
+      "titulo": "Passo 4",
+      "minutos": 2,
+      "texto": "Fale do cuidado: “Mama feeds the baby”."
+    },
+    {
+      "titulo": "Perguntas para a criança",
+      "minutos": 0,
+      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "fala": "Who is the mama? / Where is the baby? / Are they together?"
+    },
+    {
+      "titulo": "Para variar (opcional, outro dia)",
+      "minutos": 0,
+      "texto": "Procure famílias de bichos em um livro. Faça a sua família: “Mama, Papa, baby”. Esconda o bebê: “where is the baby?”."
+    },
+    {
+      "titulo": "Para o adulto: por que isto importa",
+      "minutos": 0,
+      "texto": "Os pares de mãe e filhote ensinam “mama” e “baby” e as primeiras palavras de família, e ligam o assunto dos bichos ao afeto, o que ajuda a criança a falar de si mesma como “baby”. A brincadeira de juntar famílias é também de classificar. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Imita um gesto ou uma palavra em inglês",
+      "Cumpre o comando com o corpo",
+      "Pede para repetir"
+    ],
+    "emDesenvolvimento": ["Só observa e escuta; entender vem antes de falar"]
+  },
+  "materiais": [
+    {
+      "item": "figuras ou bichos de plástico em pares (mãe e filhote), ou um livro de animais",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [],
+  "perguntaFicha": "O que a criança fez ou disse hoje? Uma palavra nova, um gesto, o que mais gostou.",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

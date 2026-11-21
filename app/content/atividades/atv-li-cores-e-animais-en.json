@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-cores-e-animais-en",
+  "titulo": "Colors and animals: caça às cores em inglês",
+  "marcos": ["LI.VOC.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 6],
+  "duracaoMin": 13,
+  "preparoMin": 5,
+  "cuidados": "Use objetos grandes e seguros, sem peças pequenas. Fique junto. Não deixe a criança levar brinquedos à boca. Em passeio, siga as regras de segurança.",
+  "objetivo": "A criança aprende 4 cores e 4 animais em inglês, com objetos e figuras.",
+  "passos": [
+    {
+      "titulo": "Cores",
+      "minutos": 5,
+      "texto": "Mostre 4 objetos (red, blue, yellow, green) e diga cada cor várias vezes. Peça: “Show me red!”. Ela mostra o objeto.",
+      "fala": "Show me red!"
+    },
+    {
+      "titulo": "Animais",
+      "minutos": 5,
+      "texto": "Mostre 4 bichinhos de brinquedo (cat, dog, bird, fish) e faça os sons. Peça: “Where's the cat?”. Ela aponta."
+    },
+    {
+      "titulo": "Jogo",
+      "minutos": 3,
+      "texto": "Esconda um bichinho e peça que ache: “Find the blue fish!”. Troquem os papéis."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Nomeia 4 cores", "Nomeia 4 animais"],
+    "emDesenvolvimento": ["Mistura cores (comum)", "Só aponta (ótimo)"]
+  },
+  "ajustes": {
+    "dificil": "Aprenda só 2 cores e 2 animais.",
+    "facil": "Pergunte “What color is it?” e “What animal is it?”."
+  },
+  "materiais": [
+    {
+      "item": "4 objetos de cores diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "4 bichinhos de brinquedo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Nomeou 4 cores",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Nomeou 4 animais",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras ela já diz sozinha?",
+  "palavrasChave": ["cores", "animais", "vocabulário", "inglês", "colors"],
+  "idioma": "en",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "atv-ma-historinhas-de-juntar",
+  "titulo": "Historinhas de juntar: a horta do vovô",
+  "marcos": ["MA.OPE.02"],
+  "revisa": ["MA.OPE.01"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [5, 7],
+  "duracaoMin": 21,
+  "preparoMin": 5,
+  "cuidados": "Se usar feijões, sementes ou botões, escolha peças grandes e guarde tudo ao final: irmãos menores podem engolir. Não use sementes ou grãos de verdade com bebês por perto.",
+  "objetivo": "A criança **resolve historinhas de juntar até 10** montando a situação com objetos e contando.",
+  "passos": [
+    {
+      "titulo": "Historinha 1",
+      "minutos": 5,
+      "texto": "Conte: *“O vovô tinha 4 tomates e colheu mais 3. Com quantos ficou?”* Ela monta 4 com fichas, junta 3 e conta. Pergunte como fez.",
+      "fala": "Como você descobriu?"
+    },
+    {
+      "titulo": "Mais histórias",
+      "minutos": 7,
+      "texto": "Invente mais duas ou três (*“3 e mais 5”*, *“6 e mais 2”*). Aceite jeitos diferentes (dedos, fichas, de cabeça) e peça que ela conte como fez. Sem escrever a conta ainda."
+    },
+    {
+      "titulo": "Ela inventa a historinha",
+      "minutos": 5,
+      "texto": "Troquem: ela conta uma história e você resolve, errando de propósito uma vez, para ela corrigir."
+    },
+    {
+      "titulo": "Folha: desenhe e conte",
+      "minutos": 4,
+      "texto": "Para cada historinha, a criança desenha as duas partes e circula o total."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "resolve 3 de 4 historinhas de juntar até 10",
+      "usa objetos, dedos ou desenho para montar",
+      "explica como fez"
+    ],
+    "emDesenvolvimento": [
+      "erra a contagem do total, mesmo com objetos",
+      "esquece uma das partes da história"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use somas até 5 e só uma parte nova de cada vez, com fichas à vista.",
+    "facil": "Passe a somas com 3 partes (2, 3 e 4) ou invente problemas em que falta uma parte."
+  },
+  "materiais": [
+    {
+      "item": "10 fichas, feijões grandes ou botões",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Peças e contas permitem montar a situação e ver o resultado antes de qualquer conta no papel, como na tábua de adição.",
+    "Clássico": "Registre as historinhas num caderno e repita as que ela já resolve até virarem conhecidas.",
+    "Charlotte Mason": "Use problemas curtos tirados da vida (horta, cozinha, passeio), resolvidos de cabeça e com objetos, em poucos minutos."
+  },
+  "evidencias": [
+    {
+      "texto": "Resolveu historinhas de juntar",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Contou como fez",
+      "resposta": "☐ objetos   ☐ dedos   ☐ de cabeça"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Historinhas da horta",
+      "legenda": "A criança desenha as duas partes de cada historinha e circula o total. O adulto escreve só as palavras “tinha” e “colheu”."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["problemas de adição", "juntar", "historinhas", "horta"]
+}

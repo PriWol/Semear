@@ -1,0 +1,68 @@
+{
+  "id": "atv-li-fantoche-bonjour-fr",
+  "titulo": "Bonjour, Pierrot ! O fantoche que fala francês",
+  "marcos": ["LI.FAL.01"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 9,
+  "preparoMin": 2,
+  "cuidados": "Use um bichinho de pelúcia sem partes pequenas soltas (olhos de botão podem se soltar). Fique junto e retire peças pequenas do ambiente.",
+  "objetivo": "A criança repete cumprimentos em francês com um fantoche e os usa nos momentos certos.",
+  "passos": [
+    {
+      "titulo": "Apresentar",
+      "minutos": 3,
+      "texto": "Apresente o fantoche, que só fala francês: “Bonjour ! Je m'appelle Pierrot”. Faça Pierrot acenar e dar a mão. Ela cumprimenta como quiser.",
+      "fala": "Bonjour, Pierrot !"
+    },
+    {
+      "titulo": "Repetir",
+      "minutos": 5,
+      "texto": "Pierrot diz “merci”, “s'il te plaît”, “au revoir” em situações (pede uma bolacha de brinquedo, agradece, se despede). Ela repete e dá objetos."
+    },
+    {
+      "titulo": "Despedida",
+      "minutos": 1,
+      "texto": "Pierrot dorme: “Bonne nuit, Pierrot”. Combine que, no dia seguinte, ele volta falando francês."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Repete 4 ou mais palavras", "Usa um cumprimento na hora certa"],
+    "emDesenvolvimento": ["Só acena (ótimo)", "Fala em português com o fantoche (aceite)"]
+  },
+  "ajustes": {
+    "dificil": "Repita só “bonjour” e “au revoir”.",
+    "facil": "Peça que ela apresente o Pierrot a outra pessoa, em francês."
+  },
+  "materiais": [
+    {
+      "item": "Bichinho de pelúcia ou fantoche",
+      "deCasa": true
+    },
+    {
+      "item": "Objetos de brinquedo",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Repetiu 4 palavras",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Usou um cumprimento",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Quais palavras ela repetiu?",
+  "palavrasChave": ["fantoche", "bonjour", "cumprimentos", "francês", "primeiras palavras"],
+  "idioma": "fr",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "atv-cad-rima-ninar",
+  "titulo": "Para ir e para ninar",
+  "marcos": [],
+  "dominio": "AR",
+  "categoria": "Canto",
+  "materialImpresso": {
+    "caderno": "atividades-2-anos",
+    "unidade": 4,
+    "paginas": [44, 44]
+  },
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
+  "idade": [2, 3],
+  "duracaoMin": 4,
+  "cuidados": "Atenção: Ao balançar a criança no colo ou sentadas de frente, segure-a firme e sem sacudir; se usar cadeira de balanço, ela precisa ser estável. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "palavrasChave": ["ninar", "se essa rua fosse minha", "devagar", "coelho", "lesma"],
+  "objetivo": "A criança ouve cantigas lentas, balançando, e vê o contraste entre depressa e devagar, terminando sempre no devagar.",
+  "passos": [
+    {
+      "titulo": "Se essa rua fosse minha",
+      "minutos": 2,
+      "texto": "*Se essa rua, se essa rua fosse minha, / eu mandava, eu mandava ladrilhar, / com pedrinhas, com pedrinhas de brilhante, / para o meu, para o meu amor passar.* **O gesto:** balance de um lado para o outro, devagar, com ela no colo ou sentadas de frente. É uma cantiga lenta: cante baixinho. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+    },
+    {
+      "titulo": "Devagar, devagarinho",
+      "minutos": 2,
+      "texto": "*Depressa, depressa, / o coelho corre assim. / Devagar, devagarinho, / a lesma vem pra mim.* **O gesto:** mexa as mãos depressa nos dois primeiros versos e bem devagar nos dois últimos, até ficarem paradas. Repita mais lento a cada vez. Rima escrita pela coleção."
+    },
+    {
+      "titulo": "Por que isto importa (para o adulto)",
+      "minutos": 0,
+      "texto": "Cantigas lentas, balançando, são o jeito mais antigo de acalmar. A rima do coelho e da lesma mostra o contraste: terminar sempre no devagar faz o corpo acompanhar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Pediu para repetir"
+    ],
+    "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
+  },
+  "materiais": [
+    {
+      "item": "Nenhum: só a voz e as mãos",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de atividades da Marina (2 anos), unidade 4",
+      "deCasa": false
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "resposta": "☐ não   ☐ um pouco   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho"
+  }
+}
