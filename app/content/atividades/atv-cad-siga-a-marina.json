@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-siga-a-marina",
   "titulo": "Siga a Marina",
-  "marcos": [],
+  "marcos": ["EM.CON.02"],
   "dominio": "DI",
   "categoria": "Jogos e brincadeiras",
   "materialImpresso": {
