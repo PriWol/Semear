@@ -63,6 +63,7 @@ code {
 .marca {
   display: inline-flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
   color: var(--s-topo-texto);
   font-family: var(--s-fonte-titulo);
@@ -122,6 +123,19 @@ code {
 }
 .nota {
   color: var(--s-suave);
+}
+
+/* Ícones de linha fina (ADR 0034): herdam a cor do texto (currentColor) e alinham com a linha de base. */
+.icone {
+  width: var(--s-icone);
+  height: var(--s-icone);
+  flex-shrink: 0;
+  vertical-align: -0.2em;
+  fill: currentColor;
+}
+.icone-g {
+  width: var(--s-icone-g);
+  height: var(--s-icone-g);
 }
 .alerta {
   background: var(--s-alerta-claro);
@@ -289,8 +303,12 @@ label.opcao input {
   padding: var(--s-espaco-6) var(--s-espaco-4);
 }
 .boas-vindas .selo {
-  font-size: var(--s-texto-destaque);
   margin: 0;
+  color: var(--s-principal);
+}
+.boas-vindas .selo .icone {
+  width: var(--s-texto-destaque);
+  height: var(--s-texto-destaque);
 }
 .grade-cartoes {
   display: grid;
@@ -343,6 +361,7 @@ progress {
 .abas a {
   display: inline-flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
   white-space: nowrap;
   text-decoration: none;
@@ -390,6 +409,7 @@ progress {
 .para-os-pais summary {
   display: inline-flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
   padding: var(--s-espaco-1) var(--s-espaco-2);
   border-radius: var(--s-raio-p);
@@ -582,6 +602,7 @@ main :is(p, li) > a:not(.botao) {
 summary {
   display: flex;
   align-items: center;
+  gap: var(--s-espaco-2);
   min-height: var(--s-alvo-toque);
   cursor: pointer;
 }

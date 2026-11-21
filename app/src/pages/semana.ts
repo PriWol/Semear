@@ -1,6 +1,7 @@
 import type { FabricaPagina } from '../ui/app';
 import { lerFormulario, lista, novoId } from '../ui/app';
 import { html } from '../ui/html';
+import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
 import { letraDaCrianca } from '../domain/letra';
 import { DURACAO_PADRAO, DURACOES, gerarCodigoSessao } from '../domain/sessao';
@@ -142,8 +143,8 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
                   </select></label
                 >
                 <div class="acoes">
-                  <button class="botao primario" type="button" id="abrir-semana">🖨️ Abrir para imprimir</button>
-                  <button class="botao" type="button" id="baixar-semana">⬇️ Baixar arquivo</button>
+                  <button class="botao primario" type="button" id="abrir-semana">${icone('printer')} Abrir para imprimir</button>
+                  <button class="botao" type="button" id="baixar-semana">${icone('download-simple')} Baixar arquivo</button>
                 </div>
               </section>`
           : formulario

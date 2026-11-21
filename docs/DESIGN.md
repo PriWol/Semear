@@ -61,7 +61,10 @@ O ocre `--s-destaque` e a linha `--s-linha` **nunca** são cor de texto.
 - Substituem os emojis da interface. Exceção: emoji que a atividade usa como **conteúdo** (contar, circular).
 
 ## Ícones e tom de voz
-- Ícones de linha fina (1,5 px), cor `--s-principal` ou `--s-suave`.
+- Ícones de linha fina **Phosphor, peso regular** (1,5 px a 24 px), copiados como SVG (ADR 0034): use `icone('nome')` de `app/src/ui/icones.ts`, nunca um emoji.
+- Cor herdada do texto (`currentColor`), em geral `--s-principal` ou `--s-suave`. Tamanho só pelos tokens `--s-icone` (1,25 rem, junto ao texto) e `--s-icone-g` (2 rem, destaque).
+- Ícone ao lado de texto é decorativo (`aria-hidden`); ícone **sozinho** leva `aria-label` (`icone('x', { rotulo })`). O alvo de toque é do botão (ao menos `--s-alvo-toque`), não do desenho. Nunca só o ícone como pista.
+- Na folha impressa: só preto, sem preenchimento chapado, fora da área de escrita. Emoji que é conteúdo (rostinhos do "circule", atividades) fica.
 - Voz acolhedora e direta, sem infantilizar o educador nem exigir termos técnicos. A criança nunca usa o app.
 
 ## Faça e não faça
