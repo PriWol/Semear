@@ -1,7 +1,7 @@
 {
   "id": "atv-vol3-u2-mesa-para-quatro",
   "titulo": "Mesa para quatro: um prato para cada, sobra ou falta?",
-  "marcos": ["MA.SEN.02"],
+  "marcos": ["MA.SEN.02", "DI.VPR.02"],
   "materialImpresso": {
     "volume": 3,
     "unidade": 2,

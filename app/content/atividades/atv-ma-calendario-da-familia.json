@@ -1,10 +1,10 @@
 {
   "id": "atv-ma-calendario-da-familia",
   "titulo": "O calendário da família: dias e meses",
-  "marcos": ["MA.MED.06"],
+  "marcos": ["MA.MED.06", "NM.TEM.04"],
   "revisa": ["MA.MED.03"],
   "vertentes": ["Waldorf", "Charlotte Mason", "Montessori", "Clássico"],
-  "idade": [6, 8],
+  "idade": [5, 8],
   "duracaoMin": 26,
   "preparoMin": 8,
   "cuidados": "Atividade de papel e lápis, sem materiais pequenos. Se usar adesivos ou fichas para marcar os dias, escolha peças grandes e guarde depois.",
@@ -49,7 +49,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Foque só nos dias da semana, com a cantiga e um painel simples, sem meses.",
+    "dificil": "Foque só nos dias da semana, com a cantiga e um painel simples, sem meses. Aos 5 anos, é esse o ponto de partida: cantar os dias, achar o de hoje e marcar o aniversário.",
     "facil": "Peça que ela monte o calendário do mês seguinte, com as datas de eventos da família."
   },
   "materiais": [

@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rabisco-grande",
   "titulo": "Rabisco grande",
-  "marcos": ["DI.CAD.10"],
+  "marcos": ["DI.CAD.10", "AR.DES.01"],
   "dominio": "AR",
   "categoria": "Desenho",
   "materialImpresso": {

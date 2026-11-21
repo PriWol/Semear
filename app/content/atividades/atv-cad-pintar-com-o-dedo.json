@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-pintar-com-o-dedo",
   "titulo": "Pintar com o dedo",
-  "marcos": ["AR.PIN.01"],
+  "marcos": ["AR.PIN.01", "AR.PIN.02"],
   "dominio": "AR",
   "categoria": "Pintura",
   "materialImpresso": {
@@ -10,11 +10,11 @@
     "paginas": [48, 48]
   },
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
-  "idade": [2, 3],
+  "idade": [2, 4],
   "duracaoMin": 10,
   "cuidados": "Atenção: Tinta atóxica e lavável; não é para provar. Sem tinta ou corante perto de feridas ou de olhos; lave as mãos no fim. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["tinta", "dedo", "cores", "pintura"],
-  "objetivo": "A criança pinta com os dedos, misturando as três cores primárias, e sente tato, cor e movimento sem ter jeito errado.",
+  "objetivo": "A criança pinta com os dedos, misturando as três cores primárias, e sente tato, cor e movimento sem ter jeito errado. Aos 4 anos, também diz o que a mistura deu.",
   "passos": [
     {
       "titulo": "Passo 1",
@@ -90,5 +90,9 @@
     "estado": "aprovado",
     "por": "Dona do produto",
     "em": "2026-11-21"
+  },
+  "ajustes": {
+    "dificil": "Aos 2 anos, basta sentir a tinta e passear o dedo: o adulto é quem nomeia as misturas (“vermelho com amarelo… laranja!”) e nada é cobrado. Se for demais, pinte só de uma cor hoje.",
+    "facil": "Aos 4 anos, deixe que ela mesma misture as cores e diga o que descobriu (“o que aconteceu quando misturou?”). Pinte também com uma esponja, uma folha ou uma colher."
   }
 }

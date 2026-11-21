@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-dia-em-tres-tempos",
   "titulo": "O dia em três tempos",
-  "marcos": ["NM.TEM.01", "NM.TEM.02"],
+  "marcos": ["NM.TEM.01", "NM.TEM.02", "MA.MED.03"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 2,

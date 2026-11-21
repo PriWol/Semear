@@ -1,7 +1,7 @@
 {
   "id": "atv-di-primeiros-cortes",
   "titulo": "Primeiros cortes: a tesoura segura",
-  "marcos": ["DI.MFI.03"],
+  "marcos": ["DI.MFI.03", "DI.MFI.04"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [4, 6],
   "duracaoMin": 12,

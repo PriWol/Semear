@@ -54,7 +54,10 @@ describe('domínio de formação e regulação emocional', () => {
     const doEM = c.atividades.filter((a) => a.marcos.some((m) => m.startsWith('EM.')));
     expect(doEM.length).toBeGreaterThanOrEqual(5);
     const linhas = new Set(
-      doEM.flatMap((a) => a.marcos.map((m) => m.split('.').slice(0, 2).join('.'))),
+      // Uma atividade pode trabalhar marcos de outros domínios também (idade flexível, README).
+      doEM.flatMap((a) =>
+        a.marcos.filter((m) => m.startsWith('EM.')).map((m) => m.split('.').slice(0, 2).join('.')),
+      ),
     );
     expect([...linhas].sort()).toEqual([...LINHAS].sort());
     const publicadas = new Set(carregarConteudo().atividades.map((a) => a.id));

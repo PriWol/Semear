@@ -1,7 +1,7 @@
 {
   "id": "atv-ar-massinha-sem-forma",
   "titulo": "Massinha: apertar, rolar, bater",
-  "marcos": ["AR.MOD.01"],
+  "marcos": ["AR.MOD.01", "AR.MOD.02"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [2, 4],
   "duracaoMin": 10,

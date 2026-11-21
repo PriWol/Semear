@@ -1,7 +1,7 @@
 {
   "id": "atv-di-mesa-das-estacoes-e-lanterna",
   "titulo": "Mesa das estações e lanterna de papel",
-  "marcos": ["DI.RIT.03"],
+  "marcos": ["DI.RIT.03", "NM.TER.04"],
   "vertentes": ["Waldorf"],
   "idade": [4, 7],
   "duracaoMin": 20,

@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-contar",
   "titulo": "Para contar e brincar",
-  "marcos": ["MA.SEN.01"],
+  "marcos": ["MA.SEN.01", "AR.CAN.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

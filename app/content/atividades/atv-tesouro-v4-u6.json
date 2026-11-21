@@ -1,7 +1,7 @@
 {
   "id": "atv-tesouro-v4-u6",
   "titulo": "Bach: a onda de notas",
-  "marcos": ["AR.ESC.03"],
+  "marcos": ["AR.ESC.03", "AR.ESC.04"],
   "dominio": "AR",
   "categoria": "Estudo de compositores",
   "materialImpresso": {
@@ -50,5 +50,9 @@
   "autoria": {
     "origem": "ia",
     "status": "rascunho"
+  },
+  "ajustes": {
+    "dificil": "Aos 4 ou 5 anos, basta desenhar a onda no ar com a mão; se ela se cansar, escute só o começo e deixe o resto para outro dia.",
+    "facil": "Aos 7 ou 8 anos, ela também diz o nome do compositor (Bach) e do que mais gostou."
   }
 }

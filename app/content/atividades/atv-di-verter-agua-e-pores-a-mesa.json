@@ -1,7 +1,7 @@
 {
   "id": "atv-di-verter-agua-e-pores-a-mesa",
   "titulo": "Verter água e pôr a mesa",
-  "marcos": ["DI.VPR.02"],
+  "marcos": ["DI.VPR.02", "MA.SEN.02"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [3, 6],
   "duracaoMin": 10,

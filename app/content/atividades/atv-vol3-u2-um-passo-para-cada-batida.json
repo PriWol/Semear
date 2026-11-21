@@ -1,7 +1,7 @@
 {
   "id": "atv-vol3-u2-um-passo-para-cada-batida",
   "titulo": "Um passo para cada batida: marcha e pulso",
-  "marcos": ["AR.RIT.02"],
+  "marcos": ["AR.RIT.02", "MA.SEN.02"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {

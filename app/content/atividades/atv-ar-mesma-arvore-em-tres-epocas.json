@@ -1,9 +1,9 @@
 {
   "id": "atv-ar-mesma-arvore-em-tres-epocas",
   "titulo": "A mesma árvore em três épocas",
-  "marcos": ["AR.NAT.03"],
+  "marcos": ["AR.NAT.03", "NM.TER.04"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
-  "idade": [7, 8],
+  "idade": [6, 8],
   "duracaoMin": 20,
   "preparoMin": 5,
   "cuidados": "Escolha uma árvore em local seguro e sem trânsito, e vá junto. Não suba na árvore nem arranque galhos. Não deixe provar frutos ou folhas sem a certeza de que são seguros.",
@@ -31,8 +31,8 @@
     "emDesenvolvimento": ["Esquece de voltar (lembre com um bilhete)", "Observa pouco"]
   },
   "ajustes": {
-    "dificil": "Observe só um galho ou uma folha.",
-    "facil": "Acrescente medidas (altura, tamanho das folhas) e uma tabela simples."
+    "dificil": "Observe só um galho ou uma folha. Aos 6 anos, olhe a mesma árvore em duas visitas e conte o que mudou, com ajuda para escrever a data e o tempo.",
+    "facil": "Acrescente medidas (altura, tamanho das folhas) e uma tabela simples. Aos 8 anos, o caderno segue por vários meses, com a comparação entre os desenhos de cada época."
   },
   "materiais": [
     {

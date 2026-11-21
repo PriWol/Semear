@@ -1,7 +1,7 @@
 {
   "id": "atv-nm-cantiga-da-familia",
   "titulo": "A cantiga e a receita da nossa família",
-  "marcos": ["NM.CUL.01"],
+  "marcos": ["NM.CUL.01", "AR.CAN.01"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [2, 5],
   "duracaoMin": 10,

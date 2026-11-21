@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-voz-de-bicho",
   "titulo": "Voz de bicho",
-  "marcos": ["AR.CAN.02"],
+  "marcos": ["AR.CAN.02", "AR.ESC.02"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

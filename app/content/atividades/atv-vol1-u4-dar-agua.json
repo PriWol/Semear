@@ -1,7 +1,7 @@
 {
   "id": "atv-vol1-u4-dar-agua",
   "titulo": "Dar água: cuidar de quem tem sede",
-  "marcos": ["DI.VPR.02"],
+  "marcos": ["DI.VPR.02", "EM.VAL.03"],
   "materialImpresso": {
     "volume": 1,
     "unidade": 4,
@@ -11,7 +11,7 @@
   "idade": [2, 5],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Use uma jarra pequena, leve e que não quebre, e deixe um pano por perto: o chão molhado escorrega. Com um animal, só um bicho calmo e manso, com você ao lado, e lavem as mãos depois.",
+  "cuidados": "Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Use uma jarra pequena, leve e que não quebre, e deixe um pano por perto: o chão molhado escorrega. Com um animal, só um bicho calmo e manso, com você ao lado, e lavem as mãos depois. Mantenha longe peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["água", "jarra", "servir", "vida prática", "cuidar"],
   "objetivo": "A criança enche uma jarra até a marca, serve a água devagar num potinho (para um bicho ou uma planta) e seca o que molhar.",
   "passos": [

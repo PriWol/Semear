@@ -1,7 +1,7 @@
 {
   "id": "atv-tesouro-v4-u7",
   "titulo": "Mozart: variações de uma melodia",
-  "marcos": ["AR.ESC.03"],
+  "marcos": ["AR.ESC.03", "AR.ESC.04"],
   "dominio": "AR",
   "categoria": "Estudo de compositores",
   "materialImpresso": {
@@ -51,5 +51,9 @@
   "autoria": {
     "origem": "ia",
     "status": "rascunho"
+  },
+  "ajustes": {
+    "dificil": "Aos 4 ou 5 anos, basta cantar a melodia e dizer se é a mesma; se ela se cansar, escute só a cantiga e uma variação.",
+    "facil": "Aos 7 ou 8 anos, ela também diz o nome do compositor (Mozart) e do que mais gostou."
   }
 }
