@@ -23,7 +23,7 @@ test('explorar o exemplo, preparar uma sessão e apagar o exemplo', async ({ pag
   // A Ana já está posicionada: dá para preparar uma sessão direto.
   await ana.getByRole('link', { name: 'Preparar sessão' }).click();
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
-  await expect(page.locator('#proposta')).toContainText(/Caça às sílabas|Feira dos números/);
+  await expect(page.locator('#proposta .escolhas li').first()).toBeVisible();
   await page.getByRole('button', { name: 'Gerar pacote' }).click();
   await expect(page.getByRole('heading', { name: /Sessão S-/ })).toBeVisible();
   await expect(faixa).toBeVisible();

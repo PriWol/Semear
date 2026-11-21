@@ -1,3 +1,4 @@
+import { escolherAtividade } from './proposta';
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 
@@ -21,7 +22,7 @@ async function gerarSessaoDaAna(page: Page): Promise<string> {
   await page.getByRole('radio', { name: /Escolher linhas/ }).check();
   await page.getByRole('checkbox', { name: /Consciência fonológica/ }).check();
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
-  await expect(page.locator('#proposta')).toContainText('Caça às sílabas');
+  await escolherAtividade(page, 'Caça às sílabas');
   await page.getByRole('button', { name: 'Gerar pacote' }).click();
   const titulo = page.getByRole('heading', { name: /Sessão S-/ });
   await expect(titulo).toBeVisible();

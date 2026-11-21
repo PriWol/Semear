@@ -24,7 +24,9 @@
       "atividades": "Recortar, parear, manipular: cartas, bandejas com objetos reais.",
       "referencias": ["montessori-mente-absorvente"],
       "revisao": {
-        "estado": "rascunho"
+        "estado": "aprovado",
+        "por": "Dona do produto",
+        "em": "2026-11-21"
       }
     },
     {
@@ -42,7 +44,9 @@
       "atividades": "Desenho livre, versos, movimento e muito espaço em branco; menos letras isoladas cedo.",
       "referencias": ["steiner-educacao-crianca"],
       "revisao": {
-        "estado": "rascunho"
+        "estado": "aprovado",
+        "por": "Dona do produto",
+        "em": "2026-11-21"
       }
     },
     {
@@ -60,7 +64,9 @@
       "atividades": "Recitação, cópia e listas para memorizar.",
       "referencias": ["sayers-lost-tools", "wise-bauer-well-trained-mind"],
       "revisao": {
-        "estado": "rascunho"
+        "estado": "aprovado",
+        "por": "Dona do produto",
+        "em": "2026-11-21"
       }
     },
     {
@@ -77,7 +83,9 @@
       "atividades": "Mais atividades de vida espiritual; o restante segue a base comum.",
       "referencias": [],
       "revisao": {
-        "estado": "rascunho"
+        "estado": "aprovado",
+        "por": "Dona do produto",
+        "em": "2026-11-21"
       }
     },
     {
@@ -96,7 +104,9 @@
       "atividades": "Narração, cópia, caderno da natureza e lições curtas; poucas fichas de completar.",
       "referencias": ["mason-home-education", "mason-home-education-4ed"],
       "revisao": {
-        "estado": "rascunho"
+        "estado": "aprovado",
+        "por": "Dona do produto",
+        "em": "2026-11-21"
       }
     }
   ]
