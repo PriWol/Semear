@@ -1,3 +1,4 @@
+import { escolherAtividade } from './proposta';
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 
@@ -48,7 +49,7 @@ test('primeiro acesso até baixar o pacote da sessão', async ({ page }) => {
   await page.getByRole('radio', { name: /Escolher linhas/ }).check();
   await page.getByRole('checkbox', { name: /Consciência fonológica/ }).check();
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
-  await expect(page.locator('#proposta')).toContainText('Caça às sílabas');
+  await escolherAtividade(page, 'Caça às sílabas');
   // Vários livros da curadoria servem a este marco; o teste só confere que algum é sugerido.
   await expect(page.locator('#proposta')).toContainText('Livro:');
   await page.getByRole('button', { name: 'Gerar pacote' }).click();

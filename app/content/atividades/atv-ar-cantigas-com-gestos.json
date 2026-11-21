@@ -58,6 +58,8 @@
     "status": "rascunho"
   },
   "revisao": {
-    "estado": "rascunho"
+    "estado": "aprovado",
+    "por": "Dona do produto",
+    "em": "2026-11-21"
   }
 }

@@ -14,7 +14,16 @@ import { posicionarAqui } from '../src/domain/jornada';
 import type { EstadosCrianca } from '../src/domain/tipos';
 import { crianca, familia } from './fabricas';
 
-const idx = criarIndice(carregarConteudo());
+// O planejador é testado com o conteúdo-base (itens sem `revisao`, o conjunto que existia quando este teste
+// foi escrito) para que a aprovação de conteúdo novo não mude as atividades esperadas (#8).
+const conteudoAtual = carregarConteudo();
+const semRevisao = <T extends { revisao?: unknown }>(itens: T[]): T[] =>
+  itens.filter((i) => i.revisao === undefined);
+const idx = criarIndice({
+  ...conteudoAtual,
+  marcos: semRevisao(conteudoAtual.marcos),
+  atividades: semRevisao(conteudoAtual.atividades),
+});
 const AGORA = '2026-11-09T12:00:00.000Z'; // uma segunda-feira
 const pista = (id: string) => ({
   linha: { id, nome: id, vertentes: null },

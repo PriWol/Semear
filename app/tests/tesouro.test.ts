@@ -90,7 +90,10 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
           ? CADERNOS.find((c) => c.id === m.caderno)
           : VOLUMES.find((v) => v.numero === m.volume);
       const unidade = fonte?.unidades.find((u) => u.numero === m.unidade);
-      expect(unidade?.paginas, a.id).toEqual(m.paginas);
+      expect(unidade, a.id).toBeDefined();
+      // a atividade pode apontar para a página exata, desde que fique dentro da unidade do catálogo
+      expect(m.paginas[0], a.id).toBeGreaterThanOrEqual(unidade!.paginas[0]);
+      expect(m.paginas[1], a.id).toBeLessThanOrEqual(unidade!.paginas[1]);
     }
   });
 

@@ -42,11 +42,14 @@ describe('domínio de formação e regulação emocional', () => {
     for (const m of marcosEM())
       expect(m.orientacaoPais.sinaisDeAtencao, m.id).toMatch(/não um diagnóstico/);
   });
-  it('fica escondido das famílias enquanto estiver em rascunho', () => {
-    expect(marcosEM().every((m) => m.revisao?.estado === 'rascunho')).toBe(true);
-    expect(carregarConteudo().marcos.some((m) => m.id.startsWith('EM.'))).toBe(false);
+  it('aparece para as famílias só com os marcos aprovados (aprovação em lote de 2026-11-21)', () => {
+    const publicados = new Set(carregarConteudo().marcos.map((m) => m.id));
+    for (const m of marcosEM()) {
+      expect(publicados.has(m.id), m.id).toBe(m.revisao?.estado === 'aprovado');
+    }
+    expect(marcosEM().every((m) => m.revisao?.estado === 'aprovado')).toBe(true);
   });
-  it('tem atividades em rascunho que cobrem as quatro linhas, sem material de risco nas de 2 anos', () => {
+  it('tem atividades que cobrem as quatro linhas, sem material de risco nas de 2 anos', () => {
     const c = carregarConteudoBruto();
     const doEM = c.atividades.filter((a) => a.marcos.some((m) => m.startsWith('EM.')));
     expect(doEM.length).toBeGreaterThanOrEqual(5);
@@ -54,10 +57,13 @@ describe('domínio de formação e regulação emocional', () => {
       doEM.flatMap((a) => a.marcos.map((m) => m.split('.').slice(0, 2).join('.'))),
     );
     expect([...linhas].sort()).toEqual([...LINHAS].sort());
+    const publicadas = new Set(carregarConteudo().atividades.map((a) => a.id));
     for (const a of doEM) {
-      expect(a.revisao?.estado, a.id).toBe('rascunho');
+      // só o estado aprovado chega às famílias (§ revisão do conteúdo, #77)
+      expect(publicadas.has(a.id), a.id).toBe(
+        a.revisao === undefined || a.revisao.estado === 'aprovado',
+      );
       if (a.idade[0] < 3) expect(a.cuidados, a.id).toMatch(/peça pequena|boca/);
     }
-    expect(carregarConteudo().atividades.some((a) => a.id.startsWith('atv-em-'))).toBe(false);
   });
 });
