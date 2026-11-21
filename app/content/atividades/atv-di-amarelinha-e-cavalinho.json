@@ -1,7 +1,7 @@
 {
   "id": "atv-di-amarelinha-e-cavalinho",
   "titulo": "Amarelinha e cavalinho",
-  "marcos": ["DI.MAM.04"],
+  "marcos": ["DI.MAM.04", "DI.CAD.20"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [5, 7],
   "duracaoMin": 15,

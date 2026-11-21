@@ -1,0 +1,82 @@
+{
+  "id": "atv-dic-brincar-em-grupo",
+  "titulo": "Brincar junto: roda, esconde-esconde e faz de conta",
+  "marcos": ["DI.CAD.09", "DI.CAD.29"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 7],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Brincadeira em grupo precisa de um adulto por perto o tempo todo. Escolha espaço livre de quinas, escadas e objetos frágeis. Se houver criança menor por perto, retire peças pequenas. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança brinca com outras crianças (irmãos, primos, amigos) em uma roda, em um esconde-esconde e em um faz de conta com papéis combinados.",
+  "passos": [
+    {
+      "titulo": "Roda e esconde-esconde",
+      "minutos": 5,
+      "texto": "Com duas ou mais crianças, comecem com uma brincadeira simples, como esconde-esconde ou uma roda cantada. Explique em uma frase como funciona e ajude a esperar a vez, sem forçar a dividir.",
+      "fala": "Cada um espera a sua vez"
+    },
+    {
+      "titulo": "Faz de conta",
+      "minutos": 8,
+      "texto": "Proponha um tema (casinha, escola, mercado) e ofereça panos, caixas e utensílios de brinquedo. Deixe as crianças combinarem os papéis (“eu sou a professora”). Entre só se for convidado e nomeie o que viu: “vocês montaram uma escola!”.",
+      "fala": "Quem vai ser quem?"
+    },
+    {
+      "titulo": "Fechar",
+      "minutos": 2,
+      "texto": "Guardem juntos e conversem: “do que vocês mais gostaram?”. Valorize o que deu certo na convivência."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Brinca perto de outras crianças e interage com elas",
+      "Combina papéis no faz de conta e segue a história do grupo"
+    ],
+    "emDesenvolvimento": [
+      "Prefere olhar ou brincar ao lado, sem interagir: normal, volte outro dia com menos crianças e com mais tempo"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Deixe as crianças inventarem sozinhas uma história com começo, meio e fim.",
+    "facil": "Convide só uma criança e brinque junto, em dupla."
+  },
+  "materiais": [
+    {
+      "item": "Panos, caixas de papelão e utensílios de brinquedo",
+      "deCasa": true
+    },
+    {
+      "item": "Espaço livre para a roda ou o esconde-esconde",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Brincou com outras crianças",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Participou de uma brincadeira de faz de conta combinada com o grupo",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual brincadeira o grupo mais quis repetir?",
+  "palavrasChave": [
+    "brincar com outras crianças",
+    "faz de conta",
+    "roda",
+    "esconde-esconde",
+    "convivência",
+    "grupo"
+  ],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

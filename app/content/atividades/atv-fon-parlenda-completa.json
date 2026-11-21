@@ -1,7 +1,7 @@
 {
   "id": "atv-fon-parlenda-completa",
   "titulo": "Parlenda para completar",
-  "marcos": ["LG.FON.01"],
+  "marcos": ["LG.FON.01", "DI.CAD.19"],
   "vertentes": ["Waldorf", "Clássico", "Charlotte Mason", "Religioso"],
   "idade": [3, 5],
   "duracaoMin": 20,

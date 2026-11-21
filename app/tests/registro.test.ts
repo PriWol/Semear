@@ -462,3 +462,23 @@ describe('diaFeito (plano semanal): feito à mão OU sessão registrada', () => 
     expect(diaFeito(dia(), [sessao({ registradaEm: AGORA })])).toBe(false);
   });
 });
+
+describe('marco em rascunho citado por atividade aprovada', () => {
+  const oculta = atividade('atv-oculta', ['DI.CAD.04', 'LG.FON.02'], {
+    revisa: ['DI.CAD.05', 'LG.FON.01'],
+  });
+  const idxOculto = indiceBase({ atividades: [oculta] });
+
+  it('a ficha só traz marcos que existem no índice (N coerente) e nada de DI.CAD', () => {
+    const obs = observacoesDaSessao(sessao({ atividadeIds: ['atv-oculta'] }), idxOculto);
+    expect(obs.map((o) => o.marcoId)).toEqual(['LG.FON.02', 'LG.FON.01']);
+  });
+
+  it('montarRegistro recusa observação de marco escondido (não está na ficha)', () => {
+    const s = sessao({ atividadeIds: ['atv-oculta'] });
+    const ficha = observacoesDaSessao(s, idxOculto);
+    expect(() =>
+      montarRegistro(s, ficha, { estados: { 'DI.CAD.04': 'consolidado' } }, AGORA),
+    ).toThrow();
+  });
+});

@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-pular-a-poca",
   "titulo": "Pular a poça",
-  "marcos": [],
+  "marcos": ["DI.CAD.08"],
   "dominio": "DI",
   "categoria": "Movimento e coordenação",
   "materialImpresso": {

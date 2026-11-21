@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-empilhar-e-derrubar",
   "titulo": "Empilhar e derrubar",
-  "marcos": [],
+  "marcos": ["DI.CAD.02", "DI.CAD.06"],
   "dominio": "DI",
   "categoria": "Movimento e coordenação",
   "materialImpresso": {

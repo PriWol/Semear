@@ -1,0 +1,75 @@
+{
+  "id": "atv-dic-fome-frio-sono",
+  "titulo": "O que a gente faz quando…?",
+  "marcos": ["DI.CAD.15"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "É só conversa: nunca deixe a criança com fome, frio ou sono de verdade só para a brincadeira. Fique junto. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança conversa sobre fome, frio e cansaço e conta o que faz em cada caso, em uma brincadeira com um bichinho de pelúcia.",
+  "passos": [
+    {
+      "titulo": "O bichinho tem fome",
+      "minutos": 3,
+      "texto": "Com um bichinho de pelúcia, diga: “o ursinho está com fome. O que ele faz?”. Escute a resposta (“come!”) e responda com o nome da sensação: “isso, quando a gente está com fome, a gente come”.",
+      "fala": "O ursinho está com fome. O que ele faz?"
+    },
+    {
+      "titulo": "Frio e cansaço",
+      "minutos": 3,
+      "texto": "Repita com “está com frio” (veste casaco) e “está cansado” (deita, descansa). Se ela der outra resposta que faça sentido, aceite e comente.",
+      "fala": "O ursinho está com frio…"
+    },
+    {
+      "titulo": "E você?",
+      "minutos": 2,
+      "texto": "Pergunte: “e você, o que faz quando está com sono?”. Escute e responda com carinho."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Responde de modo que combine com a pergunta (come, veste casaco, deita)",
+      "Fala de si mesma, e não só do bichinho"
+    ],
+    "emDesenvolvimento": [
+      "Responde com uma palavra ou aponta: tudo bem; ofereça a frase completa e siga"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Acrescente “calor”, “sede” e “medo”.",
+    "facil": "Use só uma sensação por dia, com gestos."
+  },
+  "materiais": [
+    {
+      "item": "Bichinho de pelúcia ou boneco",
+      "deCasa": true
+    },
+    {
+      "item": "Um casaco e uma almofada, para encenar (opcional)",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Respondeu o que se faz com fome, frio ou cansaço",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Contou o que ela faz quando sente isso",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que resposta dela te surpreendeu?",
+  "palavrasChave": ["fome", "frio", "sono", "sentir", "conversa", "adjetivos"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

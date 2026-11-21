@@ -1,7 +1,7 @@
 {
   "id": "atv-ma-escada-de-canudos",
   "titulo": "Escada de canudos: ordenar por tamanho",
-  "marcos": ["MA.MED.02"],
+  "marcos": ["MA.MED.02", "DI.CAD.26"],
   "revisa": ["MA.MED.01"],
   "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
   "idade": [4, 6],

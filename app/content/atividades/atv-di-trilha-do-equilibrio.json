@@ -1,7 +1,7 @@
 {
   "id": "atv-di-trilha-do-equilibrio",
   "titulo": "Trilha do equilíbrio e o flamingo",
-  "marcos": ["DI.MAM.03"],
+  "marcos": ["DI.MAM.03", "DI.CAD.24", "DI.CAD.28", "DI.CAD.32", "DI.CAD.36"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [4, 6],
   "duracaoMin": 12,

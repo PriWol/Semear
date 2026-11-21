@@ -1,7 +1,7 @@
 {
   "id": "atv-di-eu-me-visto",
   "titulo": "Eu me visto e arrumo as minhas coisas",
-  "marcos": ["DI.VPR.03"],
+  "marcos": ["DI.VPR.03", "DI.CAD.13", "DI.CAD.21"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [4, 7],
   "duracaoMin": 15,

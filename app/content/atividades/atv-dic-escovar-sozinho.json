@@ -1,0 +1,78 @@
+{
+  "id": "atv-dic-escovar-sozinho",
+  "titulo": "Eu escovo meus dentes, você confere",
+  "marcos": ["DI.CAD.25"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 6],
+  "duracaoMin": 8,
+  "preparoMin": 2,
+  "cuidados": "Escova macia e pasta do tipo e na quantidade indicados pelo dentista ou pelo pediatra; adulto por perto. Banquinho firme e piso seco. O Semear não dá orientação odontológica. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança treina escovar os dentes com cada vez menos ajuda, dentro da rotina de higiene, com um adulto que confere no final.",
+  "passos": [
+    {
+      "titulo": "Mostrar",
+      "minutos": 2,
+      "texto": "Escovem juntos, falando o passo a passo em voz alta (pôr a pasta, escovar em cima, embaixo, os de trás). Mostre devagar.",
+      "fala": "Vamos escovar juntos"
+    },
+    {
+      "titulo": "Ela escova",
+      "minutos": 4,
+      "texto": "Ela escova sozinha, no tempo dela, com você por perto. Ajude só no que ela pedir e depois complete a escovação com delicadeza."
+    },
+    {
+      "titulo": "Conferir",
+      "minutos": 2,
+      "texto": "Olhem juntos no espelho e comemorem. Combinem a rotina de todos os dias, no mesmo horário."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escova os dentes sozinha, do começo ao fim, depois de ter aprendido",
+      "Põe a pasta na escova e alcança os dentes de trás"
+    ],
+    "emDesenvolvimento": [
+      "Precisa de ajuda para alcançar os dentes de trás ou para pôr a pasta: normal, siga treinando"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Ela escova sozinha enquanto você só observa de longe.",
+    "facil": "Escovem juntos, cada um na sua escova."
+  },
+  "materiais": [
+    {
+      "item": "Escova de dentes macia",
+      "deCasa": true
+    },
+    {
+      "item": "Pasta de dentes indicada pelo dentista ou pelo pediatra",
+      "deCasa": true
+    },
+    {
+      "item": "Banquinho firme e espelho",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Escovou os dentes com pouca ou nenhuma ajuda",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Alcançou os dentes de trás",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Em que parte da escovação ela mais precisou de ajuda?",
+  "palavrasChave": ["escovar", "dentes", "higiene", "autonomia", "rotina"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

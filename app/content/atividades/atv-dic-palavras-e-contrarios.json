@@ -1,0 +1,69 @@
+{
+  "id": "atv-dic-palavras-e-contrarios",
+  "titulo": "O que é? E se… então…",
+  "marcos": ["DI.CAD.27", "DI.CAD.31", "DI.CAD.35"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [4, 7],
+  "duracaoMin": 12,
+  "preparoMin": 2,
+  "cuidados": "Brincadeira de conversa; fique junto e use objetos seguros. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança explica o que são palavras do dia a dia (“o que é uma bola?”) e completa frases de comparação (“se o cavalo é grande, o rato é…”).",
+  "passos": [
+    {
+      "titulo": "O que é?",
+      "minutos": 5,
+      "texto": "Escolha objetos de casa e pergunte, um de cada vez: “o que é uma bola?”, “o que é um rio?”. Aceite qualquer jeito: para que serve, como é, de que é feito, ou a que grupo pertence. Se ela ficar sem palavras, ofereça uma pista (“serve para…?”).",
+      "fala": "O que é uma bola?"
+    },
+    {
+      "titulo": "Se… então…",
+      "minutos": 5,
+      "texto": "Diga devagar, uma frase de cada vez: “se o cavalo é grande, o rato é…”, “se o fogo é quente, o gelo é…”, “se o Sol brilha de dia, a lua brilha de…”. Aceite respostas diferentes e peça que expliquem.",
+      "fala": "Se o cavalo é grande, o rato é…"
+    },
+    {
+      "titulo": "Sua vez",
+      "minutos": 2,
+      "texto": "Troquem: ela inventa uma frase “se… então…” para você completar, e erra de propósito para ela corrigir."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Explica o que são objetos do dia a dia com as próprias palavras",
+      "Completa frases de comparação com uma palavra que combina"
+    ],
+    "emDesenvolvimento": ["Responde “não sei” ou só aponta: normal, ofereça uma pista e siga"]
+  },
+  "ajustes": {
+    "dificil": "Use palavras mais abstratas (rio, chuva, escola) e peça duas pistas diferentes.",
+    "facil": "Use só objetos bem conhecidos e dê pistas."
+  },
+  "materiais": [
+    {
+      "item": "Objetos de casa (bola, colher, cadeira) ou figuras",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Explicou o que é um objeto conhecido",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Completou uma frase do tipo “se… então…”",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Qual palavra ela explicou do jeito mais engraçado?",
+  "palavrasChave": ["definir", "palavras", "vocabulário", "analogia", "oposto", "o que é"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

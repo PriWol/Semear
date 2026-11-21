@@ -237,3 +237,15 @@ describe('complementar e foco escolhido', () => {
     expect(p.escolhas.map((e) => e.atividade.id)).toEqual(['atv-fon-1']);
   });
 });
+
+describe('marcos escondidos na proposta de sessão', () => {
+  it('sugerirLivro e minutosPorLinha ignoram marco em rascunho citado pela atividade', () => {
+    const a = atividade('atv-mista', ['DI.CAD.04', 'MA.SEN.01']);
+    const livro = sugerirLivro(idx, [{ atividade: a }], familia(), 5);
+    // livro-a liga a LG.FON.01, que a atividade não cita: nenhuma indicação
+    expect(livro).toBeNull();
+    const aDI = atividade('atv-so-di', ['DI.CAD.04'], { dominio: 'AR' });
+    const idx2 = indiceBase({ atividades: [aDI] });
+    expect(sugerirLivro(idx2, [{ atividade: aDI }], familia(), 5)).toBeNull();
+  });
+});

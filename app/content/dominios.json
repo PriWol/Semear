@@ -342,6 +342,11 @@
           "id": "DI.ESP",
           "nome": "Vida espiritual",
           "vertentes": ["Religioso"]
+        },
+        {
+          "id": "DI.CAD",
+          "nome": "Marcos da Caderneta da Criança",
+          "vertentes": null
         }
       ],
       "comJornada": false

@@ -2,6 +2,7 @@ import type { FabricaPagina } from '../ui/app';
 import { novoId } from '../ui/app';
 import { html, type HtmlSeguro } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
+import { marcosVisiveis } from '../domain/conteudo';
 import { buscarAtividades, dominioDaAtividade } from '../domain/busca';
 import { gerarCodigoSessao } from '../domain/sessao';
 import { VERTENTES, type Atividade, type Sessao, type Vertente } from '../domain/tipos';
@@ -18,7 +19,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
   const crianca = criancas.find((c) => c.id === params.crianca) ?? criancas[0] ?? null;
   const publicadas = ctx.idx.conteudo.atividades.filter((a) => a.autoria.status === 'publicado');
   const dominios = ctx.idx.conteudo.dominios.filter((d) =>
-    publicadas.some((a) => dominioDaAtividade(a) === d.id),
+    publicadas.some((a) => dominioDaAtividade(a, ctx.idx) === d.id),
   );
 
   const lista = (itens: Atividade[]): HtmlSeguro =>
@@ -31,7 +32,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
               <h3>${a.titulo}</h3>
               <p class="nota">
                 ${a.duracaoMin} min · ${a.idade[0]} a ${a.idade[1]} anos
-                ${a.marcos.length ? html`· ${a.marcos.join(', ')}` : ''}
+                ${marcosVisiveis(ctx.idx, a).length ? html`· ${marcosVisiveis(ctx.idx, a).join(', ')}` : ''}
               </p>
               <p>${a.objetivo.replace(/\*+/g, '')}</p>
               ${folha ? html`<p class="nota">Primeira folha: ${folha.titulo}</p>` : ''}
@@ -101,7 +102,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
             : ''
         }
       </form>
-      <div id="resultado-atividades" aria-live="polite">${lista(buscarAtividades(publicadas, { texto: '' }).map((r) => r.atividade))}</div>
+      <div id="resultado-atividades" aria-live="polite">${lista(buscarAtividades(publicadas, { texto: '' }, ctx.idx).map((r) => r.atividade))}</div>
     `,
     montar(raiz) {
       const form = raiz.querySelector<HTMLFormElement>('#filtros-atividades');
@@ -118,13 +119,17 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
           campo('idade')?.checked && alvo
             ? Math.floor(idadeEmAnos(alvo.nascimento, new Date(ctx.agora())))
             : undefined;
-        const achadas = buscarAtividades(publicadas, {
-          texto: campo('texto')?.value ?? '',
-          dominio: campo('dominio')?.value || undefined,
-          vertente: (campo('vertente')?.value || undefined) as Vertente | undefined,
-          duracaoMax: campo('duracao')?.value ? Number(campo('duracao')?.value) : undefined,
-          idade,
-        });
+        const achadas = buscarAtividades(
+          publicadas,
+          {
+            texto: campo('texto')?.value ?? '',
+            dominio: campo('dominio')?.value || undefined,
+            vertente: (campo('vertente')?.value || undefined) as Vertente | undefined,
+            duracaoMax: campo('duracao')?.value ? Number(campo('duracao')?.value) : undefined,
+            idade,
+          },
+          ctx.idx,
+        );
         resultado.innerHTML = lista(achadas.map((r) => r.atividade)).valor;
       };
       form.addEventListener('input', atualizar);

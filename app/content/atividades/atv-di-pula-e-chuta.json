@@ -1,7 +1,7 @@
 {
   "id": "atv-di-pula-e-chuta",
   "titulo": "Pula-pula e bola grande",
-  "marcos": ["DI.MAM.02"],
+  "marcos": ["DI.MAM.02", "DI.CAD.04", "DI.CAD.08", "DI.CAD.12"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [3, 5],
   "duracaoMin": 12,

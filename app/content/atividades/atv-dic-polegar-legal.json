@@ -1,0 +1,70 @@
+{
+  "id": "atv-dic-polegar-legal",
+  "titulo": "Joinha! O polegar que levanta",
+  "marcos": ["DI.CAD.14"],
+  "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
+  "idade": [3, 5],
+  "duracaoMin": 8,
+  "preparoMin": 0,
+  "cuidados": "Fique junto. Não force nem dobre os dedos à mão; se cansar ou doer, pare e mude de brincadeira. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "objetivo": "A criança levanta o polegar com a mão fechada (sinal de “legal”) e brinca de mexer um dedo de cada vez.",
+  "passos": [
+    {
+      "titulo": "Mostrar",
+      "minutos": 2,
+      "texto": "Faça o sinal de “joinha” com a mão fechada e o polegar para cima. Diga: “legal! faz igual?”.",
+      "fala": "Legal! Faz igual?"
+    },
+    {
+      "titulo": "Brincar",
+      "minutos": 4,
+      "texto": "Deixe que ela tente com uma mão e depois com a outra. Brinquem de “joinha” para tudo: para o bichinho, para o desenho, para o lanche. Depois, revezem o polegar, o indicador e o mindinho, um de cada vez, ao ritmo de uma rima ou música de dedos."
+    },
+    {
+      "titulo": "Fechar",
+      "minutos": 2,
+      "texto": "Façam um joinha um para o outro e guardem a brincadeira."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Levanta o polegar com a mão fechada depois de ver você fazer",
+      "Consegue com uma mão ou com as duas"
+    ],
+    "emDesenvolvimento": [
+      "Levanta os outros dedos junto: normal, o controle de um dedo só vem com o tempo"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Peça o joinha com os olhos fechados ou com uma mão só.",
+    "facil": "Segure a mão dela e ajude a fechar os outros dedos."
+  },
+  "materiais": [
+    {
+      "item": "Nenhum material: só as mãos",
+      "deCasa": true
+    }
+  ],
+  "evidencias": [
+    {
+      "texto": "Levantou o polegar com a mão fechada",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Mexeu um dedo de cada vez na brincadeira",
+      "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Em que momento ela mais fez o joinha?",
+  "palavrasChave": ["polegar", "joinha", "dedos", "mãos", "coordenação fina"],
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "rascunho"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  }
+}

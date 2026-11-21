@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-onde-esta",
   "titulo": "Onde está?",
-  "marcos": [],
+  "marcos": ["DI.CAD.07"],
   "dominio": "DI",
   "categoria": "Jogos e brincadeiras",
   "materialImpresso": {
