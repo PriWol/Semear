@@ -67,11 +67,8 @@ jobs:
       - name: Juntar os PDFs
         run: |
           mkdir -p ../pdfs
-          # O Volume 8 é rascunho (estória #112, PR A): vai só como artefato, fora da Release e do manifesto,
-          # até a dona do produto aprovar o conteúdo e o PR B colocá-lo no catálogo do app.
-          cp ../amostra/*.pdf ../volume[1-7]/*.pdf ../caderno-2-anos/*.pdf ../caderno-ingles/*.pdf ../pdfs/
-          mkdir -p ../rascunho
-          cp ../volume8/*.pdf ../rascunho/
+          # Os volumes 1 a 8 vão para a Release e para o manifesto (o Volume 8 foi aprovado na estória #112, ADR 0032).
+          cp ../amostra/*.pdf ../volume[1-8]/*.pdf ../caderno-2-anos/*.pdf ../caderno-ingles/*.pdf ../pdfs/
           # Manifesto de integridade (ADR 0031): o deploy do site confere cada PDF baixado contra ele.
           (cd ../pdfs && sha256sum *.pdf > SHA256SUMS)
           ls -la ../pdfs
@@ -79,11 +76,6 @@ jobs:
         with:
           name: tesouro-marina-pdfs
           path: tesouro-marina/pdfs/
-          retention-days: 14
-      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
-        with:
-          name: tesouro-marina-volume8-rascunho
-          path: tesouro-marina/rascunho/
           retention-days: 14
 
   publicar:

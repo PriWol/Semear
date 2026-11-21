@@ -22,8 +22,16 @@ describe('catálogo do Tesouro (ADR 0015)', () => {
     }
   });
 
-  it('os volumes 1 a 7 estão no catálogo, em ordem', () => {
-    expect(VOLUMES.map((v) => v.numero)).toEqual([1, 2, 3, 4, 5, 6, 7]);
+  it('os volumes 1 a 8 estão no catálogo, em ordem', () => {
+    expect(VOLUMES.map((v) => v.numero)).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+  });
+
+  it('o volume 8 aponta para o PDF de tela de 32 páginas e abre cada bloco na página do sumário', () => {
+    const v8 = VOLUMES.find((v) => v.numero === 8)!;
+    expect(v8.titulo).toBe('Jogos e descobertas');
+    expect(v8.arquivo).toBe('tesouro/volume8-tela.pdf');
+    expect(v8.paginas).toBe(32);
+    expect(v8.unidades.map((u) => u.paginas[0])).toEqual([7, 15, 20, 25, 29]);
   });
 
   it('o volume 5 aponta para o PDF de tela e abre cada unidade na página do sumário do livro', () => {
@@ -141,8 +149,10 @@ describe('catálogo: volumes 6 e 7 e cadernos (estória #109)', () => {
   it('o rótulo "acompanha" avisa quando o volume ainda não está no catálogo', () => {
     const existentes = VOLUMES.map((v) => v.numero);
     expect(rotuloAcompanha(7, existentes)).toBe('acompanha o Volume 7');
-    expect(rotuloAcompanha(8, existentes)).toBe(
-      'acompanha o Volume 8 (ainda não disponível no app)',
+    expect(rotuloAcompanha(8, existentes)).toBe('acompanha o Volume 8');
+    // Volume fora do catálogo continua avisando (o 9 ainda não existe).
+    expect(rotuloAcompanha(9, [1, 2, 3, 4, 5, 6, 7, 8])).toBe(
+      'acompanha o Volume 9 (ainda não disponível no app)',
     );
   });
 

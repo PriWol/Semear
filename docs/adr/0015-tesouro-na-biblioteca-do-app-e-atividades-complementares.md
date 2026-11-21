@@ -30,7 +30,7 @@ Opção 3, mais as mudanças de modelo abaixo.
   Só no modo "equilibrado": com linhas de foco escolhidas à mão, nada é acrescentado. O "Trocar" percorre as outras complementares.
 - **Catálogo** `app/content/tesouro.json`: volumes (e, desde o adendo de 2026-11-20, cadernos), arquivo e unidades com páginas. Um teste confere que cada
   `materialImpresso` aponta para uma unidade do catálogo.
-- **Biblioteca com os volumes 1 a 7:** todos aparecem na Biblioteca e são baixados no deploy (cerca de 237 MB de PDFs `*-tela`, somando os cadernos; ver o adendo de 2026-11-20; o Volume 5 entrou depois do piloto, com 20 MB). Só o Volume 4 tem atividades ligadas (piloto); os demais ficam disponíveis para consulta.
+- **Biblioteca com os volumes 1 a 8:** todos aparecem na Biblioteca e são baixados no deploy (cerca de 237 MB de PDFs `*-tela`, somando os cadernos; ver o adendo de 2026-11-20; o Volume 5 entrou depois do piloto, com 20 MB). Só o Volume 4 tem atividades ligadas (piloto); os demais ficam disponíveis para consulta.
 - **Site:** o workflow `publicar-site.yml` baixa, para `dist/tesouro/`, os PDFs `*-tela` listados no catálogo (volumes e, desde o adendo, cadernos),
   a partir da Release pública `tesouro-marina`, e confere o cabeçalho `%PDF-`. O service worker não os guarda
   no cache offline nem responde por eles (`navigateFallbackDenylist`). É preciso estar online ou ter baixado o arquivo.
@@ -77,3 +77,9 @@ dependem de marcos. Ficam para uma fase própria, com ADR próprio: navegar por 
 - **Integridade (estória #111, resolvida; ADR 0031):** o deploy baixa o manifesto `SHA256SUMS` da Release e exige que
   o sha256 de cada PDF baixado bata com a entrada dele, além de nome, `%PDF-` e páginas. Limite: o manifesto não
   protege contra quem escreve na Release (troca PDF e manifesto juntos).
+
+## Adendo (2026-11-21): Volume 8 na Biblioteca (estória #112)
+
+- **Catálogo:** `app/content/tesouro.json` passa a ter os volumes 1 a 8. O Volume 8, "Jogos e descobertas" (32 páginas, 5 unidades: os quatro blocos de jogos e o diário), entra como os volumes 6 e 7 e é publicado na Release e no manifesto `SHA256SUMS` (ADR 0031).
+- **Rótulo:** "acompanha o Volume 8" aparece normalmente na unidade 8 do caderno de 2 anos. O texto "(ainda não disponível no app)" continua só para número de volume fora do catálogo.
+- **Peso:** o PDF de tela do Volume 8 soma ao total de PDFs baixados no deploy (ver o tamanho real na Release).
