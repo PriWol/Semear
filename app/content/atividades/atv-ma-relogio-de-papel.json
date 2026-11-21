@@ -1,0 +1,94 @@
+{
+  "id": "atv-ma-relogio-de-papel",
+  "titulo": "Relógio de papel: as horas inteiras",
+  "marcos": ["MA.MED.08"],
+  "revisa": ["MA.MED.06"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Tesoura sem ponta para recortar. O fecho de latão tem pontas: dobre as pontas para trás (adulto) ou use um prendedor mole. Guarde fechos e peças depois, por causa de irmãos menores.",
+  "objetivo": "A criança **lê horas inteiras em um relógio de ponteiros** e mostra no relógio a hora de um acontecimento do dia.",
+  "passos": [
+    {
+      "titulo": "Montar o relógio",
+      "minutos": 8,
+      "texto": "Recorte um círculo, escreva os números de 1 a 12 e prenda dois ponteiros (um curto e um longo) no centro. Mostre: *“na hora inteira, o ponteiro grande aponta para o 12”*."
+    },
+    {
+      "titulo": "Mostrar as horas",
+      "minutos": 8,
+      "texto": "Peça: *“mostre as 3 horas”*, *“7 horas”*, *“12 horas”*. Depois, mostre você e deixe que ela diga. Relacione com o dia: *“o almoço é às 12”*.",
+      "fala": "Que horas são?"
+    },
+    {
+      "titulo": "Horas do meu dia",
+      "minutos": 6,
+      "texto": "Ela mostra no relógio de papel a hora de acordar, de almoçar e de dormir, e desenha uma cena para cada uma. Deixe os minutos para depois."
+    },
+    {
+      "titulo": "Folha: ligue as horas",
+      "minutos": 3,
+      "texto": "Ela liga cada relógio à hora escrita."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "lê 8 de 10 horas inteiras",
+      "mostra a hora de um acontecimento do dia",
+      "sabe que o ponteiro grande vai para o 12"
+    ],
+    "emDesenvolvimento": ["confunde o ponteiro curto com o longo", "lê a hora do ponteiro grande"]
+  },
+  "ajustes": {
+    "dificil": "Use só 3, 6, 9 e 12 horas e deixe os ponteiros do relógio de papel marcados com cores.",
+    "facil": "Mostre meias horas (ponteiro grande no 6) e peça que ela faça o relógio com os ponteiros."
+  },
+  "materiais": [
+    {
+      "item": "Papel-cartão, tesoura sem ponta e fecho de latão ou prendedor",
+      "deCasa": true
+    },
+    {
+      "item": "Um relógio de ponteiros da casa",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Um relógio de ponteiros em madeira ou papel, em que a criança mexe nos ponteiros, é o material básico; deixe-a explorar sem pressa.",
+    "Charlotte Mason": "Ligue a hora a um fato real do dia e peça que a criança descreva o que costuma fazer àquela hora.",
+    "Clássico": "Recitem as 12 horas em ordem, como uma cantilena, enquanto mostram o relógio."
+  },
+  "evidencias": [
+    {
+      "texto": "Leu as horas inteiras",
+      "resposta": "_____ de 10   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Mostrou a hora de um acontecimento",
+      "resposta": "☐ sim   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "As horas do meu dia",
+      "legenda": "O adulto desenha 3 relógios vazios. A criança põe os ponteiros e escreve a hora (7, 12 e 8 da noite) de acordar, almoçar e dormir."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["relógio", "horas", "ponteiros", "hora inteira", "tempo"]
+}

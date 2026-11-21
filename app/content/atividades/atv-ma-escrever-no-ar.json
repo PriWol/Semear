@@ -1,0 +1,98 @@
+{
+  "id": "atv-ma-escrever-no-ar",
+  "titulo": "Escrever no ar, na farinha e no papel",
+  "marcos": ["MA.SND.03"],
+  "revisa": ["MA.SND.01"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Farinha, sêmola ou areia podem ser inaladas ou esfregadas nos olhos: use uma bandeja rasa, evite soprar e lave as mãos depois. Lápis com ponta fica fora da boca.",
+  "objetivo": "A criança **escreve os algarismos de 0 a 9 de forma legível**, sem espelhar, começando do ponto certo.",
+  "passos": [
+    {
+      "titulo": "Desenhar no ar",
+      "minutos": 4,
+      "texto": "Fique ao lado dela e desenhe o 3 no ar com o dedo grande, dizendo o caminho: *“começa em cima, faz uma barriga, outra barriga”*. A criança copia."
+    },
+    {
+      "titulo": "Na bandeja de farinha",
+      "minutos": 8,
+      "texto": "Numa bandeja com um dedo de farinha ou sêmola, ela escreve com o dedo, três ou quatro algarismos por vez (1, 4, 7 primeiro). Sacudir a bandeja apaga o que foi feito.",
+      "fala": "Por onde começa o 7?"
+    },
+    {
+      "titulo": "No papel, devagar",
+      "minutos": 8,
+      "texto": "Quando o dedo estiver seguro, escreva um bom modelo e peça só 2 cópias de cada. Elogie o esforço e o cuidado, não só o acerto."
+    },
+    {
+      "titulo": "Folha: meu caderno de números",
+      "minutos": 5,
+      "texto": "Ela escreve os que quiser praticar e pinta o que ficou mais bonito."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "escreve 8 dos 10 algarismos ditos, legíveis",
+      "começa do ponto certo sem lembrete",
+      "espelha pouco ou nada"
+    ],
+    "emDesenvolvimento": [
+      "espelha o 3, o 5 ou o 7",
+      "começa de baixo ou fecha os algarismos de um jeito diferente"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique só com 3 algarismos de cada vez e escreva junto, com a mão dela sobre a sua, dizendo o caminho.",
+    "facil": "Peça que ela escreva de olhos fechados no ar, ou um número que você ditar sem mostrar."
+  },
+  "materiais": [
+    {
+      "item": "Bandeja rasa com farinha, sêmola ou areia fina",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Modelos de algarismos feitos pelo adulto",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Depois de tocar os algarismos de lixa, a criança escreve na bandeja de areia ou de sêmola e só depois no papel.",
+    "Waldorf": "Os algarismos escritos costumam ficar para o 1º ano, por volta dos 7 anos. Antes disso, desenhe-os no ar e no chão com o corpo.",
+    "Clássico": "Mostre um bom modelo e peça poucas cópias, bem feitas, como na tradição da cópia cuidadosa.",
+    "Charlotte Mason": "Poucos algarismos, bem formados, em lições curtas: a atenção plena vale mais que a repetição longa."
+  },
+  "evidencias": [
+    {
+      "texto": "Algarismos escritos de forma legível",
+      "resposta": "_____ de 10   ☐ sem modelo   ☐ com modelo"
+    },
+    {
+      "texto": "Algarismos espelhados",
+      "resposta": "_____"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meu caderno de números",
+      "legenda": "O adulto escreve um modelo bem formado no começo de cada linha, e a criança escreve ao lado."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["escrever números", "traçado", "algarismos", "grafia", "caderno"]
+}

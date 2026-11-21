@@ -1,0 +1,97 @@
+{
+  "id": "atv-ma-mercadinho",
+  "titulo": "O mercadinho: moedas e cédulas",
+  "marcos": ["MA.MED.09"],
+  "revisa": ["MA.SND.05"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [7, 8],
+  "duracaoMin": 30,
+  "preparoMin": 10,
+  "cuidados": "Moedas de verdade e fichas pequenas podem ser engolidas: use dinheiro de brinquedo ou fique perto se houver irmãos menores. Lave as mãos depois de mexer em moedas. Se usar alimentos de verdade, confira alergias.",
+  "objetivo": "A criança **reconhece moedas e cédulas** e **paga um valor de até 10 reais** de jeitos diferentes, trocando dez moedas de 1 por uma cédula.",
+  "passos": [
+    {
+      "titulo": "Conhecer o dinheiro",
+      "minutos": 6,
+      "texto": "Espalhe moedas e cédulas de brinquedo. Diga o valor de cada uma e deixe que ela ordene da menor para a maior. *“Quanto vale esta?”*."
+    },
+    {
+      "titulo": "Mercadinho",
+      "minutos": 12,
+      "texto": "Monte uma loja com preços de 1 a 10 reais. Ela é a cliente e depois a vendedora. Peça que pague de jeitos diferentes: *“só com moedas”*, *“com duas cédulas de 5”*.",
+      "fala": "De que outro jeito dá para pagar?"
+    },
+    {
+      "titulo": "Trocar dez por um",
+      "minutos": 6,
+      "texto": "Junte 10 moedas de 1 real e troque por uma cédula de 10. Desfaça a troca. Ela vê que é o mesmo valor."
+    },
+    {
+      "titulo": "Folha: pague o valor",
+      "minutos": 6,
+      "texto": "Ela desenha as moedas e cédulas que usaria para pagar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "reconhece as moedas e cédulas mais comuns e diz o valor",
+      "paga um valor até 10 reais de jeitos diferentes",
+      "troca dez moedas por uma cédula"
+    ],
+    "emDesenvolvimento": [
+      "confunde o valor de moedas de tamanho parecido",
+      "só paga de um jeito (com moedas, sem cédulas)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só moedas de 1 real e preços de 1 a 5, e conte junto cada moeda.",
+    "facil": "Use preços com centavos (50 centavos) e peça que ela calcule o troco com você."
+  },
+  "materiais": [
+    {
+      "item": "Dinheiro de brinquedo (moedas e cédulas) ou moedas de verdade",
+      "deCasa": false
+    },
+    {
+      "item": "Objetos com etiqueta de preço de 1 a 10 reais",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "O jogo do banco, com as contas douradas, trabalha a troca de dez unidades por uma dezena, a mesma ideia do dinheiro.",
+    "Charlotte Mason": "Use compras reais da família, com um pouquinho de dinheiro na mão da criança, e peça que ela narre o que pagou.",
+    "Clássico": "Registre os valores das moedas numa tabela e recite em voz alta: *“cinco reais, dez reais…”*."
+  },
+  "evidencias": [
+    {
+      "texto": "Reconheceu moedas e cédulas",
+      "resposta": "_____ de 5   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Pagou um valor até 10 reais",
+      "resposta": "☐ de um jeito   ☐ de mais de um jeito"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Pago com…",
+      "legenda": "O adulto escreve 3 preços (4 reais, 7 reais, 10 reais). A criança desenha as moedas e cédulas que usaria para pagar cada um."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["dinheiro", "moedas", "cédulas", "mercado", "troco", "reais"]
+}

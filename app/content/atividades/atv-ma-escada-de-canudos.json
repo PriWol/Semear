@@ -1,0 +1,97 @@
+{
+  "id": "atv-ma-escada-de-canudos",
+  "titulo": "Escada de canudos: ordenar por tamanho",
+  "marcos": ["MA.MED.02"],
+  "revisa": ["MA.MED.01"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [4, 6],
+  "duracaoMin": 23,
+  "preparoMin": 8,
+  "cuidados": "Corte os canudos e as varetas com antecedência (adulto) e lixe as pontas de varetas de madeira. Prefira canudos de papel ou de plástico grosso, sem pontas, e nunca deixe a criança brincar com eles na boca. Guarde as sobras de corte, que são pequenas.",
+  "objetivo": "A criança **ordena 5 objetos por tamanho** (do menor ao maior), alinhando uma ponta, e descobre qual falta numa fila.",
+  "passos": [
+    {
+      "titulo": "Montar a escada",
+      "minutos": 8,
+      "texto": "Dê 5 canudos (ou colheres, lápis) de tamanhos bem diferentes. *“Ponha em fila, do mais curto ao mais comprido.”* Mostre como alinhar uma ponta na linha da mesa.",
+      "fala": "Qual é o mais curto? E o mais comprido?"
+    },
+    {
+      "titulo": "O que falta?",
+      "minutos": 6,
+      "texto": "Ela fecha os olhos; você tira um canudo do meio. *“Qual está faltando?”* Ela encaixa o que faltava. Depois, troquem."
+    },
+    {
+      "titulo": "Você erra de propósito",
+      "minutos": 5,
+      "texto": "Embaralhe e ordene com um erro. Deixe que ela descubra onde, e explique por que está errado."
+    },
+    {
+      "titulo": "Folha: ponha na ordem",
+      "minutos": 4,
+      "texto": "Ela numera as figuras de 1 a 5, do menor ao maior."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "ordena 5 objetos por tamanho",
+      "encaixa o objeto que falta numa fila ordenada",
+      "corrige o erro do adulto"
+    ],
+    "emDesenvolvimento": [
+      "ordena só os maiores e os menores, e deixa os do meio fora do lugar",
+      "não alinha uma das pontas"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use 3 canudos bem diferentes e deixe uma linha marcada para alinhar a ponta.",
+    "facil": "Use 7 canudos e depois peça a ordem do maior para o menor."
+  },
+  "materiais": [
+    {
+      "item": "5 a 7 canudos, colheres de pau ou lápis de tamanhos diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura (adulto), fita crepe para marcar a linha",
+      "deCasa": false
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "A escada marrom e as barras vermelhas foram feitas para isso: a criança ordena as peças por tamanho e confere sozinha, porque o próprio material mostra o erro.",
+    "Waldorf": "Use galhos, folhas grandes e pedras: a criança escolhe os do mais curto ao mais comprido na natureza, antes de comparar com régua.",
+    "Charlotte Mason": "Poucos objetos reais por vez, sempre da vida da criança, e peça que ela explique como soube qual vinha depois."
+  },
+  "evidencias": [
+    {
+      "texto": "Ordenou os 5 objetos por tamanho",
+      "resposta": "☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Disse qual faltava",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Ordene do menor ao maior",
+      "legenda": "O adulto desenha 5 lápis de tamanhos diferentes fora de ordem; a criança numera de 1 a 5, do mais curto ao mais comprido."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["ordenar", "seriação", "tamanho", "comprimento", "escada"]
+}

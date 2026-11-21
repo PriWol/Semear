@@ -1,0 +1,116 @@
+{
+  "id": "atv-ma-um-para-cada",
+  "titulo": "Um para cada: a mesa dos bonecos",
+  "marcos": ["MA.SEN.02"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [3, 5],
+  "duracaoMin": 15,
+  "preparoMin": 5,
+  "cuidados": "Use só objetos grandes, que não caibam na boca (colheres de pau, copos de plástico, pratinhos). Evite botões, grãos e tampinhas pequenas com menores de 3 anos ou irmãos pequenos por perto. Fique ao lado durante a atividade.",
+  "objetivo": "A criança **conta até 5 tocando um objeto de cada vez** e leva cada um para o outro lado depois de contado.",
+  "passos": [
+    {
+      "titulo": "Arrumar a mesa",
+      "minutos": 4,
+      "texto": "Sente 3 bonecos ou ursinhos. Peça: *“cada boneco precisa de um copo. Pode dar?”* Ela distribui um copo para cada, sem contar ainda."
+    },
+    {
+      "titulo": "Contar movendo",
+      "minutos": 5,
+      "texto": "Coloque 4 pratinhos numa fileira e uma cesta ao lado. A criança toca cada prato, diz o número e **passa para a cesta**. Depois, com 5.",
+      "fala": "Já contou este? E onde está o que ainda falta contar?"
+    },
+    {
+      "titulo": "Faltou ou sobrou?",
+      "minutos": 3,
+      "texto": "Dê 3 copos para 4 bonecos e pergunte: *“o que aconteceu?”* Deixe que ela descubra que falta um. Termine fazendo o contrário (copos sobrando)."
+    },
+    {
+      "titulo": "Folha: conte e circule",
+      "minutos": 3,
+      "texto": "Ela conta as figuras com o dedo e circula o número."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "conta 5 objetos tocando um por vez",
+      "move o objeto contado para o outro lado",
+      "percebe quando falta ou sobra um"
+    ],
+    "emDesenvolvimento": [
+      "pula um objeto ou conta o mesmo duas vezes",
+      "diz os números mais rápido do que toca"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Fique com 3 objetos e deslize cada um você mesmo, junto com ela, dizendo o número devagar.",
+    "facil": "Use 6 a 8 objetos, ou peça que ela conte de olhos fechados sentindo cada colher."
+  },
+  "materiais": [
+    {
+      "item": "3 a 5 bonecos ou ursinhos",
+      "deCasa": true
+    },
+    {
+      "item": "5 colheres de pau, copos de plástico ou pratinhos",
+      "deCasa": true
+    },
+    {
+      "item": "Uma cesta ou caixa para os já contados",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Na bandeja, com poucos objetos e uma tigela, a mão faz a contagem e o espaço de trabalho fica organizado.",
+    "Waldorf": "Conte castanhas, sementes e pedrinhas, passando uma a uma para uma cesta, no ritmo de um verso de contagem.",
+    "Charlotte Mason": "Poucos objetos reais, lições curtas e muita atenção: pare ao primeiro sinal de cansaço."
+  },
+  "evidencias": [
+    {
+      "texto": "Contou tocando um por vez",
+      "resposta": "☐ 3   ☐ 4   ☐ 5   ☐ pulou ou repetiu"
+    },
+    {
+      "texto": "Moveu o objeto depois de contar",
+      "resposta": "☐ sozinha   ☐ com lembrete"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "contar",
+      "titulo": "Conte as figuras e circule o número",
+      "itens": [
+        {
+          "emoji": "🍎",
+          "quantidade": 3,
+          "opcoes": [2, 3, 4]
+        },
+        {
+          "emoji": "🐟",
+          "quantidade": 4,
+          "opcoes": [3, 4, 5]
+        },
+        {
+          "emoji": "⭐",
+          "quantidade": 5,
+          "opcoes": [4, 5, 6]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["correspondência", "contar", "um a um", "mesa", "bonecos"]
+}

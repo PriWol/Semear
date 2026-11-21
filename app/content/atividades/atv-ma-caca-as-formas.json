@@ -1,0 +1,134 @@
+{
+  "id": "atv-ma-caca-as-formas",
+  "titulo": "Caça às formas: círculo, quadrado, triângulo, retângulo",
+  "marcos": ["MA.GEO.02"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [3, 6],
+  "duracaoMin": 26,
+  "preparoMin": 8,
+  "cuidados": "Para as figuras recortadas, use tesoura sem ponta com um adulto por perto, e prefira papel (nada de peças pequenas de madeira com crianças que ainda põem coisas na boca). Na caça em casa, evite gavetas com objetos cortantes.",
+  "objetivo": "A criança **nomeia quatro formas planas e as encontra em objetos**, mesmo viradas ou em tamanhos diferentes.",
+  "passos": [
+    {
+      "titulo": "Conhecer as quatro formas",
+      "minutos": 6,
+      "texto": "Mostre um círculo, um quadrado, um triângulo e um retângulo de papel. Passe o dedo no contorno e diga o nome. Vire o triângulo e pergunte: *“ainda é um triângulo?”*.",
+      "fala": "Ainda é um triângulo?"
+    },
+    {
+      "titulo": "Caça pela casa",
+      "minutos": 10,
+      "texto": "Saiam procurando: o relógio (círculo), a janela (retângulo), o azulejo (quadrado), o lenço dobrado (triângulo). Quando ela achar, diga *“que forma é?”* e deixe que ela nomeie."
+    },
+    {
+      "titulo": "Arrumar por forma",
+      "minutos": 6,
+      "texto": "Espalhe formas de papel de vários tamanhos e cores e peça que ela separe por forma, não por cor ou tamanho."
+    },
+    {
+      "titulo": "Folha: pinte os triângulos",
+      "minutos": 4,
+      "texto": "Ela pinta o quadradinho das figuras que são do mesmo tipo que o modelo."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "nomeia 4 formas planas e as acha em objetos",
+      "reconhece a forma virada ou em tamanho diferente",
+      "separa por forma, e não por cor"
+    ],
+    "emDesenvolvimento": ["só reconhece o triângulo “em pé”", "chama o retângulo de quadrado"]
+  },
+  "ajustes": {
+    "dificil": "Use só o círculo e o quadrado e compare dois objetos grandes de cada vez.",
+    "facil": "Peça que ela invente uma figura (casa, barco) com as formas e diga quais usou."
+  },
+  "materiais": [
+    {
+      "item": "Formas de papel: círculo, quadrado, triângulo e retângulo, em 2 tamanhos",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta (para recortar)",
+      "deCasa": false
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "O gabinete geométrico (gavetas com figuras de encaixe) permite tocar, contornar com o dedo e nomear cada forma.",
+    "Waldorf": "Caminhem as formas no chão (círculo, triângulo) e desenhem no ar e na areia: a criança vive a forma com o corpo antes de dar nome a ela.",
+    "Charlotte Mason": "Passeie com a criança e peça que ela note as formas nas coisas, com poucos exemplos por vez."
+  },
+  "evidencias": [
+    {
+      "texto": "Nomeou as formas",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Reconheceu a forma virada",
+      "resposta": "☐ sim   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "marcar",
+      "titulo": "Pinte as figuras que têm a mesma forma do modelo",
+      "grupos": [
+        {
+          "modelo": {
+            "emoji": "🔺",
+            "texto": "triângulo"
+          },
+          "itens": [
+            {
+              "emoji": "🔺",
+              "texto": "Triângulo"
+            },
+            {
+              "emoji": "🟦",
+              "texto": "Quadrado"
+            },
+            {
+              "emoji": "🔻",
+              "texto": "Triângulo virado"
+            }
+          ]
+        },
+        {
+          "modelo": {
+            "emoji": "🔴",
+            "texto": "círculo"
+          },
+          "itens": [
+            {
+              "emoji": "🔵",
+              "texto": "Círculo"
+            },
+            {
+              "emoji": "🟨",
+              "texto": "Quadrado"
+            },
+            {
+              "emoji": "🟢",
+              "texto": "Círculo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["formas geométricas", "círculo", "quadrado", "triângulo", "retângulo", "caça"]
+}

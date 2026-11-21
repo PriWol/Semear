@@ -1,0 +1,93 @@
+{
+  "id": "atv-ma-copia-a-torre",
+  "titulo": "Copia a torre: construir com blocos",
+  "marcos": ["MA.GEO.06"],
+  "revisa": ["MA.GEO.01"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Blocos pequenos de montar e peças de madeira soltas podem ser engolidos: use blocos grandes em casas com irmãos menores. Construções altas podem cair em cima da criança, então prefira o chão e evite trepar em banquinhos.",
+  "objetivo": "A criança **copia uma construção de blocos** e depois **constrói a partir de uma foto ou desenho**.",
+  "passos": [
+    {
+      "titulo": "Copiar olhando",
+      "minutos": 6,
+      "texto": "Construa ao lado dela uma torre de 4 a 6 blocos de 2 cores e deixe o modelo à vista. Peça que ela construa igual, olhando o modelo.",
+      "fala": "O que é igual? O que é diferente?"
+    },
+    {
+      "titulo": "Copiar de memória",
+      "minutos": 6,
+      "texto": "Mostre a construção por 10 segundos e cubra. Ela constrói de memória. Depois, compare: *“o que ficou igual? o que mudou?”*."
+    },
+    {
+      "titulo": "A partir de uma foto",
+      "minutos": 8,
+      "texto": "Tire uma foto da construção (ou desenhe) e peça que ela reproduza a partir da imagem. Comece com 4 blocos e aumente aos poucos."
+    },
+    {
+      "titulo": "Trocar os papéis",
+      "minutos": 5,
+      "texto": "Ela constrói e você copia, errando de propósito uma vez para ela notar."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "copia uma construção de 6 blocos olhando o modelo",
+      "constrói a partir de uma foto ou desenho simples",
+      "nota o que mudou"
+    ],
+    "emDesenvolvimento": [
+      "esquece blocos que ficam escondidos atrás",
+      "constrói algo parecido, mas não igual"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use 3 ou 4 blocos, e construa junto com ela, uma peça de cada vez.",
+    "facil": "Use 8 a 10 blocos ou desenhos em vista de cima e de lado."
+  },
+  "materiais": [
+    {
+      "item": "8 a 10 blocos de madeira, de plástico ou caixas de fósforo vazias (grandes)",
+      "deCasa": true
+    },
+    {
+      "item": "Câmera ou papel e lápis para o desenho",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "A torre rosa, a escada marrom e outros materiais de construção da educação sensorial ensinam, na prática, a organizar peças no espaço.",
+    "Waldorf": "Brinquedos abertos (blocos, tocos de madeira, panos) deixam a criança construir livremente: o faz de conta em três dimensões vem antes de copiar modelos.",
+    "Charlotte Mason": "Observe e copie com atenção: a criança olha bem antes de construir e narra o que viu."
+  },
+  "evidencias": [
+    {
+      "texto": "Copiou a construção",
+      "resposta": "_____ blocos   ☐ olhando   ☐ de memória"
+    },
+    {
+      "texto": "Construiu a partir de foto ou desenho",
+      "resposta": "☐ sim   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Minha construção",
+      "legenda": "A criança desenha a construção de blocos vista de frente e conta quantos blocos usou."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["blocos", "construir", "copiar modelo", "foto", "espaço"]
+}

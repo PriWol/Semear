@@ -1,0 +1,122 @@
+{
+  "id": "atv-ma-sacola-misteriosa",
+  "titulo": "A sacola misteriosa: o que rola, o que empilha",
+  "marcos": ["MA.GEO.03"],
+  "revisa": ["MA.GEO.02"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [4, 6],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Use só objetos grandes e sem pontas (bola, lata sem bordas cortantes, caixa de sapato, rolo de papel). Evite latas abertas ou recém-abertas, funis de vidro e peças pequenas. Fique perto, pois a criança vai manipular de olhos fechados.",
+  "objetivo": "A criança **associa sólidos a objetos de casa** (bola, caixa, lata) e diz o que rola e o que empilha.",
+  "passos": [
+    {
+      "titulo": "O que rola, o que empilha",
+      "minutos": 8,
+      "texto": "Reúna bola, caixa de sapato, lata de leite em pó (lavada e fechada), rolo de papel higiênico, dado grande. A criança testa cada um: *“rola?”*, *“empilha?”*. Separe em dois grupos.",
+      "fala": "Por que este rola e este não?"
+    },
+    {
+      "titulo": "Sacola misteriosa",
+      "minutos": 8,
+      "texto": "Esconda um objeto na sacola de pano. De olhos fechados ou só pelo tato, ela adivinha: *“redondo, rola… é a bola!”*. Troquem os papéis."
+    },
+    {
+      "titulo": "Construir uma torre",
+      "minutos": 5,
+      "texto": "Peça que ela empilhe tudo o que empilha e conte quantos andares fez. Só depois dê o nome: esfera (bola), cubo (dado), cilindro (lata), cone (funil de plástico)."
+    },
+    {
+      "titulo": "Folha: pinte o que rola",
+      "minutos": 4,
+      "texto": "Ela pinta os quadradinhos dos objetos que rolam."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "associa 3 sólidos a objetos de casa",
+      "diz que a bola rola e a caixa, não",
+      "adivinha o objeto pelo tato"
+    ],
+    "emDesenvolvimento": [
+      "acha que tudo o que é redondo rola igual",
+      "confunde cilindro (lata) com esfera (bola)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só bola e caixa, bem diferentes, e deixe que ela repita o teste de rolar.",
+    "facil": "Peça que ela compare a moeda (plana) com a bola e invente uma regra: *“o que rola e o que não rola”*."
+  },
+  "materiais": [
+    {
+      "item": "Bola, caixa de sapato, lata fechada, rolo de papel, dado grande",
+      "deCasa": true
+    },
+    {
+      "item": "Uma sacola de pano",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Os sólidos geométricos (esfera, cubo, cilindro, cone, prismas) são um material clássico: a criança os toca, compara e só depois os nomeia.",
+    "Waldorf": "Construa com materiais da natureza (pedras, madeira, cestos) e brinque com objetos de formas simples; os nomes técnicos podem esperar.",
+    "Charlotte Mason": "Poucos objetos reais por lição, e pare quando a criança se cansar de experimentar."
+  },
+  "evidencias": [
+    {
+      "texto": "Associou sólidos a objetos",
+      "resposta": "_____ de 3"
+    },
+    {
+      "texto": "Disse o que rola e o que empilha",
+      "resposta": "☐ sim   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "marcar",
+      "titulo": "Pinte o que rola",
+      "grupos": [
+        {
+          "modelo": {
+            "emoji": "⚽",
+            "texto": "rola"
+          },
+          "itens": [
+            {
+              "emoji": "🥫",
+              "texto": "Lata"
+            },
+            {
+              "emoji": "📦",
+              "texto": "Caixa"
+            },
+            {
+              "emoji": "🍊",
+              "texto": "Laranja"
+            },
+            {
+              "emoji": "🎲",
+              "texto": "Dado"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["sólidos geométricos", "esfera", "cubo", "cilindro", "rolar", "empilhar"]
+}

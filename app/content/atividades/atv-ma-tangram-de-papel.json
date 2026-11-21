@@ -1,0 +1,94 @@
+{
+  "id": "atv-ma-tangram-de-papel",
+  "titulo": "Tangram de papel: figuras que se juntam",
+  "marcos": ["MA.GEO.05"],
+  "revisa": ["MA.GEO.04"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [6, 8],
+  "duracaoMin": 26,
+  "preparoMin": 10,
+  "cuidados": "Use tesoura sem ponta com um adulto por perto e recorte as peças com antecedência para crianças menores de 7 anos. Guarde as peças depois: papéis pequenos ficam fáceis de esquecer pelo chão ou de ir à boca de irmãos menores.",
+  "objetivo": "A criança **compõe figuras novas juntando peças** (tangram, triângulos) e **divide uma figura em partes**.",
+  "passos": [
+    {
+      "titulo": "Dois quadrados, um retângulo",
+      "minutos": 6,
+      "texto": "Dê dois quadrados iguais de papel. *“Colando um no outro, que figura sai?”* Deixe que ela descubra o retângulo. Depois, com dois triângulos iguais, ela forma um quadrado ou outro triângulo."
+    },
+    {
+      "titulo": "Montar com um modelo",
+      "minutos": 10,
+      "texto": "Mostre o desenho de um barco, uma casa ou um gato feito de peças de tangram, em tamanho real. Ela copia com as peças. Se travar, mova só uma peça por ela.",
+      "fala": "Qual peça cabe aqui?"
+    },
+    {
+      "titulo": "Cortar um quadrado ao meio",
+      "minutos": 6,
+      "texto": "Dobre e corte um quadrado ao meio de dois jeitos (reto e na diagonal). Pergunte: *“o que sobrou? Dá para formar outra coisa?”*."
+    },
+    {
+      "titulo": "Folha: minha figura",
+      "minutos": 4,
+      "texto": "Ela cola ou desenha a figura montada e escreve quais peças usou."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "monta uma figura a partir de um modelo",
+      "forma um retângulo com dois quadrados ou dois triângulos",
+      "tenta de novo quando erra"
+    ],
+    "emDesenvolvimento": ["desiste logo da figura", "gira a peça só uma vez e abandona"]
+  },
+  "ajustes": {
+    "dificil": "Use só 3 peças e o modelo do tamanho real, sobreposto ao desenho.",
+    "facil": "Peça figuras sem modelo e conte quantas peças ela usou em cada uma."
+  },
+  "materiais": [
+    {
+      "item": "Tangram (7 peças) ou formas de papel colorido",
+      "deCasa": true
+    },
+    {
+      "item": "Papel quadrado, tesoura sem ponta",
+      "deCasa": false
+    },
+    {
+      "item": "Cola ou fita (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "As caixas de triângulos, em que os triângulos se juntam para formar quadrados e retângulos, são um material pensado para esse trabalho.",
+    "Charlotte Mason": "Deixe a criança tentar com calma, sem corrigir de imediato, e peça que conte o que descobriu.",
+    "Clássico": "Registre as figuras que ela já sabe fazer, uma por dia, e repita as mais difíceis na semana seguinte."
+  },
+  "evidencias": [
+    {
+      "texto": "Montou uma figura com modelo",
+      "resposta": "☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Formou um retângulo com duas peças",
+      "resposta": "☐ sim   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Minha figura de tangram",
+      "legenda": "A criança desenha ou cola a figura que montou e escreve quantas peças usou."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["tangram", "compor figuras", "decompor", "quebra-cabeça", "formas"]
+}

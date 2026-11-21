@@ -1,0 +1,99 @@
+{
+  "id": "atv-ma-barras-e-soltas",
+  "titulo": "Barras e soltas: quanto vale cada algarismo?",
+  "marcos": ["MA.SND.08"],
+  "revisa": ["MA.SND.05"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 24,
+  "preparoMin": 8,
+  "cuidados": "Dinheiro de brinquedo e fichas são pequenos: guarde depois da atividade para irmãos menores. Se usar moedas de verdade, avise que não vão à boca.",
+  "objetivo": "A criança **diz o valor de cada algarismo em números de dois algarismos** (no 35, o 3 vale 30 e o 5 vale 5).",
+  "passos": [
+    {
+      "titulo": "Monte e depois escreva",
+      "minutos": 8,
+      "texto": "Peça *“3 barras de dez e 5 soltas”*. Ela monta com palitos agrupados ou notas de 10 e moedas de 1 de brinquedo. Só então escreva *35* e mostre: o 3 conta as barras; o 5, as soltas.",
+      "fala": "Quanto vale o 3 neste número?"
+    },
+    {
+      "titulo": "Trocar as barras",
+      "minutos": 6,
+      "texto": "Troque uma barra por outra e veja o número mudar: *4 barras e 5 soltas é 45*. Pergunte o que muda no número escrito."
+    },
+    {
+      "titulo": "Quebrar o número",
+      "minutos": 6,
+      "texto": "Peça que ela decomponha 47 em 40 + 7 e 28 em 20 + 8, com o material à frente. Depois só falando."
+    },
+    {
+      "titulo": "Folha: de quantos?",
+      "minutos": 4,
+      "texto": "Ela desenha as barras e as soltas e escreve o número."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz o valor de cada algarismo em 3 de 4 números",
+      "decompõe 47 em 40 e 7",
+      "explica a diferença entre 35 e 53"
+    ],
+    "emDesenvolvimento": [
+      "trata os dois algarismos como valores separados (3 e 5)",
+      "inverte 35 e 53 sem notar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use números de 11 a 29 e deixe o material à vista o tempo todo.",
+    "facil": "Peça que ela invente um número de dois algarismos e diga o valor de cada um sem material."
+  },
+  "materiais": [
+    {
+      "item": "Palitos agrupados em barras de 10, ou dinheiro de brinquedo (notas de 10 e moedas de 1)",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "As contas douradas com cartões de unidade e dezena (cartões sobrepostos) mostram o valor posicional: o 3 do 35 é uma dezena inteira de barras.",
+    "Waldorf": "Esse trabalho costuma ficar para o 1º ano em diante, por volta dos 7 anos. Antes, viva as dezenas na contagem rítmica e em coleções reais.",
+    "Clássico": "Depois de entender com material, a prática diária curta torna a leitura de dezenas e unidades automática.",
+    "Charlotte Mason": "Lição curta, com material real, e peça que ela narre o que viu quando o número mudou."
+  },
+  "evidencias": [
+    {
+      "texto": "Disse o valor de cada algarismo",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Decompôs o número",
+      "resposta": "☐ 47 em 40 e 7   ☐ só com material"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Barras e soltas",
+      "legenda": "A criança desenha as barras de dez e as soltas para os números que o adulto dita (23, 35, 47) e escreve o número embaixo."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "valor posicional",
+    "dezenas e unidades",
+    "decompor números",
+    "material dourado"
+  ]
+}

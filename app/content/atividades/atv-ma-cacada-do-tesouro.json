@@ -1,0 +1,102 @@
+{
+  "id": "atv-ma-cacada-do-tesouro",
+  "titulo": "Caçada do tesouro: o mapa da sala",
+  "marcos": ["MA.GEO.07"],
+  "revisa": ["MA.GEO.01"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 28,
+  "preparoMin": 10,
+  "cuidados": "Escolha um percurso livre de degraus, quinas e objetos quebráveis e esconda o tesouro em lugar baixo. Atividades ao ar livre pedem adulto junto e sem portões abertos para a rua. Passos pequenos e sem correria.",
+  "objetivo": "A criança **segue e dá instruções de caminho** (“três passos à frente, vire à direita”) e usa um mapa simples.",
+  "passos": [
+    {
+      "titulo": "Seguir instruções",
+      "minutos": 6,
+      "texto": "Esconda um tesouro (um livro ou um brinquedo). Dê instruções: *“ande três passos à frente; vire à direita; ande dois passos”*. Ela segue. Use *frente*, *atrás* e *ao lado* antes de esquerda e direita.",
+      "fala": "Para onde eu vou agora?"
+    },
+    {
+      "titulo": "A pulseira da mão direita",
+      "minutos": 4,
+      "texto": "Coloque uma pulseira ou fita na mão direita dela. *“Vire para o lado da pulseira.”* Repita até ela gostar."
+    },
+    {
+      "titulo": "Ela dá as instruções",
+      "minutos": 8,
+      "texto": "Troquem: ela esconde o tesouro e diz como chegar a ele. Se confundir direita e esquerda, mostre com seu próprio corpo e deixe tentar de novo."
+    },
+    {
+      "titulo": "O mapa da sala",
+      "minutos": 7,
+      "texto": "Desenhe com ela um mapa simples da sala, com um símbolo para cada móvel. Marque o tesouro com um X e peça que descreva o caminho em passos."
+    },
+    {
+      "titulo": "Folha: meu mapa",
+      "minutos": 3,
+      "texto": "Ela desenha o caminho do tesouro e conta quantos passos tem."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "segue 3 instruções de caminho",
+      "dá instruções simples para chegar ao tesouro",
+      "lê um mapa simples da sala"
+    ],
+    "emDesenvolvimento": [
+      "confunde direita e esquerda (comum até os 7 ou 8 anos)",
+      "pula uma instrução no meio do caminho"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só duas instruções e palavras como frente e atrás; deixe a pulseira à vista.",
+    "facil": "Peça que ela invente um mapa de outro cômodo, com legenda, e que você siga as instruções dela."
+  },
+  "materiais": [
+    {
+      "item": "Um objeto para esconder (o tesouro)",
+      "deCasa": true
+    },
+    {
+      "item": "Fita ou pulseira para a mão direita",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis para o mapa",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "As atividades de movimento e vida prática (caminhar na linha, seguir percursos) trabalham o espaço com o corpo; o mapa vem depois, quando o percurso já está dominado.",
+    "Waldorf": "Caminhar, saltar e dançar em roda e em linha ensina as direções com o corpo; os jogos de roda com “para a direita” e “para a esquerda” já fazem esse trabalho.",
+    "Charlotte Mason": "Passeios ao ar livre com um mapa desenhado pela criança, em lições curtas, ligam o espaço real ao desenho."
+  },
+  "evidencias": [
+    {
+      "texto": "Seguiu instruções de caminho",
+      "resposta": "_____ de 3   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Deu instruções com o mapa",
+      "resposta": "☐ sim   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "O mapa do tesouro",
+      "legenda": "A criança desenha o mapa da sala com um símbolo para cada móvel, marca o tesouro com um X e conta os passos do caminho."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["mapa", "direita e esquerda", "instruções", "caminho", "caça ao tesouro"]
+}

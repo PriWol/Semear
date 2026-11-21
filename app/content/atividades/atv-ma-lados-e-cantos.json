@@ -1,0 +1,97 @@
+{
+  "id": "atv-ma-lados-e-cantos",
+  "titulo": "Lados e cantos: contando figuras",
+  "marcos": ["MA.GEO.04"],
+  "revisa": ["MA.GEO.02"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Clássico"],
+  "idade": [5, 7],
+  "duracaoMin": 23,
+  "preparoMin": 8,
+  "cuidados": "Tesoura sem ponta para recortar, e fique por perto. Ao desenhar com régua ou canetas, a criança deve manter as pontas longe do rosto.",
+  "objetivo": "A criança **descreve as figuras pelos lados e cantos** (o triângulo tem 3 lados e 3 cantos) e diz por que uma figura **não** é um triângulo.",
+  "passos": [
+    {
+      "titulo": "Contar os lados",
+      "minutos": 6,
+      "texto": "Dê um triângulo, um quadrado e um retângulo de papel. Passe o dedo em cada lado e conte: *“um, dois, três lados”*. Marque cada canto com um pontinho."
+    },
+    {
+      "titulo": "Qual é a figura?",
+      "minutos": 7,
+      "texto": "Dê pistas: *“tenho 4 lados e 4 cantos, todos do mesmo tamanho”* (quadrado). Depois, ela dá pistas para você.",
+      "fala": "Quantos lados e quantos cantos?"
+    },
+    {
+      "titulo": "Figuras impostoras",
+      "minutos": 6,
+      "texto": "Desenhe um triângulo com um lado curvo ou aberto e pergunte: *“é um triângulo?”*. Peça que ela explique o que está errado. Se hesitar, conte os lados e os cantos juntos."
+    },
+    {
+      "titulo": "Folha: conte e escreva",
+      "minutos": 4,
+      "texto": "Ela conta lados e cantos e escreve os números."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "conta lados e cantos do triângulo, quadrado e retângulo",
+      "explica por que uma figura impostora não é triângulo",
+      "compara o quadrado e o retângulo"
+    ],
+    "emDesenvolvimento": [
+      "reconhece só pela aparência",
+      "conta cantos e lados em números diferentes"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só o triângulo e o quadrado e conte lado a lado com a ponta do dedo dela.",
+    "facil": "Peça que ela desenhe uma figura com 5 lados e invente um nome para ela."
+  },
+  "materiais": [
+    {
+      "item": "Figuras de papel: triângulo, quadrado, retângulo e uma figura “impostora”",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Tesoura sem ponta",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "As caixas de triângulos e as figuras de encaixe permitem comparar lados e cantos com as mãos antes de contá-los.",
+    "Charlotte Mason": "Poucas figuras por lição, observadas com atenção, e a criança explica com as próprias palavras.",
+    "Clássico": "Registre numa lista: triângulo, 3 lados; quadrado, 4 lados; e recitem a lista em dias seguidos."
+  },
+  "evidencias": [
+    {
+      "texto": "Contou lados e cantos",
+      "resposta": "_____ de 3   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Explicou por que a impostora não é triângulo",
+      "resposta": "☐ sim   ☐ com ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Lados e cantos",
+      "legenda": "A criança desenha um triângulo, um quadrado e um retângulo e escreve ao lado quantos lados e quantos cantos cada um tem."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["lados", "cantos", "vértices", "figuras planas", "triângulo", "quadrado"]
+}

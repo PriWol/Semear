@@ -1,0 +1,96 @@
+{
+  "id": "atv-ma-meu-dia-em-ordem",
+  "titulo": "Meu dia em ordem: antes, depois, ontem e amanhã",
+  "marcos": ["MA.MED.03"],
+  "vertentes": ["Waldorf", "Charlotte Mason", "Montessori"],
+  "idade": [4, 6],
+  "duracaoMin": 24,
+  "preparoMin": 8,
+  "cuidados": "Atividade só de conversa e desenho, sem material pequeno. Use lápis e papel e fique por perto para o uso de tesoura, se houver recorte.",
+  "objetivo": "A criança **conta 3 ou 4 acontecimentos do dia na ordem** e usa *antes, depois, ontem, hoje e amanhã*.",
+  "passos": [
+    {
+      "titulo": "O painel do dia",
+      "minutos": 8,
+      "texto": "Faça um painel com 4 figuras (acordar, almoçar, brincar fora, dormir). Peça que ela mova o marcador conforme o dia passa. *“O que vem depois do almoço?”*.",
+      "fala": "O que acontece depois?"
+    },
+    {
+      "titulo": "Conta o dia",
+      "minutos": 6,
+      "texto": "No fim do dia, peça que ela conte o que aconteceu, em ordem, usando *primeiro, depois, por último*. Ajude com figuras, sem corrigir demais."
+    },
+    {
+      "titulo": "Ontem, hoje, amanhã",
+      "minutos": 6,
+      "texto": "Ligue as palavras a eventos reais: *“ontem fomos ao parque; hoje estamos em casa; amanhã é o aniversário”*. Deixe que ela complete outras frases."
+    },
+    {
+      "titulo": "Folha: 4 quadros",
+      "minutos": 4,
+      "texto": "Ela desenha o que fez em 4 momentos e numera de 1 a 4."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "conta 3 ou 4 acontecimentos na ordem",
+      "usa ontem, hoje e amanhã corretamente",
+      "usa antes e depois em frases"
+    ],
+    "emDesenvolvimento": [
+      "conta os acontecimentos fora de ordem",
+      "troca ontem e amanhã (comum até os 5 ou 6 anos)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use apenas 3 figuras e foque em *antes* e *depois* de um evento do dia, sem ontem e amanhã.",
+    "facil": "Peça que ela descreva a semana inteira, ou invente a rotina de um personagem."
+  },
+  "materiais": [
+    {
+      "item": "Papel e canetinha para o painel",
+      "deCasa": true
+    },
+    {
+      "item": "Figuras recortadas de revistas ou desenhadas",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Waldorf": "A rotina e o ritmo (do dia, da semana, das estações e das festas) são a base da pedagogia Waldorf: a criança vive o tempo antes de medi-lo.",
+    "Charlotte Mason": "Um caderno da natureza ou um diário de poucas linhas ajuda a criança a registrar o que viu e quando.",
+    "Montessori": "Deixe a criança montar o próprio painel do dia e escolher onde cada atividade entra."
+  },
+  "evidencias": [
+    {
+      "texto": "Contou o dia em ordem",
+      "resposta": "☐ 3 acontecimentos   ☐ 4 acontecimentos   ☐ com ajuda"
+    },
+    {
+      "texto": "Usou ontem, hoje e amanhã",
+      "resposta": "_____ de 3"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meu dia",
+      "legenda": "O adulto divide a folha em 4 quadros numerados. A criança desenha o que fez de manhã, ao meio-dia, à tarde e à noite."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["tempo", "rotina", "antes e depois", "ontem hoje amanhã", "sequência"]
+}

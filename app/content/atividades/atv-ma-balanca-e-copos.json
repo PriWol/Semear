@@ -1,0 +1,106 @@
+{
+  "id": "atv-ma-balanca-e-copos",
+  "titulo": "Balança de cabide e copos: pesar e encher",
+  "marcos": ["MA.MED.05"],
+  "revisa": ["MA.MED.01"],
+  "vertentes": ["Montessori", "Charlotte Mason", "Waldorf"],
+  "idade": [6, 8],
+  "duracaoMin": 30,
+  "preparoMin": 10,
+  "cuidados": "Faça a balança com um cabide e dois copos de plástico leves, pendurada em local firme e baixo. Água no chão deixa o piso escorregadio: faça sobre uma bandeja ou na pia e seque na hora. Não beba a água dos experimentos e mantenha pedras, moedas e sementes longe da boca de irmãos menores.",
+  "objetivo": "A criança **compara pesos com uma balança** de pratos e **capacidades com copos**, prevendo antes de testar.",
+  "passos": [
+    {
+      "titulo": "Montar a balança",
+      "minutos": 6,
+      "texto": "Pendure um copo de plástico em cada ponta de um cabide, pelo gancho do meio. Mostre como a balança fica nivelada quando os pesos são iguais."
+    },
+    {
+      "titulo": "Qual pesa mais?",
+      "minutos": 8,
+      "texto": "Pergunte: *“o que pesa mais, a pedra ou a esponja?”* Ela prevê, depois testa na balança e diz o que viu. Teste outros pares: uma maçã e uma laranja, um livro e um estojo.",
+      "fala": "O que você acha? Vamos ver?"
+    },
+    {
+      "titulo": "Quantos copinhos cabem?",
+      "minutos": 8,
+      "texto": "Encha um copo alto e fino e um copo baixo e largo com um copinho de medida (de iogurte). *“Qual cabe mais?”* Ela conta os copinhos de cada um."
+    },
+    {
+      "titulo": "Mesma água, outra forma",
+      "minutos": 5,
+      "texto": "Passe a água do copo baixo para o alto e pergunte: *“agora tem mais, menos ou igual?”* Deixe que ela confira medindo com o copinho."
+    },
+    {
+      "titulo": "Folha: registro",
+      "minutos": 3,
+      "texto": "Ela marca o que previu e o que aconteceu."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "usa a balança para comparar o peso de dois objetos",
+      "compara quanto cabe em dois recipientes enchendo-os com um copo",
+      "diz que a quantidade de água não muda ao trocar de recipiente"
+    ],
+    "emDesenvolvimento": [
+      "acha que o copo mais alto sempre cabe mais (comum até os 6 ou 7 anos)",
+      "não confere a previsão com a balança"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Compare só dois objetos bem diferentes (uma pedra e uma pena) e deixe-a ver a balança descer.",
+    "facil": "Peça que ela estime em quantos copinhos o recipiente se enche e depois confira."
+  },
+  "materiais": [
+    {
+      "item": "1 cabide e 2 copos de plástico leves",
+      "deCasa": true
+    },
+    {
+      "item": "Pedra, esponja, maçã, livro (para comparar)",
+      "deCasa": true
+    },
+    {
+      "item": "Copinho de iogurte para medir, copos de formas diferentes",
+      "deCasa": true
+    },
+    {
+      "item": "Água e uma bandeja",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "A vida prática (servir água, medir ingredientes, usar a balança de cozinha) ensina peso e capacidade pelo uso.",
+    "Charlotte Mason": "Cozinhar e cuidar da horta (medir água, pesar sementes) dão motivo real para comparar e medir, em lições curtas.",
+    "Waldorf": "Deixe a criança sentir o peso nas mãos e na balança de cabide antes de falar em números."
+  },
+  "evidencias": [
+    {
+      "texto": "Comparou o peso com a balança",
+      "resposta": "_____ de 3   ☐ previu antes   ☐ só testou"
+    },
+    {
+      "texto": "Disse que a quantidade de água não muda",
+      "resposta": "☐ sim   ☐ ainda acha que muda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "O que eu achei e o que aconteceu",
+      "legenda": "A criança desenha dois objetos, marca qual achava que pesava mais e depois qual pesou mais na balança."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["peso", "balança", "capacidade", "água", "copos", "experimento"]
+}

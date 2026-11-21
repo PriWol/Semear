@@ -1,0 +1,114 @@
+{
+  "id": "atv-ma-quantos-sao",
+  "titulo": "Quantos são? A cesta de feijões",
+  "marcos": ["MA.SEN.03"],
+  "revisa": ["MA.SEN.02"],
+  "vertentes": ["Montessori", "Waldorf", "Charlotte Mason"],
+  "idade": [4, 6],
+  "duracaoMin": 17,
+  "preparoMin": 5,
+  "cuidados": "Os feijões, as castanhas e as tampinhas podem ir à boca ou ao nariz de irmãos menores. Prefira peças grandes e guarde tudo ao final. Fique por perto e não deixe a criança comer o material.",
+  "objetivo": "Depois de contar, a criança **responde “quantos?” com o último número dito**, sem recontar tudo.",
+  "passos": [
+    {
+      "titulo": "Contar e dizer o total",
+      "minutos": 5,
+      "texto": "Ponha 4 castanhas na mesa. A criança conta movendo para a cesta. Pergunte: *“quantas tem na cesta?”* e espere. Se ela recontar, tudo bem: pergunte de novo na rodada seguinte.",
+      "fala": "Quantas são no total?"
+    },
+    {
+      "titulo": "E se eu tirar um?",
+      "minutos": 5,
+      "texto": "Com a cesta à vista, tire uma castanha e pergunte: *“agora quantas?”* Deixe que ela confira contando. Faça o contrário: coloque mais uma."
+    },
+    {
+      "titulo": "Pedido da vida real",
+      "minutos": 4,
+      "texto": "Peça: *“traga pães para a família, um para cada pessoa”*. Ela conta as pessoas, depois os pães, e diz quantos trouxe.",
+      "fala": "Quantos pães você trouxe?"
+    },
+    {
+      "titulo": "Folha: circule o total",
+      "minutos": 3,
+      "texto": "Ela conta e circula o número que diz quantos são."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "diz o total sem recontar, em 3 de 4 tentativas",
+      "usa o último número dito como resposta",
+      "confere contando quando a quantidade muda"
+    ],
+    "emDesenvolvimento": [
+      "recomeça a contagem toda vez que ouve “quantos?”",
+      "responde com um número qualquer, sem contar"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use apenas 3 objetos e diga junto: *“um, dois, três: são três”*, apontando o último.",
+    "facil": "Aumente para 6 ou 7 e esconda parte com um pano: *“eu tinha 5, escondi 2: quantos estão à vista?”*"
+  },
+  "materiais": [
+    {
+      "item": "6 castanhas, nozes grandes ou pedrinhas",
+      "deCasa": true
+    },
+    {
+      "item": "Uma cesta",
+      "deCasa": true
+    },
+    {
+      "item": "Um pano para cobrir",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Com a caixa de fusos, a criança coloca a quantidade certa em cada compartimento numerado e liga o número ao total.",
+    "Waldorf": "Junte as castanhas numa cesta, conte e diga *“são cinco”*, vivendo a coleção como um todo, sem cobrar.",
+    "Charlotte Mason": "Poucos objetos, uma lição curta; mude o que está na mesa a cada rodada para a atenção ficar viva."
+  },
+  "evidencias": [
+    {
+      "texto": "Disse o total sem recontar",
+      "resposta": "_____ de 4   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Quando tirei uma, conferiu contando",
+      "resposta": "☐ sim   ☐ ainda precisa de ajuda"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "contar",
+      "titulo": "Conte e circule quantos são",
+      "itens": [
+        {
+          "emoji": "🌰",
+          "quantidade": 3,
+          "opcoes": [3, 4, 5]
+        },
+        {
+          "emoji": "🍞",
+          "quantidade": 5,
+          "opcoes": [4, 5, 6]
+        },
+        {
+          "emoji": "🍓",
+          "quantidade": 4,
+          "opcoes": [3, 4, 6]
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["cardinalidade", "quantos", "total", "último número"]
+}

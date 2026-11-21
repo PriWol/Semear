@@ -1,0 +1,95 @@
+{
+  "id": "atv-ma-duas-partes-do-sete",
+  "titulo": "As duas partes do sete",
+  "marcos": ["MA.SEN.08"],
+  "revisa": ["MA.SEN.06"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Grãos, botões e tampinhas são pequenos: use peças maiores e não deixe a criança ou irmãos menores colocá-las na boca. Guarde o material depois da atividade.",
+  "objetivo": "A criança **reparte 7 objetos em duas partes de vários jeitos** (5 e 2, 4 e 3, 6 e 1) e registra com desenho e números.",
+  "passos": [
+    {
+      "titulo": "O sete inteiro",
+      "minutos": 3,
+      "texto": "Mostre 7 grãos grandes e dois potes. *“Podemos repartir esses 7 em dois potes. De quantos jeitos?”* Deixe que ela tente, sem mostrar a resposta."
+    },
+    {
+      "titulo": "Achar jeitos",
+      "minutos": 8,
+      "texto": "Cada vez que ela encontrar uma divisão, conte junto os dois potes e diga: *“5 e 2 formam 7”*. Registre com desenho. Se ela repetir, mostre que é a mesma; se faltar um jeito, procure juntos.",
+      "fala": "Será que existe outro jeito?"
+    },
+    {
+      "titulo": "Anotar",
+      "minutos": 5,
+      "texto": "Escreva 7 = 5 + 2 e deixe que ela copie a seu modo. Mostre depois: *“e os 2 dedos de uma mão e 5 da outra?”*"
+    },
+    {
+      "titulo": "Folha: ache as partes",
+      "minutos": 4,
+      "texto": "Ela desenha as partes de 7 em potes e escreve os números."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "encontra 3 jeitos de repartir o 7",
+      "diz que 5 e 2 formam 7 e que 2 e 5 também",
+      "registra com desenho ou número"
+    ],
+    "emDesenvolvimento": ["encontra só um jeito e repete", "não percebe que 5 e 2 é igual a 2 e 5"]
+  },
+  "ajustes": {
+    "dificil": "Troque o 7 pelo 5 e deixe-a mexer os grãos por mais tempo, só com um jeito de cada vez.",
+    "facil": "Peça todos os jeitos do 8 ou do 10 e pergunte quais jeitos formam um par (7 e 3, 3 e 7)."
+  },
+  "materiais": [
+    {
+      "item": "7 grãos grandes, botões ou pedrinhas",
+      "deCasa": true
+    },
+    {
+      "item": "2 potes ou pratos",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Com as barras numéricas e as contas coloridas, compõe-se o 7 de vários jeitos e as partes aparecem lado a lado.",
+    "Waldorf": "Parta do todo: o 7 e de que partes ele é feito. Conte uma história com sete elementos que se dividem em dois grupos.",
+    "Clássico": "Depois que ela achar os jeitos, registre-os numa lista e revise a lista em outros dias, como fatos a conhecer.",
+    "Charlotte Mason": "Deixe a criança provar cada combinação com objetos antes de decorar."
+  },
+  "evidencias": [
+    {
+      "texto": "Jeitos diferentes de repartir o 7",
+      "resposta": "_____ de 3   ☐ sem ajuda   ☐ com ajuda"
+    },
+    {
+      "texto": "Registrou",
+      "resposta": "☐ desenho   ☐ números   ☐ ainda não"
+    }
+  ],
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "As partes do 7",
+      "legenda": "O adulto desenha 3 pares de potes. A criança pinta bolinhas em cada pote para mostrar uma divisão do 7 e escreve os números em cada par."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["decompor", "partes do número", "sete", "duas partes", "composição"]
+}
