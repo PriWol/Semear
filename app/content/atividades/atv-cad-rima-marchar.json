@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-marchar",
   "titulo": "Para marchar e rodar",
-  "marcos": [],
+  "marcos": ["AR.RIT.02", "NM.CUL.02"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

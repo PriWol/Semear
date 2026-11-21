@@ -1,7 +1,7 @@
 {
   "id": "atv-vol2-u7-orquestra-de-casa",
   "titulo": "A orquestra de casa: cada voz, um instrumento",
-  "marcos": [],
+  "marcos": ["AR.RIT.02", "AR.ESC.02"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {

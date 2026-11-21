@@ -1,7 +1,7 @@
 {
   "id": "atv-cing-u5-look-up-look-down",
   "titulo": "Look up, look down",
-  "marcos": [],
+  "marcos": ["NM.TER.02", "LI.ESC.01"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "idioma": "en",

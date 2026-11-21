@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-agua-na-bacia",
   "titulo": "Água na bacia",
-  "marcos": [],
-  "dominio": "NM",
-  "categoria": "Água, terra e plantas",
+  "marcos": ["NM.TER.03", "DI.VPR.02"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 1,

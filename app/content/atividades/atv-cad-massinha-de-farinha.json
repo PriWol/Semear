@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-massinha-de-farinha",
   "titulo": "Massinha de farinha",
-  "marcos": [],
+  "marcos": ["AR.MOD.01"],
   "dominio": "AR",
   "categoria": "Modelagem",
   "materialImpresso": {

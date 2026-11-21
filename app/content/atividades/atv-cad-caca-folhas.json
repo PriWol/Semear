@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-caca-folhas",
   "titulo": "Caça-folhas",
-  "marcos": [],
-  "dominio": "NM",
-  "categoria": "Observar a natureza",
+  "marcos": ["NM.VIV.01", "DI.SEN.02"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 6,

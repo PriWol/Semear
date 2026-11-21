@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-esconde-esconde",
   "titulo": "Esconde-esconde",
-  "marcos": [],
+  "marcos": ["EM.CON.02"],
   "dominio": "DI",
   "categoria": "Jogos e brincadeiras",
   "materialImpresso": {

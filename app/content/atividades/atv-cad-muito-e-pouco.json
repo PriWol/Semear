@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-muito-e-pouco",
   "titulo": "Muito e pouco",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Sentidos e classificação",
+  "marcos": ["MA.SEN.05"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 3,

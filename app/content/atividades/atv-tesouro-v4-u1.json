@@ -1,7 +1,7 @@
 {
   "id": "atv-tesouro-v4-u1",
   "titulo": "Som e silêncio: escutar a casa",
-  "marcos": [],
+  "marcos": ["AR.ESC.01"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "materialImpresso": {

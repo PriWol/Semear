@@ -1,7 +1,7 @@
 {
   "id": "atv-vol8-u3",
   "titulo": "Mandar e obedecer: a chefe mandou",
-  "marcos": [],
+  "marcos": ["EM.CON.02"],
   "dominio": "DI",
   "categoria": "Jogos e brincadeiras",
   "materialImpresso": {
@@ -12,7 +12,7 @@
   "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
   "idade": [2, 4],
   "duracaoMin": 8,
-  "cuidados": "Espaço livre de quinas e degraus, com chão firme (cuidado com meias). Mandar é um jogo com regra: a chefe nunca manda um gesto que machuque ou que envergonhe alguém, e o gesto de parar (mãos no peito) sempre vale. Na roda com lenço, corra de mãos dadas, sem puxar, com espaço livre.",
+  "cuidados": "Espaço livre de quinas e degraus, com chão firme (cuidado com meias). Mandar é um jogo com regra: a chefe nunca manda um gesto que machuque ou que envergonhe alguém, e o gesto de parar (mãos no peito) sempre vale. Na roda com lenço, corra de mãos dadas, sem puxar, com espaço livre. Mantenha longe peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["chefe", "mandar", "obedecer", "imitar", "roda"],
   "objetivo": "A criança é “a chefe” e faz um gesto que o adulto imita; depois segue o gesto do adulto e para quando aparece o gesto de parar.",
   "passos": [

@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-estatua",
   "titulo": "Estátua",
-  "marcos": [],
+  "marcos": ["AR.RIT.01"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {

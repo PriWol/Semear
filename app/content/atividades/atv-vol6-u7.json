@@ -1,7 +1,7 @@
 {
   "id": "atv-vol6-u7",
   "titulo": "Céu, sol, lua e estrelas: olhar o céu e a sombra",
-  "marcos": [],
+  "marcos": ["NM.TER.02", "NM.TER.06"],
   "dominio": "AR",
   "categoria": "Caderno da natureza",
   "materialImpresso": {

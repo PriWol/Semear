@@ -1,7 +1,7 @@
 {
   "id": "atv-vol2-u2-cancao-de-ninar",
   "titulo": "A canção de ninar de Brahms: grave, média e fininha",
-  "marcos": [],
+  "marcos": ["AR.RIT.01", "AR.ESC.02"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "materialImpresso": {

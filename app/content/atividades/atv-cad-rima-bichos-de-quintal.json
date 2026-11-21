@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-bichos-de-quintal",
   "titulo": "Bichos de quintal",
-  "marcos": [],
+  "marcos": ["AR.CAN.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

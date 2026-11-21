@@ -1,7 +1,7 @@
 {
   "id": "atv-vol6-u1",
   "titulo": "O diário da natureza: olhar uma coisa só",
-  "marcos": [],
+  "marcos": ["AR.NAT.01", "AR.NAT.02"],
   "dominio": "AR",
   "categoria": "Caderno da natureza",
   "materialImpresso": {

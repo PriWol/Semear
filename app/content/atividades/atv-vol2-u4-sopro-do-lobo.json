@@ -1,7 +1,7 @@
 {
   "id": "atv-vol2-u4-sopro-do-lobo",
   "titulo": "O sopro do Lobo: o que o sopro consegue mover?",
-  "marcos": [],
+  "marcos": ["NM.TER.03"],
   "dominio": "NM",
   "categoria": "Observar a natureza",
   "materialImpresso": {

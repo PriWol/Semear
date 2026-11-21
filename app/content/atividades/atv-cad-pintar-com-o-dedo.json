@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-pintar-com-o-dedo",
   "titulo": "Pintar com o dedo",
-  "marcos": [],
+  "marcos": ["AR.PIN.01"],
   "dominio": "AR",
   "categoria": "Pintura",
   "materialImpresso": {

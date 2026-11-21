@@ -1,7 +1,7 @@
 {
   "id": "atv-tesouro-v4-u2",
   "titulo": "Pulso: a batida que anda",
-  "marcos": [],
+  "marcos": ["AR.RIT.01", "AR.RIT.02"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {

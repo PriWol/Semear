@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-bichinho-de-perto",
   "titulo": "Bichinho de perto",
-  "marcos": [],
-  "dominio": "NM",
-  "categoria": "Observar a natureza",
+  "marcos": ["NM.VIV.01"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 6,

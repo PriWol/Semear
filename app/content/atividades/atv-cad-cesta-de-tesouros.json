@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-cesta-de-tesouros",
   "titulo": "A cesta de tesouros",
-  "marcos": [],
+  "marcos": ["NM.VIV.02"],
   "dominio": "DI",
   "categoria": "Sentidos e classificação",
   "materialImpresso": {

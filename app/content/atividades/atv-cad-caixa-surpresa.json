@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-caixa-surpresa",
   "titulo": "A caixa surpresa",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Sentidos e classificação",
+  "marcos": ["DI.SEN.01"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 8,

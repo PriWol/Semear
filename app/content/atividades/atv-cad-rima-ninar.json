@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-rima-ninar",
   "titulo": "Para ir e para ninar",
-  "marcos": [],
+  "marcos": ["AR.ESC.01"],
   "dominio": "AR",
   "categoria": "Canto",
   "materialImpresso": {

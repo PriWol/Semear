@@ -1,7 +1,7 @@
 {
   "id": "atv-cing-u4-build-and-knock-down",
   "titulo": "Build and knock down",
-  "marcos": [],
+  "marcos": ["DI.MFI.01", "LI.ESC.01"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "idioma": "en",

@@ -1,7 +1,7 @@
 {
   "id": "atv-cad-chocalho-de-casa",
   "titulo": "Chocalho de casa",
-  "marcos": [],
+  "marcos": ["AR.RIT.02"],
   "dominio": "AR",
   "categoria": "Ritmo e pulso",
   "materialImpresso": {

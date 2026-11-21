@@ -207,7 +207,7 @@
       "id": "AR",
       "nome": "Artes e Música",
       "icone": "🎨",
-      "comJornada": false,
+      "comJornada": true,
       "categorias": [
         "Desenho",
         "Pintura",
@@ -295,7 +295,7 @@
           "vertentes": null
         }
       ],
-      "comJornada": false
+      "comJornada": true
     },
     {
       "id": "DI",
@@ -349,7 +349,7 @@
           "vertentes": null
         }
       ],
-      "comJornada": false
+      "comJornada": true
     }
   ]
 }

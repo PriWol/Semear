@@ -1,9 +1,7 @@
 {
   "id": "atv-vol8-u1",
   "titulo": "Esconder e achar: esconde-esconde, “cadê? achou!” e a caixa surpresa",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Jogos e brincadeiras",
+  "marcos": ["DI.SEN.01"],
   "materialImpresso": {
     "volume": 8,
     "unidade": 1,

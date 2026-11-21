@@ -1,7 +1,7 @@
 {
   "id": "atv-vol5-u5",
   "titulo": "Van Gogh e os girassóis: quantos amarelos?",
-  "marcos": [],
+  "marcos": ["AR.APR.01", "AR.PIN.02"],
   "dominio": "AR",
   "categoria": "Pintura",
   "materialImpresso": {

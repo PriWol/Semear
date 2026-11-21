@@ -1,7 +1,7 @@
 {
   "id": "atv-cing-u4-where-is-it",
   "titulo": "Where is it?",
-  "marcos": [],
+  "marcos": ["MA.GEO.01", "LI.ESC.01"],
   "dominio": "AR",
   "categoria": "Escuta musical",
   "idioma": "en",
