@@ -1,9 +1,7 @@
 {
   "id": "atv-vol1-u1-caixa-de-sons",
   "titulo": "A caixa de sons: achar o par que faz o mesmo som",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Sentidos e classificação",
+  "marcos": ["DI.SEN.03"],
   "materialImpresso": {
     "volume": 1,
     "unidade": 1,

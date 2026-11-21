@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-passeio-cinco-sentidos",
   "titulo": "Passeio dos cinco sentidos",
-  "marcos": [],
-  "dominio": "NM",
-  "categoria": "Observar a natureza",
+  "marcos": ["NM.VIV.02"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 1,

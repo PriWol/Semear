@@ -1,9 +1,7 @@
 {
   "id": "atv-cad-par-de-meias",
   "titulo": "Par de meias",
-  "marcos": [],
-  "dominio": "DI",
-  "categoria": "Sentidos e classificação",
+  "marcos": ["DI.SEN.01"],
   "materialImpresso": {
     "caderno": "atividades-2-anos",
     "unidade": 3,
