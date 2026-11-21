@@ -55,3 +55,86 @@ test('buscar por idade', async ({ page }) => {
   await page.getByLabel('Idade').selectOption('');
   await expect(atividade).toBeVisible();
 });
+
+// Ver a atividade na tela não cria sessão; só "Imprimir esta atividade" cria.
+test('abrir uma atividade para ler, sem criar sessão, e depois imprimir', async ({ page }) => {
+  await page.goto('./');
+  await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+  await page.getByRole('link', { name: 'Atividades', exact: true }).click();
+  await page.getByRole('searchbox').fill('pintar com o dedo');
+  await page
+    .locator('[data-atividade="atv-cad-pintar-com-o-dedo"]')
+    .getByRole('link', { name: 'Pintar com o dedo' })
+    .click();
+
+  await expect(page).toHaveURL(/#\/atividade\/atv-cad-pintar-com-o-dedo/);
+  await expect(page.getByRole('heading', { name: 'Pintar com o dedo', level: 1 })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Passo a passo/ })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Materiais/ })).toBeVisible();
+  await expect(page.locator('.passos-leitura li').first()).toBeVisible();
+  await expect(page.locator('.cuidados')).toContainText('Tinta atóxica');
+  // marco por título, nunca o id cru
+  await expect(page.locator('.atividade-leitura')).not.toContainText('AR.PIN.01');
+  await expect(page.getByText(/Caderno de atividades · 2 anos/)).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Abrir o PDF' })).toHaveAttribute(
+    'href',
+    /^tesouro\//,
+  );
+
+  // nenhuma sessão foi criada só por ler
+  await page.getByRole('link', { name: 'Início' }).click();
+  // (a família de exemplo já tem sessões: a atividade lida não pode aparecer no histórico)
+  await expect(page.locator('.lista-sessoes')).toContainText('S-');
+  await expect(page.locator('.lista-sessoes')).not.toContainText('Pintar com o dedo');
+
+  // voltando à atividade, imprimir cria a sessão e abre a prévia
+  await page.goBack();
+  await page.getByRole('button', { name: /Imprimir esta atividade/ }).click();
+  await expect(page.getByRole('heading', { name: /Sessão S-/ })).toBeVisible();
+  await page.getByRole('link', { name: 'Início' }).click();
+  await expect(page.locator('.lista-sessoes')).toContainText('Pintar com o dedo');
+});
+
+test('voltar da atividade mantém a busca da lista', async ({ page }) => {
+  await page.goto('./');
+  await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+  await page.getByRole('link', { name: 'Atividades', exact: true }).click();
+  await page.getByRole('searchbox').fill('feira');
+  await page.locator('[data-atividade="atv-feira-numeros"]').getByRole('link').click();
+  await page
+    .getByRole('link', { name: /Voltar às atividades/ })
+    .first()
+    .click();
+  await expect(page.getByRole('searchbox')).toHaveValue('feira');
+  await expect(page.locator('[data-atividade="atv-caca-silabas"]')).toHaveCount(0);
+});
+
+test('atividade inexistente mostra a mensagem', async ({ page }) => {
+  await page.goto('./#/atividade/nao-existe');
+  await expect(page.getByRole('heading', { name: 'Atividade não encontrada' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Voltar às atividades' })).toBeVisible();
+});
+
+for (const largura of [320, 390]) {
+  test(`página da atividade sem rolagem horizontal em ${largura}px e sem rede externa`, async ({
+    page,
+  }) => {
+    const externas: string[] = [];
+    page.on('request', (r) => {
+      const u = new URL(r.url());
+      const permitido = /^(localhost|127\.0\.0\.1)(:|$)|^fonts\.(googleapis|gstatic)\.com$/;
+      if (u.protocol.startsWith('http') && !permitido.test(u.host)) externas.push(r.url());
+    });
+    await page.setViewportSize({ width: largura, height: 800 });
+    await page.goto('./');
+    await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+    await expect(page.getByRole('heading', { name: /Olá/ })).toBeVisible();
+    await page.evaluate(() => (location.hash = '#/atividade/atv-cad-pintar-com-o-dedo'));
+    await expect(page.getByRole('heading', { name: 'Pintar com o dedo', level: 1 })).toBeVisible();
+    const rolagem = await page.evaluate(
+      () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    );
+    expect(rolagem).toBeLessThanOrEqual(0);
+    expect(externas).toEqual([]);
+  });
+}

@@ -15,7 +15,7 @@ export const paginaTermos: FabricaPagina = async () => ({
       Versão inicial, ainda sem revisão jurídica. Estes termos são curtos de propósito. Atualizados
       em novembro de 2026.
     </p>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>O que é o Semear</h2>
       <p>
         O Semear é um app para famílias que educam em casa (homeschooling e afterschooling). Ele
@@ -23,11 +23,11 @@ export const paginaTermos: FabricaPagina = async () => ({
         de sessão, para imprimir ou abrir no tablet.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Para quem é</h2>
       <p>Para adultos: pais, mães e outros educadores. <b>A criança nunca usa o app.</b></p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Gratuito por ora</h2>
       <p>
         Hoje o Semear é gratuito e não pede conta. Isso pode mudar no futuro. Se algum dia houver
@@ -35,14 +35,14 @@ export const paginaTermos: FabricaPagina = async () => ({
         sem esse aviso.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Seus dados ficam com você</h2>
       <p>
         Tudo o que você cadastra e registra fica só no seu aparelho. Não temos servidor que receba
         esses dados. Os detalhes estão na <a href="#/privacidade">Política de privacidade</a>.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Backup e guarda do aparelho</h2>
       <p>
         Como os dados ficam no seu aparelho, a guarda deles é sua. Se você limpar o navegador,
@@ -51,7 +51,7 @@ export const paginaTermos: FabricaPagina = async () => ({
         criptografado e mostra nomes e datas de nascimento das crianças.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Fontes do Google e links</h2>
       <p>
         O app só chama a internet para entregar o próprio app (GitHub Pages) e para carregar as
@@ -60,7 +60,7 @@ export const paginaTermos: FabricaPagina = async () => ({
         respondemos por eles.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>O conteúdo é apoio</h2>
       <p>
         As atividades, os marcos da jornada, o acervo e <i>O Grande Tesouro de Marina</i> são
@@ -70,7 +70,7 @@ export const paginaTermos: FabricaPagina = async () => ({
         profissional. As indicações de “sinais de atenção” no app são lembretes, não diagnóstico.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>O app não é aconselhamento jurídico</h2>
       <p>
         As regras sobre educação domiciliar variam e podem mudar. O Semear não dá orientação
@@ -78,7 +78,7 @@ export const paginaTermos: FabricaPagina = async () => ({
         associação de educação domiciliar.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Como apagar tudo</h2>
       <p>
         Em <a href="#/config">Ajustes</a>, no grupo “Cuidado”, toque em “Apagar todos os dados deste
@@ -86,7 +86,7 @@ export const paginaTermos: FabricaPagina = async () => ({
         desfazer. Os detalhes estão na <a href="#/privacidade">Política de privacidade</a>.
       </p>
     </section>
-    <section class="cartao">
+    <section class="cartao texto-corrido">
       <h2>Mudanças nestes termos</h2>
       <p>
         Podemos atualizar estes termos. Quando mudar algo que afete você, avisaremos aqui no app.

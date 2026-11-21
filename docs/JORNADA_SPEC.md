@@ -369,6 +369,8 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 3. **Ficha de registro rápido**: uma linha por marco trabalhado, com ☐ Não observado ☐ Em desenvolvimento ☐ Consolidado e espaço para nota. O pai lança no app em cerca de 2 minutos, e cada linha tem um código curto que facilita achar o marco. **No app (#11):** em "Registrar sessão" o pai digita o código da sessão impresso no alto da folha (ex.: `S-1014-A1`) e marca, por marco, *Não observado*, *Em desenvolvimento* ou *Consolidado*, com duração real, engajamento e anotações opcionais. O lançamento grava a observação e **não** muda o estado do marco (§5.2); marco sem escolha não gera registro, e a mesma sessão pode ser corrigida depois.
 4. **Materiais + livro**: checklist do que separar, com itens de casa destacados.
 
+**Ler antes de imprimir (rota `#/atividade/<id>`):** em Atividades, o título de cada cartão abre a atividade para leitura (cuidados, materiais, passos, o que observar, ajustes, toque da vertente e material impresso), **sem criar sessão**. Só o botão "Imprimir esta atividade" grava a sessão avulsa no histórico e abre o pacote.
+
 ### 5.8 Diretrizes visuais das folhas
 - **Colorido suave:** fundos pastel (azul, pêssego, amarelo, verde, lilás) atrás das figuras, com texto e contornos escuros. As cores servem de apoio, nunca de informação: a atividade precisa funcionar impressa em preto e branco (ex.: nunca "pinte o que está no quadro azul").
 - **Economia de tinta:** a cor fica só nos cartões e figuras. O fundo da página e as áreas de escrita são brancos.
