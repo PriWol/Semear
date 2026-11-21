@@ -12,6 +12,7 @@ import type {
 import { IDIOMAS } from '../domain/tipos';
 import { ehLetra, NOME_LETRA } from '../domain/letra';
 import { observacoesDasAtividades, type Observacao } from '../domain/registro';
+import { marcosVisiveis, revisaVisivel } from '../domain/conteudo';
 import { dataBR } from '../domain/datas';
 import { rotuloDoMaterial, type IdentidadeCaderno } from '../domain/material';
 import { escapar, html, textoRico, type HtmlSeguro } from '../ui/html';
@@ -69,16 +70,21 @@ function cabecalhoMeta(e: EntradaPacote): HtmlSeguro {
 }
 
 function roteiroDaAtividade(a: Atividade, e: EntradaPacote, primeira: boolean): HtmlSeguro {
+  const idx = { marco: e.marco };
+  const marcos = marcosVisiveis(idx, a);
+  const revisao = revisaVisivel(idx, a);
   const nomeMarco = (id: string) => `${id} · ${e.marco(id)?.titulo ?? ''}`;
   return html`<div class="${primeira ? '' : 'atividade-sep'}">
     <h1>${a.titulo}</h1>
     <p>
       ${
-        a.marcos.length
-          ? html`<b>Marco principal:</b> ${a.marcos.map(nomeMarco).join(' · ')}`
-          : html`<b>Atividade complementar:</b> ${a.categoria ?? ''}`
+        marcos.length
+          ? html`<b>Marco principal:</b> ${marcos.map(nomeMarco).join(' · ')}`
+          : a.marcos.length === 0
+            ? html`<b>Atividade complementar:</b> ${a.categoria ?? ''}`
+            : ''
       }
-      ${a.revisa?.length ? html` &nbsp;·&nbsp; <b>Revisão:</b> ${a.revisa.map(nomeMarco).join(' · ')}` : ''}
+      ${revisao.length ? html` &nbsp;·&nbsp; <b>Revisão:</b> ${revisao.map(nomeMarco).join(' · ')}` : ''}
     </p>
     ${a.materialImpresso ? html`<p>📖 <b>Material impresso:</b> ${rotuloDoMaterial(a.materialImpresso, e.cadernos)}</p>` : ''}
     ${primeira ? cabecalhoMeta(e) : ''}
@@ -204,7 +210,8 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
 }
 
 function paginaFicha(e: EntradaPacote): HtmlSeguro {
-  const unicos = e.observacoes ?? observacoesDasAtividades(e.atividades, () => false);
+  const unicos =
+    e.observacoes ?? observacoesDasAtividades(e.atividades, () => false, { marco: e.marco });
   const evidencias = e.atividades.flatMap((a) => a.evidencias);
   const pergunta =
     e.atividades.map((a) => a.perguntaFicha).find((p) => p) ??
@@ -316,7 +323,10 @@ export function paginasDaSessao(e: EntradaPacote): {
   </section>`;
   const folhas = e.atividades.flatMap((a) =>
     a.folhas.map((f, i) =>
-      paginaDaFolha(f, `${a.marcos.join(' · ') || a.categoria || ''} · Folha ${i + 1}`),
+      paginaDaFolha(
+        f,
+        `${marcosVisiveis({ marco: e.marco }, a).join(' · ') || a.categoria || ''} · Folha ${i + 1}`,
+      ),
     ),
   );
   return { roteiro, materiais: paginaMateriais(e), folhas, ficha: paginaFicha(e) };

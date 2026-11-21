@@ -1,7 +1,7 @@
 // Gerador de sessão (§5.6 da especificação). Determinístico: mesma entrada, mesma sugestão.
 import type { Atividade, Crianca, EstadosCrianca, Familia, Livro, Sessao } from './tipos';
 import type { IndiceConteudo } from './conteudo';
-import { linhaDoMarco } from './conteudo';
+import { linhaDoMarco, marcosVisiveis, revisaVisivel } from './conteudo';
 import { diasEntre } from './datas';
 import { idPista, pistasDaCrianca, posicaoDaLinha, type Pista } from './jornada';
 
@@ -103,7 +103,7 @@ function minutosPorLinha(
     for (const id of s.atividadeIds) {
       const a = idx.atividade(id);
       if (!a) continue;
-      const linhas = new Set(a.marcos.map(linhaDoMarco));
+      const linhas = new Set(marcosVisiveis(idx, a).map(linhaDoMarco));
       for (const l of linhas) mapa.set(l, (mapa.get(l) ?? 0) + a.duracaoMin);
     }
   }
@@ -266,7 +266,10 @@ export function sugerirLivro(
   idade: number,
 ): Livro | null {
   const marcos = new Set(
-    escolhas.flatMap((e) => [...e.atividade.marcos, ...(e.atividade.revisa ?? [])]),
+    escolhas.flatMap((e) => [
+      ...marcosVisiveis(idx, e.atividade),
+      ...revisaVisivel(idx, e.atividade),
+    ]),
   );
   // A indicação liga por marco ou pela linha do marco (#73): obra e música costumam servir a uma linha toda.
   const linhas = new Set([...marcos].map(linhaDoMarco));

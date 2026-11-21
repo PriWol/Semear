@@ -2,7 +2,7 @@
 //
 // Regra de ouro (§5.2): a ficha grava a OBSERVAÇÃO da sessão e NUNCA muda o estado do marco.
 // Só o pai muda o estado, no mapa da jornada. Por isso nada aqui devolve ou toca em `estados`.
-import { linhaDoMarco, type IndiceConteudo } from './conteudo';
+import { linhaDoMarco, marcosVisiveis, revisaVisivel, type IndiceConteudo } from './conteudo';
 import { chaveMarco, estadoDe } from './jornada';
 import {
   ANOTACOES_MAX,
@@ -37,6 +37,7 @@ export interface Observacao {
 export function observacoesDasAtividades(
   atividades: Atividade[],
   emLinguas: (marcoId: string) => boolean,
+  idx: Pick<IndiceConteudo, 'marco'>,
 ): Observacao[] {
   const mapa = new Map<string, Observacao>();
   const incluir = (a: Atividade, marcoId: string, revisao: boolean) => {
@@ -52,8 +53,9 @@ export function observacoesDasAtividades(
     mapa.set(chave, obs);
   };
   for (const a of atividades) {
-    for (const id of a.marcos) incluir(a, id, false);
-    for (const id of a.revisa ?? []) incluir(a, id, true);
+    // Marco em rascunho não entra na ficha: não há o que observar nem título para mostrar.
+    for (const id of marcosVisiveis(idx, a)) incluir(a, id, false);
+    for (const id of revisaVisivel(idx, a)) incluir(a, id, true);
   }
   return [...mapa.values()];
 }
@@ -69,6 +71,7 @@ export function observacoesDaSessao(
   return observacoesDasAtividades(
     atividades,
     (marcoId) => idx.dominioDaLinha(linhaDoMarco(marcoId))?.trilhas !== undefined,
+    idx,
   );
 }
 

@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { validarConteudo } from '../src/domain/conteudo';
+import { marcosVisiveis, revisaVisivel, validarConteudo } from '../src/domain/conteudo';
 import { carregarConteudo, carregarConteudoBruto } from '../src/conteudo';
 import type { Atividade, Marco, OrientacaoPais, Referencia } from '../src/domain/tipos';
 import { CADERNOS } from '../src/tesouro';
-import { atividade, conteudoBase, marco } from './fabricas';
+import { atividade, conteudoBase, indiceBase, marco } from './fabricas';
 
 const IDS_CADERNOS = CADERNOS.map((c) => c.id);
 
@@ -373,5 +373,21 @@ describe('validarConteudo: orientação para os pais e referências', () => {
     }
     const ok = comOrientacao(orientacao(), [referencia('r1', { link: 'https://exemplo.gov.br' })]);
     expect(validarConteudo(ok).erros).toEqual([]);
+  });
+});
+
+describe('marcosVisiveis / revisaVisivel (marco em rascunho não aparece)', () => {
+  const idx = indiceBase();
+  const a = atividade('x', ['DI.CAD.04', 'LG.FON.01', 'LG.FON.02'], {
+    revisa: ['DI.CAD.05', 'MA.SEN.01'],
+  });
+
+  it('mantém a ordem e descarta ids que não estão no índice', () => {
+    expect(marcosVisiveis(idx, a)).toEqual(['LG.FON.01', 'LG.FON.02']);
+    expect(revisaVisivel(idx, a)).toEqual(['MA.SEN.01']);
+  });
+  it('sem revisão devolve lista vazia; sem marcos publicados também', () => {
+    expect(revisaVisivel(idx, atividade('y', ['LG.FON.01']))).toEqual([]);
+    expect(marcosVisiveis(idx, atividade('z', ['DI.CAD.01']))).toEqual([]);
   });
 });

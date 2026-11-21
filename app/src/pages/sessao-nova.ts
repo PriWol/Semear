@@ -2,6 +2,7 @@ import type { FabricaPagina } from '../ui/app';
 import { lerFormulario, lista, novoId } from '../ui/app';
 import { html, type HtmlSeguro } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
+import { marcosVisiveis } from '../domain/conteudo';
 import { IDIOMAS, type Sessao } from '../domain/tipos';
 import { idPista, pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import {
@@ -73,9 +74,13 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
                     <span class="nota">${e.atividade.duracaoMin} min</span>
                     <p class="nota">
                       ${
-                        e.atividade.marcos.length
-                          ? e.atividade.marcos.map((m) => ctx.idx.marco(m)?.titulo ?? m).join(' · ')
-                          : `Complementar · ${e.atividade.categoria ?? ''}`
+                        marcosVisiveis(ctx.idx, e.atividade).length
+                          ? marcosVisiveis(ctx.idx, e.atividade)
+                              .map((m) => ctx.idx.marco(m)?.titulo ?? '')
+                              .join(' · ')
+                          : e.atividade.marcos.length > 0
+                            ? 'Atividade de apoio'
+                            : `Complementar · ${e.atividade.categoria ?? ''}`
                       }
                       — ${e.motivos.join(', ')}
                     </p>

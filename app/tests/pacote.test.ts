@@ -136,3 +136,40 @@ describe('segurança do pacote (revisão de segurança, achados 1 e 3)', () => {
     expect(gerarPacote(entrada())).toContain("e.data==='semear:imprimir'");
   });
 });
+
+describe('gerarPacote com marco em rascunho (atividade aprovada que o cita)', () => {
+  const base = idx.atividade('atv-caca-silabas')!;
+  const escondida = {
+    ...base,
+    id: 'atv-escondida',
+    marcos: [...base.marcos, 'DI.CAD.04'],
+    revisa: ['DI.CAD.05'],
+  };
+  const doc = gerarPacote(entrada({ atividades: [escondida] }));
+
+  it('não imprime o id cru nem "·" com título vazio', () => {
+    expect(doc).not.toContain('DI.CAD');
+    expect(doc).not.toMatch(/·\s*(<|\n|$)/);
+    expect(doc).not.toContain('Revisão:');
+  });
+
+  it('mantém os marcos publicados e continua escapando títulos', () => {
+    expect(doc).toContain(base.marcos[0]!);
+    const maldoso = gerarPacote(
+      entrada({
+        atividades: [escondida],
+        marco: (id) =>
+          idx.marco(id) ? { ...idx.marco(id)!, titulo: '<img src=x onerror=alert(1)>' } : undefined,
+      }),
+    );
+    expect(maldoso).not.toContain('<img src=x');
+    expect(maldoso).toContain('&lt;img src=x');
+  });
+
+  it('atividade só com marcos escondidos não vira "complementar"', () => {
+    const so = { ...escondida, marcos: ['DI.CAD.04'], revisa: undefined, categoria: 'Xis' };
+    const d = gerarPacote(entrada({ atividades: [so] }));
+    expect(d).not.toContain('<b>Atividade complementar:</b>');
+    expect(d).not.toContain('DI.CAD');
+  });
+});

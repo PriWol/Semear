@@ -39,6 +39,27 @@ export function linhaDoMarco(marcoId: string): string {
   return marcoId.split('.').slice(0, 2).join('.');
 }
 
+/**
+ * Marcos que uma atividade pode mostrar. Só conteúdo aprovado entra no índice (`carregarConteudo`),
+ * mas uma atividade aprovada pode citar um marco ainda em rascunho; esse id não existe para a
+ * família e nunca aparece, nem some do cálculo, como id cru ou título vazio. Fonte única para
+ * pacote, ficha de registro, proposta de sessão, busca e telas.
+ */
+export function marcosVisiveis(
+  idx: Pick<IndiceConteudo, 'marco'>,
+  atividade: Pick<Atividade, 'marcos'>,
+): string[] {
+  return atividade.marcos.filter((id) => idx.marco(id) !== undefined);
+}
+
+/** Igual a `marcosVisiveis`, para os marcos de revisão (`revisa`). */
+export function revisaVisivel(
+  idx: Pick<IndiceConteudo, 'marco'>,
+  atividade: Pick<Atividade, 'revisa'>,
+): string[] {
+  return (atividade.revisa ?? []).filter((id) => idx.marco(id) !== undefined);
+}
+
 export function criarIndice(conteudo: Conteudo): IndiceConteudo {
   const dominios = new Map(conteudo.dominios.map((d) => [d.id, d]));
   const linhas = new Map<string, Linha>();

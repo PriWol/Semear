@@ -30,3 +30,12 @@ test('buscar → imprimir uma atividade avulsa', async ({ page }) => {
   await page.getByRole('link', { name: 'Início' }).click();
   await expect(page.locator('.lista-sessoes')).toContainText('S-');
 });
+
+// Atividade aprovada pode citar marco ainda em rascunho (DI.CAD): a lista não mostra o id cru.
+test('a lista de atividades não mostra ids de marcos em rascunho', async ({ page }) => {
+  await page.goto('./');
+  await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
+  await page.getByRole('link', { name: 'Atividades', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Atividades' })).toBeVisible();
+  await expect(page.locator('#resultado-atividades')).not.toContainText('DI.CAD');
+});
