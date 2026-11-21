@@ -1,0 +1,88 @@
+{
+  "id": "atv-lg-por-que-sera",
+  "titulo": "Por que será que ele fez isso?",
+  "marcos": ["LG.LIT.03"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Atenção: nesta conversa não existe resposta certa; não corrija opinião. Se o tema da história for difícil (perda, medo), pare quando ela pedir e retome outro dia.",
+  "objetivo": "A criança dá razões para o que o personagem fez e diz o que mudaria na história, justificando.",
+  "passos": [
+    {
+      "titulo": "Ler com uma pausa",
+      "minutos": 6,
+      "texto": "Leia uma história com um dilema (por exemplo, *O Patinho Feio*, conto de Andersen, ou outra de que ela goste). Pare num ponto de escolha: *“O que será que ele vai fazer?”*"
+    },
+    {
+      "titulo": "Por que será?",
+      "minutos": 6,
+      "texto": "Depois de ler, pergunte: *“Por que será que ele fez isso?”*. Quando ela responder, sempre peça: *“Por quê? O que te faz pensar isso?”* Ouça com interesse, sem dizer se está certo.",
+      "fala": "Por que será?"
+    },
+    {
+      "titulo": "O que você teria feito?",
+      "minutos": 4,
+      "texto": "Pergunte: *“E você, o que teria feito no lugar dele?”* e *“Se pudesse mudar algo na história, o quê?”*"
+    },
+    {
+      "titulo": "Ligar com a vida",
+      "minutos": 4,
+      "texto": "Pergunte se isso já aconteceu com ela, com a família ou em outra história. Registre uma frase dela no caderno, se quiser."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Responde “por que será que...?” com uma razão ligada à história",
+      "Diz o que mudaria e justifica"
+    ],
+    "emDesenvolvimento": [
+      "Responde só “porque sim” ou repete a história (faça “e como você sabe?”)",
+      "Só responde sobre fatos (mostre a pergunta com um exemplo seu)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Pergunte só “por que será?” uma vez e ofereça duas razões para ela escolher.",
+    "facil": "Peça que compare com outra história e diga o que há de parecido e de diferente."
+  },
+  "materiais": [
+    {
+      "item": "Livro ou conto de que ela goste",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe a pergunta aberta e o livro à mão; ela volta a ele para procurar a prova da resposta.",
+    "Waldorf": "Mantenha o tom de contador: deixe a imagem agir sem moral pronta e converse sem forçar conclusão.",
+    "Clássico": "Ligue a história a uma virtude (coragem, justiça) e peça que ela diga qual apareceu.",
+    "Religioso": "Se fizer sentido, converse sobre a escolha do personagem à luz de valores da família.",
+    "Charlotte Mason": "Use um livro vivo e converse como num círculo de leitura: ela conta e opina com os próprios termos."
+  },
+  "evidencias": [
+    {
+      "texto": "Deu uma razão ligada à história",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Disse o que mudaria e por quê",
+      "resposta": "☐ não   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que “por quê” ela deu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["por que", "interpretar", "opinião", "história", "conversa sobre o livro"]
+}

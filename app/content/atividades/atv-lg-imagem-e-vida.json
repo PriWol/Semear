@@ -1,0 +1,91 @@
+{
+  "id": "atv-lg-imagem-e-vida",
+  "titulo": "O que a imagem conta que o texto não conta?",
+  "marcos": ["LG.LEI.10"],
+  "vertentes": ["Clássico", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Atenção: escolha um livro ilustrado adequado à idade (sem cenas assustadoras sem aviso). Compartilhar experiências é uma escolha dela: não force nenhum relato pessoal.",
+  "objetivo": "A criança liga o que leu a algo que viveu ou a outro livro e percebe o que a ilustração acrescenta ao texto.",
+  "passos": [
+    {
+      "titulo": "Só olhar a imagem",
+      "minutos": 4,
+      "texto": "Antes de ler a página, mostre só a ilustração. Pergunte: *“O que você vê? O que será que está acontecendo?”*"
+    },
+    {
+      "titulo": "Ler e comparar",
+      "minutos": 6,
+      "texto": "Leiam o texto da página. Pergunte: *“A imagem mostra algo que o texto não conta?”* (um detalhe, uma emoção, um bicho escondido).",
+      "fala": "O que a imagem mostra que o texto não conta?"
+    },
+    {
+      "titulo": "Isso já aconteceu comigo",
+      "minutos": 6,
+      "texto": "Pergunte: *“Isso já aconteceu com você?”* e *“Lembra outra história parecida?”*. Conversem sem pressa e sem “certo ou errado”."
+    },
+    {
+      "titulo": "Uma página sua",
+      "minutos": 4,
+      "texto": "Ela faz um desenho que mostra algo que não está no texto e escreve uma legenda curta."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Conta uma experiência parecida com a do texto",
+      "Diz o que a ilustração mostra que o texto não diz"
+    ],
+    "emDesenvolvimento": [
+      "Diz só “não sei” (mostre um detalhe e pergunte de novo)",
+      "Descreve a imagem mas não compara com o texto (pergunte “e o texto, falou isso?”)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use livros com poucas palavras e imagens grandes (sem texto longo).",
+    "facil": "Peça que compare duas ilustrações do mesmo conto, de ilustradores diferentes."
+  },
+  "materiais": [
+    {
+      "item": "Um livro ilustrado",
+      "deCasa": true
+    },
+    {
+      "item": "Papel e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Escolha uma ilustração clássica de domínio público (como as de Gustave Doré ou John Tenniel) e converse sobre ela.",
+    "Charlotte Mason": "Faça um “estudo de imagem”: observe por um minuto, vire a página e conte o que viu."
+  },
+  "evidencias": [
+    {
+      "texto": "Ligou o texto a uma experiência",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Disse o que a imagem acrescenta",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Que detalhe da imagem ela notou?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "O que a imagem conta",
+      "legenda": "Desenhe algo da história que o texto não contou."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["ilustração", "imagem e texto", "experiência", "conexão", "livro ilustrado"]
+}

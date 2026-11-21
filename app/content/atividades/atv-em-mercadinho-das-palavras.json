@@ -1,0 +1,92 @@
+{
+  "id": "atv-em-mercadinho-das-palavras",
+  "titulo": "Mercadinho: por favor, obrigado e “como posso ajudar?”",
+  "marcos": ["EM.VAL.02"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [3, 6],
+  "duracaoMin": 15,
+  "preparoMin": 8,
+  "cuidados": "Atenção: use só embalagens vazias e limpas, sem bordas cortantes e sem peças pequenas ou alimentos de verdade que possam engasgar. Fique perto no faz de conta. Não obrigue a criança a pedir desculpas à força: ofereça uma forma de reparar.",
+  "objetivo": "A criança usa “por favor”, “obrigado” e “desculpa” em um faz de conta, e começa a entender para que servem as palavras.",
+  "passos": [
+    {
+      "titulo": "Montar o mercadinho",
+      "minutos": 3,
+      "texto": "Reúna embalagens vazias e limpas, uma sacola e um “dinheiro” de papel. Combine os papéis: ela é a freguesa e você o vendedor (depois trocam)."
+    },
+    {
+      "titulo": "Comprar e vender",
+      "minutos": 6,
+      "texto": "Peça com educação (*“por favor, quero um pacote de arroz”*) e agradeça. Quando ela pedir sem a palavra, repita a frase completa de um jeito natural, sem corrigir. Troquem de papel e deixe-a atender.",
+      "fala": "Como a gente pede com gentileza?"
+    },
+    {
+      "titulo": "Um tropeço no mercadinho",
+      "minutos": 4,
+      "texto": "Deixe cair uma embalagem de propósito. Diga: *“Ops, desculpa. Vou ajudar a arrumar.”* Peça que ela mostre o que fazer quando derruba algo (arrumar junto). A desculpa vem com um gesto."
+    },
+    {
+      "titulo": "Conversa curta",
+      "minutos": 2,
+      "texto": "Pergunte: *“Como o vendedor se sentiu quando recebeu um obrigado?”*, e ouça a resposta dela."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz “por favor” e “obrigado” no faz de conta sem lembrete",
+      "Diz “desculpa” e oferece ajudar a arrumar"
+    ],
+    "emDesenvolvimento": [
+      "Usa as palavras só quando lembrada (esperado aos 3 e 4 anos)",
+      "Diz “desculpa” sem entender para quê (mostre o gesto de reparar)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Treine só “por favor” e “obrigado”; deixe “desculpa” para outro dia.",
+    "facil": "Peça que ela seja a vendedora e ensine a cliente (um bicho) a pedir com gentileza."
+  },
+  "materiais": [
+    {
+      "item": "Embalagens vazias e limpas (caixas, potes de plástico)",
+      "deCasa": true
+    },
+    {
+      "item": "Sacola",
+      "deCasa": true
+    },
+    {
+      "item": "Papéis cortados como dinheiro",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Apresente as frases de “graça e cortesia” em silêncio, uma vez, e deixe-a repetir a cena sozinha com bonecos.",
+    "Waldorf": "Use o faz de conta livre e imitação: as palavras viram um costume do dia, e não uma aula.",
+    "Clássico": "Aprendam um verso curtinho sobre gentileza e recitem antes de brincar.",
+    "Religioso": "Dê ao “obrigado” um sentido de gratidão a Deus e às pessoas, se for o jeito da família.",
+    "Charlotte Mason": "Trate como hábito: pratique a cortesia todos os dias em vez de uma única aula."
+  },
+  "evidencias": [
+    {
+      "texto": "Disse “por favor”/“obrigado” sem lembrete",
+      "resposta": "☐ não   ☐ com lembrete   ☐ sozinha"
+    },
+    {
+      "texto": "Ofereceu reparar quando derrubou algo",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Em que momento ela usou uma palavra de gentileza?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["por favor", "obrigado", "desculpa", "gentileza", "educação"]
+}

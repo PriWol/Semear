@@ -1,0 +1,88 @@
+{
+  "id": "atv-lg-que-texto-e-esse",
+  "titulo": "Que texto é esse? Conto, poema, receita ou notícia",
+  "marcos": ["LG.LEI.11"],
+  "vertentes": ["Clássico", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 10,
+  "cuidados": "Atenção: use textos curtos e adequados à idade (sem notícias com violência). Tesoura só com ponta redonda. Se ela não souber o gênero, mostre as pistas, sem cobrar.",
+  "objetivo": "A criança diz o assunto de um texto e o tipo dele (conto, poema, receita, notícia, bilhete), resumindo em uma frase.",
+  "passos": [
+    {
+      "titulo": "Reunir textos",
+      "minutos": 4,
+      "texto": "Com antecedência, junte textos curtos de gêneros diferentes: um conto, um poema, uma receita, um bilhete, um trecho de notícia infantil, e recorte-os (ou copie)."
+    },
+    {
+      "titulo": "Para que serve?",
+      "minutos": 6,
+      "texto": "Leiam cada texto e pergunte: *“Para que serve? Como a gente reconhece?”* (poema tem versos e rimas; receita tem lista e passos; conto tem personagens). Ela agrupa os textos em montinhos.",
+      "fala": "Para que serve este texto?"
+    },
+    {
+      "titulo": "Resumir em uma frase",
+      "minutos": 8,
+      "texto": "Para cada texto, ela diz em uma frase **de que trata** (*“é uma receita de bolo”*). Escreva as frases em tiras e ela cola do lado do texto."
+    },
+    {
+      "titulo": "Adivinhe o gênero",
+      "minutos": 5,
+      "texto": "Leia um trecho de texto (sem mostrar) e ela diz o gênero e as pistas que a fizeram pensar assim."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Resume o texto em uma frase", "Classifica 4 de 5 textos curtos por gênero"],
+    "emDesenvolvimento": [
+      "Confunde conto e notícia (compare as pistas lado a lado)",
+      "Resume contando tudo (peça “em uma frase só”)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Trabalhe só com três gêneros (conto, poema, receita).",
+    "facil": "Peça que escreva um texto de cada gênero sobre o mesmo assunto."
+  },
+  "materiais": [
+    {
+      "item": "5 textos curtos de gêneros diferentes (conto, poema, receita, bilhete, notícia)",
+      "deCasa": true
+    },
+    {
+      "item": "Tiras de papel, cola e tesoura sem ponta",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Clássico": "Dê nome a cada gênero e peça que ela recite uma característica de cada um.",
+    "Charlotte Mason": "Use textos de livros vivos e jornais infantis, e ligue com uma narração do que entendeu."
+  },
+  "evidencias": [
+    {
+      "texto": "Textos classificados corretamente",
+      "resposta": "_____ de 5"
+    },
+    {
+      "texto": "Resumiu em uma frase",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que gênero ela reconheceu com mais facilidade?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "gênero textual",
+    "ideia principal",
+    "resumo",
+    "tipos de texto",
+    "conto e poema"
+  ]
+}

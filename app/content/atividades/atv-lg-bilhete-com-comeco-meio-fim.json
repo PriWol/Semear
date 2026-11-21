@@ -1,0 +1,98 @@
+{
+  "id": "atv-lg-bilhete-com-comeco-meio-fim",
+  "titulo": "Um bilhete de verdade, com começo, meio e fim",
+  "marcos": ["LG.ESC.07"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Atenção: sessão de até 25 minutos; o rascunho pode ter erros. Quem lê o bilhete é um destinatário de verdade, então combine com ele antes para receber com carinho, sem corrigir.",
+  "objetivo": "A criança escreve um bilhete ou um texto curto (3 a 5 frases) com começo, meio e fim, para alguém, dizendo para quê escreve.",
+  "passos": [
+    {
+      "titulo": "Para quem e para quê?",
+      "minutos": 4,
+      "texto": "Escolham o destinatário (avó, amigo, irmão) e o motivo: agradecer, convidar, contar uma novidade. Pergunte: *“O que você quer contar? Como começa? Como termina?”*",
+      "fala": "O que você quer dizer para ele?"
+    },
+    {
+      "titulo": "Planejar em três partes",
+      "minutos": 5,
+      "texto": "Dobrem a folha em três: **começo** (cumprimento), **meio** (o que quer dizer), **fim** (despedida). Ela faz um desenho ou uma palavra em cada parte."
+    },
+    {
+      "titulo": "Escrever o rascunho",
+      "minutos": 8,
+      "texto": "Ela escreve o bilhete sem se preocupar com erros. Se precisar, soletre uma palavra, mas não corrija o resto."
+    },
+    {
+      "titulo": "Reler e passar a limpo",
+      "minutos": 6,
+      "texto": "Leiam em voz alta. Ela escolhe uma coisa para melhorar e passa a limpo só o que quiser mostrar. Entreguem o bilhete."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Escreve 3 a 5 frases com começo, meio e fim",
+      "Diz para quem e para quê escreveu"
+    ],
+    "emDesenvolvimento": [
+      "Escreve só uma frase (pergunte “e depois?” e “como termina?”)",
+      "Escreve tudo sem ordem (volte à folha dobrada em três)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça um bilhete de 2 frases (cumprimento e pedido) e escreva o resto junto com ela.",
+    "facil": "Peça uma carta com data, local e post-scriptum (P.S.)."
+  },
+  "materiais": [
+    {
+      "item": "Folha de papel e lápis",
+      "deCasa": true
+    },
+    {
+      "item": "Envelope ou papel de carta",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe papéis de cartas e envelopes numa caixa, com endereço e selo de papel, para ela escrever quando quiser.",
+    "Waldorf": "Só a partir dos 8 anos para textos longos: antes, cartas curtas ilustradas, com capricho de letra e de cor.",
+    "Clássico": "Mostre a estrutura da carta (saudação, corpo, despedida) e peça a releitura em voz alta antes de enviar.",
+    "Religioso": "Convide a escrever um cartão de bênção ou gratidão para alguém da comunidade, se fizer sentido.",
+    "Charlotte Mason": "Faça a escrita nascer de uma narração: depois de contar, ela escreve ao amigo sobre o que viveu."
+  },
+  "evidencias": [
+    {
+      "texto": "Texto com começo, meio e fim",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sim"
+    },
+    {
+      "texto": "Disse para quem e para quê",
+      "resposta": "☐ não   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Para quem era o bilhete e o que ela queria dizer?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Meu bilhete",
+      "legenda": "Escreva um bilhete para alguém: começo, meio e fim."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["bilhete", "carta", "texto curto", "começo meio e fim", "produção de texto"]
+}

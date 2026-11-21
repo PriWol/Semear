@@ -1,0 +1,83 @@
+{
+  "id": "atv-em-cuidar-do-ursinho-machucado",
+  "titulo": "Cuidar do ursinho que se machucou",
+  "marcos": ["EM.VAL.01"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [2, 4],
+  "duracaoMin": 8,
+  "preparoMin": 3,
+  "cuidados": "Atenção: use curativos de papel ou tiras de pano, sem adesivos nem peça pequena que possa ir à boca. Bicho de pelúcia sem partes soltas. Fique junto o tempo todo e não obrigue a criança a abraçar ou beijar ninguém: o corpo é dela.",
+  "objetivo": "A criança oferece um gesto de carinho (abraço, passar a mão, trazer um brinquedo) a quem está triste, no faz de conta, com ajuda do adulto.",
+  "passos": [
+    {
+      "titulo": "O ursinho se machucou",
+      "minutos": 2,
+      "texto": "Mostre um bicho de pelúcia e faça-o “chorar”. Diga: *“Ai, o ursinho está triste. Machucou o pezinho.”* Olhe para a criança com expressão preocupada.",
+      "fala": "O que podemos fazer pelo ursinho?"
+    },
+    {
+      "titulo": "Cuidar",
+      "minutos": 4,
+      "texto": "Convide-a a cuidar: um abraço, uma mão no pezinho, um cobertor, uma tira de pano de curativo. Se ela não souber, mostre uma vez e deixe-a imitar. Elogie o gesto: *“Você cuidou do ursinho. Ele ficou feliz.”*"
+    },
+    {
+      "titulo": "E se fosse alguém de verdade?",
+      "minutos": 2,
+      "texto": "Sem pressão, comente: *“Quando o vovô está triste, a gente pode dar um abraço, né?”*. Se ela quiser, treine o gesto com você."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Faz um gesto de carinho ao bicho (abraço, mão, cobertor), com ou sem sugestão",
+      "Repete o gesto em outro momento do dia"
+    ],
+    "emDesenvolvimento": [
+      "Olha, mas não oferece nada ainda (comum; mostre o gesto de novo no outro dia)",
+      "Quer o bicho só para si (é esperado aos 2 anos; não exija)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça só a cena e o abraço: sem curativo e sem perguntas.",
+    "facil": "Peça que ela escolha o que o bicho precisa e como cuidar dele, e conte para um adulto o que fez."
+  },
+  "materiais": [
+    {
+      "item": "Bicho de pelúcia macio",
+      "deCasa": true
+    },
+    {
+      "item": "Pano ou cobertor pequeno",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe uma “caixa de cuidado” com pano e almofada ao alcance, para ela cuidar dos bichos sozinha.",
+    "Waldorf": "Faça a cena como um teatrinho silencioso, com gestos lentos e uma canção de ninar; a criança imita.",
+    "Clássico": "Use uma frase fixa (*“o ursinho está triste, vamos cuidar”*) para ela repetir e guardar.",
+    "Religioso": "Se fizer sentido, associe o gesto a gratidão e cuidado com o próximo, em uma frase simples.",
+    "Charlotte Mason": "Parta de um livro de bichos em que alguém se machuca e repita a cena em brincadeira, sem sermão."
+  },
+  "evidencias": [
+    {
+      "texto": "Fez um gesto de carinho ao bicho",
+      "resposta": "☐ não   ☐ quando sugeri   ☐ sozinha"
+    },
+    {
+      "texto": "Repetiu o gesto em outro momento",
+      "resposta": "☐ não   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que gesto de carinho ela escolheu?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["empatia", "carinho", "cuidar", "abraço", "machucado"]
+}

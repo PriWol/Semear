@@ -1,0 +1,88 @@
+{
+  "id": "atv-em-ponte-da-conversa",
+  "titulo": "A ponte da conversa: “não gostei, e que tal...?”",
+  "marcos": ["EM.CON.03"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [5, 7],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: encene o conflito com bonecos ou bichos, nunca com um conflito real entre irmãos ou colegas no meio da atividade. Fique atento para não expor a criança diante dos outros; se ela se agitar, volte para o faz de conta.",
+  "objetivo": "A criança diz o que sentiu e propõe uma saída para um conflito pequeno, com a mediação do adulto.",
+  "passos": [
+    {
+      "titulo": "Cena de bonecos",
+      "minutos": 4,
+      "texto": "Com dois bonecos, encene uma briga pequena: os dois querem o mesmo carrinho. Pare no auge e pergunte: *“O que cada um sentiu? Eles estão bravos? Tristes?”*"
+    },
+    {
+      "titulo": "Os três passos da ponte",
+      "minutos": 6,
+      "texto": "Mostre em voz alta: **1. “Eu não gostei de…”** (o que aconteceu), **2. “Eu me senti…”** (a emoção), **3. “Que tal…?”** (uma saída). Diga cada passo com um boneco e peça que ela diga com o outro.",
+      "fala": "Que tal a gente...?"
+    },
+    {
+      "titulo": "Inventar saídas",
+      "minutos": 6,
+      "texto": "Peça duas ou três ideias de solução para os bonecos (revezar, usar juntos, trocar). Aceite ideias imperfeitas e pergunte: *“E o outro boneco, vai gostar?”*. Escolham uma e encenem o final."
+    },
+    {
+      "titulo": "Na vida real",
+      "minutos": 4,
+      "texto": "Pergunte se ela lembra de uma situação parecida. Se sim, ensaiem como ela poderia dizer a frase da ponte. Combine que, no próximo conflito de verdade, você ajuda a conduzir."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Diz “não gostei” e o que sentiu na cena",
+      "Propõe uma saída (mesmo com ajuda) que considera o outro"
+    ],
+    "emDesenvolvimento": [
+      "Só reage com agressão ou choro na cena (mostre os dois bonecos acalmando-se antes)",
+      "Propõe saídas só a seu favor (pergunte como o outro se sente)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use só dois passos (“Eu não gostei” e “Que tal”) e dê as frases prontas.",
+    "facil": "Peça que ela seja a mediadora: ouve os dois bonecos e sugere a saída."
+  },
+  "materiais": [
+    {
+      "item": "Dois bonecos, bichos de pelúcia ou meias com carinhas",
+      "deCasa": true
+    },
+    {
+      "item": "Um brinquedo disputado (carrinho, bola)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Apresente os três passos como uma “lição de graça e cortesia”: demonstre devagar, sem palavras extras, e depois deixe-a tentar.",
+    "Waldorf": "Conte a cena como um pequeno conto de bichos, sem moral explícita; deixe a imagem trabalhar sozinha.",
+    "Clássico": "Dê nome aos três passos e memorize a ordem com um gesto de mão (um dedo por passo).",
+    "Religioso": "Relacione com perdão e reconciliação, no tom da fé da família: *“como posso restaurar a amizade?”*.",
+    "Charlotte Mason": "Parta de uma cena de um livro vivo em que dois personagens discordam e deixe-a narrar o que fariam."
+  },
+  "evidencias": [
+    {
+      "texto": "Disse o que sentiu na cena",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Propôs uma saída",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Qual saída ela inventou?",
+  "folhas": [],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["briga", "conflito", "mediação", "conversar", "amizade"]
+}

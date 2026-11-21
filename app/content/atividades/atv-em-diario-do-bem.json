@@ -1,0 +1,94 @@
+{
+  "id": "atv-em-diario-do-bem",
+  "titulo": "Diário do bem: o que eu fiz de justo ou gentil",
+  "marcos": ["EM.VAL.04"],
+  "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 20,
+  "preparoMin": 3,
+  "cuidados": "Atenção: o diário é da criança e ela decide o que mostrar; não leia em voz alta para outros sem licença dela. Não use a atividade para listar erros ou comparar irmãos: o foco é o que ela escolheu fazer de bom.",
+  "objetivo": "A criança conta uma situação em que foi justa ou gentil e explica por que achou importante.",
+  "passos": [
+    {
+      "titulo": "Pensar com calma",
+      "minutos": 4,
+      "texto": "Pergunte: *“Teve algum dia em que você ajudou alguém, dividiu ou foi justo?”*. Se ela não lembrar, dê pistas: *“E na hora do lanche? E com seu irmão?”* Conte primeiro uma situação sua."
+    },
+    {
+      "titulo": "Contar e perguntar o porquê",
+      "minutos": 6,
+      "texto": "Ouça a história inteira. Depois pergunte com curiosidade (e não como interrogatório): *“Por que você achou importante fazer isso?”* e *“Como o outro ficou?”*. Aceite razões simples.",
+      "fala": "Por que você achou importante?"
+    },
+    {
+      "titulo": "Escrever ou desenhar",
+      "minutos": 8,
+      "texto": "No caderno, ela escreve uma frase (*“Eu dividi meu lanche porque o Pedro estava com fome”*) e desenha a cena. Você ajuda na escrita, se precisar. Ao final, relembrem uma situação em que **você** errou e como reparou."
+    },
+    {
+      "titulo": "Fechar",
+      "minutos": 2,
+      "texto": "Guarde o caderno num lugar que ela escolhe. Combine uma vez por semana para escrever outra."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Conta uma situação concreta e diz o motivo",
+      "Descreve como o outro se sentiu"
+    ],
+    "emDesenvolvimento": [
+      "Conta o que fez, mas sem motivo (pergunte “e o que você queria?”)",
+      "Só repete o que o adulto gostaria de ouvir (aceite e convide para contar mais)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Conte a situação oralmente e escreva só uma palavra-chave no caderno.",
+    "facil": "Peça que ela escreva também algo que “podia ter feito diferente” e como repararia."
+  },
+  "materiais": [
+    {
+      "item": "Caderno pequeno",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis e lápis de cor",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe o caderno acessível e à vista; ela escolhe quando e o que registrar.",
+    "Waldorf": "Em vez de lista, conte uma pequena história sobre o gesto, e deixe a criança ilustrar com aquarela ou giz de cera.",
+    "Clássico": "Peça uma frase bem escrita e relida; depois, ligue a ação a uma virtude (generosidade, justiça).",
+    "Religioso": "Relacione com uma história ou valor da fé da família, sem forçar uma moral pronta.",
+    "Charlotte Mason": "Use narração: ela conta primeiro, e só depois escreve; ligue a uma passagem de livro vivo, se houver."
+  },
+  "evidencias": [
+    {
+      "texto": "Contou uma situação com motivo",
+      "resposta": "☐ não   ☐ só a situação   ☐ situação e motivo"
+    },
+    {
+      "texto": "Escreveu ou desenhou no diário",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    }
+  ],
+  "perguntaFicha": "Qual motivo ela deu para ter sido gentil ou justa?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Diário do bem",
+      "legenda": "Desenhe o que você fez de bom e escreva por que foi importante."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": ["gentileza", "justiça", "diário", "empatia", "valores"]
+}

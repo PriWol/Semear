@@ -1,0 +1,99 @@
+{
+  "id": "atv-lg-onde-esta-a-resposta",
+  "titulo": "Onde está a resposta? O dedo na frase",
+  "marcos": ["LG.LEI.07"],
+  "vertentes": ["Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 20,
+  "preparoMin": 5,
+  "cuidados": "Atenção: leitura sentada, boa luz, até 20 minutos. Se o texto cansar, leia uma parte para ela. Perguntas não são prova: se ela errar, releiam juntos a frase certa.",
+  "objetivo": "A criança encontra no texto a frase que responde a perguntas literais (quem, onde, quando, o quê) e a aponta com o dedo.",
+  "passos": [
+    {
+      "titulo": "Ler o texto curto",
+      "minutos": 5,
+      "texto": "Leiam juntos ou ela lê (se já lê bem) este texto: *“Luna levou o guarda-chuva para a escola. De manhã o céu estava azul, mas à tarde começou a chover. Luna abriu o guarda-chuva amarelo e voltou para casa pulando nas poças.”*"
+    },
+    {
+      "titulo": "Quem, onde, quando, o quê",
+      "minutos": 8,
+      "texto": "Faça uma pergunta de cada vez: *Quem levou o guarda-chuva? Para onde? Quando começou a chover? O que ela fez na volta?* Para cada uma, ela **aponta com o dedo a frase** que responde e lê em voz alta.",
+      "fala": "Onde está escrito?"
+    },
+    {
+      "titulo": "Troca de papéis",
+      "minutos": 5,
+      "texto": "Agora ela faz as perguntas e você responde, às vezes errando de propósito. Ela confere no texto e diz: *“Não, está escrito...”*"
+    },
+    {
+      "titulo": "Outro texto",
+      "minutos": 2,
+      "texto": "Se sobrar tempo, repita com um texto curto de um livro dela."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Aponta no texto a frase que responde a uma pergunta literal",
+      "Acerta 3 de 4 perguntas"
+    ],
+    "emDesenvolvimento": [
+      "Responde do que lembra, sem olhar o texto (peça que prove no texto)",
+      "Aponta a frase errada (releiam juntos e comparem)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Use um texto de duas frases e uma pergunta por vez.",
+    "facil": "Peça perguntas com “por que” e “como” e a resposta apontada no texto."
+  },
+  "materiais": [
+    {
+      "item": "Texto curto (o do passo 1 ou de um livro)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor para sublinhar",
+      "deCasa": false
+    }
+  ],
+  "toqueVertente": {
+    "Waldorf": "A partir dos 7 anos e meio: parta de um texto que a classe contou antes, para ler com o dedo na frase conhecida.",
+    "Clássico": "Peça que ela leia a frase que responde em voz alta, como em uma pequena recitação.",
+    "Religioso": "Se desejar, use um trecho curto de leitura da família e as mesmas perguntas.",
+    "Charlotte Mason": "Use um trecho de um livro vivo e peça que ela narre depois de ler, sem questionário."
+  },
+  "evidencias": [
+    {
+      "texto": "Perguntas respondidas apontando o texto",
+      "resposta": "_____ de 4"
+    },
+    {
+      "texto": "Apontou a frase certa",
+      "resposta": "☐ não   ☐ às vezes   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que pergunta foi mais difícil de achar no texto?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Onde está a resposta?",
+      "legenda": "Escreva uma pergunta sobre o texto e a frase que responde."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "compreensão",
+    "perguntas literais",
+    "leitura",
+    "achar no texto",
+    "quem onde quando"
+  ]
+}

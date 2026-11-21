@@ -1,0 +1,136 @@
+{
+  "id": "atv-lg-cacada-aos-digrafos",
+  "titulo": "Caçada aos dígrafos: CH, NH, LH, RR",
+  "marcos": ["LG.LEI.03"],
+  "vertentes": ["Montessori", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [6, 8],
+  "duracaoMin": 25,
+  "preparoMin": 8,
+  "cuidados": "Atenção: faça uma caça de palavras dentro de casa, sem subir em cadeiras ou móveis. Tesoura só com ponta redonda. Ensine um grupo por vez: não passe para outro até o primeiro estar firme.",
+  "objetivo": "A criança lê palavras com dígrafos (CH, NH, LH, RR) e encontros consonantais (PL, BR), percebendo que as duas letras juntas valem um som.",
+  "passos": [
+    {
+      "titulo": "Um grupo de cada vez",
+      "minutos": 5,
+      "texto": "Mostre um dígrafo (*CH*) com uma cor diferente. Diga: *“Estas duas letras juntas fazem um só som: /ch/.”* Leia *chave*, *chuva*, *chinelo*."
+    },
+    {
+      "titulo": "Caça às palavras",
+      "minutos": 8,
+      "texto": "Pelo cômodo, procurem objetos cujo nome tenha o grupo (*CH*: chinelo, chave). Ela lê os cartões e pega o objeto. Marque o dígrafo com a cor.",
+      "fala": "Onde está o CH?"
+    },
+    {
+      "titulo": "Ler as palavras",
+      "minutos": 8,
+      "texto": "Passem aos outros grupos, um por vez: *NH* (ninho, galinha), *LH* (colher, filho), *RR* (carro, terra), *PL/BR* (planta, braço). Ela lê cada cartão em voz alta."
+    },
+    {
+      "titulo": "Jogo da memória",
+      "minutos": 4,
+      "texto": "Em cartões repetidos (palavra e figura), façam um jogo da memória com 6 pares."
+    }
+  ],
+  "observar": {
+    "consolidado": [
+      "Lê 8 de 10 palavras com CH, NH, LH, RR ou encontros consonantais",
+      "Identifica o dígrafo como um só som"
+    ],
+    "emDesenvolvimento": [
+      "Lê letra por letra o dígrafo (use a cor para juntar as duas)",
+      "Confunde CH com X ou LH com L (mostre as duas palavras lado a lado)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Trabalhe só um grupo (CH) até ficar firme, em duas ou três sessões.",
+    "facil": "Peça que invente uma frase com três palavras de grupos diferentes."
+  },
+  "materiais": [
+    {
+      "item": "Cartões com palavras e figuras (use a folha)",
+      "deCasa": true
+    },
+    {
+      "item": "Lápis de cor",
+      "deCasa": false
+    },
+    {
+      "item": "Objetos da casa (chave, chinelo, colher)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Use os “sons difíceis” de lixa (verdes) e deixe-a procurar objetos para cada um.",
+    "Clássico": "Recitem listas de palavras do mesmo dígrafo, por grupo, como lista de vocabulário.",
+    "Religioso": "Se desejar, use palavras de uma oração conhecida (como “filho”, “ilha”).",
+    "Charlotte Mason": "Use um livro vivo e procure o dígrafo no texto, em poucas páginas, sem exercícios longos."
+  },
+  "evidencias": [
+    {
+      "texto": "Palavras lidas com dígrafo",
+      "resposta": "_____ de 10"
+    },
+    {
+      "texto": "Grupo firme",
+      "resposta": "☐ CH   ☐ NH   ☐ LH   ☐ RR"
+    }
+  ],
+  "perguntaFicha": "Que grupo ela ainda confunde?",
+  "folhas": [
+    {
+      "tipo": "cartas",
+      "titulo": "Palavras com dígrafos",
+      "cartas": [
+        {
+          "emoji": "🔑",
+          "texto": "CHAVE"
+        },
+        {
+          "emoji": "🐦",
+          "texto": "NINHO"
+        },
+        {
+          "emoji": "🚗",
+          "texto": "CARRO"
+        },
+        {
+          "emoji": "🌱",
+          "texto": "PLANTA"
+        },
+        {
+          "emoji": "🥄",
+          "texto": "COLHER"
+        },
+        {
+          "emoji": "🐔",
+          "texto": "GALINHA"
+        },
+        {
+          "emoji": "🌧️",
+          "texto": "CHUVA"
+        },
+        {
+          "emoji": "🌍",
+          "texto": "TERRA"
+        }
+      ]
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "dígrafos",
+    "ch nh lh rr",
+    "sílabas complexas",
+    "ler palavras",
+    "caça de palavras"
+  ]
+}

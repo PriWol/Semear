@@ -1,0 +1,100 @@
+{
+  "id": "atv-lg-meu-primeiro-livro-inteiro",
+  "titulo": "Meu primeiro livro inteiro",
+  "marcos": ["LG.LEI.06"],
+  "vertentes": ["Montessori", "Clássico", "Religioso", "Charlotte Mason"],
+  "idade": [7, 8],
+  "duracaoMin": 25,
+  "preparoMin": 5,
+  "cuidados": "Atenção: cantinho de leitura com boa luz e sem tela; faça pausas a cada 10 minutos. Escolha livros adequados ao nível dela, não ao que se espera para a idade; a leitura deve dar prazer, não ser cobrança.",
+  "objetivo": "A criança escolhe um livro ilustrado de 200 a 500 palavras, lê do começo ao fim com autonomia e diz do que gostou.",
+  "passos": [
+    {
+      "titulo": "Escolher o livro",
+      "minutos": 6,
+      "texto": "Na estante ou no acervo gratuito do app, deixe-a escolher entre 3 ou 4 livros ilustrados. Teste: abra uma página e leia as primeiras linhas. Se travar em mais de 5 palavras, escolha outro mais fácil."
+    },
+    {
+      "titulo": "Cantinho de leitura",
+      "minutos": 3,
+      "texto": "Preparem juntos o cantinho: almofada, luz, uma garrafinha de água. Combine o horário e que ninguém interrompe."
+    },
+    {
+      "titulo": "Leitura sozinha",
+      "minutos": 10,
+      "texto": "Ela lê em silêncio ou em voz baixa. Você fica por perto lendo o seu livro. Se ela quiser ajuda, ajude; se quiser parar, pare e retome outro dia.",
+      "fala": "Do que será que o livro fala?"
+    },
+    {
+      "titulo": "Conversa",
+      "minutos": 6,
+      "texto": "Ao final, pergunte: *“Do que você gostou?”*, *“Qual parte foi a melhor?”*. Registre num mural ou caderno de “livros que li”."
+    }
+  ],
+  "observar": {
+    "consolidado": ["Lê um livro ilustrado de 200 a 500 palavras sem ajuda", "Diz do que gostou"],
+    "emDesenvolvimento": [
+      "Lê parte e abandona (escolha um livro menor ou revezem as páginas)",
+      "Só olha as figuras (releia o texto em dupla)"
+    ]
+  },
+  "ajustes": {
+    "dificil": "Faça a leitura em dois dias e revezem uma página cada.",
+    "facil": "Peça que indique o livro para um amigo e diga em uma frase por quê."
+  },
+  "materiais": [
+    {
+      "item": "Livro ilustrado curto escolhido por ela",
+      "deCasa": true
+    },
+    {
+      "item": "Almofada e boa luz",
+      "deCasa": true
+    },
+    {
+      "item": "Caderno de livros lidos (opcional)",
+      "deCasa": true
+    }
+  ],
+  "toqueVertente": {
+    "Montessori": "Deixe uma estante baixa com livros ao alcance, para ela escolher sozinha e guardar depois.",
+    "Clássico": "Escolha um clássico curto de domínio público do acervo gratuito e peça que ela leia o título em voz alta.",
+    "Religioso": "Se desejar, inclua um livro de histórias da tradição da família entre as escolhas.",
+    "Charlotte Mason": "Livros vivos, bem escritos, e uma vez por semana, narração do que leu; sem questionário."
+  },
+  "evidencias": [
+    {
+      "texto": "Leu o livro inteiro",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+    },
+    {
+      "texto": "Disse do que gostou",
+      "resposta": "☐ não   ☐ sim"
+    }
+  ],
+  "perguntaFicha": "Que livro ela escolheu e do que gostou?",
+  "folhas": [
+    {
+      "tipo": "desenho",
+      "titulo": "Livros que eu li",
+      "legenda": "Desenhe a capa do livro e escreva do que mais gostou."
+    }
+  ],
+  "autoria": {
+    "origem": "ia",
+    "status": "publicado",
+    "revisadoEm": "2026-11-21"
+  },
+  "revisao": {
+    "estado": "rascunho",
+    "por": "Curador pedagógico (IA)",
+    "em": "2026-11-21"
+  },
+  "palavrasChave": [
+    "livro inteiro",
+    "leitura autônoma",
+    "cantinho de leitura",
+    "primeiro livro",
+    "escolher livro"
+  ]
+}
