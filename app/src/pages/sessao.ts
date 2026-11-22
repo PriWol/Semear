@@ -1,4 +1,5 @@
 import { NaoEncontrado, type FabricaPagina } from '../ui/app';
+import { abrirDialogo, paragrafo } from '../ui/dialogo';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
 import { abrirPainelPacote } from '../ui/painel-pacote';
@@ -152,8 +153,17 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
         });
       });
       raiz.querySelector('#excluir')?.addEventListener('click', async () => {
-        const aviso = registrada ? ' O registro e as observações dela também serão apagados.' : '';
-        if (!confirm(`Excluir a sessão ${sessao.codigo}?${aviso}`)) return;
+        const escolha = await abrirDialogo({
+          titulo: `Excluir a sessão ${sessao.codigo}?`,
+          texto: html`${paragrafo('Não dá para desfazer.')}${
+            registrada ? paragrafo('O registro e as observações dela também serão apagados.') : ''
+          }`,
+          botoes: [
+            { valor: 'cancelar', rotulo: 'Manter a sessão', tipo: 'primario' },
+            { valor: 'excluir', rotulo: 'Excluir a sessão', tipo: 'perigo' },
+          ],
+        });
+        if (escolha !== 'excluir') return;
         await ctx.repo.removerSessao(sessao.id);
         ctx.avisar('Sessão excluída.');
         ctx.ir('/');
