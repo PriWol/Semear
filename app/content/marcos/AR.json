@@ -5,7 +5,7 @@
       "linha": "AR.DES",
       "ordem": 1,
       "titulo": "Rabisca com prazer e dá nome ao que fez",
-      "descricaoPais": "Faz riscos e voltas no papel com giz ou lápis grosso e diz “é o cachorro” ou “é a mamãe”.",
+      "descricaoPais": "Faz riscos e voltas no papel com giz ou lápis grosso e diz “é o cachorro” ou “sou eu”.",
       "evidencias": [
         "Rabisca com giz ou lápis grosso por alguns minutos",
         "Diz com uma palavra o que fez"
@@ -17,11 +17,11 @@
       "orientacaoPais": {
         "porQueImporta": "O rabisco é o **começo do desenho e da escrita**: a criança descobre que o seu gesto deixa uma marca. O prazer de rabiscar sem “certo e errado” é o que sustenta, depois, o gosto de desenhar.",
         "comoParticipar": "Ofereça papel grande, giz de cera grosso e tempo. Sente-se ao lado, desenhe também e não pergunte “o que é isso?” o tempo todo; comente o que vê: “Você fez linhas rápidas e redondas!”. Guarde alguns rabiscos datados para ver a evolução.",
-        "sinaisDeAtencao": "O desenho varia muito de criança para criança. Se aos 3 anos ela evita completamente segurar giz ou lápis, ou usa só uma das mãos sempre e com muita dificuldade, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "O desenho varia muito de criança para criança. Se aos 3 anos a criança evita completamente segurar giz ou lápis, ou usa só uma das mãos sempre e com muita dificuldade, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lowenfeld-capacidade-criadora", "rcnei-conhecimento-de-mundo", "bncc"],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "Ofereça poucos materiais, de boa qualidade, em uma bandeja baixa que ela alcance e escolha sozinha.",
+            "comoParticipar": "Ofereça poucos materiais, de boa qualidade, em uma bandeja baixa que a criança alcance e escolha sem ajuda.",
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
@@ -51,9 +51,9 @@
       "preRequisitos": ["AR.DES.01"],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Quando a criança fecha um círculo e vê nele uma pessoa, ela passa do gesto ao **símbolo**: o desenho passa a representar algo. É um grande salto do pensamento, que prepara a escrita.",
-        "comoParticipar": "Converse sobre os desenhos: “Quem é? Onde está? O que está fazendo?”. Ofereça canetas hidrográficas e giz de cera. Não corrija o desenho (“a cabeça não é assim”) e evite copiar para ela. Mostre a figura humana e o rosto no espelho.",
-        "sinaisDeAtencao": "O desenho de pessoas aparece em ritmos diferentes. Se aos 5 anos ela não faz nenhuma figura reconhecível ou evita desenhar, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Quando a criança fecha um círculo e vê nele uma pessoa, passa do gesto ao **símbolo**: o desenho passa a representar algo. É um grande salto do pensamento, que prepara a escrita.",
+        "comoParticipar": "Converse sobre os desenhos: “Quem é? Onde está? O que está fazendo?”. Ofereça canetas hidrográficas e giz de cera. Não corrija o desenho (“a cabeça não é assim”) e evite copiar para a criança. Mostre a figura humana e o rosto no espelho.",
+        "sinaisDeAtencao": "O desenho de pessoas aparece em ritmos diferentes. Se aos 5 anos a criança não faz nenhuma figura reconhecível ou evita desenhar, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lowenfeld-capacidade-criadora", "bncc", "barbosa-imagem-ensino-arte"],
         "porVertente": {
           "Waldorf": {
@@ -85,7 +85,7 @@
       "orientacaoPais": {
         "porQueImporta": "Aos 5 anos o desenho **conta histórias**: aparecem a linha do chão, o céu, o sol e os detalhes. É uma linguagem da criança para dizer o que viu e sentiu.",
         "comoParticipar": "Peça que desenhe uma cena de um passeio ou de uma história: “Onde foi? Quem estava lá?”. Deixe que invente. Elogie os detalhes e a escolha das cores, e evite perguntar “o que é?”. Dê tempo para terminar.",
-        "sinaisDeAtencao": "A forma de desenhar é muito individual. Se aos 6 anos ela não organiza nenhuma cena ou evita desenhar, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "A forma de desenhar é muito individual. Se aos 6 anos a criança não organiza nenhuma cena ou evita desenhar, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lowenfeld-capacidade-criadora", "bncc", "barbosa-imagem-ensino-arte"],
         "porVertente": {
           "Charlotte Mason": {
@@ -188,8 +188,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Misturar cores é uma **descoberta científica e artística**: a criança prevê, testa e vê o resultado, e passa a escolher as cores com intenção.",
-        "comoParticipar": "Ofereça só as três cores primárias (azul, amarelo e vermelho) e água, e deixe que ela misture à vontade. Pergunte: “O que será que vai dar?” antes de misturar. Faça cartões de “cores que descobrimos”, com nomes.",
-        "sinaisDeAtencao": "Algumas crianças demoram a nomear as cores ou confundem algumas. Nessa idade isso é comum. Se aos 6 anos ela troca muitas cores de forma constante, vale conversar com o pediatra para uma avaliação da visão das cores. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Ofereça só as três cores primárias (azul, amarelo e vermelho) e água, e deixe que a criança misture à vontade. Pergunte: “O que será que vai dar?” antes de misturar. Faça cartões de “cores que descobrimos”, com nomes.",
+        "sinaisDeAtencao": "Algumas crianças demoram a nomear as cores ou confundem algumas. Nessa idade isso é comum. Se aos 6 anos a criança troca muitas cores de forma constante, vale conversar com o pediatra para uma avaliação da visão das cores. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lowenfeld-capacidade-criadora", "bncc", "rcnei-conhecimento-de-mundo"],
         "porVertente": {
           "Waldorf": {
@@ -221,7 +221,7 @@
       "orientacaoPais": {
         "porQueImporta": "Com o pincel, a criança aprende a **controlar o gesto** e a perceber o efeito da água na cor. A pintura vira uma linguagem para contar histórias e sentir.",
         "comoParticipar": "Ofereça aquarela de qualidade escolar, papel mais grosso e pincéis de vários tamanhos. Mostre o “molhado sobre molhado”, passando água no papel antes. Deixe pintar de livre escolha e converse sobre o que vê.",
-        "sinaisDeAtencao": "A paciência para pintar varia. Se aos 7 anos ela evita pintura por muita frustração, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "A paciência para pintar varia. Se aos 7 anos a criança evita pintura por muita frustração, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lowenfeld-capacidade-criadora", "bncc", "barbosa-imagem-ensino-arte"],
         "porVertente": {
           "Waldorf": {
@@ -309,9 +309,9 @@
       "preRequisitos": ["AR.MOD.01"],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Quando a criança dá **forma e nome** à massa, ela une a mão, a imaginação e a linguagem. O resultado importa menos do que o processo de transformar.",
+        "porQueImporta": "Quando a criança dá **forma e nome** à massa, une a mão, a imaginação e a linguagem. O resultado importa menos do que o processo de transformar.",
         "comoParticipar": "Convide: “Vamos fazer um bichinho?”. Ofereça massinha em 2 ou 3 cores e deixe que invente. Pergunte pela história do que fez. Se quiser, faça junto de um tema (o jardim, o mar), sem copiar modelo.",
-        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se aos 5 anos ela evita qualquer trabalho com as mãos ou tem muita dificuldade com a força e o controle, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Cada criança tem o seu ritmo. Se aos 5 anos a criança evita qualquer trabalho com as mãos ou tem muita dificuldade com a força e o controle, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["lowenfeld-capacidade-criadora", "bncc", "rcnei-conhecimento-de-mundo"]
       },
       "revisao": {
@@ -362,8 +362,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "O corpo é o **primeiro instrumento** da criança. Balançar, bater palmas e dançar com a música constroem o sentido de ritmo, a coordenação e o prazer de fazer música em conjunto.",
-        "comoParticipar": "Coloque uma música com pulso claro (cantigas, música brasileira, música de roda) e dance junto, segurando-a no colo ou de mãos dadas. Faça palmas, bata no colo, balance. Não corrija o tempo: acompanhe o dela e depois ofereça o seu.",
-        "sinaisDeAtencao": "Cada criança tem seu jeito de reagir à música. Se aos 3 anos ela não reage a nenhum som ou música, ou não responde quando é chamada pelo nome, vale conversar com o pediatra para avaliar a audição. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Coloque uma música com pulso claro (cantigas, música brasileira, música de roda) e dance junto, segurando a criança no colo ou de mãos dadas. Faça palmas, bata no colo, balance. Não corrija o tempo: acompanhe o da criança e depois ofereça o seu.",
+        "sinaisDeAtencao": "Cada criança tem seu jeito de reagir à música. Se aos 3 anos a criança não reage a nenhum som ou música, ou não responde quando chamam pelo nome, vale conversar com o pediatra para avaliar a audição. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["brito-musica-educacao-infantil", "rcnei-conhecimento-de-mundo", "bncc"],
         "porVertente": {
           "Waldorf": {
@@ -395,7 +395,7 @@
       "orientacaoPais": {
         "porQueImporta": "Sentir e marcar o **pulso** (a batida regular) é a base de toda a música: dançar, cantar, tocar e, mais tarde, ler partituras. Tocar junto ensina a ouvir os outros.",
         "comoParticipar": "Ofereça instrumentos simples (tambor de lata, chocalho de garrafa fechada, colheres de pau) e cantem juntos, batendo o pulso. Comece batendo no corpo (colo, peito). Cantigas como “Ciranda, cirandinha” têm pulso fácil de sentir.",
-        "sinaisDeAtencao": "Muitos pequenos têm dificuldade em manter o pulso: isso melhora com o tempo e com a prática. Se aos 5 anos ela não consegue acompanhar nenhum pulso, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Muitos pequenos têm dificuldade em manter o pulso: isso melhora com o tempo e com a prática. Se aos 5 anos a criança não consegue acompanhar nenhum pulso, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
         "porVertente": {
           "Charlotte Mason": {
@@ -423,8 +423,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Imitar ritmos exige **ouvir, lembrar e reproduzir**: a criança treina a memória auditiva, a atenção e a coordenação. É a base para ler e escrever ritmo mais tarde.",
-        "comoParticipar": "Brinque de “eco”: você bate um padrão curto e ela repete. Depois, inverta: ela cria e você repete. Use palavras como apoio (“ba-na-na”, “ma-ra-cu-já”), batendo uma palma por sílaba. Use os nomes da família.",
-        "sinaisDeAtencao": "Padrões rítmicos exigem atenção auditiva. Se aos 6 anos ela tem muita dificuldade em repetir qualquer sequência curta de palmas e também de sons e palavras, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Brinque de “eco”: você bate um padrão curto e a criança repete. Depois, inverta: a criança cria e você repete. Use palavras como apoio (“ba-na-na”, “ma-ra-cu-já”), batendo uma palma por sílaba. Use os nomes da família.",
+        "sinaisDeAtencao": "Padrões rítmicos exigem atenção auditiva. Se aos 6 anos a criança tem muita dificuldade em repetir qualquer sequência curta de palmas e também de sons e palavras, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
         "porVertente": {
           "Clássico": {
@@ -478,8 +478,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Cantar é uma das primeiras formas de **brincar com a língua**: a melodia ajuda a lembrar as palavras, o ritmo e os sons. Cantar junto também aproxima e acalma.",
-        "comoParticipar": "Cante sempre, no dia a dia: ao trocar a roupa, no banho, na hora de dormir. Escolha poucas canções e repita muitas vezes. Faça pausas para que ela complete a última palavra. Não precisa cantar bem: ela precisa da sua voz.",
-        "sinaisDeAtencao": "A fala e o canto aparecem em tempos diferentes. Se aos 2 anos e meio ela quase não fala nem imita sons, ou perdeu palavras que já dizia, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Cante sempre, no dia a dia: ao trocar a roupa, no banho, na hora de dormir. Escolha poucas canções e repita muitas vezes. Faça pausas para que a criança complete a última palavra. Não precisa cantar bem: a criança precisa da sua voz.",
+        "sinaisDeAtencao": "A fala e o canto aparecem em tempos diferentes. Se aos 2 anos e meio a criança quase não fala nem imita sons, ou perdeu palavras que já dizia, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["brito-musica-educacao-infantil", "rcnei-conhecimento-de-mundo", "bncc"],
         "porVertente": {
           "Waldorf": {
@@ -507,8 +507,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Cantar a canção inteira exige **memória, atenção e controle da respiração**. Brincar com a voz desenvolve a escuta e a expressão, e ensina o que a voz faz.",
-        "comoParticipar": "Cantem juntos no carro, na cozinha, no banho. Brinque de “voz de bicho”: leão (grave), passarinho (agudo), ratinho (baixinho). Cante sem pressa e em um tom confortável para ela (mais agudo que o seu).",
-        "sinaisDeAtencao": "Voz rouca ou fraca por muito tempo, rouquidão que não melhora ou grito constante exigem avaliação. Se a voz dela estiver rouca por mais de duas semanas, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Cantem juntos no carro, na cozinha, no banho. Brinque de “voz de bicho”: leão (grave), passarinho (agudo), ratinho (baixinho). Cante sem pressa e em um tom confortável para a criança (mais agudo que o seu).",
+        "sinaisDeAtencao": "Voz rouca ou fraca por muito tempo, rouquidão que não melhora ou grito constante exigem avaliação. Se a voz da criança estiver rouca por mais de duas semanas, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"]
       },
       "revisao": {
@@ -530,7 +530,7 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Afinar é uma habilidade que se **aprende ouvindo e cantando muito**. Cantar em roda e em eco treina a escuta do outro e o gosto pelo coletivo.",
-        "comoParticipar": "Cantem canções de poucas notas (cantigas de roda, “Alecrim dourado”, “Ciranda, cirandinha”) e brinquem de “eco”: você canta uma frase e ela repete. Deixe-a cantar também sozinha, sem corrigir demais. Gravar a voz dela (com a permissão dela) e ouvir pode ajudar.",
+        "comoParticipar": "Cantem canções de poucas notas (cantigas de roda, “Alecrim dourado”, “Ciranda, cirandinha”) e brinquem de “eco”: você canta uma frase e a criança repete. Deixe a criança cantar também sem ajuda, sem corrigir demais. Gravar a voz da criança (se a criança concordar) e ouvir pode ajudar.",
         "sinaisDeAtencao": "Quase toda criança aprende a cantar afinado com tempo e prática. Se aos 7 anos há muita dificuldade em reproduzir qualquer melodia, converse com o pediatra ou com quem acompanha a criança. Isso não é um diagnóstico. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
         "porVertente": {
@@ -583,7 +583,7 @@
       "linha": "AR.ESC",
       "ordem": 1,
       "titulo": "Escuta música calma e agitada e reage com o corpo",
-      "descricaoPais": "Fica quieta com uma música suave, dança com uma música animada e mostra o que sente.",
+      "descricaoPais": "Fica em silêncio com uma música suave, dança com uma música animada e mostra o que sente.",
       "evidencias": [
         "Reage de modo diferente a uma música calma e a uma agitada",
         "Diz ou mostra se gostou"
@@ -595,7 +595,7 @@
       "orientacaoPais": {
         "porQueImporta": "Ouvir música com **atenção** (e não só como fundo) ensina a criança a sentir e a distinguir o que a música provoca. É o começo da escuta musical e também da regulação das emoções.",
         "comoParticipar": "Reserve alguns minutos por dia de escuta sem outra atividade: uma música calma antes do sono, uma animada para dançar. Diga o que sente: “Que música tranquila”. Varie estilos: canções de ninar, música brasileira, música clássica curta. Evite deixar música ligada o dia todo.",
-        "sinaisDeAtencao": "A reação à música varia. Se aos 3 anos ela não reage a nenhum som ou música, ou se alguns sons a assustam intensamente e sempre, vale conversar com o pediatra para avaliar a audição. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "A reação à música varia. Se aos 3 anos a criança não reage a nenhum som ou música, ou se alguns sons a assustam intensamente e sempre, vale conversar com o pediatra para avaliar a audição. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["brito-musica-educacao-infantil", "schafer-ouvido-pensante", "bncc"],
         "porVertente": {
           "Waldorf": {
@@ -626,8 +626,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Escutar com precisão (altura, volume, timbre) é a base do ouvido musical e também **ajuda a linguagem**: quem escuta bem os sons escuta bem as palavras.",
-        "comoParticipar": "Brinque de “adivinha o som”: com os olhos fechados, ela diz que instrumento é, se é forte ou fraco, agudo ou grave. Faça passeios de escuta (“que sons ouvimos?”). Mostre vídeos e discos de instrumentos de verdade, sempre com o volume moderado.",
-        "sinaisDeAtencao": "Se ela parece ouvir pouco, pede muitas vezes que você repita ou aumenta muito o volume da TV, vale conversar com o pediatra para uma avaliação da audição. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Brinque de “adivinha o som”: com os olhos fechados, a criança diz que instrumento é, se é forte ou fraco, agudo ou grave. Faça passeios de escuta (“que sons ouvimos?”). Mostre vídeos e discos de instrumentos de verdade, sempre com o volume moderado.",
+        "sinaisDeAtencao": "Se a criança parece ouvir pouco, pede muitas vezes que você repita ou aumenta muito o volume da TV, vale conversar com o pediatra para uma avaliação da audição. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["schafer-ouvido-pensante", "brito-musica-educacao-infantil", "bncc"],
         "porVertente": {
           "Montessori": {
@@ -659,7 +659,7 @@
       "orientacaoPais": {
         "porQueImporta": "Ouvir uma obra inteira com atenção, uma vez por semana, **forma o gosto e a imaginação**. A criança aprende que a música pode contar histórias sem palavras, e passa a reconhecer a obra e o compositor.",
         "comoParticipar": "Escolha uma obra curta por vez (por exemplo, “O cisne” ou “O leão”, de *O carnaval dos animais*, de Saint-Saëns; “Na gruta do rei da montanha”, de Grieg; “Ó abre alas”, de Chiquinha Gonzaga) e ouça mais de uma vez em dias diferentes. Depois da escuta, pergunte o que imaginou, sem certo ou errado.",
-        "sinaisDeAtencao": "Cada criança tem seu gosto e seu tempo de atenção. Se aos 8 anos ela não consegue ouvir nenhuma música por 1 minuto, converse com o pediatra ou com quem acompanha a criança; não use isso como cobrança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Cada criança tem seu gosto e seu tempo de atenção. Se aos 8 anos a criança não consegue ouvir nenhuma música por 1 minuto, converse com o pediatra ou com quem acompanha a criança; não use isso como cobrança. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "schafer-ouvido-pensante",
           "brito-musica-educacao-infantil",
@@ -699,7 +699,7 @@
       "orientacaoPais": {
         "porQueImporta": "Conhecer os instrumentos e os compositores é entrar na **conversa da cultura**: a criança passa a ter nomes e referências para falar do que ouve e a descobrir seu gosto.",
         "comoParticipar": "Montem um mural com os instrumentos, por famílias (cordas, madeiras, metais, percussão), e escutem uma obra em que cada um aparece. Façam um “caderno de compositores” com nome, país, época e uma obra de cada um. Visitem uma apresentação ou ensaio aberto, se houver.",
-        "sinaisDeAtencao": "A escuta atenta de música longa cresce com o tempo. Se ela se cansa, ouça trechos curtos. Não há atraso nisso. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "A escuta atenta de música longa cresce com o tempo. Se a criança sentir cansaço, ouça trechos curtos. Não há atraso nisso. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "schafer-ouvido-pensante",
           "brito-musica-educacao-infantil",
@@ -730,9 +730,9 @@
       "preRequisitos": [],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Olhar uma obra de arte devagar ensina a criança a **observar e a descrever**. Ela aprende que uma imagem tem muito a dizer e que o seu olhar é importante.",
-        "comoParticipar": "Escolha uma obra por vez, simples e colorida, e pergunte: “O que você vê?”. Aponte junto. Não explique antes: deixe-a olhar primeiro. Use reproduções de domínio público e conte o nome da obra e do artista. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons.",
-        "sinaisDeAtencao": "Algumas crianças olham pouco tempo, e isso é normal nessa idade. Se aos 5 anos ela não olha para nenhuma imagem nem aponta o que vê, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Olhar uma obra de arte devagar ensina a criança a **observar e a descrever**. A criança aprende que uma imagem tem muito a dizer e que o seu olhar é importante.",
+        "comoParticipar": "Escolha uma obra por vez, simples e colorida, e pergunte: “O que você vê?”. Aponte junto. Não explique antes: deixe a criança olhar primeiro. Use reproduções de domínio público e conte o nome da obra e do artista. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons.",
+        "sinaisDeAtencao": "Algumas crianças olham pouco tempo, e isso é normal nessa idade. Se aos 5 anos a criança não olha para nenhuma imagem nem aponta o que vê, vale conversar com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["barbosa-imagem-ensino-arte", "rcnei-conhecimento-de-mundo", "bncc"],
         "porVertente": {
           "Charlotte Mason": {
@@ -752,7 +752,7 @@
       "linha": "AR.APR",
       "ordem": 2,
       "titulo": "Diz o que uma obra a faz sentir e compara duas obras",
-      "descricaoPais": "Diz “essa me deixa calma” ou “essa é agitada” e compara duas pinturas.",
+      "descricaoPais": "Diz “essa me acalma” ou “essa é agitada” e compara duas pinturas.",
       "evidencias": [
         "Diz o que sente diante de uma obra",
         "Compara duas obras (o que é igual e diferente)"
@@ -764,7 +764,7 @@
       "orientacaoPais": {
         "porQueImporta": "Dizer o que a obra provoca é **ligar a arte à emoção**. Comparar duas obras ensina a notar detalhes e a ter critérios próprios para gostar ou não gostar, com respeito.",
         "comoParticipar": "Escolha duas obras bem diferentes (por exemplo, “A noite estrelada”, de Van Gogh, e “Impressão, nascer do sol”, de Monet) e pergunte: “Qual lembra calma? Qual tem mais movimento? Por quê?”. Aceite qualquer resposta com razão e deixe que escolha a favorita. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons.",
-        "sinaisDeAtencao": "Algumas crianças acham difícil falar de sentimentos. Dê tempo e use palavras simples. Se aos 7 anos ela não consegue dizer nada sobre uma imagem, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Algumas crianças acham difícil falar de sentimentos. Dê tempo e use palavras simples. Se aos 7 anos a criança não consegue dizer nada sobre uma imagem, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["barbosa-imagem-ensino-arte", "bncc", "lowenfeld-capacidade-criadora"]
       },
       "revisao": {
@@ -778,7 +778,7 @@
       "linha": "AR.APR",
       "ordem": 3,
       "titulo": "Estuda um pintor: olha várias obras e conta uma de memória",
-      "descricaoPais": "Conhece 3 ou 4 obras de um mesmo pintor, diz o nome dele e descreve uma delas de memória.",
+      "descricaoPais": "Conhece 3 ou 4 obras de um mesmo pintor, diz o nome dele e descreve uma dessas obras de memória.",
       "evidencias": [
         "Reconhece 3 ou mais obras do mesmo pintor",
         "Descreve de memória uma obra, com detalhes"
@@ -790,7 +790,7 @@
       "orientacaoPais": {
         "porQueImporta": "Conhecer **um artista a fundo**, e não muitos de passagem, forma o olhar e a memória visual. A criança começa a reconhecer o estilo e a fazer ligações entre as obras.",
         "comoParticipar": "Escolha um pintor por período (por exemplo, Monet) e olhe com a criança uma obra por semana, em silêncio, por 5 minutos. Esconda a imagem e peça que descreva tudo o que lembra. Depois, olhem de novo e comparem. Leiam um pouco da vida do artista, em linguagem simples. Se for mostrar a obra, use a reprodução de domínio público do site do museu ou da Wikimedia Commons.",
-        "sinaisDeAtencao": "A memória visual cresce com a prática. Não cobre perfeição. Se ela se frustra, reduza o tempo e use obras mais simples. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "A memória visual cresce com a prática. Não cobre perfeição. Se a criança se frustra, reduza o tempo e use obras mais simples. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["barbosa-imagem-ensino-arte", "bncc", "mason-home-education"],
         "porVertente": {
           "Charlotte Mason": {
@@ -851,8 +851,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Desenhar o que se observa liga o **olhar atento à mão**. É o primeiro passo do caderno da natureza: a criança aprende que a natureza é uma fonte infinita de coisas para olhar.",
-        "comoParticipar": "Em um passeio, ofereça uma prancheta com papel e lápis de cor. Peça que olhe uma folha ou flor “como um detetive” e desenhe. Não corrija: valorize o que ela notou. Combine voltar ao mesmo lugar em outro dia.",
-        "sinaisDeAtencao": "O desenho de observação evolui devagar. Se aos 6 anos ela não olha para o objeto ao desenhar, ofereça mais tempo e atividades de olhar. Não é um atraso. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Em um passeio, ofereça uma prancheta com papel e lápis de cor. Peça que olhe uma folha ou flor “como um detetive” e desenhe. Não corrija: valorize o que a criança notou. Combine voltar ao mesmo lugar em outro dia.",
+        "sinaisDeAtencao": "O desenho de observação evolui devagar. Se aos 6 anos a criança não olha para o objeto ao desenhar, ofereça mais tempo e atividades de olhar. Não é um atraso. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["comstock-nature-study", "mason-home-education", "louv-ultima-crianca"],
         "porVertente": {
           "Charlotte Mason": {
@@ -880,8 +880,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Registrar a observação em uma página une **olhar, arte e escrita**. A criança passa a ter um diário próprio de descobertas, que guarda a memória do que viu.",
-        "comoParticipar": "Compre ou monte um caderno simples e vá com ela observar ao menos uma vez por semana. Ela desenha, escreve a data, o lugar e uma frase (ou dita para você). Mostre fontes (livros de plantas e bichos) para achar o nome. Não é necessário saber nomear tudo.",
-        "sinaisDeAtencao": "Escrever pode cansar. Se ela não quiser escrever, deixe-a ditar a frase. Se a escrita for muito difícil e frustrante aos 8 anos, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Compre ou monte um caderno simples e vá com a criança observar ao menos uma vez por semana. A criança desenha, escreve a data, o lugar e uma frase (ou dita para você). Mostre fontes (livros de plantas e bichos) para achar o nome. Não é necessário saber nomear tudo.",
+        "sinaisDeAtencao": "Escrever pode cansar. Se a criança não quiser escrever, deixe a criança ditar a frase. Se a escrita for muito difícil e frustrante aos 8 anos, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["comstock-nature-study", "mason-home-education", "louv-ultima-crianca"],
         "porVertente": {
           "Charlotte Mason": {
