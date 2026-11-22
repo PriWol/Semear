@@ -82,7 +82,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
 
         ${
           leitura.cuidados
-            ? html`<p class="alerta cuidados" role="note"><b>${icone('warning')} Cuidados:</b> ${leitura.cuidados}</p>`
+            ? html`<p class="alerta cuidados" role="note"><b>${icone('warning')} Cuidados:</b> ${textoRico(leitura.cuidados)}</p>`
             : ''
         }
 
@@ -91,7 +91,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
 
         <h2>${icone('basket')} Materiais</h2>
         <ul>
-          ${a.materiais.map((m) => html`<li>${m.item}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
+          ${a.materiais.map((m) => html`<li>${textoRico(m.item)}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
         </ul>
 
         <h2>${icone('compass')} Passo a passo</h2>
