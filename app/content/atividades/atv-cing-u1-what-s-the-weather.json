@@ -2,8 +2,8 @@
   "id": "atv-cing-u1-what-s-the-weather",
   "titulo": "What's the weather?",
   "marcos": ["NM.TER.01", "LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",

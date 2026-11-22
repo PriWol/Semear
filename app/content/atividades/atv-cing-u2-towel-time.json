@@ -2,8 +2,8 @@
   "id": "atv-cing-u2-towel-time",
   "titulo": "Towel time",
   "marcos": ["LI.ESC.01", "LI.VOC.02"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Vida prática",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
