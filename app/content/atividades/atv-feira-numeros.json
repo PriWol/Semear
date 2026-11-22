@@ -17,23 +17,23 @@
     {
       "titulo": "Feira de verdade",
       "minutos": 10,
-      "texto": "Espalhe na mesa **17 feijões** (ou tampinhas, botões) e peça para a criança contar. Observe sem interromper: ela aponta? Arrasta? Se perde? Se ela se perder, mostre a estratégia: **uma fileira de 10** e outra com o resto. *“Dez… e mais sete. Dezessete!”*",
+      "texto": "Espalhe na mesa **17 feijões** (ou tampinhas, botões) e peça para a criança contar. Observe sem interromper: a criança aponta? Arrasta? Se perde? Se a criança se perder, mostre a estratégia: **uma fileira de 10** e outra com o resto. *“Dez… e mais sete. Dezessete!”*",
       "fala": "Como você pode ter certeza de que não contou nenhum duas vezes?"
     },
     {
       "titulo": "Folha: conte e circule",
       "minutos": 7,
-      "texto": "Os itens já estão em fileiras de 10. Incentive que ela marque cada um com um pontinho enquanto conta."
+      "texto": "Os itens já estão em fileiras de 10. Incentive que a criança marque cada um com um pontinho enquanto conta."
     },
     {
       "titulo": "Folha: quadros de dez",
       "minutos": 7,
-      "texto": "Ela desenha bolinhas para mostrar o número. Primeiro enche um quadro inteiro, depois continua no segundo."
+      "texto": "A criança desenha bolinhas para mostrar o número. Primeiro enche um quadro inteiro, depois continua no segundo."
     },
     {
       "titulo": "Folha: onde tem mais? (revisão)",
       "minutos": 5,
-      "texto": "Ela circula o cesto com mais, ou marca “iguais”."
+      "texto": "A criança circula o cesto com mais, ou marca “iguais”."
     },
     {
       "titulo": "Jogo da barraca (opcional, outro dia)",
@@ -43,7 +43,7 @@
   ],
   "observar": {
     "consolidado": [
-      "conta os 17 feijões certinho, **organizando sozinha**",
+      "conta os 17 feijões certinho, **organizando sem ajuda**",
       "acerta 3 ou 4 cestos da folha “conte e circule” sem ajuda",
       "diz o total sem recontar"
     ],
@@ -75,7 +75,7 @@
     }
   ],
   "toqueVertente": {
-    "Charlotte Mason": "**Lições curtas**: no máximo 10 minutos por bloco, e você para enquanto a atenção ainda está boa. No final, peça que a criança **narre**: “me conta como você fez para não se perder”.",
+    "Charlotte Mason": "**Momentos curtos**: no máximo 10 minutos por bloco, e você para enquanto a atenção ainda está boa. No final, peça que a criança **narre**: “me conta como você fez para não se perder”.",
     "Clássico": "No aquecimento, **recitem** a sequência de 10 em 10 (10, 20, 30… até 100) como uma cantilena.",
     "Montessori": "Use contas ou o material dourado no lugar dos feijões, numa bandeja.",
     "Waldorf": "Conte com elementos da natureza (pedrinhas, castanhas) e um verso ritmado."

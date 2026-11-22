@@ -6,7 +6,7 @@
   "idade": [7, 8],
   "duracaoMin": 18,
   "preparoMin": 3,
-  "cuidados": "Cantem em volume suave e com pausas para beber água. Respeite a voz da criança em fase de mudança ou cansada.",
+  "cuidados": "Cantem em volume suave e com pausas para beber água. Respeite a voz da criança em fase de mudança ou com cansaço.",
   "objetivo": "A criança aprende um cânone simples, canta em grupo e registra as canções que sabe.",
   "passos": [
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Caderno",
       "minutos": 5,
-      "texto": "Ela escreve (ou desenha) o título das canções que já sabe de memória, em um caderno de canções da família."
+      "texto": "A criança escreve (ou desenha) o título das canções que já sabe de memória, em um caderno de canções da família."
     }
   ],
   "observar": {

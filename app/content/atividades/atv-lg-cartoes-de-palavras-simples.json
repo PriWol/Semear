@@ -12,23 +12,23 @@
     {
       "titulo": "Ler as sílabas",
       "minutos": 5,
-      "texto": "Mostre as sílabas em cartões (BA, BO, LA, GA, TO, SA, PA). Ela diz o som de cada uma. Junte duas: *BO + LA*. Diga devagar e depois depressa: *“BO... LA... BOLA!”*",
+      "texto": "Mostre as sílabas em cartões (BA, BO, LA, GA, TO, SA, PA). A criança diz o som de cada uma. Junte duas: *BO + LA*. Diga devagar e depois depressa: *“BO... LA... BOLA!”*",
       "fala": "Que palavra se formou?"
     },
     {
       "titulo": "Cartões com figura",
       "minutos": 7,
-      "texto": "Mostre um cartão de palavra (BOLA) **sem a figura**. Ela lê e vira o cartão: a figura confirma. Comece pelas palavras de 2 sílabas e passe às de 3."
+      "texto": "Mostre um cartão de palavra (BOLA) **sem a figura**. A criança lê e vira o cartão: a figura confirma. Comece pelas palavras de 2 sílabas e passe às de 3."
     },
     {
       "titulo": "Jogo da pesca de palavras",
       "minutos": 6,
-      "texto": "Espalhe os cartões. Você diz: *“Me dê a palavra que está escrita... SAPATO!”* ou ela lê e escolhe o objeto da casa que combina."
+      "texto": "Espalhe os cartões. Você diz: *“Me dê a palavra que está escrita... SAPATO!”* ou a criança lê e escolhe o objeto da casa que combina."
     },
     {
       "titulo": "Mais uma vez",
       "minutos": 2,
-      "texto": "Escolham uma palavra para ela ler em voz alta para outro adulto ou para um bicho. Elogie o esforço."
+      "texto": "Escolham uma palavra para a criança ler em voz alta para outro adulto ou para um bicho. Elogie o esforço."
     }
   ],
   "observar": {
@@ -60,7 +60,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Use o alfabeto móvel e objetos pequenos: ela monta a palavra e coloca ao lado do objeto.",
+    "Montessori": "Use o alfabeto móvel e objetos pequenos: a criança monta a palavra e coloca ao lado do objeto.",
     "Clássico": "Leiam a lista de palavras em voz alta, como numa pequena lista de vocabulário.",
     "Religioso": "Se desejar, use palavras de cantigas ou orações da família (como PAI, VOVÓ, LUZ).",
     "Charlotte Mason": "Mantenha curto (poucas palavras novas por dia) e use palavras de um livro que vocês gostam."
@@ -75,7 +75,7 @@
       "resposta": "☐ não   ☐ às vezes   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que palavras ela leu com mais facilidade?",
+  "perguntaFicha": "Que palavras a criança leu com mais facilidade?",
   "folhas": [
     {
       "tipo": "cartas",

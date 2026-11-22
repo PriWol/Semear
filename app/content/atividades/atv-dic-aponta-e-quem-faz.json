@@ -12,19 +12,19 @@
     {
       "titulo": "Cadê?",
       "minutos": 3,
-      "texto": "Abra um livro de figuras grandes (ou 4 cartões de animais e objetos conhecidos). Pergunte uma coisa de cada vez: “cadê a bola?”. Espere ela apontar e comemore. Se falar o nome, repita.",
+      "texto": "Abra um livro de figuras grandes (ou 4 cartões de animais e objetos conhecidos). Pergunte uma coisa de cada vez: “cadê a bola?”. Espere a criança apontar e comemore. Se falar o nome, repita.",
       "fala": "Cadê o cachorro?"
     },
     {
       "titulo": "Quem faz?",
       "minutos": 3,
-      "texto": "Com as figuras de bichos, pergunte: “quem mia?”, “quem late?”. Faça o som junto. Se ela errar, mostre a resposta e siga, sem cobrar.",
+      "texto": "Com as figuras de bichos, pergunte: “quem mia?”, “quem late?”. Faça o som junto. Se a criança errar, mostre a resposta e siga, sem cobrar.",
       "fala": "Quem mia?"
     },
     {
       "titulo": "Sua vez de perguntar",
       "minutos": 2,
-      "texto": "Troquem: ela esconde uma figura e você pergunta “cadê?”, ou ela escolhe uma e você faz o som errado para ela corrigir, rindo."
+      "texto": "Troquem: a criança esconde uma figura e você pergunta “cadê?”, ou escolhe uma e você faz o som errado, para corrigir, rindo."
     }
   ],
   "observar": {
@@ -56,7 +56,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual figura ela mais gostou de apontar?",
+  "perguntaFicha": "Qual figura a criança mais gostou de apontar?",
   "palavrasChave": ["apontar", "figuras", "cadê", "quem mia", "animais", "ações"],
   "folhas": [],
   "autoria": {

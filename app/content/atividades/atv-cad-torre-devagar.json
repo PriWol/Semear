@@ -10,7 +10,7 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: Copos ou almofadas estáveis; derrube a torre longe do rosto dela. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Copos ou almofadas estáveis; derrube a torre longe do rosto da criança. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["torre", "devagar", "copos", "calma"],
   "objetivo": "A criança se move de propósito devagar, empilhando copos ou almofadas, treinando o controle do impulso.",
   "passos": [
@@ -22,7 +22,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Deixe que ela repita, um copo por vez, sem pressa."
+      "texto": "Deixe que a criança repita, um copo por vez, sem pressa."
     },
     {
       "titulo": "Passo 3",
@@ -32,7 +32,7 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "No fim, respirem juntas olhando a torre. Derrubar é permitido, mas devagar."
+      "texto": "No fim, respirem juntos olhando a torre. Derrubar é permitido, mas devagar."
     },
     {
       "titulo": "Para dizer",
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

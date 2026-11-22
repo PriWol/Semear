@@ -12,23 +12,23 @@
     {
       "titulo": "Dois ursinhos",
       "minutos": 3,
-      "texto": "Mostre dois ursinhos, um grande e um pequeno. *“Qual é o maior?”* Deixe que ela aponte e diga a palavra com você. Repita com colheres: *comprida* e *curta*."
+      "texto": "Mostre dois ursinhos, um grande e um pequeno. *“Qual é o maior?”* Deixe que a criança aponte e diga a palavra com você. Repita com colheres: *comprida* e *curta*."
     },
     {
       "titulo": "Peso nas mãos",
       "minutos": 3,
-      "texto": "Ponha uma almofada em uma mão e um livro na outra (ou uma bola leve e outra mais pesada). Ela sente e diz: *“este é mais pesado”*.",
+      "texto": "Ponha uma almofada em uma mão e um livro na outra (ou uma bola leve e outra mais pesada). A criança sente e diz: *“este é mais pesado”*.",
       "fala": "Qual está mais pesado?"
     },
     {
       "titulo": "Cheio e vazio",
       "minutos": 3,
-      "texto": "Com dois copos de plástico, um cheio de água e outro vazio, ela diz qual está cheio e qual está vazio. Depois, encham juntos o copo vazio."
+      "texto": "Com dois copos de plástico, um cheio de água e outro vazio, a criança diz qual está cheio e qual está vazio. Depois, encham juntos o copo vazio."
     },
     {
-      "titulo": "Ela escolhe",
+      "titulo": "A criança escolhe",
       "minutos": 1,
-      "texto": "Peça que traga *“o maior”* e *“o mais curto”* de uma cesta. Deixe que ela invente o próximo pedido."
+      "texto": "Peça que traga *“o maior”* e *“o mais curto”* de uma cesta. Deixe que a criança invente o próximo pedido."
     }
   ],
   "observar": {
@@ -67,7 +67,7 @@
   "toqueVertente": {
     "Montessori": "Os materiais sensoriais de dimensão (barras vermelhas de comprimento, torre rosa, escada marrom) educam a comparação e a graduação das dimensões.",
     "Waldorf": "Compare com o corpo e com coisas da natureza (o galho mais comprido, a pedra mais pesada): as palavras vêm da experiência.",
-    "Charlotte Mason": "Compare objetos reais do dia a dia (copos, lápis, mochilas), em lições curtas e com poucas palavras novas."
+    "Charlotte Mason": "Compare objetos reais do dia a dia (copos, lápis, mochilas), em momentos curtos e com poucas palavras novas."
   },
   "evidencias": [
     {

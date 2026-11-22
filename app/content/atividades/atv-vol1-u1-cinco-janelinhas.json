@@ -11,24 +11,24 @@
   "idade": [2, 5],
   "duracaoMin": 8,
   "preparoMin": 2,
-  "cuidados": "Fique sentado junto da criança. O poema usa só o corpo (olhos, orelhas, nariz, boca e dedos): sem objetos pequenos. Se ela não quiser que toquem o rosto dela, mostre só em você.",
+  "cuidados": "Sente-se junto da criança. O poema usa só o corpo (olhos, orelhas, nariz, boca e dedos): sem objetos pequenos. Se a criança não quiser que toquem o rosto, mostre só em você.",
   "objetivo": "A criança **brinca com o som das palavras que rimam** (olhar, escutar, cheirar, provar) e nomeia as partes do corpo ligadas aos sentidos.",
   "passos": [
     {
       "titulo": "Dizer e mostrar",
       "minutos": 3,
-      "texto": "Diga o poema devagar, apontando em você e depois nela: *“Duas janelas para olhar, duas conchinhas para escutar, um narizinho para cheirar, uma boquinha para provar, e dez dedinhos, devagarinho, para tocar o mundo inteirinho.”* As “janelas” são os olhos e as “conchinhas”, as orelhas.",
+      "texto": "Diga o poema devagar, apontando em você e depois na criança: *“Duas janelas para olhar, duas conchinhas para escutar, um narizinho para cheirar, uma boquinha para provar, e dez dedinhos, devagarinho, para tocar o mundo inteirinho.”* As “janelas” são os olhos e as “conchinhas”, as orelhas.",
       "fala": "Para que serve este narizinho?"
     },
     {
       "titulo": "Esperar a palavra",
       "minutos": 3,
-      "texto": "Na terceira vez, pare antes da última palavra de cada verso e espere: *“Duas janelas para…”*. Se ela completar, repita a palavra e sorria. Se não, complete você, sem insistir."
+      "texto": "Na terceira vez, pare antes da última palavra de cada verso e espere: *“Duas janelas para…”*. Se a criança completar, repita a palavra e sorria. Se não, complete você, sem insistir."
     },
     {
       "titulo": "Olhar a imagem (opcional)",
       "minutos": 2,
-      "texto": "Abra o Tesouro na imagem de Kate Greenaway (*Under the Window*, 1878): *“Quantas crianças estão na janela? O que elas estão olhando?”* (são três; deixe que ela imagine o que veem)."
+      "texto": "Abra o Tesouro na imagem de Kate Greenaway (*Under the Window*, 1878): *“Quantas crianças estão na janela? O que elas estão olhando?”* (são três; deixe a criança imaginar o que veem)."
     }
   ],
   "observar": {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Diga só o poema com os gestos, sem esperar a palavra final.",
-    "facil": "Peça que ela invente um gesto novo para o poema."
+    "facil": "Peça que a criança invente um gesto novo para o poema."
   },
   "materiais": [
     {
@@ -58,10 +58,10 @@
   "evidencias": [
     {
       "texto": "Completou a palavra final do verso",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavra ela completou ou que gesto inventou?",
+  "perguntaFicha": "Que palavra a criança completou ou que gesto inventou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

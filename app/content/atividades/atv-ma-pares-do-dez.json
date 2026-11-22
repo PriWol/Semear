@@ -13,7 +13,7 @@
     {
       "titulo": "Aquecimento com dados",
       "minutos": 4,
-      "texto": "Ela joga dois dados e diz a soma. Se precisar, conta a partir do maior. Explique que algumas somas já são conhecidas (4 e 4, 5 e 5)."
+      "texto": "A criança joga dois dados e diz a soma. Se precisar, conta a partir do maior. Explique que algumas somas já são conhecidas (4 e 4, 5 e 5)."
     },
     {
       "titulo": "Jogo dos pares do dez",
@@ -24,12 +24,12 @@
     {
       "titulo": "Somas conhecidas",
       "minutos": 6,
-      "texto": "Pergunte somas rápidas (*3 e 2, 5 e 1, 4 e 3*) e peça que explique o caminho (*“sei que 4 e 4 são 8, então 4 e 5…”*). Só pergunte as somas que ela já entendeu."
+      "texto": "Pergunte somas rápidas (*3 e 2, 5 e 1, 4 e 3*) e peça que explique o caminho (*“sei que 4 e 4 são 8, então 4 e 5…”*). Só pergunte as somas que a criança já entendeu."
     },
     {
       "titulo": "Folha: pares do dez",
       "minutos": 4,
-      "texto": "Ela liga os números que, juntos, dão 10."
+      "texto": "A criança liga os números que, juntos, dão 10."
     }
   ],
   "observar": {

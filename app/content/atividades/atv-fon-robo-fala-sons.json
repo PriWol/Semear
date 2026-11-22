@@ -7,7 +7,7 @@
   "idade": [5, 8],
   "duracaoMin": 25,
   "preparoMin": 3,
-  "cuidados": "Atenção: é um jogo de voz, então basta ficar por perto. Os 2 ou 3 objetos, se usados, devem ser grandes e sem pontas. Se ela errar, repita os sons mais devagar, sem cobrar.",
+  "cuidados": "Atenção: é um jogo de voz, então basta ficar por perto. Os 2 ou 3 objetos, se usados, devem ser grandes e sem pontas. Se a criança errar, repita os sons mais devagar, sem cobrar.",
   "objetivo": "A criança **junta sons falados** (/s/ /o/ /l/) para descobrir a palavra, o caminho inverso de ler.",
   "passos": [
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Agora você é o robô",
       "minutos": 6,
-      "texto": "Inverta: a criança fala os sons e você descobre. Erre uma vez de propósito para ela corrigir."
+      "texto": "Inverta: a criança fala os sons e você descobre. Erre uma vez de propósito para a criança corrigir."
     },
     {
       "titulo": "Folha: ligue o robô à palavra",
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Use palavras de 2 sons (*uva*, *ou*) ou 3 (*sol*, *mar*) e deixe as figuras à vista.",
-    "facil": "Use palavras mais longas (*prato*, *bolo*) e peça que ela invente um robô para outras palavras."
+    "facil": "Use palavras mais longas (*prato*, *bolo*) e peça que a criança invente um robô para outras palavras."
   },
   "materiais": [
     {
@@ -57,7 +57,7 @@
   ],
   "toqueVertente": {
     "Montessori": "O jogo do “eu vejo” com sons separados: três objetos na mesa e a criança escolhe o que o robô disse.",
-    "Clássico": "Registre numa lista as palavras que ela já consegue juntar e revise todo dia.",
+    "Clássico": "Registre numa lista as palavras que a criança já consegue juntar e revise todo dia.",
     "Religioso": "Se a família quiser, use nomes de pessoas ou festas da tradição de vocês como palavras do robô."
   },
   "evidencias": [

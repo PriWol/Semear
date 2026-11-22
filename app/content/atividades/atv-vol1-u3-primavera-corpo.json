@@ -13,7 +13,7 @@
   "idade": [2, 5],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Deixe o espaço livre de quinas e de tapetes soltos. O “trovão” é batido de leve nas próprias pernas. Volume moderado; pare se ela se assustar com a parte forte.",
+  "cuidados": "Deixe o espaço livre de quinas e de tapetes soltos. O “trovão” é batido de leve nas próprias pernas. Volume moderado; pare se a criança se assustar com a parte forte.",
   "objetivo": "A criança **escuta uma música descritiva** e reconhece um tema que volta, respondendo a ele com o corpo.",
   "passos": [
     {
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Só a primeira escuta, no colo.",
-    "facil": "Peça que ela invente outro movimento para os pássaros."
+    "facil": "Peça que a criança invente outro movimento para os pássaros."
   },
   "materiais": [
     {
@@ -58,7 +58,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Qual parte da música ela mais quis repetir?",
+  "perguntaFicha": "Qual parte da música a criança mais quis repetir?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

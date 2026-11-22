@@ -13,18 +13,18 @@
   "idade": [2, 6],
   "duracaoMin": 10,
   "preparoMin": 2,
-  "cuidados": "Luz baixa e volume baixo. A lanterna é só do adulto; ela “passeia a lua” sem apontar para os olhos de ninguém. Fique perto da criança.",
+  "cuidados": "Luz baixa e volume baixo. A lanterna é só do adulto; a criança “passeia a lua” sem apontar para os olhos de ninguém. Fique perto da criança.",
   "objetivo": "A criança **escuta com calma** uma peça de piano e a acompanha com movimentos bem lentos, como uma música para a hora de dormir.",
   "passos": [
     {
       "titulo": "Preparar",
       "minutos": 2,
-      "texto": "Apague a luz e acenda uma lanterna. Deixe que ela faça a “lua” passear devagar pelo teto."
+      "texto": "Apague a luz e acenda uma lanterna. Deixe que a criança faça a “lua” passear devagar pelo teto."
     },
     {
       "titulo": "Escutar",
       "minutos": 6,
-      "texto": "Toque *Clair de lune*, de Debussy (da *Suíte bergamasca*, 1905), cerca de cinco minutos de piano solo, muito suave. Se ela se mexer, que seja bem devagar, “para não acordar a lua”.",
+      "texto": "Toque *Clair de lune*, de Debussy (da *Suíte bergamasca*, 1905), cerca de cinco minutos de piano solo, muito suave. Se a criança se mexer, que seja bem devagar, “para não acordar a lua”.",
       "fala": "Vamos passear com a lua sem fazer barulho?"
     },
     {
@@ -35,7 +35,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Fica tranquila ouvindo por alguns minutos",
+      "Ouve com tranquilidade por alguns minutos",
       "Move a lua da lanterna devagar, no ritmo da música"
     ],
     "emDesenvolvimento": [
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Escute só o começo, com a luz baixa e no colo.",
-    "facil": "Peça que ela desenhe a lua depois de ouvir."
+    "facil": "Peça que a criança desenhe a lua depois de ouvir."
   },
   "materiais": [
     {
@@ -62,7 +62,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Como ela ficou durante a música (calma, agitada, sonolenta)?",
+  "perguntaFicha": "Como a criança ficou durante a música (calma, agitada, com sono)?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

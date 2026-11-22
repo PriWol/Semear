@@ -12,7 +12,7 @@
   "idade": [3, 6],
   "duracaoMin": 15,
   "preparoMin": 4,
-  "cuidados": "A história é longa para a idade: conte em duas partes, em dias ou momentos diferentes se ela cansar. A tesoura para recortar os cartões de sequência é só do adulto.",
+  "cuidados": "A história é longa para a idade: conte em duas partes, em dias ou momentos diferentes se a criança cansar. A tesoura para recortar os cartões de sequência é só do adulto.",
   "objetivo": "A criança **escuta uma história em várias partes**, lembra o começo no fim e a **reconta em ordem** com quatro cenas.",
   "passos": [
     {
@@ -29,7 +29,7 @@
     {
       "titulo": "Cartões de sequência",
       "minutos": 5,
-      "texto": "Quatro cenas: o ninho, o terreiro, o voo e o cisne. Comece só com o ninho e o cisne; depois as quatro. Ela segura um cartão e conta *“o que aconteceu aqui”*. A ordem certa é a da folha."
+      "texto": "Quatro cenas: o ninho, o terreiro, o voo e o cisne. Comece só com o ninho e o cisne; depois as quatro. A criança segura um cartão e conta *“o que aconteceu aqui”*. A ordem certa é a da folha."
     }
   ],
   "observar": {
@@ -44,7 +44,7 @@
   },
   "ajustes": {
     "dificil": "Conte só o começo e o fim, com duas imagens.",
-    "facil": "Peça que ela invente um amigo para o patinho."
+    "facil": "Peça que a criança invente um amigo para o patinho."
   },
   "materiais": [
     {
@@ -63,10 +63,10 @@
     },
     {
       "texto": "Disse como a história termina",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Como ela contou o final da história?",
+  "perguntaFicha": "Como a criança contou o final da história?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

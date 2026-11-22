@@ -17,7 +17,7 @@
     {
       "titulo": "Pular",
       "minutos": 8,
-      "texto": "Ela pula em um pé só nas casas simples e com os dois pés nas casas duplas, do 1 ao 6. Combine a regra com ela e troquem as regras. Conte os pulos em voz alta.",
+      "texto": "A criança pula em um pé só nas casas simples e com os dois pés nas casas duplas, do 1 ao 6. Combine a regra com a criança e troquem as regras. Conte os pulos em voz alta.",
       "fala": "Um, dois, três, pulo!"
     },
     {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantos pulos em um pé ela deu?",
+  "perguntaFicha": "Quantos pulos em um pé a criança deu?",
   "palavrasChave": ["amarelinha", "pular", "galope", "ritmo"],
   "folhas": [],
   "autoria": {

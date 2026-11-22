@@ -6,18 +6,18 @@
   "idade": [5, 7],
   "duracaoMin": 17,
   "preparoMin": 5,
-  "cuidados": "Tesoura de ponta arredondada, só sentada. Botões grandes, de pelo menos 3 cm, costurados com firmeza em um pano (nunca soltos). Fique junto, sobretudo com irmãos menores por perto.",
+  "cuidados": "Tesoura de ponta arredondada, só com a criança sentada. Botões grandes, de pelo menos 3 cm, costurados com firmeza em um pano (nunca soltos). Fique junto, sobretudo com irmãos menores por perto.",
   "objetivo": "A criança recorta uma forma simples e treina o abotoar em um pano com botões grandes.",
   "passos": [
     {
       "titulo": "Recortar",
       "minutos": 7,
-      "texto": "Desenhe um círculo e um quadrado grandes em papel. Ela recorta devagar, girando o papel com a outra mão. Cole em uma folha para fazer um boneco."
+      "texto": "Desenhe um círculo e um quadrado grandes em papel. A criança recorta devagar, girando o papel com a outra mão. Cole em uma folha para fazer um boneco."
     },
     {
       "titulo": "Abotoar",
       "minutos": 6,
-      "texto": "Em um pedaço de pano ou camisa, ela abotoa e desabotoa 3 ou 4 botões grandes. Mostre a “casinha” e o “botão que entra na casa”.",
+      "texto": "Em um pedaço de pano ou camisa, a criança abotoa e desabotoa 3 ou 4 botões grandes. Mostre a “casinha” e o “botão que entra na casa”.",
       "fala": "O botão entra na casinha!"
     },
     {

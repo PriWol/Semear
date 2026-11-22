@@ -12,23 +12,23 @@
     {
       "titulo": "O painel do dia",
       "minutos": 8,
-      "texto": "Faça um painel com 4 figuras (acordar, almoçar, brincar fora, dormir). Peça que ela mova o marcador conforme o dia passa. *“O que vem depois do almoço?”*.",
+      "texto": "Faça um painel com 4 figuras (acordar, almoçar, brincar fora, dormir). Peça que a criança mova o marcador conforme o dia passa. *“O que vem depois do almoço?”*.",
       "fala": "O que acontece depois?"
     },
     {
       "titulo": "Conta o dia",
       "minutos": 6,
-      "texto": "No fim do dia, peça que ela conte o que aconteceu, em ordem, usando *primeiro, depois, por último*. Ajude com figuras, sem corrigir demais."
+      "texto": "No fim do dia, peça que a criança conte o que aconteceu, em ordem, usando *primeiro, depois, por último*. Ajude com figuras, sem corrigir demais."
     },
     {
       "titulo": "Ontem, hoje, amanhã",
       "minutos": 6,
-      "texto": "Ligue as palavras a eventos reais: *“ontem fomos ao parque; hoje estamos em casa; amanhã é o aniversário”*. Deixe que ela complete outras frases."
+      "texto": "Ligue as palavras a eventos reais: *“ontem fomos ao parque; hoje estamos em casa; amanhã é o aniversário”*. Deixe que a criança complete outras frases."
     },
     {
       "titulo": "Folha: 4 quadros",
       "minutos": 4,
-      "texto": "Ela desenha o que fez em 4 momentos e numera de 1 a 4."
+      "texto": "A criança desenha o que fez em 4 momentos e numera de 1 a 4."
     }
   ],
   "observar": {
@@ -43,8 +43,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use apenas 3 figuras e foque em *antes* e *depois* de um evento do dia, sem ontem e amanhã. Aos 3 anos, é esse o ponto de partida: ela move o marcador do painel e responde “o que vem depois do almoço?”.",
-    "facil": "Peça que ela descreva a semana inteira, ou invente a rotina de um personagem. Aos 6 anos, ela conta o dia inteiro em ordem e usa *ontem, hoje e amanhã* sem as figuras."
+    "dificil": "Use apenas 3 figuras e foque em *antes* e *depois* de um evento do dia, sem ontem e amanhã. Aos 3 anos, é esse o ponto de partida: a criança move o marcador do painel e responde “o que vem depois do almoço?”.",
+    "facil": "Peça que a criança descreva a semana inteira, ou invente a rotina de um personagem. Aos 6 anos, a criança conta o dia inteiro em ordem e usa *ontem, hoje e amanhã* sem as figuras."
   },
   "materiais": [
     {

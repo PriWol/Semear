@@ -12,14 +12,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: Se for da varanda ou da janela, confira antes que haja grade ou tela de proteção e não a deixe sozinha ali; perto da rua, segure a mão dela. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Se for da varanda ou da janela, confira antes que haja grade ou tela de proteção e não deixe a criança sem um adulto ali; perto da rua, segure a mão da criança. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["escutar", "sons", "silêncio", "atenção"],
   "objetivo": "A criança escuta em silêncio por um minuto, percebe até três sons e dá nome a eles.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Sentem juntas e diga: “vamos escutar três sons”."
+      "texto": "Sentem juntos e diga: “vamos escutar três sons”."
     },
     {
       "titulo": "Passo 2",
@@ -29,7 +29,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Cada som tem nome: “carro”, “passarinho”, “vento”. Deixe que ela diga também."
+      "texto": "Cada som tem nome: “carro”, “passarinho”, “vento”. Deixe que a criança diga também."
     },
     {
       "titulo": "Passo 4",
@@ -49,17 +49,17 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) De olhos fechados, se ela quiser. 2) Com a janela fechada e depois aberta: quais sons mudam? 3) À noite, com a luz baixa."
+      "texto": "1) De olhos fechados, se a criança quiser. 2) Com a janela fechada e depois aberta: quais sons mudam? 3) À noite, com a luz baixa."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Escutar em silêncio, mesmo por um minuto, treina a atenção e acalma. Funciona bem logo depois do batuque ou da estátua, para fechar a agitação. Não é preciso acertar o som: o que conta é ficar quieta e perceber."
+      "texto": "Escutar em silêncio, mesmo por um minuto, treina a atenção e acalma. Funciona bem logo depois do batuque ou da estátua, para fechar a agitação. Não é preciso acertar o som: o que conta é ficar em silêncio e perceber."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

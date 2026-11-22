@@ -17,7 +17,7 @@
     {
       "titulo": "Cesta de verdade",
       "minutos": 3,
-      "texto": "Mostre uma cesta com 3 ou 4 frutas de verdade e deixe que ela segure e cheire cada uma."
+      "texto": "Mostre uma cesta com 3 ou 4 frutas de verdade e deixe que a criança segure e cheire cada uma."
     },
     {
       "titulo": "Contar",
@@ -28,7 +28,7 @@
     {
       "titulo": "Perguntas",
       "minutos": 3,
-      "texto": "*“O que Marina achou primeiro?”*; tire as frutas da cesta e peça que ela as devolva **na ordem da história**; *“o ratinho estava com fome: o que ele ganhou?”*. Não corrija: repita a fala dela ampliando (“Maçã! Uma maçã vermelha e redonda”)."
+      "texto": "*“O que Marina achou primeiro?”*; tire as frutas da cesta e peça que a criança as devolva **na ordem da história**; *“o ratinho estava com fome: o que ele ganhou?”*. Não corrija: repita a fala da criança ampliando (“Maçã! Uma maçã vermelha e redonda”)."
     }
   ],
   "observar": {
@@ -66,14 +66,14 @@
   "evidencias": [
     {
       "texto": "Completou a frase que se repete",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Respondeu às perguntas",
       "resposta": "_____ de 3"
     }
   ],
-  "perguntaFicha": "O que ela disse sobre a história, com as palavras dela?",
+  "perguntaFicha": "O que a criança disse sobre a história, com as palavras da criança?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -12,18 +12,18 @@
     {
       "titulo": "Transferir",
       "minutos": 4,
-      "texto": "Com uma pinça de cozinha grande ou os dedos, ela passa bolas de algodão de uma tigela para outra. Conte em voz alta quantas passou.",
+      "texto": "Com uma pinça de cozinha grande ou os dedos, a criança passa bolas de algodão de uma tigela para outra. Conte em voz alta quantas passou.",
       "fala": "Uma, duas…"
     },
     {
       "titulo": "Rasgar",
       "minutos": 3,
-      "texto": "Ela rasga papel (jornal, revista) em tiras e pedaços. Façam uma “chuva” de papel e colem em uma folha."
+      "texto": "A criança rasga papel (jornal, revista) em tiras e pedaços. Façam uma “chuva” de papel e colem em uma folha."
     },
     {
       "titulo": "Enfiar",
       "minutos": 3,
-      "texto": "Ponha um macarrão penne em um cadarço com uma ponta amarrada. Ela enfia, um a um, fazendo um colar. O adulto guarda o colar quando acabar."
+      "texto": "Ponha um macarrão penne em um cadarço com uma ponta amarrada. A criança enfia, um a um, fazendo um colar. O adulto guarda o colar quando acabar."
     }
   ],
   "observar": {
@@ -66,7 +66,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantas peças ela enfiou?",
+  "perguntaFicha": "Quantas peças a criança enfiou?",
   "palavrasChave": ["pinça", "enfiar", "rasgar", "dedos"],
   "folhas": [],
   "autoria": {

@@ -6,7 +6,7 @@
   "idade": [4, 6],
   "duracaoMin": 12,
   "preparoMin": 3,
-  "cuidados": "A trilha fica no chão, nunca em lugares altos. Use chão plano e livre, sem tapetes soltos ou meias escorregadias. Fique perto, com a mão pronta, sem segurá-la a todo momento.",
+  "cuidados": "A trilha fica no chão, nunca em lugares altos. Use chão plano e livre, sem tapetes soltos ou meias escorregadias. Fique perto, com a mão pronta, sem segurar a criança a todo momento.",
   "objetivo": "A criança anda sobre uma linha e fica em um pé só, em um jogo de equilíbrio.",
   "passos": [
     {
@@ -17,7 +17,7 @@
     {
       "titulo": "Trilha",
       "minutos": 6,
-      "texto": "Ela anda sobre a fita, com os braços abertos, de frente e depois de lado. Aumente o desafio: carregar um bichinho de pelúcia.",
+      "texto": "A criança anda sobre a fita, com os braços abertos, de frente e depois de lado. Aumente o desafio: carregar um bichinho de pelúcia.",
       "fala": "Cuidado para não cair!"
     },
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantos segundos ela aguentou em um pé?",
+  "perguntaFicha": "Quantos segundos a criança aguentou em um pé?",
   "palavrasChave": ["equilíbrio", "flamingo", "trilha", "fita"],
   "folhas": [],
   "autoria": {

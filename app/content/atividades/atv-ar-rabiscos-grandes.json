@@ -17,13 +17,13 @@
     {
       "titulo": "Rabiscar",
       "minutos": 6,
-      "texto": "Deixe que ela desenhe do jeito que quiser. Desenhe ao lado, com movimentos diferentes (linhas, voltas, pontos), sem dar modelo. Comente o que vê.",
+      "texto": "Deixe que a criança desenhe do jeito que quiser. Desenhe ao lado, com movimentos diferentes (linhas, voltas, pontos), sem dar modelo. Comente o que vê.",
       "fala": "Que linhas você fez!"
     },
     {
       "titulo": "Nomear",
       "minutos": 2,
-      "texto": "Se ela quiser, pergunte: “Me conta o seu desenho?”. Anote o que disser no canto da folha e a data."
+      "texto": "Se a criança quiser, pergunte: “Me conta o seu desenho?”. Anote o que disser no canto da folha e a data."
     }
   ],
   "observar": {
@@ -61,7 +61,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela disse do seu desenho?",
+  "perguntaFicha": "O que a criança disse do seu desenho?",
   "palavrasChave": ["rabisco", "giz de cera", "desenho livre", "primeiros traços"],
   "folhas": [],
   "autoria": {

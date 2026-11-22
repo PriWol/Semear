@@ -24,12 +24,12 @@
     {
       "titulo": "Pôr a quantidade",
       "minutos": 4,
-      "texto": "Em pratinhos desenhados com os números, ela põe a quantidade de botões que o número diz, tocando e contando. Comece só com 1, 2 e 3 (cubra os outros com papel)."
+      "texto": "Em pratinhos desenhados com os números, a criança põe a quantidade de botões que o número diz, tocando e contando. Comece só com 1, 2 e 3 (cubra os outros com papel)."
     },
     {
       "titulo": "Inverter",
       "minutos": 2,
-      "texto": "Ela põe botões num prato e você diz o número. De vez em quando erre de propósito, para ela corrigir."
+      "texto": "A criança põe botões num prato e você diz o número. De vez em quando erre de propósito, para a criança corrigir."
     }
   ],
   "observar": {
@@ -41,7 +41,7 @@
   },
   "ajustes": {
     "dificil": "Só contar os degraus da escada, subindo com você.",
-    "facil": "Ela conta para o ratinho de pelúcia, como professora."
+    "facil": "A criança conta para o ratinho de pelúcia, como quem ensina."
   },
   "materiais": [
     {
@@ -64,10 +64,10 @@
     },
     {
       "texto": "Respondeu “quantos?” com o último número",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Até quanto ela contou tocando?",
+  "perguntaFicha": "Até quanto a criança contou tocando?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

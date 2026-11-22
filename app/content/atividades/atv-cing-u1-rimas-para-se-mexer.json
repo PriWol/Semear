@@ -11,7 +11,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "As cócegas de “This little piggy” só se ela gostar e param quando pedir; o chão deve estar firme e sem obstáculos para andar e esticar.",
+  "cuidados": "As cócegas de “This little piggy” só se a criança gostar e param quando pedir; o chão deve estar firme e sem obstáculos para andar e esticar.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "acordar e se arrumar"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: acordar e se arrumar).",
   "passos": [
@@ -30,7 +30,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Rimas para o corpo transformam a rotina de se vestir em brincadeira. Quando ela estiver com pressa ou com “não”, dê a ela uma escolha (“sun is up” ou “this little piggy”?) em vez de uma ordem. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Rimas para o corpo transformam a rotina de se vestir em brincadeira. Quando a criança estiver com pressa ou com “não”, dê à criança uma escolha (“sun is up” ou “this little piggy”?) em vez de uma ordem. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

@@ -19,17 +19,17 @@
     {
       "titulo": "Sacola misteriosa",
       "minutos": 8,
-      "texto": "Esconda um objeto na sacola de pano. De olhos fechados ou só pelo tato, ela adivinha: *“redondo, rola… é a bola!”*. Troquem os papéis."
+      "texto": "Esconda um objeto na sacola de pano. De olhos fechados ou só pelo tato, a criança adivinha: *“redondo, rola… é a bola!”*. Troquem os papéis."
     },
     {
       "titulo": "Construir uma torre",
       "minutos": 5,
-      "texto": "Peça que ela empilhe tudo o que empilha e conte quantos andares fez. Só depois dê o nome: esfera (bola), cubo (dado), cilindro (lata), cone (funil de plástico)."
+      "texto": "Peça que a criança empilhe tudo o que empilha e conte quantos andares fez. Só depois dê o nome: esfera (bola), cubo (dado), cilindro (lata), cone (funil de plástico)."
     },
     {
       "titulo": "Folha: pinte o que rola",
       "minutos": 4,
-      "texto": "Ela pinta os quadradinhos dos objetos que rolam."
+      "texto": "A criança pinta os quadradinhos dos objetos que rolam."
     }
   ],
   "observar": {
@@ -44,8 +44,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use só bola e caixa, bem diferentes, e deixe que ela repita o teste de rolar.",
-    "facil": "Peça que ela compare a moeda (plana) com a bola e invente uma regra: *“o que rola e o que não rola”*."
+    "dificil": "Use só bola e caixa, bem diferentes, e deixe que a criança repita o teste de rolar.",
+    "facil": "Peça que a criança compare a moeda (plana) com a bola e invente uma regra: *“o que rola e o que não rola”*."
   },
   "materiais": [
     {
@@ -64,7 +64,7 @@
   "toqueVertente": {
     "Montessori": "Os sólidos geométricos (esfera, cubo, cilindro, cone, prismas) são um material clássico: a criança os toca, compara e só depois os nomeia.",
     "Waldorf": "Construa com materiais da natureza (pedras, madeira, cestos) e brinque com objetos de formas simples; os nomes técnicos podem esperar.",
-    "Charlotte Mason": "Poucos objetos reais por lição, e pare quando a criança se cansar de experimentar."
+    "Charlotte Mason": "Poucos objetos reais por momento, e pare quando a criança se cansar de experimentar."
   },
   "evidencias": [
     {

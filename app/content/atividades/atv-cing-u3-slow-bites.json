@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Na hora de comer, **fique junto e com a criança sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "slow bites"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "One slow bite. Chew, chew, chew. / Is it sweet? Is it soft? / Two slow bites. Three! All done."
     },
     {
       "titulo": "Passo 1",
       "minutos": 2,
-      "texto": "Sentem sem pressa, sem outras distrações, e ponha três pedaços no prato dela."
+      "texto": "Sentem sem pressa, sem outras distrações, e ponha três pedaços no prato da criança."
     },
     {
       "titulo": "Passo 2",
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "How does it taste? / Is it soft or crunchy? / Do you want another?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Prove de olhos fechados. Ela conta as mordidas: “one, two, three”. Faça de conta que a fruta é um “tesouro”."
+      "texto": "Prove de olhos fechados. A criança conta as mordidas: “one, two, three”. Faça de conta que a fruta é um “tesouro”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

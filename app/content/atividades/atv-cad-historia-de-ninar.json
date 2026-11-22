@@ -22,7 +22,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Afague as costas dela no ritmo da história, uma pausa a cada frase."
+      "texto": "Afague as costas da criança no ritmo da história, uma pausa a cada frase."
     },
     {
       "titulo": "Passo 3",
@@ -32,7 +32,7 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "No fim, diga “boa noite” ao gatinho, e a ela."
+      "texto": "No fim, diga “boa noite” ao gatinho, e à criança."
     },
     {
       "titulo": "Para dizer",
@@ -47,12 +47,12 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Conte sem luz, só com a voz. 2) Troque o bicho por um da família: o cachorro, o pássaro. 3) Conte a mesma história por uma semana e veja o que ela passa a dizer junto."
+      "texto": "1) Conte sem luz, só com a voz. 2) Troque o bicho por um da família: o cachorro, o pássaro. 3) Conte a mesma história por uma semana e veja o que a criança passa a dizer junto."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Uma história curta, sempre igual e contada devagar, faz o corpo entender que é hora de desacelerar. Vale para dormir e também para depois de uma crise, quando ela está cansada e precisa de colo. Troque o gatinho pelo bicho preferido dela e use o nome dela só no fim."
+      "texto": "Uma história curta, sempre igual e contada devagar, faz o corpo entender que é hora de desacelerar. Vale para dormir e também para depois de uma crise, quando a criança sente cansaço e precisa de colo. Troque o gatinho pelo bicho preferido da criança e use o nome da criança só no fim."
     }
   ],
   "observar": {
@@ -67,7 +67,7 @@
   },
   "materiais": [
     {
-      "item": "Luz baixa, uma almofada ou o colo; o bichinho preferido dela",
+      "item": "Luz baixa, uma almofada ou o colo; o bichinho preferido da criança",
       "deCasa": true
     },
     {
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

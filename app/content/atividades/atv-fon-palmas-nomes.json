@@ -6,13 +6,13 @@
   "idade": [4, 6],
   "duracaoMin": 25,
   "preparoMin": 8,
-  "cuidados": "Atenção: fique junto da criança, principalmente aos 4 anos. Se der passos ou pulinhos, deixe o chão livre de brinquedos. Recorte as cartas você mesmo, antes, com tesoura sem ponta, longe dela.",
+  "cuidados": "Atenção: fique junto da criança, principalmente aos 4 anos. Se der passos ou pulinhos, deixe o chão livre de brinquedos. Recorte as cartas você mesmo, antes, com tesoura sem ponta, longe da criança.",
   "objetivo": "A criança percebe que a palavra se divide em **pedaços** (sílabas) e consegue marcá-los com palmas.",
   "passos": [
     {
       "titulo": "Nomes da família",
       "minutos": 6,
-      "texto": "Bata uma palma por pedaço no nome da criança e depois nos de cada pessoa da família (*A-NA*, *MA-RI-A*, *PE-DRO*). Peça que ela faça com você, sem pressa.",
+      "texto": "Bata uma palma por pedaço no nome da criança e depois nos de cada pessoa da família (*A-NA*, *MA-RI-A*, *PE-DRO*). Peça que a criança faça com você, sem pressa.",
       "fala": "Quantos pedacinhos tem o seu nome?"
     },
     {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Fique só em nomes de 2 pedaços e bata junto com a criança.",
-    "facil": "Proponha palavras de 4 pedaços ou mais (*ce-le-bra-ção*) e peça que ela diga o que tem mais e menos."
+    "facil": "Proponha palavras de 4 pedaços ou mais (*ce-le-bra-ção*) e peça que a criança diga o que tem mais e menos."
   },
   "materiais": [
     {

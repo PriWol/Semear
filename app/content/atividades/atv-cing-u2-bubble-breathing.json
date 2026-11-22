@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. A espuma e o líquido de bolhas não são para beber e podem irritar os olhos. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. A espuma e o líquido de bolhas não são para beber e podem irritar os olhos. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "o banho", "bubble breathing"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Breathe in… and blow, blow, blow. / Look, a big bubble! Nice and slow. / Pop! One more time?"
     },
     {
       "titulo": "Passo 1",
       "minutos": 1,
-      "texto": "Ponha um pouco de espuma na palma da mão dela, ou sopre uma bolha com a varinha."
+      "texto": "Ponha um pouco de espuma na palma da mão da criança, ou sopre uma bolha com a varinha."
     },
     {
       "titulo": "Passo 2",
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 1,
-      "texto": "Deixe que ela sopre a espuma: “blow the bubbles away”."
+      "texto": "Deixe que a criança sopre a espuma: “blow the bubbles away”."
     },
     {
       "titulo": "Passo 4",
@@ -44,7 +44,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Can you blow? / Where did the bubble go? / Is your body slow now?"
     },
     {
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Soprar devagar ajuda o corpo a baixar o ritmo, e a espuma dá um motivo concreto para o sopro. O banho calmo, com voz baixa, também ajuda a criança que está agitada ou brava. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Soprar devagar ajuda o corpo a baixar o ritmo, e a espuma dá um motivo concreto para o sopro. O banho calmo, com voz baixa, também ajuda a criança que sente agitação ou raiva. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

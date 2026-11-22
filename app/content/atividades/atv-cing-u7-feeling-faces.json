@@ -13,20 +13,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Espelho inquebrável, firme (preso à parede ou apoiado no chão) e sem cantos afiados; fique junto, pois ela pode tentar subir nele. Mantenha longe peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Espelho inquebrável, firme (preso à parede ou apoiado no chão) e sem cantos afiados; fique junto, pois a criança pode tentar subir nele. Mantenha longe peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "a família e os sentimentos", "feeling faces"],
   "objetivo": "Ouvir e usar inglês num momento fixo do dia (a família e os sentimentos), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "I'm happy! Look at my smile. / Now I'm angry. Grrr. It's okay to feel angry. / Sad. Sleepy. Surprised! Now happy again."
     },
     {
       "titulo": "Passo 1",
       "minutos": 2,
-      "texto": "Sentem de frente para o espelho. Faça uma cara feliz e diga “happy”; ela imita."
+      "texto": "Sentem de frente para o espelho. Faça uma cara feliz e diga “happy”; a criança imita."
     },
     {
       "titulo": "Passo 2",
@@ -41,12 +41,12 @@
     {
       "titulo": "Passo 4",
       "minutos": 1,
-      "texto": "Deixe que ela escolha uma cara e você imite."
+      "texto": "Deixe que a criança escolha uma cara e você imite."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "How do you feel? / Are you happy or sad? / Can you make an angry face?"
     },
     {
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Dar nome às emoções, em um momento calmo, é o primeiro passo para ela usá-las no meio da raiva, em vez de gritar ou bater. “It's okay to feel angry” diz à criança que o sentimento é aceito, e o que se faz com ele é que muda. Repita muitas vezes: o vocabulário dos sentimentos leva tempo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Dar nome às emoções, em um momento calmo, é o primeiro passo para a criança usá-las no meio da raiva, em vez de gritar ou bater. “It's okay to feel angry” diz à criança que o sentimento é aceito, e o que se faz com ele é que muda. Repita muitas vezes: o vocabulário dos sentimentos leva tempo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

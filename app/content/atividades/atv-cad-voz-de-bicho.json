@@ -19,7 +19,7 @@
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Escolha três bichos: um grande (leão), um pequeno (ratinho) e um que você sabe que ela gosta."
+      "texto": "Escolha três bichos: um grande (leão), um pequeno (ratinho) e um que você sabe que a criança gosta."
     },
     {
       "titulo": "Passo 2",
@@ -29,7 +29,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Faça uma conversa curta entre os dois bichos. Deixe que ela escolha quem fala."
+      "texto": "Faça uma conversa curta entre os dois bichos. Deixe que a criança escolha quem fala."
     },
     {
       "titulo": "Passo 4",
@@ -54,12 +54,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Brincar de alto e baixo, grosso e fino, treina o controle da voz e mostra que ela pode escolher como falar. O sussurro e a “voz de sono” são o mesmo controle que usamos para acalmar. Nessa idade, muita criança adora “mandar” no bicho: deixe."
+      "texto": "Brincar de alto e baixo, grosso e fino, treina o controle da voz e mostra que a criança pode escolher como falar. O sussurro e a “voz de sono” são o mesmo controle que usamos para acalmar. Nessa idade, muita criança adora “mandar” no bicho: deixe."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

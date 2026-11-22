@@ -12,17 +12,17 @@
     {
       "titulo": "Olhar",
       "minutos": 6,
-      "texto": "Em um passeio, ela escolhe algo para observar e olha por 2 minutos. Peça: “Conte o que você nota: cores, formas, quantidade”."
+      "texto": "Em um passeio, a criança escolhe algo para observar e olha por 2 minutos. Peça: “Conte o que você nota: cores, formas, quantidade”."
     },
     {
       "titulo": "Desenhar",
       "minutos": 10,
-      "texto": "Ela desenha o que observou com atenção, em uma página do caderno. Leve também lápis de cor ou aquarela."
+      "texto": "A criança desenha o que observou com atenção, em uma página do caderno. Leve também lápis de cor ou aquarela."
     },
     {
       "titulo": "Escrever",
       "minutos": 4,
-      "texto": "Ela escreve a data, o lugar e uma frase (“A folha é verde e tem veias…”). Se não souber o nome, anote “nome a descobrir”."
+      "texto": "A criança escreve a data, o lugar e uma frase (“A folha é verde e tem veias…”). Se não souber o nome, anote “nome a descobrir”."
     }
   ],
   "observar": {
@@ -57,7 +57,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela anotou na página?",
+  "perguntaFicha": "O que a criança anotou na página?",
   "palavrasChave": ["caderno da natureza", "diário", "observação", "registro", "natureza"],
   "folhas": [],
   "autoria": {

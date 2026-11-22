@@ -3,7 +3,7 @@
     "titulo": "Como combinar uma vertente principal com inspirações",
     "texto": "A **vertente principal** define o ritmo (a idade em que cada tema entra) e os marcos extras da sua família. As **inspirações** não mudam o ritmo: elas ampliam as atividades e os livros sugeridos, com um toque de cada pedagogia. Um bom começo é escolher **uma** principal e **uma ou duas** inspirações. Se duas vertentes discordarem (por exemplo, a idade de começar a alfabetização), o app segue a principal. Dá para mudar a qualquer hora, sem perder o que a criança já fez.",
     "exemplos": [
-      "Principal **Montessori** + inspiração **Charlotte Mason**: materiais concretos em casa e lições curtas com livros vivos.",
+      "Principal **Montessori** + inspiração **Charlotte Mason**: materiais concretos em casa e momentos curtos com livros vivos.",
       "Principal **Waldorf** + inspiração **Clássico**: ritmo e arte, mais versos e recitação.",
       "Principal **Clássico** + inspiração **Religioso**: memorização e Trivium, com a formação na fé da família."
     ]
@@ -18,7 +18,7 @@
         "Liberdade com limites: a criança escolhe dentro do que foi preparado.",
         "Respeito ao ritmo e aos períodos sensíveis de cada criança."
       ],
-      "sessaoTipica": "Uma bandeja com poucos objetos reais, uma apresentação curta do adulto e tempo para a criança repetir sozinha. Pouco papel, muita manipulação.",
+      "sessaoTipica": "Uma bandeja com poucos objetos reais, uma apresentação curta do adulto e tempo para a criança repetir sem ajuda. Pouco papel, muita manipulação.",
       "ritmo": "Alfabetização e matemática começam a partir do concreto: letras de lixa e alfabeto móvel, barras e material dourado. As idades do app são típicas, e a criança pode adiantar ou esperar.",
       "marcosExtras": "Educação dos sentidos (DI.SEN) e vida prática ampliada (verter, dobrar, preparar alimentos).",
       "atividades": "Recortar, parear, manipular: cartas, bandejas com objetos reais.",
@@ -90,18 +90,18 @@
     },
     {
       "vertente": "Charlotte Mason",
-      "resumo": "Livros vivos, narração, lições curtas e muito tempo ao ar livre.",
+      "resumo": "Livros vivos, narração, momentos curtos e muito tempo ao ar livre.",
       "principios": [
         "A criança é uma pessoa inteira: bons hábitos, boas ideias e boas histórias.",
-        "Lições curtas, com atenção total.",
+        "Momentos curtos, com atenção total.",
         "Livros vivos, em vez de livros-texto secos.",
         "Narração: a criança conta com as próprias palavras o que ouviu.",
         "Natureza e caderno da natureza todos os dias."
       ],
-      "sessaoTipica": "Lições de 10 a 20 minutos, cada uma com um tema (leitura, narração, copywork, natureza), alternando atividades mais e menos exigentes.",
+      "sessaoTipica": "Momentos de 10 a 20 minutos, cada um com um tema (leitura, narração, copywork, natureza), alternando atividades mais e menos exigentes.",
       "ritmo": "Hábitos desde cedo; leitura e escrita com copywork e ditado preparado; ciência pela observação da natureza.",
       "marcosExtras": "Narração oral e escrita (LG.NAR), copywork e ditado preparado; caderno da natureza, estudo de pintores e de compositores.",
-      "atividades": "Narração, cópia, caderno da natureza e lições curtas; poucas fichas de completar.",
+      "atividades": "Narração, cópia, caderno da natureza e momentos curtos; poucas fichas de completar.",
       "referencias": ["mason-home-education", "mason-home-education-4ed"],
       "revisao": {
         "estado": "aprovado",

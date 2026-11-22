@@ -30,14 +30,14 @@
     {
       "titulo": "Inventar uma cor",
       "minutos": 8,
-      "texto": "Invente uma cor nova e dê nome a ela. Pinte uma paisagem usando só as três cores e suas misturas. Escolha a cor preferida da semana."
+      "texto": "Invente uma cor nova e dê nome à criança. Pinte uma paisagem usando só as três cores e suas misturas. Escolha a cor preferida da semana."
     }
   ],
   "observar": {
     "consolidado": [
       "Pega a tinta com o pincel limpo e lava antes de trocar de cor.",
       "Diz o nome de pelo menos três cores sem ajuda.",
-      "Descobre sozinha que duas cores fazem uma terceira.",
+      "Descobre sem ajuda que duas cores fazem uma terceira.",
       "Pinta com manchas largas, sem ter medo de borrar."
     ],
     "emDesenvolvimento": [
@@ -80,7 +80,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que cor ela inventou e que nome deu?",
+  "perguntaFicha": "Que cor a criança inventou e que nome deu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

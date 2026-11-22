@@ -12,18 +12,18 @@
     {
       "titulo": "Escolher",
       "minutos": 4,
-      "texto": "Mostre 3 ou 4 tarefas (arrumar a cama, dobrar toalhas, regar a planta, pôr a mesa). Ela escolhe uma ou duas.",
+      "texto": "Mostre 3 ou 4 tarefas (arrumar a cama, dobrar toalhas, regar a planta, pôr a mesa). A criança escolhe uma ou duas.",
       "fala": "Qual você quer?"
     },
     {
       "titulo": "Ensinar",
       "minutos": 7,
-      "texto": "Mostre o passo a passo uma vez. Ela faz com você olhando e, depois, sozinha. Combine o horário."
+      "texto": "Mostre o passo a passo uma vez. A criança faz com você olhando e, depois, sem ajuda. Combine o horário."
     },
     {
       "titulo": "Quadro",
       "minutos": 4,
-      "texto": "Em uma folha, desenhem a semana e ela marca com um adesivo cada dia em que cumpriu. No fim, conversem como foi."
+      "texto": "Em uma folha, desenhem a semana e a criança marca com um adesivo cada dia em que cumpriu. No fim, conversem como foi."
     }
   ],
   "observar": {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Combine só uma tarefa e uma hora fixa.",
-    "facil": "Ela ensina a tarefa a um irmão ou amigo."
+    "facil": "A criança ensina a tarefa a um irmão ou amigo."
   },
   "materiais": [
     {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual tarefa ela escolheu?",
+  "perguntaFicha": "Qual tarefa a criança escolheu?",
   "palavrasChave": ["tarefas", "casa", "responsabilidade", "rotina"],
   "folhas": [],
   "autoria": {

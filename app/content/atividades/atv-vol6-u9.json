@@ -38,7 +38,7 @@
       "Diz o nome das quatro estações, na ordem.",
       "Aponta o que mudou na árvore de uma visita para outra.",
       "Associa cada estação a roupas, clima e frutas.",
-      "Conta a história de Deméter e Perséfone com palavras dela."
+      "Conta a história de Deméter e Perséfone com palavras da criança."
     ],
     "emDesenvolvimento": [
       "Ainda não diz as estações na ordem",
@@ -46,7 +46,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Se o dia estiver difícil: olhar a árvore de hoje e dizer uma coisa dela: folhas, flores ou tempo.",
+    "dificil": "Se o dia estiver difícil: olhar a árvore de hoje e dizer uma coisa da árvore: folhas, flores ou tempo.",
     "facil": "Se o interesse crescer: registrar, a cada estação, o que está na feira (frutas da época) e o que a árvore tem (flores, frutos ou folhas secas)."
   },
   "materiais": [

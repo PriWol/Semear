@@ -13,18 +13,18 @@
     {
       "titulo": "Historinha 1",
       "minutos": 5,
-      "texto": "Conte: *“O vovô tinha 4 tomates e colheu mais 3. Com quantos ficou?”* Ela monta 4 com fichas, junta 3 e conta. Pergunte como fez.",
+      "texto": "Conte: *“O vovô tinha 4 tomates e colheu mais 3. Com quantos ficou?”* A criança monta 4 com fichas, junta 3 e conta. Pergunte como fez.",
       "fala": "Como você descobriu?"
     },
     {
       "titulo": "Mais histórias",
       "minutos": 7,
-      "texto": "Invente mais duas ou três (*“3 e mais 5”*, *“6 e mais 2”*). Aceite jeitos diferentes (dedos, fichas, de cabeça) e peça que ela conte como fez. Sem escrever a conta ainda."
+      "texto": "Invente mais duas ou três (*“3 e mais 5”*, *“6 e mais 2”*). Aceite jeitos diferentes (dedos, fichas, de cabeça) e peça que a criança conte como fez. Sem escrever a conta ainda."
     },
     {
-      "titulo": "Ela inventa a historinha",
+      "titulo": "A criança inventa a historinha",
       "minutos": 5,
-      "texto": "Troquem: ela conta uma história e você resolve, errando de propósito uma vez, para ela corrigir."
+      "texto": "Troquem: a criança conta uma história e você resolve, errando de propósito uma vez, para ser corrigido."
     },
     {
       "titulo": "Folha: desenhe e conte",
@@ -63,7 +63,7 @@
   ],
   "toqueVertente": {
     "Montessori": "Peças e contas permitem montar a situação e ver o resultado antes de qualquer conta no papel, como na tábua de adição.",
-    "Clássico": "Registre as historinhas num caderno e repita as que ela já resolve até virarem conhecidas.",
+    "Clássico": "Registre as historinhas num caderno e repita as que a criança já resolve até virarem conhecidas.",
     "Charlotte Mason": "Use problemas curtos tirados da vida (horta, cozinha, passeio), resolvidos de cabeça e com objetos, em poucos minutos."
   },
   "evidencias": [

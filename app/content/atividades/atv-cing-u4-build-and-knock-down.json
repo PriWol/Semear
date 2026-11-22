@@ -13,25 +13,25 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "blocos leves, sem peças pequenas; derrube longe do rosto dela.",
+  "cuidados": "blocos leves, sem peças pequenas; derrube longe do rosto da criança.",
   "palavrasChave": ["inglês", "english", "brincar dentro de casa", "build and knock down"],
   "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: brincar dentro de casa).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "One block, two blocks, three blocks. Up, up, up! / Knock it down! Crash! / Again? Let's build it again."
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Construa uma torre: “one block, two blocks, three blocks”, e deixe que ela ponha o último."
+      "texto": "Construa uma torre: “one block, two blocks, three blocks”, e deixe que a criança ponha o último."
     },
     {
       "titulo": "Passo 2",
       "minutos": 3,
-      "texto": "Diga “up, up, up!”, e depois “knock it down!”: ela derruba."
+      "texto": "Diga “up, up, up!”, e depois “knock it down!”: a criança derruba."
     },
     {
       "titulo": "Passo 3",
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "How many blocks? / Up or down? / Do you want to build again?"
     },
     {

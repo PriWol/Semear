@@ -23,7 +23,7 @@
     {
       "titulo": "Mostrar com o corpo",
       "minutos": 3,
-      "texto": "Braços bem abertos para a vaca; dois dedinhos para o rato. Troquem: ela mostra e você adivinha o animal."
+      "texto": "Braços bem abertos para a vaca; dois dedinhos para o rato. Troquem: a criança mostra e você adivinha o animal."
     },
     {
       "titulo": "Outros pares",
@@ -58,10 +58,10 @@
   "evidencias": [
     {
       "texto": "Comparou dois animais com palavras",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavras de tamanho ela usou?",
+  "perguntaFicha": "Que palavras de tamanho a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -17,13 +17,13 @@
     {
       "titulo": "Cantar",
       "minutos": 6,
-      "texto": "Cante com gestos e pare antes da última palavra, esperando que ela complete. Repita 2 ou 3 vezes.",
+      "texto": "Cante com gestos e pare antes da última palavra, esperando que a criança complete. Repita 2 ou 3 vezes.",
       "fala": "Sapo cururu na beira do…"
     },
     {
       "titulo": "Brincar",
       "minutos": 3,
-      "texto": "Troquem: ela “rege” e você completa. Terminem com um abraço e uma cantiga calma."
+      "texto": "Troquem: a criança “rege” e você completa. Terminem com um abraço e uma cantiga calma."
     }
   ],
   "observar": {
@@ -50,7 +50,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais cantigas ela mais pede?",
+  "perguntaFicha": "Quais cantigas a criança mais pede?",
   "palavrasChave": ["cantigas", "canto", "gestos", "música"],
   "folhas": [],
   "autoria": {

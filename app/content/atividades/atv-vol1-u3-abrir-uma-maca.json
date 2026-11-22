@@ -11,7 +11,7 @@
   "idade": [2, 6],
   "duracaoMin": 10,
   "preparoMin": 2,
-  "cuidados": "Quem corta a maçã é o adulto, com a faca longe do alcance dela e a criança sentada. Maçã crua em pedaços grandes pode engasgar antes dos 4 anos: se ela for provar, ofereça em fatias bem finas ou ralada. As sementes são só para olhar, não para comer. Lavem as mãos antes e depois.",
+  "cuidados": "Quem corta a maçã é o adulto, com a faca longe do alcance da criança e a criança sentada. Maçã crua em pedaços grandes pode engasgar antes dos 4 anos: se a criança for provar, ofereça em fatias bem finas ou ralada. As sementes são só para olhar, não para comer. Lavem as mãos antes e depois.",
   "palavrasChave": ["maçã", "semente", "estrela", "observação", "casca"],
   "objetivo": "A criança observa uma maçã por fora e por dentro, nomeia casca, polpa, estrela e sementes, e descobre que uma maçã nova pode nascer de uma semente.",
   "passos": [
@@ -67,7 +67,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais nomes ela usou? Contou as pontas da estrela?",
+  "perguntaFicha": "Quais nomes a criança usou? Contou as pontas da estrela?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

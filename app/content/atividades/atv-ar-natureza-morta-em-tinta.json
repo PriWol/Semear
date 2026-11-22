@@ -18,12 +18,12 @@
     {
       "titulo": "Pintar",
       "minutos": 15,
-      "texto": "Ela pinta as frutas misturando as cores até chegar perto do que vê. Lembre-a de olhar para as frutas."
+      "texto": "A criança pinta as frutas misturando as cores até chegar perto do que vê. Lembre a criança de olhar para as frutas."
     },
     {
       "titulo": "Falar",
       "minutos": 5,
-      "texto": "Ela explica por que escolheu as cores e o que mais gostou. Compare com o trabalho de um pintor que fez natureza-morta, se quiser."
+      "texto": "A criança explica por que escolheu as cores e o que mais gostou. Compare com o trabalho de um pintor que fez natureza-morta, se quiser."
     }
   ],
   "observar": {
@@ -66,7 +66,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que cor ela achou mais difícil?",
+  "perguntaFicha": "Que cor a criança achou mais difícil?",
   "palavrasChave": ["natureza-morta", "frutas", "pintura", "observação"],
   "folhas": [],
   "autoria": {

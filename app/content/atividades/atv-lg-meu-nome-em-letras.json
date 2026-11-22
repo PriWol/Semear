@@ -12,23 +12,23 @@
     {
       "titulo": "Conhecer o nome",
       "minutos": 3,
-      "texto": "Escreva o nome dela em letra de imprensa num cartão grande. Conte as letras e diga cada uma com o som e o nome: *“M de Maria. Quantas letras tem seu nome?”*",
+      "texto": "Escreva o nome da criança em letra de imprensa num cartão grande. Conte as letras e diga cada uma com o som e o nome: *“M de Maria. Quantas letras tem seu nome?”*",
       "fala": "Quantas letras tem o seu nome?"
     },
     {
       "titulo": "Montar com letras móveis",
       "minutos": 5,
-      "texto": "Dê as letras do nome embaralhadas (recortadas em papel ou de madeira grandes) e peça que monte por cima do cartão. Depois, tire o cartão e peça que monte sozinha. Ajude só se ela travar."
+      "texto": "Dê as letras do nome embaralhadas (recortadas em papel ou de madeira grandes) e peça que monte por cima do cartão. Depois, tire o cartão e peça que monte sem ajuda. Ajude só se a criança travar."
     },
     {
       "titulo": "Fazer em massinha",
       "minutos": 5,
-      "texto": "Ela modela as letras do nome em cobrinhas de massinha, olhando o cartão. Cada letra pronta, você diz: *“Esta é o A. Que som ela faz?”*"
+      "texto": "A criança modela as letras do nome em cobrinhas de massinha, olhando o cartão. Cada letra pronta, você diz: *“Esta é o A. Que som a letra faz?”*"
     },
     {
       "titulo": "Escrever no papel",
       "minutos": 5,
-      "texto": "Com lápis grosso, ela escreve o nome no desenho dela (sem copiar o cartão se quiser tentar sozinha). Elogie o esforço, e não só o resultado."
+      "texto": "Com lápis grosso, a criança escreve o nome no desenho (sem copiar o cartão se quiser tentar sem ajuda). Elogie o esforço, e não só o resultado."
     },
     {
       "titulo": "Quem tem a mesma letra?",
@@ -47,7 +47,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Comece só pela primeira letra do nome e escreva o resto você, ao lado dela.",
+    "dificil": "Comece só pela primeira letra do nome e escreva o resto você, ao lado da criança.",
     "facil": "Peça que escreva também o nome de um amigo ou do irmão e compare as letras."
   },
   "materiais": [
@@ -69,7 +69,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Ofereça letras móveis grandes e letras de lixa do nome, para ela sentir o formato com o dedo antes de escrever.",
+    "Montessori": "Ofereça letras móveis grandes e letras de lixa do nome, para a criança sentir o formato com o dedo antes de escrever.",
     "Clássico": "Diga o nome das letras em voz alta, em sequência, como em uma pequena recitação do próprio nome.",
     "Religioso": "Se fizer sentido, mostre o significado do nome ou o santo ou o nome de uma pessoa querida.",
     "Charlotte Mason": "Use a escrita do nome no dia a dia (desenhos, cartões) e mantenha as sessões curtas; copie letras só por alguns minutos."
@@ -84,7 +84,7 @@
       "resposta": "_____ de _____"
     }
   ],
-  "perguntaFicha": "Quais letras ela já domina do próprio nome?",
+  "perguntaFicha": "Quais letras a criança já domina do próprio nome?",
   "folhas": [
     {
       "tipo": "desenho",

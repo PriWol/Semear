@@ -11,7 +11,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "As cócegas e o toque no braço só se ela gostar e param quando pedir; se cantarem olhando pela janela, segure-a junto à janela e nunca a deixe subir no parapeito.",
+  "cuidados": "As cócegas e o toque no braço só se a criança gostar e param quando pedir; se cantarem olhando pela janela, segure a criança junto à janela e nunca deixe que suba no parapeito.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "sair e passear"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: sair e passear).",
   "passos": [
@@ -24,13 +24,13 @@
     {
       "titulo": "Cantar: Round and round the garden",
       "minutos": 2,
-      "texto": "O gesto: faça um círculo na palma dela com o dedo; “one step, two step”: suba os dedos pelo braço; “tickle you”: cócegas debaixo do braço. É um jogo antigo de mão. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "texto": "O gesto: faça um círculo na palma da criança com o dedo; “one step, two step”: suba os dedos pelo braço; “tickle you”: cócegas debaixo do braço. É um jogo antigo de mão. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
       "fala": "Round and round the garden / like a teddy bear; / one step, two step, / tickle you under there!"
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Rimas de chuva e de jardim ligam o inglês ao que ela vê da janela, e as de mão têm o toque, o que ajuda quem se distrai fácil. O “de novo!” depois das cócegas é o melhor pedido. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Rimas de chuva e de jardim ligam o inglês ao que a criança vê da janela, e as de mão têm o toque, o que ajuda quem se distrai fácil. O “de novo!” depois das cócegas é o melhor pedido. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

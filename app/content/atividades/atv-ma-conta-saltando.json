@@ -13,7 +13,7 @@
     {
       "titulo": "Trilha no chão",
       "minutos": 4,
-      "texto": "Faça com fita ou giz uma trilha de 1 a 10. A criança anda até o 6 e para. *“Agora dê mais 3 passos, contando a partir do 6.”* Ela diz *7, 8, 9*."
+      "texto": "Faça com fita ou giz uma trilha de 1 a 10. A criança anda até o 6 e para. *“Agora dê mais 3 passos, contando a partir do 6.”* A criança diz *7, 8, 9*."
     },
     {
       "titulo": "O pano esconde",
@@ -24,7 +24,7 @@
     {
       "titulo": "Jogo de tabuleiro",
       "minutos": 5,
-      "texto": "Em um jogo de trilha com dado, ela diz onde está e avança contando a partir da casa, não do início."
+      "texto": "Em um jogo de trilha com dado, a criança diz onde está e avança contando a partir da casa, não do início."
     }
   ],
   "observar": {
@@ -39,8 +39,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Comece de números menores (3 e mais 2) e deixe-a contar tudo para provar; só depois cubra o primeiro grupo.",
-    "facil": "Troque o 6 por 8 ou 9 e peça que ela invente o desafio para o adulto resolver."
+    "dificil": "Comece de números menores (3 e mais 2) e deixe a criança contar tudo para provar; só depois cubra o primeiro grupo.",
+    "facil": "Troque o 6 por 8 ou 9 e peça que a criança invente o desafio para o adulto resolver."
   },
   "materiais": [
     {
@@ -64,7 +64,7 @@
     "Montessori": "Com as barras numéricas, junte a do 6 e a do 3 e conte a partir do 6: a criança vê o que acontece com a quantidade.",
     "Waldorf": "Conte em movimento: ande contando até 6 e siga de 7 em diante, sem voltar ao início da trilha.",
     "Clássico": "Recitem a sequência em voz alta a partir de números diferentes, como cantilena, e depois conferem com objetos.",
-    "Charlotte Mason": "Lição curta, falada, com coisas reais; peça que ela diga como fez."
+    "Charlotte Mason": "Momento curto, falada, com coisas reais; peça que a criança diga como fez."
   },
   "evidencias": [
     {

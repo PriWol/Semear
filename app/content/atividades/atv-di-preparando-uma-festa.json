@@ -12,18 +12,18 @@
     {
       "titulo": "Planejar",
       "minutos": 6,
-      "texto": "Escolham a data e conversem: “Por que fazemos essa festa? Quem vai vir? O que vamos fazer?”. Ela anota uma lista com 3 coisas a preparar.",
+      "texto": "Escolham a data e conversem: “Por que fazemos essa festa? Quem vai vir? O que vamos fazer?”. A criança anota uma lista com 3 coisas a preparar.",
       "fala": "Por que celebramos?"
     },
     {
       "titulo": "Preparar",
       "minutos": 14,
-      "texto": "Ela faz o convite, o enfeite ou ajuda no preparo de um prato. O adulto cuida do que é perigoso."
+      "texto": "A criança faz o convite, o enfeite ou ajuda no preparo de um prato. O adulto cuida do que é perigoso."
     },
     {
       "titulo": "Contar",
       "minutos": 5,
-      "texto": "No dia da festa (ou em um ensaio), ela explica a alguém por que a festa existe e o que preparou."
+      "texto": "No dia da festa (ou em um ensaio), a criança explica a alguém por que a festa existe e o que preparou."
     }
   ],
   "observar": {
@@ -31,7 +31,7 @@
     "emDesenvolvimento": ["Perde o foco (normal)", "Quer só a parte divertida"]
   },
   "ajustes": {
-    "dificil": "Escolha só uma tarefa para ela, como o convite.",
+    "dificil": "Escolha só uma tarefa para a criança, como o convite.",
     "facil": "Peça que planeje a festa toda com uma lista e um mapa da mesa."
   },
   "materiais": [

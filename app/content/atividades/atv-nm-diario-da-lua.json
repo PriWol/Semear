@@ -12,17 +12,17 @@
     {
       "titulo": "Começo",
       "minutos": 5,
-      "texto": "Ela desenha a Lua de hoje (se visível) em um quadrado, com a data. Combine de olhar sempre na mesma hora, quando possível."
+      "texto": "A criança desenha a Lua de hoje (se visível) em um quadrado, com a data. Combine de olhar sempre na mesma hora, quando possível."
     },
     {
       "titulo": "Conversar",
       "minutos": 5,
-      "texto": "Perguntem: “Ela vai estar igual amanhã? Por quê?”. Anote o palpite."
+      "texto": "Perguntem: “A criança vai estar igual amanhã? Por quê?”. Anote o palpite."
     },
     {
       "titulo": "Repetir",
       "minutos": 5,
-      "texto": "Nas noites seguintes, ela completa os quadrados. Depois de uma semana, compare os desenhos e converse sobre o que mudou.",
+      "texto": "Nas noites seguintes, a criança completa os quadrados. Depois de uma semana, compare os desenhos e converse sobre o que mudou.",
       "fala": "O que mudou?"
     }
   ],
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela descobriu sobre a Lua?",
+  "perguntaFicha": "O que a criança descobriu sobre a Lua?",
   "palavrasChave": ["lua", "fases da lua", "caderno", "registro", "céu"],
   "folhas": [],
   "autoria": {

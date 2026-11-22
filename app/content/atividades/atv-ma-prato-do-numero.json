@@ -13,23 +13,23 @@
     {
       "titulo": "Os pratos de papel",
       "minutos": 4,
-      "texto": "Escreva 0, 1, 2, 3, 4 e 5 em pratinhos de papel. Mostre: *“No prato 3 cabem 3 feijões”* e coloque. Deixe que ela confira contando."
+      "texto": "Escreva 0, 1, 2, 3, 4 e 5 em pratinhos de papel. Mostre: *“No prato 3 cabem 3 feijões”* e coloque. Deixe que a criança confira contando."
     },
     {
       "titulo": "Pedido do adulto",
       "minutos": 6,
-      "texto": "Peça *“ponha 4 colheres no prato 4”* e *“o prato 0 fica vazio”*. Depois troque: você põe feijões e ela acha o prato certo. Se errar, conte junto, sem culpa.",
+      "texto": "Peça *“ponha 4 colheres no prato 4”* e *“o prato 0 fica vazio”*. Depois troque: você põe feijões e a criança acha o prato certo. Se errar, conte junto, sem culpa.",
       "fala": "Quantos tem aqui? Qual é o prato?"
     },
     {
       "titulo": "Sobe até o 9",
       "minutos": 5,
-      "texto": "Acrescente os pratos de 6 a 9 e repita, devagar. Pare quando ela cansar; é melhor um dia só até 6."
+      "texto": "Acrescente os pratos de 6 a 9 e repita, devagar. Pare quando a criança cansar; é melhor um dia só até 6."
     },
     {
       "titulo": "Folha: conte e circule",
       "minutos": 4,
-      "texto": "Na folha, ela conta e circula o algarismo que combina com a quantidade."
+      "texto": "Na folha, a criança conta e circula o algarismo que combina com a quantidade."
     }
   ],
   "observar": {
@@ -44,8 +44,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use só os pratos de 1 a 4 e conte junto com ela, apontando o algarismo e depois os objetos.",
-    "facil": "Esconda o algarismo e peça que ela escreva ou escolha o cartão que combina com os feijões."
+    "dificil": "Use só os pratos de 1 a 4 e conte junto com a criança, apontando o algarismo e depois os objetos.",
+    "facil": "Esconda o algarismo e peça que a criança escreva ou escolha o cartão que combina com os feijões."
   },
   "materiais": [
     {

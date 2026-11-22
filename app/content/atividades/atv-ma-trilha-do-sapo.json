@@ -13,23 +13,23 @@
     {
       "titulo": "Mostrar o jeito",
       "minutos": 4,
-      "texto": "Cubra 6 fichas com a mão e diga *“aqui tem 6; vêm mais 3”*. Coloque 3 ao lado e diga com ela: *seis… sete, oito, nove*. Marque com os dedos."
+      "texto": "Cubra 6 fichas com a mão e diga *“aqui tem 6; vêm mais 3”*. Coloque 3 ao lado e diga com a criança: *seis… sete, oito, nove*. Marque com os dedos."
     },
     {
       "titulo": "Trilha do sapo",
       "minutos": 10,
-      "texto": "Numa trilha de 1 a 12 desenhada no papel, o sapo (um tampão) começa no 6. Ela joga o dado e diz *“estou no 6, mais 3: 7, 8, 9”*. Depois, repete com outras casas.",
+      "texto": "Numa trilha de 1 a 12 desenhada no papel, o sapo (um tampão) começa no 6. A criança joga o dado e diz *“estou no 6, mais 3: 7, 8, 9”*. Depois, repete com outras casas.",
       "fala": "De onde você começa a contar?"
     },
     {
       "titulo": "Sem esconder",
       "minutos": 4,
-      "texto": "Agora só falando: *“8 e mais 2”*. Ela diz a conta de cabeça e confere contando tudo, até confiar."
+      "texto": "Agora só falando: *“8 e mais 2”*. A criança diz a conta de cabeça e confere contando tudo, até confiar."
     },
     {
       "titulo": "Folha: a soma na trilha",
       "minutos": 4,
-      "texto": "Ela conta a partir do número maior e circula o resultado."
+      "texto": "A criança conta a partir do número maior e circula o resultado."
     }
   ],
   "observar": {
@@ -41,8 +41,8 @@
     "emDesenvolvimento": ["recomeça do 1 em todas as contas", "perde a conta dos passos"]
   },
   "ajustes": {
-    "dificil": "Comece de 3 e mais 2, com as fichas à vista, e deixe-a contar tudo para provar.",
-    "facil": "Peça *“4 e mais 6”*: qual número é melhor para começar? E ela explica por quê."
+    "dificil": "Comece de 3 e mais 2, com as fichas à vista, e deixe a criança contar tudo para provar.",
+    "facil": "Peça *“4 e mais 6”*: qual número é melhor para começar? E a criança explica por quê."
   },
   "materiais": [
     {
@@ -60,8 +60,8 @@
   ],
   "toqueVertente": {
     "Montessori": "O jogo da serpente da adição (uma serpente de contas coloridas) e a tábua de adição permitem somar com peças e ir passando ao cálculo de cabeça.",
-    "Clássico": "Depois de entender, recitem as somas em lições curtas: *“seis e três, nove”*.",
-    "Charlotte Mason": "Faça em lições curtas e faladas, com coisas reais; o cálculo de cabeça nasce do que a criança já provou com objetos."
+    "Clássico": "Depois de entender, recitem as somas em momentos curtos: *“seis e três, nove”*.",
+    "Charlotte Mason": "Faça em momentos curtos e faladas, com coisas reais; o cálculo de cabeça nasce do que a criança já provou com objetos."
   },
   "evidencias": [
     {

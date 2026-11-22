@@ -23,7 +23,7 @@
     {
       "titulo": "Contar e desenhar",
       "minutos": 8,
-      "texto": "Ela conta o que viu e sentiu e desenha. Você conta o que imaginou também. Anote o nome da obra e do compositor no desenho."
+      "texto": "A criança conta o que viu e sentiu e desenha. Você conta o que imaginou também. Anote o nome da obra e do compositor no desenho."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que a música contou para ela?",
+  "perguntaFicha": "O que a música contou para a criança?",
   "palavrasChave": [
     "compositores",
     "música clássica",

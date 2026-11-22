@@ -23,7 +23,7 @@
     {
       "titulo": "Conversar",
       "minutos": 2,
-      "texto": "Pergunte: “Qual você achou calma? E qual agitada?”. Ela aponta ou diz. Termine com a música calma."
+      "texto": "Pergunte: “Qual você achou calma? E qual agitada?”. A criança aponta ou diz. Termine com a música calma."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que música ela escolheu repetir?",
+  "perguntaFicha": "Que música a criança escolheu repetir?",
   "palavrasChave": ["escuta", "música calma", "dançar", "emoções"],
   "folhas": [],
   "autoria": {

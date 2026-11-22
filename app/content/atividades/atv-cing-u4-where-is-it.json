@@ -13,14 +13,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "O brinquedo escondido deve ser grande demais para caber na boca dela (sem peças pequenas ou soltas) e os esconderijos devem ser baixos e seguros: nada de subir em móvel para procurar.",
+  "cuidados": "O brinquedo escondido deve ser grande demais para caber na boca da criança (sem peças pequenas ou soltas) e os esconderijos devem ser baixos e seguros: nada de subir em móvel para procurar.",
   "palavrasChave": ["inglês", "english", "brincar dentro de casa", "where is it?"],
   "objetivo": "Ouvir e usar inglês num momento fixo do dia (brincar dentro de casa), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Where is the ball? Let's look. / Under the chair! There it is. / Now you hide it. I'll count to three."
     },
     {
@@ -31,7 +31,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 3,
-      "texto": "Pergunte: “where is it?”. Deixe que ela procure e aponte."
+      "texto": "Pergunte: “where is it?”. Deixe que a criança procure e aponte."
     },
     {
       "titulo": "Passo 3",
@@ -41,12 +41,12 @@
     {
       "titulo": "Passo 4",
       "minutos": 2,
-      "texto": "Troquem: ela esconde e você procura, com lentidão."
+      "texto": "Troquem: a criança esconde e você procura, com lentidão."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Where is it? / Is it in the box? / Is it under the chair?"
     },
     {
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "“In”, “on” e “under” são as palavras de posição mais fáceis de aprender com o corpo, porque se mostram com as mãos. A brincadeira de esconder também treina a memória e a espera, e quando ela é a escondedora, ela manda no jogo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "“In”, “on” e “under” são as palavras de posição mais fáceis de aprender com o corpo, porque se mostram com as mãos. A brincadeira de esconder também treina a memória e a espera, e quando esconde, a criança manda no jogo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

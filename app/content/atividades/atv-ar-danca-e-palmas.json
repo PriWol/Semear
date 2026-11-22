@@ -6,7 +6,7 @@
   "idade": [2, 4],
   "duracaoMin": 8,
   "preparoMin": 2,
-  "cuidados": "Brinque em local livre de móveis e quinas, com chão antiderrapante. Volume baixo ou moderado, sem fones de ouvido. Fique junto e dance com ela. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "cuidados": "Brinque em local livre de móveis e quinas, com chão antiderrapante. Volume baixo ou moderado, sem fones de ouvido. Fique junto e dance com a criança. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
   "objetivo": "A criança se movimenta e bate palmas com a música, acompanhando o pulso com o corpo.",
   "passos": [
     {
@@ -17,13 +17,13 @@
     {
       "titulo": "Dançar",
       "minutos": 5,
-      "texto": "Dancem juntos: balançar de um lado a outro, bater palmas, pisar forte e devagar. Imite os movimentos dela, depois ofereça os seus.",
+      "texto": "Dancem juntos: balançar de um lado a outro, bater palmas, pisar forte e devagar. Imite os movimentos da criança, depois ofereça os seus.",
       "fala": "Palminhas!"
     },
     {
       "titulo": "Parar",
       "minutos": 2,
-      "texto": "Pare a música e congele; ela congela também. Depois volte. Termine devagar, balançando como em um berço."
+      "texto": "Pare a música e congele; a criança congela também. Depois volte. Termine devagar, balançando como em um berço."
     }
   ],
   "observar": {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Balance a criança no colo, ao ritmo da música.",
-    "facil": "Mude o ritmo da música: rápido, lento, e ela acompanha."
+    "facil": "Mude o ritmo da música: rápido, lento, e a criança acompanha."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual música ela mais gostou?",
+  "perguntaFicha": "Qual música a criança mais gostou?",
   "palavrasChave": ["dançar", "palmas", "pulso", "música"],
   "folhas": [],
   "autoria": {

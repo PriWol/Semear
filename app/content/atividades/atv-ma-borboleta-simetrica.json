@@ -13,23 +13,23 @@
     {
       "titulo": "A borboleta de tinta",
       "minutos": 8,
-      "texto": "Dobre uma folha ao meio. Pingue tinta de um lado, feche e pressione. Abra: *“o que aconteceu? As duas asas ficaram iguais?”* Deixe que ela explique.",
+      "texto": "Dobre uma folha ao meio. Pingue tinta de um lado, feche e pressione. Abra: *“o que aconteceu? As duas asas ficaram iguais?”* Deixe que a criança explique.",
       "fala": "Como as duas asas ficaram?"
     },
     {
       "titulo": "Dobra para conferir",
       "minutos": 7,
-      "texto": "Recorte figuras (coração, folha, borboleta, uma letra) e peça que ela dobre ao meio: *“as metades combinam?”* As que combinam são simétricas. Teste uma que não combina (uma figura torta)."
+      "texto": "Recorte figuras (coração, folha, borboleta, uma letra) e peça que a criança dobre ao meio: *“as metades combinam?”* As que combinam são simétricas. Teste uma que não combina (uma figura torta)."
     },
     {
       "titulo": "Completar a metade",
       "minutos": 8,
-      "texto": "Em papel quadriculado, desenhe metade de uma casa ou de uma borboleta e peça que ela complete a outra metade do outro lado da linha. Confira dobrando."
+      "texto": "Em papel quadriculado, desenhe metade de uma casa ou de uma borboleta e peça que a criança complete a outra metade do outro lado da linha. Confira dobrando."
     },
     {
       "titulo": "Folha: ache o outro lado",
       "minutos": 5,
-      "texto": "Ela desenha a outra metade em cada figura da folha."
+      "texto": "A criança desenha a outra metade em cada figura da folha."
     }
   ],
   "observar": {
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Use figuras de dobra simples (um coração) e só conferindo dobrando, sem desenhar.",
-    "facil": "Peça que ela desenhe um padrão simétrico em papel quadriculado e invente a própria figura."
+    "facil": "Peça que a criança desenhe um padrão simétrico em papel quadriculado e invente a própria figura."
   },
   "materiais": [
     {

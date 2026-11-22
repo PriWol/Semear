@@ -12,7 +12,7 @@
     {
       "titulo": "Conversa",
       "minutos": 2,
-      "texto": "Olhem a planta juntos: “Será que ela está com sede?”. Toquem a terra.",
+      "texto": "Olhem a planta juntos: “Será que a criança está com sede?”. Toquem a terra.",
       "fala": "Do que a planta precisa?"
     },
     {
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Só toque na terra e olhe a planta.",
-    "facil": "Peça que ela diga quando a planta precisa de água."
+    "facil": "Peça que a criança diga quando a planta precisa de água."
   },
   "materiais": [
     {
@@ -55,11 +55,11 @@
   "evidencias": [
     {
       "texto": "Fez a tarefa",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Lembrou em outro dia",
-      "resposta": "☐ não   ☐ com lembrete   ☐ sozinha"
+      "resposta": "☐ não   ☐ com lembrete   ☐ sem ajuda"
     }
   ],
   "perguntaFicha": "Como a criança falou da planta?",

@@ -12,7 +12,7 @@
     {
       "titulo": "Pergunta",
       "minutos": 3,
-      "texto": "Pergunte: “Do que uma planta precisa para crescer?”. Anote as ideias dela sem corrigir, como palpites.",
+      "texto": "Pergunte: “Do que uma planta precisa para crescer?”. Anote as ideias da criança sem corrigir, como palpites.",
       "fala": "O que você acha que vai acontecer?"
     },
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Combinar",
       "minutos": 3,
-      "texto": "Marquem na parede ou no calendário os dias de olhar. Em 7 a 10 dias, comparem. Ela desenha o que viu e conta do que a planta precisa."
+      "texto": "Marquem na parede ou no calendário os dias de olhar. Em 7 a 10 dias, comparem. A criança desenha o que viu e conta do que a planta precisa."
     }
   ],
   "observar": {
@@ -34,7 +34,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Faça só um copo, com a semente na janela, e fale do que ela precisa.",
+    "dificil": "Faça só um copo, com a semente na janela, e fale do que a criança precisa.",
     "facil": "Peça que registre o crescimento em um desenho por dia."
   },
   "materiais": [
@@ -65,7 +65,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela disse que as plantas precisam?",
+  "perguntaFicha": "O que a criança disse que as plantas precisam?",
   "palavrasChave": ["plantas", "feijão", "experimento", "germinar"],
   "folhas": [],
   "autoria": {

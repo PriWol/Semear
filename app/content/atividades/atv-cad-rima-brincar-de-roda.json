@@ -12,19 +12,19 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Atenção: Roda com poucas pessoas e espaço livre; lenço leve; nunca cubra o rosto dela. Corra de mão dada, em chão firme, sem puxá-la pelo braço. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Roda com poucas pessoas e espaço livre; lenço leve; nunca cubra o rosto da criança. Corra de mão dada, em chão firme, sem puxar a criança pelo braço. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["roda", "corre cotia", "cadê achou", "lencinho"],
   "objetivo": "A criança brinca de roda (corre, cotia) e de “cadê? achou!”, treinando a antecipação e o susto bom.",
   "passos": [
     {
       "titulo": "Corre, cotia",
       "minutos": 2,
-      "texto": "*Corre, cotia, na casa da tia, / corre, cipó, na casa da avó; / lencinho na mão, caiu no chão.* **O gesto:** em roda, com poucas pessoas, uma anda por fora com um lencinho; deixa cair atrás de alguém. Com a criança, deixe cair atrás dela e corra de mão dada. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+      "texto": "*Corre, cotia, na casa da tia, / corre, cipó, na casa da avó; / lencinho na mão, caiu no chão.* **O gesto:** em roda, com poucas pessoas, uma anda por fora com um lencinho; deixa cair atrás de alguém. Com a criança, deixe cair atrás da criança e corra de mão dada. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
     },
     {
       "titulo": "Cadê? Achou!",
       "minutos": 2,
-      "texto": "*Cadê (nome da criança)? / Cadê, cadê? / Está escondida? / Eu vou achar você! / Achou! Achou! / Achou! Achou!* **O gesto:** cubra o **seu** rosto com as mãos (ou com um lenço leve que ela possa puxar) nos primeiros versos e descubra no “achou”. Nunca cubra o rosto dela. Brinque com paciência: ela pode pedir muitas vezes. Rima escrita pela coleção."
+      "texto": "*Cadê (nome da criança)? / Cadê, cadê? / Está escondida? / Eu vou achar você! / Achou! Achou! / Achou! Achou!* **O gesto:** cubra o **seu** rosto com as mãos (ou com um lenço leve que a criança possa puxar) nos primeiros versos e descubra no “achou”. Nunca cubra o rosto da criança. Brinque com paciência: a criança pode pedir muitas vezes. Rima escrita pela coleção."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
@@ -34,7 +34,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -51,11 +51,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

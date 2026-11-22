@@ -24,7 +24,7 @@
     {
       "titulo": "Ser o cisne",
       "minutos": 3,
-      "texto": "Com um lenço branco, ela é o cisne: braços compridos, passos bem devagar, sem parar."
+      "texto": "Com um lenço branco, a criança é o cisne: braços compridos, passos bem devagar, sem parar."
     },
     {
       "titulo": "Comparar",
@@ -39,7 +39,7 @@
   },
   "ajustes": {
     "dificil": "Só escute no colo, balançando.",
-    "facil": "Peça que ela mostre com o lenço quando a melodia sobe e quando desce."
+    "facil": "Peça que a criança mostre com o lenço quando a melodia sobe e quando desce."
   },
   "materiais": [
     {
@@ -56,7 +56,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela fez com o lenço durante a música?",
+  "perguntaFicha": "O que a criança fez com o lenço durante a música?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

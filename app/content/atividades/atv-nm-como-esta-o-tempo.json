@@ -12,7 +12,7 @@
     {
       "titulo": "Olhar",
       "minutos": 2,
-      "texto": "Vão até a janela ou a porta e olhem o céu: “E hoje, sol ou chuva?”. Deixe que ela diga ou aponte.",
+      "texto": "Vão até a janela ou a porta e olhem o céu: “E hoje, sol ou chuva?”. Deixe que a criança diga ou aponte.",
       "fala": "Como está o tempo?"
     },
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Vestir",
       "minutos": 3,
-      "texto": "De volta, ela escolhe uma peça de roupa para esse tempo (chapéu, casaco, galocha). Diga o nome do tempo de novo."
+      "texto": "De volta, a criança escolhe uma peça de roupa para esse tempo (chapéu, casaco, galocha). Diga o nome do tempo de novo."
     }
   ],
   "observar": {
@@ -57,7 +57,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que palavras ela usou para o tempo?",
+  "perguntaFicha": "Que palavras a criança usou para o tempo?",
   "palavrasChave": ["clima", "chuva", "sol", "vento", "tempo"],
   "folhas": [],
   "autoria": {

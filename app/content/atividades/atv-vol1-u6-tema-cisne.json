@@ -29,7 +29,7 @@
     {
       "titulo": "Conversar",
       "minutos": 2,
-      "texto": "*“Essa música é alegre ou triste?”* Não há resposta errada: ela pode dizer “bonita”.",
+      "texto": "*“Essa música é alegre ou triste?”* Não há resposta errada: a criança pode dizer “bonita”.",
       "fala": "Essa música é alegre ou triste?"
     }
   ],
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Só escute no colo, balançando devagar.",
-    "facil": "Peça que ela invente como o cisne anda quando a música fica mais forte."
+    "facil": "Peça que a criança invente como o cisne anda quando a música fica mais forte."
   },
   "materiais": [
     {
@@ -62,7 +62,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Como ela disse que era a música?",
+  "perguntaFicha": "Como a criança disse que era a música?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

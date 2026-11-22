@@ -6,18 +6,18 @@
   "idade": [6, 8],
   "duracaoMin": 20,
   "preparoMin": 3,
-  "cuidados": "Atenção: nesta conversa não existe resposta certa; não corrija opinião. Se o tema da história for difícil (perda, medo), pare quando ela pedir e retome outro dia.",
+  "cuidados": "Atenção: nesta conversa não existe resposta certa; não corrija opinião. Se o tema da história for difícil (perda, medo), pare quando a criança pedir e retome outro dia.",
   "objetivo": "A criança dá razões para o que o personagem fez e diz o que mudaria na história, justificando.",
   "passos": [
     {
       "titulo": "Ler com uma pausa",
       "minutos": 6,
-      "texto": "Leia uma história com um dilema (por exemplo, *O Patinho Feio*, conto de Andersen, ou outra de que ela goste). Pare num ponto de escolha: *“O que será que ele vai fazer?”*"
+      "texto": "Leia uma história com um dilema (por exemplo, *O Patinho Feio*, conto de Andersen, ou outra de que a criança goste). Pare num ponto de escolha: *“O que será que ele vai fazer?”*"
     },
     {
       "titulo": "Por que será?",
       "minutos": 6,
-      "texto": "Depois de ler, pergunte: *“Por que será que ele fez isso?”*. Quando ela responder, sempre peça: *“Por quê? O que te faz pensar isso?”* Ouça com interesse, sem dizer se está certo.",
+      "texto": "Depois de ler, pergunte: *“Por que será que ele fez isso?”*. Quando a criança responder, sempre peça: *“Por quê? O que te faz pensar isso?”* Ouça com interesse, sem dizer se está certo.",
       "fala": "Por que será?"
     },
     {
@@ -28,7 +28,7 @@
     {
       "titulo": "Ligar com a vida",
       "minutos": 4,
-      "texto": "Pergunte se isso já aconteceu com ela, com a família ou em outra história. Registre uma frase dela no caderno, se quiser."
+      "texto": "Pergunte se isso já aconteceu com a criança, com a família ou em outra história. Registre uma frase da criança no caderno, se quiser."
     }
   ],
   "observar": {
@@ -42,12 +42,12 @@
     ]
   },
   "ajustes": {
-    "dificil": "Pergunte só “por que será?” uma vez e ofereça duas razões para ela escolher.",
+    "dificil": "Pergunte só “por que será?” uma vez e ofereça duas razões para a criança escolher.",
     "facil": "Peça que compare com outra história e diga o que há de parecido e de diferente."
   },
   "materiais": [
     {
-      "item": "Livro ou conto de que ela goste",
+      "item": "Livro ou conto de que a criança goste",
       "deCasa": true
     },
     {
@@ -56,23 +56,23 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe a pergunta aberta e o livro à mão; ela volta a ele para procurar a prova da resposta.",
+    "Montessori": "Deixe a pergunta aberta e o livro à mão; a criança volta a ele para procurar a prova da resposta.",
     "Waldorf": "Mantenha o tom de contador: deixe a imagem agir sem moral pronta e converse sem forçar conclusão.",
-    "Clássico": "Ligue a história a uma virtude (coragem, justiça) e peça que ela diga qual apareceu.",
+    "Clássico": "Ligue a história a uma virtude (coragem, justiça) e peça que a criança diga qual apareceu.",
     "Religioso": "Se fizer sentido, converse sobre a escolha do personagem à luz de valores da família.",
-    "Charlotte Mason": "Use um livro vivo e converse como num círculo de leitura: ela conta e opina com os próprios termos."
+    "Charlotte Mason": "Use um livro vivo e converse como num círculo de leitura: a criança conta e opina com os próprios termos."
   },
   "evidencias": [
     {
       "texto": "Deu uma razão ligada à história",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Disse o que mudaria e por quê",
       "resposta": "☐ não   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que “por quê” ela deu?",
+  "perguntaFicha": "Que “por quê” a criança deu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

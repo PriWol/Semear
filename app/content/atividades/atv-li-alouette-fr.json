@@ -12,7 +12,7 @@
     {
       "titulo": "Aprender",
       "minutos": 5,
-      "texto": "Cante devagar: “Alouette, gentille alouette, alouette, je te plumerai”. Mostre as partes do corpo (la tête, le bec, le nez, le dos). Ela repete e toca cada parte.",
+      "texto": "Cante devagar: “Alouette, gentille alouette, alouette, je te plumerai”. Mostre as partes do corpo (la tête, le bec, le nez, le dos). A criança repete e toca cada parte.",
       "fala": "Alouette, gentille alouette !"
     },
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Caderno",
       "minutos": 3,
-      "texto": "Ela desenha uma cotovia (alouette) e escreve (ou você escreve) o título na página de canções."
+      "texto": "A criança desenha uma cotovia (alouette) e escreve (ou você escreve) o título na página de canções."
     }
   ],
   "observar": {
@@ -50,7 +50,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que partes do corpo ela cantou?",
+  "perguntaFicha": "Que partes do corpo a criança cantou?",
   "palavrasChave": ["alouette", "canção", "francês", "partes do corpo"],
   "idioma": "fr",
   "folhas": [],

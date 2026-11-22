@@ -11,7 +11,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Os pulos e os braços de violino no ar pedem espaço livre, sem quinas por perto; os dedos que sobem pelo braço, com toque leve; pare se ela não gostar.",
+  "cuidados": "Os pulos e os braços de violino no ar pedem espaço livre, sem quinas por perto; os dedos que sobem pelo braço, com toque leve; pare se a criança não gostar.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "os bichos"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: os bichos).",
   "passos": [
@@ -24,7 +24,7 @@
     {
       "titulo": "Cantar: Hickory dickory dock",
       "minutos": 2,
-      "texto": "O gesto: suba os dedos pelo braço dela (o rato) até “one”, e desça rápido; bata uma palma no “one”. É uma rima para “up” e “down” e para contar até um. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "texto": "O gesto: suba os dedos pelo braço da criança (o rato) até “one”, e desça rápido; bata uma palma no “one”. É uma rima para “up” e “down” e para contar até um. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
       "fala": "Hickory, dickory, dock, / the mouse ran up the clock; / the clock struck one, / the mouse ran down, / hickory, dickory, dock."
     },
     {

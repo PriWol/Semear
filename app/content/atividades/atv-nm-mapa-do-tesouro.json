@@ -12,18 +12,18 @@
     {
       "titulo": "Olhar de cima",
       "minutos": 4,
-      "texto": "Suba-a em uma cadeira firme, com ajuda, ou mostre uma foto da sala vista de cima. “E se fôssemos um passarinho?”.",
+      "texto": "Ajude a criança a subir em uma cadeira firme, ou mostre uma foto da sala vista de cima. “E se fôssemos um passarinho?”.",
       "fala": "O que o passarinho veria?"
     },
     {
       "titulo": "Mapa",
       "minutos": 10,
-      "texto": "Em uma folha, ela desenha a sala: porta, janela, sofá, mesa. Ajude a posicionar as coisas. Marque um X onde o tesouro está escondido."
+      "texto": "Em uma folha, a criança desenha a sala: porta, janela, sofá, mesa. Ajude a posicionar as coisas. Marque um X onde o tesouro está escondido."
     },
     {
       "titulo": "Caçada",
       "minutos": 6,
-      "texto": "Peça que um adulto escolha um esconderijo e desenhe em outro mapa, ou troque os papéis. Ela segue o mapa e acha o tesouro."
+      "texto": "Peça que um adulto escolha um esconderijo e desenhe em outro mapa, ou troque os papéis. A criança segue o mapa e acha o tesouro."
     }
   ],
   "observar": {
@@ -35,7 +35,7 @@
   },
   "ajustes": {
     "dificil": "Faça só o contorno da sala e três móveis.",
-    "facil": "Peça que desenhe o mapa da casa toda, com legenda e setas. Aos 8 anos, ela também dá as instruções de caminho em passos (“três passos à frente, vire à direita”) para você seguir."
+    "facil": "Peça que desenhe o mapa da casa toda, com legenda e setas. Aos 8 anos, a criança também dá as instruções de caminho em passos (“três passos à frente, vire à direita”) para você seguir."
   },
   "materiais": [
     {
@@ -61,7 +61,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que detalhes ela colocou no mapa?",
+  "perguntaFicha": "Que detalhes a criança colocou no mapa?",
   "palavrasChave": ["mapa", "espaço", "tesouro", "visão de cima"],
   "folhas": [],
   "autoria": {

@@ -13,30 +13,30 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Segure-a junto à janela ou à porta aberta; janela só com tela de proteção ou trava e nunca com a criança em cima de cadeira ou sofá. Não olhem diretamente para o sol.",
+  "cuidados": "Segure a criança junto à janela ou à porta aberta; janela só com tela de proteção ou trava e nunca com a criança em cima de cadeira ou sofá. Não olhem diretamente para o sol.",
   "palavrasChave": ["inglês", "english", "acordar e se arrumar", "what's the weather?"],
   "objetivo": "Ligar palavras em inglês ao que se vê, se toca e se sente no dia a dia (unidade: acordar e se arrumar).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "It's sunny! Look, the sun. / It's cloudy. Do you see the clouds? / It's rainy. We need an umbrella."
     },
     {
       "titulo": "Passo 1",
       "minutos": 2,
-      "texto": "Vão juntas à janela e olhem o céu. Diga a palavra do dia em inglês e faça o gesto: sol (mãos abertas), nuvem (mão arredondada), chuva (dedos caindo)."
+      "texto": "Vão juntos à janela e olhem o céu. Diga a palavra do dia em inglês e faça o gesto: sol (mãos abertas), nuvem (mão arredondada), chuva (dedos caindo)."
     },
     {
       "titulo": "Passo 2",
       "minutos": 1,
-      "texto": "Deixe que ela “faça o tempo” com as mãos."
+      "texto": "Deixe que a criança “faça o tempo” com as mãos."
     },
     {
       "titulo": "Passo 3",
       "minutos": 1,
-      "texto": "Decidam juntas o que vestir: “it's sunny, let's wear a hat”."
+      "texto": "Decidam juntos o que vestir: “it's sunny, let's wear a hat”."
     },
     {
       "titulo": "Passo 4",
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Is it sunny or cloudy? / Is it hot or cold? / What do we need?"
     },
     {

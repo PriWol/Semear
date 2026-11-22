@@ -29,7 +29,7 @@
     {
       "titulo": "Qual é?",
       "minutos": 4,
-      "texto": "Toque uma das duas sem avisar e ela escolhe se é a lebre ou a tartaruga.",
+      "texto": "Toque uma das duas sem avisar e a criança escolhe se é a lebre ou a tartaruga.",
       "fala": "É a lebre ou a tartaruga?"
     }
   ],
@@ -41,8 +41,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Só uma das músicas, a que ela preferir.",
-    "facil": "Peça que ela invente um terceiro bicho e como ele se move."
+    "dificil": "Só uma das músicas, a que a criança preferir.",
+    "facil": "Peça que a criança invente um terceiro bicho e como ele se move."
   },
   "materiais": [
     {
@@ -55,7 +55,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Ela acertou entre a lebre e a tartaruga?",
+  "perguntaFicha": "A criança acertou entre a lebre e a tartaruga?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -30,7 +30,7 @@
     {
       "titulo": "Inventar uma criatura",
       "minutos": 7,
-      "texto": "Invente uma criatura que não existe. Modele uma pessoa que cuida dela (como Mary Cassatt pintou). Dê nome à peça e escolha onde guardá-la."
+      "texto": "Invente uma criatura que não existe. Modele uma pessoa que cuida da criança (como Mary Cassatt pintou). Dê nome à peça e escolha onde guardá-la."
     }
   ],
   "observar": {
@@ -46,7 +46,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Se o dia estiver difícil: só apertar e amassar a massa por alguns minutos, sem fazer nada com ela.",
+    "dificil": "Se o dia estiver difícil: só apertar e amassar a massa por alguns minutos, sem fazer nada com a criança.",
     "facil": "Se o interesse crescer: olhar um vaso, um prato ou uma cuia de verdade e conversar sobre como alguém os fez com as mãos."
   },
   "materiais": [
@@ -76,7 +76,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela fez com a massa e como contou?",
+  "perguntaFicha": "O que a criança fez com a massa e como contou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

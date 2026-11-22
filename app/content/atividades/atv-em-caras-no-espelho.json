@@ -7,7 +7,7 @@
   "duracaoMin": 8,
   "preparoMin": 3,
   "cuidados": "Atenção: nenhuma peça pequena que caiba na boca. Fique junto da criança o tempo todo. Use um espelho que não quebre e fique preso na parede ou no chão.",
-  "objetivo": "A criança imita expressões (feliz, triste, brava, com medo) e começa a ligar cada cara a uma palavra.",
+  "objetivo": "A criança imita expressões (alegria, tristeza, raiva, medo) e começa a ligar cada cara a uma palavra.",
   "passos": [
     {
       "titulo": "Olhem juntos",
@@ -18,7 +18,7 @@
     {
       "titulo": "Mais caras",
       "minutos": 4,
-      "texto": "Mostre **triste**, **brava** e **surpresa**, uma de cada vez, sempre com a palavra. Troque: a criança faz uma cara e você adivinha.",
+      "texto": "Mostre **tristeza**, **raiva** e **surpresa**, uma de cada vez, sempre com a palavra. Troque: a criança faz uma cara e você adivinha.",
       "fala": "Que cara você fez?"
     },
     {
@@ -39,7 +39,7 @@
   },
   "ajustes": {
     "dificil": "Fique só em duas caras (feliz e triste).",
-    "facil": "Peça que ela faça a cara de um personagem do livro favorito."
+    "facil": "Peça que a criança faça a cara de um personagem do livro favorito."
   },
   "materiais": [
     {
@@ -54,10 +54,10 @@
     },
     {
       "texto": "Disse ou apontou uma emoção",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavra de emoção ela usou hoje?",
+  "perguntaFicha": "Que palavra de emoção a criança usou hoje?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

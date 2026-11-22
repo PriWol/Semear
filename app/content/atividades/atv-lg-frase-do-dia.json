@@ -12,24 +12,24 @@
     {
       "titulo": "A frase do dia",
       "minutos": 4,
-      "texto": "Converse: *“O que aconteceu de bom hoje?”* e peça que ela diga uma frase pronta. Diga em voz alta e peça que repita antes de escrever, para guardar a frase.",
+      "texto": "Converse: *“O que aconteceu de bom hoje?”* e peça que a criança diga uma frase pronta. Diga em voz alta e peça que repita antes de escrever, para guardar a frase.",
       "fala": "Qual é a sua frase?"
     },
     {
       "titulo": "Escrever com os três cuidados",
       "minutos": 8,
-      "texto": "Mostre os três cuidados: **maiúscula** no começo, **um dedo** de espaço entre as palavras, **ponto** no fim. Ela escreve a frase e confere cada cuidado com o dedo."
+      "texto": "Mostre os três cuidados: **maiúscula** no começo, **um dedo** de espaço entre as palavras, **ponto** no fim. A criança escreve a frase e confere cada cuidado com o dedo."
     },
     {
       "titulo": "Detetive do ponto",
       "minutos": 5,
-      "texto": "Escreva (ou mostre) duas frases com erro: sem ponto, sem maiúscula. Ela acha e corrige com lápis de cor.",
+      "texto": "Escreva (ou mostre) duas frases com erro: sem ponto, sem maiúscula. A criança acha e corrige com lápis de cor.",
       "fala": "Onde está o erro?"
     },
     {
       "titulo": "Ler de volta",
       "minutos": 3,
-      "texto": "Ela lê a frase em voz alta apontando cada palavra. Guardem a frase num caderno de “frases do dia”."
+      "texto": "A criança lê a frase em voz alta apontando cada palavra. Guardem a frase num caderno de “frases do dia”."
     }
   ],
   "observar": {
@@ -57,9 +57,9 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Apresente maiúscula e ponto com cartões de gramática simples e deixe-a mexer neles.",
+    "Montessori": "Apresente maiúscula e ponto com cartões de gramática simples e deixe a criança mexer neles.",
     "Waldorf": "Só a partir dos 7 anos e meio: a frase nasce de uma história que a classe viveu, escrita à mão, com capricho e cor.",
-    "Clássico": "Faça cópia da frase de um bom autor e depois peça uma frase de autoria dela.",
+    "Clássico": "Faça cópia da frase de um bom autor e depois peça uma frase de autoria da criança.",
     "Religioso": "Se desejar, a frase do dia pode ser uma gratidão a Deus pelo que viveu.",
     "Charlotte Mason": "Use uma frase tirada da narração de um livro lido e peça cópia curta e atenta."
   },
@@ -73,7 +73,7 @@
       "resposta": "☐ não   ☐ às vezes   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que cuidado de escrita ela esqueceu mais?",
+  "perguntaFicha": "Que cuidado de escrita a criança esqueceu mais?",
   "folhas": [
     {
       "tipo": "desenho",
