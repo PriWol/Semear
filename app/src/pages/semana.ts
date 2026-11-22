@@ -1,5 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
-import { lerFormulario, lista, novoId } from '../ui/app';
+import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
@@ -32,7 +31,7 @@ const DIAS_PADRAO: Dia[] = ['seg', 'qua', 'sex'];
 export const paginaSemana: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
   const crianca = params.id ? await ctx.repo.crianca(params.id) : null;
-  if (!familia || !crianca) throw new Error('Criança não encontrada.');
+  if (!familia || !crianca) throw new NaoEncontrado('criança');
   const agora = ctx.agora();
   const idade = idadeEmAnos(crianca.nascimento, new Date(agora));
   const inicio = segundaDaSemana(new Date(agora));

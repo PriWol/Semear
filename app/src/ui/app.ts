@@ -16,6 +16,20 @@ export interface Contexto {
   avisar: (mensagem: string, nivel?: NivelAviso) => void;
 }
 
+/**
+ * Endereço de uma criança, sessão ou atividade que não existe (link antigo, dado apagado). Não é defeito do
+ * app: a tela mostra "Não encontramos…" com a volta ao início, e nada vai para o console (QA1-09).
+ */
+export class NaoEncontrado extends Error {
+  constructor(
+    readonly oQue: 'criança' | 'sessão' | 'atividade',
+    mensagem?: string,
+  ) {
+    super(mensagem ?? `${oQue[0]!.toUpperCase()}${oQue.slice(1)} não encontrada.`);
+    this.name = 'NaoEncontrado';
+  }
+}
+
 export interface Pagina {
   titulo: string;
   conteudo: HtmlSeguro;
@@ -115,6 +129,16 @@ export function iniciarApp(
       if (hashDesenhado !== null && hashDesenhado !== location.hash) focarTitulo(el);
       hashDesenhado = location.hash;
     } catch (erro) {
+      if (erro instanceof NaoEncontrado) {
+        if (minha !== ultima) return;
+        document.title = `Não encontrado · Semear`;
+        raiz.innerHTML = html`<div class="cartao">
+          <h1>Não encontramos essa ${erro.oQue}</h1>
+          <p>O endereço pode estar antigo ou o cadastro foi removido.</p>
+          <p><a href="#/">Voltar ao início</a></p>
+        </div>`.valor;
+        return;
+      }
       console.error(erro);
       if (minha !== ultima) return;
       raiz.innerHTML = html`<div class="cartao erro">

@@ -1,5 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
-import { lerFormulario, lista, novoId } from '../ui/app';
+import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { IDIOMAS, LETRAS, type Crianca, type Idioma } from '../domain/tipos';
 import { faixaEtaria } from '../domain/faixa';
@@ -17,7 +16,7 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
     };
   const id = params.id ?? 'nova';
   const existente = id === 'nova' ? null : await ctx.repo.crianca(id);
-  if (id !== 'nova' && !existente) throw new Error('Criança não encontrada.');
+  if (id !== 'nova' && !existente) throw new NaoEncontrado('criança');
   const c: Crianca = existente ?? {
     id: novoId(),
     nome: '',

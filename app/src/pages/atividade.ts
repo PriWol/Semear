@@ -15,7 +15,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
   if (!atividadePublicada(encontrada)) {
     return {
       titulo: 'Atividade não encontrada',
-      conteudo: html`<h1>Atividade não encontrada</h1>
+      conteudo: html`<h1>Não encontramos essa atividade</h1>
         <p>Não achamos essa atividade. Ela pode ter sido retirada ou o endereço está incorreto.</p>
         <p><a href="#/atividades">Voltar às atividades</a></p>`,
     };

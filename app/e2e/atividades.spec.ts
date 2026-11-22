@@ -120,7 +120,7 @@ test('voltar da atividade mantém a busca da lista', async ({ page }) => {
 
 test('atividade inexistente mostra a mensagem', async ({ page }) => {
   await page.goto('./#/atividade/nao-existe');
-  await expect(page.getByRole('heading', { name: 'Atividade não encontrada' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Não encontramos essa atividade' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Voltar às atividades' })).toBeVisible();
 });
 

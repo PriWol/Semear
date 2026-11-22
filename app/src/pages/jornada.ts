@@ -1,4 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
+import { NaoEncontrado, type FabricaPagina } from '../ui/app';
 import { confiavel, html, textoRico } from '../ui/html';
 import { pareceProntoPara, SESSOES_PARA_PARECER_PRONTO } from '../domain/registro';
 import { idadeEmAnos } from '../domain/datas';
@@ -32,7 +32,7 @@ let reabrir = new Set<string>();
 export const paginaJornada: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
   const crianca = params.id ? await ctx.repo.crianca(params.id) : null;
-  if (!familia || !crianca) throw new Error('Criança não encontrada.');
+  if (!familia || !crianca) throw new NaoEncontrado('criança');
   const idade = idadeEmAnos(crianca.nascimento, new Date(ctx.agora()));
   const estados = await ctx.repo.estados(crianca.id);
   // O histórico alimenta o selo "parece pronto" (§5.2): a ficha de registro não muda o estado do marco.

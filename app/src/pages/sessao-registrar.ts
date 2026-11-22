@@ -1,4 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
+import { NaoEncontrado, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import {
   montarRegistro,
@@ -19,7 +19,7 @@ const ERRO_AO_SALVAR = 'Não foi possível salvar. Seus dados continuam na tela.
 export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
   const sessao = params.id ? await ctx.repo.sessao(params.id) : null;
   const crianca = sessao ? await ctx.repo.crianca(sessao.criancaId) : null;
-  if (!sessao || !crianca) throw new Error('Sessão não encontrada.');
+  if (!sessao || !crianca) throw new NaoEncontrado('sessão');
 
   const ficha = observacoesDaSessao(sessao, ctx.idx);
   const anteriores = observacoesRegistradas(sessao.id, await ctx.repo.historico(crianca.id));
