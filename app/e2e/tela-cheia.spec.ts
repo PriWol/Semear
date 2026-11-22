@@ -101,7 +101,7 @@ test('sessão: o painel abre, imprime, fica isolado do app e fecha por Esc e pel
       }
     };
     return {
-      origem: location.origin,
+      origem: window.origin,
       idb: await erro(() => indexedDB.open('semear')),
       storage: await erro(() => localStorage.getItem('x')),
     };
@@ -125,7 +125,10 @@ test('sessão: o painel abre, imprime, fica isolado do app e fecha por Esc e pel
   // Reabre e fecha pelo botão "Fechar".
   await abrir.click();
   await expect(page.getByRole('dialog', { name: /Sessão/ })).toBeVisible();
-  await page.getByRole('button', { name: 'Fechar', exact: true }).click();
+  await page
+    .locator('dialog.painel-pacote')
+    .getByRole('button', { name: 'Fechar', exact: true })
+    .click();
   await expect(page.locator('dialog.painel-pacote')).toHaveCount(0);
   await expect(abrir).toBeFocused();
 
