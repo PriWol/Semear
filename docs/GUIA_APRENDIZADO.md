@@ -124,6 +124,25 @@ teste). O **teste de propriedades** (`tests/sugestor-conteudo.test.ts`) roda a r
 combinações e confere afirmações que valem sempre ("a soma fica em até 110% do tempo"), em vez de comparar uma
 lista de ids que mudaria a cada atividade nova. (ADR 0036)
 
+### Idade como peso, ponto de partida pela idade e vertente (gerador de sessão v2, etapas 2 e 3)
+**O que é:** três regras novas do gerador, todas funções puras. (1) A **idade pesa, não filtra**
+(`src/domain/idade-sugestao.ts`): dentro da faixa da atividade a criança ganha pontos e um pequeno bônus por estar
+perto do centro; passou da faixa, perde pontos por ano; a atividade que começa **2 anos ou mais acima** da criança
+é excluída, e **menores de 3 anos nunca recebem atividade que começa aos 3 ou mais**, mesmo sem alternativa (a linha
+vira "lacuna" e a tela avisa). Fora da faixa só entra quando falta opção dentro dela, com nota ("versão mais
+simples/mais exigente", tirada do campo `ajustes` da atividade). (2) **Ponto de partida provisório**: numa linha em
+que a criança não tem nenhum registro, o gerador parte do marco com idade típica mais próxima da idade (errando
+para o lado fácil), **só na sugestão e sem gravar nada**; a tela avisa "ainda não posicionada: usamos a idade".
+(3) A **vertente** pesa: marco antes da `idadeIntroducao` da vertente principal perde pontos e a proposta avisa.
+
+**Por que importa:** sem a regra de idade, uma criança de 2 anos recebia atividade de 4 a 5, e uma de 8 recebia
+atividade de 2 a 3; sem o ponto de partida, toda criança nova começava no marco 1 de toda linha, em qualquer idade
+(o "Poema do passeio" abria a sessão de todas as idades). "Peso" em vez de "filtro" respeita a decisão de que uma
+mesma atividade pode servir a várias idades; a exclusão dura fica só onde o erro é claro e, para menores de 3 anos,
+onde o ADR 0021 exige cuidados que só as atividades da faixa pequena trazem. Como nada é gravado, não há migração:
+a posição "de verdade" continua só no mapa (jornada). Na jornada, o aviso "ainda cedo para esta linha" (marco ativo
+com idade típica mais de 1,5 ano acima da criança) só avisa, não bloqueia. (ADR 0036, adendo; §5.4 e §5.6)
+
 ---
 
 ## 3. Qualidade: testes e automação
@@ -289,6 +308,9 @@ aparelho (AM/PM) e não dá para forçar 24 h; a validação fica em `horaDe24h`
 | **Marcos ativos** | Os marcos sendo trabalhados agora (fronteira + o seguinte, no máx. 2). |
 | **Pista** | Uma linha, ou uma linha num idioma (no domínio de Línguas). |
 | **Sessão** | Um encontro de estudo planejado: atividades + livro. |
+| **Peso de idade** | A idade da criança soma ou tira pontos de uma atividade em vez de aceitar ou recusar; só a distância grande vira exclusão (ADR 0036, adendo). |
+| **Ponto de partida provisório** | Posição calculada só para a sugestão, pela idade da criança, numa linha sem nenhum registro; nunca é gravada (§5.4, ADR 0036 adendo). |
+| **Lacuna** | Linha com marcos ativos mas sem atividade adequada: o gerador não força uma atividade que não serve e avisa a família e a curadoria. |
 | **Teto de duração** | Limite suave, por idade, para uma atividade da sessão (2 anos: 10 min; 7 a 8 anos: 25 min). Acima dele só entra se for a única possível (ADR 0036). |
 | **Pacote** | Os arquivos da sessão: roteiro, materiais, folhas da criança e ficha de registro. |
 | **Plano Livre / Família** | Plano gratuito permanente e plano pago por família (especificação §9). |

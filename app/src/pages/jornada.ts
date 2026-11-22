@@ -133,6 +133,15 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
                             </p>`
                           : ''
                       }
+                      ${
+                        s.aindaCedo
+                          ? html`<p class="aviso-marco">
+                              ${icone('clock')} Ainda cedo para esta linha: este marco costuma aparecer por
+                              volta dos ${String(s.marco.idadeTipica).replace('.', ',')} anos. Você decide
+                              quando começar.
+                            </p>`
+                          : ''
+                      }
                       ${orientacaoDoMarco(s.chave, s.marco.id)}
                     </div>
                     <div class="estado" role="group" aria-label="Estado de ${s.marco.titulo}">
