@@ -166,7 +166,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
             return;
           }
           const nova = { dias, duracaoMin: Number(d.duracao ?? DURACAO_PADRAO) };
-          await ctx.repo.salvarCrianca({ ...crianca, rotina: nova });
+          await ctx.repo.atualizarCrianca(crianca.id, { rotina: nova });
           const novo = planejarSemana(ctx.idx, { ...(await base()), id: novoId(), rotina: nova });
           await ctx.repo.salvarPlano(novo);
           void sincronizarComOAparelho(ctx, { pedirPermissao: false });

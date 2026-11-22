@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { nascimentoPlausivel, problemaDeNascimento } from '../src/domain/datas';
 import { criancaPadrao } from '../src/domain/criancas';
 import { familiaSemNome } from '../src/domain/pendencias';
+import { camposAlterados } from '../src/domain/campos';
 
 // D18: bloqueia só o impossível (formato falso, futuro, mais de 18 anos); o resto só avisa no formulário.
 const HOJE = new Date(2026, 10, 22, 12); // 22/11/2026, horário local
@@ -61,5 +62,15 @@ describe('familiaSemNome (D12)', () => {
     expect(familiaSemNome({ educador: '' })).toBe(true);
     expect(familiaSemNome({ educador: '  ' })).toBe(true);
     expect(familiaSemNome({ educador: 'Priscila' })).toBe(false);
+  });
+});
+
+describe('camposAlterados (SEG-4)', () => {
+  it('devolve só o que mudou, comparando listas pelo conteúdo', () => {
+    const antes = { educador: 'A', inspiracoes: ['Waldorf'], vertente: 'Montessori' };
+    const depois = { educador: 'B', inspiracoes: ['Waldorf'], vertente: 'Montessori' };
+    expect(camposAlterados(antes, depois)).toEqual({ educador: 'B' });
+    expect(camposAlterados(antes, { ...antes, inspiracoes: [] })).toEqual({ inspiracoes: [] });
+    expect(camposAlterados(antes, { ...antes })).toEqual({});
   });
 });

@@ -2,7 +2,8 @@ import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from 
 import { html } from '../ui/html';
 import { IDIOMAS, LETRAS, type Crianca, type Idioma } from '../domain/tipos';
 import { faixaEtaria } from '../domain/faixa';
-import { dataLocalISO, idadeEmAnos } from '../domain/datas';
+import { idadeEmAnos, MENSAGEM_NASCIMENTO, problemaDeNascimento } from '../domain/datas';
+import { camposAlterados } from '../domain/campos';
 import { ehLetra } from '../domain/letra';
 import { letraPadrao, NOME_LETRA } from '../domain/letra';
 import { avisoExemplo, ligarAvisoExemplo } from '../ui/exemplo';
@@ -25,7 +26,6 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
     trilhas: [],
   };
   const agora = new Date(ctx.agora());
-  const hoje = dataLocalISO(agora); // dia do aparelho, não o de UTC
   const letraAuto = c.nascimento
     ? NOME_LETRA[letraPadrao(idadeEmAnos(c.nascimento, agora), familia)]
     : null;
@@ -45,9 +45,14 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
         /></label>
         <label>
           Data de nascimento
-          <input name="nascimento" type="date" required max="${hoje}" value="${c.nascimento}" />
+          <input name="nascimento" type="date" required value="${c.nascimento}" />
           <span class="nota">O Semear é pensado para crianças de 2 a 8 anos.</span>
         </label>
+        <p class="alerta" id="aviso-faixa" role="status" hidden>
+          Esta criança está fora da faixa de 2 a 8 anos para a qual o Semear foi pensado. Você pode
+          salvar mesmo assim: as atividades podem não servir bem para a idade.
+        </p>
+        <p class="alerta erro" id="erro-nascimento" role="alert" hidden></p>
         <label>
           Letra nas folhas
           <select name="letra">
@@ -94,6 +99,17 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
       </form>`,
     montar(raiz) {
       ligarAvisoExemplo(raiz, ctx);
+      const campoNascimento = raiz.querySelector<HTMLInputElement>('[name=nascimento]');
+      const avisoFaixa = raiz.querySelector<HTMLElement>('#aviso-faixa');
+      const erroNascimento = raiz.querySelector<HTMLElement>('#erro-nascimento');
+      const atualizarAvisoFaixa = () => {
+        if (!avisoFaixa || !campoNascimento) return;
+        const faixa = faixaEtaria(campoNascimento.value, agora);
+        avisoFaixa.hidden = !(faixa === 'abaixo' || faixa === 'acima');
+        if (erroNascimento) erroNascimento.hidden = true;
+      };
+      atualizarAvisoFaixa();
+      campoNascimento?.addEventListener('input', atualizarAvisoFaixa);
       raiz
         .querySelector<HTMLFormElement>('#form-crianca')
         ?.addEventListener('submit', async (ev) => {
@@ -108,7 +124,17 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
             letra: ehLetra(d.letra) ? d.letra : null,
             trilhas: lista(d.trilhas) as Idioma[],
           };
-          await ctx.repo.salvarCrianca(nova);
+          // Bloqueia só o impossível (futuro, mais de 18 anos, data que não existe), com a mensagem na tela.
+          const problema = problemaDeNascimento(nova.nascimento, agora);
+          if (problema && erroNascimento) {
+            erroNascimento.textContent = MENSAGEM_NASCIMENTO[problema];
+            erroNascimento.hidden = false;
+            campoNascimento?.focus();
+            return;
+          }
+          // Criança existente: grava só o que mudou (QA1-03); a nova entra inteira.
+          if (existente) await ctx.repo.atualizarCrianca(c.id, camposAlterados(existente, nova));
+          else await ctx.repo.salvarCrianca(nova);
           // Só avisa: um irmão fora da faixa pode usar o app, mas as atividades são feitas para 2 a 8 anos.
           const foraDaFaixa = faixaEtaria(nova.nascimento, agora);
           // Aviso de verdade (a pessoa precisa ler): fica até ser fechado.

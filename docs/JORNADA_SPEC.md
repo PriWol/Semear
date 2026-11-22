@@ -88,6 +88,14 @@
 > remove só eles: o que a pessoa cadastrar durante o exemplo é mantido, e a família fica para as crianças reais não
 > ficarem órfãs. A **versão publicada** aparece no topo e na tela de Ajustes (antes "Configurações"), com a página "Novidades" e o aviso
 > "Nova versão disponível". Detalhes: estórias #38 e #39 e ADRs 0012 e 0013.
+>
+> **Dados impossíveis são recusados (#140, decisões D12, D18, D19, D23):** a data de nascimento só é bloqueada quando
+> é impossível (não existe no calendário, está no futuro ou indica mais de 18 anos), no formulário, ao gravar e na
+> cópia importada; fora de 2 a 8 anos continua permitido, com aviso fixo no formulário. A cópia de segurança recusa
+> arquivo acima de 10 MB, crianças sem família, `criancaId` que não está no arquivo, ids de criança repetidos e
+> campos grandes demais. Ao apagar o exemplo mantendo criança real, o nome fictício do educador é zerado e a família
+> sem nome vira pendência fixa (Início e tela da Família). Sem `?crianca=`, "Preparar sessão" e a atividade avulsa
+> abrem na criança da sessão mais recente.
 
 ---
 

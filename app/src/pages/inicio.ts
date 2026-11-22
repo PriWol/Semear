@@ -9,6 +9,7 @@ import { carregarSondagem } from '../conteudo';
 import { anos, dataCurta, ROTULO_FEITA, textoProgresso } from '../ui/rotulos';
 import { sessaoRegistrada } from '../domain/registro';
 import { criarExemplo } from '../domain/exemplo';
+import { familiaSemNome } from '../domain/pendencias';
 
 export const paginaInicio: FabricaPagina = async (ctx) => {
   const familia = await ctx.repo.familia();
@@ -189,7 +190,14 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
   return {
     titulo: 'Início',
     conteudo: html`
-      <h1>Olá, ${familia.educador}!</h1>
+      <h1>${familiaSemNome(familia) ? 'Olá!' : `Olá, ${familia.educador}!`}</h1>
+      ${
+        familiaSemNome(familia)
+          ? html`<p class="alerta" id="pendencia-nome" role="note">
+              <b>Complete o nome da família.</b> <a href="#/familia">Completar agora</a>
+            </p>`
+          : ''
+      }
       ${
         precisaBackup
           ? html`<div class="alerta">

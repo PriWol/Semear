@@ -39,3 +39,14 @@ Opção 3. Regras:
   integração cobrem isso (um registro real sobrevive ao "Apagar exemplo" e nada do exemplo fica para trás).
 - Se um dia houver mais de uma família no aparelho (ex.: sincronização, #27), o marcador continua valendo, mas a
   regra de "família mantida" precisa ser revista.
+
+## Adendo (2026-11-22, estória #140, decisão D12): o nome fictício não vira o da família
+Ao apagar o exemplo mantendo criança real, a família fica, mas o nome do educador que ainda é o de fábrica
+("Marina", `EDUCADOR_EXEMPLO`) é **zerado**: antes, "Olá, Marina!" e a tela da Família passavam a ser da pessoa
+sem ela perceber. "Família sem nome" vira uma **pendência fixa**: o Início mostra "Complete o nome da família", a
+tela da Família abre com o campo vazio e um aviso que não some como um balão, e o título do Início não usa nome
+nenhum até ela preencher. O pacote impresso não usa o nome do educador, então nada de "Marina" chega ao papel.
+- Se a pessoa já trocou o nome durante o exemplo (ex.: "Priscila"), o nome dela **fica**: só o nome de fábrica é zerado.
+- "Adicionar criança" continua livre dentro do exemplo; o aviso existente basta.
+- Não muda o formato do banco nem do backup: `educador` continua texto; vazio é um valor válido (o `validarBackup`
+  não recusa uma cópia assim, para não perder dados de quem já está nessa situação).
