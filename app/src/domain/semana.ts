@@ -1,8 +1,14 @@
 // Plano semanal (#8, §6 da especificação). Funções puras e determinísticas: tudo vem por parâmetro.
 import type { IndiceConteudo } from './conteudo';
 import { dataLocalISO } from './datas';
-import { idPista, pistasDaCrianca, posicaoDaLinha } from './jornada';
-import { candidatas, atividadesRecentes, proporSessao, proximaAlternativa } from './sessao';
+import { idPista, pistasDaCrianca, posicaoParaSugestao } from './jornada';
+import {
+  candidatas,
+  atividadesRecentes,
+  proporSessao,
+  proximaAlternativa,
+  tetoDeDuracao,
+} from './sessao';
 import { sessaoRegistrada } from './registro';
 import type { Crianca, EstadosCrianca, Familia, Sessao } from './tipos';
 
@@ -170,7 +176,7 @@ export function trocarAtividade(
   const ocupadas = new Set(plano.dias.flatMap((d) => d.atividadeIds));
   const recentes = atividadesRecentes(entrada.historico, entrada.crianca.id, entrada.agora);
   for (const pista of pistasDaCrianca(idx, entrada.familia, entrada.crianca)) {
-    const pos = posicaoDaLinha(
+    const pos = posicaoParaSugestao(
       idx,
       pista,
       entrada.estados,
@@ -181,7 +187,8 @@ export function trocarAtividade(
       (e) => ({ ...e, pista: idPista(pista) }),
     );
     if (!fila.some((e) => e.atividade.id === atividadeId)) continue;
-    const outra = proximaAlternativa(fila, atividadeId, ocupadas);
+    const teto = tetoDeDuracao(entrada.idade, entrada.familia.vertentePrincipal);
+    const outra = proximaAlternativa(fila, atividadeId, ocupadas, teto);
     if (!outra) return null;
     return mudarDia(plano, dia, (d) => ({
       ...d,
