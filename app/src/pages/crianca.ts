@@ -112,11 +112,15 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
           await ctx.repo.salvarCrianca(nova);
           // Só avisa: um irmão fora da faixa pode usar o app, mas as atividades são feitas para 2 a 8 anos.
           const foraDaFaixa = faixaEtaria(nova.nascimento, agora);
-          ctx.avisar(
-            foraDaFaixa === 'abaixo' || foraDaFaixa === 'acima'
-              ? 'Dados salvos. Atenção: o Semear é pensado para crianças de 2 a 8 anos.'
-              : 'Dados salvos.',
-          );
+          // Aviso de verdade (a pessoa precisa ler): fica até ser fechado.
+          if (foraDaFaixa === 'abaixo' || foraDaFaixa === 'acima') {
+            ctx.avisar(
+              'Dados salvos. Atenção: o Semear é pensado para crianças de 2 a 8 anos.',
+              'alerta',
+            );
+          } else {
+            ctx.avisar('Dados salvos.');
+          }
           ctx.ir(existente ? '/' : `/jornada/${nova.id}`);
         });
       raiz.querySelector('#remover')?.addEventListener('click', async () => {

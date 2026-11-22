@@ -552,6 +552,21 @@ progress {
   box-shadow: var(--s-sombra);
 }
 
+/* O aviso não captura o toque, mas o botão Fechar precisa receber (QA2-12). */
+.aviso-fechar {
+  pointer-events: auto;
+  min-height: var(--s-alvo-toque);
+  margin-left: var(--s-espaco-2);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
+  background: none;
+  border: var(--s-borda) solid currentColor;
+  border-radius: var(--s-raio-pilula);
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: var(--s-texto-h1-p);

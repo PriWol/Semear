@@ -350,11 +350,14 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
             },
           });
           const r = await sincronizarComOAparelho(ctx, { pedirPermissao: true });
-          ctx.avisar(
-            r === 'sem-permissao'
-              ? 'Preferência salva, mas as notificações estão bloqueadas nas configurações do celular.'
-              : 'Aviso salvo.',
-          );
+          if (r === 'sem-permissao') {
+            ctx.avisar(
+              'Preferência salva, mas as notificações estão bloqueadas nas configurações do celular.',
+              'alerta',
+            );
+          } else {
+            ctx.avisar('Aviso salvo.');
+          }
         });
 
       raiz.querySelector('#apagar-exemplo-ajustes')?.addEventListener('click', () =>
@@ -415,7 +418,8 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         ctx.ir('/');
         // Os dados já foram apagados; se os lembretes (que podem mostrar o nome da criança) seguirem
         // agendados, a pessoa precisa saber (#25).
-        if (resultado === 'lembretes-nao-cancelados') ctx.avisar(AVISO_LEMBRETES_NAO_CANCELADOS);
+        if (resultado === 'lembretes-nao-cancelados')
+          ctx.avisar(AVISO_LEMBRETES_NAO_CANCELADOS, 'alerta');
       });
     },
   };

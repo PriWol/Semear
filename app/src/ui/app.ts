@@ -1,6 +1,7 @@
 // Casca do app: rotas por hash (ADR 0008), contexto compartilhado e renderização das páginas.
 import type { Repositorio } from '../dados/repositorio';
 import type { IndiceConteudo } from '../domain/conteudo';
+import { duracaoDoAviso, type NivelAviso } from './aviso';
 import { html, type HtmlSeguro } from './html';
 
 export interface Contexto {
@@ -11,7 +12,8 @@ export interface Contexto {
   ir: (rota: string) => void;
   /** renderiza de novo a página atual (após uma ação) */
   atualizar: () => Promise<void>;
-  avisar: (mensagem: string) => void;
+  /** `sucesso` some sozinho; `alerta` fica até a pessoa fechar (QA2-12) */
+  avisar: (mensagem: string, nivel?: NivelAviso) => void;
 }
 
 export interface Pagina {
@@ -74,12 +76,14 @@ export function iniciarApp(
       else location.hash = rota;
     },
     atualizar: () => renderizar(),
-    avisar: (mensagem) => {
+    avisar: (mensagem, nivel = 'sucesso') => {
       if (!aviso) return;
-      aviso.textContent = mensagem;
+      const texto = document.getElementById('aviso-texto');
+      if (texto) texto.textContent = mensagem;
       aviso.hidden = false;
       clearTimeout(timer);
-      timer = window.setTimeout(() => (aviso.hidden = true), 3500);
+      const prazo = duracaoDoAviso(mensagem, nivel);
+      if (prazo !== null) timer = window.setTimeout(() => (aviso.hidden = true), prazo);
     },
   };
 
@@ -127,6 +131,11 @@ export function iniciarApp(
       console.error(erro);
     }
   }
+
+  document.getElementById('aviso-fechar')?.addEventListener('click', () => {
+    clearTimeout(timer);
+    if (aviso) aviso.hidden = true;
+  });
 
   document.getElementById('pular-conteudo')?.addEventListener('click', (ev) => {
     ev.preventDefault(); // "#conteudo" não é uma rota
