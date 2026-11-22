@@ -14,6 +14,7 @@ import {
 import { formatarReferencia, orientacaoParaFamilia } from '../domain/orientacao';
 import { anos, ICONE_ESTADO, NOME_ESTADO } from '../ui/rotulos';
 import { icone } from '../ui/icones';
+import { restaurarFoco, seletorPorDados } from '../ui/foco';
 
 /** Broto em linha (a especificação §5.2 pede ícone de broto e texto, sem emoji). Constante do próprio código. */
 const ICONE_BROTO = confiavel(
@@ -230,6 +231,14 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
           ctx.avisar('Posição atualizada.');
         }
         const y = window.scrollY;
+        // O botão que a pessoa usou some quando a tela é refeita: guardamos o seletor do equivalente.
+        const seletorFoco = seletorPorDados('button', {
+          acao: alvo.dataset.acao,
+          chave: alvo.dataset.chave,
+          estado: alvo.dataset.estado,
+          pista: alvo.dataset.pista,
+          marco: alvo.dataset.marco,
+        });
         reabrir = new Set(
           [...raiz.querySelectorAll<HTMLElement>('details.para-os-pais[open]')].flatMap((d) =>
             d.dataset.marco ? [d.dataset.marco] : [],
@@ -237,6 +246,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
         );
         await ctx.atualizar();
         window.scrollTo(0, y);
+        restaurarFoco(seletorFoco);
       });
     },
   };
