@@ -1,5 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
+import { irParaJornadaDepoisDeCadastrar } from './cadastro';
 
 // #141 (D11, D24): semana seguinte no planejador, caixas próprias no lugar de confirm() e letra de
 // imprensa aos 2 anos. O relógio do navegador é fixado em hora local (o app usa a data do aparelho).
@@ -126,7 +127,7 @@ test('criança de 2 anos recebe folha de imprensa, mesmo em Montessori; o seleto
   await page.getByLabel('Nome').fill('Bia');
   await page.getByLabel('Data de nascimento').fill('2024-06-15'); // 2 anos em 16/11/2026
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Bia/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Bia');
 
   await page.getByRole('link', { name: 'Planejar a semana' }).click();
   await page.getByRole('button', { name: 'Planejar semana' }).click();
