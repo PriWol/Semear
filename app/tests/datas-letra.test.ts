@@ -44,7 +44,9 @@ describe('letra padrão (§5.8)', () => {
     }
     expect(letraPadrao(3, { vertentePrincipal: 'Waldorf' })).toBe('cursiva');
     // a escolha explícita da família continua valendo
-    expect(letraDaCrianca({ letra: 'cursiva' }, 2, { vertentePrincipal: 'Montessori' })).toBe('cursiva');
+    expect(letraDaCrianca({ letra: 'cursiva' }, 2, { vertentePrincipal: 'Montessori' })).toBe(
+      'cursiva',
+    );
     expect(letraDaCrianca({ letra: null }, 2, { vertentePrincipal: 'Montessori' })).toBe('bastao');
   });
 
