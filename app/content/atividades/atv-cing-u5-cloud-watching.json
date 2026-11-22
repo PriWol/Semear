@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "não olhe para o sol; use chapéu e protetor solar; verifique a grama (formigas, espinhos). Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "não olhe para o sol; use chapéu e protetor solar; verifique a grama (formigas, espinhos). Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "sair e passear", "cloud watching"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Look at the sky. A big, white cloud. / It's moving slowly. Whoosh. / What does it look like? A dog? A bird?"
     },
     {
@@ -39,12 +39,12 @@
     {
       "titulo": "Passo 4",
       "minutos": 1,
-      "texto": "Fiquem o quanto ela quiser."
+      "texto": "Fiquem o quanto a criança quiser."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "What do you see? / Is the cloud big or small? / Where is it going?"
     },
     {

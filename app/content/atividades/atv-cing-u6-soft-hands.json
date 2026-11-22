@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "com animal de verdade, só se ele for calmo e você ficar junto, e nunca deixe a criança sozinha com ele; lave as mãos depois. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "com animal de verdade, só se ele for calmo e você ficar junto, e nunca deixe a criança com ele sem um adulto ao lado; lave as mãos depois. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "os bichos", "soft hands"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Soft hands. Gentle, gentle. / Like this. Pat, pat, pat. / So gentle! The kitty likes it."
     },
     {
@@ -29,12 +29,12 @@
     {
       "titulo": "Passo 2",
       "minutos": 1,
-      "texto": "Pegue a mão dela e faça junto: “gentle, gentle”."
+      "texto": "Pegue a mão da criança e faça junto: “gentle, gentle”."
     },
     {
       "titulo": "Passo 3",
       "minutos": 1,
-      "texto": "Se ela bater ou apertar, pare, e diga calmamente: “soft hands, like this”."
+      "texto": "Se a criança bater ou apertar, pare, e diga calmamente: “soft hands, like this”."
     },
     {
       "titulo": "Passo 4",
@@ -44,7 +44,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Are your hands soft? / Does the kitty like it? / Can you pat the kitty softly?"
     },
     {
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "“Soft hands” é uma frase curta e útil para a fase do “não”, em que as mãos às vezes batem ou apertam: ela aprende o que fazer com as mãos, em vez de só o que não fazer. Acariciar devagar, no ritmo, é calmante também para a criança. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "“Soft hands” é uma frase curta e útil para a fase do “não”, em que as mãos às vezes batem ou apertam: a criança aprende o que fazer com as mãos, em vez de só o que não fazer. Acariciar devagar, no ritmo, é calmante também para a criança. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

@@ -11,7 +11,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "A vela é só de faz de conta (o dedo erguido); nunca use vela acesa. Se usar uma flor de verdade, confira que não é planta tóxica e que ela não vai levá-la à boca.",
+  "cuidados": "A vela é só de faz de conta (o dedo erguido); nunca use vela acesa. Se usar uma flor de verdade, confira que não é planta tóxica e que a criança não vai levá-la à boca.",
   "palavrasChave": [
     "inglês",
     "english",
@@ -23,7 +23,7 @@
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Smell the flower… mmm, it smells so good. / Now blow the candle… whoooo. Nice and slow. / One more time. Slow and gentle."
     },
     {
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 1,
-      "texto": "“Smell the flower”: inspire devagar pelo nariz, de olhos fechados. “Blow the candle”: sopre pela boca, bem comprido, com o dedo dela de vela."
+      "texto": "“Smell the flower”: inspire devagar pelo nariz, de olhos fechados. “Blow the candle”: sopre pela boca, bem comprido, com o dedo da criança de vela."
     },
     {
       "titulo": "Passo 3",
@@ -49,7 +49,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "What does the flower smell like? / Did the candle go out? / How does your body feel?"
     },
     {
@@ -60,7 +60,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Soprar devagar é o jeito mais simples de baixar o ritmo do corpo. Faça com ela calma, no momento fixo de inglês: assim, quando a raiva vier, bastará dizer “let's smell the flower” e ela já conhecerá o caminho. Não force: se ela recusar, respire você e deixe que ela olhe. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Soprar devagar é o jeito mais simples de baixar o ritmo do corpo. Faça com calma, no momento fixo de inglês: assim, quando a raiva vier, bastará dizer “let's smell the flower” e a criança já conhecerá o caminho. Não force: se a criança recusar, respire você e deixe que a criança olhe. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

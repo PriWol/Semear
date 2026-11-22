@@ -11,30 +11,30 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "cuidados": "Leia com a criança no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
   "palavrasChave": ["inglês", "english", "livro", "goodnight moon"],
   "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Look, the great green room. Where is the moon? / Good night, moon. Good night, stars. / Now it's time to sleep."
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Sentem juntas, com a luz baixa, e leia devagar e baixinho."
+      "texto": "Sentem juntos, com a luz baixa, e leia devagar e baixinho."
     },
     {
       "titulo": "Passo 2",
       "minutos": 3,
-      "texto": "Aponte as coisas do quarto do livro e procure as mesmas no quarto dela: “where is the moon?”."
+      "texto": "Aponte as coisas do quarto do livro e procure as mesmas no quarto da criança: “where is the moon?”."
     },
     {
       "titulo": "Passo 3",
       "minutos": 2,
-      "texto": "Deixe que ela vire a página e diga boa-noite a cada coisa."
+      "texto": "Deixe que a criança vire a página e diga boa-noite a cada coisa."
     },
     {
       "titulo": "Passo 4",
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Where is the moon? / What do you see in the room? / Can you say good night?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Procure o camundongo em cada página. Leia só até a metade, se ela dormir. Termine com o “good night, [name]”."
+      "texto": "Procure o camundongo em cada página. Leia só até a metade, se a criança dormir. Termine com o “good night, [name]”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

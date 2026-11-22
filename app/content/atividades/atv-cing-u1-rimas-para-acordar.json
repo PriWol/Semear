@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Toque no rosto dela só com as mãos limpas e com delicadeza; em “Open, shut them”, os dedos só até o queixo, sem entrar na boca; pare se ela não gostar do toque.",
+  "cuidados": "Toque no rosto da criança só com as mãos limpas e com delicadeza; em “Open, shut them”, os dedos só até o queixo, sem entrar na boca; pare se a criança não gostar do toque.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "acordar e se arrumar"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: acordar e se arrumar).",
   "passos": [
     {
       "titulo": "Cantar: Good morning to you",
       "minutos": 2,
-      "texto": "O gesto: toque a mão dela, o nariz e as bochechas em “bright shining faces”; abra os braços no “good morning to you”. Cante baixinho, na mesma melodia que você conhece. “Good Morning to All”, de Patty Smith Hill e Mildred J. Hill (1893), em domínio público.",
+      "texto": "O gesto: toque a mão da criança, o nariz e as bochechas em “bright shining faces”; abra os braços no “good morning to you”. Cante baixinho, na mesma melodia que você conhece. “Good Morning to All”, de Patty Smith Hill e Mildred J. Hill (1893), em domínio público.",
       "fala": "Good morning to you, / good morning to you, / we're all in our places / with bright shining faces, / good morning to you."
     },
     {
       "titulo": "Cantar: Open, shut them",
       "minutos": 2,
-      "texto": "O gesto: abra e feche as mãos, bata uma palma e pouse no colo; depois “ande” com os dedos até o queixo e abra a boca. Ela vai querer o “de novo”. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "texto": "O gesto: abra e feche as mãos, bata uma palma e pouse no colo; depois “ande” com os dedos até o queixo e abra a boca. A criança vai querer o “de novo”. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
       "fala": "Open, shut them, open, shut them, / give a little clap. / Open, shut them, open, shut them, / lay them in your lap. / Creep them, creep them, creep them, creep them, / right up to your chin; / open wide your little mouth, / but do not let them in."
     },
     {

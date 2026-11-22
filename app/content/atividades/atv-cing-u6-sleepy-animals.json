@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Cubra os bichos, e não a criança, com a manta; bichos de pelúcia sem peças soltas e nada de cobrir o rosto dela; luz baixa, mas suficiente para você enxergar. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Cubra os bichos, e não a criança, com a manta; bichos de pelúcia sem peças soltas e nada de cobrir o rosto da criança; luz baixa, mas suficiente para você enxergar. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "os bichos", "sleepy animals"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "The animals are sleepy. Let's tuck them in. / Night night, kitty. Shh, shh. / They're sleeping. Let's be quiet."
     },
     {
@@ -39,18 +39,18 @@
     {
       "titulo": "Passo 4",
       "minutos": 1,
-      "texto": "Terminem com um beijo em cada bicho e um para ela."
+      "texto": "Terminem com um beijo em cada bicho e um para a criança."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Are they sleepy? / Who needs a blanket? / Can you say night night?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Cante a canção de ninar para os bichos. Cada um tem o seu lugar. Ela escolhe quem dorme primeiro."
+      "texto": "Cante a canção de ninar para os bichos. Cada um tem o seu lugar. A criança escolhe quem dorme primeiro."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "Afaste dos olhos e das mãos dela os cordões e as correntes da cortina (risco de enforcamento) e não a deixe subir na cama ou no parapeito para olhar a janela.",
+  "cuidados": "Afaste dos olhos e das mãos da criança os cordões e as correntes da cortina (risco de enforcamento) e não deixe a criança subir na cama ou no parapeito para olhar a janela.",
   "palavrasChave": ["inglês", "english", "acordar e se arrumar", "good morning, sunshine"],
   "objetivo": "Ouvir e usar inglês num momento fixo do dia (acordar e se arrumar), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Good morning, ___! Good morning, sun! / Time to wake up. Let's open the curtains. / Look, the sun is up! It's a bright day."
     },
     {
@@ -29,7 +29,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 1,
-      "texto": "Abra a cortina com ela: “let's open the curtains”. Deixe que ela ajude."
+      "texto": "Abra a cortina com a criança: “let's open the curtains”. Deixe que a criança ajude."
     },
     {
       "titulo": "Passo 3",
@@ -39,23 +39,23 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Pergunte, e espere uns 5 segundos. Se ela responder em português, repita em inglês."
+      "texto": "Pergunte, e espere uns 5 segundos. Se a criança responder em português, repita em inglês."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Are you awake? / Do you see the sun? / What do you see?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Diga bom dia ao sol, ao gato, à planta, ao ursinho. Cante “good morning” (a rima das páginas seguintes) ao abrir a cortina. Deixe que ela escolha: “curtain or window?”."
+      "texto": "Diga bom dia ao sol, ao gato, à planta, ao ursinho. Cante “good morning” (a rima das páginas seguintes) ao abrir a cortina. Deixe que a criança escolha: “curtain or window?”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Um ritual de acordar, sempre igual e na mesma língua, é o que a abordagem de “língua por hora e lugar” pede: o inglês ganha um momento só dele, e ela aprende a esperar essas frases. A voz baixa e calma da manhã também ajuda numa criança que acorda de mau humor. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Um ritual de acordar, sempre igual e na mesma língua, é o que a abordagem de “língua por hora e lugar” pede: o inglês ganha um momento só dele, e a criança aprende a esperar essas frases. A voz baixa e calma da manhã também ajuda numa criança que acorda de mau humor. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

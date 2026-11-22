@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Só brinquedos sem peças pequenas ou quebradas; a caixa leve e sem tampa pesada que possa cair; avise antes para evitar choro na troca de atividade. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Só brinquedos sem peças pequenas ou quebradas; a caixa leve e sem tampa pesada que possa cair; avise antes para evitar choro na troca de atividade. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "brincar dentro de casa", "tidy-up song"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Time to tidy up. Blocks in the box. / Pick it up. Put it in. Good job! / All done. Let's have a hug."
     },
     {
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 1,
-      "texto": "Dê a ela um brinquedo de cada vez: “blocks in the box”."
+      "texto": "Dê à criança um brinquedo de cada vez: “blocks in the box”."
     },
     {
       "titulo": "Passo 4",
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Where do the blocks go? / Can you put the ball in the box? / Is it all clean?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Cada brinquedo tem a sua “casa”. Guardem como bichos: “hop like a frog”. Quem guarda mais rápido: você ou ela?."
+      "texto": "Cada brinquedo tem a sua “casa”. Guardem como bichos: “hop like a frog”. Quem guarda mais rápido: você ou a criança?."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

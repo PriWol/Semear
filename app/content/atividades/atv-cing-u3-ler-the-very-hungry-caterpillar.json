@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "cuidados": "Leia com a criança no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
   "palavrasChave": ["inglês", "english", "livro", "the very hungry caterpillar"],
   "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Look! The caterpillar is hungry. / One apple. Where is the apple? / Now the caterpillar is full."
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Sentem com o livro e deixe que ela vire a página; mostre o buraco que a lagarta faz."
+      "texto": "Sentem com o livro e deixe que a criança vire a página; mostre o buraco que a lagarta faz."
     },
     {
       "titulo": "Passo 2",
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 2,
-      "texto": "Peça que ela aponte a fruta: “where is the strawberry?”."
+      "texto": "Peça que a criança aponte a fruta: “where is the strawberry?”."
     },
     {
       "titulo": "Passo 4",
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "What did the caterpillar eat? / How many pears? / Can you find the strawberry?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Procure na cozinha o que a lagarta comeu. Conte os buraquinhos da página. Leia só até a quinta página, se ela se cansar."
+      "texto": "Procure na cozinha o que a lagarta comeu. Conte os buraquinhos da página. Leia só até a quinta página, se a criança se cansar."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

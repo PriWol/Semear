@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Figuras ou bichos de plástico grandes demais para caber na boca dela e sem partes soltas; fique junto, pois bichos de plástico pequenos são risco de engasgo.",
+  "cuidados": "Figuras ou bichos de plástico grandes demais para caber na boca da criança e sem partes soltas; fique junto, pois bichos de plástico pequenos são risco de engasgo.",
   "palavrasChave": ["inglês", "english", "os bichos", "mama and baby"],
   "objetivo": "Ouvir e usar inglês num momento fixo do dia (os bichos), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "This is the mama cat. This is the baby. / Mama says meow. Baby says mew, mew. / Where is the baby duck? Show me."
     },
     {
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 2,
-      "texto": "Deixe que ela junte as famílias: “where is the baby?”."
+      "texto": "Deixe que a criança junte as famílias: “where is the baby?”."
     },
     {
       "titulo": "Passo 4",
@@ -44,7 +44,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Who is the mama? / Where is the baby? / Are they together?"
     },
     {

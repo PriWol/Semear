@@ -13,14 +13,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Fotos de papel resistentes e sem cantos pontudos; fique junto para que ela não leve a foto à boca e não rasgue em pedaços pequenos.",
+  "cuidados": "Fotos de papel resistentes e sem cantos pontudos; fique junto para que a criança não leve a foto à boca e não rasgue em pedaços pequenos.",
   "palavrasChave": ["inglês", "english", "a família e os sentimentos", "who is who?"],
   "objetivo": "Nomear coisas em inglês com o objeto à vista e escolhendo entre duas opções (unidade: a família e os sentimentos).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "This is Mama. This is Papa. / Where is Grandma? Show me. / Papa is cooking. Mama is reading."
     },
     {
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Who is this? / Where is the baby? / What is Mama doing?"
     },
     {
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Os nomes da família são as primeiras palavras de uma criança em qualquer língua, e as fotos dão o objeto a que a palavra se liga. Use os termos que fazem sentido na sua família: este caderno não presume quem mora na casa dela. Ela já conhece essas pessoas, o que faz da atividade um acerto garantido, e isso ajuda quem se frustra fácil. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Os nomes da família são as primeiras palavras de uma criança em qualquer língua, e as fotos dão o objeto a que a palavra se liga. Use os termos que fazem sentido na sua família: este caderno não presume quem mora na casa da criança. A criança já conhece essas pessoas, o que faz da atividade um acerto garantido, e isso ajuda quem se frustra fácil. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {
