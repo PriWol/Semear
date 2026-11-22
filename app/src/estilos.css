@@ -358,6 +358,38 @@ label.opcao input {
   max-height: var(--s-gravura-m);
   margin: 0 auto;
 }
+/* Linhas "em breve" recolhidas na jornada (D21): o resumo é o alvo de toque, com a contagem escrita. */
+.linhas-em-breve {
+  margin-bottom: var(--s-espaco-4);
+}
+.linhas-em-breve > summary {
+  display: flex;
+  align-items: center;
+  min-height: var(--s-alvo-toque);
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--s-suave);
+}
+/* Próximo passo depois de cadastrar a criança (D21): curto, com um botão principal e dois caminhos. */
+.proximo-passo {
+  display: grid;
+  gap: var(--s-espaco-3);
+  text-align: center;
+  justify-items: center;
+}
+.proximo-passo h1,
+.proximo-passo p {
+  margin: 0;
+}
+.proximo-passo .gravura img {
+  max-height: var(--s-gravura-p);
+}
+.proximo-passo-acoes {
+  display: grid;
+  gap: var(--s-espaco-2);
+  width: 100%;
+  max-width: var(--s-medida-leitura);
+}
 .topo-gravura {
   display: flex;
   align-items: center;
@@ -374,6 +406,21 @@ label.opcao input {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--s-largura-cartao-min), 1fr));
   gap: var(--s-espaco-4);
+}
+/* "Hoje com X" (D19): o cartão da criança de hoje ocupa a linha inteira, com a sugestão já pronta. */
+.crianca-cartao.hoje {
+  grid-column: 1 / -1;
+  border: var(--s-borda) solid var(--s-principal);
+}
+.hoje-sugestao {
+  margin: 0 0 var(--s-espaco-3);
+}
+.hoje-sugestao p {
+  margin: 0 0 var(--s-espaco-1);
+}
+.hoje-sugestao ul {
+  margin: 0;
+  padding-left: var(--s-espaco-4);
 }
 .progresso-dominios {
   list-style: none;

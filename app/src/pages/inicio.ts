@@ -1,4 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
+import { novoId, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
@@ -11,6 +11,13 @@ import { sessaoRegistrada } from '../domain/registro';
 import { criarExemplo } from '../domain/exemplo';
 import { figuraGravura } from '../ui/gravura';
 import { familiaSemNome } from '../domain/pendencias';
+import { criancaPadrao } from '../domain/criancas';
+import {
+  DURACAO_PADRAO,
+  montarSessaoDaProposta,
+  proporSessao,
+  type PropostaSessao,
+} from '../domain/sessao';
 
 export const paginaInicio: FabricaPagina = async (ctx) => {
   const familia = await ctx.repo.familia();
@@ -82,12 +89,18 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
   const agora = ctx.agora();
   const hoje = new Date(agora);
   const criancas = await ctx.repo.criancas();
-  const sessoes = (await ctx.repo.sessoes()).slice(0, 6);
+  const todasSessoes = await ctx.repo.sessoes();
+  const sessoes = todasSessoes.slice(0, 6);
+  // "Hoje com X" (D19): a criança da sessão mais recente, derivada das sessões (nada novo é guardado).
+  const padrao = criancaPadrao(criancas, todasSessoes);
   const ultimoBackup = await ctx.repo.ultimoBackup();
   const precisaBackup = precisaLembreteBackup(criancas, ultimoBackup, agora);
 
+  let propostaHoje: PropostaSessao | null = null;
+  // A criança de hoje vem primeiro; as outras seguem na ordem de sempre.
+  const ordenadas = padrao ? [padrao, ...criancas.filter((c) => c.id !== padrao.id)] : criancas;
   const cartoes = await Promise.all(
-    criancas.map(async (c) => {
+    ordenadas.map(async (c) => {
       const idade = idadeEmAnos(c.nascimento, hoje);
       const estados = await ctx.repo.estados(c.id);
       const porDominio = new Map<
@@ -109,6 +122,22 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         for (const id of pos.ativos) ativos.push(ctx.idx.marco(id)?.titulo ?? id);
       }
       const posicionada = Object.keys(estados).length > 0;
+      // A sugestão de hoje é gerada ao abrir e não é gravada: só o toque em "Preparar sessão de hoje" cria a sessão.
+      const proposta: PropostaSessao | null =
+        c.id === padrao?.id
+          ? proporSessao(ctx.idx, {
+              familia,
+              crianca: c,
+              idade,
+              estados,
+              historico: todasSessoes.filter((x) => x.criancaId === c.id),
+              duracaoMin: DURACAO_PADRAO,
+              foco: 'equilibrado',
+              agora,
+            })
+          : null;
+      const sugestao = proposta !== null && proposta.escolhas.length > 0 ? proposta : null;
+      if (sugestao) propostaHoje = sugestao;
       const paraRessondar = linhasParaRessondar(
         ctx.idx,
         pistasDaCrianca(ctx.idx, familia, c),
@@ -117,9 +146,9 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         familia.criadaEm,
         agora,
       );
-      return html`<article class="cartao crianca-cartao">
+      return html`<article class="cartao crianca-cartao ${c.id === padrao?.id ? 'hoje' : ''}">
         <header>
-          <h2>${c.nome}</h2>
+          <h2>${c.id === padrao?.id ? `Hoje com ${c.nome}` : c.nome}</h2>
           <span class="nota">${anos(idade)}</span>
           <a class="link-discreto" href="#/crianca/${c.id}" aria-label="Editar ${c.nome}">editar</a>
         </header>
@@ -161,13 +190,43 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
                 Ainda sem posição na jornada. Leva uns 5 minutos por domínio.
               </p>`
         }
+        ${
+          sugestao
+            ? html`<div class="hoje-sugestao">
+                <p class="nota">Sugestão de hoje · cerca de ${sugestao.minutos} min</p>
+                <ul>
+                  ${sugestao.escolhas.map(
+                    (e) =>
+                      html`<li>${e.atividade.titulo} <span class="nota">${e.atividade.duracaoMin} min</span></li>`,
+                  )}
+                </ul>
+              </div>`
+            : ''
+        }
         <div class="acoes">
-          <a
-            class="botao primario"
-            href="#/sessao/nova?crianca=${c.id}"
-            aria-label="Preparar sessão de ${c.nome}"
-            >Preparar sessão</a
-          >
+          ${
+            sugestao
+              ? html`<button
+                    class="botao primario grande"
+                    type="button"
+                    id="preparar-hoje"
+                    data-crianca="${c.id}"
+                  >
+                    Preparar sessão de hoje
+                  </button>
+                  <a
+                    class="botao"
+                    href="#/sessao/nova?crianca=${c.id}"
+                    aria-label="Mudar a sessão de ${c.nome} (duração e foco)"
+                    >Mudar</a
+                  >`
+              : html`<a
+                  class="botao primario"
+                  href="#/sessao/nova?crianca=${c.id}"
+                  aria-label="Preparar sessão de ${c.nome}"
+                  >Preparar sessão</a
+                >`
+          }
           <a
             class="botao"
             href="#/sessao/registrar?crianca=${c.id}"
@@ -250,5 +309,32 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
           : html`<p class="nota">Nenhuma sessão ainda. Prepare a primeira!</p>`
       }
     `,
+    montar(raiz) {
+      const botao = raiz.querySelector<HTMLButtonElement>('#preparar-hoje');
+      const proposta = propostaHoje;
+      const crianca = criancas.find((c) => c.id === botao?.dataset.crianca);
+      if (!botao || !proposta || !crianca) return;
+      botao.addEventListener('click', async () => {
+        botao.disabled = true; // um toque duplo não cria duas sessões
+        try {
+          const existentes = (await ctx.repo.sessoes()).map((s) => s.codigo);
+          const sessao = montarSessaoDaProposta({
+            id: novoId(),
+            crianca,
+            proposta,
+            foco: 'equilibrado',
+            agora: ctx.agora(), // a hora do toque, não a de quando a tela abriu
+            codigosExistentes: existentes,
+          });
+          await ctx.repo.salvarSessao(sessao);
+          // A prévia continua antes de imprimir: a mãe confere idade, atividades e tempo na página da sessão.
+          ctx.ir(`/sessao/${sessao.id}`);
+        } catch (erro) {
+          console.error(erro);
+          botao.disabled = false;
+          ctx.avisar('Não foi possível preparar a sessão. Tente de novo.', 'alerta');
+        }
+      });
+    },
   };
 };

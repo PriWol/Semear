@@ -5,7 +5,7 @@ import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
 import { criancaPadrao } from '../domain/criancas';
 import { marcosVisiveis } from '../domain/conteudo';
-import { IDIOMAS, type Sessao } from '../domain/tipos';
+import { IDIOMAS } from '../domain/tipos';
 import { idPista, pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import {
   atividadesRecentes,
@@ -14,7 +14,7 @@ import {
   PISTA_COMPLEMENTAR,
   DURACAO_PADRAO,
   DURACOES,
-  gerarCodigoSessao,
+  montarSessaoDaProposta,
   proporSessao,
   proximaAlternativa,
   sugerirLivro,
@@ -291,16 +291,14 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
           (alvo as HTMLButtonElement).disabled = true;
           const criadaEm = ctx.agora(); // a hora do clique, não a de quando a tela abriu
           const existentes = (await ctx.repo.sessoes()).map((s) => s.codigo);
-          const sessao: Sessao = {
+          const sessao = montarSessaoDaProposta({
             id: novoId(),
-            codigo: gerarCodigoSessao(crianca.nome, new Date(criadaEm), existentes),
-            criancaId: crianca.id,
-            criadaEm,
-            duracaoMin: proposta.minutos, // a duração real das atividades escolhidas
+            crianca,
+            proposta,
             foco,
-            atividadeIds: proposta.escolhas.map((e) => e.atividade.id),
-            livroId: proposta.livro?.id ?? null,
-          };
+            agora: criadaEm,
+            codigosExistentes: existentes,
+          });
           await ctx.repo.salvarSessao(sessao);
           ctx.ir(`/sessao/${sessao.id}`);
           return;
