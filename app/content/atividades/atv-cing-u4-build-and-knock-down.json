@@ -2,8 +2,8 @@
   "id": "atv-cing-u4-build-and-knock-down",
   "titulo": "Build and knock down",
   "marcos": ["DI.MFI.01", "LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Jogos e brincadeiras",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -15,7 +15,7 @@
   "duracaoMin": 10,
   "cuidados": "blocos leves, sem peças pequenas; derrube longe do rosto dela.",
   "palavrasChave": ["inglês", "english", "brincar dentro de casa", "build and knock down"],
-  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: brincar dentro de casa.",
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: brincar dentro de casa).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Empilhar e derrubar ensina “up” e “down”, contar até 3 e, o que é mais importante aos 2 anos, a recomeçar sem raiva: quando a torre cai, a resposta é “again!”. Para quem se frustra fácil, é um bom treino com a emoção. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Empilhar e derrubar ensina “up” e “down”, contar até 3 e, o que é mais importante aos 2 anos, a recomeçar sem raiva: quando a torre cai, a resposta é “again!”. Para quem se frustra fácil, é um bom treino com a emoção. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

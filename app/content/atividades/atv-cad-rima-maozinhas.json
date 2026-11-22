@@ -10,7 +10,7 @@
     "paginas": [14, 14]
   },
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
-  "idade": [2, 3],
+  "idade": [2, 4],
   "duracaoMin": 4,
   "cuidados": "Atenção: Cócegas e toques só se ela gostar e por pouco tempo; pare se ela se afastar. Mãos limpas e sem anéis ou pulseiras soltas. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["dedos", "mindinho", "parlenda", "rima"],
@@ -65,5 +65,9 @@
     "estado": "aprovado",
     "por": "Dona do produto",
     "em": "2026-11-21"
+  },
+  "ajustes": {
+    "dificil": "Para a criança menor: só você faz o gesto na mãozinha dela, sempre com a mesma sequência de sons.",
+    "facil": "Para a criança maior: deixe que ela faça o gesto da rima sozinha, com os próprios dedos."
   }
 }

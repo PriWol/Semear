@@ -2,8 +2,8 @@
   "id": "atv-cing-u7-i-can-do-it",
   "titulo": "I can do it!",
   "marcos": ["LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Vida prática",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -15,7 +15,7 @@
   "duracaoMin": 10,
   "cuidados": "escolha tarefas seguras, sem objetos pontudos nem água quente.",
   "palavrasChave": ["inglês", "english", "a família e os sentimentos", "i can do it!"],
-  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: a família e os sentimentos.",
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: a família e os sentimentos).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "“Eu faço!” é a frase mais típica da fase do “não”: a criança quer fazer sozinha, e o adulto acaba brigando com ela por pressa. Dar tempo, oferecer ajuda como pergunta (“do you need help?”) e elogiar o resultado (“you did it!”) transforma a briga em orgulho. A palavra “help” é uma das mais úteis a aprender. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "“Eu faço!” é a frase mais típica da fase do “não”: a criança quer fazer sozinha, e o adulto acaba brigando com ela por pressa. Dar tempo, oferecer ajuda como pergunta (“do you need help?”) e elogiar o resultado (“you did it!”) transforma a briga em orgulho. A palavra “help” é uma das mais úteis a aprender. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

@@ -1,6 +1,6 @@
 {
   "id": "atv-vol7-u2-fr",
-  "titulo": "A família em francês: “Fais dodo, Colas”, “Frère Jacques” e o jogo “Quem é quem?”",
+  "titulo": "A família em francês: duas canções e o jogo “Quem é quem?”",
   "marcos": ["LI.VOC.02", "LI.CAN.01"],
   "idioma": "fr",
   "materialImpresso": {
@@ -12,7 +12,7 @@
   "idade": [4, 8],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Famílias são diferentes: se na casa da Marina quem cuida é outra pessoa (uma tia, um avô, duas mães, dois pais), use a palavra que combina com a vida dela; os cartões são um ponto de partida, não um modelo. Na roda, segurem as mãos sem puxar e com espaço livre. Cartões e fotos recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "cuidados": "Famílias são diferentes: se na casa da criança quem cuida é outra pessoa (uma tia, um avô, duas mães, dois pais), use a palavra que combina com a vida dela; os cartões são um ponto de partida, não um modelo. Na roda, segurem as mãos sem puxar e com espaço livre. Cartões e fotos recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
   "palavrasChave": ["francês", "família", "maman", "frère jacques", "canção de ninar"],
   "objetivo": "A criança ouve uma canção de ninar francesa, aponta o cartão certo quando o adulto diz mãe, pai, bebê, irmão, irmã ou avó em francês e canta *Frère Jacques* em roda.",
   "passos": [
@@ -25,7 +25,7 @@
     {
       "titulo": "O jogo dos cartões",
       "minutos": 3,
-      "texto": "Espalhem os cartões da família com a figura para cima. O adulto diz uma palavra em francês (“maman !”) e a Marina aponta o cartão, sem pedir que repita: mère, père, bébé, frère, sœur, grand-mère, famille, câlin, amour. Depois ela aponta uma pessoa de verdade (ou uma foto) e o adulto diz a palavra.",
+      "texto": "Espalhem os cartões da família com a figura para cima. O adulto diz uma palavra em francês (“maman !”) e a criança aponta o cartão, sem pedir que repita: mère, père, bébé, frère, sœur, grand-mère, famille, câlin, amour. Depois ela aponta uma pessoa de verdade (ou uma foto) e o adulto diz a palavra.",
       "fala": "Maman !"
     },
     {

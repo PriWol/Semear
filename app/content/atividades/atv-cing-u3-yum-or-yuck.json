@@ -1,9 +1,9 @@
 {
   "id": "atv-cing-u3-yum-or-yuck",
   "titulo": "Yum or yuck?",
-  "marcos": ["LI.ESC.01", "LI.VOC.03"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "marcos": ["LI.ESC.01"],
+  "dominio": "DI",
+  "categoria": "Vida prática",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Dar nome aos gostos e permitir um “no, thank you” educado leva a briga para um lugar seguro: a recusa vira palavra, e não choro. Provar “um pedacinho”, sem pressão, é uma das orientações mais comuns para crianças que recusam comida. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Dar nome aos gostos e permitir um “no, thank you” educado leva a briga para um lugar seguro: a recusa vira palavra, e não choro. Provar “um pedacinho”, sem pressão, é uma das orientações mais comuns para crianças que recusam comida. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

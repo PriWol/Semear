@@ -20,17 +20,17 @@
     {
       "titulo": "Escolher a árvore e ouvir a história das estações",
       "minutos": 6,
-      "texto": "Escolher a árvore e visitar na primeira estação. Ouvir a história das estações. Dizer como está a árvore e o tempo."
+      "texto": "Escolha a árvore e visite na primeira estação. Ouça a história das estações. Diga como está a árvore e o tempo."
     },
     {
       "titulo": "Visitar na estação seguinte",
       "minutos": 7,
-      "texto": "Visitar a árvore na estação seguinte. Ordenar os cartões das quatro árvores. Comparar: o que mudou?"
+      "texto": "Visite a árvore na estação seguinte. Ordene os cartões das quatro árvores. Compare: o que mudou?"
     },
     {
       "titulo": "Desenhar as quatro épocas",
       "minutos": 7,
-      "texto": "Visitar nas outras estações. Desenhar a árvore nas quatro épocas. Contar a alguém o que o mito explica."
+      "texto": "Visite nas outras estações. Desenhe a árvore nas quatro épocas. Conte a alguém o que o mito explica."
     }
   ],
   "observar": {

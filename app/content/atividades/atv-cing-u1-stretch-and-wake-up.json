@@ -13,7 +13,7 @@
   "duracaoMin": 5,
   "cuidados": "chão firme e sem escorregar.",
   "palavrasChave": ["inglês", "english", "acordar e se arrumar", "stretch and wake up"],
-  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: acordar e se arrumar.",
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total) (unidade: acordar e se arrumar).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Esta é a Resposta Física Total de James Asher: a criança mostra que entendeu com o corpo, sem precisar falar. Comandos curtos e visíveis, os mesmos todo dia, são o melhor jeito de começar uma língua com quem tem 2 anos. “Jump” e “stop” treinam também o controle do impulso: pular, e parar quando o adulto diz. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Esta é a Resposta Física Total de James Asher: a criança mostra que entendeu com o corpo, sem precisar falar. Comandos curtos e visíveis, os mesmos todo dia, são o melhor jeito de começar uma língua com quem tem 2 anos. “Jump” e “stop” treinam também o controle do impulso: pular, e parar quando o adulto diz. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

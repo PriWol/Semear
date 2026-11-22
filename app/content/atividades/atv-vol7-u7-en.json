@@ -19,13 +19,13 @@
     {
       "titulo": "Ouvir a rima",
       "minutos": 3,
-      "texto": "Pegue o pé da Marina (com licença) e, a cada verso, balance um dedo, começando pelo maior; no “wee, wee, wee”, faça cócegas até o calcanhar. *Toe* é “dedo do pé” e *pig*, “porco”. O texto foi montado a partir das legendas das pranchas de *This Little Pig Went to Market* (Londres: Routledge, c. 1870, domínio público); o livro não traz melodia. Tradução da coleção: “Este porquinho foi ao mercado, / este porquinho ficou em casa, / este porquinho comeu rosbife, / este porquinho não comeu nada, / e este porquinho fez ‘uí! uí! uí!’ / o caminho todo para casa.”",
+      "texto": "Pegue o pé da criança (com licença) e, a cada verso, balance um dedo, começando pelo maior; no “wee, wee, wee”, faça cócegas até o calcanhar. *Toe* é “dedo do pé” e *pig*, “porco”. O texto foi montado a partir das legendas das pranchas de *This Little Pig Went to Market* (Londres: Routledge, c. 1870, domínio público); o livro não traz melodia. Tradução da coleção: “Este porquinho foi ao mercado, / este porquinho ficou em casa, / este porquinho comeu rosbife, / este porquinho não comeu nada, / e este porquinho fez ‘uí! uí! uí!’ / o caminho todo para casa.”",
       "fala": "This little pig went to market, / This little pig stayed at home, / This little pig had roast beef, / This little pig had none, / And this little pig cried “Wee! wee! wee!” / All the way home."
     },
     {
       "titulo": "Faça como eu digo",
       "minutos": 6,
-      "texto": "O adulto diz um comando em inglês e faz o gesto junto; a Marina faz o mesmo: *Touch your nose!* (toque o nariz), *Clap your hands!* (bata palmas), *Stamp your foot!* (bata o pé), *Close your eyes!* (feche os olhos), *Open your mouth!* (abra a boca). Quando ela já reconhecer, o adulto diz o comando e **não faz o gesto**: quem entendeu faz sozinha. Troquem: a Marina manda e o adulto obedece (e erra de propósito, para ela rir). No fim, uma parada: “stop!” e todos ficam imóveis como estátuas. Use só os comandos que ela já entende; se um for difícil, volte ao gesto sozinho. Não peça que ela diga os comandos em voz alta: o objetivo é ouvir e agir.",
+      "texto": "O adulto diz um comando em inglês e faz o gesto junto; a criança faz o mesmo: *Touch your nose!* (toque o nariz), *Clap your hands!* (bata palmas), *Stamp your foot!* (bata o pé), *Close your eyes!* (feche os olhos), *Open your mouth!* (abra a boca). Quando ela já reconhecer, o adulto diz o comando e **não faz o gesto**: quem entendeu faz sozinha. Troquem: a criança manda e o adulto obedece (e erra de propósito, para ela rir). No fim, uma parada: “stop!” e todos ficam imóveis como estátuas. Use só os comandos que ela já entende; se um for difícil, volte ao gesto sozinho. Não peça que ela diga os comandos em voz alta: o objetivo é ouvir e agir.",
       "fala": "Touch your nose!"
     },
     {
@@ -46,7 +46,7 @@
   },
   "ajustes": {
     "dificil": "Só a rima dos porquinhos, com a massagem nos dedos do pé.",
-    "facil": "Dois comandos em seguida, ou a Marina como chefe do jogo."
+    "facil": "Dois comandos em seguida, ou a criança como chefe do jogo."
   },
   "materiais": [
     {

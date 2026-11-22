@@ -19,7 +19,7 @@
     {
       "titulo": "A chefe mandou",
       "minutos": 4,
-      "texto": "Diga: “hoje a Marina é a chefe”. Ela faz um gesto (palmas, pular, uma volta) e você imita. Troque de chefe: agora você faz um gesto e ela imita. Combine um gesto para parar: mãos no peito. Terminem com o gesto de que cada uma mais gostou.",
+      "texto": "Diga: “hoje ___ é a chefe”. Ela faz um gesto (palmas, pular, uma volta) e você imita. Troque de chefe: agora você faz um gesto e ela imita. Combine um gesto para parar: mãos no peito. Terminem com o gesto de que cada uma mais gostou.",
       "fala": "A chefe mandou: palmas! Eu faço igual."
     },
     {
@@ -35,7 +35,7 @@
     {
       "titulo": "Rimas de roda (opcional, 2 minutos cada)",
       "minutos": 4,
-      "texto": "*Corre, cotia* (tradicional brasileira): “Corre, cotia, na casa da tia, / corre, cipó, na casa da avó; / lencinho na mão, caiu no chão.” Em roda, com poucas pessoas, uma anda por fora com um lencinho e deixa cair atrás de alguém; com a Marina, deixe cair atrás dela e corra de mão dada. *Um elefante* (tradicional brasileira): mostre os dedos para cada número; cada elefante é uma voz mais grossa; faça a tromba com o braço e deixe que ela escolha a voz."
+      "texto": "*Corre, cotia* (tradicional brasileira): “Corre, cotia, na casa da tia, / corre, cipó, na casa da avó; / lencinho na mão, caiu no chão.” Em roda, com poucas pessoas, uma anda por fora com um lencinho e deixa cair atrás de alguém; com uma criança pequena, deixe cair atrás dela e corra de mão dada. *Um elefante* (tradicional brasileira): mostre os dedos para cada número; cada elefante é uma voz mais grossa; faça a tromba com o braço e deixe que ela escolha a voz."
     }
   ],
   "observar": {

@@ -2,8 +2,8 @@
   "id": "atv-cing-u8-pajamas-on",
   "titulo": "Pajamas on",
   "marcos": ["LI.ESC.01", "DI.CAD.05"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Vida prática",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -15,7 +15,7 @@
   "duracaoMin": 10,
   "cuidados": "Pijama próprio para dormir (justo ao corpo, sem cordões e sem enfeites soltos); vista-a sentada na cama ou no colo, sem deixá-la em pé em lugar alto.",
   "palavrasChave": ["inglês", "english", "hora de dormir", "pajamas on"],
-  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: hora de dormir.",
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: hora de dormir).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Trocar de roupa para dormir é uma troca que pode gerar “não”. Um aviso antes, uma escolha entre duas coisas e uma sequência de palavras sempre iguais ajudam a criança a aceitar. Se ela recusar, diga “okay, then pajamas in two minutes”, e cumpra. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Trocar de roupa para dormir é uma troca que pode gerar “não”. Um aviso antes, uma escolha entre duas coisas e uma sequência de palavras sempre iguais ajudam a criança a aceitar. Se ela recusar, diga “okay, then pajamas in two minutes”, e cumpra. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

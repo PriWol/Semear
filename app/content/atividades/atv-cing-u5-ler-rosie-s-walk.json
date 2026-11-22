@@ -2,8 +2,6 @@
   "id": "atv-cing-u5-ler-rosie-s-walk",
   "titulo": "Ler juntos: Rosie's Walk",
   "marcos": ["MA.GEO.01", "LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -57,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "É leitura dialogada (Whitehurst): o texto do livro é curto e todo de posições (“across”, “over”, “under”), que se entendem com a mão e com o corpo; a graça está nas figuras, que o texto não conta. O passeio depois do livro leva as palavras de posição para a vida. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "É leitura dialogada (Whitehurst): o texto do livro é curto e todo de posições (“across”, “over”, “under”), que se entendem com a mão e com o corpo; a graça está nas figuras, que o texto não conta. O passeio depois do livro leva as palavras de posição para a vida. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

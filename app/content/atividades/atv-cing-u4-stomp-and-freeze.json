@@ -13,7 +13,7 @@
   "duracaoMin": 5,
   "cuidados": "chão firme e sem obstáculos.",
   "palavrasChave": ["inglês", "english", "brincar dentro de casa", "stomp and freeze"],
-  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: brincar dentro de casa.",
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total) (unidade: brincar dentro de casa).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Parar de repente no meio do movimento é um exercício de controle do impulso, e uma brincadeira de Resposta Física Total: “stomp”, “freeze” e “go” são comandos que a criança entende pelo corpo. Deixar que ela dê o comando ajuda quem gosta de mandar. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Parar de repente no meio do movimento é um exercício de controle do impulso, e uma brincadeira de Resposta Física Total: “stomp”, “freeze” e “go” são comandos que a criança entende pelo corpo. Deixar que ela dê o comando ajuda quem gosta de mandar. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

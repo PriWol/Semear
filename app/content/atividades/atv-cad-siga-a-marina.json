@@ -1,6 +1,6 @@
 {
   "id": "atv-cad-siga-a-marina",
-  "titulo": "Siga a Marina",
+  "titulo": "Siga o chefe do dia",
   "marcos": ["EM.CON.02"],
   "dominio": "DI",
   "categoria": "Jogos e brincadeiras",
@@ -19,7 +19,7 @@
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Diga: “hoje a Marina é a chefe”. Ela faz um gesto (bater palmas, pular, dar uma volta) e você imita."
+      "texto": "Diga: “hoje ___ é a chefe”. Ela faz um gesto (bater palmas, pular, dar uma volta) e você imita."
     },
     {
       "titulo": "Passo 2",

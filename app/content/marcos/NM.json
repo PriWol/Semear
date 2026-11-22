@@ -154,7 +154,7 @@
       "orientacaoPais": {
         "porQueImporta": "Classificar é uma das ferramentas básicas da ciência: observar, comparar, escolher um **critério** e justificá-lo. Também treina o pensamento lógico que a criança usará em matemática.",
         "comoParticipar": "Faça jogos de agrupar com bichinhos de brinquedo, figuras de revista ou folhas de árvores do quintal. Peça: “Como você separou?”. Troque o critério e agrupe de novo (cor, tamanho, onde vive, o que come). Todo critério com sentido vale.",
-        "sinaisDeAtencao": "Se ela se frustra muito quando um critério não funciona, mostre que errar faz parte de pesquisar. Se aos 7 anos há muita dificuldade em separar objetos por qualquer característica, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Se ela se frustra muito quando um critério não funciona, mostre que errar faz parte de pesquisar. Se aos 7 anos há muita dificuldade em separar objetos por qualquer característica, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "mason-home-education"],
         "porVertente": {
           "Clássico": {
@@ -314,7 +314,7 @@
       "orientacaoPais": {
         "porQueImporta": "Observar e **registrar** dia após dia é o método da ciência em miniatura: a criança percebe repetições e mudanças. Também treina a ligação entre o tempo (clima) e o tempo (calendário).",
         "comoParticipar": "Faça um calendário do tempo com um desenho por dia (sol, nuvem, chuva) e, no fim do mês, contem juntos. No Brasil, as estações variam por região, então observem as mudanças de onde vocês moram (chuvas e secas, flores, frutas da época).",
-        "sinaisDeAtencao": "Se ela não se interessa em registrar, deixe uma vez por semana e não por dia: o ritmo é da família. Se aos 7 anos não relaciona nada com o passar dos dias, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Se ela não se interessa em registrar, deixe uma vez por semana e não por dia: o ritmo é da família. Se aos 7 anos não relaciona nada com o passar dos dias, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "comstock-nature-study", "mason-home-education"],
         "porVertente": {
           "Charlotte Mason": {
@@ -382,7 +382,7 @@
       "orientacaoPais": {
         "porQueImporta": "Acompanhar a Lua exige **paciência e registro** por semanas e mostra que a natureza tem ritmos. A criança passa de “vi a Lua” para “a Lua muda, e muda aos poucos”.",
         "comoParticipar": "Escolham um lugar de onde se vê a Lua e desenhem a cada noite visível, por duas ou três semanas. Procurem um padrão. Leiam histórias e lendas sobre a Lua (brasileiras, indígenas, de vários povos), sem confundir lenda com explicação científica.",
-        "sinaisDeAtencao": "Cada criança tem seu tempo para entender mudanças graduais. Se aos 8 anos não consegue acompanhar nenhuma observação por alguns dias, converse com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Cada criança tem seu tempo para entender mudanças graduais. Se aos 8 anos não consegue acompanhar nenhuma observação por alguns dias, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "comstock-nature-study", "mason-home-education"],
         "porVertente": {
           "Charlotte Mason": {
@@ -449,8 +449,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "As palavras do tempo são difíceis porque “ontem” e “amanhã” não se veem. Usá-las bem mostra que a criança **organiza a memória em ordem** e começa a planejar.",
-        "comoParticipar": "Ao deitar, conversem: “O que a gente fez hoje primeiro? E depois?”. Pela manhã, “O que vamos fazer hoje?”. Confusões como “amanhã fui à escola” são esperadas até os 4 ou 5 anos. Corrija pelo exemplo: “Ontem você foi ao parque, é verdade”.",
-        "sinaisDeAtencao": "A noção de tempo se firma aos poucos. Se aos 5 anos ela ainda não usa nenhuma palavra do tempo, vale conversar com o pediatra ou a escola. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Ao deitar, conversem: “O que a gente fez hoje primeiro? E depois?”. Pela manhã, “O que vamos fazer hoje?”. Confusões como “amanhã fui ao parque” são esperadas até os 4 ou 5 anos. Corrija pelo exemplo: “Ontem você foi ao parque, é verdade”.",
+        "sinaisDeAtencao": "A noção de tempo se firma aos poucos. Se aos 5 anos ela ainda não usa nenhuma palavra do tempo, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "piaget-nocao-tempo", "rcnei-conhecimento-de-mundo"]
       },
       "revisao": {
@@ -508,7 +508,7 @@
       "orientacaoPais": {
         "porQueImporta": "O calendário é uma “régua do tempo” que a criança aprende a ler e que prepara para a matemática de tempo e para o planejamento. Saber o dia da semana dá **previsibilidade** e confiança.",
         "comoParticipar": "Mantenha um calendário visível, marcando todo dia o dia de hoje, o aniversário e as datas especiais. Cantem a música dos dias da semana. Conversem sobre o que se faz em cada dia (dia de feira, dia de visita).",
-        "sinaisDeAtencao": "Dias e meses são muitos e demoram para fixar. Se aos 7 anos ela ainda não diz os dias da semana em ordem, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Dias e meses são muitos e demoram para fixar. Se aos 7 anos ela ainda não diz os dias da semana em ordem, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "piaget-nocao-tempo", "rcnei-conhecimento-de-mundo"],
         "porVertente": {
           "Waldorf": {
@@ -539,7 +539,7 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "A história da família é a ponte natural entre a memória pessoal e a **história mais ampla**. A criança descobre que as pessoas têm um passado, que as coisas mudam e que as fontes (relatos, fotos, objetos) contam o que foi.",
-        "comoParticipar": "Façam uma entrevista com alguém mais velho (avós, vizinhos): “Como era a sua escola? O que você comia? Com o que brincava?”. Comparem um objeto antigo (ferro de passar, telefone de disco) com o de hoje. Pode ser por mensagem de voz, se estiverem longe.",
+        "comoParticipar": "Façam uma entrevista com alguém mais velho (avós, vizinhos): “Como era a sua casa quando você era criança? O que você comia? Com o que brincava?”. Comparem um objeto antigo (ferro de passar, telefone de disco) com o de hoje. Pode ser por mensagem de voz, se estiverem longe.",
         "sinaisDeAtencao": "Histórias de família podem tocar em perdas, separações ou temas difíceis. Combine antes com o entrevistado e prepare a criança. Se algo mexer muito com ela, acolha e converse. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "piaget-nocao-tempo"],
         "porVertente": {
@@ -629,7 +629,7 @@
       "linha": "NM.ESP",
       "ordem": 2,
       "titulo": "Reconhece lugares do bairro e as pessoas que trabalham neles",
-      "descricaoPais": "Sabe que na padaria se compra pão, na escola se estuda e no posto cuidam da saúde.",
+      "descricaoPais": "Sabe que na padaria se compra pão, na biblioteca se pegam livros e no posto cuidam da saúde.",
       "evidencias": [
         "Nomeia 3 lugares do bairro e para que servem",
         "Diz o que uma pessoa faz em seu trabalho"
@@ -667,7 +667,7 @@
       "orientacaoPais": {
         "porQueImporta": "Desenhar o espaço visto **de cima** é um grande salto: a criança precisa imaginar um ponto de vista que ela não vê. É a base do mapa, do raciocínio espacial e da matemática de geometria.",
         "comoParticipar": "Faça junto o mapa do quarto: “Se um passarinho olhasse de cima, o que veria?”. Use objetos reais (a criança põe o brinquedo em cima do papel e desenha em volta). Em casa e em outros lugares, brinquem de “tesouro”: esconda algo e desenhe o mapa para achar.",
-        "sinaisDeAtencao": "Mapas vistos de cima são difíceis para muitos: a criança desenha “de lado” e isso é esperado. Se aos 7 anos há grande dificuldade em lidar com posições e direções, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Mapas vistos de cima são difíceis para muitos: a criança desenha “de lado” e isso é esperado. Se aos 7 anos há grande dificuldade em lidar com posições e direções, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "almeida-passini-espaco", "piaget-inhelder-espaco"],
         "porVertente": {
           "Montessori": {
@@ -687,7 +687,7 @@
       "linha": "NM.ESP",
       "ordem": 4,
       "titulo": "Lê um mapa simples e se orienta por pontos de referência",
-      "descricaoPais": "Acha no mapa a escola, a praça ou a casa, e diz o caminho usando referências (“depois da padaria”).",
+      "descricaoPais": "Acha no mapa a padaria, a praça ou a casa, e diz o caminho usando referências (“depois da padaria”).",
       "evidencias": [
         "Acha lugares conhecidos em um mapa simples",
         "Descreve um caminho com pontos de referência"
@@ -698,8 +698,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Ler mapas exige entender **símbolos** e **escala**, e relacionar o desenho ao lugar real. É uma competência que a criança leva para a vida (orientar-se) e que sustenta a geografia nos próximos anos.",
-        "comoParticipar": "Use um mapa do bairro (impresso ou de um aplicativo, com você ao lado) e peça que ache a casa, a escola, a praça. Em um passeio, ela guia o caminho com o mapa. Descreva trajetos com pontos de referência.",
-        "sinaisDeAtencao": "Orientar-se no espaço leva tempo. Se aos 8 anos ela se perde em trajetos muito conhecidos ou não distingue direita e esquerda, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Use um mapa do bairro (impresso ou de um aplicativo, com você ao lado) e peça que ache a casa, a padaria, a praça. Em um passeio, ela guia o caminho com o mapa. Descreva trajetos com pontos de referência.",
+        "sinaisDeAtencao": "Orientar-se no espaço leva tempo. Se aos 8 anos ela se perde em trajetos muito conhecidos ou não distingue direita e esquerda, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "almeida-passini-espaco", "piaget-inhelder-espaco"]
       },
       "revisao": {
@@ -758,7 +758,7 @@
       "orientacaoPais": {
         "porQueImporta": "Observar e comparar **paisagens** mostra como as pessoas se adaptam aos lugares e como o ambiente muda. Os pontos cardeais ligam o céu (o Sol) ao mapa, e a criança passa a se orientar de verdade.",
         "comoParticipar": "Observem o nascer e o pôr do Sol de casa para achar leste e oeste (sempre sem olhar o Sol diretamente) e marquem no mapa da casa. Compare fotos de lugares diferentes: “O que é igual? O que é diferente? Como as pessoas vivem?”.",
-        "sinaisDeAtencao": "Esse conceito é abstrato e é comum precisar de tempo. Sem pressa. Se ela ainda confunde muito direita e esquerda aos 8 anos, vale conversar com a escola ou o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Esse conceito é abstrato e é comum precisar de tempo. Sem pressa. Se ela ainda confunde muito direita e esquerda aos 8 anos, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "almeida-passini-espaco", "louv-ultima-crianca"]
       },
       "revisao": {
@@ -884,7 +884,7 @@
       "orientacaoPais": {
         "porQueImporta": "Perceber a diferença sem medo nem julgamento é a base do **respeito**. A criança que cresce vendo a diversidade como normal estranha menos e acolhe mais.",
         "comoParticipar": "Leiam livros ilustrados com famílias, corpos, idiomas e culturas diversos. Quando ela comentar uma diferença, responda com naturalidade: “Cada um vive de um jeito”. Aproxime-a de amigos e vizinhos diferentes. Dê o exemplo ao falar das pessoas.",
-        "sinaisDeAtencao": "Crianças comentam diferenças em voz alta sem maldade; isso é curiosidade e não preconceito. Responda com calma e simplicidade. Se houver falas persistentes de desprezo ou agressão, converse com carinho e procure apoio da escola.",
+        "sinaisDeAtencao": "Crianças comentam diferenças em voz alta sem maldade; isso é curiosidade e não preconceito. Responda com calma e simplicidade. Se houver falas persistentes de desprezo ou agressão, converse com carinho e procure apoio de quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "siegel-bryson-cerebro-crianca"],
         "porVertente": {
           "Religioso": {
@@ -947,8 +947,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "É importante que a criança perceba que a cultura brasileira vem de **muitos povos** e que eles vivem hoje, com vozes próprias. Isso combate estereótipos e fortalece o respeito.",
-        "comoParticipar": "Procurem palavras de origem indígena (abacaxi, tatu, Ipanema) e africana (caçula, moleque, samba), e comidas de imigrantes (pizza, quibe, sushi). Leiam autores e ilustradores indígenas e negros e sigam contas e museus indicados pela escola. Evite “o índio” no singular: são muitos povos.",
-        "sinaisDeAtencao": "Falar de povos e história inclui temas duros. Conte com verdade e com leveza proporcional à idade. Se houver falas de desprezo, converse com carinho e peça apoio da escola.",
+        "comoParticipar": "Procurem palavras de origem indígena (abacaxi, tatu, Ipanema) e africana (caçula, moleque, samba), e comidas de imigrantes (pizza, quibe, sushi). Leiam autores e ilustradores indígenas e negros e sigam contas e museus indicados por quem acompanha a criança. Evite “o índio” no singular: são muitos povos.",
+        "sinaisDeAtencao": "Falar de povos e história inclui temas duros. Conte com verdade e com leveza proporcional à idade. Se houver falas de desprezo, converse com carinho e peça apoio a quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "cascudo-folclore", "rcnei-conhecimento-de-mundo"],
         "porVertente": {
           "Charlotte Mason": {
