@@ -12,7 +12,7 @@
   "idade": [3, 6],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Bichos de verdade: olhar e conversar de longe, sem puxar o rabo nem pôr o dedo perto da boca; lavar as mãos depois de mexer em qualquer animal. Bichos de brinquedo sem peças que se soltem. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em francês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "cuidados": "Bichos de verdade: olhar e conversar de longe, sem puxar o rabo nem pôr o dedo perto da boca; lavar as mãos depois de mexer em qualquer animal. Bichos de brinquedo sem peças que se soltem. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que a criança “diga em francês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
   "palavrasChave": ["francês", "animais", "chat", "chien", "la mère michel"],
   "objetivo": "A criança ouve uma canção francesa sobre um gato perdido, aponta o cartão do bicho que o adulto nomeia em francês e imita o som do bicho do jeito francês.",
   "passos": [
@@ -25,18 +25,18 @@
     {
       "titulo": "Mostrar os cartões",
       "minutos": 2,
-      "texto": "Mostre os cartões da unidade (e os bichos de brinquedo, se tiver) e diga o nome em francês: chat, chien, vache, cheval, coq, canard, lièvre, poisson, souris. Ela aponta o cartão do bicho que você nomeia, sem precisar repetir."
+      "texto": "Mostre os cartões da unidade (e os bichos de brinquedo, se tiver) e diga o nome em francês: chat, chien, vache, cheval, coq, canard, lièvre, poisson, souris. A criança aponta o cartão do bicho que você nomeia, sem precisar repetir."
     },
     {
       "titulo": "Como fala o bicho?",
       "minutos": 4,
-      "texto": "O adulto faz o som de um bicho, do jeito francês, e a criança mostra o cartão: *miaou* (gato), *ouaf* (cachorro), *meuh* (vaca), *coin-coin* (pato), *cocorico* (galo). Depois é a vez dela: ela faz um som e o adulto adivinha. Valem os sons dela, também. Os bichos fazem o mesmo som em qualquer lugar; quem muda é a maneira de escrever esse som. Na rua, quando ouvirem um bicho de verdade, perguntem: “como ele faz, em francês?”.",
+      "texto": "O adulto faz o som de um bicho, do jeito francês, e a criança mostra o cartão: *miaou* (gato), *ouaf* (cachorro), *meuh* (vaca), *coin-coin* (pato), *cocorico* (galo). Depois é a vez da criança: a criança faz um som e o adulto adivinha. Valem também os sons inventados. Os bichos fazem o mesmo som em qualquer lugar; quem muda é a maneira de escrever esse som. Na rua, quando ouvirem um bicho de verdade, perguntem: “como ele faz, em francês?”.",
       "fala": "Miaou ! Ouaf ! Meuh !"
     },
     {
       "titulo": "Para depois (opcional)",
       "minutos": 1,
-      "texto": "Dizer o nome do bicho em francês ao ver um de verdade, na rua, num livro ou na tela, sem pedir que ela repita."
+      "texto": "Dizer o nome do bicho em francês ao ver um de verdade, na rua, num livro ou na tela, sem pedir que a criança repita."
     }
   ],
   "observar": {
@@ -70,7 +70,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que bichos ela apontou? Que sons imitou?",
+  "perguntaFicha": "Que bichos a criança apontou? Que sons imitou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

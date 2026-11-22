@@ -11,19 +11,19 @@
   "idade": [2, 5],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Use uma jarra pequena, leve e que não quebre, e deixe um pano por perto: o chão molhado escorrega. Com um animal, só um bicho calmo e manso, com você ao lado, e lavem as mãos depois. Mantenha longe peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Com água por perto, nunca deixe a criança com água sem um adulto junto, nem por um instante, mesmo rasa. Use uma jarra pequena, leve e que não quebre, e deixe um pano por perto: o chão molhado escorrega. Com um animal, só um bicho calmo e manso, com você ao lado, e lavem as mãos depois. Mantenha longe peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["água", "jarra", "servir", "vida prática", "cuidar"],
   "objetivo": "A criança enche uma jarra até a marca, serve a água devagar num potinho (para um bicho ou uma planta) e seca o que molhar.",
   "passos": [
     {
       "titulo": "Preparar (adulto)",
       "minutos": 0,
-      "texto": "Marque na jarra uma linha com fita até onde ela deve encher: é o controle do erro. Uma jarra pequena e leve, com bico, e um pano sempre por perto."
+      "texto": "Marque na jarra uma linha com fita até onde a criança deve encher: é o controle do erro. Uma jarra pequena e leve, com bico, e um pano sempre por perto."
     },
     {
       "titulo": "Encher e pôr o potinho",
       "minutos": 3,
-      "texto": "Ela enche a jarra até a marca. Ponha o potinho no chão, firme."
+      "texto": "A criança enche a jarra até a marca. Ponha o potinho no chão, firme."
     },
     {
       "titulo": "Servir",
@@ -40,7 +40,7 @@
   "observar": {
     "consolidado": [
       "Enche a jarra até a marca",
-      "Serve sem derramar muito ou seca sozinha o que derramou"
+      "Serve sem derramar muito ou seca sem ajuda o que derramou"
     ],
     "emDesenvolvimento": [
       "Derrama bastante (é normal: derramar faz parte)",
@@ -49,7 +49,7 @@
   },
   "ajustes": {
     "dificil": "Só servir uma vez, com você segurando a jarra junto.",
-    "facil": "Ela regula quanto servir e seca tudo sozinha."
+    "facil": "A criança regula quanto servir e seca tudo sem ajuda."
   },
   "materiais": [
     {
@@ -67,11 +67,11 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     },
     {
-      "texto": "Serve sem derramar muito ou seca sozinha o que derramou",
+      "texto": "Serve sem derramar muito ou seca sem ajuda o que derramou",
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quanto ela derramou? Quem recebeu a água?",
+  "perguntaFicha": "Quanto a criança derramou? Quem recebeu a água?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

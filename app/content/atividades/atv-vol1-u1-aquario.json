@@ -14,12 +14,12 @@
   "duracaoMin": 8,
   "preparoMin": 2,
   "cuidados": "Escute deitados ou no colo, com a luz baixa e o volume baixo, perto da criança. Sem objetos pequenos por perto.",
-  "objetivo": "A criança **escuta com atenção** uma música calma e imagina o que ela mostra, sentindo se é rápida ou devagar, alta ou baixinha.",
+  "objetivo": "A criança **escuta com atenção** uma música calma e imagina o que a criança mostra, sentindo se é rápida ou devagar, alta ou baixinha.",
   "passos": [
     {
       "titulo": "Preparar o ambiente",
       "minutos": 2,
-      "texto": "Deitados ou no colo, com a luz baixa. Peça que ela feche os olhos e “veja” o aquário."
+      "texto": "Deitados ou no colo, com a luz baixa. Peça que a criança feche os olhos e “veja” o aquário."
     },
     {
       "titulo": "Escutar",
@@ -35,7 +35,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Fica atenta à música por alguns segundos",
+      "Presta atenção à música por alguns segundos",
       "Diz (ou mostra com o corpo) se era rápida ou devagar, alta ou baixinha"
     ],
     "emDesenvolvimento": [
@@ -44,8 +44,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Escute só um trecho e pare quando ela se cansar.",
-    "facil": "Peça que ela mostre com as mãos a água ondulando."
+    "dificil": "Escute só um trecho e pare quando a criança se cansar.",
+    "facil": "Peça que a criança mostre com as mãos a água ondulando."
   },
   "materiais": [
     {
@@ -58,7 +58,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse ou fez ao escutar?",
+  "perguntaFicha": "O que a criança disse ou fez ao escutar?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

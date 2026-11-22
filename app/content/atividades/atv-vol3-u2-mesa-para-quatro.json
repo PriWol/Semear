@@ -17,18 +17,18 @@
     {
       "titulo": "A mesa dos porquinhos",
       "minutos": 3,
-      "texto": "Conte: o papai porco conta os filhos (um, dois, três, quatro) e põe um prato para cada um e uma colher para cada prato; chega a vovó, e **falta um prato**! Com bichinhos de pelúcia e pratos de verdade, repitam a história e deixe que ela descubra sozinha que falta."
+      "texto": "Conte: o papai porco conta os filhos (um, dois, três, quatro) e põe um prato para cada um e uma colher para cada prato; chega a vovó, e **falta um prato**! Com bichinhos de pelúcia e pratos de verdade, repitam a história e deixe a criança descobrir sem ajuda que falta."
     },
     {
       "titulo": "Mesa para quatro",
       "minutos": 4,
-      "texto": "Sobre o quadro da mesa, ela traz quatro pratos e quatro colheres e põe um em cada lugar. Depois entregue **cinco** pratos (sobra um!) ou **três** (falta um).",
+      "texto": "Sobre o quadro da mesa, a criança traz quatro pratos e quatro colheres e põe um em cada lugar. Depois entregue **cinco** pratos (sobra um!) ou **três** (falta um).",
       "fala": "Sobrou ou faltou?"
     },
     {
       "titulo": "A mesa da família",
       "minutos": 3,
-      "texto": "*“Quantas pessoas vão jantar hoje?”* Ela conta a família e põe a mesa."
+      "texto": "*“Quantas pessoas vão jantar hoje?”* A criança conta a família e põe a mesa."
     }
   ],
   "observar": {
@@ -63,10 +63,10 @@
     },
     {
       "texto": "Disse se sobrou ou faltou",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Quantas pessoas ela contou à mesa?",
+  "perguntaFicha": "Quantas pessoas a criança contou à mesa?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

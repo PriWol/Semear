@@ -11,18 +11,18 @@
   "idade": [2, 4],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Use prato, copo e colher inquebráveis e do tamanho dela, sem pontas. Faca não entra nesta atividade. Fique perto enquanto ela carrega as peças com as duas mãos.",
+  "cuidados": "Use prato, copo e colher inquebráveis e do tamanho da criança, sem pontas. Faca não entra nesta atividade. Fique perto enquanto a criança carrega as peças com as duas mãos.",
   "objetivo": "A criança faz **correspondência um a um**: põe cada objeto no seu lugar (e um prato para cada pessoa) sem sobrar nem faltar.",
   "passos": [
     {
       "titulo": "Descobrir",
       "minutos": 3,
-      "texto": "Ponha, no jogo americano com os contornos (guardanapo, prato, colher e copo), um objeto de cada vez, **nomeando**. Deixe que ela repita."
+      "texto": "Ponha, no jogo americano com os contornos (guardanapo, prato, colher e copo), um objeto de cada vez, **nomeando**. Deixe que a criança repita."
     },
     {
       "titulo": "Relacionar",
       "minutos": 4,
-      "texto": "Entregue os quatro objetos misturados e deixe que ela encontre o lugar de cada um. Não corrija: se um ficar fora do contorno, pergunte “será que cabe?”.",
+      "texto": "Entregue os quatro objetos misturados e deixe que a criança encontre o lugar de cada um. Não corrija: se um ficar fora do contorno, pergunte “será que cabe?”.",
       "fala": "Onde mora a colher?"
     },
     {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Use só dois contornos (prato e colher).",
-    "facil": "Peça que ela leve o prato à pia, com as duas mãos, ao fim da refeição."
+    "facil": "Peça que a criança leve o prato à pia, com as duas mãos, ao fim da refeição."
   },
   "materiais": [
     {
@@ -70,10 +70,10 @@
     },
     {
       "texto": "Disse se faltou ou sobrou",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Quantos objetos ela pôs no lugar sozinha?",
+  "perguntaFicha": "Quantos objetos a criança pôs no lugar sem ajuda?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

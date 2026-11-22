@@ -24,7 +24,7 @@
     {
       "titulo": "Relacionar",
       "minutos": 5,
-      "texto": "Ela põe cada círculo no quadro do seu tamanho, do pequeno ao grande."
+      "texto": "A criança põe cada círculo no quadro do seu tamanho, do pequeno ao grande."
     },
     {
       "titulo": "Criar",
@@ -60,10 +60,10 @@
   "evidencias": [
     {
       "texto": "Ordenou os três círculos",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavras de tamanho ela usou?",
+  "perguntaFicha": "Que palavras de tamanho a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

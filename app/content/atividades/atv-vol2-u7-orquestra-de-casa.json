@@ -24,17 +24,17 @@
     {
       "titulo": "Tocar",
       "minutos": 7,
-      "texto": "1) Cada músico toca sozinho, na sua vez. 2) Dois juntos. 3) Os quatro ao mesmo tempo, forte! 4) A regente levanta a mão: silêncio!",
+      "texto": "1) Cada músico toca sozinho, na sua vez. 2) Dois juntos. 3) Os quatro ao mesmo tempo, forte! 4) Quem rege levanta a mão: silêncio!",
       "fala": "Quem toca agora?"
     },
     {
-      "titulo": "Ela rege",
+      "titulo": "A criança rege",
       "minutos": 4,
-      "texto": "Ela é a regente e aponta quem toca; depois troquem: ela toca e você rege."
+      "texto": "A criança rege e aponta quem toca; depois troquem: a criança toca e você rege."
     }
   ],
   "observar": {
-    "consolidado": ["Toca só quando é a vez dela", "Rege: aponta e para os músicos"],
+    "consolidado": ["Toca só quando é a vez da criança", "Rege: aponta e para os músicos"],
     "emDesenvolvimento": [
       "Toca o tempo todo, sem esperar a vez",
       "Ainda não associa a voz ao instrumento"
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Só dois instrumentos (o tambor e o sino), um de cada vez.",
-    "facil": "Peça que ela invente uma música em que os quatro tocam e param juntos. Aos 7 anos, ela rege de verdade: combina com os músicos quando cada um entra e quando faz silêncio."
+    "facil": "Peça que a criança invente uma música em que os quatro tocam e param juntos. Aos 7 anos, a criança rege de verdade: combina com os músicos quando cada um entra e quando faz silêncio."
   },
   "materiais": [
     {
@@ -67,7 +67,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Ela esperou a vez de tocar?",
+  "perguntaFicha": "A criança esperou a vez de tocar?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

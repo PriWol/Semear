@@ -24,13 +24,13 @@
     {
       "titulo": "Os nomes",
       "minutos": 4,
-      "texto": "Batam o nome dela e o de cada pessoa da família, uma batida por sílaba: *“quantas batidas tem cada nome?”*.",
+      "texto": "Batam o nome da criança e o de cada pessoa da família, uma batida por sílaba: *“quantas batidas tem cada nome?”*.",
       "fala": "Quantas batidas tem o seu nome?"
     },
     {
       "titulo": "Trocar",
       "minutos": 2,
-      "texto": "Ela bate e você adivinha a palavra."
+      "texto": "A criança bate e você adivinha a palavra."
     }
   ],
   "observar": {
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Só o refrão “Por-qui-nho, por-qui-nho”.",
-    "facil": "Peça que ela invente um ritmo novo para o Lobo soprar."
+    "facil": "Peça que a criança invente um ritmo novo para o Lobo soprar."
   },
   "materiais": [
     {
@@ -62,7 +62,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Quantas batidas tem o nome dela?",
+  "perguntaFicha": "Quantas batidas tem o nome da criança?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

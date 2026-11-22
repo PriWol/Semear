@@ -17,13 +17,13 @@
     {
       "titulo": "Descobrir",
       "minutos": 3,
-      "texto": "Contorne cada peça com o dedo dela, dizendo o nome: círculo, quadrado, triângulo, retângulo. As cores não combinam com nada de propósito: a pista é só a forma.",
+      "texto": "Contorne cada peça com o dedo da criança, dizendo o nome: círculo, quadrado, triângulo, retângulo. As cores não combinam com nada de propósito: a pista é só a forma.",
       "fala": "Que forma é esta?"
     },
     {
       "titulo": "Relacionar",
       "minutos": 5,
-      "texto": "Ela encaixa cada peça no contorno certo: o triângulo só cabe no triângulo."
+      "texto": "A criança encaixa cada peça no contorno certo: o triângulo só cabe no triângulo."
     },
     {
       "titulo": "Caçar formas",
@@ -62,7 +62,7 @@
       "resposta": "_____ de 4"
     }
   ],
-  "perguntaFicha": "Que formas ela nomeou e achou pela casa?",
+  "perguntaFicha": "Que formas a criança nomeou e achou pela casa?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

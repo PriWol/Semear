@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Compare só duas imagens (verão e inverno).",
-    "facil": "Peça que ela invente o título de cada pintura."
+    "facil": "Peça que a criança invente o título de cada pintura."
   },
   "materiais": [
     {
@@ -55,7 +55,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Qual estação ela escolheu e o que disse sobre ela?",
+  "perguntaFicha": "Qual estação a criança escolheu e o que disse sobre a criança?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

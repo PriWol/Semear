@@ -15,12 +15,12 @@
   "preparoMin": 5,
   "cuidados": "Não suba em árvore desconhecida, não coma frutos nem sementes que achar e evite a seiva (algumas plantas queimam a pele ou coçam). Lave as mãos depois.",
   "palavrasChave": ["árvore", "folhas", "casca", "tronco", "natureza"],
-  "objetivo": "A criança **escolhe uma árvore perto de casa e volta a ela mais de uma vez**, nomeia as partes (raiz, tronco, galho, folha, flor, fruto) e junta folhas caídas, separando por forma, tamanho e cor.",
+  "objetivo": "A criança **escolhe uma árvore perto de casa e volta à criança mais de uma vez**, nomeia as partes (raiz, tronco, galho, folha, flor, fruto) e junta folhas caídas, separando por forma, tamanho e cor.",
   "passos": [
     {
       "titulo": "Visitar a árvore escolhida",
       "minutos": 8,
-      "texto": "Vá até a árvore escolhida e fique um minuto quieta, olhando. Passe a mão no tronco e diga como é a casca. Abrace o tronco e veja se os braços dão a volta."
+      "texto": "Vá até a árvore escolhida e fique um minuto em silêncio, olhando. Passe a mão no tronco e diga como é a casca. Abrace o tronco e veja se os braços dão a volta."
     },
     {
       "titulo": "Desenho da casca e folhas caídas",

@@ -18,17 +18,17 @@
     {
       "titulo": "Descobrir",
       "minutos": 3,
-      "texto": "Ela vê os objetos (colher, chave, pena, pedra, laranja); você põe um no saco, ela tateia e diz qual é."
+      "texto": "A criança vê os objetos (colher, chave, pena, pedra, laranja); você põe um no saco, a criança tateia e diz qual é."
     },
     {
       "titulo": "Relacionar",
       "minutos": 3,
-      "texto": "Você mostra um cartão (ou um objeto igual); ela procura no saco o mesmo, só pelo tato. Vocabulário: liso, áspero, macio, duro, frio, redondo, pontudo."
+      "texto": "Você mostra um cartão (ou um objeto igual); a criança procura no saco o mesmo, só pelo tato. Vocabulário: liso, áspero, macio, duro, frio, redondo, pontudo."
     },
     {
       "titulo": "Criar",
       "minutos": 2,
-      "texto": "Ela esconde um objeto e dá pistas: “é duro, é frio, abre a porta…”, e você adivinha.",
+      "texto": "A criança esconde um objeto e dá pistas: “é duro, é frio, abre a porta…”, e você adivinha.",
       "fala": "É duro, é frio, abre a porta…"
     }
   ],
@@ -44,7 +44,7 @@
   },
   "ajustes": {
     "dificil": "Dois objetos só, bem diferentes (pena e pedra).",
-    "facil": "Ela esconde e dá pistas; você adivinha."
+    "facil": "A criança esconde e dá pistas; você adivinha."
   },
   "materiais": [
     {
@@ -66,7 +66,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais palavras de textura ela usou?",
+  "perguntaFicha": "Quais palavras de textura a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

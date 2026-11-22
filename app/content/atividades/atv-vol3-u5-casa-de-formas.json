@@ -24,12 +24,12 @@
     {
       "titulo": "Montar e colar",
       "minutos": 7,
-      "texto": "Com as peças do tabuleiro (ou formas novas recortadas em papel colorido), ela monta e cola a casa dela. Qualquer composição vale: um bicho, um carro, uma flor."
+      "texto": "Com as peças do tabuleiro (ou formas novas recortadas em papel colorido), a criança monta e cola a casa da criança. Qualquer composição vale: um bicho, um carro, uma flor."
     },
     {
       "titulo": "Contar a figura",
       "minutos": 2,
-      "texto": "Peça que ela diga quais formas usou."
+      "texto": "Peça que a criança diga quais formas usou."
     }
   ],
   "observar": {
@@ -41,7 +41,7 @@
   },
   "ajustes": {
     "dificil": "Copie só o telhado e a parede (triângulo e quadrado).",
-    "facil": "Peça que ela invente um bicho de formas e diga quantas usou."
+    "facil": "Peça que a criança invente um bicho de formas e diga quantas usou."
   },
   "materiais": [
     {
@@ -67,7 +67,7 @@
       "resposta": "☐ 2 formas   ☐ 3 formas   ☐ 4 ou mais"
     }
   ],
-  "perguntaFicha": "O que ela construiu com as formas?",
+  "perguntaFicha": "O que a criança construiu com as formas?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

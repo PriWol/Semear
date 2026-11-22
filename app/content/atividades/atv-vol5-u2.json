@@ -25,7 +25,7 @@
     {
       "titulo": "Círculos e música",
       "minutos": 9,
-      "texto": "Olhe *Quadrados com círculos concêntricos*. Trace círculos dentro de círculos. Ouça música e risque linhas “do jeito dela”."
+      "texto": "Olhe *Quadrados com círculos concêntricos*. Trace círculos dentro de círculos. Ouça música e risque linhas “do jeito da criança”."
     },
     {
       "titulo": "Desenho só de linhas e círculos",
@@ -46,8 +46,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Se o dia estiver difícil: só olhar *Vários círculos* e dizer qual círculo ela escolheria para si.",
-    "facil": "Se o interesse crescer: ouvir uma peça curta e pedir que ela risque o que ouve, com giz de cera, enquanto a música toca."
+    "dificil": "Se o dia estiver difícil: só olhar *Vários círculos* e dizer qual círculo a criança escolheria para si.",
+    "facil": "Se o interesse crescer: ouvir uma peça curta e pedir que a criança risque o que ouve, com giz de cera, enquanto a música toca."
   },
   "materiais": [
     {
@@ -72,7 +72,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que nome ela deu ao desenho e que música ele tem?",
+  "perguntaFicha": "Que nome a criança deu ao desenho e que música ele tem?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

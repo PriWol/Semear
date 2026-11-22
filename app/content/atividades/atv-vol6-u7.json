@@ -25,7 +25,7 @@
     {
       "titulo": "Medir a sombra do copo",
       "minutos": 7,
-      "texto": "Meça a sombra do copo de manhã, ao meio-dia e à tarde. Compare: quando ela é mais comprida? Diga por que acha que a sombra muda."
+      "texto": "Meça a sombra do copo de manhã, ao meio-dia e à tarde. Compare: quando a sombra é mais comprida? Diga por que acha que a sombra muda."
     },
     {
       "titulo": "A lua e as estrelas",
@@ -46,7 +46,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Se o dia estiver difícil: olhar a lua pela janela por um minuto e dizer a forma que ela tem.",
+    "dificil": "Se o dia estiver difícil: olhar a lua pela janela por um minuto e dizer a forma que a criança tem.",
     "facil": "Se o interesse crescer: olhar a lua todo dia por um mês e fazer a tabela completa, ou procurar a estrela mais brilhante do começo da noite."
   },
   "materiais": [
@@ -76,7 +76,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que forma a lua tinha hoje e o que ela disse do céu?",
+  "perguntaFicha": "Que forma a lua tinha hoje e o que a criança disse do céu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

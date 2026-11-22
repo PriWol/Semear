@@ -23,12 +23,12 @@
     {
       "titulo": "Pesado e leve",
       "minutos": 4,
-      "texto": "Ela segura um objeto em cada mão e diz qual pesa mais. Antes de pôr na balança, ela adivinha: *uma pedrinha ou uma pena? Uma maçã ou um morango?*"
+      "texto": "A criança segura um objeto em cada mão e diz qual pesa mais. Antes de pôr na balança, a criança adivinha: *uma pedrinha ou uma pena? Uma maçã ou um morango?*"
     },
     {
       "titulo": "Balança de cabide",
       "minutos": 4,
-      "texto": "Pendure dois saquinhos nas pontas de um cabide: o lado mais pesado desce. Confira com ela se o palpite estava certo."
+      "texto": "Pendure dois saquinhos nas pontas de um cabide: o lado mais pesado desce. Confira com a criança se o palpite estava certo."
     }
   ],
   "observar": {
@@ -71,7 +71,7 @@
       "resposta": "☐ não   ☐ às vezes   ☐ sempre"
     }
   ],
-  "perguntaFicha": "Quantas vezes o palpite dela acertou na balança?",
+  "perguntaFicha": "Quantas vezes o palpite da criança acertou na balança?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

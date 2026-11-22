@@ -13,9 +13,9 @@
   "idade": [4, 8],
   "duracaoMin": 25,
   "preparoMin": 5,
-  "cuidados": "Água só com um adulto junto o tempo todo. Conversar sobre cuidado pode despertar lembranças: acolha o que ela disser, sem exigir. Se a família dela é diferente da dos quadros, vale dizer isso com naturalidade.",
+  "cuidados": "Água só com um adulto junto o tempo todo. Conversar sobre cuidado pode despertar lembranças: acolha o que a criança disser, sem exigir. Se a família da criança é diferente da dos quadros, vale dizer isso com naturalidade.",
   "palavrasChave": ["Mary Cassatt", "retrato", "família", "cuidado", "apreciação"],
-  "objetivo": "A criança **olha com calma três obras de Mary Cassatt**, diz o que as pessoas fazem uma com a outra (segurar, lavar, descansar) e faz o retrato de alguém que cuida dela.",
+  "objetivo": "A criança **olha com calma três obras de Mary Cassatt**, diz o que as pessoas fazem uma com a outra (segurar, lavar, descansar) e faz o retrato de alguém que cuida da criança.",
   "passos": [
     {
       "titulo": "Olhar O banho da criança",
@@ -30,7 +30,7 @@
     {
       "titulo": "Retrato de quem cuida",
       "minutos": 8,
-      "texto": "Faça o retrato de quem cuida dela. Conte uma história para o retrato. Escolha a obra de Cassatt de que mais gostou."
+      "texto": "Faça o retrato de quem cuida da criança. Conte uma história para o retrato. Escolha a obra de Cassatt de que mais gostou."
     }
   ],
   "observar": {
@@ -47,7 +47,7 @@
   },
   "ajustes": {
     "dificil": "Se o dia estiver difícil: olhar só uma obra, por pouco tempo, e dizer quem está no quadro.",
-    "facil": "Se o interesse crescer: olhar fotos de família com ela e conversar sobre quem está com quem, e o que estão fazendo."
+    "facil": "Se o interesse crescer: olhar fotos de família com a criança e conversar sobre quem está com quem, e o que estão fazendo."
   },
   "materiais": [
     {
@@ -76,7 +76,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "De quem ela fez o retrato e que história contou?",
+  "perguntaFicha": "De quem a criança fez o retrato e que história contou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

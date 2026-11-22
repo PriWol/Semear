@@ -13,14 +13,14 @@
   "idade": [3, 7],
   "duracaoMin": 25,
   "preparoMin": 5,
-  "cuidados": "Use os nomes corretos de todas as partes do corpo, sem vergonha. O corpo é dela: respeite quando ela não quiser ser tocada, medida ou abraçada. Água morna e sabonete suave, sem esfregar com força. Pular dez vezes só em espaço livre e sem tropeço.",
+  "cuidados": "Use os nomes corretos de todas as partes do corpo, sem vergonha. O corpo é da criança: respeite quando a criança não quiser toque, medição ou abraço. Água morna e sabonete suave, sem esfregar com força. Pular dez vezes só em espaço livre e sem tropeço.",
   "palavrasChave": ["corpo humano", "sentidos", "coração", "lavar as mãos", "medir"],
   "objetivo": "A criança **nomeia partes do corpo**, liga cada sentido à parte que o faz, sente o coração batendo (parada e depois de pular) e lava as mãos em seis passos.",
   "passos": [
     {
       "titulo": "Nomear partes do corpo e os sentidos",
       "minutos": 8,
-      "texto": "Nomeie partes do corpo, apontando em si mesma. Faça a tabela dos sentidos: com o que eu vejo? com o que eu escuto? Brinque de “mostre o seu nariz, a sua mão…”."
+      "texto": "Nomeie partes do corpo, apontando no próprio corpo. Faça a tabela dos sentidos: com o que eu vejo? com o que eu escuto? Brinque de “mostre o seu nariz, a sua mão…”."
     },
     {
       "titulo": "O coração e a medida da mão",
@@ -30,7 +30,7 @@
     {
       "titulo": "Desenhar o corpo e lavar as mãos",
       "minutos": 8,
-      "texto": "Desenhe o corpo todo no caderno. Diga uma coisa que o corpo faz por ela. Ensine a outra pessoa como lavar as mãos."
+      "texto": "Desenhe o corpo todo no caderno. Diga uma coisa que o corpo faz por a criança. Ensine a outra pessoa como lavar as mãos."
     }
   ],
   "observar": {
@@ -76,7 +76,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que parte do corpo ela mais gostou de descobrir hoje?",
+  "perguntaFicha": "Que parte do corpo a criança mais gostou de descobrir hoje?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

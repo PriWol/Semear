@@ -46,7 +46,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Se o dia estiver difícil: olhar uma obra e dizer qual cor ela mais vê, sem pintar nada.",
+    "dificil": "Se o dia estiver difícil: olhar uma obra e dizer qual cor a criança mais vê, sem pintar nada.",
     "facil": "Se o interesse crescer: olhar a mesma árvore ou janela em três horas diferentes do dia e desenhar cada vez só as cores que viu."
   },
   "materiais": [
@@ -76,7 +76,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que nome ela deu à paisagem e a que hora do dia ela é?",
+  "perguntaFicha": "Que nome a criança deu à paisagem e a que hora do dia a criança é?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

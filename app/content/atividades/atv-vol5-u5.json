@@ -47,7 +47,7 @@
   },
   "ajustes": {
     "dificil": "Se o dia estiver difícil: olhar o quadro, escolher o girassol de que mais gosta e dizer por quê.",
-    "facil": "Se o interesse crescer: olhar uma flor por dia durante uma semana e pintar só uma pétala, com o amarelo mais parecido que ela conseguir."
+    "facil": "Se o interesse crescer: olhar uma flor por dia durante uma semana e pintar só uma pétala, com o amarelo mais parecido que a criança conseguir."
   },
   "materiais": [
     {
@@ -72,7 +72,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Qual foi o amarelo preferido dela e que nome ela deu?",
+  "perguntaFicha": "Qual foi o amarelo preferido da criança e que nome a criança deu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",
