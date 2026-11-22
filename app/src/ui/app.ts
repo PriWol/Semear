@@ -64,6 +64,8 @@ export function iniciarApp(
   // Cada renderização tem um número: se a pessoa muda de tela enquanto a anterior ainda carrega os dados,
   // a antiga não pode terminar por último e sobrescrever a nova.
   let ultima = 0;
+  // Hash da última tela desenhada: foco no título só quando a TELA muda, não num redesenho da mesma tela.
+  let hashDesenhado: string | null = null;
 
   const ctx: Contexto = {
     ...base,
@@ -104,6 +106,10 @@ export function iniciarApp(
       raiz.replaceChildren(el);
       pagina.montar?.(el);
       marcarNavegacao(caminho);
+      // Depois de trocar de tela, o foco vai ao título (QA2-08): leitor de tela anuncia a tela nova e o
+      // próximo Tab começa no conteúdo. Na primeira carga fica no topo, para o link "Ir para o conteúdo".
+      if (hashDesenhado !== null && hashDesenhado !== location.hash) focarTitulo(el);
+      hashDesenhado = location.hash;
     } catch (erro) {
       console.error(erro);
       if (minha !== ultima) return;
@@ -122,12 +128,23 @@ export function iniciarApp(
     }
   }
 
+  document.getElementById('pular-conteudo')?.addEventListener('click', (ev) => {
+    ev.preventDefault(); // "#conteudo" não é uma rota
+    focarTitulo(raiz);
+  });
+
   window.addEventListener('hashchange', () => {
     void renderizar();
     window.scrollTo(0, 0);
   });
   void renderizar();
   return ctx;
+}
+
+function focarTitulo(dentro: HTMLElement) {
+  const alvo = dentro.querySelector<HTMLElement>('h1') ?? dentro;
+  if (!alvo.hasAttribute('tabindex')) alvo.setAttribute('tabindex', '-1');
+  alvo.focus({ preventScroll: true });
 }
 
 function marcarNavegacao(caminho: string) {

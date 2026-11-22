@@ -47,6 +47,26 @@ code {
   border-radius: var(--s-espaco-1);
 }
 
+/* Link "Ir para o conteúdo": fora da tela até receber foco (QA2-08). */
+.pular {
+  position: absolute;
+  left: var(--s-espaco-2);
+  top: calc(-1 * var(--s-barra-fixa) * 2);
+  z-index: 20;
+  padding: var(--s-espaco-2) var(--s-espaco-4);
+  background: var(--s-papel);
+  color: var(--s-principal);
+  border: var(--s-borda-marcada) solid var(--s-foco);
+  border-radius: var(--s-raio-p);
+}
+.pular:focus {
+  top: var(--s-espaco-2);
+}
+/* O título recebe foco ao trocar de tela; o contorno só aparece quando o foco veio do teclado. */
+h1[tabindex='-1']:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* ---------- Topo ---------- */
 .topo {
   position: sticky;
