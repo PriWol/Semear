@@ -1,5 +1,5 @@
 // Gerador de sessão (§5.6 da especificação). Determinístico: mesma entrada, mesma sugestão.
-import type { Atividade, Crianca, EstadosCrianca, Familia, Livro, Sessao } from './tipos';
+import type { Atividade, Crianca, EstadosCrianca, Familia, Livro, Sessao, Vertente } from './tipos';
 import type { IndiceConteudo } from './conteudo';
 import { linhaDoMarco, marcosVisiveis, revisaVisivel } from './conteudo';
 import { diasEntre } from './datas';
@@ -11,6 +11,48 @@ export const DURACAO_PADRAO = 30;
 /** Folga sobre a duração escolhida (10%), para não descartar uma atividade por poucos minutos. */
 const FOLGA = 1.1;
 const JANELA_DIAS = 14;
+
+/**
+ * Teto suave de duração de UMA atividade, por idade inteira (ADR 0036, D5 da estória #138). Vale como
+ * regra prática de rotina para a atenção da criança, sem fonte citável. 2 anos segue o ADR 0021 (até 10 min).
+ * Acima do teto a atividade só entra se for a única possível, com aviso.
+ */
+export const TETOS_DURACAO_POR_IDADE: Readonly<Record<number, number>> = {
+  2: 10,
+  3: 12,
+  4: 15,
+  5: 20,
+  6: 20,
+  7: 25,
+  8: 25,
+};
+/** Charlotte Mason pede lições curtas (10 a 20 min, §3): o teto nunca passa disso, em nenhuma idade. */
+export const TETO_CHARLOTTE_MASON = 20;
+/** Uma atividade ocupa no máximo metade da sessão, quando há alternativa (critério da estória #145). */
+export const FRACAO_MAXIMA_ATIVIDADE = 0.5;
+/** Para menores de 4 anos a parcela é menor: 4 a 5 blocos curtos em 30 min, em vez de 2 grandes. */
+export const FRACAO_MAXIMA_ATIVIDADE_PEQUENOS = 0.3;
+const IDADE_BLOCOS_CURTOS = 4;
+
+/** Teto de duração de uma atividade para a idade (inteira, limitada a 2..8) e a vertente principal. */
+export function tetoDeDuracao(idade: number, vertente: Vertente): number {
+  const inteira = Math.min(8, Math.max(2, Math.floor(idade)));
+  const teto = TETOS_DURACAO_POR_IDADE[inteira] ?? 20;
+  return vertente === 'Charlotte Mason' ? Math.min(teto, TETO_CHARLOTTE_MASON) : teto;
+}
+
+/**
+ * Número estável (FNV-1a) a partir do dia e da linha: gira a ordem das linhas empatadas de um dia para o
+ * outro sem sorteio, então a mesma entrada dá sempre a mesma sessão (§5.6). Só usa a data, não a hora.
+ */
+function sementeDoDia(agora: string, linhaId: string): number {
+  let h = 0x811c9dc5;
+  for (const c of `${agora.slice(0, 10)}|${linhaId}`) {
+    h ^= c.charCodeAt(0);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h;
+}
 
 export interface PedidoSessao {
   familia: Familia;
@@ -156,19 +198,62 @@ export function complementares(
   );
 }
 
+/** Fila de candidatas de uma pista, com a posição dela na ordem do dia (para desempates estáveis). */
+interface FilaPista {
+  pista: Pista;
+  id: string;
+  ordem: number;
+  fila: Escolha[];
+}
+
+/** Pistas em ordem de "quem merece abrir a sessão": menos tempo trabalhado, depois a semente do dia. */
+function ordenarEquilibrado(todas: Pista[], minutos: Map<string, number>, agora: string): Pista[] {
+  return todas
+    .map((p, ordem) => ({
+      p,
+      ordem,
+      min: minutos.get(p.linha.id) ?? 0,
+      semente: sementeDoDia(agora, idPista(p)),
+    }))
+    .sort((a, b) => a.min - b.min || a.semente - b.semente || a.ordem - b.ordem)
+    .map((x) => x.p);
+}
+
+/** Agrupa as pistas por domínio, na ordem em que cada domínio aparece pela primeira vez. */
+function agruparPorDominio(filas: FilaPista[]): FilaPista[][] {
+  const grupos = new Map<string, FilaPista[]>();
+  for (const f of filas) {
+    const g = grupos.get(f.pista.dominio.id);
+    if (g) g.push(f);
+    else grupos.set(f.pista.dominio.id, [f]);
+  }
+  return [...grupos.values()];
+}
+
+const idDominio = (grupo: FilaPista[]) => grupo[0]?.pista.dominio.id ?? '';
+
+/** Quão bem a atividade serve agora: 0 = ideal; 1 = cabe, mas passa da parcela; 2 = passa do teto; 3 = não cabe. */
+function nivelDaAtividade(
+  minutosAtividade: number,
+  restante: number,
+  teto: number,
+  parcela: number,
+): 0 | 1 | 2 | 3 {
+  if (minutosAtividade > restante) return 3;
+  if (minutosAtividade > teto) return 2;
+  return minutosAtividade > parcela ? 1 : 0;
+}
+
 export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): PropostaSessao {
   const { familia, crianca, idade, estados, historico, duracaoMin, foco, agora } = pedido;
   const recentes = atividadesRecentes(historico, crianca.id, agora);
   const todas = pistasDaCrianca(idx, familia, crianca);
 
-  // 1. Pistas candidatas: o foco do pai, ou as menos trabalhadas nas últimas 2 semanas.
+  // 1. Pistas candidatas: o foco do pai, ou as menos trabalhadas nas últimas 2 semanas. Quando várias
+  // empatam (criança sem histórico), a semente do dia gira a ordem, em vez de a ordem do arquivo.
   let pistas: Pista[];
   if (foco === 'equilibrado') {
-    const minutos = minutosPorLinha(idx, historico, crianca.id, agora);
-    pistas = todas
-      .map((p, ordem) => ({ p, ordem, min: minutos.get(p.linha.id) ?? 0 }))
-      .sort((a, b) => a.min - b.min || a.ordem - b.ordem)
-      .map((x) => x.p);
+    pistas = ordenarEquilibrado(todas, minutosPorLinha(idx, historico, crianca.id, agora), agora);
   } else {
     pistas = foco
       .map((id) => todas.find((p) => idPista(p) === id))
@@ -176,60 +261,129 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
   }
 
   // 2. Candidatas por pista, a partir dos marcos ativos.
-  const filas: { pista: Pista; fila: Escolha[] }[] = [];
+  const filas: FilaPista[] = [];
   const lacunas: Lacuna[] = [];
-  for (const pista of pistas) {
+  pistas.forEach((pista, ordem) => {
     const pos = posicaoDaLinha(idx, pista, estados, idade, familia.vertentePrincipal);
-    if (pos.ativos.length === 0) continue;
+    if (pos.ativos.length === 0) return;
+    const id = idPista(pista);
     const fila = candidatas(idx, pista, pos.ativos, familia, idade, recentes).map((e) => ({
       ...e,
-      pista: idPista(pista),
+      pista: id,
     }));
     if (fila.length === 0) {
-      lacunas.push({ pista: idPista(pista), nomeLinha: pista.linha.nome, marcos: pos.ativos });
+      lacunas.push({ pista: id, nomeLinha: pista.linha.nome, marcos: pos.ativos });
     } else {
-      filas.push({ pista, fila });
+      filas.push({ pista, id, ordem, fila });
     }
-  }
+  });
 
-  // 3-4. Preenche a duração alternando entre as pistas (uma atividade por pista a cada rodada).
+  // 3-4. Preenche a duração em rodadas por DOMÍNIO (no máximo uma atividade por domínio por rodada).
+  // Dentro do domínio, vem primeiro a linha com menos atividades já escolhidas. A próxima atividade é a
+  // melhor pontuada que caiba no tempo que resta (ver nivelDaAtividade).
   const escolhas: Escolha[] = [];
   const usadas = new Set<string>(pedido.excluir ?? []);
-  let minutos = 0;
+  const porPista = new Map<string, number>();
+  const porDominio = new Map<string, number>();
+  const dominioDaPista = new Map(filas.map((f) => [f.id, f.pista.dominio.id]));
+  const dominios = agruparPorDominio(filas);
   const limite = duracaoMin * FOLGA;
-  let adicionou = true;
-  while (adicionou) {
-    adicionou = false;
-    for (const { fila } of filas) {
-      const proxima = fila.find((e) => !usadas.has(e.atividade.id));
-      if (!proxima) continue;
-      const cabe = minutos + proxima.atividade.duracaoMin <= limite;
-      if (cabe || escolhas.length === 0) {
-        escolhas.push(proxima);
-        usadas.add(proxima.atividade.id);
-        minutos += proxima.atividade.duracaoMin;
-        adicionou = true;
+  const teto = tetoDeDuracao(idade, familia.vertentePrincipal);
+  const parcela =
+    duracaoMin *
+    (idade < IDADE_BLOCOS_CURTOS ? FRACAO_MAXIMA_ATIVIDADE_PEQUENOS : FRACAO_MAXIMA_ATIVIDADE);
+  let minutos = 0;
+
+  const nivel = (e: Escolha) =>
+    nivelDaAtividade(e.atividade.duracaoMin, limite - minutos, teto, parcela);
+  const adicionar = (e: Escolha) => {
+    escolhas.push(e);
+    usadas.add(e.atividade.id);
+    minutos += e.atividade.duracaoMin;
+    porPista.set(e.pista, (porPista.get(e.pista) ?? 0) + 1);
+    const dominio = dominioDaPista.get(e.pista);
+    if (dominio) porDominio.set(dominio, (porDominio.get(dominio) ?? 0) + 1);
+  };
+  const escolherNoDominio = (grupo: FilaPista[], nivelMax: 0 | 1): Escolha | undefined => {
+    const ordenado = [...grupo].sort(
+      (a, b) => (porPista.get(a.id) ?? 0) - (porPista.get(b.id) ?? 0) || a.ordem - b.ordem,
+    );
+    for (const { fila } of ordenado) {
+      const e = fila.find((c) => !usadas.has(c.atividade.id) && nivel(c) <= nivelMax);
+      if (e) return e;
+    }
+    return undefined;
+  };
+  const preencher = (nivelMax: 0 | 1) => {
+    let adicionou = true;
+    while (adicionou) {
+      adicionou = false;
+      // Rodízio: quem tem menos atividades na sessão vai primeiro, para um domínio não consumir o tempo
+      // antes de os outros terem a vez. O sort é estável, então o empate segue a ordem do dia.
+      const vez = [...dominios].sort(
+        (a, b) => (porDominio.get(idDominio(a)) ?? 0) - (porDominio.get(idDominio(b)) ?? 0),
+      );
+      for (const grupo of vez) {
+        const e = escolherNoDominio(grupo, nivelMax);
+        if (e) {
+          adicionar(e);
+          adicionou = true;
+        }
       }
     }
-  }
+  };
 
-  // 5. No máximo uma complementar, só se couber na duração escolhida. Com linhas de foco
-  // escolhidas à mão, a educadora pediu essas linhas: não acrescenta nada por conta própria.
+  preencher(0);
+  // Atividade que ocupa mais que a parcela só entra depois de outra: sozinha, só como último recurso.
+  if (escolhas.length > 0) preencher(1);
+
+  // 5. No máximo uma complementar, só se couber na duração escolhida e no teto da idade. Com linhas de
+  // foco escolhidas à mão, a educadora pediu essas linhas: não acrescenta nada por conta própria.
   const comp =
     foco === 'equilibrado'
       ? complementares(idx, familia, idade, recentes).find(
-          (e) => !usadas.has(e.atividade.id) && minutos + e.atividade.duracaoMin <= limite,
+          (e) => !usadas.has(e.atividade.id) && nivel(e) <= 1,
         )
       : undefined;
-  if (comp) {
-    escolhas.push(comp);
-    minutos += comp.atividade.duracaoMin;
+  if (comp) adicionar(comp);
+
+  // Último recurso (sessão ainda vazia): a primeira também precisa caber. Escolhe a mais curta que
+  // caiba no tempo e no teto; se nenhuma serve, a mais curta de todas, e o aviso explica.
+  if (escolhas.length === 0) {
+    const sobra = filas
+      .flatMap((f) => f.fila.map((e) => ({ e, ordem: f.ordem })))
+      .filter((x) => !usadas.has(x.e.atividade.id))
+      .map((x) => ({ ...x, n: nivel(x.e) }));
+    sobra.sort(
+      (a, b) =>
+        Number(a.n === 3) - Number(b.n === 3) ||
+        Number(a.n >= 2) - Number(b.n >= 2) ||
+        a.e.atividade.duracaoMin - b.e.atividade.duracaoMin ||
+        a.ordem - b.ordem ||
+        b.e.pontos - a.e.pontos ||
+        a.e.atividade.id.localeCompare(b.e.atividade.id),
+    );
+    const primeira = sobra[0];
+    if (primeira) {
+      adicionar(primeira.e);
+      // Acima do teto ou do tempo, a atividade fica sozinha; dentro dos dois, a sessão continua.
+      if (primeira.n <= 1) {
+        preencher(0);
+        preencher(1);
+      }
+    }
   }
 
   const avisos: string[] = [];
   if (escolhas.length > 0 && minutos > limite) {
     avisos.push(
       `A atividade sugerida tem ${minutos} min, mais do que os ${duracaoMin} min escolhidos. Você pode fazê-la em duas partes.`,
+    );
+  }
+  const acima = escolhas.find((e) => e.atividade.duracaoMin > teto);
+  if (acima) {
+    avisos.push(
+      `A atividade sugerida tem ${acima.atividade.duracaoMin} min, mais do que o recomendado para ${Math.floor(idade)} anos (até ${teto} min). Você pode fazê-la em duas partes.`,
     );
   }
   if (pistas.length === 0 && foco !== 'equilibrado')
