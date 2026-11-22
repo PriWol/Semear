@@ -34,6 +34,7 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
     conteudo: html`
       <div class="reg-pagina">
         <div>
+          <p><a href="#/">Cancelar</a></p>
           <h1>Como foi a sessão?</h1>
           <p class="reg-contexto">
             ${sessao.codigo} · ${crianca.nome} · ${dataCurta(sessao.criadaEm)} ·
@@ -158,7 +159,6 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
             <button class="botao primario" type="submit" id="salvar">
               ${jaRegistrada ? 'Salvar alterações' : 'Salvar registro'}
             </button>
-            <a class="botao" href="#/">Cancelar</a>
           </div>
         </form>
       </div>
