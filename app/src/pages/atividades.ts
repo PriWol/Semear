@@ -45,7 +45,7 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
   const cartao = (a: Atividade): HtmlSeguro => {
     const folha = a.folhas[0];
     return html`<li class="cartao" data-atividade="${a.id}">
-      <h3><a href="#/atividade/${a.id}">${a.titulo}</a></h3>
+      <h2><a href="#/atividade/${a.id}">${a.titulo}</a></h2>
       <p class="nota">
         ${a.duracaoMin} min · ${a.idade[0]} a ${a.idade[1]} anos
         ${marcosDoCartao(a)}
