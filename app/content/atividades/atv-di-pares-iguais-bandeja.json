@@ -12,18 +12,18 @@
     {
       "titulo": "Mostrar",
       "minutos": 2,
-      "texto": "Mostre uma bandeja com 3 objetos e uma cesta com os 3 pares. Pegue um e procure o par, devagar. Depois, ela tenta.",
+      "texto": "Mostre uma bandeja com 3 objetos e uma cesta com os 3 pares. Pegue um e procure o par, devagar. Depois, a criança tenta.",
       "fala": "Cadê o igual?"
     },
     {
       "titulo": "Combinar",
       "minutos": 5,
-      "texto": "Ela combina os pares um por um. Fale as palavras do que sente: “macio”, “áspero”, “liso”. Troque os objetos para repetir."
+      "texto": "A criança combina os pares um por um. Fale as palavras do que sente: “macio”, “áspero”, “liso”. Troque os objetos para repetir."
     },
     {
       "titulo": "Olhos fechados",
       "minutos": 2,
-      "texto": "Se ela quiser, feche os olhos (ou cubra-os com um pano) e ache o par pelo tato."
+      "texto": "Se a criança quiser, feche os olhos (ou cubra-os com um pano) e ache o par pelo tato."
     }
   ],
   "observar": {

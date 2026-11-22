@@ -12,13 +12,13 @@
     {
       "titulo": "Saquinho",
       "minutos": 8,
-      "texto": "Em um saco de pano, coloque 5 objetos (esponja, colher de pau, chave, pedra lisa grande, pano). Ela enfia a mão e descreve o que sente antes de adivinhar.",
+      "texto": "Em um saco de pano, coloque 5 objetos (esponja, colher de pau, chave, pedra lisa grande, pano). A criança enfia a mão e descreve o que sente antes de adivinhar.",
       "fala": "O que você sente?"
     },
     {
       "titulo": "Pesos",
       "minutos": 8,
-      "texto": "Com 3 potes iguais, fechados, cheios de arroz, de areia e de algodão, ela ordena do mais leve ao mais pesado, só pelo peso na mão."
+      "texto": "Com 3 potes iguais, fechados, cheios de arroz, de areia e de algodão, a criança ordena do mais leve ao mais pesado, só pelo peso na mão."
     },
     {
       "titulo": "Conferir",
@@ -66,7 +66,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual descrição mais criativa ela deu?",
+  "perguntaFicha": "Qual descrição mais criativa a criança deu?",
   "palavrasChave": ["peso", "tato", "mistério", "texturas"],
   "folhas": [],
   "autoria": {

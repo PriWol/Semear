@@ -12,18 +12,18 @@
     {
       "titulo": "Torre",
       "minutos": 4,
-      "texto": "No chão, empilhem blocos grandes (caixinhas, copos de plástico). Mostre e depois deixe que ela tente. Comemore quando cair: “De novo!”.",
+      "texto": "No chão, empilhem blocos grandes (caixinhas, copos de plástico). Mostre e depois deixe que a criança tente. Comemore quando cair: “De novo!”.",
       "fala": "Em cima! Em cima!"
     },
     {
       "titulo": "Caixa",
       "minutos": 3,
-      "texto": "Ela põe e tira objetos grandes de uma caixa com tampa. Mostre como abrir e fechar a tampa."
+      "texto": "A criança põe e tira objetos grandes de uma caixa com tampa. Mostre como abrir e fechar a tampa."
     },
     {
       "titulo": "Potes",
       "minutos": 3,
-      "texto": "Dê 2 ou 3 potes com tampa de rosquear de tamanho grande. Ela abre e fecha, com a sua ajuda, se pedir."
+      "texto": "Dê 2 ou 3 potes com tampa de rosquear de tamanho grande. A criança abre e fecha, com a sua ajuda, se pedir."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantos blocos ela empilhou?",
+  "perguntaFicha": "Quantos blocos a criança empilhou?",
   "palavrasChave": ["empilhar", "blocos", "encaixe", "mãos"],
   "folhas": [],
   "autoria": {

@@ -18,12 +18,12 @@
     {
       "titulo": "Fazer",
       "minutos": 12,
-      "texto": "Ela corta a banana em rodelas e passa pasta no pão com uma faca de mesa. Mostre como segurar a faca e manter a outra mão com os dedos para trás."
+      "texto": "A criança corta a banana em rodelas e passa pasta no pão com uma faca de mesa. Mostre como segurar a faca e manter a outra mão com os dedos para trás."
     },
     {
       "titulo": "Servir",
       "minutos": 5,
-      "texto": "Ela monta os pratos, coloca na mesa e serve a família. Depois ajuda a lavar o que usou."
+      "texto": "A criança monta os pratos, coloca na mesa e serve a família. Depois ajuda a lavar o que usou."
     }
   ],
   "observar": {
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Como ela se saiu com a faca?",
+  "perguntaFicha": "Como a criança se saiu com a faca?",
   "palavrasChave": ["cozinhar", "lanche", "receita", "vida prática", "faca"],
   "folhas": [],
   "autoria": {

@@ -6,13 +6,13 @@
   "idade": [6, 8],
   "duracaoMin": 20,
   "preparoMin": 5,
-  "cuidados": "Doações só de itens em bom estado, e nunca de dinheiro ou objetos de valor sem o adulto. Respeite o sigilo e a dignidade das pessoas ajudadas. A criança não deve sair sozinha para entregar nada.",
+  "cuidados": "Doações só de itens em bom estado, e nunca de dinheiro ou objetos de valor sem o adulto. Respeite o sigilo e a dignidade das pessoas ajudadas. A criança não deve sair sem um adulto para entregar nada.",
   "objetivo": "A criança escolhe uma virtude, pensa em uma ação concreta e a realiza, contando depois por que fez.",
   "passos": [
     {
       "titulo": "Escolher",
       "minutos": 6,
-      "texto": "Converse sobre uma virtude (gratidão, generosidade, perdão): “O que seria isso em uma ação?”. Ela escolhe uma ação possível nesta semana.",
+      "texto": "Converse sobre uma virtude (gratidão, generosidade, perdão): “O que seria isso em uma ação?”. A criança escolhe uma ação possível nesta semana.",
       "fala": "Como podemos fazer isso?"
     },
     {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que virtude e qual ação ela escolheu?",
+  "perguntaFicha": "Que virtude e qual ação a criança escolheu?",
   "palavrasChave": ["gratidão", "virtudes", "generosidade", "ação", "valores"],
   "folhas": [],
   "autoria": {
