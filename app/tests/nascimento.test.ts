@@ -13,6 +13,7 @@ describe('nascimentoPlausivel', () => {
     expect(nascimentoPlausivel('2026-06-01', HOJE)).toBe(true); // 0 anos: só avisa
     expect(nascimentoPlausivel('2012-01-01', HOJE)).toBe(true); // 14 anos: só avisa
     expect(nascimentoPlausivel('2008-11-22', HOJE)).toBe(true); // faz 18 hoje
+    expect(nascimentoPlausivel('2007-11-23', HOJE)).toBe(true); // 18 anos e 11 meses
   });
 
   it('recusa data no futuro', () => {
@@ -21,7 +22,7 @@ describe('nascimentoPlausivel', () => {
   });
 
   it('recusa mais de 18 anos', () => {
-    expect(problemaDeNascimento('2008-11-21', HOJE)).toBe('antigo'); // 18 anos e 1 dia
+    expect(problemaDeNascimento('2007-11-22', HOJE)).toBe('antigo'); // faz 19 hoje
     expect(problemaDeNascimento('2000-03-15', HOJE)).toBe('antigo');
     expect(problemaDeNascimento('1900-01-01', HOJE)).toBe('antigo');
   });

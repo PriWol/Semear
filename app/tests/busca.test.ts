@@ -89,8 +89,14 @@ describe('palavras-chave e sessão avulsa', () => {
       app: 'semear',
       versao: 1,
       exportadoEm: '2026-11-08T00:00:00.000Z',
-      familia: null,
-      criancas: [],
+      familia: {
+        educador: 'M',
+        vertentePrincipal: 'Montessori' as const,
+        inspiracoes: [],
+        idiomasEducador: [],
+        criadaEm: '2026-10-01T10:00:00.000Z',
+      },
+      criancas: [{ id: 'c', nome: 'Ana', nascimento: '2021-03-15', letra: null, trilhas: [] }],
       estados: [],
       historico: [],
       sessoes: [
