@@ -12,18 +12,18 @@
     {
       "titulo": "Ouvir",
       "minutos": 4,
-      "texto": "Cante ou recite “Au clair de la lune, mon ami Pierrot, prête-moi ta plume pour écrire un mot”. Ela escuta e bate o ritmo com você.",
+      "texto": "Cante ou recite “Au clair de la lune, mon ami Pierrot, prête-moi ta plume pour écrire un mot”. A criança escuta e bate o ritmo com você.",
       "fala": "Au clair de la lune…"
     },
     {
       "titulo": "Decorar",
       "minutos": 8,
-      "texto": "Repitam linha por linha, apagando uma palavra por vez de um cartaz, até ela saber de cor. Repita várias vezes."
+      "texto": "Repitam linha por linha, apagando uma palavra por vez de um cartaz, até a criança saber de cor. Repita várias vezes."
     },
     {
       "titulo": "Apresentar",
       "minutos": 3,
-      "texto": "Ela recita ou canta para alguém da casa, com gestos. Comemore."
+      "texto": "A criança recita ou canta para alguém da casa, com gestos. Comemore."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantos versos ela recitou de memória?",
+  "perguntaFicha": "Quantos versos a criança recitou de memória?",
   "palavrasChave": ["cantiga", "au clair de la lune", "recitar", "francês", "memória"],
   "idioma": "fr",
   "folhas": [],

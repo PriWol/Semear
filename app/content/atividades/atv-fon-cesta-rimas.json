@@ -7,7 +7,7 @@
   "idade": [4, 7],
   "duracaoMin": 25,
   "preparoMin": 8,
-  "cuidados": "Atenção: escolha objetos grandes, sem pontas nem bordas cortantes e sem peças soltas pequenas. Fique junto aos 4 anos. Se ela errar um par, repita os dois nomes devagar, sem cobrar.",
+  "cuidados": "Atenção: escolha objetos grandes, sem pontas nem bordas cortantes e sem peças soltas pequenas. Fique junto aos 4 anos. Se a criança errar um par, repita os dois nomes devagar, sem cobrar.",
   "objetivo": "A criança compara o **final de duas palavras** e começa a produzir palavras que rimam, com objetos reais nas mãos.",
   "passos": [
     {
@@ -24,12 +24,12 @@
     {
       "titulo": "Quem rima com…?",
       "minutos": 6,
-      "texto": "Mostre um objeto e peça que ela ache na cesta o que rima. Depois proponha: *“E se não tiver na cesta? Diga uma palavra que rima”*; palavras inventadas valem."
+      "texto": "Mostre um objeto e peça que a criança ache na cesta o que rima. Depois proponha: *“E se não tiver na cesta? Diga uma palavra que rima”*; palavras inventadas valem."
     },
     {
       "titulo": "Folha: ligue as rimas",
       "minutos": 6,
-      "texto": "Leia em voz alta o nome de cada figura antes de ela ligar."
+      "texto": "Leia em voz alta o nome de cada figura antes de a criança ligar."
     }
   ],
   "observar": {
@@ -44,7 +44,7 @@
   },
   "ajustes": {
     "dificil": "Use só 3 objetos e pares bem diferentes; deixe a criança só escutar e apontar.",
-    "facil": "Peça que ela invente uma quadrinha de duas linhas com o par que escolheu."
+    "facil": "Peça que a criança invente uma quadrinha de duas linhas com o par que escolheu."
   },
   "materiais": [
     {
@@ -62,7 +62,7 @@
   ],
   "toqueVertente": {
     "Montessori": "Os objetos reais vêm antes das figuras; deixe a criança escolher o que quer rimar e conduza com perguntas.",
-    "Clássico": "Ao fim, recitem juntos uma parlenda com rima e peçam que ela aponte quais palavras rimam."
+    "Clássico": "Ao fim, recitem juntos uma parlenda com rima e peçam que a criança aponte quais palavras rimam."
   },
   "evidencias": [
     {

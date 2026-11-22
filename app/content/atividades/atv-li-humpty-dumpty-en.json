@@ -12,18 +12,18 @@
     {
       "titulo": "Ouvir",
       "minutos": 4,
-      "texto": "Recite a rima “Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall…” batendo o ritmo. Ela escuta e bate o ritmo com você.",
+      "texto": "Recite a rima “Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall…” batendo o ritmo. A criança escuta e bate o ritmo com você.",
       "fala": "Humpty Dumpty sat on a wall…"
     },
     {
       "titulo": "Decorar",
       "minutos": 8,
-      "texto": "Recitem linha por linha, apagando uma palavra por vez de um cartaz, até ela saber de cor. Repita várias vezes."
+      "texto": "Recitem linha por linha, apagando uma palavra por vez de um cartaz, até a criança saber de cor. Repita várias vezes."
     },
     {
       "titulo": "Apresentar",
       "minutos": 3,
-      "texto": "Ela recita para alguém da casa, com gestos. Comemore."
+      "texto": "A criança recita para alguém da casa, com gestos. Comemore."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantos versos ela recitou de memória?",
+  "perguntaFicha": "Quantos versos a criança recitou de memória?",
   "palavrasChave": ["rima", "humpty dumpty", "recitar", "inglês", "memória"],
   "idioma": "en",
   "folhas": [],

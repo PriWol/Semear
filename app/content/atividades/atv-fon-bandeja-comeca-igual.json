@@ -7,7 +7,7 @@
   "idade": [4, 7],
   "duracaoMin": 25,
   "preparoMin": 8,
-  "cuidados": "Atenção: use na bandeja só objetos grandes, que não caibam na boca (nada de moedas, botões ou tampinhas). Fique junto da criança, principalmente aos 4 anos, e mantenha giz e lápis longe da boca. Não é teste: se ela errar, repita os nomes devagar.",
+  "cuidados": "Atenção: use na bandeja só objetos grandes, que não caibam na boca (nada de moedas, botões ou tampinhas). Fique junto da criança, principalmente aos 4 anos, e mantenha giz e lápis longe da boca. Sem cobrança: se a criança errar, repita os nomes devagar.",
   "objetivo": "A criança percebe que palavras diferentes podem **começar com o mesmo pedaço** (BOla, BOta), ligando o som ao início da palavra.",
   "passos": [
     {
@@ -18,12 +18,12 @@
     {
       "titulo": "Quem começa igual?",
       "minutos": 8,
-      "texto": "Pegue um objeto (*bola*) e peça que ela ache outro que **começa igual** (*bo-ta*). Prolongue o começo ao falar (*BOOO-la*). Se faltar, pergunte *“e se não tiver na bandeja?”*."
+      "texto": "Pegue um objeto (*bola*) e peça que a criança ache outro que **começa igual** (*bo-ta*). Prolongue o começo ao falar (*BOOO-la*). Se faltar, pergunte *“e se não tiver na bandeja?”*."
     },
     {
       "titulo": "O intruso",
       "minutos": 6,
-      "texto": "Escolha três (*bola, bota, casa*) e pergunte qual **não combina** no começo. Peça que ela diga outra palavra que começa com o pedaço dos dois que combinam."
+      "texto": "Escolha três (*bola, bota, casa*) e pergunte qual **não combina** no começo. Peça que a criança diga outra palavra que começa com o pedaço dos dois que combinam."
     },
     {
       "titulo": "Folha: pinte os que começam igual",
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Use apenas 3 objetos e dois pedaços bem diferentes (BO × CA).",
-    "facil": "Peça que ela invente uma frase em que todas as palavras comecem igual (*“PApai PAssa PAnela”*)."
+    "facil": "Peça que a criança invente uma frase em que todas as palavras comecem igual (*“PApai PAssa PAnela”*)."
   },
   "materiais": [
     {
@@ -61,7 +61,7 @@
   ],
   "toqueVertente": {
     "Montessori": "É o jogo dos sons com objetos reais, antes de qualquer letra. Deixe a criança conduzir a escolha dos objetos.",
-    "Charlotte Mason": "Depois da bandeja, peça que ela conte, em uma frase, como descobriu os pares (narração curta)."
+    "Charlotte Mason": "Depois da bandeja, peça que a criança conte, em uma frase, como descobriu os pares (narração curta)."
   },
   "evidencias": [
     {

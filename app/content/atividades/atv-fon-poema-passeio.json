@@ -6,13 +6,13 @@
   "idade": [3, 6],
   "duracaoMin": 24,
   "preparoMin": 3,
-  "cuidados": "Atenção: em pátio ou praça, fique junto da criança e olhe por onde ela anda. Não deixe levar à boca folhas, sementes ou pedrinhas que apanhar. Não cobre que complete o verso.",
+  "cuidados": "Atenção: em pátio ou praça, fique junto da criança e olhe por onde se anda. Não deixe levar à boca folhas, sementes ou pedrinhas que apanhar. Não cobre que complete o verso.",
   "objetivo": "A criança liga o gosto pelo **ritmo e pela rima** ao mundo real, completando versos feitos sobre o que viveu.",
   "passos": [
     {
       "titulo": "Olhar e ouvir",
       "minutos": 6,
-      "texto": "Num pátio, praça ou na janela, escolham uma coisa para observar (uma árvore, um passarinho, a chuva). Conversem sobre ela em frases curtas."
+      "texto": "Num pátio, praça ou na janela, escolham uma coisa para observar (uma árvore, um passarinho, a chuva). Conversem sobre a criança em frases curtas."
     },
     {
       "titulo": "O verso do dia",
@@ -23,7 +23,7 @@
     {
       "titulo": "Brincar com o verso",
       "minutos": 6,
-      "texto": "Diga o verso e pare antes da última palavra para ela completar. Depois troque a palavra final por outra que combine e vejam como soa."
+      "texto": "Diga o verso e pare antes da última palavra para a criança completar. Depois troque a palavra final por outra que combine e vejam como soa."
     },
     {
       "titulo": "Folha: desenho do passeio",
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Use um verso de duas palavras que rimam (“chão, mão”) e brinque só com isso.",
-    "facil": "Peça que ela invente a palavra que fecha o verso, em vez de completar o seu."
+    "facil": "Peça que a criança invente a palavra que fecha o verso, em vez de completar o seu."
   },
   "materiais": [
     {

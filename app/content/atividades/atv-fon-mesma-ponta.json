@@ -23,7 +23,7 @@
     {
       "titulo": "Monte a família da pontinha",
       "minutos": 6,
-      "texto": "Escolha uma pontinha (*TO*) e procurem juntos palavras que terminam com ela (*gato, pato, prato, rato, sapato*)."
+      "texto": "Escolha uma pontinha (*TO*) e procurem juntos palavras que terminam com a criança (*gato, pato, prato, rato, sapato*)."
     },
     {
       "titulo": "Folha: pinte os que terminam igual",
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Use só 2 pares com finais muito diferentes e fale devagar.",
-    "facil": "Peça que ela invente uma frase em que todas as palavras terminem com o mesmo pedaço."
+    "facil": "Peça que a criança invente uma frase em que todas as palavras terminem com o mesmo pedaço."
   },
   "materiais": [
     {
