@@ -6,7 +6,7 @@
   "idade": [2, 4],
   "duracaoMin": 8,
   "preparoMin": 3,
-  "cuidados": "Atenção: use curativos de papel ou tiras de pano, sem adesivos nem peça pequena que possa ir à boca. Bicho de pelúcia sem partes soltas. Fique junto o tempo todo e não obrigue a criança a abraçar ou beijar ninguém: o corpo é dela.",
+  "cuidados": "Atenção: use curativos de papel ou tiras de pano, sem adesivos nem peça pequena que possa ir à boca. Bicho de pelúcia sem partes soltas. Fique junto o tempo todo e não obrigue a criança a abraçar ou beijar ninguém: o corpo é da criança.",
   "objetivo": "A criança oferece um gesto de carinho (abraço, passar a mão, trazer um brinquedo) a quem está triste, no faz de conta, com ajuda do adulto.",
   "passos": [
     {
@@ -18,12 +18,12 @@
     {
       "titulo": "Cuidar",
       "minutos": 4,
-      "texto": "Convide-a a cuidar: um abraço, uma mão no pezinho, um cobertor, uma tira de pano de curativo. Se ela não souber, mostre uma vez e deixe-a imitar. Elogie o gesto: *“Você cuidou do ursinho. Ele ficou feliz.”*"
+      "texto": "Convide a criança a cuidar: um abraço, uma mão no pezinho, um cobertor, uma tira de pano de curativo. Se a criança não souber, mostre uma vez e deixe imitar. Elogie o gesto: *“Você cuidou do ursinho. Ele ficou feliz.”*"
     },
     {
       "titulo": "E se fosse alguém de verdade?",
       "minutos": 2,
-      "texto": "Sem pressão, comente: *“Quando o vovô está triste, a gente pode dar um abraço, né?”*. Se ela quiser, treine o gesto com você."
+      "texto": "Sem pressão, comente: *“Quando o vovô está triste, a gente pode dar um abraço, né?”*. Se a criança quiser, treine o gesto com você."
     }
   ],
   "observar": {
@@ -38,7 +38,7 @@
   },
   "ajustes": {
     "dificil": "Faça só a cena e o abraço: sem curativo e sem perguntas.",
-    "facil": "Peça que ela escolha o que o bicho precisa e como cuidar dele, e conte para um adulto o que fez."
+    "facil": "Peça que a criança escolha o que o bicho precisa e como cuidar dele, e conte para um adulto o que fez."
   },
   "materiais": [
     {
@@ -51,23 +51,23 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe uma “caixa de cuidado” com pano e almofada ao alcance, para ela cuidar dos bichos sozinha.",
+    "Montessori": "Deixe uma “caixa de cuidado” com pano e almofada ao alcance, para a criança cuidar dos bichos sem ajuda.",
     "Waldorf": "Faça a cena como um teatrinho silencioso, com gestos lentos e uma canção de ninar; a criança imita.",
-    "Clássico": "Use uma frase fixa (*“o ursinho está triste, vamos cuidar”*) para ela repetir e guardar.",
+    "Clássico": "Use uma frase fixa (*“o ursinho está triste, vamos cuidar”*) para a criança repetir e guardar.",
     "Religioso": "Se fizer sentido, associe o gesto a gratidão e cuidado com o próximo, em uma frase simples.",
     "Charlotte Mason": "Parta de um livro de bichos em que alguém se machuca e repita a cena em brincadeira, sem sermão."
   },
   "evidencias": [
     {
       "texto": "Fez um gesto de carinho ao bicho",
-      "resposta": "☐ não   ☐ quando sugeri   ☐ sozinha"
+      "resposta": "☐ não   ☐ quando sugeri   ☐ sem ajuda"
     },
     {
       "texto": "Repetiu o gesto em outro momento",
       "resposta": "☐ não   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que gesto de carinho ela escolheu?",
+  "perguntaFicha": "Que gesto de carinho a criança escolheu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

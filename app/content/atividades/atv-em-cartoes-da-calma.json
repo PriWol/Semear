@@ -1,19 +1,19 @@
 {
   "id": "atv-em-cartoes-da-calma",
-  "titulo": "Cartões da calma: o que ajuda quando fico bravo?",
+  "titulo": "Cartões da calma: o que ajuda quando sinto raiva?",
   "marcos": ["EM.REG.03"],
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [4, 6],
   "duracaoMin": 20,
   "preparoMin": 10,
-  "cuidados": "Atenção: tesoura só com ponta redonda e com o adulto perto. Não deixe a criança sozinha no canto da calma como castigo: ele é um lugar que ela escolhe, nunca uma punição. Faça a atividade em um momento tranquilo, não durante a raiva.",
+  "cuidados": "Atenção: tesoura só com ponta redonda e com o adulto perto. Não use o canto da calma como castigo: é um lugar que a criança escolhe, nunca uma punição. Faça a atividade em um momento tranquilo, não durante a raiva.",
   "objetivo": "A criança conhece algumas estratégias para se acalmar (respirar, apertar uma almofada, beber água, pedir colo) e escolhe uma delas.",
   "passos": [
     {
       "titulo": "Conversa de bastidor",
       "minutos": 4,
-      "texto": "Conte um momento em que *você* ficou nervoso e o que fez para se acalmar. Pergunte: *“E você, o que ajuda quando fica muito bravo?”*. Aceite qualquer resposta.",
-      "fala": "O que ajuda o seu corpo a ficar calmo?"
+      "texto": "Conte um momento em que *você* ficou nervoso e o que fez para se acalmar. Pergunte: *“E você, o que ajuda quando sente muita raiva?”*. Aceite qualquer resposta.",
+      "fala": "O que ajuda o seu corpo a se acalmar?"
     },
     {
       "titulo": "Fazer os cartões",
@@ -23,12 +23,12 @@
     {
       "titulo": "Treinar com o corpo tranquilo",
       "minutos": 6,
-      "texto": "Escolha um cartão e experimentem juntos, de verdade: três respirações lentas, apertar a almofada com força. Sinta e comente: *“Meu coração ficou mais devagar?”*. Troque: ela escolhe, você imita."
+      "texto": "Escolha um cartão e experimentem juntos, de verdade: três respirações lentas, apertar a almofada com força. Sinta e comente: *“Meu coração ficou mais devagar?”*. Troque: a criança escolhe, você imita."
     },
     {
       "titulo": "Escolher o lugar",
       "minutos": 4,
-      "texto": "Combinem onde ficam os cartões e uma almofada (o canto da calma). Combine uma frase para usar na hora: *“Preciso de calma.”* Quando ela usar, elogie o esforço, e não o resultado."
+      "texto": "Combinem onde ficam os cartões e uma almofada (o canto da calma). Combine uma frase para usar na hora: *“Preciso de calma.”* Quando a criança usar, elogie o esforço, e não o resultado."
     }
   ],
   "observar": {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Fique em duas estratégias e faça você o primeiro exemplo, de novo, no dia seguinte.",
-    "facil": "Peça que ela ensine as estratégias a um irmão menor ou a um bicho de pelúcia."
+    "facil": "Peça que a criança ensine as estratégias a um irmão menor ou a um bicho de pelúcia."
   },
   "materiais": [
     {
@@ -68,7 +68,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe os cartões e a almofada num cantinho que ela alcance e possa usar sozinha, sem pedir licença.",
+    "Montessori": "Deixe os cartões e a almofada num cantinho que a criança alcance e possa usar sem ajuda, sem pedir licença.",
     "Waldorf": "Cante ou diga um verso curto de respiração antes de cada cartão; o ritmo ajuda o corpo a desacelerar.",
     "Clássico": "Combinem uma frase para decorar (*“eu paro, eu respiro, eu escolho”*) e recitem juntos nos momentos calmos.",
     "Religioso": "Se a família desejar, inclua um cartão de “um minuto de silêncio ou oração”, como forma de pausa.",
@@ -76,20 +76,20 @@
   },
   "evidencias": [
     {
-      "texto": "Estratégias que ela nomeou ou escolheu",
+      "texto": "Estratégias que a criança nomeou ou escolheu",
       "resposta": "_____ de 4"
     },
     {
       "texto": "Usou uma estratégia (no treino ou na vida real)",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Qual cartão ela escolheu primeiro?",
+  "perguntaFicha": "Qual cartão a criança escolheu primeiro?",
   "folhas": [
     {
       "tipo": "desenho",
       "titulo": "Meus cartões da calma",
-      "legenda": "Desenhe quatro coisas que ajudam você a ficar calmo."
+      "legenda": "Desenhe quatro coisas que ajudam você a se acalmar."
     }
   ],
   "autoria": {

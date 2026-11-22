@@ -12,7 +12,7 @@
     {
       "titulo": "Combinar as regras",
       "minutos": 3,
-      "texto": "Escolha um jogo curto e simples, como jogo da memória, trilha com dado ou dominó. Explique as regras em poucas frases e peça que ela diga com as próprias palavras como se joga.",
+      "texto": "Escolha um jogo curto e simples, como jogo da memória, trilha com dado ou dominó. Explique as regras em poucas frases e peça que a criança diga com as próprias palavras como se joga.",
       "fala": "Como se joga?"
     },
     {
@@ -24,7 +24,7 @@
     {
       "titulo": "Conversar",
       "minutos": 3,
-      "texto": "Pergunte do que ela mais gostou e, se perdeu, como se sentiu. Combinem uma revanche, se quiserem."
+      "texto": "Pergunte do que a criança mais gostou e, se perdeu, como se sentiu. Combinem uma revanche, se quiserem."
     }
   ],
   "observar": {
