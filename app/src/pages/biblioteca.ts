@@ -1,6 +1,7 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { figuraGravura } from '../ui/gravura';
+import { seloDeConferencia } from '../ui/selo';
 import { CADERNOS, enderecoDoPdf, VOLUMES } from '../tesouro';
 import type { CadernoTesouro, UnidadeTesouro, VolumeTesouro } from '../tesouro';
 
@@ -88,7 +89,7 @@ export function cartaoDoCaderno(c: CadernoTesouro) {
 }
 
 /** Biblioteca: abre os volumes e cadernos d'O Grande Tesouro de Marina direto na unidade (ADR 0015). */
-export const paginaBiblioteca: FabricaPagina = async () => ({
+export const paginaBiblioteca: FabricaPagina = async (ctx) => ({
   titulo: 'Biblioteca',
   conteudo: html`<div class="topo-gravura">
       <h1>Biblioteca</h1>
@@ -99,6 +100,7 @@ export const paginaBiblioteca: FabricaPagina = async () => ({
       cadernos abrem neste mesmo site; é preciso estar conectado à internet, a não ser que o
       arquivo já tenha sido baixado neste aparelho.
     </p>
+    ${seloDeConferencia(ctx.idx.conteudo.atividades.filter((a) => a.materialImpresso))}
     ${VOLUMES.map((v) => cartao(doVolume(v)))}
     <h2>Cadernos para 2 anos</h2>
     <div class="alerta" role="note"><p>${AVISO_SAUDE}</p></div>

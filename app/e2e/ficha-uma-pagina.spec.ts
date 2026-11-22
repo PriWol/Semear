@@ -17,7 +17,11 @@ function contarPaginasPdf(pdf: Buffer): number {
 }
 
 /** Gera o HTML do pacote com o mesmo código e o mesmo conteúdo do app (o Vite resolve `?raw` e as globs). */
-async function gerarHtml(atividadeIds: string[], duracaoMin: number): Promise<string> {
+async function gerarHtml(
+  atividadeIds: string[],
+  duracaoMin: number,
+  pendente = false,
+): Promise<string> {
   const vite = await createServer({
     server: { middlewareMode: true },
     appType: 'custom',
@@ -50,7 +54,18 @@ async function gerarHtml(atividadeIds: string[], duracaoMin: number): Promise<st
       atividades: atividadeIds.map((id) => {
         const a = idx.atividade(id);
         if (!a) throw new Error(`atividade ${id} não existe`);
-        return a;
+        // Com conferência pendente o roteiro ganha uma linha de aviso (ADR 0037): precisa caber.
+        return pendente
+          ? {
+              ...a,
+              revisao: {
+                estado: 'aprovado',
+                por: 'Teste',
+                em: '2026-11-22',
+                conferenciaProfissional: { estado: 'pendente' },
+              },
+            }
+          : a;
       }),
       livro: null,
       marco: (id) => idx.marco(id),
@@ -66,13 +81,19 @@ const ALTURA_A4_PX = (297 / 25.4) * 96;
 const CASOS = [
   { nome: 'uma atividade', ids: ['atv-caca-silabas'], duracao: 40 },
   { nome: 'duas atividades', ids: ['atv-caca-silabas', 'atv-feira-numeros'], duracao: 60 },
+  {
+    nome: 'duas atividades com conferência pendente',
+    ids: ['atv-caca-silabas', 'atv-feira-numeros'],
+    duracao: 60,
+    pendente: true,
+  },
 ];
 
 for (const caso of CASOS) {
   test(`${caso.nome}: a ficha de registro ocupa exatamente uma página no PDF`, async ({
     browser,
   }) => {
-    const html = await gerarHtml(caso.ids, caso.duracao);
+    const html = await gerarHtml(caso.ids, caso.duracao, caso.pendente);
     const pagina = await (await browser.newContext()).newPage();
     await pagina.setContent(html);
     await pagina.emulateMedia({ media: 'print' });
@@ -96,3 +117,21 @@ for (const caso of CASOS) {
     expect(contarPaginasPdf(pdf)).toBe(esperadas);
   });
 }
+
+test('o aviso de conferência pendente não faz o roteiro ganhar uma página', async ({ browser }) => {
+  const ids = ['atv-caca-silabas', 'atv-feira-numeros'];
+  const paginasDoRoteiro = async (pendente: boolean) => {
+    const pagina = await (await browser.newContext()).newPage();
+    await pagina.setContent(await gerarHtml(ids, 60, pendente));
+    await pagina.emulateMedia({ media: 'print' });
+    return pagina.evaluate(
+      (alturaA4) =>
+        Math.ceil(
+          ((document.querySelector<HTMLElement>('section.pagina')?.scrollHeight ?? 0) - 1) /
+            alturaA4,
+        ),
+      ALTURA_A4_PX,
+    );
+  };
+  expect(await paginasDoRoteiro(true)).toBe(await paginasDoRoteiro(false));
+});

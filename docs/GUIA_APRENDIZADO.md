@@ -124,6 +124,17 @@ teste). O **teste de propriedades** (`tests/sugestor-conteudo.test.ts`) roda a r
 combinações e confere afirmações que valem sempre ("a soma fica em até 110% do tempo"), em vez de comparar uma
 lista de ids que mudaria a cada atividade nova. (ADR 0036)
 
+### Estado como dado, aviso como selo único (conferência profissional)
+**O que é:** em vez de copiar a frase "conferência por profissional pendente" dentro do texto de 230 itens, o
+estado vira um **campo** (`revisao.conferenciaProfissional`) e a tela decide sozinha: se algum item da tela está
+`pendente`, mostra **um selo** (`seloDeConferencia`, em `src/ui/selo.ts`); se não, não mostra. A decisão de "precisa
+avisar?" é uma função pura do domínio (`precisaAvisoDeConferencia`), testada sem abrir navegador.
+
+**Por que importa:** texto é para a pessoa ler; **estado é para o programa decidir**. Misturar os dois obriga a
+editar centenas de textos à mão quando a situação muda e deixa o app sem saber o que já foi conferido. O selo
+usa `role="note"` para o leitor de tela anunciá-lo, e "Não substitui o pediatra" é uma regra de segurança que
+nunca sai da tela. Um teste de estilo impede que a frase volte para dentro dos textos. (ADR 0037)
+
 ### Idade como peso, ponto de partida pela idade e vertente (gerador de sessão v2, etapas 2 e 3)
 **O que é:** três regras novas do gerador, todas funções puras. (1) A **idade pesa, não filtra**
 (`src/domain/idade-sugestao.ts`): dentro da faixa da atividade a criança ganha pontos e um pequeno bônus por estar
@@ -303,6 +314,7 @@ aparelho (AM/PM) e não dá para forçar 24 h; a validação fica em `horaDe24h`
 | **Linha** | Sequência de aprendizagem dentro de um domínio (ex.: Consciência fonológica). |
 | **Marco** | Uma conquista observável numa linha (ex.: identifica a sílaba inicial). |
 | **Orientação para os pais** | Texto pedagógico de um marco, recolhido na jornada ("Para os pais"): por que importa, como participar, sinais de atenção e o que a vertente da família acrescenta. |
+| **Conferência profissional** | Estado (`pendente` ou `conferida`) guardado em `revisao.conferenciaProfissional`; faz a tela mostrar um selo único de aviso, que some quando vira conferida (ADR 0037). |
 | **Referência** | Obra do catálogo bibliográfico (`referencias.json`) citada nos marcos, exibida em ABNT. |
 | **Fronteira** | O primeiro marco da linha que a criança ainda não consolidou. |
 | **Marcos ativos** | Os marcos sendo trabalhados agora (fronteira + o seguinte, no máx. 2). |

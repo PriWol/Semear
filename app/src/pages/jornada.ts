@@ -12,6 +12,7 @@ import {
   type Pista,
 } from '../domain/jornada';
 import { formatarReferencia, orientacaoParaFamilia } from '../domain/orientacao';
+import { seloDeConferencia } from '../ui/selo';
 import { anos, ICONE_ESTADO, NOME_ESTADO, textoProgresso } from '../ui/rotulos';
 import { icone } from '../ui/icones';
 import { restaurarFoco, seletorPorDados } from '../ui/foco';
@@ -46,6 +47,9 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
   const abertos = reabrir;
   reabrir = new Set();
 
+  /** "Não substitui o pediatra" é fixo em "Para os pais" da Caderneta, com ou sem conferência pendente. */
+  const marcoDaCaderneta = (marcoId: string) => ctx.idx.marco(marcoId)?.linha === 'DI.CAD';
+
   /** Bloco recolhido "Para os pais": a tela fica limpa e quem quer ler abre. */
   const orientacaoDoMarco = (chave: string, marcoId: string) => {
     const o = orientacaoParaFamilia(ctx.idx, marcoId, familia);
@@ -65,6 +69,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
         )}
         <h3>Sinais de atenção</h3>
         <p>${textoRico(o.geral.sinaisDeAtencao)}</p>
+        ${marcoDaCaderneta(marcoId) ? seloDeConferencia([], { fixo: true }) : ''}
         ${
           o.referencias.length
             ? html`<h3>Para saber mais</h3>
@@ -212,6 +217,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
             </p>`
           : ''
       }
+      ${seloDeConferencia(pistasDoDominio.flatMap((p) => ctx.idx.marcosDaLinha(p.linha.id)))}
       ${pistasDoDominio.map(cartaoPista)}
       <p>
         <a class="botao primario" href="#/sessao/nova?crianca=${crianca.id}">Preparar sessão</a>

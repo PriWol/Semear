@@ -30,6 +30,22 @@ Marcos, atividades e livros aceitam o campo opcional `revisao` (#77):
   Valor fora desse conjunto é erro de validação. A partir de `revisado`, `por` e `em` (AAAA-MM-DD) são obrigatórios.
 - **Só o `aprovado` aparece no app.** Item sem `revisao` é o conteúdo anterior a este campo e continua aparecendo.
   Conteúdo novo deve entrar com `revisao`.
+- **Conferência por profissional de saúde** (ADR 0037): campo opcional dentro de `revisao`, no lugar da frase "conferência
+  por profissional pendente" dentro do texto:
+
+  ```jsonc
+  "revisao": { "estado": "aprovado", "por": "…", "em": "2026-11-08",
+               "conferenciaProfissional": { "estado": "pendente" } }
+  // depois da conferência:
+  "conferenciaProfissional": { "estado": "conferida", "por": "Nome e registro", "em": "2026-12-01" }
+  ```
+
+  `estado`: `pendente` ou `conferida` (fora disso é erro); `conferida` exige `por` e `em` (AAAA-MM-DD). Sem o campo, a tela
+  não mostra aviso de conferência. Com `pendente`, a tela mostra **um selo por tela** ("Orientação em conferência por
+  profissional de saúde. Não substitui o pediatra."), que some quando vira `conferida`. **Não escreva a frase de conferência
+  no texto** (`tests/estilo-conteudo.test.ts`); "não substitui o pediatra" e os cuidados concretos de segurança continuam
+  nos textos que precisam deles. `node scripts/migrar-conferencia.mjs` lista o que ainda traz a frase.
+
 - Atividade aprovada que cita marco ainda em `rascunho` é válida, mas o app ignora esse marco em todo lugar
   (pacote, ficha, proposta, busca) via `marcosVisiveis` (`src/domain/conteudo.ts`); ele passa a valer ao ser aprovado.
 - Rascunhos e revisados continuam sendo validados (`carregarConteudoBruto`), mesmo escondidos.
