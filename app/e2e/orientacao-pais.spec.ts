@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { irParaJornadaDepoisDeCadastrar } from './cadastro';
 
 // "Para os pais": texto pedagógico de cada marco, recolhido por padrão e adaptado à vertente da família.
 
@@ -14,7 +15,7 @@ async function cadastrarFamiliaECrianca(page: Page) {
   await page.getByLabel('Nome').fill('Ana');
   await page.getByLabel('Data de nascimento').fill('2021-03-15');
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Ana/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Ana');
 }
 
 function marco(page: Page, id: string) {

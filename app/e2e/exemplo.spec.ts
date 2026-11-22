@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { irParaJornadaDepoisDeCadastrar } from './cadastro';
 
 // Família de exemplo (#39): demonstrar o app em 1 minuto, sem cadastrar nada, e sair sem deixar rastro.
 
@@ -21,7 +22,7 @@ test('explorar o exemplo, preparar uma sessão e apagar o exemplo', async ({ pag
   await expect(page.locator('.alerta')).toHaveCount(0);
 
   // A Ana já está posicionada: dá para preparar uma sessão direto.
-  await ana.getByRole('link', { name: 'Preparar sessão' }).click();
+  await ana.getByRole('link', { name: /^Mudar a sessão de Ana/ }).click();
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
   await expect(page.locator('#proposta .escolhas li').first()).toBeVisible();
   await page.getByRole('button', { name: 'Gerar pacote' }).click();
@@ -70,7 +71,7 @@ test('editar a família de exemplo e cadastrar uma criança: apagar o exemplo n�
   await page.getByLabel('Nome').fill('Lia');
   await page.getByLabel('Data de nascimento').fill('2021-03-15');
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Lia/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Lia');
 
   await page.locator('#faixa-exemplo').getByRole('button', { name: 'Apagar exemplo' }).click();
 

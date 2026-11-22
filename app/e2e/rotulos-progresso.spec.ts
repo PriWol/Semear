@@ -14,13 +14,19 @@ test('Início: links e botões repetidos por criança dizem de quem são, sem mu
   await abrirExemplo(page);
   const cartao = page
     .locator('.crianca-cartao')
-    .filter({ has: page.getByRole('heading', { name: 'Ana', exact: true }) });
+    .filter({ has: page.getByRole('heading', { name: 'Hoje com Ana', exact: true }) });
   const editar = cartao.getByRole('link', { name: 'Editar Ana', exact: true });
   await expect(editar).toBeVisible();
   await expect(editar).toHaveText('editar');
+  // A criança de hoje (D19) tem o botão grande; "Mudar" abre o formulário e diz de quem é.
+  await expect(cartao.getByRole('button', { name: 'Preparar sessão de hoje' })).toBeVisible();
   await expect(
-    cartao.getByRole('link', { name: 'Preparar sessão de Ana', exact: true }),
-  ).toHaveText('Preparar sessão');
+    cartao.getByRole('link', { name: 'Mudar a sessão de Ana (duração e foco)', exact: true }),
+  ).toHaveText('Mudar');
+  // As outras crianças seguem com o link de sempre, que também diz de quem é.
+  await expect(page.getByRole('link', { name: 'Preparar sessão de Theo', exact: true })).toHaveText(
+    'Preparar sessão',
+  );
   await expect(
     cartao.getByRole('link', { name: 'Registrar sessão de Ana', exact: true }),
   ).toHaveText('Registrar sessão');

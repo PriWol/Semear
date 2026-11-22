@@ -15,11 +15,28 @@ async function explorar(page: Page) {
   await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
 }
 
+/** Depois de salvar o registro aparece o resumo (D20); aqui voltamos ao Início para seguir o fluxo. */
+async function voltarAoInicioDepoisDeRegistrar(page: Page) {
+  await expect(page.getByRole('heading', { name: 'Sessão registrada' })).toBeVisible();
+  await page.getByRole('link', { name: 'Voltar ao início' }).click();
+  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+}
+
+/** Corrigir um registro pede confirmação numa caixa própria (QA2-04), não no confirm() do navegador. */
+async function confirmarSubstituicao(page: Page) {
+  await page
+    .getByRole('dialog', { name: 'Substituir o registro anterior?' })
+    .getByRole('button', { name: 'Substituir o registro' })
+    .click();
+}
+
 const anaCartao = (page: Page) => page.locator('.crianca-cartao', { hasText: /\bAna\b/ });
 
 /** Prepara uma sessão da Ana só com a linha de consciência fonológica (a atividade "Caça às sílabas"). */
 async function gerarSessaoDaAna(page: Page): Promise<string> {
-  await anaCartao(page).getByRole('link', { name: 'Preparar sessão' }).click();
+  await anaCartao(page)
+    .getByRole('link', { name: /^Mudar a sessão de Ana/ })
+    .click();
   await page.getByRole('radio', { name: /Escolher linhas/ }).check();
   await page.getByRole('checkbox', { name: /Consciência fonológica/ }).check();
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
@@ -83,9 +100,16 @@ test('gerar, registrar e ver na jornada: o selo só aparece com 2 sessões difer
   await page.getByLabel(/Anotações/).fill('Pediu para brincar de novo.');
   await page.getByRole('button', { name: 'Salvar registro' }).click();
 
-  // Volta ao início, avisa e mostra "Feita ✓" na lista.
+  // O resumo mostra o efeito sem prometer avanço: "observados", nunca "avançou" (D20, ADR 0030).
+  await expect(page.getByRole('heading', { name: 'Sessão registrada' })).toBeVisible();
+  await expect(page.locator('.resumo-registro')).toContainText(codigo);
+  await expect(page.locator('#resumo-observados')).toHaveText('2 marcos observados');
+  await expect(page.locator('.resumo-registro')).not.toContainText(/avan/i);
+  await expect(page.locator('.resumo-registro')).toContainText(
+    'O estado dos marcos na jornada não mudou',
+  );
+  await page.getByRole('link', { name: 'Voltar ao início' }).click();
   await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
-  await expect(page.locator('#aviso')).toContainText(`Sessão ${codigo} registrada.`);
   await expect(page.locator('.lista-sessoes li', { hasText: codigo })).toContainText('Feita ✓');
 
   // Agora são 2 sessões diferentes com Consolidado: o selo aparece, e o estado continua "Em desenvolvimento".
@@ -114,7 +138,7 @@ test('corrigir um registro: a sessão volta preenchida e conta como uma só', as
   await page.getByRole('link', { name: 'Registrar', exact: true }).click();
   await grupoDoMarco(page, 'LG.FON.04').getByLabel('Consolidado', { exact: true }).check();
   await page.getByRole('button', { name: 'Salvar registro' }).click();
-  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+  await voltarAoInicioDepoisDeRegistrar(page);
 
   // Reabre pela lista: aviso, campos preenchidos e botão "Salvar alterações".
   await page.locator('.lista-sessoes li', { hasText: codigo }).getByRole('link').click();
@@ -125,7 +149,8 @@ test('corrigir um registro: a sessão volta preenchida e conta como uma só', as
   ).toBeChecked();
   await expect(page.getByRole('button', { name: 'Salvar alterações' })).toBeVisible();
   await page.getByRole('button', { name: 'Salvar alterações' }).click();
-  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+  await confirmarSubstituicao(page);
+  await voltarAoInicioDepoisDeRegistrar(page);
 });
 
 test('salvar uma sessão já registrada pede confirmação; cancelar não grava', async ({ page }) => {
@@ -134,22 +159,15 @@ test('salvar uma sessão já registrada pede confirmação; cancelar não grava'
   await page.getByRole('link', { name: 'Registrar', exact: true }).click();
   await grupoDoMarco(page, 'LG.FON.04').getByLabel('Consolidado', { exact: true }).check();
   await page.getByRole('button', { name: 'Salvar registro' }).click(); // primeira vez: sem pergunta
-  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+  await voltarAoInicioDepoisDeRegistrar(page);
 
   await page.locator('.lista-sessoes li', { hasText: codigo }).getByRole('link').click();
   await page.getByRole('link', { name: 'Corrigir registro' }).click();
   await page.getByLabel(/Anotações/).fill('nota nova');
-  const perguntas: string[] = [];
-  page.removeAllListeners('dialog');
-  page.on('dialog', (d) => {
-    perguntas.push(d.message());
-    void d.dismiss();
-  });
   await page.getByRole('button', { name: 'Salvar alterações' }).click();
-  await expect.poll(() => perguntas.length).toBe(1);
-  expect(perguntas[0]).toMatch(
-    /Esta sessão já foi registrada em \d{2}\/\d{2}\. Substituir o registro anterior\?/,
-  );
+  const caixa = page.getByRole('dialog', { name: 'Substituir o registro anterior?' });
+  await expect(caixa).toContainText(/Esta sessão já foi registrada em \d{2}\/\d{2}\./);
+  await caixa.getByRole('button', { name: 'Voltar à ficha' }).click();
   // Cancelou: continua na ficha, com o texto na tela, e nada foi gravado.
   await expect(page.getByRole('heading', { name: 'Como foi a sessão?' })).toBeVisible();
   await expect(page.getByLabel(/Anotações/)).toHaveValue('nota nova');
@@ -158,7 +176,8 @@ test('salvar uma sessão já registrada pede confirmação; cancelar não grava'
   page.removeAllListeners('dialog');
   page.on('dialog', (d) => void d.accept());
   await page.getByRole('button', { name: 'Salvar alterações' }).click();
-  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+  await confirmarSubstituicao(page);
+  await voltarAoInicioDepoisDeRegistrar(page);
   await page.locator('.lista-sessoes li', { hasText: codigo }).getByRole('link').click();
   await expect(page.locator('.reg-anotacoes')).toHaveText('nota nova');
 });
@@ -213,7 +232,7 @@ test('"Marcar como feito" no plano da semana é só um atalho: não conta para o
   await page.locator('.lista-sessoes li').first().getByRole('link').click();
   await page.getByRole('link', { name: 'Registrar', exact: true }).click();
   await page.getByRole('button', { name: 'Salvar registro' }).click();
-  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+  await voltarAoInicioDepoisDeRegistrar(page);
   await anaCartao(page).getByRole('link', { name: 'Planejar semana' }).click();
   await expect(page.locator('section.dia-plano').first()).toContainText('Feita ✓');
   await expect(
@@ -275,6 +294,7 @@ test('a anotação aparece como texto literal e só o obrigatório já salva', a
   // Só um marco marcado; duração, engajamento e anotação ficam de fora.
   await grupoDoMarco(page, 'LG.FON.04').getByLabel('Em desenvolvimento').check();
   await page.getByRole('button', { name: 'Salvar registro' }).click();
+  await voltarAoInicioDepoisDeRegistrar(page);
   await expect(page.locator('.lista-sessoes li', { hasText: codigo })).toContainText('Feita ✓');
 
   // Corrige com uma anotação que parece HTML.
@@ -282,7 +302,8 @@ test('a anotação aparece como texto literal e só o obrigatório já salva', a
   await page.getByRole('link', { name: 'Corrigir registro' }).click();
   await page.getByLabel(/Anotações/).fill('<b>x</b>');
   await page.getByRole('button', { name: 'Salvar alterações' }).click();
-  await expect(page.getByRole('heading', { name: 'Olá, Marina!' })).toBeVisible();
+  await confirmarSubstituicao(page);
+  await voltarAoInicioDepoisDeRegistrar(page);
 
   await page.locator('.lista-sessoes li', { hasText: codigo }).getByRole('link').click();
   const anotacao = page.locator('.reg-anotacoes');
@@ -319,6 +340,7 @@ test('guardar e trazer a cópia mantém o registro; um arquivo inválido mostra 
   await grupoDoMarco(page, 'LG.FON.04').getByLabel('Consolidado', { exact: true }).check();
   await page.getByLabel(/Anotações/).fill('Anotação do backup');
   await page.getByRole('button', { name: 'Salvar registro' }).click();
+  await voltarAoInicioDepoisDeRegistrar(page);
   await expect(page.locator('.lista-sessoes li', { hasText: codigo })).toContainText('Feita ✓');
 
   await abrirAjustes(page);

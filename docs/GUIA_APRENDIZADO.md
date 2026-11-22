@@ -264,6 +264,15 @@ nova loja de dados, nova chamada externa), muda o texto no mesmo PR. A versão a
 teve revisão jurídica; não promete preço, plano nem prazo, só diz que haverá aviso antes de
 qualquer cobrança. (#25)
 
+### "Desfazer" sem apagar a história
+Um botão "Desfazer por 10 segundos" parece contrariar o histórico que só acrescenta, mas não contraria: ele
+não apaga nada antigo, só **retira o registro que acabou de ser feito**, e só se nada mais novo aconteceu com a
+sessão. Por isso `desfazerRegistro` (em `dados/`) confere que a sessão ainda está como aquele registro a deixou
+e remove apenas as linhas daquele instante. O prazo vem de uma função pura (`dentroDoPrazoDeDesfazer`, que recebe
+o "agora" por parâmetro, como todo o `domain/`), e a tela guarda a sessão anterior só na memória: se a página
+recarregar, o registro simplesmente vale. O botão "Tudo foi bem" segue a mesma cautela: só **sugere**
+(`sugerirTudoFoiBem`), nunca marca *Consolidado* e nunca salva sozinho. (#142, ADR 0030)
+
 ### Caixa de confirmação com `<dialog>`
 `confirm()` e `alert()` do navegador aparecem diferentes em cada celular e não deixam oferecer um botão
 como "Guardar uma cópia primeiro". O elemento HTML `<dialog>`, aberto com `showModal()`, já traz o que
