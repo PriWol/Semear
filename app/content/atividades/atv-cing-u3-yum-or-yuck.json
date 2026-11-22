@@ -1,7 +1,7 @@
 {
   "id": "atv-cing-u3-yum-or-yuck",
   "titulo": "Yum or yuck?",
-  "marcos": ["LI.ESC.01", "LI.VOC.03"],
+  "marcos": ["LI.ESC.01"],
   "dominio": "DI",
   "categoria": "Vida prática",
   "idioma": "en",

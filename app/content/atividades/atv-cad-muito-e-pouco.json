@@ -8,7 +8,7 @@
     "paginas": [31, 31]
   },
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
-  "idade": [2, 3],
+  "idade": [2, 5],
   "duracaoMin": 5,
   "cuidados": "Atenção: Frutas ou bolas bem maiores que a boca dela. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["muito", "pouco", "quantidade", "contar", "frutas"],
@@ -88,5 +88,9 @@
     "estado": "aprovado",
     "por": "Dona do produto",
     "em": "2026-11-21"
+  },
+  "ajustes": {
+    "dificil": "Para a criança menor: só aponte o prato que tem muito e o que tem pouco.",
+    "facil": "Para a criança maior: pergunte “qual prato tem mais?” e peça que ela conte as frutas tocando uma a uma."
   }
 }
