@@ -122,6 +122,7 @@ test('criança de 2 anos recebe folha de imprensa, mesmo em Montessori; o seleto
   await page.getByLabel('Seu nome (educador)').fill('Maria');
   await page.getByRole('radio', { name: /Montessori/ }).check();
   await page.getByRole('button', { name: 'Continuar' }).click();
+  await expect(page.getByRole('heading', { name: 'Adicionar criança' })).toBeVisible();
   await page.getByLabel('Nome').fill('Bia');
   await page.getByLabel('Data de nascimento').fill('2024-06-15'); // 2 anos em 16/11/2026
   await page.getByRole('button', { name: 'Salvar' }).click();
