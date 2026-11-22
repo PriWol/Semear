@@ -110,6 +110,20 @@ registros, se cada `criancaId` existe no arquivo e se a data de nascimento é po
 **Por que usamos:** um arquivo errado não pode zerar o app nem deixar registros órfãos (crianças sem família,
 sessões de uma criança que não existe). As regras são puras e moram em `domain/`; o relógio entra por parâmetro.
 
+### Rodízio por domínio, teto de duração e semente do dia (gerador de sessão v2)
+**O que é:** o gerador de sessão (`proporSessao`, em `src/domain/sessao.ts`) escolhe atividades em **rodadas**:
+em cada rodada entra no máximo uma atividade por **domínio** (Linguagem, Matemática, Artes...), e a próxima é a
+melhor pontuada que **caiba no tempo que resta** e no **teto de duração da idade** (2 anos até 10 min ... 7 a 8
+anos até 25 min). Quando várias linhas empatam, quem abre a sessão é decidido por uma **semente**: um número
+calculado a partir da data e do id da linha (um "embaralhar" que não sorteia).
+
+**Por que importa:** antes, a ordem do arquivo decidia o empate e a primeira atividade entrava mesmo sendo
+longa, então a mesma atividade de 35 min abria toda sessão. A semente muda o resultado de um dia para o outro,
+mas **a mesma entrada dá sempre a mesma saída**, o que mantém a regra testável (sorteio de verdade quebraria o
+teste). O **teste de propriedades** (`tests/sugestor-conteudo.test.ts`) roda a regra com o conteúdo real em 280
+combinações e confere afirmações que valem sempre ("a soma fica em até 110% do tempo"), em vez de comparar uma
+lista de ids que mudaria a cada atividade nova. (ADR 0036)
+
 ---
 
 ## 3. Qualidade: testes e automação
@@ -265,6 +279,7 @@ aparelho (AM/PM) e não dá para forçar 24 h; a validação fica em `horaDe24h`
 | **Marcos ativos** | Os marcos sendo trabalhados agora (fronteira + o seguinte, no máx. 2). |
 | **Pista** | Uma linha, ou uma linha num idioma (no domínio de Línguas). |
 | **Sessão** | Um encontro de estudo planejado: atividades + livro. |
+| **Teto de duração** | Limite suave, por idade, para uma atividade da sessão (2 anos: 10 min; 7 a 8 anos: 25 min). Acima dele só entra se for a única possível (ADR 0036). |
 | **Pacote** | Os arquivos da sessão: roteiro, materiais, folhas da criança e ficha de registro. |
 | **Plano Livre / Família** | Plano gratuito permanente e plano pago por família (especificação §9). |
 | **Lacuna** | Linha com marco ativo mas sem atividade publicada: sinal para a curadoria. |

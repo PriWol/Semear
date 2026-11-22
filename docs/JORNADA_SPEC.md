@@ -362,14 +362,21 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 ### 5.6 Gerador de sessão
 **Entradas:** crianças (1 ou mais), duração (ex.: 20, 40 ou 60 min), foco (linhas escolhidas ou "equilibrado").
 
-**Algoritmo (v1):**
-1. Linhas candidatas = o foco do pai, ou as linhas com menos tempo trabalhado nas últimas 2 semanas.
+**Algoritmo (v2, etapa 1; ADR 0036):**
+1. Linhas candidatas = o foco do pai, ou as linhas com menos tempo trabalhado nas últimas 2 semanas. Se várias empatam (criança sem histórico), a ordem **gira por uma semente determinística** (data + id da linha), e não pela ordem do arquivo.
 2. Para cada linha, pegue os marcos ativos e as atividades ligadas a eles.
 3. Pontue cada atividade: vertente principal (+3), inspiração (+1), faixa de idade compatível (+2), sem repetição nos últimos 14 dias (+2), materiais já disponíveis (+1).
-4. Preencha a duração (com folga de cerca de 10%), alternando atividade sentada e de movimento.
-5. **Sessão conjunta:** procure atividades com `conjunta: true` que cubram os marcos ativos de todas as crianças. Use a `variacao` de cada criança para gerar folhas diferentes com o mesmo tema.
-6. Sugira **1 livro** da curadoria ligado aos marcos da sessão.
-7. O pai revisa, troca o que quiser e gera o pacote.
+4. **Preencha a duração** (folga de cerca de 10%) **em rodadas por domínio**: no máximo uma atividade por domínio em cada rodada, o domínio com menos atividades na sessão vai primeiro e, dentro dele, a linha menos escolhida. Em cada vez entra a **melhor pontuada que caiba no tempo que resta**, dentro do **teto de duração da idade** e sem passar de **metade do tempo** da sessão (30% para menores de 4 anos, para dar 4 a 6 blocos curtos em 30 min). Uma atividade que passa da metade só entra depois de outra.
+   - **Teto por atividade:** 2 anos até 10 min, 3 anos 12, 4 anos 15, 5 a 6 anos 20, 7 a 8 anos 25; Charlotte Mason até 20 em qualquer idade.
+   - **A primeira atividade também precisa caber.** Se nenhuma cabe, entra a mais curta e o app avisa ("mais do que os M min escolhidos"); o gerador troca a atividade antes de avisar.
+   - **Acima do teto** só entra uma atividade se for a única possível, sozinha na sessão e com aviso do teto da idade.
+   - **Meta em 30 min:** 2 a 4 atividades de pelo menos 2 domínios (4 a 6 blocos curtos de 2 a 3 anos), quando o conteúdo permitir.
+5. No modo equilibrado, no máximo **1 atividade complementar** (§3.0), se couber no tempo e no teto.
+6. **Sessão conjunta:** procure atividades com `conjunta: true` que cubram os marcos ativos de todas as crianças. Use a `variacao` de cada criança para gerar folhas diferentes com o mesmo tema.
+7. Sugira **1 livro** da curadoria ligado aos marcos da sessão.
+8. O pai revisa, troca o que quiser e gera o pacote.
+
+*Ainda por vir (#146):* regra de idade graduada (atividade a 2 anos ou mais acima da criança sai; menores de 3 anos nunca recebem atividade que começa aos 3), ponto de partida pela idade para linha sem registro, aviso da `idadeIntroducao` da vertente e ritmo calma, ativa, calma.
 
 ### 5.7 Pacote impresso da sessão
 1. **Roteiro do educador** (1 ou 2 páginas): objetivo, passo a passo, falas sugeridas, "o que observar" por marco.
