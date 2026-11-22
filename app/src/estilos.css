@@ -733,11 +733,10 @@ summary {
   display: grid;
   gap: var(--s-espaco-3);
 }
+/* Título de cartão: h2 na estrutura (sem pular nível), com o tamanho de h3. */
 .item-acervo h2 {
   margin: 0 0 var(--s-espaco-1);
-  font-size: var(
-    --s-texto-h3
-  ); /* título de cartão: h2 na estrutura (sem pular nível), tamanho de h3 */
+  font-size: var(--s-texto-h3);
 }
 #filtros {
   display: grid;
@@ -829,11 +828,10 @@ summary {
   align-items: flex-end;
   gap: var(--s-espaco-3);
 }
+/* Idem: h2 na estrutura, tamanho de h3. */
 .lista-atividades h2 {
   margin: 0 0 var(--s-espaco-1);
-  font-size: var(
-    --s-texto-h3
-  ); /* título de cartão: h2 na estrutura (sem pular nível), tamanho de h3 */
+  font-size: var(--s-texto-h3);
 }
 .lista-atividades h2 a {
   color: inherit;
