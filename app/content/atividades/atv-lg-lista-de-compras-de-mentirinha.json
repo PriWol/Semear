@@ -6,7 +6,7 @@
   "idade": [4, 5],
   "duracaoMin": 15,
   "preparoMin": 3,
-  "cuidados": "Atenção: lápis e canetas de ponta grossa, fora da boca. Use papel sem bordas muito afiadas e supervisione. Não corrija a escrita dela: rabisco, letra solta e desenho são todos caminhos válidos nesta idade.",
+  "cuidados": "Atenção: lápis e canetas de ponta grossa, fora da boca. Use papel sem bordas muito afiadas e supervisione. Não corrija a escrita da criança: rabisco, letra solta e desenho são todos caminhos válidos nesta idade.",
   "objetivo": "A criança percebe que escrever é diferente de desenhar e faz a sua própria tentativa (rabisco ou letras), dizendo o que “está escrito”.",
   "passos": [
     {
@@ -15,20 +15,20 @@
       "texto": "Diga: *“Vamos ao mercadinho de faz de conta? Vamos anotar o que comprar para não esquecer.”* Mostre uma lista de verdade, com letras, e uma figura ao lado. Pergunte: *“Qual é a escrita e qual é o desenho?”*"
     },
     {
-      "titulo": "Ela escreve do jeito dela",
+      "titulo": "A criança escreve do seu jeito",
       "minutos": 6,
-      "texto": "Entregue papel e lápis. Ela “escreve” cada item (pão, leite, banana) como conseguir: rabisco, bolinhas ou letras que conhece. Ao lado, você escreve a palavra em letra de forma, **sem tirar o trabalho dela**. Peça: *“Me lê o que você escreveu?”*",
+      "texto": "Entregue papel e lápis. A criança “escreve” cada item (pão, leite, banana) como conseguir: rabisco, bolinhas ou letras que conhece. Ao lado, você escreve a palavra em letra de forma, **sem tirar o trabalho da criança**. Peça: *“Me lê o que você escreveu?”*",
       "fala": "Me lê o que você escreveu?"
     },
     {
       "titulo": "Desenhar e escrever são diferentes",
       "minutos": 3,
-      "texto": "Ao lado de cada item, ela pode fazer um desenho. Pergunte: *“Este é o desenho do pão e este é o nome do pão, certo?”* Ouça a explicação dela."
+      "texto": "Ao lado de cada item, a criança pode fazer um desenho. Pergunte: *“Este é o desenho do pão e este é o nome do pão, certo?”* Ouça a explicação da criança."
     },
     {
       "titulo": "Usar a lista",
       "minutos": 3,
-      "texto": "Com a lista na mão, “comprem” os itens de faz de conta ou de verdade pela casa. Cada item que encontram, ela marca com um risco."
+      "texto": "Com a lista na mão, “comprem” os itens de faz de conta ou de verdade pela casa. Cada item que encontram, a criança marca com um risco."
     }
   ],
   "observar": {
@@ -42,8 +42,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Escrevam juntos um só item e deixe que ela faça a marca dele, mesmo que seja um risco.",
-    "facil": "Peça que ela escreva uma frase que quer mandar numa carta, com letras ou rabiscos, e leia para você."
+    "dificil": "Escrevam juntos um só item e deixe que a criança faça a marca dele, mesmo que seja um risco.",
+    "facil": "Peça que a criança escreva uma frase que quer mandar numa carta, com letras ou rabiscos, e leia para você."
   },
   "materiais": [
     {
@@ -60,7 +60,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe papel e lápis sempre ao alcance, num cestinho, para ela escrever quando tiver vontade, e mostre que a mão escreve da esquerda para a direita.",
+    "Montessori": "Deixe papel e lápis sempre ao alcance, num cestinho, para a criança escrever quando tiver vontade, e mostre que a mão escreve da esquerda para a direita.",
     "Waldorf": "Mantenha como faz de conta e arte: a lista pode ser feita com giz de cera e imaginação, sem aula de letras formais.",
     "Clássico": "Você pode ler a lista em voz alta, apontando cada item, como um pequeno recital de palavras.",
     "Religioso": "Se desejar, use a lista para algo ligado à rotina da fé (lista de coisas para agradecer).",
@@ -73,10 +73,10 @@
     },
     {
       "texto": "Disse o que escreveu",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "O que ela “leu” da própria escrita?",
+  "perguntaFicha": "O que a criança “leu” da própria escrita?",
   "folhas": [
     {
       "tipo": "desenho",

@@ -17,13 +17,13 @@
     {
       "titulo": "Caça às palavras",
       "minutos": 8,
-      "texto": "Pelo cômodo, procurem objetos cujo nome tenha o grupo (*CH*: chinelo, chave). Ela lê os cartões e pega o objeto. Marque o dígrafo com a cor.",
+      "texto": "Pelo cômodo, procurem objetos cujo nome tenha o grupo (*CH*: chinelo, chave). A criança lê os cartões e pega o objeto. Marque o dígrafo com a cor.",
       "fala": "Onde está o CH?"
     },
     {
       "titulo": "Ler as palavras",
       "minutos": 8,
-      "texto": "Passem aos outros grupos, um por vez: *NH* (ninho, galinha), *LH* (colher, filho), *RR* (carro, terra), *PL/BR* (planta, braço). Ela lê cada cartão em voz alta."
+      "texto": "Passem aos outros grupos, um por vez: *NH* (ninho, galinha), *LH* (colher, filho), *RR* (carro, terra), *PL/BR* (planta, braço). A criança lê cada cartão em voz alta."
     },
     {
       "titulo": "Jogo da memória",
@@ -60,7 +60,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Use os “sons difíceis” de lixa (verdes) e deixe-a procurar objetos para cada um.",
+    "Montessori": "Use os “sons difíceis” de lixa (verdes) e deixe a criança procurar objetos para cada um.",
     "Clássico": "Recitem listas de palavras do mesmo dígrafo, por grupo, como lista de vocabulário.",
     "Religioso": "Se desejar, use palavras de uma oração conhecida (como “filho”, “ilha”).",
     "Charlotte Mason": "Use um livro vivo e procure o dígrafo no texto, em poucas páginas, sem exercícios longos."
@@ -75,7 +75,7 @@
       "resposta": "☐ CH   ☐ NH   ☐ LH   ☐ RR"
     }
   ],
-  "perguntaFicha": "Que grupo ela ainda confunde?",
+  "perguntaFicha": "Que grupo a criança ainda confunde?",
   "folhas": [
     {
       "tipo": "cartas",

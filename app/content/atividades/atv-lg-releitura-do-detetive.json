@@ -6,29 +6,29 @@
   "idade": [7, 8],
   "duracaoMin": 25,
   "preparoMin": 3,
-  "cuidados": "Atenção: sessão sentada de até 25 minutos; o texto é dela e merece respeito: não reescreva por cima. Uma pergunta de cada vez, sem lista de erros.",
+  "cuidados": "Atenção: sessão sentada de até 25 minutos; o texto é da criança e merece respeito: não reescreva por cima. Uma pergunta de cada vez, sem lista de erros.",
   "objetivo": "A criança relê o próprio texto, encontra pelo menos um erro de pontuação ou de ortografia e acrescenta ou tira uma parte para melhorar.",
   "passos": [
     {
       "titulo": "Deixar descansar",
       "minutos": 3,
-      "texto": "Pegue um texto que ela escreveu antes (um bilhete ou uma historinha) e deixe-o fora do alcance por um tempo, para voltar a ele com olhos novos."
+      "texto": "Pegue um texto que a criança escreveu antes (um bilhete ou uma historinha) e deixe-o fora do alcance por um tempo, para voltar a ele com olhos novos."
     },
     {
       "titulo": "Primeira passada: ler em voz alta",
       "minutos": 6,
-      "texto": "Ela lê o texto em voz alta, com o dedo na linha. Pergunte: *“Soou bem? Alguma parte ficou estranha?”*. Marquem com lápis de cor o que quer mudar.",
+      "texto": "A criança lê o texto em voz alta, com o dedo na linha. Pergunte: *“Soou bem? Alguma parte ficou estranha?”*. Marquem com lápis de cor o que quer mudar.",
       "fala": "Soou bem quando você leu?"
     },
     {
       "titulo": "Segunda passada: pontuação e palavras",
       "minutos": 7,
-      "texto": "Uma pergunta por vez: *“Falta algum ponto?”*, *“Alguma palavra parece escrita de outro jeito?”*. Ela corrige com a cor."
+      "texto": "Uma pergunta por vez: *“Falta algum ponto?”*, *“Alguma palavra parece escrita de outro jeito?”*. A criança corrige com a cor."
     },
     {
       "titulo": "Terceira passada: melhorar",
       "minutos": 6,
-      "texto": "Pergunte: *“Dá para dizer de outro jeito? Falta alguma parte? Sobrou alguma?”*. Ela acrescenta ou tira uma parte e passa a limpo só o que quiser."
+      "texto": "Pergunte: *“Dá para dizer de outro jeito? Falta alguma parte? Sobrou alguma?”*. A criança acrescenta ou tira uma parte e passa a limpo só o que quiser."
     }
   ],
   "observar": {
@@ -47,7 +47,7 @@
   },
   "materiais": [
     {
-      "item": "Um texto escrito por ela (bilhete, historinha)",
+      "item": "Um texto escrito pela criança (bilhete, historinha)",
       "deCasa": true
     },
     {
@@ -56,23 +56,23 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe uma lista de verificação (maiúscula, ponto, espaço) ao alcance, para ela conferir sozinha.",
+    "Montessori": "Deixe uma lista de verificação (maiúscula, ponto, espaço) ao alcance, para a criança conferir sem ajuda.",
     "Waldorf": "Só a partir dos 8 anos: a revisão acontece ao passar a limpo no caderno de época, com capricho de letra e de ilustração.",
-    "Clássico": "Compare o texto dela com o de um bom autor (cópia ou ditado) e veja o que o outro faz de diferente.",
+    "Clássico": "Compare o texto da criança com o de um bom autor (cópia ou ditado) e veja o que o outro faz de diferente.",
     "Religioso": "Se fizer sentido, associe a revisão ao cuidado com a verdade e com o outro em quem vai ler.",
-    "Charlotte Mason": "Use a narração: ela lê em voz alta e a própria voz ajuda a notar o que soou estranho."
+    "Charlotte Mason": "Use a narração: a criança lê em voz alta e a própria voz ajuda a notar o que soou estranho."
   },
   "evidencias": [
     {
       "texto": "Corrigiu ao menos um erro",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Acrescentou ou tirou uma parte",
       "resposta": "☐ não   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela mudou no texto?",
+  "perguntaFicha": "O que a criança mudou no texto?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

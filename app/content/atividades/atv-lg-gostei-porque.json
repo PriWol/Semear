@@ -6,24 +6,24 @@
   "idade": [7, 8],
   "duracaoMin": 20,
   "preparoMin": 3,
-  "cuidados": "Atenção: não existe opinião errada, só opinião sem prova. Aceite “não gostei” se vier com motivo, sem dizer o que ela “deveria” achar.",
-  "objetivo": "A criança dá uma opinião sobre um texto (gostou ou não, concorda ou não) e a sustenta com um trecho que ela aponta e lê.",
+  "cuidados": "Atenção: não existe opinião errada, só opinião sem prova. Aceite “não gostei” se vier com motivo, sem dizer o que a criança “deveria” achar.",
+  "objetivo": "A criança dá uma opinião sobre um texto (gostou ou não, concorda ou não) e a sustenta com um trecho que aponta e lê.",
   "passos": [
     {
       "titulo": "Ler o texto",
       "minutos": 6,
-      "texto": "Ela lê (ou escuta) um conto curto, um poema ou um trecho de livro de que se possa ter opinião."
+      "texto": "A criança lê (ou escuta) um conto curto, um poema ou um trecho de livro de que se possa ter opinião."
     },
     {
       "titulo": "Gostou? Por quê?",
       "minutos": 6,
-      "texto": "Pergunte: *“Você gostou? Por quê?”*. Se ela disser só “gostei”, volte: *“O que você gostou?”*. Aceite opiniões diferentes da sua.",
+      "texto": "Pergunte: *“Você gostou? Por quê?”*. Se a criança disser só “gostei”, volte: *“O que você gostou?”*. Aceite opiniões diferentes da sua.",
       "fala": "Qual parte provou o que você disse?"
     },
     {
       "titulo": "Mostre o trecho",
       "minutos": 6,
-      "texto": "Peça que ela ache no texto uma frase que apoie a opinião (*“eu achei engraçado porque aqui diz...”*) e leia em voz alta. Ajude a procurar, mas deixe que ela escolha."
+      "texto": "Peça que a criança ache no texto uma frase que apoie a opinião (*“eu achei engraçado porque aqui diz...”*) e leia em voz alta. Ajude a procurar, mas deixe que a criança escolha."
     },
     {
       "titulo": "Ouvir outra opinião",
@@ -34,7 +34,7 @@
   "observar": {
     "consolidado": [
       "Dá uma opinião e cita um trecho que a apoia",
-      "Respeita uma opinião diferente da dela"
+      "Respeita uma opinião diferente da da criança"
     ],
     "emDesenvolvimento": [
       "Diz só “gostei” (pergunte “o que, exatamente?”)",
@@ -57,21 +57,21 @@
   ],
   "toqueVertente": {
     "Clássico": "Estruture a resposta em “opinião, prova, conclusão” e peça que repita a estrutura em voz alta.",
-    "Charlotte Mason": "Depois da narração, converse sobre o que ela achou e como sabe disso, em tom de conversa.",
-    "Religioso": "Se fizer sentido, converse sobre o que o trecho ensina e se concorda, sempre com respeito às opiniões dela.",
-    "Montessori": "Deixe-a escolher o texto e marcar o trecho com um marcador de papel que ela mesma coloca no livro."
+    "Charlotte Mason": "Depois da narração, converse sobre o que a criança achou e como sabe disso, em tom de conversa.",
+    "Religioso": "Se fizer sentido, converse sobre o que o trecho ensina e se concorda, sempre com respeito às opiniões da criança.",
+    "Montessori": "Deixe a criança escolher o texto e marcar o trecho com um marcador de papel colocado no livro."
   },
   "evidencias": [
     {
       "texto": "Deu opinião com motivo",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Citou um trecho",
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual trecho ela escolheu para sustentar a opinião?",
+  "perguntaFicha": "Qual trecho a criança escolheu para sustentar a opinião?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

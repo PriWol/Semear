@@ -6,7 +6,7 @@
   "idade": [7, 8],
   "duracaoMin": 20,
   "preparoMin": 3,
-  "cuidados": "Atenção: escolha um livro ilustrado adequado à idade (sem cenas assustadoras sem aviso). Compartilhar experiências é uma escolha dela: não force nenhum relato pessoal.",
+  "cuidados": "Atenção: escolha um livro ilustrado adequado à idade (sem cenas assustadoras sem aviso). Compartilhar experiências é uma escolha da criança: não force nenhum relato pessoal.",
   "objetivo": "A criança liga o que leu a algo que viveu ou a outro livro e percebe o que a ilustração acrescenta ao texto.",
   "passos": [
     {
@@ -28,7 +28,7 @@
     {
       "titulo": "Uma página sua",
       "minutos": 4,
-      "texto": "Ela faz um desenho que mostra algo que não está no texto e escreve uma legenda curta."
+      "texto": "A criança faz um desenho que mostra algo que não está no texto e escreve uma legenda curta."
     }
   ],
   "observar": {
@@ -56,20 +56,20 @@
     }
   ],
   "toqueVertente": {
-    "Clássico": "Escolha uma ilustração clássica de domínio público (como as de Gustave Doré ou John Tenniel) e converse sobre ela.",
+    "Clássico": "Escolha uma ilustração clássica de domínio público (como as de Gustave Doré ou John Tenniel) e converse sobre a criança.",
     "Charlotte Mason": "Faça um “estudo de imagem”: observe por um minuto, vire a página e conte o que viu."
   },
   "evidencias": [
     {
       "texto": "Ligou o texto a uma experiência",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Disse o que a imagem acrescenta",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que detalhe da imagem ela notou?",
+  "perguntaFicha": "Que detalhe da imagem a criança notou?",
   "folhas": [
     {
       "tipo": "desenho",
