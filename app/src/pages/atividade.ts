@@ -1,6 +1,7 @@
 import type { FabricaPagina } from '../ui/app';
 import { html, textoRico } from '../ui/html';
 import { icone } from '../ui/icones';
+import { seloDeConferencia } from '../ui/selo';
 import { atividadePublicada, leituraDaAtividade } from '../domain/leitura';
 import { rotuloDoMaterial } from '../domain/material';
 import { criancaPadrao } from '../domain/criancas';
@@ -41,6 +42,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
       <article class="atividade-leitura" data-atividade-leitura="${a.id}">
         <h1>${a.titulo}</h1>
         <p class="nota">${a.duracaoMin} min · ${a.idade[0]} a ${a.idade[1]} anos</p>
+        ${seloDeConferencia([a])}
         ${
           leitura.marcos.length
             ? html`<p>

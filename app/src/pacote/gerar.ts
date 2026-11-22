@@ -14,6 +14,7 @@ import { ehLetra, NOME_LETRA } from '../domain/letra';
 import { observacoesDasAtividades, type Observacao } from '../domain/registro';
 import { marcosVisiveis, revisaVisivel } from '../domain/conteudo';
 import { dataBR } from '../domain/datas';
+import { precisaAvisoDeConferencia, TEXTO_SELO_CONFERENCIA } from '../domain/revisao';
 import { rotuloDoMaterial, type IdentidadeCaderno } from '../domain/material';
 import { escapar, html, textoRico, type HtmlSeguro } from '../ui/html';
 import { paginaDaFolha } from './folhas';
@@ -321,6 +322,11 @@ export function paginasDaSessao(e: EntradaPacote): {
 } {
   const roteiro = html`<section class="pagina educador">
     <span class="etiqueta">Roteiro do educador · leia antes da sessão</span>
+    ${
+      precisaAvisoDeConferencia(e.atividades)
+        ? html`<p class="selo-conferencia" role="note">${TEXTO_SELO_CONFERENCIA}</p>`
+        : ''
+    }
     ${e.atividades.map((a, i) => roteiroDaAtividade(a, e, i === 0))}
     ${rodapeEducador('Semear · Pacote de sessão · Roteiro', 'Educador')}
   </section>`;
