@@ -73,6 +73,13 @@ export interface Repositorio {
    * Recusa sessão que não existe e evento que não pertence a esta sessão e a esta criança.
    */
   registrarSessao(sessao: Sessao, eventos: EventoMarco[]): Promise<void>;
+  /**
+   * "Desfazer" logo depois de registrar (D20): devolve a sessão a `anterior` e remove SÓ as observações que
+   * aquele registro acrescentou (as de `registradaEm`). Recusa (devolve false) se a sessão já não está como
+   * aquele registro a deixou (registrada de novo em outra aba, ou removida): nunca apaga o que é mais novo.
+   * O prazo de 10 s é da tela; aqui vale só a conferência. Não toca em `estados` (ADR 0030).
+   */
+  desfazerRegistro(anterior: Sessao, registradaEm: string): Promise<boolean>;
 
   /** planos semanais da criança, do mais recente para o mais antigo */
   planos(criancaId: string): Promise<PlanoSemana[]>;
@@ -274,6 +281,30 @@ function criarRepositorio(db: IDBPDatabase<Esquema>, agora: () => Date): Reposit
         }
         throw erro;
       }
+    },
+
+    async desfazerRegistro(anterior, registradaEm) {
+      const tx = db.transaction(['sessoes', 'historico'], 'readwrite');
+      const atual = await tx.objectStore('sessoes').get(anterior.id);
+      if (!atual || atual.registradaEm !== registradaEm) {
+        await tx.done;
+        return false;
+      }
+      await tx.objectStore('sessoes').put(anterior);
+      let cursor = await tx.objectStore('historico').openCursor();
+      while (cursor) {
+        const e = cursor.value;
+        if (
+          e.sessaoId === anterior.id &&
+          e.registro.origem === 'sessao' &&
+          e.registro.atualizadoEm === registradaEm
+        ) {
+          await cursor.delete();
+        }
+        cursor = await cursor.continue();
+      }
+      await tx.done;
+      return true;
     },
 
     async planos(criancaId) {

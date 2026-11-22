@@ -460,3 +460,29 @@ export function gerarCodigoSessao(nomeCrianca: string, agora: Date, existentes: 
   while (existentes.includes(`${base}${n}`)) n++;
   return `${base}${n}`;
 }
+
+/**
+ * A sessão que a proposta vira ao ser confirmada. Fonte única para "Gerar pacote" (Preparar sessão) e
+ * "Preparar sessão de hoje" (Início, D19): a duração é a real das atividades escolhidas. `agora` é a hora
+ * do toque, não a de quando a tela abriu.
+ */
+export function montarSessaoDaProposta(entrada: {
+  id: string;
+  crianca: Pick<Crianca, 'id' | 'nome'>;
+  proposta: PropostaSessao;
+  foco: string[] | 'equilibrado';
+  agora: string;
+  codigosExistentes: string[];
+}): Sessao {
+  const { id, crianca, proposta, foco, agora, codigosExistentes } = entrada;
+  return {
+    id,
+    codigo: gerarCodigoSessao(crianca.nome, new Date(agora), codigosExistentes),
+    criancaId: crianca.id,
+    criadaEm: agora,
+    duracaoMin: proposta.minutos,
+    foco,
+    atividadeIds: proposta.escolhas.map((e) => e.atividade.id),
+    livroId: proposta.livro?.id ?? null,
+  };
+}
