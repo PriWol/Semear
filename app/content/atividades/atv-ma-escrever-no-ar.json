@@ -13,12 +13,12 @@
     {
       "titulo": "Desenhar no ar",
       "minutos": 4,
-      "texto": "Fique ao lado dela e desenhe o 3 no ar com o dedo grande, dizendo o caminho: *“começa em cima, faz uma barriga, outra barriga”*. A criança copia."
+      "texto": "Fique ao lado da criança e desenhe o 3 no ar com o dedo grande, dizendo o caminho: *“começa em cima, faz uma barriga, outra barriga”*. A criança copia."
     },
     {
       "titulo": "Na bandeja de farinha",
       "minutos": 8,
-      "texto": "Numa bandeja com um dedo de farinha ou sêmola, ela escreve com o dedo, três ou quatro algarismos por vez (1, 4, 7 primeiro). Sacudir a bandeja apaga o que foi feito.",
+      "texto": "Numa bandeja com um dedo de farinha ou sêmola, a criança escreve com o dedo, três ou quatro algarismos por vez (1, 4, 7 primeiro). Sacudir a bandeja apaga o que foi feito.",
       "fala": "Por onde começa o 7?"
     },
     {
@@ -29,7 +29,7 @@
     {
       "titulo": "Folha: meu caderno de números",
       "minutos": 5,
-      "texto": "Ela escreve os que quiser praticar e pinta o que ficou mais bonito."
+      "texto": "A criança escreve os que quiser praticar e pinta o que ficou mais bonito."
     }
   ],
   "observar": {
@@ -44,8 +44,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Fique só com 3 algarismos de cada vez e escreva junto, com a mão dela sobre a sua, dizendo o caminho.",
-    "facil": "Peça que ela escreva de olhos fechados no ar, ou um número que você ditar sem mostrar."
+    "dificil": "Fique só com 3 algarismos de cada vez e escreva junto, com a mão da criança sobre a sua, dizendo o caminho.",
+    "facil": "Peça que a criança escreva de olhos fechados no ar, ou um número que você ditar sem mostrar."
   },
   "materiais": [
     {
@@ -65,7 +65,7 @@
     "Montessori": "Depois de tocar os algarismos de lixa, a criança escreve na bandeja de areia ou de sêmola e só depois no papel.",
     "Waldorf": "Os algarismos escritos costumam ficar para o 1º ano, por volta dos 7 anos. Antes disso, desenhe-os no ar e no chão com o corpo.",
     "Clássico": "Mostre um bom modelo e peça poucas cópias, bem feitas, como na tradição da cópia cuidadosa.",
-    "Charlotte Mason": "Poucos algarismos, bem formados, em lições curtas: a atenção plena vale mais que a repetição longa."
+    "Charlotte Mason": "Poucos algarismos, bem formados, em momentos curtos: a atenção plena vale mais que a repetição longa."
   },
   "evidencias": [
     {

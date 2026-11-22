@@ -13,7 +13,7 @@
     {
       "titulo": "Rodas dos carrinhos",
       "minutos": 6,
-      "texto": "Conte: *“3 carrinhos, cada um com 4 rodas”*. Ela monta 3 grupos de 4 fichas e conta de grupo em grupo: *4, 8, 12*. Deixe que ela explique como fez."
+      "texto": "Conte: *“3 carrinhos, cada um com 4 rodas”*. A criança monta 3 grupos de 4 fichas e conta de grupo em grupo: *4, 8, 12*. Deixe que a criança explique como fez."
     },
     {
       "titulo": "Mais situações",
@@ -29,7 +29,7 @@
     {
       "titulo": "Folha: desenhe os grupos",
       "minutos": 4,
-      "texto": "Ela desenha os grupos e escreve o total de cada problema."
+      "texto": "A criança desenha os grupos e escreve o total de cada problema."
     }
   ],
   "observar": {
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Use só 2 grupos de 3 e deixe os grupos separados por prato, com a contagem em voz alta.",
-    "facil": "Peça que ela invente um problema para você e use 6 grupos de 5."
+    "facil": "Peça que a criança invente um problema para você e use 6 grupos de 5."
   },
   "materiais": [
     {
@@ -65,7 +65,7 @@
     "Montessori": "O tabuleiro de multiplicação com contas mostra grupos iguais de forma concreta: a criança monta os grupos antes de falar em tabuada.",
     "Waldorf": "Contar em saltos com palmas e passos (de 2 em 2, de 5 em 5) dá forma à multiplicação. As operações costumam ser formalizadas por volta dos 7 anos.",
     "Clássico": "Cantar as contagens em saltos é o início da tabuada, que se memoriza com prática diária curta.",
-    "Charlotte Mason": "Use situações reais (meias, ovos, rodas) e lições curtas."
+    "Charlotte Mason": "Use situações reais (meias, ovos, rodas) e momentos curtos."
   },
   "evidencias": [
     {

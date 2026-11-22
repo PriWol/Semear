@@ -12,7 +12,7 @@
     {
       "titulo": "Arrumar a mesa",
       "minutos": 4,
-      "texto": "Sente 3 bonecos ou ursinhos. Peça: *“cada boneco precisa de um copo. Pode dar?”* Ela distribui um copo para cada, sem contar ainda."
+      "texto": "Sente 3 bonecos ou ursinhos. Peça: *“cada boneco precisa de um copo. Pode dar?”* A criança distribui um copo para cada, sem contar ainda."
     },
     {
       "titulo": "Contar movendo",
@@ -23,12 +23,12 @@
     {
       "titulo": "Faltou ou sobrou?",
       "minutos": 3,
-      "texto": "Dê 3 copos para 4 bonecos e pergunte: *“o que aconteceu?”* Deixe que ela descubra que falta um. Termine fazendo o contrário (copos sobrando)."
+      "texto": "Dê 3 copos para 4 bonecos e pergunte: *“o que aconteceu?”* Deixe que a criança descubra que falta um. Termine fazendo o contrário (copos sobrando)."
     },
     {
       "titulo": "Folha: conte e circule",
       "minutos": 3,
-      "texto": "Ela conta as figuras com o dedo e circula o número."
+      "texto": "A criança conta as figuras com o dedo e circula o número."
     }
   ],
   "observar": {
@@ -43,8 +43,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Fique com 3 objetos e deslize cada um você mesmo, junto com ela, dizendo o número devagar.",
-    "facil": "Use 6 a 8 objetos, ou peça que ela conte de olhos fechados sentindo cada colher."
+    "dificil": "Fique com 3 objetos e deslize cada um você mesmo, junto com a criança, dizendo o número devagar.",
+    "facil": "Use 6 a 8 objetos, ou peça que a criança conte de olhos fechados sentindo cada colher."
   },
   "materiais": [
     {
@@ -67,7 +67,7 @@
   "toqueVertente": {
     "Montessori": "Na bandeja, com poucos objetos e uma tigela, a mão faz a contagem e o espaço de trabalho fica organizado.",
     "Waldorf": "Conte castanhas, sementes e pedrinhas, passando uma a uma para uma cesta, no ritmo de um verso de contagem.",
-    "Charlotte Mason": "Poucos objetos reais, lições curtas e muita atenção: pare ao primeiro sinal de cansaço."
+    "Charlotte Mason": "Poucos objetos reais, momentos curtos e muita atenção: pare ao primeiro sinal de cansaço."
   },
   "evidencias": [
     {
@@ -76,7 +76,7 @@
     },
     {
       "texto": "Moveu o objeto depois de contar",
-      "resposta": "☐ sozinha   ☐ com lembrete"
+      "resposta": "☐ sem ajuda   ☐ com lembrete"
     }
   ],
   "folhas": [

@@ -18,13 +18,13 @@
     {
       "titulo": "Quem vem depois?",
       "minutos": 5,
-      "texto": "Pergunte *“quem vem depois do 14?”*, *“e antes do 9?”*. Esconda um número com o dedo e deixe que ela diga qual é.",
+      "texto": "Pergunte *“quem vem depois do 14?”*, *“e antes do 9?”*. Esconda um número com o dedo e deixe que a criança diga qual é.",
       "fala": "Qual número está escondido?"
     },
     {
       "titulo": "Qual é maior?",
       "minutos": 6,
-      "texto": "Mostre duas cartas (13 e 17). Ela diz qual é maior e confere vendo quem está mais para frente na fita. Se não souber, confira com objetos.",
+      "texto": "Mostre duas cartas (13 e 17). A criança diz qual é maior e confere vendo quem está mais para frente na fita. Se não souber, confira com objetos.",
       "fala": "Como você sabe?"
     },
     {
@@ -45,7 +45,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use só números até 10 e peça que ela confira andando com o dedo na fita.",
+    "dificil": "Use só números até 10 e peça que a criança confira andando com o dedo na fita.",
     "facil": "Peça para ordenar do maior para o menor e escolha números bem próximos (16, 17, 18)."
   },
   "materiais": [
@@ -66,7 +66,7 @@
     "Montessori": "A tábua dos cem e as barras numéricas mostram a ordem dos números: cada um tem seu lugar e seu tamanho.",
     "Waldorf": "Caminhem uma fita no chão contando em voz alta e em ritmo; a criança sente a ordem antes de escrever.",
     "Clássico": "Recitem a sequência até 20 e depois do 20 de trás para frente, como cantilena.",
-    "Charlotte Mason": "Lição curta, com poucos números por vez, e a criança explica como soube qual era maior."
+    "Charlotte Mason": "Momento curto, com poucos números por vez, e a criança explica como soube qual era maior."
   },
   "evidencias": [
     {

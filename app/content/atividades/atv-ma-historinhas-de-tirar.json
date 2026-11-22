@@ -13,28 +13,28 @@
     {
       "titulo": "O esquilo levou",
       "minutos": 6,
-      "texto": "Conte: *“O esquilo tinha 8 nozes e levou 3.”* Ela monta 8, separa 3 e conta as que ficaram. Pergunte: *“quantas sobraram?”*.",
+      "texto": "Conte: *“O esquilo tinha 8 nozes e levou 3.”* A criança monta 8, separa 3 e conta as que ficaram. Pergunte: *“quantas sobraram?”*.",
       "fala": "Quantas ficaram?"
     },
     {
       "titulo": "Mais histórias",
       "minutos": 6,
-      "texto": "Conte outras: *“tinha 7, deu 2”*, *“tinha 10, comeu 4”*. Aceite jeitos diferentes e peça que ela explique."
+      "texto": "Conte outras: *“tinha 7, deu 2”*, *“tinha 10, comeu 4”*. Aceite jeitos diferentes e peça que a criança explique."
     },
     {
       "titulo": "Quantas faltam?",
       "minutos": 4,
-      "texto": "Mostre 4 nozes e pergunte *“quantas faltam para 6?”*. Deixe que ela descubra juntando."
+      "texto": "Mostre 4 nozes e pergunte *“quantas faltam para 6?”*. Deixe que a criança descubra juntando."
     },
     {
       "titulo": "Esconder sob o pano",
       "minutos": 4,
-      "texto": "Cubra parte das nozes e peça que ela pense antes de contar: *“quantas escondi?”*."
+      "texto": "Cubra parte das nozes e peça que a criança pense antes de contar: *“quantas escondi?”*."
     },
     {
       "titulo": "Folha: riscar o que saiu",
       "minutos": 4,
-      "texto": "Ela risca as figuras que saíram e circula o número que sobrou."
+      "texto": "A criança risca as figuras que saíram e circula o número que sobrou."
     }
   ],
   "observar": {
@@ -67,7 +67,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Com barras e contas, a criança vê o que sobra ao retirar peças. A tábua de subtração vem depois, quando ela já domina a ideia de tirar.",
+    "Montessori": "Com barras e contas, a criança vê o que sobra ao retirar peças. A tábua de subtração vem depois, quando a criança já domina a ideia de tirar.",
     "Waldorf": "Conte histórias com personagens que dão e levam (*“o esquilo levou 3 das 8 nozes”*) e deixe a criança acompanhar o que sobra com objetos da natureza.",
     "Charlotte Mason": "Problemas curtos tirados da vida, resolvidos com objetos e depois de cabeça."
   },

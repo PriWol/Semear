@@ -19,17 +19,17 @@
     {
       "titulo": "O que falta?",
       "minutos": 6,
-      "texto": "Ela fecha os olhos; você tira um canudo do meio. *“Qual está faltando?”* Ela encaixa o que faltava. Depois, troquem."
+      "texto": "A criança fecha os olhos; você tira um canudo do meio. *“Qual está faltando?”* A criança encaixa o que faltava. Depois, troquem."
     },
     {
       "titulo": "Você erra de propósito",
       "minutos": 5,
-      "texto": "Embaralhe e ordene com um erro. Deixe que ela descubra onde, e explique por que está errado."
+      "texto": "Embaralhe e ordene com um erro. Deixe que a criança descubra onde, e explique por que está errado."
     },
     {
       "titulo": "Folha: ponha na ordem",
       "minutos": 4,
-      "texto": "Ela numera as figuras de 1 a 5, do menor ao maior."
+      "texto": "A criança numera as figuras de 1 a 5, do menor ao maior."
     }
   ],
   "observar": {
@@ -62,9 +62,9 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "A escada marrom e as barras vermelhas foram feitas para isso: a criança ordena as peças por tamanho e confere sozinha, porque o próprio material mostra o erro.",
+    "Montessori": "A escada marrom e as barras vermelhas foram feitas para isso: a criança ordena as peças por tamanho e confere sem ajuda, porque o próprio material mostra o erro.",
     "Waldorf": "Use galhos, folhas grandes e pedras: a criança escolhe os do mais curto ao mais comprido na natureza, antes de comparar com régua.",
-    "Charlotte Mason": "Poucos objetos reais por vez, sempre da vida da criança, e peça que ela explique como soube qual vinha depois."
+    "Charlotte Mason": "Poucos objetos reais por vez, sempre da vida da criança, e peça que explique como soube qual vinha depois."
   },
   "evidencias": [
     {

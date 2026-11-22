@@ -13,23 +13,23 @@
     {
       "titulo": "Copiar olhando",
       "minutos": 6,
-      "texto": "Construa ao lado dela uma torre de 4 a 6 blocos de 2 cores e deixe o modelo à vista. Peça que ela construa igual, olhando o modelo.",
+      "texto": "Construa ao lado da criança uma torre de 4 a 6 blocos de 2 cores e deixe o modelo à vista. Peça que a criança construa igual, olhando o modelo.",
       "fala": "O que é igual? O que é diferente?"
     },
     {
       "titulo": "Copiar de memória",
       "minutos": 6,
-      "texto": "Mostre a construção por 10 segundos e cubra. Ela constrói de memória. Depois, compare: *“o que ficou igual? o que mudou?”*."
+      "texto": "Mostre a construção por 10 segundos e cubra. A criança constrói de memória. Depois, compare: *“o que ficou igual? o que mudou?”*."
     },
     {
       "titulo": "A partir de uma foto",
       "minutos": 8,
-      "texto": "Tire uma foto da construção (ou desenhe) e peça que ela reproduza a partir da imagem. Comece com 4 blocos e aumente aos poucos."
+      "texto": "Tire uma foto da construção (ou desenhe) e peça que a criança reproduza a partir da imagem. Comece com 4 blocos e aumente aos poucos."
     },
     {
       "titulo": "Trocar os papéis",
       "minutos": 5,
-      "texto": "Ela constrói e você copia, errando de propósito uma vez para ela notar."
+      "texto": "A criança constrói e você copia, errando de propósito uma vez, para que o erro seja notado."
     }
   ],
   "observar": {
@@ -44,7 +44,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use 3 ou 4 blocos, e construa junto com ela, uma peça de cada vez.",
+    "dificil": "Use 3 ou 4 blocos, e construa junto com a criança, uma peça de cada vez.",
     "facil": "Use 8 a 10 blocos ou desenhos em vista de cima e de lado."
   },
   "materiais": [

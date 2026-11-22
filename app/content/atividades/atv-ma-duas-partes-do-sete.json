@@ -13,23 +13,23 @@
     {
       "titulo": "O sete inteiro",
       "minutos": 3,
-      "texto": "Mostre 7 grãos grandes e dois potes. *“Podemos repartir esses 7 em dois potes. De quantos jeitos?”* Deixe que ela tente, sem mostrar a resposta."
+      "texto": "Mostre 7 grãos grandes e dois potes. *“Podemos repartir esses 7 em dois potes. De quantos jeitos?”* Deixe que a criança tente, sem mostrar a resposta."
     },
     {
       "titulo": "Achar jeitos",
       "minutos": 8,
-      "texto": "Cada vez que ela encontrar uma divisão, conte junto os dois potes e diga: *“5 e 2 formam 7”*. Registre com desenho. Se ela repetir, mostre que é a mesma; se faltar um jeito, procure juntos.",
+      "texto": "Cada vez que a criança encontrar uma divisão, conte junto os dois potes e diga: *“5 e 2 formam 7”*. Registre com desenho. Se a criança repetir, mostre que é a mesma; se faltar um jeito, procure juntos.",
       "fala": "Será que existe outro jeito?"
     },
     {
       "titulo": "Anotar",
       "minutos": 5,
-      "texto": "Escreva 7 = 5 + 2 e deixe que ela copie a seu modo. Mostre depois: *“e os 2 dedos de uma mão e 5 da outra?”*"
+      "texto": "Escreva 7 = 5 + 2 e deixe que a criança copie a seu modo. Mostre depois: *“e os 2 dedos de uma mão e 5 da outra?”*"
     },
     {
       "titulo": "Folha: ache as partes",
       "minutos": 4,
-      "texto": "Ela desenha as partes de 7 em potes e escreve os números."
+      "texto": "A criança desenha as partes de 7 em potes e escreve os números."
     }
   ],
   "observar": {
@@ -41,7 +41,7 @@
     "emDesenvolvimento": ["encontra só um jeito e repete", "não percebe que 5 e 2 é igual a 2 e 5"]
   },
   "ajustes": {
-    "dificil": "Troque o 7 pelo 5 e deixe-a mexer os grãos por mais tempo, só com um jeito de cada vez.",
+    "dificil": "Troque o 7 pelo 5 e deixe a criança mexer os grãos por mais tempo, só com um jeito de cada vez.",
     "facil": "Peça todos os jeitos do 8 ou do 10 e pergunte quais jeitos formam um par (7 e 3, 3 e 7)."
   },
   "materiais": [
@@ -61,7 +61,7 @@
   "toqueVertente": {
     "Montessori": "Com as barras numéricas e as contas coloridas, compõe-se o 7 de vários jeitos e as partes aparecem lado a lado.",
     "Waldorf": "Parta do todo: o 7 e de que partes ele é feito. Conte uma história com sete elementos que se dividem em dois grupos.",
-    "Clássico": "Depois que ela achar os jeitos, registre-os numa lista e revise a lista em outros dias, como fatos a conhecer.",
+    "Clássico": "Depois que a criança achar os jeitos, registre-os numa lista e revise a lista em outros dias, como fatos a conhecer.",
     "Charlotte Mason": "Deixe a criança provar cada combinação com objetos antes de decorar."
   },
   "evidencias": [

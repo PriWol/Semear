@@ -13,12 +13,12 @@
     {
       "titulo": "Pôr no cesto",
       "minutos": 4,
-      "texto": "Coloque 2 laranjas (ou bolas de pano) num cesto. *“Tem 2. Se eu colocar mais uma, quantas ficam?”* Deixe que ela adivinhe e confira contando."
+      "texto": "Coloque 2 laranjas (ou bolas de pano) num cesto. *“Tem 2. Se eu colocar mais uma, quantas ficam?”* Deixe que a criança adivinhe e confira contando."
     },
     {
       "titulo": "Tirar do cesto",
       "minutos": 4,
-      "texto": "Com 4 no cesto, peça que ela tire uma e diga: *“agora quantas?”*. Use as palavras *mais*, *sobrou* e *menos* e deixe os símbolos para depois.",
+      "texto": "Com 4 no cesto, peça que a criança tire uma e diga: *“agora quantas?”*. Use as palavras *mais*, *sobrou* e *menos* e deixe os símbolos para depois.",
       "fala": "Ficou mais ou menos?"
     },
     {
@@ -59,7 +59,7 @@
   "toqueVertente": {
     "Montessori": "Organize poucos objetos numa bandeja e deixe a criança fazer: juntar duas pilhas num prato, tirar uma. Só depois, os símbolos + e −.",
     "Waldorf": "Viva a ação na rotina: partilhar o pão, pôr a mesa, juntar a lenha. As palavras “mais” e “menos” nascem da ação, antes dos símbolos.",
-    "Charlotte Mason": "Conte histórias curtas com coisas reais (*“duas laranjas e mais uma”*), em lições de poucos minutos."
+    "Charlotte Mason": "Conte histórias curtas com coisas reais (*“duas laranjas e mais uma”*), em momentos de poucos minutos."
   },
   "evidencias": [
     {
