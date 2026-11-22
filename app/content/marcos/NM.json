@@ -61,7 +61,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Os chamados sentidos básicos (tato, equilíbrio, movimento) são cultivados por meio do brincar e do movimento, antes das “aulas” sobre o corpo.",
+            "comoParticipar": "Os chamados sentidos básicos (tato, equilíbrio, movimento) são cultivados por meio do brincar e do movimento, antes das “explicações” sobre o corpo.",
             "referencias": ["steiner-educacao-crianca"]
           }
         }
@@ -216,8 +216,8 @@
       "preRequisitos": [],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "O tempo é a primeira “aula” de ciências que a criança vive todo dia. Nomear o que sente na pele (frio, calor, vento) liga o **corpo** ao que acontece no mundo e prepara a observação mais sistemática dos anos seguintes.",
-        "comoParticipar": "Ao sair ou ao se vestir, comente: “Hoje faz sol, vamos de chapéu”. Deixe que sinta o vento na mão, a chuva na palma, o chão quente ou frio. Sair com chuva fraca, com roupa adequada, é uma ótima aula.",
+        "porQueImporta": "O tempo é a primeira “descoberta” de ciências que a criança vive todo dia. Nomear o que sente na pele (frio, calor, vento) liga o **corpo** ao que acontece no mundo e prepara a observação mais sistemática dos anos seguintes.",
+        "comoParticipar": "Ao sair ou ao se vestir, comente: “Hoje faz sol, vamos de chapéu”. Deixe que sinta o vento na mão, a chuva na palma, o chão quente ou frio. Sair com chuva fraca, com roupa adequada, é uma ótima experiência.",
         "sinaisDeAtencao": "Algumas crianças se incomodam muito com certas sensações (sol, vento, molhado). Respeite o ritmo e vá devagar. Se o incômodo for intenso e frequente e atrapalhar o dia a dia, vale comentar com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "louv-ultima-crianca"],
         "porVertente": {
@@ -883,7 +883,7 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Perceber a diferença sem medo nem julgamento é a base do **respeito**. A criança que cresce vendo a diversidade como normal estranha menos e acolhe mais.",
-        "comoParticipar": "Leiam livros ilustrados com famílias, corpos, idiomas e culturas diversos. Quando a criança comentar uma diferença, responda com naturalidade: “Cada um vive de um jeito”. Aproxime-a de amigos e vizinhos diferentes. Dê o exemplo ao falar das pessoas.",
+        "comoParticipar": "Leiam livros ilustrados com famílias, corpos, idiomas e culturas diversos. Quando a criança comentar uma diferença, responda com naturalidade: “Cada um vive de um jeito”. Aproxime a criança de amigos e vizinhos diferentes. Dê o exemplo ao falar das pessoas.",
         "sinaisDeAtencao": "Crianças comentam diferenças em voz alta sem maldade; isso é curiosidade e não preconceito. Responda com calma e simplicidade. Se houver falas persistentes de desprezo ou agressão, converse com carinho e procure apoio de quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "siegel-bryson-cerebro-crianca"],
         "porVertente": {
