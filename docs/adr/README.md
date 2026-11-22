@@ -41,5 +41,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0032](0032-volume-8-primeira-versao-menor.md) | Volume 8 em primeira versão menor, em dois PRs | Aceito |
 | [0033](0033-modo-escuro-automatico.md) | Modo escuro automático em arquivo de tokens separado | Aceito |
 | [0034](0034-icones-de-linha-fina-phosphor.md) | Ícones de linha fina: Phosphor (MIT), SVG copiados sem dependência | Aceito |
+| [0036](0036-gerador-de-sessao-v2.md) | Gerador de sessão v2 (etapa 1): duração por atividade e mistura de áreas | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.
