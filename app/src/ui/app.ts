@@ -1,6 +1,7 @@
 // Casca do app: rotas por hash (ADR 0008), contexto compartilhado e renderização das páginas.
 import type { Repositorio } from '../dados/repositorio';
 import type { IndiceConteudo } from '../domain/conteudo';
+import { duracaoDoAviso, type NivelAviso } from './aviso';
 import { html, type HtmlSeguro } from './html';
 
 export interface Contexto {
@@ -11,7 +12,22 @@ export interface Contexto {
   ir: (rota: string) => void;
   /** renderiza de novo a página atual (após uma ação) */
   atualizar: () => Promise<void>;
-  avisar: (mensagem: string) => void;
+  /** `sucesso` some sozinho; `alerta` fica até a pessoa fechar (QA2-12) */
+  avisar: (mensagem: string, nivel?: NivelAviso) => void;
+}
+
+/**
+ * Endereço de uma criança, sessão ou atividade que não existe (link antigo, dado apagado). Não é defeito do
+ * app: a tela mostra "Não encontramos…" com a volta ao início, e nada vai para o console (QA1-09).
+ */
+export class NaoEncontrado extends Error {
+  constructor(
+    readonly oQue: 'criança' | 'sessão' | 'atividade',
+    mensagem?: string,
+  ) {
+    super(mensagem ?? `${oQue[0]!.toUpperCase()}${oQue.slice(1)} não encontrada.`);
+    this.name = 'NaoEncontrado';
+  }
 }
 
 export interface Pagina {
@@ -64,6 +80,8 @@ export function iniciarApp(
   // Cada renderização tem um número: se a pessoa muda de tela enquanto a anterior ainda carrega os dados,
   // a antiga não pode terminar por último e sobrescrever a nova.
   let ultima = 0;
+  // Hash da última tela desenhada: foco no título só quando a TELA muda, não num redesenho da mesma tela.
+  let hashDesenhado: string | null = null;
 
   const ctx: Contexto = {
     ...base,
@@ -72,12 +90,14 @@ export function iniciarApp(
       else location.hash = rota;
     },
     atualizar: () => renderizar(),
-    avisar: (mensagem) => {
+    avisar: (mensagem, nivel = 'sucesso') => {
       if (!aviso) return;
-      aviso.textContent = mensagem;
+      const texto = document.getElementById('aviso-texto');
+      if (texto) texto.textContent = mensagem;
       aviso.hidden = false;
       clearTimeout(timer);
-      timer = window.setTimeout(() => (aviso.hidden = true), 3500);
+      const prazo = duracaoDoAviso(mensagem, nivel);
+      if (prazo !== null) timer = window.setTimeout(() => (aviso.hidden = true), prazo);
     },
   };
 
@@ -104,7 +124,21 @@ export function iniciarApp(
       raiz.replaceChildren(el);
       pagina.montar?.(el);
       marcarNavegacao(caminho);
+      // Depois de trocar de tela, o foco vai ao título (QA2-08): leitor de tela anuncia a tela nova e o
+      // próximo Tab começa no conteúdo. Na primeira carga fica no topo, para o link "Ir para o conteúdo".
+      if (hashDesenhado !== null && hashDesenhado !== location.hash) focarTitulo(el);
+      hashDesenhado = location.hash;
     } catch (erro) {
+      if (erro instanceof NaoEncontrado) {
+        if (minha !== ultima) return;
+        document.title = `Não encontrado · Semear`;
+        raiz.innerHTML = html`<div class="cartao">
+          <h1>Não encontramos essa ${erro.oQue}</h1>
+          <p>O endereço pode estar antigo ou o cadastro foi removido.</p>
+          <p><a href="#/">Voltar ao início</a></p>
+        </div>`.valor;
+        return;
+      }
       console.error(erro);
       if (minha !== ultima) return;
       raiz.innerHTML = html`<div class="cartao erro">
@@ -122,12 +156,28 @@ export function iniciarApp(
     }
   }
 
+  document.getElementById('aviso-fechar')?.addEventListener('click', () => {
+    clearTimeout(timer);
+    if (aviso) aviso.hidden = true;
+  });
+
+  document.getElementById('pular-conteudo')?.addEventListener('click', (ev) => {
+    ev.preventDefault(); // "#conteudo" não é uma rota
+    focarTitulo(raiz);
+  });
+
   window.addEventListener('hashchange', () => {
     void renderizar();
     window.scrollTo(0, 0);
   });
   void renderizar();
   return ctx;
+}
+
+function focarTitulo(dentro: HTMLElement) {
+  const alvo = dentro.querySelector<HTMLElement>('h1') ?? dentro;
+  if (!alvo.hasAttribute('tabindex')) alvo.setAttribute('tabindex', '-1');
+  alvo.focus({ preventScroll: true });
 }
 
 function marcarNavegacao(caminho: string) {

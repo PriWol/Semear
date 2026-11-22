@@ -21,6 +21,8 @@ import {
   type PropostaSessao,
 } from '../domain/sessao';
 
+const textoContagem = (n: number) => `${n} ${n === 1 ? 'linha escolhida' : 'linhas escolhidas'}`;
+
 export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
   const criancas = await ctx.repo.criancas();
@@ -164,7 +166,8 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
           <span
             ><b>Equilibrado</b>
             <span class="nota"
-              >prioriza as linhas menos trabalhadas nas últimas 2 semanas</span
+              >O Semear escolhe por você: prioriza as linhas menos trabalhadas nas últimas 2
+              semanas</span
             ></span
           >
         </label>
@@ -175,9 +178,15 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
             value="escolher"
             ${foco !== 'equilibrado' ? 'checked' : ''}
           />
-          <span><b>Escolher linhas</b></span>
+          <span
+            ><b>Escolher linhas</b>
+            <span class="nota" id="contagem-linhas" aria-live="polite"
+              >${textoContagem(foco === 'equilibrado' ? 0 : foco.length)}</span
+            ></span
+          >
         </label>
-        <div class="sublista">
+        <!-- Só aparece em "Escolher linhas": ~30 caixas sempre abertas escondiam o botão principal (QA2-03). -->
+        <div class="sublista" id="lista-linhas" ${foco === 'equilibrado' ? 'hidden' : ''}>
           ${
             pistasComAtivos.length
               ? pistasComAtivos.map(
@@ -226,13 +235,18 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
           ctx.ir(`/sessao/nova?crianca=${(ev.target as HTMLSelectElement).value}`);
         });
 
-      // Marcar uma linha já escolhe o modo "Escolher linhas" (senão a escolha seria ignorada).
-      raiz.querySelectorAll<HTMLInputElement>('input[name=foco]').forEach((caixa) =>
-        caixa.addEventListener('change', () => {
-          const escolher = raiz.querySelector<HTMLInputElement>('input[name=modo][value=escolher]');
-          if (caixa.checked && escolher) escolher.checked = true;
-        }),
-      );
+      // A lista de linhas só aparece no modo "Escolher linhas", com a contagem do que foi marcado.
+      const lista30 = raiz.querySelector<HTMLElement>('#lista-linhas');
+      const contagemLinhas = raiz.querySelector<HTMLElement>('#contagem-linhas');
+      const atualizarLinhas = () => {
+        const escolher = raiz.querySelector<HTMLInputElement>('input[name=modo][value=escolher]');
+        if (lista30) lista30.hidden = !escolher?.checked;
+        const n = raiz.querySelectorAll('input[name=foco]:checked').length;
+        if (contagemLinhas) contagemLinhas.textContent = textoContagem(n);
+      };
+      raiz
+        .querySelectorAll<HTMLInputElement>('input[name=modo], input[name=foco]')
+        .forEach((campo) => campo.addEventListener('change', atualizarLinhas));
 
       raiz.querySelector<HTMLFormElement>('#form-sessao')?.addEventListener('submit', (ev) => {
         ev.preventDefault();

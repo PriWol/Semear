@@ -1,5 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
-import { lerFormulario, lista, novoId } from '../ui/app';
+import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { IDIOMAS, LETRAS, type Crianca, type Idioma } from '../domain/tipos';
 import { faixaEtaria } from '../domain/faixa';
@@ -17,7 +16,7 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
     };
   const id = params.id ?? 'nova';
   const existente = id === 'nova' ? null : await ctx.repo.crianca(id);
-  if (id !== 'nova' && !existente) throw new Error('Criança não encontrada.');
+  if (id !== 'nova' && !existente) throw new NaoEncontrado('criança');
   const c: Crianca = existente ?? {
     id: novoId(),
     nome: '',
@@ -112,11 +111,15 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
           await ctx.repo.salvarCrianca(nova);
           // Só avisa: um irmão fora da faixa pode usar o app, mas as atividades são feitas para 2 a 8 anos.
           const foraDaFaixa = faixaEtaria(nova.nascimento, agora);
-          ctx.avisar(
-            foraDaFaixa === 'abaixo' || foraDaFaixa === 'acima'
-              ? 'Dados salvos. Atenção: o Semear é pensado para crianças de 2 a 8 anos.'
-              : 'Dados salvos.',
-          );
+          // Aviso de verdade (a pessoa precisa ler): fica até ser fechado.
+          if (foraDaFaixa === 'abaixo' || foraDaFaixa === 'acima') {
+            ctx.avisar(
+              'Dados salvos. Atenção: o Semear é pensado para crianças de 2 a 8 anos.',
+              'alerta',
+            );
+          } else {
+            ctx.avisar('Dados salvos.');
+          }
           ctx.ir(existente ? '/' : `/jornada/${nova.id}`);
         });
       raiz.querySelector('#remover')?.addEventListener('click', async () => {

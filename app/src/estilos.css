@@ -47,6 +47,26 @@ code {
   border-radius: var(--s-espaco-1);
 }
 
+/* Link "Ir para o conteúdo": fora da tela até receber foco (QA2-08). */
+.pular {
+  position: absolute;
+  left: var(--s-espaco-2);
+  top: calc(-1 * var(--s-barra-fixa) * 2);
+  z-index: 20;
+  padding: var(--s-espaco-2) var(--s-espaco-4);
+  background: var(--s-papel);
+  color: var(--s-principal);
+  border: var(--s-borda-marcada) solid var(--s-foco);
+  border-radius: var(--s-raio-p);
+}
+.pular:focus {
+  top: var(--s-espaco-2);
+}
+/* O título recebe foco ao trocar de tela; o contorno só aparece quando o foco veio do teclado. */
+h1[tabindex='-1']:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* ---------- Topo ---------- */
 .topo {
   position: sticky;
@@ -324,9 +344,24 @@ label.opcao input {
 }
 .progresso-dominios li {
   display: grid;
-  grid-template-columns: 1fr var(--s-coluna-progresso) auto;
-  gap: var(--s-espaco-2);
+  grid-template-columns: minmax(0, 1fr) var(--s-coluna-progresso);
+  gap: var(--s-espaco-1) var(--s-espaco-2);
   align-items: center;
+}
+/* "4 de 33 marcos consolidados" é longo: vai numa linha própria, abaixo do nome e da barra. */
+.progresso-dominios li .nota {
+  grid-column: 1 / -1;
+}
+/* Legenda dos três estados do marco (QA2-05): os mesmos ícones dos botões. */
+.legenda-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-espaco-1) var(--s-espaco-4);
+  list-style: none;
+  margin: 0 0 var(--s-espaco-3);
+  padding: 0;
+  font-size: var(--s-texto-selo);
+  color: var(--s-suave);
 }
 progress {
   width: 100%;
@@ -532,6 +567,21 @@ progress {
   box-shadow: var(--s-sombra);
 }
 
+/* O aviso não captura o toque, mas o botão Fechar precisa receber (QA2-12). */
+.aviso-fechar {
+  pointer-events: auto;
+  min-height: var(--s-alvo-toque);
+  margin-left: var(--s-espaco-2);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
+  background: none;
+  border: var(--s-borda) solid currentColor;
+  border-radius: var(--s-raio-pilula);
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: var(--s-texto-h1-p);
@@ -683,8 +733,10 @@ summary {
   display: grid;
   gap: var(--s-espaco-3);
 }
-.item-acervo h3 {
+/* Título de cartão: h2 na estrutura (sem pular nível), com o tamanho de h3. */
+.item-acervo h2 {
   margin: 0 0 var(--s-espaco-1);
+  font-size: var(--s-texto-h3);
 }
 #filtros {
   display: grid;
@@ -776,7 +828,12 @@ summary {
   align-items: flex-end;
   gap: var(--s-espaco-3);
 }
-.lista-atividades h3 a {
+/* Idem: h2 na estrutura, tamanho de h3. */
+.lista-atividades h2 {
+  margin: 0 0 var(--s-espaco-1);
+  font-size: var(--s-texto-h3);
+}
+.lista-atividades h2 a {
   color: inherit;
 }
 

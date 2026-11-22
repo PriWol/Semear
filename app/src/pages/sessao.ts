@@ -1,4 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
+import { NaoEncontrado, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
@@ -25,7 +25,7 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
   const sessao = params.id ? await ctx.repo.sessao(params.id) : null;
   const familia = await ctx.repo.familia();
   const crianca = sessao ? await ctx.repo.crianca(sessao.criancaId) : null;
-  if (!sessao || !familia || !crianca) throw new Error('Sessão não encontrada.');
+  if (!sessao || !familia || !crianca) throw new NaoEncontrado('sessão');
 
   // A data da sessão (não a de hoje) define idade e letra: o pacote reaberto sai igual ao original.
   const idade = idadeEmAnos(crianca.nascimento, new Date(sessao.criadaEm));

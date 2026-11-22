@@ -1,4 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
+import { NaoEncontrado, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import {
   montarRegistro,
@@ -19,7 +19,7 @@ const ERRO_AO_SALVAR = 'Não foi possível salvar. Seus dados continuam na tela.
 export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
   const sessao = params.id ? await ctx.repo.sessao(params.id) : null;
   const crianca = sessao ? await ctx.repo.crianca(sessao.criancaId) : null;
-  if (!sessao || !crianca) throw new Error('Sessão não encontrada.');
+  if (!sessao || !crianca) throw new NaoEncontrado('sessão');
 
   const ficha = observacoesDaSessao(sessao, ctx.idx);
   const anteriores = observacoesRegistradas(sessao.id, await ctx.repo.historico(crianca.id));
@@ -34,6 +34,7 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
     conteudo: html`
       <div class="reg-pagina">
         <div>
+          <p><a href="#/">Cancelar</a></p>
           <h1>Como foi a sessão?</h1>
           <p class="reg-contexto">
             ${sessao.codigo} · ${crianca.nome} · ${dataCurta(sessao.criadaEm)} ·
@@ -158,7 +159,6 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
             <button class="botao primario" type="submit" id="salvar">
               ${jaRegistrada ? 'Salvar alterações' : 'Salvar registro'}
             </button>
-            <a class="botao" href="#/">Cancelar</a>
           </div>
         </form>
       </div>

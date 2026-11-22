@@ -1,5 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
-import { lerFormulario, lista, novoId } from '../ui/app';
+import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
@@ -32,7 +31,7 @@ const DIAS_PADRAO: Dia[] = ['seg', 'qua', 'sex'];
 export const paginaSemana: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
   const crianca = params.id ? await ctx.repo.crianca(params.id) : null;
-  if (!familia || !crianca) throw new Error('Criança não encontrada.');
+  if (!familia || !crianca) throw new NaoEncontrado('criança');
   const agora = ctx.agora();
   const idade = idadeEmAnos(crianca.nascimento, new Date(agora));
   const inicio = segundaDaSemana(new Date(agora));
@@ -163,7 +162,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           const d = lerFormulario(ev.currentTarget as HTMLFormElement);
           const dias = lista(d.dias) as Dia[];
           if (dias.length === 0) {
-            ctx.avisar('Escolha pelo menos um dia.');
+            ctx.avisar('Escolha pelo menos um dia.', 'alerta');
             return;
           }
           const nova = { dias, duracaoMin: Number(d.duracao ?? DURACAO_PADRAO) };
@@ -198,7 +197,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
             alvo.dataset.atividade ?? '',
           );
           if (!novo) {
-            ctx.avisar('Não há outra atividade para trocar nesta linha.');
+            ctx.avisar('Não há outra atividade para trocar nesta linha.', 'alerta');
             return;
           }
         } else if (acao === 'feito') {
@@ -209,7 +208,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
               // A sessão já registrada guarda observações: desmarcar não pode apagá-las (#11).
               const ligada = sessoesDaCrianca.find((s) => s.id === d.sessaoId);
               if (ligada && sessaoRegistrada(ligada)) {
-                ctx.avisar('Esta sessão já foi registrada. Use “Corrigir registro”.');
+                ctx.avisar('Esta sessão já foi registrada. Use “Corrigir registro”.', 'alerta');
                 return;
               }
               await ctx.repo.removerSessao(d.sessaoId);

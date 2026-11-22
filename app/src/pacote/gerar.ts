@@ -160,11 +160,11 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
       <div>
         <h2>🧺 Separe</h2>
         <ul class="check">
-          ${materiais.map((m) => html`<li>${m.item}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
+          ${materiais.map((m) => html`<li>${textoRico(m.item)}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
           <li>Folhas da criança impressas, ou o tablet no modo tablet</li>
           <li>Ficha de registro e uma caneta</li>
         </ul>
-        ${cuidados.length ? html`<p class="caixa cuidados"><b>⚠️ Cuidados:</b> ${cuidados.join(' ')}</p>` : ''}
+        ${cuidados.length ? html`<p class="caixa cuidados"><b>⚠️ Cuidados:</b> ${textoRico(cuidados.join(' '))}</p>` : ''}
       </div>
       <div>
         <h2>${TITULO_INDICACAO[e.livro?.tipo ?? 'livro']}</h2>

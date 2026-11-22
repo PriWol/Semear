@@ -90,8 +90,8 @@ test('Apagar tudo limpa o banco, cancela os lembretes pendentes e não agenda ne
   expect(cancelamentos.length).toBeGreaterThan(0);
   expect(cancelamentos[0]?.args).toEqual({ notifications: [{ id: 11 }, { id: 12 }] });
   expect(chamadas.some((c) => c.metodo === 'schedule')).toBe(false);
-  // deu certo: nenhum aviso de falha
-  await expect(page.locator('#aviso')).toBeHidden();
+  // deu certo: nenhum aviso de falha (o aviso de sucesso do exemplo ainda pode estar na tela: dura 6 a 8 s)
+  await expect(page.locator('#aviso')).not.toContainText('Desligue o lembrete diário');
 });
 
 test('se o cancelamento falhar, o banco é apagado e a pessoa é avisada', async ({ page }) => {

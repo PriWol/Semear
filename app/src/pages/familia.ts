@@ -78,7 +78,7 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
 
         <fieldset>
           <legend>Línguas estrangeiras que você domina</legend>
-          <p class="nota">Só oferecemos trilhas de línguas que você fala (decisão do produto).</p>
+          <p class="nota">Mostramos só as línguas que você marcar.</p>
           ${(Object.keys(IDIOMAS) as Idioma[]).map(
             (i) =>
               html`<label class="opcao">
