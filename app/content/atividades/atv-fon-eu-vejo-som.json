@@ -7,7 +7,7 @@
   "idade": [5, 8],
   "duracaoMin": 25,
   "preparoMin": 3,
-  "cuidados": "Atenção: ao procurar coisas pela sala, fique por perto e não deixe pegar o que for frágil, pesado ou alto demais. Objetos pequenos que caibam na boca ficam de fora. É brincadeira, não teste.",
+  "cuidados": "Atenção: ao procurar coisas pela sala, fique por perto e não deixe pegar o que for frágil, pesado ou alto demais. Objetos pequenos que caibam na boca ficam de fora. É brincadeira, sem cobrança.",
   "objetivo": "A criança identifica o **primeiro som** da palavra, separando-o da sílaba.",
   "passos": [
     {
@@ -28,7 +28,7 @@
     {
       "titulo": "Folha: pinte quem começa com o som",
       "minutos": 4,
-      "texto": "Leia as palavras em voz alta; ela pinta o quadradinho."
+      "texto": "Leia as palavras em voz alta; a criança pinta o quadradinho."
     }
   ],
   "observar": {

@@ -17,12 +17,12 @@
     {
       "titulo": "Combinar e escrever",
       "minutos": 8,
-      "texto": "Cada um sugere regras. Escrevam no papel (ela escreve, ou você escreve o que ela diz): **quem começa, o que vale, o que não vale, o que acontece quando alguém erra**. Leiam juntos e perguntem: *“É justo para todos?”*"
+      "texto": "Cada um sugere regras. Escrevam no papel (a criança escreve, ou você escreve o que for dito): **quem começa, o que vale, o que não vale, o que acontece quando alguém erra**. Leiam juntos e perguntem: *“É justo para todos?”*"
     },
     {
       "titulo": "Jogar com as regras",
       "minutos": 8,
-      "texto": "Joguem uma rodada. Quando surgir uma dúvida, volte ao papel. Peça que ela lembre você de uma regra e deixe-a ser o “guardião das regras” por uma rodada."
+      "texto": "Joguem uma rodada. Quando surgir uma dúvida, volte ao papel. Peça que a criança lembre você de uma regra e seja o “guardião das regras” por uma rodada."
     },
     {
       "titulo": "Mudar de comum acordo",
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Combine só três regras e leia-as antes de cada rodada.",
-    "facil": "Convide outra criança ou um adulto e peça que ela explique as regras para quem chegou."
+    "facil": "Convide outra criança ou um adulto e peça que a criança explique as regras para quem chegou."
   },
   "materiais": [
     {
@@ -57,7 +57,7 @@
   "toqueVertente": {
     "Montessori": "Deixe o cartaz de regras à vista e a criança como responsável por ele, trocando a pessoa a cada rodada.",
     "Waldorf": "Use jogos de roda tradicionais com versos e peça que o grupo combine, em roda, quem começa e como se sai.",
-    "Clássico": "Numerem as regras e peçam que ela as recite antes de começar, como um pequeno código do jogo.",
+    "Clássico": "Numerem as regras e peçam que a criança as recite antes de começar, como um pequeno código do jogo.",
     "Religioso": "Relacione com a regra de ouro (*“trate o outro como gostaria de ser tratado”*), se combinar com a fé da família.",
     "Charlotte Mason": "Use jogos tradicionais de pátio e trate a combinação como hábito de caráter: justiça, palavra dada."
   },
@@ -68,10 +68,10 @@
     },
     {
       "texto": "Lembrou o outro de uma regra",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que regra ela mais defendeu?",
+  "perguntaFicha": "Que regra a criança mais defendeu?",
   "folhas": [
     {
       "tipo": "desenho",

@@ -6,7 +6,7 @@
   "idade": [7, 8],
   "duracaoMin": 20,
   "preparoMin": 5,
-  "cuidados": "Atenção: leitura sentada de até 20 minutos. Não existe só uma resposta certa: aceite o que ela justificar com uma pista. Evite histórias com temas pesados (medo, perda) sem avisar antes.",
+  "cuidados": "Atenção: leitura sentada de até 20 minutos. Não existe só uma resposta certa: aceite o que a criança justificar com uma pista. Evite histórias com temas pesados (medo, perda) sem avisar antes.",
   "objetivo": "A criança descobre, pelas pistas do texto ou das figuras, como o personagem se sente ou o que acontece depois, e mostra a pista.",
   "passos": [
     {
@@ -17,18 +17,18 @@
     {
       "titulo": "Como você sabe?",
       "minutos": 6,
-      "texto": "Depois de ouvir a resposta (triste, bravo...), pergunte: *“Como você sabe?”*. Ela aponta a pista (*“o sorvete caiu”*, *“os olhos brilhando”*). Ajude se ela só disser “eu sei”.",
+      "texto": "Depois de ouvir a resposta (tristeza, raiva...), pergunte: *“Como você sabe?”*. A criança aponta a pista (*“o sorvete caiu”*, *“os olhos brilhando”*). Ajude se a criança só disser “eu sei”.",
       "fala": "Qual é a pista?"
     },
     {
       "titulo": "E agora, o que acontece?",
       "minutos": 5,
-      "texto": "Leia o começo de outra história e **pare antes do final**: *“O que vai acontecer agora?”*. Ela faz uma previsão e justifica. Depois leiam e confiram: acertou? Mudou de ideia?"
+      "texto": "Leia o começo de outra história e **pare antes do final**: *“O que vai acontecer agora?”*. A criança faz uma previsão e justifica. Depois leiam e confiram: acertou? Mudou de ideia?"
     },
     {
       "titulo": "Ser o detetive",
       "minutos": 4,
-      "texto": "Ela esconde uma pista numa frase (*“Ana pegou o casaco e a luva.”*) e você descobre onde Ana vai (*frio*)."
+      "texto": "A criança esconde uma pista numa frase (*“Ana pegou o casaco e a luva.”*) e você descobre onde Ana vai (*frio*)."
     }
   ],
   "observar": {
@@ -57,21 +57,21 @@
   ],
   "toqueVertente": {
     "Waldorf": "A partir dos 8 anos: faça a previsão como adivinha de contador, parando a história no momento de suspense.",
-    "Clássico": "Ligue a pista ao “porque” e peça que ela diga a razão numa frase completa.",
-    "Religioso": "Se fizer sentido, use uma parábola e peça que ela descubra o sentimento do personagem.",
-    "Charlotte Mason": "Use um livro vivo e peça que a narração inclua o que ela supôs dos sentimentos."
+    "Clássico": "Ligue a pista ao “porque” e peça que a criança diga a razão numa frase completa.",
+    "Religioso": "Se fizer sentido, use uma parábola e peça que a criança descubra o sentimento do personagem.",
+    "Charlotte Mason": "Use um livro vivo e peça que a narração inclua o que a criança supôs dos sentimentos."
   },
   "evidencias": [
     {
       "texto": "Apontou uma pista do texto",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Previu e justificou",
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que pista ela encontrou no texto?",
+  "perguntaFicha": "Que pista a criança encontrou no texto?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

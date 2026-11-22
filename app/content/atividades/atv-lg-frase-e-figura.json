@@ -12,23 +12,23 @@
     {
       "titulo": "Frase com ação",
       "minutos": 5,
-      "texto": "Escreva uma frase em letra grande (*O gato bebe leite.*). Ela lê e faz a ação com um bicho de pelúcia ou o próprio corpo (*“O sapo pula.”*)."
+      "texto": "Escreva uma frase em letra grande (*O gato bebe leite.*). A criança lê e faz a ação com um bicho de pelúcia ou o próprio corpo (*“O sapo pula.”*)."
     },
     {
       "titulo": "Frases e figuras",
       "minutos": 8,
-      "texto": "Misture cartões de frase e figuras. Ela lê cada frase e mostra a figura que combina. Se ela travar, peça que leia pedaço por pedaço (*O gato... bebe... leite*) e depois de uma vez.",
+      "texto": "Misture cartões de frase e figuras. A criança lê cada frase e mostra a figura que combina. Se a criança travar, peça que leia pedaço por pedaço (*O gato... bebe... leite*) e depois de uma vez.",
       "fala": "Qual figura combina com a frase?"
     },
     {
       "titulo": "Livrinho de uma frase por página",
       "minutos": 5,
-      "texto": "Dobrem folhas ao meio e façam um livrinho de 4 páginas: uma frase e um desenho por página. Ela lê, e você lê a página seguinte."
+      "texto": "Dobrem folhas ao meio e façam um livrinho de 4 páginas: uma frase e um desenho por página. A criança lê, e você lê a página seguinte."
     },
     {
       "titulo": "Troca",
       "minutos": 2,
-      "texto": "Ela escolhe uma frase para você fazer a ação, e rimos juntos."
+      "texto": "A criança escolhe uma frase para você fazer a ação, e rimos juntos."
     }
   ],
   "observar": {
@@ -37,7 +37,7 @@
       "Entende o que a frase diz (faz a ação ou desenha)"
     ],
     "emDesenvolvimento": [
-      "Lê palavra por palavra sem sentido (releia a frase toda por ela, depois com ela)",
+      "Lê palavra por palavra sem sentido (releia a frase toda, depois leiam juntos)",
       "Adivinha pela figura (cubra a figura)"
     ]
   },
@@ -60,10 +60,10 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Use cartões de leitura com ação (“pule”, “sente”): ela lê e executa, em silêncio.",
+    "Montessori": "Use cartões de leitura com ação (“pule”, “sente”): a criança lê e executa, em silêncio.",
     "Clássico": "Releia a mesma frase em voz alta, devagar, várias vezes, como numa recitação.",
     "Religioso": "Se desejar, use frases curtas de uma cantiga da família.",
-    "Charlotte Mason": "Use frases de um livro de que ela goste e mantenha sessões curtas e fáceis."
+    "Charlotte Mason": "Use frases de um livro de que a criança goste e mantenha sessões curtas e fáceis."
   },
   "evidencias": [
     {
@@ -72,10 +72,10 @@
     },
     {
       "texto": "Lê sem ajuda",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que frase ela leu com mais prazer?",
+  "perguntaFicha": "Que frase a criança leu com mais prazer?",
   "folhas": [
     {
       "tipo": "ligar",

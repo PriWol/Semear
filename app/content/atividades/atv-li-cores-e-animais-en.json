@@ -12,13 +12,13 @@
     {
       "titulo": "Cores",
       "minutos": 5,
-      "texto": "Mostre 4 objetos (red, blue, yellow, green) e diga cada cor várias vezes. Peça: “Show me red!”. Ela mostra o objeto.",
+      "texto": "Mostre 4 objetos (red, blue, yellow, green) e diga cada cor várias vezes. Peça: “Show me red!”. A criança mostra o objeto.",
       "fala": "Show me red!"
     },
     {
       "titulo": "Animais",
       "minutos": 5,
-      "texto": "Mostre 4 bichinhos de brinquedo (cat, dog, bird, fish) e faça os sons. Peça: “Where's the cat?”. Ela aponta."
+      "texto": "Mostre 4 bichinhos de brinquedo (cat, dog, bird, fish) e faça os sons. Peça: “Where's the cat?”. A criança aponta."
     },
     {
       "titulo": "Jogo",
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais palavras ela já diz sozinha?",
+  "perguntaFicha": "Quais palavras a criança já diz sem ajuda?",
   "palavrasChave": ["cores", "animais", "vocabulário", "inglês", "colors"],
   "idioma": "en",
   "folhas": [],

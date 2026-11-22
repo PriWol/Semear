@@ -17,13 +17,13 @@
     {
       "titulo": "Silêncio para escutar",
       "minutos": 4,
-      "texto": "Sentem-se quietos por um minuto e mostrem com a mão onde está cada som (a geladeira, um pássaro, um carro).",
+      "texto": "Sentem-se em silêncio por um minuto e mostrem com a mão onde está cada som (a geladeira, um pássaro, um carro).",
       "fala": "Que som você escuta mais longe? E mais perto?"
     },
     {
       "titulo": "Parar com a música",
       "minutos": 6,
-      "texto": "Cantem ou toquem uma cantiga e parem juntos. No começo avise antes de parar; depois, deixe que ela escute para parar sozinha."
+      "texto": "Cantem ou toquem uma cantiga e parem juntos. No começo avise antes de parar; depois, deixe que a criança escute para parar sem ajuda."
     },
     {
       "titulo": "Folhas da unidade 1",
@@ -51,7 +51,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "perguntaFicha": "O que a criança disse ou fez durante a escuta?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

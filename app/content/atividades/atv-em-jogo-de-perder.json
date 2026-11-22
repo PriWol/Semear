@@ -22,12 +22,12 @@
     {
       "titulo": "Quando alguém perde",
       "minutos": 4,
-      "texto": "Se for ela, abra espaço: *“Dá raiva perder, né? Quer respirar?”*. Se for você, mostre como faz: *“Eu perdi! Que pena. Respirei e já passou.”* Não exija sorriso."
+      "texto": "Se for a criança, abra espaço: *“Dá raiva perder, né? Quer respirar?”*. Se for você, mostre como faz: *“Eu perdi! Que pena. Respirei e já passou.”* Não exija sorriso."
     },
     {
       "titulo": "Conversa final",
       "minutos": 3,
-      "texto": "Pergunte: *“Do que você mais gostou no jogo?”*, e só depois a parte da perda. Combine uma nova partida se ela quiser."
+      "texto": "Pergunte: *“Do que você mais gostou no jogo?”*, e só depois a parte da perda. Combine uma nova partida se a criança quiser."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Jogue uma partida bem curta (3 jogadas) e acabe antes de a tensão crescer; depois, aumente aos poucos.",
-    "facil": "Troquem de lugar: ela explica as regras e escolhe quem começa, sem placar."
+    "facil": "Troquem de lugar: a criança explica as regras e escolhe quem começa, sem placar."
   },
   "materiais": [
     {
@@ -55,7 +55,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe que ela prepare o jogo, arrume as peças e guarde ao final; assim o “fim” faz parte da atividade.",
+    "Montessori": "Deixe que a criança prepare o jogo, arrume as peças e guarde ao final; assim o “fim” faz parte da atividade.",
     "Waldorf": "Prefira jogos de roda e cantigas com “perde” suave (dança das cadeiras sem eliminar quem sai); o grupo continua junto.",
     "Clássico": "Dê nome às virtudes do jogo (paciência, honestidade) e relembre uma frase de jogador honesto depois.",
     "Religioso": "Conversem sobre perder com humildade e ganhar sem humilhar o outro, no tom da fé da família.",
@@ -71,7 +71,7 @@
       "resposta": "☐ não   ☐ às vezes   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela fez ou disse quando perdeu?",
+  "perguntaFicha": "O que a criança fez ou disse quando perdeu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

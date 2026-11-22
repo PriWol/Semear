@@ -1,6 +1,6 @@
 {
   "id": "atv-em-soprar-a-vela",
-  "titulo": "Soprar a vela: respirar para ficar calmo",
+  "titulo": "Soprar a vela: respirar para se acalmar",
   "marcos": ["EM.REG.02"],
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf", "Religioso"],
   "idade": [2, 5],
@@ -23,7 +23,7 @@
     {
       "titulo": "Quando estiver difícil",
       "minutos": 1,
-      "texto": "Combine uma palavra: “vamos soprar a vela?”. Lembre dela em um momento bom, não só na crise."
+      "texto": "Combine uma palavra: “vamos soprar a vela?”. Lembre da criança em um momento bom, não só na crise."
     }
   ],
   "observar": {
@@ -38,7 +38,7 @@
   },
   "ajustes": {
     "dificil": "Faça só a parte de soprar, sem a flor.",
-    "facil": "Deixe-a escolher o animal que sopra (dragão, vento, leão)."
+    "facil": "Deixe a criança escolher o animal que sopra (dragão, vento, leão)."
   },
   "materiais": [
     {

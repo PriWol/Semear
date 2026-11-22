@@ -18,18 +18,18 @@
     {
       "titulo": "Mostrar as horas",
       "minutos": 8,
-      "texto": "Peça: *“mostre as 3 horas”*, *“7 horas”*, *“12 horas”*. Depois, mostre você e deixe que ela diga. Relacione com o dia: *“o almoço é às 12”*.",
+      "texto": "Peça: *“mostre as 3 horas”*, *“7 horas”*, *“12 horas”*. Depois, mostre você e deixe que a criança diga. Relacione com o dia: *“o almoço é às 12”*.",
       "fala": "Que horas são?"
     },
     {
       "titulo": "Horas do meu dia",
       "minutos": 6,
-      "texto": "Ela mostra no relógio de papel a hora de acordar, de almoçar e de dormir, e desenha uma cena para cada uma. Deixe os minutos para depois."
+      "texto": "A criança mostra no relógio de papel a hora de acordar, de almoçar e de dormir, e desenha uma cena para cada uma. Deixe os minutos para depois."
     },
     {
       "titulo": "Folha: ligue as horas",
       "minutos": 3,
-      "texto": "Ela liga cada relógio à hora escrita."
+      "texto": "A criança liga cada relógio à hora escrita."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Use só 3, 6, 9 e 12 horas e deixe os ponteiros do relógio de papel marcados com cores.",
-    "facil": "Mostre meias horas (ponteiro grande no 6) e peça que ela faça o relógio com os ponteiros."
+    "facil": "Mostre meias horas (ponteiro grande no 6) e peça que a criança faça o relógio com os ponteiros."
   },
   "materiais": [
     {
@@ -59,7 +59,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Um relógio de ponteiros em madeira ou papel, em que a criança mexe nos ponteiros, é o material básico; deixe-a explorar sem pressa.",
+    "Montessori": "Um relógio de ponteiros em madeira ou papel, em que a criança mexe nos ponteiros, é o material básico; deixe a criança explorar sem pressa.",
     "Charlotte Mason": "Ligue a hora a um fato real do dia e peça que a criança descreva o que costuma fazer àquela hora.",
     "Clássico": "Recitem as 12 horas em ordem, como uma cantilena, enquanto mostram o relógio."
   },

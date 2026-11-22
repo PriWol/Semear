@@ -45,14 +45,14 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "perguntaFicha": "O que a criança disse ou fez durante a escuta?",
   "folhas": [],
   "autoria": {
     "origem": "ia",
     "status": "rascunho"
   },
   "ajustes": {
-    "dificil": "Aos 4 ou 5 anos, basta desenhar a onda no ar com a mão; se ela se cansar, escute só o começo e deixe o resto para outro dia.",
-    "facil": "Aos 7 ou 8 anos, ela também diz o nome do compositor (Bach) e do que mais gostou."
+    "dificil": "Aos 4 ou 5 anos, basta desenhar a onda no ar com a mão; se a criança se cansar, escute só o começo e deixe o resto para outro dia.",
+    "facil": "Aos 7 ou 8 anos, a criança também diz o nome do compositor (Bach) e do que mais gostou."
   }
 }

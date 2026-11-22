@@ -13,24 +13,24 @@
     {
       "titulo": "Contar e dizer o total",
       "minutos": 5,
-      "texto": "Ponha 4 castanhas na mesa. A criança conta movendo para a cesta. Pergunte: *“quantas tem na cesta?”* e espere. Se ela recontar, tudo bem: pergunte de novo na rodada seguinte.",
+      "texto": "Ponha 4 castanhas na mesa. A criança conta movendo para a cesta. Pergunte: *“quantas tem na cesta?”* e espere. Se a criança recontar, tudo bem: pergunte de novo na rodada seguinte.",
       "fala": "Quantas são no total?"
     },
     {
       "titulo": "E se eu tirar um?",
       "minutos": 5,
-      "texto": "Com a cesta à vista, tire uma castanha e pergunte: *“agora quantas?”* Deixe que ela confira contando. Faça o contrário: coloque mais uma."
+      "texto": "Com a cesta à vista, tire uma castanha e pergunte: *“agora quantas?”* Deixe que a criança confira contando. Faça o contrário: coloque mais uma."
     },
     {
       "titulo": "Pedido da vida real",
       "minutos": 4,
-      "texto": "Peça: *“traga pães para a família, um para cada pessoa”*. Ela conta as pessoas, depois os pães, e diz quantos trouxe.",
+      "texto": "Peça: *“traga pães para a família, um para cada pessoa”*. A criança conta as pessoas, depois os pães, e diz quantos trouxe.",
       "fala": "Quantos pães você trouxe?"
     },
     {
       "titulo": "Folha: circule o total",
       "minutos": 3,
-      "texto": "Ela conta e circula o número que diz quantos são."
+      "texto": "A criança conta e circula o número que diz quantos são."
     }
   ],
   "observar": {
@@ -65,7 +65,7 @@
   "toqueVertente": {
     "Montessori": "Com a caixa de fusos, a criança coloca a quantidade certa em cada compartimento numerado e liga o número ao total.",
     "Waldorf": "Junte as castanhas numa cesta, conte e diga *“são cinco”*, vivendo a coleção como um todo, sem cobrar.",
-    "Charlotte Mason": "Poucos objetos, uma lição curta; mude o que está na mesa a cada rodada para a atenção ficar viva."
+    "Charlotte Mason": "Poucos objetos, um momento curto; mude o que está na mesa a cada rodada para a atenção ficar viva."
   },
   "evidencias": [
     {

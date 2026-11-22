@@ -13,12 +13,12 @@
     {
       "titulo": "Dar um a cada",
       "minutos": 6,
-      "texto": "Sente 3 bonecos, cada um com um prato. Entregue 12 fichas e diga: *“reparta por igual; dê um para cada, em rodadas”*. Ela distribui um por vez, sem pressa."
+      "texto": "Sente 3 bonecos, cada um com um prato. Entregue 12 fichas e diga: *“reparta por igual; dê um para cada, em rodadas”*. A criança distribui um por vez, sem pressa."
     },
     {
       "titulo": "Ficou justo?",
       "minutos": 5,
-      "texto": "Conte o que cada prato recebeu. Pergunte *“ficou igual para todos? sobrou?”*. Se sobrou, deixe que ela decida o que fazer.",
+      "texto": "Conte o que cada prato recebeu. Pergunte *“ficou igual para todos? sobrou?”*. Se sobrou, deixe que a criança decida o que fazer.",
       "fala": "Como saber se ficou justo?"
     },
     {
@@ -29,7 +29,7 @@
     {
       "titulo": "Folha: desenhe as partes iguais",
       "minutos": 4,
-      "texto": "Ela desenha o que cada boneco recebeu, em partes iguais."
+      "texto": "A criança desenha o que cada boneco recebeu, em partes iguais."
     }
   ],
   "observar": {
@@ -44,7 +44,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use 6 fichas e 2 pratos, e comece dando junto com ela, uma a uma.",
+    "dificil": "Use 6 fichas e 2 pratos, e comece dando junto com a criança, uma a uma.",
     "facil": "Use 15 ou 20 fichas e 5 pratos, e pergunte *“e se um amigo chegar?”*."
   },
   "materiais": [

@@ -23,7 +23,7 @@
     {
       "titulo": "Ler o que montou",
       "minutos": 6,
-      "texto": "Peça que ela leia o que montou deslizando o dedo. Confira o som de cada letra."
+      "texto": "Peça que a criança leia o que montou deslizando o dedo. Confira o som de cada letra."
     },
     {
       "titulo": "Folha: desenho da palavra",
@@ -54,7 +54,7 @@
   ],
   "toqueVertente": {
     "Montessori": "É o alfabeto móvel: escrever vem antes de ler e a criança monta sem se preocupar com a ortografia certa.",
-    "Clássico": "Lições curtas e diárias, com palavras regulares e ordem fixa dos sons.",
+    "Clássico": "Momentos curtos e diárias, com palavras regulares e ordem fixa dos sons.",
     "Religioso": "Se a família quiser, monte palavras ligadas à tradição de vocês (nomes de pessoas, festas)."
   },
   "evidencias": [

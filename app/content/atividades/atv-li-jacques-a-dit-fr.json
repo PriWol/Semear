@@ -23,16 +23,16 @@
     {
       "titulo": "Trocar",
       "minutos": 1,
-      "texto": "Troquem os papéis: ela dá o comando (mesmo que em português) e você obedece em francês. Termine com “Au revoir !”."
+      "texto": "Troquem os papéis: a criança dá o comando (mesmo que em português) e você obedece em francês. Termine com “Au revoir !”."
     }
   ],
   "observar": {
     "consolidado": ["Faz 3 ou mais ações pelo comando", "Responde “bonjour”"],
-    "emDesenvolvimento": ["Só imita o adulto (esperado)", "Fica quieta (período silencioso)"]
+    "emDesenvolvimento": ["Só imita o adulto (esperado)", "Fica em silêncio (período silencioso)"]
   },
   "ajustes": {
     "dificil": "Use só 2 comandos, com a sua demonstração.",
-    "facil": "Peça que ela dê os comandos em francês."
+    "facil": "Peça que a criança dê os comandos em francês."
   },
   "materiais": [
     {
@@ -50,7 +50,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais comandos ela entendeu sem ajuda?",
+  "perguntaFicha": "Quais comandos a criança entendeu sem ajuda?",
   "palavrasChave": ["jacques a dit", "comandos", "francês", "brincadeira"],
   "idioma": "fr",
   "folhas": [],

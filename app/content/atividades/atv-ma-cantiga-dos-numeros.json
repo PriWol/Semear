@@ -17,12 +17,12 @@
     {
       "titulo": "Subir e contar",
       "minutos": 4,
-      "texto": "Em dois ou três degraus (ou em passos pela sala), diga o número a cada passo e deixe a criança dizer com você. Se ela pular um número, apenas recomece do ponto em que parou, cantando junto."
+      "texto": "Em dois ou três degraus (ou em passos pela sala), diga o número a cada passo e deixe a criança dizer com você. Se a criança pular um número, apenas recomece do ponto em que parou, cantando junto."
     },
     {
       "titulo": "Cantar por último",
       "minutos": 2,
-      "texto": "Peça que ela “conte para o ursinho” e deixe que escolha: com palmas, pulinhos ou só falando. Termine com um abraço."
+      "texto": "Peça que a criança “conte para o ursinho” e deixe que escolha: com palmas, pulinhos ou só falando. Termine com um abraço."
     }
   ],
   "observar": {
@@ -38,7 +38,7 @@
   },
   "ajustes": {
     "dificil": "Fique só até o 5 e repita três vezes, com os dedos de uma mão. A criança de 2 anos pode apenas ouvir e bater palmas.",
-    "facil": "Peça que ela comece no 3 e continue sozinha, ou invente uma cantiga com os números."
+    "facil": "Peça que a criança comece no 3 e continue sem ajuda, ou invente uma cantiga com os números."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
     "Montessori": "Se tiver as barras numéricas, deixe a criança passar a mão por elas em ordem enquanto canta, sem cobrar a quantidade.",
     "Waldorf": "Conte com o corpo e com a roda: palmas, pulinhos e cantigas de roda. O verso e o movimento vêm antes de qualquer exercício.",
     "Clássico": "Faça como quem decora um poema: poucos minutos por dia, todos os dias, sempre na mesma ordem.",
-    "Charlotte Mason": "Faça uma lição curta e pare enquanto a criança ainda está gostando."
+    "Charlotte Mason": "Faça um momento curto e pare enquanto a criança ainda está gostando."
   },
   "evidencias": [
     {
@@ -66,7 +66,7 @@
     {
       "tipo": "desenho",
       "titulo": "Meus dez dedos",
-      "legenda": "Para ficar no caderno: o adulto contorna a mão da criança e ela pinta cada dedo. Não precisa escrever os números."
+      "legenda": "Para ficar no caderno: o adulto contorna a mão da criança e a criança pinta cada dedo. Não precisa escrever os números."
     }
   ],
   "autoria": {

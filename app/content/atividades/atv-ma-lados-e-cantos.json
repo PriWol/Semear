@@ -18,18 +18,18 @@
     {
       "titulo": "Qual é a figura?",
       "minutos": 7,
-      "texto": "Dê pistas: *“tenho 4 lados e 4 cantos, todos do mesmo tamanho”* (quadrado). Depois, ela dá pistas para você.",
+      "texto": "Dê pistas: *“tenho 4 lados e 4 cantos, todos do mesmo tamanho”* (quadrado). Depois, a criança dá pistas para você.",
       "fala": "Quantos lados e quantos cantos?"
     },
     {
       "titulo": "Figuras impostoras",
       "minutos": 6,
-      "texto": "Desenhe um triângulo com um lado curvo ou aberto e pergunte: *“é um triângulo?”*. Peça que ela explique o que está errado. Se hesitar, conte os lados e os cantos juntos."
+      "texto": "Desenhe um triângulo com um lado curvo ou aberto e pergunte: *“é um triângulo?”*. Peça que a criança explique o que está errado. Se hesitar, conte os lados e os cantos juntos."
     },
     {
       "titulo": "Folha: conte e escreva",
       "minutos": 4,
-      "texto": "Ela conta lados e cantos e escreve os números."
+      "texto": "A criança conta lados e cantos e escreve os números."
     }
   ],
   "observar": {
@@ -44,8 +44,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use só o triângulo e o quadrado e conte lado a lado com a ponta do dedo dela.",
-    "facil": "Peça que ela desenhe uma figura com 5 lados e invente um nome para ela."
+    "dificil": "Use só o triângulo e o quadrado e conte lado a lado com a ponta do dedo da criança.",
+    "facil": "Peça que a criança desenhe uma figura com 5 lados e invente um nome."
   },
   "materiais": [
     {
@@ -63,7 +63,7 @@
   ],
   "toqueVertente": {
     "Montessori": "As caixas de triângulos e as figuras de encaixe permitem comparar lados e cantos com as mãos antes de contá-los.",
-    "Charlotte Mason": "Poucas figuras por lição, observadas com atenção, e a criança explica com as próprias palavras.",
+    "Charlotte Mason": "Poucas figuras por momento, observadas com atenção, e a criança explica com as próprias palavras.",
     "Clássico": "Registre numa lista: triângulo, 3 lados; quadrado, 4 lados; e recitem a lista em dias seguidos."
   },
   "evidencias": [

@@ -12,13 +12,13 @@
     {
       "titulo": "Apresentar",
       "minutos": 3,
-      "texto": "Apresente o fantoche, que só fala inglês: “Hello! I'm Teddy”. Faça Teddy acenar e dar a mão. Ela cumprimenta como quiser.",
+      "texto": "Apresente o fantoche, que só fala inglês: “Hello! I'm Teddy”. Faça Teddy acenar e dar a mão. A criança cumprimenta como quiser.",
       "fala": "Hello, Teddy!"
     },
     {
       "titulo": "Repetir",
       "minutos": 5,
-      "texto": "Teddy diz “thank you”, “please”, “goodbye” em situações (pede uma bolacha de brinquedo, agradece, se despede). Ela repete e dá objetos."
+      "texto": "Teddy diz “thank you”, “please”, “goodbye” em situações (pede uma bolacha de brinquedo, agradece, se despede). A criança repete e dá objetos."
     },
     {
       "titulo": "Despedida",
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Repita só “hello” e “goodbye”.",
-    "facil": "Peça que ela apresente o Teddy a outra pessoa, em inglês."
+    "facil": "Peça que a criança apresente o Teddy a outra pessoa, em inglês."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais palavras ela repetiu?",
+  "perguntaFicha": "Quais palavras a criança repetiu?",
   "palavrasChave": ["fantoche", "hello", "cumprimentos", "inglês", "primeiras palavras"],
   "idioma": "en",
   "folhas": [],

@@ -6,29 +6,29 @@
   "idade": [6, 8],
   "duracaoMin": 20,
   "preparoMin": 5,
-  "cuidados": "Atenção: leitura sentada, boa luz, até 20 minutos. Se o texto cansar, leia uma parte para ela. Perguntas não são prova: se ela errar, releiam juntos a frase certa.",
+  "cuidados": "Atenção: leitura sentada, boa luz, até 20 minutos. Se o texto cansar, leia uma parte para a criança. Perguntas não são prova: se a criança errar, releiam juntos a frase certa.",
   "objetivo": "A criança encontra no texto a frase que responde a perguntas literais (quem, onde, quando, o quê) e a aponta com o dedo.",
   "passos": [
     {
       "titulo": "Ler o texto curto",
       "minutos": 5,
-      "texto": "Leiam juntos ou ela lê (se já lê bem) este texto: *“Luna levou o guarda-chuva para o parque. De manhã o céu estava azul, mas à tarde começou a chover. Luna abriu o guarda-chuva amarelo e voltou para casa pulando nas poças.”*"
+      "texto": "Leiam juntos ou a criança lê (se já lê bem) este texto: *“Luna levou o guarda-chuva para o parque. De manhã o céu estava azul, mas à tarde começou a chover. Luna abriu o guarda-chuva amarelo e voltou para casa pulando nas poças.”*"
     },
     {
       "titulo": "Quem, onde, quando, o quê",
       "minutos": 8,
-      "texto": "Faça uma pergunta de cada vez: *Quem levou o guarda-chuva? Para onde? Quando começou a chover? O que ela fez na volta?* Para cada uma, ela **aponta com o dedo a frase** que responde e lê em voz alta.",
+      "texto": "Faça uma pergunta de cada vez: *Quem levou o guarda-chuva? Para onde? Quando começou a chover? O que a criança fez na volta?* Para cada uma, a criança **aponta com o dedo a frase** que responde e lê em voz alta.",
       "fala": "Onde está escrito?"
     },
     {
       "titulo": "Troca de papéis",
       "minutos": 5,
-      "texto": "Agora ela faz as perguntas e você responde, às vezes errando de propósito. Ela confere no texto e diz: *“Não, está escrito...”*"
+      "texto": "Agora a criança faz as perguntas e você responde, às vezes errando de propósito. A criança confere no texto e diz: *“Não, está escrito...”*"
     },
     {
       "titulo": "Outro texto",
       "minutos": 2,
-      "texto": "Se sobrar tempo, repita com um texto curto de um livro dela."
+      "texto": "Se sobrar tempo, repita com um texto curto de um livro da criança."
     }
   ],
   "observar": {
@@ -57,9 +57,9 @@
   ],
   "toqueVertente": {
     "Waldorf": "A partir dos 7 anos e meio: parta de um texto que a classe contou antes, para ler com o dedo na frase conhecida.",
-    "Clássico": "Peça que ela leia a frase que responde em voz alta, como em uma pequena recitação.",
+    "Clássico": "Peça que a criança leia a frase que responde em voz alta, como em uma pequena recitação.",
     "Religioso": "Se desejar, use um trecho curto de leitura da família e as mesmas perguntas.",
-    "Charlotte Mason": "Use um trecho de um livro vivo e peça que ela narre depois de ler, sem questionário."
+    "Charlotte Mason": "Use um trecho de um livro vivo e peça que a criança narre depois de ler, sem questionário."
   },
   "evidencias": [
     {

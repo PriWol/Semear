@@ -13,23 +13,23 @@
     {
       "titulo": "Mostrar o jeito",
       "minutos": 5,
-      "texto": "Meça a mesa com palmos: coloque um palmo depois do outro, sem espaços, e conte. *“A mesa tem 7 palmos.”* Deixe que ela tente e corrija os espaços junto com ela."
+      "texto": "Meça a mesa com palmos: coloque um palmo depois do outro, sem espaços, e conte. *“A mesa tem 7 palmos.”* Deixe que a criança tente e corrija os espaços junto com você."
     },
     {
       "titulo": "Palmo e clipe",
       "minutos": 7,
-      "texto": "Meçam um livro com palmos e depois com clipes grandes. *“Por que deu mais clipes do que palmos?”* Deixe que ela explique.",
+      "texto": "Meçam um livro com palmos e depois com clipes grandes. *“Por que deu mais clipes do que palmos?”* Deixe que a criança explique.",
       "fala": "Por que os números foram diferentes?"
     },
     {
       "titulo": "Medir o corpo",
       "minutos": 6,
-      "texto": "Meçam o quarto com os passos dela e depois com os seus. *“Por que deu diferente?”* Converse sobre o tamanho do passo de cada um."
+      "texto": "Meçam o quarto com os passos da criança e depois com os seus. *“Por que deu diferente?”* Converse sobre o tamanho do passo de cada um."
     },
     {
       "titulo": "Folha: registro",
       "minutos": 5,
-      "texto": "Ela anota o que mediu e qual unidade usou."
+      "texto": "A criança anota o que mediu e qual unidade usou."
     }
   ],
   "observar": {
@@ -44,8 +44,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Meça com uma só unidade (palmos) e um objeto curto, e deixe que ela coloque os palmos devagar.",
-    "facil": "Peça que ela estime antes de medir e compare com o resultado."
+    "dificil": "Meça com uma só unidade (palmos) e um objeto curto, e deixe que a criança coloque os palmos devagar.",
+    "facil": "Peça que a criança estime antes de medir e compare com o resultado."
   },
   "materiais": [
     {

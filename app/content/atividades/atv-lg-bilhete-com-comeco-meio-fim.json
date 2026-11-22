@@ -18,17 +18,17 @@
     {
       "titulo": "Planejar em três partes",
       "minutos": 5,
-      "texto": "Dobrem a folha em três: **começo** (cumprimento), **meio** (o que quer dizer), **fim** (despedida). Ela faz um desenho ou uma palavra em cada parte."
+      "texto": "Dobrem a folha em três: **começo** (cumprimento), **meio** (o que quer dizer), **fim** (despedida). A criança faz um desenho ou uma palavra em cada parte."
     },
     {
       "titulo": "Escrever o rascunho",
       "minutos": 8,
-      "texto": "Ela escreve o bilhete sem se preocupar com erros. Se precisar, soletre uma palavra, mas não corrija o resto."
+      "texto": "A criança escreve o bilhete sem se preocupar com erros. Se precisar, soletre uma palavra, mas não corrija o resto."
     },
     {
       "titulo": "Reler e passar a limpo",
       "minutos": 6,
-      "texto": "Leiam em voz alta. Ela escolhe uma coisa para melhorar e passa a limpo só o que quiser mostrar. Entreguem o bilhete."
+      "texto": "Leiam em voz alta. A criança escolhe uma coisa para melhorar e passa a limpo só o que quiser mostrar. Entreguem o bilhete."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Faça um bilhete de 2 frases (cumprimento e pedido) e escreva o resto junto com ela.",
+    "dificil": "Faça um bilhete de 2 frases (cumprimento e pedido) e escreva o resto junto com a criança.",
     "facil": "Peça uma carta com data, local e post-scriptum (P.S.)."
   },
   "materiais": [
@@ -60,11 +60,11 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe papéis de cartas e envelopes numa caixa, com endereço e selo de papel, para ela escrever quando quiser.",
+    "Montessori": "Deixe papéis de cartas e envelopes numa caixa, com endereço e selo de papel, para a criança escrever quando quiser.",
     "Waldorf": "Só a partir dos 8 anos para textos longos: antes, cartas curtas ilustradas, com capricho de letra e de cor.",
     "Clássico": "Mostre a estrutura da carta (saudação, corpo, despedida) e peça a releitura em voz alta antes de enviar.",
     "Religioso": "Convide a escrever um cartão de bênção ou gratidão para alguém da comunidade, se fizer sentido.",
-    "Charlotte Mason": "Faça a escrita nascer de uma narração: depois de contar, ela escreve ao amigo sobre o que viveu."
+    "Charlotte Mason": "Faça a escrita nascer de uma narração: depois de contar, a criança escreve ao amigo sobre o que viveu."
   },
   "evidencias": [
     {
@@ -76,7 +76,7 @@
       "resposta": "☐ não   ☐ sim"
     }
   ],
-  "perguntaFicha": "Para quem era o bilhete e o que ela queria dizer?",
+  "perguntaFicha": "Para quem era o bilhete e o que a criança queria dizer?",
   "folhas": [
     {
       "tipo": "desenho",
