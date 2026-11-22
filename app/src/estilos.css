@@ -330,6 +330,46 @@ label.opcao input {
   width: var(--s-texto-destaque);
   height: var(--s-texto-destaque);
 }
+/* Gravuras botânicas (ADR 0035): ornamento de respiro, nunca atrás de texto. A altura vem dos tokens e
+   a largura acompanha a proporção; max-width impede rolagem lateral em tela estreita. */
+.gravura {
+  display: block;
+}
+.gravura img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.boas-vindas .gravura {
+  margin: 0 auto var(--s-espaco-4);
+}
+.boas-vindas .gravura img {
+  max-height: var(--s-gravura-g);
+  margin: 0 auto;
+}
+.vazio-criancas {
+  text-align: center;
+}
+.vazio-criancas .gravura {
+  margin: 0 auto var(--s-espaco-3);
+}
+.vazio-criancas .gravura img {
+  max-height: var(--s-gravura-m);
+  margin: 0 auto;
+}
+.topo-gravura {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-espaco-4);
+}
+.topo-gravura h1 {
+  margin: 0;
+}
+.topo-gravura .gravura img {
+  max-height: var(--s-gravura-p);
+}
 .grade-cartoes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--s-largura-cartao-min), 1fr));

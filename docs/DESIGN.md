@@ -58,6 +58,8 @@ O ocre `--s-destaque` e a linha `--s-linha` **nunca** são cor de texto.
 - **No app:** versão em cor suave sobre `--s-papel`, como ornamento (cabeçalhos, estados vazios, cartões).
   Nunca no lugar de um texto necessário.
 - **Nas folhas:** só traço em preto e branco, sem preenchimento chapado, e fora da área de escrita da criança.
+- **Em uso (ADR 0035):** girassol (boas-vindas), gladíolo (início sem criança) e tulipas (Biblioteca), em `app/public/gravuras/`, com
+  variante de tinta clara para o tema escuro. Registro, SHA-256 e crédito em `app/src/gravuras.ts`; `alt=""` (ornamento).
 - Substituem os emojis da interface. Exceção: emoji que a atividade usa como **conteúdo** (contar, circular).
 
 ## Ícones e tom de voz

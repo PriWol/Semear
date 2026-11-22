@@ -1,5 +1,6 @@
 import type { FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
+import { figuraGravura } from '../ui/gravura';
 import { CADERNOS, enderecoDoPdf, VOLUMES } from '../tesouro';
 import type { CadernoTesouro, UnidadeTesouro, VolumeTesouro } from '../tesouro';
 
@@ -89,7 +90,10 @@ export function cartaoDoCaderno(c: CadernoTesouro) {
 /** Biblioteca: abre os volumes e cadernos d'O Grande Tesouro de Marina direto na unidade (ADR 0015). */
 export const paginaBiblioteca: FabricaPagina = async () => ({
   titulo: 'Biblioteca',
-  conteudo: html`<h1>Biblioteca</h1>
+  conteudo: html`<div class="topo-gravura">
+      <h1>Biblioteca</h1>
+      ${figuraGravura('tulipas')}
+    </div>
     <p class="nota">
       <i>O Grande Tesouro de Marina</i>: o material para imprimir ou ler na tela. Os volumes e
       cadernos abrem neste mesmo site; é preciso estar conectado à internet, a não ser que o

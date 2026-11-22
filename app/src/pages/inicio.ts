@@ -9,6 +9,7 @@ import { carregarSondagem } from '../conteudo';
 import { anos, dataCurta, ROTULO_FEITA, textoProgresso } from '../ui/rotulos';
 import { sessaoRegistrada } from '../domain/registro';
 import { criarExemplo } from '../domain/exemplo';
+import { figuraGravura } from '../ui/gravura';
 import { familiaSemNome } from '../domain/pendencias';
 
 export const paginaInicio: FabricaPagina = async (ctx) => {
@@ -17,7 +18,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
     return {
       titulo: 'Bem-vindo',
       conteudo: html`<section class="cartao boas-vindas">
-        <p class="selo">${icone('plant')}</p>
+        ${figuraGravura('girassol')}
         <h1>Bem-vindo ao Semear</h1>
         <p>
           Organize a jornada de aprendizado dos seus filhos por domínios e gere, antes de cada
@@ -211,7 +212,16 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
             </div>`
           : ''
       }
-      <div class="grade-cartoes">${cartoes}</div>
+      ${
+        criancas.length === 0
+          ? html`<section class="cartao vazio-criancas">
+              ${figuraGravura('gladiolo')}
+              <h2>Ainda não há crianças por aqui</h2>
+              <p>Cadastre a primeira para posicioná-la na jornada e preparar a sessão.</p>
+              <a class="botao primario" href="#/crianca/nova">Adicionar a primeira criança</a>
+            </section>`
+          : html`<div class="grade-cartoes">${cartoes}</div>`
+      }
       <p>
         <a class="botao" href="#/crianca/nova">+ Adicionar criança</a>
         <a class="botao" href="#/biblioteca">${icone('books')} Biblioteca</a>

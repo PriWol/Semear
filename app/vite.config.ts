@@ -37,7 +37,8 @@ export default defineConfig({
         icons: [{ src: 'icone.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,json}'],
+        // webp: as gravuras das telas (ADR 0035) são locais e leves; entram no cache offline.
+        globPatterns: ['**/*.{js,css,html,svg,json,webp}'],
         // A faxina do site antigo e o 404 não precisam ficar no cache offline do app.
         globIgnores: ['service-worker.js', '404.html'],
         // Os PDFs do Tesouro (./tesouro/) são abertos pelo navegador, não pelo app: sem isto o
