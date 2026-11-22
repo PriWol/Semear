@@ -222,12 +222,12 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
             </section>`
           : html`<div class="grade-cartoes">${cartoes}</div>`
       }
-      <p>
+      <div class="acoes" id="atalhos-inicio">
         <a class="botao" href="#/crianca/nova">+ Adicionar criança</a>
         <a class="botao" href="#/biblioteca">${icone('books')} Biblioteca</a>
         <a class="botao" href="#/acervo">${icone('gift')} Acervo gratuito</a>
         <a class="botao" href="#/guia">${icone('compass')} Guia das vertentes</a>
-      </p>
+      </div>
 
       <h2>Últimas sessões</h2>
       ${
