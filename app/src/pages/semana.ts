@@ -1,4 +1,5 @@
 import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from '../ui/app';
+import { abrirDialogo, paragrafo } from '../ui/dialogo';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
 import { abrirPainelPacote } from '../ui/painel-pacote';
@@ -8,16 +9,19 @@ import { DURACAO_PADRAO, DURACOES, gerarCodigoSessao } from '../domain/sessao';
 import {
   DIAS,
   diaFeito,
+  diaPassou,
+  inicioDaSemana,
   marcarFeito,
   materiaisDaSemana,
   NOME_DIA,
   planejarSemana,
   removerAtividade,
-  segundaDaSemana,
+  semanaPadrao,
   trocarAtividade,
   type Dia,
   type EntradaSemana,
   type PlanoSemana,
+  type QualSemana,
 } from '../domain/semana';
 import type { Atividade, Sessao } from '../domain/tipos';
 import { gerarSemana, nomeArquivoSemana, type ModoSemana } from '../pacote/semana';
@@ -35,13 +39,17 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
   if (!familia || !crianca) throw new NaoEncontrado('criança');
   const agora = ctx.agora();
   const idade = idadeEmAnos(crianca.nascimento, new Date(agora));
-  const inicio = segundaDaSemana(new Date(agora));
+  const hoje = new Date(agora);
+  // D11 (#141): "Próxima semana" é o padrão de sexta 12h a domingo; ?semana= escolhe à mão.
+  const qual: QualSemana =
+    params.semana === 'esta' || params.semana === 'proxima' ? params.semana : semanaPadrao(hoje);
+  const inicio = inicioDaSemana(hoje, qual);
   const plano = (await ctx.repo.planos(crianca.id)).find((p) => p.inicio === inicio) ?? null;
   const rotina = crianca.rotina ?? { dias: DIAS_PADRAO, duracaoMin: DURACAO_PADRAO };
 
   const atividadeDe = (id: string): Atividade | undefined => ctx.idx.atividade(id);
 
-  const base = async (): Promise<Omit<EntradaSemana, 'id' | 'rotina'>> => ({
+  const base = async (): Promise<Omit<EntradaSemana, 'id' | 'rotina' | 'inicio'>> => ({
     familia,
     crianca,
     idade,
@@ -51,6 +59,12 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
     ),
     agora,
   });
+
+  const abaSemana = (q: QualSemana, rotulo: string) =>
+    html`<a href="#/semana/${crianca.id}?semana=${q}" class="${q === qual ? 'ativo' : ''}" aria-current="${q === qual ? 'page' : 'false'}">${rotulo}</a>`;
+  const abas = html`<nav class="abas" aria-label="Semana a planejar">
+    ${abaSemana('esta', 'Esta semana')}${abaSemana('proxima', 'Próxima semana')}
+  </nav>`;
 
   const formulario = html`<form class="cartao formulario" id="form-semana">
     <fieldset>
@@ -86,7 +100,9 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
     const feita = diaFeito(d, sessoesDaCrianca);
     const sessaoDoDia = d.sessaoId ? sessoesDaCrianca.find((s) => s.id === d.sessaoId) : undefined;
     const registrada = sessaoDoDia !== undefined && sessaoRegistrada(sessaoDoDia);
-    return html`<section class="cartao dia-plano ${feita ? 'feito' : ''}" data-dia="${d.dia}">
+    // Dia que já passou (D11): esmaecido, sem "Marcar como feito"; o que já estava feito segue como estava.
+    const passou = diaPassou(d, hoje) && !feita;
+    return html`<section class="cartao dia-plano ${feita ? 'feito' : ''} ${passou ? 'passado' : ''}" data-dia="${d.dia}">
     <h2>${NOME_DIA[d.dia]} <span class="nota">${d.data.split('-').reverse().slice(0, 2).join('/')}</span> ${feita ? html`<span class="selo-feita">${ROTULO_FEITA}</span>` : ''}</h2>
     ${
       d.atividadeIds.length === 0
@@ -97,21 +113,27 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
               if (!a) return '';
               return html`<li>
                 ${a.titulo} <span class="nota">${a.duracaoMin} min</span>
-                <button class="link-botao" type="button" data-acao="trocar" data-dia="${d.dia}" data-atividade="${id}">Trocar</button>
-                <button class="link-botao" type="button" data-acao="remover" data-dia="${d.dia}" data-atividade="${id}">Remover</button>
+                ${
+                  passou
+                    ? ''
+                    : html`<button class="link-botao" type="button" data-acao="trocar" data-dia="${d.dia}" data-atividade="${id}">Trocar</button>
+                <button class="link-botao" type="button" data-acao="remover" data-dia="${d.dia}" data-atividade="${id}">Remover</button>`
+                }
               </li>`;
             })}
           </ul>`
     }
     ${
-      registrada
-        ? // Desmarcar apagaria a sessão e a observação dela: com registro, só se corrige.
-          html`<a class="botao" href="#/sessao/${sessaoDoDia.id}/registrar">Corrigir registro</a>`
-        : html`${
-            sessaoDoDia && d.feito
-              ? html`<a class="botao" href="#/sessao/${sessaoDoDia.id}/registrar">Registrar</a> `
-              : ''
-          }<button class="botao ${d.feito ? '' : 'primario'}" type="button" data-acao="feito" data-dia="${d.dia}">
+      passou
+        ? html`<p class="nota">Este dia já passou.</p>`
+        : registrada
+          ? // Desmarcar apagaria a sessão e a observação dela: com registro, só se corrige.
+            html`<a class="botao" href="#/sessao/${sessaoDoDia.id}/registrar">Corrigir registro</a>`
+          : html`${
+              sessaoDoDia && d.feito
+                ? html`<a class="botao" href="#/sessao/${sessaoDoDia.id}/registrar">Registrar</a> `
+                : ''
+            }<button class="botao ${d.feito ? '' : 'primario'}" type="button" data-acao="feito" data-dia="${d.dia}">
             ${d.feito ? 'Desmarcar' : 'Marcar como feito'}
           </button>`
     }
@@ -126,6 +148,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
         Escolha os dias e a duração e o app distribui as linhas, sem repetir atividade na semana.
         <a href="#/jornada/${crianca.id}">Voltar à jornada</a>
       </p>
+      ${abas}
       ${
         plano
           ? html`<div class="acoes">
@@ -153,7 +176,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
     montar(raiz) {
       const entradaDoPlano = async (p: PlanoSemana) => {
         const b = await base();
-        return { ...b, id: p.id, rotina: p.rotina } satisfies EntradaSemana;
+        return { ...b, id: p.id, rotina: p.rotina, inicio: p.inicio } satisfies EntradaSemana;
       };
 
       raiz
@@ -168,7 +191,12 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           }
           const nova = { dias, duracaoMin: Number(d.duracao ?? DURACAO_PADRAO) };
           await ctx.repo.atualizarCrianca(crianca.id, { rotina: nova });
-          const novo = planejarSemana(ctx.idx, { ...(await base()), id: novoId(), rotina: nova });
+          const novo = planejarSemana(ctx.idx, {
+            ...(await base()),
+            id: novoId(),
+            rotina: nova,
+            inicio,
+          });
           await ctx.repo.salvarPlano(novo);
           void sincronizarComOAparelho(ctx, { pedirPermissao: false });
           await ctx.atualizar();
@@ -181,7 +209,17 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
         const acao = alvo.dataset.acao;
         let novo: PlanoSemana | null = plano;
         if (acao === 'replanejar') {
-          if (!confirm('Planejar de novo apaga o plano desta semana. Continuar?')) return;
+          const escolha = await abrirDialogo({
+            titulo: 'Planejar de novo?',
+            texto: html`${paragrafo(
+              `O plano ${qual === 'proxima' ? 'da próxima semana' : 'desta semana'} será apagado e você escolhe os dias de novo.`,
+            )}${paragrafo('As sessões já marcadas como feitas continuam no histórico.')}`,
+            botoes: [
+              { valor: 'cancelar', rotulo: 'Manter o plano', tipo: 'primario' },
+              { valor: 'refazer', rotulo: 'Apagar o plano e planejar de novo', tipo: 'perigo' },
+            ],
+          });
+          if (escolha !== 'refazer') return;
           await ctx.repo.removerPlano(plano.id);
           void sincronizarComOAparelho(ctx, { pedirPermissao: false });
           await ctx.atualizar();
