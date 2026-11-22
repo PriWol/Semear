@@ -6,13 +6,13 @@
   "idade": [4, 6],
   "duracaoMin": 15,
   "preparoMin": 3,
-  "cuidados": "Atenção: sente-se junto dela com o livro à vista; prefira histórias curtas (até 10 minutos) e pause se ela se dispersar. Não transforme as perguntas em prova: se ela não lembrar, releia o trecho com ela.",
+  "cuidados": "Atenção: sente-se junto da criança com o livro à vista; prefira histórias curtas (até 10 minutos) e pause se a criança se dispersar. Não transforme as perguntas em prova: se a criança não lembrar, releia o trecho junto.",
   "objetivo": "A criança escuta uma história e responde a perguntas simples sobre quem apareceu, onde foi e o que aconteceu.",
   "passos": [
     {
       "titulo": "Antes de ler",
       "minutos": 2,
-      "texto": "Mostre a capa e pergunte: *“Do que será que fala esta história?”*. Escolha um conto curto que ela conheça pouco (como *Os Três Porquinhos*, conto popular) ou um livro ilustrado de poucas páginas."
+      "texto": "Mostre a capa e pergunte: *“Do que será que fala esta história?”*. Escolha um conto curto que a criança conheça pouco (como *Os Três Porquinhos*, conto popular) ou um livro ilustrado de poucas páginas."
     },
     {
       "titulo": "Leitura em voz alta",
@@ -26,9 +26,9 @@
       "fala": "Quem apareceu? Onde foi? O que aconteceu?"
     },
     {
-      "titulo": "A vez dela",
+      "titulo": "A vez da criança",
       "minutos": 3,
-      "texto": "Ela faz uma pergunta e você responde (às vezes errando de propósito, para ela corrigir). Releia a página se ela quiser conferir."
+      "texto": "A criança faz uma pergunta e você responde (às vezes errando de propósito, para ser corrigido). Releia a página se a criança quiser conferir."
     }
   ],
   "observar": {
@@ -52,11 +52,11 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe o livro no cantinho de leitura, ao alcance, para ela folhear e “reler” as figuras sozinha depois.",
+    "Montessori": "Deixe o livro no cantinho de leitura, ao alcance, para a criança folhear e “reler” as figuras sem ajuda depois.",
     "Waldorf": "Conte de memória, sem livro, com a voz e o ritmo; depois converse como se fosse uma lembrança de passeio.",
-    "Clássico": "Releia a mesma história por alguns dias e peça que ela complete as frases conhecidas.",
+    "Clássico": "Releia a mesma história por alguns dias e peça que a criança complete as frases conhecidas.",
     "Religioso": "Se desejar, escolha uma história bíblica curta ou de uma tradição da família.",
-    "Charlotte Mason": "Escolha um livro vivo (bem escrito e curto) e peça que ela narre em poucas palavras, sem questionário."
+    "Charlotte Mason": "Escolha um livro vivo (bem escrito e curto) e peça que a criança narre em poucas palavras, sem questionário."
   },
   "evidencias": [
     {
@@ -68,7 +68,7 @@
       "resposta": "☐ não   ☐ às vezes   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que parte da história ela mais lembrou?",
+  "perguntaFicha": "Que parte da história a criança mais lembrou?",
   "folhas": [
     {
       "tipo": "desenho",

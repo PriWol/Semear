@@ -18,12 +18,12 @@
     {
       "titulo": "Família",
       "minutos": 6,
-      "texto": "Com 4 fotos da família, diga: mother, father, sister, brother (ou grandmother, grandfather). Ela aponta cada pessoa e repete."
+      "texto": "Com 4 fotos da família, diga: mother, father, sister, brother (ou grandmother, grandfather). A criança aponta cada pessoa e repete."
     },
     {
       "titulo": "Álbum",
       "minutos": 3,
-      "texto": "Ela cola as fotos em uma folha e você escreve os nomes em inglês ao lado. Pendure em um lugar visível."
+      "texto": "A criança cola as fotos em uma folha e você escreve os nomes em inglês ao lado. Pendure em um lugar visível."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual pessoa ela mais gostou de nomear?",
+  "perguntaFicha": "Qual pessoa a criança mais gostou de nomear?",
   "palavrasChave": ["corpo", "família", "head shoulders knees toes", "inglês"],
   "idioma": "en",
   "folhas": [],

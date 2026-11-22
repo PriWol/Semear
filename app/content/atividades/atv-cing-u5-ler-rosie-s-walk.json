@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "cuidados": "Leia com a criança no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
   "palavrasChave": ["inglês", "english", "livro", "rosie's walk"],
   "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Rosie goes for a walk. Look, a hen. / Over the haystack. Under the tree. / Where is the hen now?"
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Sentem juntos, com o livro aberto; leia o texto curto e deixe que ela olhe as figuras."
+      "texto": "Sentem juntos, com o livro aberto; leia o texto curto e deixe que a criança olhe as figuras."
     },
     {
       "titulo": "Passo 2",
@@ -44,7 +44,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Where is the hen? / Is she over the haystack or under the tree? / What do you see in the picture?"
     },
     {

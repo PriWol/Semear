@@ -12,9 +12,9 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Atenção: Cante quando ela estiver calma. Nos “pum, pum, pum”, bata o pé em chão firme e sem escorregar; ela imita só se quiser. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Cante quando houver calma. Nos “pum, pum, pum”, bata o pé em chão firme e sem escorregar; a criança imita só se quiser. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["cravo", "rosa", "raiva", "pazes"],
-  "objetivo": "A criança conhece uma cantiga sobre brigar e fazer as pazes e uma rima própria da raiva, para usar depois, quando estiver calma.",
+  "objetivo": "A criança conhece uma cantiga sobre brigar e fazer as pazes e uma rima própria da raiva, para usar depois, quando houver calma.",
   "passos": [
     {
       "titulo": "O cravo brigou com a rosa",
@@ -24,17 +24,17 @@
     {
       "titulo": "Estou com raiva",
       "minutos": 2,
-      "texto": "*Estou com raiva, estou com raiva: / bato o pé — pum, pum, pum! / Respiro fundo, sopro, fuuu… / a raiva vai embora / e não fica nenhuma.* **O gesto:** bata o pé nos três “pum”; inspire pelo nariz; sopre devagar pela boca; abra as mãos como quem solta a raiva. Cante junto, quando ela estiver calma, para ela conhecer. Rima escrita pela coleção."
+      "texto": "*Estou com raiva, estou com raiva: / bato o pé — pum, pum, pum! / Respiro fundo, sopro, fuuu… / a raiva vai embora / e não fica nenhuma.* **O gesto:** bata o pé nos três “pum”; inspire pelo nariz; sopre devagar pela boca; abra as mãos como quem solta a raiva. Cante junto, quando houver calma, para a criança conhecer. Rima escrita pela coleção."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "A briga e as pazes da rosa e do cravo falam de uma coisa que ela já vive: brigar e fazer as pazes. A rima própria da raiva dá ao sentimento um lugar e um gesto. **Cante-a quando ela estiver calma**, não no meio da crise: assim, depois, vocês podem recorrer a ela."
+      "texto": "A briga e as pazes da rosa e do cravo falam de uma coisa que a criança já vive: brigar e fazer as pazes. A rima própria da raiva dá ao sentimento um lugar e um gesto. **Cante-a quando houver calma**, não no meio da crise: assim, depois, vocês podem recorrer à criança."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -51,11 +51,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

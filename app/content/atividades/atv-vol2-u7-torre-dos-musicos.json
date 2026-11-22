@@ -23,7 +23,7 @@
     {
       "titulo": "Montar a torre",
       "minutos": 5,
-      "texto": "Os cartões têm tamanhos diferentes, como os animais. Ela monta a torre: o maior embaixo (jumento), depois o cão, o gato e o galo no alto. Em cada cartão que pôr, faz a voz do bicho. Comece com dois; quatro é mais difícil que três (Cachinhos).",
+      "texto": "Os cartões têm tamanhos diferentes, como os animais. A criança monta a torre: o maior embaixo (jumento), depois o cão, o gato e o galo no alto. Em cada cartão que pôr, faz a voz do bicho. Comece com dois; quatro é mais difícil que três (Cachinhos).",
       "fala": "Quem fica embaixo? E lá em cima?"
     },
     {
@@ -41,7 +41,7 @@
   },
   "ajustes": {
     "dificil": "Só dois cartões: o maior e o menor.",
-    "facil": "Peça que ela invente um quinto músico e onde ele fica na torre."
+    "facil": "Peça que a criança invente um quinto músico e onde ele fica na torre."
   },
   "materiais": [
     {
@@ -60,10 +60,10 @@
     },
     {
       "texto": "Contou os músicos tocando",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Até quanto ela contou e quantos ordenou?",
+  "perguntaFicha": "Até quanto a criança contou e quantos ordenou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

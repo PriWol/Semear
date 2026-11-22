@@ -12,13 +12,13 @@
     {
       "titulo": "Escolher",
       "minutos": 5,
-      "texto": "No quintal ou na praça, escolha com ela uma folha, flor ou inseto que a atraia. Peça que olhe “como um detetive”, por um minuto.",
+      "texto": "No quintal ou na praça, escolha com a criança uma folha, flor ou inseto que a atraia. Peça que olhe “como um detetive”, por um minuto.",
       "fala": "O que você vê?"
     },
     {
       "titulo": "Desenhar",
       "minutos": 8,
-      "texto": "Ela desenha o que viu, na prancheta. Pergunte só sobre o que ela notou, sem corrigir."
+      "texto": "A criança desenha o que viu, na prancheta. Pergunte só sobre o que a criança notou, sem corrigir."
     },
     {
       "titulo": "Data e lugar",
@@ -61,7 +61,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela escolheu observar?",
+  "perguntaFicha": "O que a criança escolheu observar?",
   "palavrasChave": ["caderno da natureza", "desenho de observação", "folhas", "passeio"],
   "folhas": [],
   "autoria": {

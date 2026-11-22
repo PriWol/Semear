@@ -22,7 +22,7 @@
     {
       "titulo": "Relacionar",
       "minutos": 4,
-      "texto": "Com os quadros recortados e misturados, ela os põe em fila: *“primeiro… depois…”*. Comece com só dois (dia e noite). A ordem certa é a da página: o sol nasce, meio-dia, o sol se põe, noite.",
+      "texto": "Com os quadros recortados e misturados, a criança os põe em fila: *“primeiro… depois…”*. Comece com só dois (dia e noite). A ordem certa é a da página: o sol nasce, meio-dia, o sol se põe, noite.",
       "fala": "O que vem depois?"
     },
     {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Só dois quadros: dia e noite.",
-    "facil": "Peça que ela invente o que se faz em cada momento do dia."
+    "facil": "Peça que a criança invente o que se faz em cada momento do dia."
   },
   "materiais": [
     {
@@ -65,7 +65,7 @@
       "resposta": "☐ 2 cartões   ☐ 3 cartões   ☐ os 4"
     }
   ],
-  "perguntaFicha": "Que palavras de tempo ela usou (primeiro, depois, noite…)?",
+  "perguntaFicha": "Que palavras de tempo a criança usou (primeiro, depois, noite…)?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

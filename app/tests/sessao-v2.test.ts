@@ -7,7 +7,7 @@ import {
   tetoDeDuracao,
   type PedidoSessao,
 } from '../src/domain/sessao';
-import { AGORA, atividade, crianca, familia, indiceBase } from './fabricas';
+import { AGORA, ESTADOS_NEUTROS, atividade, crianca, familia, indiceBase } from './fabricas';
 
 // Gerador de sessão v2, etapa 1 (ADR 0036, §5.6): duração por atividade e mistura de áreas.
 
@@ -16,7 +16,7 @@ function pedido(extra: Partial<PedidoSessao> = {}): PedidoSessao {
     familia: familia(),
     crianca: crianca(),
     idade: 5,
-    estados: {},
+    estados: ESTADOS_NEUTROS,
     historico: [],
     duracaoMin: 30,
     foco: 'equilibrado',

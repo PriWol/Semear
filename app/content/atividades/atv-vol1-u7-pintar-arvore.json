@@ -25,7 +25,7 @@
     {
       "titulo": "Pintar",
       "minutos": 6,
-      "texto": "Guache e pincel grosso; a página toda pode ser pintada. Deixe que ela escolha as cores: não há cor errada. Pergunte só: *“por que você escolheu esta?”*."
+      "texto": "Guache e pincel grosso; a página toda pode ser pintada. Deixe que a criança escolha as cores: não há cor errada. Pergunte só: *“por que você escolheu esta?”*."
     },
     {
       "titulo": "Guardar",
@@ -66,7 +66,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que cores ela escolheu e por quê?",
+  "perguntaFicha": "Que cores a criança escolheu e por quê?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -12,13 +12,13 @@
     {
       "titulo": "Sons",
       "minutos": 7,
-      "texto": "Em 6 caixinhas fechadas (2 de arroz, 2 de feijão, 2 de sal, por exemplo), ela agita uma a uma e acha as duas que soam iguais.",
+      "texto": "Em 6 caixinhas fechadas (2 de arroz, 2 de feijão, 2 de sal, por exemplo), a criança agita uma a uma e acha as duas que soam iguais.",
       "fala": "Qual faz o mesmo som?"
     },
     {
       "titulo": "Cheiros",
       "minutos": 6,
-      "texto": "Com frascos fechados com um pano furado por cima, com canela, café, cravo: ela cheira os pares e acha os iguais. Diga os nomes."
+      "texto": "Com frascos fechados com um pano furado por cima, com canela, café, cravo: a criança cheira os pares e acha os iguais. Diga os nomes."
     },
     {
       "titulo": "Silêncio",
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela ouviu no silêncio?",
+  "perguntaFicha": "O que a criança ouviu no silêncio?",
   "palavrasChave": ["sons", "cheiros", "pares", "silêncio", "audição"],
   "folhas": [],
   "autoria": {

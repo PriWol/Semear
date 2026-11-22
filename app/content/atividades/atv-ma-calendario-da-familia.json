@@ -18,13 +18,13 @@
     {
       "titulo": "Marcar o dia de hoje",
       "minutos": 6,
-      "texto": "Mostre o calendário do mês e marque o dia de hoje com um círculo. Ela escreve a data com você. Pergunte: *“qual foi ontem? e amanhã?”*.",
+      "texto": "Mostre o calendário do mês e marque o dia de hoje com um círculo. A criança escreve a data com você. Pergunte: *“qual foi ontem? e amanhã?”*.",
       "fala": "Em que dia estamos?"
     },
     {
       "titulo": "Contagem para um evento",
       "minutos": 8,
-      "texto": "Escolha um evento esperado (aniversário, viagem). Ela conta quantos dias faltam, marcando cada dia no calendário com um risco."
+      "texto": "Escolha um evento esperado (aniversário, viagem). A criança conta quantos dias faltam, marcando cada dia no calendário com um risco."
     },
     {
       "titulo": "Os meses do ano",
@@ -34,7 +34,7 @@
     {
       "titulo": "Folha: meu calendário",
       "minutos": 3,
-      "texto": "Ela completa o calendário do mês e marca a data do aniversário."
+      "texto": "A criança completa o calendário do mês e marca a data do aniversário."
     }
   ],
   "observar": {
@@ -50,7 +50,7 @@
   },
   "ajustes": {
     "dificil": "Foque só nos dias da semana, com a cantiga e um painel simples, sem meses. Aos 5 anos, é esse o ponto de partida: cantar os dias, achar o de hoje e marcar o aniversário.",
-    "facil": "Peça que ela monte o calendário do mês seguinte, com as datas de eventos da família."
+    "facil": "Peça que a criança monte o calendário do mês seguinte, com as datas de eventos da família."
   },
   "materiais": [
     {

@@ -1,9 +1,19 @@
 // Gerador de sessão (§5.6 da especificação). Determinístico: mesma entrada, mesma sugestão.
-import type { Atividade, Crianca, EstadosCrianca, Familia, Livro, Sessao, Vertente } from './tipos';
+import type {
+  Atividade,
+  Crianca,
+  EstadosCrianca,
+  Familia,
+  Livro,
+  Marco,
+  Sessao,
+  Vertente,
+} from './tipos';
 import type { IndiceConteudo } from './conteudo';
 import { linhaDoMarco, marcosVisiveis, revisaVisivel } from './conteudo';
 import { diasEntre } from './datas';
-import { idPista, pistasDaCrianca, posicaoDaLinha, type Pista } from './jornada';
+import { idPista, pistasDaCrianca, posicaoParaSugestao, type Pista } from './jornada';
+import { adequacaoDeIdade, filtrarForaDaFaixa, type AdequacaoIdade } from './idade-sugestao';
 
 export const DURACOES = [20, 30, 40, 60] as const;
 /** Sessão padrão: 30 minutos de atividade; a preparação do adulto é contada à parte (#71). */
@@ -33,6 +43,8 @@ export const FRACAO_MAXIMA_ATIVIDADE = 0.5;
 /** Para menores de 4 anos a parcela é menor: 4 a 5 blocos curtos em 30 min, em vez de 2 grandes. */
 export const FRACAO_MAXIMA_ATIVIDADE_PEQUENOS = 0.3;
 const IDADE_BLOCOS_CURTOS = 4;
+/** Meta de mistura de áreas na sessão equilibrada (§5.6): pelo menos 2 domínios, quando o conteúdo permitir. */
+const MIN_DOMINIOS = 2;
 
 /** Teto de duração de uma atividade para a idade (inteira, limitada a 2..8) e a vertente principal. */
 export function tetoDeDuracao(idade: number, vertente: Vertente): number {
@@ -73,12 +85,18 @@ export interface Escolha {
   pista: string;
   pontos: number;
   motivos: string[];
+  /** avisos da escolha para a tela: fora da faixa de idade ("versão mais simples"), vertente (§5.3) */
+  notas?: string[];
+  /** a idade da criança está fora da faixa da atividade (D4); ela só entra depois das que servem à idade */
+  foraDaFaixa?: boolean;
 }
 
 export interface Lacuna {
   pista: string;
   nomeLinha: string;
   marcos: string[];
+  /** `idade`: havia atividade, mas nenhuma adequada à idade da criança (D4); a linha não é forçada */
+  motivo?: 'idade';
 }
 
 export interface PropostaSessao {
@@ -88,6 +106,8 @@ export interface PropostaSessao {
   livro: Livro | null;
   minutos: number;
   avisos: string[];
+  /** nomes das linhas em que a criança não tinha registro e o ponto de partida veio da idade (D6) */
+  linhasPelaIdade: string[];
 }
 
 /** Atividades feitas pela criança nas últimas 2 semanas (usadas na pontuação "novidade"). */
@@ -109,7 +129,7 @@ export function pontuar(
   familia: Familia,
   idade: number,
   recentes: Set<string>,
-): { pontos: number; motivos: string[] } {
+): { pontos: number; motivos: string[]; notas: string[] } {
   let pontos = 0;
   const motivos: string[] = [];
   if (atividade.vertentes.includes(familia.vertentePrincipal)) {
@@ -121,15 +141,41 @@ export function pontuar(
     pontos += 1;
     motivos.push(`inspiração ${insp}`);
   }
-  if (idade >= atividade.idade[0] && idade <= atividade.idade[1]) {
-    pontos += 2;
-    motivos.push('idade adequada');
-  }
+  // A idade é peso graduado, não filtro (D4; ver idade-sugestao.ts). A exclusão dura é de `candidatas`.
+  const adequacao = adequacaoDeIdade(atividade, idade);
+  pontos += adequacao.pontos;
+  motivos.push(...adequacao.motivos);
   if (!recentes.has(atividade.id)) {
     pontos += 2;
     motivos.push('não feita nas últimas 2 semanas');
   }
-  return { pontos, motivos };
+  return { pontos, motivos, notas: adequacao.notas };
+}
+
+/** Penalidade por marco ativo antes da idade de introdução da vertente principal (Waldorf etc., §5.3, F). */
+export const PENALIDADE_ANTES_DA_INTRODUCAO = 4;
+
+/**
+ * Ajuste pela vertente (§5.3): se TODOS os marcos ativos que levam à atividade são anteriores à idade de
+ * introdução da vertente principal, ela perde pontos e ganha uma nota. Um marco que a vertente já aceita
+ * basta para a atividade não ser penalizada.
+ */
+function ajusteDeVertente(
+  marcos: Marco[],
+  vertente: Vertente,
+  idade: number,
+): { pontos: number; notas: string[] } {
+  const intros = marcos.map((m) => m.idadeIntroducao[vertente]);
+  if (intros.length === 0 || intros.some((i) => i === undefined || i <= idade)) {
+    return { pontos: 0, notas: [] };
+  }
+  const intro = Math.min(...intros.filter((i): i is number => i !== undefined));
+  return {
+    pontos: -PENALIDADE_ANTES_DA_INTRODUCAO,
+    notas: [
+      `Na pedagogia ${vertente}, este marco costuma ser introduzido por volta dos ${intro} anos.`,
+    ],
+  };
 }
 
 /** Minutos trabalhados por pista nas últimas 2 semanas, para o modo equilibrado. */
@@ -152,7 +198,56 @@ function minutosPorLinha(
   return mapa;
 }
 
-/** Atividades candidatas de uma pista: as que trabalham algum marco ativo, melhor pontuadas primeiro. */
+/** Candidatas de uma pista e quantas foram excluídas só pela regra de idade (para a linha virar lacuna). */
+export interface CandidatasDaPista {
+  escolhas: Escolha[];
+  excluidasPorIdade: number;
+}
+
+/**
+ * Atividades candidatas de uma pista: as que trabalham algum marco ativo, melhor pontuadas primeiro, já com
+ * a regra de idade (D4: exclusão dura, e "mais de 1 ano fora só sem alternativa dentro da faixa") e o ajuste
+ * pela vertente (F).
+ */
+export function candidatasDaPista(
+  idx: IndiceConteudo,
+  pista: Pick<Pista, 'idioma'>,
+  ativos: string[],
+  familia: Familia,
+  idade: number,
+  recentes: Set<string>,
+): CandidatasDaPista {
+  const porAtividade = new Map<string, { atividade: Atividade; marcos: Marco[] }>();
+  for (const marcoId of ativos) {
+    const marco = idx.marco(marcoId);
+    for (const atividade of idx.atividadesDoMarco(marcoId)) {
+      if ((atividade.idioma ?? undefined) !== pista.idioma) continue;
+      const item = porAtividade.get(atividade.id) ?? { atividade, marcos: [] };
+      if (marco) item.marcos.push(marco);
+      porAtividade.set(atividade.id, item);
+    }
+  }
+  const todas = [...porAtividade.values()].map(({ atividade, marcos }) => {
+    const adequacao = adequacaoDeIdade(atividade, idade);
+    const vertente = ajusteDeVertente(marcos, familia.vertentePrincipal, idade);
+    const base = pontuar(atividade, familia, idade, recentes);
+    const escolha: Escolha = {
+      atividade,
+      pista: '',
+      pontos: base.pontos + vertente.pontos,
+      motivos: base.motivos,
+      notas: [...base.notas, ...vertente.notas],
+      ...(adequacao.lado !== 'dentro' ? { foraDaFaixa: true } : {}),
+    };
+    return { escolha, adequacao };
+  });
+  const aceitas = todas.filter((c) => !c.adequacao.excluida);
+  const escolhas = filtrarForaDaFaixa(aceitas)
+    .map((c) => c.escolha)
+    .sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id));
+  return { escolhas, excluidasPorIdade: todas.length - aceitas.length };
+}
+
 export function candidatas(
   idx: IndiceConteudo,
   pista: Pick<Pista, 'idioma'>,
@@ -161,17 +256,7 @@ export function candidatas(
   idade: number,
   recentes: Set<string>,
 ): Escolha[] {
-  const vistas = new Set<string>();
-  const lista: Escolha[] = [];
-  for (const marcoId of ativos) {
-    for (const atividade of idx.atividadesDoMarco(marcoId)) {
-      if (vistas.has(atividade.id)) continue;
-      if ((atividade.idioma ?? undefined) !== pista.idioma) continue;
-      vistas.add(atividade.id);
-      lista.push({ atividade, pista: '', ...pontuar(atividade, familia, idade, recentes) });
-    }
-  }
-  return lista.sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id));
+  return candidatasDaPista(idx, pista, ativos, familia, idade, recentes).escolhas;
 }
 
 /** Id de "pista" das complementares: elas não pertencem a nenhuma linha da jornada. */
@@ -184,18 +269,20 @@ export function complementares(
   idade: number,
   recentes: Set<string>,
 ): Escolha[] {
-  return (
-    idx
-      .complementares()
-      // Atividade de idioma pertence a uma trilha de Línguas (com jornada), nunca é complementar.
-      .filter((a) => a.idioma === undefined && idade >= a.idade[0] && idade <= a.idade[1])
-      .map((atividade) => ({
-        atividade,
-        pista: PISTA_COMPLEMENTAR,
-        ...pontuar(atividade, familia, idade, recentes),
-      }))
-      .sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id))
-  );
+  // Atividade de idioma pertence a uma trilha de Línguas (com jornada), nunca é complementar. A idade segue
+  // a mesma regra graduada das candidatas das linhas (D4), em vez do filtro rígido de antes.
+  const aceitas = idx
+    .complementares()
+    .filter((a) => a.idioma === undefined)
+    .map((atividade) => ({ atividade, adequacao: adequacaoDeIdade(atividade, idade) }))
+    .filter((c) => !c.adequacao.excluida);
+  return filtrarForaDaFaixa<{ atividade: Atividade; adequacao: AdequacaoIdade }>(aceitas)
+    .map(({ atividade }) => ({
+      atividade,
+      pista: PISTA_COMPLEMENTAR,
+      ...pontuar(atividade, familia, idade, recentes),
+    }))
+    .sort((a, b) => b.pontos - a.pontos || a.atividade.id.localeCompare(b.atividade.id));
 }
 
 /** Fila de candidatas de uma pista, com a posição dela na ordem do dia (para desempates estáveis). */
@@ -244,6 +331,11 @@ function nivelDaAtividade(
   return minutosAtividade > parcela ? 1 : 0;
 }
 
+/** Nome da linha para a tela: "Fonologia" ou "Vocabulário (en)". */
+function nomeDaPista(p: Pista): string {
+  return p.idioma ? `${p.linha.nome} (${p.idioma})` : p.linha.nome;
+}
+
 export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): PropostaSessao {
   const { familia, crianca, idade, estados, historico, duracaoMin, foco, agora } = pedido;
   const recentes = atividadesRecentes(historico, crianca.id, agora);
@@ -263,16 +355,29 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
   // 2. Candidatas por pista, a partir dos marcos ativos.
   const filas: FilaPista[] = [];
   const lacunas: Lacuna[] = [];
+  // Linha sem nenhum registro: o ponto de partida é provisório, pela idade (D6); nada é gravado.
+  const pelaIdade = new Map<string, string>();
   pistas.forEach((pista, ordem) => {
-    const pos = posicaoDaLinha(idx, pista, estados, idade, familia.vertentePrincipal);
+    const pos = posicaoParaSugestao(idx, pista, estados, idade, familia.vertentePrincipal);
     if (pos.ativos.length === 0) return;
     const id = idPista(pista);
-    const fila = candidatas(idx, pista, pos.ativos, familia, idade, recentes).map((e) => ({
-      ...e,
-      pista: id,
-    }));
+    if (pos.provisoria) pelaIdade.set(id, nomeDaPista(pista));
+    const { escolhas: candidatas, excluidasPorIdade } = candidatasDaPista(
+      idx,
+      pista,
+      pos.ativos,
+      familia,
+      idade,
+      recentes,
+    );
+    const fila = candidatas.map((e) => ({ ...e, pista: id }));
     if (fila.length === 0) {
-      lacunas.push({ pista: id, nomeLinha: pista.linha.nome, marcos: pos.ativos });
+      lacunas.push({
+        pista: id,
+        nomeLinha: pista.linha.nome,
+        marcos: pos.ativos,
+        ...(excluidasPorIdade > 0 ? { motivo: 'idade' as const } : {}),
+      });
     } else {
       filas.push({ pista, id, ordem, fila });
     }
@@ -294,8 +399,13 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
     (idade < IDADE_BLOCOS_CURTOS ? FRACAO_MAXIMA_ATIVIDADE_PEQUENOS : FRACAO_MAXIMA_ATIVIDADE);
   let minutos = 0;
 
-  const nivel = (e: Escolha) =>
-    nivelDaAtividade(e.atividade.duracaoMin, limite - minutos, teto, parcela);
+  // Fora da faixa de idade não é "ideal" (nível 0): entra na segunda passada, depois de quem serve à idade.
+  // Exceção: enquanto a sessão tem menos de 2 domínios, um domínio ainda sem atividade pode usá-la, para
+  // não perder a mistura de áreas (§5.6, meta de 30 min).
+  const nivel = (e: Escolha, dominioVazio = false) => {
+    const n = nivelDaAtividade(e.atividade.duracaoMin, limite - minutos, teto, parcela);
+    return e.foraDaFaixa && n === 0 && !dominioVazio ? 1 : n;
+  };
   const adicionar = (e: Escolha) => {
     escolhas.push(e);
     usadas.add(e.atividade.id);
@@ -308,8 +418,12 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
     const ordenado = [...grupo].sort(
       (a, b) => (porPista.get(a.id) ?? 0) - (porPista.get(b.id) ?? 0) || a.ordem - b.ordem,
     );
+    const vazio =
+      (porDominio.get(idDominio(grupo)) ?? 0) === 0 &&
+      porDominio.size < MIN_DOMINIOS &&
+      dominios.length >= MIN_DOMINIOS;
     for (const { fila } of ordenado) {
-      const e = fila.find((c) => !usadas.has(c.atividade.id) && nivel(c) <= nivelMax);
+      const e = fila.find((c) => !usadas.has(c.atividade.id) && nivel(c, vazio) <= nivelMax);
       if (e) return e;
     }
     return undefined;
@@ -358,6 +472,7 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
       (a, b) =>
         Number(a.n === 3) - Number(b.n === 3) ||
         Number(a.n >= 2) - Number(b.n >= 2) ||
+        Number(a.e.foraDaFaixa === true) - Number(b.e.foraDaFaixa === true) ||
         a.e.atividade.duracaoMin - b.e.atividade.duracaoMin ||
         a.ordem - b.ordem ||
         b.e.pontos - a.e.pontos ||
@@ -388,22 +503,66 @@ export function proporSessao(idx: IndiceConteudo, pedido: PedidoSessao): Propost
   }
   if (pistas.length === 0 && foco !== 'equilibrado')
     avisos.push('Escolha pelo menos uma linha de foco.');
+  const porIdade = lacunas.filter((l) => l.motivo === 'idade');
+  if (porIdade.length > 0) {
+    avisos.push(
+      `Sem atividade adequada para ${Math.floor(idade)} anos em: ${porIdade.map((l) => l.nomeLinha).join(', ')}. Preferimos não sugerir uma atividade que não serve à idade.`,
+    );
+  }
+  // D6: só avisa das linhas que de fato deram atividade à sessão.
+  const linhasPelaIdade = [
+    ...new Set(escolhas.flatMap((e) => (pelaIdade.has(e.pista) ? [pelaIdade.get(e.pista)!] : []))),
+  ];
+  if (linhasPelaIdade.length > 0) {
+    avisos.push(
+      `${crianca.nome} ainda não foi posicionada em ${linhasPelaIdade.join(', ')}: usamos a idade (${Math.floor(idade)} anos) como ponto de partida. Marque "Está aqui" na jornada ou faça a sondagem para acertar.`,
+    );
+  }
 
-  return { escolhas, lacunas, livro: sugerirLivro(idx, escolhas, familia, idade), minutos, avisos };
+  return {
+    escolhas,
+    lacunas,
+    livro: sugerirLivro(idx, escolhas, familia, idade),
+    minutos,
+    avisos,
+    linhasPelaIdade,
+  };
 }
 
 /**
- * Próxima atividade para o botão "Trocar": percorre as candidatas da pista em ciclo, a partir da atual,
- * pulando as que já estão em outra posição da sessão. Devolve null se não houver outra opção.
+ * Opções do botão "Trocar" para a atividade `atualId` (a atual fica na lista, para o ciclo): as candidatas da
+ * pista que não estão em outra posição da sessão e respeitam o teto de duração da idade (ADR 0036). Se a atual
+ * já passa do teto e nenhuma outra cabe nele, a pista só tem atividades longas (o gerador entrou com a mais
+ * curta e avisou): então o teto deixa de valer, e a família ainda pode trocar entre elas, com o mesmo aviso.
+ * As candidatas já vêm com a regra de idade (D4).
+ */
+export function opcoesDeTroca(
+  candidatasDaPista: Escolha[],
+  atualId: string,
+  ocupadas: Set<string>,
+  teto?: number,
+): Escolha[] {
+  const livres = candidatasDaPista.filter(
+    (c) => c.atividade.id === atualId || !ocupadas.has(c.atividade.id),
+  );
+  if (teto === undefined) return livres;
+  const dentro = livres.filter((c) => c.atividade.duracaoMin <= teto);
+  const atual = livres.find((c) => c.atividade.id === atualId);
+  const soLongas = atual !== undefined && atual.atividade.duracaoMin > teto && dentro.length === 0;
+  return soLongas ? livres : dentro.concat(atual && !dentro.includes(atual) ? [atual] : []);
+}
+
+/**
+ * Próxima atividade para o botão "Trocar": percorre as opções (ver `opcoesDeTroca`) em ciclo, a partir da
+ * atual. Devolve null se não houver outra.
  */
 export function proximaAlternativa(
   candidatasDaPista: Escolha[],
   atualId: string,
   ocupadas: Set<string>,
+  teto?: number,
 ): Escolha | null {
-  const lista = candidatasDaPista.filter(
-    (c) => c.atividade.id === atualId || !ocupadas.has(c.atividade.id),
-  );
+  const lista = opcoesDeTroca(candidatasDaPista, atualId, ocupadas, teto);
   const i = lista.findIndex((c) => c.atividade.id === atualId);
   for (let passo = 1; passo < lista.length; passo++) {
     const c = lista[(i + passo) % lista.length];

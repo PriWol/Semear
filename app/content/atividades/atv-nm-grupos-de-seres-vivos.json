@@ -22,7 +22,7 @@
     {
       "titulo": "Registro",
       "minutos": 5,
-      "texto": "Ela cola as folhas em uma folha de papel por grupo e escreve (ou ditam) o nome do grupo.",
+      "texto": "A criança cola as folhas em uma folha de papel por grupo e escreve (ou ditam) o nome do grupo.",
       "fala": "Como você decidiu?"
     }
   ],
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais critérios ela usou?",
+  "perguntaFicha": "Quais critérios a criança usou?",
   "palavrasChave": ["classificação", "folhas", "animais", "grupos"],
   "folhas": [],
   "autoria": {

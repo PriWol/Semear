@@ -51,7 +51,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "perguntaFicha": "O que a criança disse ou fez durante a escuta?",
   "folhas": [],
   "autoria": {
     "origem": "ia",
@@ -59,6 +59,6 @@
   },
   "ajustes": {
     "dificil": "Para a criança menor: só os músicos de Bremen e o jogo de Pedro e o Lobo, sem a escada dos sons.",
-    "facil": "Para a criança maior: monte a orquestra da casa por famílias de instrumentos e peça que ela diga do que gostou."
+    "facil": "Para a criança maior: monte a orquestra da casa por famílias de instrumentos e peça que a criança diga do que gostou."
   }
 }

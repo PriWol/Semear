@@ -18,12 +18,12 @@
     {
       "titulo": "Cartão",
       "minutos": 8,
-      "texto": "Ela faz o cartão com desenhos e as frases (você escreve, se necessário) sobre ela. Cuide para não colocar dados pessoais além do primeiro nome."
+      "texto": "A criança faz o cartão com desenhos e as frases sobre si (você escreve, se necessário). Cuide para não colocar dados pessoais além do primeiro nome."
     },
     {
       "titulo": "Apresentar",
       "minutos": 4,
-      "texto": "Ela se apresenta ao bichinho, a você e a outra pessoa da casa, olhando para o cartão no começo, depois sem olhar."
+      "texto": "A criança se apresenta ao bichinho, a você e a outra pessoa da casa, olhando para o cartão no começo, depois sem olhar."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela contou de si?",
+  "perguntaFicha": "O que a criança contou de si?",
   "palavrasChave": ["apresentação", "frases", "francês", "falar de si"],
   "idioma": "fr",
   "folhas": [],

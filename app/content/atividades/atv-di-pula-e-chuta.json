@@ -12,7 +12,7 @@
     {
       "titulo": "Círculos",
       "minutos": 4,
-      "texto": "Desenhe com giz, no chão, 4 círculos em fila. Ela pula de um para o outro com os dois pés, imitando um sapo.",
+      "texto": "Desenhe com giz, no chão, 4 círculos em fila. A criança pula de um para o outro com os dois pés, imitando um sapo.",
       "fala": "Pula como um sapo!"
     },
     {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Pule de um círculo só, de mãos dadas.",
-    "facil": "Desafie-a a pular e bater palmas ao mesmo tempo."
+    "facil": "Desafie a criança a pular e bater palmas ao mesmo tempo."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual brincadeira ela mais quis repetir?",
+  "perguntaFicha": "Qual brincadeira a criança mais quis repetir?",
   "palavrasChave": ["pular", "bola", "sapo", "coordenação"],
   "folhas": [],
   "autoria": {

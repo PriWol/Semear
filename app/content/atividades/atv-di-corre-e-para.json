@@ -12,13 +12,13 @@
     {
       "titulo": "Jogo do sinal",
       "minutos": 4,
-      "texto": "Em um espaço livre, diga “Vai!” (ela corre) e “Para!” (ela congela). Alterne e faça graça. Troquem de papel.",
+      "texto": "Em um espaço livre, diga “Vai!” (a criança corre) e “Para!” (a criança congela). Alterne e faça graça. Troquem de papel.",
       "fala": "Vai! Para!"
     },
     {
       "titulo": "Degrau",
       "minutos": 3,
-      "texto": "Em um degrau baixo ou banquinho firme, ela sobe e desce, com a sua mão perto. Conte os degraus."
+      "texto": "Em um degrau baixo ou banquinho firme, a criança sobe e desce, com a sua mão perto. Conte os degraus."
     },
     {
       "titulo": "Calma",
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Como foi o corpo dela hoje?",
+  "perguntaFicha": "Como foi o corpo da criança hoje?",
   "palavrasChave": ["correr", "equilíbrio", "degrau", "movimento"],
   "folhas": [],
   "autoria": {

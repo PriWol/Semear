@@ -13,18 +13,18 @@
     {
       "titulo": "Duas fileiras",
       "minutos": 5,
-      "texto": "Ponha 6 botões grandes numa fileira e 4 em outra, bem espaçados. *“Onde tem mais?”* Deixe que ela escolha e depois confira de dois jeitos: contando e ligando um de cada lado.",
+      "texto": "Ponha 6 botões grandes numa fileira e 4 em outra, bem espaçados. *“Onde tem mais?”* Deixe que a criança escolha e depois confira de dois jeitos: contando e ligando um de cada lado.",
       "fala": "Como você pode ter certeza?"
     },
     {
       "titulo": "Muda a arrumação",
       "minutos": 5,
-      "texto": "Junte os 6 botões num monte e espalhe os 6 em linha. Pergunte de novo: *“ainda tem o mesmo tanto?”* Deixe que ela confira contando."
+      "texto": "Junte os 6 botões num monte e espalhe os 6 em linha. Pergunte de novo: *“ainda tem o mesmo tanto?”* Deixe que a criança confira contando."
     },
     {
       "titulo": "Igual ou diferente",
       "minutos": 5,
-      "texto": "Faça pares de coleções (5 e 5, 7 e 4, 3 e 8) e pergunte *“mais, menos ou igual?”*. Quando for igual, deixe-a mostrar com o emparelhamento."
+      "texto": "Faça pares de coleções (5 e 5, 7 e 4, 3 e 8) e pergunte *“mais, menos ou igual?”*. Quando for igual, deixe a criança mostrar com o emparelhamento."
     },
     {
       "titulo": "Folha: circule onde tem mais",
@@ -35,7 +35,7 @@
   "observar": {
     "consolidado": [
       "escolhe corretamente onde tem mais em 3 de 4 pares",
-      "confere emparelhando ou contando sozinha",
+      "confere emparelhando ou contando sem ajuda",
       "mantém a resposta quando a arrumação muda"
     ],
     "emDesenvolvimento": [
@@ -44,8 +44,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use coleções de até 5 e bem diferentes (2 e 5), emparelhando junto com ela.",
-    "facil": "Peça que ela invente uma comparação (*“quem tem mais, eu ou você?”*) e use números até 10."
+    "dificil": "Use coleções de até 5 e bem diferentes (2 e 5), emparelhando junto com a criança.",
+    "facil": "Peça que a criança invente uma comparação (*“quem tem mais, eu ou você?”*) e use números até 10."
   },
   "materiais": [
     {

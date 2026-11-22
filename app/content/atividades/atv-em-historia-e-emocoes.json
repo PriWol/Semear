@@ -24,13 +24,13 @@
     {
       "titulo": "A nossa vez",
       "minutos": 5,
-      "texto": "Conte uma vez em que você sentiu a mesma emoção e peça que a criança conte a dela, se quiser. Sem obrigar.",
+      "texto": "Conte uma vez em que você sentiu a mesma emoção e peça que a criança conte a sua, se quiser. Sem obrigar.",
       "fala": "E você, já sentiu isso?"
     },
     {
       "titulo": "Fechamento",
       "minutos": 2,
-      "texto": "Escolham juntos uma palavra de emoção do dia e desenhem uma cara para ela, se quiser."
+      "texto": "Escolham juntos uma palavra de emoção do dia e desenhem uma cara para a criança, se quiser."
     }
   ],
   "observar": {
@@ -56,14 +56,14 @@
   "evidencias": [
     {
       "texto": "Nomeou a emoção do personagem",
-      "resposta": "☐ não   ☐ com opções   ☐ sozinha"
+      "resposta": "☐ não   ☐ com opções   ☐ sem ajuda"
     },
     {
       "texto": "Disse que o outro pode sentir diferente",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavra de emoção ela usou?",
+  "perguntaFicha": "Que palavra de emoção a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

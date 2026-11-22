@@ -10,29 +10,29 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: Bola leve (ou meia enrolada) e bem maior que a boca dela; espaço livre de obstáculos e de quinas. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Bola leve (ou meia enrolada) e bem maior que a boca da criança; espaço livre de obstáculos e de quinas. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["revezar", "vez", "bola", "esperar"],
   "objetivo": "A criança reveza rolando uma bola e aprende a esperar a vez, com poucas palavras (“minha vez, sua vez”).",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Sentem no chão, de frente, a uns dois passos. Role a bola devagar para ela: “minha vez!”."
+      "texto": "Sentem no chão, de frente, a uns dois passos. Role a bola devagar para a criança: “minha vez!”."
     },
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Quando ela rolar de volta: “sua vez!”."
+      "texto": "Quando a criança rolar de volta: “sua vez!”."
     },
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Deixe uma pausa e espere. Se ela quiser ficar com a bola, diga “agora é a minha, e depois a sua”."
+      "texto": "Deixe uma pausa e espere. Se a criança quiser ficar com a bola, diga “agora é a minha, e depois a sua”."
     },
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Aumentem o número de participantes quando ela já souber."
+      "texto": "Aumentem o número de participantes quando a criança já souber."
     },
     {
       "titulo": "Para dizer",
@@ -52,12 +52,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Esperar a vez é uma das coisas mais difíceis aos 2 anos: a criança tem que segurar o desejo de ter a bola o tempo todo. Revezar com poucas palavras, em jogos curtos, treina essa espera, e dizer “minha vez / sua vez” dá a ela uma frase para usar com outras crianças. É normal que ela fique brava quando a bola vai embora: nomeie e continue."
+      "texto": "Esperar a vez é uma das coisas mais difíceis aos 2 anos: a criança tem que segurar o desejo de ter a bola o tempo todo. Revezar com poucas palavras, em jogos curtos, treina essa espera, e dizer “minha vez / sua vez” dá à criança uma frase para usar com outras crianças. É normal que a criança sinta raiva quando a bola vai embora: nomeie e continue."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -74,11 +74,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

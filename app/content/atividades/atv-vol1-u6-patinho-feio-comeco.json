@@ -11,7 +11,7 @@
   "idade": [2, 5],
   "duracaoMin": 10,
   "preparoMin": 2,
-  "cuidados": "Conversa sobre sentimentos, sem nenhuma peça pequena que caiba na boca e sem água por perto. Aceite qualquer resposta e não force: se ela contar que já se sentiu diferente, apenas escute e acolha.",
+  "cuidados": "Conversa sobre sentimentos, sem nenhuma peça pequena que caiba na boca e sem água por perto. Aceite qualquer resposta e não force: se a criança contar que já se sentiu diferente, apenas escute e acolha.",
   "objetivo": "A criança **escuta o começo de um conto** e começa a **nomear sentimentos** (triste, sozinho, feliz) e o que os causou.",
   "passos": [
     {
@@ -58,14 +58,14 @@
   "evidencias": [
     {
       "texto": "Nomeou o sentimento do patinho",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Disse a causa",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavra de sentimento ela usou?",
+  "perguntaFicha": "Que palavra de sentimento a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

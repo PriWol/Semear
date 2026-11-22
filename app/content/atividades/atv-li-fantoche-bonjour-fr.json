@@ -12,13 +12,13 @@
     {
       "titulo": "Apresentar",
       "minutos": 3,
-      "texto": "Apresente o fantoche, que só fala francês: “Bonjour ! Je m'appelle Pierrot”. Faça Pierrot acenar e dar a mão. Ela cumprimenta como quiser.",
+      "texto": "Apresente o fantoche, que só fala francês: “Bonjour ! Je m'appelle Pierrot”. Faça Pierrot acenar e dar a mão. A criança cumprimenta como quiser.",
       "fala": "Bonjour, Pierrot !"
     },
     {
       "titulo": "Repetir",
       "minutos": 5,
-      "texto": "Pierrot diz “merci”, “s'il te plaît”, “au revoir” em situações (pede uma bolacha de brinquedo, agradece, se despede). Ela repete e dá objetos."
+      "texto": "Pierrot diz “merci”, “s'il te plaît”, “au revoir” em situações (pede uma bolacha de brinquedo, agradece, se despede). A criança repete e dá objetos."
     },
     {
       "titulo": "Despedida",
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Repita só “bonjour” e “au revoir”.",
-    "facil": "Peça que ela apresente o Pierrot a outra pessoa, em francês."
+    "facil": "Peça que a criança apresente o Pierrot a outra pessoa, em francês."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais palavras ela repetiu?",
+  "perguntaFicha": "Quais palavras a criança repetiu?",
   "palavrasChave": ["fantoche", "bonjour", "cumprimentos", "francês", "primeiras palavras"],
   "idioma": "fr",
   "folhas": [],

@@ -11,7 +11,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Cantar e contar mordidas só com ela sentada e acompanhada, e sem comida na boca durante a risada (risco de engasgo); lave as mãos como a rima manda, com água por perto e você junto.",
+  "cuidados": "Cantar e contar mordidas só com a criança sentada e acompanhada, e sem comida na boca durante a risada (risco de engasgo); lave as mãos como a rima manda, com água por perto e você junto.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "comer e ajudar na mesa"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: comer e ajudar na mesa).",
   "passos": [
@@ -24,13 +24,13 @@
     {
       "titulo": "Cantar: Wash your hands",
       "minutos": 2,
-      "texto": "O gesto: faça o gesto de lavar, enxaguar e secar as mãos junto com ela, antes de cada refeição. É a rima da troca: acaba a brincadeira, começa a comida. Rima escrita pela coleção.",
+      "texto": "O gesto: faça o gesto de lavar, enxaguar e secar as mãos junto com a criança, antes de cada refeição. É a rima da troca: acaba a brincadeira, começa a comida. Rima escrita pela coleção.",
       "fala": "Wash, wash, wash your hands, / bubbles, bubbles, one, two, three; / rinse, rinse, rinse them clean, / dry, dry, dry, and now we eat!"
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Uma rima fixa para a troca (brincar → lavar as mãos → comer) avisa o fim de uma atividade e reduz o “não”: ela já sabe o que vem. Use sempre a mesma música, na mesma ordem. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Uma rima fixa para a troca (brincar → lavar as mãos → comer) avisa o fim de uma atividade e reduz o “não”: a criança já sabe o que vem. Use sempre a mesma música, na mesma ordem. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

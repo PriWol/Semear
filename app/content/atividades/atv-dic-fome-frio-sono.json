@@ -18,7 +18,7 @@
     {
       "titulo": "Frio e cansaço",
       "minutos": 3,
-      "texto": "Repita com “está com frio” (veste casaco) e “está cansado” (deita, descansa). Se ela der outra resposta que faça sentido, aceite e comente.",
+      "texto": "Repita com “está com frio” (veste casaco) e “está com sono” (deita, descansa). Se a criança der outra resposta que faça sentido, aceite e comente.",
       "fala": "O ursinho está com frio…"
     },
     {
@@ -30,7 +30,7 @@
   "observar": {
     "consolidado": [
       "Responde de modo que combine com a pergunta (come, veste casaco, deita)",
-      "Fala de si mesma, e não só do bichinho"
+      "Fala de si, e não só do bichinho"
     ],
     "emDesenvolvimento": [
       "Responde com uma palavra ou aponta: tudo bem; ofereça a frase completa e siga"
@@ -56,11 +56,11 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     },
     {
-      "texto": "Contou o que ela faz quando sente isso",
+      "texto": "Contou o que a criança faz quando sente isso",
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que resposta dela te surpreendeu?",
+  "perguntaFicha": "Que resposta da criança te surpreendeu?",
   "palavrasChave": ["fome", "frio", "sono", "sentir", "conversa", "adjetivos"],
   "folhas": [],
   "autoria": {

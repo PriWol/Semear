@@ -89,6 +89,7 @@ describe('montarSessaoDaProposta (Preparar sessão de hoje)', () => {
     livro: null,
     minutos: 40,
     avisos: [],
+    linhasPelaIdade: [],
   };
   it('monta a sessão com código, duração real e atividades da proposta', () => {
     const s = montarSessaoDaProposta({

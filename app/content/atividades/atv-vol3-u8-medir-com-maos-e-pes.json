@@ -17,7 +17,7 @@
     {
       "titulo": "Medir com a mão",
       "minutos": 6,
-      "texto": "Mostre como pôr uma mão depois da outra, sem deixar espaço e sem sobrepor, e conte cada uma. Meçam, por exemplo, a mesa da cozinha e a cama. Escreva o número que ela contou.",
+      "texto": "Mostre como pôr uma mão depois da outra, sem deixar espaço e sem sobrepor, e conte cada uma. Meçam, por exemplo, a mesa da cozinha e a cama. Escreva o número que a criança contou.",
       "fala": "Quantas mãos tem a mesa?"
     },
     {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Meça só com os pés, até a porta.",
-    "facil": "Meça o papai deitado em mãos da criança."
+    "facil": "Meça um adulto deitado, em mãos da criança."
   },
   "materiais": [
     {
@@ -62,14 +62,14 @@
   "evidencias": [
     {
       "texto": "Mediu com mãos ou pés, sem espaços",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Contou as unidades",
       "resposta": "_____ de 3 medidas"
     }
   ],
-  "perguntaFicha": "Quantas mãos e quantos pés ela contou?",
+  "perguntaFicha": "Quantas mãos e quantos pés a criança contou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

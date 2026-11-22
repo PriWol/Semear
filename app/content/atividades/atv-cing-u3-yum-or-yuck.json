@@ -13,20 +13,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias.",
+  "cuidados": "Na hora de comer, **fique junto e com a criança sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias.",
   "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "yum or yuck?"],
   "objetivo": "Ligar palavras em inglês ao que se vê, se toca e se sente no dia a dia (unidade: comer e ajudar na mesa).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Mmm, yum! Do you like it? / No, thank you. That's okay. / It's cold. It's sweet. It's good!"
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Faça cara de “yum” (esfregue a barriga) ao provar, e deixe que ela imite."
+      "texto": "Faça cara de “yum” (esfregue a barriga) ao provar, e deixe que a criança imite."
     },
     {
       "titulo": "Passo 2",
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Yum or yuck? / Is it hot or cold? / Do you want one more bite?"
     },
     {
@@ -70,7 +70,7 @@
   },
   "materiais": [
     {
-      "item": "alimentos que ela já conhece, em pedaços pequenos e macios (pão, queijo, banana), no prato",
+      "item": "alimentos que a criança já conhece, em pedaços pequenos e macios (pão, queijo, banana), no prato",
       "deCasa": true
     }
   ],

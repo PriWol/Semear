@@ -12,7 +12,7 @@
     {
       "titulo": "Vocabulário",
       "minutos": 4,
-      "texto": "Mostre 6 alimentos (apple, bread, milk, cheese, water, banana) e diga o nome de cada um. Ela repete e aponta.",
+      "texto": "Mostre 6 alimentos (apple, bread, milk, cheese, water, banana) e diga o nome de cada um. A criança repete e aponta.",
       "fala": "Do you like apples?"
     },
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela disse que gosta?",
+  "perguntaFicha": "O que a criança disse que gosta?",
   "palavrasChave": ["comida", "mercado", "like", "inglês", "vocabulário"],
   "idioma": "en",
   "folhas": [],

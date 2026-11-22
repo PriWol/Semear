@@ -10,7 +10,7 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Atenção: Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Esvazie a bacia no fim. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Com água por perto, nunca deixe a criança com água sem um adulto ao lado, nem por um instante, mesmo rasa. Esvazie a bacia no fim. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["água", "bacia", "boia", "afunda", "despejar"],
   "objetivo": "A criança passa água de um copo para outro e vê o que boia e o que afunda numa bacia rasa.",
   "passos": [
@@ -22,17 +22,17 @@
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Deixe que ela passe a água de um copo para o outro, e que molhe tudo à vontade."
+      "texto": "Deixe que a criança passe a água de um copo para o outro, e que molhe tudo à vontade."
     },
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Jogue uma folha: “boia!”. Jogue a pedra: “afunda!”. Depois ela mesma escolhe o que jogar."
+      "texto": "Jogue uma folha: “boia!”. Jogue a pedra: “afunda!”. Depois a criança escolhe o que jogar."
     },
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Enxugue as mãos e o chão juntas, dizendo “sequinho”."
+      "texto": "Enxugue as mãos e o chão juntos, dizendo “sequinho”."
     },
     {
       "titulo": "Para dizer",
@@ -47,7 +47,7 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Ponha uma gota de corante de comida: a água muda de cor. 2) Dê uma esponja e deixe que ela torça: a água sai. 3) Lave um brinquedo ou um pano junto com ela."
+      "texto": "1) Ponha uma gota de corante de comida: a água muda de cor. 2) Dê uma esponja e deixe que a criança torça: a água sai. 3) Lave um brinquedo ou um pano junto com a criança."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
@@ -57,7 +57,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -74,11 +74,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

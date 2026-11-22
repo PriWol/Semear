@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "Use um espaço sem tapete solto, quinas ou escadas; piso firme e sem escorregar, de preferência com sapato fechado ou meia antiderrapante. Fique junto. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Use um espaço sem tapete solto, quinas ou escadas; piso firme e sem escorregar, de preferência com sapato fechado ou meia antiderrapante. Fique junto. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "a família e os sentimentos", "stomp it out"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Angry feet! Stomp, stomp, stomp! / Now breathe in… and out. / Better? Let's have a hug."
     },
     {
       "titulo": "Passo 1",
       "minutos": 1,
-      "texto": "Quando ela estiver calma, combine o jogo: “when you're angry, we stomp!”."
+      "texto": "Quando houver calma, combine o jogo: “when you're angry, we stomp!”."
     },
     {
       "titulo": "Passo 2",
@@ -44,7 +44,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Are your feet angry? / Can you stomp louder? / How do you feel now?"
     },
     {
@@ -66,7 +66,7 @@
   },
   "materiais": [
     {
-      "item": "um espaço onde ela possa bater os pés",
+      "item": "um espaço onde a criança possa bater os pés",
       "deCasa": true
     }
   ],

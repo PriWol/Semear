@@ -12,13 +12,13 @@
     {
       "titulo": "Cores",
       "minutos": 5,
-      "texto": "Mostre 4 objetos (rouge, bleu, jaune, vert) e diga cada cor várias vezes. Peça: “Montre-moi le rouge !”. Ela mostra o objeto.",
+      "texto": "Mostre 4 objetos (rouge, bleu, jaune, vert) e diga cada cor várias vezes. Peça: “Montre-moi le rouge !”. A criança mostra o objeto.",
       "fala": "Montre-moi le rouge !"
     },
     {
       "titulo": "Animais",
       "minutos": 5,
-      "texto": "Mostre 4 bichinhos de brinquedo (chat, chien, oiseau, poisson) e faça os sons. Peça: “Où est le chat ?”. Ela aponta."
+      "texto": "Mostre 4 bichinhos de brinquedo (chat, chien, oiseau, poisson) e faça os sons. Peça: “Où est le chat ?”. A criança aponta."
     },
     {
       "titulo": "Jogo",
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais palavras ela já diz sozinha?",
+  "perguntaFicha": "Quais palavras a criança já diz sem ajuda?",
   "palavrasChave": ["cores", "animais", "vocabulário", "francês", "couleurs"],
   "idioma": "fr",
   "folhas": [],

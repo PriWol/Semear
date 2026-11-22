@@ -28,7 +28,7 @@
     {
       "titulo": "Conversa",
       "minutos": 5,
-      "texto": "Peça que ela conte o que viu na cabeça durante a música."
+      "texto": "Peça que a criança conte o que viu na cabeça durante a música."
     }
   ],
   "observar": {
@@ -50,7 +50,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "perguntaFicha": "O que a criança disse ou fez durante a escuta?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

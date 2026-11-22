@@ -18,17 +18,17 @@
     {
       "titulo": "Caça pela casa",
       "minutos": 10,
-      "texto": "Saiam procurando: o relógio (círculo), a janela (retângulo), o azulejo (quadrado), o lenço dobrado (triângulo). Quando ela achar, diga *“que forma é?”* e deixe que ela nomeie."
+      "texto": "Saiam procurando: o relógio (círculo), a janela (retângulo), o azulejo (quadrado), o lenço dobrado (triângulo). Quando a criança achar, diga *“que forma é?”* e deixe que nomeie."
     },
     {
       "titulo": "Arrumar por forma",
       "minutos": 6,
-      "texto": "Espalhe formas de papel de vários tamanhos e cores e peça que ela separe por forma, não por cor ou tamanho."
+      "texto": "Espalhe formas de papel de vários tamanhos e cores e peça que a criança separe por forma, não por cor ou tamanho."
     },
     {
       "titulo": "Folha: pinte os triângulos",
       "minutos": 4,
-      "texto": "Ela pinta o quadradinho das figuras que são do mesmo tipo que o modelo."
+      "texto": "A criança pinta o quadradinho das figuras que são do mesmo tipo que o modelo."
     }
   ],
   "observar": {
@@ -41,7 +41,7 @@
   },
   "ajustes": {
     "dificil": "Use só o círculo e o quadrado e compare dois objetos grandes de cada vez.",
-    "facil": "Peça que ela invente uma figura (casa, barco) com as formas e diga quais usou."
+    "facil": "Peça que a criança invente uma figura (casa, barco) com as formas e diga quais usou."
   },
   "materiais": [
     {
@@ -60,7 +60,7 @@
   "toqueVertente": {
     "Montessori": "O gabinete geométrico (gavetas com figuras de encaixe) permite tocar, contornar com o dedo e nomear cada forma.",
     "Waldorf": "Caminhem as formas no chão (círculo, triângulo) e desenhem no ar e na areia: a criança vive a forma com o corpo antes de dar nome a ela.",
-    "Charlotte Mason": "Passeie com a criança e peça que ela note as formas nas coisas, com poucos exemplos por vez."
+    "Charlotte Mason": "Passeie com a criança e peça que note as formas nas coisas, com poucos exemplos por vez."
   },
   "evidencias": [
     {

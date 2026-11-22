@@ -12,12 +12,12 @@
     {
       "titulo": "Melodia",
       "minutos": 4,
-      "texto": "Cante uma melodia curta (“Alecrim dourado”) duas vezes. Peça que ela cante junto, com voz suave."
+      "texto": "Cante uma melodia curta (“Alecrim dourado”) duas vezes. Peça que a criança cante junto, com voz suave."
     },
     {
       "titulo": "Eco",
       "minutos": 6,
-      "texto": "Você canta uma frase e ela repete, como um eco. Troquem. Aumente o tamanho das frases.",
+      "texto": "Você canta uma frase e a criança repete, como um eco. Troquem. Aumente o tamanho das frases.",
       "fala": "Faz o eco!"
     },
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual frase ela cantou melhor?",
+  "perguntaFicha": "Qual frase a criança cantou melhor?",
   "palavrasChave": ["roda", "eco", "canto", "melodia", "afinação"],
   "folhas": [],
   "autoria": {

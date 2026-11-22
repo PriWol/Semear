@@ -13,20 +13,20 @@
   "idade": [3, 6],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Soprar com a boca ou com um canudo só sentada, e nunca sugar pelo canudo. Pedrinha, palitos e algodão: só com o adulto ao lado e longe da boca; para quem ainda leva tudo à boca, use objetos maiores (pena, folha grande, colher). O secador de cabelo é segurado só pelo adulto, na potência fria, longe do rosto da criança e da água.",
+  "cuidados": "Soprar com a boca ou com um canudo só com a criança sentada, e nunca sugar pelo canudo. Pedrinha, palitos e algodão: só com o adulto ao lado e longe da boca; para quem ainda leva tudo à boca, use objetos maiores (pena, folha grande, colher). O secador de cabelo é segurado só pelo adulto, na potência fria, longe do rosto da criança e da água.",
   "palavrasChave": ["sopro", "lobo", "prever", "testar", "três porquinhos"],
   "objetivo": "A criança adivinha, testa soprando e separa o que o sopro leva do que não sai do lugar.",
   "passos": [
     {
       "titulo": "Prever",
       "minutos": 3,
-      "texto": "Ponha cada objeto real na mesa (pena, algodão, folha seca, pedrinha, colher, palitos). Antes de soprar, ela adivinha: “o sopro vai levar?”.",
+      "texto": "Ponha cada objeto real na mesa (pena, algodão, folha seca, pedrinha, colher, palitos). Antes de soprar, a criança adivinha: “o sopro vai levar?”.",
       "fala": "O sopro vai levar?"
     },
     {
       "titulo": "Testar",
       "minutos": 4,
-      "texto": "Ela sopra, com a boca ou com um canudo, e cola o desenho do objeto no lado certo: “voou!” ou “não saiu do lugar” (pesado demais para o sopro). Esperado: pena, algodão e folha seca voam; pedrinha e colher não saem do lugar; os palitos dependem de quantos são."
+      "texto": "A criança sopra, com a boca ou com um canudo, e cola o desenho do objeto no lado certo: “voou!” ou “não saiu do lugar” (pesado demais para o sopro). Esperado: pena, algodão e folha seca voam; pedrinha e colher não saem do lugar; os palitos dependem de quantos são."
     },
     {
       "titulo": "Criar (opcional, outro dia)",
@@ -65,7 +65,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais objetos o sopro levou? O que ela adivinhou certo?",
+  "perguntaFicha": "Quais objetos o sopro levou? O que a criança adivinhou certo?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

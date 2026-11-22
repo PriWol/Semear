@@ -17,13 +17,13 @@
     {
       "titulo": "Olhe e faça",
       "minutos": 6,
-      "texto": "Desenhe uma forma por vez (círculo, depois cruz, depois quadrado, no ritmo dela), sem nomear a figura e sem guiar a mão. Diga só: “faz um desenho como este?”. Aceite qualquer tentativa e elogie o esforço.",
+      "texto": "Desenhe uma forma por vez (círculo, depois cruz, depois quadrado, no ritmo da criança), sem nomear a figura e sem guiar a mão. Diga só: “faz um desenho como este?”. Aceite qualquer tentativa e elogie o esforço.",
       "fala": "Faz um desenho como este?"
     },
     {
-      "titulo": "Ela é a professora",
+      "titulo": "A criança é a professora",
       "minutos": 4,
-      "texto": "Troquem os papéis: ela desenha uma forma e você tenta copiar, com alguns errinhos de propósito para ela mostrar como faz."
+      "texto": "Troquem os papéis: a criança desenha uma forma e você tenta copiar, com alguns errinhos de propósito, para mostrar como se faz."
     }
   ],
   "observar": {
@@ -64,7 +64,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual forma ela mais gostou de desenhar?",
+  "perguntaFicha": "Qual forma a criança mais gostou de desenhar?",
   "palavrasChave": ["copiar", "círculo", "cruz", "quadrado", "desenho", "lápis"],
   "folhas": [],
   "autoria": {

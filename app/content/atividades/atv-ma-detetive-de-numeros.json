@@ -7,18 +7,18 @@
   "idade": [4, 6],
   "duracaoMin": 20,
   "preparoMin": 5,
-  "cuidados": "A caça é dentro de casa ou em passeio acompanhado, nunca sozinha. Evite que a criança mexa em botões de elevador e tomadas só para ver os números.",
+  "cuidados": "A caça é dentro de casa ou em passeio acompanhado, nunca sem um adulto. Evite que a criança mexa em botões de elevador e tomadas só para ver os números.",
   "objetivo": "A criança **reconhece e nomeia os algarismos de 0 a 9** que aparecem no dia a dia.",
   "passos": [
     {
       "titulo": "Caça aos números",
       "minutos": 8,
-      "texto": "Dê uma lupa de papel e saiam pela casa procurando algarismos: relógio, calendário, controle remoto, número da casa. Quando ela achar, diga o nome e deixe repetir. *“Detetive, que número é este?”*"
+      "texto": "Dê uma lupa de papel e saiam pela casa procurando algarismos: relógio, calendário, controle remoto, número da casa. Quando a criança achar, diga o nome e deixe repetir. *“Detetive, que número é este?”*"
     },
     {
       "titulo": "Cartões em ordem misturada",
       "minutos": 7,
-      "texto": "Mostre os cartões de 0 a 9, um de cada vez, fora de ordem. Primeiro só diga o nome. Depois pergunte *“qual é este?”*. Separe os que ela já conhece dos que ainda estão em treino."
+      "texto": "Mostre os cartões de 0 a 9, um de cada vez, fora de ordem. Primeiro só diga o nome. Depois pergunte *“qual é este?”*. Separe os que a criança já conhece dos que ainda estão em treino."
     },
     {
       "titulo": "Folha: cartas dos números",
@@ -38,8 +38,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Mostre só 3 ou 4 algarismos por vez, os do dia a dia dela (a idade, o número da casa).",
-    "facil": "Peça que ela escreva ou desenhe o número no ar e invente uma história para cada um."
+    "dificil": "Mostre só 3 ou 4 algarismos por vez, os do dia a dia da criança (a idade, o número da casa).",
+    "facil": "Peça que a criança escreva ou desenhe o número no ar e invente uma história para cada um."
   },
   "materiais": [
     {

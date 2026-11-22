@@ -18,7 +18,7 @@
     {
       "titulo": "Brincar",
       "minutos": 4,
-      "texto": "Deixe que ela tente com uma mão e depois com a outra. Brinquem de “joinha” para tudo: para o bichinho, para o desenho, para o lanche. Depois, revezem o polegar, o indicador e o mindinho, um de cada vez, ao ritmo de uma rima ou música de dedos."
+      "texto": "Deixe que a criança tente com uma mão e depois com a outra. Brinquem de “joinha” para tudo: para o bichinho, para o desenho, para o lanche. Depois, revezem o polegar, o indicador e o mindinho, um de cada vez, ao ritmo de uma rima ou música de dedos."
     },
     {
       "titulo": "Fechar",
@@ -37,7 +37,7 @@
   },
   "ajustes": {
     "dificil": "Peça o joinha com os olhos fechados ou com uma mão só.",
-    "facil": "Segure a mão dela e ajude a fechar os outros dedos."
+    "facil": "Segure a mão da criança e ajude a fechar os outros dedos."
   },
   "materiais": [
     {
@@ -55,7 +55,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Em que momento ela mais fez o joinha?",
+  "perguntaFicha": "Em que momento a criança mais fez o joinha?",
   "palavrasChave": ["polegar", "joinha", "dedos", "mãos", "coordenação fina"],
   "folhas": [],
   "autoria": {

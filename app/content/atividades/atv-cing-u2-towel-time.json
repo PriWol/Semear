@@ -13,20 +13,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Segure-a com firmeza ao tirá-la do banho, que fica escorregadio.",
+  "cuidados": "Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Segure a criança com firmeza ao tirar do banho, que fica escorregadio.",
   "palavrasChave": ["inglês", "english", "o banho", "towel time"],
   "objetivo": "Ligar palavras em inglês ao que se vê, se toca e se sente no dia a dia (unidade: o banho).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Up you come! Here's your towel. / Dry your head. Dry your arms. Dry your toes. / All dry! Pajamas on."
     },
     {
       "titulo": "Passo 1",
       "minutos": 2,
-      "texto": "Enrole-a na toalha assim que sair da água: “up you come”."
+      "texto": "Enrole a criança na toalha assim que sair da água: “up you come”."
     },
     {
       "titulo": "Passo 2",
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Where are your toes? / Is the towel soft? / Are you all dry?"
     },
     {
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "A saída do banho costuma ser o momento mais difícil: ela não quer sair, e é aí que a rotina ajuda. As mesmas palavras, na mesma ordem, e o gesto de secar cada parte dão previsibilidade, e um abraço de toalha ajuda a voltar à calma. Se ela quiser ficar mais, avise: “two more splashes, and then we get out”. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "A saída do banho costuma ser o momento mais difícil: a criança não quer sair, e é aí que a rotina ajuda. As mesmas palavras, na mesma ordem, e o gesto de secar cada parte dão previsibilidade, e um abraço de toalha ajuda a voltar à calma. Se a criança quiser ficar mais, avise: “two more splashes, and then we get out”. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

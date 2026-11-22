@@ -12,14 +12,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: Giz e giz de cera grossos, para não irem à boca. Se for no banho: Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Giz e giz de cera grossos, para não irem à boca. Se for no banho: Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["rabisco", "giz", "desenho", "linhas"],
   "objetivo": "A criança rabisca com o braço inteiro, em linhas retas, curvas, bolinhas e zigue-zague, sem precisar desenhar uma coisa.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Ponha o giz na mão dela e faça uma linha comprida. Peça que ela imite com o braço inteiro."
+      "texto": "Ponha o giz na mão da criança e faça uma linha comprida. Peça que a criança imite com o braço inteiro."
     },
     {
       "titulo": "Passo 2",
@@ -29,12 +29,12 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Faça rápido e devagar. Dê nome ao que ela fizer: “uma cobra!”."
+      "texto": "Faça rápido e devagar. Dê nome ao que a criança fizer: “uma cobra!”."
     },
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "No fim, “apaguem” juntas com um pano úmido ou com os pés."
+      "texto": "No fim, “apaguem” juntos com um pano úmido ou com os pés."
     },
     {
       "titulo": "Para dizer",
@@ -54,12 +54,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "O rabisco com o braço todo é a primeira forma de desenhar, e mexe os ombros e o corpo. Linhas e círculos são o que os artistas do Volume 5 (como Kandinsky) usavam. Não peça que ela “desenhe uma coisa”: deixe que o rabisco seja só rabisco."
+      "texto": "O rabisco com o braço todo é a primeira forma de desenhar, e mexe os ombros e o corpo. Linhas e círculos são o que os artistas do Volume 5 (como Kandinsky) usavam. Não peça que a criança “desenhe uma coisa”: deixe que o rabisco seja só rabisco."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

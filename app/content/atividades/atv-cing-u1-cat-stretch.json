@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "Use tapete que não escorregue, com espaço livre ao redor; faça o movimento devagar e não force o corpo dela além do que ela faz sozinha. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Use tapete que não escorregue, com espaço livre ao redor; faça o movimento devagar e não force o corpo da criança além do que a criança faz sem ajuda. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "acordar e se arrumar", "cat stretch"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Stretch like a cat. Nice and slow. / Round your back. Now relax. / Purr, purr, purr. What a calm kitty."
     },
     {
@@ -39,12 +39,12 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Termine sentadas, com a mão no peito: “purr, purr”."
+      "texto": "Termine sentados, com a mão no peito: “purr, purr”."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Are you a cat? / Can you purr? / Is your body slow now?"
     },
     {

@@ -12,7 +12,7 @@
     {
       "titulo": "Ensinar",
       "minutos": 3,
-      "texto": "Mostre 4 comandos com gestos, repetindo cada um: “stand up”, “sit down”, “clap your hands”, “jump”. Ela imita sem precisar falar.",
+      "texto": "Mostre 4 comandos com gestos, repetindo cada um: “stand up”, “sit down”, “clap your hands”, “jump”. A criança imita sem precisar falar.",
       "fala": "Stand up!"
     },
     {
@@ -23,16 +23,16 @@
     {
       "titulo": "Trocar",
       "minutos": 1,
-      "texto": "Troquem os papéis: ela dá o comando (mesmo que em português) e você obedece em inglês. Termine com “Goodbye!”."
+      "texto": "Troquem os papéis: a criança dá o comando (mesmo que em português) e você obedece em inglês. Termine com “Goodbye!”."
     }
   ],
   "observar": {
     "consolidado": ["Faz 3 ou mais ações pelo comando", "Responde “hello”"],
-    "emDesenvolvimento": ["Só imita o adulto (esperado)", "Fica quieta (período silencioso)"]
+    "emDesenvolvimento": ["Só imita o adulto (esperado)", "Fica em silêncio (período silencioso)"]
   },
   "ajustes": {
     "dificil": "Use só 2 comandos, com a sua demonstração.",
-    "facil": "Peça que ela dê os comandos em inglês."
+    "facil": "Peça que a criança dê os comandos em inglês."
   },
   "materiais": [
     {
@@ -50,7 +50,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais comandos ela entendeu sem ajuda?",
+  "perguntaFicha": "Quais comandos a criança entendeu sem ajuda?",
   "palavrasChave": ["simon says", "comandos", "inglês", "brincadeira"],
   "idioma": "en",
   "folhas": [],

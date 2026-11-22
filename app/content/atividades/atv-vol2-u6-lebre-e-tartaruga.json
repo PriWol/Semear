@@ -28,7 +28,7 @@
     {
       "titulo": "Dramatizar",
       "minutos": 5,
-      "texto": "Marque a chegada com fita no chão: ela é a tartaruga; você, a lebre que dorme no meio do caminho. Depois troquem. Em outro dia, conte *O Leão e o Rato*: amarre frouxamente os pulsos de um bichinho grande com barbante e deixe que ela, como o ratinho, solte nó por nó."
+      "texto": "Marque a chegada com fita no chão: a criança é a tartaruga; você, a lebre que dorme no meio do caminho. Depois troquem. Em outro dia, conte *O Leão e o Rato*: amarre frouxamente os pulsos de um bichinho grande com barbante e deixe a criança, como o ratinho, soltar nó por nó."
     }
   ],
   "observar": {
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Só a corrida dramatizada.",
-    "facil": "Peça que ela invente outra corrida e quem ganha."
+    "facil": "Peça que a criança invente outra corrida e quem ganha."
   },
   "materiais": [
     {
@@ -59,14 +59,14 @@
   "evidencias": [
     {
       "texto": "Disse quem ganhou",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
-      "texto": "Explicou o motivo, com as palavras dela",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "texto": "Explicou o motivo, com as palavras da criança",
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "O que ela disse sobre por que a tartaruga ganhou?",
+  "perguntaFicha": "O que a criança disse sobre por que a tartaruga ganhou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

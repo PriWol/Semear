@@ -1,5 +1,12 @@
 // Dados de teste pequenos e independentes do conteúdo real: mudar app/content não quebra estes testes.
-import type { Atividade, Conteudo, Crianca, Familia, Marco } from '../src/domain/tipos';
+import type {
+  Atividade,
+  Conteudo,
+  Crianca,
+  EstadosCrianca,
+  Familia,
+  Marco,
+} from '../src/domain/tipos';
 import { criarIndice } from '../src/domain/conteudo';
 
 export function marco(id: string, ordem: number, extra: Partial<Marco> = {}): Marco {
@@ -140,3 +147,16 @@ export function crianca(extra: Partial<Crianca> = {}): Crianca {
 }
 
 export const AGORA = '2026-10-14T12:00:00.000Z';
+
+/**
+ * Registro "não observado" em todos os marcos da base: a criança JÁ foi posicionada (a família disse "ainda
+ * não"), então o sugestor parte do primeiro marco. Sem registro nenhum ele parte da idade (§5.4, D6).
+ */
+export const ESTADOS_NEUTROS: EstadosCrianca = Object.fromEntries(
+  conteudoBase().marcos.flatMap((m) =>
+    [m.id, `${m.id}@en`, `${m.id}@fr`, `${m.id}@la`].map((chave) => [
+      chave,
+      { estado: 'nao-observado' as const, atualizadoEm: AGORA, origem: 'manual' as const },
+    ]),
+  ),
+);

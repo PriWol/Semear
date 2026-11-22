@@ -7,17 +7,17 @@
   "duracaoMin": 20,
   "preparoMin": 10,
   "cuidados": "Se cozinharem, só o adulto mexe em fogo e facas. Cuidado com alergias e com fogos de artifício (não use). Em festas com fogueira, só observe de longe, com adultos.",
-  "objetivo": "A criança conhece uma festa de uma região, localiza-a no mapa e vive um pouco dela.",
+  "objetivo": "A criança conhece uma festa de uma região, localiza-a no mapa e vive um pouco da festa.",
   "passos": [
     {
       "titulo": "Escolher",
       "minutos": 5,
-      "texto": "No mapa do Brasil, escolha com ela uma festa (por exemplo, o bumba meu boi, no Maranhão). Pergunte: “O que você acha que acontece?”."
+      "texto": "No mapa do Brasil, escolha com a criança uma festa (por exemplo, o bumba meu boi, no Maranhão). Pergunte: “O que você acha que acontece?”."
     },
     {
       "titulo": "Conhecer",
       "minutos": 10,
-      "texto": "Leia sobre a festa, olhe fotos e ouça uma música. Ela desenha um elemento (o boi, uma roupa, uma bandeirinha).",
+      "texto": "Leia sobre a festa, olhe fotos e ouça uma música. A criança desenha um elemento (o boi, uma roupa, uma bandeirinha).",
       "fala": "O que as pessoas fazem nessa festa?"
     },
     {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual festa ela escolheu?",
+  "perguntaFicha": "Qual festa a criança escolheu?",
   "palavrasChave": ["festas", "regiões", "bumba meu boi", "festa junina", "carnaval"],
   "folhas": [],
   "autoria": {

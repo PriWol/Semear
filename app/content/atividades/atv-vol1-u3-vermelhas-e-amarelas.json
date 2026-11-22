@@ -26,13 +26,13 @@
     {
       "titulo": "Relacionar",
       "minutos": 4,
-      "texto": "Ponha uma fruta de modelo em cada cesta e entregue as outras uma a uma: “onde mora esta?”. A laranja e a pera podem gerar boa conversa (“é amarela ou laranja?”): aceite a escolha dela se ela explicar.",
+      "texto": "Ponha uma fruta de modelo em cada cesta e entregue as outras uma a uma: “onde mora esta?”. A laranja e a pera podem gerar boa conversa (“é amarela ou laranja?”): aceite a escolha da criança se a criança explicar.",
       "fala": "Onde mora esta?"
     },
     {
       "titulo": "Criar",
       "minutos": 2,
-      "texto": "Ela inventa outro jeito de separar: grandes e pequenas, as que rolam e as que não rolam."
+      "texto": "A criança inventa outro jeito de separar: grandes e pequenas, as que rolam e as que não rolam."
     }
   ],
   "observar": {
@@ -43,8 +43,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Duas frutas só, uma de cada cor, e ela diz “esta” ou “esta”.",
-    "facil": "Ela inventa outro critério de separação e explica."
+    "dificil": "Duas frutas só, uma de cada cor, e a criança diz “esta” ou “esta”.",
+    "facil": "A criança inventa outro critério de separação e explica."
   },
   "materiais": [
     {
@@ -66,7 +66,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que critério ela inventou para separar?",
+  "perguntaFicha": "Que critério a criança inventou para separar?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "o ursinho fica só na barriga, nunca no rosto ou no pescoço; leve e sem peças soltas. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "o ursinho fica só na barriga, nunca no rosto ou no pescoço; leve e sem peças soltas. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "hora de dormir", "teddy breathing"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Breathe in… the bear goes up. / Breathe out… the bear goes down. / Again. Nice and slow. Sleepy bear."
     },
     {
       "titulo": "Passo 1",
       "minutos": 1,
-      "texto": "Deitem de barriga para cima. Ponha o ursinho na barriga dela."
+      "texto": "Deitem de barriga para cima. Ponha o ursinho na barriga da criança."
     },
     {
       "titulo": "Passo 2",
@@ -44,7 +44,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Is the bear going up? / And now going down? / Are you sleepy?"
     },
     {
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Ver o ursinho subir e descer faz a respiração virar algo que ela vê e sente, e a respiração pela barriga é a mais calma. É uma atividade clássica de respiração para crianças pequenas, e a frase de “up” e “down” liga ao que ela já aprendeu na unidade de brincar. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Ver o ursinho subir e descer faz a respiração virar algo que a criança vê e sente, e a respiração pela barriga é a mais calma. É uma atividade clássica de respiração para crianças pequenas, e a frase de “up” e “down” liga ao que a criança já aprendeu na unidade de brincar. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

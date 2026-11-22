@@ -13,7 +13,7 @@
     {
       "titulo": "Monte e depois escreva",
       "minutos": 8,
-      "texto": "Peça *“3 barras de dez e 5 soltas”*. Ela monta com palitos agrupados ou notas de 10 e moedas de 1 de brinquedo. Só então escreva *35* e mostre: o 3 conta as barras; o 5, as soltas.",
+      "texto": "Peça *“3 barras de dez e 5 soltas”*. A criança monta com palitos agrupados ou notas de 10 e moedas de 1 de brinquedo. Só então escreva *35* e mostre: o 3 conta as barras; o 5, as soltas.",
       "fala": "Quanto vale o 3 neste número?"
     },
     {
@@ -24,12 +24,12 @@
     {
       "titulo": "Quebrar o número",
       "minutos": 6,
-      "texto": "Peça que ela decomponha 47 em 40 + 7 e 28 em 20 + 8, com o material à frente. Depois só falando."
+      "texto": "Peça que a criança decomponha 47 em 40 + 7 e 28 em 20 + 8, com o material à frente. Depois só falando."
     },
     {
       "titulo": "Folha: de quantos?",
       "minutos": 4,
-      "texto": "Ela desenha as barras e as soltas e escreve o número."
+      "texto": "A criança desenha as barras e as soltas e escreve o número."
     }
   ],
   "observar": {
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Use números de 11 a 29 e deixe o material à vista o tempo todo.",
-    "facil": "Peça que ela invente um número de dois algarismos e diga o valor de cada um sem material."
+    "facil": "Peça que a criança invente um número de dois algarismos e diga o valor de cada um sem material."
   },
   "materiais": [
     {
@@ -61,7 +61,7 @@
     "Montessori": "As contas douradas com cartões de unidade e dezena (cartões sobrepostos) mostram o valor posicional: o 3 do 35 é uma dezena inteira de barras.",
     "Waldorf": "Esse trabalho costuma ficar para o 1º ano em diante, por volta dos 7 anos. Antes, viva as dezenas na contagem rítmica e em coleções reais.",
     "Clássico": "Depois de entender com material, a prática diária curta torna a leitura de dezenas e unidades automática.",
-    "Charlotte Mason": "Lição curta, com material real, e peça que ela narre o que viu quando o número mudou."
+    "Charlotte Mason": "Momento curto, com material real, e peça que a criança narre o que viu quando o número mudou."
   },
   "evidencias": [
     {

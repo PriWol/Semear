@@ -12,14 +12,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Atenção: Ao balançar a criança no colo ou sentadas de frente, segure-a firme e sem sacudir; se usar cadeira de balanço, ela precisa ser estável. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Ao balançar a criança no colo ou sentados de frente, segure a criança firme e sem sacudir; se usar cadeira de balanço, a cadeira precisa ser estável. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["ninar", "se essa rua fosse minha", "devagar", "coelho", "lesma"],
   "objetivo": "A criança ouve cantigas lentas, balançando, e vê o contraste entre depressa e devagar, terminando sempre no devagar.",
   "passos": [
     {
       "titulo": "Se essa rua fosse minha",
       "minutos": 2,
-      "texto": "*Se essa rua, se essa rua fosse minha, / eu mandava, eu mandava ladrilhar, / com pedrinhas, com pedrinhas de brilhante, / para o meu, para o meu amor passar.* **O gesto:** balance de um lado para o outro, devagar, com ela no colo ou sentadas de frente. É uma cantiga lenta: cante baixinho. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+      "texto": "*Se essa rua, se essa rua fosse minha, / eu mandava, eu mandava ladrilhar, / com pedrinhas, com pedrinhas de brilhante, / para o meu, para o meu amor passar.* **O gesto:** balance de um lado para o outro, devagar, com a criança no colo ou sentados de frente. É uma cantiga lenta: cante baixinho. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
     },
     {
       "titulo": "Devagar, devagarinho",
@@ -34,7 +34,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -51,11 +51,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -17,7 +17,7 @@
     {
       "titulo": "Preparar os objetos",
       "minutos": 1,
-      "texto": "Tenha à mão uma xícara, uma colher e um prato. Quando a história disser “a xícara ia para a prateleira”, ponha a xícara num lugar alto; a colher, numa gaveta. Ela vai querer fazer isso sozinha na segunda vez."
+      "texto": "Tenha à mão uma xícara, uma colher e um prato. Quando a história disser “a xícara ia para a prateleira”, ponha a xícara num lugar alto; a colher, numa gaveta. A criança vai querer fazer isso sem ajuda na segunda vez."
     },
     {
       "titulo": "Contar a história",
@@ -33,11 +33,11 @@
     {
       "titulo": "Procurar de verdade",
       "minutos": 3,
-      "texto": "Brinque de esconder a xícara de verdade pela casa e procurem juntas, dizendo “não está… não está… achei!”. Na imagem do livro, conte as ratinhas com ela, tocando cada uma."
+      "texto": "Brinque de esconder a xícara de verdade pela casa e procurem juntos, dizendo “não está… não está… achei!”. Na imagem do livro, conte as ratinhas com a criança, tocando cada uma."
     }
   ],
   "observar": {
-    "consolidado": ["Diz o que a ratinha perdeu", "Guarda um objeto no lugar sem ser lembrada"],
+    "consolidado": ["Diz o que a ratinha perdeu", "Guarda um objeto no lugar sem lembrete"],
     "emDesenvolvimento": [
       "Só quer procurar a xícara, sem responder às perguntas (tudo bem: a brincadeira também é narração)",
       "Ainda precisa ver os objetos para lembrar a história"
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Conte só a primeira parte e guardem juntas a xícara, a colher e o prato.",
-    "facil": "Ela conta a história de volta com os objetos na mão."
+    "facil": "A criança conta a história de volta com os objetos na mão."
   },
   "materiais": [
     {
@@ -63,11 +63,11 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     },
     {
-      "texto": "Guarda um objeto no lugar sem ser lembrada",
+      "texto": "Guarda um objeto no lugar sem lembrete",
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela respondeu sobre a ratinha? Onde escondeu a xícara?",
+  "perguntaFicha": "O que a criança respondeu sobre a ratinha? Onde escondeu a xícara?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

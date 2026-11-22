@@ -6,8 +6,8 @@
   "idade": [4, 7],
   "duracaoMin": 25,
   "preparoMin": 5,
-  "cuidados": "Atenção: use blocos e copos de papel grandes, sem peças pequenas, e deixe o chão livre para o trem não ser pisado. Fique junto aos 4 anos. Se ela errar a conta dos vagões, conte de novo com ela, sem cobrar.",
-  "objetivo": "A criança relaciona a palavra falada ao **número de pedaços** com algo que ela pode ver e mover.",
+  "cuidados": "Atenção: use blocos e copos de papel grandes, sem peças pequenas, e deixe o chão livre para o trem não ser pisado. Fique junto aos 4 anos. Se a criança errar a conta dos vagões, conte de novo junto, sem cobrar.",
+  "objetivo": "A criança relaciona a palavra falada ao **número de pedaços** com algo que pode ver e mover.",
   "passos": [
     {
       "titulo": "Montar o trem",
@@ -27,7 +27,7 @@
     {
       "titulo": "Folha: ligue ao número de vagões",
       "minutos": 6,
-      "texto": "Leia o nome de cada figura antes de ela ligar."
+      "texto": "Leia o nome de cada figura antes de a criança ligar."
     }
   ],
   "observar": {
@@ -41,8 +41,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use só palavras de 2 pedaços e fale cada pedaço junto com ela.",
-    "facil": "Peça que ela invente uma palavra de 5 pedaços (vale palavra inventada)."
+    "dificil": "Use só palavras de 2 pedaços e fale cada pedaço junto com a criança.",
+    "facil": "Peça que a criança invente uma palavra de 5 pedaços (vale palavra inventada)."
   },
   "materiais": [
     {

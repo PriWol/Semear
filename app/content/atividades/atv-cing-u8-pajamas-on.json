@@ -13,14 +13,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Pijama próprio para dormir (justo ao corpo, sem cordões e sem enfeites soltos); vista-a sentada na cama ou no colo, sem deixá-la em pé em lugar alto.",
+  "cuidados": "Pijama próprio para dormir (justo ao corpo, sem cordões e sem enfeites soltos); vista a criança sentada na cama ou no colo, sem deixar a criança em pé em lugar alto.",
   "palavrasChave": ["inglês", "english", "hora de dormir", "pajamas on"],
   "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: hora de dormir).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Five more minutes. Then pajamas. / Blue or yellow? You choose. / Arms in. Head through. All dressed!"
     },
     {
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Which pajamas do you want? / Where are your arms? / Are you cozy?"
     },
     {
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Trocar de roupa para dormir é uma troca que pode gerar “não”. Um aviso antes, uma escolha entre duas coisas e uma sequência de palavras sempre iguais ajudam a criança a aceitar. Se ela recusar, diga “okay, then pajamas in two minutes”, e cumpra. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Trocar de roupa para dormir é uma troca que pode gerar “não”. Um aviso antes, uma escolha entre duas coisas e uma sequência de palavras sempre iguais ajudam a criança a aceitar. Se a criança recusar, diga “okay, then pajamas in two minutes”, e cumpra. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

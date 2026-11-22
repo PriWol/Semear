@@ -12,7 +12,7 @@
     {
       "titulo": "Pergunta",
       "minutos": 3,
-      "texto": "“De onde vem a chuva?”. Anote o que ela pensa, sem corrigir.",
+      "texto": "“De onde vem a chuva?”. Anote o que a criança pensa, sem corrigir.",
       "fala": "O que você acha?"
     },
     {
@@ -28,7 +28,7 @@
     {
       "titulo": "Contar",
       "minutos": 4,
-      "texto": "Ela conta o caminho da água com as próprias palavras. Pergunte como poupar água em casa (fechar a torneira ao escovar os dentes, por exemplo)."
+      "texto": "A criança conta o caminho da água com as próprias palavras. Pergunte como poupar água em casa (fechar a torneira ao escovar os dentes, por exemplo)."
     }
   ],
   "observar": {
@@ -67,7 +67,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Como ela explicou de onde vem a chuva?",
+  "perguntaFicha": "Como a criança explicou de onde vem a chuva?",
   "palavrasChave": ["ciclo da água", "chuva", "evaporação", "nuvem"],
   "folhas": [],
   "autoria": {

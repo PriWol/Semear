@@ -22,7 +22,7 @@
     {
       "titulo": "Mostrar com os dedos",
       "minutos": 4,
-      "texto": "Nos números, mostre os dedos (um dedo, dois dedos…). Aos 2 ou 3 anos, recitar até dez é uma **música**, não uma contagem: ela pode recitar bem e ainda contar só até três. As duas coisas são boas.",
+      "texto": "Nos números, mostre os dedos (um dedo, dois dedos…). Aos 2 ou 3 anos, recitar até dez é uma **música**, não uma contagem: a criança pode recitar bem e ainda contar só até três. As duas coisas são boas.",
       "fala": "Quantos dedos você mostrou?"
     }
   ],
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Só a primeira linha: “Um, dois, feijão com arroz”.",
-    "facil": "Peça que ela mostre os dedos de cada número, sem ajuda."
+    "facil": "Peça que a criança mostre os dedos de cada número, sem ajuda."
   },
   "materiais": [
     {
@@ -50,7 +50,7 @@
       "resposta": "_____ (número)"
     }
   ],
-  "perguntaFicha": "Até que número ela recitou sem errar?",
+  "perguntaFicha": "Até que número a criança recitou sem errar?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

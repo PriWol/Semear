@@ -6,29 +6,29 @@
   "idade": [5, 6],
   "duracaoMin": 20,
   "preparoMin": 5,
-  "cuidados": "Atenção: use letras móveis grandes (de papel ou de madeira) e mantenha o chão livre para não pisar nelas; deixe fora do alcance de bebês. Nada de corrigir a hipótese dela: o que importa é que cada pedaço falado ganhe uma letra.",
+  "cuidados": "Atenção: use letras móveis grandes (de papel ou de madeira) e mantenha o chão livre para não pisar nelas; deixe fora do alcance de bebês. Nada de corrigir a hipótese da criança: o que importa é que cada pedaço falado ganhe uma letra.",
   "objetivo": "A criança escreve cada sílaba de uma palavra com uma letra (por exemplo, AO para GATO) e lê apontando uma letra por pedaço.",
   "passos": [
     {
       "titulo": "Bater as palmas",
       "minutos": 4,
-      "texto": "Diga uma palavra (*GATO*) e bata uma palma por pedaço (*GA-TO*). Peça que ela bata também e diga: *“Quantos pedaços?”*. Comece pelo nome de um bicho ou da família.",
+      "texto": "Diga uma palavra (*GATO*) e bata uma palma por pedaço (*GA-TO*). Peça que a criança bata também e diga: *“Quantos pedaços?”*. Comece pelo nome de um bicho ou da família.",
       "fala": "Quantas palmas tem a palavra?"
     },
     {
       "titulo": "Uma letra para cada palma",
       "minutos": 8,
-      "texto": "Para cada palma, ela escolhe **uma** letra (nas letras móveis ou no papel). Se ela escrever AO para GATO, comemore: *“Duas palmas, duas letras!”*. Se ela não souber que letra, ofereça duas opções e deixe escolher pelo som."
+      "texto": "Para cada palma, a criança escolhe **uma** letra (nas letras móveis ou no papel). Se a criança escrever AO para GATO, comemore: *“Duas palmas, duas letras!”*. Se a criança não souber que letra, ofereça duas opções e deixe escolher pelo som."
     },
     {
       "titulo": "Ler o que escreveu",
       "minutos": 4,
-      "texto": "Ela aponta uma letra por pedaço enquanto fala: *“GA (aponta A) - TO (aponta O)”*. Mostre depois a escrita convencional (GATO) ao lado, com carinho: *“Os adultos escrevem assim. Tem mais letras!”*"
+      "texto": "A criança aponta uma letra por pedaço enquanto fala: *“GA (aponta A) - TO (aponta O)”*. Mostre depois a escrita convencional (GATO) ao lado, com carinho: *“Os adultos escrevem assim. Tem mais letras!”*"
     },
     {
       "titulo": "Mais duas palavras",
       "minutos": 4,
-      "texto": "Repitam com *BOLA* e *SAPATO*. Termine com a favorita e deixe-a guardar a palavra num cartão."
+      "texto": "Repitam com *BOLA* e *SAPATO*. Termine com a favorita e deixe a criança guardar a palavra num cartão."
     }
   ],
   "observar": {
@@ -37,7 +37,7 @@
       "Lê apontando uma letra para cada pedaço"
     ],
     "emDesenvolvimento": [
-      "Escreve letras sem relação com a palavra (volte a marcar o pedaço e o som com ela)",
+      "Escreve letras sem relação com a palavra (volte a marcar o pedaço e o som com a criança)",
       "Põe mais letras do que pedaços (esperado; mostre sem cobrar)"
     ]
   },
@@ -60,8 +60,8 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Ofereça o alfabeto móvel e deixe-a “escrever” sozinha, sem corrigir, com a bandeja de letras ao alcance.",
-    "Clássico": "Depois, recitem a lista das palavras que ela escreveu, como numa pequena “lista de vocabulário”.",
+    "Montessori": "Ofereça o alfabeto móvel e deixe a criança “escrever” sem ajuda, sem corrigir, com a bandeja de letras ao alcance.",
+    "Clássico": "Depois, recitem a lista das palavras que a criança escreveu, como numa pequena “lista de vocabulário”.",
     "Religioso": "Se quiser, use palavras de cantigas ou orações da família.",
     "Charlotte Mason": "Mantenha curto (poucas palavras por dia) e use palavras de um livro que vocês estejam lendo."
   },
@@ -72,10 +72,10 @@
     },
     {
       "texto": "Leu apontando uma letra por pedaço",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavra ela escreveu e como a leu?",
+  "perguntaFicha": "Que palavra a criança escreveu e como a leu?",
   "folhas": [
     {
       "tipo": "cartas",

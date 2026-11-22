@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "cuidados": "Leia com a criança no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
   "palavrasChave": ["inglês", "english", "livro", "when sophie gets angry — really, really angry…"],
   "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Sophie is angry. Look at her face. / She runs, she cries. Then she looks around. / Now she feels better. Her family is happy."
     },
     {
@@ -29,7 +29,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 3,
-      "texto": "Pergunte: “how does Sophie feel?”. Deixe que ela aponte as cores e o rosto."
+      "texto": "Pergunte: “how does Sophie feel?”. Deixe que a criança aponte as cores e o rosto."
     },
     {
       "titulo": "Passo 3",
@@ -39,23 +39,23 @@
     {
       "titulo": "Passo 4",
       "minutos": 2,
-      "texto": "No fim, “she feels better”: pergunte como ela se acalma."
+      "texto": "No fim, “she feels better”: pergunte como a criança se acalma."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "How does Sophie feel? / What does she do? / What do you do when you're angry?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Ela escolhe a cor da raiva do livro. Procure o lugar do livro no parque. Leia uma vez em português, para ela entender a história."
+      "texto": "A criança escolhe a cor da raiva do livro. Procure o lugar do livro no parque. Leia uma vez em português, para a criança entender a história."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "É um livro sobre a raiva e sobre como ela passa, e o livro de Molly Bang foi premiado (Caldecott Honor). Em leitura dialogada, as perguntas são sobre o rosto e as cores, que a criança entende, e sobre o que fazer, que ela mostra com o corpo. Leia depois que a crise passou, e nunca no meio dela. Se o livro parecer longo, leia só as páginas do meio. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "É um livro sobre a raiva e sobre como a criança passa, e o livro de Molly Bang foi premiado (Caldecott Honor). Em leitura dialogada, as perguntas são sobre o rosto e as cores, que a criança entende, e sobre o que fazer, que a criança mostra com o corpo. Leia depois que a crise passou, e nunca no meio da criança. Se o livro parecer longo, leia só as páginas do meio. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

@@ -6,13 +6,13 @@
   "idade": [5, 8],
   "duracaoMin": 13,
   "preparoMin": 2,
-  "cuidados": "Sente no chão, um de frente para o outro, e balance suavemente. Sem puxar os braços da criança com força. Em barquinho de papel na água, só com supervisão e sem deixar a criança sozinha perto da água.",
+  "cuidados": "Sente no chão, um de frente para o outro, e balance suavemente. Sem puxar os braços da criança com força. Em barquinho de papel na água, só com supervisão e sem deixar a criança sem supervisão perto da água.",
   "objetivo": "A criança canta uma canção inteira em inglês, remando com o corpo.",
   "passos": [
     {
       "titulo": "Aprender",
       "minutos": 5,
-      "texto": "Cante a canção devagar, uma linha por vez, e ela repete. Mostre o movimento de remar, sentados frente a frente com as mãos dadas.",
+      "texto": "Cante a canção devagar, uma linha por vez, e a criança repete. Mostre o movimento de remar, sentados frente a frente com as mãos dadas.",
       "fala": "Row, row, row your boat…"
     },
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Caderno",
       "minutos": 3,
-      "texto": "Ela desenha um barco e escreve (ou você escreve) o título na página de canções."
+      "texto": "A criança desenha um barco e escreve (ou você escreve) o título na página de canções."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual parte da canção ela cantou melhor?",
+  "perguntaFicha": "Qual parte da canção a criança cantou melhor?",
   "palavrasChave": ["row your boat", "canção", "inglês", "gestos"],
   "idioma": "en",
   "folhas": [],

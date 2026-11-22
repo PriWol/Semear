@@ -12,7 +12,7 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Atenção: O sabão é para as mãos, não para beber; guarde-o fora do alcance depois, enxugue o chão molhado para ela não escorregar. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: O sabão é para as mãos, não para beber; guarde-o fora do alcance depois, enxugue o chão molhado para a criança não escorregar. Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["lavar as mãos", "sabão", "sapo", "rotina"],
   "objetivo": "A criança aprende uma rima fixa para a troca de atividade (pintar, lavar as mãos), o que avisa o fim e reduz o “não”.",
   "passos": [
@@ -29,12 +29,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Uma rima fixa para cada troca (pintar → lavar as mãos) avisa o fim de uma atividade e reduz o “não”: ela já sabe o que vem. Use sempre a mesma música, na mesma ordem."
+      "texto": "Uma rima fixa para cada troca (pintar → lavar as mãos) avisa o fim de uma atividade e reduz o “não”: a criança já sabe o que vem. Use sempre a mesma música, na mesma ordem."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -51,11 +51,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

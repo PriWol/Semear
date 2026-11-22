@@ -36,12 +36,12 @@
   "observar": {
     "consolidado": [
       "Diz o que a semente precisa (água e um lugar iluminado).",
-      "Olha o feijão todo dia sem ser lembrada.",
-      "Descreve a raiz e o broto com palavras dela.",
-      "Abre uma fruta e acha as sementes sozinha."
+      "Olha o feijão todo dia sem lembrete.",
+      "Descreve a raiz e o broto com palavras da criança.",
+      "Abre uma fruta e acha as sementes sem ajuda."
     ],
     "emDesenvolvimento": [
-      "Ainda precisa ser lembrada de olhar o feijão",
+      "Ainda precisa de lembrete para olhar o feijão",
       "Ainda encharca o algodão ao regar"
     ]
   },
@@ -84,7 +84,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Em que dia apareceu a raiz e o que ela desenhou?",
+  "perguntaFicha": "Em que dia apareceu a raiz e o que a criança desenhou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

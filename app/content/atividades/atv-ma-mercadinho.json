@@ -13,23 +13,23 @@
     {
       "titulo": "Conhecer o dinheiro",
       "minutos": 6,
-      "texto": "Espalhe moedas e cédulas de brinquedo. Diga o valor de cada uma e deixe que ela ordene da menor para a maior. *“Quanto vale esta?”*."
+      "texto": "Espalhe moedas e cédulas de brinquedo. Diga o valor de cada uma e deixe que a criança ordene da menor para a maior. *“Quanto vale esta?”*."
     },
     {
       "titulo": "Mercadinho",
       "minutos": 12,
-      "texto": "Monte uma loja com preços de 1 a 10 reais. Ela é a cliente e depois a vendedora. Peça que pague de jeitos diferentes: *“só com moedas”*, *“com duas cédulas de 5”*.",
+      "texto": "Monte uma loja com preços de 1 a 10 reais. A criança é a cliente e depois a vendedora. Peça que pague de jeitos diferentes: *“só com moedas”*, *“com duas cédulas de 5”*.",
       "fala": "De que outro jeito dá para pagar?"
     },
     {
       "titulo": "Trocar dez por um",
       "minutos": 6,
-      "texto": "Junte 10 moedas de 1 real e troque por uma cédula de 10. Desfaça a troca. Ela vê que é o mesmo valor."
+      "texto": "Junte 10 moedas de 1 real e troque por uma cédula de 10. Desfaça a troca. A criança vê que é o mesmo valor."
     },
     {
       "titulo": "Folha: pague o valor",
       "minutos": 6,
-      "texto": "Ela desenha as moedas e cédulas que usaria para pagar."
+      "texto": "A criança desenha as moedas e cédulas que usaria para pagar."
     }
   ],
   "observar": {
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Use só moedas de 1 real e preços de 1 a 5, e conte junto cada moeda.",
-    "facil": "Use preços com centavos (50 centavos) e peça que ela calcule o troco com você."
+    "facil": "Use preços com centavos (50 centavos) e peça que a criança calcule o troco com você."
   },
   "materiais": [
     {
@@ -63,7 +63,7 @@
   ],
   "toqueVertente": {
     "Montessori": "O jogo do banco, com as contas douradas, trabalha a troca de dez unidades por uma dezena, a mesma ideia do dinheiro.",
-    "Charlotte Mason": "Use compras reais da família, com um pouquinho de dinheiro na mão da criança, e peça que ela narre o que pagou.",
+    "Charlotte Mason": "Use compras reais da família, com um pouquinho de dinheiro na mão da criança, e peça que narre o que pagou.",
     "Clássico": "Registre os valores das moedas numa tabela e recite em voz alta: *“cinco reais, dez reais…”*."
   },
   "evidencias": [

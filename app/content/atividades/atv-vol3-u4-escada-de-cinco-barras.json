@@ -22,7 +22,7 @@
     {
       "titulo": "As cinco",
       "minutos": 6,
-      "texto": "Acrescente as outras duas e deixe que ela as ponha em ordem, formando uma escada. Se ficar difícil, volte para três.",
+      "texto": "Acrescente as outras duas e deixe que a criança as ponha em ordem, formando uma escada. Se ficar difícil, volte para três.",
       "fala": "Qual vem depois?"
     },
     {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Só as barras 1, 3 e 5.",
-    "facil": "Depois da escada, peça que ela a monte da maior para a menor."
+    "facil": "Depois da escada, peça que a criança a monte da maior para a menor."
   },
   "materiais": [
     {
@@ -61,7 +61,7 @@
       "resposta": "☐ 3   ☐ 4   ☐ as 5"
     }
   ],
-  "perguntaFicha": "Quantas barras ela ordenou sem ajuda?",
+  "perguntaFicha": "Quantas barras a criança ordenou sem ajuda?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

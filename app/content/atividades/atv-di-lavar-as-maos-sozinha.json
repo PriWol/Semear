@@ -12,13 +12,13 @@
     {
       "titulo": "Mostrar devagar",
       "minutos": 2,
-      "texto": "Mostre os passos em câmera lenta, falando pouco: molhar, ensaboar, esfregar, enxaguar, secar. Depois, ela imita.",
+      "texto": "Mostre os passos em câmera lenta, falando pouco: molhar, ensaboar, esfregar, enxaguar, secar. Depois, a criança imita.",
       "fala": "Molhar, ensaboar, esfregar!"
     },
     {
-      "titulo": "Ela faz",
+      "titulo": "A criança faz",
       "minutos": 4,
-      "texto": "Ela lava com o banquinho e o sabonete ao alcance. Você só ajuda no que ela pedir. Cantem uma música curta para contar o tempo."
+      "texto": "A criança lava com o banquinho e o sabonete ao alcance. Você só ajuda no que a criança pedir. Cantem uma música curta para contar o tempo."
     },
     {
       "titulo": "Roupas",
@@ -31,7 +31,7 @@
     "emDesenvolvimento": ["Brinca com a água e ensaboa pouco (normal)", "Pede ajuda em tudo"]
   },
   "ajustes": {
-    "dificil": "Faça com a mão dela entre as suas, tirando a ajuda aos poucos.",
+    "dificil": "Faça com a mão da criança entre as suas, tirando a ajuda aos poucos.",
     "facil": "Peça que ensine o passo a passo para um bichinho de pelúcia."
   },
   "materiais": [
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual passo ela já faz sozinha?",
+  "perguntaFicha": "Qual passo a criança já faz sem ajuda?",
   "palavrasChave": ["lavar as mãos", "autonomia", "vida prática", "roupas"],
   "folhas": [],
   "autoria": {

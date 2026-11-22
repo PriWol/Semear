@@ -7,7 +7,7 @@
   "idade": [6, 8],
   "duracaoMin": 26,
   "preparoMin": 5,
-  "cuidados": "Atenção: fichas, tampinhas e botões podem ir à boca de irmãos menores, então guarde tudo depois da atividade. Para 6 a 8 anos basta ficar por perto. Se ela errar, deslize as fichas junto com ela, sem cobrar.",
+  "cuidados": "Atenção: fichas, tampinhas e botões podem ir à boca de irmãos menores, então guarde tudo depois da atividade. Para 6 a 8 anos basta ficar por perto. Se a criança errar, deslize as fichas junto, sem cobrar.",
   "objetivo": "A criança **separa a palavra em sons** (fonemas) e percebe que cada som é uma peça.",
   "passos": [
     {
@@ -18,7 +18,7 @@
     {
       "titulo": "A criança faz",
       "minutos": 10,
-      "texto": "Ela repete com *mar*, *uva*, *pé*, depois palavras de 4 sons (*fada*, *faca*). Não use letras ainda. Se ela errar, deslize junto com ela."
+      "texto": "A criança repete com *mar*, *uva*, *pé*, depois palavras de 4 sons (*fada*, *faca*). Não use letras ainda. Se a criança errar, deslize junto com a criança."
     },
     {
       "titulo": "Junte de volta",
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Use palavras de 2 ou 3 sons (*sol, mar*) com o adulto deslizando as fichas junto com a criança.",
-    "facil": "Use palavras mais longas ou com sons seguidos (*prato*), e peça que ela invente uma palavra."
+    "facil": "Use palavras mais longas ou com sons seguidos (*prato*), e peça que a criança invente uma palavra."
   },
   "materiais": [
     {
@@ -53,9 +53,9 @@
     }
   ],
   "toqueVertente": {
-    "Charlotte Mason": "Faça em lições curtas, uma palavra por vez, e peça que ela diga o que descobriu.",
-    "Montessori": "Use letras móveis só depois que ela já separa os sons com fichas.",
-    "Clássico": "Registre as palavras que ela já segmenta e revise na ordem."
+    "Charlotte Mason": "Faça em momentos curtos, uma palavra por vez, e peça que a criança diga o que descobriu.",
+    "Montessori": "Use letras móveis só depois que a criança já separa os sons com fichas.",
+    "Clássico": "Registre as palavras que a criança já segmenta e revise na ordem."
   },
   "evidencias": [
     {

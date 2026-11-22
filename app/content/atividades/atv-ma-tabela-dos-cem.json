@@ -19,12 +19,12 @@
     {
       "titulo": "Cantar saltando",
       "minutos": 5,
-      "texto": "Cantem de 10 em 10 (*10, 20, 30…*) e de 5 em 5, batendo palmas. Depois, ela faz sozinha."
+      "texto": "Cantem de 10 em 10 (*10, 20, 30…*) e de 5 em 5, batendo palmas. Depois, a criança faz sem ajuda."
     },
     {
       "titulo": "Qual número falta?",
       "minutos": 6,
-      "texto": "Cubra números da tabela com uma moeda de papel e peça que ela diga qual está escondido. Depois, um ditado de 4 números (23, 47, 62, 98)."
+      "texto": "Cubra números da tabela com uma moeda de papel e peça que a criança diga qual está escondido. Depois, um ditado de 4 números (23, 47, 62, 98)."
     },
     {
       "titulo": "Folha: minha tabela",
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Use a tabela só até 50 e conte junto, apontando cada passo.",
-    "facil": "Peça que ela invente uma charada com o padrão da tabela (*“estou na coluna do 5…”*)."
+    "facil": "Peça que a criança invente uma charada com o padrão da tabela (*“estou na coluna do 5…”*)."
   },
   "materiais": [
     {
@@ -61,8 +61,8 @@
   "toqueVertente": {
     "Montessori": "A tábua dos cem e as tábuas de Séguin das dezenas (10, 20, 30…) mostram os padrões: a criança monta a sequência até 100 com cartões.",
     "Waldorf": "Para quem segue a vertente, esse trabalho costuma ficar para o 1º ano, por volta dos 7 anos: conte em saltos de 10 caminhando e batendo palmas, antes de escrever.",
-    "Clássico": "Recitar de 10 em 10 e copiar a tabela, em lições curtas, fixa o padrão.",
-    "Charlotte Mason": "Poucos minutos por dia, com a tabela à vista, e peça que ela explique o padrão que descobriu."
+    "Clássico": "Recitar de 10 em 10 e copiar a tabela, em momentos curtos, fixa o padrão.",
+    "Charlotte Mason": "Poucos minutos por dia, com a tabela à vista, e peça que a criança explique o padrão que descobriu."
   },
   "evidencias": [
     {

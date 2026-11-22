@@ -13,20 +13,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Use só recipientes de plástico inquebrável, maiores que a boca dela.",
+  "cuidados": "Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Use só recipientes de plástico inquebrável, maiores que a boca da criança.",
   "palavrasChave": ["inglês", "english", "o banho", "pour and fill"],
   "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: o banho).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Fill it up. Pour, pour, pour. / It's full! Now it's empty. / Splash! The cup is empty."
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Deixe que ela encha um copo e despeje em outro: “fill it up”, “pour it out”."
+      "texto": "Deixe que a criança encha um copo e despeje em outro: “fill it up”, “pour it out”."
     },
     {
       "titulo": "Passo 2",
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Is it full or empty? / Big cup or small cup? / Does it float or sink?"
     },
     {

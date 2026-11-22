@@ -17,7 +17,7 @@
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Mostre um prato e diga: “redondo”. Passe o dedo na borda dele, com ela."
+      "texto": "Mostre um prato e diga: “redondo”. Passe o dedo na borda dele, com a criança."
     },
     {
       "titulo": "Passo 2",
@@ -52,12 +52,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Procurar formas no mundo mistura movimento, atenção e vocabulário. Dá ao “passeio dentro de casa” um objetivo, útil nos dias em que não dá para sair. Passar o dedo no contorno ajuda ela a sentir a forma."
+      "texto": "Procurar formas no mundo mistura movimento, atenção e vocabulário. Dá ao “passeio dentro de casa” um objetivo, útil nos dias em que não dá para sair. Passar o dedo no contorno ajuda a criança a sentir a forma."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -74,11 +74,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",
@@ -91,6 +91,6 @@
   },
   "ajustes": {
     "dificil": "Para a criança menor: só o prato redondo e uma ou duas coisas redondas pela casa.",
-    "facil": "Para a criança maior: procure também coisas quadradas e compridas e deixe que ela diga o nome da forma antes de você."
+    "facil": "Para a criança maior: procure também coisas quadradas e compridas e deixe que a criança diga o nome da forma antes de você."
   }
 }

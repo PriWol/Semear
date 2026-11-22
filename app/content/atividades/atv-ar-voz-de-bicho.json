@@ -6,7 +6,7 @@
   "idade": [3, 6],
   "duracaoMin": 12,
   "preparoMin": 1,
-  "cuidados": "Sem gritar: o som deve ser alegre, e não forçado. Se a criança ficar rouca, faça uma pausa e beba água. Evite cantar com a garganta cansada ou doente. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
+  "cuidados": "Sem gritar: o som deve ser alegre, e não forçado. Se a criança ficar rouca, faça uma pausa e beba água. Evite cantar com cansaço na garganta ou doente. Volume sempre baixo ou moderado: sons muito altos cansam e podem machucar o ouvido da criança.",
   "objetivo": "A criança canta uma canção inteira e brinca com a voz, mudando a altura e a força.",
   "passos": [
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Escolher",
       "minutos": 3,
-      "texto": "Ela escolhe a voz da última vez que cantam e explica por quê."
+      "texto": "A criança escolhe a voz da última vez que cantam e explica por quê."
     }
   ],
   "observar": {

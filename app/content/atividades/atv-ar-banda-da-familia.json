@@ -17,13 +17,13 @@
     {
       "titulo": "Tocar",
       "minutos": 10,
-      "texto": "Entrem um de cada vez, em cima do pulso. Depois, todos juntos. Ela é a regente, ou escolhe quem entra. Combinem o fim: levantem a mão e todos param.",
+      "texto": "Entrem um de cada vez, em cima do pulso. Depois, todos juntos. A criança é a regente, ou escolhe quem entra. Combinem o fim: levantem a mão e todos param.",
       "fala": "Entra você!"
     },
     {
       "titulo": "Escrever",
       "minutos": 5,
-      "texto": "Ela escreve o seu padrão com símbolos (● para um som curto, ▬ para um longo, um X para o silêncio) e os outros o tocam."
+      "texto": "A criança escreve o seu padrão com símbolos (● para um som curto, ▬ para um longo, um X para o silêncio) e os outros o tocam."
     }
   ],
   "observar": {

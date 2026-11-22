@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Cante antes ou depois da comida, e não com a boca cheia; em “hot”, é só gesto de abanar: nunca ofereça comida quente a ela. Fique junto e com ela sentada.",
+  "cuidados": "Cante antes ou depois da comida, e não com a boca cheia; em “hot”, é só gesto de abanar: nunca ofereça comida quente à criança. Fique junto e com a criança sentada.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "comer e ajudar na mesa"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: comer e ajudar na mesa).",
   "passos": [
     {
       "titulo": "Cantar: Pease porridge hot",
       "minutos": 2,
-      "texto": "O gesto: bata as mãos dela nas suas no ritmo; “hot”, abane como se estivesse quente; “cold”, esfregue os braços. É um jogo de palmas antigo. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "texto": "O gesto: bata as mãos da criança nas suas no ritmo; “hot”, abane como se estivesse quente; “cold”, esfregue os braços. É um jogo de palmas antigo. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
       "fala": "Pease porridge hot, / pease porridge cold, / pease porridge in the pot, / nine days old."
     },
     {
@@ -30,7 +30,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Rimas de comida e de contar (“one a penny, two a penny”) ensinam palavras e números pelo ritmo. Cante antes de comer, quando a criança está esperando: ela passa a esperar cantando. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Rimas de comida e de contar (“one a penny, two a penny”) ensinam palavras e números pelo ritmo. Cante antes de comer, quando a criança está esperando: a criança passa a esperar cantando. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

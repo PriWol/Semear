@@ -6,7 +6,7 @@ import {
   idPista,
   marcosDaPista,
   pistasDaCrianca,
-  posicaoDaLinha,
+  posicaoParaSugestao,
 } from '../src/domain/jornada';
 import {
   atividadesRecentes,
@@ -20,8 +20,8 @@ import {
 import { VERTENTES, type EstadosCrianca, type Vertente } from '../src/domain/tipos';
 import { AGORA, crianca, familia } from './fabricas';
 
-// Teste de propriedades do sugestor com o CONTEÚDO REAL (estória #145, ADR 0036). Não compara ids de
-// atividades (mudam com o conteúdo): confere regras que valem para qualquer conteúdo.
+// Teste de propriedades do sugestor com o CONTEÚDO REAL (estórias #145 e #146, ADR 0036). Não compara ids
+// de atividades (mudam com o conteúdo): confere regras que valem para qualquer conteúdo.
 
 const idx = criarIndice(carregarConteudo());
 const IDADES = [2, 3, 4, 5, 6, 7, 8];
@@ -52,23 +52,37 @@ const dominioDe = (e: Escolha) =>
 function candidatasPossiveis(idade: number, vertente: Vertente, estados: EstadosCrianca) {
   const f = familia({ vertentePrincipal: vertente });
   const recentes = atividadesRecentes([], 'c1', AGORA);
-  const lista: { dominio: string; minutos: number }[] = [];
+  const lista: { dominio: string; minutos: number; dentro: boolean }[] = [];
+  const dentroDaFaixa = (c: Escolha) => c.foraDaFaixa !== true;
   for (const pista of pistasDaCrianca(idx, f, crianca())) {
-    const pos = posicaoDaLinha(idx, pista, estados, idade, vertente);
+    const pos = posicaoParaSugestao(idx, pista, estados, idade, vertente);
     for (const c of candidatas(idx, pista, pos.ativos, f, idade, recentes)) {
-      lista.push({ dominio: idPista(pista).slice(0, 2), minutos: c.atividade.duracaoMin });
+      lista.push({
+        dominio: idPista(pista).slice(0, 2),
+        minutos: c.atividade.duracaoMin,
+        dentro: dentroDaFaixa(c),
+      });
     }
   }
   for (const c of complementares(idx, f, idade, recentes)) {
-    lista.push({ dominio: 'complementar', minutos: c.atividade.duracaoMin });
+    lista.push({
+      dominio: 'complementar',
+      minutos: c.atividade.duracaoMin,
+      dentro: dentroDaFaixa(c),
+    });
   }
   return lista;
 }
 
-/** Existe um par de atividades de domínios diferentes, dentro do teto, que cabe junto em 30 min? */
+/**
+ * Existe um par de atividades de domínios diferentes, dentro do teto e da faixa de idade, que cabe junto em
+ * 30 min? "Quando houver" conta só as que servem à idade: fora da faixa é último recurso (D4).
+ */
 function existeParDeDominios(idade: number, vertente: Vertente, estados: EstadosCrianca): boolean {
   const teto = tetoDeDuracao(idade, vertente);
-  const dentro = candidatasPossiveis(idade, vertente, estados).filter((c) => c.minutos <= teto);
+  const dentro = candidatasPossiveis(idade, vertente, estados).filter(
+    (c) => c.minutos <= teto && c.dentro,
+  );
   return dentro.some((a) =>
     dentro.some((b) => a.dominio !== b.dominio && a.minutos + b.minutos <= 30 * FOLGA),
   );
@@ -157,6 +171,118 @@ describe('sugestor com o conteúdo real: propriedades (§5.6)', () => {
       .map((c) => ({ c, escolhas: proposta(c).proposta.escolhas }))
       .filter((x) => x.escolhas.length > 1 && x.escolhas.some((e) => e.atividade.duracaoMin > 20));
     expect(falhas).toEqual([]);
+  });
+
+  // ---- Etapas 2 e 3 (#146): regra de idade (D4), ponto de partida pela idade (D6) ----
+
+  const comAtividades = (lista: { idade: number; escolhas: Escolha[] }[]) =>
+    lista.flatMap((x) => x.escolhas.map((e) => ({ idade: x.idade, e })));
+  const todasEscolhas = () =>
+    comAtividades(casos.map((c) => ({ idade: c.idade, escolhas: proposta(c).proposta.escolhas })));
+
+  it('nenhuma atividade que começa 2 anos ou mais acima da criança', () => {
+    const falhas = todasEscolhas().filter((x) => x.e.atividade.idade[0] - x.idade >= 2);
+    expect(falhas.map((x) => `${x.idade}: ${x.e.atividade.id}`)).toEqual([]);
+  });
+
+  it('menores de 3 anos nunca recebem atividade cuja faixa começa aos 3 ou mais', () => {
+    const falhas = todasEscolhas().filter((x) => x.idade < 3 && x.e.atividade.idade[0] >= 3);
+    expect(falhas.map((x) => `${x.idade}: ${x.e.atividade.id}`)).toEqual([]);
+  });
+
+  it('fora da faixa de idade em no máximo 3% das sugestões (antes: 9%)', () => {
+    const todas = todasEscolhas();
+    const fora = todas.filter(
+      (x) => x.idade < x.e.atividade.idade[0] || x.idade > x.e.atividade.idade[1],
+    );
+    expect(todas.length).toBeGreaterThan(0);
+    expect(fora.length / todas.length).toBeLessThanOrEqual(0.03);
+  });
+
+  it('o que entra fora da faixa traz nota e nunca passa de 1 ano fora sem estar sozinho na linha', () => {
+    const falhas = todasEscolhas().filter(
+      (x) =>
+        (x.idade < x.e.atividade.idade[0] || x.idade > x.e.atividade.idade[1]) &&
+        (x.e.foraDaFaixa !== true || (x.e.notas ?? []).length === 0),
+    );
+    expect(falhas.map((x) => `${x.idade}: ${x.e.atividade.id}`)).toEqual([]);
+  });
+
+  it('sem sondagem a primeira atividade segue a idade: não é a mesma em todas as idades', () => {
+    for (const vertente of VERTENTES) {
+      const primeiras = IDADES.map((idade) => {
+        const c = {
+          idade,
+          vertente,
+          modo: 'sem sondagem',
+          duracaoMin: 30,
+        } as (typeof casos)[number];
+        return { idade, a: proposta(c).proposta.escolhas[0]?.atividade };
+      });
+      const ids = new Set(primeiras.map((p) => p.a?.id));
+      expect(ids.size, vertente).toBeGreaterThanOrEqual(4);
+      for (const { idade, a } of primeiras) {
+        expect(a, `${vertente} ${idade}`).toBeDefined();
+        // perto da idade: dentro da faixa, ou no máximo 1 ano fora dela
+        expect(idade).toBeGreaterThanOrEqual(a!.idade[0] - 1);
+        expect(idade).toBeLessThanOrEqual(a!.idade[1] + 1);
+        // o "Poema do passeio" (3 a 6 anos) era a primeira sugestão de todas as idades
+        if (idade >= 7) expect(a!.id).not.toBe('atv-fon-poema-passeio');
+      }
+    }
+  });
+
+  it('sem sondagem a sessão avisa que usou a idade como ponto de partida', () => {
+    const c = {
+      idade: 5,
+      vertente: 'Montessori',
+      modo: 'sem sondagem',
+      duracaoMin: 30,
+    } as (typeof casos)[number];
+    const p = proposta(c).proposta;
+    expect(p.linhasPelaIdade.length).toBeGreaterThan(0);
+    expect(p.avisos.join(' ')).toMatch(/ainda não foi posicionada/);
+  });
+
+  it('com a criança posicionada, não há aviso de ponto de partida pela idade', () => {
+    const c = {
+      idade: 5,
+      vertente: 'Montessori',
+      modo: 'posicionada',
+      duracaoMin: 30,
+    } as (typeof casos)[number];
+    expect(proposta(c).proposta.linhasPelaIdade).toEqual([]);
+  });
+
+  it('numa linha só (foco escolhido), a fatia fora da faixa também cai bem abaixo da de antes', () => {
+    // Medição antes da etapa 2: 7,4% (posicionada) e 54,8% (sem sondagem). O que sobra é falta de conteúdo
+    // para 7 e 8 anos (lista de trabalho do Curador, ADR 0036).
+    const f = familia();
+    let total = 0;
+    let fora = 0;
+    for (const modo of ['posicionada', 'sem sondagem'] as const) {
+      for (const idade of IDADES) {
+        const estados =
+          modo === 'posicionada' ? posicionadaPelaIdade(idade, f.vertentePrincipal) : {};
+        for (const pista of pistasDaCrianca(idx, f, crianca())) {
+          const p = proporSessao(idx, {
+            familia: f,
+            crianca: crianca(),
+            idade,
+            estados,
+            historico: [],
+            duracaoMin: 30,
+            foco: [idPista(pista)],
+            agora: AGORA,
+          });
+          for (const e of p.escolhas) {
+            total++;
+            if (idade < e.atividade.idade[0] || idade > e.atividade.idade[1]) fora++;
+          }
+        }
+      }
+    }
+    expect(fora / total).toBeLessThanOrEqual(0.06);
   });
 
   it('com linhas empatadas, a linha que abre a sessão gira de um dia para o outro', () => {

@@ -17,13 +17,13 @@
     {
       "titulo": "Desenhar",
       "minutos": 9,
-      "texto": "Ela desenha a família como quiser, em uma folha grande. Não corrija nem copie; ajude só se ela pedir.",
+      "texto": "A criança desenha a família como quiser, em uma folha grande. Não corrija nem copie; ajude só se a criança pedir.",
       "fala": "Quem você desenhou?"
     },
     {
       "titulo": "Contar",
       "minutos": 3,
-      "texto": "Ela conta quem é cada um. Escreva o nome ao lado de cada pessoa (ou ela mesma, se já escrever) e a data."
+      "texto": "A criança conta quem é cada um. Escreva o nome ao lado de cada pessoa (ou a própria criança, se já escrever) e a data."
     }
   ],
   "observar": {
@@ -31,7 +31,7 @@
     "emDesenvolvimento": ["Faz “cabeçudos” (esperado)", "Não quer desenhar (respeite)"]
   },
   "ajustes": {
-    "dificil": "Peça só uma pessoa, a que ela escolher.",
+    "dificil": "Peça só uma pessoa, a que a criança escolher.",
     "facil": "Peça que acrescente o chão, o sol e a casa."
   },
   "materiais": [
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela contou do desenho?",
+  "perguntaFicha": "O que a criança contou do desenho?",
   "palavrasChave": ["família", "figura humana", "desenho", "retrato"],
   "folhas": [],
   "autoria": {

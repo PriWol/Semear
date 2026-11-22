@@ -12,14 +12,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "Atenção: Apoie o livro de arte no chão ou no seu colo, sem deixá-lo pesado sobre as pernas dela; folhas soltas e recortes não vão à boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Apoie o livro de arte no chão ou no seu colo, sem deixá-lo pesado sobre as pernas da criança; folhas soltas e recortes não vão à boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["quadro", "obra de arte", "Van Gogh", "olhar", "girassóis"],
   "objetivo": "A criança olha uma obra de arte em silêncio por um minuto e conta o que vê, treinando a atenção sem exigir fala nem tarefa.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Abra o livro no quadro e sentem de frente para ele, juntas."
+      "texto": "Abra o livro no quadro e sentem de frente para ele, juntos."
     },
     {
       "titulo": "Passo 2",
@@ -54,12 +54,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Olhar uma imagem por um minuto, em silêncio, treina a atenção sem exigir fala nem tarefa, e apresenta a ela uma obra de verdade, como fazem os museus com os pequenos. Um minuto basta: se ela quiser mais, ótimo; se não, fim."
+      "texto": "Olhar uma imagem por um minuto, em silêncio, treina a atenção sem exigir fala nem tarefa, e apresenta à criança uma obra de verdade, como fazem os museus com os pequenos. Um minuto basta: se a criança quiser mais, ótimo; se não, fim."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

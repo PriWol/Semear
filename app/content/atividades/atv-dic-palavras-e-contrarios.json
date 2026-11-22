@@ -12,7 +12,7 @@
     {
       "titulo": "O que é?",
       "minutos": 5,
-      "texto": "Escolha objetos de casa e pergunte, um de cada vez: “o que é uma bola?”, “o que é um rio?”. Aceite qualquer jeito: para que serve, como é, de que é feito, ou a que grupo pertence. Se ela ficar sem palavras, ofereça uma pista (“serve para…?”).",
+      "texto": "Escolha objetos de casa e pergunte, um de cada vez: “o que é uma bola?”, “o que é um rio?”. Aceite qualquer jeito: para que serve, como é, de que é feito, ou a que grupo pertence. Se a criança ficar sem palavras, ofereça uma pista (“serve para…?”).",
       "fala": "O que é uma bola?"
     },
     {
@@ -24,7 +24,7 @@
     {
       "titulo": "Sua vez",
       "minutos": 2,
-      "texto": "Troquem: ela inventa uma frase “se… então…” para você completar, e erra de propósito para ela corrigir."
+      "texto": "Troquem: a criança inventa uma frase “se… então…” para você completar, e erra de propósito, para ser corrigido."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual palavra ela explicou do jeito mais engraçado?",
+  "perguntaFicha": "Qual palavra a criança explicou do jeito mais engraçado?",
   "palavrasChave": ["definir", "palavras", "vocabulário", "analogia", "oposto", "o que é"],
   "folhas": [],
   "autoria": {

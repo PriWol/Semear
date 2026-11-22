@@ -6,29 +6,29 @@
   "idade": [7, 8],
   "duracaoMin": 20,
   "preparoMin": 3,
-  "cuidados": "Atenção: sessão de até 20 minutos, sem cronômetro: elogie o progresso, e não a velocidade. Se a criança ficar tensa, leia junto com ela. Evite ler diante de muita gente.",
+  "cuidados": "Atenção: sessão de até 20 minutos, sem cronômetro: elogie o progresso, e não a velocidade. Se a criança ficar tensa, leia junto. Evite ler diante de muita gente.",
   "objetivo": "A criança lê um texto curto de 3 a 5 frases em ritmo contínuo, sem soletrar, com poucas paradas.",
   "passos": [
     {
-      "titulo": "Você lê, ela escuta",
+      "titulo": "Você lê, a criança escuta",
       "minutos": 3,
-      "texto": "Leia uma parlenda que ela conheça (*A galinha do vizinho / bota ovo amarelinho...*) ou um poema curto, apontando as palavras. Depois, ela acompanha com o dedo."
+      "texto": "Leia uma parlenda que a criança conheça (*A galinha do vizinho / bota ovo amarelinho...*) ou um poema curto, apontando as palavras. Depois, a criança acompanha com o dedo."
     },
     {
       "titulo": "Eco",
       "minutos": 6,
-      "texto": "Você lê uma frase em voz alta e ela repete, imitando o ritmo, como um eco. Depois, ela lê junto com você, e por fim sozinha.",
+      "texto": "Você lê uma frase em voz alta e a criança repete, imitando o ritmo, como um eco. Depois, a criança lê junto com você, e por fim sem ajuda.",
       "fala": "Leia como se estivesse contando."
     },
     {
       "titulo": "Relendo",
       "minutos": 6,
-      "texto": "Leiam o mesmo texto três ou quatro vezes (cada vez, mais fluente). Ela reparou em quais palavras tropeçou? Treinem só essas."
+      "texto": "Leiam o mesmo texto três ou quatro vezes (cada vez, mais fluente). A criança reparou em quais palavras tropeçou? Treinem só essas."
     },
     {
       "titulo": "Gravar e ouvir",
       "minutos": 5,
-      "texto": "Com a permissão dela, grave a leitura no celular e ouçam juntos (a gravação fica só no aparelho). Pergunte: *“O que soou bem?”*"
+      "texto": "Com a permissão da criança, grave a leitura no celular e ouçam juntos (a gravação fica só no aparelho). Pergunte: *“O que soou bem?”*"
     }
   ],
   "observar": {
@@ -71,7 +71,7 @@
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Em quais palavras ela tropeçou?",
+  "perguntaFicha": "Em quais palavras a criança tropeçou?",
   "folhas": [
     {
       "tipo": "desenho",

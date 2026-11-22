@@ -13,14 +13,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias.",
+  "cuidados": "Na hora de comer, **fique junto e com a criança sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias.",
   "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "apple or banana?"],
   "objetivo": "Nomear coisas em inglês com o objeto à vista e escolhendo entre duas opções (unidade: comer e ajudar na mesa).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Apple or banana? You choose. / Mmm, sweet! It's so soft. / More, or all done?"
     },
     {
@@ -46,18 +46,18 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Which one do you want? / Is it sweet? / More or all done?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Procure a fruta nos livros: “where is the apple?”. Corte uma fruta e mostre as sementes. Duas frutas, e peça que ela “dê” uma ao ursinho."
+      "texto": "Procure a fruta nos livros: “where is the apple?”. Corte uma fruta e mostre as sementes. Duas frutas, e peça que a criança “dê” uma ao ursinho."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Escolher entre duas coisas é o que dá algum controle à criança, e as palavras de fruta aprendidas com a fruta na mão ficam. Ela pode dizer “não” a uma delas, e tudo bem: dê tempo e ofereça de novo depois, sem forçar. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Escolher entre duas coisas é o que dá algum controle à criança, e as palavras de fruta aprendidas com a fruta na mão ficam. A criança pode dizer “não” a uma delas, e tudo bem: dê tempo e ofereça de novo depois, sem forçar. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

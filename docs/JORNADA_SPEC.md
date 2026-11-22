@@ -347,8 +347,11 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 ### 5.3 Ritmo da vertente
 - Se `idadeIntroducao[vertentePrincipal]` for maior que a idade da criança, o marco aparece com um aviso: *"Na pedagogia Waldorf, este marco costuma ser introduzido por volta dos 7 anos."* O app não bloqueia nada.
+- **Na sugestão de sessão (ADR 0036, adendo):** a atividade cujos marcos ativos são todos anteriores a essa idade perde pontos (-4) e a proposta repete o aviso na própria atividade. Basta um marco que a vertente já aceita para a atividade não ser penalizada.
 
 ### 5.4 Sondagem inicial (adaptativa, por linha)
+**Ponto de partida pela idade (D6, #146).** O mesmo critério vale para a **sugestão de sessão** quando a criança **não tem nenhum registro** numa linha (nem sondagem, nem "Está aqui", nem estado marcado): o gerador usa um ponto de partida **provisório**, só em memória. Regra: o marco com `idadeTipica` mais próxima da idade, preferindo o **último marco com idade típica até 6 meses abaixo** (ou igual) da idade, para errar para o lado fácil; no empate, o mais fácil. Os marcos anteriores contam como consolidados **só nesse cálculo**: **nada é gravado**, e a jornada continua mostrando o primeiro marco como "próximo" até a família posicionar a criança. A tela da sessão avisa: *"X ainda não foi posicionada em <linhas>: usamos a idade (N anos) como ponto de partida."* Na jornada, quando o marco "trabalhando agora" tem `idadeTipica` mais de **1,5 ano acima** da idade da criança, aparece *"Ainda cedo para esta linha"*, sem bloquear.
+
 1. Para cada linha, comece pelo marco cuja `idadeTipica` está mais próxima da idade da criança.
 2. Se ele estiver **Consolidado**, suba 1 ou 2 marcos. Se **Não observado**, desça.
 3. Pare quando achar a fronteira, com **3 a 5 itens por linha** e no máximo cerca de 20 minutos por domínio.
@@ -362,10 +365,20 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 ### 5.6 Gerador de sessão
 **Entradas:** crianças (1 ou mais), duração (ex.: 20, 40 ou 60 min), foco (linhas escolhidas ou "equilibrado").
 
-**Algoritmo (v2, etapa 1; ADR 0036):**
+**Algoritmo (v2, etapas 1 a 3; ADR 0036 e adendo):**
 1. Linhas candidatas = o foco do pai, ou as linhas com menos tempo trabalhado nas últimas 2 semanas. Se várias empatam (criança sem histórico), a ordem **gira por uma semente determinística** (data + id da linha), e não pela ordem do arquivo.
-2. Para cada linha, pegue os marcos ativos e as atividades ligadas a eles.
-3. Pontue cada atividade: vertente principal (+3), inspiração (+1), faixa de idade compatível (+2), sem repetição nos últimos 14 dias (+2), materiais já disponíveis (+1).
+2. Para cada linha, pegue os marcos ativos e as atividades ligadas a eles. Linha sem nenhum registro da criança parte do **ponto de partida pela idade** (§5.4), sem gravar nada.
+3. Pontue cada atividade: vertente principal (+3), inspiração (+1), sem repetição nos últimos 14 dias (+2), materiais já disponíveis (+1) e a **idade como peso graduado** (D4):
+   - **dentro da faixa** `idade [mín, máx]`: +2 e um bônus de até +0,5 pela proximidade ao centro da faixa (desempate);
+   - **criança mais velha que o máximo**: -2 por ano até 2 anos; passando disso, -6;
+   - **atividade que começa acima da criança**: -3 por ano de diferença; **excluída** quando começa **2 anos ou mais acima**;
+   - **menores de 3 anos nunca recebem** atividade cuja faixa começa aos 3 anos ou mais, mesmo sem alternativa (ADR 0021);
+   - **fora da faixa só entra se não houver alternativa dentro dela na linha**: mais de 1 ano fora, nunca havendo alternativa; até 1 ano fora, só se a atividade tem o `ajustes` do lado certo (`dificil` para a criança menor, `facil` para a maior), e a proposta mostra a nota *"Versão mais simples: ..."* ou *"Versão mais exigente: ..."*. Sem alternativa e sem ajuste, entra com *"Pouco comum para esta idade"*;
+   - **fora da faixa nunca é "ideal"**: entra depois das que servem à idade (exceto para completar a meta de 2 domínios);
+   - se **todas** as candidatas de uma linha ficam fora, a linha vira **lacuna** (a tela avisa "sem atividade adequada para N anos") e nenhuma atividade é forçada;
+   - as complementares (§3.0) seguem a mesma regra (antes era um filtro rígido);
+   - marco ativo antes da `idadeIntroducao` da vertente principal: -4 e aviso na atividade (§5.3).
+   O botão **Trocar** só oferece atividades que passam por essas regras e cabem no teto de duração da idade.
 4. **Preencha a duração** (folga de cerca de 10%) **em rodadas por domínio**: no máximo uma atividade por domínio em cada rodada, o domínio com menos atividades na sessão vai primeiro e, dentro dele, a linha menos escolhida. Em cada vez entra a **melhor pontuada que caiba no tempo que resta**, dentro do **teto de duração da idade** e sem passar de **metade do tempo** da sessão (30% para menores de 4 anos, para dar 4 a 6 blocos curtos em 30 min). Uma atividade que passa da metade só entra depois de outra.
    - **Teto por atividade:** 2 anos até 10 min, 3 anos 12, 4 anos 15, 5 a 6 anos 20, 7 a 8 anos 25; Charlotte Mason até 20 em qualquer idade.
    - **A primeira atividade também precisa caber.** Se nenhuma cabe, entra a mais curta e o app avisa ("mais do que os M min escolhidos"); o gerador troca a atividade antes de avisar.
@@ -376,7 +389,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 7. Sugira **1 livro** da curadoria ligado aos marcos da sessão.
 8. O pai revisa, troca o que quiser e gera o pacote.
 
-*Ainda por vir (#146):* regra de idade graduada (atividade a 2 anos ou mais acima da criança sai; menores de 3 anos nunca recebem atividade que começa aos 3), ponto de partida pela idade para linha sem registro, aviso da `idadeIntroducao` da vertente e ritmo calma, ativa, calma.
+*Ainda por vir:* ritmo calma, ativa, calma (campo `energia`, depende de o Curador marcar as atividades; #146, etapa 4).
 
 ### 5.7 Pacote impresso da sessão
 1. **Roteiro do educador** (1 ou 2 páginas): objetivo, passo a passo, falas sugeridas, "o que observar" por marco.

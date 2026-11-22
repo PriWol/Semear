@@ -13,13 +13,13 @@
   "idade": [2, 6],
   "duracaoMin": 10,
   "preparoMin": 2,
-  "cuidados": "Espaço livre de quinas e de tapetes soltos; meias antiderrapantes ou pés descalços em chão firme. A música termina forte: baixe o volume. É suspense de brincadeira; se ela se assustar, pare. Fique perto.",
+  "cuidados": "Espaço livre de quinas e de tapetes soltos; meias antiderrapantes ou pés descalços em chão firme. A música termina forte: baixe o volume. É suspense de brincadeira; se a criança se assustar, pare. Fique perto.",
   "objetivo": "A criança **percebe uma música que acelera e cresce** e a acompanha com o corpo, do passo de pontinha à corrida, parando no último acorde.",
   "passos": [
     {
       "titulo": "Combinar",
       "minutos": 2,
-      "texto": "Explique: a música é de suspense; vocês vão andar na ponta dos pés. Deixe que ela decida se quer ser a Chapeuzinho ou o Lobo."
+      "texto": "Explique: a música é de suspense; vocês vão andar na ponta dos pés. Deixe a criança decidir se quer ser a Chapeuzinho ou o Lobo."
     },
     {
       "titulo": "Escutar e andar",
@@ -45,7 +45,7 @@
   },
   "ajustes": {
     "dificil": "Só escute e bata palmas cada vez mais depressa.",
-    "facil": "Peça que ela invente como o Lobo anda no começo e no fim da música."
+    "facil": "Peça que a criança invente como o Lobo anda no começo e no fim da música."
   },
   "materiais": [
     {
@@ -58,7 +58,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela fez quando a música ficou mais rápida?",
+  "perguntaFicha": "O que a criança fez quando a música ficou mais rápida?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -28,7 +28,7 @@
     {
       "titulo": "O mapa da horta",
       "minutos": 4,
-      "texto": "Com o dedo, ela faz o caminho do Pedro seguindo os números: da toca à porteira, aos rabanetes, ao galpão, ao lago e ao portão. *“O que fica perto do lago?”* · *“qual lugar é mais longe da toca?”*. Se quiser, desenhem o mapa da casa de vocês."
+      "texto": "Com o dedo, a criança faz o caminho do Pedro seguindo os números: da toca à porteira, aos rabanetes, ao galpão, ao lago e ao portão. *“O que fica perto do lago?”* · *“qual lugar é mais longe da toca?”*. Se quiser, desenhem o mapa da casa de vocês."
     }
   ],
   "observar": {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Só dentro e fora, com a caixa e a pelúcia.",
-    "facil": "Peça que ela esconda o coelho e dê pistas com palavras de lugar."
+    "facil": "Peça que a criança esconda o coelho e dê pistas com palavras de lugar."
   },
   "materiais": [
     {
@@ -70,10 +70,10 @@
     },
     {
       "texto": "Percorreu o mapa com o dedo",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavras de lugar ela usou?",
+  "perguntaFicha": "Que palavras de lugar a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

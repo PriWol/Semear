@@ -6,7 +6,7 @@
   "idade": [3, 5],
   "duracaoMin": 20,
   "preparoMin": 2,
-  "cuidados": "Atenção: fique junto da criança o tempo todo, principalmente aos 3 anos. Não é teste: se ela não completar o verso, complete você e siga a brincadeira, sem cobrar. Giz de cera e lápis só com supervisão, longe da boca.",
+  "cuidados": "Atenção: fique junto da criança o tempo todo, principalmente aos 3 anos. Sem cobrança: se a criança não completar o verso, complete você e siga a brincadeira, sem cobrar. Giz de cera e lápis só com supervisão, longe da boca.",
   "objetivo": "A criança se diverte com o **som** das palavras e completa versos conhecidos, percebendo quando uma rima não combina.",
   "passos": [
     {
@@ -18,7 +18,7 @@
     {
       "titulo": "Falta uma palavra",
       "minutos": 6,
-      "texto": "Recite de novo e **pare antes da última palavra** de cada verso, com cara de espera. Deixe a criança completar. Se ela não disser, complete você, sem cobrar, e repita."
+      "texto": "Recite de novo e **pare antes da última palavra** de cada verso, com cara de espera. Deixe a criança completar. Se a criança não disser, complete você, sem cobrar, e repita."
     },
     {
       "titulo": "A rima trocada",
@@ -29,7 +29,7 @@
     {
       "titulo": "Folha: desenho da parlenda",
       "minutos": 5,
-      "texto": "A criança desenha o que mais gostou da parlenda. Se quiser, escreva embaixo o que ela contar."
+      "texto": "A criança desenha o que mais gostou da parlenda. Se quiser, escreva embaixo o que a criança contar."
     }
   ],
   "observar": {
@@ -41,7 +41,7 @@
   },
   "ajustes": {
     "dificil": "Use só um verso curto e repita todos os dias da semana antes de pedir que complete.",
-    "facil": "Peça que ela invente um gesto para cada verso, ou recite uma parlenda mais longa (“A galinha do vizinho…”)."
+    "facil": "Peça que a criança invente um gesto para cada verso, ou recite uma parlenda mais longa (“A galinha do vizinho…”)."
   },
   "materiais": [
     {
@@ -56,13 +56,13 @@
   "toqueVertente": {
     "Waldorf": "Faça como um ritual: mesma parlenda, mesmos gestos, no mesmo horário. A repetição é o centro.",
     "Clássico": "Recitem juntos até saberem de cor, de modo que o poema fique guardado.",
-    "Charlotte Mason": "Mantenha curto e termine antes que ela se canse; no dia seguinte, comece pelo que ela lembra.",
+    "Charlotte Mason": "Mantenha curto e termine antes que a criança se canse; no dia seguinte, comece pelo que a criança lembra.",
     "Religioso": "Se a família tem versos ou cantigas de tradição própria, use-os no lugar da parlenda."
   },
   "evidencias": [
     {
       "texto": "Completou o verso",
-      "resposta": "☐ sozinha   ☐ com ajuda   ☐ ainda não"
+      "resposta": "☐ sem ajuda   ☐ com ajuda   ☐ ainda não"
     },
     {
       "texto": "Estranhou a rima trocada",

@@ -6,7 +6,7 @@ import { idadeEmAnos } from '../domain/datas';
 import { criancaPadrao } from '../domain/criancas';
 import { marcosVisiveis } from '../domain/conteudo';
 import { IDIOMAS } from '../domain/tipos';
-import { idPista, pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
+import { idPista, pistasDaCrianca, posicaoParaSugestao } from '../domain/jornada';
 import {
   atividadesRecentes,
   candidatas,
@@ -16,8 +16,10 @@ import {
   DURACOES,
   montarSessaoDaProposta,
   proporSessao,
+  opcoesDeTroca,
   proximaAlternativa,
   sugerirLivro,
+  tetoDeDuracao,
   type Escolha,
   type PropostaSessao,
 } from '../domain/sessao';
@@ -44,7 +46,10 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
   const estados = await ctx.repo.estados(crianca.id);
   const historico = await ctx.repo.sessoes(crianca.id);
   const pistasComAtivos = pistasDaCrianca(ctx.idx, familia, crianca)
-    .map((p) => ({ p, pos: posicaoDaLinha(ctx.idx, p, estados, idade, familia.vertentePrincipal) }))
+    .map((p) => ({
+      p,
+      pos: posicaoParaSugestao(ctx.idx, p, estados, idade, familia.vertentePrincipal),
+    }))
     .filter((x) => x.pos.ativos.length > 0);
 
   // Estado local da página: a proposta pode ser ajustada antes de gerar o pacote.
@@ -63,6 +68,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
     }));
   };
 
+  const teto = tetoDeDuracao(idade, familia.vertentePrincipal);
   const vistaProposta = (p: PropostaSessao): HtmlSeguro =>
     html` <section class="cartao" id="proposta">
       <h2>Sugestão para ${crianca.nome} · ~${p.minutos} min</h2>
@@ -72,13 +78,16 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
           ? html`<p>Nenhuma atividade publicada para os marcos ativos escolhidos.</p>`
           : html`<ol class="escolhas">
               ${p.escolhas.map((e, i) => {
-                const alts = alternativas(e).filter(
-                  (a) => !p.escolhas.some((x) => x.atividade.id === a.atividade.id),
+                // "Trocar" só oferece o que respeita o teto de duração da idade (ADR 0036).
+                const ocupadas = new Set(p.escolhas.map((x) => x.atividade.id));
+                const alts = opcoesDeTroca(alternativas(e), e.atividade.id, ocupadas, teto).filter(
+                  (a) => a.atividade.id !== e.atividade.id,
                 );
                 return html`<li>
                   <div>
                     <b>${e.atividade.titulo}</b>
                     <span class="nota">${e.atividade.duracaoMin} min</span>
+                    ${(e.notas ?? []).map((n) => html`<p class="aviso-marco">${icone('clock')} ${n}</p>`)}
                     <p class="nota">
                       ${
                         marcosVisiveis(ctx.idx, e.atividade).length
@@ -112,6 +121,7 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
                     html`<li>
                       ${l.nomeLinha}:
                       ${l.marcos.map((m) => ctx.idx.marco(m)?.titulo ?? m).join(', ')}
+                      ${l.motivo === 'idade' ? '(nenhuma atividade serve à idade)' : ''}
                     </li>`,
                 )}
               </ul>
@@ -282,7 +292,12 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
           const atual = escolhas[i];
           if (!atual) return;
           const ocupadas = new Set(escolhas.map((x) => x.atividade.id));
-          const proxima = proximaAlternativa(alternativas(atual), atual.atividade.id, ocupadas);
+          const proxima = proximaAlternativa(
+            alternativas(atual),
+            atual.atividade.id,
+            ocupadas,
+            teto,
+          );
           if (proxima) escolhas[i] = proxima;
         } else if (alvo.dataset.acao === 'gerar') {
           // Evita duas sessões com o mesmo código num clique duplo.
