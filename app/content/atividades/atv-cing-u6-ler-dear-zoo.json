@@ -11,25 +11,25 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Livro com abas: fique junto e deixe que ela abra as abas com o dedo, sem puxar, para que não rasgue e leve pedaços à boca.",
+  "cuidados": "Livro com abas: fique junto e deixe que a criança abra as abas com o dedo, sem puxar, para que não rasgue e leve pedaços à boca.",
   "palavrasChave": ["inglês", "english", "livro", "dear zoo"],
   "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "What's in the box? Let's look. / A lion! Roar! Can you roar? / It's too big. Send it back."
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Sentem com o livro e deixe que ela abra as abas, uma a uma."
+      "texto": "Sentem com o livro e deixe que a criança abra as abas, uma a uma."
     },
     {
       "titulo": "Passo 2",
       "minutos": 3,
-      "texto": "Antes de abrir, pergunte: “what's in the box?”. Deixe que ela adivinhe."
+      "texto": "Antes de abrir, pergunte: “what's in the box?”. Deixe que a criança adivinhe."
     },
     {
       "titulo": "Passo 3",
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "What's in the box? / Is it big or small? / What does it say?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Faça o som e o movimento de cada bicho. Esconda os bichos de pelúcia na caixa e adivinhem. Leia até o terceiro bicho, se ela se cansar."
+      "texto": "Faça o som e o movimento de cada bicho. Esconda os bichos de pelúcia na caixa e adivinhem. Leia até o terceiro bicho, se a criança se cansar."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

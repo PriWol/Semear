@@ -17,7 +17,7 @@
     {
       "titulo": "Observar",
       "minutos": 5,
-      "texto": "Hoje, olhem o céu e ela desenha o símbolo do dia. Nos próximos dias, repitam na mesma hora: leva só 2 minutos.",
+      "texto": "Hoje, olhem o céu e a criança desenha o símbolo do dia. Nos próximos dias, repitam na mesma hora: leva só 2 minutos.",
       "fala": "Como está o tempo hoje?"
     },
     {
@@ -61,7 +61,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela percebeu nos dias?",
+  "perguntaFicha": "O que a criança percebeu nos dias?",
   "palavrasChave": ["calendário", "estações", "clima", "registro"],
   "folhas": [],
   "autoria": {

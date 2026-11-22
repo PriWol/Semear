@@ -12,13 +12,13 @@
     {
       "titulo": "Escolher",
       "minutos": 2,
-      "texto": "Ofereça duas peças folgadas e deixe que ela escolha. Marque a frente da camiseta com um adesivo pequeno.",
+      "texto": "Ofereça duas peças folgadas e deixe que a criança escolha. Marque a frente da camiseta com um adesivo pequeno.",
       "fala": "Qual você quer?"
     },
     {
       "titulo": "Vestir",
       "minutos": 6,
-      "texto": "Comece pelo mais fácil: meias e casaco aberto. Depois a camiseta: mostre “a cabeça passa pelo buraco grande”, depois o braço de cada vez. Ajude só quando ela pedir, e devagar. Sem pressa.",
+      "texto": "Comece pelo mais fácil: meias e casaco aberto. Depois a camiseta: mostre “a cabeça passa pelo buraco grande”, depois o braço de cada vez. Ajude só quando a criança pedir, e devagar. Sem pressa.",
       "fala": "Agora o braço"
     },
     {
@@ -60,7 +60,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual peça ela mais gostou de vestir?",
+  "perguntaFicha": "Qual peça a criança mais gostou de vestir?",
   "palavrasChave": ["vestir", "roupa", "camiseta", "meias", "autonomia"],
   "folhas": [],
   "autoria": {

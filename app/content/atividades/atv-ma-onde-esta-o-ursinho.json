@@ -12,13 +12,13 @@
     {
       "titulo": "Esconde-esconde do ursinho",
       "minutos": 4,
-      "texto": "Mostre o ursinho e esconda-o *embaixo* da cadeira, enquanto a criança vê. Diga: *“o ursinho está embaixo da cadeira!”* e deixe que ela ache. Repita com *dentro da caixa* e *em cima da mesa*.",
+      "texto": "Mostre o ursinho e esconda-o *embaixo* da cadeira, enquanto a criança vê. Diga: *“o ursinho está embaixo da cadeira!”* e deixe que a criança ache. Repita com *dentro da caixa* e *em cima da mesa*.",
       "fala": "Onde está o ursinho?"
     },
     {
-      "titulo": "Ela esconde, você procura",
+      "titulo": "A criança esconde, você procura",
       "minutos": 3,
-      "texto": "Troque: a criança esconde o ursinho e você dá palpites errados (*“em cima da mesa?”*) para ela corrigir com a palavra certa: *“não, dentro da caixa!”*."
+      "texto": "Troque: a criança esconde o ursinho e você dá palpites errados (*“em cima da mesa?”*) para ser corrigido com a palavra certa: *“não, dentro da caixa!”*."
     },
     {
       "titulo": "Com o corpo",
@@ -58,7 +58,7 @@
   "toqueVertente": {
     "Montessori": "O ambiente preparado, em que cada coisa tem seu lugar, ensina o espaço pelo uso: a criança guarda o material *ao lado de* e *em cima da* prateleira.",
     "Waldorf": "Jogos de roda e de movimento (passar por baixo, pelo meio, ao redor) ensinam a posição com o corpo, antes das palavras.",
-    "Charlotte Mason": "Faça em lições curtas, em situações reais da casa, com palavras bem ditas."
+    "Charlotte Mason": "Faça em momentos curtos, em situações reais da casa, com palavras bem ditas."
   },
   "evidencias": [
     {

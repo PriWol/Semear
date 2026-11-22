@@ -17,13 +17,13 @@
     {
       "titulo": "Desenhar",
       "minutos": 8,
-      "texto": "Ela desenha uma figura para cada dia em um cartão e prende em fila, da segunda ao domingo.",
+      "texto": "A criança desenha uma figura para cada dia em um cartão e prende em fila, da segunda ao domingo.",
       "fala": "E terça-feira, o que fazemos?"
     },
     {
       "titulo": "Hoje",
       "minutos": 3,
-      "texto": "Todo dia, pela manhã, ela aponta o cartão do dia e conta o que farão. Comece hoje."
+      "texto": "Todo dia, pela manhã, a criança aponta o cartão do dia e conta o que farão. Comece hoje."
     }
   ],
   "observar": {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Faça só 3 dias, com as atividades mais marcantes.",
-    "facil": "Peça que ela escreva o nome de cada dia."
+    "facil": "Peça que a criança escreva o nome de cada dia."
   },
   "materiais": [
     {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual dia da semana ela mais espera?",
+  "perguntaFicha": "Qual dia da semana a criança mais espera?",
   "palavrasChave": ["semana", "ritmo", "rotina", "waldorf"],
   "folhas": [],
   "autoria": {

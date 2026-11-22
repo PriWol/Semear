@@ -6,7 +6,7 @@
   "idade": [7, 8],
   "duracaoMin": 25,
   "preparoMin": 10,
-  "cuidados": "Atenção: use textos curtos e adequados à idade (sem notícias com violência). Tesoura só com ponta redonda. Se ela não souber o gênero, mostre as pistas, sem cobrar.",
+  "cuidados": "Atenção: use textos curtos e adequados à idade (sem notícias com violência). Tesoura só com ponta redonda. Se a criança não souber o gênero, mostre as pistas, sem cobrar.",
   "objetivo": "A criança diz o assunto de um texto e o tipo dele (conto, poema, receita, notícia, bilhete), resumindo em uma frase.",
   "passos": [
     {
@@ -17,18 +17,18 @@
     {
       "titulo": "Para que serve?",
       "minutos": 6,
-      "texto": "Leiam cada texto e pergunte: *“Para que serve? Como a gente reconhece?”* (poema tem versos e rimas; receita tem lista e passos; conto tem personagens). Ela agrupa os textos em montinhos.",
+      "texto": "Leiam cada texto e pergunte: *“Para que serve? Como a gente reconhece?”* (poema tem versos e rimas; receita tem lista e passos; conto tem personagens). A criança agrupa os textos em montinhos.",
       "fala": "Para que serve este texto?"
     },
     {
       "titulo": "Resumir em uma frase",
       "minutos": 8,
-      "texto": "Para cada texto, ela diz em uma frase **de que trata** (*“é uma receita de bolo”*). Escreva as frases em tiras e ela cola do lado do texto."
+      "texto": "Para cada texto, a criança diz em uma frase **de que trata** (*“é uma receita de bolo”*). Escreva as frases em tiras e a criança cola do lado do texto."
     },
     {
       "titulo": "Adivinhe o gênero",
       "minutos": 5,
-      "texto": "Leia um trecho de texto (sem mostrar) e ela diz o gênero e as pistas que a fizeram pensar assim."
+      "texto": "Leia um trecho de texto (sem mostrar) e a criança diz o gênero e as pistas que a fizeram pensar assim."
     }
   ],
   "observar": {
@@ -53,7 +53,7 @@
     }
   ],
   "toqueVertente": {
-    "Clássico": "Dê nome a cada gênero e peça que ela recite uma característica de cada um.",
+    "Clássico": "Dê nome a cada gênero e peça que a criança recite uma característica de cada um.",
     "Charlotte Mason": "Use textos de livros vivos e jornais infantis, e ligue com uma narração do que entendeu."
   },
   "evidencias": [
@@ -66,7 +66,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que gênero ela reconheceu com mais facilidade?",
+  "perguntaFicha": "Que gênero a criança reconheceu com mais facilidade?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

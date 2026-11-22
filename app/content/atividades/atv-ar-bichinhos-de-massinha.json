@@ -17,13 +17,13 @@
     {
       "titulo": "Modelar",
       "minutos": 10,
-      "texto": "Ela faz o bichinho como quiser (bolinhas, cobrinhas, bolinhas achatadas). Pergunte: “Como é o corpo? E as patas?”. Não faça por ela.",
+      "texto": "A criança faz o bichinho como quiser (bolinhas, cobrinhas, bolinhas achatadas). Pergunte: “Como é o corpo? E as patas?”. Não faça por a criança.",
       "fala": "Que bicho é esse?"
     },
     {
       "titulo": "Apresentar",
       "minutos": 3,
-      "texto": "Ela apresenta o bichinho e conta o nome e onde mora. Deixe secar ao ar, se for argila ou massa de sal."
+      "texto": "A criança apresenta o bichinho e conta o nome e onde mora. Deixe secar ao ar, se for argila ou massa de sal."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que bichinho ela fez?",
+  "perguntaFicha": "Que bichinho a criança fez?",
   "palavrasChave": ["massinha", "bichinhos", "modelar", "esculpir"],
   "folhas": [],
   "autoria": {

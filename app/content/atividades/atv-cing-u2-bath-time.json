@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Teste a temperatura no pulso, esvazie a banheira ao terminar e nunca saia do banheiro, nem para atender o telefone.",
+  "cuidados": "Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Teste a temperatura no pulso, esvazie a banheira ao terminar e nunca saia do banheiro, nem para atender o telefone.",
   "palavrasChave": ["inglês", "english", "o banho", "bath time!"],
   "objetivo": "Ouvir e usar inglês num momento fixo do dia (o banho), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "It's bath time! Let's go to the bathroom. / In you go. The water is warm. Splash! / Bubbles or no bubbles? You choose."
     },
     {
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Is the water warm? / Where is the duck? / Do you want the soap?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Um só objeto novo por dia: hoje, “soap”. Cante a rima da unidade ao encher a banheira. Deixe que ela escolha a ordem: “wash your face or your feet first?”."
+      "texto": "Um só objeto novo por dia: hoje, “soap”. Cante a rima da unidade ao encher a banheira. Deixe que a criança escolha a ordem: “wash your face or your feet first?”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

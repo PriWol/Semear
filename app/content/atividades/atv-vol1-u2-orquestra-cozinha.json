@@ -24,12 +24,12 @@
     {
       "titulo": "Forte e fraquinho",
       "minutos": 3,
-      "texto": "Uma batida forte, uma de leve: *tum, tim, tum, tim*. Se ela estiver cansada, volte ao pulso simples."
+      "texto": "Uma batida forte, uma de leve: *tum, tim, tum, tim*. Se a criança sentir cansaço, volte ao pulso simples."
     },
     {
       "titulo": "Silêncio",
       "minutos": 2,
-      "texto": "Três batidas e… *psiu!*: as mãos param no ar. Deixe que ela seja a regente: ela mostra a mão aberta para parar.",
+      "texto": "Três batidas e… *psiu!*: as mãos param no ar. Deixe a criança reger, mostrando a mão aberta para parar.",
       "fala": "Quem manda parar?"
     }
   ],
@@ -62,7 +62,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Por quanto tempo ela manteve o pulso?",
+  "perguntaFicha": "Por quanto tempo a criança manteve o pulso?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

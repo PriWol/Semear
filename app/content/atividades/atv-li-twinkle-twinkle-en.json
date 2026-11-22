@@ -17,7 +17,7 @@
     {
       "titulo": "Cantar",
       "minutos": 5,
-      "texto": "Cantem juntos, 3 ou 4 vezes, com os gestos. Na última, cante só o começo e deixe que ela complete o final.",
+      "texto": "Cantem juntos, 3 ou 4 vezes, com os gestos. Na última, cante só o começo e deixe que a criança complete o final.",
       "fala": "Twinkle, twinkle…"
     },
     {
@@ -50,7 +50,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais partes ela cantou?",
+  "perguntaFicha": "Quais partes a criança cantou?",
   "palavrasChave": ["canção", "twinkle twinkle", "inglês", "gestos", "nursery rhymes"],
   "idioma": "en",
   "folhas": [],

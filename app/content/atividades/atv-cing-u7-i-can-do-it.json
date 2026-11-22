@@ -20,13 +20,13 @@
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Do you want to try? You can do it. / Do you need help? Yes or no? / You did it! All by yourself!"
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Escolha uma tarefa que ela consegue com pouca ajuda e diga: “do you want to try?”."
+      "texto": "Escolha uma tarefa que a criança consegue com pouca ajuda e diga: “do you want to try?”."
     },
     {
       "titulo": "Passo 2",
@@ -36,7 +36,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 2,
-      "texto": "Se ela pedir, ajude só um pouco: “do you need help?”; deixe que ela diga “yes” ou “no”."
+      "texto": "Se a criança pedir, ajude só um pouco: “do you need help?”; deixe que a criança diga “yes” ou “no”."
     },
     {
       "titulo": "Passo 4",
@@ -46,18 +46,18 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Can you do it? / Do you need help? / Are you proud?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Ela guarda os próprios sapatos. Ela põe o prato na pia. Ela escolhe a camiseta: “this one or that one?”."
+      "texto": "A criança guarda os próprios sapatos. A criança põe o prato na pia. A criança escolhe a camiseta: “this one or that one?”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "“Eu faço!” é a frase mais típica da fase do “não”: a criança quer fazer sozinha, e o adulto acaba brigando com ela por pressa. Dar tempo, oferecer ajuda como pergunta (“do you need help?”) e elogiar o resultado (“you did it!”) transforma a briga em orgulho. A palavra “help” é uma das mais úteis a aprender. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "“Eu faço!” é a frase mais típica da fase do “não”: a criança quer fazer sem ajuda, e o adulto acaba brigando com a criança por pressa. Dar tempo, oferecer ajuda como pergunta (“do you need help?”) e elogiar o resultado (“you did it!”) transforma a briga em orgulho. A palavra “help” é uma das mais úteis a aprender. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {
@@ -70,7 +70,7 @@
   },
   "materiais": [
     {
-      "item": "uma tarefa que ela pode quase fazer sozinha: calçar um sapato, abrir uma caixa, lavar um pano",
+      "item": "uma tarefa que a criança pode quase fazer sem ajuda: calçar um sapato, abrir uma caixa, lavar um pano",
       "deCasa": true
     }
   ],

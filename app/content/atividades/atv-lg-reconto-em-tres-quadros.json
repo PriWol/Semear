@@ -6,13 +6,13 @@
   "idade": [5, 7],
   "duracaoMin": 20,
   "preparoMin": 5,
-  "cuidados": "Atenção: papel dobrado em três, giz de cera e lápis fora da boca. Ajude só com perguntas (“e depois?”); corrija a ordem, e não as palavras dela.",
+  "cuidados": "Atenção: papel dobrado em três, giz de cera e lápis fora da boca. Ajude só com perguntas (“e depois?”); corrija a ordem, e não as palavras da criança.",
   "objetivo": "A criança reconta uma história curta ouvida na ordem certa (começo, meio e fim), usando três desenhos como apoio.",
   "passos": [
     {
       "titulo": "Ouvir a história",
       "minutos": 6,
-      "texto": "Leia um conto curto com começo, meio e fim claros (como *A Galinha Ruiva*, conto popular, ou outro de que ela goste). Ao final, converse: *“Gostou? Qual parte foi mais legal?”*"
+      "texto": "Leia um conto curto com começo, meio e fim claros (como *A Galinha Ruiva*, conto popular, ou outro de que a criança goste). Ao final, converse: *“Gostou? Qual parte foi mais legal?”*"
     },
     {
       "titulo": "Dobrar a folha em três",
@@ -22,13 +22,13 @@
     {
       "titulo": "Desenhar cada parte",
       "minutos": 6,
-      "texto": "Ela desenha uma cena em cada parte: como a história começa, o que acontece no meio e como termina. Ajude: *“E depois, o que aconteceu?”*",
+      "texto": "A criança desenha uma cena em cada parte: como a história começa, o que acontece no meio e como termina. Ajude: *“E depois, o que aconteceu?”*",
       "fala": "E depois?"
     },
     {
       "titulo": "Contar com os quadros",
       "minutos": 5,
-      "texto": "Apontando cada quadro, ela reconta a história para você (ou para um bicho). Se trocar a ordem, pergunte: *“O que veio primeiro?”*"
+      "texto": "Apontando cada quadro, a criança reconta a história para você (ou para um bicho). Se trocar a ordem, pergunte: *“O que veio primeiro?”*"
     }
   ],
   "observar": {
@@ -60,10 +60,10 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Use figuras ou miniaturas dos personagens para ela mover enquanto reconta, em vez de só falar.",
+    "Montessori": "Use figuras ou miniaturas dos personagens para a criança mover enquanto reconta, em vez de só falar.",
     "Waldorf": "Reconte com bonequinhos de feltro ou de lã, ou em uma pequena roda de pano, usando a mesma frase de abertura sempre.",
     "Clássico": "Memorizem juntos a fórmula de abertura e de fecho (*“Era uma vez... e viveram felizes”*).",
-    "Religioso": "Se quiser, use uma parábola curta e peça que ela conte a lição com as próprias palavras.",
+    "Religioso": "Se quiser, use uma parábola curta e peça que a criança conte a mensagem com as próprias palavras.",
     "Charlotte Mason": "Faça a narração depois de uma única leitura, sem repetir; é o coração do método. Peça só que conte."
   },
   "evidencias": [
@@ -76,7 +76,7 @@
       "resposta": "☐ não   ☐ só uma parte   ☐ as três"
     }
   ],
-  "perguntaFicha": "Que parte da história ela esqueceu ou confundiu?",
+  "perguntaFicha": "Que parte da história a criança esqueceu ou confundiu?",
   "folhas": [
     {
       "tipo": "desenho",

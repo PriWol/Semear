@@ -18,18 +18,18 @@
     {
       "titulo": "Todas as contas da casa",
       "minutos": 8,
-      "texto": "Peça que ela diga todas as contas: *3 + 4*, *4 + 3*, *7 − 3*, *7 − 4*. Tire as 3 fichas das 7 e veja que sobram 4. Se ela esquecer uma, mostre com as fichas.",
+      "texto": "Peça que a criança diga todas as contas: *3 + 4*, *4 + 3*, *7 − 3*, *7 − 4*. Tire as 3 fichas das 7 e veja que sobram 4. Se a criança esquecer uma, mostre com as fichas.",
       "fala": "Que outras contas moram nesta casa?"
     },
     {
       "titulo": "Conferir uma pela outra",
       "minutos": 6,
-      "texto": "Diga: *“7 − 3 = 4”*. Peça que ela confira somando (4 e mais 3). Troque de casa: 2, 5 e 7; 6, 3 e 9."
+      "texto": "Diga: *“7 − 3 = 4”*. Peça que a criança confira somando (4 e mais 3). Troque de casa: 2, 5 e 7; 6, 3 e 9."
     },
     {
       "titulo": "Folha: casinhas",
       "minutos": 4,
-      "texto": "Ela completa as casinhas e escreve as contas de cada família."
+      "texto": "A criança completa as casinhas e escreve as contas de cada família."
     }
   ],
   "observar": {
@@ -65,7 +65,7 @@
     "Montessori": "Com as barras numéricas e as tábuas de adição e de subtração, a criança vê as mesmas peças somando e tirando.",
     "Waldorf": "Parta do todo: o 7 e as partes que o formam. As operações costumam ser apresentadas juntas, em histórias, por volta dos 7 anos.",
     "Clássico": "Registre cada família em uma ficha e revise as fichas em dias seguidos, como fatos a conhecer.",
-    "Charlotte Mason": "A criança confere uma conta com a outra usando objetos, e só depois decora. Mantenha as lições curtas."
+    "Charlotte Mason": "A criança confere uma conta com a outra usando objetos, e só depois decora. Mantenha as momentos curtos."
   },
   "evidencias": [
     {

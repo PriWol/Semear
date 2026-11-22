@@ -11,23 +11,23 @@
   "idade": [2, 5],
   "duracaoMin": 8,
   "preparoMin": 1,
-  "cuidados": "Toque suave nos dedos e nas cócegas: pare se ela não gostar. Sentados e juntos, sem peças pequenas.",
+  "cuidados": "Toque suave nos dedos e nas cócegas: pare se a criança não gostar. Sentados e juntos, sem peças pequenas.",
   "objetivo": "A criança faz **correspondência um a um**: um verso da rima para cada dedo.",
   "passos": [
     {
       "titulo": "Rima nos dedos",
       "minutos": 4,
-      "texto": "Pegue o pé (ou a mão) dela e toque um dedo a cada verso, do dedão ao mindinho: *“Este porquinho foi à feira, este porquinho ficou em casa, este porquinho comeu um bolinho, este porquinho não comeu nada e este porquinho chorou: uí, uí, uí! todo o caminho até em casa.”*"
+      "texto": "Pegue o pé (ou a mão) da criança e toque um dedo a cada verso, do dedão ao mindinho: *“Este porquinho foi à feira, este porquinho ficou em casa, este porquinho comeu um bolinho, este porquinho não comeu nada e este porquinho chorou: uí, uí, uí! todo o caminho até em casa.”*"
     },
     {
       "titulo": "As cócegas",
       "minutos": 2,
-      "texto": "No *“uí, uí, uí”*, seus dedos sobem correndo pela perna dela até a barriga, e vêm as cócegas."
+      "texto": "No *“uí, uí, uí”*, seus dedos sobem correndo pela perna da criança até a barriga, e vêm as cócegas."
     },
     {
       "titulo": "Trocar",
       "minutos": 2,
-      "texto": "Depois de muitas vezes, ela faz nos seus dedos. Repare se toca **um dedo para cada verso**.",
+      "texto": "Depois de muitas vezes, a criança faz nos seus dedos. Repare se toca **um dedo para cada verso**.",
       "fala": "Qual dedo vem agora?"
     }
   ],
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Só os três primeiros dedos.",
-    "facil": "Peça que ela invente um sexto porquinho e o que ele fez."
+    "facil": "Peça que a criança invente um sexto porquinho e o que ele fez."
   },
   "materiais": [
     {
@@ -55,10 +55,10 @@
   "evidencias": [
     {
       "texto": "Tocou um dedo por verso",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Ela fez a rima nos seus dedos?",
+  "perguntaFicha": "A criança fez a rima nos seus dedos?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

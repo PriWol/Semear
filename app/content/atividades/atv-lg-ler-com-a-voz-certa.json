@@ -17,7 +17,7 @@
     {
       "titulo": "Marcar os sinais",
       "minutos": 5,
-      "texto": "Em uma frase escrita, marque os sinais com cores: **ponto** (pausa longa), **vírgula** (pausa curta), **?** (voz sobe), **!** (voz forte). Ela lê obedecendo às cores.",
+      "texto": "Em uma frase escrita, marque os sinais com cores: **ponto** (pausa longa), **vírgula** (pausa curta), **?** (voz sobe), **!** (voz forte). A criança lê obedecendo às cores.",
       "fala": "Quem manda na voz: o ponto ou a vírgula?"
     },
     {
@@ -28,7 +28,7 @@
     {
       "titulo": "Adivinhe qual é qual",
       "minutos": 3,
-      "texto": "Ela lê uma frase com e sem os sinais para você adivinhar qual é qual."
+      "texto": "A criança lê uma frase com e sem os sinais para você adivinhar qual é qual."
     }
   ],
   "observar": {
@@ -69,7 +69,7 @@
       "resposta": "☐ não   ☐ às vezes   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual sinal ela leu melhor?",
+  "perguntaFicha": "Qual sinal a criança leu melhor?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

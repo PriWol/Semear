@@ -12,7 +12,7 @@
     {
       "titulo": "Passeio",
       "minutos": 3,
-      "texto": "Visitem juntos os cômodos e diga: “Aqui é o banheiro, onde tomamos banho”. Deixe que ela toque e olhe.",
+      "texto": "Visitem juntos os cômodos e diga: “Aqui é o banheiro, onde tomamos banho”. Deixe que a criança toque e olhe.",
       "fala": "Onde estamos?"
     },
     {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Use só dois cômodos.",
-    "facil": "Peça que ela descreva o caminho até o cômodo: “Vire à direita, depois…”."
+    "facil": "Peça que a criança descreva o caminho até o cômodo: “Vire à direita, depois…”."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais lugares ela já sabe nomear?",
+  "perguntaFicha": "Quais lugares a criança já sabe nomear?",
   "palavrasChave": ["casa", "cômodos", "lugares", "orientação"],
   "folhas": [],
   "autoria": {

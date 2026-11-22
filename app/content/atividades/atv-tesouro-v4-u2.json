@@ -17,7 +17,7 @@
     {
       "titulo": "Andar no pulso",
       "minutos": 5,
-      "texto": "Caminhem em fila ao som de uma cantiga, com a criança puxando e você seguindo o passo dela."
+      "texto": "Caminhem em fila ao som de uma cantiga, com a criança puxando e você seguindo o passo."
     },
     {
       "titulo": "Ta, ti-ti e sh",
@@ -42,7 +42,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "perguntaFicha": "O que a criança disse ou fez durante a escuta?",
   "folhas": [],
   "autoria": {
     "origem": "ia",
@@ -50,6 +50,6 @@
   },
   "ajustes": {
     "dificil": "Antes dos 4 anos é comum não acompanhar o pulso: continue com o movimento, sem corrigir. Aos 3 anos, basta andar no pulso e bater o “ta”.",
-    "facil": "Peça que ela invente uma sequência de ta, ti-ti e sh para você bater. Aos 6 ou 7 anos, ela também escreve a sequência com pontos e traços (● ● ▬), como no jogo do eco."
+    "facil": "Peça que a criança invente uma sequência de ta, ti-ti e sh para você bater. Aos 6 ou 7 anos, a criança também escreve a sequência com pontos e traços (● ● ▬), como no jogo do eco."
   }
 }

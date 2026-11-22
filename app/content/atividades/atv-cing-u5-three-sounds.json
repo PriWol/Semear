@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "Se for ao ar livre, fique com ela de mão dada perto de ruas e de água; em silêncio, não se afaste dela. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "Se for ao ar livre, fique com a criança de mão dada perto de ruas e de água; em silêncio, não se afaste da criança. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "sair e passear", "three sounds"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Shh… listen. One sound! / It's a bird. Tweet, tweet. / Two sounds. Three. Good listening."
     },
     {
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "What do you hear? / Is it loud or quiet? / Where is it coming from?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "De olhos fechados, se ela quiser. Em casa, de dia e de noite: o que muda?. Com um sino: “ding, ding, listen”."
+      "texto": "De olhos fechados, se a criança quiser. Em casa, de dia e de noite: o que muda?. Com um sino: “ding, ding, listen”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

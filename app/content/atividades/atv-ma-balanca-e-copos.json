@@ -18,23 +18,23 @@
     {
       "titulo": "Qual pesa mais?",
       "minutos": 8,
-      "texto": "Pergunte: *“o que pesa mais, a pedra ou a esponja?”* Ela prevê, depois testa na balança e diz o que viu. Teste outros pares: uma maçã e uma laranja, um livro e um estojo.",
+      "texto": "Pergunte: *“o que pesa mais, a pedra ou a esponja?”* A criança prevê, depois testa na balança e diz o que viu. Teste outros pares: uma maçã e uma laranja, um livro e um estojo.",
       "fala": "O que você acha? Vamos ver?"
     },
     {
       "titulo": "Quantos copinhos cabem?",
       "minutos": 8,
-      "texto": "Encha um copo alto e fino e um copo baixo e largo com um copinho de medida (de iogurte). *“Qual cabe mais?”* Ela conta os copinhos de cada um."
+      "texto": "Encha um copo alto e fino e um copo baixo e largo com um copinho de medida (de iogurte). *“Qual cabe mais?”* A criança conta os copinhos de cada um."
     },
     {
       "titulo": "Mesma água, outra forma",
       "minutos": 5,
-      "texto": "Passe a água do copo baixo para o alto e pergunte: *“agora tem mais, menos ou igual?”* Deixe que ela confira medindo com o copinho."
+      "texto": "Passe a água do copo baixo para o alto e pergunte: *“agora tem mais, menos ou igual?”* Deixe que a criança confira medindo com o copinho."
     },
     {
       "titulo": "Folha: registro",
       "minutos": 3,
-      "texto": "Ela marca o que previu e o que aconteceu."
+      "texto": "A criança marca o que previu e o que aconteceu."
     }
   ],
   "observar": {
@@ -49,8 +49,8 @@
     ]
   },
   "ajustes": {
-    "dificil": "Compare só dois objetos bem diferentes (uma pedra e uma pena) e deixe-a ver a balança descer.",
-    "facil": "Peça que ela estime em quantos copinhos o recipiente se enche e depois confira."
+    "dificil": "Compare só dois objetos bem diferentes (uma pedra e uma pena) e deixe a criança ver a balança descer.",
+    "facil": "Peça que a criança estime em quantos copinhos o recipiente se enche e depois confira."
   },
   "materiais": [
     {
@@ -72,7 +72,7 @@
   ],
   "toqueVertente": {
     "Montessori": "A vida prática (servir água, medir ingredientes, usar a balança de cozinha) ensina peso e capacidade pelo uso.",
-    "Charlotte Mason": "Cozinhar e cuidar da horta (medir água, pesar sementes) dão motivo real para comparar e medir, em lições curtas.",
+    "Charlotte Mason": "Cozinhar e cuidar da horta (medir água, pesar sementes) dão motivo real para comparar e medir, em momentos curtos.",
     "Waldorf": "Deixe a criança sentir o peso nas mãos e na balança de cabide antes de falar em números."
   },
   "evidencias": [

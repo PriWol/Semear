@@ -18,12 +18,12 @@
     {
       "titulo": "Linha do tempo",
       "minutos": 10,
-      "texto": "Em uma tira de papel, marquem 4 ou 5 marcos (povos indígenas, chegada dos europeus, povos africanos, imigrantes, hoje) e ela ilustra cada um."
+      "texto": "Em uma tira de papel, marquem 4 ou 5 marcos (povos indígenas, chegada dos europeus, povos africanos, imigrantes, hoje) e a criança ilustra cada um."
     },
     {
       "titulo": "Conversar",
       "minutos": 5,
-      "texto": "Pergunte: “Como cada grupo viveu essa época?”. Ouça as emoções e as dúvidas dela sem pressa."
+      "texto": "Pergunte: “Como cada grupo viveu essa época?”. Ouça as emoções e as dúvidas da criança sem pressa."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela perguntou?",
+  "perguntaFicha": "O que a criança perguntou?",
   "palavrasChave": ["história do Brasil", "linha do tempo", "povos", "indígenas"],
   "folhas": [],
   "autoria": {

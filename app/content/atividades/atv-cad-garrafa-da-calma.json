@@ -10,14 +10,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Atenção: Só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Só use com você por perto, e troque a garrafa se vazar ou rachar. Não é brinquedo para jogar, morder ou abrir. Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["garrafa da calma", "glitter", "calma", "respirar"],
   "objetivo": "A criança escolhe a cor e acompanha o glitter descer devagar numa garrafa feita pelo adulto, respirando devagar.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "**O adulto enche a garrafa** com água morna (testada no pulso, nunca quente) até quase o alto, e **só ele põe o glitter e a cola**; ela escolhe a cor e olha."
+      "texto": "**O adulto enche a garrafa** com água morna (testada no pulso, nunca quente) até quase o alto, e **só ele põe o glitter e a cola**; a criança escolhe a cor e olha."
     },
     {
       "titulo": "Passo 2",
@@ -27,17 +27,17 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "**O adulto fecha a tampa com cola quente e fita**, longe dela, e testa se não vaza."
+      "texto": "**O adulto fecha a tampa com cola quente e fita**, longe da criança, e testa se não vaza."
     },
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Chacoalhem juntas e olhem o glitter cair, respirando devagar."
+      "texto": "Chacoalhem juntos e olhem o glitter cair, respirando devagar."
     },
     {
       "titulo": "Para dizer",
       "minutos": 0,
-      "texto": "“Vamos fazer uma garrafa mágica.” “Chacoalha… e olha o glitter descer, devagar, devagar.” “Quando fico brava, posso olhar a garrafa e respirar.”"
+      "texto": "“Vamos fazer uma garrafa mágica.” “Chacoalha… e olha o glitter descer, devagar, devagar.” “Quando sinto raiva, posso olhar a garrafa e respirar.”"
     },
     {
       "titulo": "Perguntas para a criança",
@@ -52,7 +52,7 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntas a torna “dela”. **Guarde a garrafa fora do alcance dela** e leve-a ao cantinho da calma só quando estiverem juntas, quando ela já estiver mais tranquila, nunca como castigo nem como distração de uma crise já grande."
+      "texto": "Ver o glitter descer devagar dá à criança algo para acompanhar com os olhos enquanto respira, e fazer a garrafa juntos a torna “da criança”. **Guarde a garrafa fora do alcance da criança** e leve-a ao cantinho da calma só quando estiverem juntos, quando já houver mais calma, nunca como castigo nem como distração de uma crise já grande."
     }
   ],
   "observar": {
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

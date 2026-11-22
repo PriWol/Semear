@@ -13,7 +13,7 @@
   "idade": [3, 7],
   "duracaoMin": 25,
   "preparoMin": 10,
-  "cuidados": "Fique ao lado de qualquer água, até a da bacia. Nunca deixe a criança sozinha com água, nem por um instante. Não beba água de poça, rio ou chuva, e não deixe a criança entrar sozinha em água corrente. Em dia de trovão, fique dentro de casa.",
+  "cuidados": "Fique ao lado de qualquer água, até a da bacia. Nunca deixe a criança com água sem um adulto junto, nem por um instante. Não beba água de poça, rio ou chuva, e não deixe a criança entrar em água corrente sem um adulto. Em dia de trovão, fique dentro de casa.",
   "palavrasChave": ["água", "chuva", "flutua", "afunda", "experimento"],
   "objetivo": "A criança **conta o caminho da água** (sol, nuvem, chuva, rio) e diz o que flutua e o que afunda, depois de testar.",
   "passos": [
@@ -30,14 +30,14 @@
     {
       "titulo": "Contar e desenhar",
       "minutos": 8,
-      "texto": "Conte o caminho da água com as palavras dela. Desenhe a chuva, a nuvem ou o rio. Pense em um jeito de economizar água em casa."
+      "texto": "Conte o caminho da água com as palavras da criança. Desenhe a chuva, a nuvem ou o rio. Pense em um jeito de economizar água em casa."
     }
   ],
   "observar": {
     "consolidado": [
       "Diz o caminho da água na ordem certa (com ajuda dos cartões).",
       "Faz uma previsão antes de testar (“acho que a pedra afunda”).",
-      "Anota o resultado do teste, com desenho ou palavra.",
+      "Anota o resultado do experimento, com desenho ou palavra.",
       "Percebe que a poça some e pergunta para onde foi."
     ],
     "emDesenvolvimento": [
@@ -46,7 +46,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Se o dia estiver difícil: olhar uma só gota na janela, escorrendo, e dizer para onde ela vai.",
+    "dificil": "Se o dia estiver difícil: olhar uma só gota na janela, escorrendo, e dizer para onde a criança vai.",
     "facil": "Se o interesse crescer: medir a chuva do mês, anotando quanta água o pote juntou em cada dia de chuva."
   },
   "materiais": [
@@ -76,7 +76,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela achou que ia afundar e o que aconteceu?",
+  "perguntaFicha": "O que a criança achou que ia afundar e o que aconteceu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

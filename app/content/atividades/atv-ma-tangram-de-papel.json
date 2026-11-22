@@ -13,12 +13,12 @@
     {
       "titulo": "Dois quadrados, um retângulo",
       "minutos": 6,
-      "texto": "Dê dois quadrados iguais de papel. *“Colando um no outro, que figura sai?”* Deixe que ela descubra o retângulo. Depois, com dois triângulos iguais, ela forma um quadrado ou outro triângulo."
+      "texto": "Dê dois quadrados iguais de papel. *“Colando um no outro, que figura sai?”* Deixe que a criança descubra o retângulo. Depois, com dois triângulos iguais, a criança forma um quadrado ou outro triângulo."
     },
     {
       "titulo": "Montar com um modelo",
       "minutos": 10,
-      "texto": "Mostre o desenho de um barco, uma casa ou um gato feito de peças de tangram, em tamanho real. Ela copia com as peças. Se travar, mova só uma peça por ela.",
+      "texto": "Mostre o desenho de um barco, uma casa ou um gato feito de peças de tangram, em tamanho real. A criança copia com as peças. Se travar, mova só uma peça pela criança.",
       "fala": "Qual peça cabe aqui?"
     },
     {
@@ -29,7 +29,7 @@
     {
       "titulo": "Folha: minha figura",
       "minutos": 4,
-      "texto": "Ela cola ou desenha a figura montada e escreve quais peças usou."
+      "texto": "A criança cola ou desenha a figura montada e escreve quais peças usou."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Use só 3 peças e o modelo do tamanho real, sobreposto ao desenho.",
-    "facil": "Peça figuras sem modelo e conte quantas peças ela usou em cada uma."
+    "facil": "Peça figuras sem modelo e conte quantas peças a criança usou em cada uma."
   },
   "materiais": [
     {
@@ -61,7 +61,7 @@
   "toqueVertente": {
     "Montessori": "As caixas de triângulos, em que os triângulos se juntam para formar quadrados e retângulos, são um material pensado para esse trabalho.",
     "Charlotte Mason": "Deixe a criança tentar com calma, sem corrigir de imediato, e peça que conte o que descobriu.",
-    "Clássico": "Registre as figuras que ela já sabe fazer, uma por dia, e repita as mais difíceis na semana seguinte."
+    "Clássico": "Registre as figuras que a criança já sabe fazer, uma por dia, e repita as mais difíceis na semana seguinte."
   },
   "evidencias": [
     {

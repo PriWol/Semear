@@ -11,7 +11,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "A “vela” é só de faz de conta: nunca use fogo. Pular por cima de um pano no chão, só em piso firme e seco, sem escorregar; o pano fica esticado, sem dobras em que ela tropece.",
+  "cuidados": "A “vela” é só de faz de conta: nunca use fogo. Pular por cima de um pano no chão, só em piso firme e seco, sem escorregar; o pano fica esticado, sem dobras em que a criança tropece.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "brincar dentro de casa"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: brincar dentro de casa).",
   "passos": [
@@ -24,7 +24,7 @@
     {
       "titulo": "Cantar: One, two, buckle my shoe",
       "minutos": 2,
-      "texto": "O gesto: mostre os dedos de cada número; mime fivelar o sapato, bater à porta, pegar gravetos. Cante só até quatro, se ela se cansar. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
+      "texto": "O gesto: mostre os dedos de cada número; mime fivelar o sapato, bater à porta, pegar gravetos. Cante só até quatro, se a criança se cansar. Rima tradicional inglesa, de autoria desconhecida e em domínio público; a letra tem pequenas variações.",
       "fala": "One, two, buckle my shoe; / three, four, knock at the door; / five, six, pick up sticks; / seven, eight, lay them straight; / nine, ten, a big fat hen."
     },
     {

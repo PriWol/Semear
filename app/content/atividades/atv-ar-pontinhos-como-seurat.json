@@ -18,12 +18,12 @@
     {
       "titulo": "Experimentar",
       "minutos": 12,
-      "texto": "Com cotonetes e 3 ou 4 cores de tinta, ela pinta uma cena ou fruta feita só de pontinhos. Mostre como pontos de cores diferentes lado a lado se misturam no olhar."
+      "texto": "Com cotonetes e 3 ou 4 cores de tinta, a criança pinta uma cena ou fruta feita só de pontinhos. Mostre como pontos de cores diferentes lado a lado se misturam no olhar."
     },
     {
       "titulo": "Falar",
       "minutos": 3,
-      "texto": "Ela mostra o trabalho de perto e de longe e explica o que escolheu. Anote o nome do artista que inspirou a técnica."
+      "texto": "A criança mostra o trabalho de perto e de longe e explica o que escolheu. Anote o nome do artista que inspirou a técnica."
     }
   ],
   "observar": {
@@ -65,7 +65,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela pintou e por quê?",
+  "perguntaFicha": "O que a criança pintou e por quê?",
   "palavrasChave": ["seurat", "pontilhismo", "técnica", "cotonete", "artistas"],
   "folhas": [],
   "autoria": {

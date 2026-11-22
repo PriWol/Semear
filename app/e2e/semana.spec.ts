@@ -5,6 +5,8 @@ import { readFile } from 'node:fs/promises';
 // #8 e #9: planejar a semana, marcar um dia como feito e baixar o documento da semana.
 test('planejar a semana, marcar um dia e baixar a semana', async ({ page }) => {
   page.on('dialog', (d) => void d.accept());
+  // Segunda 16/11/2026, 9h (hora local): o primeiro dia do plano é hoje e ainda aceita "Marcar como feito" (#141).
+  await page.clock.setFixedTime(new Date(2026, 10, 16, 9, 0));
   await page.goto('./');
   await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
   await expect(page.getByRole('heading', { name: /Olá/ })).toBeVisible();

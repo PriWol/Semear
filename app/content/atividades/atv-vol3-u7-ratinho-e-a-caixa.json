@@ -17,18 +17,18 @@
     {
       "titulo": "Ratinho e caixa",
       "minutos": 4,
-      "texto": "Com uma caixa de sapato e o ratinho de pelúcia, repitam as posições: **dentro, fora, em cima, ao lado**; depois acrescentem **embaixo, atrás, na frente**. Você diz, ela faz.",
+      "texto": "Com uma caixa de sapato e o ratinho de pelúcia, repitam as posições: **dentro, fora, em cima, ao lado**; depois acrescentem **embaixo, atrás, na frente**. Você diz, a criança faz.",
       "fala": "Onde está o ratinho?"
     },
     {
-      "titulo": "Ela põe, você diz",
+      "titulo": "A criança põe, você diz",
       "minutos": 3,
-      "texto": "Ela põe o ratinho e você diz onde ele está. Erre de vez em quando, para ela corrigir."
+      "texto": "A criança põe o ratinho e você diz onde ele está. Erre de vez em quando, para a criança corrigir."
     },
     {
       "titulo": "Cartões de ordens",
       "minutos": 3,
-      "texto": "Você lê, ela faz: *“Ponha o urso em cima da cadeira”*, *“Esconda a bola embaixo da almofada”*, *“Ponha o livro dentro da cesta”*. Ordem com duas partes (colher na xícara e xícara em cima da mesa) é mais difícil: guarde para depois."
+      "texto": "Você lê, a criança faz: *“Ponha o urso em cima da cadeira”*, *“Esconda a bola embaixo da almofada”*, *“Ponha o livro dentro da cesta”*. Ordem com duas partes (colher na xícara e xícara em cima da mesa) é mais difícil: guarde para depois."
     }
   ],
   "observar": {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Só dentro e fora, com a caixa e o ratinho.",
-    "facil": "Ela dá as ordens ao adulto, que faz."
+    "facil": "A criança dá as ordens ao adulto, que faz."
   },
   "materiais": [
     {
@@ -70,10 +70,10 @@
     },
     {
       "texto": "Disse onde estava o ratinho com uma palavra de lugar",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavras de lugar ela usou?",
+  "perguntaFicha": "Que palavras de lugar a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

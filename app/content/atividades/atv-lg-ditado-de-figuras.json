@@ -12,12 +12,12 @@
     {
       "titulo": "Escolher dez figuras",
       "minutos": 4,
-      "texto": "Separe dez figuras (casa, rosa, gato, queijo, chave, carro, árvore, bola, lua, janela). Ela olha cada figura e diga o nome."
+      "texto": "Separe dez figuras (casa, rosa, gato, queijo, chave, carro, árvore, bola, lua, janela). A criança olha cada figura e diga o nome."
     },
     {
       "titulo": "Ditado de figuras",
       "minutos": 8,
-      "texto": "Mostre a figura **e fale o nome devagar**. Ela escreve do jeito que ouve. Não diga se está certo ainda. Quando acabar, você escreve a forma convencional ao lado."
+      "texto": "Mostre a figura **e fale o nome devagar**. A criança escreve do jeito que ouve. Não diga se está certo ainda. Quando acabar, você escreve a forma convencional ao lado."
     },
     {
       "titulo": "Uma regra por vez",
@@ -28,7 +28,7 @@
     {
       "titulo": "Reescrever e brincar",
       "minutos": 5,
-      "texto": "Ela corrige apenas a palavra da regra do dia. Termine com um jogo de memória ou caça-palavras curto."
+      "texto": "A criança corrige apenas a palavra da regra do dia. Termine com um jogo de memória ou caça-palavras curto."
     }
   ],
   "observar": {
@@ -60,11 +60,11 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "Deixe as figuras numa bandeja; ela escolhe quais escrever e confere sozinha com a escrita do adulto.",
-    "Waldorf": "Só a partir dos 7 anos: use a mesma lógica dentro de um verso ou conto, e peça que ela escreva palavras da história.",
+    "Montessori": "Deixe as figuras numa bandeja; a criança escolhe quais escrever e confere sem ajuda com a escrita do adulto.",
+    "Waldorf": "Só a partir dos 7 anos: use a mesma lógica dentro de um verso ou conto, e peça que a criança escreva palavras da história.",
     "Clássico": "Cada regra vira um pequeno “verso” para memorizar (*“entre vogais, o S soa Z”*).",
     "Religioso": "Se quiser, use palavras de um texto da fé da família como ditado.",
-    "Charlotte Mason": "Faça ditado curto e bem preparado: ela estuda a palavra antes, e só então escreve."
+    "Charlotte Mason": "Faça ditado curto e bem preparado: a criança estuda a palavra antes, e só então escreve."
   },
   "evidencias": [
     {
@@ -76,7 +76,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual regra ela descobriu hoje?",
+  "perguntaFicha": "Qual regra a criança descobriu hoje?",
   "folhas": [
     {
       "tipo": "cartas",

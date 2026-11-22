@@ -11,13 +11,13 @@
   "idade": [3, 6],
   "duracaoMin": 10,
   "preparoMin": 2,
-  "cuidados": "É uma conversa. Aceite as palavras que ela escolher e, se ela lembrar de algo triste, acolha sem insistir. Sem objetos pequenos.",
+  "cuidados": "É uma conversa. Aceite as palavras que a criança escolher e, se a criança lembrar de algo triste, acolha sem insistir. Sem objetos pequenos.",
   "objetivo": "A criança **liga cada imagem a um sentimento** (triste, sozinho, com saudade, feliz) e fala de uma vez em que sentiu o mesmo.",
   "passos": [
     {
       "titulo": "Olhar e nomear",
       "minutos": 4,
-      "texto": "Aponte cada imagem do livro e pergunte: *“como o patinho está se sentindo aqui?”* (no terreiro, na casa da velhinha, vendo as aves no céu e já como cisne). As palavras sob as imagens são sugestões: aceite as dela.",
+      "texto": "Aponte cada imagem do livro e pergunte: *“como o patinho está se sentindo aqui?”* (no terreiro, na casa da velhinha, vendo as aves no céu e já como cisne). As palavras sob as imagens são sugestões: aceite as da criança.",
       "fala": "Como o patinho está se sentindo aqui?"
     },
     {
@@ -28,7 +28,7 @@
     {
       "titulo": "Quando foi comigo?",
       "minutos": 3,
-      "texto": "*“Quando você se sentiu assim?”* Conte uma vez em que você também se sentiu assim. Se ela não quiser contar, tudo bem."
+      "texto": "*“Quando você se sentiu assim?”* Conte uma vez em que você também se sentiu assim. Se a criança não quiser contar, tudo bem."
     }
   ],
   "observar": {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Fique com duas imagens: a triste e a feliz.",
-    "facil": "Peça que ela invente o que diria ao patinho para ele se sentir melhor."
+    "facil": "Peça que a criança invente o que diria ao patinho para ele se sentir melhor."
   },
   "materiais": [
     {
@@ -62,10 +62,10 @@
     },
     {
       "texto": "Contou uma situação própria",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que palavras de sentimento ela usou?",
+  "perguntaFicha": "Que palavras de sentimento a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

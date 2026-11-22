@@ -11,7 +11,7 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Cante-a quando ela estiver calma; os pés batendo no gesto de raiva em piso firme e sem escorregar; se ela se irritar, pare a rima e fique junto, sem forçar.",
+  "cuidados": "Cante-a quando houver calma; os pés batendo no gesto de raiva em piso firme e sem escorregar; se a criança se irritar, pare a rima e fique junto, sem forçar.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "a família e os sentimentos"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: a família e os sentimentos).",
   "passos": [
@@ -24,13 +24,13 @@
     {
       "titulo": "Cantar: Happy, sad, angry, sleepy",
       "minutos": 2,
-      "texto": "O gesto: faça o gesto de cada sentimento (palmas, esfregar os olhos, bater os pés, suspirar) e termine no suspiro, com um abraço. Cante-a quando ela estiver calma. Rima escrita pela coleção.",
+      "texto": "O gesto: faça o gesto de cada sentimento (palmas, esfregar os olhos, bater os pés, suspirar) e termine no suspiro, com um abraço. Cante-a quando houver calma. Rima escrita pela coleção.",
       "fala": "Happy, happy, clap, clap, clap; / sad, sad, rub your eyes; / angry, angry, stomp, stomp, stomp; / sleepy, sleepy, sigh."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "A primeira rima é um jogo de dedos da família (o polegar é o “Tommy”), e a segunda dá um gesto para cada sentimento, e termina no mais calmo. Cante as duas quando ela estiver tranquila: assim os gestos ficam prontos para a hora difícil. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "A primeira rima é um jogo de dedos da família (o polegar é o “Tommy”), e a segunda dá um gesto para cada sentimento, e termina no mais calmo. Cante as duas quando houver calma: assim os gestos ficam prontos para a hora difícil. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

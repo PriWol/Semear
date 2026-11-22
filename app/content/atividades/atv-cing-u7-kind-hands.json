@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Ursinho macio e sem peças pequenas (olhos e nariz bordados, não de plástico solto). Se ela bater no ursinho ou em você, responda com calma, sem castigo e sem culpa.",
+  "cuidados": "Ursinho macio e sem peças pequenas (olhos e nariz bordados, não de plástico solto). Se a criança bater no ursinho ou em você, responda com calma, sem castigo e sem culpa.",
   "palavrasChave": ["inglês", "english", "a família e os sentimentos", "kind hands"],
   "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total) (unidade: a família e os sentimentos).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Hands are for hugs. Hands are for helping. / Hands are not for hitting. Show me a hug. / Clap, clap, clap! Good hands."
     },
     {
@@ -29,12 +29,12 @@
     {
       "titulo": "Passo 2",
       "minutos": 1,
-      "texto": "Pergunte: “what can hands do?”. Ela mostra: bater palmas, abraçar, pegar, acenar."
+      "texto": "Pergunte: “what can hands do?”. A criança mostra: bater palmas, abraçar, pegar, acenar."
     },
     {
       "titulo": "Passo 3",
       "minutos": 1,
-      "texto": "Se ela bater, pare com calma: “hands are not for hitting. Hands are for hugs.”."
+      "texto": "Se a criança bater, pare com calma: “hands are not for hitting. Hands are for hugs.”."
     },
     {
       "titulo": "Passo 4",
@@ -44,18 +44,18 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "What are hands for? / Can you give a hug? / Can you clap?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Faça um abraço no ursinho. Dê um “high five”: “up high!”. Aperte a mão dela: “nice to meet you”."
+      "texto": "Faça um abraço no ursinho. Dê um “high five”: “up high!”. Aperte a mão da criança: “nice to meet you”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Dizer o que as mãos podem fazer, e não só o que não podem, é o conselho mais comum para a fase em que a criança bate: dê a ela uma alternativa (abraçar, bater palmas) em vez de só um “não”. A frase “hands are not for hitting” é curta e fácil de repetir, e há livros infantis com esse título. Use sempre o mesmo tom calmo, sem gritar. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Dizer o que as mãos podem fazer, e não só o que não podem, é o conselho mais comum para a fase em que a criança bate: dê à criança uma alternativa (abraçar, bater palmas) em vez de só um “não”. A frase “hands are not for hitting” é curta e fácil de repetir, e há livros infantis com esse título. Use sempre o mesmo tom calmo, sem gritar. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

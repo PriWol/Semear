@@ -19,12 +19,12 @@
     {
       "titulo": "O barquinho de papel",
       "minutos": 2,
-      "texto": "*Barquinho de papel / vai passear no rio: / balança pra lá, / balança pra cá, / chega devagar / e vem me abraçar.* **O gesto:** sentadas, balancem de um lado para o outro, devagar, como um barquinho na água calma; no último verso, abracem-se. Serve também para acalmar. Rima escrita pela coleção."
+      "texto": "*Barquinho de papel / vai passear no rio: / balança pra lá, / balança pra cá, / chega devagar / e vem me abraçar.* **O gesto:** sentados, balancem de um lado para o outro, devagar, como um barquinho na água calma; no último verso, abracem-se. Serve também para acalmar. Rima escrita pela coleção."
     },
     {
       "titulo": "Um elefante",
       "minutos": 2,
-      "texto": "*Um elefante incomoda muita gente; / dois elefantes incomodam, incomodam muito mais. / Três elefantes incomodam muita gente; / quatro elefantes incomodam, incomodam, incomodam muito mais.* **O gesto:** mostre os dedos para cada número; cada elefante é uma voz mais grossa. Faça o elefante com o braço de tromba e deixe que ela escolha a voz. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+      "texto": "*Um elefante incomoda muita gente; / dois elefantes incomodam, incomodam muito mais. / Três elefantes incomodam muita gente; / quatro elefantes incomodam, incomodam, incomodam muito mais.* **O gesto:** mostre os dedos para cada número; cada elefante é uma voz mais grossa. Faça o elefante com o braço de tromba e deixe que a criança escolha a voz. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
@@ -34,7 +34,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -51,11 +51,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

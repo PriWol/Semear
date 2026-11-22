@@ -11,25 +11,25 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Leia com ela no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
+  "cuidados": "Leia com a criança no colo e fique junto: não deixe que rasgue páginas e leve pedaços de papel à boca. Livro de papel comum, sem partes soltas.",
   "palavrasChave": ["inglês", "english", "livro", "from head to toe"],
   "objetivo": "Ler juntos o livro indicado, perguntando e acrescentando (leitura dialogada), para a criança entender e, se quiser, repetir palavras em inglês.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Look! The cat arches its back. Can you? / I can do it! Can you do it? / Wow, you did it!"
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Sentem juntos, com o livro aberto, e deixe que ela escolha o bicho."
+      "texto": "Sentem juntos, com o livro aberto, e deixe que a criança escolha o bicho."
     },
     {
       "titulo": "Passo 2",
       "minutos": 3,
-      "texto": "Leia a pergunta do livro e faça o gesto do bicho; espere ela fazer também."
+      "texto": "Leia a pergunta do livro e faça o gesto do bicho; espere a criança fazer também."
     },
     {
       "titulo": "Passo 3",
@@ -44,18 +44,18 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Can you do it? / What does the elephant do? / Can you wiggle like me?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Escolha um bicho por dia e faça o movimento no tapete. Leia só até o macaco. Ela escolhe a página: “this one!”."
+      "texto": "Escolha um bicho por dia e faça o movimento no tapete. Leia só até o macaco. A criança escolhe a página: “this one!”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "É leitura dialogada com Resposta Física Total: o livro de Eric Carle pergunta se a criança consegue fazer o gesto de cada bicho, e ela mostra com o corpo, sem precisar falar. A pergunta “can you do it?” é a mais fácil de responder, com um gesto, e “you can do it” é um elogio que vale o dia todo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "É leitura dialogada com Resposta Física Total: o livro de Eric Carle pergunta se a criança consegue fazer o gesto de cada bicho, e a criança mostra com o corpo, sem precisar falar. A pergunta “can you do it?” é a mais fácil de responder, com um gesto, e “you can do it” é um elogio que vale o dia todo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

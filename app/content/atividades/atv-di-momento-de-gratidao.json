@@ -37,7 +37,7 @@
   },
   "ajustes": {
     "dificil": "Reduza para o abraço e uma palavra de gratidão.",
-    "facil": "Peça que ela agradeça por três coisas e que diga por quê."
+    "facil": "Peça que a criança agradeça por três coisas e que diga por quê."
   },
   "materiais": [
     {
@@ -59,7 +59,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Pelo que ela agradeceu?",
+  "perguntaFicha": "Pelo que a criança agradeceu?",
   "palavrasChave": ["gratidão", "silêncio", "oração", "ritual", "espiritual"],
   "folhas": [],
   "autoria": {

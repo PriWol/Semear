@@ -17,7 +17,7 @@
       "orientacaoPais": {
         "porQueImporta": "Antes de qualquer “ciência”, existe o **encantamento**: a criança pequena aprende que o mundo está cheio de seres vivos quando alguém aponta, nomeia e mostra como tocar. Esse carinho inicial é a base do respeito pela natureza.",
         "comoParticipar": "Nas saídas do dia a dia (quintal, praça, janela), pare e olhe junto: “Olha a formiguinha! Como ela anda?”. Diga o nome do que vê, uma coisa por vez, e mostre o toque suave: “com um dedinho, devagar”. Folhas, pedrinhas e flores caídas podem ser colecionadas numa cestinha.",
-        "sinaisDeAtencao": "Nessa idade o vocabulário varia muito de criança para criança. Se aos 3 anos ela quase não se interessa por nada ao redor nem aponta para o que chama a atenção, vale comentar com o pediatra, sem pressa. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Nessa idade o vocabulário varia muito de criança para criança. Se aos 3 anos a criança quase não se interessa por nada ao redor nem aponta para o que chama a atenção, vale comentar com o pediatra, sem pressa. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["rcnei-conhecimento-de-mundo", "louv-ultima-crianca", "bncc"],
         "porVertente": {
           "Charlotte Mason": {
@@ -51,9 +51,9 @@
       "preRequisitos": ["NM.VIV.01"],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Conhecer o próprio corpo dá à criança **vocabulário e autonomia** (“dói aqui”) e uma ferramenta de pesquisa: os cinco sentidos são a primeira “lupa” com que ela estuda o mundo.",
-        "comoParticipar": "Cantem e brinquem com partes do corpo (“cabeça, ombro, joelho e pé”, por exemplo) e proponha “caixas de mistério” em que ela descobre objetos só pelo tato, pelo cheiro ou pelo som. Pergunte: “Com o que você descobriu?”.",
-        "sinaisDeAtencao": "Se aos 4 anos ela ainda não nomeia nenhuma parte do corpo, ou reage de modo muito forte a certos sons, texturas ou cheiros no dia a dia, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Conhecer o próprio corpo dá à criança **vocabulário e autonomia** (“dói aqui”) e uma ferramenta de pesquisa: os cinco sentidos são a primeira “lupa” com que a criança estuda o mundo.",
+        "comoParticipar": "Cantem e brinquem com partes do corpo (“cabeça, ombro, joelho e pé”, por exemplo) e proponha “caixas de mistério” em que a criança descobre objetos só pelo tato, pelo cheiro ou pelo som. Pergunte: “Com o que você descobriu?”.",
+        "sinaisDeAtencao": "Se aos 4 anos a criança ainda não nomeia nenhuma parte do corpo, ou reage de modo muito forte a certos sons, texturas ou cheiros no dia a dia, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "montessori-mente-absorvente"],
         "porVertente": {
           "Montessori": {
@@ -61,7 +61,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Os chamados sentidos básicos (tato, equilíbrio, movimento) são cultivados por meio do brincar e do movimento, antes das “aulas” sobre o corpo.",
+            "comoParticipar": "Os chamados sentidos básicos (tato, equilíbrio, movimento) são cultivados por meio do brincar e do movimento, antes das “explicações” sobre o corpo.",
             "referencias": ["steiner-educacao-crianca"]
           }
         }
@@ -117,7 +117,7 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Entender que os seres vivos **nascem, crescem, se reproduzem e morrem** ajuda a criança a lidar com mudanças e perdas e prepara para a biologia mais adiante. O ciclo também treina a noção de sequência no tempo.",
-        "comoParticipar": "Plante algo que cresce rápido (feijão, alpiste) ou acompanhe uma lagarta ou girinos, se houver na região e na época, só observando e depois soltando onde estavam. Faça um **cartaz do ciclo** com desenhos dela em círculo: semente, broto, planta, flor, fruto. Peça que conte o ciclo a alguém da família.",
+        "comoParticipar": "Plante algo que cresce rápido (feijão, alpiste) ou acompanhe uma lagarta ou girinos, se houver na região e na época, só observando e depois soltando onde estavam. Faça um **cartaz do ciclo** com desenhos da criança em círculo: semente, broto, planta, flor, fruto. Peça que conte o ciclo a alguém da família.",
         "sinaisDeAtencao": "Perguntas sobre a morte aparecem nessa fase e são normais. Responda com simplicidade e verdade, sem rodeios. Se o medo da morte for muito intenso e atrapalhar o sono ou o brincar por semanas, vale conversar com o pediatra ou um psicólogo infantil. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["rcnei-conhecimento-de-mundo", "comstock-nature-study", "bncc"],
         "porVertente": {
@@ -154,7 +154,7 @@
       "orientacaoPais": {
         "porQueImporta": "Classificar é uma das ferramentas básicas da ciência: observar, comparar, escolher um **critério** e justificá-lo. Também treina o pensamento lógico que a criança usará em matemática.",
         "comoParticipar": "Faça jogos de agrupar com bichinhos de brinquedo, figuras de revista ou folhas de árvores do quintal. Peça: “Como você separou?”. Troque o critério e agrupe de novo (cor, tamanho, onde vive, o que come). Todo critério com sentido vale.",
-        "sinaisDeAtencao": "Se ela se frustra muito quando um critério não funciona, mostre que errar faz parte de pesquisar. Se aos 7 anos há muita dificuldade em separar objetos por qualquer característica, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Se a criança se frustra muito quando um critério não funciona, mostre que errar faz parte de pesquisar. Se aos 7 anos há muita dificuldade em separar objetos por qualquer característica, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "mason-home-education"],
         "porVertente": {
           "Clássico": {
@@ -216,8 +216,8 @@
       "preRequisitos": [],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "O tempo é a primeira “aula” de ciências que a criança vive todo dia. Nomear o que sente na pele (frio, calor, vento) liga o **corpo** ao que acontece no mundo e prepara a observação mais sistemática dos anos seguintes.",
-        "comoParticipar": "Ao sair ou ao se vestir, comente: “Hoje faz sol, vamos de chapéu”. Deixe que sinta o vento na mão, a chuva na palma, o chão quente ou frio. Sair com chuva fraca, bem agasalhada, é uma ótima aula.",
+        "porQueImporta": "O tempo é a primeira “descoberta” de ciências que a criança vive todo dia. Nomear o que sente na pele (frio, calor, vento) liga o **corpo** ao que acontece no mundo e prepara a observação mais sistemática dos anos seguintes.",
+        "comoParticipar": "Ao sair ou ao se vestir, comente: “Hoje faz sol, vamos de chapéu”. Deixe que sinta o vento na mão, a chuva na palma, o chão quente ou frio. Sair com chuva fraca, com roupa adequada, é uma ótima experiência.",
         "sinaisDeAtencao": "Algumas crianças se incomodam muito com certas sensações (sol, vento, molhado). Respeite o ritmo e vá devagar. Se o incômodo for intenso e frequente e atrapalhar o dia a dia, vale comentar com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "louv-ultima-crianca"],
         "porVertente": {
@@ -250,7 +250,7 @@
       "orientacaoPais": {
         "porQueImporta": "Olhar para cima desperta a curiosidade sobre o mundo e dá à criança os primeiros marcos de **tempo** (dia, noite) e de **espaço**. Quem aprende a olhar o céu costuma continuar perguntando.",
         "comoParticipar": "Deitem em um cobertor e olhem nuvens (“parece um coelho?”), ou olhem a Lua da janela antes de dormir. Cante cantigas sobre estrelas e lua. Nunca olhem direto para o Sol.",
-        "sinaisDeAtencao": "Se ela tiver muito medo do escuro, transforme a noite em aventura aos poucos (lanterna, janela). Se o medo for intenso e o sono muito prejudicado por semanas, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Se a criança tiver muito medo do escuro, transforme a noite em aventura aos poucos (lanterna, janela). Se o medo for intenso e o sono muito prejudicado por semanas, vale conversar com o pediatra. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "louv-ultima-crianca"],
         "porVertente": {
           "Waldorf": {
@@ -282,11 +282,11 @@
       "orientacaoPais": {
         "porQueImporta": "Experimentar com materiais comuns é fazer ciência com o corpo: **prever, testar, observar**. A criança aprende que o mundo tem regras e que pode descobri-las, e o vocabulário (flutua, derrete, seca) cresce junto.",
         "comoParticipar": "Brinquem na pia ou na bacia com objetos de casa. Pergunte antes de testar: “O que será que vai acontecer?”. Coloquem gelo ao sol e à sombra, estendam roupa molhada e vejam secar. Aceite palpites errados: são o início da ciência.",
-        "sinaisDeAtencao": "Água atrai crianças e exige atenção constante. Nunca a deixe sozinha perto de água, nem em pouca. Se ela evitar todo contato com água ou texturas de modo muito intenso, comente com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Água atrai crianças e exige atenção constante. Nunca deixe a criança sem supervisão perto de água, nem em pouca. Se a criança evitar todo contato com água ou texturas de modo muito intenso, comente com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "montessori-mente-absorvente"],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "Ofereça uma bacia de água com poucos objetos escolhidos, e deixe a criança testar sozinha e repetir quantas vezes quiser.",
+            "comoParticipar": "Ofereça uma bacia de água com poucos objetos escolhidos, e deixe a criança testar sem ajuda e repetir quantas vezes quiser.",
             "referencias": ["montessori-mente-absorvente"]
           }
         }
@@ -314,7 +314,7 @@
       "orientacaoPais": {
         "porQueImporta": "Observar e **registrar** dia após dia é o método da ciência em miniatura: a criança percebe repetições e mudanças. Também treina a ligação entre o tempo (clima) e o tempo (calendário).",
         "comoParticipar": "Faça um calendário do tempo com um desenho por dia (sol, nuvem, chuva) e, no fim do mês, contem juntos. No Brasil, as estações variam por região, então observem as mudanças de onde vocês moram (chuvas e secas, flores, frutas da época).",
-        "sinaisDeAtencao": "Se ela não se interessa em registrar, deixe uma vez por semana e não por dia: o ritmo é da família. Se aos 7 anos não relaciona nada com o passar dos dias, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Se a criança não se interessa em registrar, deixe uma vez por semana e não por dia: o ritmo é da família. Se aos 7 anos não relaciona nada com o passar dos dias, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "comstock-nature-study", "mason-home-education"],
         "porVertente": {
           "Charlotte Mason": {
@@ -338,7 +338,7 @@
       "linha": "NM.TER",
       "ordem": 5,
       "titulo": "Explica de modo simples o caminho da água: chuva, rio, nuvem",
-      "descricaoPais": "Conta que a água do rio vira vapor, forma nuvens e cai como chuva, e que ela precisa ser poupada.",
+      "descricaoPais": "Conta que a água do rio vira vapor, forma nuvens e cai como chuva, e que a água precisa ser poupada.",
       "evidencias": [
         "Conta, em ordem, o caminho da água (evaporação, nuvem, chuva)",
         "Diz uma maneira de poupar água"
@@ -402,7 +402,7 @@
       "linha": "NM.TEM",
       "ordem": 1,
       "titulo": "Reconhece os momentos da rotina: acordar, comer, brincar, dormir",
-      "descricaoPais": "Sabe o que vem depois do banho ou do lanche e começa a se preparar sozinha.",
+      "descricaoPais": "Sabe o que vem depois do banho ou do lanche e começa a se preparar sem ajuda.",
       "evidencias": [
         "Mostra o que vem a seguir em 2 ou 3 momentos da rotina",
         "Participa dos gestos da rotina com ajuda"
@@ -412,9 +412,9 @@
       "preRequisitos": [],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Uma rotina previsível dá **segurança** e é a primeira forma de a criança “sentir” o tempo: antes, agora, depois. Quando ela sabe o que vem, resiste menos e coopera mais.",
+        "porQueImporta": "Uma rotina previsível dá **segurança** e é a primeira forma de a criança “sentir” o tempo: antes, agora, depois. Quando sabe o que vem, resiste menos e coopera mais.",
         "comoParticipar": "Mantenha uma ordem parecida todos os dias e narre: “Agora é hora do lanche. Depois, o banho”. Use o mesmo gesto ou a mesma música para sinalizar cada momento. Fotos ou desenhos simples dos momentos do dia, na parede, ajudam.",
-        "sinaisDeAtencao": "É comum que a rotina seja quebrada por viagens, doenças ou mudanças e que a criança reaja. Retome com paciência. Se por semanas ela tiver muita dificuldade em qualquer transição, comente com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "É comum que a rotina seja quebrada por viagens, doenças ou mudanças e que a criança reaja. Retome com paciência. Se por semanas a criança tiver muita dificuldade em qualquer transição, comente com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "steiner-educacao-crianca"],
         "porVertente": {
           "Waldorf": {
@@ -450,7 +450,7 @@
       "orientacaoPais": {
         "porQueImporta": "As palavras do tempo são difíceis porque “ontem” e “amanhã” não se veem. Usá-las bem mostra que a criança **organiza a memória em ordem** e começa a planejar.",
         "comoParticipar": "Ao deitar, conversem: “O que a gente fez hoje primeiro? E depois?”. Pela manhã, “O que vamos fazer hoje?”. Confusões como “amanhã fui ao parque” são esperadas até os 4 ou 5 anos. Corrija pelo exemplo: “Ontem você foi ao parque, é verdade”.",
-        "sinaisDeAtencao": "A noção de tempo se firma aos poucos. Se aos 5 anos ela ainda não usa nenhuma palavra do tempo, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "A noção de tempo se firma aos poucos. Se aos 5 anos a criança ainda não usa nenhuma palavra do tempo, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "piaget-nocao-tempo", "rcnei-conhecimento-de-mundo"]
       },
       "revisao": {
@@ -474,8 +474,8 @@
       "preRequisitos": ["NM.TEM.02"],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "A própria história é o **primeiro tema da história** que a criança entende: é concreta e importa para ela. Mostra que o tempo muda quem somos e dá pertencimento e identidade.",
-        "comoParticipar": "Olhem fotos, objetos de bebê (sapatinho, roupinha) e conte: “Quando você nasceu…”. Faça perguntas simples: “O que você sabe fazer agora que não sabia?”. Se houver adoção, separação ou outras histórias delicadas, conte a verdade com carinho e na medida do que ela entende.",
+        "porQueImporta": "A própria história é o **primeiro tema da história** que a criança entende: é concreta e importa para a criança. Mostra que o tempo muda quem somos e dá pertencimento e identidade.",
+        "comoParticipar": "Olhem fotos, objetos de bebê (sapatinho, roupinha) e conte: “Quando você nasceu…”. Faça perguntas simples: “O que você sabe fazer agora que não sabia?”. Se houver adoção, separação ou outras histórias delicadas, conte a verdade com carinho e na medida do que a criança entende.",
         "sinaisDeAtencao": "Se a história tiver perdas ou mudanças difíceis, a criança pode sentir tristeza ao relembrar. Acolha, não force. Se houver sofrimento persistente, converse com o pediatra ou um psicólogo infantil. Conferência por profissional ainda pendente. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "piaget-nocao-tempo"],
         "porVertente": {
@@ -508,7 +508,7 @@
       "orientacaoPais": {
         "porQueImporta": "O calendário é uma “régua do tempo” que a criança aprende a ler e que prepara para a matemática de tempo e para o planejamento. Saber o dia da semana dá **previsibilidade** e confiança.",
         "comoParticipar": "Mantenha um calendário visível, marcando todo dia o dia de hoje, o aniversário e as datas especiais. Cantem a música dos dias da semana. Conversem sobre o que se faz em cada dia (dia de feira, dia de visita).",
-        "sinaisDeAtencao": "Dias e meses são muitos e demoram para fixar. Se aos 7 anos ela ainda não diz os dias da semana em ordem, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Dias e meses são muitos e demoram para fixar. Se aos 7 anos a criança ainda não diz os dias da semana em ordem, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "piaget-nocao-tempo", "rcnei-conhecimento-de-mundo"],
         "porVertente": {
           "Waldorf": {
@@ -540,7 +540,7 @@
       "orientacaoPais": {
         "porQueImporta": "A história da família é a ponte natural entre a memória pessoal e a **história mais ampla**. A criança descobre que as pessoas têm um passado, que as coisas mudam e que as fontes (relatos, fotos, objetos) contam o que foi.",
         "comoParticipar": "Façam uma entrevista com alguém mais velho (avós, vizinhos): “Como era a sua casa quando você era criança? O que você comia? Com o que brincava?”. Comparem um objeto antigo (ferro de passar, telefone de disco) com o de hoje. Pode ser por mensagem de voz, se estiverem longe.",
-        "sinaisDeAtencao": "Histórias de família podem tocar em perdas, separações ou temas difíceis. Combine antes com o entrevistado e prepare a criança. Se algo mexer muito com ela, acolha e converse. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Histórias de família podem tocar em perdas, separações ou temas difíceis. Combine antes com o entrevistado e prepare a criança. Se algo mexer muito com a criança, acolha e converse. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "piaget-nocao-tempo"],
         "porVertente": {
           "Charlotte Mason": {
@@ -574,9 +574,9 @@
       "preRequisitos": ["NM.TEM.05"],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Conhecer a história do país com **vários pontos de vista** ajuda a criança a respeitar a diversidade e a entender por que o Brasil é como é. Aos 8 anos ela já organiza o tempo em “muito antes” e “mais recente”.",
+        "porQueImporta": "Conhecer a história do país com **vários pontos de vista** ajuda a criança a respeitar a diversidade e a entender por que o Brasil é como é. Aos 8 anos a criança já organiza o tempo em “muito antes” e “mais recente”.",
         "comoParticipar": "Leiam livros ilustrados sobre povos indígenas e sobre a história do Brasil escritos por autores diversos, incluindo indígenas e negros. Contem os fatos sem esconder as injustiças, mas sem excesso de detalhes cruéis para a idade. Visitem um museu ou um centro histórico da cidade.",
-        "sinaisDeAtencao": "Temas como escravidão e violência são duros. Conte de forma verdadeira e proporcional à idade, e deixe espaço para as perguntas e emoções. Se ela ficar muito angustiada, acolha e retome devagar. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Temas como escravidão e violência são duros. Conte de forma verdadeira e proporcional à idade, e deixe espaço para as perguntas e emoções. Se a criança ficar com muita angústia, acolha e retome devagar. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "mason-home-education"],
         "porVertente": {
           "Charlotte Mason": {
@@ -607,13 +607,13 @@
       "preRequisitos": [],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Conhecer o **espaço onde vive** é o início da orientação espacial. Quando a criança sabe onde cada coisa fica e para que serve cada lugar, ela ganha autonomia e segurança.",
+        "porQueImporta": "Conhecer o **espaço onde vive** é o início da orientação espacial. Quando a criança sabe onde cada coisa fica e para que serve cada lugar, ganha autonomia e segurança.",
         "comoParticipar": "Dê pequenas tarefas: “Leve a toalha ao banheiro” ou “Coloque o sapato no quarto”. Passeiem pela casa nomeando cada lugar e o que se faz nele. Use palavras de lugar: dentro, fora, em cima, embaixo.",
-        "sinaisDeAtencao": "Cada criança tem seu ritmo para entender espaços. Se aos 3 anos ela não segue nenhum pedido simples ligado a lugares, comente com o pediatra. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Cada criança tem seu ritmo para entender espaços. Se aos 3 anos a criança não segue nenhum pedido simples ligado a lugares, comente com o pediatra. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "montessori-mente-absorvente"],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "Ambiente preparado: tudo ao alcance da criança, com um lugar para cada coisa, para que ela possa se orientar e ajudar.",
+            "comoParticipar": "Ambiente preparado: tudo ao alcance da criança, com um lugar para cada coisa, para que possa se orientar e ajudar.",
             "referencias": ["montessori-mente-absorvente"]
           }
         }
@@ -665,7 +665,7 @@
       "preRequisitos": ["NM.ESP.02"],
       "bncc": [],
       "orientacaoPais": {
-        "porQueImporta": "Desenhar o espaço visto **de cima** é um grande salto: a criança precisa imaginar um ponto de vista que ela não vê. É a base do mapa, do raciocínio espacial e da matemática de geometria.",
+        "porQueImporta": "Desenhar o espaço visto **de cima** é um grande salto: a criança precisa imaginar um ponto de vista que não é o seu. É a base do mapa, do raciocínio espacial e da matemática de geometria.",
         "comoParticipar": "Faça junto o mapa do quarto: “Se um passarinho olhasse de cima, o que veria?”. Use objetos reais (a criança põe o brinquedo em cima do papel e desenha em volta). Em casa e em outros lugares, brinquem de “tesouro”: esconda algo e desenhe o mapa para achar.",
         "sinaisDeAtencao": "Mapas vistos de cima são difíceis para muitos: a criança desenha “de lado” e isso é esperado. Se aos 7 anos há grande dificuldade em lidar com posições e direções, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "almeida-passini-espaco", "piaget-inhelder-espaco"],
@@ -698,8 +698,8 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Ler mapas exige entender **símbolos** e **escala**, e relacionar o desenho ao lugar real. É uma competência que a criança leva para a vida (orientar-se) e que sustenta a geografia nos próximos anos.",
-        "comoParticipar": "Use um mapa do bairro (impresso ou de um aplicativo, com você ao lado) e peça que ache a casa, a padaria, a praça. Em um passeio, ela guia o caminho com o mapa. Descreva trajetos com pontos de referência.",
-        "sinaisDeAtencao": "Orientar-se no espaço leva tempo. Se aos 8 anos ela se perde em trajetos muito conhecidos ou não distingue direita e esquerda, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Use um mapa do bairro (impresso ou de um aplicativo, com você ao lado) e peça que ache a casa, a padaria, a praça. Em um passeio, a criança guia o caminho com o mapa. Descreva trajetos com pontos de referência.",
+        "sinaisDeAtencao": "Orientar-se no espaço leva tempo. Se aos 8 anos a criança se perde em trajetos muito conhecidos ou não distingue direita e esquerda, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "almeida-passini-espaco", "piaget-inhelder-espaco"]
       },
       "revisao": {
@@ -758,7 +758,7 @@
       "orientacaoPais": {
         "porQueImporta": "Observar e comparar **paisagens** mostra como as pessoas se adaptam aos lugares e como o ambiente muda. Os pontos cardeais ligam o céu (o Sol) ao mapa, e a criança passa a se orientar de verdade.",
         "comoParticipar": "Observem o nascer e o pôr do Sol de casa para achar leste e oeste (sempre sem olhar o Sol diretamente) e marquem no mapa da casa. Compare fotos de lugares diferentes: “O que é igual? O que é diferente? Como as pessoas vivem?”.",
-        "sinaisDeAtencao": "Esse conceito é abstrato e é comum precisar de tempo. Sem pressa. Se ela ainda confunde muito direita e esquerda aos 8 anos, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Esse conceito é abstrato e é comum precisar de tempo. Sem pressa. Se a criança ainda confunde muito direita e esquerda aos 8 anos, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "almeida-passini-espaco", "louv-ultima-crianca"]
       },
       "revisao": {
@@ -883,7 +883,7 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "Perceber a diferença sem medo nem julgamento é a base do **respeito**. A criança que cresce vendo a diversidade como normal estranha menos e acolhe mais.",
-        "comoParticipar": "Leiam livros ilustrados com famílias, corpos, idiomas e culturas diversos. Quando ela comentar uma diferença, responda com naturalidade: “Cada um vive de um jeito”. Aproxime-a de amigos e vizinhos diferentes. Dê o exemplo ao falar das pessoas.",
+        "comoParticipar": "Leiam livros ilustrados com famílias, corpos, idiomas e culturas diversos. Quando a criança comentar uma diferença, responda com naturalidade: “Cada um vive de um jeito”. Aproxime a criança de amigos e vizinhos diferentes. Dê o exemplo ao falar das pessoas.",
         "sinaisDeAtencao": "Crianças comentam diferenças em voz alta sem maldade; isso é curiosidade e não preconceito. Responda com calma e simplicidade. Se houver falas persistentes de desprezo ou agressão, converse com carinho e procure apoio de quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "rcnei-conhecimento-de-mundo", "siegel-bryson-cerebro-crianca"],
         "porVertente": {
@@ -915,7 +915,7 @@
       "bncc": [],
       "orientacaoPais": {
         "porQueImporta": "O Brasil tem muitas culturas. Conhecer festas, comidas e músicas de outras regiões amplia o **repertório** e o respeito e liga a geografia à vida das pessoas.",
-        "comoParticipar": "Escolha uma festa por mês e vivam um pouco dela: festa junina, bumba meu boi, carnaval, Círio de Nazaré, Folia de Reis. Cozinhem um prato, ouçam uma música, desenhem. Em festas religiosas, apresente com respeito, como cultura.",
+        "comoParticipar": "Escolha uma festa por mês e vivam um pouco da festa: festa junina, bumba meu boi, carnaval, Círio de Nazaré, Folia de Reis. Cozinhem um prato, ouçam uma música, desenhem. Em festas religiosas, apresente com respeito, como cultura.",
         "sinaisDeAtencao": "Festas têm origens diversas, inclusive religiosas. Conte com respeito e sem impor, e converse sobre como cada família vive. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["cascudo-folclore", "bncc", "almeida-passini-espaco"],
         "porVertente": {

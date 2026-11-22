@@ -13,8 +13,8 @@
       "bncc": ["EI02EF02", "EI03EF02"],
       "orientacaoPais": {
         "porQueImporta": "Gostar de rimas é o primeiro sinal de que a criança presta atenção aos **sons da fala**, e não só ao que as palavras significam. Essa atenção aos sons (a *consciência fonológica*) está entre as habilidades que mais ajudam a prever como será a alfabetização.",
-        "comoParticipar": "Recitem parlendas, cantigas e quadrinhas (“Batatinha quando nasce…”) e pare antes da última palavra para ela completar. Leia em voz alta livros com rimas e inventem rimas bobas juntos. O objetivo é se divertir com o som, sem corrigir nem testar.",
-        "sinaisDeAtencao": "Por volta dos 3 a 4 anos, a maioria das crianças reage a rimas e completa versos conhecidos. Se aos 5 anos ela ainda não completa nenhum verso familiar, mesmo com muita exposição, vale conversar com o pediatra ou com quem acompanha a criança e checar a audição. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Recitem parlendas, cantigas e quadrinhas (“Batatinha quando nasce…”) e pare antes da última palavra para a criança completar. Leia em voz alta livros com rimas e inventem rimas bobas juntos. O objetivo é se divertir com o som, sem corrigir nem testar.",
+        "sinaisDeAtencao": "Por volta dos 3 a 4 anos, a maioria das crianças reage a rimas e completa versos conhecidos. Se aos 5 anos a criança ainda não completa nenhum verso familiar, mesmo com muita exposição, vale conversar com o pediatra ou com quem acompanha a criança e checar a audição. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["nelp-alfabetizacao-inicial", "bncc", "morais-consciencia-fonologica"],
         "porVertente": {
           "Montessori": {
@@ -49,8 +49,8 @@
       "bncc": ["EI02EF02", "EI03EF02"],
       "orientacaoPais": {
         "porQueImporta": "Aqui a criança deixa de apenas gostar de rimas e passa a **comparar o final de duas palavras**. É um primeiro olhar para o som da palavra em si, separado do significado: PÃO e MÃO rimam, mas uma não tem nada a ver com a outra.",
-        "comoParticipar": "Brinquem de “rima ou não rima?”: diga pares (PÃO–MÃO, GATO–PATO, CASA–BOLA) e deixe ela responder. Depois inverta: ela inventa o par e você adivinha. Comece com pares bem diferentes e, se errar, apenas repita as duas palavras devagar. Não peça explicações.",
-        "sinaisDeAtencao": "Aos 4 anos é comum acertar só com ajuda ou confundir pares parecidos. Se aos 5 ou 6 anos ela ainda não separa o que rima do que não rima, apesar do jogo repetido, vale conversar com o pediatra ou com quem acompanha a criança e checar a audição. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Brinquem de “rima ou não rima?”: diga pares (PÃO–MÃO, GATO–PATO, CASA–BOLA) e deixe a criança responder. Depois inverta: a criança inventa o par e você adivinha. Comece com pares bem diferentes e, se errar, apenas repita as duas palavras devagar. Não peça explicações.",
+        "sinaisDeAtencao": "Aos 4 anos é comum acertar só com ajuda ou confundir pares parecidos. Se aos 5 ou 6 anos a criança ainda não separa o que rima do que não rima, apesar do jogo repetido, vale conversar com o pediatra ou com quem acompanha a criança e checar a audição. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["morais-consciencia-fonologica", "nelp-alfabetizacao-inicial"],
         "porVertente": {
           "Montessori": {
@@ -62,7 +62,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Depois que o poema estiver sabido de cor, pergunte quais palavras rimam. A rima ajuda a memória, e a conversa sobre ela nasce do que já foi decorado.",
+            "comoParticipar": "Depois que o poema estiver sabido de cor, pergunte quais palavras rimam. A rima ajuda a memória, e a conversa sobre a criança nasce do que já foi decorado.",
             "referencias": ["sayers-lost-tools"]
           },
           "Charlotte Mason": {
@@ -86,11 +86,11 @@
       "orientacaoPais": {
         "porQueImporta": "A sílaba é a parte da fala que a criança percebe mais cedo. Separar a palavra em pedaços é a base para ler e escrever, e acompanha o que as pesquisas descrevem na escrita infantil: muitas crianças passam por uma fase em que usam **uma letra para cada sílaba** (a hipótese silábica).",
         "comoParticipar": "Bata palmas ou dê um passo por sílaba, começando pelo nome da criança (A-NA, MA-RI-A) e pelos nomes da família. Depois, frutas, bichos e brinquedos. Pergunte “quantos pedaços?” e conte junto. Não é preciso escrever nada.",
-        "sinaisDeAtencao": "No começo, palavras longas costumam ser difíceis. Se aos 5 ou 6 anos ela ainda não consegue bater as sílabas de palavras curtas depois de semanas de brincadeira, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "No começo, palavras longas costumam ser difíceis. Se aos 5 ou 6 anos a criança ainda não consegue bater as sílabas de palavras curtas depois de semanas de brincadeira, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["morais-consciencia-fonologica", "ferreiro-teberosky-psicogenese"],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "Use objetos pequenos e cartas de figuras: diga o nome com voz clara, separando em pedaços, e só depois peça que ela mesma separe e conte.",
+            "comoParticipar": "Use objetos pequenos e cartas de figuras: diga o nome com voz clara, separando em pedaços, e só depois peça que a criança separe e conte.",
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
@@ -132,7 +132,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos {idade} anos. Até lá, a criança vive os sons pelos versos, pelo canto e pelo movimento; se estiver curiosa, brinque, sem tratar como tarefa.",
+            "comoParticipar": "Na pedagogia Waldorf, esse tipo de análise costuma ser introduzido por volta dos {idade} anos. Até lá, a criança vive os sons pelos versos, pelo canto e pelo movimento; se houver curiosidade, brinque, sem tratar como tarefa.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -156,9 +156,9 @@
       "preRequisitos": ["LG.FON.04"],
       "bncc": ["EF01LP06", "EF01LP05"],
       "orientacaoPais": {
-        "porQueImporta": "Tirar, trocar ou juntar sílabas (SAPATO sem SA → PATO) mostra que a criança já trata as sílabas como **peças que ela pode mover**, e não só ouvir. Essa flexibilidade sustenta, depois, o juntar e separar sons para ler e escrever.",
-        "comoParticipar": "Proponha desafios orais curtos: “diga CAMA sem CA”, “junte BO e LA”, “troque o MA de MALA por SA”. Use peças que ela possa mover (fichas, copos ou blocos, um por sílaba) para ver o que acontece. Poucos desafios por vez, com ar de brincadeira e sem placar.",
-        "sinaisDeAtencao": "Este marco costuma ser difícil. Se ela travar ou se frustrar, volte ao marco anterior: voltar não é retroceder. Se por volta dos 6 ou 7 anos ela não consegue juntar sílabas faladas, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Tirar, trocar ou juntar sílabas (SAPATO sem SA → PATO) mostra que a criança já trata as sílabas como **peças que dá para mover**, e não só ouvir. Essa flexibilidade sustenta, depois, o juntar e separar sons para ler e escrever.",
+        "comoParticipar": "Proponha desafios orais curtos: “diga CAMA sem CA”, “junte BO e LA”, “troque o MA de MALA por SA”. Use peças que a criança possa mover (fichas, copos ou blocos, um por sílaba) para ver o que acontece. Poucos desafios por vez, com ar de brincadeira e sem placar.",
+        "sinaisDeAtencao": "Este marco costuma ser difícil. Se a criança travar ou se frustrar, volte ao marco anterior: voltar não é retroceder. Se por volta dos 6 ou 7 anos a criança não consegue juntar sílabas faladas, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["morais-consciencia-fonologica"],
         "porVertente": {
           "Montessori": {
@@ -192,7 +192,7 @@
       "orientacaoPais": {
         "porQueImporta": "Saber que FACA começa com /f/ é o salto da sílaba para o **som isolado**. Como o alfabeto do português representa sons, ligar o som à letra é o coração da alfabetização.",
         "comoParticipar": "Fale o **som**, não o nome da letra (/f/, e não “efe”). Comece pelos sons que dá para alongar (ffff, ssss, mmmm) e só depois pelos que não se alongam (/p/, /t/). Jogue “eu vejo algo que começa com /m/”. Só então ligue o som à letra, com letras móveis ou de lixa.",
-        "sinaisDeAtencao": "Muitas crianças só chegam a este marco entre 6 e 7 anos, o que está dentro do esperado. Se, depois de um ano de ensino sistemático, ela ainda não separa o som inicial das palavras, vale conversar com o pediatra, com uma fonoaudióloga ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Muitas crianças só chegam a este marco entre 6 e 7 anos, o que está dentro do esperado. Se, depois de um ano de ensino sistemático, a criança ainda não separa o som inicial das palavras, vale conversar com o pediatra, com uma fonoaudióloga ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "soares-alfabetizacao-metodos",
           "morais-consciencia-fonologica",
@@ -208,7 +208,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Ligue cada som à letra numa ordem fixa e revise todos os dias, em lições curtas. É a fase de aprender o “código” do alfabeto de forma sistemática.",
+            "comoParticipar": "Ligue cada som à letra numa ordem fixa e revise todos os dias, em momentos curtos. É a fase de aprender o “código” do alfabeto de forma sistemática.",
             "referencias": ["wise-bauer-well-trained-mind"]
           }
         }
@@ -229,8 +229,8 @@
       "bncc": ["EF01LP07", "EF01LP05"],
       "orientacaoPais": {
         "porQueImporta": "Separar /g/ /a/ /t/ /o/ é o nível mais fino da consciência dos sons, e o que mais ajuda a **escrever palavras novas**. Corresponde ao que as pesquisas chamam de hipótese alfabética: a criança percebe que cada letra representa um som menor que a sílaba.",
-        "comoParticipar": "Comece com palavras curtas, de 2 ou 3 sons (SOL, UVA, MAR). Use uma ficha ou botão para cada som: a criança desliza uma ficha a cada som que fala. Você mostra primeiro, ela imita, depois ela tenta sozinha. Só então monte a palavra com letras móveis.",
-        "sinaisDeAtencao": "Para muitas crianças, este marco só se firma junto com a escrita, então não tenha pressa. Se aos 7 ou 8 anos ela ainda não consegue separar os sons de palavras curtas, mesmo com ensino sistemático, procure quem acompanha a criança (o pediatra e uma fonoaudióloga). Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Comece com palavras curtas, de 2 ou 3 sons (SOL, UVA, MAR). Use uma ficha ou botão para cada som: a criança desliza uma ficha a cada som que fala. Você mostra primeiro, a criança imita, depois tenta sem ajuda. Só então monte a palavra com letras móveis.",
+        "sinaisDeAtencao": "Para muitas crianças, este marco só se firma junto com a escrita, então não tenha pressa. Se aos 7 ou 8 anos a criança ainda não consegue separar os sons de palavras curtas, mesmo com ensino sistemático, procure quem acompanha a criança (o pediatra e uma fonoaudióloga). Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "ferreiro-teberosky-psicogenese",
           "morais-consciencia-fonologica",
@@ -246,7 +246,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Soletrar e separar sons faz parte do ensino sistemático dos sons e das letras, em lições curtas e diárias.",
+            "comoParticipar": "Soletrar e separar sons faz parte do ensino sistemático dos sons e das letras, em momentos curtos e diários.",
             "referencias": ["wise-bauer-well-trained-mind"]
           }
         }
@@ -269,17 +269,17 @@
       "preRequisitos": ["LG.FON.02"],
       "bncc": ["EI03EF02", "EI02EF02"],
       "orientacaoPais": {
-        "porQueImporta": "Reconhecer uma rima é uma coisa; **criar** uma é outra, mais difícil: a criança precisa guardar o final da palavra na cabeça, comparar com o que conhece e produzir algo novo. Rimar mostra que ela já trata o som da palavra como algo que dá para mexer, o que sustenta os próximos passos (sílabas e sons).",
-        "comoParticipar": "Brinque de “rima maluca”: você diz uma palavra (PÃO) e ela responde com qualquer palavra que termine igual, **mesmo inventada** (“pão, mão, tão, fão!”). Palavra inventada vale: o que conta é o som. Façam quadrinhas bobas juntos (“O gato comeu o…” “prato!”). Sem notas, sem corrigir: se ela errar, repita as duas palavras devagar e siga a brincadeira.",
-        "sinaisDeAtencao": "Muitas crianças só rimam sozinhas depois dos 5 anos, e dizer a mesma palavra ou uma que *começa* igual (PÃO–PATO) é um passo comum no caminho. Se aos 6 anos ela ainda não consegue inventar nenhuma rima, mesmo depois de muito jogo com versos e cantigas, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
+        "porQueImporta": "Reconhecer uma rima é uma coisa; **criar** uma é outra, mais difícil: a criança precisa guardar o final da palavra na cabeça, comparar com o que conhece e produzir algo novo. Rimar mostra que a criança já trata o som da palavra como algo que dá para mexer, o que sustenta os próximos passos (sílabas e sons).",
+        "comoParticipar": "Brinque de “rima maluca”: você diz uma palavra (PÃO) e a criança responde com qualquer palavra que termine igual, **mesmo inventada** (“pão, mão, tão, fão!”). Palavra inventada vale: o que conta é o som. Façam quadrinhas bobas juntos (“O gato comeu o…” “prato!”). Sem notas, sem corrigir: se a criança errar, repita as duas palavras devagar e siga a brincadeira.",
+        "sinaisDeAtencao": "Muitas crianças só rimam sem ajuda depois dos 5 anos, e dizer a mesma palavra ou uma que *começa* igual (PÃO–PATO) é um passo comum no caminho. Se aos 6 anos a criança ainda não consegue inventar nenhuma rima, mesmo depois de muito jogo com versos e cantigas, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
         "referencias": ["morais-consciencia-fonologica", "nelp-alfabetizacao-inicial", "bncc"],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "Use uma cesta com objetos pequenos e seguros de que ela sabe o nome; peça que ela ache, entre eles, o que rima com o objeto que você mostra, e só depois que invente uma palavra nova.",
+            "comoParticipar": "Use uma cesta com objetos pequenos e seguros de que a criança sabe o nome; peça que ache, entre eles, o que rima com o objeto que você mostra, e só depois que invente uma palavra nova.",
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Na pedagogia Waldorf, a criação consciente de rimas costuma vir por volta dos {idade} anos. Antes disso, a rima vive nos versos de roda e nas canções repetidas; se ela espontaneamente inventar versinhos, acolha com alegria, sem transformar em exercício.",
+            "comoParticipar": "Na pedagogia Waldorf, a criação consciente de rimas costuma vir por volta dos {idade} anos. Antes disso, a rima vive nos versos de roda e nas canções repetidas; se a criança espontaneamente inventar versinhos, acolha com alegria, sem transformar em exercício.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -316,8 +316,8 @@
       "bncc": ["EF01LP09"],
       "orientacaoPais": {
         "porQueImporta": "Depois de perceber o **começo** da palavra (sílaba inicial), a criança aprende a olhar também para o **fim**. Isso liga a rima à análise da palavra: GATO e PATO rimam porque terminam com o mesmo pedaço. Comparar começo, meio e fim das palavras é uma habilidade que a BNCC descreve para o início da alfabetização.",
-        "comoParticipar": "Jogue “termina igual?”: mostre três figuras (GATO, PATO, BOLA) e pergunte qual termina diferente. Fale devagar, alongando o final (“gaaa-TO, paaa-TO”). Depois inverta e deixe que ela proponha o trio. Use nomes da família e objetos da casa; poucos desafios por vez, com ar de brincadeira.",
-        "sinaisDeAtencao": "Este é um marco intermediário: é comum a criança confundir final com começo, por hábito de olhar só para o início. Se aos 7 anos ela ainda não percebe que palavras que rimam terminam igual, apesar de jogos repetidos, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
+        "comoParticipar": "Jogue “termina igual?”: mostre três figuras (GATO, PATO, BOLA) e pergunte qual termina diferente. Fale devagar, alongando o final (“gaaa-TO, paaa-TO”). Depois inverta e deixe que a criança proponha o trio. Use nomes da família e objetos da casa; poucos desafios por vez, com ar de brincadeira.",
+        "sinaisDeAtencao": "Este é um marco intermediário: é comum a criança confundir final com começo, por hábito de olhar só para o início. Se aos 7 anos a criança ainda não percebe que palavras que rimam terminam igual, apesar de jogos repetidos, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
         "referencias": ["morais-consciencia-fonologica", "soares-alfabetizacao-metodos", "bncc"],
         "porVertente": {
           "Montessori": {
@@ -329,7 +329,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Monte listas de palavras que terminam com a mesma sílaba e recitem juntos, em lições curtas. Prepara o estudo posterior das terminações e da ortografia.",
+            "comoParticipar": "Monte listas de palavras que terminam com a mesma sílaba e recitem juntos, em momentos curtos. Prepara o estudo posterior das terminações e da ortografia.",
             "referencias": ["wise-bauer-well-trained-mind"]
           }
         }
@@ -355,8 +355,8 @@
       "bncc": ["EF01LP07"],
       "orientacaoPais": {
         "porQueImporta": "Juntar sons soltos (/s/ /o/ /l/ → SOL) é o caminho inverso de separar a palavra, e é exatamente o que a criança faz ao **ler** uma palavra nova: transformar letras em sons e os sons em palavra. Por isso costuma ser um pouco mais fácil que separar sons e vem junto com a leitura inicial.",
-        "comoParticipar": "Seja o “robô que fala devagar”: diga os sons separados, com uma pausa pequena (/m/ … /a/ … /r/) e deixe a criança descobrir a palavra (MAR). Comece por palavras de 2 ou 3 sons e com sons que dá para alongar (/s/, /f/, /m/). Fale o **som**, não o nome da letra. Inverta o jogo: ela vira o robô e você adivinha.",
-        "sinaisDeAtencao": "Muitas crianças só juntam sons com segurança entre 6 e 7 anos, junto com o aprendizado das letras. Se, depois de um ano de ensino sistemático, ela ainda não consegue juntar os sons de palavras curtas, converse com o pediatra ou com quem acompanha a criança e, se fizer sentido, com uma fonoaudióloga. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
+        "comoParticipar": "Seja o “robô que fala devagar”: diga os sons separados, com uma pausa pequena (/m/ … /a/ … /r/) e deixe a criança descobrir a palavra (MAR). Comece por palavras de 2 ou 3 sons e com sons que dá para alongar (/s/, /f/, /m/). Fale o **som**, não o nome da letra. Inverta o jogo: a criança vira o robô e você adivinha.",
+        "sinaisDeAtencao": "Muitas crianças só juntam sons com segurança entre 6 e 7 anos, junto com o aprendizado das letras. Se, depois de um ano de ensino sistemático, a criança ainda não consegue juntar os sons de palavras curtas, converse com o pediatra ou com quem acompanha a criança e, se fizer sentido, com uma fonoaudióloga. Isto é uma orientação, não um diagnóstico; conferência por profissional pendente.",
         "referencias": [
           "soares-alfabetizacao-metodos",
           "morais-consciencia-fonologica",
@@ -372,7 +372,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Juntar sons é a base da leitura sistemática (som → letra → palavra). Faça lições curtas e diárias, com palavras regulares, antes de avançar.",
+            "comoParticipar": "Juntar sons é a base da leitura sistemática (som → letra → palavra). Faça momentos curtos e diários, com palavras regulares, antes de avançar.",
             "referencias": ["wise-bauer-well-trained-mind"]
           }
         }
@@ -398,9 +398,9 @@
       "preRequisitos": [],
       "bncc": ["EI03EF09"],
       "orientacaoPais": {
-        "porQueImporta": "Antes de escrever “de verdade”, a criança descobre que a escrita é diferente do desenho e que serve para dizer coisas. As tentativas, mesmo com rabiscos e letras soltas, são o ponto de partida. Nessa fase, que Ferreiro e Teberosky chamam de **pré-silábica**, ela ainda não liga as letras aos sons, mas pensa muito sobre como a escrita funciona (quantas letras, quais letras).",
-        "comoParticipar": "Dê motivos reais para escrever: lista de compras, bilhete, legenda de um desenho, cartão de aniversário. Deixe a criança “escrever” do jeito dela e peça que “leia” o que escreveu. Escreva ao lado, em letra de forma, o que ela disse (você como escriba), sem corrigir a tentativa. Mantenha lápis, papel e canetas sempre à mão.",
-        "sinaisDeAtencao": "Aos 4 anos ainda é comum misturar desenho e escrita. Se aos 5 ou 6 anos a criança nunca tenta escrever, nem com rabiscos ou letras, e evita lápis e papel mesmo quando convidada, vale conversar com o pediatra ou com quem acompanha a criança e avaliar a coordenação da mão. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Antes de escrever “de verdade”, a criança descobre que a escrita é diferente do desenho e que serve para dizer coisas. As tentativas, mesmo com rabiscos e letras soltas, são o ponto de partida. Nessa fase, que Ferreiro e Teberosky chamam de **pré-silábica**, a criança ainda não liga as letras aos sons, mas pensa muito sobre como a escrita funciona (quantas letras, quais letras).",
+        "comoParticipar": "Dê motivos reais para escrever: lista de compras, bilhete, legenda de um desenho, cartão de aniversário. Deixe a criança “escrever” como conseguir e peça que “leia” o que escreveu. Escreva ao lado, em letra de forma, o que a criança disse (você como escriba), sem corrigir a tentativa. Mantenha lápis, papel e canetas sempre à mão.",
+        "sinaisDeAtencao": "Aos 4 anos ainda é comum misturar desenho e escrita. Se aos 5 ou 6 anos a criança nunca tenta escrever, nem com rabiscos ou letras, e evita lápis e papel mesmo quando convidam, vale conversar com o pediatra ou com quem acompanha a criança e avaliar a coordenação da mão. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["ferreiro-teberosky-psicogenese", "soares-alfabetizacao-metodos", "bncc"],
         "porVertente": {
           "Montessori": {
@@ -426,9 +426,9 @@
       "preRequisitos": ["LG.ESC.01"],
       "bncc": ["EI03EF09"],
       "orientacaoPais": {
-        "porQueImporta": "O nome próprio costuma ser a primeira palavra que a criança escreve, e a mais importante: é o seu **modelo estável de escrita**. Ela usa as letras do nome para escrever outras palavras (“começa com a letra do meu nome”) e aprende, com ele, que cada letra tem forma e ordem.",
-        "comoParticipar": "Escreva o nome da criança em tudo o que é dela (caderno, desenhos, cabide) e deixe-a copiar ou escrever. Brinque com as letras do nome: letras móveis, massinha, cartões; compare com o nome dos amigos (“quem tem a mesma letra?”). Peça que assine os desenhos. Aceite letras trocadas, tortas ou espelhadas no começo.",
-        "sinaisDeAtencao": "Aos 4 anos é comum escrever só algumas letras do nome. Se aos 6 anos ela ainda não escreve o próprio nome, mesmo com muita prática, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "O nome próprio costuma ser a primeira palavra que a criança escreve, e a mais importante: é o seu **modelo estável de escrita**. A criança usa as letras do nome para escrever outras palavras (“começa com a letra do meu nome”) e aprende, com ele, que cada letra tem forma e ordem.",
+        "comoParticipar": "Escreva o nome da criança no caderno, nos desenhos e no cabide e deixe a criança copiar ou escrever. Brinque com as letras do nome: letras móveis, massinha, cartões; compare com o nome dos amigos (“quem tem a mesma letra?”). Peça que assine os desenhos. Aceite letras trocadas, tortas ou espelhadas no começo.",
+        "sinaisDeAtencao": "Aos 4 anos é comum escrever só algumas letras do nome. Se aos 6 anos a criança ainda não escreve o próprio nome, mesmo com muita prática, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "ferreiro-teberosky-psicogenese",
           "morais-sistema-escrita-alfabetica",
@@ -461,9 +461,9 @@
       "preRequisitos": ["LG.ESC.02", "LG.FON.03"],
       "bncc": ["EI03EF09", "EF01LP05"],
       "orientacaoPais": {
-        "porQueImporta": "É um grande salto: a criança descobre que **a escrita representa a fala** e que cada pedaço da palavra (a sílaba) pode virar uma letra. Por isso ela pode escrever AO para GATO. Para Ferreiro e Teberosky, essa é a hipótese **silábica**, e escrever assim não é erro: é um jeito de pensar que leva à escrita alfabética.",
-        "comoParticipar": "Peça que escreva palavras do mundo dela (nomes, bichos, comidas) e fale devagar, batendo palmas nas sílabas. Depois peça que “leia” apontando uma letra para cada sílaba. Não corrija a hipótese; pergunte “quais sons você ouviu?” e mostre a escrita convencional ao lado, depois. Letras móveis ajudam muito.",
-        "sinaisDeAtencao": "Cada criança passa por essa fase em um tempo. Se aos 7 anos ela ainda escreve só com letras sem relação com o som, mesmo com atividades de sílabas e letras, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "É um grande salto: a criança descobre que **a escrita representa a fala** e que cada pedaço da palavra (a sílaba) pode virar uma letra. Por isso é possível escrever AO para GATO. Para Ferreiro e Teberosky, essa é a hipótese **silábica**, e escrever assim não é erro: é um jeito de pensar que leva à escrita alfabética.",
+        "comoParticipar": "Peça que escreva palavras do mundo da criança (nomes, bichos, comidas) e fale devagar, batendo palmas nas sílabas. Depois peça que “leia” apontando uma letra para cada sílaba. Não corrija a hipótese; pergunte “quais sons você ouviu?” e mostre a escrita convencional ao lado, depois. Letras móveis ajudam muito.",
+        "sinaisDeAtencao": "Cada criança passa por essa fase em um tempo. Se aos 7 anos a criança ainda escreve só com letras sem relação com o som, mesmo com atividades de sílabas e letras, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "ferreiro-teberosky-psicogenese",
           "morais-sistema-escrita-alfabetica",
@@ -492,9 +492,9 @@
       "preRequisitos": ["LG.ESC.03", "LG.FON.04"],
       "bncc": ["EF01LP05", "EF01LP02"],
       "orientacaoPais": {
-        "porQueImporta": "A criança começa a escutar **os sons dentro das sílabas** (a hipótese **silábico-alfabética**): às vezes usa uma letra para a sílaba, às vezes duas. Ela está descobrindo que a letra representa um som menor que a sílaba, e por isso “esquece” letras e hesita.",
-        "comoParticipar": "Brinque de escrever palavras devagar, alongando os sons (“bbbooolaaa”), e pergunte “que som você ouve primeiro? e depois?”. Use letras móveis para montar e consertar a palavra. Compare a escrita dela com a convencional, com carinho (“olha, aqui tem mais uma letra”). Não corrija tudo de uma vez: escolha uma letra por vez.",
-        "sinaisDeAtencao": "Misturar as hipóteses é normal. Se aos 7 anos ela ainda escreve com uma letra por sílaba ou com letras aleatórias, apesar do ensino sistemático de sons e letras, vale conversar com o pediatra, com uma fonoaudióloga ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "A criança começa a escutar **os sons dentro das sílabas** (a hipótese **silábico-alfabética**): às vezes usa uma letra para a sílaba, às vezes duas. A criança está descobrindo que a letra representa um som menor que a sílaba, e por isso “esquece” letras e hesita.",
+        "comoParticipar": "Brinque de escrever palavras devagar, alongando os sons (“bbbooolaaa”), e pergunte “que som você ouve primeiro? e depois?”. Use letras móveis para montar e consertar a palavra. Compare a escrita da criança com a convencional, com carinho (“olha, aqui tem mais uma letra”). Não corrija tudo de uma vez: escolha uma letra por vez.",
+        "sinaisDeAtencao": "Misturar as hipóteses é normal. Se aos 7 anos a criança ainda escreve com uma letra por sílaba ou com letras aleatórias, apesar do ensino sistemático de sons e letras, vale conversar com o pediatra, com uma fonoaudióloga ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "ferreiro-teberosky-psicogenese",
           "morais-sistema-escrita-alfabetica",
@@ -520,7 +520,7 @@
       "descricaoPais": "Escreve de forma alfabética, uma letra para cada som, ainda com erros de ortografia (CAZA para CASA).",
       "evidencias": [
         "Escreve 8 de 10 palavras ditadas com letras que representam todos os sons",
-        "Aceita que algumas palavras têm ortografia diferente do que ela ouve"
+        "Aceita que algumas palavras têm ortografia diferente do que a criança ouve"
       ],
       "idadeTipica": 6.5,
       "idadeIntroducao": {
@@ -529,9 +529,9 @@
       "preRequisitos": ["LG.ESC.04", "LG.FON.06"],
       "bncc": ["EF01LP02", "EF01LP05"],
       "orientacaoPais": {
-        "porQueImporta": "Na hipótese **alfabética**, a criança entende que cada letra representa um som e consegue escrever quase qualquer palavra. É aí que aparecem os erros de ortografia (CAZA, CASA), que mostram que ela pensa no som. Agora ela precisa aprender que a ortografia tem regras e exceções, e isso leva anos.",
-        "comoParticipar": "Comemore que ela escreve qualquer palavra e use os erros como ponto de conversa, sem corrigir tudo: escolha um erro por texto (“o S entre vogais tem som de Z, mas se escreve com S”). Façam listas de palavras com a mesma regra, caça-palavras e jogos de memória. Mantenha a escrita com sentido: bilhetes, cartas, diário, legendas.",
-        "sinaisDeAtencao": "Erros de ortografia são esperados por muitos anos. Se aos 8 anos ela ainda omite muitas letras ou escreve palavras sem relação com o som, mesmo com ensino sistemático, vale conversar com o pediatra ou com quem acompanha a criança e avaliar a leitura e a escrita. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Na hipótese **alfabética**, a criança entende que cada letra representa um som e consegue escrever quase qualquer palavra. É aí que aparecem os erros de ortografia (CAZA, CASA), que mostram que a criança pensa no som. Agora a criança precisa aprender que a ortografia tem regras e exceções, e isso leva anos.",
+        "comoParticipar": "Comemore que a criança escreve qualquer palavra e use os erros como ponto de conversa, sem corrigir tudo: escolha um erro por texto (“o S entre vogais tem som de Z, mas se escreve com S”). Façam listas de palavras com a mesma regra, caça-palavras e jogos de memória. Mantenha a escrita com sentido: bilhetes, cartas, diário, legendas.",
+        "sinaisDeAtencao": "Erros de ortografia são esperados por muitos anos. Se aos 8 anos a criança ainda omite muitas letras ou escreve palavras sem relação com o som, mesmo com ensino sistemático, vale conversar com o pediatra ou com quem acompanha a criança e avaliar a leitura e a escrita. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "ferreiro-teberosky-psicogenese",
           "morais-sistema-escrita-alfabetica",
@@ -575,8 +575,8 @@
       "bncc": ["EF01LP02"],
       "orientacaoPais": {
         "porQueImporta": "Escrever uma frase é mais que juntar palavras: exige **espaço entre as palavras**, pontuação e organização das ideias. A maiúscula e o ponto marcam onde a frase começa e termina, e ajudam o leitor (e a própria criança) a entender.",
-        "comoParticipar": "Peça frases sobre o dia (“O gato dormiu no sofá.”). Mostre o espaço entre as palavras (um dedo de distância), a maiúscula e o ponto. Alterne: você escreve uma frase com um erro de pontuação e ela corrige. Façam um diário de uma frase por dia. Leia a frase em voz alta para ver se faz sentido.",
-        "sinaisDeAtencao": "Juntar palavras (“ogatodormiu”) é comum no começo. Se aos 8 anos ela escreve sem espaços ou sem nenhuma pontuação, mesmo com lembretes e prática, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Peça frases sobre o dia (“O gato dormiu no sofá.”). Mostre o espaço entre as palavras (um dedo de distância), a maiúscula e o ponto. Alterne: você escreve uma frase com um erro de pontuação e a criança corrige. Façam um diário de uma frase por dia. Leia a frase em voz alta para ver se faz sentido.",
+        "sinaisDeAtencao": "Juntar palavras (“ogatodormiu”) é comum no começo. Se aos 8 anos a criança escreve sem espaços ou sem nenhuma pontuação, mesmo com lembretes e prática, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "soares-alfabetizacao-metodos",
           "morais-sistema-escrita-alfabetica",
@@ -620,8 +620,8 @@
       "bncc": ["EF15LP05"],
       "orientacaoPais": {
         "porQueImporta": "Escrever um texto é **organizar ideias para alguém ler**: escolher o que dizer, a ordem e o final. A criança usa o que aprendeu ouvindo histórias e recontando (começo, meio e fim). Escrever para uma pessoa de verdade (um bilhete, uma carta) dá motivo para caprichar.",
-        "comoParticipar": "Dê motivos reais: bilhete, convite, carta a um avô, receita, legenda de uma foto. Antes de escrever, converse: “o que você quer contar? como começa? como termina?”. Deixe fazer um rascunho com erros e passe a limpo só o que ela quiser mostrar. Leia o texto como um leitor interessado.",
-        "sinaisDeAtencao": "Textos muito curtos ou desorganizados são esperados no começo. Se aos 9 anos ela não consegue escrever duas ou três frases ligadas sobre algo que viveu, mesmo conversando antes, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Dê motivos reais: bilhete, convite, carta a um avô, receita, legenda de uma foto. Antes de escrever, converse: “o que você quer contar? como começa? como termina?”. Deixe fazer um rascunho com erros e passe a limpo só o que a criança quiser mostrar. Leia o texto como um leitor interessado.",
+        "sinaisDeAtencao": "Textos muito curtos ou desorganizados são esperados no começo. Se aos 9 anos a criança não consegue escrever duas ou três frases ligadas sobre algo que viveu, mesmo conversando antes, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["soares-alfabetizacao-metodos", "bncc"],
         "porVertente": {
           "Waldorf": {
@@ -657,8 +657,8 @@
       "bncc": ["EF15LP06"],
       "orientacaoPais": {
         "porQueImporta": "Revisar é o passo que transforma um rascunho em texto: a criança aprende a **ler o que escreveu com os olhos de outra pessoa** e a perceber o que falta, o que sobra e o que está errado. É difícil e vem depois de escrever com fluência.",
-        "comoParticipar": "Depois de escrever, deixe passar um tempo e peça que releia em voz alta, com o dedo na linha. Faça uma pergunta de cada vez: “falta algum ponto?”, “alguma palavra está estranha?”, “dá para dizer de outro jeito?”. Use lápis de cor para marcar o que vai mudar. Corrija com ela, sem tomar o lápis, e comemore cada melhoria.",
-        "sinaisDeAtencao": "Revisar sozinha costuma ser difícil até os 9 ou 10 anos. Se aos 9 anos ela não percebe nenhum erro ao reler em voz alta, nem com ajuda, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Depois de escrever, deixe passar um tempo e peça que releia em voz alta, com o dedo na linha. Faça uma pergunta de cada vez: “falta algum ponto?”, “alguma palavra está estranha?”, “dá para dizer de outro jeito?”. Use lápis de cor para marcar o que vai mudar. Corrija com a criança, sem tomar o lápis, e comemore cada melhoria.",
+        "sinaisDeAtencao": "Revisar sem ajuda costuma ser difícil até os 9 ou 10 anos. Se aos 9 anos a criança não percebe nenhum erro ao reler em voz alta, nem com ajuda, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "soares-alfabetizacao-metodos"],
         "porVertente": {
           "Waldorf": {
@@ -686,13 +686,13 @@
       "preRequisitos": [],
       "bncc": ["EI03EF01", "EI03EF03"],
       "orientacaoPais": {
-        "porQueImporta": "Ouvir histórias lidas em voz alta é onde a criança aprende vocabulário, o jeito das narrativas e o gosto por livros, **antes de ler sozinha**. Responder a perguntas simples (quem, onde, o quê) mostra que ela acompanhou o fio da história.",
-        "comoParticipar": "Leia em voz alta todos os dias, mesmo que por 10 minutos, com ela por perto. Mostre a capa e pergunte “do que será?”; depois, converse com perguntas simples (“quem apareceu?”, “onde foi?”, “o que aconteceu?”). Releia as favoritas: a repetição ajuda.",
-        "sinaisDeAtencao": "Aos 4 anos é comum se distrair em histórias longas; prefira as curtas. Se aos 5 ou 6 anos ela não acompanha nem histórias curtas com figuras, ou não responde a perguntas simples sobre elas, vale conversar com o pediatra ou com quem acompanha a criança e checar audição e linguagem. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Ouvir histórias lidas em voz alta é onde a criança aprende vocabulário, o jeito das narrativas e o gosto por livros, **antes de ler sem ajuda**. Responder a perguntas simples (quem, onde, o quê) mostra que a criança acompanhou o fio da história.",
+        "comoParticipar": "Leia em voz alta todos os dias, mesmo que por 10 minutos, com a criança por perto. Mostre a capa e pergunte “do que será?”; depois, converse com perguntas simples (“quem apareceu?”, “onde foi?”, “o que aconteceu?”). Releia as favoritas: a repetição ajuda.",
+        "sinaisDeAtencao": "Aos 4 anos é comum se distrair em histórias longas; prefira as curtas. Se aos 5 ou 6 anos a criança não acompanha nem histórias curtas com figuras, ou não responde a perguntas simples sobre elas, vale conversar com o pediatra ou com quem acompanha a criança e checar audição e linguagem. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["nelp-alfabetizacao-inicial", "bncc"],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "Deixe livros bem ilustrados ao alcance e a criança escolher, folhear e “ler” sozinha as figuras. Na primeira infância, a tradição Montessori costuma preferir histórias realistas às de fantasia.",
+            "comoParticipar": "Deixe livros bem ilustrados ao alcance e a criança escolher, folhear e “ler” sem ajuda as figuras. Na primeira infância, a tradição Montessori costuma preferir histórias realistas às de fantasia.",
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
@@ -700,7 +700,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Contos tradicionais, fábulas e mitos lidos em voz alta fazem parte da tradição clássica desde cedo, bem antes de a criança ler sozinha.",
+            "comoParticipar": "Contos tradicionais, fábulas e mitos lidos em voz alta fazem parte da tradição clássica desde cedo, bem antes de a criança ler sem ajuda.",
             "referencias": ["wise-bauer-well-trained-mind"]
           },
           "Charlotte Mason": {
@@ -723,8 +723,8 @@
       "bncc": ["EI03EF04", "EF15LP19"],
       "orientacaoPais": {
         "porQueImporta": "Recontar é transformar o que ouviu em fala própria: a criança precisa **lembrar, ordenar e escolher palavras**. É o treino de começo, meio e fim que depois vira texto escrito e compreensão de leitura.",
-        "comoParticipar": "Depois de ler, peça: “me conta como foi essa história?”. Aceite o jeito dela e ajude só com perguntas (“e depois?”). Use as figuras do livro, bonecos ou um desenho em três quadros (começo, meio e fim). Corrija só a ordem, se for preciso, e não as palavras.",
-        "sinaisDeAtencao": "Aos 5 anos é comum trocar a ordem ou esquecer partes. Se aos 6 anos ela não consegue recontar nem uma história curta com a ajuda das figuras, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Depois de ler, peça: “me conta como foi essa história?”. Aceite o jeito da criança e ajude só com perguntas (“e depois?”). Use as figuras do livro, bonecos ou um desenho em três quadros (começo, meio e fim). Corrija só a ordem, se for preciso, e não as palavras.",
+        "sinaisDeAtencao": "Aos 5 anos é comum trocar a ordem ou esquecer partes. Se aos 6 anos a criança não consegue recontar nem uma história curta com a ajuda das figuras, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc"],
         "porVertente": {
           "Waldorf": {
@@ -736,7 +736,7 @@
             "referencias": ["wise-bauer-well-trained-mind"]
           },
           "Charlotte Mason": {
-            "comoParticipar": "A narração é o coração do método Mason: a criança conta com as próprias palavras o que ouviu, depois de uma única leitura. Comece com trechos curtos e acolha o jeito dela.",
+            "comoParticipar": "A narração é o coração do método Mason: a criança conta com as próprias palavras o que ouviu, depois de uma única leitura. Comece com trechos curtos e acolha o jeito da criança.",
             "referencias": ["mason-home-education-4ed"]
           }
         }
@@ -758,8 +758,8 @@
       "bncc": ["EI03EF01", "EF15LP02"],
       "orientacaoPais": {
         "porQueImporta": "Ir além de “o que aconteceu” e perguntar **por quê** é o começo do pensamento sobre histórias: a criança liga as ações às intenções dos personagens, forma opinião e aprende a justificá-la.",
-        "comoParticipar": "Faça perguntas sem uma única resposta: “por que será que ele fez isso?”, “o que você teria feito?”, “você mudaria alguma coisa?”. Peça sempre o “por quê?” e ouça com interesse, sem dizer o que é certo ou errado. Compare com outras histórias e com a vida da família.",
-        "sinaisDeAtencao": "Aos 6 anos muitas crianças dão razões curtas ou repetem a história. Se aos 7 ela só responde sobre fatos, nunca sobre motivos, mesmo com conversa frequente, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Faça perguntas sem uma única resposta: “por que será que o personagem fez isso?”, “o que você teria feito?”, “você mudaria alguma coisa?”. Peça sempre o “por quê?” e ouça com interesse, sem dizer o que é certo ou errado. Compare com outras histórias e com a vida da família.",
+        "sinaisDeAtencao": "Aos 6 anos muitas crianças dão razões curtas ou repetem a história. Se aos 7 a criança só responde sobre fatos, nunca sobre motivos, mesmo com conversa frequente, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc"],
         "porVertente": {
           "Waldorf": {
@@ -792,8 +792,8 @@
       "bncc": ["EF01LP05", "EF12LP01"],
       "orientacaoPais": {
         "porQueImporta": "Ler BOLA ou GATO é juntar sílabas que a criança já sabe separar e reconhecer: é o primeiro uso real do **código alfabético**. Depende de conhecer os sons das letras e de separar sílabas. Em português, as sílabas simples (consoante + vogal) são as mais regulares e o melhor lugar para começar.",
-        "comoParticipar": "Comece com sílabas simples: junte a consoante e a vogal em voz alta (B + A = BA) e depois forme palavras (BA-TA, BO-LA), com letras móveis ou cartões. Leiam juntos, devagar, apontando; depois deixe ela ler sozinha. Poucos minutos por dia, todos os dias, valem mais que sessões longas. Continue lendo histórias em voz alta.",
-        "sinaisDeAtencao": "Cada criança tem seu ritmo. Se, depois de um ano de ensino sistemático, ela ainda não lê palavras simples, ou troca letras e esquece sons com frequência, vale conversar com o pediatra, com uma fonoaudióloga ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Comece com sílabas simples: junte a consoante e a vogal em voz alta (B + A = BA) e depois forme palavras (BA-TA, BO-LA), com letras móveis ou cartões. Leiam juntos, devagar, apontando; depois deixe a criança ler sem ajuda. Poucos minutos por dia, todos os dias, valem mais que sessões longas. Continue lendo histórias em voz alta.",
+        "sinaisDeAtencao": "Cada criança tem seu ritmo. Se, depois de um ano de ensino sistemático, a criança ainda não lê palavras simples, ou troca letras e esquece sons com frequência, vale conversar com o pediatra, com uma fonoaudióloga ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": [
           "soares-alfabetizacao-metodos",
           "morais-sistema-escrita-alfabetica",
@@ -801,7 +801,7 @@
         ],
         "porVertente": {
           "Montessori": {
-            "comoParticipar": "O alfabeto móvel permite escrever antes de ler: a criança forma BOLA com as letras e depois a lê, apoiada nas letras de lixa que já conhece.",
+            "comoParticipar": "O alfabeto móvel permite escrever antes de ler: a criança forma BOLA com as letras e depois a lê, com o apoio das letras de lixa que já conhece.",
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
@@ -809,11 +809,11 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "O ensino fônico sistemático, em ordem e com revisão diária, em lições curtas, é a marca da tradição clássica.",
+            "comoParticipar": "O ensino fônico sistemático, em ordem e com revisão diária, em momentos curtos, é a marca da tradição clássica.",
             "referencias": ["wise-bauer-well-trained-mind"]
           },
           "Charlotte Mason": {
-            "comoParticipar": "Faça lições curtas, com palavras que a criança já conhece, e continue com a leitura em voz alta de bons livros.",
+            "comoParticipar": "Faça momentos curtos, com palavras que a criança já conhece, e continue com a leitura em voz alta de bons livros.",
             "referencias": ["mason-home-education"]
           }
         }
@@ -834,8 +834,8 @@
       "bncc": ["EF12LP01", "EF15LP18"],
       "orientacaoPais": {
         "porQueImporta": "Ler uma frase é mais que somar palavras: a criança precisa guardar o que leu para entender o todo. É aqui que a leitura passa a **ter sentido** (“O gato bebe leite” e a figura combina).",
-        "comoParticipar": "Escreva frases curtas sobre o dia a dia da criança (“O Davi pula”, “A mamãe fez bolo”) e peça que leia e mostre a figura ou faça o que a frase diz. Faça livrinhos com uma frase por página. Alterne: ela lê uma página e você lê a outra.",
-        "sinaisDeAtencao": "Ler frases ainda cansa no começo. Se aos 7 anos ela lê as palavras mas não entende o que leu, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Escreva frases curtas sobre o dia a dia da criança (“O Davi pula”, “A vovó fez bolo”) e peça que leia e mostre a figura ou faça o que a frase diz. Faça livrinhos com uma frase por página. Alterne: a criança lê uma página e você lê a outra.",
+        "sinaisDeAtencao": "Ler frases ainda cansa no começo. Se aos 7 anos a criança lê as palavras mas não entende o que leu, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["soares-alfabetizacao-metodos", "morais-sistema-escrita-alfabetica"],
         "porVertente": {
           "Montessori": {
@@ -843,7 +843,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Esta etapa costuma vir por volta dos {idade} anos. Antes, ela pode reconhecer palavras familiares, mas a leitura de frases fica para o 1º ano.",
+            "comoParticipar": "Esta etapa costuma vir por volta dos {idade} anos. Antes, a criança pode reconhecer palavras familiares, mas a leitura de frases fica para o 1º ano.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Charlotte Mason": {
@@ -869,7 +869,7 @@
       "orientacaoPais": {
         "porQueImporta": "O português tem sons que se escrevem com duas letras (CH, NH, LH, RR) e sílabas com mais de uma consoante (PLANTA, BRAVO). Essas combinações não seguem o “uma letra, um som” e **precisam ser ensinadas e treinadas** uma a uma.",
         "comoParticipar": "Ensine um grupo por vez: CH (chave, chuva, chinelo), depois NH, LH e RR. Faça listas e jogos de memória com figuras e palavras, e leiam juntos textos que usam o grupo. Use uma cor diferente para o dígrafo (as duas letras juntas valem um som). Quando um grupo estiver firme, passe ao seguinte.",
-        "sinaisDeAtencao": "Dígrafos e encontros consonantais costumam demorar mais para ficar firmes. Se aos 8 anos ela ainda se perde na maioria deles, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Dígrafos e encontros consonantais costumam demorar mais para ficar firmes. Se aos 8 anos a criança ainda se perde na maioria deles, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["morais-sistema-escrita-alfabetica", "soares-alfabetizacao-metodos"],
         "porVertente": {
           "Montessori": {
@@ -877,7 +877,7 @@
             "referencias": ["montessori-mente-absorvente"]
           },
           "Waldorf": {
-            "comoParticipar": "Esta etapa vem por volta de {idade} anos, depois de a criança ler textos que ela mesma escreveu e conhece.",
+            "comoParticipar": "Esta etapa vem por volta de {idade} anos, depois de a criança ler textos que escreveu e conhece.",
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
@@ -906,7 +906,7 @@
       "orientacaoPais": {
         "porQueImporta": "Encontrar no texto **quem, onde, quando e o quê** é a primeira forma de compreensão de leitura: a resposta está escrita e a criança precisa localizá-la. Isso separa ler as palavras de entender o que elas dizem.",
         "comoParticipar": "Depois de ler um texto curto, pergunte e peça que aponte a frase com a resposta. Releiam juntos, se preciso. Troquem os papéis: a criança faz as perguntas e você responde, às vezes errando de propósito.",
-        "sinaisDeAtencao": "Responder do que lembra, e não do que está escrito, é comum. Se aos 8 anos ela lê bem, mas erra a maioria das perguntas literais, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Responder do que lembra, e não do que está escrito, é comum. Se aos 8 anos a criança lê bem, mas erra a maioria das perguntas literais, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "soares-alfabetizacao-metodos"],
         "porVertente": {
           "Waldorf": {
@@ -914,7 +914,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Pergunte e peça que ela mostre a frase no livro: confirmar no texto é hábito de leitor atento.",
+            "comoParticipar": "Pergunte e peça que a criança mostre a frase no livro: confirmar no texto é hábito de leitor atento.",
             "referencias": ["wise-bauer-well-trained-mind"]
           }
         }
@@ -935,8 +935,8 @@
       "bncc": ["EF12LP01", "EF15LP16"],
       "orientacaoPais": {
         "porQueImporta": "Fluência é ler **com ritmo e sem soletrar**: quando decodificar fica automático, a atenção sobra para entender. Por isso reler os mesmos textos ajuda tanto.",
-        "comoParticipar": "Releiam o mesmo texto curto de 3 a 4 vezes, a criança lendo e você acompanhando. Leiam em dupla, um parágrafo cada. Poemas e cantigas são ótimos para treinar. Grave a leitura para ela se ouvir. Elogie o progresso, não a velocidade.",
-        "sinaisDeAtencao": "Parar bastante é normal no começo. Se aos 8 ou 9 anos ela ainda soletra quase todas as palavras, apesar de leitura diária, vale conversar com o pediatra ou com quem acompanha a criança e avaliar a leitura. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Releiam o mesmo texto curto de 3 a 4 vezes, a criança lendo e você acompanhando. Leiam em dupla, um parágrafo cada. Poemas e cantigas são ótimos para treinar. Grave a leitura para a criança se ouvir. Elogie o progresso, não a velocidade.",
+        "sinaisDeAtencao": "Parar bastante é normal no começo. Se aos 8 ou 9 anos a criança ainda soletra quase todas as palavras, apesar de leitura diária, vale conversar com o pediatra ou com quem acompanha a criança e avaliar a leitura. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["rasinski-fluent-reader", "soares-alfabetizacao-metodos", "bncc"],
         "porVertente": {
           "Waldorf": {
@@ -944,7 +944,7 @@
             "referencias": ["steiner-educacao-crianca"]
           },
           "Clássico": {
-            "comoParticipar": "Reler em voz alta poemas e textos curtos bem escolhidos, em lições breves, forma o ouvido e a fluência.",
+            "comoParticipar": "Reler em voz alta poemas e textos curtos bem escolhidos, em momentos breves, forma o ouvido e a fluência.",
             "referencias": ["wise-bauer-well-trained-mind"]
           }
         }
@@ -966,7 +966,7 @@
       "orientacaoPais": {
         "porQueImporta": "Recontar o que leu mostra que a criança guardou a ordem e as ideias, e é a ponte para escrever resumos. Escolher o que contar já é **compreender**.",
         "comoParticipar": "Depois de ler, peça que conte com as próprias palavras, com começo, meio e fim, ajudando só com perguntas curtas (“quem?”, “onde?”, “e depois?”). Alterne: oral numa semana, desenho com uma frase na outra. Mantenha curto.",
-        "sinaisDeAtencao": "Recontar por escrito exige mais da mão e da escrita. Se aos 8 ou 9 anos ela não consegue recontar oralmente um texto curto que leu, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Recontar por escrito exige mais da mão e da escrita. Se aos 8 ou 9 anos a criança não consegue recontar oralmente um texto curto que leu, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc"],
         "porVertente": {
           "Waldorf": {
@@ -1002,8 +1002,8 @@
       "bncc": ["EF15LP02", "EF15LP03"],
       "orientacaoPais": {
         "porQueImporta": "Inferir é descobrir o que o texto **não diz** a partir das pistas: como alguém se sente, o que vai acontecer. É um dos pilares da compreensão: o leitor constrói sentido além das palavras.",
-        "comoParticipar": "Pergunte “como será que ele está se sentindo?” e depois “como você sabe?”, pedindo que aponte a pista no texto ou na ilustração. Pare a leitura antes do final e peça uma previsão (“o que acontece agora?”); depois confiram juntos.",
-        "sinaisDeAtencao": "Inferir costuma vir depois de ler com fluência. Se aos 8 ou 9 anos ela responde bem sobre o que está escrito, mas nunca vai além, mesmo com pistas, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Pergunte “como será que o personagem está se sentindo?” e depois “como você sabe?”, pedindo que aponte a pista no texto ou na ilustração. Pare a leitura antes do final e peça uma previsão (“o que acontece agora?”); depois confiram juntos.",
+        "sinaisDeAtencao": "Inferir costuma vir depois de ler com fluência. Se aos 8 ou 9 anos a criança responde bem sobre o que está escrito, mas nunca vai além, mesmo com pistas, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc"],
         "porVertente": {
           "Waldorf": {
@@ -1034,7 +1034,7 @@
       "orientacaoPais": {
         "porQueImporta": "A pontuação é a **música do texto**: a voz desce no ponto, sobe na pergunta e pausa na vírgula. Ler assim mostra que a criança entende a frase, e não só decodifica.",
         "comoParticipar": "Leia um trecho com e sem entonação e pergunte qual soa melhor. Façam teatrinhos: cada personagem lê uma fala respeitando a pontuação. Marque os sinais com cores (ponto, vírgula, interrogação) e deixe a criança ler as perguntas e exclamações com a voz certa.",
-        "sinaisDeAtencao": "Ler sem entonação é comum até a leitura ficar automática. Se aos 9 anos ela ainda lê tudo no mesmo tom, sem parar nos pontos, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Ler sem entonação é comum até a leitura ficar automática. Se aos 9 anos a criança ainda lê tudo no mesmo tom, sem parar nos pontos, converse com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["rasinski-fluent-reader", "bncc"],
         "porVertente": {
           "Clássico": {
@@ -1065,7 +1065,7 @@
       "orientacaoPais": {
         "porQueImporta": "Ligar o que lê ao que viveu e a outros livros dá **sentido pessoal** à leitura. Aprender a ler as ilustrações, que muitas vezes dizem mais que o texto, também faz parte de ler bem.",
         "comoParticipar": "Pergunte “isso já aconteceu com você?” e “lembra outra história parecida?”. Olhem a ilustração antes de ler o texto e depois pergunte “o que a imagem mostra que o texto não conta?”. Conversem sem pressa.",
-        "sinaisDeAtencao": "Cada criança relaciona de um jeito. Se aos 9 anos ela nunca conecta o que lê à própria vida nem às imagens, mesmo com conversa, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Cada criança relaciona de um jeito. Se aos 9 anos a criança nunca conecta o que lê à própria vida nem às imagens, mesmo com conversa, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc"],
         "porVertente": {
           "Charlotte Mason": {
@@ -1080,16 +1080,16 @@
       "linha": "LG.LEI",
       "ordem": 10,
       "titulo": "Lê um livrinho inteiro com autonomia",
-      "descricaoPais": "Escolhe um livro para a idade e lê do começo ao fim, sozinha.",
+      "descricaoPais": "Escolhe um livro para a idade e lê do começo ao fim, sem ajuda.",
       "evidencias": ["Lê um livro ilustrado de 200 a 500 palavras sem ajuda", "Diz do que gostou"],
       "idadeTipica": 8,
       "idadeIntroducao": {},
       "preRequisitos": ["LG.LEI.05"],
       "bncc": ["EF02LP26", "EF15LP16"],
       "orientacaoPais": {
-        "porQueImporta": "Ler um livro inteiro sozinho é a conquista do **leitor independente**: a criança junta fluência, compreensão e persistência. Escolher o livro e dizer do que gostou faz da leitura um prazer, e não só um dever.",
-        "comoParticipar": "Deixe-a escolher livros ilustrados de que gosta, com 200 a 500 palavras e vocabulário que conheça (o acervo gratuito do app pode ajudar). Reserve um horário tranquilo e um cantinho de leitura, e continue lendo em voz alta livros mais difíceis. Pergunte “do que você gostou?”, sem prova.",
-        "sinaisDeAtencao": "Algumas crianças gostam mais de livros do que outras, e isso não é problema. Se aos 9 anos ela evita qualquer leitura e lê com muito esforço, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "porQueImporta": "Ler um livro inteiro sem ajuda é a conquista do **leitor independente**: a criança junta fluência, compreensão e persistência. Escolher o livro e dizer do que gostou faz da leitura um prazer, e não só um dever.",
+        "comoParticipar": "Deixe a criança escolher livros ilustrados de que gosta, com 200 a 500 palavras e vocabulário que conheça (o acervo gratuito do app pode ajudar). Reserve um horário tranquilo e um cantinho de leitura, e continue lendo em voz alta livros mais difíceis. Pergunte “do que você gostou?”, sem prova.",
+        "sinaisDeAtencao": "Algumas crianças gostam mais de livros do que outras, e isso não é problema. Se aos 9 anos a criança evita qualquer leitura e lê com muito esforço, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc", "soares-alfabetizacao-metodos"],
         "porVertente": {
           "Montessori": {
@@ -1121,7 +1121,7 @@
       "orientacaoPais": {
         "porQueImporta": "Saber do que o texto trata e que tipo de texto é (conto, poema, receita, notícia) ajuda a ler com o objetivo certo e a resumir. Cada gênero tem seu jeito de ser lido.",
         "comoParticipar": "Reúna textos variados (um conto, um poema, uma receita, um bilhete, uma notícia) e converse: “para que serve?”, “como a gente reconhece?”. Peça um resumo em uma frase. Leiam rótulos, receitas e cartas reais em casa.",
-        "sinaisDeAtencao": "Resumir em uma frase costuma vir bem depois de recontar. Se aos 9 ou 10 anos ela não distingue os gêneros mais comuns, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "sinaisDeAtencao": "Resumir em uma frase costuma vir bem depois de recontar. Se aos 9 ou 10 anos a criança não distingue os gêneros mais comuns, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc"],
         "porVertente": {
           "Clássico": {
@@ -1148,8 +1148,8 @@
       "bncc": ["EF15LP15", "EF02LP26"],
       "orientacaoPais": {
         "porQueImporta": "Dizer o que pensa e **provar com o texto** (“acho que o lobo era mau porque…”) é a base do argumento: a criança aprende que opinião se sustenta com razões e evidências.",
-        "comoParticipar": "Pergunte “você gostou? por quê?” e peça que mostre o trecho. Aceite opiniões diferentes, desde que justificadas, e converse sobre as razões, e não sobre o certo e o errado. Peça também que ela ouça a opinião de outra pessoa.",
-        "sinaisDeAtencao": "Argumentar leva tempo. Se aos 9 ou 10 anos ela só diz “gostei” ou “não gostei”, sem razão, mesmo com perguntas, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
+        "comoParticipar": "Pergunte “você gostou? por quê?” e peça que mostre o trecho. Aceite opiniões diferentes, desde que justificadas, e converse sobre as razões, e não sobre o certo e o errado. Peça também que a criança ouça a opinião de outra pessoa.",
+        "sinaisDeAtencao": "Argumentar leva tempo. Se aos 9 ou 10 anos a criança só diz “gostei” ou “não gostei”, sem razão, mesmo com perguntas, vale conversar com o pediatra ou com quem acompanha a criança. Isto é uma orientação, não um diagnóstico.",
         "referencias": ["bncc"],
         "porVertente": {
           "Clássico": {

@@ -28,7 +28,7 @@
     {
       "titulo": "Cores e variações",
       "minutos": 6,
-      "texto": "Com as cores do livro, ela escolhe a ordem e você canta o que ela tocou."
+      "texto": "Com as cores do livro, a criança escolhe a ordem e você canta o que foi tocado."
     }
   ],
   "observar": {
@@ -46,14 +46,14 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse ou fez durante a escuta?",
+  "perguntaFicha": "O que a criança disse ou fez durante a escuta?",
   "folhas": [],
   "autoria": {
     "origem": "ia",
     "status": "rascunho"
   },
   "ajustes": {
-    "dificil": "Aos 4 ou 5 anos, basta cantar a melodia e dizer se é a mesma; se ela se cansar, escute só a cantiga e uma variação.",
-    "facil": "Aos 7 ou 8 anos, ela também diz o nome do compositor (Mozart) e do que mais gostou."
+    "dificil": "Aos 4 ou 5 anos, basta cantar a melodia e dizer se é a mesma; se a criança se cansar, escute só a cantiga e uma variação.",
+    "facil": "Aos 7 ou 8 anos, a criança também diz o nome do compositor (Mozart) e do que mais gostou."
   }
 }

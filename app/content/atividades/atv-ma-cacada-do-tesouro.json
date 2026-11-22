@@ -13,28 +13,28 @@
     {
       "titulo": "Seguir instruções",
       "minutos": 6,
-      "texto": "Esconda um tesouro (um livro ou um brinquedo). Dê instruções: *“ande três passos à frente; vire à direita; ande dois passos”*. Ela segue. Use *frente*, *atrás* e *ao lado* antes de esquerda e direita.",
+      "texto": "Esconda um tesouro (um livro ou um brinquedo). Dê instruções: *“ande três passos à frente; vire à direita; ande dois passos”*. A criança segue. Use *frente*, *atrás* e *ao lado* antes de esquerda e direita.",
       "fala": "Para onde eu vou agora?"
     },
     {
       "titulo": "A pulseira da mão direita",
       "minutos": 4,
-      "texto": "Coloque uma pulseira ou fita na mão direita dela. *“Vire para o lado da pulseira.”* Repita até ela gostar."
+      "texto": "Coloque uma pulseira ou fita na mão direita da criança. *“Vire para o lado da pulseira.”* Repita até a criança gostar."
     },
     {
-      "titulo": "Ela dá as instruções",
+      "titulo": "A criança dá as instruções",
       "minutos": 8,
-      "texto": "Troquem: ela esconde o tesouro e diz como chegar a ele. Se confundir direita e esquerda, mostre com seu próprio corpo e deixe tentar de novo."
+      "texto": "Troquem: a criança esconde o tesouro e diz como chegar a ele. Se confundir direita e esquerda, mostre com seu próprio corpo e deixe tentar de novo."
     },
     {
       "titulo": "O mapa da sala",
       "minutos": 7,
-      "texto": "Desenhe com ela um mapa simples da sala, com um símbolo para cada móvel. Marque o tesouro com um X e peça que descreva o caminho em passos."
+      "texto": "Desenhe com a criança um mapa simples da sala, com um símbolo para cada móvel. Marque o tesouro com um X e peça que descreva o caminho em passos."
     },
     {
       "titulo": "Folha: meu mapa",
       "minutos": 3,
-      "texto": "Ela desenha o caminho do tesouro e conta quantos passos tem."
+      "texto": "A criança desenha o caminho do tesouro e conta quantos passos tem."
     }
   ],
   "observar": {
@@ -50,7 +50,7 @@
   },
   "ajustes": {
     "dificil": "Use só duas instruções e palavras como frente e atrás; deixe a pulseira à vista. Aos 5 anos, foque no mapa da sala (um símbolo para cada móvel e o X do tesouro) e use só frente, atrás e ao lado.",
-    "facil": "Peça que ela invente um mapa de outro cômodo, com legenda, e que você siga as instruções dela."
+    "facil": "Peça que a criança invente um mapa de outro cômodo, com legenda, e que você siga as instruções."
   },
   "materiais": [
     {
@@ -69,7 +69,7 @@
   "toqueVertente": {
     "Montessori": "As atividades de movimento e vida prática (caminhar na linha, seguir percursos) trabalham o espaço com o corpo; o mapa vem depois, quando o percurso já está dominado.",
     "Waldorf": "Caminhar, saltar e dançar em roda e em linha ensina as direções com o corpo; os jogos de roda com “para a direita” e “para a esquerda” já fazem esse trabalho.",
-    "Charlotte Mason": "Passeios ao ar livre com um mapa desenhado pela criança, em lições curtas, ligam o espaço real ao desenho."
+    "Charlotte Mason": "Passeios ao ar livre com um mapa desenhado pela criança, em momentos curtos, ligam o espaço real ao desenho."
   },
   "evidencias": [
     {

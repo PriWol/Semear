@@ -6,13 +6,13 @@
   "idade": [7, 8],
   "duracaoMin": 20,
   "preparoMin": 3,
-  "cuidados": "Atenção: leitura sentada de até 20 minutos. Ajude só com perguntas curtas; não reconte por ela. Se escolher o formato escrito, combine duas ou três frases, sem exigir texto longo.",
+  "cuidados": "Atenção: leitura sentada de até 20 minutos. Ajude só com perguntas curtas; não reconte pela criança. Se escolher o formato escrito, combine duas ou três frases, sem exigir texto longo.",
   "objetivo": "A criança conta (oralmente ou por escrito) o texto que leu, na ordem certa, citando personagens e lugar.",
   "passos": [
     {
       "titulo": "Ler o texto",
       "minutos": 6,
-      "texto": "Ela lê (sozinha ou com você) uma historinha curta ou um capítulo de livro. Não explique antes. Deixe o livro fechado ao terminar."
+      "texto": "A criança lê (sem ajuda ou com você) uma historinha curta ou um capítulo de livro. Não explique antes. Deixe o livro fechado ao terminar."
     },
     {
       "titulo": "Contar com as próprias palavras",
@@ -23,12 +23,12 @@
     {
       "titulo": "Registrar",
       "minutos": 6,
-      "texto": "Em uma semana, ela conta de boca; na outra, em uma frase com desenho ou três frases escritas (começo, meio, fim). Você pode ser o escriba se estiver cansada."
+      "texto": "Em uma semana, a criança conta de boca; na outra, em uma frase com desenho ou três frases escritas (começo, meio, fim). Você pode ser o escriba se a escrita cansar."
     },
     {
       "titulo": "Conferir",
       "minutos": 2,
-      "texto": "Abram o livro e confiram juntas se faltou alguma parte importante. Comemore o que ela lembrou."
+      "texto": "Abram o livro e confiram juntas se faltou alguma parte importante. Comemore o que a criança lembrou."
     }
   ],
   "observar": {
@@ -47,7 +47,7 @@
   },
   "materiais": [
     {
-      "item": "Livro ou texto que ela leu",
+      "item": "Livro ou texto que a criança leu",
       "deCasa": true
     },
     {
@@ -58,8 +58,8 @@
   "toqueVertente": {
     "Waldorf": "Reconte no dia seguinte, de memória, como na “revisão” da aula do dia anterior.",
     "Clássico": "A narração vira um pequeno discurso: começo, meio e fim, bem dito.",
-    "Religioso": "Se desejar, use uma parábola ou história bíblica e peça que conte a lição com as próprias palavras.",
-    "Charlotte Mason": "É a “narração” do método: ela lê (ou ouve) uma vez e conta, sem questionário."
+    "Religioso": "Se desejar, use uma parábola ou história bíblica e peça que conte a mensagem com as próprias palavras.",
+    "Charlotte Mason": "É a “narração” do método: a criança lê (ou ouve) uma vez e conta, sem questionário."
   },
   "evidencias": [
     {
@@ -71,7 +71,7 @@
       "resposta": "☐ não   ☐ só um   ☐ ambos"
     }
   ],
-  "perguntaFicha": "Que parte do texto ela esqueceu?",
+  "perguntaFicha": "Que parte do texto a criança esqueceu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

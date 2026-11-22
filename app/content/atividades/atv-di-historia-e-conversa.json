@@ -12,7 +12,7 @@
     {
       "titulo": "Contar",
       "minutos": 8,
-      "texto": "Conte ou leia uma história curta da tradição da família, com voz calma, em um lugar aconchegante. Pare em um ou dois momentos para olhar o rosto dela."
+      "texto": "Conte ou leia uma história curta da tradição da família, com voz calma, em um lugar aconchegante. Pare em um ou dois momentos para olhar o rosto da criança."
     },
     {
       "titulo": "Conversar",
@@ -23,7 +23,7 @@
     {
       "titulo": "Registro",
       "minutos": 4,
-      "texto": "Ela desenha a parte de que mais gostou. Escreva a legenda que ela disser."
+      "texto": "A criança desenha a parte de que mais gostou. Escreva a legenda que a criança disser."
     }
   ],
   "observar": {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Conte uma história bem curta, com um desenho.",
-    "facil": "Peça que conte a história a alguém e diga o que ela ensina."
+    "facil": "Peça que conte a história a alguém e diga o que a criança ensina."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela perguntou?",
+  "perguntaFicha": "O que a criança perguntou?",
   "palavrasChave": ["histórias", "tradição", "conversa", "fé", "ensinamento"],
   "folhas": [],
   "autoria": {

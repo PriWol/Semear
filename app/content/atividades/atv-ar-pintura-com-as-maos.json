@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Use só um pincel e uma cor.",
-    "facil": "Convide-a a pintar um tema, como “a chuva”."
+    "facil": "Convide a criança a pintar um tema, como “a chuva”."
   },
   "materiais": [
     {
@@ -66,7 +66,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais cores ela mais usou?",
+  "perguntaFicha": "Quais cores a criança mais usou?",
   "palavrasChave": ["tinta", "guache", "pintura com as mãos", "cores"],
   "folhas": [],
   "autoria": {

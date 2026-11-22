@@ -12,19 +12,19 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Atenção: A massa é salgada e não é comida: fique junto o tempo todo, não deixe que ela a leve à boca e tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: A massa é salgada e não é comida: fique junto o tempo todo, não deixe que a criança a leve à boca e tire do alcance depois. Alergia a trigo: troque por massinha comprada atóxica. Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["massinha", "farinha", "modelar", "mãos"],
   "objetivo": "A criança aperta, bate, belisca e enrola uma massinha caseira, fortalecendo as mãos e descarregando a raiva sem machucar ninguém.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Misture os ingredientes com ela (despejar e mexer já é brincadeira) até ficar uma massa macia."
+      "texto": "Misture os ingredientes com a criança (despejar e mexer já é brincadeira) até ficar uma massa macia."
     },
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Deixe que ela aperte, bata, belisque, enrole. Mostre uma cobra e uma bola."
+      "texto": "Deixe que a criança aperte, bata, belisque, enrole. Mostre uma cobra e uma bola."
     },
     {
       "titulo": "Passo 3",
@@ -59,7 +59,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

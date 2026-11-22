@@ -13,7 +13,7 @@
   "idade": [2, 6],
   "duracaoMin": 8,
   "preparoMin": 2,
-  "cuidados": "Voz baixa e ritmo calmo. Pelúcia sem peças soltas; se ela já estiver sonolenta, ótimo, mas não deixe a criança dormir com a pelúcia no rosto.",
+  "cuidados": "Voz baixa e ritmo calmo. Pelúcia sem peças soltas; se a criança já estiver com sono, ótimo, mas não deixe a criança dormir com a pelúcia no rosto.",
   "objetivo": "A criança **balança no pulso** de uma canção de ninar e faz um primeiro jogo de **altura do som**: grave e agudo.",
   "passos": [
     {
@@ -34,7 +34,7 @@
   },
   "ajustes": {
     "dificil": "Só ouvir e balançar a pelúcia, sem cantarolar.",
-    "facil": "Peça que ela invente um “lá-lá-lá” bem grave e um bem agudo."
+    "facil": "Peça que a criança invente um “lá-lá-lá” bem grave e um bem agudo."
   },
   "materiais": [
     {
@@ -51,7 +51,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Qual das três vozes ela fez melhor?",
+  "perguntaFicha": "Qual das três vozes a criança fez melhor?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

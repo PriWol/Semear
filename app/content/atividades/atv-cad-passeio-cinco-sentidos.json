@@ -10,14 +10,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Atenção: Não deixe que ela prove plantas, frutinhas nem terra. Em lugar de mato alto, calçado fechado. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Não deixe que a criança prove plantas, frutinhas nem terra. Em lugar de mato alto, calçado fechado. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["passeio", "sentidos", "quintal", "natureza", "escutar"],
   "objetivo": "A criança escuta, olha, cheira e toca o que há no quintal ou na praça, enquanto o adulto nomeia o que encontram.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Chegue ao lugar e fiquem em silêncio por um minuto, de pé ou sentadas."
+      "texto": "Chegue ao lugar e fiquem em silêncio por um minuto, de pé ou sentados."
     },
     {
       "titulo": "Passo 2",
@@ -27,7 +27,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Deixe que ela toque numa folha, na terra, numa casca, num tronco."
+      "texto": "Deixe que a criança toque numa folha, na terra, numa casca, num tronco."
     },
     {
       "titulo": "Passo 4",
@@ -37,7 +37,7 @@
     {
       "titulo": "Passo 5",
       "minutos": 0,
-      "texto": "Na volta, lavem as mãos juntas."
+      "texto": "Na volta, lavem as mãos juntos."
     },
     {
       "titulo": "Para dizer",
@@ -57,12 +57,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Para Charlotte Mason, o trabalho da criança pequena é conhecer o mundo pelos cinco sentidos, ao ar livre. Não há o que acertar: o passeio é o objetivo. Faça no mesmo lugar várias vezes, para ela perceber o que mudou."
+      "texto": "Para Charlotte Mason, o trabalho da criança pequena é conhecer o mundo pelos cinco sentidos, ao ar livre. Não há o que acertar: o passeio é o objetivo. Faça no mesmo lugar várias vezes, para a criança perceber o que mudou."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -79,11 +79,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

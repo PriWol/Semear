@@ -12,7 +12,7 @@
     {
       "titulo": "Olhar",
       "minutos": 5,
-      "texto": "Mostre uma obra de Monet (por exemplo, uma das séries de nenúfares). Ela olha em silêncio por 3 minutos, observando cores, luz e pinceladas."
+      "texto": "Mostre uma obra de Monet (por exemplo, uma das séries de nenúfares). A criança olha em silêncio por 3 minutos, observando cores, luz e pinceladas."
     },
     {
       "titulo": "Lembrar",
@@ -23,7 +23,7 @@
     {
       "titulo": "O pintor",
       "minutos": 5,
-      "texto": "Conte em poucas frases quem foi o artista (viveu na França, pintava ao ar livre, observava a luz). Ela pergunta o que quiser e guarda a obra na sua pasta de pintores."
+      "texto": "Conte em poucas frases quem foi o artista (viveu na França, pintava ao ar livre, observava a luz). A criança pergunta o que quiser e guarda a obra na sua pasta de pintores."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela lembrou do quadro?",
+  "perguntaFicha": "O que a criança lembrou do quadro?",
   "palavrasChave": [
     "monet",
     "estudo de pintores",

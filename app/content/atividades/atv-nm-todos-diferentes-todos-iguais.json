@@ -23,7 +23,7 @@
     {
       "titulo": "Fechamento",
       "minutos": 4,
-      "texto": "Pergunte: “O que a gente pode aprender com quem é diferente?”. Registre a frase dela."
+      "texto": "Pergunte: “O que a gente pode aprender com quem é diferente?”. Registre a frase da criança."
     }
   ],
   "observar": {
@@ -57,7 +57,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela disse sobre as diferenças?",
+  "perguntaFicha": "O que a criança disse sobre as diferenças?",
   "palavrasChave": ["diversidade", "respeito", "famílias", "semelhanças"],
   "folhas": [],
   "autoria": {

@@ -18,18 +18,18 @@
     {
       "titulo": "Contar a história e o refrão",
       "minutos": 4,
-      "texto": "Conte *Os Três Porquinhos* (casas de palha, de madeira e de tijolos). Diga o refrão com ritmo, batendo nas pernas: *Por-qui-nho, por-qui-nho, dei-xa eu en-trar!* Na segunda vez, ela responde “Não, não!”. Sopre de verdade na hora de soprar."
+      "texto": "Conte *Os Três Porquinhos* (casas de palha, de madeira e de tijolos). Diga o refrão com ritmo, batendo nas pernas: *Por-qui-nho, por-qui-nho, dei-xa eu en-trar!* Na segunda vez, a criança responde “Não, não!”. Sopre de verdade na hora de soprar."
     },
     {
       "titulo": "Palha, madeira ou tijolo?",
       "minutos": 4,
-      "texto": "Ela segura cada material (palha ou palitos, gravetos, um tijolo ou bloco): *“qual é mais leve? qual é mais pesado?”* e *“qual casa o Lobo não conseguiu derrubar? Por quê?”*.",
+      "texto": "A criança segura cada material (palha ou palitos, gravetos, um tijolo ou bloco): *“qual é mais leve? qual é mais pesado?”* e *“qual casa o Lobo não conseguiu derrubar? Por quê?”*.",
       "fala": "Qual é mais pesado?"
     },
     {
       "titulo": "Um, dois, três",
       "minutos": 4,
-      "texto": "Toque cada porquinho dizendo um número por toque: 1; 1, 2; 1, 2, 3. O número grande diz **quantos há**. Depois, com blocos ou botões grandes, ela conta 3 objetos."
+      "texto": "Toque cada porquinho dizendo um número por toque: 1; 1, 2; 1, 2, 3. O número grande diz **quantos há**. Depois, com blocos ou botões grandes, a criança conta 3 objetos."
     }
   ],
   "observar": {
@@ -41,7 +41,7 @@
   },
   "ajustes": {
     "dificil": "Só o refrão e o sopro na palha.",
-    "facil": "Peça que ela invente uma quarta casa e o material dela."
+    "facil": "Peça que a criança invente uma quarta casa e o material da criança."
   },
   "materiais": [
     {
@@ -68,14 +68,14 @@
   "evidencias": [
     {
       "texto": "Contou 3 objetos tocando um de cada vez",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Disse o resultado (último número)",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Que material ela disse ser o mais forte?",
+  "perguntaFicha": "Que material a criança disse ser o mais forte?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

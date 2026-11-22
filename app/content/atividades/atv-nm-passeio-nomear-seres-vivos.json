@@ -18,12 +18,12 @@
     {
       "titulo": "Passeio",
       "minutos": 6,
-      "texto": "Caminhem pelo quintal, pela calçada ou pela praça. Quando ela olhar algo, diga o nome em voz clara (“formiga”, “árvore”) e deixe observar o tempo que quiser."
+      "texto": "Caminhem pelo quintal, pela calçada ou pela praça. Quando a criança olhar algo, diga o nome em voz clara (“formiga”, “árvore”) e deixe observar o tempo que quiser."
     },
     {
       "titulo": "Cestinha",
       "minutos": 2,
-      "texto": "Se ela quiser, junte uma folha ou pedrinha caída no chão para a cestinha. Nada de arrancar da planta."
+      "texto": "Se a criança quiser, junte uma folha ou pedrinha caída no chão para a cestinha. Nada de arrancar da planta."
     }
   ],
   "observar": {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Escolha só um ser vivo e fique com ele um tempinho.",
-    "facil": "Peça que ela conte qual é o seu bichinho ou planta favorita e por quê."
+    "facil": "Peça que a criança conte qual é o seu bichinho ou planta favorita e por quê."
   },
   "materiais": [
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual ser vivo mais chamou a atenção dela hoje?",
+  "perguntaFicha": "Qual ser vivo mais chamou a atenção da criança hoje?",
   "toqueVertente": {
     "Charlotte Mason": "Volte ao mesmo lugar em outros dias e note o que mudou: é o começo do caderno da natureza."
   },

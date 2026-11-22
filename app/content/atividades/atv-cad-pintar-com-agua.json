@@ -12,24 +12,24 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Atenção: Com água em balde, não a deixe sozinha; esvazie o balde no fim. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Com água em balde, não deixe a criança sem um adulto ao lado; esvazie o balde no fim. Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["pintar com água", "pincel", "quintal", "calma"],
   "objetivo": "A criança pinta com água uma parede ou o chão e vê o “desenho” sumir sozinho, num movimento repetido e calmante.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Dê a ela o pincel molhado e mostre: pinte a parede ou o chão."
+      "texto": "Dê à criança o pincel molhado e mostre: pinte a parede ou o chão."
     },
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Observem juntas: a água escurece o chão e depois some, bem devagar."
+      "texto": "Observem juntos: a água escurece o chão e depois some, bem devagar."
     },
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Deixe que ela “apague” o que você pintou e “apague” o que ela pintou."
+      "texto": "Deixe que a criança “apague” o que você pintou e “apague” o que a criança pintou."
     },
     {
       "titulo": "Passo 4",
@@ -79,11 +79,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -17,7 +17,7 @@
     {
       "titulo": "Dizer",
       "minutos": 5,
-      "texto": "Pergunte: “O que você vê? Quais cores? O que está acontecendo?”. Aponte junto com o dedo e repita o que ela disser.",
+      "texto": "Pergunte: “O que você vê? Quais cores? O que está acontecendo?”. Aponte junto com o dedo e repita o que a criança disser.",
       "fala": "O que você vê?"
     },
     {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela viu na obra?",
+  "perguntaFicha": "O que a criança viu na obra?",
   "palavrasChave": ["apreciação", "quadros", "pintores", "henri rousseau", "olhar"],
   "folhas": [],
   "autoria": {

@@ -12,23 +12,23 @@
     {
       "titulo": "Esticar a palavra",
       "minutos": 4,
-      "texto": "Fale uma palavra bem devagar, esticando os sons (*bbbooolaaa*) e peça que ela faça o mesmo. Pergunte: *“Que som você ouve primeiro? E depois?”*",
+      "texto": "Fale uma palavra bem devagar, esticando os sons (*bbbooolaaa*) e peça que a criança faça o mesmo. Pergunte: *“Que som você ouve primeiro? E depois?”*",
       "fala": "Que som você ouve primeiro?"
     },
     {
       "titulo": "Escolher as letras",
       "minutos": 8,
-      "texto": "Em letras móveis, ela monta a palavra som a som. Para cada som, ela escolhe a letra. Quando faltar alguma (BOA para BOLA), pergunte: *“Vamos esticar de novo? Tem mais algum som no meio?”*"
+      "texto": "Em letras móveis, a criança monta a palavra som a som. Para cada som, a criança escolhe a letra. Quando faltar alguma (BOA para BOLA), pergunte: *“Vamos esticar de novo? Tem mais algum som no meio?”*"
     },
     {
       "titulo": "Comparar com carinho",
       "minutos": 4,
-      "texto": "Mostre a forma convencional (BOLA) ao lado e conte: *“Olha, aqui tem mais uma letra! Os adultos escrevem assim.”* Se ela já tiver acertado, comemore."
+      "texto": "Mostre a forma convencional (BOLA) ao lado e conte: *“Olha, aqui tem mais uma letra! Os adultos escrevem assim.”* Se a criança já tiver acertado, comemore."
     },
     {
       "titulo": "Jogo do detetive",
       "minutos": 4,
-      "texto": "Escreva uma palavra com uma letra faltando (*BO_A*) e peça que ela descubra o som que falta esticando a palavra."
+      "texto": "Escreva uma palavra com uma letra faltando (*BO_A*) e peça que a criança descubra o som que falta esticando a palavra."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Use palavras de 2 sílabas e sons longos (SOL, MESA, FACA) e mostre o primeiro som por ela.",
+    "dificil": "Use palavras de 2 sílabas e sons longos (SOL, MESA, FACA) e mostre o primeiro som pela criança.",
     "facil": "Peça palavras de 3 sílabas ou mais (*PANELA*, *BORBOLETA*) e sem o modelo."
   },
   "materiais": [
@@ -60,7 +60,7 @@
     }
   ],
   "toqueVertente": {
-    "Montessori": "É o clássico “alfabeto móvel”: deixe-a compor palavras da casa sozinha, sem correção, e só depois mostre o modelo.",
+    "Montessori": "É o clássico “alfabeto móvel”: deixe a criança compor palavras da casa sem ajuda, sem correção, e só depois mostre o modelo.",
     "Clássico": "Depois da escrita, leiam as palavras em voz alta e façam uma pequena lista para copiar com cuidado.",
     "Religioso": "Se desejar, use palavras de uma cantiga ou do versículo da semana.",
     "Charlotte Mason": "Use poucas palavras por dia e, ao final, uma cópia curta e bem-feita de uma delas."
@@ -75,7 +75,7 @@
       "resposta": "_____ de 5"
     }
   ],
-  "perguntaFicha": "Qual som ela ainda esquece de escrever?",
+  "perguntaFicha": "Qual som a criança ainda esquece de escrever?",
   "folhas": [
     {
       "tipo": "desenho",

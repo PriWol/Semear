@@ -19,7 +19,7 @@
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Cante ou ponha música e dancem juntas."
+      "texto": "Cante ou ponha música e dancem juntos."
     },
     {
       "titulo": "Passo 2",
@@ -54,12 +54,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Parar de repente, no meio do movimento, é um dos exercícios mais completos de autocontrole: a criança segura um impulso. Como é brincadeira, ela adora. Deixe que ela mande a parada de vez em quando: assim ela exercita os dois lados."
+      "texto": "Parar de repente, no meio do movimento, é um dos exercícios mais completos de autocontrole: a criança segura um impulso. Como é brincadeira, a criança adora. Deixe que a criança mande a parada de vez em quando: assim a criança exercita os dois lados."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

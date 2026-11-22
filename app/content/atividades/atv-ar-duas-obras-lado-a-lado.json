@@ -12,18 +12,18 @@
     {
       "titulo": "Olhar",
       "minutos": 5,
-      "texto": "Coloque as duas obras lado a lado. Ela olha cada uma por um minuto, em silêncio."
+      "texto": "Coloque as duas obras lado a lado. A criança olha cada uma por um minuto, em silêncio."
     },
     {
       "titulo": "Comparar",
       "minutos": 8,
-      "texto": "Pergunte: “O que é igual? O que é diferente? Qual é mais calma? Qual tem mais movimento?”. Anote o que ela disser, em duas colunas.",
+      "texto": "Pergunte: “O que é igual? O que é diferente? Qual é mais calma? Qual tem mais movimento?”. Anote o que a criança disser, em duas colunas.",
       "fala": "O que é igual? E o que é diferente?"
     },
     {
       "titulo": "Escolher",
       "minutos": 3,
-      "texto": "Ela escolhe a favorita e diz o motivo. Se quiser, desenha o que a obra a fez imaginar."
+      "texto": "A criança escolhe a favorita e diz o motivo. Se quiser, desenha o que a obra a fez imaginar."
     }
   ],
   "observar": {
@@ -57,7 +57,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual obra ela escolheu e por quê?",
+  "perguntaFicha": "Qual obra a criança escolheu e por quê?",
   "palavrasChave": ["comparar obras", "van gogh", "monet", "emoção", "apreciação"],
   "folhas": [],
   "autoria": {

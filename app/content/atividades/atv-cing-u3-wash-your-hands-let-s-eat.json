@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias.",
+  "cuidados": "Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Na hora de comer, **fique junto e com a criança sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias.",
   "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "wash your hands, let's eat"],
   "objetivo": "Ouvir e usar inglês num momento fixo do dia (comer e ajudar na mesa), com frases curtas e sempre iguais; a criança entende pelo objeto e pelo gesto, sem ser cobrada a responder.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "It's lunchtime! Let's wash our hands. / Rub, rub, rub. Rinse. Dry. / Sit down. Let's eat."
     },
     {
@@ -44,13 +44,13 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Are you hungry? / Are your hands clean? / Where is your spoon?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Cante “wash your hands” (rima desta unidade) na pia. Ela escolhe: “this towel or that towel?”. Lave as mãos do ursinho."
+      "texto": "Cante “wash your hands” (rima desta unidade) na pia. A criança escolhe: “this towel or that towel?”. Lave as mãos do ursinho."
     },
     {
       "titulo": "Para o adulto: por que isto importa",

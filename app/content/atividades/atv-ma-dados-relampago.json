@@ -12,23 +12,23 @@
     {
       "titulo": "Relâmpago com a mão",
       "minutos": 3,
-      "texto": "Mostre 2 dedos por um segundo e esconda. *“Quantos?”* Depois 1, 3 e 4. Se ela contar, tudo bem: mostre de novo, mais devagar."
+      "texto": "Mostre 2 dedos por um segundo e esconda. *“Quantos?”* Depois 1, 3 e 4. Se a criança contar, tudo bem: mostre de novo, mais devagar."
     },
     {
       "titulo": "Cartas de pontos",
       "minutos": 6,
-      "texto": "Faça 8 cartas com 1 a 4 pontos (dois de cada). Vire uma por 2 segundos e pergunte quantos. Acertou? Ela fica com a carta. Se errar, mostre a carta e conte junto.",
+      "texto": "Faça 8 cartas com 1 a 4 pontos (dois de cada). Vire uma por 2 segundos e pergunte quantos. Acertou? A criança fica com a carta. Se errar, mostre a carta e conte junto.",
       "fala": "Quantos você viu?"
     },
     {
       "titulo": "Dado de verdade",
       "minutos": 4,
-      "texto": "Ela joga um dado e diz o número sem contar os pontos. Depois, jogue dois dados pequenos e some de olho só até 4."
+      "texto": "A criança joga um dado e diz o número sem contar os pontos. Depois, jogue dois dados pequenos e some de olho só até 4."
     },
     {
       "titulo": "Folha: sem contar",
       "minutos": 2,
-      "texto": "Na folha, ela olha o grupo e circula o número sem apontar com o dedo."
+      "texto": "Na folha, a criança olha o grupo e circula o número sem apontar com o dedo."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Mostre as cartas por 4 segundos e comece só com 1, 2 e 3. Depois, peça que ela toque e conte para conferir.",
+    "dificil": "Mostre as cartas por 4 segundos e comece só com 1, 2 e 3. Depois, peça que a criança toque e conte para conferir.",
     "facil": "Inclua cartas de 5 e 6 pontos em desenho de dado e pergunte *“de que jeito você viu: 3 e mais 2?”*."
   },
   "materiais": [
@@ -61,7 +61,7 @@
   ],
   "toqueVertente": {
     "Montessori": "A escada de contas coloridas mostra cada quantidade como um conjunto que se vê de uma vez; deixe a criança olhar sem contar.",
-    "Charlotte Mason": "Jogue em lições de poucos minutos, e pare enquanto ela ainda quer jogar de novo.",
+    "Charlotte Mason": "Jogue em momentos de poucos minutos, e pare enquanto a criança ainda quer jogar de novo.",
     "Clássico": "Mostre as cartas sempre na mesma ordem, como em um jogo de recitação, e depois embaralhe."
   },
   "evidencias": [

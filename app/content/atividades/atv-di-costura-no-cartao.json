@@ -17,7 +17,7 @@
     {
       "titulo": "Costurar",
       "minutos": 10,
-      "texto": "Mostre o ponto: sobe pelo furo 1, desce no 2, sobe no 3. Ela costura a linha toda. Se quiser, faça um desenho (uma estrela, um coração).",
+      "texto": "Mostre o ponto: sobe pelo furo 1, desce no 2, sobe no 3. A criança costura a linha toda. Se quiser, faça um desenho (uma estrela, um coração).",
       "fala": "Sobe e desce."
     },
     {
@@ -31,7 +31,7 @@
     "emDesenvolvimento": ["Perde o furo (comum)", "Embola a lã (normal)"]
   },
   "ajustes": {
-    "dificil": "Costure só 3 furos e com a mão dela entre as suas.",
+    "dificil": "Costure só 3 furos e com a mão da criança entre as suas.",
     "facil": "Costure um desenho livre e uma pequena bolsinha de feltro."
   },
   "materiais": [
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela fez de mais difícil?",
+  "perguntaFicha": "O que a criança fez de mais difícil?",
   "palavrasChave": ["costura", "dobradura", "agulha", "origami", "motor fino"],
   "folhas": [],
   "autoria": {

@@ -12,19 +12,19 @@
     {
       "titulo": "Flamingo",
       "minutos": 4,
-      "texto": "Fique ao lado de uma parede ou ofereça sua mão. Mostre: um pé no ar, como flamingo. Contem juntos devagar (um… dois… três…) e troquem o pé. Aumente o tempo aos poucos, com o que ela aguentar.",
+      "texto": "Fique ao lado de uma parede ou ofereça sua mão. Mostre: um pé no ar, como flamingo. Contem juntos devagar (um… dois… três…) e troquem o pé. Aumente o tempo aos poucos, com o que a criança aguentar.",
       "fala": "Flamingo de um pé só!"
     },
     {
       "titulo": "Saltinhos",
       "minutos": 4,
-      "texto": "Quando ela dominar o flamingo, peça pulinhos em um pé só: primeiro segurando sua mão, depois sozinha. Contem os pulinhos em voz alta.",
+      "texto": "Quando a criança dominar o flamingo, peça pulinhos em um pé só: primeiro segurando sua mão, depois sem ajuda. Contem os pulinhos em voz alta.",
       "fala": "Pula, pula, flamingo!"
     },
     {
       "titulo": "Trilha de passinhos",
       "minutos": 4,
-      "texto": "Cole uma fita de uns 3 metros no chão. Ela anda sobre a fita colocando um pé na frente do outro, com o calcanhar encostando na ponta do outro pé, de braços abertos. Demonstre devagar e depois andem juntos.",
+      "texto": "Cole uma fita de uns 3 metros no chão. A criança anda sobre a fita colocando um pé na frente do outro, com o calcanhar encostando na ponta do outro pé, de braços abertos. Demonstre devagar e depois andem juntos.",
       "fala": "Passinho de equilibrista"
     }
   ],
@@ -68,7 +68,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual desafio ela quis repetir?",
+  "perguntaFicha": "Qual desafio a criança quis repetir?",
   "palavrasChave": [
     "equilíbrio",
     "pé só",

@@ -24,7 +24,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Ponha uma colherada de cada cor num prato. Deixe que ela mergulhe o dedo e pinte onde quiser."
+      "texto": "Ponha uma colherada de cada cor num prato. Deixe que a criança mergulhe o dedo e pinte onde quiser."
     },
     {
       "titulo": "Passo 3",
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Depois, lavem as mãos juntas, cantando a rima da mão suja."
+      "texto": "Depois, lavem as mãos juntos, cantando a rima da mão suja."
     },
     {
       "titulo": "Para dizer",
@@ -59,7 +59,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",
@@ -93,6 +93,6 @@
   },
   "ajustes": {
     "dificil": "Aos 2 anos, basta sentir a tinta e passear o dedo: o adulto é quem nomeia as misturas (“vermelho com amarelo… laranja!”) e nada é cobrado. Se for demais, pinte só de uma cor hoje.",
-    "facil": "Aos 4 anos, deixe que ela mesma misture as cores e diga o que descobriu (“o que aconteceu quando misturou?”). Pinte também com uma esponja, uma folha ou uma colher."
+    "facil": "Aos 4 anos, deixe que a criança misture as cores e diga o que descobriu (“o que aconteceu quando misturou?”). Pinte também com uma esponja, uma folha ou uma colher."
   }
 }

@@ -12,36 +12,36 @@
   "idade": [3, 6],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Se usar uma porta de verdade para o jogo, cuidado com os dedos dela na dobradiça; a porta de papelão (ou de papel dobrado) é mais segura. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "cuidados": "Se usar uma porta de verdade para o jogo, cuidado com os dedos da criança na dobradiça; a porta de papelão (ou de papel dobrado) é mais segura. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que a criança “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
   "palavrasChave": ["inglês", "cumprimentos", "hello", "good morning", "porta"],
-  "objetivo": "A criança ouve uma rima inglesa sobre ser educada, acena e responde ao cumprimento do adulto num jogo de bater à porta, sem ser cobrada a repetir.",
+  "objetivo": "A criança ouve uma rima inglesa sobre boas maneiras, acena e responde ao cumprimento do adulto num jogo de bater à porta, sem cobrar que repita.",
   "passos": [
     {
       "titulo": "Ouvir a rima",
       "minutos": 3,
-      "texto": "Diga os versos devagar, com a gravura aberta, e peça que ela acene para as meninas; marque o ritmo com palmas. É uma rima de *Under the Window*, de Kate Greenaway (1878, domínio público): o livro não traz melodia, por isso é para **dizer**, não para cantar. *Miss* quer dizer “senhorita”, e *Pelicoe* é um sobrenome inventado. Tradução da coleção: “As doze senhoritas Pelicoe / eram sempre muito educadas: / diziam ‘por favor’ e ‘muito obrigada’, / ‘bom dia’ e ‘boa noite’.”",
+      "texto": "Diga os versos devagar, com a gravura aberta, e peça que a criança acene para as meninas; marque o ritmo com palmas. É uma rima de *Under the Window*, de Kate Greenaway (1878, domínio público): o livro não traz melodia, por isso é para **dizer**, não para cantar. *Miss* quer dizer “senhorita”, e *Pelicoe* é um sobrenome inventado. Tradução da coleção: “As doze senhoritas Pelicoe / eram sempre muito educadas: / diziam ‘por favor’ e ‘muito obrigada’, / ‘bom dia’ e ‘boa noite’.”",
       "fala": "The twelve Miss Pelicoes / Were always most polite,— / Said “If you please,” and “Many thanks,” / “Good morning,” and “Good night.”"
     },
     {
       "titulo": "Mostrar os cartões",
       "minutos": 2,
-      "texto": "Com os cartões de cumprimentos com a figura para cima, diga a palavra em inglês e mostre a figura: hello, good morning, good night, goodbye, please, thank you, yes, no, how are you?. Sem pedir que ela repita."
+      "texto": "Com os cartões de cumprimentos com a figura para cima, diga a palavra em inglês e mostre a figura: hello, good morning, good night, goodbye, please, thank you, yes, no, how are you?. Sem pedir que a criança repita."
     },
     {
       "titulo": "O jogo da porta",
       "minutos": 4,
-      "texto": "O adulto fica atrás de uma porta (de verdade ou de papel dobrado) e bate: *toc, toc!*. A criança pergunta “*quem é?*” (em português; a pergunta não troca de idioma). O adulto responde com um cumprimento em inglês (“hello!”), abre a porta e acena. Depois trocam de lugar. Por fim, ela escolhe um cartão e o adulto adivinha o cumprimento. Quem erra, ri.",
+      "texto": "O adulto fica atrás de uma porta (de verdade ou de papel dobrado) e bate: *toc, toc!*. A criança pergunta “*quem é?*” (em português; a pergunta não troca de idioma). O adulto responde com um cumprimento em inglês (“hello!”), abre a porta e acena. Depois trocam de lugar. Por fim, a criança escolhe um cartão e o adulto adivinha o cumprimento. Quem erra, ri.",
       "fala": "Hello!"
     },
     {
       "titulo": "Na rotina do dia (opcional)",
       "minutos": 1,
-      "texto": "Cumprimente na hora certa, sempre com o mesmo gesto: de manhã, *good morning*; à tarde, *good afternoon*; ao anoitecer, *good evening*; para dormir, *good night*. Se ela já entende, peça que escolha, entre dois cartões, o que combina com a figura."
+      "texto": "Cumprimente na hora certa, sempre com o mesmo gesto: de manhã, *good morning*; à tarde, *good afternoon*; ao anoitecer, *good evening*; para dormir, *good night*. Se a criança já entende, peça que escolha, entre dois cartões, o que combina com a figura."
     }
   ],
   "observar": {
     "consolidado": [
-      "Acena ao ver alguém, sem ser lembrada",
+      "Acena ao ver alguém, sem lembrete",
       "Brinca de bater à porta e esperar a resposta"
     ],
     "emDesenvolvimento": [
@@ -65,7 +65,7 @@
   ],
   "evidencias": [
     {
-      "texto": "Acena ao ver alguém, sem ser lembrada",
+      "texto": "Acena ao ver alguém, sem lembrete",
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     },
     {
@@ -73,7 +73,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela fez ao ouvir o cumprimento? Acenou, respondeu, riu?",
+  "perguntaFicha": "O que a criança fez ao ouvir o cumprimento? Acenou, respondeu, riu?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

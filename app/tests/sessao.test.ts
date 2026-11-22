@@ -11,7 +11,7 @@ import {
   type PedidoSessao,
 } from '../src/domain/sessao';
 import type { EstadosCrianca, Sessao } from '../src/domain/tipos';
-import { AGORA, atividade, crianca, familia, indiceBase } from './fabricas';
+import { AGORA, ESTADOS_NEUTROS, atividade, crianca, familia, indiceBase } from './fabricas';
 
 const idx = indiceBase();
 
@@ -20,7 +20,7 @@ function pedido(extra: Partial<PedidoSessao> = {}): PedidoSessao {
     familia: familia(),
     crianca: crianca(),
     idade: 5,
-    estados: {},
+    estados: ESTADOS_NEUTROS,
     historico: [],
     duracaoMin: 40,
     foco: 'equilibrado',
@@ -49,8 +49,10 @@ describe('pontuação da atividade (§5.6, passo 3)', () => {
       idade: [4, 6],
     });
     const f = familia({ inspiracoes: ['Waldorf'] });
-    expect(pontuar(a, f, 5, new Set()).pontos).toBe(3 + 1 + 2 + 2);
-    expect(pontuar(a, f, 7, new Set(['x'])).pontos).toBe(3 + 1);
+    // dentro da faixa: +2 e um bônus de proximidade ao centro (no máximo 0,5)
+    expect(pontuar(a, f, 5, new Set()).pontos).toBeCloseTo(3 + 1 + 2 + 2 + 0.5, 5);
+    // 1 ano acima do máximo da atividade (6): -2 pela idade (D4), e sem o +2 da faixa
+    expect(pontuar(a, f, 7, new Set(['x'])).pontos).toBe(3 + 1 - 2);
   });
 });
 

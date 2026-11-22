@@ -24,7 +24,7 @@
     {
       "titulo": "Relacionar",
       "minutos": 5,
-      "texto": "Ela põe cada tigela no lugar do urso certo (o quadro grande, o médio e o pequeno) e depois uma colher para cada tigela: a colher grande com a tigela grande. Se ela trocar a média, pergunte *“será que cabe?”* e deixe que ela confira."
+      "texto": "A criança põe cada tigela no lugar do urso certo (o quadro grande, o médio e o pequeno) e depois uma colher para cada tigela: a colher grande com a tigela grande. Se a criança trocar a média, pergunte *“será que cabe?”* e deixe que a criança confira."
     },
     {
       "titulo": "Criar",
@@ -41,7 +41,7 @@
   },
   "ajustes": {
     "dificil": "Só as duas tigelas mais diferentes (grande e pequena).",
-    "facil": "Sirva a fruta em tigelas de tamanhos diferentes: “a grande para o papai, a pequena para você”."
+    "facil": "Sirva a fruta em tigelas de tamanhos diferentes: “a grande para mim, a pequena para você”."
   },
   "materiais": [
     {
@@ -64,14 +64,14 @@
   "evidencias": [
     {
       "texto": "Ordenou as três tigelas",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     },
     {
       "texto": "Combinou cada colher com a tigela",
       "resposta": "_____ de 3"
     }
   ],
-  "perguntaFicha": "Que palavras de tamanho ela usou?",
+  "perguntaFicha": "Que palavras de tamanho a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

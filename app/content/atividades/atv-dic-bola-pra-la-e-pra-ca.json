@@ -12,13 +12,13 @@
     {
       "titulo": "Chute",
       "minutos": 4,
-      "texto": "Ponha a bola parada no chão, a um passo dela. Convide: “chuta pra mim!”. Depois de cada chute, vá buscar a bola junto e repita. Aumente a distância aos poucos.",
+      "texto": "Ponha a bola parada no chão, a um passo da criança. Convide: “chuta pra mim!”. Depois de cada chute, vá buscar a bola junto e repita. Aumente a distância aos poucos.",
       "fala": "Chuta pra mim!"
     },
     {
       "titulo": "Arremesso",
       "minutos": 4,
-      "texto": "Segure uma caixa ou bacia a um passo e deixe que ela tente acertar a bola dentro, jogando com o braço levantado. Mostre o gesto primeiro, devagar. Cada bola dentro vira festa.",
+      "texto": "Segure uma caixa ou bacia a um passo e deixe que a criança tente acertar a bola dentro, jogando com o braço levantado. Mostre o gesto primeiro, devagar. Cada bola dentro vira festa.",
       "fala": "Bola na caixa!"
     },
     {
@@ -57,7 +57,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual brincadeira ela quis repetir?",
+  "perguntaFicha": "Qual brincadeira a criança quis repetir?",
   "palavrasChave": ["bola", "chutar", "arremessar", "jogar", "coordenação"],
   "folhas": [],
   "autoria": {

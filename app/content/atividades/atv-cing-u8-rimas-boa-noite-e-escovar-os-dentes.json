@@ -11,20 +11,20 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Ao escovar os dentes, pasta só uma pontinha do tamanho de um grão de arroz, escova macia e infantil, e você junto, sem deixar que ela engula a espuma; com água por perto, nunca a deixe sozinha.",
+  "cuidados": "Ao escovar os dentes, pasta só uma pontinha do tamanho de um grão de arroz, escova macia e infantil, e você junto, sem deixar que a criança engula a espuma; com água por perto, nunca deixe a criança sem um adulto ao lado.",
   "palavrasChave": ["inglês", "rimas", "cantigas", "nursery rhymes", "hora de dormir"],
   "objetivo": "Cantar rimas curtas em inglês, com gesto, repetindo as mesmas por semanas (unidade: hora de dormir).",
   "passos": [
     {
       "titulo": "Cantar: Good night, sun",
       "minutos": 2,
-      "texto": "O gesto: aponte cada coisa pela janela, ou no teto, e diga boa-noite; no último verso, abrace-a ou beije-a. Diga o nome da criança no lugar do “___” (ou o nome do bichinho, se quiser). Rima escrita pela coleção.",
+      "texto": "O gesto: aponte cada coisa pela janela, ou no teto, e diga boa-noite; no último verso, abrace ou beije a criança. Diga o nome da criança no lugar do “___” (ou o nome do bichinho, se quiser). Rima escrita pela coleção.",
       "fala": "Good night, sun, good night, sky, / good night, birdie flying by; / good night, moon, good night, star, / good night, ___, here you are."
     },
     {
       "titulo": "Cantar: Brush your teeth",
       "minutos": 2,
-      "texto": "O gesto: escovem os dentes juntas, no ritmo da rima: para cima, para baixo, em volta. No “happy sound”, façam “ahh”, boca bem aberta. Rima escrita pela coleção.",
+      "texto": "O gesto: escovem os dentes juntos, no ritmo da rima: para cima, para baixo, em volta. No “happy sound”, façam “ahh”, boca bem aberta. Rima escrita pela coleção.",
       "fala": "Brush, brush, brush your teeth, / up and down and round; / front and back and top and bottom, / make a happy sound!"
     },
     {

@@ -193,6 +193,8 @@ for (const largura of [320, 390]) {
 test('"Marcar como feito" no plano da semana é só um atalho: não conta para o selo', async ({
   page,
 }) => {
+  // Segunda 16/11/2026, 9h (hora local): o primeiro dia do plano é hoje e ainda aceita "Marcar como feito" (#141).
+  await page.clock.setFixedTime(new Date(2026, 10, 16, 9, 0));
   await explorar(page);
   await anaCartao(page).getByRole('link', { name: 'Planejar semana' }).click();
   await page.getByRole('button', { name: 'Planejar semana' }).click();

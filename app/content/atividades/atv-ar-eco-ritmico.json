@@ -12,18 +12,18 @@
     {
       "titulo": "Palavras",
       "minutos": 4,
-      "texto": "Bata o ritmo de palavras: “ba-na-na”, “ma-ra-cu-já”, o nome dela. Uma palma por sílaba. Ela repete.",
+      "texto": "Bata o ritmo de palavras: “ba-na-na”, “ma-ra-cu-já”, o nome da criança. Uma palma por sílaba. A criança repete.",
       "fala": "Faz o eco!"
     },
     {
       "titulo": "Eco",
       "minutos": 6,
-      "texto": "Você bate padrões curtos (3 a 4 palmas) e ela repete. Aumente aos poucos. Mude para tambor ou colheres."
+      "texto": "Você bate padrões curtos (3 a 4 palmas) e a criança repete. Aumente aos poucos. Mude para tambor ou colheres."
     },
     {
       "titulo": "Inverter",
       "minutos": 4,
-      "texto": "Ela inventa o padrão e você repete (errando de brincadeira às vezes). Escrevam o padrão com pontos e traços: ● ● ▬."
+      "texto": "A criança inventa o padrão e você repete (errando de brincadeira às vezes). Escrevam o padrão com pontos e traços: ● ● ▬."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual foi o padrão mais longo que ela repetiu?",
+  "perguntaFicha": "Qual foi o padrão mais longo que a criança repetiu?",
   "palavrasChave": ["ritmo", "eco", "palmas", "sílabas", "padrão"],
   "folhas": [],
   "autoria": {

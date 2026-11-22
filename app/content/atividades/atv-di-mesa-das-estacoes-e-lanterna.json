@@ -17,13 +17,13 @@
     {
       "titulo": "Mesa",
       "minutos": 5,
-      "texto": "Em um pano sobre uma mesinha, ela arruma o que trouxe. Conversem: “O que mudou desde a última estação?”.",
+      "texto": "Em um pano sobre uma mesinha, a criança arruma o que trouxe. Conversem: “O que mudou desde a última estação?”.",
       "fala": "O que a estação trouxe?"
     },
     {
       "titulo": "Lanterna",
       "minutos": 9,
-      "texto": "Com papel de seda ou vegetal e cola, ela faz uma lanterna com uma luz de LED dentro. À noite, façam um pequeno passeio de lanternas em casa ou no quintal, cantando."
+      "texto": "Com papel de seda ou vegetal e cola, a criança faz uma lanterna com uma luz de LED dentro. À noite, façam um pequeno passeio de lanternas em casa ou no quintal, cantando."
     }
   ],
   "observar": {
@@ -32,7 +32,7 @@
   },
   "ajustes": {
     "dificil": "Faça só a mesa, sem a lanterna.",
-    "facil": "Peça que ela escolha e explique o que colocar na mesa."
+    "facil": "Peça que a criança escolha e explique o que colocar na mesa."
   },
   "materiais": [
     {
@@ -66,7 +66,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela escolheu para a mesa da estação?",
+  "perguntaFicha": "O que a criança escolheu para a mesa da estação?",
   "palavrasChave": ["estações", "lanterna", "festa", "mesa sazonal", "natureza"],
   "folhas": [],
   "autoria": {

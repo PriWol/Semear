@@ -11,14 +11,14 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "deixe fora do alcance dela a garrafa da calma, se houver; leve-a ao cantinho só quando estiverem juntas. Mantenha longe dela peças pequenas e qualquer objeto que caiba na boca (risco de engasgo).",
+  "cuidados": "deixe fora do alcance da criança a garrafa da calma, se houver; leve-a ao cantinho só quando estiverem juntos. Mantenha peças pequenas longe da criança e qualquer objeto que caiba na boca (risco de engasgo).",
   "palavrasChave": ["inglês", "english", "a família e os sentimentos", "the calm-down corner"],
   "objetivo": "Experimentar, num momento tranquilo e em inglês, um jeito de acalmar o corpo, para já conhecerem o caminho quando o dia ficar difícil.",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "This is our calm-down corner. Come sit with me. / We sit. We breathe. We hug. / Smell the flower. Blow the candle. All better."
     },
     {
@@ -29,7 +29,7 @@
     {
       "titulo": "Passo 2",
       "minutos": 1,
-      "texto": "Sentem juntas e diga o que se faz lá: “we sit, we breathe, we hug”."
+      "texto": "Sentem juntos e diga o que se faz lá: “we sit, we breathe, we hug”."
     },
     {
       "titulo": "Passo 3",
@@ -39,23 +39,23 @@
     {
       "titulo": "Passo 4",
       "minutos": 1,
-      "texto": "Fiquem o quanto ela quiser, e saiam quando ela disser."
+      "texto": "Fiquem o quanto a criança quiser, e saiam quando a criança disser."
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Do you want to sit here? / Do you want a hug? / Are you calm now?"
     },
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Leve um livro de figuras. Escolham juntas o bichinho do cantinho. Cantem baixinho uma rima calma."
+      "texto": "Leve um livro de figuras. Escolham juntos o bichinho do cantinho. Cantem baixinho uma rima calma."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Visitar o cantinho nos momentos calmos, com as mesmas frases, faz dele um lugar conhecido e gostoso. Não é castigo: vocês vão juntas, e ela sai quando quiser. As frases (“we sit, we breathe, we hug”) são curtas e podem ser ditas no meio de uma crise, em voz baixa. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Visitar o cantinho nos momentos calmos, com as mesmas frases, faz dele um lugar conhecido e gostoso. Não é castigo: vocês vão juntos, e a criança sai quando quiser. As frases (“we sit, we breathe, we hug”) são curtas e podem ser ditas no meio de uma crise, em voz baixa. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

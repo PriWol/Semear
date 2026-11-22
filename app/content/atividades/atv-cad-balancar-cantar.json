@@ -10,14 +10,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: Segure-a firme no colo e balance devagar, sem sacudir; se usar cadeira de balanço, ela precisa ser estável e longe de quinas e de móveis. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Segure a criança firme no colo e balance devagar, sem sacudir; se usar cadeira de balanço, a cadeira precisa ser estável e longe de quinas e de móveis. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["balançar", "colo", "ninar", "cantiga", "calma"],
   "objetivo": "A criança se acalma ao ser balançada devagar no colo ao som de uma cantiga baixinha, até o corpo amolecer.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Sente com ela no colo, de frente para o seu peito, e balance de um lado para o outro, bem devagar."
+      "texto": "Sente com a criança no colo, de frente para o seu peito, e balance de um lado para o outro, bem devagar."
     },
     {
       "titulo": "Passo 2",
@@ -27,7 +27,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Quando o corpo dela amolecer, vá parando de balançar, até ficarem paradas."
+      "texto": "Quando o corpo da criança amolecer, vá parando de balançar, até ficarem paradas."
     },
     {
       "titulo": "Passo 4",
@@ -47,12 +47,12 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Só cantarole, sem letra: “hummm”. 2) Cante o nome dela no lugar da lua. 3) Deitadas, com a mão dela no seu peito."
+      "texto": "1) Só cantarole, sem letra: “hummm”. 2) Cante o nome da criança no lugar da lua. 3) Deitadas, com a mão da criança no seu peito."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Balançar num ritmo regular e cantar baixinho é uma das formas mais antigas de acalmar uma criança: o corpo reconhece o ritmo, e a voz do adulto mostra que está tudo bem. Pode ser usado depois de uma crise, quando ela precisa de colo. A cantiga é da coleção; invente a sua."
+      "texto": "Balançar num ritmo regular e cantar baixinho é uma das formas mais antigas de acalmar uma criança: o corpo reconhece o ritmo, e a voz do adulto mostra que está tudo bem. Pode ser usado depois de uma crise, quando a criança precisa de colo. A cantiga é da coleção; invente a sua."
     }
   ],
   "observar": {
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

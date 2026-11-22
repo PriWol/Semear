@@ -7,18 +7,18 @@
   "duracaoMin": 10,
   "preparoMin": 5,
   "cuidados": "Atenção: nenhuma peça pequena que caiba na boca. Fique junto da criança o tempo todo. Escolha brinquedos grandes, sem partes soltas.",
-  "objetivo": "A criança brinca perto de outra, imita o que ela faz e experimenta esperar a vez com a ajuda do adulto.",
+  "objetivo": "A criança brinca perto de outra, imita o que a outra faz e experimenta esperar a vez com a ajuda do adulto.",
   "passos": [
     {
       "titulo": "Cada um com o seu",
       "minutos": 4,
       "texto": "Dê a cada criança (ou a você e à criança) um conjunto igual de brinquedos grandes. Brinquem lado a lado, sem obrigar a dividir.",
-      "fala": "Olha o que ele está fazendo!"
+      "fala": "Olha o que a outra criança está fazendo!"
     },
     {
       "titulo": "Um brinquedo, duas vezes",
       "minutos": 4,
-      "texto": "Ofereça **um** brinquedo para os dois. Diga: “agora é dele; depois é a sua vez”. Use uma música curta como relógio da vez.",
+      "texto": "Ofereça **um** brinquedo para os dois. Diga: “agora é da outra criança; depois é a sua vez”. Use uma música curta como relógio da vez.",
       "fala": "Agora é a vez de quem?"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "texto": "Esperou a vez",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
   "perguntaFicha": "O que ajudou na hora de esperar?",

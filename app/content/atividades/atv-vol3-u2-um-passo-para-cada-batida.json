@@ -19,7 +19,7 @@
     {
       "titulo": "Marchar no pulso",
       "minutos": 4,
-      "texto": "Você bate o tambor (ou a panela) num pulso regular e ela dá um passo para cada batida. Comece devagar. Cantem juntos *“Marcha, soldado, cabeça de papel; se não marchar direito, vai preso no quartel”* (cantiga tradicional)."
+      "texto": "Você bate o tambor (ou a panela) num pulso regular e a criança dá um passo para cada batida. Comece devagar. Cantem juntos *“Marcha, soldado, cabeça de papel; se não marchar direito, vai preso no quartel”* (cantiga tradicional)."
     },
     {
       "titulo": "Mudar o andamento",
@@ -30,7 +30,7 @@
     {
       "titulo": "Parar",
       "minutos": 1,
-      "texto": "Quando você para, ela para."
+      "texto": "Quando você para, a criança para."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Só o andamento devagar.",
-    "facil": "Peça que ela bata o tambor e você marche."
+    "facil": "Peça que a criança bata o tambor e você marche."
   },
   "materiais": [
     {
@@ -59,7 +59,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Ela acompanhou o pulso quando mudou o andamento?",
+  "perguntaFicha": "A criança acompanhou o pulso quando mudou o andamento?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

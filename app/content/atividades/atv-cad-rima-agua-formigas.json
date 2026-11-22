@@ -12,19 +12,19 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 4,
-  "cuidados": "Atenção: Toque com dois dedos só se ela gostar. Perto de rio, lago ou piscina, fique ao lado dela. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Toque com dois dedos só se a criança gostar. Perto de rio, lago ou piscina, fique ao lado da criança. Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["peixe vivo", "formiguinha", "devagar", "água"],
   "objetivo": "A criança canta cantigas lentas de água e de formigas, que terminam no “devagarzinho” e ajudam a baixar a agitação.",
   "passos": [
     {
       "titulo": "Peixe vivo",
       "minutos": 2,
-      "texto": "*Como pode um peixe vivo / viver fora da água fria? / Como poderei viver / sem a tua, sem a tua, sem a tua companhia?* **O gesto:** faça as mãos de peixe nadando de um lado ao outro; no último verso, abrace-a. Cante devagar, como uma cantiga de ninar. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
+      "texto": "*Como pode um peixe vivo / viver fora da água fria? / Como poderei viver / sem a tua, sem a tua, sem a tua companhia?* **O gesto:** faça as mãos de peixe nadando de um lado ao outro; no último verso, abrace a criança. Cante devagar, como uma cantiga de ninar. Rima tradicional brasileira, de autoria desconhecida; a letra varia de região para região."
     },
     {
       "titulo": "Formiguinha",
       "minutos": 2,
-      "texto": "*Formiguinha, formiguinha, / leva a folha pro ninho; / passinho por passinho, / vai bem devagarzinho.* **O gesto:** com dois dedos, “ande” a formiguinha pelo braço dela, bem devagar, até o ombro. No último verso, pare e dê um beijo. Rima escrita pela coleção."
+      "texto": "*Formiguinha, formiguinha, / leva a folha pro ninho; / passinho por passinho, / vai bem devagarzinho.* **O gesto:** com dois dedos, “ande” a formiguinha pelo braço da criança, bem devagar, até o ombro. No último verso, pare e dê um beijo. Rima escrita pela coleção."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
@@ -34,7 +34,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -51,11 +51,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

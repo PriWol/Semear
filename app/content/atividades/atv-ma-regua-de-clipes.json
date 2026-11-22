@@ -24,12 +24,12 @@
     {
       "titulo": "Estimar e medir",
       "minutos": 6,
-      "texto": "Antes de medir, ela diz quantos centímetros acha que tem (uma borracha, um clipe, um lápis). Depois confere com a régua. Anote em uma tabela."
+      "texto": "Antes de medir, a criança diz quantos centímetros acha que tem (uma borracha, um clipe, um lápis). Depois confere com a régua. Anote em uma tabela."
     },
     {
       "titulo": "Folha: meça e escreva",
       "minutos": 4,
-      "texto": "Ela mede objetos desenhados e escreve o comprimento em centímetros."
+      "texto": "A criança mede objetos desenhados e escreve o comprimento em centímetros."
     }
   ],
   "observar": {
@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Meça só objetos curtos (5 a 10 cm) e coloque o objeto sempre encostado no zero.",
-    "facil": "Peça que ela meça um objeto que sai da régua (mais de 20 cm), em duas etapas."
+    "facil": "Peça que a criança meça um objeto que sai da régua (mais de 20 cm), em duas etapas."
   },
   "materiais": [
     {
@@ -64,8 +64,8 @@
   ],
   "toqueVertente": {
     "Montessori": "O trabalho com barras de comprimento graduadas prepara a régua: a criança já viu o comprimento como um conjunto de unidades.",
-    "Charlotte Mason": "Meça objetos reais da casa em lições curtas, e peça que a criança explique como mediu.",
-    "Clássico": "Recitem a sequência dos centímetros enquanto passam o dedo na régua, até ela virar familiar."
+    "Charlotte Mason": "Meça objetos reais da casa em momentos curtos, e peça que a criança explique como mediu.",
+    "Clássico": "Recitem a sequência dos centímetros enquanto passam o dedo na régua, até a sequência ficar familiar."
   },
   "evidencias": [
     {

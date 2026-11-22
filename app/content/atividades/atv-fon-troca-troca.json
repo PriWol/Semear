@@ -7,7 +7,7 @@
   "idade": [5, 8],
   "duracaoMin": 24,
   "preparoMin": 3,
-  "cuidados": "Atenção: fique junto da criança e use lápis ou giz só com supervisão. Palavra maluca é brincadeira: não corrija nem cobre, e pare se ela se cansar.",
+  "cuidados": "Atenção: fique junto da criança e use lápis ou giz só com supervisão. Palavra maluca é brincadeira: não corrija nem cobre, e pare se a criança se cansar.",
   "objetivo": "A criança **troca uma sílaba por outra** e percebe que muda a palavra inteira.",
   "passos": [
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Palavra maluca",
       "minutos": 6,
-      "texto": "Crie palavras de mentira trocando uma sílaba (*sapato → sapalo*) e rindo juntos; peça que ela descubra a palavra de verdade."
+      "texto": "Crie palavras de mentira trocando uma sílaba (*sapato → sapalo*) e rindo juntos; peça que a criança descubra a palavra de verdade."
     },
     {
       "titulo": "Folha: desenho da palavra trocada",
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Volte para tirar e juntar sílabas (atividade *Sapataria*) com palavras de 2 sílabas.",
-    "facil": "Peça que ela invente uma troca e desafie você."
+    "facil": "Peça que a criança invente uma troca e desafie você."
   },
   "materiais": [
     {

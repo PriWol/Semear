@@ -52,7 +52,7 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Fazer da lentidão uma vitória inverte o jogo: em vez de correr, ela precisa segurar o impulso, o que treina o autocontrole sem que ela perceba. É ótima antes de uma hora de quietude, ou para entrar numa loja ou consultório sem correr."
+      "texto": "Fazer da lentidão uma vitória inverte o jogo: em vez de correr, a criança precisa segurar o impulso, o que treina o autocontrole sem que a criança perceba. É ótima antes de uma hora de quietude, ou para entrar numa loja ou consultório sem correr."
     }
   ],
   "observar": {
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -13,7 +13,7 @@
     {
       "titulo": "Um monte para contar",
       "minutos": 5,
-      "texto": "Despeje 23 palitos e pergunte: *“como podemos contar sem nos perder?”* Deixe que ela proponha. Mostre o jeito de dez em dez, com elástico."
+      "texto": "Despeje 23 palitos e pergunte: *“como podemos contar sem nos perder?”* Deixe que a criança proponha. Mostre o jeito de dez em dez, com elástico."
     },
     {
       "titulo": "Grupos de dez",
@@ -24,12 +24,12 @@
     {
       "titulo": "Troca de dez por um",
       "minutos": 6,
-      "texto": "Junte 10 palitos soltos e troque por um maço. Depois desfaça um maço em 10 soltos. Ela vê que é a mesma quantidade."
+      "texto": "Junte 10 palitos soltos e troque por um maço. Depois desfaça um maço em 10 soltos. A criança vê que é a mesma quantidade."
     },
     {
       "titulo": "Folha: quantos de dez?",
       "minutos": 6,
-      "texto": "Ela mostra o número no quadro de dez e diz quantas dezenas e unidades."
+      "texto": "A criança mostra o número no quadro de dez e diz quantas dezenas e unidades."
     }
   ],
   "observar": {
@@ -63,7 +63,7 @@
   ],
   "toqueVertente": {
     "Montessori": "As contas douradas (unidade solta, barra de dez) são o material clássico: a criança troca dez unidades por uma barra e vê a dezena.",
-    "Charlotte Mason": "Use coisas reais, como feijões em saquinhos de dez, em lições curtas.",
+    "Charlotte Mason": "Use coisas reais, como feijões em saquinhos de dez, em momentos curtos.",
     "Clássico": "Registre e recite: *“duas dezenas e três unidades, vinte e três”* e repita ao longo da semana."
   },
   "evidencias": [

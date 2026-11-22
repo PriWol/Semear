@@ -16,9 +16,9 @@
       "fala": "Vamos escovar juntos"
     },
     {
-      "titulo": "Ela escova",
+      "titulo": "A criança escova",
       "minutos": 4,
-      "texto": "Ela escova sozinha, no tempo dela, com você por perto. Ajude só no que ela pedir e depois complete a escovação com delicadeza."
+      "texto": "A criança escova sem ajuda, no tempo que precisar, com você por perto. Ajude só no que a criança pedir e depois complete a escovação com delicadeza."
     },
     {
       "titulo": "Conferir",
@@ -28,7 +28,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Escova os dentes sozinha, do começo ao fim, depois de ter aprendido",
+      "Escova os dentes sem ajuda, do começo ao fim, depois de ter aprendido",
       "Põe a pasta na escova e alcança os dentes de trás"
     ],
     "emDesenvolvimento": [
@@ -36,7 +36,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Ela escova sozinha enquanto você só observa de longe.",
+    "dificil": "A criança escova sem ajuda enquanto você só observa de longe.",
     "facil": "Escovem juntos, cada um na sua escova."
   },
   "materiais": [
@@ -63,7 +63,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Em que parte da escovação ela mais precisou de ajuda?",
+  "perguntaFicha": "Em que parte da escovação a criança mais precisou de ajuda?",
   "palavrasChave": ["escovar", "dentes", "higiene", "autonomia", "rotina"],
   "folhas": [],
   "autoria": {
