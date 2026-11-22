@@ -32,22 +32,22 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Deixem que ela diga o que vê. Fiquem o quanto ela quiser."
+      "texto": "Deixem que a criança diga o que vê. Fiquem o quanto a criança quiser."
     },
     {
       "titulo": "Para dizer",
       "minutos": 0,
-      "texto": "“Olha aquela nuvem. Parece um cachorro!” “Ela está se mexendo, devagar, devagar.” “Que bom ficar aqui deitada, olhando.”"
+      "texto": "“Olha aquela nuvem. Parece um cachorro!” “Ela está se mexendo, devagar, devagar.” “Que bom ficar aqui, olhando.”"
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "O que a nuvem parece? Qual nuvem é a maior? Para onde ela vai?"
+      "texto": "O que a nuvem parece? Qual nuvem é a maior? Para onde a criança vai?"
     },
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) À noite, olhando a lua e as estrelas. 2) Olhando o balanço das folhas de uma árvore. 3) Ouça os sons: o que dá para escutar deitada?"
+      "texto": "1) À noite, olhando a lua e as estrelas. 2) Olhando o balanço das folhas de uma árvore. 3) Ouça os sons: o que dá para escutar com o corpo deitado?"
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

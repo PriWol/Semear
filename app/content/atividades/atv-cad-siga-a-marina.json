@@ -14,17 +14,17 @@
   "duracaoMin": 5,
   "cuidados": "Atenção: Espaço livre de quinas e degraus; chão firme e sem escorregar (cuidado com meias). O adulto nunca manda um gesto que machuque ou assuste. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["chefe", "imitar", "gestos", "siga o mestre", "brincar junto"],
-  "objetivo": "A criança é “a chefe” e faz um gesto que o adulto imita; depois troca de lugar e segue o gesto do adulto, com as mãos no peito como sinal de parar.",
+  "objetivo": "A criança é “chefe do dia” e faz um gesto que o adulto imita; depois troca de lugar e segue o gesto do adulto, com as mãos no peito como sinal de parar.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Diga: “hoje ___ é a chefe”. Ela faz um gesto (bater palmas, pular, dar uma volta) e você imita."
+      "texto": "Diga: “hoje ___ é chefe do dia”. A criança faz um gesto (bater palmas, pular, dar uma volta) e você imita."
     },
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Troque de chefe: agora você faz um gesto e ela imita."
+      "texto": "Troque de chefe: agora você faz um gesto e a criança imita."
     },
     {
       "titulo": "Passo 3",
@@ -39,12 +39,12 @@
     {
       "titulo": "Para dizer",
       "minutos": 0,
-      "texto": "“A chefe mandou: palmas! Eu faço igual.” “Agora o gesto da chefe é pular.” “A chefe mandou parar? Mãos no peito.”"
+      "texto": "“O chefe do dia mandou: palmas! Eu faço igual.” “Agora o gesto do chefe do dia é pular.” “O chefe do dia mandou parar? Mãos no peito.”"
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "O que a chefe manda? Quer ser chefe ou seguir? E agora, o que fazemos?"
+      "texto": "O que o chefe do dia manda? Quer ser chefe ou seguir? E agora, o que fazemos?"
     },
     {
       "titulo": "Para variar",
@@ -54,12 +54,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Ser “a chefe” permitida, por um tempo e dentro de uma regra, é uma das melhores respostas à fase do “não”: ela exerce o poder que tanto procura. Obedecer ao seu comando também, como quem segue o jogo. A parada de mãos no peito é uma pausa conhecida."
+      "texto": "Poder ser “chefe do dia”, por um tempo e dentro de uma regra, é uma das melhores respostas à fase do “não”: a criança exerce o poder que tanto procura. Obedecer ao seu comando também, como quem segue o jogo. A parada de mãos no peito é uma pausa conhecida."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

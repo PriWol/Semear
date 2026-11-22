@@ -10,14 +10,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: O líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: O líquido de bolha não é para beber e pode irritar os olhos; se cair, lave com água. Guarde o frasco fora do alcance depois. Com água por perto, **nunca deixe a criança com água sem um adulto ao lado**, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["bolhas", "sabão", "soprar", "respiração"],
   "objetivo": "A criança segue com os olhos uma bolha que flutua e sopra devagar, uma respiração controlada disfarçada de brincadeira, num momento calmo.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Sopre uma bolha de cada vez, bem devagar, e deixe que ela estoure com o dedo."
+      "texto": "Sopre uma bolha de cada vez, bem devagar, e deixe que a criança estoure com o dedo."
     },
     {
       "titulo": "Passo 2",
@@ -27,17 +27,17 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Depois deixe que ela tente soprar. Peça “bem devagar, como o vento”."
+      "texto": "Depois deixe que a criança tente soprar. Peça “bem devagar, como o vento”."
     },
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Quando ela se cansar, guarde o frasco e fiquem olhando a última bolha subir."
+      "texto": "Quando a criança se cansar, guarde o frasco e fiquem olhando a última bolha subir."
     },
     {
       "titulo": "Para dizer",
       "minutos": 0,
-      "texto": "“Olha como ela sobe… devagar, devagar.” “Plof! Acabou. Vem outra.” “Uma bolha grande! Que sopro comprido!”"
+      "texto": "“Olha como a criança sobe… devagar, devagar.” “Plof! Acabou. Vem outra.” “Uma bolha grande! Que sopro comprido!”"
     },
     {
       "titulo": "Perguntas para a criança",
@@ -47,7 +47,7 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Faça bolhas na hora do banho. 2) Bolhas “paradas”: as que pousam na grama sem estourar. 3) Deixe que ela escolha: bolha grande ou bolha pequena."
+      "texto": "1) Faça bolhas na hora do banho. 2) Bolhas “paradas”: as que pousam na grama sem estourar. 3) Deixe que a criança escolha: bolha grande ou bolha pequena."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

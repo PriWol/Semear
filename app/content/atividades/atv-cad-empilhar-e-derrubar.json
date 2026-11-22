@@ -19,12 +19,12 @@
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Faça uma torre de 3 e deixe que ela derrube: “tudo cai!”."
+      "texto": "Faça uma torre de 3 e deixe que a criança derrube: “tudo cai!”."
     },
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Depois, deixe que ela construa. Ajude só se ela pedir."
+      "texto": "Depois, deixe que a criança construa. Ajude só se a criança pedir."
     },
     {
       "titulo": "Passo 3",
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Guardem juntas, contando os blocos que voltam para a caixa."
+      "texto": "Guardem juntos, contando os blocos que voltam para a caixa."
     },
     {
       "titulo": "Para dizer",
@@ -54,12 +54,12 @@
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Empilhar mostra causa e efeito e exige calma nas mãos; e derrubar e recomeçar é um treino de frustração em miniatura. Se ela ficar brava quando cai, nomeie (“que raiva quando cai!”) e ofereça recomeçar. Cada torre que ela refaz é uma pequena vitória sobre a raiva."
+      "texto": "Empilhar mostra causa e efeito e exige calma nas mãos; e derrubar e recomeçar é um treino de frustração em miniatura. Se a criança sentir raiva quando cai, nomeie (“que raiva quando cai!”) e ofereça recomeçar. Cada torre que a criança refaz é uma pequena vitória sobre a raiva."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",
