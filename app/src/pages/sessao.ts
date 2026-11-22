@@ -1,6 +1,7 @@
 import { NaoEncontrado, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
+import { abrirPainelPacote } from '../ui/painel-pacote';
 import { idadeEmAnos } from '../domain/datas';
 import { letraDaCrianca } from '../domain/letra';
 import type { Atividade } from '../domain/tipos';
@@ -142,10 +143,13 @@ export const paginaSessao: FabricaPagina = async (ctx, params) => {
       raiz.querySelector('#baixar')?.addEventListener('click', () => {
         baixarArquivo(nomeArquivo, documento, 'text/html;charset=utf-8');
       });
-      raiz.querySelector('#abrir')?.addEventListener('click', () => {
-        const url = URL.createObjectURL(new Blob([documento], { type: 'text/html;charset=utf-8' }));
-        window.open(url, '_blank', 'noopener');
-        setTimeout(() => URL.revokeObjectURL(url), 60_000);
+      // Tela cheia = painel sobre o app com a mesma prévia isolada, não nova aba (#139, ADR 0022).
+      raiz.querySelector<HTMLElement>('#abrir')?.addEventListener('click', (ev) => {
+        abrirPainelPacote({
+          titulo: `Sessão ${sessao.codigo}`,
+          documento,
+          abridor: ev.currentTarget as HTMLElement,
+        });
       });
       raiz.querySelector('#excluir')?.addEventListener('click', async () => {
         const aviso = registrada ? ' O registro e as observações dela também serão apagados.' : '';
