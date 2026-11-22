@@ -10,7 +10,7 @@
     "paginas": [31, 41]
   },
   "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
-  "idade": [4, 7],
+  "idade": [4, 8],
   "duracaoMin": 25,
   "objetivo": "A criança **reconhece famílias de instrumentos** (cordas, madeiras, metais, percussão) e liga cada personagem de *Pedro e o Lobo* ao seu instrumento.",
   "passos": [
@@ -56,5 +56,9 @@
   "autoria": {
     "origem": "ia",
     "status": "rascunho"
+  },
+  "ajustes": {
+    "dificil": "Para a criança menor: só os músicos de Bremen e o jogo de Pedro e o Lobo, sem a escada dos sons.",
+    "facil": "Para a criança maior: monte a orquestra da casa por famílias de instrumentos e peça que ela diga do que gostou."
   }
 }

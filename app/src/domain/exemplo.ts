@@ -53,10 +53,13 @@ function nascimentoPara(hoje: Date, anos: number, meses: number): string {
   return dataLocalISO(new Date(ano, mes, Math.min(hoje.getDate(), ultimoDia)));
 }
 
+/** Nome fictício da família de exemplo: o "Apagar exemplo" o zera quando mantém uma criança real (D12). */
+export const EDUCADOR_EXEMPLO = 'Marina';
+
 export function criarExemplo(idx: IndiceConteudo, hoje: Date): DadosExemplo {
   const agora = hoje.toISOString();
   const familia: Familia = {
-    educador: 'Marina',
+    educador: EDUCADOR_EXEMPLO,
     vertentePrincipal: 'Montessori',
     inspiracoes: ['Charlotte Mason'],
     idiomasEducador: [],

@@ -2,8 +2,8 @@
   "id": "atv-cing-u4-where-is-it",
   "titulo": "Where is it?",
   "marcos": ["MA.GEO.01", "LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Jogos e brincadeiras",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "“In”, “on” e “under” são as palavras de posição mais fáceis de aprender com o corpo, porque se mostram com as mãos. A brincadeira de esconder também treina a memória e a espera, e quando ela é a escondedora, ela manda no jogo. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "“In”, “on” e “under” são as palavras de posição mais fáceis de aprender com o corpo, porque se mostram com as mãos. A brincadeira de esconder também treina a memória e a espera, e quando ela é a escondedora, ela manda no jogo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

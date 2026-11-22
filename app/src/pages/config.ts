@@ -7,7 +7,7 @@ import { html } from '../ui/html';
 import { validarBackup } from '../dados/repositorio';
 import { dataCurta } from '../ui/rotulos';
 import { horaDe24h, LEMBRETE_PADRAO } from '../domain/lembretes';
-import { resumoUltimaCopia } from '../domain/backup';
+import { arquivoGrandeDemais, MENSAGEM_ARQUIVO_GRANDE, resumoUltimaCopia } from '../domain/backup';
 import { confirmacaoApagarTudo, PALAVRA_APAGAR } from '../domain/confirmacao';
 import { ponteDoAparelho } from '../nativo/lembretes';
 import {
@@ -298,6 +298,8 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         if (!arquivo) return;
         if (erroCopia) erroCopia.hidden = true;
         try {
+          // D23: o tamanho vem de `File.size`, então nada é lido (nem JSON.parse) de um arquivo enorme.
+          if (arquivoGrandeDemais(arquivo.size)) throw new Error(MENSAGEM_ARQUIVO_GRANDE);
           let dados: unknown;
           try {
             dados = JSON.parse(await arquivo.text());
@@ -346,8 +348,8 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
             return;
           }
           if (erroHora) erroHora.hidden = true;
-          await ctx.repo.salvarFamilia({
-            ...familia,
+          // Só o lembrete: a família lida ao abrir a tela pode estar velha (QA1-03).
+          await ctx.repo.atualizarFamilia({
             lembrete: {
               ativo: dados.get('ativo') !== null,
               hora,
@@ -355,11 +357,14 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
             },
           });
           const r = await sincronizarComOAparelho(ctx, { pedirPermissao: true });
-          ctx.avisar(
-            r === 'sem-permissao'
-              ? 'Preferência salva, mas as notificações estão bloqueadas nas configurações do celular.'
-              : 'Aviso salvo.',
-          );
+          if (r === 'sem-permissao') {
+            ctx.avisar(
+              'Preferência salva, mas as notificações estão bloqueadas nas configurações do celular.',
+              'alerta',
+            );
+          } else {
+            ctx.avisar('Aviso salvo.');
+          }
         });
 
       raiz.querySelector('#apagar-exemplo-ajustes')?.addEventListener('click', () =>
@@ -420,7 +425,8 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
         ctx.ir('/');
         // Os dados já foram apagados; se os lembretes (que podem mostrar o nome da criança) seguirem
         // agendados, a pessoa precisa saber (#25).
-        if (resultado === 'lembretes-nao-cancelados') ctx.avisar(AVISO_LEMBRETES_NAO_CANCELADOS);
+        if (resultado === 'lembretes-nao-cancelados')
+          ctx.avisar(AVISO_LEMBRETES_NAO_CANCELADOS, 'alerta');
       });
     },
   };

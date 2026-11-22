@@ -70,8 +70,12 @@ describe('planejarSemana (#8)', () => {
     const p = planejarSemana(idx, entrada());
     const todas = p.dias.flatMap((d) => d.atividadeIds);
     expect(new Set(todas).size).toBe(todas.length);
-    expect(p.dias[0]?.atividadeIds).toContain('atv-caca-silabas'); // Linguagem primeiro
-    expect(p.dias[1]?.atividadeIds).toContain('atv-feira-numeros'); // depois Matemática
+    // Alterna as linhas: Linguagem e Matemática ocupam dias diferentes. Qual vem primeiro gira com a
+    // data (semente do dia, §5.6), então o teste não fixa a ordem.
+    const diaDe = (id: string) => p.dias.findIndex((d) => d.atividadeIds.includes(id));
+    expect(diaDe('atv-caca-silabas')).toBeGreaterThanOrEqual(0);
+    expect(diaDe('atv-feira-numeros')).toBeGreaterThanOrEqual(0);
+    expect(diaDe('atv-caca-silabas')).not.toBe(diaDe('atv-feira-numeros'));
   });
   it('é determinístico', () => {
     expect(planejarSemana(idx, entrada())).toEqual(planejarSemana(idx, entrada()));
@@ -122,7 +126,8 @@ describe('materiaisDaSemana (#9)', () => {
     const itens = lista.map((m) => m.item);
     expect(new Set(itens).size).toBe(itens.length);
     const feijao = lista.find((m) => /feij/i.test(m.item));
-    expect(feijao?.dias).toEqual(['qua']);
+    const diaDaFeira = p.dias.find((d) => d.atividadeIds.includes('atv-feira-numeros'))?.dia;
+    expect(feijao?.dias).toEqual([diaDaFeira]);
     expect(lista.every((m) => m.dias.length > 0)).toBe(true);
   });
 });

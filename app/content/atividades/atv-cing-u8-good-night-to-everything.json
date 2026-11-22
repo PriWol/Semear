@@ -2,8 +2,8 @@
   "id": "atv-cing-u8-good-night-to-everything",
   "titulo": "Good night to everything",
   "marcos": ["DI.RIT.01", "LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Vida prática",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -21,7 +21,7 @@
       "titulo": "Frases em inglês",
       "minutos": 0,
       "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
-      "fala": "Good night, sun. Good night, moon. / Good night, window. Good night, bed. / Good night, Marina. I love you."
+      "fala": "Good night, sun. Good night, moon. / Good night, window. Good night, bed. / Good night, ___. I love you."
     },
     {
       "titulo": "Passo 1",
@@ -41,7 +41,7 @@
     {
       "titulo": "Passo 4",
       "minutos": 1,
-      "texto": "Termine com “good night, Marina. I love you.”."
+      "texto": "Termine com “good night, ___. I love you.”, dizendo o nome da criança."
     },
     {
       "titulo": "Perguntas para a criança",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Um ritual de despedida, sempre igual e com a voz baixa, marca o fim do dia e ajuda a criança a se soltar do que a agitou. O livro *Goodnight Moon* faz o mesmo; aqui o ritual é seu e do quarto dela, e não reproduz o livro. As palavras (sun, moon, window, bed) vêm com o objeto na mão. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Um ritual de despedida, sempre igual e com a voz baixa, marca o fim do dia e ajuda a criança a se soltar do que a agitou. O livro *Goodnight Moon* faz o mesmo; aqui o ritual é seu e do quarto dela, e não reproduz o livro. As palavras (sun, moon, window, bed) vêm com o objeto na mão. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

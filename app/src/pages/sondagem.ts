@@ -1,5 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
-import { lerFormulario } from '../ui/app';
+import { lerFormulario, NaoEncontrado, type FabricaPagina } from '../ui/app';
 import { html, textoRico, type HtmlSeguro } from '../ui/html';
 import { idadeEmAnos } from '../domain/datas';
 import { idPista, pistasDaCrianca } from '../domain/jornada';
@@ -25,7 +24,7 @@ import { icone } from '../ui/icones';
 export const paginaSondagem: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
   const crianca = params.id ? await ctx.repo.crianca(params.id) : null;
-  if (!familia || !crianca) throw new Error('Criança não encontrada.');
+  if (!familia || !crianca) throw new NaoEncontrado('criança');
   const sondagem = carregarSondagem();
   const idade = idadeEmAnos(crianca.nascimento, new Date(ctx.agora()));
   const emRevisao = sondagem.itens.some((i) => i.revisao?.estado === 'rascunho');

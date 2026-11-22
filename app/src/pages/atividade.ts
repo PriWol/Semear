@@ -3,6 +3,7 @@ import { html, textoRico } from '../ui/html';
 import { icone } from '../ui/icones';
 import { atividadePublicada, leituraDaAtividade } from '../domain/leitura';
 import { rotuloDoMaterial } from '../domain/material';
+import { criancaPadrao } from '../domain/criancas';
 import { CADERNOS, enderecoDoMaterial } from '../tesouro';
 import { imprimirAtividadeAvulsa } from './sessao-avulsa';
 
@@ -15,7 +16,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
   if (!atividadePublicada(encontrada)) {
     return {
       titulo: 'Atividade não encontrada',
-      conteudo: html`<h1>Atividade não encontrada</h1>
+      conteudo: html`<h1>Não encontramos essa atividade</h1>
         <p>Não achamos essa atividade. Ela pode ter sido retirada ou o endereço está incorreto.</p>
         <p><a href="#/atividades">Voltar às atividades</a></p>`,
     };
@@ -23,7 +24,9 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
   const a = encontrada;
   const familia = await ctx.repo.familia();
   const criancas = await ctx.repo.criancas();
-  const crianca = criancas.find((c) => c.id === params.crianca) ?? criancas[0] ?? null;
+  const crianca =
+    criancas.find((c) => c.id === params.crianca) ??
+    criancaPadrao(criancas, await ctx.repo.sessoes());
   const leitura = leituraDaAtividade(
     a,
     ctx.idx,
@@ -82,7 +85,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
 
         ${
           leitura.cuidados
-            ? html`<p class="alerta cuidados" role="note"><b>${icone('warning')} Cuidados:</b> ${leitura.cuidados}</p>`
+            ? html`<p class="alerta cuidados" role="note"><b>${icone('warning')} Cuidados:</b> ${textoRico(leitura.cuidados)}</p>`
             : ''
         }
 
@@ -91,7 +94,7 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
 
         <h2>${icone('basket')} Materiais</h2>
         <ul>
-          ${a.materiais.map((m) => html`<li>${m.item}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
+          ${a.materiais.map((m) => html`<li>${textoRico(m.item)}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
         </ul>
 
         <h2>${icone('compass')} Passo a passo</h2>

@@ -1,4 +1,4 @@
-import type { FabricaPagina } from '../ui/app';
+import { NaoEncontrado, type FabricaPagina } from '../ui/app';
 import { confiavel, html, textoRico } from '../ui/html';
 import { pareceProntoPara, SESSOES_PARA_PARECER_PRONTO } from '../domain/registro';
 import { idadeEmAnos } from '../domain/datas';
@@ -12,8 +12,9 @@ import {
   type Pista,
 } from '../domain/jornada';
 import { formatarReferencia, orientacaoParaFamilia } from '../domain/orientacao';
-import { anos, ICONE_ESTADO, NOME_ESTADO } from '../ui/rotulos';
+import { anos, ICONE_ESTADO, NOME_ESTADO, textoProgresso } from '../ui/rotulos';
 import { icone } from '../ui/icones';
+import { restaurarFoco, seletorPorDados } from '../ui/foco';
 
 /** Broto em linha (a especificação §5.2 pede ícone de broto e texto, sem emoji). Constante do próprio código. */
 const ICONE_BROTO = confiavel(
@@ -31,7 +32,7 @@ let reabrir = new Set<string>();
 export const paginaJornada: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
   const crianca = params.id ? await ctx.repo.crianca(params.id) : null;
-  if (!familia || !crianca) throw new Error('Criança não encontrada.');
+  if (!familia || !crianca) throw new NaoEncontrado('criança');
   const idade = idadeEmAnos(crianca.nascimento, new Date(ctx.agora()));
   const estados = await ctx.repo.estados(crianca.id);
   // O histórico alimenta o selo "parece pronto" (§5.2): a ficha de registro não muda o estado do marco.
@@ -83,7 +84,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
       <header>
         <h2>${nome}</h2>
         ${pista.linha.vertentes ? html`<span class="etiqueta">extra ${pista.linha.vertentes.join('/')}</span>` : ''}
-        ${pos.total ? html`<span class="nota">${pos.consolidados}/${pos.total} consolidados</span>` : ''}
+        ${pos.total ? html`<span class="nota">${textoProgresso(pos.consolidados, pos.total)}</span>` : ''}
       </header>
       ${
         pos.total === 0
@@ -175,6 +176,9 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
         anteriores viram consolidados. Depois ajuste marco a marco quando precisar. Sem certeza de
         onde ${crianca.nome} está? <a href="#/sondagem/${crianca.id}">Faça a sondagem</a>. Quer organizar os dias? <a href="#/semana/${crianca.id}">Planejar a semana</a>.
       </p>
+      <ul class="legenda-estados" aria-label="Legenda dos estados">
+        ${ESTADOS.map((e) => html`<li>${ICONE_ESTADO[e]} ${NOME_ESTADO[e]}</li>`)}
+      </ul>
       <nav class="abas" aria-label="Domínios">
         ${dominios.map(
           (d) =>
@@ -230,6 +234,14 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
           ctx.avisar('Posição atualizada.');
         }
         const y = window.scrollY;
+        // O botão que a pessoa usou some quando a tela é refeita: guardamos o seletor do equivalente.
+        const seletorFoco = seletorPorDados('button', {
+          acao: alvo.dataset.acao,
+          chave: alvo.dataset.chave,
+          estado: alvo.dataset.estado,
+          pista: alvo.dataset.pista,
+          marco: alvo.dataset.marco,
+        });
         reabrir = new Set(
           [...raiz.querySelectorAll<HTMLElement>('details.para-os-pais[open]')].flatMap((d) =>
             d.dataset.marco ? [d.dataset.marco] : [],
@@ -237,6 +249,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
         );
         await ctx.atualizar();
         window.scrollTo(0, y);
+        restaurarFoco(seletorFoco);
       });
     },
   };

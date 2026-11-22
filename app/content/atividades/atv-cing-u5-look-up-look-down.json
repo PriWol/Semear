@@ -2,8 +2,8 @@
   "id": "atv-cing-u5-look-up-look-down",
   "titulo": "Look up, look down",
   "marcos": ["NM.TER.02", "LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "NM",
+  "categoria": "Observar a natureza",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Dar um nome ao que se vê, com o dedo apontando, é o que a entrada compreensível pede: a palavra vem com o objeto. “Up” e “down” são palavras de direção que o corpo entende, e olhar para cima e para baixo é um jeito de parar e olhar (Charlotte Mason). Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Dar um nome ao que se vê, com o dedo apontando, é o que a entrada compreensível pede: a palavra vem com o objeto. “Up” e “down” são palavras de direção que o corpo entende, e olhar para cima e para baixo é um jeito de parar e olhar (Charlotte Mason). Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

@@ -42,6 +42,18 @@ describe('busca de atividades (#13)', () => {
     const b = atividade('b', ['LG.FON.01'], { titulo: 'Outra', objetivo: 'Brincar com rimas.' });
     expect(ids(buscarAtividades([b, a], { texto: 'rimas' }, idx))).toEqual(['a', 'b']);
   });
+  it('acha também pelos cuidados (engasgo, água), com peso baixo', () => {
+    const agua = atividade('agua', ['LG.FON.01'], {
+      titulo: 'Brincadeira de balde',
+      objetivo: 'Despejar.',
+      cuidados: '**Nunca deixe a criança sozinha com água.** Risco de engasgo com peças pequenas.',
+    });
+    const nome = atividade('nome', ['LG.FON.01'], { titulo: 'Água de coco', objetivo: 'Ler.' });
+    expect(ids(buscarAtividades([agua], { texto: 'ENGASGO' }, idx))).toEqual(['agua']);
+    expect(ids(buscarAtividades([agua], { texto: 'sozinha agua' }, idx))).toEqual(['agua']);
+    // quem tem o termo no título vem antes de quem só o menciona nos cuidados
+    expect(ids(buscarAtividades([agua, nome], { texto: 'agua' }, idx))).toEqual(['nome', 'agua']);
+  });
   it('filtra por domínio, idade, vertente e duração máxima', () => {
     expect(ids(buscarAtividades(todas, { texto: '', dominio: 'MA' }, idx))).toEqual(['atv-feira']);
     expect(ids(buscarAtividades(todas, { texto: '', idade: 4 }, idx))).toEqual(['atv-caca']);
@@ -77,8 +89,14 @@ describe('palavras-chave e sessão avulsa', () => {
       app: 'semear',
       versao: 1,
       exportadoEm: '2026-11-08T00:00:00.000Z',
-      familia: null,
-      criancas: [],
+      familia: {
+        educador: 'M',
+        vertentePrincipal: 'Montessori' as const,
+        inspiracoes: [],
+        idiomasEducador: [],
+        criadaEm: '2026-10-01T10:00:00.000Z',
+      },
+      criancas: [{ id: 'c', nome: 'Ana', nascimento: '2021-03-15', letra: null, trilhas: [] }],
       estados: [],
       historico: [],
       sessoes: [

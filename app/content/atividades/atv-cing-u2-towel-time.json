@@ -2,8 +2,8 @@
   "id": "atv-cing-u2-towel-time",
   "titulo": "Towel time",
   "marcos": ["LI.ESC.01", "LI.VOC.02"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Vida prática",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -52,12 +52,12 @@
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "“Where's [Marina]?” com a toalha na cabeça, e “there you are!”. Seque o ursinho também. Cante “this is the way we dry our toes”."
+      "texto": "“Where's ___?” com a toalha na cabeça, e “there you are!”. Seque o ursinho também. Cante “this is the way we dry our toes”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "A saída do banho costuma ser o momento mais difícil: ela não quer sair, e é aí que a rotina ajuda. As mesmas palavras, na mesma ordem, e o gesto de secar cada parte dão previsibilidade, e um abraço de toalha ajuda a voltar à calma. Se ela quiser ficar mais, avise: “two more splashes, and then we get out”. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "A saída do banho costuma ser o momento mais difícil: ela não quer sair, e é aí que a rotina ajuda. As mesmas palavras, na mesma ordem, e o gesto de secar cada parte dão previsibilidade, e um abraço de toalha ajuda a voltar à calma. Se ela quiser ficar mais, avise: “two more splashes, and then we get out”. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

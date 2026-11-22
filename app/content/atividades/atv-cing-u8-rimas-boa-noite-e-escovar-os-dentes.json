@@ -18,8 +18,8 @@
     {
       "titulo": "Cantar: Good night, sun",
       "minutos": 2,
-      "texto": "O gesto: aponte cada coisa pela janela, ou no teto, e diga boa-noite; no último verso, abrace-a ou beije-a. Troque “Marina” pelo nome do bichinho, se quiser. Rima escrita pela coleção.",
-      "fala": "Good night, sun, good night, sky, / good night, birdie flying by; / good night, moon, good night, star, / good night, Marina, here you are."
+      "texto": "O gesto: aponte cada coisa pela janela, ou no teto, e diga boa-noite; no último verso, abrace-a ou beije-a. Diga o nome da criança no lugar do “___” (ou o nome do bichinho, se quiser). Rima escrita pela coleção.",
+      "fala": "Good night, sun, good night, sky, / good night, birdie flying by; / good night, moon, good night, star, / good night, ___, here you are."
     },
     {
       "titulo": "Cantar: Brush your teeth",
@@ -30,7 +30,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "As rimas da coleção para a hora de dormir têm só as palavras do quarto e do banheiro, com ritmo. A de escovar os dentes dá um tempo à escovação (cerca de um minuto), e a de boa-noite fecha o dia da mesma maneira, todas as noites. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "As rimas da coleção para a hora de dormir têm só as palavras do quarto e do banheiro, com ritmo. A de escovar os dentes dá um tempo à escovação (cerca de um minuto), e a de boa-noite fecha o dia da mesma maneira, todas as noites. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

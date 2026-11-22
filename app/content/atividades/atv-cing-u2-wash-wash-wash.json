@@ -13,7 +13,7 @@
   "duracaoMin": 5,
   "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa.",
   "palavrasChave": ["inglês", "english", "o banho", "wash, wash, wash"],
-  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: o banho.",
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total) (unidade: o banho).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "É a Resposta Física Total de James Asher: a criança mostra que entendeu com o corpo, e o banho já traz o objeto e o gesto de cada palavra. Comandos curtos, os mesmos todo dia. Deixar que ela lave o boneco dá a ela o papel de quem cuida, que muita criança dessa idade adora. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "É a Resposta Física Total de James Asher: a criança mostra que entendeu com o corpo, e o banho já traz o objeto e o gesto de cada palavra. Comandos curtos, os mesmos todo dia. Deixar que ela lave o boneco dá a ela o papel de quem cuida, que muita criança dessa idade adora. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

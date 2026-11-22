@@ -13,7 +13,7 @@
   "duracaoMin": 10,
   "cuidados": "só objetos grandes e sem peças soltas; nada de comida de verdade para os bichos de pelúcia.",
   "palavrasChave": ["inglês", "english", "os bichos", "feed the animals"],
-  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: os bichos.",
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: os bichos).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Cuidar dos bichos de brinquedo é uma brincadeira de faz de conta que dá à criança o papel de quem cuida, e é nela que as palavras de comida e de “hungry/full” aparecem em situação real. Dar de comer ao boneco antes de a criança comer ajuda a recusa na mesa. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Cuidar dos bichos de brinquedo é uma brincadeira de faz de conta que dá à criança o papel de quem cuida, e é nela que as palavras de comida e de “hungry/full” aparecem em situação real. Dar de comer ao boneco antes de a criança comer ajuda a recusa na mesa. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

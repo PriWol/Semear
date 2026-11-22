@@ -93,6 +93,37 @@ não pode ficar com a sessão marcada como feita e sem as observações. O repos
 mesma transação (`registrarSessao`) e desfaz tudo se uma falhar. A transação também nem abre o lugar dos estados dos
 marcos, o que garante, no próprio código, que a ficha não muda o estado.
 
+### Gravar só o que mudou (duas abas abertas)
+**O que é:** em vez de ler a família ao abrir a tela e depois gravar a cópia inteira por cima, a tela manda ao
+repositório só os campos que o formulário alterou, e o repositório lê e grava na mesma transação
+(`atualizarFamilia`, `atualizarCrianca`).
+
+**Por que usamos:** com duas abas abertas, a que ficou parada tinha uma cópia velha da família. Ao salvar, desfazia o
+que a outra mudou (por exemplo, o aviso diário). Mexendo só nos campos alterados, uma aba não apaga o trabalho da
+outra. A função pura `camposAlterados` calcula essa diferença.
+
+### Dado de fora: limites e coerência
+**O que é:** a cópia de segurança importada é um arquivo que qualquer um pode ter editado. Antes de apagar os dados do
+aparelho, `validarBackup` confere a forma, o tamanho (10 MB, checado por `File.size` antes de ler), a quantidade de
+registros, se cada `criancaId` existe no arquivo e se a data de nascimento é possível (`nascimentoPlausivel`).
+
+**Por que usamos:** um arquivo errado não pode zerar o app nem deixar registros órfãos (crianças sem família,
+sessões de uma criança que não existe). As regras são puras e moram em `domain/`; o relógio entra por parâmetro.
+
+### Rodízio por domínio, teto de duração e semente do dia (gerador de sessão v2)
+**O que é:** o gerador de sessão (`proporSessao`, em `src/domain/sessao.ts`) escolhe atividades em **rodadas**:
+em cada rodada entra no máximo uma atividade por **domínio** (Linguagem, Matemática, Artes...), e a próxima é a
+melhor pontuada que **caiba no tempo que resta** e no **teto de duração da idade** (2 anos até 10 min ... 7 a 8
+anos até 25 min). Quando várias linhas empatam, quem abre a sessão é decidido por uma **semente**: um número
+calculado a partir da data e do id da linha (um "embaralhar" que não sorteia).
+
+**Por que importa:** antes, a ordem do arquivo decidia o empate e a primeira atividade entrava mesmo sendo
+longa, então a mesma atividade de 35 min abria toda sessão. A semente muda o resultado de um dia para o outro,
+mas **a mesma entrada dá sempre a mesma saída**, o que mantém a regra testável (sorteio de verdade quebraria o
+teste). O **teste de propriedades** (`tests/sugestor-conteudo.test.ts`) roda a regra com o conteúdo real em 280
+combinações e confere afirmações que valem sempre ("a soma fica em até 110% do tempo"), em vez de comparar uma
+lista de ids que mudaria a cada atividade nova. (ADR 0036)
+
 ---
 
 ## 3. Qualidade: testes e automação
@@ -258,6 +289,7 @@ aparelho (AM/PM) e não dá para forçar 24 h; a validação fica em `horaDe24h`
 | **Marcos ativos** | Os marcos sendo trabalhados agora (fronteira + o seguinte, no máx. 2). |
 | **Pista** | Uma linha, ou uma linha num idioma (no domínio de Línguas). |
 | **Sessão** | Um encontro de estudo planejado: atividades + livro. |
+| **Teto de duração** | Limite suave, por idade, para uma atividade da sessão (2 anos: 10 min; 7 a 8 anos: 25 min). Acima dele só entra se for a única possível (ADR 0036). |
 | **Pacote** | Os arquivos da sessão: roteiro, materiais, folhas da criança e ficha de registro. |
 | **Plano Livre / Família** | Plano gratuito permanente e plano pago por família (especificação §9). |
 | **Lacuna** | Linha com marco ativo mas sem atividade publicada: sinal para a curadoria. |
@@ -283,7 +315,7 @@ aparelho (AM/PM) e não dá para forçar 24 h; a validação fica em `horaDe24h`
 | **Material impresso** | Trecho de um volume d'O Grande Tesouro de Marina ligado a uma atividade; a Biblioteca abre o PDF na página certa. |
 | **Service worker** | Programa do navegador que guarda arquivos do app para uso offline; precisa ser instruído a não interceptar os PDFs. |
 | **CSP** | Content Security Policy: lista que diz ao navegador de onde scripts, estilos e conexões podem vir; bloqueia código injetado (ADR 0022). |
-| **Iframe sandbox** | Quadro isolado da página: sem a origem do app, só com o que for liberado. Um `srcdoc` herda a CSP do app; por isso a prévia usa `previa.html` (ADR 0022). |
+| **Iframe sandbox** | Quadro isolado da página: sem a origem do app, só com o que for liberado. Um `srcdoc` herda a CSP do app; por isso a prévia usa `previa.html` (ADR 0022). A "tela cheia" é um painel (`<dialog>` modal) com esse mesmo iframe, não uma nova aba `blob:`, que seria da origem do app. |
 | **Faixa etária** | Idades que o produto atende (2 a 8 anos). O app avisa, mas não bloqueia, quem está fora (ADR 0023). |
 | **Preparo** | Tempo do adulto para separar materiais; fica fora dos 30 minutos de atividade da sessão (ADR 0023). |
 | **Regulação emocional** | Capacidade de perceber o que sente e voltar à calma. Aos 2 anos depende do adulto (“coregulação”); depois a criança assume aos poucos (ADR 0024). |

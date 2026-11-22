@@ -123,6 +123,8 @@ describe('registrarSessao: grava a observação sem mexer nos estados', () => {
   });
 
   it('excluir a sessão leva junto as observações dela, e só as dela', async () => {
+    await repo.salvarFamilia(familia());
+    await repo.salvarCrianca(crianca());
     await repo.salvarSessao(sessao('s1'));
     await repo.salvarSessao(sessao('s2'));
     await repo.registrarSessao(registrada('s1'), [evento('LG.FON.01', 'consolidado', 's1')]);
@@ -162,6 +164,7 @@ describe('banco e backup anteriores ao registro: sem subir a versão', () => {
   });
 
   it('um backup antigo, sem os campos novos, importa e depois aceita registro', async () => {
+    await repo.salvarFamilia(familia());
     await repo.salvarCrianca(crianca());
     await repo.salvarSessao(sessao('s1'));
     const antigo: unknown = JSON.parse(JSON.stringify(await repo.exportar(AGORA)));
@@ -174,6 +177,7 @@ describe('banco e backup anteriores ao registro: sem subir a versão', () => {
   });
 
   it('o registro vai e volta no backup', async () => {
+    await repo.salvarFamilia(familia());
     await repo.salvarCrianca(crianca());
     await repo.salvarSessao(sessao('s1'));
     await repo.registrarSessao({ ...registrada(), anotacoes: '<b>x</b>' }, [
@@ -197,8 +201,14 @@ describe('validarBackup com os campos do registro', () => {
     app: 'semear',
     versao: 1,
     exportadoEm: AGORA,
-    familia: null,
-    criancas: [],
+    familia: {
+      educador: 'M',
+      vertentePrincipal: 'Montessori' as const,
+      inspiracoes: [],
+      idiomasEducador: [],
+      criadaEm: '2026-10-01T10:00:00.000Z',
+    },
+    criancas: [{ id: 'c1', nome: 'Ana', nascimento: '2021-03-15', letra: null, trilhas: [] }],
     estados: [],
     historico: [],
     sessoes: [sessao('s1')],

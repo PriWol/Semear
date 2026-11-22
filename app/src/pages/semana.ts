@@ -1,7 +1,7 @@
-import type { FabricaPagina } from '../ui/app';
-import { lerFormulario, lista, novoId } from '../ui/app';
+import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
+import { abrirPainelPacote } from '../ui/painel-pacote';
 import { idadeEmAnos } from '../domain/datas';
 import { letraDaCrianca } from '../domain/letra';
 import { DURACAO_PADRAO, DURACOES, gerarCodigoSessao } from '../domain/sessao';
@@ -32,7 +32,7 @@ const DIAS_PADRAO: Dia[] = ['seg', 'qua', 'sex'];
 export const paginaSemana: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
   const crianca = params.id ? await ctx.repo.crianca(params.id) : null;
-  if (!familia || !crianca) throw new Error('Criança não encontrada.');
+  if (!familia || !crianca) throw new NaoEncontrado('criança');
   const agora = ctx.agora();
   const idade = idadeEmAnos(crianca.nascimento, new Date(agora));
   const inicio = segundaDaSemana(new Date(agora));
@@ -163,11 +163,11 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           const d = lerFormulario(ev.currentTarget as HTMLFormElement);
           const dias = lista(d.dias) as Dia[];
           if (dias.length === 0) {
-            ctx.avisar('Escolha pelo menos um dia.');
+            ctx.avisar('Escolha pelo menos um dia.', 'alerta');
             return;
           }
           const nova = { dias, duracaoMin: Number(d.duracao ?? DURACAO_PADRAO) };
-          await ctx.repo.salvarCrianca({ ...crianca, rotina: nova });
+          await ctx.repo.atualizarCrianca(crianca.id, { rotina: nova });
           const novo = planejarSemana(ctx.idx, { ...(await base()), id: novoId(), rotina: nova });
           await ctx.repo.salvarPlano(novo);
           void sincronizarComOAparelho(ctx, { pedirPermissao: false });
@@ -198,7 +198,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
             alvo.dataset.atividade ?? '',
           );
           if (!novo) {
-            ctx.avisar('Não há outra atividade para trocar nesta linha.');
+            ctx.avisar('Não há outra atividade para trocar nesta linha.', 'alerta');
             return;
           }
         } else if (acao === 'feito') {
@@ -209,7 +209,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
               // A sessão já registrada guarda observações: desmarcar não pode apagá-las (#11).
               const ligada = sessoesDaCrianca.find((s) => s.id === d.sessaoId);
               if (ligada && sessaoRegistrada(ligada)) {
-                ctx.avisar('Esta sessão já foi registrada. Use “Corrigir registro”.');
+                ctx.avisar('Esta sessão já foi registrada. Use “Corrigir registro”.', 'alerta');
                 return;
               }
               await ctx.repo.removerSessao(d.sessaoId);
@@ -286,12 +286,12 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           modo,
         });
       };
-      raiz.querySelector('#abrir-semana')?.addEventListener('click', async () => {
+      // Mesmo painel isolado da sessão: a nova aba blob: era da origem do app e sem script (#139).
+      raiz.querySelector<HTMLElement>('#abrir-semana')?.addEventListener('click', async (ev) => {
+        const abridor = ev.currentTarget as HTMLElement;
         const doc = await documento();
         if (!doc) return;
-        const url = URL.createObjectURL(new Blob([doc], { type: 'text/html;charset=utf-8' }));
-        window.open(url, '_blank', 'noopener');
-        setTimeout(() => URL.revokeObjectURL(url), 60_000);
+        abrirPainelPacote({ titulo: `Semana de ${crianca.nome}`, documento: doc, abridor });
       });
       raiz.querySelector('#baixar-semana')?.addEventListener('click', async () => {
         const doc = await documento();

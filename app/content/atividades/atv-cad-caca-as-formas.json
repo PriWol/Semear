@@ -8,7 +8,7 @@
     "paginas": [33, 33]
   },
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
-  "idade": [2, 3],
+  "idade": [2, 5],
   "duracaoMin": 10,
   "cuidados": "Atenção: Combine antes o que pode pegar: nada quebrável, pontudo, quente ou de limpeza. Fique junto enquanto procuram pela casa, longe de escadas e quinas. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["formas", "redondo", "quadrado", "procurar", "casa"],
@@ -88,5 +88,9 @@
     "estado": "aprovado",
     "por": "Dona do produto",
     "em": "2026-11-21"
+  },
+  "ajustes": {
+    "dificil": "Para a criança menor: só o prato redondo e uma ou duas coisas redondas pela casa.",
+    "facil": "Para a criança maior: procure também coisas quadradas e compridas e deixe que ela diga o nome da forma antes de você."
   }
 }

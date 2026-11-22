@@ -3,7 +3,7 @@
   "titulo": "Onde está a resposta? O dedo na frase",
   "marcos": ["LG.LEI.07"],
   "vertentes": ["Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
-  "idade": [7, 8],
+  "idade": [6, 8],
   "duracaoMin": 20,
   "preparoMin": 5,
   "cuidados": "Atenção: leitura sentada, boa luz, até 20 minutos. Se o texto cansar, leia uma parte para ela. Perguntas não são prova: se ela errar, releiam juntos a frase certa.",
@@ -12,7 +12,7 @@
     {
       "titulo": "Ler o texto curto",
       "minutos": 5,
-      "texto": "Leiam juntos ou ela lê (se já lê bem) este texto: *“Luna levou o guarda-chuva para a escola. De manhã o céu estava azul, mas à tarde começou a chover. Luna abriu o guarda-chuva amarelo e voltou para casa pulando nas poças.”*"
+      "texto": "Leiam juntos ou ela lê (se já lê bem) este texto: *“Luna levou o guarda-chuva para o parque. De manhã o céu estava azul, mas à tarde começou a chover. Luna abriu o guarda-chuva amarelo e voltou para casa pulando nas poças.”*"
     },
     {
       "titulo": "Quem, onde, quando, o quê",

@@ -12,7 +12,7 @@ const IDIOMAS: Record<IdiomaAcervo, string> = {
 
 function cartaoItem(i: ItemAcervo) {
   return html`<li class="cartao item-acervo">
-    <h3>${i.titulo}</h3>
+    <h2>${i.titulo}</h2>
     <p class="nota">
       ${i.autor} · ${IDIOMAS[i.idioma]} · ${i.idade[0]}–${i.idade[1]} anos · ${i.fonte} · ${i.licenca}
     </p>

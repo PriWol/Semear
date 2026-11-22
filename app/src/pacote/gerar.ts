@@ -160,11 +160,11 @@ function paginaMateriais(e: EntradaPacote): HtmlSeguro {
       <div>
         <h2>🧺 Separe</h2>
         <ul class="check">
-          ${materiais.map((m) => html`<li>${m.item}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
+          ${materiais.map((m) => html`<li>${textoRico(m.item)}${m.deCasa ? html` <b>(de casa)</b>` : ''}</li>`)}
           <li>Folhas da criança impressas, ou o tablet no modo tablet</li>
           <li>Ficha de registro e uma caneta</li>
         </ul>
-        ${cuidados.length ? html`<p class="caixa cuidados"><b>⚠️ Cuidados:</b> ${cuidados.join(' ')}</p>` : ''}
+        ${cuidados.length ? html`<p class="caixa cuidados"><b>⚠️ Cuidados:</b> ${textoRico(cuidados.join(' '))}</p>` : ''}
       </div>
       <div>
         <h2>${TITULO_INDICACAO[e.livro?.tipo ?? 'livro']}</h2>
@@ -284,8 +284,11 @@ function paginaFicha(e: EntradaPacote): HtmlSeguro {
 }
 
 // O app pede a impressão por mensagem: a prévia roda num iframe isolado (sandbox), sem acesso ao app.
+// Esc com o foco dentro do pacote avisa o app para fechar o painel de tela cheia (#139); fora de um
+// iframe (arquivo baixado) não faz nada.
 const SCRIPT = `
 window.addEventListener('message',function(e){if(e.source===window.parent&&e.data==='semear:imprimir'){window.print();}});
+window.addEventListener('keydown',function(e){if(e.key==='Escape'&&window.parent!==window){window.parent.postMessage('semear:fechar','*');}});
 function ajustarTablet(){var b=document.body;if(!b.classList.contains('tablet')){b.style.removeProperty('--zoom-tablet');return;}var h=window.innerHeight-54;b.style.setProperty('--zoom-tablet',String(Math.min(window.innerWidth/793.7,h/1122.5)));}
 window.addEventListener('resize',ajustarTablet);
 function alternarTablet(){var on=document.body.classList.toggle('tablet');document.getElementById('btnTablet').setAttribute('aria-pressed',String(on));ajustarTablet();}

@@ -2,7 +2,7 @@
 import type { Crianca } from '../domain/tipos';
 import { dataBR } from '../domain/datas';
 import { NOME_DIA, type DiaPlano, type MaterialDaSemana, type PlanoSemana } from '../domain/semana';
-import { html, type HtmlSeguro } from '../ui/html';
+import { html, textoRico, type HtmlSeguro } from '../ui/html';
 import { montarDocumento, paginasDaSessao, type EntradaPacote } from './gerar';
 
 /** O que imprimir: tudo, só as folhas da criança ou só os roteiros (e fichas) do educador. */
@@ -30,7 +30,7 @@ function paginaMateriaisDaSemana(e: EntradaSemana): HtmlSeguro {
       ${e.materiais.map(
         (m) =>
           html`<li>
-            ${m.item}${m.deCasa ? html` <b>(de casa)</b>` : ''}
+            ${textoRico(m.item)}${m.deCasa ? html` <b>(de casa)</b>` : ''}
             <span class="nota">· ${m.dias.map((d) => NOME_DIA[d]).join(', ')}</span>
           </li>`,
       )}

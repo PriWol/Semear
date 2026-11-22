@@ -2,8 +2,8 @@
   "id": "atv-cing-u7-who-is-who",
   "titulo": "Who is who?",
   "marcos": ["LI.ESC.01", "LI.VOC.02"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Jogos e brincadeiras",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Os nomes da família são as primeiras palavras de uma criança em qualquer língua, e as fotos dão o objeto a que a palavra se liga. Use os termos que fazem sentido na sua família: este caderno não presume quem mora na casa dela. Ela já conhece essas pessoas, o que faz da atividade um acerto garantido, e isso ajuda quem se frustra fácil. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Os nomes da família são as primeiras palavras de uma criança em qualquer língua, e as fotos dão o objeto a que a palavra se liga. Use os termos que fazem sentido na sua família: este caderno não presume quem mora na casa dela. Ela já conhece essas pessoas, o que faz da atividade um acerto garantido, e isso ajuda quem se frustra fácil. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

@@ -8,7 +8,7 @@
     "paginas": [60, 60]
   },
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
-  "idade": [2, 3],
+  "idade": [2, 4],
   "duracaoMin": 10,
   "cuidados": "Atenção: Não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["lama", "terra", "água", "sensorial", "sujar"],
@@ -88,5 +88,9 @@
     "estado": "aprovado",
     "por": "Dona do produto",
     "em": "2026-11-21"
+  },
+  "ajustes": {
+    "dificil": "Para a criança menor: só misturar e espalhar a terra molhada, sem “bolos” nem “sopas”.",
+    "facil": "Para a criança maior: pergunte “é mole ou duro?” e compare a terra seca com a molhada."
   }
 }

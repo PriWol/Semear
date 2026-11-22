@@ -1,7 +1,7 @@
 {
   "id": "atv-vol5-u2",
   "titulo": "Linhas e círculos: olhar Kandinsky e riscar ouvindo música",
-  "marcos": ["AR.APR.01"],
+  "marcos": ["AR.APR.01", "AR.APR.02"],
   "dominio": "AR",
   "categoria": "Estudo de pintores",
   "materialImpresso": {
@@ -20,17 +20,17 @@
     {
       "titulo": "Olhar com calma",
       "minutos": 8,
-      "texto": "Olhar *Vários círculos* em silêncio, por um minuto. Dizer o que vê: cores, tamanhos, quantos. Traçar uma linha reta e uma onda com o dedo."
+      "texto": "Olhe *Vários círculos* em silêncio, por um minuto. Diga o que vê: cores, tamanhos, quantos. Trace uma linha reta e uma onda com o dedo."
     },
     {
       "titulo": "Círculos e música",
       "minutos": 9,
-      "texto": "Olhar *Quadrados com círculos concêntricos*. Traçar círculos dentro de círculos. Ouvir música e riscar linhas “do jeito dela”."
+      "texto": "Olhe *Quadrados com círculos concêntricos*. Trace círculos dentro de círculos. Ouça música e risque linhas “do jeito dela”."
     },
     {
       "titulo": "Desenho só de linhas e círculos",
       "minutos": 8,
-      "texto": "Fazer um desenho só de linhas e círculos. Pintar círculos que se sobrepõem (guache aguado). Dar nome ao desenho e dizer que música ele tem."
+      "texto": "Faça um desenho só de linhas e círculos. Pinte círculos que se sobrepõem (guache aguado). Dê nome ao desenho e diga que música ele tem."
     }
   ],
   "observar": {

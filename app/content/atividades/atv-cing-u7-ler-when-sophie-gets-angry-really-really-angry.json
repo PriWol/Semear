@@ -1,9 +1,7 @@
 {
   "id": "atv-cing-u7-ler-when-sophie-gets-angry-really-really-angry",
   "titulo": "Ler juntos: When Sophie Gets Angry — Really, Really Angry…",
-  "marcos": ["EM.NOM.02"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "marcos": ["EM.NOM.02", "LI.ESC.01"],
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -57,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "É um livro sobre a raiva e sobre como ela passa, e o livro de Molly Bang foi premiado (Caldecott Honor). Em leitura dialogada, as perguntas são sobre o rosto e as cores, que a criança entende, e sobre o que fazer, que ela mostra com o corpo. Leia depois que a crise passou, e nunca no meio dela. Se o livro parecer longo, leia só as páginas do meio. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "É um livro sobre a raiva e sobre como ela passa, e o livro de Molly Bang foi premiado (Caldecott Honor). Em leitura dialogada, as perguntas são sobre o rosto e as cores, que a criança entende, e sobre o que fazer, que ela mostra com o corpo. Leia depois que a crise passou, e nunca no meio dela. Se o livro parecer longo, leia só as páginas do meio. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

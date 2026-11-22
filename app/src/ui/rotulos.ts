@@ -37,6 +37,12 @@ export const NOME_ESTADO: Record<EstadoMarco, string> = {
   consolidado: 'Consolidado',
 };
 
+/** "4 de 33 marcos consolidados": a unidade vem escrita, não só "4/33" (QA2-05). */
+export const textoProgresso = (consolidados: number, total: number): string =>
+  total === 1
+    ? `${consolidados} de 1 marco consolidado`
+    : `${consolidados} de ${total} marcos consolidados`;
+
 /** Ícones de linha fina (ADR 0034); o "não observado" é um círculo de texto, não um emoji. */
 export const ICONE_ESTADO: Record<EstadoMarco, HtmlSeguro | string> = {
   'nao-observado': '○',

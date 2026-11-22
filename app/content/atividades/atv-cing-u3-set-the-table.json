@@ -2,8 +2,8 @@
   "id": "atv-cing-u3-set-the-table",
   "titulo": "Set the table",
   "marcos": ["DI.VPR.02", "LI.ESC.01"],
-  "dominio": "AR",
-  "categoria": "Escuta musical",
+  "dominio": "DI",
+  "categoria": "Vida prática",
   "idioma": "en",
   "materialImpresso": {
     "caderno": "ingles-2-anos",
@@ -15,7 +15,7 @@
   "duracaoMin": 10,
   "cuidados": "Na hora de comer, **fique junto e com ela sentada**; corte as frutas em pedaços pequenos e macios e evite uvas inteiras, nozes, pipoca e balas duras, que podem causar engasgo. Cheque alergias. Só objetos inquebráveis e sem pontas.",
   "palavrasChave": ["inglês", "english", "comer e ajudar na mesa", "set the table"],
-  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: comer e ajudar na mesa.",
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: comer e ajudar na mesa).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Pôr a mesa é uma tarefa de verdade, dada à criança como ajuda (Montessori), que muita criança na fase do “não” aceita com orgulho. As palavras (plate, cup, spoon) vêm com o objeto na mão, e os comandos simples (“bring me”, “put it here”) são Resposta Física Total. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Pôr a mesa é uma tarefa de verdade, dada à criança como ajuda (Montessori), que muita criança na fase do “não” aceita com orgulho. As palavras (plate, cup, spoon) vêm com o objeto na mão, e os comandos simples (“bring me”, “put it here”) são Resposta Física Total. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

@@ -13,7 +13,7 @@
   "duracaoMin": 10,
   "cuidados": "chão firme e sem obstáculos.",
   "palavrasChave": ["inglês", "english", "os bichos", "animal walks"],
-  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: os bichos.",
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total) (unidade: os bichos).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "É uma Resposta Física Total, com os bichos como pretexto: os verbos (hop, waddle, stomp, creep) são aprendidos pelo corpo, e as variações de ritmo (fast, slow) servem para gastar energia e voltar à calma. A criança dessa idade adora ser bicho. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "É uma Resposta Física Total, com os bichos como pretexto: os verbos (hop, waddle, stomp, creep) são aprendidos pelo corpo, e as variações de ritmo (fast, slow) servem para gastar energia e voltar à calma. A criança dessa idade adora ser bicho. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {
