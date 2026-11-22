@@ -11,26 +11,26 @@
   },
   "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
   "idade": [4, 8],
-  "duracaoMin": 25,
-  "preparoMin": 10,
+  "duracaoMin": 17,
+  "preparoMin": 18,
   "cuidados": "Tesoura sempre sem ponta e cola atóxica; pedaços muito pequenos de papel são risco de engasgo para os menores. Guarde os pedaços num envelope e lave as mãos ao final.",
   "palavrasChave": ["colagem", "papel", "tesoura", "cola", "rasgar"],
   "objetivo": "A criança **pinta papéis, rasga e corta** (com tesoura sem ponta) e compõe uma colagem com formas simples, passando a cola e posicionando as peças com cuidado.",
   "passos": [
     {
-      "titulo": "Pintar os papéis (um dia antes)",
-      "minutos": 8,
-      "texto": "Pintar folhas de papel com as tintas da Unidade 1. Deixar secar de um dia para o outro. Olhar as cores que ficaram."
+      "titulo": "Pintar os papéis (preparo, um dia antes)",
+      "minutos": 0,
+      "texto": "Pinte folhas de papel com as tintas da Unidade 1. Deixe secar de um dia para o outro. Olhe as cores que ficaram."
     },
     {
       "titulo": "Rasgar, cortar e experimentar",
       "minutos": 9,
-      "texto": "Rasgar o papel em tiras e manchas. Cortar um círculo, uma tira e um triângulo. Experimentar a composição sem colar."
+      "texto": "Rasgue o papel em tiras e manchas. Corte um círculo, uma tira e um triângulo. Experimente a composição sem colar."
     },
     {
       "titulo": "Colar a composição",
       "minutos": 8,
-      "texto": "Colar a composição, uma peça de cada vez. Dar um nome à colagem. Mostrar para alguém da família."
+      "texto": "Cole a composição, uma peça de cada vez. Dê um nome à colagem. Mostre para alguém da família."
     }
   ],
   "observar": {

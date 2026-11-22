@@ -15,7 +15,7 @@
   "duracaoMin": 10,
   "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Use só recipientes de plástico inquebrável, maiores que a boca dela.",
   "palavrasChave": ["inglês", "english", "o banho", "pour and fill"],
-  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: o banho.",
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: o banho).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -52,12 +52,12 @@
     {
       "titulo": "Para variar (opcional, outro dia)",
       "minutos": 0,
-      "texto": "Corante de comida: “blue water”, “yellow water”. Um peneira: “it goes through!”. Lave o brinquedo de cada banho: “wash the duck”."
+      "texto": "Corante de comida: “blue water”, “yellow water”. Uma peneira: “it goes through!”. Lave o brinquedo de cada banho: “wash the duck”."
     },
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Encher e despejar é ciência de verdade para quem tem 2 anos, e as palavras (full, empty, big, small, float, sink) vêm com o objeto na mão, que é o modo mais seguro de aprender uma palavra. A atividade também acalma: o movimento repetido de despejar tem ritmo. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Encher e despejar é ciência de verdade para quem tem 2 anos, e as palavras (full, empty, big, small, float, sink) vêm com o objeto na mão, que é o modo mais seguro de aprender uma palavra. A atividade também acalma: o movimento repetido de despejar tem ritmo. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

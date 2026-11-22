@@ -13,7 +13,7 @@
   "duracaoMin": 5,
   "cuidados": "Com água por perto, **nunca deixe a criança sozinha com água**, nem por um instante, mesmo rasa. Pasta só uma pontinha, do tamanho de um grão de arroz; fique junto e sem deixar que ela engula a espuma.",
   "palavrasChave": ["inglês", "english", "hora de dormir", "brush, brush, brush"],
-  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total), no momento de: hora de dormir.",
+  "objetivo": "Entender comandos curtos em inglês e mostrar que entendeu com o corpo (Resposta Física Total) (unidade: hora de dormir).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -55,7 +55,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Escovar os dentes é um ritual da hora de dormir, e as palavras (teeth, brush, open wide, spit) vêm com o gesto. Com 2 anos, a criança ainda precisa que o adulto escove, e brincar de trocar (ela escova o adulto) dá a ela o papel de quem faz. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Escovar os dentes é um ritual da hora de dormir, e as palavras (teeth, brush, open wide, spit) vêm com o gesto. Com 2 anos, a criança ainda precisa que o adulto escove, e brincar de trocar (ela escova o adulto) dá a ela o papel de quem faz. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

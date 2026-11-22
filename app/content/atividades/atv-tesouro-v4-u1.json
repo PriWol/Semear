@@ -11,7 +11,7 @@
   },
   "vertentes": ["Clássico", "Charlotte Mason", "Waldorf", "Montessori"],
   "idade": [3, 6],
-  "duracaoMin": 20,
+  "duracaoMin": 16,
   "objetivo": "A criança **escuta com atenção** os sons da casa, percebe que o silêncio nunca é vazio e começa a parar e recomeçar junto com a música.",
   "passos": [
     {

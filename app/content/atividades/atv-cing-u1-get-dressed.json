@@ -15,7 +15,7 @@
   "duracaoMin": 10,
   "cuidados": "Fique junto enquanto ela se veste, sem deixá-la em pé sobre a cama; deixe fora do alcance sapatos com cadarço comprido e roupas com botões ou enfeites soltos, que podem ir à boca.",
   "palavrasChave": ["inglês", "english", "acordar e se arrumar", "get dressed"],
-  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto, no momento de: acordar e se arrumar.",
+  "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: acordar e se arrumar).",
   "passos": [
     {
       "titulo": "Frases em inglês",
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Escolher entre duas coisas que você aceita dá à criança um pouco de controle, e na fase do “não” isso evita muitas brigas. Vestir-se é também uma tarefa de vida prática (ideia da educação Montessori) e um bom contexto para nomear peças de roupa com o objeto na mão. Se ela recusar, mude a escolha, não a regra. Os autores e os métodos citados no caderno (Krashen e Terrell, Asher, Grosjean, Whitehurst) são inspirações, não regras, e o caderno não promete fluência. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Escolher entre duas coisas que você aceita dá à criança um pouco de controle, e na fase do “não” isso evita muitas brigas. Vestir-se é também uma tarefa de vida prática (ideia da educação Montessori) e um bom contexto para nomear peças de roupa com o objeto na mão. Se ela recusar, mude a escolha, não a regra. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {
