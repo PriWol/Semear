@@ -8,8 +8,12 @@ export function ehLetra(valor: unknown): valor is Letra {
 /**
  * Letra padrão da criança (decisão 37 / §5.8 da especificação):
  * Montessori e Waldorf começam pela cursiva; nas demais, bastão → script → cursiva conforme a idade.
+ * Exceção (D24, #141): abaixo de 3 anos a folha impressa é sempre de imprensa (bastão), mesmo nessas
+ * vertentes; a criança ainda não escreve e a letra de imprensa é a que ela vê nos livros. A família pode
+ * trocar no seletor "Letra da criança".
  */
 export function letraPadrao(idade: number, familia: Pick<Familia, 'vertentePrincipal'>): Letra {
+  if (idade < 3) return 'bastao';
   if (familia.vertentePrincipal === 'Montessori' || familia.vertentePrincipal === 'Waldorf') {
     return 'cursiva';
   }

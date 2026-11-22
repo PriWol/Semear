@@ -37,6 +37,17 @@ describe('diasEntre', () => {
 });
 
 describe('letra padrão (§5.8)', () => {
+  it('abaixo de 3 anos é de imprensa em qualquer vertente (D24, #141); a partir de 3 volta ao normal', () => {
+    for (const v of ['Montessori', 'Waldorf', 'Clássico'] as const) {
+      expect(letraPadrao(2, { vertentePrincipal: v })).toBe('bastao');
+      expect(letraPadrao(2.9, { vertentePrincipal: v })).toBe('bastao');
+    }
+    expect(letraPadrao(3, { vertentePrincipal: 'Waldorf' })).toBe('cursiva');
+    // a escolha explícita da família continua valendo
+    expect(letraDaCrianca({ letra: 'cursiva' }, 2, { vertentePrincipal: 'Montessori' })).toBe('cursiva');
+    expect(letraDaCrianca({ letra: null }, 2, { vertentePrincipal: 'Montessori' })).toBe('bastao');
+  });
+
   it('segue a idade nas vertentes sem preferência', () => {
     const f = { vertentePrincipal: 'Clássico' as const };
     expect(letraPadrao(4.9, f)).toBe('bastao');
