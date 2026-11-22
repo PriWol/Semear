@@ -17,7 +17,7 @@
     {
       "titulo": "Explorar",
       "minutos": 6,
-      "texto": "Mostre: apertar, bater, rolar, beliscar. Nomeie os gestos. Faça uma cobrinha e uma bolinha e deixe que ela faça as dela.",
+      "texto": "Mostre: apertar, bater, rolar, beliscar. Nomeie os gestos. Faça uma cobrinha e uma bolinha e deixe que a criança faça as da criança.",
       "fala": "Aperta, aperta, rola!"
     },
     {
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela mais gostou de fazer com a massinha?",
+  "perguntaFicha": "O que a criança mais gostou de fazer com a massinha?",
   "palavrasChave": ["massinha", "modelagem", "sensorial", "mãos"],
   "folhas": [],
   "autoria": {

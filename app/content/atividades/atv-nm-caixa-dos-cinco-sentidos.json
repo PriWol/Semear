@@ -12,18 +12,18 @@
     {
       "titulo": "Conversa",
       "minutos": 3,
-      "texto": "Toque o nariz, as orelhas, os olhos, a língua e as mãos: “Com o que sentimos?”. Deixe que ela aponte e nomeie.",
+      "texto": "Toque o nariz, as orelhas, os olhos, a língua e as mãos: “Com o que sentimos?”. Deixe que a criança aponte e nomeie.",
       "fala": "Com o que você sente o cheiro?"
     },
     {
       "titulo": "Descobrir",
       "minutos": 8,
-      "texto": "Com os olhos fechados ou de costas, ela descobre o que está na caixa: uma esponja (tato), cravo ou canela (cheiro), chocalho (som). Cada objeto é um sentido."
+      "texto": "Com os olhos fechados ou de costas, a criança descobre o que está na caixa: uma esponja (tato), cravo ou canela (cheiro), chocalho (som). Cada objeto é um sentido."
     },
     {
       "titulo": "Registro",
       "minutos": 4,
-      "texto": "Peça que desenhe ou mostre qual sentido usou em cada objeto. Se quiser, ela prova um pedaço de fruta conhecida (paladar)."
+      "texto": "Peça que desenhe ou mostre qual sentido usou em cada objeto. Se quiser, a criança prova um pedaço de fruta conhecida (paladar)."
     }
   ],
   "observar": {
@@ -65,7 +65,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual sentido ela mais gostou de usar?",
+  "perguntaFicha": "Qual sentido a criança mais gostou de usar?",
   "palavrasChave": ["sentidos", "corpo", "tato", "olfato"],
   "folhas": [],
   "autoria": {

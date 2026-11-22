@@ -17,13 +17,13 @@
     {
       "titulo": "Cores",
       "minutos": 10,
-      "texto": "Ela pinta com 2 ou 3 cores e observa as cores se encontrarem. Pergunte o que vê (um céu? uma floresta?). Deixe a imaginação conduzir.",
+      "texto": "A criança pinta com 2 ou 3 cores e observa as cores se encontrarem. Pergunte o que vê (um céu? uma floresta?). Deixe a imaginação conduzir.",
       "fala": "O que essas cores lembram?"
     },
     {
       "titulo": "Secar",
       "minutos": 4,
-      "texto": "Deixem secar. Quando seco, ela dá um nome e escreve a data no verso."
+      "texto": "Deixem secar. Quando seco, a criança dá um nome e escreve a data no verso."
     }
   ],
   "observar": {
@@ -66,7 +66,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais cores ela escolheu?",
+  "perguntaFicha": "Quais cores a criança escolheu?",
   "palavrasChave": ["aquarela", "molhado sobre molhado", "pincel", "cores"],
   "folhas": [],
   "autoria": {

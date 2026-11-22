@@ -46,7 +46,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Se o dia estiver difícil: olhar só a lagarta da prancha, por um minuto, e dizer como ela é.",
+    "dificil": "Se o dia estiver difícil: olhar só a lagarta da prancha, por um minuto, e dizer como a criança é.",
     "facil": "Se o interesse crescer: criar, com um adulto, uma lagarta de verdade numa caixa com folhas, e ver o que acontece (e soltar a borboleta depois)."
   },
   "materiais": [
@@ -72,7 +72,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que bichinho ela viu de perto e como ele era?",
+  "perguntaFicha": "Que bichinho a criança viu de perto e como ele era?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

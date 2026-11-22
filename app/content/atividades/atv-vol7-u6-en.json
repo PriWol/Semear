@@ -12,7 +12,7 @@
   "idade": [3, 6],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Não pare para “testar” se ela sabe as cores, e não corrija a cor que ela disser: pergunte “onde você viu essa cor?”. Tintas e giz de cera só os que forem atóxicos. Na caça às cores, combine antes o que pode pegar (nada quebrável ou pontudo) e fique junto. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "cuidados": "Não pare para “testar” se a criança sabe as cores, e não corrija a cor que a criança disser: pergunte “onde você viu essa cor?”. Tintas e giz de cera só os que forem atóxicos. Na caça às cores, combine antes o que pode pegar (nada quebrável ou pontudo) e fique junto. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que a criança “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
   "palavrasChave": ["inglês", "cores", "red", "blue", "caça às cores"],
   "objetivo": "A criança ouve uma rima inglesa que fala de verde, amarelo e vermelho, aponta o cartão da cor que o adulto nomeia em inglês e acha, pela casa, algo da cor do cartão.",
   "passos": [
@@ -25,12 +25,12 @@
     {
       "titulo": "Mostrar os cartões",
       "minutos": 1,
-      "texto": "Com os cartões das cores, diga a cor em inglês: red, blue, yellow, green, orange, purple, pink, brown, black. Ela aponta o cartão da cor que você nomeia."
+      "texto": "Com os cartões das cores, diga a cor em inglês: red, blue, yellow, green, orange, purple, pink, brown, black. A criança aponta o cartão da cor que você nomeia."
     },
     {
       "titulo": "A caça às cores",
       "minutos": 5,
-      "texto": "Cada um escolhe um cartão de cor e diz a cor em inglês (“blue”). Saiam pela casa (ou pela rua) para achar algo daquela cor: uma meia, uma folha, um brinquedo. Ponham o que acharam ao lado do cartão e olhem juntos: “quantas coisas azuis?”. Para terminar, a criança escolhe a **cor do dia** e veste ou usa algo dela até a hora de dormir. Evite perguntar “que cor é essa?”: diga você o nome e deixe que ela escolha.",
+      "texto": "Cada um escolhe um cartão de cor e diz a cor em inglês (“blue”). Saiam pela casa (ou pela rua) para achar algo daquela cor: uma meia, uma folha, um brinquedo. Ponham o que acharam ao lado do cartão e olhem juntos: “quantas coisas azuis?”. Para terminar, a criança escolhe a **cor do dia** e veste ou usa algo da criança até a hora de dormir. Evite perguntar “que cor é essa?”: diga você o nome e deixe que a criança escolha.",
       "fala": "Blue!"
     },
     {
@@ -47,7 +47,7 @@
     ]
   },
   "ajustes": {
-    "dificil": "Só duas cores, a preferida dela e mais uma, com a caça às cores só na sala.",
+    "dificil": "Só duas cores, a preferida da criança e mais uma, com a caça às cores só na sala.",
     "facil": "Misturar duas tintas e dar nome à cor nova, em inglês."
   },
   "materiais": [
@@ -70,7 +70,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que cores ela achou? Qual foi a cor do dia?",
+  "perguntaFicha": "Que cores a criança achou? Qual foi a cor do dia?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

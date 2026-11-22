@@ -12,7 +12,7 @@
     {
       "titulo": "Montar",
       "minutos": 8,
-      "texto": "Desenhe uma grade de 7 colunas (dom a sáb). Ela escreve (ou você ajuda) os dias da semana no alto e os números nos quadros, acompanhando o mês."
+      "texto": "Desenhe uma grade de 7 colunas (dom a sáb). A criança escreve (ou você ajuda) os dias da semana no alto e os números nos quadros, acompanhando o mês."
     },
     {
       "titulo": "Marcar",
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais datas ela escolheu marcar?",
+  "perguntaFicha": "Quais datas a criança escolheu marcar?",
   "palavrasChave": ["calendário", "dias da semana", "meses", "aniversário"],
   "folhas": [],
   "autoria": {

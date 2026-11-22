@@ -17,7 +17,7 @@
     {
       "titulo": "Adivinhar",
       "minutos": 8,
-      "texto": "Com os olhos fechados (ou de costas), ela ouve um instrumento e diz qual é. Troque os papéis. Pergunte: “Foi forte ou fraco? Agudo ou grave?”.",
+      "texto": "Com os olhos fechados (ou de costas), a criança ouve um instrumento e diz qual é. Troque os papéis. Pergunte: “Foi forte ou fraco? Agudo ou grave?”.",
       "fala": "Que som é esse?"
     },
     {
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quais sons ela mais reconheceu?",
+  "perguntaFicha": "Quais sons a criança mais reconheceu?",
   "palavrasChave": ["timbre", "instrumentos", "forte e fraco", "escuta", "agudo e grave"],
   "folhas": [],
   "autoria": {

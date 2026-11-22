@@ -13,7 +13,7 @@
   "idade": [4, 8],
   "duracaoMin": 25,
   "preparoMin": 5,
-  "cuidados": "Olhar não é pegar: bicho e ninho ficam onde estão. Em mato alto, calçado fechado; água e protetor solar sempre. Fique ao alcance do olhar dela.",
+  "cuidados": "Olhar não é pegar: bicho e ninho ficam onde estão. Em mato alto, calçado fechado; água e protetor solar sempre. Fique ao alcance do olhar da criança.",
   "palavrasChave": ["diário", "caderno de natureza", "observação", "desenho", "passeio"],
   "objetivo": "A criança **escolhe uma só coisa da natureza e olha para ela em silêncio**, desenha o que vê, registra data, lugar e tempo, e conta o que viu com o caderno fechado.",
   "passos": [
@@ -35,7 +35,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Fica quieta olhando por um minuto, sem ser pedida a toda hora.",
+      "Olha em silêncio por um minuto, sem precisar de pedido a toda hora.",
       "Diz o que vê usando palavras de cor, forma e tamanho.",
       "Desenha a coisa com algum detalhe real (a borda da folha, a nervura).",
       "Lembra do que viu com o caderno fechado."
@@ -80,7 +80,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela viu e o que mudou na semana seguinte?",
+  "perguntaFicha": "O que a criança viu e o que mudou na semana seguinte?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

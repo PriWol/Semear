@@ -12,7 +12,7 @@
     {
       "titulo": "Contar",
       "minutos": 7,
-      "texto": "Conte uma lenda curta, de memória ou lendo (por exemplo, a do Curupira ou a da Vitória-régia). Faça pausas e deixe que ela faça sons e gestos."
+      "texto": "Conte uma lenda curta, de memória ou lendo (por exemplo, a do Curupira ou a da Vitória-régia). Faça pausas e deixe a criança fazer sons e gestos."
     },
     {
       "titulo": "Recontar",
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual lenda ela escolheu?",
+  "perguntaFicha": "Qual lenda a criança escolheu?",
   "palavrasChave": ["lendas", "saci", "curupira", "folclore", "narração"],
   "folhas": [],
   "autoria": {

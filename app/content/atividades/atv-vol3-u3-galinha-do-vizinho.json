@@ -22,13 +22,13 @@
     {
       "titulo": "Esperar o número",
       "minutos": 3,
-      "texto": "Aos poucos, pare antes do número (*“bota um, bota…”*) e espere que ela complete.",
+      "texto": "Aos poucos, pare antes do número (*“bota um, bota…”*) e espere que a criança complete.",
       "fala": "Bota um, bota…?"
     },
     {
       "titulo": "Ovos de verdade (opcional)",
       "minutos": 2,
-      "texto": "Em outro momento, contem ovos de uma caixa de ovos: ela tem lugares, e cada ovo ocupa um."
+      "texto": "Em outro momento, contem ovos de uma caixa de ovos: a caixa tem lugares, e cada ovo ocupa um."
     }
   ],
   "observar": {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Só até “bota três”.",
-    "facil": "Peça que ela esconda um dedo e diga quantos faltam."
+    "facil": "Peça que a criança esconda um dedo e diga quantos faltam."
   },
   "materiais": [
     {
@@ -56,7 +56,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Até que número ela completou a rima?",
+  "perguntaFicha": "Até que número a criança completou a rima?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

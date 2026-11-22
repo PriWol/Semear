@@ -12,18 +12,18 @@
     {
       "titulo": "Tamanho",
       "minutos": 6,
-      "texto": "Dê 4 ou 5 copos (ou colheres) de tamanhos diferentes, em desordem. Mostre como organizar do menor ao maior, em fila. Depois, ela faz.",
+      "texto": "Dê 4 ou 5 copos (ou colheres) de tamanhos diferentes, em desordem. Mostre como organizar do menor ao maior, em fila. Depois, a criança faz.",
       "fala": "Maior ou menor?"
     },
     {
       "titulo": "Cor",
       "minutos": 6,
-      "texto": "Dê 4 cartões de tons de uma mesma cor (do claro ao escuro). Ela organiza em fila. Dê palavras: “claro”, “mais escuro”."
+      "texto": "Dê 4 cartões de tons de uma mesma cor (do claro ao escuro). A criança organiza em fila. Dê palavras: “claro”, “mais escuro”."
     },
     {
       "titulo": "Conferir",
       "minutos": 3,
-      "texto": "Ela mostra a fila e você pergunta: “Qual é o maior? Qual é o mais claro?”."
+      "texto": "A criança mostra a fila e você pergunta: “Qual é o maior? Qual é o mais claro?”."
     }
   ],
   "observar": {
@@ -54,7 +54,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantos itens ela conseguiu ordenar?",
+  "perguntaFicha": "Quantos itens a criança conseguiu ordenar?",
   "palavrasChave": ["ordenar", "gradação", "tamanho", "cores"],
   "folhas": [],
   "autoria": {

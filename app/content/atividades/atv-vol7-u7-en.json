@@ -12,7 +12,7 @@
   "idade": [3, 6],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "O corpo da criança é dela: peça licença antes de tocar (“posso fazer cócegas no pé?”) e pare quando ela disser não, em qualquer idioma. Espaço livre de quinas e degraus para se mexer. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
+  "cuidados": "O corpo da criança é da criança: peça licença antes de tocar (“posso fazer cócegas no pé?”) e pare quando a criança disser não, em qualquer idioma. Espaço livre de quinas e degraus para se mexer. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que a criança “diga em inglês” e não use o idioma como cobrança nem como castigo. Cartões e peças recortados ficam fora do alcance de crianças menores quando o jogo acaba. Orientação ainda sem conferência por profissional; em dúvida sobre fala ou audição, converse com o pediatra.",
   "palavrasChave": ["inglês", "corpo", "comandos", "this little pig", "faça como eu digo"],
   "objetivo": "A criança brinca com os dedos do pé numa rima inglesa e faz o gesto de comandos curtos em inglês (“Touch your nose!”), entendendo pelo corpo antes de entender pela palavra.",
   "passos": [
@@ -25,7 +25,7 @@
     {
       "titulo": "Faça como eu digo",
       "minutos": 6,
-      "texto": "O adulto diz um comando em inglês e faz o gesto junto; a criança faz o mesmo: *Touch your nose!* (toque o nariz), *Clap your hands!* (bata palmas), *Stamp your foot!* (bata o pé), *Close your eyes!* (feche os olhos), *Open your mouth!* (abra a boca). Quando ela já reconhecer, o adulto diz o comando e **não faz o gesto**: quem entendeu faz sozinha. Troquem: a criança manda e o adulto obedece (e erra de propósito, para ela rir). No fim, uma parada: “stop!” e todos ficam imóveis como estátuas. Use só os comandos que ela já entende; se um for difícil, volte ao gesto sozinho. Não peça que ela diga os comandos em voz alta: o objetivo é ouvir e agir.",
+      "texto": "O adulto diz um comando em inglês e faz o gesto junto; a criança faz o mesmo: *Touch your nose!* (toque o nariz), *Clap your hands!* (bata palmas), *Stamp your foot!* (bata o pé), *Close your eyes!* (feche os olhos), *Open your mouth!* (abra a boca). Quando a criança já reconhecer, o adulto diz o comando e **não faz o gesto**: quem entendeu faz sem ajuda. Troquem: a criança manda e o adulto obedece (e erra de propósito, para a criança rir). No fim, uma parada: “stop!” e todos ficam imóveis como estátuas. Use só os comandos que a criança já entende; se um for difícil, volte ao gesto sozinho. Não peça que a criança diga os comandos em voz alta: o objetivo é ouvir e agir.",
       "fala": "Touch your nose!"
     },
     {
@@ -68,7 +68,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que comandos ela fez sem ver o gesto? Riu no “wee, wee, wee”?",
+  "perguntaFicha": "Que comandos a criança fez sem ver o gesto? Riu no “wee, wee, wee”?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

@@ -12,26 +12,26 @@
     {
       "titulo": "Perguntas",
       "minutos": 7,
-      "texto": "Juntos, escrevam 3 ou 4 perguntas: “Como era sua casa? O que você comia? Do que brincava?”. Ela treina em voz alta."
+      "texto": "Juntos, escrevam 3 ou 4 perguntas: “Como era sua casa? O que você comia? Do que brincava?”. A criança treina em voz alta."
     },
     {
       "titulo": "Entrevista",
       "minutos": 12,
-      "texto": "Ela entrevista a pessoa (pessoalmente ou por ligação). Você ajuda a anotar ou grava só o áudio, com permissão. Peça que mostre um objeto ou uma foto antiga."
+      "texto": "A criança entrevista a pessoa (pessoalmente ou por ligação). Você ajuda a anotar ou grava só o áudio, com permissão. Peça que mostre um objeto ou uma foto antiga."
     },
     {
       "titulo": "Comparar",
       "minutos": 6,
-      "texto": "Em duas colunas, “Antes” e “Hoje”, ela escreve ou desenha o que era diferente.",
+      "texto": "Em duas colunas, “Antes” e “Hoje”, a criança escreve ou desenha o que era diferente.",
       "fala": "O que mudou?"
     }
   ],
   "observar": {
     "consolidado": ["Faz perguntas e ouve a resposta", "Compara antes e hoje"],
-    "emDesenvolvimento": ["Fica tímida ao perguntar", "Mistura antes e hoje"]
+    "emDesenvolvimento": ["Sente timidez ao perguntar", "Mistura antes e hoje"]
   },
   "ajustes": {
-    "dificil": "Faça só 2 perguntas e peça que ela desenhe a resposta.",
+    "dificil": "Faça só 2 perguntas e peça que a criança desenhe a resposta.",
     "facil": "Faça uma árvore genealógica simples com os nomes e as datas."
   },
   "materiais": [

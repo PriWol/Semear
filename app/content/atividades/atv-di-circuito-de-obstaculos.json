@@ -17,7 +17,7 @@
     {
       "titulo": "Circuito",
       "minutos": 8,
-      "texto": "Ela percorre o circuito algumas vezes. Cronometre só contra si mesma, não contra os outros. Troquem os desafios.",
+      "texto": "A criança percorre o circuito algumas vezes. Cronometre só contra o próprio tempo, não contra os outros. Troquem os desafios.",
       "fala": "Qual foi o mais difícil?"
     },
     {
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Do que ela mais gostou no circuito?",
+  "perguntaFicha": "Do que a criança mais gostou no circuito?",
   "palavrasChave": ["corda", "circuito", "jogos", "movimento", "regras"],
   "folhas": [],
   "autoria": {

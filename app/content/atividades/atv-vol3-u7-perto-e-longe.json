@@ -42,7 +42,7 @@
   },
   "ajustes": {
     "dificil": "Só uma pergunta: “o que está mais perto de nós?”.",
-    "facil": "Peça que ela desenhe algo perto e algo longe."
+    "facil": "Peça que a criança desenhe algo perto e algo longe."
   },
   "materiais": [
     {
@@ -55,7 +55,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "Que palavras de distância ela usou?",
+  "perguntaFicha": "Que palavras de distância a criança usou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

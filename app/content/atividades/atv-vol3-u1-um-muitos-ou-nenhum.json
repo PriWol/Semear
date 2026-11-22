@@ -11,14 +11,14 @@
   "idade": [3, 5],
   "duracaoMin": 8,
   "preparoMin": 3,
-  "cuidados": "Feijão (ou qualquer grão) só com a criança sentada e o adulto ao lado, sem levar à boca; se ela ainda leva tudo à boca, use bolas de meia ou pompons grandes. Os cartões recortados ficam fora do alcance de crianças menores quando o jogo acaba.",
+  "cuidados": "Feijão (ou qualquer grão) só com a criança sentada e o adulto ao lado, sem levar à boca; se a criança ainda leva tudo à boca, use bolas de meia ou pompons grandes. Os cartões recortados ficam fora do alcance de crianças menores quando o jogo acaba.",
   "palavrasChave": ["um", "muitos", "nenhum", "zero", "quantidades"],
   "objetivo": "A criança separa seis cartões em três cestas (um, muitos, nenhum) e descobre que a cesta do “nenhum” fica vazia.",
   "passos": [
     {
       "titulo": "Separar os cartões",
       "minutos": 4,
-      "texto": "Recorte os seis cartões (uma maçã, um cacho, estrelas, um peixe, bolhas, flores) e ela põe cada um na cesta certa: *um*, *muitos* ou *nenhum*."
+      "texto": "Recorte os seis cartões (uma maçã, um cacho, estrelas, um peixe, bolhas, flores) e a criança põe cada um na cesta certa: *um*, *muitos* ou *nenhum*."
     },
     {
       "titulo": "Conversar",
@@ -34,19 +34,19 @@
     {
       "titulo": "Criar",
       "minutos": 2,
-      "texto": "Ela arruma os pratos e você adivinha qual é o “um”, o “muitos” e o “nenhum”."
+      "texto": "A criança arruma os pratos e você adivinha qual é o “um”, o “muitos” e o “nenhum”."
     }
   ],
   "observar": {
     "consolidado": ["Separa “um” de “muitos”", "Diz que na cesta do “nenhum” não tem nada"],
     "emDesenvolvimento": [
-      "Confunde “muitos” com “um” (normal: conte com ela tocando cada um)",
+      "Confunde “muitos” com “um” (normal: conte com a criança tocando cada um)",
       "Ainda não entende o “nenhum”"
     ]
   },
   "ajustes": {
     "dificil": "Só duas cestas, “um” e “muitos”, e deixe o “nenhum” para outro dia.",
-    "facil": "Com pratos e objetos: ela arruma e você adivinha."
+    "facil": "Com pratos e objetos: a criança arruma e você adivinha."
   },
   "materiais": [
     {
@@ -68,7 +68,7 @@
       "resposta": "☐ não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Ela entendeu o “nenhum”? Como explicou?",
+  "perguntaFicha": "A criança entendeu o “nenhum”? Como explicou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

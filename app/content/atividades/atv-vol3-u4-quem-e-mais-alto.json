@@ -22,13 +22,13 @@
     {
       "titulo": "Marcar",
       "minutos": 5,
-      "texto": "Cada pessoa encosta as costas na parede e faz-se uma marca na altura da cabeça, com o nome e a data. Pergunte: *“quem é mais alto, você ou o papai?”*. Na fita, as marcas ficam em ordem sozinhas.",
-      "fala": "Quem é mais alto, você ou o papai?"
+      "texto": "Cada pessoa encosta as costas na parede e faz-se uma marca na altura da cabeça, com o nome e a data. Pergunte: *“quem é mais alto, você ou eu?”*. Na fita, as marcas ficam em ordem sozinhas.",
+      "fala": "Quem é mais alto, você ou eu?"
     },
     {
       "titulo": "Guardar",
       "minutos": 2,
-      "texto": "Volte à fita daqui a alguns meses: ela vai gostar de ver que cresceu."
+      "texto": "Volte à fita daqui a alguns meses: a criança vai gostar de ver que cresceu."
     }
   ],
   "observar": {
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Compare só duas pessoas.",
-    "facil": "Peça que ela ordene as marcas da família do menor ao maior."
+    "facil": "Peça que a criança ordene as marcas da família do menor ao maior."
   },
   "materiais": [
     {
@@ -63,10 +63,10 @@
   "evidencias": [
     {
       "texto": "Comparou duas alturas com palavras",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Quem ela disse ser o mais alto?",
+  "perguntaFicha": "Quem a criança disse ser o mais alto?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

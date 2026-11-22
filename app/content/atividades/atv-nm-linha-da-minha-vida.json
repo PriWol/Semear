@@ -18,12 +18,12 @@
     {
       "titulo": "Montar",
       "minutos": 6,
-      "texto": "Em um barbante preso na parede ou em uma tira de papel, ela prende ou cola as fotos em ordem, do mais novo ao mais velho."
+      "texto": "Em um barbante preso na parede ou em uma tira de papel, a criança prende ou cola as fotos em ordem, do mais novo ao mais velho."
     },
     {
       "titulo": "Contar",
       "minutos": 5,
-      "texto": "Ela mostra a linha e conta o que mudou: o que já sabe fazer agora. Se tiver o dia do aniversário, marque-o com uma vela de papel."
+      "texto": "A criança mostra a linha e conta o que mudou: o que já sabe fazer agora. Se tiver o dia do aniversário, marque-o com uma vela de papel."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela mais gostou de lembrar?",
+  "perguntaFicha": "O que a criança mais gostou de lembrar?",
   "palavrasChave": ["fotos", "linha do tempo", "história pessoal", "aniversário", "bebê"],
   "folhas": [],
   "autoria": {

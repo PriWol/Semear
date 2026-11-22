@@ -18,7 +18,7 @@
     {
       "titulo": "Verter",
       "minutos": 5,
-      "texto": "Em uma bandeja, ela despeja água de uma jarra com pouca água para um copo. Repita. Se derramar, ela limpa com a esponja."
+      "texto": "Em uma bandeja, a criança despeja água de uma jarra com pouca água para um copo. Repita. Se derramar, a criança limpa com a esponja."
     },
     {
       "titulo": "Pôr a mesa",
@@ -66,7 +66,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quanto ela derramou? Melhorou na segunda vez?",
+  "perguntaFicha": "Quanto a criança derramou? Melhorou na segunda vez?",
   "palavrasChave": ["verter", "água", "pôr a mesa", "montessori"],
   "folhas": [],
   "autoria": {

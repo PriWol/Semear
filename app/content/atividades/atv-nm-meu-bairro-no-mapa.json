@@ -12,18 +12,18 @@
     {
       "titulo": "Olhar o mapa",
       "minutos": 6,
-      "texto": "Mostre um mapa do bairro, impresso. Ela acha a sua casa e depois outros lugares conhecidos. Marque cada um com um adesivo ou círculo.",
+      "texto": "Mostre um mapa do bairro, impresso. A criança acha a sua casa e depois outros lugares conhecidos. Marque cada um com um adesivo ou círculo.",
       "fala": "Onde estamos no mapa?"
     },
     {
       "titulo": "Trajeto",
       "minutos": 8,
-      "texto": "Ela escolhe um destino e descreve o caminho com referências: “depois da padaria, vire na esquina da praça”. Você segue as instruções dela."
+      "texto": "A criança escolhe um destino e descreve o caminho com referências: “depois da padaria, vire na esquina da praça”. Você segue as instruções da criança."
     },
     {
       "titulo": "Passeio",
       "minutos": 10,
-      "texto": "Se possível, façam o caminho a pé com o mapa na mão, com ela guiando e você apenas cuidando da segurança."
+      "texto": "Se possível, façam o caminho a pé com o mapa na mão, com a criança guiando e você apenas cuidando da segurança."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Como ela descreveu o caminho?",
+  "perguntaFicha": "Como a criança descreveu o caminho?",
   "palavrasChave": ["mapa", "bairro", "orientação", "referências"],
   "folhas": [],
   "autoria": {

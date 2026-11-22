@@ -23,13 +23,13 @@
     {
       "titulo": "Desenhar",
       "minutos": 4,
-      "texto": "Uma folha com duas metades, DIA e NOITE: ela desenha o que viu em cada uma."
+      "texto": "Uma folha com duas metades, DIA e NOITE: a criança desenha o que viu em cada uma."
     }
   ],
   "observar": {
     "consolidado": ["Diz o que há no céu de dia e de noite", "Desenha as duas metades"],
     "emDesenvolvimento": [
-      "Estranha ver a Lua de dia (ela pode aparecer mesmo)",
+      "Estranha ver a Lua de dia (a Lua pode aparecer mesmo)",
       "Perde o interesse rápido"
     ]
   },
@@ -57,7 +57,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "O que ela viu no céu?",
+  "perguntaFicha": "O que a criança viu no céu?",
   "palavrasChave": ["céu", "lua", "estrelas", "nuvens", "dia e noite"],
   "folhas": [],
   "autoria": {

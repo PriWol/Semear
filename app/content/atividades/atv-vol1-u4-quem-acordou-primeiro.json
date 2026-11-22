@@ -20,15 +20,15 @@
       "texto": "Conte *Quem acordou primeiro?*: o galo canta (*cocoricó*), a vaca (*muuu*), o porco (*oinc, oinc*), os gansos saem em fila (*quén, quén*), o cavalo bate o casco (*iiirrrí*) e o gato, só no fim, responde baixinho (*miau*). Faça você todos os sons."
     },
     {
-      "titulo": "Segunda vez: ela faz os sons",
+      "titulo": "Segunda vez: a criança faz os sons",
       "minutos": 3,
-      "texto": "Faça só o começo de cada fala (*“O porco virou para o outro lado…”*) e espere que ela faça o som.",
+      "texto": "Faça só o começo de cada fala (*“O porco virou para o outro lado…”*) e espere que a criança faça o som.",
       "fala": "Quem vem depois?"
     },
     {
       "titulo": "Pôr em ordem",
       "minutos": 3,
-      "texto": "Com os cartões de animais (ou bichinhos) na mesa, ela põe em ordem quem acordou: galo, vaca, porco, gansos, cavalo e o gato por último. Termine: *“e na nossa casa, quem acorda primeiro?”*."
+      "texto": "Com os cartões de animais (ou bichinhos) na mesa, a criança põe em ordem quem acordou: galo, vaca, porco, gansos, cavalo e o gato por último. Termine: *“e na nossa casa, quem acorda primeiro?”*."
     }
   ],
   "observar": {
@@ -37,7 +37,7 @@
   },
   "ajustes": {
     "dificil": "Conte só a primeira parte e os sons, sem pôr em ordem.",
-    "facil": "Peça que ela invente um animal novo e o som dele."
+    "facil": "Peça que a criança invente um animal novo e o som dele."
   },
   "materiais": [
     {
@@ -56,10 +56,10 @@
     },
     {
       "texto": "Antecipou quem vinha depois",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Qual som ela mais gostou de fazer?",
+  "perguntaFicha": "Qual som a criança mais gostou de fazer?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

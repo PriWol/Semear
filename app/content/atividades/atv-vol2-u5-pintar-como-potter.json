@@ -24,7 +24,7 @@
     {
       "titulo": "Pintar como Potter",
       "minutos": 7,
-      "texto": "Beatrix Potter pintava com aquarela em camadas leves, por isso o branco do papel aparece. Molhe o papel com um pincel só com água e depois toque com tinta verde ou azul: a cor se espalha sozinha. Ela vai gostar de ver a mancha crescer."
+      "texto": "Beatrix Potter pintava com aquarela em camadas leves, por isso o branco do papel aparece. Molhe o papel com um pincel só com água e depois toque com tinta verde ou azul: a cor se espalha sozinha. A criança vai gostar de ver a mancha crescer."
     },
     {
       "titulo": "Guardar",
@@ -69,7 +69,7 @@
     }
   ],
   "evidencias": [],
-  "perguntaFicha": "O que ela disse quando a cor se espalhou?",
+  "perguntaFicha": "O que a criança disse quando a cor se espalhou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

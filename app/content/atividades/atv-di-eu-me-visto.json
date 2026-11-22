@@ -12,18 +12,18 @@
     {
       "titulo": "Escolher",
       "minutos": 3,
-      "texto": "Ofereça duas roupas e deixe que ela escolha. Pergunte: “Qual é a frente?”. Ajude a marcar a frente com adesivo.",
+      "texto": "Ofereça duas roupas e deixe que a criança escolha. Pergunte: “Qual é a frente?”. Ajude a marcar a frente com adesivo.",
       "fala": "Qual a frente?"
     },
     {
       "titulo": "Vestir",
       "minutos": 8,
-      "texto": "Ela se veste. Você ajuda só quando pedir e conta até 20 para ela ir terminando antes de você acabar. Treine o zíper grande."
+      "texto": "A criança se veste. Você ajuda só quando pedir e conta até 20 para a criança ir terminando antes de você acabar. Treine o zíper grande."
     },
     {
       "titulo": "Arrumar",
       "minutos": 4,
-      "texto": "Ela guarda o pijama, os sapatos e a mochila no lugar combinado. Celebrem o cantinho organizado."
+      "texto": "A criança guarda o pijama, os sapatos e a mochila no lugar combinado. Celebrem o cantinho organizado."
     }
   ],
   "observar": {

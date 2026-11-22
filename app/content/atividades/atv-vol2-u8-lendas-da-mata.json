@@ -17,7 +17,7 @@
     {
       "titulo": "Curupira",
       "minutos": 4,
-      "texto": "Conte: o Curupira é o guardião da mata, um menino pequeno, de cabelo vermelho como fogo, e tem os **pés virados para trás**: quem segue as pegadas pensa que ele foi para um lado e ele foi para o outro, para proteger os bichos. Pergunte: *“por que ele tem os pés virados?”* e deixe que ela imagine.",
+      "texto": "Conte: o Curupira é o guardião da mata, um menino pequeno, de cabelo vermelho como fogo, e tem os **pés virados para trás**: quem segue as pegadas pensa que ele foi para um lado e ele foi para o outro, para proteger os bichos. Pergunte: *“por que ele tem os pés virados?”* e deixe a criança imaginar.",
       "fala": "Por que o Curupira tem os pés virados?"
     },
     {
@@ -43,7 +43,7 @@
   },
   "ajustes": {
     "dificil": "Conte só o Curupira.",
-    "facil": "Peça que ela invente outro morador da mata."
+    "facil": "Peça que a criança invente outro morador da mata."
   },
   "materiais": [
     {
@@ -62,10 +62,10 @@
   "evidencias": [
     {
       "texto": "Falou sobre um personagem",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Qual lenda ela quis ouvir de novo?",
+  "perguntaFicha": "Qual lenda a criança quis ouvir de novo?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

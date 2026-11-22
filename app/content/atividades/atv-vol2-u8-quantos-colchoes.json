@@ -28,7 +28,7 @@
     {
       "titulo": "E se eu tirar um?",
       "minutos": 4,
-      "texto": "*“Se eu tirar um, quantos ficam?”* Ela confere contando de novo. Quando 5 ficar fácil, vá até 10. Para rir: ponham um feijão embaixo da última almofada e vejam se ela sente."
+      "texto": "*“Se eu tirar um, quantos ficam?”* A criança confere contando de novo. Quando 5 ficar fácil, vá até 10. Para rir: ponham um feijão embaixo da última almofada e vejam se a criança sente."
     }
   ],
   "observar": {
@@ -40,7 +40,7 @@
   },
   "ajustes": {
     "dificil": "Pilhas de 1 a 3, só contando.",
-    "facil": "Vá até 10 almofadas e peça que ela diga quantas faltam para 10."
+    "facil": "Vá até 10 almofadas e peça que a criança diga quantas faltam para 10."
   },
   "materiais": [
     {
@@ -63,10 +63,10 @@
     },
     {
       "texto": "Disse quantos ficaram ao tirar um",
-      "resposta": "☐ não   ☐ com ajuda   ☐ sozinha"
+      "resposta": "☐ não   ☐ com ajuda   ☐ sem ajuda"
     }
   ],
-  "perguntaFicha": "Até quanto ela contou?",
+  "perguntaFicha": "Até quanto a criança contou?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

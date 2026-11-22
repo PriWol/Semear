@@ -22,13 +22,13 @@
     {
       "titulo": "Segunda leitura",
       "minutos": 3,
-      "texto": "Agora ela faz a voz do Ursinho. Pare antes da fala repetida e espere: *“Alguém provou o meu mingau…”*.",
+      "texto": "Agora a criança faz a voz do Ursinho. Pare antes da fala repetida e espere: *“Alguém provou o meu mingau…”*.",
       "fala": "Alguém provou o meu…?"
     },
     {
       "titulo": "Lembrar e pensar",
       "minutos": 3,
-      "texto": "*“O que Cachinhos comeu? Onde sentou? Onde dormiu?”* (três lembranças em ordem). Depois, de pensar: *“Cachinhos podia ter entrado na casa dos ursos? O que ela podia ter feito?”* (bater, esperar, pedir desculpas). Não há uma resposta só."
+      "texto": "*“O que Cachinhos comeu? Onde sentou? Onde dormiu?”* (três lembranças em ordem). Depois, de pensar: *“Cachinhos podia ter entrado na casa dos ursos? O que Cachinhos podia ter feito?”* (bater, esperar, pedir desculpas). Não há uma resposta só."
     }
   ],
   "observar": {
@@ -62,7 +62,7 @@
       "resposta": "_____ de 3"
     }
   ],
-  "perguntaFicha": "Qual voz ela mais gostou de fazer?",
+  "perguntaFicha": "Qual voz a criança mais gostou de fazer?",
   "folhas": [],
   "autoria": {
     "origem": "ia",

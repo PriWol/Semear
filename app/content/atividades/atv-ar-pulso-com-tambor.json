@@ -17,13 +17,13 @@
     {
       "titulo": "Pulso",
       "minutos": 6,
-      "texto": "Cantem “Ciranda, cirandinha” e marquem o pulso com o tambor, batendo uma vez a cada sílaba forte. Troquem os papéis: ela marca, você canta.",
+      "texto": "Cantem “Ciranda, cirandinha” e marquem o pulso com o tambor, batendo uma vez a cada sílaba forte. Troquem os papéis: a criança marca, você canta.",
       "fala": "Tum, tum, tum, tum."
     },
     {
       "titulo": "Rápido e lento",
       "minutos": 3,
-      "texto": "Cantem mais rápido e mais devagar. Ela segue o seu andamento com o instrumento."
+      "texto": "Cantem mais rápido e mais devagar. A criança segue o seu andamento com o instrumento."
     }
   ],
   "observar": {
@@ -31,7 +31,7 @@
     "emDesenvolvimento": ["Toca sem relação com a música (normal)", "Bate forte demais (reduza)"]
   },
   "ajustes": {
-    "dificil": "Marque o pulso no colo dela com as suas mãos.",
+    "dificil": "Marque o pulso no colo da criança com as suas mãos.",
     "facil": "Acrescente um instrumento para cada pessoa da família."
   },
   "materiais": [
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Quantas batidas ela acompanhou seguidas?",
+  "perguntaFicha": "Quantas batidas a criança acompanhou seguidas?",
   "palavrasChave": ["pulso", "tambor", "chocalho", "ritmo", "instrumentos"],
   "folhas": [],
   "autoria": {
