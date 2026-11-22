@@ -4,7 +4,10 @@ import {
   materiaisDaSemana,
   planejarSemana,
   removerAtividade,
+  diaPassou,
+  inicioDaSemana,
   segundaDaSemana,
+  semanaPadrao,
   trocarAtividade,
   type EntradaSemana,
 } from '../src/domain/semana';
@@ -44,6 +47,7 @@ function entrada(extra: Partial<EntradaSemana> = {}): EntradaSemana {
     historico: [],
     rotina: { dias: ['seg', 'qua', 'sex'], duracaoMin: 40 },
     agora: AGORA,
+    inicio: '2026-11-09',
     id: 'plano-1',
     ...extra,
   };
@@ -54,6 +58,43 @@ describe('segundaDaSemana', () => {
     expect(segundaDaSemana(new Date(2026, 10, 9))).toBe('2026-11-09'); // segunda
     expect(segundaDaSemana(new Date(2026, 10, 11))).toBe('2026-11-09'); // quarta
     expect(segundaDaSemana(new Date(2026, 10, 15))).toBe('2026-11-09'); // domingo fecha a semana
+  });
+});
+
+describe('semana seguinte (D11, #141)', () => {
+  // Hora local do aparelho, como o app faz (o teste vale em qualquer fuso). 20/11/2026 é sexta.
+  const em = (dia: number, h = 0, min = 0) => new Date(2026, 10, dia, h, min);
+
+  it('padrão: a atual até sexta 11:59; a próxima de sexta 12:00 até domingo', () => {
+    expect(semanaPadrao(em(16, 0, 0))).toBe('esta'); // segunda 00:00
+    expect(semanaPadrao(em(19, 23, 59))).toBe('esta'); // quinta
+    expect(semanaPadrao(em(20, 11, 59))).toBe('esta'); // sexta 11:59
+    expect(semanaPadrao(em(20, 12, 0))).toBe('proxima'); // sexta 12:00
+    expect(semanaPadrao(em(21, 9))).toBe('proxima'); // sábado
+    expect(semanaPadrao(em(22, 23, 59))).toBe('proxima'); // domingo
+    expect(semanaPadrao(em(23, 0, 0))).toBe('esta'); // segunda 00:00 volta à atual
+  });
+
+  it('o início da próxima semana é a segunda seguinte, também na virada de mês e de ano', () => {
+    expect(inicioDaSemana(em(21), 'esta')).toBe('2026-11-16');
+    expect(inicioDaSemana(em(21), 'proxima')).toBe('2026-11-23');
+    expect(inicioDaSemana(new Date(2026, 11, 30), 'proxima')).toBe('2027-01-04');
+  });
+
+  it('planeja a partir do início recebido, sem dias passados num sábado', () => {
+    const sabado = em(21, 10);
+    const inicio = inicioDaSemana(sabado, semanaPadrao(sabado));
+    const p = planejarSemana(idx, entrada({ agora: sabado.toISOString(), inicio }));
+    expect(p.inicio).toBe('2026-11-23');
+    expect(p.dias.map((d) => d.data)).toEqual(['2026-11-23', '2026-11-25', '2026-11-27']);
+    expect(p.dias.some((d) => diaPassou(d, sabado))).toBe(false);
+  });
+
+  it('dia passado é o anterior a hoje; hoje ainda vale', () => {
+    const quarta = em(18, 15);
+    expect(diaPassou({ data: '2026-11-17' }, quarta)).toBe(true);
+    expect(diaPassou({ data: '2026-11-18' }, quarta)).toBe(false);
+    expect(diaPassou({ data: '2026-11-19' }, quarta)).toBe(false);
   });
 });
 

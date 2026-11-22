@@ -401,6 +401,8 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
     | **Padrão** | bastão | script | cursiva |
     | **Montessori / Waldorf** | cursiva desde o início | cursiva | cursiva |
 
+  Abaixo de 3 anos a folha é sempre de imprensa (bastão), em qualquer vertente (D24, #141); a família pode trocar no seletor.
+
 - **Tipo de atividade por vertente** (mesma identidade visual):
 
   | Vertente | Mais | Menos |
@@ -422,7 +424,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 | Hoje | Com a jornada |
 |------|---------------|
 | `resources.json` (atividades com valores e estilos) | Atividades ganham `marcos`, `variacoes` e `printables` |
-| Plano semanal por valores e estilo | Plano semanal = várias sessões geradas pelo algoritmo 5.6 |
+| Plano semanal por valores e estilo | Plano semanal = várias sessões geradas pelo algoritmo 5.6 Pode ser da semana atual ou da próxima; a próxima vem escolhida de sexta às 12h a domingo, e dias já passados ficam esmaecidos, sem "Marcar como feito" (D11, #141). |
 | Diário de memórias | Diário + observações de marcos (o registro rápido alimenta os dois) |
 | Guia pedagógico (4 estilos) | Guia + idades de introdução e marcos extras de cada vertente |
 | Explorador | Explorador filtrável por domínio, linha e marco, e a estante de livros |

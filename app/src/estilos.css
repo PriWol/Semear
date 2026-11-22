@@ -1000,3 +1000,12 @@ summary {
 #limpar-filtros {
   color: var(--s-principal);
 }
+
+/* ---------- Plano da semana: dia que já passou (D11, #141) ----------
+ * Esmaecido sem perder contraste: papel de fundo, borda tracejada e texto suave (nunca só a cor). */
+.dia-plano.passado {
+  background: var(--s-fundo);
+  border: var(--s-borda-campo) dashed var(--s-linha);
+  box-shadow: none;
+  color: var(--s-suave);
+}

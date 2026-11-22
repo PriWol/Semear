@@ -56,6 +56,8 @@ export interface EntradaSemana {
   historico: Sessao[];
   rotina: Rotina;
   agora: string;
+  /** segunda-feira da semana a planejar, AAAA-MM-DD (D11, #141): pode ser a próxima, não só a atual */
+  inicio: string;
   /** id do plano novo (vem de fora para a função continuar pura) */
   id: string;
 }
@@ -66,6 +68,32 @@ export function segundaDaSemana(data: Date): string {
   const desde = (d.getDay() + 6) % 7; // segunda = 0 … domingo = 6
   d.setDate(d.getDate() - desde);
   return dataLocalISO(d);
+}
+
+export type QualSemana = 'esta' | 'proxima';
+
+/**
+ * Semana oferecida de início (D11, #141): de sexta às 12h (hora local do aparelho) até domingo a pessoa já
+ * está pensando na semana que vem; de segunda a sexta 11:59, na atual. Sem isso, num sábado o plano
+ * saía com segunda a sexta já passados.
+ */
+export function semanaPadrao(agora: Date): QualSemana {
+  const dia = agora.getDay(); // 0 = domingo … 5 = sexta, 6 = sábado
+  if (dia === 0 || dia === 6) return 'proxima';
+  return dia === 5 && agora.getHours() >= 12 ? 'proxima' : 'esta';
+}
+
+/** Segunda-feira da semana escolhida, no calendário local. */
+export function inicioDaSemana(agora: Date, qual: QualSemana): string {
+  const segunda = segundaDaSemana(agora);
+  if (qual === 'esta') return segunda;
+  const [a, m, d] = segunda.split('-').map(Number) as [number, number, number];
+  return dataLocalISO(new Date(a, m - 1, d + 7));
+}
+
+/** O dia já passou (é anterior a hoje no calendário local): não se marca como feito. Hoje ainda vale. */
+export function diaPassou(dia: Pick<DiaPlano, 'data'>, agora: Date): boolean {
+  return dia.data < dataLocalISO(agora);
 }
 
 function dataDoDia(inicio: string, dia: Dia): string {
@@ -93,7 +121,7 @@ function simulada(entrada: EntradaSemana, i: number, atividadeIds: string[], min
  * na semana vira histórico, então nenhuma atividade se repete e as linhas se alternam.
  */
 export function planejarSemana(idx: IndiceConteudo, entrada: EntradaSemana): PlanoSemana {
-  const inicio = segundaDaSemana(new Date(entrada.agora));
+  const { inicio } = entrada;
   const dias = DIAS.filter((d) => entrada.rotina.dias.includes(d));
   const simuladas: Sessao[] = [];
   const plano: DiaPlano[] = [];
