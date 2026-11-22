@@ -6,7 +6,7 @@ import { precisaLembreteBackup } from '../domain/backup';
 import { pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
 import { linhasParaRessondar } from '../domain/ressondagem';
 import { carregarSondagem } from '../conteudo';
-import { anos, dataCurta, ROTULO_FEITA } from '../ui/rotulos';
+import { anos, dataCurta, ROTULO_FEITA, textoProgresso } from '../ui/rotulos';
 import { sessaoRegistrada } from '../domain/registro';
 import { criarExemplo } from '../domain/exemplo';
 
@@ -119,7 +119,7 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         <header>
           <h2>${c.nome}</h2>
           <span class="nota">${anos(idade)}</span>
-          <a class="link-discreto" href="#/crianca/${c.id}">editar</a>
+          <a class="link-discreto" href="#/crianca/${c.id}" aria-label="Editar ${c.nome}">editar</a>
         </header>
         ${
           paraRessondar.length > 0
@@ -139,8 +139,12 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
                       (d) =>
                         html`<li>
                           <span>${icone(d.icone)} ${d.nome}</span>
-                          <progress max="${d.total}" value="${d.cons}"></progress>
-                          <span class="nota">${d.cons}/${d.total}</span>
+                          <progress
+                            max="${d.total}"
+                            value="${d.cons}"
+                            aria-label="${d.nome}: ${textoProgresso(d.cons, d.total)}"
+                          ></progress>
+                          <span class="nota">${textoProgresso(d.cons, d.total)}</span>
                         </li>`,
                     )}
                 </ul>
@@ -156,10 +160,25 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
               </p>`
         }
         <div class="acoes">
-          <a class="botao primario" href="#/sessao/nova?crianca=${c.id}">Preparar sessão</a>
-          <a class="botao" href="#/sessao/registrar?crianca=${c.id}">Registrar sessão</a>
-          <a class="botao" href="#/semana/${c.id}">Planejar semana</a>
-          <a class="botao" href="#/jornada/${c.id}"
+          <a
+            class="botao primario"
+            href="#/sessao/nova?crianca=${c.id}"
+            aria-label="Preparar sessão de ${c.nome}"
+            >Preparar sessão</a
+          >
+          <a
+            class="botao"
+            href="#/sessao/registrar?crianca=${c.id}"
+            aria-label="Registrar sessão de ${c.nome}"
+            >Registrar sessão</a
+          >
+          <a class="botao" href="#/semana/${c.id}" aria-label="Planejar semana de ${c.nome}"
+            >Planejar semana</a
+          >
+          <a
+            class="botao"
+            href="#/jornada/${c.id}"
+            aria-label="${posicionada ? 'Ver jornada' : 'Posicionar'} de ${c.nome}"
             >${posicionada ? 'Ver jornada' : 'Posicionar'}</a
           >
         </div>

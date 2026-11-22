@@ -344,9 +344,24 @@ label.opcao input {
 }
 .progresso-dominios li {
   display: grid;
-  grid-template-columns: 1fr var(--s-coluna-progresso) auto;
-  gap: var(--s-espaco-2);
+  grid-template-columns: minmax(0, 1fr) var(--s-coluna-progresso);
+  gap: var(--s-espaco-1) var(--s-espaco-2);
   align-items: center;
+}
+/* "4 de 33 marcos consolidados" é longo: vai numa linha própria, abaixo do nome e da barra. */
+.progresso-dominios li .nota {
+  grid-column: 1 / -1;
+}
+/* Legenda dos três estados do marco (QA2-05): os mesmos ícones dos botões. */
+.legenda-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-espaco-1) var(--s-espaco-4);
+  list-style: none;
+  margin: 0 0 var(--s-espaco-3);
+  padding: 0;
+  font-size: var(--s-texto-selo);
+  color: var(--s-suave);
 }
 progress {
   width: 100%;

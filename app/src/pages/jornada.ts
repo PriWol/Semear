@@ -12,7 +12,7 @@ import {
   type Pista,
 } from '../domain/jornada';
 import { formatarReferencia, orientacaoParaFamilia } from '../domain/orientacao';
-import { anos, ICONE_ESTADO, NOME_ESTADO } from '../ui/rotulos';
+import { anos, ICONE_ESTADO, NOME_ESTADO, textoProgresso } from '../ui/rotulos';
 import { icone } from '../ui/icones';
 import { restaurarFoco, seletorPorDados } from '../ui/foco';
 
@@ -84,7 +84,7 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
       <header>
         <h2>${nome}</h2>
         ${pista.linha.vertentes ? html`<span class="etiqueta">extra ${pista.linha.vertentes.join('/')}</span>` : ''}
-        ${pos.total ? html`<span class="nota">${pos.consolidados}/${pos.total} consolidados</span>` : ''}
+        ${pos.total ? html`<span class="nota">${textoProgresso(pos.consolidados, pos.total)}</span>` : ''}
       </header>
       ${
         pos.total === 0
@@ -176,6 +176,9 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
         anteriores viram consolidados. Depois ajuste marco a marco quando precisar. Sem certeza de
         onde ${crianca.nome} está? <a href="#/sondagem/${crianca.id}">Faça a sondagem</a>. Quer organizar os dias? <a href="#/semana/${crianca.id}">Planejar a semana</a>.
       </p>
+      <ul class="legenda-estados" aria-label="Legenda dos estados">
+        ${ESTADOS.map((e) => html`<li>${ICONE_ESTADO[e]} ${NOME_ESTADO[e]}</li>`)}
+      </ul>
       <nav class="abas" aria-label="Domínios">
         ${dominios.map(
           (d) =>
