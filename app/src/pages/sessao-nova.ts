@@ -3,6 +3,7 @@ import { lerFormulario, lista, novoId } from '../ui/app';
 import { html, type HtmlSeguro } from '../ui/html';
 import { icone } from '../ui/icones';
 import { idadeEmAnos } from '../domain/datas';
+import { criancaPadrao } from '../domain/criancas';
 import { marcosVisiveis } from '../domain/conteudo';
 import { IDIOMAS, type Sessao } from '../domain/tipos';
 import { idPista, pistasDaCrianca, posicaoDaLinha } from '../domain/jornada';
@@ -34,7 +35,10 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
       </p>`,
     };
   }
-  const crianca = criancas.find((c) => c.id === params.crianca) ?? criancas[0]!;
+  // Sem `?crianca=`: a da sessão mais recente (D19), não a mais velha da lista.
+  const crianca =
+    criancas.find((c) => c.id === params.crianca) ??
+    criancaPadrao(criancas, await ctx.repo.sessoes())!;
   const agora = ctx.agora();
   const idade = idadeEmAnos(crianca.nascimento, new Date(agora));
   const estados = await ctx.repo.estados(crianca.id);

@@ -93,6 +93,23 @@ não pode ficar com a sessão marcada como feita e sem as observações. O repos
 mesma transação (`registrarSessao`) e desfaz tudo se uma falhar. A transação também nem abre o lugar dos estados dos
 marcos, o que garante, no próprio código, que a ficha não muda o estado.
 
+### Gravar só o que mudou (duas abas abertas)
+**O que é:** em vez de ler a família ao abrir a tela e depois gravar a cópia inteira por cima, a tela manda ao
+repositório só os campos que o formulário alterou, e o repositório lê e grava na mesma transação
+(`atualizarFamilia`, `atualizarCrianca`).
+
+**Por que usamos:** com duas abas abertas, a que ficou parada tinha uma cópia velha da família. Ao salvar, desfazia o
+que a outra mudou (por exemplo, o aviso diário). Mexendo só nos campos alterados, uma aba não apaga o trabalho da
+outra. A função pura `camposAlterados` calcula essa diferença.
+
+### Dado de fora: limites e coerência
+**O que é:** a cópia de segurança importada é um arquivo que qualquer um pode ter editado. Antes de apagar os dados do
+aparelho, `validarBackup` confere a forma, o tamanho (10 MB, checado por `File.size` antes de ler), a quantidade de
+registros, se cada `criancaId` existe no arquivo e se a data de nascimento é possível (`nascimentoPlausivel`).
+
+**Por que usamos:** um arquivo errado não pode zerar o app nem deixar registros órfãos (crianças sem família,
+sessões de uma criança que não existe). As regras são puras e moram em `domain/`; o relógio entra por parâmetro.
+
 ---
 
 ## 3. Qualidade: testes e automação
