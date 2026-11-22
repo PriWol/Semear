@@ -39,7 +39,7 @@ test('aviso de sucesso: o botão Fechar esconde na hora', async ({ page }) => {
 
 test('alerta (idade fora da faixa) não some sozinho; só some ao fechar', async ({ page }) => {
   await abrirCriancaDoExemplo(page);
-  await page.getByLabel('Data de nascimento').fill('2000-03-15');
+  await page.getByLabel('Data de nascimento').fill(`${new Date().getFullYear() - 12}-03-15`);
   await page.getByRole('button', { name: 'Salvar' }).click();
   const aviso = page.locator('#aviso');
   await expect(aviso).toContainText('Atenção');

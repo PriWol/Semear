@@ -15,7 +15,7 @@ const idx = criarIndice(carregarConteudo());
 const publicadas = idx.conteudo.atividades.filter((a) => a.autoria.status === 'publicado');
 
 function ctxCom(indice: typeof idx): Contexto {
-  const repo = { familia: async () => null, criancas: async () => [] };
+  const repo = { familia: async () => null, criancas: async () => [], sessoes: async () => [] };
   return { repo, idx: indice } as unknown as Contexto;
 }
 

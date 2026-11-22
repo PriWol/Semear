@@ -534,6 +534,64 @@ progress {
   color-scheme: light;
   background: var(--s-folha);
 }
+/* Painel de tela cheia do pacote (#139, ui/painel-pacote.ts): <dialog> modal que cobre a tela. */
+.painel-pacote {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--s-fundo);
+  color: var(--s-tinta);
+  font-family: var(--s-fonte-texto);
+}
+.painel-pacote[open] {
+  display: flex;
+  flex-direction: column;
+}
+.painel-pacote::backdrop {
+  background: var(--s-veu);
+}
+.painel-pacote-barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-espaco-2) var(--s-espaco-3);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
+  border-bottom: var(--s-borda) solid var(--s-linha);
+  background: var(--s-papel);
+}
+.painel-pacote-titulo {
+  flex: 1 1 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-family: var(--s-fonte-titulo);
+}
+.painel-pacote-barra .botao {
+  flex: 1 1 0;
+  min-width: var(--s-alvo-toque);
+}
+@media (min-width: 640px) {
+  .painel-pacote-titulo {
+    flex-basis: 0;
+  }
+  .painel-pacote-barra .botao {
+    flex: 0 0 auto;
+  }
+}
+.painel-pacote-quadro {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  border: 0;
+  /* A folha é papel: continua clara com o app no escuro (ADR 0033) */
+  color-scheme: light;
+  background: var(--s-folha);
+}
 .tabela {
   width: 100%;
   border-collapse: collapse;

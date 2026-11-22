@@ -46,3 +46,30 @@ export function dataValida(texto: string): boolean {
   const d = new Date(Date.UTC(ano, mes - 1, dia));
   return d.getUTCFullYear() === ano && d.getUTCMonth() === mes - 1 && d.getUTCDate() === dia;
 }
+
+/** Idade máxima aceita no cadastro: irmãos maiores ainda cabem, mas além disso é erro de digitação (D18). */
+export const IDADE_MAXIMA_CADASTRO = 18;
+
+export type ProblemaNascimento = 'formato' | 'futuro' | 'antigo';
+
+export const MENSAGEM_NASCIMENTO: Record<ProblemaNascimento, string> = {
+  formato: 'Informe uma data de nascimento que exista no calendário.',
+  futuro: 'A data de nascimento não pode ser no futuro.',
+  antigo: `A data de nascimento indica mais de ${IDADE_MAXIMA_CADASTRO} anos. Confira o ano.`,
+};
+
+/**
+ * Por que uma data de nascimento é impossível, ou null se for plausível. Bloqueia só o impossível:
+ * formato falso (ano 0001, 31/02), futuro, ou mais de 18 anos. Fora de 2 a 8 anos continua permitido,
+ * só com aviso (decisão #71 e D18); por isso esta regra não olha `faixa.ts`.
+ */
+export function problemaDeNascimento(nascimento: string, hoje: Date): ProblemaNascimento | null {
+  if (!dataValida(nascimento)) return 'formato';
+  if (nascimento > dataLocalISO(hoje)) return 'futuro';
+  // 19 anos completos já é "mais de 18"; quem tem 18 e alguns meses ainda cabe (irmão mais velho).
+  return idadeInteira(nascimento, hoje) > IDADE_MAXIMA_CADASTRO ? 'antigo' : null;
+}
+
+export function nascimentoPlausivel(nascimento: string, hoje: Date): boolean {
+  return problemaDeNascimento(nascimento, hoje) === null;
+}

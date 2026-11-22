@@ -14,11 +14,12 @@ import {
   type RegistroMarco,
   type Sessao,
 } from '../domain/tipos';
-import { dataValida } from '../domain/datas';
+import { dataValida, MENSAGEM_NASCIMENTO, problemaDeNascimento } from '../domain/datas';
+import { LIMITES_BACKUP, problemaDeCoerencia, problemaDeQuantidade } from '../domain/backup';
 import { horaValida } from '../domain/lembretes';
 import { ehLetra } from '../domain/letra';
 import { DIAS, type PlanoSemana } from '../domain/semana';
-import type { DadosExemplo } from '../domain/exemplo';
+import { EDUCADOR_EXEMPLO, type DadosExemplo } from '../domain/exemplo';
 
 export const VERSAO_BACKUP = 1;
 
@@ -41,10 +42,18 @@ export interface Backup {
 export interface Repositorio {
   familia(): Promise<Familia | null>;
   salvarFamilia(familia: Familia): Promise<void>;
+  /**
+   * Muda SÓ os campos informados, lendo e gravando na mesma transação (QA1-03): duas abas abertas não
+   * desfazem uma à outra. Recusa se não há família (nunca cria uma incompleta).
+   */
+  atualizarFamilia(campos: Partial<Familia>): Promise<void>;
 
   criancas(): Promise<Crianca[]>;
   crianca(id: string): Promise<Crianca | null>;
+  /** recusa nascimento impossível (§ D18); fora de 2 a 8 anos é permitido */
   salvarCrianca(crianca: Crianca): Promise<void>;
+  /** como `atualizarFamilia`: só os campos informados; recusa se a criança foi removida em outra aba */
+  atualizarCrianca(id: string, campos: Partial<Omit<Crianca, 'id'>>): Promise<void>;
   /** remove a criança e tudo o que é dela (estados, histórico, sessões) */
   removerCrianca(id: string): Promise<void>;
 
@@ -105,10 +114,19 @@ const LOJAS = ['config', 'criancas', 'estados', 'historico', 'sessoes', 'planos'
 const CHAVE_FAMILIA = 'familia';
 const CHAVE_BACKUP = 'ultimoBackup';
 
+function exigirNascimentoPlausivel(nascimento: string, hoje: Date): void {
+  const problema = problemaDeNascimento(nascimento, hoje);
+  if (problema) throw new Error(MENSAGEM_NASCIMENTO[problema]);
+}
+
 const lerFamilia = (v: Familia | { em: string } | undefined): Familia | null =>
   v && 'educador' in v ? v : null;
 
-export async function abrirRepositorio(nomeBanco = 'semear'): Promise<Repositorio> {
+export async function abrirRepositorio(
+  nomeBanco = 'semear',
+  /** relógio injetável: a validação do nascimento precisa do "hoje" (o domínio não lê o relógio) */
+  agora: () => Date = () => new Date(),
+): Promise<Repositorio> {
   const db = await openDB<Esquema>(nomeBanco, 2, {
     // Toda mudança de esquema entra aqui como "if (antiga < N) { ... }", com teste. v2: planos semanais (#8).
     upgrade(banco, antiga) {
@@ -128,10 +146,10 @@ export async function abrirRepositorio(nomeBanco = 'semear'): Promise<Repositori
       }
     },
   });
-  return criarRepositorio(db);
+  return criarRepositorio(db, agora);
 }
 
-function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
+function criarRepositorio(db: IDBPDatabase<Esquema>, agora: () => Date): Repositorio {
   const ordenarSessoes = (lista: Sessao[]) =>
     lista.sort((a, b) => b.criadaEm.localeCompare(a.criadaEm));
 
@@ -142,6 +160,17 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
     async salvarFamilia(familia) {
       await db.put('config', familia, CHAVE_FAMILIA);
     },
+    async atualizarFamilia(campos) {
+      const tx = db.transaction('config', 'readwrite');
+      const atual = lerFamilia(await tx.store.get(CHAVE_FAMILIA));
+      if (!atual) {
+        tx.done.catch(() => undefined);
+        tx.abort();
+        throw new Error('Não há família neste aparelho: nada foi alterado.');
+      }
+      await tx.store.put({ ...atual, ...campos }, CHAVE_FAMILIA);
+      await tx.done;
+    },
 
     async criancas() {
       const lista = await db.getAll('criancas');
@@ -151,7 +180,20 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
       return (await db.get('criancas', id)) ?? null;
     },
     async salvarCrianca(crianca) {
+      exigirNascimentoPlausivel(crianca.nascimento, agora());
       await db.put('criancas', crianca);
+    },
+    async atualizarCrianca(id, campos) {
+      if (campos.nascimento !== undefined) exigirNascimentoPlausivel(campos.nascimento, agora());
+      const tx = db.transaction('criancas', 'readwrite');
+      const atual = await tx.store.get(id);
+      if (!atual) {
+        tx.done.catch(() => undefined);
+        tx.abort();
+        throw new Error('Esta criança foi removida em outra aba: nada foi alterado.');
+      }
+      await tx.store.put({ ...atual, ...campos, id });
+      await tx.done;
     },
     async removerCrianca(id) {
       const tx = db.transaction(
@@ -361,6 +403,9 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
         if (restaram) {
           const real: Familia = { ...familia };
           delete real.exemplo;
+          // D12 (ADR 0013, adendo): o nome fictício não passa a ser o da família de verdade. Se a pessoa já
+          // trocou o nome durante o exemplo, ele fica; só o "Marina" de fábrica é zerado.
+          if (real.educador === EDUCADOR_EXEMPLO) real.educador = '';
           await tx.objectStore('config').put(real, CHAVE_FAMILIA);
           familiaMantida = true;
         } else {
@@ -377,7 +422,7 @@ function criarRepositorio(db: IDBPDatabase<Esquema>): Repositorio {
  * Confere a forma completa do backup ANTES de apagar qualquer dado: um arquivo errado (ou adulterado)
  * não pode zerar o app nem levar valores inesperados para as telas e o pacote.
  */
-export function validarBackup(dado: unknown): asserts dado is Backup {
+export function validarBackup(dado: unknown, hoje: Date = new Date()): asserts dado is Backup {
   const falha = (motivo: string): never => {
     throw new Error(`Arquivo de backup inválido: ${motivo}`);
   };
@@ -446,6 +491,10 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
   for (const campo of ['criancas', 'estados', 'historico', 'sessoes']) {
     if (!Array.isArray(b[campo])) falha(`campo "${campo}" ausente`);
   }
+  if (b.planos !== undefined && !Array.isArray(b.planos)) falha('plano semanal inválido');
+  // Só as contagens, antes de percorrer qualquer lista (D23).
+  const demais = problemaDeQuantidade(b as Parameters<typeof problemaDeQuantidade>[0]);
+  if (demais) falha(demais);
 
   const f = b.familia;
   if (f !== null && f !== undefined) {
@@ -472,7 +521,14 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
   for (const c of b.criancas as unknown[]) {
     if (!ehObjeto(c) || !ehTexto(c.id) || !ehTexto(c.nome)) falha('criança sem id ou nome');
     const cr = c as Record<string, unknown>;
-    if (!ehData(cr.nascimento)) falha(`data de nascimento inválida (${String(cr.nome)})`);
+    const problemaNasc = ehTexto(cr.nascimento)
+      ? problemaDeNascimento(cr.nascimento, hoje)
+      : 'formato';
+    if (problemaNasc) {
+      falha(
+        `data de nascimento inválida (${String(cr.nome).slice(0, LIMITES_BACKUP.nome)}): ${MENSAGEM_NASCIMENTO[problemaNasc]}`,
+      );
+    }
     if (cr.letra !== null && !ehLetra(cr.letra)) falha(`letra desconhecida (${String(cr.nome)})`);
     if (!listaDe(cr.trilhas, ehIdioma)) falha(`línguas desconhecidas (${String(cr.nome)})`);
     if (!marcadorOk(cr)) falha(`marcador de exemplo inválido (${String(cr.nome)})`);
@@ -550,4 +606,7 @@ export function validarBackup(dado: unknown): asserts dado is Backup {
   }
   // Planos semanais (#8): ausentes nos backups anteriores; quando existem, valem a forma inteira.
   if (b.planos !== undefined && !listaDe(b.planos, ehPlano)) falha('plano semanal inválido');
+  // Por último, com a forma já garantida: família, vínculos entre registros e limites por campo (D23).
+  const incoerente = problemaDeCoerencia(b as unknown as Parameters<typeof problemaDeCoerencia>[0]);
+  if (incoerente) throw new Error(incoerente);
 }

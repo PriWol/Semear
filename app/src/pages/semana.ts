@@ -1,6 +1,7 @@
 import { lerFormulario, lista, NaoEncontrado, novoId, type FabricaPagina } from '../ui/app';
 import { html } from '../ui/html';
 import { icone } from '../ui/icones';
+import { abrirPainelPacote } from '../ui/painel-pacote';
 import { idadeEmAnos } from '../domain/datas';
 import { letraDaCrianca } from '../domain/letra';
 import { DURACAO_PADRAO, DURACOES, gerarCodigoSessao } from '../domain/sessao';
@@ -166,7 +167,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
             return;
           }
           const nova = { dias, duracaoMin: Number(d.duracao ?? DURACAO_PADRAO) };
-          await ctx.repo.salvarCrianca({ ...crianca, rotina: nova });
+          await ctx.repo.atualizarCrianca(crianca.id, { rotina: nova });
           const novo = planejarSemana(ctx.idx, { ...(await base()), id: novoId(), rotina: nova });
           await ctx.repo.salvarPlano(novo);
           void sincronizarComOAparelho(ctx, { pedirPermissao: false });
@@ -285,12 +286,12 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           modo,
         });
       };
-      raiz.querySelector('#abrir-semana')?.addEventListener('click', async () => {
+      // Mesmo painel isolado da sessão: a nova aba blob: era da origem do app e sem script (#139).
+      raiz.querySelector<HTMLElement>('#abrir-semana')?.addEventListener('click', async (ev) => {
+        const abridor = ev.currentTarget as HTMLElement;
         const doc = await documento();
         if (!doc) return;
-        const url = URL.createObjectURL(new Blob([doc], { type: 'text/html;charset=utf-8' }));
-        window.open(url, '_blank', 'noopener');
-        setTimeout(() => URL.revokeObjectURL(url), 60_000);
+        abrirPainelPacote({ titulo: `Semana de ${crianca.nome}`, documento: doc, abridor });
       });
       raiz.querySelector('#baixar-semana')?.addEventListener('click', async () => {
         const doc = await documento();

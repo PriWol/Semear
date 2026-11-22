@@ -3,6 +3,7 @@ import { html, textoRico } from '../ui/html';
 import { icone } from '../ui/icones';
 import { atividadePublicada, leituraDaAtividade } from '../domain/leitura';
 import { rotuloDoMaterial } from '../domain/material';
+import { criancaPadrao } from '../domain/criancas';
 import { CADERNOS, enderecoDoMaterial } from '../tesouro';
 import { imprimirAtividadeAvulsa } from './sessao-avulsa';
 
@@ -23,7 +24,9 @@ export const paginaAtividade: FabricaPagina = async (ctx, params) => {
   const a = encontrada;
   const familia = await ctx.repo.familia();
   const criancas = await ctx.repo.criancas();
-  const crianca = criancas.find((c) => c.id === params.crianca) ?? criancas[0] ?? null;
+  const crianca =
+    criancas.find((c) => c.id === params.crianca) ??
+    criancaPadrao(criancas, await ctx.repo.sessoes());
   const leitura = leituraDaAtividade(
     a,
     ctx.idx,

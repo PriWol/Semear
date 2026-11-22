@@ -170,6 +170,20 @@ describe('repositório: carregar e apagar o exemplo', () => {
     expect(await repo.sessoes()).toEqual([]);
   });
 
+  it('D12: mantendo a criança real, o nome fictício "Marina" é zerado (família sem nome)', async () => {
+    await repo.carregarExemplo(criarExemplo(idx, HOJE));
+    await repo.salvarCrianca(crianca({ id: 'real', nome: 'Lia' }));
+    await repo.apagarExemplo();
+    const depois = await repo.familia();
+    expect(depois?.educador).toBe('');
+    expect(depois?.exemplo).toBeUndefined();
+    // ...e a criança real continua visível, com a família que a segura.
+    expect((await repo.criancas()).map((c) => c.nome)).toEqual(['Lia']);
+    // Apagar a criança real em seguida não faz "Marina" voltar.
+    await repo.removerCrianca('real');
+    expect((await repo.familia())?.educador).toBe('');
+  });
+
   it('se editou a família de exemplo mas não cadastrou ninguém, o exemplo inteiro sai', async () => {
     await repo.carregarExemplo(criarExemplo(idx, HOJE));
     await repo.salvarFamilia({ ...familia(), exemplo: true, educador: 'Priscila' });

@@ -3,6 +3,8 @@ import { lerFormulario, lista } from '../ui/app';
 import { html } from '../ui/html';
 import { IDIOMAS, VERTENTES, type Familia, type Idioma, type Vertente } from '../domain/tipos';
 import { avisoExemplo, ligarAvisoExemplo } from '../ui/exemplo';
+import { familiaSemNome } from '../domain/pendencias';
+import { camposAlterados } from '../domain/campos';
 
 export const DESCRICAO_VERTENTE: Record<Vertente, string> = {
   Montessori: 'autonomia, materiais concretos, vida prática',
@@ -27,6 +29,14 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
     titulo: 'Família',
     conteudo: html` <h1>${primeiraVez ? 'Vamos conhecer sua família' : 'Família'}</h1>
       ${atual?.exemplo ? avisoExemplo() : ''}
+      ${
+        atual && familiaSemNome(atual)
+          ? html`<p class="alerta" id="pendencia-nome" role="note">
+              <b>Falta o seu nome.</b> Escreva como quer ser chamada ou chamado: ele aparece no
+              Início. Os dados fictícios do exemplo já saíram.
+            </p>`
+          : ''
+      }
       <form class="cartao formulario" id="form-familia">
         <label>
           Seu nome (educador)
@@ -113,7 +123,9 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
             inspiracoes: (lista(d.inspiracoes) as Vertente[]).filter((v) => v !== principal),
             idiomasEducador: lista(d.idiomasEducador) as Idioma[],
           };
-          await ctx.repo.salvarFamilia(nova);
+          // Família já existente: grava só o que esta tela mudou, na mesma transação (QA1-03).
+          if (atual) await ctx.repo.atualizarFamilia(camposAlterados(atual, nova));
+          else await ctx.repo.salvarFamilia(nova);
           void navigator.storage?.persist?.();
           const temCriancas = (await ctx.repo.criancas()).length > 0;
           ctx.avisar('Família salva.');

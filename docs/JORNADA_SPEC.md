@@ -88,6 +88,14 @@
 > remove só eles: o que a pessoa cadastrar durante o exemplo é mantido, e a família fica para as crianças reais não
 > ficarem órfãs. A **versão publicada** aparece no topo e na tela de Ajustes (antes "Configurações"), com a página "Novidades" e o aviso
 > "Nova versão disponível". Detalhes: estórias #38 e #39 e ADRs 0012 e 0013.
+>
+> **Dados impossíveis são recusados (#140, decisões D12, D18, D19, D23):** a data de nascimento só é bloqueada quando
+> é impossível (não existe no calendário, está no futuro ou indica mais de 18 anos), no formulário, ao gravar e na
+> cópia importada; fora de 2 a 8 anos continua permitido, com aviso fixo no formulário. A cópia de segurança recusa
+> arquivo acima de 10 MB, crianças sem família, `criancaId` que não está no arquivo, ids de criança repetidos e
+> campos grandes demais. Ao apagar o exemplo mantendo criança real, o nome fictício do educador é zerado e a família
+> sem nome vira pendência fixa (Início e tela da Família). Sem `?crianca=`, "Preparar sessão" e a atividade avulsa
+> abrem na criança da sessão mais recente.
 
 ---
 
@@ -404,6 +412,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
   | Religioso | segue a base comum, mais atividades de DI.ESP | |
 
 - **Modo tablet:** só as folhas da criança, uma por tela. As páginas do educador ficam de fora.
+- **Tela cheia (sessão) e "Abrir para imprimir" (semana):** abrem um **painel sobre o app** (não uma nova aba) com o pacote na mesma prévia isolada, e uma barra com "Imprimir" e "Fechar" (Esc também fecha). O pacote nunca roda na origem do app (ADR 0022, adendo de #139).
 - **Ilustrações:** o protótipo usa emojis. A versão final precisa de **um banco próprio de ilustrações** (licenciadas ou encomendadas), com traço consistente e que funcione em preto e branco.
 
 ---
