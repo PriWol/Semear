@@ -15,6 +15,14 @@ test('buscar → imprimir uma atividade avulsa', async ({ page }) => {
   await expect(page.locator('[data-atividade="atv-caca-silabas"]')).toBeVisible();
   await expect(page.locator('[data-atividade="atv-feira-numeros"]')).toHaveCount(0);
 
+  // o cartão mostra o título do marco, nunca o código cru; o código fica só no title (hover)
+  const cartao = page.locator('[data-atividade="atv-caca-silabas"]');
+  await expect(cartao.locator('.marco-cartao')).not.toHaveText(/\b[A-Z]{2}\.[A-Z]{3}\.\d{2}\b/);
+  await expect(cartao.locator('.marco-cartao')).toHaveAttribute(
+    'title',
+    /[A-Z]{2}\.[A-Z]{3}\.\d{2}/,
+  );
+
   // filtro por área
   // (a área Matemática tem mais de 20 atividades: a busca "feira" mantém a atividade na primeira página)
   await page.getByRole('searchbox').fill('feira');

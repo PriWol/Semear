@@ -27,7 +27,7 @@ export function dominioDaAtividade(a: Atividade, idx: Marcos): string {
 }
 
 // Pesos por campo: o título vale mais que o objetivo, que vale mais que o resto.
-const PESOS = { titulo: 5, palavrasChave: 4, marcos: 3, objetivo: 2 } as const;
+const PESOS = { titulo: 5, palavrasChave: 4, marcos: 3, objetivo: 2, cuidados: 1 } as const;
 
 function pontuar(a: Atividade, termos: string[], idx: Marcos): number {
   const campos = {
@@ -35,6 +35,8 @@ function pontuar(a: Atividade, termos: string[], idx: Marcos): number {
     palavrasChave: normalizar((a.palavrasChave ?? []).join(' ')),
     marcos: normalizar(marcosVisiveis(idx, a).join(' ')),
     objetivo: normalizar(a.objetivo),
+    // O conteúdo marca negrito com ** (a busca não deve ver os asteriscos).
+    cuidados: normalizar((a.cuidados ?? '').replace(/\*+/g, '')),
   };
   let total = 0;
   for (const t of termos) {

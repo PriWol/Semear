@@ -32,13 +32,23 @@ export const paginaAtividades: FabricaPagina = async (ctx, params) => {
     publicadas.some((a) => dominioDaAtividade(a, ctx.idx) === d.id),
   );
 
+  /** Título do marco principal e "+N" (QA3); o código curto só no title. A ficha impressa mantém o código (§5.7). */
+  const marcosDoCartao = (a: Atividade): HtmlSeguro | '' => {
+    const ids = marcosVisiveis(ctx.idx, a);
+    const principal = ids[0];
+    if (!principal) return '';
+    const titulo = ctx.idx.marco(principal)?.titulo ?? '';
+    const mais = ids.length > 1 ? ` +${ids.length - 1}` : '';
+    return html`· <span class="marco-cartao" title="${ids.join(', ')}">${titulo}${mais}</span>`;
+  };
+
   const cartao = (a: Atividade): HtmlSeguro => {
     const folha = a.folhas[0];
     return html`<li class="cartao" data-atividade="${a.id}">
       <h3><a href="#/atividade/${a.id}">${a.titulo}</a></h3>
       <p class="nota">
         ${a.duracaoMin} min · ${a.idade[0]} a ${a.idade[1]} anos
-        ${marcosVisiveis(ctx.idx, a).length ? html`· ${marcosVisiveis(ctx.idx, a).join(', ')}` : ''}
+        ${marcosDoCartao(a)}
       </p>
       <p>${a.objetivo.replace(/\*+/g, '')}</p>
       ${folha ? html`<p class="nota">Primeira folha: ${folha.titulo}</p>` : ''}
