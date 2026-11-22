@@ -412,6 +412,13 @@ label.opcao input {
   grid-column: 1 / -1;
   border: var(--s-borda) solid var(--s-principal);
 }
+/* Botão principal na largura toda e respiro antes do progresso, que vem abaixo das ações. */
+.crianca-cartao.hoje .acoes {
+  margin-bottom: var(--s-espaco-4);
+}
+.crianca-cartao.hoje #preparar-hoje {
+  flex: 1 1 100%;
+}
 .hoje-sugestao {
   margin: 0 0 var(--s-espaco-3);
 }

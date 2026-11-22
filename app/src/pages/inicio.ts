@@ -146,24 +146,8 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
         familia.criadaEm,
         agora,
       );
-      return html`<article class="cartao crianca-cartao ${c.id === padrao?.id ? 'hoje' : ''}">
-        <header>
-          <h2>${c.id === padrao?.id ? `Hoje com ${c.nome}` : c.nome}</h2>
-          <span class="nota">${anos(idade)}</span>
-          <a class="link-discreto" href="#/crianca/${c.id}" aria-label="Editar ${c.nome}">editar</a>
-        </header>
-        ${
-          paraRessondar.length > 0
-            ? html`<p class="alerta" role="note">
-                ${paraRessondar.length === 1 ? '1 linha' : `${paraRessondar.length} linhas`} de
-                ${c.nome} pedem uma ressondagem.
-                <a href="#/sondagem/${c.id}?ressondagem=1">Fazer a ressondagem</a>
-              </p>`
-            : ''
-        }
-        ${
-          posicionada
-            ? html`<ul class="progresso-dominios">
+      const blocoProgresso = posicionada
+        ? html`<ul class="progresso-dominios">
                   ${[...porDominio.values()]
                     .filter((d) => d.total > 0)
                     .map(
@@ -186,13 +170,11 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
                       </p>`
                     : ''
                 }`
-            : html`<p class="nota">
+        : html`<p class="nota">
                 Ainda sem posição na jornada. Leva uns 5 minutos por domínio.
-              </p>`
-        }
-        ${
-          sugestao
-            ? html`<div class="hoje-sugestao">
+              </p>`;
+      const blocoSugestao = sugestao
+        ? html`<div class="hoje-sugestao">
                 <p class="nota">Sugestão de hoje · cerca de ${sugestao.minutos} min</p>
                 <ul>
                   ${sugestao.escolhas.map(
@@ -201,8 +183,8 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
                   )}
                 </ul>
               </div>`
-            : ''
-        }
+        : '';
+      const blocoAcoes = html`
         <div class="acoes">
           ${
             sugestao
@@ -243,6 +225,28 @@ export const paginaInicio: FabricaPagina = async (ctx) => {
             >${posicionada ? 'Ver jornada' : 'Posicionar'}</a
           >
         </div>
+      `;
+      // No cartão de hoje (D19) a sugestão e o botão vêm primeiro: o progresso fica abaixo, sem empurrá-los para fora da tela.
+      const ehHoje = c.id === padrao?.id;
+      return html`<article class="cartao crianca-cartao ${c.id === padrao?.id ? 'hoje' : ''}">
+        <header>
+          <h2>${c.id === padrao?.id ? `Hoje com ${c.nome}` : c.nome}</h2>
+          <span class="nota">${anos(idade)}</span>
+          <a class="link-discreto" href="#/crianca/${c.id}" aria-label="Editar ${c.nome}">editar</a>
+        </header>
+        ${
+          paraRessondar.length > 0
+            ? html`<p class="alerta" role="note">
+                ${paraRessondar.length === 1 ? '1 linha' : `${paraRessondar.length} linhas`} de
+                ${c.nome} pedem uma ressondagem.
+                <a href="#/sondagem/${c.id}?ressondagem=1">Fazer a ressondagem</a>
+              </p>`
+            : ''
+        }
+        ${ehHoje ? blocoSugestao : ''}
+        ${ehHoje ? blocoAcoes : ''}
+        ${blocoProgresso}
+        ${ehHoje ? '' : blocoAcoes}
       </article>`;
     }),
   );
