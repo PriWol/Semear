@@ -102,6 +102,23 @@ export interface Revisao {
   por?: string;
   /** quando (AAAA-MM-DD); obrigatório a partir de "revisado" */
   em?: string;
+  /**
+   * Conferência por profissional de saúde das orientações do item (ADR 0037). Ausente = sem aviso de
+   * conferência na tela. É um dado, não uma frase dentro do texto: a tela mostra um selo único.
+   */
+  conferenciaProfissional?: ConferenciaProfissional;
+}
+
+/** Conferência profissional: pendente (a tela avisa) ou conferida (o aviso some). */
+export const ESTADOS_CONFERENCIA = ['pendente', 'conferida'] as const;
+export type EstadoConferencia = (typeof ESTADOS_CONFERENCIA)[number];
+
+export interface ConferenciaProfissional {
+  estado: EstadoConferencia;
+  /** quem conferiu; obrigatório quando "conferida" */
+  por?: string;
+  /** quando (AAAA-MM-DD); obrigatório quando "conferida" */
+  em?: string;
 }
 
 export interface Marco {

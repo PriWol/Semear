@@ -645,3 +645,10 @@ body.tablet .dia-bloco.oculto {
   font-size: 9.5pt;
   color: var(--suave);
 }
+
+/* Aviso único de conferência profissional no roteiro (ADR 0037): uma linha, sem estourar a folha. */
+.selo-conferencia {
+  margin: 0 0 2mm;
+  font-size: 8.5pt;
+  color: var(--suave);
+}

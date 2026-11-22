@@ -43,5 +43,6 @@ quando uma decisão muda, cria-se um novo ADR que **substitui** o anterior.
 | [0034](0034-icones-de-linha-fina-phosphor.md) | Ícones de linha fina: Phosphor (MIT), SVG copiados sem dependência | Aceito |
 | [0035](0035-gravuras-botanicas-de-dominio-publico-nas-telas.md) | Gravuras botânicas de domínio público nas telas | Aceito |
 | [0036](0036-gerador-de-sessao-v2.md) | Gerador de sessão v2 (etapa 1): duração por atividade e mistura de áreas | Aceito |
+| [0037](0037-conferencia-profissional-como-dado.md) | Conferência profissional como dado, com selo único na tela | Aceito |
 
 Modelo para um novo ADR: copie `0000-modelo.md`.

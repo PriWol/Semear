@@ -157,6 +157,21 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
   width: var(--s-icone-g);
   height: var(--s-icone-g);
 }
+/* Selo único de conferência profissional (ADR 0037): calmo, no estilo de nota, sem a cor de alerta. */
+.selo-conferencia {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-espaco-2);
+  background: var(--s-destaque-claro);
+  color: var(--s-destaque-texto);
+  padding: var(--s-espaco-2) var(--s-espaco-3);
+  border-radius: var(--s-raio-p);
+  margin: var(--s-espaco-3) 0;
+  overflow-wrap: anywhere;
+}
+.selo-conferencia .icone {
+  margin-top: 0.2em;
+}
 .alerta {
   background: var(--s-alerta-claro);
   color: var(--s-tinta);

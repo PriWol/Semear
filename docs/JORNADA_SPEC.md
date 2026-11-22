@@ -208,6 +208,8 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
 
 > **Orientação para os pais:** todo marco traz um texto pedagógico recolhido na tela ("📖 Para os pais"), com o geral, o que a vertente principal e as inspirações da família acrescentam, e referências bibliográficas em ABNT. É parte da definição de marco: marco sem esse texto é erro de validação e não entra no conteúdo (ADR 0017).
 
+> **Conferência por profissional de saúde:** o estado vive no registro de revisão (`revisao.conferenciaProfissional`: `pendente` ou `conferida`), não dentro do texto. As telas da **atividade**, da **jornada** (por domínio) e da **Biblioteca**, e o roteiro do pacote impresso, mostram **um selo calmo por tela** ("Orientação em conferência por profissional de saúde. Não substitui o pediatra.") quando algum item está `pendente`; ele some quando a conferência acontece. "Não substitui o pediatra" nunca sai: em "Para os pais" dos marcos da Caderneta a frase fica fixa (ADR 0037).
+
 > Os marcos extras usam o mesmo formato dos marcos comuns. A única diferença é o campo `vertentes`, que indica em quais vertentes eles aparecem.
 
 ---
