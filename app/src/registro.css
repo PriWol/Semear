@@ -316,3 +316,39 @@ textarea.reg-campo {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
+
+/* ---------- "Tudo foi bem" (D10): atalho que só sugere, acima dos marcos ---------- */
+.reg-rapido {
+  display: grid;
+  gap: var(--s-espaco-2);
+  justify-items: start;
+}
+.reg-rapido .reg-ajuda {
+  margin: 0;
+}
+
+/* ---------- Resumo depois de registrar (D20) ---------- */
+.resumo-registro {
+  display: grid;
+  gap: var(--s-espaco-3);
+}
+.resumo-registro h1,
+.resumo-registro h2,
+.resumo-registro p {
+  margin: 0;
+}
+.resumo-marcos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-espaco-2);
+}
+.resumo-marcos li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-espaco-1) var(--s-espaco-3);
+  padding-bottom: var(--s-espaco-2);
+  border-bottom: var(--s-borda) solid var(--s-linha);
+}

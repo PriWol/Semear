@@ -86,3 +86,16 @@ Opção 3, com estas regras:
 ## Ainda em aberto
 - **Onde ver o registro.** Não há tela de "histórico da criança": o registro aparece na página da sessão e o selo
   na jornada. Sem resposta até agora; segue assim até ela decidir entre aceitar ou abrir uma estória de continuação.
+
+## Adendo (22/11/2026): atalho "Tudo foi bem", resumo e "Desfazer" (estória #142, D10 e D20)
+- **"Tudo foi bem"** só **preenche** "Em desenvolvimento" nos marcos ainda sem resposta, como sugestão editável
+  (`sugerirTudoFoiBem`, função pura). Nada é salvo até "Salvar"; "Consolidado" nunca é marcado em silêncio e o
+  estado do marco continua sendo só do pai.
+- **Resumo depois de registrar:** a tela diz "N marcos observados" (nunca "avançou") e lembra que o estado não mudou.
+- **"Desfazer por 10 s" não quebra o "só acrescenta":** desfazer não apaga história antiga, só **desfaz o registro que
+  acabou de ser feito**. `desfazerRegistro(anterior, registradaEm)` devolve a sessão ao que era e remove apenas
+  os eventos `origem: 'sessao'` daquela sessão com `atualizadoEm === registradaEm`. Recusa (devolve `false`) se a
+  sessão já foi registrada de novo ou removida, então nunca apaga o que é mais novo, e nunca abre a loja `estados`.
+  O prazo é conferido na tela e de novo no toque (`dentroDoPrazoDeDesfazer`); a sessão anterior fica só na memória da
+  página, então recarregar ou sair encerra a janela. É a mesma exceção já aceita para excluir sessão (decisão 4 de
+  20/11): evita observações de um toque errado ficarem no histórico e no backup.
