@@ -12,17 +12,17 @@
     {
       "titulo": "Mapa-múndi",
       "minutos": 4,
-      "texto": "No globo ou no mapa, ela acha o Brasil. Pergunte: “Quais países vizinhos?”."
+      "texto": "No globo ou no mapa, a criança acha o Brasil. Pergunte: “Quais países vizinhos?”."
     },
     {
       "titulo": "Brasil",
       "minutos": 10,
-      "texto": "Em um mapa do Brasil, ela acha o seu estado e a sua cidade. Pinte as cinco regiões com cores diferentes e escreva os nomes (ou cole etiquetas)."
+      "texto": "Em um mapa do Brasil, a criança acha o seu estado e a sua cidade. Pinte as cinco regiões com cores diferentes e escreva os nomes (ou cole etiquetas)."
     },
     {
       "titulo": "Viagem",
       "minutos": 6,
-      "texto": "Ela escolhe uma região para “visitar”: o que comeria? Que música ouviria? Escreva ou desenhe um cartão-postal.",
+      "texto": "A criança escolhe uma região para “visitar”: o que comeria? Que música ouviria? Escreva ou desenhe um cartão-postal.",
       "fala": "Para onde você viajaria?"
     }
   ],
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual região a deixou mais curiosa?",
+  "perguntaFicha": "Qual região mais despertou a curiosidade da criança?",
   "palavrasChave": ["brasil", "regiões", "estados", "mapa-múndi"],
   "folhas": [],
   "autoria": {

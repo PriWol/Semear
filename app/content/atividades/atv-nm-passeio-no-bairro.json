@@ -6,7 +6,7 @@
   "idade": [3, 6],
   "duracaoMin": 17,
   "preparoMin": 5,
-  "cuidados": "Segure a mão da criança perto de ruas e atravesse só na faixa, com o semáforo. Não se afaste do adulto e não fale com estranhos sozinha. Leve água e protetor solar.",
+  "cuidados": "Segure a mão da criança perto de ruas e atravesse só na faixa, com o semáforo. Não se afaste do adulto e não fale com estranhos sem um adulto. Leve água e protetor solar.",
   "objetivo": "A criança conhece lugares do bairro, conversa com quem trabalha neles e diz para que servem.",
   "passos": [
     {
@@ -23,7 +23,7 @@
     {
       "titulo": "Em casa",
       "minutos": 4,
-      "texto": "Ela desenha o lugar de que mais gostou e conta a quem trabalha lá."
+      "texto": "A criança desenha o lugar de que mais gostou e conta a quem trabalha lá."
     }
   ],
   "observar": {

@@ -12,18 +12,18 @@
     {
       "titulo": "Lembrar",
       "minutos": 4,
-      "texto": "Retome a planta que vocês acompanharam ou olhem uma árvore ou fruta: “Como ela começou?”. Peça que diga as fases que lembra.",
+      "texto": "Retome a planta que vocês acompanharam ou olhem uma árvore ou fruta: “Como a criança começou?”. Peça que diga as fases que lembra.",
       "fala": "E antes disso, como era?"
     },
     {
       "titulo": "Desenhar",
       "minutos": 12,
-      "texto": "Em um prato de papel dividido em 4 partes, ela desenha: semente, broto, planta com flor, fruto. Ajude a recortar, se precisar."
+      "texto": "Em um prato de papel dividido em 4 partes, a criança desenha: semente, broto, planta com flor, fruto. Ajude a recortar, se precisar."
     },
     {
       "titulo": "Contar",
       "minutos": 4,
-      "texto": "Peça que gire a roda e conte a história da planta, da semente até o fruto. Convide a contar também a de um animal que ela conheça."
+      "texto": "Peça que gire a roda e conte a história da planta, da semente até o fruto. Convide a contar também a de um animal que a criança conheça."
     }
   ],
   "observar": {
@@ -62,7 +62,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual fase do ciclo ela mais gostou?",
+  "perguntaFicha": "Qual fase do ciclo a criança mais gostou?",
   "palavrasChave": ["ciclo de vida", "semente", "borboleta", "crescer"],
   "folhas": [],
   "autoria": {

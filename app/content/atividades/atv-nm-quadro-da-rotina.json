@@ -12,18 +12,18 @@
     {
       "titulo": "Conversa",
       "minutos": 2,
-      "texto": "“O que a gente faz quando acorda? E depois?”. Deixe que ela diga ou aponte com as mãos.",
+      "texto": "“O que a gente faz quando acorda? E depois?”. Deixe que a criança diga ou aponte com as mãos.",
       "fala": "O que vem depois?"
     },
     {
       "titulo": "Figuras",
       "minutos": 6,
-      "texto": "Desenhe (ou use fotos) 4 momentos do dia em cartões grandes: acordar, comer, brincar, dormir. Ela cola ou prende em fila, de cima para baixo."
+      "texto": "Desenhe (ou use fotos) 4 momentos do dia em cartões grandes: acordar, comer, brincar, dormir. A criança cola ou prende em fila, de cima para baixo."
     },
     {
       "titulo": "Brincar de ordem",
       "minutos": 2,
-      "texto": "Cubra um cartão e pergunte: “O que vem agora?”. Troque de papel: deixe que ela pergunte a você."
+      "texto": "Cubra um cartão e pergunte: “O que vem agora?”. Troque de papel: deixe que a criança pergunte a você."
     }
   ],
   "observar": {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual momento ela mais reconheceu?",
+  "perguntaFicha": "Qual momento a criança mais reconheceu?",
   "palavrasChave": ["rotina", "ordem", "dia", "figuras"],
   "folhas": [],
   "autoria": {
