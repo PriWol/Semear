@@ -19,17 +19,17 @@
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Esconda-se atrás da cortina ou da porta, deixando um pedacinho aparecendo, e diga: “cadê a mamãe/o papai?”."
+      "texto": "Esconda-se atrás da cortina ou da porta, deixando um pedacinho aparecendo, e diga: “cadê ___?” (seu nome)."
     },
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Quando ela chegar, abrace: “achou!”."
+      "texto": "Quando a criança chegar, abrace: “achou!”."
     },
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Troque: ela se esconde, e você procura devagar, fingindo não achar."
+      "texto": "Troque: a criança se esconde, e você procura devagar, fingindo não achar."
     },
     {
       "titulo": "Passo 4",
@@ -39,27 +39,27 @@
     {
       "titulo": "Para dizer",
       "minutos": 0,
-      "texto": "“Cadê o papai? Será que está aqui?” “Achou! Que abraço!” “Agora você se esconde. Eu vou contar até três.”"
+      "texto": "“Cadê ___? Será que está aqui?” “Achou! Que abraço!” “Agora você se esconde. Eu vou contar até três.”"
     },
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Onde está o papai? Quer se esconder? Quer que eu procure?"
+      "texto": "Onde está ___? Quer se esconder? Quer que eu procure?"
     },
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Esconda um brinquedo. 2) Esconda a cabeça e depois apareça. 3) Esconda-se e faça um som: ela procura com os ouvidos."
+      "texto": "1) Esconda um brinquedo. 2) Esconda a cabeça e depois apareça. 3) Esconda-se e faça um som: a criança procura com os ouvidos."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Esconder e achar treina a memória e traz a segurança de que quem some, volta. O abraço do “achou!” é um pequeno encontro: ótimo para quem sente a separação. Conte até três antes de procurar: ela aprende a esperar."
+      "texto": "Esconder e achar treina a memória e traz a segurança de que quem some, volta. O abraço do “achou!” é um pequeno encontro: ótimo para quem sente a separação. Conte até três antes de procurar: a criança aprende a esperar."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

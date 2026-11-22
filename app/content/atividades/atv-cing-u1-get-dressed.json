@@ -13,30 +13,30 @@
   "vertentes": ["Montessori", "Waldorf", "Clássico", "Religioso", "Charlotte Mason"],
   "idade": [2, 3],
   "duracaoMin": 10,
-  "cuidados": "Fique junto enquanto ela se veste, sem deixá-la em pé sobre a cama; deixe fora do alcance sapatos com cadarço comprido e roupas com botões ou enfeites soltos, que podem ir à boca.",
+  "cuidados": "Fique junto enquanto a criança se veste, sem deixar a criança em pé sobre a cama; deixe fora do alcance sapatos com cadarço comprido e roupas com botões ou enfeites soltos, que podem ir à boca.",
   "palavrasChave": ["inglês", "english", "acordar e se arrumar", "get dressed"],
   "objetivo": "Aprender palavras em inglês com o objeto na mão, fazendo algo concreto (unidade: acordar e se arrumar).",
   "passos": [
     {
       "titulo": "Frases em inglês",
       "minutos": 0,
-      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
+      "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: a criança entende antes de falar.",
       "fala": "Red socks or blue socks? You choose. / One sock, two socks! Put on your shoes. / All dressed! You look great."
     },
     {
       "titulo": "Passo 1",
       "minutos": 3,
-      "texto": "Mostre duas meias de cores diferentes e deixe que ela escolha: “red socks or blue socks?”."
+      "texto": "Mostre duas meias de cores diferentes e deixe que a criança escolha: “red socks or blue socks?”."
     },
     {
       "titulo": "Passo 2",
       "minutos": 3,
-      "texto": "Diga o nome de cada peça ao vesti-la: “put on your socks”."
+      "texto": "Diga o nome de cada peça ao vestir: “put on your socks”."
     },
     {
       "titulo": "Passo 3",
       "minutos": 2,
-      "texto": "Deixe que ela faça o que consegue (puxar a meia, enfiar o braço) e ajude no resto."
+      "texto": "Deixe que a criança faça o que consegue (puxar a meia, enfiar o braço) e ajude no resto."
     },
     {
       "titulo": "Passo 4",
@@ -46,7 +46,7 @@
     {
       "titulo": "Perguntas para a criança",
       "minutos": 0,
-      "texto": "Pergunte e espere uns 5 segundos; se ela responder em português, repita a ideia dela em inglês.",
+      "texto": "Pergunte e espere uns 5 segundos; se a criança responder em português, repita a ideia em inglês.",
       "fala": "Which one? / Where's your sock? / Can you put it on?"
     },
     {
@@ -57,7 +57,7 @@
     {
       "titulo": "Para o adulto: por que isto importa",
       "minutos": 0,
-      "texto": "Escolher entre duas coisas que você aceita dá à criança um pouco de controle, e na fase do “não” isso evita muitas brigas. Vestir-se é também uma tarefa de vida prática (ideia da educação Montessori) e um bom contexto para nomear peças de roupa com o objeto na mão. Se ela recusar, mude a escolha, não a regra. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
+      "texto": "Escolher entre duas coisas que você aceita dá à criança um pouco de controle, e na fase do “não” isso evita muitas brigas. Vestir-se é também uma tarefa de vida prática (ideia da educação Montessori) e um bom contexto para nomear peças de roupa com o objeto na mão. Se a criança recusar, mude a escolha, não a regra. Conferência por profissional pendente: em caso de dúvida sobre fala, audição, comportamento ou desenvolvimento, converse com o pediatra ou com uma fonoaudióloga que acompanhe crianças bilíngues."
     }
   ],
   "observar": {

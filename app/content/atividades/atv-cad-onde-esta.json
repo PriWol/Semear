@@ -12,7 +12,7 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: Panos leves e limpos; nunca cubra a cabeça ou o rosto dela com pano. O brinquedo deve ser maior que o punho dela e sem peças soltas. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Panos leves e limpos; nunca cubra a cabeça ou o rosto da criança com pano. O brinquedo deve ser maior que o punho da criança e sem peças soltas. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["esconder", "achar", "cadê", "pano", "memória"],
   "objetivo": "A criança descobre um brinquedo escondido sob um pano ou atrás de uma almofada e depois esconde, para o adulto procurar.",
   "passos": [
@@ -24,17 +24,17 @@
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Deixe que ela descubra. Comemore: “achou!”."
+      "texto": "Deixe que a criança descubra. Comemore: “achou!”."
     },
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Depois esconda atrás de uma almofada, sem que ela veja, e dê pistas: “está perto da janela”."
+      "texto": "Depois esconda atrás de uma almofada, sem que a criança veja, e dê pistas: “está perto da janela”."
     },
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Troquem: ela esconde, e você procura devagar, fingindo não achar."
+      "texto": "Troquem: a criança esconde, e você procura devagar, fingindo não achar."
     },
     {
       "titulo": "Para dizer",
@@ -49,24 +49,24 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Três panos, um brinquedo: em qual está? 2) Esconda um som (um sininho) e procurem juntas. 3) Esconda você: “cadê a mamãe/o papai?”, e apareça."
+      "texto": "1) Três panos, um brinquedo: em qual está? 2) Esconda um som (um sininho) e procurem juntos. 3) Esconda você: “cadê ___?” (seu nome), e apareça."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Esconder e achar treina a memória e o saber que as coisas continuam existindo mesmo quando não se veem, e exige esperar para descobrir. Quando é a vez dela de esconder, ela lidera, e muita criança que diz “não” a ordens adora mandar nas regras do jogo."
+      "texto": "Esconder e achar treina a memória e o saber que as coisas continuam existindo mesmo quando não se veem, e exige esperar para descobrir. Quando é a vez da criança de esconder, a criança lidera, e muita criança que diz “não” a ordens adora mandar nas regras do jogo."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
   },
   "materiais": [
     {
-      "item": "Dois ou três panos (ou guardanapos de tecido) e um brinquedo ou bichinho que ela goste",
+      "item": "Dois ou três panos (ou guardanapos de tecido) e um brinquedo ou bichinho que a criança goste",
       "deCasa": true
     },
     {
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

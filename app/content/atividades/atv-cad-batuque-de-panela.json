@@ -12,7 +12,7 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 8,
-  "cuidados": "Atenção: Se o barulho incomodar, bata numa almofada ou toalha dobrada; nunca perto dos ouvidos dela. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Se o barulho incomodar, bata numa almofada ou toalha dobrada; nunca perto dos ouvidos da criança. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["batuque", "panela", "pulso", "ritmo", "tambor"],
   "objetivo": "A criança sente o pulso (a batida regular) batendo numa panela e treina o forte e o fraco, o rápido e o devagar, e parar no silêncio.",
   "passos": [
@@ -24,12 +24,12 @@
     {
       "titulo": "Passo 2",
       "minutos": 0,
-      "texto": "Deixe que ela bata também. Alterne: você, ela, você, ela."
+      "texto": "Deixe que a criança bata também. Alterne: você, a criança, você, a criança."
     },
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Experimente forte e fraco, rápido e devagar. Peça que ela escolha."
+      "texto": "Experimente forte e fraco, rápido e devagar. Peça que a criança escolha."
     },
     {
       "titulo": "Passo 4",
@@ -59,7 +59,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

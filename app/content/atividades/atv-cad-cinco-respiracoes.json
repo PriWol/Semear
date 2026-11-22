@@ -10,14 +10,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 3,
-  "cuidados": "Atenção: Respire junto e devagar, sem forçar o ar; se a criança ficar tonta, pare e deixe que respire normalmente. Se ela recusar, não insista: respire você e deixe que ela observe. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Respire junto e devagar, sem forçar o ar; se a criança ficar tonta, pare e deixe que respire normalmente. Se a criança recusar, não insista: respire você e deixe que a criança observe. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["respiração", "mão", "dedos", "calma"],
-  "objetivo": "A criança liga a respiração ao toque num dedo e à contagem de 1 a 5, uma tarefa concreta que não exige ficar quieta.",
+  "objetivo": "A criança liga a respiração ao toque num dedo e à contagem de 1 a 5, uma tarefa concreta que não exige ficar em silêncio.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Abra a mão dela. Com o seu dedo, suba por fora do polegar enquanto vocês inspiram, e desça pelo outro lado enquanto expiram."
+      "texto": "Abra a mão da criança. Com o seu dedo, suba por fora do polegar enquanto vocês inspiram, e desça pelo outro lado enquanto expiram."
     },
     {
       "titulo": "Passo 2",
@@ -27,7 +27,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "No fim, deixe que ela faça o mesmo na sua mão."
+      "texto": "No fim, deixe que a criança faça o mesmo na sua mão."
     },
     {
       "titulo": "Passo 4",
@@ -47,12 +47,12 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Faça na sua própria mão, para ela ver. 2) Com a voz: “um… dois…” baixinho. 3) Faça no pé, também."
+      "texto": "1) Faça na sua própria mão, para a criança ver. 2) Com a voz: “um… dois…” baixinho. 3) Faça no pé, também."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Respirar acompanhando o toque num dedo dá à criança uma tarefa concreta e liga a respiração à contagem, sem exigir que ela “fique quieta”. Pratique em dias calmos, no colo ou antes de dormir; na hora de uma crise, só proponha se ela aceitar."
+      "texto": "Respirar acompanhando o toque num dedo dá à criança uma tarefa concreta e liga a respiração à contagem, sem exigir que a criança “fique em silêncio”. Pratique em dias calmos, no colo ou antes de dormir; na hora de uma crise, só proponha se a criança aceitar."
     }
   ],
   "observar": {
@@ -67,7 +67,7 @@
   },
   "materiais": [
     {
-      "item": "Nenhum; uma das suas mãos e uma das dela",
+      "item": "Nenhum; uma das suas mãos e uma das da criança",
       "deCasa": true
     },
     {
@@ -77,11 +77,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

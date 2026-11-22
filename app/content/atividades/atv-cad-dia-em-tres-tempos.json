@@ -12,12 +12,12 @@
   "duracaoMin": 5,
   "cuidados": "Atenção: Luz baixa, mas com o ambiente seguro e sem objetos no caminho. Se usar um bichinho de pelúcia, sem olhos ou botões que se soltem. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["rotina", "ordem", "primeiro depois", "hora de dormir", "contar o dia"],
-  "objetivo": "A criança ouve o dia dela contado em três partes (primeiro, depois, no fim) e completa ou aponta a sua parte.",
+  "objetivo": "A criança ouve o dia da criança contado em três partes (primeiro, depois, no fim) e completa ou aponta a sua parte.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Sentem juntas, com a luz baixa. Conte o dia dela em três partes: “primeiro…”, “depois…”, “no fim…”."
+      "texto": "Sentem juntos, com a luz baixa. Conte o dia da criança em três partes: “primeiro…”, “depois…”, “no fim…”."
     },
     {
       "titulo": "Passo 2",
@@ -27,7 +27,7 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Pare e espere: ela completa, aponta ou conta sua parte?"
+      "texto": "Pare e espere: a criança completa, aponta ou conta sua parte?"
     },
     {
       "titulo": "Passo 4",
@@ -47,17 +47,17 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Use três objetos ou fotos, um para cada parte. 2) Conte o dia do bichinho de pelúcia. 3) Deixe que ela “conte” o dia dela primeiro, mesmo com poucas palavras."
+      "texto": "1) Use três objetos ou fotos, um para cada parte. 2) Conte o dia do bichinho de pelúcia. 3) Deixe que a criança “conte” o dia da criança primeiro, mesmo com poucas palavras."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Contar a ordem das coisas (primeiro, depois, no fim) é a base de toda história e treina a memória. Repetido todas as noites, vira também um ritual calmo para fechar o dia, o que ajuda em dias de muita agitação. Se ela corrigir você, ótimo: significa que ela lembra."
+      "texto": "Contar a ordem das coisas (primeiro, depois, no fim) é a base de toda história e treina a memória. Repetido todas as noites, vira também um ritual calmo para fechar o dia, o que ajuda em dias de muita agitação. Se a criança corrigir você, ótimo: significa que a criança lembra."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -74,11 +74,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

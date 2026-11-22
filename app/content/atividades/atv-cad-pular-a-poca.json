@@ -12,7 +12,7 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 5,
-  "cuidados": "Atenção: Chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Chão firme e sem escorregar; em poça de verdade, só se a água estiver limpa e você vir o fundo. Com água por perto, nunca deixe a criança com água sem um adulto ao lado, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["poça", "pular", "chuva", "equilíbrio", "movimento"],
   "objetivo": "A criança pula com os dois pés juntos, depressa e devagar, numa poça ou num tapete que faz de poça, ao comando da voz.",
   "passos": [
@@ -34,7 +34,7 @@
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Troquem: agora ela diz quando pular."
+      "texto": "Troquem: agora a criança diz quando pular."
     },
     {
       "titulo": "Para dizer",
@@ -49,7 +49,7 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Pule de um lado para o outro de uma linha de fita no chão. 2) Faça o “sapo”: agachada, e pula bem baixo. 3) Depois de pular, fiquem quietas e escutem a chuva (ou o silêncio)."
+      "texto": "1) Pule de um lado para o outro de uma linha de fita no chão. 2) Faça o “sapo”: agachada, e pula bem baixo. 3) Depois de pular, fiquem em silêncio e escutem a chuva (ou o silêncio)."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
@@ -59,7 +59,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -76,11 +76,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

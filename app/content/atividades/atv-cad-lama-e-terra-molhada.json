@@ -10,14 +10,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 4],
   "duracaoMin": 10,
-  "cuidados": "Atenção: Não deixe que ela coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. Com água por perto, nunca deixe a criança sozinha com água, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Não deixe que a criança coma a terra; evite terra de lugares com fezes de animais ou lixo; lave bem as mãos e as unhas depois. Com água por perto, nunca deixe a criança com água sem um adulto ao lado, nem por um instante, mesmo rasa. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["lama", "terra", "água", "sensorial", "sujar"],
   "objetivo": "A criança mistura terra e água com as mãos e a colher, faz “bolos” e “sopas” e depois lava as mãos e os pés.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Ponha terra na bacia e um pouco de água. Deixe que ela misture com as mãos e a colher."
+      "texto": "Ponha terra na bacia e um pouco de água. Deixe que a criança misture com as mãos e a colher."
     },
     {
       "titulo": "Passo 2",
@@ -57,7 +57,7 @@
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
@@ -74,11 +74,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",

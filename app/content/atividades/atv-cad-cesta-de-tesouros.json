@@ -12,14 +12,14 @@
   "vertentes": ["Charlotte Mason", "Clássico", "Montessori", "Waldorf"],
   "idade": [2, 3],
   "duracaoMin": 8,
-  "cuidados": "Atenção: Tudo precisa ser maior que o punho dela, para não caber na boca. Fique junto o tempo todo. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
+  "cuidados": "Atenção: Tudo precisa ser maior que o punho da criança, para não caber na boca. Fique junto o tempo todo. Nenhuma peça pequena que caiba na boca. Orientação ainda sem conferência por profissional de saúde; não substitui o pediatra.",
   "palavrasChave": ["cesta", "objetos", "nomear", "tato", "vocabulário"],
   "objetivo": "A criança pega, cheira, balança e ouve o nome de cinco objetos reais de casa, e aponta ou entrega um quando pedem.",
   "passos": [
     {
       "titulo": "Passo 1",
       "minutos": 0,
-      "texto": "Sente no chão, de frente para ela, com a cesta entre vocês."
+      "texto": "Sente no chão, de frente para a criança, com a cesta entre vocês."
     },
     {
       "titulo": "Passo 2",
@@ -29,17 +29,17 @@
     {
       "titulo": "Passo 3",
       "minutos": 0,
-      "texto": "Deixe que ela pegue, cheire, balance e bata de leve no chão."
+      "texto": "Deixe que a criança pegue, cheire, balance e bata de leve no chão."
     },
     {
       "titulo": "Passo 4",
       "minutos": 0,
-      "texto": "Peça: “cadê a tigela?”. Aceite que ela aponte ou entregue."
+      "texto": "Peça: “cadê a tigela?”. Aceite que a criança aponte ou entregue."
     },
     {
       "titulo": "Passo 5",
       "minutos": 0,
-      "texto": "Guardem tudo juntas, nomeando cada coisa que volta para a cesta."
+      "texto": "Guardem tudo juntos, nomeando cada coisa que volta para a cesta."
     },
     {
       "titulo": "Para dizer",
@@ -54,24 +54,24 @@
     {
       "titulo": "Para variar",
       "minutos": 0,
-      "texto": "1) Uma cesta por assunto: só coisas macias, só coisas que fazem barulho, só coisas da cozinha. 2) Esconda um objeto num pano: “o que será?”. Ela tateia e adivinha. 3) Se ela perder o interesse, guarde a cesta e traga de novo em outro dia."
+      "texto": "1) Uma cesta por assunto: só coisas macias, só coisas que fazem barulho, só coisas da cozinha. 2) Esconda um objeto num pano: “o que será?”. A criança tateia e adivinha. 3) Se a criança perder o interesse, guarde a cesta e traga de novo em outro dia."
     },
     {
       "titulo": "Por que isto importa (para o adulto)",
       "minutos": 0,
-      "texto": "Nomear um objeto real, com ele na mão, é o jeito mais direto de ampliar o vocabulário dessa idade, e a repetição fixa as palavras. É uma ideia da educação Montessori para os primeiros anos. Troque os objetos de vez em quando; deixe só os que ela mais gosta."
+      "texto": "Nomear um objeto real, com ele na mão, é o jeito mais direto de ampliar o vocabulário dessa idade, e a repetição fixa as palavras. É uma ideia da educação Montessori para os primeiros anos. Troque os objetos de vez em quando; deixe só os que a criança mais gosta."
     }
   ],
   "observar": {
     "consolidado": [
-      "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "Pediu para repetir"
     ],
     "emDesenvolvimento": ["Quis só olhar ou parou logo: tudo bem, guarde para outro dia"]
   },
   "materiais": [
     {
-      "item": "Uma cesta e 5 objetos de casa, sem peças pequenas (colher de pau, tigela, escova de cabelo, pano macio, pedra lisa maior que o punho dela)",
+      "item": "Uma cesta e 5 objetos de casa, sem peças pequenas (colher de pau, tigela, escova de cabelo, pano macio, pedra lisa maior que o punho da criança)",
       "deCasa": true
     },
     {
@@ -81,11 +81,11 @@
   ],
   "evidencias": [
     {
-      "texto": "Participou do jeito dela (olhou, imitou, falou ou escolheu)",
+      "texto": "Participou de algum jeito (olhou, imitou, falou ou escolheu)",
       "resposta": "☐ não   ☐ um pouco   ☐ sim"
     }
   ],
-  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que ela mais gostou)",
+  "perguntaFicha": "Hoje a criança… (uma palavra nova, um gesto, o que mais agradou)",
   "folhas": [],
   "autoria": {
     "origem": "ia",
