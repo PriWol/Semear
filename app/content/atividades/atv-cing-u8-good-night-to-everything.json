@@ -21,7 +21,7 @@
       "titulo": "Frases em inglês",
       "minutos": 0,
       "texto": "Use sempre as mesmas frases, com o objeto ou o gesto à vista. Ninguém cobra resposta: ela entende antes de falar.",
-      "fala": "Good night, sun. Good night, moon. / Good night, window. Good night, bed. / Good night, Marina. I love you."
+      "fala": "Good night, sun. Good night, moon. / Good night, window. Good night, bed. / Good night, ___. I love you."
     },
     {
       "titulo": "Passo 1",
@@ -41,7 +41,7 @@
     {
       "titulo": "Passo 4",
       "minutos": 1,
-      "texto": "Termine com “good night, Marina. I love you.”."
+      "texto": "Termine com “good night, ___. I love you.”, dizendo o nome da criança."
     },
     {
       "titulo": "Perguntas para a criança",

@@ -12,7 +12,7 @@
   "idade": [4, 8],
   "duracaoMin": 10,
   "preparoMin": 3,
-  "cuidados": "Famílias são diferentes: se na casa da Marina quem cuida é outra pessoa (uma tia, um avô, duas mães, dois pais), use a palavra que combina com a vida dela; os cartões são um ponto de partida, não um modelo. Cartões e fotos recortados ficam fora do alcance de crianças menores quando o jogo acaba. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo.",
+  "cuidados": "Famílias são diferentes: se na casa da criança quem cuida é outra pessoa (uma tia, um avô, duas mães, dois pais), use a palavra que combina com a vida dela; os cartões são um ponto de partida, não um modelo. Cartões e fotos recortados ficam fora do alcance de crianças menores quando o jogo acaba. A pronúncia da criança melhora ouvindo a língua, não sendo corrigida: não peça que ela “diga em inglês” e não use o idioma como cobrança nem como castigo.",
   "palavrasChave": ["inglês", "família", "mother", "sister", "cartões"],
   "objetivo": "A criança ouve uma rima inglesa sobre uma irmã e aponta o cartão certo quando o adulto diz mãe, pai, bebê, irmão, irmã ou avó em inglês.",
   "passos": [
@@ -25,7 +25,7 @@
     {
       "titulo": "O jogo dos cartões",
       "minutos": 5,
-      "texto": "Espalhem os cartões da família com a figura para cima. O adulto diz uma palavra em inglês (“mother!”) e a Marina aponta o cartão, sem pedir que repita: mother, father, baby, brother, sister, grandmother, family, hug, love. Depois ela aponta uma pessoa de verdade (ou uma foto) e o adulto diz a palavra.",
+      "texto": "Espalhem os cartões da família com a figura para cima. O adulto diz uma palavra em inglês (“mother!”) e a criança aponta o cartão, sem pedir que repita: mother, father, baby, brother, sister, grandmother, family, hug, love. Depois ela aponta uma pessoa de verdade (ou uma foto) e o adulto diz a palavra.",
       "fala": "Mother!"
     },
     {

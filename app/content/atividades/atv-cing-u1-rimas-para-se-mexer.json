@@ -18,8 +18,8 @@
     {
       "titulo": "Cantar: Sun is up",
       "minutos": 2,
-      "texto": "O gesto: faça o gesto do sol com os braços, estique alto, toque os pés e saia andando. Troque “Marina” pelo nome do bichinho se quiser. Rima escrita pela coleção.",
-      "fala": "Sun is up, sun is up, / time to wake, time to wake, / stretch up high, touch your toes, / good morning, Marina, off we go!"
+      "texto": "O gesto: faça o gesto do sol com os braços, estique alto, toque os pés e saia andando. Diga o nome da criança no lugar do “___” (ou o nome do bichinho, se quiser). Rima escrita pela coleção.",
+      "fala": "Sun is up, sun is up, / time to wake, time to wake, / stretch up high, touch your toes, / good morning, ___, off we go!"
     },
     {
       "titulo": "Cantar: This little piggy",
