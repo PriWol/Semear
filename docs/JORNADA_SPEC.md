@@ -397,6 +397,7 @@ São linhas ou marcos **adicionais**, que só aparecem quando a vertente é a pr
   | Religioso | segue a base comum, mais atividades de DI.ESP | |
 
 - **Modo tablet:** só as folhas da criança, uma por tela. As páginas do educador ficam de fora.
+- **Tela cheia (sessão) e "Abrir para imprimir" (semana):** abrem um **painel sobre o app** (não uma nova aba) com o pacote na mesma prévia isolada, e uma barra com "Imprimir" e "Fechar" (Esc também fecha). O pacote nunca roda na origem do app (ADR 0022, adendo de #139).
 - **Ilustrações:** o protótipo usa emojis. A versão final precisa de **um banco próprio de ilustrações** (licenciadas ou encomendadas), com traço consistente e que funcione em preto e branco.
 
 ---

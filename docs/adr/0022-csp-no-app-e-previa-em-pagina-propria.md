@@ -27,3 +27,15 @@ Opção 3.
 - `previa.html` é um arquivo estático a mais no precache do PWA.
 - Sem `unsafe-eval`: qualquer biblioteca nova que use `eval` quebra e é recusada.
 - No modo dev do Vite o HMR usa websocket na mesma origem (`connect-src 'self'`); não foi exercitado em teste automático.
+
+## Adendo (2026-11-22, estória #139): tela cheia e semana sem nova aba
+
+**O defeito.** "Abrir em tela cheia" (sessão) e "Abrir para imprimir" (semana) abriam o pacote numa aba `blob:`. Essa aba herda a CSP do app (`script-src 'self'`): o script do pacote e os `onclick` eram bloqueados e os botões "Imprimir / salvar PDF" e "Modo tablet" ficavam mortos. Pior: uma aba `blob:` tem **a origem do app** e, se alguém liberasse o script, o pacote leria o IndexedDB com os dados da criança. O bloqueio da CSP protegia só por acidente.
+
+**Descartado.** Nonce, hash ou `unsafe-inline` no app (anulam esta decisão, e o pacote muda a cada geração); abrir `previa.html` como aba principal (fora de um iframe `sandbox` a página é da origem do app).
+
+**Decisão.** Não abrir nova aba. `src/ui/painel-pacote.ts` mostra o mesmo `previa.html` num `<dialog>` modal que cobre a tela, com barra própria "Imprimir" e "Fechar" (alvos de 44 px). O iframe é igual ao da prévia: `sandbox="allow-scripts allow-modals"`, **sem `allow-same-origin`**. O app pede a impressão por `postMessage` e o próprio pacote chama `window.print()`; Esc com o foco dentro do pacote avisa o app por `postMessage` para fechar. A semana usa o mesmo painel (e ganha a prévia). A CSP do `index.html` **não mudou** (`e2e/tela-cheia.spec.ts` confere `script-src 'self'`).
+
+**Regra.** O pacote (sessão ou semana) **nunca** roda na origem do app: só em iframe `sandbox` sem `allow-same-origin`. Quem precisar de uma nova forma de exibir o pacote mantém essa regra ou escreve um ADR.
+
+**Limites conhecidos.** O "Modo tablet" continua sendo o botão do próprio pacote (alterna folhas de uma por tela); não há botão de `requestFullscreen()` no painel (o painel já cobre a janela, e a tela cheia do aparelho exigiria `allow="fullscreen"` no iframe, não avaliado). Impressão a partir do iframe no iOS/Safari não foi testada.
