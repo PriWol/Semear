@@ -3,6 +3,7 @@ import { criarRotas, lerHash, lista } from '../src/ui/app';
 import { ROTAS } from '../src/rotas';
 import { paginaRegistrarBusca } from '../src/pages/registrar-busca';
 import { paginaSessaoRegistrar } from '../src/pages/sessao-registrar';
+import { paginaSessaoRegistrada } from '../src/pages/sessao-registrada';
 import { paginaSessao } from '../src/pages/sessao';
 import { paginaSessaoNova } from '../src/pages/sessao-nova';
 import { paginaAtividade } from '../src/pages/atividade';
@@ -34,6 +35,7 @@ describe('rotas por hash (ADR 0008)', () => {
     expect(quem('#/sessao/registrar')).toBe(paginaRegistrarBusca);
     expect(quem('#/sessao/registrar?crianca=c1')).toBe(paginaRegistrarBusca);
     expect(quem('#/sessao/abc-123/registrar')).toBe(paginaSessaoRegistrar);
+    expect(quem('#/sessao/abc-123/registrada')).toBe(paginaSessaoRegistrada);
     expect(quem('#/sessao/abc-123')).toBe(paginaSessao);
     expect(quem('#/sessao/nova')).toBe(paginaSessaoNova);
     // um id que se chama "registrar" também chega à tela de registro, não à busca

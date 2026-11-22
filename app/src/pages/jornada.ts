@@ -41,6 +41,12 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
   const dominios = ctx.idx.conteudo.dominios.filter((d) => d.comJornada);
   const dominioAtual = dominios.find((d) => d.id === params.d) ?? dominios[0];
   const pistasDoDominio = pistas.filter((p) => p.dominio.id === dominioAtual?.id);
+  // Linhas sem marcos ("em breve") ficam recolhidas com a contagem, mas não somem: esconder demais passa a
+  // impressão de app pequeno (D21, #130 decisão 5).
+  const temMarcos = (p: Pista) =>
+    posicaoDaLinha(ctx.idx, p, estados, idade, familia.vertentePrincipal).total > 0;
+  const pistasComMarcos = pistasDoDominio.filter(temMarcos);
+  const pistasEmBreve = pistasDoDominio.filter((p) => !temMarcos(p));
   const avisos = avisosTrilhas(ctx.idx, crianca, idade, estados);
   const porId = new Map(pistas.map((p) => [idPista(p), p]));
   const abertos = reabrir;
@@ -203,7 +209,17 @@ export const paginaJornada: FabricaPagina = async (ctx, params) => {
             </p>`
           : ''
       }
-      ${pistasDoDominio.map(cartaoPista)}
+      ${pistasComMarcos.map(cartaoPista)}
+      ${
+        pistasEmBreve.length
+          ? html`<details class="linhas-em-breve" id="linhas-em-breve" ${pistasComMarcos.length === 0 ? 'open' : ''}>
+              <summary>
+                ${pistasEmBreve.length === 1 ? '1 linha em breve' : `${pistasEmBreve.length} linhas em breve`}
+              </summary>
+              ${pistasEmBreve.map(cartaoPista)}
+            </details>`
+          : ''
+      }
       <p>
         <a class="botao primario" href="#/sessao/nova?crianca=${crianca.id}">Preparar sessão</a>
       </p>

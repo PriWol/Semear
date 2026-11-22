@@ -7,6 +7,8 @@ import { camposAlterados } from '../domain/campos';
 import { ehLetra } from '../domain/letra';
 import { letraPadrao, NOME_LETRA } from '../domain/letra';
 import { avisoExemplo, ligarAvisoExemplo } from '../ui/exemplo';
+import { abrirDialogo } from '../ui/dialogo';
+import { baixarArquivo } from './sessao';
 
 export const paginaCrianca: FabricaPagina = async (ctx, params) => {
   const familia = await ctx.repo.familia();
@@ -146,12 +148,42 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
           } else {
             ctx.avisar('Dados salvos.');
           }
-          ctx.ir(existente ? '/' : `/jornada/${nova.id}`);
+          // Criança nova: tela de próximo passo (D21), não uma jornada de milhares de pixels.
+          ctx.ir(existente ? '/' : `/crianca/${nova.id}/pronta`);
         });
       raiz.querySelector('#remover')?.addEventListener('click', async () => {
-        if (!confirm(`Remover ${c.nome} e todo o histórico? Isso não pode ser desfeito.`)) return;
+        // Caixa própria (QA2-04): verbo e nome no botão de perigo, e "guardar uma cópia" antes, sem sair da caixa.
+        let guardou = false;
+        const escolha = await abrirDialogo({
+          titulo: `Remover ${c.nome}?`,
+          texto: html`<p>Saem o cadastro e todo o histórico de ${c.nome}. Isso não pode ser desfeito.</p>
+            <p>Se quiser ficar com os dados, guarde uma cópia antes.</p>`,
+          botoes: [
+            {
+              valor: 'copia',
+              rotulo: 'Guardar uma cópia antes',
+              tipo: 'primario',
+              mantemAberto: true,
+            },
+            { valor: 'remover', rotulo: `Remover ${c.nome}`, tipo: 'perigo' },
+            { valor: 'cancelar', rotulo: `Manter ${c.nome}`, tipo: 'neutro' },
+          ],
+          aoEscolher: async () => {
+            const agora = ctx.agora();
+            const backup = await ctx.repo.exportar(agora);
+            baixarArquivo(
+              `semear-backup-${agora.slice(0, 10)}.json`,
+              JSON.stringify(backup, null, 2),
+              'application/json',
+            );
+            await ctx.repo.marcarBackup(agora);
+            guardou = true;
+            return 'Cópia guardada. Agora você pode remover, se quiser.';
+          },
+        });
+        if (escolha !== 'remover') return;
         await ctx.repo.removerCrianca(c.id);
-        ctx.avisar('Criança removida.');
+        ctx.avisar(guardou ? 'Criança removida. A cópia ficou guardada.' : 'Criança removida.');
         ctx.ir('/');
       });
     },
