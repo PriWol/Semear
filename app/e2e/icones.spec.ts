@@ -103,3 +103,20 @@ for (const largura of [320, 390]) {
     }
   });
 }
+
+// Os atalhos do Início ficam alinhados: o botão sem ícone ("+ Adicionar criança") tem a mesma altura e o mesmo topo
+// dos que têm ícone (antes, soltos num parágrafo, alinhavam pela linha de base do texto e ficavam mais baixos).
+test('atalhos do Início alinhados, com ou sem ícone', async ({ page }) => {
+  await abrirExemplo(page);
+  const caixas = await page.locator('#atalhos-inicio .botao').evaluateAll((els) =>
+    els.map((e) => {
+      const r = e.getBoundingClientRect();
+      return { topo: r.top, altura: r.height };
+    }),
+  );
+  expect(caixas.length).toBe(4);
+  for (const c of caixas) expect(Math.abs(c.altura - caixas[0]!.altura)).toBeLessThan(1);
+  // quem está na mesma linha tem o mesmo topo (linhas diferentes distam mais que a altura de um botão)
+  const linha = caixas.filter((c) => Math.abs(c.topo - caixas[0]!.topo) < caixas[0]!.altura / 2);
+  for (const c of linha) expect(Math.abs(c.topo - caixas[0]!.topo)).toBeLessThan(1);
+});
