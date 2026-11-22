@@ -12,18 +12,18 @@
     {
       "titulo": "Lembrar",
       "minutos": 4,
-      "texto": "Conversem sobre um passeio ou uma história: “O que você viu? Quem estava lá?”. Ela fecha os olhos e “vê” a cena."
+      "texto": "Conversem sobre um passeio ou uma história: “O que você viu? Quem estava lá?”. A criança fecha os olhos e “vê” a cena."
     },
     {
       "titulo": "Desenhar",
       "minutos": 12,
-      "texto": "Ela desenha a cena em uma folha, com tempo. Ajude só a lembrar os detalhes (“tinha nuvens?”).",
+      "texto": "A criança desenha a cena em uma folha, com tempo. Ajude só a lembrar os detalhes (“tinha nuvens?”).",
       "fala": "O que mais tinha lá?"
     },
     {
       "titulo": "Contar",
       "minutos": 4,
-      "texto": "Ela conta a história do desenho. Dê um título e anote a data. Guarde em uma pasta."
+      "texto": "A criança conta a história do desenho. Dê um título e anote a data. Guarde em uma pasta."
     }
   ],
   "observar": {
@@ -61,7 +61,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Qual cena ela escolheu?",
+  "perguntaFicha": "Qual cena a criança escolheu?",
   "palavrasChave": ["desenho de cena", "passeio", "história", "memória"],
   "folhas": [],
   "autoria": {

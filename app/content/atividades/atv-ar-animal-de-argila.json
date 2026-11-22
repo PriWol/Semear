@@ -17,7 +17,7 @@
     {
       "titulo": "Modelar",
       "minutos": 14,
-      "texto": "Ela faz cada parte e une com um pouco de água, alisando as emendas com o dedo. Mostre como fazer sem apertar demais.",
+      "texto": "A criança faz cada parte e une com um pouco de água, alisando as emendas com o dedo. Mostre como fazer sem apertar demais.",
       "fala": "Como vamos unir as partes?"
     },
     {
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Como ela uniu as partes?",
+  "perguntaFicha": "Como a criança uniu as partes?",
   "palavrasChave": ["argila", "escultura", "animais", "modelagem", "cerâmica"],
   "folhas": [],
   "autoria": {

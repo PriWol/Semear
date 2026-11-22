@@ -18,7 +18,7 @@
     {
       "titulo": "Desenhar",
       "minutos": 12,
-      "texto": "Ela desenha olhando para o objeto, e não de memória. Se ela olhar só o papel, lembre: “Olhe de novo para o objeto”."
+      "texto": "A criança desenha olhando para o objeto, e não de memória. Se a criança olhar só o papel, lembre: “Olhe de novo para o objeto”."
     },
     {
       "titulo": "Comparar",
@@ -58,7 +58,7 @@
       "resposta": "☐ ainda não   ☐ com ajuda   ☐ sim"
     }
   ],
-  "perguntaFicha": "Que detalhe ela descobriu?",
+  "perguntaFicha": "Que detalhe a criança descobriu?",
   "palavrasChave": ["observação", "caderno de desenho", "natureza", "detalhes"],
   "folhas": [],
   "autoria": {
