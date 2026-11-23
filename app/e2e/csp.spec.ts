@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { irParaJornadaDepoisDeCadastrar } from './cadastro';
 
 // #32: a CSP do app não pode ser violada em nenhuma tela, nem na prévia do pacote (iframe sandbox).
 // Violação aparece no console como "Refused to ..." e dispara o evento securitypolicyviolation.
@@ -21,7 +22,7 @@ test('o app e a prévia do pacote rodam sem violar a CSP', async ({ page }) => {
   await page.getByLabel('Nome').fill('Ana');
   await page.getByLabel('Data de nascimento').fill('2021-03-15');
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Ana/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Ana');
   await page
     .locator('li.marco[data-marco="LG.FON.04"]')
     .getByRole('button', { name: 'Está aqui' })

@@ -1,5 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { abrirAjustes } from './ajustes-ajuda';
+import { irParaJornadaDepoisDeCadastrar } from './cadastro';
 
 // Estória #140 (SEG-1 a SEG-5): dados impossíveis são recusados com mensagem clara, o nome fictício do
 // exemplo não vaza e a criança padrão é a que a família está usando.
@@ -82,7 +83,7 @@ test('fora de 2 a 8 anos: aviso fixo no formulário, e ainda dá para salvar', a
   await expect(aviso).toBeHidden();
   await page.getByLabel('Data de nascimento').fill(`${ano}-03-15`);
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Caio/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Caio');
 });
 
 test('apagar o exemplo mantendo criança real deixa o nome da família pendente, sem "Marina"', async ({
@@ -93,7 +94,7 @@ test('apagar o exemplo mantendo criança real deixa o nome da família pendente,
   await page.getByLabel('Nome').fill('Lia');
   await page.getByLabel('Data de nascimento').fill(`${new Date().getFullYear() - 5}-03-15`);
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Lia/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Lia');
 
   page.on('dialog', (d) => void d.accept()); // a faixa global do exemplo ainda usa o confirm()
   await page.locator('#faixa-exemplo').getByRole('button', { name: 'Apagar exemplo' }).click();

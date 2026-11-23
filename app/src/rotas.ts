@@ -4,10 +4,12 @@ import type { FabricaPagina } from './ui/app';
 import { paginaInicio } from './pages/inicio';
 import { paginaFamilia } from './pages/familia';
 import { paginaCrianca } from './pages/crianca';
+import { paginaCriancaPronta } from './pages/crianca-pronta';
 import { paginaJornada } from './pages/jornada';
 import { paginaSessaoNova } from './pages/sessao-nova';
 import { paginaRegistrarBusca } from './pages/registrar-busca';
 import { paginaSessaoRegistrar } from './pages/sessao-registrar';
+import { paginaSessaoRegistrada } from './pages/sessao-registrada';
 import { paginaSessao } from './pages/sessao';
 import { paginaConfig } from './pages/config';
 import { paginaBiblioteca } from './pages/biblioteca';
@@ -26,10 +28,12 @@ export const ROTAS: Record<string, FabricaPagina> = {
   '/': paginaInicio,
   '/familia': paginaFamilia,
   '/crianca/:id': paginaCrianca,
+  '/crianca/:id/pronta': paginaCriancaPronta,
   '/jornada/:id': paginaJornada,
   '/sessao/nova': paginaSessaoNova,
   '/sessao/registrar': paginaRegistrarBusca,
   '/sessao/:id/registrar': paginaSessaoRegistrar,
+  '/sessao/:id/registrada': paginaSessaoRegistrada,
   '/sessao/:id': paginaSessao,
   '/config': paginaConfig,
   '/biblioteca': paginaBiblioteca,

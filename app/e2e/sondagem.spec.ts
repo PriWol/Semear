@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { irParaJornadaDepoisDeCadastrar } from './cadastro';
 
 // #17: a sondagem tem etapa base e etapa de ajuste, e grava a posição na jornada.
 test('sondagem: etapa base, ajuste só na linha indefinida e posição gravada', async ({ page }) => {
@@ -11,7 +12,7 @@ test('sondagem: etapa base, ajuste só na linha indefinida e posição gravada',
   await page.getByLabel('Nome').fill('Ana');
   await page.getByLabel('Data de nascimento').fill('2021-03-15');
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Ana/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Ana');
 
   await page.getByRole('link', { name: 'Faça a sondagem' }).click();
   await expect(page.getByRole('heading', { name: 'Etapa 1: base' })).toBeVisible();
@@ -55,7 +56,7 @@ test('ressondagem: o início avisa depois de 8 semanas e a folha traz só essas 
   await page.getByLabel('Nome').fill('Ana');
   await page.getByLabel('Data de nascimento').fill('2021-03-15');
   await page.getByRole('button', { name: 'Salvar' }).click();
-  await expect(page.getByRole('heading', { name: /Jornada de Ana/ })).toBeVisible();
+  await irParaJornadaDepoisDeCadastrar(page, 'Ana');
   await page
     .locator('li.marco[data-marco="LG.FON.04"]')
     .getByRole('button', { name: 'Está aqui' })

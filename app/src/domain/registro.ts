@@ -227,3 +227,38 @@ export function ultimasSessoes(sessoes: Sessao[], limite: number): Sessao[] {
 
 export const sessaoRegistrada = (sessao: Pick<Sessao, 'registradaEm'>): boolean =>
   sessao.registradaEm !== undefined;
+
+/**
+ * "Tudo foi bem" (D10): sugere "Em desenvolvimento" nos marcos que ainda não têm resposta. Nunca sugere
+ * "Consolidado": uma sessão boa não prova domínio (o selo "parece pronto" já exige 2 sessões) e o estado do
+ * marco é do pai (§5.2, ADR 0030). É só uma sugestão para a tela preencher; nada é gravado aqui.
+ */
+export function sugerirTudoFoiBem(
+  ficha: Observacao[],
+  respostas: Record<string, string | undefined>,
+): Record<string, EstadoMarco> {
+  const sugestao: Record<string, EstadoMarco> = {};
+  for (const o of ficha) {
+    if (respostas[o.chave] === undefined) sugestao[o.chave] = 'em-desenvolvimento';
+  }
+  return sugestao;
+}
+
+/** Quantos marcos da ficha têm observação gravada. */
+export const contarObservados = (
+  ficha: Observacao[],
+  registradas: Record<string, EstadoMarco>,
+): number => ficha.filter((o) => registradas[o.chave] !== undefined).length;
+
+/** "N marcos observados": nunca "avançou", porque registrar não muda o estado do marco (D20, ADR 0030). */
+export const textoMarcosObservados = (n: number): string =>
+  n === 0 ? 'Nenhum marco observado' : n === 1 ? '1 marco observado' : `${n} marcos observados`;
+
+/** Janela do "Desfazer" logo depois de registrar (D20). */
+export const PRAZO_DESFAZER_MS = 10_000;
+
+/** Ainda dá para desfazer? Data inválida ou relógio que voltou no tempo: não. */
+export function dentroDoPrazoDeDesfazer(registradaEm: string, agora: string): boolean {
+  const decorrido = Date.parse(agora) - Date.parse(registradaEm);
+  return Number.isFinite(decorrido) && decorrido >= 0 && decorrido <= PRAZO_DESFAZER_MS;
+}

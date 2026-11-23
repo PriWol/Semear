@@ -11,7 +11,7 @@ test('planejar a semana, marcar um dia e baixar a semana', async ({ page }) => {
   await page.getByRole('button', { name: /Explorar com uma família de exemplo/ }).click();
   await expect(page.getByRole('heading', { name: /Olá/ })).toBeVisible();
 
-  await page.getByRole('link', { name: 'Planejar semana' }).nth(1).click();
+  await page.getByRole('link', { name: 'Planejar semana de Ana' }).click();
   await expect(page.getByRole('heading', { name: /Semana de Ana/ })).toBeVisible();
   await page.getByRole('radio', { name: '40 min' }).check();
   await page.getByRole('button', { name: 'Planejar semana' }).click();
@@ -44,7 +44,7 @@ test('planejar a semana, marcar um dia e baixar a semana', async ({ page }) => {
   // a sessão do dia feito entra no histórico
   await page.getByRole('link', { name: 'Início' }).click();
   await expect(page.locator('.lista-sessoes')).toContainText('S-');
-  await page.getByRole('link', { name: 'Planejar semana' }).nth(1).click();
+  await page.getByRole('link', { name: 'Planejar semana de Ana' }).click();
 
   const [download] = await Promise.all([
     page.waitForEvent('download'),

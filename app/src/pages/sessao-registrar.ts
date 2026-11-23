@@ -3,12 +3,15 @@ import { html } from '../ui/html';
 import {
   montarRegistro,
   observacoesDaSessao,
+  sugerirTudoFoiBem,
   observacoesRegistradas,
   sessaoRegistrada,
   type EntradaRegistro,
 } from '../domain/registro';
 import { ANOTACOES_MAX, DURACAO_REAL_MAX, ENGAJAMENTOS, ESTADOS, IDIOMAS } from '../domain/tipos';
 import { dataCurta, ICONE_ENGAJAMENTO, NOME_ENGAJAMENTO, NOME_ESTADO } from '../ui/rotulos';
+import { abrirDialogo, paragrafo } from '../ui/dialogo';
+import { lembrarParaDesfazer } from './sessao-registrada';
 
 const ERRO_AO_SALVAR = 'Não foi possível salvar. Seus dados continuam na tela. Tente de novo.';
 
@@ -57,7 +60,14 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
                   Atividade complementar: não há marcos para registrar. Você ainda pode anotar como
                   foi.
                 </p>`
-              : html`<p class="reg-ajuda">
+              : html`<div class="reg-rapido">
+                    <button class="botao" type="button" id="tudo-bem">Tudo foi bem</button>
+                    <p class="reg-ajuda" id="ajuda-tudo-bem" role="status">
+                      Preenche “${NOME_ESTADO['em-desenvolvimento']}” nos marcos que ainda não têm resposta.
+                      É só uma sugestão: você muda o que quiser e nada é salvo até tocar em Salvar.
+                    </p>
+                  </div>
+                  <p class="reg-ajuda">
                     Para desfazer uma escolha, marque “Não observado”. Sem escolha, o marco fica como
                     estava.
                   </p>`
@@ -178,11 +188,46 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
         erro.hidden = false;
       };
 
-      form.addEventListener('change', () => {
-        erro.hidden = true;
+      const atualizarContador = () => {
         if (!contador) return;
         const n = ficha.filter((_, i) => form.querySelector(`input[name="m${i}"]:checked`)).length;
         contador.textContent = contagem(n);
+      };
+      form.addEventListener('change', () => {
+        erro.hidden = true;
+        atualizarContador();
+      });
+
+      // "Tudo foi bem" (D10): só PREENCHE os marcos sem resposta, como sugestão editável. Não salva e não
+      // mexe no estado do marco (ADR 0030); "Consolidado" nunca é marcado em silêncio.
+      const ajudaTudoBem = raiz.querySelector<HTMLElement>('#ajuda-tudo-bem');
+      raiz.querySelector<HTMLButtonElement>('#tudo-bem')?.addEventListener('click', () => {
+        const respostas: Record<string, string | undefined> = {};
+        ficha.forEach((o, i) => {
+          const marcado = form.querySelector<HTMLInputElement>(`input[name="m${i}"]:checked`);
+          if (marcado) respostas[o.chave] = marcado.value;
+        });
+        const sugestao = sugerirTudoFoiBem(ficha, respostas);
+        let preenchidos = 0;
+        ficha.forEach((o, i) => {
+          const estado = sugestao[o.chave];
+          if (!estado) return;
+          const radio = form.querySelector<HTMLInputElement>(
+            `input[name="m${i}"][value="${estado}"]`,
+          );
+          if (radio) {
+            radio.checked = true;
+            preenchidos++;
+          }
+        });
+        erro.hidden = true;
+        atualizarContador();
+        if (ajudaTudoBem) {
+          ajudaTudoBem.textContent =
+            preenchidos === 0
+              ? 'Todos os marcos já têm resposta.'
+              : `Preenchi “${NOME_ESTADO['em-desenvolvimento']}” em ${preenchidos} ${preenchidos === 1 ? 'marco' : 'marcos'}. Confira e toque em Salvar.`;
+        }
       });
       form.addEventListener('input', (ev) => {
         if ((ev.target as HTMLElement).id === 'anotacoes' && contagemAnotacoes) {
@@ -217,9 +262,17 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
         // Sessão já registrada: pede confirmação antes de trocar o registro anterior.
         if (jaRegistrada) {
           const em = dataCurta(sessao.registradaEm ?? sessao.criadaEm).slice(0, 5);
-          if (!confirm(`Esta sessão já foi registrada em ${em}. Substituir o registro anterior?`)) {
-            return;
-          }
+          const escolha = await abrirDialogo({
+            titulo: 'Substituir o registro anterior?',
+            texto: paragrafo(
+              `Esta sessão já foi registrada em ${em}. Salvar troca a duração, o engajamento e as anotações pelo que está na tela.`,
+            ),
+            botoes: [
+              { valor: 'substituir', rotulo: 'Substituir o registro', tipo: 'primario' },
+              { valor: 'cancelar', rotulo: 'Voltar à ficha', tipo: 'neutro' },
+            ],
+          });
+          if (escolha !== 'substituir') return;
         }
 
         salvando = true;
@@ -238,8 +291,9 @@ export const paginaSessaoRegistrar: FabricaPagina = async (ctx, params) => {
           mostrarErro(ERRO_AO_SALVAR); // a tela fica como está: nada do que foi marcado se perde
           return;
         }
-        ctx.avisar(`Sessão ${sessao.codigo} registrada.`);
-        ctx.ir('/');
+        // O resumo mostra o efeito (marcos observados) e oferece Desfazer por 10 s (D20).
+        lembrarParaDesfazer(sessao, registro.sessao.registradaEm ?? ctx.agora());
+        ctx.ir(`/sessao/${sessao.id}/registrada`);
       });
     },
   };
