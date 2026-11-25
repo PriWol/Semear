@@ -40,8 +40,8 @@ jobs:
           REPO_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          if [ -z "${PROJECT_TOKEN:-}" ] || [ -z "${PROJECT_NUMBER:-}" ]; then
-            echo "::notice::PROJECT_TOKEN ou PROJECT_NUMBER ausente: nenhum cartão movido."
+          if [ -z "${PROJECT_TOKEN:-}" ]; then
+            echo "::notice::PROJECT_TOKEN ausente: nenhum cartão movido."
             exit 0
           fi
 
@@ -67,14 +67,17 @@ jobs:
           fi
 
           export GH_TOKEN="$PROJECT_TOKEN"
-          consulta='id field(name:"Status"){... on ProjectV2SingleSelectField{id options{id name}}}'
-          quadro=$(gh api graphql -F n="$PROJECT_NUMBER" -f o="$OWNER" \
-            -f query="query(\$o:String!,\$n:Int!){user(login:\$o){projectV2(number:\$n){$consulta}}}" 2>/dev/null \
-            --jq '.data.user.projectV2' || true)
-          if [ -z "$quadro" ] || [ "$quadro" = "null" ]; then
-            quadro=$(gh api graphql -F n="$PROJECT_NUMBER" -f o="$OWNER" \
-              -f query="query(\$o:String!,\$n:Int!){organization(login:\$o){projectV2(number:\$n){$consulta}}}" \
-              --jq '.data.organization.projectV2')
+          # Acha o quadro pelo número (variável PROJECT_NUMBER) ou, se faltar, pelo título que contém "Semear".
+          consulta='nodes{id number title field(name:"Status"){... on ProjectV2SingleSelectField{id options{id name}}}}'
+          todos=$(gh api graphql -f o="$OWNER" \
+            -f query="query(\$o:String!){user(login:\$o){projectsV2(first:50){$consulta}}}" \
+            --jq '.data.user.projectsV2.nodes')
+          quadro=$(jq -c --arg n "${PROJECT_NUMBER:-}" \
+            '[.[] | select(if $n != "" then (.number | tostring) == $n else (.title | test("Semear"; "i")) end)]
+             | if length == 1 then .[0] else empty end' <<<"$todos")
+          if [ -z "$quadro" ]; then
+            echo "::error::Não achei exatamente um quadro (defina a variável PROJECT_NUMBER)."
+            exit 1
           fi
           projeto=$(jq -r '.id' <<<"$quadro")
           campo=$(jq -r '.field.id' <<<"$quadro")

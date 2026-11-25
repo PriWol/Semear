@@ -108,7 +108,9 @@ famílias queiram usar**, e para ajudar a dona do produto a trabalhar melhor tam
 1. Segredo `CLAUDE_CODE_OAUTH_TOKEN` (ou `ANTHROPIC_API_KEY`) em Settings → Secrets → Actions.
 2. Settings → Environments → **New environment** `quadro`, com *Deployment branches* só `main`. Nele, o segredo `PROJECT_TOKEN`
    (token classic com escopo `project`, 90 dias); apague o mesmo segredo se ele existir no nível do repositório. Variável
-   `PROJECT_NUMBER` (número do quadro) pode ficar no repositório.
+   `PROJECT_NUMBER` é opcional: sem ela o workflow acha o quadro pelo título (que contenha "Semear").
+   Para criar as colunas sem digitar: Actions → **Configurar quadro** → Run workflow → `criar-colunas` (use `listar` antes
+   para só ver).
 3. Campo Status do quadro com os nomes de coluna acima; desligar o fluxo nativo "Item closed → Done".
 4. Ruleset "Proteger main": incluir "Testes ponta a ponta" nas verificações obrigatórias; a mescla é manual.
 5. Rótulos: `ideia`, `aguardando-aprovacao`, `aprovada`, `conteudo`, `ui`, `dados`, `decisao`, `bloqueado`,

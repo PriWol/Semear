@@ -1,0 +1,74 @@
+name: Configurar quadro
+
+# ADR 0038: cria as colunas do quadro (opções do campo Status) com o PROJECT_TOKEN, para a dona não ter de
+# renomear à mão. Só roda por disparo manual de quem tem escrita no repositório, a partir do `main`, e o
+# segredo fica no Environment `quadro`. Não faz checkout. "listar" apenas lê; "criar-colunas" SUBSTITUI as
+# opções do campo Status (cartões que estiverem em colunas antigas ficam sem status).
+
+on:
+  workflow_dispatch:
+    inputs:
+      acao:
+        description: 'listar (só lê) ou criar-colunas (substitui as opções do Status)'
+        type: choice
+        options: [listar, criar-colunas]
+        default: listar
+      titulo:
+        description: 'Parte do título do quadro (sem diferenciar maiúsculas)'
+        type: string
+        default: Semear
+
+permissions:
+  contents: read
+
+jobs:
+  configurar:
+    runs-on: ubuntu-latest
+    environment: quadro
+    steps:
+      - name: Listar ou criar as colunas
+        env:
+          GH_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          ACAO: ${{ inputs.acao }}
+          TITULO: ${{ inputs.titulo }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::error::PROJECT_TOKEN ausente (Environment quadro)."; exit 1
+          fi
+          consulta='nodes{id number title field(name:"Status"){... on ProjectV2SingleSelectField{id options{name}}}}'
+          todos=$(gh api graphql -f o="$OWNER" \
+            -f query="query(\$o:String!){user(login:\$o){projectsV2(first:50){$consulta}}}" \
+            --jq '.data.user.projectsV2.nodes')
+          achados=$(jq -c --arg t "$TITULO" '[.[] | select(.title | test($t; "i"))]' <<<"$todos")
+          echo "Quadros do dono (número e título):"
+          jq -r '.[] | "  #\(.number)  \(.title)"' <<<"$todos"
+          total=$(jq 'length' <<<"$achados")
+          if [ "$total" != "1" ]; then
+            echo "::error::Esperava 1 quadro com \"$TITULO\" no título; achei $total. Use um trecho mais específico."; exit 1
+          fi
+          echo "Quadro escolhido: #$(jq -r '.[0].number' <<<"$achados") $(jq -r '.[0].title' <<<"$achados")"
+          echo "Opções atuais do Status:"
+          jq -r '.[0].field.options[]? | "  - \(.name)"' <<<"$achados"
+          if [ "$ACAO" = "listar" ]; then exit 0; fi
+
+          campo=$(jq -r '.[0].field.id' <<<"$achados")
+          [ -n "$campo" ] && [ "$campo" != "null" ] || { echo "::error::O quadro não tem o campo Status."; exit 1; }
+          # Laranja: a vez é da dona. Azul: a vez é dos agentes. Verde: concluído.
+          opcoes='[
+            {"name":"Backlog","color":"ORANGE","description":"Você descreve o problema"},
+            {"name":"Detalhando","color":"BLUE","description":"PM escreve a estória, os critérios e o Como testar"},
+            {"name":"Aprovar estória","color":"ORANGE","description":"Você aprova ou devolve"},
+            {"name":"Em desenvolvimento","color":"BLUE","description":"Plano, testes, código e revisão"},
+            {"name":"Pergunta para você","color":"ORANGE","description":"Um agente precisa de uma resposta sua"},
+            {"name":"Testando","color":"BLUE","description":"QA junta a prova de cada critério"},
+            {"name":"Aprovar entrega","color":"ORANGE","description":"Você confere critérios e evidências"},
+            {"name":"Pronto para mesclar","color":"ORANGE","description":"Você mescla o PR"},
+            {"name":"Em produção","color":"ORANGE","description":"Você confere o site publicado"},
+            {"name":"Feito","color":"GREEN","description":"Concluído"}
+          ]'
+          corpo=$(jq -n --arg id "$campo" --argjson op "$opcoes" \
+            '{query:"mutation($i:ID!,$o:[ProjectV2SingleSelectFieldOptionInput!]!){updateProjectV2Field(input:{fieldId:$i,singleSelectOptions:$o}){projectV2Field{... on ProjectV2SingleSelectField{options{name}}}}}",variables:{i:$id,o:$op}}')
+          gh api graphql --input - <<<"$corpo" --jq '.data.updateProjectV2Field.projectV2Field.options[].name' \
+            | sed 's/^/  criada: /'
