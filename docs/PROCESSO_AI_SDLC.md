@@ -84,9 +84,25 @@ Conferir: ...
 Se aprovar / se recusar: ...
 ```
 
-## Retro semanal
-O comando `/retro` (agendado) mede o processo, junta o que cada agente observou e abre uma issue "Retro AAAA-MM-DD" com
-no máximo 3 experimentos para você aprovar. O que for aprovado vai para `docs/APRENDIZADOS.md`. Mudanças de regra passam por ADR.
+## Retro semanal (etapa fixa do processo)
+A retro não é opcional: é uma etapa do processo, como a revisão de PR. Objetivo: o time se avaliar e melhorar a qualidade do
+código, a cobertura de testes, os erros comuns e o próprio fluxo, para entregar um produto **robusto, econômico e que as
+famílias queiram usar**, e para ajudar a dona do produto a trabalhar melhor também.
+
+- **Quando:** toda semana (tarefa agendada) e também depois de qualquer incidente em produção ou de 5 estórias entregues,
+  o que vier primeiro.
+- **Quem:** os 8 agentes respondem em leitura, cada um pelo seu papel; o comando `/retro` conduz e consolida.
+- **Entrada:** dados do GitHub (PRs, CI, revisões, issues, tempo em cada coluna). Onde não houver dado, a retro escreve
+  "não medido" e propõe como medir. Custo de agentes, minutos de CI e cobertura de código são lacunas conhecidas desde a
+  primeira retro (#169); fechá-las é prioridade.
+- **Saída:** uma issue "Retro AAAA-MM-DD" com padrões, números, **no máximo 3 experimentos** (hipótese, como medir, quando
+  revisar) e as perguntas à dona. A issue fica na coluna **Pergunta para você** até ela decidir.
+- **Perguntas fixas:** o que funcionou? Qual erro se repete? Que mudança de processo? O que deixaria o produto mais robusto?
+  Mais econômico? Mais desejado pelas famílias? O que a dona poderia fazer diferente para destravar o time?
+- **Depois:** experimento aprovado entra em `docs/APRENDIZADOS.md` e, se mudar regra, em ADR. Na retro seguinte, cada
+  experimento anterior é avaliado pelo número combinado. Erro que se repete 2 vezes vira teste ou regra de lint.
+- **Lado humano:** a retro também mede o tempo que os cartões esperam em cada coluna da dona, o que ela devolveu e por quê,
+  e sugere janelas de revisão em lote.
 
 ## Configuração única (ações suas no GitHub)
 1. Segredo `CLAUDE_CODE_OAUTH_TOKEN` (ou `ANTHROPIC_API_KEY`) em Settings → Secrets → Actions.

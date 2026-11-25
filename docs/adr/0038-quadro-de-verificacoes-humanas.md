@@ -27,7 +27,8 @@ automação decidir. Também não havia um lugar único onde ela visse "o que es
 - `bloqueado` continua sendo só o veto de revisão em PR. Perguntas à dona do produto usam `quadro:pergunta`.
 - Os cartões se movem por rótulo (`mover-cartao.yml`), com o segredo `PROJECT_TOKEN` (token com escopo `project`,
   expiração de 90 dias) e a variável `PROJECT_NUMBER`. O token só existe no Actions; nenhum agente o recebe.
-- **Retro semanal** (`/retro`): os agentes avaliam o próprio trabalho e o processo e propõem no máximo 3 experimentos.
+- **Retro semanal obrigatória** (`/retro`, agendada): os 8 agentes avaliam o próprio trabalho e o processo, medem o que já
+  se pode medir e propõem no máximo 3 experimentos, que a dona aprova. É etapa do processo, não opcional. A primeira foi a #169.
   Tudo o que for aprovado entra em `docs/APRENDIZADOS.md`, que todos leem ao começar.
 
 ## Consequências
