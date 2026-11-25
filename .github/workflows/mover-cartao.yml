@@ -1,0 +1,92 @@
+name: Mover cartão do quadro
+
+# ADR 0038 e docs/PROCESSO_AI_SDLC.md: move o cartão da estória no quadro (GitHub Projects) conforme o rótulo aplicado,
+# e leva para "Em produção" as estórias ligadas por `Closes #N` num PR mesclado.
+# Segurança: não faz checkout nem roda código do PR; valores do evento chegam por variáveis de ambiente (nunca
+# interpolados no script). O PROJECT_TOKEN (escopo `project`) só é usado nas chamadas ao quadro.
+# Sem PROJECT_TOKEN ou PROJECT_NUMBER o fluxo apenas avisa e não falha.
+
+on:
+  issues:
+    types: [labeled]
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+concurrency:
+  group: cartao-${{ github.event.issue.number || github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  mover:
+    if: github.event_name == 'issues' || github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mover o cartão
+        env:
+          PROJECT_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+          PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
+          OWNER: ${{ github.repository_owner }}
+          EVENTO: ${{ github.event_name }}
+          ROTULO: ${{ github.event.label.name }}
+          NO_ESTORIA: ${{ github.event.issue.node_id }}
+          NO_PR: ${{ github.event.pull_request.node_id }}
+          REPO_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ -z "${PROJECT_TOKEN:-}" ] || [ -z "${PROJECT_NUMBER:-}" ]; then
+            echo "::notice::PROJECT_TOKEN ou PROJECT_NUMBER ausente: nenhum cartão movido."
+            exit 0
+          fi
+
+          if [ "$EVENTO" = "issues" ]; then
+            case "$ROTULO" in
+              ideia) coluna="Detalhando" ;;
+              aguardando-aprovacao) coluna="Aprovar estória" ;;
+              aprovada) coluna="Em desenvolvimento" ;;
+              quadro:pergunta) coluna="Pergunta para você" ;;
+              quadro:testando) coluna="Testando" ;;
+              quadro:aprovar-entrega) coluna="Aprovar entrega" ;;
+              quadro:pronto) coluna="Pronto para mesclar" ;;
+              quadro:feito) coluna="Feito" ;;
+              *) echo "Rótulo sem coluna: nada a mover."; exit 0 ;;
+            esac
+            nos="$NO_ESTORIA"
+          else
+            coluna="Em produção"
+            nos=$(GH_TOKEN="$REPO_TOKEN" gh api graphql \
+              -f query='query($id:ID!){node(id:$id){... on PullRequest{closingIssuesReferences(first:10){nodes{id}}}}}' \
+              -f id="$NO_PR" --jq '.data.node.closingIssuesReferences.nodes[].id')
+            if [ -z "$nos" ]; then echo "PR sem estória ligada (Closes #N): nada a mover."; exit 0; fi
+          fi
+
+          export GH_TOKEN="$PROJECT_TOKEN"
+          consulta='id field(name:"Status"){... on ProjectV2SingleSelectField{id options{id name}}}'
+          quadro=$(gh api graphql -F n="$PROJECT_NUMBER" -f o="$OWNER" \
+            -f query="query(\$o:String!,\$n:Int!){user(login:\$o){projectV2(number:\$n){$consulta}}}" 2>/dev/null \
+            --jq '.data.user.projectV2' || true)
+          if [ -z "$quadro" ] || [ "$quadro" = "null" ]; then
+            quadro=$(gh api graphql -F n="$PROJECT_NUMBER" -f o="$OWNER" \
+              -f query="query(\$o:String!,\$n:Int!){organization(login:\$o){projectV2(number:\$n){$consulta}}}" \
+              --jq '.data.organization.projectV2')
+          fi
+          projeto=$(jq -r '.id' <<<"$quadro")
+          campo=$(jq -r '.field.id' <<<"$quadro")
+          opcao=$(jq -r --arg c "$coluna" '.field.options[] | select(.name == $c) | .id' <<<"$quadro")
+          if [ -z "$opcao" ]; then
+            echo "::error::A coluna \"$coluna\" não existe no campo Status do quadro. Ajuste os nomes (docs/PROCESSO_AI_SDLC.md)."
+            exit 1
+          fi
+
+          for no in $nos; do
+            item=$(gh api graphql -f p="$projeto" -f c="$no" \
+              -f query='mutation($p:ID!,$c:ID!){addProjectV2ItemById(input:{projectId:$p,contentId:$c}){item{id}}}' \
+              --jq '.data.addProjectV2ItemById.item.id')
+            gh api graphql -f p="$projeto" -f i="$item" -f f="$campo" -f o="$opcao" \
+              -f query='mutation($p:ID!,$i:ID!,$f:ID!,$o:String!){updateProjectV2ItemFieldValue(input:{projectId:$p,itemId:$i,fieldId:$f,value:{singleSelectOptionId:$o}}){projectV2Item{id}}}' >/dev/null
+            echo "Cartão movido para \"$coluna\"."
+          done

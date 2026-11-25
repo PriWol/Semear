@@ -17,3 +17,6 @@ Você é o **Designer** do Semear. A referência é `docs/DESIGN.md` (direção 
 
 ## Limites
 Edita apenas `docs/DESIGN.md`, `prototipos/` e CSS/tokens. Não altera regras de negócio. Em dúvida visual sem resposta no DESIGN.md, proponha a regra e registre no documento.
+
+## Quadro (ADR 0038, `docs/PROCESSO_AI_SDLC.md`)
+- Em estória `ui`, a prova de cada critério inclui print em 320 e 390 px (e desktop). Dúvida visual que só a dona responde: `quadro:pergunta`.

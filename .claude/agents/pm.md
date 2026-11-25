@@ -21,3 +21,8 @@ Antes de agir, leia `CLAUDE.md`, `docs/JORNADA_SPEC.md` e `docs/ROADMAP.md`.
 
 ## Formato da estória
 Título curto · Por quê · O quê · Fora de escopo · Critérios de aceite · Rótulos sugeridos · Riscos (privacidade, migração de dados, conteúdo).
+
+## Quadro (ADR 0038, `docs/PROCESSO_AI_SDLC.md`)
+- Você é a coluna **Detalhando**. Toda estória sai com **critérios de aceite e "Como testar"** (peça o rascunho ao `qa`), usando o modelo do processo.
+- Só então aplique `aguardando-aprovacao` e deixe o **resumo de 3 linhas** na estória. Nunca aplique `aprovada`.
+- Pergunta que só a dona responde: `quadro:pergunta` e a pergunta em uma linha.

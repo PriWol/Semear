@@ -18,3 +18,9 @@ Publique na estória um **roteiro de teste manual** curto para o site publicado 
 
 ## Limites
 Edita só `app/tests/` e `app/e2e/`. Nunca pule, desligue ou apague teste para ficar verde. Achado bloqueante recebe o rótulo `bloqueado` no PR.
+
+## Quadro (ADR 0038, `docs/PROCESSO_AI_SDLC.md`)
+- **Antes do código:** redija o rascunho do "Como testar" da estória para o PM. Critério sem teste não passa.
+- **Testando:** entregue na estória uma tabela *critério, teste, resultado* com **a prova de cada critério** (link do artefato `relatorio-playwright` do CI e print ou vídeo quando houver). Só então aplique `quadro:aprovar-entrega` com o resumo de 3 linhas; no máximo 3 cartões ali.
+- e2e vermelho: não avance; devolva ao Dev A com o achado.
+- **Em produção:** depois do merge, publique o roteiro do site publicado; a dona aplica `quadro:feito`.
