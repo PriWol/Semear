@@ -58,7 +58,7 @@ export const paginaSessaoRegistrada: FabricaPagina = async (ctx, params) => {
     titulo: `Sessão ${sessao.codigo} registrada`,
     conteudo: html`
       <section class="cartao resumo-registro" aria-labelledby="titulo-resumo">
-        <h1 id="titulo-resumo">Sessão registrada</h1>
+        <h1 id="titulo-resumo" tabindex="-1">Sessão registrada</h1>
         <p class="reg-contexto">
           ${sessao.codigo} · ${crianca.nome} · ${dataCurta(sessao.criadaEm)}
         </p>
@@ -100,9 +100,8 @@ export const paginaSessaoRegistrada: FabricaPagina = async (ctx, params) => {
         ${
           podeDesfazer
             ? html`<p class="resumo-desfazer" id="area-desfazer">
-                <button class="botao" type="button" id="desfazer">
-                  Desfazer este registro (<span id="segundos">${restante}</span> s)
-                </button>
+                <button class="botao" type="button" id="desfazer">Desfazer este registro</button>
+                <span class="nota" aria-hidden="true">(<span id="segundos">${restante}</span> s)</span>
               </p>`
             : ''
         }
@@ -114,8 +113,12 @@ export const paginaSessaoRegistrada: FabricaPagina = async (ctx, params) => {
       const segundos = raiz.querySelector<HTMLElement>('#segundos');
       if (!pendente || !area || !botao || !segundos) return;
       let temporizador = 0;
+      // Ao tirar o botão da tela, quem navega por teclado ou leitor de tela perderia o foco: leva para o título.
       const encerrar = () => {
         window.clearInterval(temporizador);
+        if (area.contains(document.activeElement)) {
+          raiz.querySelector<HTMLElement>('#titulo-resumo')?.focus();
+        }
         area.remove();
       };
       temporizador = window.setInterval(() => {
@@ -123,7 +126,9 @@ export const paginaSessaoRegistrada: FabricaPagina = async (ctx, params) => {
         const falta = segundosRestantes(pendente.registradaEm, ctx.agora());
         if (falta <= 0) {
           desfazivel = null;
-          return encerrar();
+          encerrar();
+          ctx.avisar('O prazo para desfazer terminou. O registro vale.');
+          return;
         }
         segundos.textContent = String(falta);
       }, 500);

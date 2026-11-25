@@ -176,6 +176,45 @@ describe('repositório: desfazerRegistro (só o registro recém-feito)', () => {
     expect((await repo.historico('c1')).length).toBe(2);
   });
 
+  it('não toca nas observações de outra sessão, mesmo com o mesmo instante de registro', async () => {
+    const t = '2026-10-15T09:00:00.000Z';
+    await repo.salvarSessao(sessao({ id: 's2', codigo: 'S-1014-B2' }));
+    const fichaDois = observacoesDaSessao(sessao({ id: 's2' }), idx);
+    const r2 = montarRegistro(
+      (await repo.sessao('s2'))!,
+      fichaDois,
+      { estados: { [fichaDois[0]!.chave]: 'em-desenvolvimento' } },
+      t,
+      {},
+    );
+    await repo.registrarSessao(r2.sessao, r2.eventos);
+    const { anterior, registradaEm } = await registrar(t, 'consolidado');
+    expect((await repo.historico('c1')).length).toBe(2);
+    expect(await repo.desfazerRegistro(anterior, registradaEm)).toBe(true);
+    const restantes = await repo.historico('c1');
+    expect(restantes.map((e) => e.sessaoId)).toEqual(['s2']);
+    expect((await repo.sessao('s2'))?.registradaEm).toBe(t);
+  });
+
+  it('não mexe em estados que a família já tinha marcado antes do registro', async () => {
+    const marcoId = ficha[0]!.marcoId;
+    await repo.atualizarEstados('c1', {
+      [marcoId]: {
+        estado: 'consolidado',
+        atualizadoEm: '2026-10-01T09:00:00.000Z',
+        origem: 'manual',
+      },
+    });
+    const { anterior, registradaEm } = await registrar(
+      '2026-10-15T09:00:00.000Z',
+      'em-desenvolvimento',
+    );
+    expect(await repo.desfazerRegistro(anterior, registradaEm)).toBe(true);
+    expect((await repo.estados('c1'))[marcoId]?.estado).toBe('consolidado');
+    // o evento manual de antes continua no histórico; só o da sessão saiu
+    expect((await repo.historico('c1')).map((e) => e.registro.origem)).toEqual(['manual']);
+  });
+
   it('recusa sessão que não existe mais', async () => {
     const { anterior, registradaEm } = await registrar('2026-10-15T09:00:00.000Z', 'consolidado');
     await repo.removerSessao('s1');
