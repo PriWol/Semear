@@ -38,6 +38,10 @@ automação decidir. Também não havia um lugar único onde ela visse "o que es
 - Ações dela no GitHub: criar o segredo `PROJECT_TOKEN` e a variável `PROJECT_NUMBER`; deixar o campo Status do quadro
   com os nomes de coluna deste ADR; desligar o fluxo nativo "Item closed → Done" do quadro; incluir "Testes ponta a ponta"
   nas verificações obrigatórias do ruleset "Proteger main".
+- **Repositório público:** o segredo não aparece no código nem nos logs, e PR de fork não o recebe. Quem tem escrita (inclusive
+  agentes) poderia, numa branch, criar um workflow que lesse segredos de repositório. Por isso o `PROJECT_TOKEN` fica no
+  **Environment `quadro`**, com implantação só a partir do `main`, e o `mover-cartao.yml` usa `pull_request_target` (roda o
+  arquivo do `main`, sem checkout). Artefatos, prints e vídeos do CI também ficam públicos: a evidência usa só a família de exemplo.
 - O workflow não foi exercitado antes do merge (workflows só rodam depois de estarem no `main`).
   Conferir a primeira execução; a retro revisita os rótulos que não moveram cartão.
 - Renovar o `PROJECT_TOKEN` a cada 90 dias.

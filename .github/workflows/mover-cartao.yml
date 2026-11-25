@@ -2,14 +2,15 @@ name: Mover cartão do quadro
 
 # ADR 0038 e docs/PROCESSO_AI_SDLC.md: move o cartão da estória no quadro (GitHub Projects) conforme o rótulo aplicado,
 # e leva para "Em produção" as estórias ligadas por `Closes #N` num PR mesclado.
-# Segurança: não faz checkout nem roda código do PR; valores do evento chegam por variáveis de ambiente (nunca
-# interpolados no script). O PROJECT_TOKEN (escopo `project`) só é usado nas chamadas ao quadro.
+# Segurança (repositório público): não faz checkout nem roda código do PR; valores do evento chegam por variáveis de
+# ambiente (nunca interpolados no script). `pull_request_target` roda sempre o arquivo do `main`, nunca o da branch do PR.
+# O PROJECT_TOKEN (escopo `project`) fica no Environment `quadro`, restrito ao `main`, e só é usado nas chamadas ao quadro.
 # Sem PROJECT_TOKEN ou PROJECT_NUMBER o fluxo apenas avisa e não falha.
 
 on:
   issues:
     types: [labeled]
-  pull_request:
+  pull_request_target:
     types: [closed]
 
 permissions:
@@ -25,6 +26,7 @@ jobs:
   mover:
     if: github.event_name == 'issues' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    environment: quadro
     steps:
       - name: Mover o cartão
         env:
