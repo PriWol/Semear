@@ -52,6 +52,19 @@ O ocre `--s-destaque` e a linha `--s-linha` **nunca** são cor de texto.
 - Entrelinha de 1,5 no texto corrido; 1,25 nos títulos.
 - Texto em português com no máximo ~65 caracteres por linha.
 
+## Largura e medida de leitura (#176)
+- **Conteúdo:** ocupa a largura da janela até o teto `--s-largura-app` (100rem, 1600 px); acima disso fica centralizado.
+  A margem lateral é `--s-margem-pagina` (16 px no celular, até 32 px em janela larga) e vale também para o topo, para o menu
+  e o conteúdo começarem na mesma linha. Em telas de até 400 px a margem continua a do celular (12 px no conteúdo, 8 px no topo).
+- **Medida de leitura:** texto corrido, descrições e campos de formulário não passam de `--s-medida-leitura` (65ch), por mais larga
+  que seja a janela. É a largura do bloco de texto que se limita, não a do cartão.
+- **Listas longas** (Atividades, Acervo, sessões, dias da semana) viram grade: colunas de no mínimo `--s-largura-cartao-min`
+  que se repartem sozinhas conforme a janela (1 coluna no celular).
+- **Filtros** de Atividades: campos em linha, de no mínimo `--s-largura-filtro-min`; a busca ocupa a linha toda.
+- **Botão principal** do cartão "hoje" e **tabela** de conteúdo têm limite de largura (`--s-medida-leitura` e `--s-largura-tabela`),
+  para não virarem faixas de 1.500 px.
+- O pacote de sessão e a impressão têm largura própria (A4) e não seguem estas regras.
+
 ## Ilustrações
 - **Clássicas:** gravuras botânicas e naturalistas de **domínio público**, com fonte, licença e SHA-256
   registrados (mesmo cuidado do ADR 0011). Nada de ilustração gerada que imite artista vivo.

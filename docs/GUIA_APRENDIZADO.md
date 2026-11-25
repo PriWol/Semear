@@ -193,6 +193,9 @@ testes e verificações. Se algo falhar, o PR fica vermelho e não deve entrar.
 ### Modo escuro com tokens
 O navegador informa se o aparelho prefere tema escuro (`@media (prefers-color-scheme: dark)`). Como todo estilo usa variáveis (`--s-fundo`, `--s-tinta`), basta redefinir os **mesmos nomes** nesse bloco e o app inteiro troca de cor, sem tocar nos estilos das telas. O contraste dos dois temas é testado em `tests/tokens.test.ts`. A folha impressa fica de fora de propósito: papel é sempre claro (ADR 0033).
 
+### Página que acompanha a janela: `clamp()` e grade `auto-fill`
+Em vez de fixar a largura, o app deixa o conteúdo ocupar a janela até um teto (`max-width: var(--s-largura-app)`). A margem lateral usa `clamp(mínimo, preferido, máximo)`: o valor segue a janela (`3vw`) mas nunca sai de uma faixa (16 a 32 px). Listas longas usam `grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr))`: o navegador calcula quantas colunas de pelo menos 17,5rem cabem e reparte a sobra, sem nenhum ponto de quebra escrito à mão (no celular sobra uma coluna). `auto-fit` é parecido, mas estica os itens quando há poucos. O texto corrido continua limitado a 65ch porque linha muito longa cansa a leitura (`tests/estilos.test.ts` e `e2e/largura-desktop.spec.ts` protegem as duas regras).
+
 ## 4. Como trabalhamos com IA (vibe coding com disciplina)
 
 ### O fluxo: spec → plano → testes → código → revisão
