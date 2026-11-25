@@ -72,7 +72,9 @@ jobs:
           todos=$(gh api graphql -f o="$OWNER" \
             -f query="query(\$o:String!){user(login:\$o){projectsV2(first:50){$consulta}}}" \
             --jq '.data.user.projectsV2.nodes')
-          quadro=$(jq -c --arg n "${PROJECT_NUMBER:-}" \
+          numero="${PROJECT_NUMBER:-}"
+          case "$numero" in ''|*[!0-9]*) numero="" ;; esac # valor que não é só o número é ignorado
+          quadro=$(jq -c --arg n "$numero" \
             '[.[] | select(if $n != "" then (.number | tostring) == $n else (.title | test("Semear"; "i")) end)]
              | if length == 1 then .[0] else empty end' <<<"$todos")
           if [ -z "$quadro" ]; then
