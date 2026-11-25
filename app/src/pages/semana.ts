@@ -154,7 +154,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           ? html`<div class="acoes">
                 <button class="botao" type="button" data-acao="replanejar">Planejar de novo</button>
               </div>
-              ${plano.dias.map(diaCard)}
+              <div class="grade-cartoes plano-dias">${plano.dias.map(diaCard)}</div>
               <section class="cartao">
                 <h2>Imprimir a semana</h2>
                 <label

@@ -67,6 +67,13 @@ test('em 1920 px o conteúdo não passa de 100rem e fica centralizado', async ({
   expect(caixa.largura).toBeLessThanOrEqual(TETO);
   expect(caixa.largura).toBeGreaterThan(TETO - 1);
   expect(Math.abs(caixa.esquerda - caixa.direita)).toBeLessThanOrEqual(1);
+  // Acima do teto o menu acompanha o conteúdo centralizado, em vez de ficar colado na borda.
+  const alinhamento = await page.evaluate(() => {
+    const marca = document.querySelector('.topo .marca')!.getBoundingClientRect().left;
+    const texto = document.querySelector('main h1')!.getBoundingClientRect().left;
+    return Math.abs(marca - texto);
+  });
+  expect(alinhamento).toBeLessThanOrEqual(1);
 });
 
 for (const largura of [1280, 1920]) {
