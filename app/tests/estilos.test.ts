@@ -117,6 +117,19 @@ describe('largura da página no computador (#176, DESIGN.md "Largura e medida de
     );
   });
 
+  it('formulários e a lista de progresso do Início mantêm largura de leitura em janela larga', () => {
+    expect(css).toMatch(/\.formulario\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/);
+    expect(css).toMatch(/#filtros\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/);
+    expect(css).toMatch(/#filtros-atividades\s*\{\s*max-width:\s*none/);
+    expect(css).toMatch(/\.progresso-dominios\s*\{[^}]*max-width:\s*var\(--s-largura-tabela\)/);
+  });
+
+  it('parágrafos de abertura e de dentro dos cartões seguem a medida de leitura', () => {
+    expect(css).toMatch(
+      /\.conteudo-app > p,\s*\.cartao > p\s*\{\s*max-width: var\(--s-medida-leitura\)/,
+    );
+  });
+
   it('o botão do cartão "hoje" e a tabela de conteúdo têm limite de largura por token', () => {
     expect(css).toMatch(
       /\.crianca-cartao\.hoje #preparar-hoje\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/,

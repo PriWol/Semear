@@ -282,6 +282,8 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
 .formulario {
   display: grid;
   gap: var(--s-espaco-4);
+  /* Campos de formulário seguem a medida de leitura em janela larga (#176). */
+  max-width: var(--s-medida-leitura);
 }
 .formulario label {
   min-width: 0;
@@ -453,6 +455,8 @@ label.opcao input {
   padding-left: var(--s-espaco-4);
 }
 .progresso-dominios {
+  /* Nome e barra ficam perto um do outro, não nas pontas de uma janela larga (#176). */
+  max-width: var(--s-largura-tabela);
   list-style: none;
   padding: 0;
   margin: 0 0 var(--s-espaco-2);
@@ -907,6 +911,12 @@ summary {
   margin: 0;
 }
 
+/* Parágrafos de abertura da tela e de dentro dos cartões também seguem a medida de leitura (#176). */
+.conteudo-app > p,
+.cartao > p {
+  max-width: var(--s-medida-leitura);
+}
+
 /* Texto corrido de Guia, Termos e Privacidade: no máximo ~65 caracteres por linha (DESIGN.md). */
 .texto-corrido :is(p, li) {
   max-width: var(--s-medida-leitura);
@@ -927,9 +937,11 @@ summary {
 #filtros {
   display: grid;
   gap: var(--s-espaco-3);
+  max-width: var(--s-medida-leitura);
 }
 /* Filtros de Atividades em linha: cada campo ocupa ao menos --s-largura-filtro-min; a busca fica na linha toda (#176). */
 #filtros-atividades {
+  max-width: none;
   grid-template-columns: repeat(auto-fit, minmax(var(--s-largura-filtro-min), 1fr));
 }
 #filtros-atividades label:has([type='search']) {
