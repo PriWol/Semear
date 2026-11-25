@@ -170,8 +170,12 @@ test.describe('Resumo depois de registrar e Desfazer (D20)', () => {
     await grupoDoMarco(page, 'LG.FON.04').getByLabel('Consolidado', { exact: true }).check();
     await page.getByRole('button', { name: 'Salvar registro' }).click();
     await expect(page.getByRole('button', { name: /Desfazer este registro/ })).toBeVisible();
+    await page.getByRole('button', { name: /Desfazer este registro/ }).focus();
     await page.clock.fastForward(11_000);
     await expect(page.getByRole('button', { name: /Desfazer este registro/ })).toHaveCount(0);
+    // quem estava no botão não perde o foco: vai para o título, e o fim do prazo é anunciado
+    await expect(page.locator('#titulo-resumo')).toBeFocused();
+    await expect(page.locator('#aviso-texto')).toContainText('O prazo para desfazer terminou');
     await page.getByRole('link', { name: 'Voltar ao início' }).click();
     await expect(page.locator('.lista-sessoes li', { hasText: codigo })).toContainText('Feita ✓');
   });
