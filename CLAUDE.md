@@ -68,10 +68,10 @@ Siga `docs/DESIGN.md` (direção A, "Caderno de botânica"; ADR 0014). Cores, fo
 3. **Testes**: escreva/atualize os testes que descrevem o comportamento esperado.
 4. **Código**: implemente até os testes passarem.
 5. **Revisão**: `npm run check` e `npm run test:e2e` verdes; PR revisado pelos agentes (Dev B, QA, segurança/privacidade,
-   Designer). A dona do produto aprova **estórias** e **conteúdo pedagógico**, e mescla PRs que tocam conteúdo, dados,
-   CSP, workflows ou ADRs; os demais mesclam sozinhos com tudo verde.
+   Designer). A dona do produto verifica em colunas do quadro (estória, entrega com evidência, mescla e produção) e é a
+   **única que mescla** (ADR 0038); com e2e vermelho o cartão não chega a "Pronto para mesclar".
 
-Agentes em `.claude/agents/`; guia em `docs/PROCESSO_AI_SDLC.md`; use `/ciclo` para rodar o fluxo.
+Agentes em `.claude/agents/`; guia em `docs/PROCESSO_AI_SDLC.md`; use `/ciclo` para rodar o fluxo e `/retro` na retro semanal. Leia `docs/APRENDIZADOS.md` ao começar.
 
 ## Estórias (issues) e pull requests
 - Todo PR que **entrega** uma estória traz, no corpo, uma linha `Closes #N` por estória (também vale

@@ -2,7 +2,7 @@ name: Revisão por agentes
 
 # Revisores por papel em cada PR (ADR 0007, ampliado pelo ADR 0029). Requer o segredo
 # CLAUDE_CODE_OAUTH_TOKEN ou ANTHROPIC_API_KEY. Achado bloqueante recebe o rótulo `bloqueado`,
-# que impede a mesclagem automática (merge-automatico.yml).
+# que impede a mesclagem automática (no processo antigo, a mescla automática; hoje só a dona mescla, ADR 0038).
 # Atenção: por segurança, a ação só roda quando este arquivo já existe, idêntico, no branch padrão.
 # No PR que cria ou altera este arquivo, os revisores são pulados (e aparecem como "sucesso").
 

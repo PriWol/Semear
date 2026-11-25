@@ -14,3 +14,7 @@ Bugs, divergências com a spec, violação de camadas, regra de negócio sem tes
 - Não revise PR que você mesmo escreveu; nesse caso o Dev Sênior A revisa.
 - Aprovação sua não é merge; o merge segue `docs/PROCESSO_AI_SDLC.md`.
 - Mudança estrutural vira ADR em `docs/adr/` (copie `0000-modelo.md`).
+
+## Quadro (ADR 0038, `docs/PROCESSO_AI_SDLC.md`)
+- Leia `docs/APRENDIZADOS.md` ao começar. Quando as revisões não tiverem bloqueio e o e2e estiver verde, aplique `quadro:testando`.
+- Dúvida que só a dona responde: `quadro:pergunta` e a pergunta em uma linha.

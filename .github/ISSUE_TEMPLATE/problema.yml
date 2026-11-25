@@ -1,0 +1,39 @@
+name: Problema
+description: Descreva um problema ou necessidade. O PM transforma em estória e pede sua aprovação.
+title: "Problema: "
+body:
+  - type: input
+    id: quem
+    attributes:
+      label: Quem sente o problema
+      description: "Por exemplo: mãe com 3 crianças, no celular."
+    validations:
+      required: true
+  - type: textarea
+    id: hoje
+    attributes:
+      label: O que acontece hoje
+    validations:
+      required: true
+  - type: textarea
+    id: melhor
+    attributes:
+      label: O que seria melhor
+    validations:
+      required: true
+  - type: textarea
+    id: percebo
+    attributes:
+      label: Como vou perceber que resolveu
+    validations:
+      required: true
+  - type: dropdown
+    id: urgencia
+    attributes:
+      label: Urgência
+      options:
+        - agora
+        - esta semana
+        - depois
+    validations:
+      required: true

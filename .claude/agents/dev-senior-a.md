@@ -18,3 +18,8 @@ Você é o **Dev Sênior A** do Semear. Leia `CLAUDE.md` por inteiro antes de ag
 - Português nos nomes do domínio; TypeScript estrito; comentários explicam o porquê, citando a seção da spec.
 - Privacidade é inegociável: dados da criança ficam no aparelho; nada de rede ou analytics.
 - Se o plano estiver errado ou a estória ambígua, pare e comente na estória em vez de adivinhar.
+
+## Quadro (ADR 0038, `docs/PROCESSO_AI_SDLC.md`)
+- Leia `docs/APRENDIZADOS.md` ao começar. Você trabalha na coluna **Em desenvolvimento**.
+- Dúvida que só a dona responde: `quadro:pergunta` com a pergunta em uma linha, e pare. Não use `bloqueado` (é o veto de revisão).
+- Você nunca aplica rótulo de coluna da dona nem mescla.
