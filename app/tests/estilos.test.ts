@@ -87,6 +87,45 @@ describe('conforto e movimento', () => {
   });
 });
 
+describe('largura da página no computador (#176, DESIGN.md "Largura e medida de leitura")', () => {
+  it('o teto do conteúdo vem de token (100rem) e a margem lateral é fluida, sem valor solto', () => {
+    expect(tokens).toMatch(/--s-largura-app:\s*100rem/);
+    expect(tokens).toMatch(/--s-margem-pagina:\s*clamp\(/);
+    expect(css).toMatch(/\.conteudo-app\s*\{[^}]*max-width:\s*var\(--s-largura-app\)/);
+    expect(css).toMatch(/\.conteudo-app\s*\{[^}]*padding-inline:\s*var\(--s-margem-pagina\)/);
+    expect(css).toMatch(/\.topo\s*\{[^}]*padding:\s*var\(--s-espaco-2\) var\(--s-margem-pagina\)/);
+  });
+
+  it('listas longas viram grade com colunas que se adaptam à largura', () => {
+    for (const seletor of ['.lista-atividades', '.lista-acervo', '.lista-sessoes']) {
+      const i = css.indexOf(`${seletor} {`);
+      expect(i, seletor).toBeGreaterThan(-1);
+      const bloco = css.slice(i, css.indexOf('}', i));
+      expect(bloco, seletor).toContain('display: grid');
+      expect(bloco, seletor).toMatch(
+        /grid-template-columns:\s*repeat\(auto-fill, minmax\(var\(--s-largura-cartao-min\), 1fr\)\)/,
+      );
+    }
+  });
+
+  it('os filtros de Atividades ficam numa grade em linha, com a busca na linha toda', () => {
+    expect(css).toMatch(
+      /#filtros-atividades\s*\{[^}]*repeat\(auto-fit, minmax\(var\(--s-largura-filtro-min\), 1fr\)\)/,
+    );
+    expect(css).toMatch(
+      /#filtros-atividades label:has\(\[type='search'\]\)\s*\{\s*grid-column: 1 \/ -1/,
+    );
+  });
+
+  it('o botão do cartão "hoje" e a tabela de conteúdo têm limite de largura por token', () => {
+    expect(css).toMatch(
+      /\.crianca-cartao\.hoje #preparar-hoje\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/,
+    );
+    expect(css).toMatch(/\.tabela\s*\{[^}]*max-width:\s*var\(--s-largura-tabela\)/);
+    expect(tokens).toContain('--s-largura-tabela:');
+  });
+});
+
 describe('ícones (ADR 0034)', () => {
   it('tokens de tamanho existem e o CSS os usa', () => {
     expect(tokens).toContain('--s-icone: 1.25rem');
