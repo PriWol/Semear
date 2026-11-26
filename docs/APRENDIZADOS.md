@@ -8,6 +8,8 @@ ou que já provaram valor. Erro que se repete 2 vezes vira teste ou regra de lin
   teste roda contra a build errada. Use `--workers=3`.
 - Teste e2e que preenche o cadastro precisa esperar o título "Adicionar criança". Depois de salvar uma criança nova, a tela
   é o próximo passo (`e2e/cadastro.ts`, `irParaJornadaDepoisDeCadastrar`).
+- e2e espera por elemento ou condição, nunca por tempo. O lint (`app/eslint.config.js`) recusa `waitForTimeout`,
+  `setTimeout` e `networkidle` em `app/e2e/`. `new Promise` como ponte de evento continua permitido.
 - Nunca pular, desligar ou apagar teste para ficar verde.
 
 ## Git e PR
