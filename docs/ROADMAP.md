@@ -182,6 +182,7 @@ plano no banco e no backup; e2e "planejar → imprimir a semana".
 | #30 Guia das vertentes | Página que explica as 5 vertentes, com link no cadastro |
 | #12 Estante de livros | Livros digitais gratuitos, clássicos e com belas ilustrações, filtráveis |
 | #28 Piloto | 3 a 5 famílias por 8 semanas; o relatório define a Fase 5 |
+| #173 Primeira sessão no celular | Orçamento de **7 toques** (botões e links; digitar não conta) da tela de boas-vindas até "Imprimir / salvar PDF", com família nova a 390 px; protegido por `e2e/primeira-sessao.spec.ts` (CA6) |
 
 **Antes de começar:** o domínio próprio (#34) é uma decisão estrutural (muda a origem onde os dados ficam) e precisa de ADR aprovado.
 

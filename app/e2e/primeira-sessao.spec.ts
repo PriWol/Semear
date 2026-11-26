@@ -5,6 +5,9 @@ import { expect, test, type Page } from '@playwright/test';
 // digitar não conta. Se uma tela nova entrar no caminho, o teste falha e mostra cada toque.
 
 const ORCAMENTO_DE_TOQUES = 7;
+// O 7º toque do orçamento é o próprio "Imprimir / salvar PDF": o teste só confere que ele está à vista e
+// habilitado (imprimir abre o diálogo do sistema), mas o orçamento o reserva.
+const TOQUE_DE_IMPRIMIR = 1;
 const HOSTS_PERMITIDOS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 
 // Largura fixa: o projeto "celular" (Pixel 7) tem 412 px, e o orçamento vale para o celular mais estreito comum.
@@ -92,10 +95,13 @@ test('primeira sessão de uma família nova em até 7 toques, sem rolagem latera
   await conferirTela('Sessão');
 
   const feitos = await toques(page);
+  const lista = [...feitos, 'Imprimir / salvar PDF (reservado, não tocado)']
+    .map((texto, i) => `  ${i + 1}. ${texto}`)
+    .join('\n');
+  const total = feitos.length + TOQUE_DE_IMPRIMIR;
   expect(
-    feitos.length,
-    `Orçamento de ${ORCAMENTO_DE_TOQUES} toques estourado: ${feitos.length} toques.\n` +
-      feitos.map((texto, i) => `  ${i + 1}. ${texto}`).join('\n'),
+    total,
+    `Orçamento de ${ORCAMENTO_DE_TOQUES} toques estourado: ${total} toques.\n${lista}`,
   ).toBeLessThanOrEqual(ORCAMENTO_DE_TOQUES);
   expect(externas, 'pedidos de rede fora do app e das fontes do Google').toEqual([]);
 });
