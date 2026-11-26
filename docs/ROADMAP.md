@@ -67,6 +67,13 @@ Decisões da dona do produto (16/10/2026) que reordenam o plano:
 Rebaixadas para "Depois" porque o afterschooling não precisa delas no dia 1: portfólio jurídico (#20, #29), ressondagem (#18),
 fotos de evidências (#10), sessão de irmãos (#19). Sincronização (#27) sai do caminho do lançamento.
 
+### Orçamento do caminho da primeira sessão no celular
+
+Família nova a 390 px, do "Começar" até "Imprimir / salvar PDF" na prévia: **no máximo 7 toques e 3 digitações**
+(nome do educador, nome da criança, nascimento), em 6 telas. Medido e protegido por `app/e2e/primeira-sessao-celular.spec.ts`
+(#173), que falha listando cada toque se passar do limite. A meta de **5 toques** só vale depois de melhorar a tela "Pronto"
+(estória B); então o número no teste é baixado de propósito. O teste não mede tempo nem se a impressão abre no celular.
+
 ### Riscos e perguntas abertas
 
 1. **Cobrança por criança contradiz o ADR 0010.** Com dados só no aparelho, o servidor não sabe quantas crianças a
