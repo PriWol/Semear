@@ -9,6 +9,8 @@ ou que já provaram valor. Erro que se repete 2 vezes vira teste ou regra de lin
 - Teste e2e que preenche o cadastro precisa esperar o título "Adicionar criança". Depois de salvar uma criança nova, a tela
   é o próximo passo (`e2e/cadastro.ts`, `irParaJornadaDepoisDeCadastrar`).
 - Nunca pular, desligar ou apagar teste para ficar verde.
+- Espera fixa no e2e (`waitForTimeout`, `setTimeout`, `networkidle`) é barrada pelo lint (`app/eslint.config.js`, bloco
+  `e2e/**`): espere por elemento ou estado visível.
 
 ## Git e PR
 - Squash-merge: não reutilize uma branch cujos commits já foram mesclados; abra outra a partir do `origin/main`.
