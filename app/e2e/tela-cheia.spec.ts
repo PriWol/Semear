@@ -39,6 +39,8 @@ async function espiarImpressao(page: Page) {
         frame!.evaluate(
           () => typeof (window as unknown as { alternarTablet?: unknown }).alternarTablet,
         ),
+      // Teto de 40 s (padrão do poll é 5 s): o script do pacote só roda depois que o parser termina, e o parser espera as
+      // fontes do Google (rede externa). 40 s é folga para CI lento; não há medição do tempo típico registrada.
       { timeout: 40_000 },
     )
     .toBe('function');

@@ -54,6 +54,11 @@ o QA ao entregar a evidência (`quadro:aprovar-entrega`), você ao aprovar a ent
 produção (`quadro:feito`). Qualquer agente pode abrir `quadro:pergunta` com a pergunta numa linha.
 `bloqueado` continua só para veto de revisão em PR (segurança ou QA) e não move cartão.
 
+## Regra dos testes e2e (ADR 0039)
+- O e2e espera por **elemento ou estado visível**, nunca por tempo (sem `waitForTimeout`, `setTimeout` ou `networkidle`).
+- Teste instável (falha na 1ª tentativa e passa na repetição) aparece no resumo da execução do CI. Ele vira **uma issue por teste**
+  com o rótulo `e2e-instavel`, escrevendo a causa. O relatório e o trace ficam no artefato `relatorio-playwright` por 7 dias.
+
 ## Quem faz o quê
 | Agente | Faz | Edita |
 |---|---|---|
