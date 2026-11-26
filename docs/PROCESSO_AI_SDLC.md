@@ -46,8 +46,20 @@ Conteúdo pedagógico (rótulo `conteudo`): na coluna 7 vem junto o resumo do Cu
 | `quadro:testando` | Testando |
 | `quadro:aprovar-entrega` | Aprovar entrega |
 | `quadro:pronto` | Pronto para mesclar |
-| (PR com `Closes #N` mesclado) | Em produção |
+| (PR com `Closes #N` mesclado) | Em produção (automático) |
 | `quadro:feito` | Feito |
+
+**Automático pelo PR (`mover-cartao.yml`, adendo ao ADR 0038):** a estória citada no corpo do PR por `Closes #N` ou `Refs #N` anda sozinha.
+
+| Evento do PR | Coluna da estória |
+|---|---|
+| PR aberto, reaberto ou marcado como pronto | Testando |
+| CI ("App CI") terminou verde | Aprovar entrega |
+| CI terminou vermelha | Em desenvolvimento |
+| PR mesclado (só estória com `Closes #N`) | Em produção |
+
+Só vale para PR com branch neste repositório (nunca fork). O corpo do PR é lido só para extrair números `#N`. Os revisores
+automáticos não movem cartão; achado bloqueante (`bloqueado`) continua sendo um veto que a dona vê no PR.
 
 Quem aplica: o PM (`ideia` → `aguardando-aprovacao`), você (`aprovada`), o Dev B ao fechar as revisões (`quadro:testando`),
 o QA ao entregar a evidência (`quadro:aprovar-entrega`), você ao aprovar a entrega (`quadro:pronto`) e depois da conferência em
