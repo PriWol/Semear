@@ -53,9 +53,16 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      # Resumo dos testes que só passaram na repetição (ADR 0039). Lê só o JSON gerado pelo Playwright.
+      - name: Resumo de testes instáveis
+        if: always()
+        run: node ../.github/scripts/resumo-e2e-instaveis.mjs playwright-report/resultados.json >> "$GITHUB_STEP_SUMMARY"
+      # Sempre sobe (não só em falha): o trace do teste instável precisa existir com o job verde.
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
-        if: failure()
+        if: always()
         with:
           name: relatorio-playwright
-          path: app/test-results
+          path: |
+            app/test-results
+            app/playwright-report
           retention-days: 7

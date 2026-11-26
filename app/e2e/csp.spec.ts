@@ -46,6 +46,8 @@ test('o app e a prévia do pacote rodam sem violar a CSP', async ({ page }) => {
           .evaluate(
             () => typeof (window as unknown as { alternarTablet?: unknown }).alternarTablet,
           ),
+      // Teto de 40 s (padrão do poll é 5 s): ver o mesmo motivo em tela-cheia.spec.ts. Fontes do Google lentas seguram o
+      // parser e, com ele, o script do pacote. É folga para CI lento; não há medição do tempo típico registrada.
       { timeout: 40_000 },
     )
     .toBe('function');
