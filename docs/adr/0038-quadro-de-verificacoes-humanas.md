@@ -46,3 +46,9 @@ automação decidir. Também não havia um lugar único onde ela visse "o que es
 - O workflow não foi exercitado antes do merge (workflows só rodam depois de estarem no `main`).
   Conferir a primeira execução; a retro revisita os rótulos que não moveram cartão.
 - Renovar o `PROJECT_TOKEN` a cada 90 dias.
+
+## Adendo (2026-11-26): o PR move o cartão
+Na prática, o cartão ficou parado em "Em desenvolvimento" depois que os PRs foram abertos, porque mover dependia de alguém
+lembrar de aplicar o rótulo. Decisão: o `mover-cartao.yml` passa a mover também pelo andamento do PR (aberto, CI verde,
+CI vermelha, mesclado), lendo `Closes #N` ou `Refs #N` no corpo do PR. Só PR de branch do próprio repositório; o corpo é
+texto não confiável e dele só saem números. Os rótulos continuam valendo para as etapas que não têm PR.

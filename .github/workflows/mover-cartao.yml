@@ -1,17 +1,24 @@
 name: Mover cartão do quadro
 
-# ADR 0038 e docs/PROCESSO_AI_SDLC.md: move o cartão da estória no quadro (GitHub Projects) conforme o rótulo aplicado,
-# e leva para "Em produção" as estórias ligadas por `Closes #N` num PR mesclado.
+# ADR 0038 e docs/PROCESSO_AI_SDLC.md: move o cartão da estória no quadro (GitHub Projects) conforme o rótulo aplicado
+# e conforme o andamento do PR ligado por `Closes #N` ou `Refs #N` no corpo:
+#   PR aberto -> Testando; CI verde -> Aprovar entrega; CI vermelha -> Em desenvolvimento; PR mesclado -> Em produção.
+# Assim ninguém precisa lembrar de mover o cartão à mão.
 # Segurança (repositório público): não faz checkout nem roda código do PR; valores do evento chegam por variáveis de
 # ambiente (nunca interpolados no script). `pull_request_target` roda sempre o arquivo do `main`, nunca o da branch do PR.
 # O PROJECT_TOKEN (escopo `project`) fica no Environment `quadro`, restrito ao `main`, e só é usado nas chamadas ao quadro.
+# O corpo do PR é texto não confiável: dele só se extraem números (`#N`) por expressão regular estrita, e só de PR cuja
+# branch está neste repositório (quem tem escrita), nunca de PR de fork.
 # Sem PROJECT_TOKEN ou PROJECT_NUMBER o fluxo apenas avisa e não falha.
 
 on:
   issues:
     types: [labeled]
   pull_request_target:
-    types: [closed]
+    types: [opened, reopened, ready_for_review, closed]
+  workflow_run:
+    workflows: ['App CI']
+    types: [completed]
 
 permissions:
   contents: read
@@ -19,12 +26,20 @@ permissions:
   pull-requests: read
 
 concurrency:
-  group: cartao-${{ github.event.issue.number || github.event.pull_request.number }}
+  group: cartao-${{ github.event.issue.number || github.event.pull_request.number || github.event.workflow_run.id }}
   cancel-in-progress: false
 
 jobs:
   mover:
-    if: github.event_name == 'issues' || github.event.pull_request.merged == true
+    if: >-
+      github.event_name == 'issues' ||
+      (github.event_name == 'pull_request_target' &&
+       github.event.pull_request.head.repo.full_name == github.repository &&
+       github.event.pull_request.draft == false &&
+       (github.event.action != 'closed' || github.event.pull_request.merged == true)) ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.event == 'pull_request' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
     environment: quadro
     steps:
@@ -34,9 +49,14 @@ jobs:
           PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
           OWNER: ${{ github.repository_owner }}
           EVENTO: ${{ github.event_name }}
+          ACAO: ${{ github.event.action }}
+          REPO: ${{ github.repository }}
           ROTULO: ${{ github.event.label.name }}
           NO_ESTORIA: ${{ github.event.issue.node_id }}
           NO_PR: ${{ github.event.pull_request.node_id }}
+          CORPO_PR: ${{ github.event.pull_request.body }}
+          NUM_PR_CI: ${{ github.event.workflow_run.pull_requests[0].number }}
+          RESULTADO_CI: ${{ github.event.workflow_run.conclusion }}
           REPO_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
@@ -45,6 +65,16 @@ jobs:
             exit 0
           fi
 
+          # Números de estória citados no corpo do PR (Closes/Fixes/Resolves/Refs #N). Só dígitos saem daqui.
+          numeros_do_corpo() { printf '%s' "$1" | grep -oiE '(closes|fixes|resolves|refs) #[0-9]+' | grep -oE '[0-9]+' | sort -u || true; }
+          # Converte números de issue em ids do GitHub; ignora o que não for uma issue deste repositório.
+          ids_das_estorias() {
+            for n in $1; do
+              GH_TOKEN="$REPO_TOKEN" gh api "repos/$REPO/issues/$n" --jq 'select(.pull_request == null) | .node_id' 2>/dev/null || true
+            done
+          }
+
+          nos=""
           if [ "$EVENTO" = "issues" ]; then
             case "$ROTULO" in
               ideia) coluna="Detalhando" ;;
@@ -58,13 +88,26 @@ jobs:
               *) echo "Rótulo sem coluna: nada a mover."; exit 0 ;;
             esac
             nos="$NO_ESTORIA"
-          else
+          elif [ "$EVENTO" = "pull_request_target" ] && [ "$ACAO" = "closed" ]; then
+            # Mesclado: só as estórias que o PR fecha (Closes #N) vão para "Em produção".
             coluna="Em produção"
             nos=$(GH_TOKEN="$REPO_TOKEN" gh api graphql \
               -f query='query($id:ID!){node(id:$id){... on PullRequest{closingIssuesReferences(first:10){nodes{id}}}}}' \
               -f id="$NO_PR" --jq '.data.node.closingIssuesReferences.nodes[].id')
-            if [ -z "$nos" ]; then echo "PR sem estória ligada (Closes #N): nada a mover."; exit 0; fi
+          elif [ "$EVENTO" = "pull_request_target" ]; then
+            # PR aberto (ou reaberto, ou pronto para revisão): a CI e os revisores começam a validar.
+            coluna="Testando"
+            nos=$(ids_das_estorias "$(numeros_do_corpo "$CORPO_PR")")
+          else
+            # A CI terminou: verde leva a entrega para a dona; vermelha devolve ao desenvolvimento.
+            case "$NUM_PR_CI" in ''|*[!0-9]*) echo "Execução sem PR ligado: nada a mover."; exit 0 ;; esac
+            if [ "$RESULTADO_CI" = "success" ]; then coluna="Aprovar entrega"
+            elif [ "$RESULTADO_CI" = "failure" ]; then coluna="Em desenvolvimento"
+            else echo "CI terminou como \"$RESULTADO_CI\": nada a mover."; exit 0; fi
+            corpo=$(GH_TOKEN="$REPO_TOKEN" gh api "repos/$REPO/pulls/$NUM_PR_CI" --jq '.body // ""')
+            nos=$(ids_das_estorias "$(numeros_do_corpo "$corpo")")
           fi
+          if [ -z "$nos" ]; then echo "Nenhuma estória ligada (Closes/Refs #N): nada a mover."; exit 0; fi
 
           export GH_TOKEN="$PROJECT_TOKEN"
           # Acha o quadro pelo número (variável PROJECT_NUMBER) ou, se faltar, pelo título que contém "Semear".
