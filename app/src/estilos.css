@@ -342,7 +342,7 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
 .formulario-duas {
   grid-template-columns: repeat(
     auto-fit,
-    minmax(max(var(--s-largura-campo-min), calc((100% - var(--s-espaco-4)) / 2)), 1fr)
+    minmax(min(100%, max(var(--s-largura-campo-min), calc((100% - var(--s-espaco-4)) / 2))), 1fr)
   );
 }
 .formulario-colunas > :is(.botao, .acoes, .alerta, button) {

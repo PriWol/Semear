@@ -209,6 +209,30 @@ test('em 1920 px os campos em colunas ocupam mais de 75% da largura do cartão',
   }
 });
 
+test('em 320 px as telas mexidas pelo PR não rolam para o lado', async ({ page }) => {
+  await comExemplo(page, 320);
+  const rotas = [
+    '/semana/exemplo-ana',
+    '/crianca/nova',
+    '/familia',
+    '/sessao/nova?crianca=exemplo-ana',
+    '/config',
+  ];
+  const sobra = () =>
+    page.evaluate(
+      () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    );
+  for (const rota of rotas) {
+    await page.goto(`./#${rota}`);
+    await expect(page.locator('h1').first()).toBeVisible();
+    expect(await sobra(), rota).toBeLessThanOrEqual(0);
+  }
+  await page.goto('./#/sessao/nova?crianca=exemplo-ana');
+  await page.getByRole('button', { name: 'Sugerir atividades' }).click();
+  await expect(page.locator('aside#area-proposta #proposta')).toBeVisible();
+  expect(await sobra(), 'Nova sessão com a sugestão').toBeLessThanOrEqual(0);
+});
+
 test('em 1920 px Ajustes põe o material de apoio e o "Sobre" ao lado das seções principais', async ({
   page,
 }) => {
