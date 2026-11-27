@@ -49,6 +49,8 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
           Seus dados, avisos e cópias de segurança. Tudo fica neste aparelho.
         </p>
 
+        <div class="com-apoio ajustes-grade">
+        <div class="ajustes-principal">
         <section class="cartao" aria-labelledby="aj-familia">
           <h2 id="aj-familia">Família</h2>
           ${
@@ -192,6 +194,8 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
           </details>
         </section>
 
+        </div>
+        <aside aria-label="Material de apoio e sobre o Semear">
         <section class="cartao" aria-labelledby="aj-material">
           <h2 id="aj-material">Material de apoio</h2>
           <ul class="ajustes-lista">
@@ -231,6 +235,7 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
           </details>
         </section>
 
+        </aside>
         <section class="cartao ajustes-cuidado" aria-labelledby="aj-cuidado">
           <h2 id="aj-cuidado">Cuidado</h2>
           <p>
@@ -260,6 +265,7 @@ export const paginaConfig: FabricaPagina = async (ctx) => {
             </button>
           </div>
         </section>
+        </div>
       </div>
     `,
     montar(raiz) {
