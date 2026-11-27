@@ -66,7 +66,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
     ${abaSemana('esta', 'Esta semana')}${abaSemana('proxima', 'Próxima semana')}
   </nav>`;
 
-  const formulario = html`<form class="cartao formulario" id="form-semana">
+  const formulario = html`<form class="cartao formulario formulario-colunas formulario-duas" id="form-semana">
     <fieldset>
       <legend>Dias da semana</legend>
       <div class="linha-opcoes">
@@ -154,7 +154,7 @@ export const paginaSemana: FabricaPagina = async (ctx, params) => {
           ? html`<div class="acoes">
                 <button class="botao" type="button" data-acao="replanejar">Planejar de novo</button>
               </div>
-              ${plano.dias.map(diaCard)}
+              <div class="grade-cartoes plano-dias">${plano.dias.map(diaCard)}</div>
               <section class="cartao">
                 <h2>Imprimir a semana</h2>
                 <label

@@ -87,6 +87,87 @@ describe('conforto e movimento', () => {
   });
 });
 
+describe('largura da página no computador (#176, DESIGN.md "Largura e medida de leitura")', () => {
+  it('o teto do conteúdo vem de token (100rem) e a margem lateral é fluida, sem valor solto', () => {
+    expect(tokens).toMatch(/--s-largura-app:\s*100rem/);
+    expect(tokens).toMatch(/--s-margem-pagina:\s*clamp\(/);
+    expect(css).toMatch(/\.conteudo-app\s*\{[^}]*max-width:\s*var\(--s-largura-app\)/);
+    expect(css).toMatch(/\.conteudo-app\s*\{[^}]*padding-inline:\s*var\(--s-margem-pagina\)/);
+    expect(css).toMatch(/\.topo\s*\{[^}]*padding:\s*var\(--s-espaco-2\) var\(--s-margem-pagina\)/);
+  });
+
+  it('listas longas viram grade com colunas que se adaptam à largura', () => {
+    for (const seletor of ['.lista-atividades', '.lista-acervo', '.lista-sessoes']) {
+      const i = css.indexOf(`${seletor} {`);
+      expect(i, seletor).toBeGreaterThan(-1);
+      const bloco = css.slice(i, css.indexOf('}', i));
+      expect(bloco, seletor).toContain('display: grid');
+      expect(bloco, seletor).toMatch(
+        /grid-template-columns:\s*repeat\(auto-fill, minmax\(var\(--s-largura-cartao-min\), 1fr\)\)/,
+      );
+    }
+  });
+
+  it('os filtros de Atividades ficam numa grade em linha, com a busca na linha toda', () => {
+    expect(css).toMatch(
+      /#filtros-atividades\s*\{[^}]*repeat\(auto-fit, minmax\(var\(--s-largura-filtro-min\), 1fr\)\)/,
+    );
+    expect(css).toMatch(
+      /#filtros-atividades label:has\(\[type='search'\]\)\s*\{\s*grid-column: 1 \/ -1/,
+    );
+  });
+
+  it('formulários e a lista de progresso do Início mantêm largura de leitura em janela larga', () => {
+    // Formulário solto mantém a medida de leitura; onde há painel de apoio ao lado ou campos em colunas,
+    // a largura é decidida pela grade (nunca a metade do cartão vazia).
+    expect(css).toMatch(/\.formulario\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/);
+    expect(css).toMatch(
+      /@media \(min-width: 64rem\)\s*\{[^@]*\.com-apoio > #area-form > \.formulario[^{]*\{\s*max-width:\s*none/,
+    );
+    expect(css).toMatch(/\.formulario-colunas\s*\{[^}]*max-width:\s*none/);
+    expect(css).toMatch(/#filtros\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/);
+    expect(css).toMatch(/#filtros-atividades\s*\{\s*max-width:\s*none/);
+    expect(css).toMatch(/\.progresso-dominios\s*\{[^}]*max-width:\s*var\(--s-largura-tabela\)/);
+  });
+
+  it('parágrafos de abertura e de dentro dos cartões seguem a medida de leitura', () => {
+    expect(css).toMatch(
+      /\.conteudo-app > p,\s*\.cartao > p\s*\{\s*max-width: var\(--s-medida-leitura\)/,
+    );
+  });
+
+  it('o botão do cartão "hoje" e a tabela de conteúdo têm limite de largura por token', () => {
+    expect(css).toMatch(
+      /\.crianca-cartao\.hoje #preparar-hoje\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/,
+    );
+    expect(css).toMatch(/\.tabela\s*\{[^}]*max-width:\s*var\(--s-largura-tabela\)/);
+    expect(tokens).toContain('--s-largura-tabela:');
+  });
+});
+
+describe('o que ocupa o espaço restante em janela larga (#176, DESIGN.md)', () => {
+  it('painel de apoio: grade de duas colunas só a partir de 64rem, com a proposta vazia sem ocupar espaço', () => {
+    expect(css).toMatch(
+      /@media \(min-width: 64rem\)\s*\{[^@]*\.com-apoio\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:\s*minmax\(0, var\(--s-medida-leitura\)\)\s*minmax\(var\(--s-largura-cartao-min\), var\(--s-medida-leitura\)\)/,
+    );
+    expect(css).toMatch(/#area-proposta:empty\s*\{\s*display:\s*none/);
+  });
+
+  it('o painel solto some no celular e na janela média, onde só complementaria o formulário', () => {
+    expect(css).toMatch(
+      /@media \(max-width: 63\.999rem\)\s*\{[^@]*\.apoio-solto\s*\{\s*display:\s*none/,
+    );
+  });
+
+  it('campos em colunas: grade auto-fit com mínimo de --s-largura-campo-min (22rem) e botão, ações e alertas na linha cheia', () => {
+    expect(css).toMatch(
+      /\.formulario-colunas\s*\{[^}]*grid-template-columns:\s*repeat\(auto-fit, minmax\(min\(100%, var\(--s-largura-campo-min\)\), 1fr\)\)/,
+    );
+    expect(css).toMatch(/\.formulario-colunas\s*\{[^}]*align-items:\s*start/);
+    expect(css).toMatch(/\.formulario-colunas > :is\([^)]*\)\s*\{\s*grid-column:\s*1 \/ -1/);
+  });
+});
+
 describe('ícones (ADR 0034)', () => {
   it('tokens de tamanho existem e o CSS os usa', () => {
     expect(tokens).toContain('--s-icone: 1.25rem');

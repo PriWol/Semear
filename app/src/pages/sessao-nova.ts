@@ -234,8 +234,10 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
   return {
     titulo: 'Preparar sessão',
     conteudo: html`<h1>Preparar sessão</h1>
-      <div id="area-form">${vistaFormulario()}</div>
-      <div id="area-proposta"></div>`,
+      <div class="com-apoio">
+        <div id="area-form">${vistaFormulario()}</div>
+        <aside id="area-proposta" aria-label="Sugestão de sessão"></aside>
+      </div>`,
     montar(raiz) {
       const areaProposta = raiz.querySelector<HTMLElement>('#area-proposta')!;
       let gerando = false;
@@ -278,7 +280,12 @@ export const paginaSessaoNova: FabricaPagina = async (ctx, params) => {
           agora,
         });
         mostrarProposta();
-        areaProposta.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Em janela larga a sugestão já aparece ao lado do formulário: só rola se o topo dela ficou fora da tela.
+        const lado = window.matchMedia('(min-width: 64rem)').matches;
+        const topo = areaProposta.getBoundingClientRect().top;
+        if (!lado || topo < 0 || topo > window.innerHeight) {
+          areaProposta.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
 
       areaProposta.addEventListener('click', async (ev) => {

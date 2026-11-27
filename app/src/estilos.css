@@ -76,7 +76,12 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
   align-items: center;
   justify-content: space-between;
   gap: var(--s-espaco-3);
-  padding: var(--s-espaco-2) var(--s-espaco-4);
+  /* Mesma margem do conteúdo; em janela mais larga que o teto, acompanha o conteúdo centralizado (#176). */
+  padding: var(--s-espaco-2) var(--s-margem-pagina);
+  padding-inline: max(
+    var(--s-margem-pagina),
+    calc((100% - var(--s-largura-app)) / 2 + var(--s-margem-pagina))
+  );
   background: var(--s-topo);
   color: var(--s-topo-texto);
 }
@@ -120,7 +125,8 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
 .conteudo-app {
   max-width: var(--s-largura-app);
   margin: 0 auto;
-  padding: var(--s-espaco-4) var(--s-espaco-4) var(--s-espaco-6);
+  padding-block: var(--s-espaco-4) var(--s-espaco-6);
+  padding-inline: var(--s-margem-pagina);
 }
 
 /* ---------- Componentes ---------- */
@@ -276,6 +282,71 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
 .formulario {
   display: grid;
   gap: var(--s-espaco-4);
+  /* Campos de formulário seguem a medida de leitura em janela larga (#176). */
+  max-width: var(--s-medida-leitura);
+}
+/* Largura limitada exige decidir o que ocupa o espaço restante (DESIGN.md, #176): um painel de apoio ao lado
+   (.com-apoio), cartões lado a lado (Ajustes) ou campos em colunas (.formulario-colunas). */
+@media (min-width: 64rem) {
+  .com-apoio {
+    display: grid;
+    gap: var(--s-espaco-6);
+    align-items: start;
+    grid-template-columns:
+      minmax(0, var(--s-medida-leitura))
+      minmax(var(--s-largura-cartao-min), var(--s-medida-leitura));
+  }
+  /* A grade já limita o formulário à medida de leitura; o cartão não precisa de teto próprio. */
+  .com-apoio > .formulario,
+  .com-apoio > #area-form > .formulario {
+    max-width: none;
+  }
+  /* O link do guia vai para o painel; o do formulário só existe onde não há painel. */
+  .com-apoio .so-estreito {
+    display: none;
+  }
+  /* Ajustes: o DOM mantém "Cuidado" por último (celular); em janela larga ele desce para a coluna principal
+     e o material de apoio e o "Sobre" ocupam a lateral. */
+  .ajustes-grade > aside {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .ajustes-grade > .ajustes-cuidado {
+    grid-column: 1;
+  }
+}
+/* Painel que só complementa (guia das vertentes): onde não cabe ao lado, some. A sugestão de sessão NÃO é assim. */
+@media (max-width: 63.999rem) {
+  .apoio-solto {
+    display: none;
+  }
+}
+/* Sugestão de sessão: antes de gerar, o painel não ocupa espaço. */
+#area-proposta:empty {
+  display: none;
+}
+.apoio-solto h2 {
+  margin-top: 0;
+}
+.apoio-solto p {
+  margin-block: 0 var(--s-espaco-3);
+}
+/* Campos em colunas dentro do cartão (cadastro da criança, semana sem plano); botão, ações e alertas em linha cheia. */
+.formulario-colunas {
+  max-width: none;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--s-largura-campo-min)), 1fr));
+  align-items: start;
+}
+/* Poucos grupos (Semana sem plano, 2): o botão de linha cheia ocupa todas as trilhas do auto-fit e as mantém
+   abertas, então os grupos ficariam estreitos com a direita vazia. Limita a 2 trilhas, que dividem a largura. */
+.formulario-duas {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, max(var(--s-largura-campo-min), calc((100% - var(--s-espaco-4)) / 2))), 1fr)
+  );
+}
+.formulario-colunas > :is(.botao, .acoes, .alerta, button) {
+  grid-column: 1 / -1;
 }
 .formulario label {
   min-width: 0;
@@ -433,6 +504,8 @@ label.opcao input {
 }
 .crianca-cartao.hoje #preparar-hoje {
   flex: 1 1 100%;
+  /* Em janela larga o botão não vira uma faixa de 1.500 px (#176). */
+  max-width: var(--s-medida-leitura);
 }
 .hoje-sugestao {
   margin: 0 0 var(--s-espaco-3);
@@ -445,6 +518,8 @@ label.opcao input {
   padding-left: var(--s-espaco-4);
 }
 .progresso-dominios {
+  /* Nome e barra ficam perto um do outro, não nas pontas de uma janela larga (#176). */
+  max-width: var(--s-largura-tabela);
   list-style: none;
   padding: 0;
   margin: 0 0 var(--s-espaco-2);
@@ -481,6 +556,7 @@ progress {
   list-style: none;
   padding: 0;
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--s-largura-cartao-min), 1fr));
   gap: var(--s-espaco-2);
 }
 .lista-sessoes a {
@@ -703,6 +779,7 @@ progress {
 }
 .tabela {
   width: 100%;
+  max-width: var(--s-largura-tabela);
   border-collapse: collapse;
 }
 .tabela th,
@@ -887,6 +964,20 @@ summary {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--s-largura-cartao-min), 1fr));
+  gap: var(--s-espaco-4);
+}
+/* Na grade o espaço entre cartões vem do gap, não da margem do cartão. */
+.lista-atividades > li,
+.lista-acervo > li {
+  margin: 0;
+}
+
+/* Parágrafos de abertura da tela e de dentro dos cartões também seguem a medida de leitura (#176). */
+.conteudo-app > p,
+.cartao > p {
+  max-width: var(--s-medida-leitura);
 }
 
 /* Texto corrido de Guia, Termos e Privacidade: no máximo ~65 caracteres por linha (DESIGN.md). */
@@ -898,7 +989,8 @@ summary {
   list-style: none;
   padding: 0;
   display: grid;
-  gap: var(--s-espaco-3);
+  grid-template-columns: repeat(auto-fill, minmax(var(--s-largura-cartao-min), 1fr));
+  gap: var(--s-espaco-4);
 }
 /* Título de cartão: h2 na estrutura (sem pular nível), com o tamanho de h3. */
 .item-acervo h2 {
@@ -908,6 +1000,15 @@ summary {
 #filtros {
   display: grid;
   gap: var(--s-espaco-3);
+  max-width: var(--s-medida-leitura);
+}
+/* Filtros de Atividades em linha: cada campo ocupa ao menos --s-largura-filtro-min; a busca fica na linha toda (#176). */
+#filtros-atividades {
+  max-width: none;
+  grid-template-columns: repeat(auto-fit, minmax(var(--s-largura-filtro-min), 1fr));
+}
+#filtros-atividades label:has([type='search']) {
+  grid-column: 1 / -1;
 }
 #filtros label {
   min-width: 0;
@@ -1018,6 +1119,12 @@ summary {
 
 /* ---------- Plano da semana: dia que já passou (D11, #141) ----------
  * Esmaecido sem perder contraste: papel de fundo, borda tracejada e texto suave (nunca só a cor). */
+.plano-dias {
+  margin-bottom: var(--s-espaco-4);
+}
+.plano-dias > .cartao {
+  margin-bottom: 0;
+}
 .dia-plano.passado {
   background: var(--s-fundo);
   border: var(--s-borda-campo) dashed var(--s-linha);

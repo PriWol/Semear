@@ -61,8 +61,16 @@
   /* Ícones de linha fina (Phosphor regular, ADR 0034): junto ao texto e em destaque */
   --s-icone: 1.25rem;
   --s-icone-g: 2rem;
-  --s-largura-app: 57.5rem;
+  /* Teto do conteúdo no computador (#176, DESIGN.md "Largura e medida de leitura"): a página acompanha a janela
+     até aqui; o texto corrido segue limitado por --s-medida-leitura. */
+  --s-largura-app: 100rem;
+  /* Margem lateral fluida: 16 px no celular, até 32 px em janela larga; menu e conteúdo usam a mesma */
+  --s-margem-pagina: clamp(var(--s-espaco-4), 3vw, var(--s-espaco-6));
   --s-largura-cartao-min: 17.5rem;
+  /* Largura mínima de uma coluna de campos de formulário (#176). */
+  --s-largura-campo-min: 22rem;
+  --s-largura-filtro-min: 14rem;
+  --s-largura-tabela: 50rem;
   --s-coluna-progresso: 5.625rem;
   --s-medida-leitura: 65ch;
   /* Altura das gravuras botânicas (ADR 0035): boas-vindas, estado vazio e topo da Biblioteca */

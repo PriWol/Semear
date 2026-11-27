@@ -41,7 +41,7 @@ export const paginaCrianca: FabricaPagina = async (ctx, params) => {
     titulo: existente ? c.nome : 'Nova criança',
     conteudo: html` <h1>${existente ? `Editar ${c.nome}` : 'Adicionar criança'}</h1>
       ${familia.exemplo ? avisoExemplo() : ''}
-      <form class="cartao formulario" id="form-crianca">
+      <form class="cartao formulario formulario-colunas" id="form-crianca">
         <label
           >Nome <input name="nome" required maxlength="40" pattern=".*\\S.*" value="${c.nome}"
         /></label>
