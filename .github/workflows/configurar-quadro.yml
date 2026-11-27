@@ -2,16 +2,17 @@ name: Configurar quadro
 
 # ADR 0038: cria as colunas do quadro (opções do campo Status) com o PROJECT_TOKEN, para a dona não ter de
 # renomear à mão. Só roda por disparo manual de quem tem escrita no repositório, a partir do `main`, e o
-# segredo fica no Environment `quadro`. Não faz checkout. "listar" apenas lê; "criar-colunas" SUBSTITUI as
-# opções do campo Status (cartões que estiverem em colunas antigas ficam sem status).
+# segredo fica no Environment `quadro`. Não faz checkout. "listar" e "itens" apenas leem ("itens" mostra em que coluna
+# está cada cartão, para conferir o quadro de verdade); "criar-colunas" SUBSTITUI as opções do campo Status
+# (cartões que estiverem em colunas antigas ficam sem status).
 
 on:
   workflow_dispatch:
     inputs:
       acao:
-        description: 'listar (só lê) ou criar-colunas (substitui as opções do Status)'
+        description: 'listar e itens só leem; criar-colunas substitui as opções do Status'
         type: choice
-        options: [listar, criar-colunas]
+        options: [listar, itens, criar-colunas]
         default: listar
       titulo:
         description: 'Parte do título do quadro (sem diferenciar maiúsculas)'
@@ -52,6 +53,14 @@ jobs:
           echo "Opções atuais do Status:"
           jq -r '.[0].field.options[]? | "  - \(.name)"' <<<"$achados"
           if [ "$ACAO" = "listar" ]; then exit 0; fi
+
+          if [ "$ACAO" = "itens" ]; then
+            echo "Cartões e a coluna (Status) de cada um:"
+            gh api graphql -f id="$(jq -r '.[0].id' <<<"$achados")" \
+              -f query='query($id:ID!){node(id:$id){... on ProjectV2{items(first:100){nodes{content{__typename ... on Issue{number title state} ... on PullRequest{number title state}} fieldValueByName(name:"Status"){... on ProjectV2ItemFieldSingleSelectValue{name}}}}}}}' \
+              --jq '.data.node.items.nodes[] | "  #\(.content.number // "?") [\(.content.state // "?")] \(.fieldValueByName.name // "sem status")  \(.content.title // "(rascunho)")"'
+            exit 0
+          fi
 
           campo=$(jq -r '.[0].field.id' <<<"$achados")
           [ -n "$campo" ] && [ "$campo" != "null" ] || { echo "::error::O quadro não tem o campo Status."; exit 1; }
