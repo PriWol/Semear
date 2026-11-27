@@ -132,3 +132,92 @@ test('em 1920 px o botão "Preparar sessão de hoje" não ocupa a linha toda', a
   const { largura, limite } = await medidaDeLeitura(page.locator('#preparar-hoje'));
   expect(largura).toBeLessThanOrEqual(limite + 1);
 });
+
+// Largura limitada exige decidir o que ocupa o espaço restante (DESIGN.md): painel de apoio, cartões
+// lado a lado ou campos em colunas, nunca a metade do cartão vazia.
+const caixa = async (alvo: import('@playwright/test').Locator) => (await alvo.boundingBox())!;
+
+test('em 1920 px Nova sessão mostra a proposta à direita do formulário depois de "Sugerir atividades"', async ({
+  page,
+}) => {
+  await comExemplo(page, 1920);
+  await page.goto('./#/sessao/nova?crianca=exemplo-ana');
+  const formulario = page.locator('#form-sessao');
+  await expect(formulario).toBeVisible();
+  // Antes de gerar, o painel não ocupa espaço.
+  await expect(page.locator('#area-proposta')).toBeHidden();
+  await page.getByRole('button', { name: 'Sugerir atividades' }).click();
+  const proposta = page.locator('aside#area-proposta #proposta');
+  await expect(proposta).toBeVisible();
+  const f = await caixa(formulario);
+  const p = await caixa(proposta);
+  expect(p.x).toBeGreaterThanOrEqual(f.x + f.width);
+  expect(Math.abs(p.y - f.y)).toBeLessThanOrEqual(2);
+});
+
+test('em 1920 px Família mostra o guia das vertentes ao lado do formulário', async ({ page }) => {
+  await comExemplo(page, 1920);
+  await page.goto('./#/familia');
+  const guia = page.getByRole('complementary', { name: 'Guia das vertentes' });
+  await expect(guia).toBeVisible();
+  await expect(guia.getByRole('link', { name: 'Não sei qual escolher' })).toBeVisible();
+  const f = await caixa(page.locator('#form-familia'));
+  const g = await caixa(guia);
+  expect(g.x).toBeGreaterThanOrEqual(f.x + f.width);
+});
+
+test('em 1920 px o cadastro da criança e a semana sem plano põem os campos em colunas', async ({
+  page,
+}) => {
+  await comExemplo(page, 1920);
+  await page.goto('./#/crianca/nova');
+  const nome = page.getByLabel('Nome', { exact: true });
+  await expect(nome).toBeVisible();
+  const nascimento = page.getByLabel('Data de nascimento');
+  expect((await caixa(nascimento)).x).toBeGreaterThan((await caixa(nome)).x + 100);
+
+  await page.goto('./#/semana/exemplo-ana');
+  const dias = page.getByRole('group', { name: 'Dias da semana' });
+  await expect(dias).toBeVisible();
+  const duracao = page.getByRole('group', { name: 'Duração de cada sessão' });
+  expect((await caixa(duracao)).x).toBeGreaterThan((await caixa(dias)).x + 100);
+});
+
+test('em 1920 px Ajustes põe o material de apoio e o "Sobre" ao lado das seções principais', async ({
+  page,
+}) => {
+  await comExemplo(page, 1920);
+  await page.goto('./#/config');
+  const lateral = page.getByRole('complementary', { name: 'Material de apoio e sobre o Semear' });
+  await expect(lateral).toBeVisible();
+  const familia = await caixa(page.locator('section[aria-labelledby="aj-familia"]'));
+  expect((await caixa(lateral)).x).toBeGreaterThanOrEqual(familia.x + familia.width);
+  await expect(page.locator('#exportar')).toBeVisible();
+  await expect(page.locator('#apagar')).toBeAttached();
+});
+
+test('em 390 px os painéis de apoio somem, a proposta continua abaixo do formulário e não rola para o lado', async ({
+  page,
+}) => {
+  await comExemplo(page, 390);
+  await page.goto('./#/familia');
+  await expect(page.locator('#form-familia')).toBeVisible();
+  await expect(page.locator('.apoio-solto')).toBeHidden();
+
+  await page.goto('./#/sessao/nova?crianca=exemplo-ana');
+  await page.getByRole('button', { name: 'Sugerir atividades' }).click();
+  const proposta = page.locator('aside#area-proposta #proposta');
+  await expect(proposta).toBeVisible();
+  const f = await caixa(page.locator('#form-sessao'));
+  const p = await caixa(proposta);
+  expect(p.y).toBeGreaterThanOrEqual(f.y + f.height - 1);
+
+  for (const rota of ['/familia', '/crianca/nova', '/config', '/sessao/nova?crianca=exemplo-ana']) {
+    await page.goto(`./#${rota}`);
+    await expect(page.locator('h1').first()).toBeVisible();
+    const sobra = await page.evaluate(
+      () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    );
+    expect(sobra, rota).toBeLessThanOrEqual(0);
+  }
+});

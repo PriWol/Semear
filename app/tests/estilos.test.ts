@@ -118,7 +118,13 @@ describe('largura da página no computador (#176, DESIGN.md "Largura e medida de
   });
 
   it('formulários e a lista de progresso do Início mantêm largura de leitura em janela larga', () => {
+    // Formulário solto mantém a medida de leitura; onde há painel de apoio ao lado ou campos em colunas,
+    // a largura é decidida pela grade (nunca a metade do cartão vazia).
     expect(css).toMatch(/\.formulario\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/);
+    expect(css).toMatch(
+      /@media \(min-width: 64rem\)\s*\{[^@]*\.com-apoio > #area-form > \.formulario[^{]*\{\s*max-width:\s*none/,
+    );
+    expect(css).toMatch(/\.formulario-colunas\s*\{[^}]*max-width:\s*none/);
     expect(css).toMatch(/#filtros\s*\{[^}]*max-width:\s*var\(--s-medida-leitura\)/);
     expect(css).toMatch(/#filtros-atividades\s*\{\s*max-width:\s*none/);
     expect(css).toMatch(/\.progresso-dominios\s*\{[^}]*max-width:\s*var\(--s-largura-tabela\)/);
@@ -136,6 +142,29 @@ describe('largura da página no computador (#176, DESIGN.md "Largura e medida de
     );
     expect(css).toMatch(/\.tabela\s*\{[^}]*max-width:\s*var\(--s-largura-tabela\)/);
     expect(tokens).toContain('--s-largura-tabela:');
+  });
+});
+
+describe('o que ocupa o espaço restante em janela larga (#176, DESIGN.md)', () => {
+  it('painel de apoio: grade de duas colunas só a partir de 64rem, com a proposta vazia sem ocupar espaço', () => {
+    expect(css).toMatch(
+      /@media \(min-width: 64rem\)\s*\{[^@]*\.com-apoio\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:\s*minmax\(0, var\(--s-medida-leitura\)\)\s*minmax\(var\(--s-largura-cartao-min\), var\(--s-medida-leitura\)\)/,
+    );
+    expect(css).toMatch(/#area-proposta:empty\s*\{\s*display:\s*none/);
+  });
+
+  it('o painel solto some no celular e na janela média, onde só complementaria o formulário', () => {
+    expect(css).toMatch(
+      /@media \(max-width: 63\.999rem\)\s*\{[^@]*\.apoio-solto\s*\{\s*display:\s*none/,
+    );
+  });
+
+  it('campos em colunas: grade auto-fit com mínimo de 22rem e botão, ações e alertas na linha cheia', () => {
+    expect(css).toMatch(
+      /\.formulario-colunas\s*\{[^}]*grid-template-columns:\s*repeat\(auto-fit, minmax\(min\(100%, 22rem\), 1fr\)\)/,
+    );
+    expect(css).toMatch(/\.formulario-colunas\s*\{[^}]*align-items:\s*start/);
+    expect(css).toMatch(/\.formulario-colunas > :is\([^)]*\)\s*\{\s*grid-column:\s*1 \/ -1/);
   });
 });
 
