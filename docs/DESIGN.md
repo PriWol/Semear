@@ -58,6 +58,16 @@ O ocre `--s-destaque` e a linha `--s-linha` **nunca** são cor de texto.
   e o conteúdo começarem na mesma linha. Em telas de até 400 px a margem continua a do celular (12 px no conteúdo, 8 px no topo).
 - **Medida de leitura:** texto corrido, descrições e campos de formulário não passam de `--s-medida-leitura` (65ch), por mais larga
   que seja a janela. É a largura do bloco de texto que se limita, não a do cartão.
+- **Largura limitada exige decidir o que ocupa o espaço restante:** painel de apoio, cartões lado a lado ou campos em colunas;
+  nunca deixar a metade do cartão vazia. Em janela larga (a partir de 64rem):
+  - **Painel de apoio** (`.com-apoio`): formulário à esquerda e um `<aside>` com `aria-label` à direita, depois dele no DOM. Em
+    Nova sessão o painel é a sugestão de sessão (`#area-proposta`, vazio não ocupa espaço; no celular ela segue abaixo do
+    formulário). Em Família é o Guia das vertentes (`.apoio-solto`, que some abaixo de 64rem porque só complementa).
+  - **Cartões lado a lado:** Ajustes tem a coluna principal (Família, Aviso diário, Cópia, Cuidado) e uma lateral com Material de
+    apoio e Sobre o Semear. No DOM o Cuidado continua por último.
+  - **Campos em colunas** (`.formulario-colunas`, mínimo `--s-largura-campo-min`): Cadastro da criança e Semana sem plano; botão,
+    ações e alertas ocupam a linha cheia.
+  - No celular tudo vira uma coluna, sem rolagem lateral.
 - **Listas longas** (Atividades, Acervo, sessões, dias da semana) viram grade: colunas de no mínimo `--s-largura-cartao-min`
   que se repartem sozinhas conforme a janela (1 coluna no celular).
 - **Filtros** de Atividades: campos em linha, de no mínimo `--s-largura-filtro-min`; a busca ocupa a linha toda.

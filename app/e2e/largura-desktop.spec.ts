@@ -149,10 +149,12 @@ test('em 1920 px Nova sessão mostra a proposta à direita do formulário depois
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
   const proposta = page.locator('aside#area-proposta #proposta');
   await expect(proposta).toBeVisible();
-  const f = await caixa(formulario);
-  const p = await caixa(proposta);
-  expect(p.x).toBeGreaterThanOrEqual(f.x + f.width);
-  expect(Math.abs(p.y - f.y)).toBeLessThanOrEqual(2);
+  const lado = await page.evaluate(() => {
+    const f = document.querySelector('#form-sessao')!.getBoundingClientRect();
+    const p = document.querySelector('#proposta')!.getBoundingClientRect();
+    return { aDireita: p.left >= f.right, mesmoTopo: Math.abs(p.top - f.top) <= 2 };
+  });
+  expect(lado).toEqual({ aDireita: true, mesmoTopo: true });
 });
 
 test('em 1920 px Família mostra o guia das vertentes ao lado do formulário', async ({ page }) => {
@@ -208,9 +210,13 @@ test('em 390 px os painéis de apoio somem, a proposta continua abaixo do formul
   await page.getByRole('button', { name: 'Sugerir atividades' }).click();
   const proposta = page.locator('aside#area-proposta #proposta');
   await expect(proposta).toBeVisible();
-  const f = await caixa(page.locator('#form-sessao'));
-  const p = await caixa(proposta);
-  expect(p.y).toBeGreaterThanOrEqual(f.y + f.height - 1);
+  // As duas medidas na mesma leitura: a rolagem suave da sugestão não pode separá-las.
+  const abaixo = await page.evaluate(() => {
+    const form = document.querySelector('#form-sessao')!.getBoundingClientRect();
+    const sugestao = document.querySelector('#proposta')!.getBoundingClientRect();
+    return sugestao.top >= form.bottom - 1;
+  });
+  expect(abaixo).toBe(true);
 
   for (const rota of ['/familia', '/crianca/nova', '/config', '/sessao/nova?crianca=exemplo-ana']) {
     await page.goto(`./#${rota}`);

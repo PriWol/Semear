@@ -196,6 +196,8 @@ O navegador informa se o aparelho prefere tema escuro (`@media (prefers-color-sc
 ### Página que acompanha a janela: `clamp()` e grade `auto-fill`
 Em vez de fixar a largura, o app deixa o conteúdo ocupar a janela até um teto (`max-width: var(--s-largura-app)`). A margem lateral usa `clamp(mínimo, preferido, máximo)`: o valor segue a janela (`3vw`) mas nunca sai de uma faixa (16 a 32 px). Listas longas usam `grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr))`: o navegador calcula quantas colunas de pelo menos 17,5rem cabem e reparte a sobra, sem nenhum ponto de quebra escrito à mão (no celular sobra uma coluna). `auto-fit` é parecido, mas estica os itens quando há poucos. O texto corrido continua limitado a 65ch porque linha muito longa cansa a leitura (`tests/estilos.test.ts` e `e2e/largura-desktop.spec.ts` protegem as duas regras).
 
+Limitar a largura de um formulário deixa sobrar espaço, e a metade vazia do cartão fica estranha. A regra é decidir o que ocupa o resto: um painel de apoio ao lado (uma `grid` de duas colunas só a partir de `@media (min-width: 64rem)`, com `<aside>` depois do formulário no DOM), cartões lado a lado, ou campos em colunas (`repeat(auto-fit, minmax(min(100%, 22rem), 1fr))`, em que o `min(100%, …)` evita estourar a tela estreita). Um elemento `:empty { display: none }` não ocupa espaço até receber conteúdo.
+
 ## 4. Como trabalhamos com IA (vibe coding com disciplina)
 
 ### O fluxo: spec → plano → testes → código → revisão
