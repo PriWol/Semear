@@ -1,6 +1,7 @@
 import type { FabricaPagina } from '../ui/app';
 import { lerFormulario, lista } from '../ui/app';
-import { html } from '../ui/html';
+import { html, textoRico } from '../ui/html';
+import { carregarGuia } from '../conteudo';
 import { IDIOMAS, VERTENTES, type Familia, type Idioma, type Vertente } from '../domain/tipos';
 import { avisoExemplo, ligarAvisoExemplo } from '../ui/exemplo';
 import { familiaSemNome } from '../domain/pendencias';
@@ -25,6 +26,8 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
     criadaEm: ctx.agora(),
   };
 
+  const guia = carregarGuia();
+
   return {
     titulo: 'Família',
     conteudo: html` <h1>${primeiraVez ? 'Vamos conhecer sua família' : 'Família'}</h1>
@@ -37,6 +40,7 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
             </p>`
           : ''
       }
+      <div class="com-apoio">
       <form class="cartao formulario" id="form-familia">
         <label>
           Seu nome (educador)
@@ -53,7 +57,7 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
           <legend>Vertente principal</legend>
           <p class="nota">
             Define o ritmo e os marcos extras. Dá para mudar depois.
-            <a href="#/guia">Não sei qual escolher</a>
+            <a class="so-estreito" href="#/guia">Não sei qual escolher</a>
           </p>
           ${VERTENTES.map(
             (v) =>
@@ -106,7 +110,16 @@ export const paginaFamilia: FabricaPagina = async (ctx) => {
         <button class="botao primario" type="submit">
           ${primeiraVez ? 'Continuar' : 'Salvar'}
         </button>
-      </form>`,
+      </form>
+      <aside class="cartao apoio-solto" aria-label="Guia das vertentes">
+        <h2>Guia das vertentes</h2>
+        ${guia.vertentes.map(
+          (g) =>
+            html`<p><b>${g.vertente}</b><br /><span class="nota">${textoRico(g.resumo)}</span></p>`,
+        )}
+        <p><a href="#/guia">Não sei qual escolher</a></p>
+      </aside>
+      </div>`,
     montar(raiz) {
       ligarAvisoExemplo(raiz, ctx);
       raiz
