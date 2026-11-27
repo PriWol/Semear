@@ -159,9 +159,9 @@ describe('o que ocupa o espaço restante em janela larga (#176, DESIGN.md)', () 
     );
   });
 
-  it('campos em colunas: grade auto-fit com mínimo de 22rem e botão, ações e alertas na linha cheia', () => {
+  it('campos em colunas: grade auto-fit com mínimo de --s-largura-campo-min (22rem) e botão, ações e alertas na linha cheia', () => {
     expect(css).toMatch(
-      /\.formulario-colunas\s*\{[^}]*grid-template-columns:\s*repeat\(auto-fit, minmax\(min\(100%, 22rem\), 1fr\)\)/,
+      /\.formulario-colunas\s*\{[^}]*grid-template-columns:\s*repeat\(auto-fit, minmax\(min\(100%, var\(--s-largura-campo-min\)\), 1fr\)\)/,
     );
     expect(css).toMatch(/\.formulario-colunas\s*\{[^}]*align-items:\s*start/);
     expect(css).toMatch(/\.formulario-colunas > :is\([^)]*\)\s*\{\s*grid-column:\s*1 \/ -1/);

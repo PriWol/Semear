@@ -285,6 +285,61 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
   /* Campos de formulário seguem a medida de leitura em janela larga (#176). */
   max-width: var(--s-medida-leitura);
 }
+/* Largura limitada exige decidir o que ocupa o espaço restante (DESIGN.md, #176): um painel de apoio ao lado
+   (.com-apoio), cartões lado a lado (Ajustes) ou campos em colunas (.formulario-colunas). */
+@media (min-width: 64rem) {
+  .com-apoio {
+    display: grid;
+    gap: var(--s-espaco-6);
+    align-items: start;
+    grid-template-columns:
+      minmax(0, var(--s-medida-leitura))
+      minmax(var(--s-largura-cartao-min), var(--s-medida-leitura));
+  }
+  /* A grade já limita o formulário à medida de leitura; o cartão não precisa de teto próprio. */
+  .com-apoio > .formulario,
+  .com-apoio > #area-form > .formulario {
+    max-width: none;
+  }
+  /* O link do guia vai para o painel; o do formulário só existe onde não há painel. */
+  .com-apoio .so-estreito {
+    display: none;
+  }
+  /* Ajustes: o DOM mantém "Cuidado" por último (celular); em janela larga ele desce para a coluna principal
+     e o material de apoio e o "Sobre" ocupam a lateral. */
+  .ajustes-grade > aside {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .ajustes-grade > .ajustes-cuidado {
+    grid-column: 1;
+  }
+}
+/* Painel que só complementa (guia das vertentes): onde não cabe ao lado, some. A sugestão de sessão NÃO é assim. */
+@media (max-width: 63.999rem) {
+  .apoio-solto {
+    display: none;
+  }
+}
+/* Sugestão de sessão: antes de gerar, o painel não ocupa espaço. */
+#area-proposta:empty {
+  display: none;
+}
+.apoio-solto h2 {
+  margin-top: 0;
+}
+.apoio-solto p {
+  margin-block: 0 var(--s-espaco-3);
+}
+/* Campos em colunas dentro do cartão (cadastro da criança, semana sem plano); botão, ações e alertas em linha cheia. */
+.formulario-colunas {
+  max-width: none;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--s-largura-campo-min)), 1fr));
+  align-items: start;
+}
+.formulario-colunas > :is(.botao, .acoes, .alerta, button) {
+  grid-column: 1 / -1;
+}
 .formulario label {
   min-width: 0;
   display: grid;
