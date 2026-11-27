@@ -4,10 +4,17 @@ name: Ciclo de agentes
 # colocados na estória. Rótulos colocados pelo GITHUB_TOKEN não disparam workflows; por isso só
 # a dona do produto (ou quem tem permissão de escrita) aciona cada etapa, e isso é o portão humano.
 # Atenção: a ação só roda quando este arquivo já existe, idêntico, no branch padrão.
+# Lição do log de 25/11: o agente delegava a um subagente EM SEGUNDO PLANO e encerrava o turno ("aguardo o retorno");
+# o job termina quando o agente termina, e o trabalho em segundo plano se perdia (sucesso sem entrega). Por isso os
+# prompts exigem subagente em primeiro plano. O log completo (conversa do agente) só aparece com a variável
+# AGENTES_LOG_COMPLETO=true, ligada por uma rodada quando for preciso diagnosticar; o repositório é público.
 
 on:
   issues:
     types: [labeled]
+  # Comandos da dona nos comentários: `/ideia` (PM) e `/aprovar` (desenvolvimento). Só ela, só em issue (não em PR).
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: write
@@ -22,7 +29,11 @@ concurrency:
 jobs:
   pm:
     # rótulo `ideia`: o PM transforma a ideia em estória e para em `aguardando-aprovacao`
-    if: github.event.label.name == 'ideia' && github.event.sender.type != 'Bot'
+    if: >-
+      (github.event_name == 'issues' && github.event.label.name == 'ideia' && github.event.sender.type != 'Bot') ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request == null &&
+       github.event.comment.user.login == github.repository_owner && github.event.comment.user.type == 'User' &&
+       github.event.comment.author_association == 'OWNER' && startsWith(github.event.comment.body, '/ideia'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -30,9 +41,12 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          show_full_output: ${{ vars.AGENTES_LOG_COMPLETO == 'true' }}
           prompt: |
             REPO: ${{ github.repository }}
             ESTÓRIA/IDEIA: #${{ github.event.issue.number }}
+            Execute o subagente em PRIMEIRO PLANO (nunca em segundo plano) e só encerre depois de comentar a estória
+            e pôr o rótulo. Nunca termine dizendo que aguarda um subagente: o job acaba quando você acaba.
             Use o subagente `pm`. Reescreva a ideia como estória com critérios de aceite, comente na issue
             e adicione o rótulo `aguardando-aprovacao`. NÃO adicione `aprovada`: isso é da dona do produto.
             Antes, leia docs/ESTRATEGIA_ENTREGA.md (veredito da estória e seção 9, decisões da dona do produto)
@@ -43,29 +57,56 @@ jobs:
 
   desenvolver:
     # rótulo `aprovada` (portão 1): plano técnico, desenho, testes, código e PR
-    if: github.event.label.name == 'aprovada' && github.event.sender.type != 'Bot'
+    if: >-
+      (github.event_name == 'issues' && github.event.label.name == 'aprovada' && github.event.sender.type != 'Bot') ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request == null &&
+       github.event.comment.user.login == github.repository_owner && github.event.comment.user.type == 'User' &&
+       github.event.comment.author_association == 'OWNER' && startsWith(github.event.comment.body, '/aprovar'))
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # Evita o segundo PR para a mesma estória (aconteceu em 26/11: #179 e #183 duplicaram #178 e #182).
+      - name: Já existe PR aberto para esta estória?
+        id: dup
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          set -euo pipefail
+          achou=$(gh pr list --repo "$REPO" --state open --limit 100 --json number,body \
+            | jq --arg n "$NUM" '[.[] | select((.body // "") | test("(closes|fixes|resolves|refs) #" + $n + "([^0-9]|$)"; "i"))] | length')
+          if [ "$achou" != "0" ]; then
+            echo "existe=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::Já há PR aberto ligado à estória #$NUM: o agente não vai abrir outro."
+          else
+            echo "existe=false" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.dup.outputs.existe != 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      - if: steps.dup.outputs.existe != 'true'
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: app/package-lock.json
-      - run: npm ci
+      - if: steps.dup.outputs.existe != 'true'
+        run: npm ci
         working-directory: app
-      - uses: anthropics/claude-code-action@cc98b3ae241b0fcfb6a42a2690751afffecb4452 # v1
+      - if: steps.dup.outputs.existe != 'true'
+        uses: anthropics/claude-code-action@cc98b3ae241b0fcfb6a42a2690751afffecb4452 # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          # Diagnóstico temporário: mostra a mensagem de erro completa. Remover depois que os agentes rodarem.
-          show_full_output: true
+          show_full_output: ${{ vars.AGENTES_LOG_COMPLETO == 'true' }}
           prompt: |
             REPO: ${{ github.repository }}
             ESTÓRIA APROVADA: #${{ github.event.issue.number }}
+            Execute cada subagente em PRIMEIRO PLANO (nunca em segundo plano), um de cada vez, e só encerre depois
+            que o PR estiver aberto ou que você tenha comentado na estória por que parou. Nunca termine dizendo que
+            aguarda um subagente: o job acaba quando você acaba e o trabalho em segundo plano se perde.
             Siga `docs/PROCESSO_AI_SDLC.md` (etapas 2 a 4):
             1. subagente `dev-senior-b`: plano técnico, comentado na estória; se a estória tem rótulo `ui`,
                o subagente `designer` desenha e aprova o plano; `qa` deriva os casos de teste.
