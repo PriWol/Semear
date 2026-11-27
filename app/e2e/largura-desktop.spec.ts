@@ -185,6 +185,30 @@ test('em 1920 px o cadastro da criança e a semana sem plano põem os campos em 
   expect((await caixa(duracao)).x).toBeGreaterThan((await caixa(dias)).x + 100);
 });
 
+test('em 1920 px os campos em colunas ocupam mais de 75% da largura do cartão', async ({
+  page,
+}) => {
+  await comExemplo(page, 1920);
+  const formularios: [string, string][] = [
+    ['/crianca/nova', '#form-crianca'],
+    ['/semana/exemplo-ana', '#form-semana'],
+  ];
+  for (const [rota, form] of formularios) {
+    await page.goto(`./#${rota}`);
+    await expect(page.locator(form)).toBeVisible();
+    const ocupado = await page.locator(form).evaluate((f) => {
+      const cartao = f.getBoundingClientRect();
+      const direita = Math.max(
+        ...[...f.children]
+          .filter((c) => (c as HTMLElement).offsetParent !== null && c.tagName !== 'BUTTON')
+          .map((c) => c.getBoundingClientRect().right),
+      );
+      return (direita - cartao.left) / cartao.width;
+    });
+    expect(ocupado, rota).toBeGreaterThan(0.75);
+  }
+});
+
 test('em 1920 px Ajustes põe o material de apoio e o "Sobre" ao lado das seções principais', async ({
   page,
 }) => {

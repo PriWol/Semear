@@ -337,6 +337,14 @@ h1[tabindex='-1']:focus:not(:focus-visible) {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--s-largura-campo-min)), 1fr));
   align-items: start;
 }
+/* Poucos grupos (Semana sem plano, 2): o botão de linha cheia ocupa todas as trilhas do auto-fit e as mantém
+   abertas, então os grupos ficariam estreitos com a direita vazia. Limita a 2 trilhas, que dividem a largura. */
+.formulario-duas {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(max(var(--s-largura-campo-min), calc((100% - var(--s-espaco-4)) / 2)), 1fr)
+  );
+}
 .formulario-colunas > :is(.botao, .acoes, .alerta, button) {
   grid-column: 1 / -1;
 }
