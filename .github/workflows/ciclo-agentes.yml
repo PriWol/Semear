@@ -12,6 +12,9 @@ name: Ciclo de agentes
 on:
   issues:
     types: [labeled]
+  # Comandos da dona nos comentários: `/ideia` (PM) e `/aprovar` (desenvolvimento). Só ela, só em issue (não em PR).
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: write
@@ -26,7 +29,11 @@ concurrency:
 jobs:
   pm:
     # rótulo `ideia`: o PM transforma a ideia em estória e para em `aguardando-aprovacao`
-    if: github.event.label.name == 'ideia' && github.event.sender.type != 'Bot'
+    if: >-
+      (github.event_name == 'issues' && github.event.label.name == 'ideia' && github.event.sender.type != 'Bot') ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request == null &&
+       github.event.comment.user.login == github.repository_owner && github.event.comment.user.type == 'User' &&
+       github.event.comment.author_association == 'OWNER' && startsWith(github.event.comment.body, '/ideia'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -50,7 +57,11 @@ jobs:
 
   desenvolver:
     # rótulo `aprovada` (portão 1): plano técnico, desenho, testes, código e PR
-    if: github.event.label.name == 'aprovada' && github.event.sender.type != 'Bot'
+    if: >-
+      (github.event_name == 'issues' && github.event.label.name == 'aprovada' && github.event.sender.type != 'Bot') ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request == null &&
+       github.event.comment.user.login == github.repository_owner && github.event.comment.user.type == 'User' &&
+       github.event.comment.author_association == 'OWNER' && startsWith(github.event.comment.body, '/aprovar'))
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
